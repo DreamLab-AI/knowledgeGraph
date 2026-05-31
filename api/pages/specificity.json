@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:b3d346ebbbe1dd8f53285b68428bce50a1f13c9cb556eb7cc6fc1a1c0f70a473",
+  "title": "Specificity",
+  "slug": "specificity",
+  "public": true,
+  "classIri": "urn:ngm:class:specificity",
+  "domain": "artificial-intelligence",
+  "definition": "In classification and diagnostic testing, the proportion of actual negatives that are correctly identified as negative, also known as the true negative rate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:nvidia-omniverse",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:nvidia-omniverse",
+  "@type": "Class",
   "label": "NVIDIA Omniverse",
   "definition": "NVIDIA Omniverse is a real-time 3D simulation and collaboration platform developed by NVIDIA, built on the OpenUSD (Universal Scene Description) standard and designed for creating physically accurate digital twins, collaborative design workflows, and large-scale simulation environments for AI training. It provides a unified compute and rendering fabric that allows multiple applications and users to work simultaneously on shared 3D scenes with physically based rendering, physics simulation, and ray-traced visualisation. Omniverse is deployed across automotive design, industrial digital twins, film and game production pipelines, and as a synthetic data generation platform for training computer vision and robotics AI systems.",
   "domain": "metaverse",
   "maturity": "established",
-  "instanceOf": {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+  "subClassOf": {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},

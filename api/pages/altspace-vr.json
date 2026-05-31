@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cdc8633b1e3e328ccb14a674a3d53f12cc14c317bb1b9eec2b9e11c94f56403c",
+  "title": "AltspaceVR",
+  "slug": "altspace-vr",
+  "public": true,
+  "classIri": "urn:ngm:class:altspace-vr",
+  "domain": "metaverse",
+  "definition": "AltspaceVR was a social virtual reality platform offering avatar-based gatherings, events and shared spaces, later acquired by Microsoft and eventually shut down.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

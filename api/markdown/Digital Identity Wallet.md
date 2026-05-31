@@ -503,12 +503,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:cryptographic-key-container",
-      "label": "Cryptographic Key Container"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:mobile-application",
-      "label": "Mobile Application"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -644,7 +644,7 @@ public:: true
         "label": "SIOPv2"
       },
       {
-        "@id": "urn:ngm:class:w3-c-verifiable-credentials-data-model",
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
       }
     ],

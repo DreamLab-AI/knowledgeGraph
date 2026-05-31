@@ -1,0 +1,4 @@
+- ### Definition
+  - Scientific discovery acceleration uses AI to shorten research cycles, and is frequently framed as a key benefit enabled by [[Artificial General Intelligence]] in the [[History and Path to AGI]].
+- ### Content
+  - Concrete examples include protein-structure prediction, retrosynthesis planning, and learned surrogates that replace expensive simulations. The approach couples generative proposal of candidates with active-learning loops that prioritise the most informative experiments, raising both throughput and reproducibility concerns.

@@ -1,0 +1,4 @@
+- ### Definition
+  - A UK Government strategy of recommendations to accelerate national AI adoption through compute, data, skills, and public-sector deployment. It is a policy driver for [[AI Adoption]] and the wider [[Adoption of Convergent Technologies]].
+- ### Content
+  - The plan emphasises sovereign capability, including expanded public compute and AI Growth Zones, alongside talent pipelines and regulatory enablement. It positions AI as a lever for economic growth and public-service reform, framing government as an early adopter and infrastructure provider rather than purely a regulator.

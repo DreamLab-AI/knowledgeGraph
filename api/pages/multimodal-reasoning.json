@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:multimodal-reasoning",
+  "title": "Multimodal Reasoning",
+  "slug": "multimodal-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-reasoning",
+  "domain": "ai",
+  "definition": "Multimodal reasoning is the capability of an AI system to integrate and draw inferences across multiple input modalities such as text, images, audio, and video. It requires aligning representations from heterogeneous sources into a shared semantic space so that conclusions depend jointly on all available signals. This underpins tasks like visual question answering, document understanding, and grounded dialogue where no single modality is sufficient.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    }
+  ]
+}

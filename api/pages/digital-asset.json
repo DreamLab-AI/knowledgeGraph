@@ -132,6 +132,14 @@
       "label": "Fashion"
     },
     {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
+    },
+    {
+      "slug": "global-digital-finance",
+      "label": "Global Digital Finance"
+    },
+    {
       "slug": "gold",
       "label": "Gold"
     },
@@ -154,6 +162,14 @@
     {
       "slug": "non-fungible-token-nft",
       "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
     },
     {
       "slug": "quorum-blockchain",
@@ -182,6 +198,10 @@
     {
       "slug": "symbolic-object-library",
       "label": "Symbolic Object Library"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
     },
     {
       "slug": "token",

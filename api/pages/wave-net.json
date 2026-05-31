@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:3b9f47699743c29fbce0ef27a83b430c4c2dadce6dc8e1fa8d4b4afe24c66ce3",
+  "title": "WaveNet",
+  "slug": "wave-net",
+  "public": true,
+  "classIri": "urn:ngm:class:wave-net",
+  "domain": "deep-learning",
+  "definition": "A deep autoregressive neural network for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

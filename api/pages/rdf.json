@@ -67,6 +67,14 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
     },
@@ -79,12 +87,28 @@
       "label": "Metadata Standard"
     },
     {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
       "slug": "ontology-definition",
       "label": "Ontology Definition"
     },
     {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
       "slug": "sparql-examples",
       "label": "SPARQL EXAMPLES"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
     },
     {
       "slug": "solid",

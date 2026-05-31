@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ae6ef318dc02ab3d11abb048acc4bf60b7644dc8e87379392681f21e547015ef",
+  "title": "BC-0480-kyc-requirements",
+  "slug": "bc-0480-kyc-requirements",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-0480-kyc-requirements",
+  "domain": "blockchain",
+  "definition": "KYC requirements are the obligations placed on regulated firms to identify and verify their customers, assess risk and monitor activity as part of anti-money-laundering and counter-terrorist-financing controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    }
+  ]
+}

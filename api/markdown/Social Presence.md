@@ -1,4 +1,5 @@
 public:: true
+alias:: SocialPresence
 
 # Social Presence
 ```json-ld

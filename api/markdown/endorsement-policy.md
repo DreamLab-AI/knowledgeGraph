@@ -1,0 +1,4 @@
+- ### Definition
+  - An Endorsement Policy specifies which organisations' peers must execute and sign a transaction before it is valid on a permissioned ledger. It is a core governance component of a [[Consortium Blockchain]] and of [[Enterprise Smart Contracts]].
+- ### Content
+  - In Hyperledger Fabric, endorsement policies are attached to chaincode and expressed as logical combinations of organisation signatures, such as "AND", "OR", or "N-of-M". They let a consortium encode trust assumptions directly into transaction validation, ensuring no single party can unilaterally commit state changes.

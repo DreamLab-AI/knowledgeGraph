@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:8202de10fdc190c2c7e7208b74b9852104dde1e6aed8db11e4548fbd5cf65523",
+  "title": "ERC-4337 Account Abstraction",
+  "slug": "erc-4337-account-abstraction",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-4337-account-abstraction",
+  "domain": "standards",
+  "definition": "An Ethereum standard defining account abstraction using a higher-layer pseudo-transaction object called a UserOperation, without changes to the core protocol. It enables smart contract wallets with custom validation logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

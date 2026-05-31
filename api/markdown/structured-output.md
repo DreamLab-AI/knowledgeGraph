@@ -1,0 +1,4 @@
+- ### Definition
+  - Structured output constrains a model's response to a fixed schema such as JSON, and is a core capability enabled by [[Prompt Engineering]] and constrained decoding.
+- ### Content
+  - Implementations range from soft enforcement, where the prompt asks for a JSON shape, to hard enforcement via grammar-constrained or schema-constrained decoding that masks invalid tokens at each step. Function and tool-calling APIs expose structured output natively by validating arguments against a declared signature. The benefit is reliable parsing for agents and pipelines; the trade-off is reduced flexibility and occasional refusals when the schema cannot accommodate the model's intended answer.

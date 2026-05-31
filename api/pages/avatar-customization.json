@@ -12,8 +12,8 @@
       "label": "Content and Assets"
     },
     {
-      "id": "urn:ngm:class:digital-personalization",
-      "label": "Digital Personalization"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "entityType": "Class",
@@ -105,6 +105,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
     }
   ]
 }

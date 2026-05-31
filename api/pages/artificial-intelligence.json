@@ -304,6 +304,10 @@
       "label": "AI Concept"
     },
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "ai-fairness",
       "label": "AI Fairness"
     },
@@ -340,10 +344,6 @@
       "label": "AI-Augmented Software Engineering"
     },
     {
-      "slug": "ai-grounded-domain",
-      "label": "AI-GroundedDomain"
-    },
-    {
       "slug": "aiapplications",
       "label": "AIApplications"
     },
@@ -374,6 +374,10 @@
     {
       "slug": "ai-machine-learning",
       "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
     },
     {
       "slug": "algorithm",
@@ -422,6 +426,10 @@
     {
       "slug": "behavioral-modeling",
       "label": "Behavioral Modeling"
+    },
+    {
+      "slug": "bittensor",
+      "label": "Bittensor"
     },
     {
       "slug": "calculating-empires",
@@ -480,6 +488,10 @@
       "label": "Constitutional Principle"
     },
     {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
       "slug": "constraint",
       "label": "Constraint"
     },
@@ -514,6 +526,10 @@
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
     },
     {
       "slug": "digital-twin",
@@ -584,6 +600,10 @@
       "label": "Goal"
     },
     {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
       "slug": "human-preference",
       "label": "Human Preference"
     },
@@ -612,8 +632,16 @@
       "label": "Image Segmentation"
     },
     {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
       "slug": "key-vector",
       "label": "Key Vector"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
     },
     {
       "slug": "knowledge-graph-construction",
@@ -626,6 +654,10 @@
     {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
     },
     {
       "slug": "leopold-aschenbrenner",
@@ -712,6 +744,10 @@
       "label": "Named Entity"
     },
     {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
       "slug": "neural-network-architecture",
       "label": "Neural Network Architecture"
     },
@@ -748,8 +784,20 @@
       "label": "Pathfinding Algorithm"
     },
     {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
+    },
+    {
       "slug": "planning-and-scheduling",
       "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
     },
     {
       "slug": "policy-update-magnitude",
@@ -824,6 +872,10 @@
       "label": "Robotics"
     },
     {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
       "slug": "runtime-inspection",
       "label": "Runtime Inspection"
     },
@@ -850,6 +902,10 @@
     {
       "slug": "social-impact",
       "label": "Social Impact"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
     },
     {
       "slug": "soft-prompt-embedding",
@@ -946,6 +1002,14 @@
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
     },
     {
       "slug": "value-vector",

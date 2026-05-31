@@ -80,6 +80,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
       "slug": "central-bank-digital-currency",
       "label": "Central Bank Digital Currency"
     },
@@ -88,8 +92,32 @@
       "label": "Digital Money"
     },
     {
+      "slug": "mastercard",
+      "label": "Mastercard"
+    },
+    {
       "slug": "micropayment",
       "label": "Micropayment"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
+      "slug": "visa",
+      "label": "Visa"
     }
   ]
 }

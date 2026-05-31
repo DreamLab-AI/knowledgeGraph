@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:bcf5f697c2b70eea155a5f4b4a30ebb98ae37d1d6ee7a14672938604f04509e6",
+  "title": "Decentraland",
+  "slug": "decentraland",
+  "public": true,
+  "classIri": "urn:ngm:class:decentraland",
+  "domain": "metaverse",
+  "definition": "Decentraland is a blockchain-based virtual world in which users own parcels of virtual land and in-world assets as tokens, governed by a decentralised autonomous organisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

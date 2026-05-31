@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:4aabb683b6211e0c81eae5f69664987831f68b7180b45487b6292104fc9ce0be",
+  "title": "Monte Carlo Integration",
+  "slug": "monte-carlo-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:monte-carlo-integration",
+  "domain": "metaverse",
+  "definition": "Monte Carlo integration estimates the value of an integral by averaging the integrand over randomly sampled points, with error that decreases with the square root of the sample count regardless of dimension.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    }
+  ]
+}

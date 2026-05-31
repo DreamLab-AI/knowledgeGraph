@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:dwpose",
+  "title": "DWPose",
+  "slug": "dwpose",
+  "public": true,
+  "classIri": "urn:ngm:class:dwpose",
+  "domain": "ai",
+  "definition": "DWPose is a whole-body 2D human pose estimation model that detects body, hand, face, and foot keypoints with high accuracy using a two-stage distillation approach. It is widely used to generate skeletal conditioning maps for controllable image and video generation. In generative pipelines DWPose output drives spatial-conditioning systems such as ControlNet to constrain pose and gesture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

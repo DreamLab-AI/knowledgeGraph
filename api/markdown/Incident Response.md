@@ -1,4 +1,5 @@
 public:: true
+alias:: IncidentResponse
 
 # Incident Response
 ```json-ld

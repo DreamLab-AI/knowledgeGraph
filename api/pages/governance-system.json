@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:governance-system",
+  "title": "Governance System",
+  "slug": "governance-system",
+  "public": true,
+  "classIri": "urn:ngm:class:governance-system",
+  "domain": "blockchain",
+  "definition": "A governance system is the structured set of rules, roles, and processes by which a blockchain protocol or organisation makes collective decisions about its parameters, upgrades, and resource allocation. It defines who can propose changes, how they are ratified, and how outcomes are enforced and recorded. In blockchains it is integral to protocol evolution and to the auditability of decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ]
+}

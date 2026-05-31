@@ -63,6 +63,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     },

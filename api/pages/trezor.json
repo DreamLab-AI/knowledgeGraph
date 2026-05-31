@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:77d660b9091aa590609077160a57be402bfb67c30790e62848c910273cce0d72",
+  "title": "Trezor",
+  "slug": "trezor",
+  "public": true,
+  "classIri": "urn:ngm:class:trezor",
+  "domain": "blockchain",
+  "definition": "Trezor is a brand of hardware wallets for storing cryptocurrency private keys offline in a dedicated physical device.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cold-storage",
+      "label": "Cold Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "cold-storage",
+      "label": "Cold Storage"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

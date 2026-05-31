@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:uk-mlr-2017",
+  "title": "UK MLR 2017",
+  "slug": "uk-mlr-2017",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-mlr-2017",
+  "domain": "blockchain",
+  "definition": "The UK Money Laundering Regulations 2017 (MLR 2017) are the principal UK regulations transposing anti-money-laundering and counter-terrorist-financing requirements onto regulated firms, including financial institutions and crypto-asset businesses. They mandate customer due diligence, risk assessment, record-keeping, and reporting obligations, and bring virtual-asset service providers under supervision by the FCA.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:robot-rb-0001",
+  "title": "Robot RB-0001",
+  "slug": "robot-rb-0001",
+  "public": true,
+  "classIri": "urn:ngm:class:robot-rb-0001",
+  "domain": "robotics",
+  "definition": "Robot RB-0001 is an identifier-class for a reference mobile-manipulator robot platform that combines a mobile base with an articulated manipulator arm. As a composite robot, it integrates locomotion and manipulation subsystems so the system can both navigate an environment and perform physical tasks within it. It serves as a canonical example linking mobile-robot and manipulator capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robotics Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "manipulator",
+      "label": "Manipulator"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    }
+  ]
+}

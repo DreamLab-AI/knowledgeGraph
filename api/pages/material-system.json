@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:bd31c4bfda095f70a778fc845de98bc4d5518fbc9bc6e5c301d116156d3e9236",
+  "title": "Material System",
+  "slug": "material-system",
+  "public": true,
+  "classIri": "urn:ngm:class:material-system",
+  "domain": "general",
+  "definition": "A defined combination of materials and their interfaces engineered to deliver a specific function or set of properties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:material-science",
+      "label": "Material Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:material-science",
+        "label": "Material Science"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "physics-material",
+      "label": "Physics Material"
+    },
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    }
+  ]
+}

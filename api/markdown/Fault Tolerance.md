@@ -1,4 +1,5 @@
 public:: true
+alias:: FaultTolerance
 
 # Fault Tolerance
 ```json-ld
@@ -535,8 +536,8 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:dependability",
-      "label": "Dependability"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
       "@id": "urn:ngm:class:reliability-engineering",

@@ -58,6 +58,14 @@
       "label": "3D Graphics Standard"
     },
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     },
@@ -66,8 +74,20 @@
       "label": "Game Engine"
     },
     {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
     }
   ]
 }

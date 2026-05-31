@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:proof-of-work-energy-consumption",
+  "title": "Proof-of-Work Energy Consumption",
+  "slug": "proof-of-work-energy-consumption",
+  "public": true,
+  "classIri": "urn:ngm:class:proof-of-work-energy-consumption",
+  "domain": "blockchain",
+  "definition": "Proof-of-work energy consumption is the electricity used by miners performing the computational hashing that secures proof-of-work blockchains such as Bitcoin. Because security scales with aggregate hashpower, energy use rises with price and competition, making it a central environmental and policy concern. It is tracked by indices that estimate network-wide power draw and carbon footprint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:cbeci",
+        "label": "CBECI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

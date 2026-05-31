@@ -1,4 +1,5 @@
 public:: true
+alias:: RecommendationSystem
 
 # Recommendation System
 ```json-ld

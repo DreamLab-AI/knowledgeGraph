@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:c37c9f9a2f837b24881dbba8be4b9ad9b839d478b094ac7ec703d10b8c1a92bc",
+  "title": "DAOGovernance",
+  "slug": "daogovernance",
+  "public": true,
+  "classIri": "urn:ngm:class:daogovernance",
+  "domain": "blockchain",
+  "definition": "The set of on-chain and off-chain processes by which a decentralised autonomous organisation makes and enforces collective decisions. It covers proposal submission, voting and execution of approved actions through smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "https-ethereum-org-en-dao",
+      "label": "https://ethereum.org/en/dao/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "implementation-examples",
+      "label": "implementation examples"
+    }
+  ]
+}

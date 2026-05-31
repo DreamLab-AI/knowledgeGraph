@@ -335,8 +335,8 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:critical-infrastructure",
-      "label": "Critical Infrastructure"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
       "@id": "urn:ngm:class:grid-infrastructure",
@@ -566,7 +566,7 @@ public:: true
         "label": "Agentic Internet"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -582,7 +582,7 @@ public:: true
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       }
     ],

@@ -10,6 +10,7 @@
   "vc:outboundWikilinks": []
 }
 ```
+alias:: Cyber-Physical Systems
 
 ```json-ld
 {

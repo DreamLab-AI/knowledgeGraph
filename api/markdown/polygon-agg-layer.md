@@ -1,0 +1,4 @@
+- ### Definition
+  - The Polygon AggLayer is a zero-knowledge-based aggregation layer that unifies liquidity and state across connected chains. It is closely related to the [[Data Layer]] for cross-chain proof availability and is a key enabler of [[Blockchain Interoperability]].
+- ### Content
+  - AggLayer aggregates ZK proofs submitted by participating chains and settles them against Ethereum, allowing assets and messages to move between chains with shared security and minimal trust assumptions. By unifying bridged liquidity into a single pool, it reduces fragmentation common to siloed rollups and bridges, while letting each chain choose its own execution environment and governance.

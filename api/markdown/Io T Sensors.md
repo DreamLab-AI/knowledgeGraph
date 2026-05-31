@@ -1,4 +1,5 @@
 public:: true
+alias:: IoT Sensors
 
 # Io T Sensors
 ```json-ld

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:5bf9e28e76cff27367ebafa33d2c4d38765a705ab8e571be3c8d6575e1ca61f2",
+  "title": "Reserve Asset",
+  "slug": "reserve-asset",
+  "public": true,
+  "classIri": "urn:ngm:class:reserve-asset",
+  "domain": "finance",
+  "definition": "An asset held to back a liability or to provide a store of value, such as the holdings that back a stablecoin or the foreign currency reserves held by a central bank. Its purpose is to ensure that claims can be met.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ]
+}

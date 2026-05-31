@@ -1,4 +1,5 @@
 public:: true
+alias:: NFTs
 
 # nft
 ```json-ld

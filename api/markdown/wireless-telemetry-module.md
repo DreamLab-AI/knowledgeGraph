@@ -1,0 +1,4 @@
+- ### Definition
+  - A wireless telemetry module digitises and radio-transmits sensor data without wiring; it is an enabling component of implantable [[Brain-Computer Interfaces]] and distributed [[Environmental Monitoring]] networks.
+- ### Content
+  - Designs integrate ultra-low-power MCUs, energy harvesting or small batteries, and short-range radios (BLE, sub-GHz ISM, or inductive links for implants), often duty-cycling to extend lifetime. For biomedical use, biocompatible packaging and regulatory-compliant emission limits constrain the design, while field-monitoring variants prioritise range and ruggedisation.

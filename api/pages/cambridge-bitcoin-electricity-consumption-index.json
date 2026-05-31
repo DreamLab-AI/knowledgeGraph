@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:c1bd5dec4c0a67d3d333b3424a5367229d4b9b810d2c6ef484a391ecfbe0fb83",
+  "title": "Cambridge Bitcoin Electricity Consumption Index",
+  "slug": "cambridge-bitcoin-electricity-consumption-index",
+  "public": true,
+  "classIri": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
+  "domain": "blockchain",
+  "definition": "An index published by the University of Cambridge that estimates the electricity consumption of the Bitcoin network from mining hardware efficiency and network hashrate. It provides a transparent methodology and range of estimates rather than a single fixed figure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "https-ccaf-io-cbnsi-cbeci",
+      "label": "https://ccaf.io/cbnsi/cbeci"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

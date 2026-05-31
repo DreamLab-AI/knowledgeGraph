@@ -125,8 +125,16 @@
       "label": "Particle Filter"
     },
     {
+      "slug": "sae-j-3016",
+      "label": "SAE J3016"
+    },
+    {
       "slug": "self-driving-car",
       "label": "Self Driving Car"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
     },
     {
       "slug": "rb-0069-lidar",

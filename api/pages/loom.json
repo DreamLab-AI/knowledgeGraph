@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:033dea3f80edb685e06a365b97aea387a87a86dfd9bbd45584f872514190d004",
+  "title": "Loom",
+  "slug": "loom",
+  "public": true,
+  "classIri": "urn:ngm:class:loom",
+  "domain": "software",
+  "definition": "A video messaging application that lets users record their screen, camera, and microphone to create and share short videos. It is used for asynchronous communication at work.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:screen-recording",
+      "label": "Screen Recording"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "screen-recording",
+      "label": "Screen Recording"
+    },
+    {
+      "slug": "video-streaming",
+      "label": "Video Streaming"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "video-async",
+      "label": "Video Async"
+    }
+  ]
+}

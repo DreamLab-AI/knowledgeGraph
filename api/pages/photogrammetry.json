@@ -245,6 +245,10 @@
       "label": "Lens and Camera Calibration"
     },
     {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },
@@ -267,6 +271,10 @@
     {
       "slug": "virtual-production",
       "label": "Virtual Production"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
     }
   ]
 }

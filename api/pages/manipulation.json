@@ -68,6 +68,10 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
       "slug": "proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
     },

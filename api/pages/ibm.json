@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:93733caff980c6e2d53658fad0c965639562e4b79915023ef5496594532a16f4",
+  "title": "IBM",
+  "slug": "ibm",
+  "public": true,
+  "classIri": "urn:ngm:class:ibm",
+  "domain": "distributed-systems",
+  "definition": "IBM is a technology company providing enterprise hardware, software, cloud services and consulting, with a long history in mainframe and research computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "https-www-ibm-com",
+      "label": "https://www.ibm.com/"
+    },
+    {
+      "slug": "https-www-ibm-com-cloud",
+      "label": "https://www.ibm.com/cloud"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ]
+}

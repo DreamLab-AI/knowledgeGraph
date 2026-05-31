@@ -1,0 +1,4 @@
+- ### Definition
+  - Visual question answering answers natural-language questions about visual input, a capability enabled by a [[Vision-Language Model]] and exposed to users through interfaces such as an [[AR Frame]].
+- ### Content
+  - Contemporary VQA systems encode the image and question into a shared representation and decode an answer, increasingly via large vision-language transformers trained on image-text corpora. Evaluation uses datasets such as VQAv2 and GQA; persistent challenges include language priors (answering plausibly without truly attending to the image) and compositional reasoning over rare attribute combinations.

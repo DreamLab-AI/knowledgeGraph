@@ -1,4 +1,5 @@
 public:: true
+alias:: Consensus-Protocol, ConsensusProtocol
 
 # Consensus Protocol
 ```json-ld

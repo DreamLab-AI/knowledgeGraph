@@ -1,0 +1,4 @@
+- ### Definition
+  - Cloud Storage Infrastructure is the distributed, API-accessible storage layer that persists application data durably and elastically, the backing store on which a [[Meeting Recording]] is retained and served.
+- ### Content
+  - Object stores such as S3-compatible systems partition and replicate data across availability zones for durability, exposing lifecycle policies that migrate aging data to cheaper tiers. For media workloads, the infrastructure pairs with content-delivery and transcoding pipelines to ingest, store, and stream large recordings cost-effectively.

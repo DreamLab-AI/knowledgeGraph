@@ -107,8 +107,8 @@ public:: true
       "label": "Perception and Sensing"
     },
     {
-      "@id": "urn:ngm:class:inertial-sensor",
-      "label": "Inertial Sensor"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     },
     {
       "@id": "urn:ngm:class:sensor",

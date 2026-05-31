@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:7927b8835ffff0d25cb9e814a8723aa4a83e5ab4bd208363203ee6a29645e124",
+  "title": "Sociotechnical Risk",
+  "slug": "sociotechnical-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:sociotechnical-risk",
+  "domain": "ai-safety",
+  "definition": "Sociotechnical risk is the potential for harm arising from the interaction between a technical system and the social context in which it is built and used. In AI it covers harms that emerge from people, institutions and technology together rather than from code alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-risk",
+      "label": "AI Risk"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ]
+}

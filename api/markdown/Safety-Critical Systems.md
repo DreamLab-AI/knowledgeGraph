@@ -1,4 +1,5 @@
 public:: true
+alias:: Safety Critical Systems
 
 # Safety-Critical Systems
 ```json-ld

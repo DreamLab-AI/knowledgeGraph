@@ -1,4 +1,5 @@
 public:: true
+alias:: Open API Specification
 
 # OpenAPI Specification
 ```json-ld

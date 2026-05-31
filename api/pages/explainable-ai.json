@@ -124,6 +124,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "global-explanation",
       "label": "Global Explanation"
     },
@@ -144,6 +148,10 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
       "slug": "local-explanation",
       "label": "Local Explanation"
     },
@@ -162,6 +170,10 @@
     {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
     },
     {
       "slug": "task-planning",

@@ -1,0 +1,4 @@
+- ### Definition
+  - RocksDB is an embedded LSM-tree key-value store optimised for fast storage, used as the state backend by [[Hyperledger Indy]] and [[Hyperledger Iroha]].
+- ### Content
+  - Its log-structured merge-tree design favours high write throughput, with background compaction maintaining read performance. As an embeddable library it gives applications durable, ordered local storage without operating a separate database server.

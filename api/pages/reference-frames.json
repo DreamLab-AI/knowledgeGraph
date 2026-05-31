@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:reference-frames",
+  "title": "Reference Frames",
+  "slug": "reference-frames",
+  "public": true,
+  "classIri": "urn:ngm:class:reference-frames",
+  "domain": "robotics",
+  "definition": "A reference frame is a coordinate system, anchored to a chosen origin and orientation, against which positions, velocities, and orientations are measured. In robotics each link, sensor, and the world itself has its own frame, and motion is described by transformations between them. Correct frame definitions are essential for sensor fusion, kinematics, and consistent spatial reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ]
+}

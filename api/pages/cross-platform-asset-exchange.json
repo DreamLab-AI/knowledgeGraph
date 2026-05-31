@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-platform-asset-exchange",
+  "title": "Cross-Platform Asset Exchange",
+  "slug": "cross-platform-asset-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-platform-asset-exchange",
+  "domain": "metaverse",
+  "definition": "Cross-platform asset exchange is the capability to move 3D models, textures, and other digital assets between different metaverse platforms, engines, and tools while preserving fidelity and usability. It depends on shared 3D file formats and import/export pipelines that map assets onto each platform's runtime. It is a prerequisite for interoperable virtual worlds and portable user content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:standard-format-support",
+        "label": "Standard Format Support"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "standard-format-support",
+      "label": "Standard Format Support"
+    }
+  ]
+}

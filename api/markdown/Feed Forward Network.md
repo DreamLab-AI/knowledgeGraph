@@ -1,4 +1,5 @@
 public:: true
+alias:: Feed-Forward Network
 
 # Feed Forward Network
 ```json-ld
@@ -295,12 +296,12 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:differentiable-programming",
-      "label": "Differentiable Programming"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
-      "@id": "urn:ngm:class:parametric-model",
-      "label": "Parametric Model"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     }
   ],
   "relations": {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Reasoning models are [[Large Language Models]] that produce explicit intermediate reasoning before answering, spending inference-time compute to improve accuracy and underpinning many [[Frontier Models]].
+- ### Content
+  - These models are usually trained with reinforcement learning against checkable rewards, learning to plan, self-check, and backtrack within a long chain of thought. The approach excels on mathematics, competitive coding, and scientific reasoning, at the cost of higher latency and token consumption per query.

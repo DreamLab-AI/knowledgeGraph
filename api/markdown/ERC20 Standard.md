@@ -1,4 +1,5 @@
 public:: true
+alias:: ERC-20 Standard
 
 # ERC20 Standard
 ```json-ld

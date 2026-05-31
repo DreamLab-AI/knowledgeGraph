@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:3e29b19476b4294734808571ac517e5855091500899f6f7d0eeec8244fcee220",
+  "title": "Stellar",
+  "slug": "stellar",
+  "public": true,
+  "classIri": "urn:ngm:class:stellar",
+  "domain": "metaverse",
+  "definition": "Stellar is an open blockchain network and protocol designed for fast, low-cost transfer and exchange of digital representations of value, including fiat-backed tokens and stablecoins.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

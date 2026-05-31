@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:journal-of-machine-learning-research",
+  "title": "Journal of Machine Learning Research",
+  "slug": "journal-of-machine-learning-research",
+  "public": true,
+  "classIri": "urn:ngm:class:journal-of-machine-learning-research",
+  "domain": "ai",
+  "definition": "The Journal of Machine Learning Research (JMLR) is a peer-reviewed, open-access scientific journal publishing original research in all areas of machine learning. Founded in 2000, it is among the most influential venues in the field and freely disseminates articles without author or reader fees. JMLR also publishes software and benchmark contributions that establish methodological standards for the community.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

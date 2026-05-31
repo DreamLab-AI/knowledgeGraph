@@ -16,8 +16,8 @@
       "label": "Architectural Layer"
     },
     {
-      "id": "urn:ngm:class:software-layer",
-      "label": "Software Layer"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -685,6 +685,10 @@
       "label": "Agent Event Stream"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "audit-trail",
       "label": "Audit Trail"
     },
@@ -729,12 +733,20 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
       "slug": "construction-digital-twin",
       "label": "Construction Digital Twin"
     },
     {
       "slug": "content-addressing",
       "label": "Content Addressing"
+    },
+    {
+      "slug": "content-layer",
+      "label": "Content Layer"
     },
     {
       "slug": "conversion-pipeline",
@@ -857,6 +869,10 @@
       "label": "Hyper personalisation"
     },
     {
+      "slug": "identifier-layer",
+      "label": "Identifier Layer"
+    },
+    {
       "slug": "intelligent-virtual-entity",
       "label": "Intelligent Virtual Entity"
     },
@@ -975,6 +991,10 @@
     {
       "slug": "training-data",
       "label": "Training Data"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
     },
     {
       "slug": "trust-framework-policy",

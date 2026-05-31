@@ -193,7 +193,7 @@
         "label": "IPFS"
       },
       {
-        "id": "urn:ngm:class:prediction-market",
+        "id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       },
       {
@@ -253,7 +253,7 @@
         "label": "EIP-712"
       },
       {
-        "id": "urn:ngm:class:erc20-votes",
+        "id": "urn:ngm:class:erc-20-votes",
         "label": "ERC20Votes"
       },
       {

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:3dd38d59393cf290d84274054aa1c1f1b320ad80754cc5927d95513bc00bab9b",
+  "title": "Performance Capture",
+  "slug": "performance-capture",
+  "public": true,
+  "classIri": "urn:ngm:class:performance-capture",
+  "domain": "metaverse",
+  "definition": "Performance capture records an actor's full body, facial and sometimes finger movement simultaneously so that a single performance drives a digital character's motion and expression.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    }
+  ]
+}

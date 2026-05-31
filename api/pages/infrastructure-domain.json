@@ -232,6 +232,10 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     },
@@ -294,6 +298,10 @@
     {
       "slug": "distributed-ledger-technology-dlt",
       "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
     },
     {
       "slug": "domain-ontology",
@@ -384,8 +392,20 @@
       "label": "Edge Orchestration"
     },
     {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
     },
     {
       "slug": "fault-tolerance",
@@ -484,6 +504,10 @@
       "label": "Networkcomponent"
     },
     {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
       "slug": "networking-layer",
       "label": "Networking Layer"
     },
@@ -542,6 +566,10 @@
     {
       "slug": "storage-layer",
       "label": "Storage Layer"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
     },
     {
       "slug": "synthetic-data-generator",

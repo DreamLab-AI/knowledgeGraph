@@ -1,4 +1,5 @@
 public:: true
+alias:: UsabilityTesting
 
 # Usability Testing
 ```json-ld

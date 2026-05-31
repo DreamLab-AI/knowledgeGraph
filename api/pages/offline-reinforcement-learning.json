@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:a2ae3e20ab4b3456efe9e0b8b56bc10a8a9717b13374833781a9ec7f952217e1",
+  "title": "Offline Reinforcement Learning",
+  "slug": "offline-reinforcement-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:offline-reinforcement-learning",
+  "domain": "machine-learning",
+  "definition": "Offline reinforcement learning trains a policy from a fixed dataset of previously collected experience without further interaction with the environment. It avoids online exploration, which makes it suitable where data collection is costly or unsafe.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:learning-from-demonstration",
+        "label": "Learning from Demonstration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

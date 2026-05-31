@@ -105,8 +105,16 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
     },
     {
       "slug": "music-and-audio",

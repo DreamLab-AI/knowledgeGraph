@@ -1,4 +1,5 @@
 public:: true
+alias:: RoboticsDomain
 
 # Robotics Domain
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:satellite-monitoring",
+  "title": "Satellite Monitoring",
+  "slug": "satellite-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:satellite-monitoring",
+  "domain": "supply-chain",
+  "definition": "Satellite monitoring is the use of orbital remote-sensing platforms to observe and measure conditions on the Earth's surface over time. In sustainability and supply-chain contexts it supports verification of deforestation, land use, emissions plumes, and facility activity using multispectral, radar, and thermal imagery. The resulting geospatial data feeds carbon accounting, compliance, and ethical-sourcing assessments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

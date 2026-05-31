@@ -1,4 +1,5 @@
 public:: true
+alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-compliance
 
 # AML KYC Compliance
 ```json-ld
@@ -767,12 +768,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:anti-financial-crime-regime",
-      "label": "Anti-Financial Crime Regime"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "@id": "urn:ngm:class:customer-onboarding-discipline",
-      "label": "Customer Onboarding Discipline"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

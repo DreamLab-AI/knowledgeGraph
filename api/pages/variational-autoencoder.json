@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:3fb76ec1edb17091aa0e04cb340282c2bb7ba6e935007bc4084d4bbd6c4e8d92",
+  "title": "Variational Autoencoder",
+  "slug": "variational-autoencoder",
+  "public": true,
+  "classIri": "urn:ngm:class:variational-autoencoder",
+  "domain": "deep-learning",
+  "definition": "A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound on the data likelihood.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autoencoder",
+      "label": "Autoencoder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

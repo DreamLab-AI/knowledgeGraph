@@ -536,7 +536,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:gpu-clusters",
+        "@id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Clusters"
       },
       {
@@ -586,7 +586,7 @@ public:: true
         "label": "Code Generation"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -662,7 +662,7 @@ public:: true
         "label": "Cognitive AI"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],
@@ -706,11 +706,11 @@ public:: true
         "label": "Agents"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -718,11 +718,11 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:individual:google-deep-mind",
+        "@id": "urn:ngm:class:google-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "@id": "urn:ngm:individual:grok",
+        "@id": "urn:ngm:class:grok",
         "label": "Grok"
       }
     ],
@@ -736,7 +736,7 @@ public:: true
         "label": "Chinchilla Scaling Laws"
       },
       {
-        "@id": "urn:ngm:class:responsible-scaling-policies",
+        "@id": "urn:ngm:class:responsible-scaling-policy",
         "label": "Responsible Scaling Policies"
       },
       {

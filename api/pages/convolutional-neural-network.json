@@ -105,6 +105,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },
@@ -141,6 +145,10 @@
       "label": "Optical Sensor Array"
     },
     {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },
@@ -165,8 +173,16 @@
       "label": "Transformers"
     },
     {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
     },
     {
       "slug": "ai-core-concepts",

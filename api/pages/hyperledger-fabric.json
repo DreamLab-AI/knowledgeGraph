@@ -154,6 +154,10 @@
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
     },

@@ -1,0 +1,4 @@
+- ### Definition
+  - A disclosure framework helping organisations report nature- and biodiversity-related financial risks and dependencies, complementing climate-focused regimes. It is increasingly referenced within [[ESG Reporting]] practice.
+- ### Content
+  - TNFD recommendations follow the four pillars of governance, strategy, risk and impact management, and metrics and targets, paralleling TCFD. Adoption is voluntary but accelerating as regulators and investors demand standardised nature accountability alongside carbon disclosures.

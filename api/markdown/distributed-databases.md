@@ -1,0 +1,4 @@
+- ### Definition
+  - A distributed database spreads data across networked nodes with partitioning and replication while exposing one logical store. It can use [[CRDT]] structures for conflict-free replication and is a key application of [[Distributed Computing]].
+- ### Content
+  - Architectures range from sharded SQL and NewSQL (e.g. Spanner, CockroachDB) to eventually consistent NoSQL and CRDT-based stores. Consistency models span linearizable to eventual; designers tune replication factor, partitioning keys, and consensus (Raft, Paxos) against latency, availability, and operational complexity.

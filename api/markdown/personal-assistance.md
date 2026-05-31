@@ -1,0 +1,4 @@
+- ### Definition
+  - Personal assistance is an AI application where an agent acts on a user's behalf for daily tasks, supported by general-purpose [[Agents]] and by [[Computer Use and Browser Agents]].
+- ### Content
+  - These assistants pair language understanding with calendars, email, search, and device APIs, maintaining user context and preferences to personalise actions. As computer-use and browser-control capabilities mature, personal assistance shifts from conversational Q&A toward executing real-world tasks autonomously, raising new requirements for permissioning, privacy, and reliability.

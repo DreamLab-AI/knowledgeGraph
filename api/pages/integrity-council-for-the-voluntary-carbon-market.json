@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b2f30ab5d91edba23125a806671b595a9f316663525bc84c97c95dcb92a70a3f",
+  "title": "Integrity Council for the Voluntary Carbon Market",
+  "slug": "integrity-council-for-the-voluntary-carbon-market",
+  "public": true,
+  "classIri": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market",
+  "domain": "governance",
+  "definition": "An independent governance body that sets and maintains quality standards for credits traded in the voluntary carbon market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

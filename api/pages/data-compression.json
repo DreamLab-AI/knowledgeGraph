@@ -79,6 +79,10 @@
     {
       "slug": "blockchain-scalability",
       "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
     }
   ]
 }

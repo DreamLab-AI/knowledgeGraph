@@ -98,7 +98,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:audit-mechanisms",
+        "@id": "urn:ngm:class:audit-mechanism",
         "label": "Audit Mechanisms"
       },
       {

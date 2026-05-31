@@ -1,4 +1,5 @@
 public:: true
+alias:: PowerSupply
 
 # Power Supply
 ```json-ld

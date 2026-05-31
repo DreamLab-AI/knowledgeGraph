@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:edcf10f89104bf3e687fcef214010248fb0349df863d268dfe31faa178712fd5",
+  "title": "Sablier",
+  "slug": "sablier",
+  "public": true,
+  "classIri": "urn:ngm:class:sablier",
+  "domain": "blockchain",
+  "definition": "An Ethereum protocol for token streaming that pays a recipient continuously over time by releasing funds from a smart contract at a defined rate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

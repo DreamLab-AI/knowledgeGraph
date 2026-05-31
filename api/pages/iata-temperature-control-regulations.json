@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:iata-temperature-control-regulations",
+  "title": "IATA Temperature Control Regulations",
+  "slug": "iata-temperature-control-regulations",
+  "public": true,
+  "classIri": "urn:ngm:class:iata-temperature-control-regulations",
+  "domain": "supply-chain",
+  "definition": "The IATA Temperature Control Regulations (TCR) are the International Air Transport Association's standards governing the handling, packaging, labelling, and documentation of temperature-sensitive air cargo such as pharmaceuticals, vaccines, and perishables. They define acceptable temperature ranges, qualified packaging, and chain-of-custody requirements to preserve product integrity throughout air transport. Compliance is mandatory for carriers and shippers operating in regulated cold-chain logistics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    }
+  ]
+}

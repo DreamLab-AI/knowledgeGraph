@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b3d0b674b24331bb1d09570c51488a18603a265eb1d32c48c366a7cb84e2fe76",
+  "title": "Hardhat",
+  "slug": "hardhat",
+  "public": true,
+  "classIri": "urn:ngm:class:hardhat",
+  "domain": "blockchain",
+  "definition": "Hardhat is a development environment for Ethereum software, providing tools for compiling, testing, and debugging smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:solidity",
+      "label": "Solidity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

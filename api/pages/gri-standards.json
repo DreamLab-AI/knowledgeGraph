@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:gri-standards",
+  "title": "GRI Standards",
+  "slug": "gri-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:gri-standards",
+  "domain": "governance",
+  "definition": "The GRI Standards are a globally adopted framework published by the Global Reporting Initiative for organisations to disclose their economic, environmental, and social impacts. They provide a modular set of universal, sector, and topic standards that standardise sustainability and ESG reporting for comparability across firms. Widely referenced by regulators and investors, they form a backbone of corporate non-financial disclosure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

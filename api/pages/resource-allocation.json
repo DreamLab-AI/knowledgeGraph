@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:resource-allocation",
+  "title": "Resource Allocation",
+  "slug": "resource-allocation",
+  "public": true,
+  "classIri": "urn:ngm:class:resource-allocation",
+  "domain": "blockchain",
+  "definition": "Resource allocation is the economic and computational mechanism by which scarce resources, such as compute, capital, bandwidth, or stake, are distributed among competing uses or participants. In market and protocol contexts it determines who receives what and on what terms, often via pricing, auctions, or scheduling policies. Efficient allocation underpins value transfer and incentive alignment across economic and distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "id": "urn:ngm:class:economics-domain",
+        "label": "Economics Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

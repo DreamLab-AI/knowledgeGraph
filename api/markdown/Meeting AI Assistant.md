@@ -383,8 +383,8 @@ public:: true
       "label": "AI Agent"
     },
     {
-      "@id": "urn:ngm:class:collaboration-software",
-      "label": "Collaboration Software"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

@@ -125,12 +125,20 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
       "slug": "ai-risk",
       "label": "AI Risk"
     },
     {
-      "slug": "ai-grounded-domain",
-      "label": "AI-GroundedDomain"
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
     },
     {
       "slug": "aiapplications",
@@ -143,6 +151,10 @@
     {
       "slug": "activation-function",
       "label": "Activation Function"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
     },
     {
       "slug": "artificial-intelligence",
@@ -161,6 +173,10 @@
       "label": "Attention Mechanism"
     },
     {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
       "slug": "backpropagation",
       "label": "Backpropagation"
     },
@@ -177,8 +193,16 @@
       "label": "Bias"
     },
     {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
       "slug": "computation-and-intelligence-domain",
       "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
     },
     {
       "slug": "computer-vision",
@@ -193,8 +217,16 @@
       "label": "Convolutional Neural Network"
     },
     {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
       "slug": "creative-media-domain",
       "label": "Creative Media Domain"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
     },
     {
       "slug": "data-lake",
@@ -221,6 +253,10 @@
       "label": "Epoch"
     },
     {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     },
@@ -241,6 +277,14 @@
       "label": "GPT"
     },
     {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
       "slug": "gradient-clipping",
       "label": "Gradient Clipping"
     },
@@ -251,6 +295,14 @@
     {
       "slug": "inference",
       "label": "Inference"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
     },
     {
       "slug": "layer-normalisation",
@@ -265,6 +317,10 @@
       "label": "Loss Function"
     },
     {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
       "slug": "machine-learning",
       "label": "Machine Learning"
     },
@@ -275,6 +331,10 @@
     {
       "slug": "medical-ai",
       "label": "Medical AI"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
     },
     {
       "slug": "model-capacity",
@@ -329,6 +389,10 @@
       "label": "NPU"
     },
     {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
       "slug": "neuromorphic-chip",
       "label": "Neuromorphic Chip"
     },
@@ -367,6 +431,10 @@
     {
       "slug": "semantic-segmentation",
       "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
     },
     {
       "slug": "supervised-fine-tuning",

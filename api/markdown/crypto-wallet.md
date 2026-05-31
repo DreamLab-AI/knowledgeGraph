@@ -1,0 +1,4 @@
+- ### Definition
+  - A crypto wallet manages the private keys that authorise control of on-chain assets and signs blockchain transactions. It is a core component of the [[Web3]] stack and often anchors a user's [[Web3 Domain]] identity.
+- ### Content
+  - Wallets generate and protect key pairs, derive addresses, and expose signing interfaces to dApps, with non-custodial designs placing key custody entirely with the user. Security hinges on seed-phrase protection, hardware isolation, and increasingly on account abstraction and social recovery, since loss or theft of keys is irreversible.

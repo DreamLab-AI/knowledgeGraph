@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:59c3776e7a8eb050374ea4d3a2a7435d6451523c07a002b8f4e57d5d1d8606ce",
+  "title": "EIP-2981",
+  "slug": "eip-2981",
+  "public": true,
+  "classIri": "urn:ngm:class:eip-2981",
+  "domain": "standards",
+  "definition": "An Ethereum standard defining a royalty interface that allows non-fungible and multi-token contracts to signal a royalty amount and recipient for a sale. It standardises retrieval of royalty information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "smart-royalty-contract",
+      "label": "Smart Royalty Contract"
+    }
+  ]
+}

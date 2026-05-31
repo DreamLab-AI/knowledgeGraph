@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:6b8a6901ec9fb677b77cfe0a7fbe764ef81d4072fcc7bf30251b5f9ea7ef2c45",
+  "title": "Cooling System",
+  "slug": "cooling-system",
+  "public": true,
+  "classIri": "urn:ngm:class:cooling-system",
+  "domain": "computing",
+  "definition": "A system that removes heat from equipment to keep it within safe operating temperatures. In computing it covers air, liquid, and immersion methods used in servers and data centres.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ]
+}

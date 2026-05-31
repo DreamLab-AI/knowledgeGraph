@@ -1,0 +1,4 @@
+- ### Definition
+  - KYC/AML is the [[Regulatory Compliance]] regime for customer verification and anti-money-laundering monitoring; it is supported by [[Distributed Identity]] for reusable verified credentials and by [[Blockchain Analysis]] for transaction risk scoring.
+- ### Content
+  - Obligations stem from frameworks such as the FATF Recommendations and national transposition laws, requiring identity proofing, beneficial-ownership checks, ongoing monitoring and reporting of suspicious activity. In digital-asset markets, KYC/AML drives demand for reusable identity attestations and on-chain analytics that flag high-risk addresses without compromising legitimate privacy.

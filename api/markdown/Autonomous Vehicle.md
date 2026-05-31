@@ -1,4 +1,5 @@
 public:: true
+alias:: Autonomous Vehicles
 
 # Autonomous Vehicle
 ```json-ld

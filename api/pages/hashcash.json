@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:64643d0ed92e325da88016b08999802b3ad84bd111f1bb7a0641c2eb632a8b0a",
+  "title": "Hashcash",
+  "slug": "hashcash",
+  "public": true,
+  "classIri": "urn:ngm:class:hashcash",
+  "domain": "cryptographic",
+  "definition": "A proof-of-work scheme that requires a sender to compute a partial hash collision, originally proposed to limit email spam and later adapted for Bitcoin mining.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

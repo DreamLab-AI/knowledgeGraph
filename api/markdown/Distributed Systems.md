@@ -1,4 +1,5 @@
 public:: true
+alias:: DistributedSystems
 
 # Distributed Systems
 ```json-ld

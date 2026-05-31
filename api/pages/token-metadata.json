@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:token-metadata",
+  "title": "Token Metadata",
+  "slug": "token-metadata",
+  "public": true,
+  "classIri": "urn:ngm:class:token-metadata",
+  "domain": "blockchain",
+  "definition": "Token metadata is the structured descriptive data associated with a blockchain token, typically including attributes such as name, description, image references, traits, and provenance. For non-fungible tokens it is commonly stored as a JSON document referenced by a tokenURI and often hosted on decentralised storage such as IPFS to preserve immutability and addressability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Blockchain Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    }
+  ]
+}

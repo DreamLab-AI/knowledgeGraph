@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:db10e5f3edd6b9a1c2b8bb5cd65af244a780a34f3b06b5692ca2a27536055c0c",
+  "title": "Integration Layer",
+  "slug": "integration-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:integration-layer",
+  "domain": "integration",
+  "definition": "The Integration Layer is the cross-cutting stratum that connects otherwise independent systems so they can exchange data and invoke each other's functions. It sits above transport and protocol concerns and below the applications that orchestrate combined behaviour. It contains adapters, connectors, message translation, and the routing that mediates between heterogeneous endpoints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:apilayer",
+        "label": "APILayer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "enterprise-integration-patterns",
+      "label": "Enterprise Integration Patterns"
+    },
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "Communication Layer"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:81d0fabe39830f896a1eab244db31c4b2aee2c9bad7b2785c27c6df95822c6a8",
+  "title": "Exoskeleton",
+  "slug": "exoskeleton",
+  "public": true,
+  "classIri": "urn:ngm:class:exoskeleton",
+  "domain": "robotics",
+  "definition": "An exoskeleton is a wearable robotic structure that augments or supports human movement by applying forces in parallel with the wearer's limbs, used for assistance, rehabilitation and load support.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuator",
+      "label": "Actuator"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "assistive-robotics",
+      "label": "Assistive Robotics"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

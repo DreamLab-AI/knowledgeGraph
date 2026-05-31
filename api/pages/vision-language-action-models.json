@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:vision-language-action-models",
+  "title": "Vision-Language-Action Models",
+  "slug": "vision-language-action-models",
+  "public": true,
+  "classIri": "urn:ngm:class:vision-language-action-models",
+  "domain": "ai",
+  "definition": "Vision-language-action (VLA) models are foundation models that jointly process visual observations and natural-language instructions to produce executable action sequences for embodied agents such as robots. Extending vision-language models with an action-generation head, VLAs are trained on large datasets pairing perception and instructions with demonstrated behaviour, enabling generalisation across tasks, objects, and embodiments. They represent a convergence of multimodal learning and robotics, aiming for generalist policies that follow open-ended commands rather than executing narrowly scripted skills.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vision-language-model",
+      "label": "Vision-Language Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

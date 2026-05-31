@@ -343,8 +343,8 @@ public:: true
       "label": "Data Sovereignty"
     },
     {
-      "@id": "urn:ngm:class:decentralised-protocol",
-      "label": "Decentralised Protocol"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Multi-hop reasoning chains several intermediate inferences or retrieved facts to reach an answer no single source provides. It is enabled by [[Knowledge Graphing]] and by [[Retrieval-Augmented Generation (RAG)]].
+- ### Content
+  - Solving multi-hop queries requires decomposing the question, retrieving evidence for each hop, and composing the partial results, often iteratively. Knowledge graphs make the hops explicit as traversable edges, while iterative or agentic RAG performs successive retrieval steps to assemble the reasoning chain.

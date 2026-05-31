@@ -133,6 +133,10 @@
       "label": "Ray Tracing"
     },
     {
+      "slug": "tele-060-instant-ngp",
+      "label": "TELE-060-instant-ngp"
+    },
+    {
       "slug": "topological-map",
       "label": "Topological Map"
     },
@@ -143,6 +147,10 @@
     {
       "slug": "virtual-production",
       "label": "Virtual Production"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
     }
   ]
 }

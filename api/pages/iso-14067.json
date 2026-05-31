@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:iso-14067",
+  "title": "ISO 14067",
+  "slug": "iso-14067",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-14067",
+  "domain": "supply-chain",
+  "definition": "ISO 14067 is an international standard that specifies principles, requirements, and guidelines for quantifying and reporting the carbon footprint of a product based on life-cycle assessment. It defines how greenhouse-gas emissions associated with a product's life cycle are calculated and communicated, expressed in CO2-equivalent. It provides the methodological backbone for credible product-level carbon-footprint measurement and disclosure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

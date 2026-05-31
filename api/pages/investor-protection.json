@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ecb73898b271fdb2772fbff47ab1cd4f8213f43735facdbbfb843ca9710a7e1f",
+  "title": "Investor Protection",
+  "slug": "investor-protection",
+  "public": true,
+  "classIri": "urn:ngm:class:investor-protection",
+  "domain": "governance",
+  "definition": "Investor protection comprises the rules and mechanisms designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-requirements",
+        "label": "Regulatory Requirements"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "https-www-iosco-org",
+      "label": "https://www.iosco.org/"
+    },
+    {
+      "slug": "https-www-esma-europa-eu-investor-corner",
+      "label": "https://www.esma.europa.eu/investor-corner"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

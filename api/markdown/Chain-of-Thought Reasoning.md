@@ -1,4 +1,5 @@
 public:: true
+alias:: Chain of Thought Reasoning
 
 # chain-of-thought reasoning
 ```json-ld

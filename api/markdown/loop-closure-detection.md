@@ -1,0 +1,4 @@
+- ### Definition
+  - Loop closure detection recognises when a moving agent revisits a known place, adding map constraints that correct drift. It is a key part of building a consistent [[Topological Map]] and supports reliable [[Long-Range Navigation]].
+- ### Content
+  - Appearance-based methods such as bag-of-visual-words and learned descriptors compare current observations against a database of past keyframes. False positives can corrupt a map catastrophically, so detection is paired with geometric verification and robust back-end optimisation before a closure is accepted.

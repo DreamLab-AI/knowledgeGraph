@@ -37,12 +37,40 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
       "slug": "credential-format-standard",
       "label": "Credential Format Standard"
     },
     {
       "slug": "data-format-standard",
       "label": "Data Format Standard"
+    },
+    {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
+      "slug": "global-digital-finance",
+      "label": "Global Digital Finance"
+    },
+    {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
+      "slug": "oma-3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "sae-j-3016",
+      "label": "SAE J3016"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
     }
   ]
 }

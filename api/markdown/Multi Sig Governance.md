@@ -1,4 +1,5 @@
 public:: true
+alias:: Multi-Sig Governance
 
 # Multi Sig Governance
 ```json-ld
@@ -463,8 +464,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:committee-governance",
-      "label": "Committee Governance"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     }
   ],
   "relations": {
@@ -624,7 +625,7 @@ public:: true
         "label": "MPC Wallet"
       },
       {
-        "@id": "urn:ngm:class:mu-sig2",
+        "@id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {
@@ -704,7 +705,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

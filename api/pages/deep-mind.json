@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:a062bbfed743076c8c66dffc394f5a29f0b307f9707e0a4a7f8d2e17bfcb3341",
+  "title": "DeepMind",
+  "slug": "deep-mind",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-mind",
+  "domain": "artificial-intelligence",
+  "definition": "DeepMind is an artificial intelligence research laboratory owned by Google, known for work on reinforcement learning and systems such as AlphaGo and AlphaFold. It is based in London.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "https-deepmind-google",
+      "label": "https://deepmind.google"
+    },
+    {
+      "slug": "https-deepmind-google-research",
+      "label": "https://deepmind.google/research/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

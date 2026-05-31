@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:d53702ad723fe56479f283ae9e371d668205431a4a741f27c2f220f725ae7c1d",
+  "title": "TELE-053-volumetric-video-conferencing",
+  "slug": "tele-053-volumetric-video-conferencing",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-053-volumetric-video-conferencing",
+  "domain": "metaverse",
+  "definition": "Volumetric video conferencing is real-time meeting communication in which participants are captured as three-dimensional representations and rendered so others can view them from arbitrary angles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    }
+  ]
+}

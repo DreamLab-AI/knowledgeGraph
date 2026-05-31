@@ -535,12 +535,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:blockchain-governance-risk",
-      "label": "Blockchain Governance Risk"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:concentration-risk",
-      "label": "Concentration Risk"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {
@@ -732,7 +732,7 @@ public:: true
         "label": "51% Attack"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -740,7 +740,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       },
       {

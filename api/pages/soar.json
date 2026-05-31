@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:soar",
+  "title": "SOAR",
+  "slug": "soar",
+  "public": true,
+  "classIri": "urn:ngm:class:soar",
+  "domain": "security",
+  "definition": "SOAR (Security Orchestration, Automation and Response) is a class of platforms that coordinate detection tools, automate repetitive incident-handling workflows, and orchestrate response actions across a security stack through codified playbooks. It ingests alerts from disparate sources, enriches them with context, and executes graded responses to reduce analyst workload and mean time to respond. The acronym also denotes Soar, a cognitive architecture for modelling general intelligence, but in security contexts the orchestration sense dominates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

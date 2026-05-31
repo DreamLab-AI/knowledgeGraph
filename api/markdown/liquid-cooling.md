@@ -1,0 +1,4 @@
+- ### Definition
+  - Liquid cooling circulates coolant to extract heat from servers far more efficiently than air; it is a key part of modern [[Compute Infrastructure]] and contributes to data-centre [[Sustainability]] by lowering cooling energy.
+- ### Content
+  - Direct-to-chip systems route coolant through cold plates on the hottest components, while immersion submerges entire boards in dielectric fluid. Both reduce Power Usage Effectiveness, enable rack densities beyond air-cooling limits, and allow waste-heat reuse.

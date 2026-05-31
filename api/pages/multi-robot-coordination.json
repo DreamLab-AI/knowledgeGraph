@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:multi-robot-coordination",
+  "title": "Multi-Robot Coordination",
+  "slug": "multi-robot-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-robot-coordination",
+  "domain": "robotics",
+  "definition": "Multi-robot coordination is the set of methods that enable multiple robots to act together coherently toward shared or individual goals, covering task allocation, collision avoidance, formation control, and communication. It addresses centralised and decentralised architectures and trades off optimality against scalability and robustness. Applications include warehouse fleets, drone swarms, and cooperative exploration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gps",
+      "label": "Gps"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

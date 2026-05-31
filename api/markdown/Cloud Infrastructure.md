@@ -1,4 +1,5 @@
 public:: true
+alias:: CloudInfrastructure
 
 # Cloud Infrastructure
 ```json-ld

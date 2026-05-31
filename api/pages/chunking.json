@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:chunking",
+  "title": "Chunking",
+  "slug": "chunking",
+  "public": true,
+  "classIri": "urn:ngm:class:chunking",
+  "domain": "ai",
+  "definition": "Chunking is the process of segmenting source documents into smaller, semantically coherent passages before they are embedded and indexed for retrieval-augmented generation. Strategies range from fixed-size and overlapping windows to recursive, sentence-aware, and semantic chunking that respects document structure. It matters because chunk size and boundaries directly govern retrieval precision and the relevance of context supplied to a language model, making chunking a primary lever for RAG quality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:gpts-and-custom-assistants",
+        "label": "GPTs and Custom Assistants"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    }
+  ]
+}

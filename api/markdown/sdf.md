@@ -1,0 +1,4 @@
+- ### Definition
+  - SDF is an XML model format for robots and worlds; it is consumed when building a [[Kinematics Model]] and to describe a [[Robotics Platform]] for simulation.
+- ### Content
+  - SDF describes a tree of links connected by joints, each with inertial, collision, and visual elements, plus sensors, plugins, and full world definitions. It is more expressive than URDF for full-world simulation, and is the native format of the Gazebo and Ignition ecosystems.

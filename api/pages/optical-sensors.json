@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:optical-sensors",
+  "title": "Optical Sensors",
+  "slug": "optical-sensors",
+  "public": true,
+  "classIri": "urn:ngm:class:optical-sensors",
+  "domain": "robotics",
+  "definition": "Optical Sensors are devices that detect and convert light, across visible, infrared, or other wavelengths, into electrical signals for measurement or imaging. They include cameras, photodiodes, depth sensors, and structured-light or time-of-flight units used to capture scene geometry and motion. In capture and recognition systems they provide the primary visual input from which 3D structure, pose, and identity are inferred.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      },
+      {
+        "id": "urn:ngm:class:human-capture-and-recognition",
+        "label": "Human Capture and Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    }
+  ]
+}

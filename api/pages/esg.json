@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ae64df8f62dd0ee1d0d1805b9c74ff6685fe286f1aa5a6402f19b14b4c9b60cc",
+  "title": "ESG",
+  "slug": "esg",
+  "public": true,
+  "classIri": "urn:ngm:class:esg",
+  "domain": "governance",
+  "definition": "Environmental, social and governance criteria used to evaluate the sustainability and ethical impact of an organisation's operations and investments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

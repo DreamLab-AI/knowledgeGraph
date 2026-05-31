@@ -1,4 +1,5 @@
 public:: true
+alias:: MotionCapture
 
 # Motion Capture
 ```json-ld
@@ -355,8 +356,8 @@ public:: true
       "label": "Animation"
     },
     {
-      "@id": "urn:ngm:class:biomechanics",
-      "label": "Biomechanics"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     }
   ],
   "relations": {

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:0fa2d92f3ca77738deaba6a256bbe876918e7bf74f3b0d8724144125b30ddf62",
+  "title": "Ondo Finance",
+  "slug": "ondo-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:ondo-finance",
+  "domain": "blockchain",
+  "definition": "Ondo Finance is a company that issues tokenised versions of traditional financial products, including funds holding US Treasury securities, on public blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:0be7b84401ebbe1e723d33d3bed607590b4007364818e37b3de0bae66672c2d2",
+  "title": "Layer Normalization",
+  "slug": "layer-normalization",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-normalization",
+  "domain": "general",
+  "definition": "A neural network technique that normalises the activations across the features of a single training example, stabilising and accelerating training. It is widely used in transformer architectures where it normalises each token's representation independently of the batch.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "https-arxiv-org-abs-1607-06450",
+      "label": "https://arxiv.org/abs/1607.06450"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

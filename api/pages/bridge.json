@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:c95303974dee8b3bd6885cc6e8a0dccc9a14e5a6b0a4ca171203625c2827ae52",
+  "title": "Bridge",
+  "slug": "bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:bridge",
+  "domain": "blockchain",
+  "definition": "A protocol that transfers assets or messages between separate ledgers by locking, burning, or attesting value on one chain and reproducing a representation on another.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "cross-chain-asset-transfer",
+      "label": "Cross Chain Asset Transfer"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cross-chain-messaging",
+      "label": "Cross-Chain Messaging"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
+      "slug": "hyperlane",
+      "label": "Hyperlane"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

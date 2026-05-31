@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:e498e9acf757d7278b13a8479a06581b95cdc0b64092c3430b61267f66361c72",
+  "title": "Graphics Processing",
+  "slug": "graphics-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:graphics-processing",
+  "domain": "general",
+  "definition": "Graphics processing is the computation that transforms scene descriptions into rendered images, covering geometry transformation, shading, rasterisation and output to a display.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-art-application",
+      "label": "Digital Art Application"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    }
+  ]
+}

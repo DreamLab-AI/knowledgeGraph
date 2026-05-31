@@ -123,6 +123,10 @@
       "label": "3D File Format"
     },
     {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
       "slug": "universal-manifest",
       "label": "Universal Manifest"
     }

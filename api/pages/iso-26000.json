@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:0f6c7e3c4af607f72b247579b461e08cd813282b28b0d492fa1ffcc795a3bb84",
+  "title": "ISO 26000",
+  "slug": "iso-26000",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-26000",
+  "domain": "standards",
+  "definition": "ISO 26000 provides guidance on social responsibility for organisations, covering principles and core subjects without specifying certifiable requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    }
+  ]
+}

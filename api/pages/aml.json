@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:5c6015895d214a2f3174dcc3febd7127523508c912a477a0bd0006156c34d659",
+  "title": "AML",
+  "slug": "aml",
+  "public": true,
+  "classIri": "urn:ngm:class:aml",
+  "domain": "artificial-intelligence",
+  "definition": "Anti-money laundering: the set of regulations, controls and analytical methods used by financial institutions to detect and prevent the disguising of illicit funds as legitimate income.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

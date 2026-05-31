@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:reference-signal",
+  "title": "Reference Signal",
+  "slug": "reference-signal",
+  "public": true,
+  "classIri": "urn:ngm:class:reference-signal",
+  "domain": "robotics",
+  "definition": "A reference signal is the commanded target value, or setpoint trajectory, that a control system attempts to make its output follow over time. The controller computes the error between the reference and the measured output and acts to drive that error to zero. The shape and feasibility of the reference signal directly determine achievable tracking performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

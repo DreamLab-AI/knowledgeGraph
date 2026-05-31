@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:0bfd737e43971231707527a2a5b436a7fc072a323c422d40015afd5b8a0c003c",
+  "title": "EIP-4337",
+  "slug": "eip-4337",
+  "public": true,
+  "classIri": "urn:ngm:class:eip-4337",
+  "domain": "standards",
+  "definition": "An Ethereum Improvement Proposal defining account abstraction through a higher-layer UserOperation mechanism, without requiring changes to the core protocol. It enables smart contract accounts with custom validation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

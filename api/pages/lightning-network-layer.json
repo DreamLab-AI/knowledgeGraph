@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:83e5641986490e79833612a4001441b421c944bc8f462c03bafc32193fdd898f",
+  "title": "Lightning Network Layer",
+  "slug": "lightning-network-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:lightning-network-layer",
+  "domain": "lightning-network",
+  "definition": "The Lightning Network Layer is a second-layer stratum that enables fast, low-cost payments off the base settlement ledger through bidirectional payment channels. It sits above the Settlement Layer, on which it anchors and finally settles, and below the application and content strata that use instant payments. It contains payment channels, routing, and channel-state management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:content-layer",
+        "label": "Content Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "content-layer",
+      "label": "Content Layer"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "hash-time-locked-contract",
+      "label": "Hash Time-Locked Contract"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

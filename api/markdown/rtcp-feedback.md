@@ -1,0 +1,4 @@
+- ### Definition
+  - RTCP feedback reports reception quality from receivers to senders during real-time streaming, a control mechanism required by [[Bandwidth Adaptation]].
+- ### Content
+  - Receiver reports carry loss, jitter, and timing statistics, while feedback messages such as NACK, PLI, and REMB signal retransmission and rate hints. Senders use this to tune bitrate, request keyframes, and respond to congestion, keeping interactive media smooth under changing network conditions.

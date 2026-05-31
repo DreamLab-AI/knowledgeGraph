@@ -1,0 +1,4 @@
+- ### Definition
+  - A BVH Acceleration Structure is the hierarchical bounding-volume tree that [[Ray Tracing]] traverses to find ray-primitive intersections without exhaustively testing every triangle.
+- ### Content
+  - BVH construction trades build time against traversal quality, with surface-area-heuristic (SAH) builders producing high-quality trees for static scenes and faster linear BVH (LBVH) builders favouring dynamic content. Hardware ray-tracing units in contemporary GPUs include dedicated BVH traversal logic, making the structure central to real-time path tracing.

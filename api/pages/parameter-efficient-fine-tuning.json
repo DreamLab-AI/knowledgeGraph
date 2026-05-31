@@ -108,6 +108,10 @@
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "low-rank-adaptation",
+      "label": "Low-Rank Adaptation"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

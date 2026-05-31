@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:0f41b98e6b551ea4c1deaa665389308ef39c423f61d593f457239ddd83c79f64",
+  "title": "ISO 9283 Manipulating Industrial Robots Performance Criteria",
+  "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9283-manipulating-industrial-robots-performance-criteria",
+  "domain": "standards",
+  "definition": "An ISO standard specifying performance criteria and related test methods for manipulating industrial robots. It defines how to measure characteristics such as pose accuracy and repeatability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "robot-link",
+      "label": "RobotLink"
+    }
+  ]
+}

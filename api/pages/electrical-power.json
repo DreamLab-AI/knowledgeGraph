@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:electrical-power",
+  "title": "Electrical Power",
+  "slug": "electrical-power",
+  "public": true,
+  "classIri": "urn:ngm:class:electrical-power",
+  "domain": "infrastructure",
+  "definition": "Electrical Power is the rate at which electrical energy is transferred or consumed by a system, measured in watts. It is the fundamental resource that drives compute infrastructure, robotic actuators, sensors, and communications equipment. The availability, capacity, and efficiency of electrical power are primary constraints on data-centre scale and on the autonomy of mobile and robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    }
+  ]
+}

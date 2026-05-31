@@ -109,6 +109,14 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
       "slug": "metaverse",
       "label": "Metaverse"
     },
@@ -117,8 +125,16 @@
       "label": "Neural 3D Generation"
     },
     {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
       "slug": "presence-indicator",
       "label": "Presence Indicator"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
     },
     {
       "slug": "universal-avatar",

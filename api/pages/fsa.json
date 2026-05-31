@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:f139b806dcbb1f0edbb14a45215f7e6d71d461ef28b6e5b8e23bc6da288e789d",
+  "title": "FSA",
+  "slug": "fsa",
+  "public": true,
+  "classIri": "urn:ngm:class:fsa",
+  "domain": "regulation",
+  "definition": "A financial regulatory authority, commonly the abbreviation for a national financial services agency that supervises banks, securities, and other financial institutions. The name refers to several distinct national regulators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -343,12 +343,12 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:bipedal-robot",
-      "label": "Bipedal Robot"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     },
     {
-      "@id": "urn:ngm:class:embodied-agent",
-      "label": "Embodied Agent"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "relations": {

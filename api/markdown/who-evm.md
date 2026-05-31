@@ -1,0 +1,4 @@
+- ### Definition
+  - WHO EVM is a World Health Organization standard for immunisation supply chains, prescribing the practices that [[Cold Chain Monitoring]] systems implement and maintained by a global health [[Standards Body]].
+- ### Content
+  - The framework scores supply-chain sites against criteria such as continuous temperature monitoring, appropriate storage capacity, and accurate stock records, producing improvement plans where thresholds are not met. EVM emphasises end-to-end temperature integrity for heat- and freeze-sensitive vaccines, driving adoption of digital data loggers and remote monitoring in low-resource settings.

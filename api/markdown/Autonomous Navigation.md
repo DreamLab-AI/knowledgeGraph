@@ -1,4 +1,5 @@
 public:: true
+alias:: AutonomousNavigation
 
 # Autonomous Navigation
 ```json-ld

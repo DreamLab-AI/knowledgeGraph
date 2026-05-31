@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:servo-drive",
+  "title": "Servo Drive",
+  "slug": "servo-drive",
+  "public": true,
+  "classIri": "urn:ngm:class:servo-drive",
+  "domain": "robotics",
+  "definition": "A servo drive is the power-electronic controller that regulates the current, velocity, and position of a servomotor by closing feedback loops on encoder or resolver signals. It converts commanded setpoints from a motion controller into precisely modulated motor currents, enabling high-bandwidth, high-accuracy actuation. It is a core component of industrial robot joints and CNC motion systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robotics Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

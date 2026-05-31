@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:65014d0100d75aa2edeb3420107f98f27992f5a3ea2fd51fc24d4f48556baec9",
+  "title": "RDF Schema",
+  "slug": "rdf-schema",
+  "public": true,
+  "classIri": "urn:ngm:class:rdf-schema",
+  "domain": "general",
+  "definition": "A World Wide Web Consortium vocabulary that extends the Resource Description Framework with the means to describe classes, properties and their hierarchies. It provides a lightweight modelling layer for typing resources and defining property domains and ranges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rdf",
+      "label": "RDF"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "vocabulary",
+      "label": "Vocabulary"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "https-www-w-3-org-tr-rdf-schema",
+      "label": "https://www.w3.org/TR/rdf-schema/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    }
+  ]
+}

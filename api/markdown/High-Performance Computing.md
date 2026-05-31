@@ -1,4 +1,5 @@
 public:: true
+alias:: High Performance Computing
 
 # High-Performance Computing
 ```json-ld

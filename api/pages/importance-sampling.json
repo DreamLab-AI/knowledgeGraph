@@ -76,6 +76,10 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
       "slug": "monte-carlo-localization",
       "label": "Monte Carlo Localization"
     },
@@ -90,6 +94,10 @@
     {
       "slug": "sampling",
       "label": "Sampling"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
     }
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:5813dc3902e12735954fedfb24f2f43fcf61518760298d48987e95e7cca07d68",
+  "title": "DID Resolution",
+  "slug": "did-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:did-resolution",
+  "domain": "identity",
+  "definition": "DID resolution is the process of taking a decentralised identifier and returning its associated DID document containing keys and service endpoints. It is defined by W3C specifications and implemented through method-specific resolvers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identifier",
+      "label": "Decentralized Identifier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification-system",
+        "label": "Identity Verification System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

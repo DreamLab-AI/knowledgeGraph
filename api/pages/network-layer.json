@@ -215,8 +215,16 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-layer",
+      "label": "Edge Layer"
     },
     {
       "slug": "edge-mesh-network",
@@ -245,6 +253,10 @@
     {
       "slug": "hardware-abstraction-layer-hal",
       "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
     },
     {
       "slug": "human-capture-and-recognition",
@@ -313,6 +325,10 @@
     {
       "slug": "testnet",
       "label": "Testnet"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
     },
     {
       "slug": "trust-infrastructure",

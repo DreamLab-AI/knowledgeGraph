@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:fbc14cf315fc4929bacab41d8b0fc9852f795ee39e642f114588520c50c97f22",
+  "title": "Verifiable Computation",
+  "slug": "verifiable-computation",
+  "public": true,
+  "classIri": "urn:ngm:class:verifiable-computation",
+  "domain": "cryptographic",
+  "definition": "Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "clarity",
+      "label": "Clarity"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

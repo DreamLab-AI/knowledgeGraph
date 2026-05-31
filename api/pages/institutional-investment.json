@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:be2aeda1ef5174b425fa0fc01feabe4585e4e5de3ba0710ff5a897969404809d",
+  "title": "Institutional Investment",
+  "slug": "institutional-investment",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-investment",
+  "domain": "general",
+  "definition": "The investment of pooled funds by organisations such as pension funds, insurers, endowments and asset managers on behalf of their beneficiaries or clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    }
+  ]
+}

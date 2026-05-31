@@ -1,0 +1,4 @@
+- ### Definition
+  - Service robotics covers robots that assist humans outside manufacturing, in settings such as cleaning, delivery, hospitality, and care. It builds on [[Robotics Core Concepts]] and depends on [[Task Planning]] to operate in unstructured human spaces.
+- ### Content
+  - Unlike caged industrial robots, service robots must navigate dynamic environments, perceive people, and act safely alongside them. Key enablers are robust SLAM, semantic perception, and high-level task planning that decomposes goals into safe, executable behaviours under real-world uncertainty.

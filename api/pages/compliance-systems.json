@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:compliance-systems",
+  "title": "Compliance Systems",
+  "slug": "compliance-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:compliance-systems",
+  "domain": "governance",
+  "definition": "Compliance systems are the integrated software and process frameworks organisations use to enforce, monitor, and report adherence to laws, regulations, and internal policies. They encompass policy management, control automation, monitoring and alerting, audit-trail capture, and regulatory reporting workflows. They matter because they operationalise obligations such as content-moderation duties under the Digital Services Act or custody and reporting rules for digital assets, turning legal requirements into continuously enforced controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    }
+  ]
+}

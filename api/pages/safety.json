@@ -106,6 +106,10 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
       "slug": "technical-standard",
       "label": "Technical Standard"
     }

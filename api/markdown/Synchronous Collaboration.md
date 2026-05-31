@@ -1,4 +1,5 @@
 public:: true
+alias:: TC-0010-Synchronous-Collaboration
 
 # Synchronous Collaboration
 ```json-ld
@@ -103,7 +104,7 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:tc-0001-telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration-domain",
       "label": "TC-0001-telecollaboration-domain"
     }
   ],

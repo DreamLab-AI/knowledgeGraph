@@ -1,0 +1,4 @@
+- ### Definition
+  - SwiGLU is a gated activation that multiplies a Swish-activated projection by a linear gate, used in the [[Feed-Forward Network]] sublayers of [[Transformers]] to improve model quality.
+- ### Content
+  - The function splits the feed-forward input into two projections, applies the Swish nonlinearity to one, and multiplies it element-wise by the other to form an input-dependent gate. Compared with a plain ReLU MLP, SwiGLU requires three weight matrices instead of two, so implementations shrink the hidden dimension to keep parameter count constant. It became a default choice in large language models such as the PaLM and LLaMA families after gated variants showed consistent perplexity gains.

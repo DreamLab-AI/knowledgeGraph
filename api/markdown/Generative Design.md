@@ -1,4 +1,5 @@
 public:: true
+alias:: GenerativeDesign
 
 # Generative Design
 ```json-ld

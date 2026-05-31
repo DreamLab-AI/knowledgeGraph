@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:2c0015f13375152cab6997b0c79c4beacb7d19d1312176c86f4ded4a0fd354a9",
+  "title": "Optimistic Oracle",
+  "slug": "optimistic-oracle",
+  "public": true,
+  "classIri": "urn:ngm:class:optimistic-oracle",
+  "domain": "blockchain",
+  "definition": "An oracle design in which proposed off-chain data is accepted by default and only verified on-chain if a participant disputes it within a challenge window. It reduces routine reporting costs by reserving full verification for contested values.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:price-oracle",
+      "label": "Price Oracle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dispute-resolution",
+      "label": "Dispute Resolution"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "https-docs-uma-xyz",
+      "label": "https://docs.uma.xyz/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "Oracle Service"
+    }
+  ]
+}

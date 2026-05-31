@@ -307,12 +307,12 @@ public:: true
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:climate-risk-management",
-      "label": "Climate Risk Management"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "@id": "urn:ngm:class:measurement-frameworks",
-      "label": "Measurement Frameworks"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -334,7 +334,7 @@ public:: true
         "label": "Emission Inventory"
       },
       {
-        "@id": "urn:ngm:class:lifecycle-assessment",
+        "@id": "urn:ngm:class:life-cycle-assessment",
         "label": "Lifecycle Assessment"
       },
       {
@@ -438,7 +438,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ai",
+        "@id": "urn:ngm:class:artificial-intelligence-domain",
         "label": "AI"
       },
       {
@@ -446,7 +446,7 @@ public:: true
         "label": "Digital Product Passport"
       },
       {
-        "@id": "urn:ngm:class:lifecycle-assessment",
+        "@id": "urn:ngm:class:life-cycle-assessment",
         "label": "Lifecycle Assessment"
       },
       {

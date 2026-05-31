@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:7c72bf561033ae7e5d2142fa6cf0b4932648686a1532526e9cfde4cd1f52bbbe",
+  "title": "Modular Arithmetic",
+  "slug": "modular-arithmetic",
+  "public": true,
+  "classIri": "urn:ngm:class:modular-arithmetic",
+  "domain": "metaverse",
+  "definition": "Modular arithmetic performs integer arithmetic that wraps around a fixed modulus, so numbers are treated as equivalent if they differ by a multiple of that modulus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography-domain",
+      "label": "Cryptography Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    }
+  ]
+}

@@ -205,6 +205,14 @@
       "label": "Privacy Preserving Analytics"
     },
     {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
     },

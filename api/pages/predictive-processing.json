@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:predictive-processing",
+  "title": "Predictive Processing",
+  "slug": "predictive-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:predictive-processing",
+  "domain": "ai",
+  "definition": "Predictive processing is a theoretical framework in cognitive science and AI in which the brain or agent continuously generates predictions about sensory input and updates internal models to minimise prediction error. Perception, action, and learning are unified as processes of reducing the mismatch between expected and actual signals. It motivates active inference and free-energy approaches to embodied, cognitive systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    }
+  ]
+}

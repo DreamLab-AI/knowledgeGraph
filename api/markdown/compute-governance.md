@@ -1,0 +1,4 @@
+- ### Definition
+  - Compute governance governs access to AI training hardware as a policy lever, addressing both [[Competition in AI]] and the mitigation of [[AI Risks]].
+- ### Content
+  - Because accelerators are physical, excludable, and produced by a concentrated supply chain, they are more governable than algorithms or data. Proposals span export controls, compute reporting thresholds, and hardware-enforced attestation of who ran what, balancing safety against innovation and concentration concerns.

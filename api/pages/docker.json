@@ -3,11 +3,16 @@
   "title": "Docker",
   "slug": "docker",
   "public": true,
-  "classIri": "urn:ngm:individual:docker",
+  "classIri": "urn:ngm:class:docker",
   "domain": "infrastructure",
   "definition": "Docker is an open-source platform that automates the deployment, scaling, and management of applications using containerisation technology, packaging applications and their dependencies into lightweight, portable containers that run consistently across different computing environments. Founded in 2013 by Solomon Hykes, Docker Inc. commercialised Linux container technology and brought it to mainstream adoption, fundamentally transforming software development and deployment workflows. Docker containers share the host operating system kernel, making them more resource-efficient than virtual machines while providing process and filesystem isolation.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-platform",
+      "label": "Software Platform"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {

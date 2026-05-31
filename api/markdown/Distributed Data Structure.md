@@ -1,4 +1,5 @@
 public:: true
+alias:: DistributedDataStructure
 
 # Distributed Data Structure
 ```json-ld

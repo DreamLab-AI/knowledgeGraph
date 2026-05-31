@@ -74,5 +74,22 @@
       "label": "Python Ecosystem"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "java-script",
+      "label": "JavaScript"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
+    }
+  ]
 }

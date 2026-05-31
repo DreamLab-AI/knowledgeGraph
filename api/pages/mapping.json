@@ -67,6 +67,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },

@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:a9ebbac1c5412b9a45ccf50e10ed1b527a5f1fc357b2ede74b9fd85b2f81e16e",
+  "title": "TELE-005-common-ground-theory",
+  "slug": "tele-005-common-ground-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-005-common-ground-theory",
+  "domain": "metaverse",
+  "definition": "Common ground theory is an account of communication holding that participants build and rely on shared knowledge, beliefs and assumptions, which they update through interaction to coordinate meaning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-theory",
+      "label": "Communication Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-theory",
+        "label": "Communication Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-theory",
+      "label": "Communication Theory"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}

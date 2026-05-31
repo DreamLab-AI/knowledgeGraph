@@ -71,8 +71,8 @@ public:: true
       "label": "Perception and Sensing"
     },
     {
-      "@id": "urn:ngm:class:xr-input-technologies",
-      "label": "XR Input Technologies"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "relations": {

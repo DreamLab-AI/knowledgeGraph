@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:49fbe166511a2d4db54d1b5d17ab8f643b10a2c1f23ced5850a6b0e121af7ce6",
+  "title": "Marathon Digital",
+  "slug": "marathon-digital",
+  "public": true,
+  "classIri": "urn:ngm:class:marathon-digital",
+  "domain": "metaverse",
+  "definition": "Marathon Digital is a large publicly traded Bitcoin mining company operating data centres of specialised hardware to validate transactions and compete for block rewards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

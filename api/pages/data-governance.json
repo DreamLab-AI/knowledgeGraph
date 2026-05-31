@@ -70,8 +70,16 @@
       "label": "Data Provenance"
     },
     {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
       "slug": "governance-structure",
       "label": "Governance Structure"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
     },
     {
       "slug": "metadata-management",

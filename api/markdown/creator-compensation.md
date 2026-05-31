@@ -1,0 +1,4 @@
+- ### Definition
+  - Creator compensation is the set of economic arrangements that reward creators for their content and ongoing usage of it. It is enabled by instruments such as the [[Creator Royalty Token]] and by on-chain [[Royalty Mechanism]] designs.
+- ### Content
+  - On-chain models encode payout splits and resale royalties directly into smart contracts, enabling programmable, transparent distribution to multiple stakeholders. Enforcement of secondary-sale royalties remains contested across marketplaces, motivating standards and protocol-level approaches to guarantee creator earnings.

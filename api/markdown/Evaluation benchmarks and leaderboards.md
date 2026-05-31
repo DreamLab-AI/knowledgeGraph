@@ -491,8 +491,8 @@ public:: true
       "label": "AI Evaluation"
     },
     {
-      "@id": "urn:ngm:class:capability-assessment",
-      "label": "Capability Assessment"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -638,7 +638,7 @@ public:: true
         "label": "Multimodal Models"
       },
       {
-        "@id": "urn:ngm:class:vision-language-models",
+        "@id": "urn:ngm:class:vision-language-model",
         "label": "Vision-Language Models"
       },
       {

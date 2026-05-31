@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:record-keeping",
+  "title": "Record Keeping",
+  "slug": "record-keeping",
+  "public": true,
+  "classIri": "urn:ngm:class:record-keeping",
+  "domain": "governance",
+  "definition": "Record keeping is the systematic retention of transaction, customer, and decision records so that activities can be reconstructed and verified by auditors or regulators. In financial compliance it mandates preserving identity documentation, transaction details, and risk assessments for prescribed periods. Robust record keeping is a precondition for meeting anti-money-laundering and travel-rule obligations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

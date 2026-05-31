@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:a30a35454da8523562010408fd0691444270dbe7b890781c035ef3684317be32",
+  "title": "GameFi",
+  "slug": "game-fi",
+  "public": true,
+  "classIri": "urn:ngm:class:game-fi",
+  "domain": "blockchain",
+  "definition": "GameFi refers to the combination of gaming with decentralised finance, where players can earn cryptocurrency or tokenised assets through gameplay. It overlaps with blockchain gaming and play-to-earn models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gaming",
+        "label": "gaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-play-to-earn",
+      "label": "https://en.wikipedia.org/wiki/Play-to-earn"
+    },
+    {
+      "slug": "https-ethereum-org-en-gaming",
+      "label": "https://ethereum.org/en/gaming/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
+    }
+  ]
+}

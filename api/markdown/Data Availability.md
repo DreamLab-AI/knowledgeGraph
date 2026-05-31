@@ -1,4 +1,5 @@
 public:: true
+alias:: Data-Availability
 
 # Data Availability
 ```json-ld

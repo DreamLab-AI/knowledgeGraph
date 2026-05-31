@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ca6389299ac09a9a6ed38761feb76f032d9d668c68f1b617fcc7ea169912c026",
+  "title": "Hardware Security",
+  "slug": "hardware-security",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-security",
+  "domain": "metaverse",
+  "definition": "Hardware security protects systems by building trust and isolation into physical components, using features such as secure enclaves, key storage and tamper resistance to defend against attacks software alone cannot stop.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-hardware",
+        "label": "Computer Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "hardware-security-module",
+      "label": "Hardware Security Module"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

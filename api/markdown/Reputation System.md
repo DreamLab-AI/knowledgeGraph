@@ -315,8 +315,8 @@ public:: true
       "label": "Decentralised Governance"
     },
     {
-      "@id": "urn:ngm:class:feedback-system",
-      "label": "Feedback System"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
   "relations": {
@@ -500,7 +500,7 @@ public:: true
         "label": "Ethereum Attestation Service"
       },
       {
-        "@id": "urn:ngm:class:w3-c-did-working-group",
+        "@id": "urn:ngm:class:w-3-c-did-working-group",
         "label": "W3C DID Working Group"
       },
       {

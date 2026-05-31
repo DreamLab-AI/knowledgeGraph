@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:real-time-control-loop",
+  "title": "Real-Time Control Loop",
+  "slug": "real-time-control-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-control-loop",
+  "domain": "robotics",
+  "definition": "A real-time control loop is a cyclic sense-compute-actuate process that runs at a fixed, deterministic frequency to regulate a physical or cyber-physical system within strict timing deadlines. Missing a deadline can cause instability or unsafe behaviour, so loops require real-time scheduling and bounded computation. They are the operational core of robotics, motion control, and industrial automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems-domain",
+        "label": "Cyber-Physical Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    }
+  ]
+}

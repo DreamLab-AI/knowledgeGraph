@@ -447,12 +447,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:agentic-capability",
-      "label": "Agentic Capability"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
-      "@id": "urn:ngm:class:language-model-augmentation",
-      "label": "Language Model Augmentation"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     }
   ],
   "relations": {

@@ -1,4 +1,5 @@
 public:: true
+alias:: DigitalCertificate
 
 # Digital Certificate
 ```json-ld

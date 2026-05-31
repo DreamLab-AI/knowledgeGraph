@@ -1,0 +1,4 @@
+- ### Definition
+  - The FATF 40 Recommendations are the global anti-money-laundering and counter-terrorist-financing standards that [[AML KYC Compliance]] programmes implement, sitting within the field of [[Financial Regulation]]. They set the baseline against which national [[Regulatory Compliance]] is evaluated.
+- ### Content
+  - The Recommendations mandate a risk-based approach, requiring obliged entities to identify and verify customers, monitor transactions, and report suspicious activity, while states establish supervisory and enforcement institutions. Their extension to virtual assets and service providers has driven crypto-sector KYC, travel-rule, and licensing obligations worldwide.

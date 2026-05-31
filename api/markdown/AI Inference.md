@@ -1,4 +1,5 @@
 public:: true
+alias:: AI-inference
 
 # AI Inference
 ```json-ld

@@ -563,8 +563,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:bitcoin-exposure-product",
-      "label": "Bitcoin Exposure Product"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
       "@id": "urn:ngm:class:exchange-traded-fund",
@@ -714,7 +714,7 @@ public:: true
         "label": "Gemini Custody"
       },
       {
-        "@id": "urn:ngm:class:multi-signature-wallets",
+        "@id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallets"
       }
     ],

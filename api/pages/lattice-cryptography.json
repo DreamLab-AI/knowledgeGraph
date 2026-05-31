@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:aa3b89d99eb20787ea6dc807a4b04a62264ff135c3dc277845ed292df7c859a8",
+  "title": "Lattice Cryptography",
+  "slug": "lattice-cryptography",
+  "public": true,
+  "classIri": "urn:ngm:class:lattice-cryptography",
+  "domain": "cryptographic",
+  "definition": "A family of cryptographic constructions whose security rests on the hardness of computational problems over high-dimensional lattices, such as learning with errors. These problems are believed to resist attacks by quantum computers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "https-csrc-nist-gov-projects-post-quantum-cryptography",
+      "label": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

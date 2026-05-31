@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:488849981bd2ce044b5840ddd13d404ba5d8feac2215f28ebe7bc120530510a6",
+  "title": "glTF",
+  "slug": "gl-tf",
+  "public": true,
+  "classIri": "urn:ngm:class:gl-tf",
+  "domain": "metaverse",
+  "definition": "glTF (GL Transmission Format) is an open royalty-free standard from the Khronos Group for the efficient transmission and loading of 3D scenes and models, defining geometry, materials, animation and scene structure in a compact runtime format.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-file-format",
+      "label": "3D File Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "material-definition",
+      "label": "Material Definition"
+    },
+    {
+      "slug": "asset-interoperability",
+      "label": "Asset Interoperability"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

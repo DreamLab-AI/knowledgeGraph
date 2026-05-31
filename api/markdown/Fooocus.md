@@ -479,12 +479,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:gradio-application",
-      "label": "Gradio Application"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:local-image-generation-interface",
-      "label": "Local Image Generation Interface"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -558,7 +558,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:faceswap",
+        "@id": "urn:ngm:class:face-swap",
         "label": "Faceswap"
       },
       {

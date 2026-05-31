@@ -1,0 +1,4 @@
+- ### Definition
+  - WGSL is the shading language for the WebGPU [[Graphics API]], used to author the vertex, fragment, and compute stages of a web [[Rendering Pipeline]].
+- ### Content
+  - WGSL has a strongly typed, Rust-influenced syntax with explicit binding and group attributes for resources, and is compiled by the browser to the host platform's native shader format. Its design prioritises deterministic, portable behaviour and security sandboxing, making it the canonical way to express GPU programs in WebGPU-based engines and compute workloads.

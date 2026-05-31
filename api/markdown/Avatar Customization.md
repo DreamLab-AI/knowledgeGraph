@@ -1,4 +1,5 @@
 public:: true
+alias:: AvatarCustomization
 
 # Avatar Customization
 ```json-ld
@@ -79,8 +80,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:digital-personalization",
-      "label": "Digital Personalization"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "relations": {

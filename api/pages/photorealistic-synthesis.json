@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:photorealistic-synthesis",
+  "title": "Photorealistic Synthesis",
+  "slug": "photorealistic-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:photorealistic-synthesis",
+  "domain": "ai",
+  "definition": "Photorealistic synthesis is the generation of images or scenes that are visually indistinguishable from real photographs. It is achieved with generative models such as diffusion networks and GANs, or with physically based rendering, that reproduce accurate lighting, materials, geometry, and texture detail. It underpins high-fidelity image generation and the creation of realistic 4D and procedural content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

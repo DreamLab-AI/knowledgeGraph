@@ -511,12 +511,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:enterprise-blockchain-framework",
-      "label": "Enterprise Blockchain Framework"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:hyperledger-project",
-      "label": "Hyperledger Project"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

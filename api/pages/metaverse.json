@@ -1157,6 +1157,10 @@
       "label": "Mesh Routing Software"
     },
     {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
       "slug": "metadata-registry",
       "label": "Metadata Registry"
     },
@@ -1301,8 +1305,20 @@
       "label": "Non Linear Storytelling"
     },
     {
+      "slug": "oma-3-media-wg",
+      "label": "OMA3 Media WG"
+    },
+    {
+      "slug": "oma-3",
+      "label": "OMA3"
+    },
+    {
       "slug": "owl-class-hierarchy",
       "label": "OWL Class Hierarchy"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
     },
     {
       "slug": "ontology-definition",
@@ -1443,6 +1459,10 @@
     {
       "slug": "ray-tracing",
       "label": "Ray Tracing"
+    },
+    {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
     },
     {
       "slug": "real-time-character-animation",
@@ -1691,6 +1711,10 @@
     {
       "slug": "symbolic-object-library",
       "label": "Symbolic Object Library"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
     },
     {
       "slug": "technical-standards",
@@ -2091,6 +2115,10 @@
     {
       "slug": "zk-starks",
       "label": "ZK-STARKs"
+    },
+    {
+      "slug": "park-2022-metaverse",
+      "label": "park2022metaverse"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

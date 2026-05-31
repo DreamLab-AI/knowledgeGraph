@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:cea62728ab88a73fce42295d4e991cb035cde6ff143390c504cfcdae2ab4b3e6",
+  "title": "Vyper",
+  "slug": "vyper",
+  "public": true,
+  "classIri": "urn:ngm:class:vyper",
+  "domain": "blockchain",
+  "definition": "A contract-oriented programming language for the Ethereum Virtual Machine that emphasises simplicity, auditability, and security. It uses Python-like syntax and deliberately omits features that can make contracts hard to reason about.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

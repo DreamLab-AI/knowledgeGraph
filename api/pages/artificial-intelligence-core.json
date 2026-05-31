@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:artificial-intelligence-core",
+  "title": "Artificial Intelligence Core",
+  "slug": "artificial-intelligence-core",
+  "public": true,
+  "classIri": "urn:ngm:class:artificial-intelligence-core",
+  "domain": "ai",
+  "definition": "Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines. It represents the essential body of theory and method by which machines perform tasks that normally require human intelligence, such as learning, reasoning, perception, and decision-making. As a structural root it organizes more specific AI subfields beneath a single semantic anchor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

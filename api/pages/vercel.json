@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b8b3c5fc3957aee0a4560da10366272283ecf2cc56087475df0a6be54d64334a",
+  "title": "Vercel",
+  "slug": "vercel",
+  "public": true,
+  "classIri": "urn:ngm:class:vercel",
+  "domain": "general",
+  "definition": "Vercel is a company that provides a cloud platform for deploying and hosting web applications, with an emphasis on frontend frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-platform",
+      "label": "Cloud Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "label": "Advice for developing GenAI"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

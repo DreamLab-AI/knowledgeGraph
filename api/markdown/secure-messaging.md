@@ -1,0 +1,4 @@
+- ### Definition
+  - Secure messaging is cryptographically protected communication, a topic within [[Cryptography, Security and Privacy]] that is realised by protocols such as the [[Signal Protocol]].
+- ### Content
+  - End-to-end designs encrypt at the endpoints so intermediaries cannot read content, while double-ratchet key management provides forward secrecy and post-compromise security. Additional properties such as deniability, metadata minimisation, and verified safety numbers distinguish stronger implementations.

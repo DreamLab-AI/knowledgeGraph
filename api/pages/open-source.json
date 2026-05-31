@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:c346b98da2893b22de15510021f2bbd882cef94c17dcc0844c80e385fe018ab4",
+  "title": "Open Source",
+  "slug": "open-source",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source",
+  "domain": "general",
+  "definition": "Open source refers to software whose source code is made available under a licence that permits use, study, modification, and redistribution. It supports collaborative development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "https-opensource-org-osd",
+      "label": "https://opensource.org/osd"
+    },
+    {
+      "slug": "https-opensource-org-licenses",
+      "label": "https://opensource.org/licenses"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "community",
+      "label": "community"
+    },
+    {
+      "slug": "rb-0038-compliance",
+      "label": "rb 0038 compliance"
+    }
+  ]
+}

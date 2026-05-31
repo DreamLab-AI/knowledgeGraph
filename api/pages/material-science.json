@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:8d18884b0d52bac36c9459e56e11e9e5fde8a42ba7e6f1bc412abeedbd0ef3eb",
+  "title": "Material Science",
+  "slug": "material-science",
+  "public": true,
+  "classIri": "urn:ngm:class:material-science",
+  "domain": "general",
+  "definition": "The interdisciplinary study of the structure, properties, processing, and performance of materials, linking their atomic arrangement to observable behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    }
+  ]
+}

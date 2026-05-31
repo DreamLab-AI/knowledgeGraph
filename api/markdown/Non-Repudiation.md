@@ -359,12 +359,12 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:digital-evidence",
-      "label": "Digital Evidence"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     },
     {
-      "@id": "urn:ngm:class:security-property",
-      "label": "Security Property"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -502,7 +502,7 @@ public:: true
         "label": "OCSP"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ],

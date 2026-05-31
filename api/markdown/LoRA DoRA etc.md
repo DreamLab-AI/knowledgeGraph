@@ -327,8 +327,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:model-adaptation",
-      "label": "Model Adaptation"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:neural-network",
@@ -396,7 +396,7 @@ public:: true
         "label": "Low-Rank Decomposition"
       },
       {
-        "@id": "urn:ngm:class:pre-trained-model",
+        "@id": "urn:ngm:class:pretrained-model",
         "label": "Pre-trained Model"
       },
       {
@@ -474,7 +474,7 @@ public:: true
         "label": "Rank Decomposition"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -510,11 +510,11 @@ public:: true
         "label": "Llama"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -526,7 +526,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -544,7 +544,7 @@ public:: true
         "label": "Microsoft Research"
       },
       {
-        "@id": "urn:ngm:individual:nvidia",
+        "@id": "urn:ngm:class:nvidia",
         "label": "NVIDIA"
       }
     ]

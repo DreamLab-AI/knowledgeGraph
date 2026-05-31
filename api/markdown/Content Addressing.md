@@ -1,4 +1,5 @@
 public:: true
+alias:: ContentAddressing
 
 # Content Addressing
 ```json-ld

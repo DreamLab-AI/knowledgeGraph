@@ -1,4 +1,5 @@
 public:: true
+alias:: Time Series Analysis
 
 # Time-Series Analysis
 ```json-ld
@@ -38,7 +39,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:prediction-market", "label": "Prediction Market"}
+      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Market"}
     ]
   },
   "quality": 0.8

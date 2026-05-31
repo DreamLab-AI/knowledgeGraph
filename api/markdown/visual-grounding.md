@@ -1,0 +1,4 @@
+- ### Definition
+  - Visual grounding localises the image region referred to by a textual expression, a core capability of a [[Vision-Language Model]] and of [[Computer Use and Browser Agents]].
+- ### Content
+  - It requires joint reasoning over language and visual features to resolve referring expressions, often outputting bounding boxes, masks or coordinates. Grounding lets agents identify clickable UI elements or scene objects, bridging instruction following and concrete action.

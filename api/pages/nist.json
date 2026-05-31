@@ -115,6 +115,14 @@
       "label": "Distributed Identity"
     },
     {
+      "slug": "fips-140-3",
+      "label": "FIPS 140-3"
+    },
+    {
+      "slug": "fips-186-5",
+      "label": "FIPS 186-5"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -125,6 +133,70 @@
     {
       "slug": "identity-verification",
       "label": "Identity Verification"
+    },
+    {
+      "slug": "nist-800-63",
+      "label": "NIST 800-63"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-standards",
+      "label": "NIST AI Standards"
+    },
+    {
+      "slug": "nist-blockchain-technology-overview",
+      "label": "NIST Blockchain Technology Overview"
+    },
+    {
+      "slug": "nist-cryptographic-standards",
+      "label": "NIST Cryptographic Standards"
+    },
+    {
+      "slug": "nist-fips-186",
+      "label": "NIST FIPS 186"
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-sphincs",
+      "label": "NIST FIPS 205 SLH-DSA SPHINCS+"
+    },
+    {
+      "slug": "nist-fips-205",
+      "label": "NIST FIPS 205"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "nist-post-quantum-cryptography",
+      "label": "NIST Post-Quantum Cryptography"
+    },
+    {
+      "slug": "nist-privacy-framework",
+      "label": "NIST Privacy Framework"
+    },
+    {
+      "slug": "nist-sp-1270",
+      "label": "NIST SP 1270"
+    },
+    {
+      "slug": "nist-sp-800-207",
+      "label": "NIST SP 800-207"
+    },
+    {
+      "slug": "nist-sp-800-53",
+      "label": "NIST SP 800-53"
+    },
+    {
+      "slug": "nist-sp-800-63-4",
+      "label": "NIST SP 800-63-4"
+    },
+    {
+      "slug": "nist-sp-800-63",
+      "label": "NIST SP 800-63"
     },
     {
       "slug": "trust-framework",

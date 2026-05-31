@@ -272,7 +272,7 @@
         "label": "Algorithmic Bias and Variance"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -284,7 +284,7 @@
         "label": "Attention"
       },
       {
-        "id": "urn:ngm:individual:chat-gpt",
+        "id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -513,6 +513,10 @@
   ],
   "backlinks": [
     {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },
@@ -525,8 +529,16 @@
       "label": "Model Training"
     },
     {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "philosophy-of-mind",
+      "label": "Philosophy of Mind"
     },
     {
       "slug": "prompt-engineering",
@@ -537,12 +549,24 @@
       "label": "Proprietary AI Video"
     },
     {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     },
     {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
       "slug": "singularity",
       "label": "Singularity"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
     }
   ]
 }

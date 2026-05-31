@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:b0746ee656d22790d215444e079c808cb0b25a0171bce893604d08adb1952ed9",
+  "title": "Gnosis Chain",
+  "slug": "gnosis-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:gnosis-chain",
+  "domain": "blockchain",
+  "definition": "An Ethereum-compatible blockchain secured by proof of stake, designed for low-cost transactions and used for payments, governance tooling, and application deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "x-dai",
+      "label": "xDai"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-203-haptic-feedback-telepresence
 
 # Haptic Feedback Telepresence
 ```json-ld

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:86bfb5fea272c19e15995c494f4ef423951eb9734751f1b3c02c9d178b6a4405",
+  "title": "Bitcoin Whitepaper",
+  "slug": "bitcoin-whitepaper",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-whitepaper",
+  "domain": "blockchain",
+  "definition": "The 2008 paper by Satoshi Nakamoto that introduced Bitcoin as a peer-to-peer electronic cash system secured by proof-of-work consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hashcash",
+        "label": "Hashcash"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

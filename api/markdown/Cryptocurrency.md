@@ -667,12 +667,12 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:cryptoasset",
-      "label": "Cryptoasset"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:distributed-ledger-native-token",
-      "label": "Distributed Ledger Native Token"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -848,15 +848,15 @@ public:: true
         "label": "Spot Bitcoin ETF"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       },
       {
@@ -904,7 +904,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       },
       {

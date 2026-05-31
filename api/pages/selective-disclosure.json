@@ -95,6 +95,10 @@
       "label": "Reputation System"
     },
     {
+      "slug": "sd-jwt-vc",
+      "label": "SD-JWT VC"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     },

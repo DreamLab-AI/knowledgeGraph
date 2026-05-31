@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:4324963022783b628b2bb44f4c37059e8aa60055aaa796461176c171e1ebb514",
+  "title": "Statistical Learning Theory",
+  "slug": "statistical-learning-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:statistical-learning-theory",
+  "domain": "mathematics",
+  "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

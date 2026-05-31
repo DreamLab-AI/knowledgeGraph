@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sound-money-principles",
+  "title": "Sound Money Principles",
+  "slug": "sound-money-principles",
+  "public": true,
+  "classIri": "urn:ngm:class:sound-money-principles",
+  "domain": "blockchain",
+  "definition": "Sound money principles are the criteria by which a monetary asset is judged a reliable store of value and medium of exchange: scarcity, durability, divisibility, portability, fungibility, verifiability, and resistance to debasement by any issuer. Rooted in classical and Austrian monetary economics, they are frequently invoked to argue that a fixed-supply, credibly neutral asset preserves purchasing power over time. They form the economic case advanced for Bitcoin as a monetary good.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin as Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

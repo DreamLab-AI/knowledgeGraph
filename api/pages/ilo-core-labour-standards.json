@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ilo-core-labour-standards",
+  "title": "ILO Core Labour Standards",
+  "slug": "ilo-core-labour-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:ilo-core-labour-standards",
+  "domain": "governance",
+  "definition": "The ILO Core Labour Standards are the fundamental principles and rights at work codified by the International Labour Organization, covering freedom of association and collective bargaining, the elimination of forced and child labour, non-discrimination, and a safe and healthy working environment. They are expressed through ratifiable conventions that member states commit to uphold. The standards form the baseline against which ethical sourcing and labour due-diligence are assessed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

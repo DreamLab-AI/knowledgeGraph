@@ -209,6 +209,10 @@
       "label": "Meeting AI Assistant"
     },
     {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
       "slug": "right-to-be-forgotten",
       "label": "Right to Be Forgotten"
     },

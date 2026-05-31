@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:network-participation",
+  "title": "Network Participation",
+  "slug": "network-participation",
+  "public": true,
+  "classIri": "urn:ngm:class:network-participation",
+  "domain": "blockchain",
+  "definition": "Network participation is the act of an entity contributing resources or actions to a decentralised network in exchange for the right to influence and benefit from it. In blockchain systems this includes running nodes, validating or proposing blocks, providing liquidity, or voting, typically backed by staked capital or computational work. Participation rules and incentives determine the network's security, decentralisation, and reward distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "reward-distribution",
+      "label": "Reward Distribution"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Deduplication detects and removes duplicate data so only one physical copy is retained, with all duplicates pointing at it. It is enabled by a [[Hash Function]] that produces stable digests and underpins [[Content Addressing]] systems where identical content maps to a single address.
+- ### Content
+  - Deduplication operates at file, block, or variable-length-chunk granularity, inline or post-process. Gains are largest for repetitive datasets such as backups and VM images; costs include hashing overhead and the need to handle hash collisions safely.

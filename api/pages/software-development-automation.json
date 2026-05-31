@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:software-development-automation",
+  "title": "Software Development Automation",
+  "slug": "software-development-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:software-development-automation",
+  "domain": "ai",
+  "definition": "Software development automation is the use of tooling and AI agents to perform engineering tasks such as code generation, test writing, refactoring, dependency updates, and pull-request creation with minimal human intervention. Modern systems combine large language models with execution environments and version-control integrations to act on a codebase rather than merely suggest text. It aims to compress development cycles while keeping humans in the loop for review and intent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

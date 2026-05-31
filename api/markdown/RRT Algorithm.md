@@ -1,4 +1,5 @@
 public:: true
+alias:: RB-1017-rrt-algorithm
 
 # RRT Algorithm
 ```json-ld

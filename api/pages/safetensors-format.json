@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:safetensors-format",
+  "title": "Safetensors Format",
+  "slug": "safetensors-format",
+  "public": true,
+  "classIri": "urn:ngm:class:safetensors-format",
+  "domain": "ai",
+  "definition": "Safetensors is a file format for storing tensors \u2014 the weight matrices of machine-learning models \u2014 designed to be safe, fast, and simple. Unlike Python pickle-based formats, safetensors stores only raw tensor data and a JSON header describing shapes, dtypes, and offsets, so loading a file cannot execute arbitrary code. The layout supports zero-copy and memory-mapped loading, enabling rapid model initialisation and lazy access to individual tensors. Developed by Hugging Face, it has become a de facto standard for distributing open model weights.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.78,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

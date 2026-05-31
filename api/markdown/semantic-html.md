@@ -1,0 +1,4 @@
+- ### Definition
+  - Semantic HTML uses elements for their meaning to expose document structure, and is both required by and a constituent part of web [[Accessibility]].
+- ### Content
+  - Correctly chosen elements give the browser an accessibility tree with implicit roles, states, and landmarks, letting screen readers convey structure without extra ARIA. Beyond accessibility, semantic markup improves SEO, maintainability, and the reliability of automated parsing and content extraction.

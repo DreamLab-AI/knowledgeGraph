@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:apple",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:apple",
+  "@type": "Class",
   "label": "Apple",
   "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services, with flagship product lines including the iPhone, iPad, Mac, Apple Watch, and the Apple Vision Pro spatial computing headset. Apple is distinguished by its vertically integrated hardware-software model, proprietary silicon (the Apple Silicon series based on ARM architecture), and the iOS and macOS operating system ecosystems. With a market capitalisation regularly exceeding two trillion US dollars, Apple is among the most valuable publicly traded companies in the world.",
   "domain": "spatial",
   "maturity": "mature",
-  "instanceOf": [
+  "subClassOf": [
     {"@id": "urn:ngm:class:hardware", "label": "Hardware"}
   ],
   "relations": {

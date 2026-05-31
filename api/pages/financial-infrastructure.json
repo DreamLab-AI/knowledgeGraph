@@ -68,6 +68,10 @@
       "label": "Asset Registry"
     },
     {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
       "slug": "digital-payment-system",
       "label": "Digital Payment System"
     },
@@ -78,6 +82,10 @@
     {
       "slug": "lightning-network",
       "label": "Lightning Network"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
     }
   ]
 }

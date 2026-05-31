@@ -133,12 +133,20 @@
       "label": "Intrinsic Interpretability"
     },
     {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
       "slug": "local-explanation",
       "label": "Local Explanation"
     },
     {
       "slug": "post-hoc-explanation",
       "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
     }
   ]
 }

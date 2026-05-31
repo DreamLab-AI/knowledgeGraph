@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cfb0f5d73956416791c08c0e184c997a52cb6f8ba33124b4be3190eb42685fc4",
+  "title": "ISA-95",
+  "slug": "isa-95",
+  "public": true,
+  "classIri": "urn:ngm:class:isa-95",
+  "domain": "manufacturing",
+  "definition": "ISA-95 is an international standard for integrating enterprise and control systems in manufacturing, defining models for the interface between business and production operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:opc-ua",
+      "label": "OPC UA"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "opc-ua",
+      "label": "OPC UA"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    }
+  ]
+}

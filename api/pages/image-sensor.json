@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:image-sensor",
+  "title": "Image Sensor",
+  "slug": "image-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:image-sensor",
+  "domain": "robotics",
+  "definition": "An image sensor is a solid-state device that converts incident light into electrical signals to capture a digital image, typically implemented as a CMOS or CCD array of photodetector pixels. Each pixel accumulates charge proportional to received photons, which is read out, digitised, and assembled into a frame. Image sensors are the core capture element in cameras and many computer-vision and tracking systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    }
+  ]
+}

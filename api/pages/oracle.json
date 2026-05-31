@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:35dc61fea3cf79782819482db05ba38a7326f7e12a6f6b3b9884ef3a477f9a69",
+  "title": "Oracle",
+  "slug": "oracle",
+  "public": true,
+  "classIri": "urn:ngm:class:oracle",
+  "domain": "blockchain",
+  "definition": "In blockchain systems, a mechanism that brings external information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles are the boundary between deterministic on-chain logic and the variable outside world.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "https-ethereum-org-en-developers-docs-oracles",
+      "label": "https://ethereum.org/en/developers/docs/oracles/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

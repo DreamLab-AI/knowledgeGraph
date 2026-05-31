@@ -1,0 +1,4 @@
+- ### Definition
+  - A strategic Bitcoin reserve is a deliberately accumulated treasury of bitcoin held as a reserve asset, supporting the [[Bitcoin Value Proposition]] of a scarce, sovereign-grade store of value.
+- ### Content
+  - Reserve programmes treat bitcoin like a non-sovereign monetary metal, accumulating it through purchases, mining, or seizure and holding it under hardened custody for decades-long horizons. The thesis rests on the asset's capped 21-million supply and global liquidity, which proponents claim insulate balance sheets from inflation and counterparty risk. Practical adoption requires solving custody, accounting, and disclosure questions that differ markedly from holding fiat or gold.

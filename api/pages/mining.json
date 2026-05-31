@@ -121,6 +121,10 @@
       "label": "51% Attack"
     },
     {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
       "slug": "bitcoin-centralisation-risks",
       "label": "Bitcoin Centralisation Risks"
     },
@@ -141,8 +145,24 @@
       "label": "Blockchain"
     },
     {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "clean-spark",
+      "label": "CleanSpark"
+    },
+    {
       "slug": "digital-asset-risks",
       "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
     },
     {
       "slug": "private-blockchain",

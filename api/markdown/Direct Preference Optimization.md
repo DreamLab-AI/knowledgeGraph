@@ -443,8 +443,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:implicit-reward-modelling",
-      "label": "Implicit Reward Modelling"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     },
     {
       "@id": "urn:ngm:class:language-model-alignment",

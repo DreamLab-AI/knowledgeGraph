@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:ff8d961a9f4ee081d973ccefa3397b539c027c3d6bd2aa73fb50cda1c4e71131",
+  "title": "AI Safety Institute",
+  "slug": "ai-safety-institute",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-safety-institute",
+  "domain": "ai-safety",
+  "definition": "An AI Safety Institute is a government body established to evaluate and research the safety of advanced AI models. The United Kingdom established the first such institute in 2023, later renamed the AI Security Institute.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

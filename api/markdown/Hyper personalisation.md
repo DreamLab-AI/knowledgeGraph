@@ -343,8 +343,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:behavioural-ai",
-      "label": "Behavioural AI"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
       "@id": "urn:ngm:class:customer-experience-management",
@@ -540,7 +540,7 @@ public:: true
         "label": "EU AI Act"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],

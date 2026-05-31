@@ -1,4 +1,5 @@
 public:: true
+alias:: SoftRobotics
 
 # Soft Robotics
 ```json-ld

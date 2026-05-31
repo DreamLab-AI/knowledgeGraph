@@ -627,12 +627,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:decentralized-identifier-method",
-      "label": "Decentralized Identifier Method"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:permissioned-distributed-ledger",
-      "label": "Permissioned Distributed Ledger"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -752,7 +752,7 @@ public:: true
         "label": "W3C Decentralized Identifier Specification"
       },
       {
-        "@id": "urn:ngm:class:w3-c-verifiable-credentials-data-model",
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
       },
       {
@@ -798,7 +798,7 @@ public:: true
         "label": "ZeroMQ"
       },
       {
-        "@id": "urn:ngm:individual:rust",
+        "@id": "urn:ngm:class:rust",
         "label": "Rust"
       }
     ],
@@ -904,11 +904,11 @@ public:: true
         "label": "Trust over IP Technology Stack"
       },
       {
-        "@id": "urn:ngm:class:w3-c-did-core-1-0",
+        "@id": "urn:ngm:class:w-3-c-did-core-1-0",
         "label": "W3C DID Core 1.0"
       },
       {
-        "@id": "urn:ngm:class:w3-c-verifiable-credentials-data-model-v2-0",
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model-v-2-0",
         "label": "W3C Verifiable Credentials Data Model v2.0"
       }
     ]

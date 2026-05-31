@@ -102,7 +102,7 @@ public:: true
         "label": "Protocol Development"
       },
       {
-        "@id": "urn:ngm:class:standards-bodies",
+        "@id": "urn:ngm:class:standards-body",
         "label": "Standards Bodies"
       }
     ],

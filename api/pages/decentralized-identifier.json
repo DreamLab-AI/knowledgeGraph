@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:034040b2233a234685f3e943a26b9f34dbd7dff4aaa84008c34721e0421cd442",
+  "title": "Decentralized Identifier",
+  "slug": "decentralized-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralized-identifier",
+  "domain": "identity",
+  "definition": "A decentralised identifier is a globally unique identifier that a subject can create and control without a central registry, defined by a W3C standard. It resolves to a document describing keys and service endpoints for verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "centralized-identity-provider",
+      "label": "Centralized Identity Provider"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-identity-provider",
+      "label": "Centralized Identity Provider"
+    },
+    {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

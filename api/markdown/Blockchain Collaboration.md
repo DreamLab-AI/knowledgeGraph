@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-250-blockchain-collaboration
 
 # Blockchain Collaboration
 ```json-ld

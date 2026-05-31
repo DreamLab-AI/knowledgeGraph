@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:e2f7ba795236c6e7819e315813611e2dbe4a774eb3dd7e4d7d0eaa0a18f8dd1c",
+  "title": "Generative Models",
+  "slug": "generative-models",
+  "public": true,
+  "classIri": "urn:ngm:class:generative-models",
+  "domain": "generative-ai",
+  "definition": "Generative models are machine learning models that learn the distribution of data so they can produce new samples resembling the training data. They underpin image, text, audio and video generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "drug-discovery-ai",
+      "label": "Drug Discovery AI"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
+    }
+  ]
+}

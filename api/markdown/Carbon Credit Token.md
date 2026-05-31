@@ -1,4 +1,5 @@
 public:: true
+alias:: CarbonCreditToken
 
 # Carbon Credit Token
 ```json-ld

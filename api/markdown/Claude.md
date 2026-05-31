@@ -17,17 +17,17 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:claude",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:claude",
+  "@type": "Class",
   "label": "Claude",
   "definition": "Claude is a family of large language model AI assistants developed by Anthropic, designed with safety and harmlessness as first-order design objectives alongside capability. Claude models are trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest, embodying Anthropic's research programme on aligning advanced AI systems with human values. The Claude model family spans Haiku, Sonnet, and Opus tiers offering cost-performance trade-offs, and supports extended context windows, tool use, agentic workflows, and multimodal inputs. Claude has been widely adopted in enterprise API integrations, developer tooling, and consumer applications.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
+  "subClassOf": {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:individual:anthropic-claude", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:anthropic-claude", "label": "Anthropic Claude"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "uses": [

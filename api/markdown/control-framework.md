@@ -1,0 +1,4 @@
+- ### Definition
+  - A control framework is a structured catalogue of GRC controls used across the [[Compliance Domain]] and the [[Regulatory Compliance Domain]] to manage risk and evidence conformance.
+- ### Content
+  - Frameworks such as NIST CSF, ISO 27001, COBIT, and SOC 2 map control objectives to concrete activities, owners, and audit evidence. Organisations select and tailor a framework, then operate and continuously assess its controls, often cross-mapping multiple frameworks to satisfy overlapping obligations efficiently.

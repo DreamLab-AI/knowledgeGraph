@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:2fbc72281ba113867d8e56fa79d6a9b9789755b96576dd57f299696e6fbe16d1",
+  "title": "Product Liability Directive",
+  "slug": "product-liability-directive",
+  "public": true,
+  "classIri": "urn:ngm:class:product-liability-directive",
+  "domain": "law",
+  "definition": "The Product Liability Directive is European Union legislation establishing rules on liability for damage caused by defective products. A revised directive adopted in 2024 extends its scope to software and AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "metaverse-liability-model",
+      "label": "Metaverse Liability Model"
+    }
+  ]
+}

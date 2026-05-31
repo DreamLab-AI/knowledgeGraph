@@ -1,0 +1,4 @@
+- ### Definition
+  - A behavior tree organises an agent's actions and conditions into a reactive hierarchy of ticked nodes, providing the task-orchestration backbone for systems such as [[Nav2]] and forming part of an [[AI Game Agent]].
+- ### Content
+  - Control nodes route execution: sequences run children until one fails, fallbacks until one succeeds, and decorators modify child results. Because subtrees are self-contained and composable, behavior trees scale to complex behaviours while remaining readable and reactive to changing world state.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:portable-identity",
+  "title": "Portable Identity",
+  "slug": "portable-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:portable-identity",
+  "domain": "security",
+  "definition": "Portable identity is the property of a digital identity that allows it to be carried by its owner across services, platforms, and trust domains without being locked to any single provider. It relies on user-held credentials and identifiers that any relying party can verify cryptographically. Portability is a core goal of decentralised and self-sovereign identity systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

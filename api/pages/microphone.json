@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:microphone",
+  "title": "Microphone",
+  "slug": "microphone",
+  "public": true,
+  "classIri": "urn:ngm:class:microphone",
+  "domain": "robotics",
+  "definition": "A microphone is a transducer that converts acoustic sound waves into an electrical signal, serving as the primary audio sensor in interactive and telepresence systems. Common types include electret, MEMS, condenser, and dynamic, characterised by polar pattern, sensitivity, and signal-to-noise ratio. In robots and voice interfaces, microphone arrays additionally enable beamforming and source localisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tc-0003-telepresence-robot",
+        "label": "Telepresence Robot"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

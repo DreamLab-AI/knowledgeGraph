@@ -1,0 +1,4 @@
+- ### Definition
+  - Long-range navigation enables an agent to plan and follow routes over large distances using global references rather than local perception alone. It is commonly enabled by a [[Topological Map]] and absolute positioning from [[GPS]].
+- ### Content
+  - Systems combine coarse global planners with finer local controllers, hierarchically decomposing a long route into reachable segments. Robustness depends on map quality, localisation drift correction, and the ability to re-plan when waypoints become unreachable.

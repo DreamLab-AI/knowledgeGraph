@@ -1,4 +1,5 @@
 public:: true
+alias:: Lightning-Network
 
 # Lightning Network
 ```json-ld
@@ -334,7 +335,7 @@ public:: true
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "@id": "urn:ngm:class:lightning-service-providers",
+        "@id": "urn:ngm:class:lightning-service-provider",
         "label": "Lightning Service Providers"
       },
       {
@@ -450,7 +451,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:mu-sig2",
+        "@id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {

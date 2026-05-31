@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:april-tag",
+  "title": "April Tag",
+  "slug": "april-tag",
+  "public": true,
+  "classIri": "urn:ngm:class:april-tag",
+  "domain": "robotics",
+  "definition": "An AprilTag is a square fiducial marker, resembling a simplified QR code, designed for robust detection and accurate 6-DoF pose estimation by computer-vision systems. Each tag encodes a unique ID with strong error correction, enabling reliable recognition under poor lighting, partial occlusion, and oblique viewing angles. AprilTags are widely used as visual landmarks for camera calibration, robot localization, and augmented-reality registration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lens-and-camera-calibration",
+        "label": "Lens and Camera Calibration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    }
+  ]
+}

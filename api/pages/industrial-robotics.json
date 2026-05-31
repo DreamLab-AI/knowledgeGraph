@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:42846248f184215f82ec192cdd6afc41fa2f60e8bfd95ca27d147c705ff9bd0a",
+  "title": "Industrial Robotics",
+  "slug": "industrial-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-robotics",
+  "domain": "robotics",
+  "definition": "Industrial robotics is the application of programmable robots to manufacturing tasks such as assembly, welding, handling and inspection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-robots",
+        "label": "Collaborative Robots"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "https-ifr-org",
+      "label": "https://ifr.org/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-industrial-robot",
+      "label": "https://en.wikipedia.org/wiki/Industrial_robot"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

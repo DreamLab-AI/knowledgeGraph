@@ -1,4 +1,5 @@
 public:: true
+alias:: AutonomousRobot
 
 # Autonomous Robot
 ```json-ld

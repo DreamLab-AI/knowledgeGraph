@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:fafc5ff65f0d4bf4ea9ff1393d2cee56e49bf8d1e1aafa023313702f044ef085",
+  "title": "Market Microstructure",
+  "slug": "market-microstructure",
+  "public": true,
+  "classIri": "urn:ngm:class:market-microstructure",
+  "domain": "metaverse",
+  "definition": "Market microstructure studies how the rules and mechanics of trading, such as order types, matching and information flow, shape prices, liquidity and transaction costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "Prediction Markets"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    }
+  ]
+}

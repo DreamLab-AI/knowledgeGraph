@@ -1,4 +1,5 @@
 public:: true
+alias:: FeedbackControl
 
 # Feedback Control
 ```json-ld

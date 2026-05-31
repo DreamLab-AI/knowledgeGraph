@@ -692,12 +692,28 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
     {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
       "slug": "compatibility-standards",
       "label": "Compatibility Standards"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
     },
     {
       "slug": "decentralised-web",
@@ -716,12 +732,28 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
+      "slug": "hop-protocol",
+      "label": "Hop Protocol"
+    },
+    {
       "slug": "inter-world-remittance",
       "label": "Inter-world Remittance"
     },
     {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
       "slug": "layer-0",
       "label": "Layer 0"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
     },
     {
       "slug": "metaverse-domain",
@@ -744,12 +776,24 @@
       "label": "Relayer"
     },
     {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
     },
     {
+      "slug": "squid-router",
+      "label": "Squid Router"
+    },
+    {
       "slug": "standards",
       "label": "Standards"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "technical-standard",
@@ -768,6 +812,10 @@
       "label": "Trust Framework"
     },
     {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
       "slug": "universal-scene-description",
       "label": "Universal Scene Description"
     },
@@ -776,12 +824,20 @@
       "label": "Virtual Asset"
     },
     {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
     },
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
+    },
+    {
+      "slug": "supports",
+      "label": "supports"
     }
   ]
 }

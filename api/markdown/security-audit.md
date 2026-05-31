@@ -1,0 +1,4 @@
+- ### Definition
+  - A security audit systematically evaluates controls and code against threats; it is enabled by a [[Threat Surface Map]] and is a constituent activity of the [[ETSI Domain Data Management Security]].
+- ### Content
+  - Engagements scope assets and threat models, then apply static and dynamic analysis, configuration review, and testing to surface weaknesses. Findings are rated by severity and exploitability, prioritised for remediation, and re-tested, with audit reports often supporting regulatory or contractual assurance.

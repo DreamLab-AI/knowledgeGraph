@@ -359,8 +359,8 @@ public:: true
       "label": "Customer Service Automation"
     },
     {
-      "@id": "urn:ngm:class:enterprise-ai",
-      "label": "Enterprise AI"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

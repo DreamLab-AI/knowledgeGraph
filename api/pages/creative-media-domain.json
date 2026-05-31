@@ -74,6 +74,14 @@
       "label": "Collective Memory Archive"
     },
     {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
     },
@@ -142,6 +150,10 @@
       "label": "Metaverse Content Pipeline"
     },
     {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
       "slug": "motion-capture-rig",
       "label": "Motion Capture Rig"
     },
@@ -208,6 +220,10 @@
     {
       "slug": "tourism-metaverse",
       "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
     },
     {
       "slug": "virtual-lighting-model",

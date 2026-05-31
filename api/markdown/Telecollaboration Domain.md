@@ -1,4 +1,5 @@
 public:: true
+alias:: TC-0001-telecollaboration-domain, TelecollaborationDomain
 
 # Telecollaboration Domain
 ```json-ld

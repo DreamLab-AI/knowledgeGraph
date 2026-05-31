@@ -1,0 +1,4 @@
+- ### Definition
+  - The Human Development Index is a composite measure of national wellbeing aggregating health, education, and income, used to study [[Global Inequality]] and development outcomes.
+- ### Content
+  - Computed as the geometric mean of normalised indices for the three dimensions, the HDI ranges from 0 to 1, with higher values indicating greater development. Derivative measures such as the Inequality-adjusted HDI and the Gender Development Index extend it to capture distributional and demographic disparities.

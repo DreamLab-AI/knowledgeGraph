@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:880c4036305a94d434d8f78d6b16ae9ba0fa7e81c592a67564b50acffdcdb062",
+  "title": "SIGGRAPH Pipeline WG",
+  "slug": "siggraph-pipeline-wg",
+  "public": true,
+  "classIri": "urn:ngm:class:siggraph-pipeline-wg",
+  "domain": "metaverse",
+  "definition": "The SIGGRAPH Pipeline Working Group is an industry effort associated with the SIGGRAPH community that addresses interoperability and best practice across the stages of 3D content production pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset-standard",
+      "label": "3D Asset Standard"
+    },
+    {
+      "slug": "asset-interoperability",
+      "label": "Asset Interoperability"
+    },
+    {
+      "slug": "3-d-content-pipeline",
+      "label": "3D Content Pipeline"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
+      "slug": "siggraph",
+      "label": "SIGGRAPH"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    }
+  ]
+}

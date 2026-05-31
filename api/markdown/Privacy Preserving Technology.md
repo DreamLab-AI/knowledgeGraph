@@ -1,4 +1,5 @@
 public:: true
+alias:: Privacy-Preserving Technology
 
 # Privacy Preserving Technology
 ```json-ld

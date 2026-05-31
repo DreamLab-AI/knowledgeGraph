@@ -1,0 +1,4 @@
+- ### Definition
+  - Deep research is an autonomous workflow where an AI agent plans, browses, and synthesises a cited answer over many steps. It is built on [[Agents]] and leans on [[Computer Use and Browser Agents]] to navigate live web sources.
+- ### Content
+  - A deep-research agent maintains a research plan, issues searches, follows links, extracts and cross-checks evidence, then compiles a structured report with provenance. Key challenges are source quality, hallucination control, and managing long-horizon tool-use loops within token and time budgets.

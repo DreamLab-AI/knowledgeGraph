@@ -308,6 +308,14 @@
       "label": "Admittance Control"
     },
     {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
       "slug": "inverse-kinematics",
       "label": "Inverse Kinematics"
     },
@@ -320,8 +328,16 @@
       "label": "Model Based Control"
     },
     {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
       "slug": "robotics-systems",
       "label": "Robotics Systems"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
     }
   ]
 }

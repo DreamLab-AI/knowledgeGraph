@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sustainability-framework",
+  "title": "Sustainability Framework",
+  "slug": "sustainability-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainability-framework",
+  "domain": "governance",
+  "definition": "A sustainability framework is a structured set of principles, metrics, and reporting standards used to measure and manage the environmental, social, and governance impact of an organisation or system. It defines what to measure, how to compute indicators such as carbon footprint, and how to disclose results so that performance can be compared and audited. Frameworks like GHG Protocol and emerging crypto-specific schemes provide the methodological backbone for sustainability claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    }
+  ]
+}

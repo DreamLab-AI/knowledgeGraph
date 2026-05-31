@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:c459bfad34e40fcb5fbed82005abd5b38e85248719c63f6b43afafff6e027d11",
+  "title": "Process Regulation",
+  "slug": "process-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:process-regulation",
+  "domain": "governance",
+  "definition": "Process regulation is a regulatory approach that specifies how activities must be carried out rather than dictating particular outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regulation",
+      "label": "https://en.wikipedia.org/wiki/Regulation"
+    },
+    {
+      "slug": "https-www-oecd-org-gov-regulatory-policy",
+      "label": "https://www.oecd.org/gov/regulatory-policy/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    }
+  ]
+}

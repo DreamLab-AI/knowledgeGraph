@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:wto-trade-facilitation-agreement",
+  "title": "WTO Trade Facilitation Agreement",
+  "slug": "wto-trade-facilitation-agreement",
+  "public": true,
+  "classIri": "urn:ngm:class:wto-trade-facilitation-agreement",
+  "domain": "supply-chain",
+  "definition": "The WTO Trade Facilitation Agreement (TFA) is a multilateral treaty, in force since 2017, that sets binding measures to expedite the movement, release, and clearance of goods across borders. It mandates simplified customs procedures, advance ruling systems, electronic payment, single-window submission, and cooperation between border agencies. The TFA matters because it reduces trade costs and delays, with provisions tied to the capacity of developing-country members.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    }
+  ]
+}

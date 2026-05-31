@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:ca02ae6e9e8b916b030a510d26be8ff8ca8cc7556edab0f40d446ca38b5bd16b",
+  "title": "Multi-Agent Coordination",
+  "slug": "multi-agent-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-coordination",
+  "domain": "artificial-intelligence",
+  "definition": "Multi-agent coordination is the process by which several autonomous agents organise their actions to achieve shared or compatible goals. It addresses task allocation, communication and conflict resolution among agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
+    }
+  ]
+}

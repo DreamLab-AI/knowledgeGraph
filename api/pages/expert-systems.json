@@ -72,6 +72,10 @@
     {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
     }
   ]
 }

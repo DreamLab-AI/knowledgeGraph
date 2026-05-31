@@ -1,0 +1,4 @@
+- ### Definition
+  - The Facial Action Coding System is an anatomically based scheme that encodes facial expression as combinations of Action Units, providing the measurement foundation for expression recognition in [[Empathetic AI]] and related [[Computer Vision]] systems. It separates objective muscle movement from subjective emotional labels.
+- ### Content
+  - FACS catalogues dozens of Action Units (e.g. inner-brow raiser, lip-corner puller) and their intensities, enabling reproducible coding of expressions by trained annotators or automated detectors. In machine learning it supplies labels and structure for emotion-recognition models, avatar facial rigging, and clinical assessment, though automated FACS coding must contend with occlusion, head pose, and individual anatomical variation.

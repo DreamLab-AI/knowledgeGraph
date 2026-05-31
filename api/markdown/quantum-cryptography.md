@@ -1,0 +1,4 @@
+- ### Definition
+  - Quantum cryptography secures communication using quantum-mechanical properties, most notably quantum key distribution. It is enabled by a [[Quantum Network Node]] and is closely related to broader [[Cryptography Security and Privacy]] practice.
+- ### Content
+  - QKD protocols such as BB84 detect interception because measuring a quantum state perturbs it. Practical deployment requires specialised photonic hardware, trusted nodes or quantum repeaters over distance, and integration with classical authentication. It complements rather than replaces classical and post-quantum schemes used for bulk encryption and integrity.

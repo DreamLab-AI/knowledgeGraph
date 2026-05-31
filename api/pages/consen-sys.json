@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:12ee0b989ece4405a7711d06cdea6d474ac0388c9439e0381c7e2b3aa200a916",
+  "title": "ConsenSys",
+  "slug": "consen-sys",
+  "public": true,
+  "classIri": "urn:ngm:class:consen-sys",
+  "domain": "blockchain",
+  "definition": "ConsenSys is a software company that builds Ethereum infrastructure and developer tools, including wallet and node services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:c89effa89bebb1d681f6406ce4fcc965766664088c249318128da721249e6f34",
+  "title": "TELE-110-spatial-audio-processing",
+  "slug": "tele-110-spatial-audio-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-110-spatial-audio-processing",
+  "domain": "metaverse",
+  "definition": "Spatial audio processing is the set of signal-processing techniques that position sound sources in three-dimensional space for a listener, using cues such as direction, distance and room acoustics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:binaural-rendering",
+        "label": "Binaural Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "binaural-rendering",
+      "label": "Binaural Rendering"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

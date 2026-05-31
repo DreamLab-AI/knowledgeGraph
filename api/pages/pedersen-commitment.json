@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:c3d57a51ea2305882bfe0c69b4d9ee256a8d4b650ee1404e1e5ff5d6e7aa685f",
+  "title": "Pedersen Commitment",
+  "slug": "pedersen-commitment",
+  "public": true,
+  "classIri": "urn:ngm:class:pedersen-commitment",
+  "domain": "cryptography",
+  "definition": "A cryptographic commitment scheme that lets a party commit to a value while keeping it hidden, with the ability to reveal it later. It is both binding and information-theoretically hiding, and it is additively homomorphic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

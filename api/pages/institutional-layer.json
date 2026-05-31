@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:8dbb0c4647934f713c479ac0e2bfa46c32af0fb18c08b8e333b70b5a5d1d440d",
+  "title": "Institutional Layer",
+  "slug": "institutional-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-layer",
+  "domain": "institutional",
+  "definition": "The Institutional Layer is the cross-cutting stratum that represents the organisations, roles, and durable arrangements through which a system operates in the wider world. It sits above the Governance Layer, embodying its decisions in standing bodies, and depends on regulatory and compliance structures. It contains organisational entities, mandates, and the relationships between them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-layer",
+        "label": "Regulatory Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:organisational-layer",
+        "label": "Organisational Layer"
+      },
+      {
+        "id": "urn:ngm:class:social-layer",
+        "label": "Social Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "Regulatory Layer"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "social-layer",
+      "label": "Social Layer"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "slug": "principal-agent-problem",
+      "label": "Principal-Agent Problem"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "Regulatory Layer"
+    },
+    {
+      "slug": "social-layer",
+      "label": "Social Layer"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

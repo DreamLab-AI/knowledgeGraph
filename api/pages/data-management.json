@@ -80,6 +80,10 @@
       "label": "Co Training"
     },
     {
+      "slug": "customer-data-platform",
+      "label": "Customer Data Platform"
+    },
+    {
       "slug": "data-fabric-architecture",
       "label": "Data Fabric Architecture"
     },
@@ -90,6 +94,10 @@
     {
       "slug": "data-provenance",
       "label": "Data Provenance"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
     },
     {
       "slug": "digital-repository",
@@ -116,8 +124,16 @@
       "label": "ETSI Domain: Data Management + Security"
     },
     {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
     },
     {
       "slug": "metadata-repository",
@@ -142,6 +158,10 @@
     {
       "slug": "training-data",
       "label": "Training Data"
+    },
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
     }
   ]
 }

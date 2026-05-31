@@ -12,12 +12,12 @@
       "label": "Software Engineering"
     },
     {
-      "id": "urn:ngm:class:circular-causality",
-      "label": "Circular Causality"
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
-      "id": "urn:ngm:class:closed-loop-system",
-      "label": "Closed-Loop System"
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
   "entityType": "Class",
@@ -733,12 +733,28 @@
   ],
   "backlinks": [
     {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
       "slug": "control-system",
       "label": "Control System"
     },
     {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
     },
     {
       "slug": "emergence",

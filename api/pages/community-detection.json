@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:4f39a66cd234dfa92e58cfd3ebda12c768818d4c033f809a1060be202c0a1460",
+  "title": "Community Detection",
+  "slug": "community-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:community-detection",
+  "domain": "graph-theory",
+  "definition": "Community detection is the task of partitioning a network into groups of nodes that are more densely connected internally than with the rest of the graph. It is a core method in network analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-analysis",
+      "label": "Network Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

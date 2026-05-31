@@ -1,0 +1,4 @@
+- ### Definition
+  - Metaverse content creation is the production of 3D assets, environments, avatars, and interactive experiences for immersive worlds. It is the supply side feeding a [[Metaverse Application Platform]] through a [[Content Creation Pipeline]].
+- ### Content
+  - Workflows combine traditional DCC tools (modelling, rigging, texturing) with real-time engines and, increasingly, generative AI for asset synthesis. Interoperability standards such as glTF and USD allow assets to move between platforms, while real-time rendering budgets impose strict polygon, texture, and shader constraints absent in pre-rendered media.

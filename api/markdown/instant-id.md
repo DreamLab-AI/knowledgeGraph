@@ -1,0 +1,4 @@
+- ### Definition
+  - InstantID is a tuning-free, identity-preserving image generator that conditions diffusion models on a single face image. It is conceptually related to [[ControlNet and Similar Spatial Conditioning Systems]] and is implicated in [[Deepfakes and Fraudulent Content]].
+- ### Content
+  - The method extracts a face embedding and uses an IdentityNet to inject identity plus landmark guidance during denoising, achieving high likeness in a single pass. Its low barrier to producing realistic likenesses makes provenance and consent controls important.

@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:imf-cbdc-framework",
+  "title": "IMF CBDC Framework",
+  "slug": "imf-cbdc-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:imf-cbdc-framework",
+  "domain": "blockchain",
+  "definition": "The IMF CBDC Framework is the International Monetary Fund's analytical and policy guidance for the design, adoption, and macro-financial implications of central bank digital currencies. It addresses monetary-policy transmission, financial stability, cross-border interoperability, and capacity development for member-state central banks. The framework helps jurisdictions evaluate whether and how to issue a CBDC.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imf",
+        "label": "IMF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

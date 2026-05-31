@@ -79,8 +79,16 @@
       "label": "Digital Citizens' Assembly"
     },
     {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
     }
   ]
 }

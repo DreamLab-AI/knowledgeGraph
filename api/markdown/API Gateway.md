@@ -659,8 +659,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:cloud-native-component",
-      "label": "Cloud Native Component"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:policy-enforcement-point",

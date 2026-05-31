@@ -59,6 +59,10 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
       "slug": "convergence",
       "label": "Convergence"
     },
@@ -83,6 +87,14 @@
       "label": "Hash Function"
     },
     {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
       "slug": "money",
       "label": "Money"
     },
@@ -93,6 +105,14 @@
     {
       "slug": "proof-of-work",
       "label": "Proof Of Work"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
     },
     {
       "slug": "variational-autoencoders",

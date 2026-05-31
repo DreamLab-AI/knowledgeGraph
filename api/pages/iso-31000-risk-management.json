@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:7899ed6323c147e86a3147c53757d916f98bad452700478e766616d553d1b3bb",
+  "title": "ISO 31000 Risk Management",
+  "slug": "iso-31000-risk-management",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-31000-risk-management",
+  "domain": "standards",
+  "definition": "An ISO standard providing principles and guidelines for risk management applicable to any organisation. It describes a framework and process for managing risk and is not intended for certification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ]
+}

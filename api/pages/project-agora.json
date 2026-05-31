@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:project-agora",
+  "title": "Project Agora",
+  "slug": "project-agora",
+  "public": true,
+  "classIri": "urn:ngm:class:project-agora",
+  "domain": "blockchain",
+  "definition": "Project Agora is a cross-border wholesale payments initiative led by the Bank for International Settlements with several central banks and private financial institutions. It explores integrating tokenised commercial-bank deposits with tokenised central-bank money on a unified programmable ledger to improve cross-border settlement. It is a flagship experiment in the tokenisation of the monetary and financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

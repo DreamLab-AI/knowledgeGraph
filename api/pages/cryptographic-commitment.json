@@ -126,6 +126,10 @@
     {
       "slug": "lightning-network",
       "label": "Lightning Network"
+    },
+    {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
     }
   ]
 }

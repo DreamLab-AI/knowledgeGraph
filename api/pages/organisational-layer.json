@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fbead742707a0713faa8dedf9bc76106eb3cf0b06823057ceff655cdd653ce45",
+  "title": "Organisational Layer",
+  "slug": "organisational-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:organisational-layer",
+  "domain": "organisational",
+  "definition": "The Organisational Layer is the cross-cutting stratum that represents the internal structure, roles, and processes of an operating body. It sits above the Institutional Layer that grants it standing and supports operational and social activity. It contains organisational units, responsibilities, reporting lines, and internal processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:institutional-layer",
+        "label": "Institutional Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-layer",
+        "label": "Operational Layer"
+      },
+      {
+        "id": "urn:ngm:class:process-layer",
+        "label": "Process Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    },
+    {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    },
+    {
+      "slug": "organisational-structure",
+      "label": "Organisational Structure"
+    },
+    {
+      "slug": "division-of-labour",
+      "label": "Division of Labour"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    }
+  ]
+}

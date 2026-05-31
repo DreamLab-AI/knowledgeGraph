@@ -1,0 +1,4 @@
+- ### Definition
+  - Scope definition fixes the boundaries of an assessment or grant; it is a constituent of the [[User Consent Token]] and a foundational step in [[Blockchain Environmental Impact Assessment]].
+- ### Content
+  - In consent frameworks, scope enumerates the resources, purposes, and durations a token authorises, enabling least-privilege access. In impact assessment, scope sets the system boundary and accounting categories, determining what emissions or effects are included and ensuring comparability across studies.

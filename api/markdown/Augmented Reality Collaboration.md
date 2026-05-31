@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-021-augmented-reality-collaboration
 
 # Augmented Reality Collaboration
 ```json-ld
@@ -102,7 +103,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:tele-150-webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "TELE-150-webrtc"
       }
     ],

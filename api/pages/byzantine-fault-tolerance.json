@@ -12,8 +12,8 @@
       "label": "Protocol and Consensus"
     },
     {
-      "id": "urn:ngm:class:distributed-agreement",
-      "label": "Distributed Agreement"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     },
     {
       "id": "urn:ngm:class:consensus-mechanism",
@@ -160,6 +160,10 @@
       "label": "Consensus Algorithm"
     },
     {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },
@@ -192,6 +196,10 @@
       "label": "Federated Byzantine Fault Tolerance"
     },
     {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
       "slug": "hot-stuff-consensus",
       "label": "HotStuff Consensus"
     },
@@ -214,6 +222,10 @@
     {
       "slug": "proof-of-work",
       "label": "Proof Of Work"
+    },
+    {
+      "slug": "qbft",
+      "label": "QBFT"
     },
     {
       "slug": "quorum-blockchain",

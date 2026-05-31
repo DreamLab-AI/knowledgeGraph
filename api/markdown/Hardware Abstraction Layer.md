@@ -1,4 +1,5 @@
 public:: true
+alias:: HardwareAbstractionLayer
 
 # Hardware Abstraction Layer
 ```json-ld

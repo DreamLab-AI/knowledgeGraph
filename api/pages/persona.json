@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:persona",
+  "title": "Persona",
+  "slug": "persona",
+  "public": true,
+  "classIri": "urn:ngm:class:persona",
+  "domain": "ai",
+  "definition": "A persona is a defined personality, role, and behavioural profile assigned to a conversational AI to shape its tone, knowledge framing, and interaction style. It encodes traits such as voice, expertise, boundaries, and goals, often via system prompts, so that responses stay consistent and aligned with a product's intent. Personas make chatbots feel coherent and purposeful rather than generic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

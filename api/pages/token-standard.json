@@ -76,6 +76,10 @@
   ],
   "backlinks": [
     {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
       "slug": "crypto-token",
       "label": "Crypto Token"
     },
@@ -90,6 +94,10 @@
     {
       "slug": "decentralized-exchange",
       "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
     },
     {
       "slug": "enterprise-token-standards",
@@ -132,8 +140,16 @@
       "label": "Non-Fungible Token (NFT)"
     },
     {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
+    },
+    {
       "slug": "play-to-earn-p2-e",
       "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
     },
     {
       "slug": "smart-royalty-contract",
@@ -142,6 +158,10 @@
     {
       "slug": "social-token-economy",
       "label": "Social Token Economy"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
     },
     {
       "slug": "tokenization",

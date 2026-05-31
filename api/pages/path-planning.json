@@ -59,11 +59,11 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:rb-1017-rrt-algorithm",
+        "id": "urn:ngm:class:rrt-algorithm",
         "label": "RB-1017-rrt-algorithm"
       },
       {
-        "id": "urn:ngm:class:rb-1018-dijkstra-algorithm",
+        "id": "urn:ngm:class:dijkstra-algorithm",
         "label": "RB-1018-dijkstra-algorithm"
       }
     ],
@@ -168,6 +168,10 @@
       "label": "Autonomous Robot"
     },
     {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
       "slug": "autonomous-vehicle",
       "label": "Autonomous Vehicle"
     },
@@ -178,6 +182,10 @@
     {
       "slug": "dijkstra-algorithm",
       "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
     },
     {
       "slug": "mobile-robot-platform",
@@ -206,6 +214,10 @@
     {
       "slug": "topological-map",
       "label": "Topological Map"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
     }
   ]
 }

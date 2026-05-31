@@ -95,8 +95,8 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:distributed-systems-infrastructure",
-      "label": "Distributed Systems Infrastructure"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

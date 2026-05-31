@@ -1,0 +1,4 @@
+- ### Definition
+  - Open Data is openly licensed, machine-readable data that anyone may reuse and redistribute, enabling transparency and interoperable ecosystems such as [[Solid]] that put data under user control.
+- ### Content
+  - Best practice publishes Open Data in standard formats with clear provenance and permissive licenses. It powers reproducible research, civic transparency, and decentralized web architectures where applications query portable, user-owned datasets rather than siloed proprietary stores.

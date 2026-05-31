@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:model-collapse",
+  "title": "Model Collapse",
+  "slug": "model-collapse",
+  "public": true,
+  "classIri": "urn:ngm:class:model-collapse",
+  "domain": "ai",
+  "definition": "Model collapse is a degenerative process in which generative models trained recursively on their own (or other models') synthetic outputs progressively lose information about the true data distribution. Tails of the distribution disappear first, leading to reduced diversity, amplified biases, and eventual convergence on degenerate outputs. It is a key risk as AI-generated content increasingly contaminates web-scale training corpora.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

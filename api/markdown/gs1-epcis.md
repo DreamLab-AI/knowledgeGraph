@@ -1,0 +1,4 @@
+- ### Definition
+  - GS1 EPCIS is an event-based supply-chain visibility standard that systems such as [[Cold Chain Monitoring]] implement and use to record and exchange traceability data.
+- ### Content
+  - EPCIS structures observations into capture and query interfaces with a shared vocabulary (CBV), letting partners reconstruct an object's full journey. Combined with sensor data and distributed ledgers, it supports verifiable provenance, recall management, and regulatory compliance such as drug serialisation mandates.

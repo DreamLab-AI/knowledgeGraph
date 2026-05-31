@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:incident-investigation",
+  "title": "Incident Investigation",
+  "slug": "incident-investigation",
+  "public": true,
+  "classIri": "urn:ngm:class:incident-investigation",
+  "domain": "security",
+  "definition": "Incident investigation is the structured process of determining the root cause, scope, and impact of a security or operational incident by collecting and analysing evidence. In a cybersecurity context it follows the breach lifecycle\u2014identification, containment, evidence preservation, forensic analysis, and lessons learned\u2014to understand how an incident occurred and to prevent recurrence. It relies heavily on audit trails and digital-forensics methods to reconstruct events.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    }
+  ]
+}

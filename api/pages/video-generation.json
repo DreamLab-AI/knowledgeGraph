@@ -69,6 +69,10 @@
     {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
     }
   ]
 }

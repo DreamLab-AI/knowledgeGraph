@@ -110,8 +110,20 @@
       "label": "Metaverse Liability Model"
     },
     {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
       "slug": "virtual-securities-offering-vso",
       "label": "Virtual Securities Offering (VSO)"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
     }
   ]
 }

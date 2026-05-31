@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:139ed6b7bd7576c1b5dfdd562d3ee6a61de775ffb45c2dd77763a535309ec5ce",
+  "title": "ZK-SNARK",
+  "slug": "zk-snark",
+  "public": true,
+  "classIri": "urn:ngm:class:zk-snark",
+  "domain": "cryptographic",
+  "definition": "A Zero-Knowledge Succinct Non-Interactive Argument of Knowledge is a proof that a statement is true while revealing nothing else, producing a small proof that is fast to verify.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:groth-16",
+        "label": "Groth16"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "groth-16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "groth-16",
+      "label": "Groth16"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    }
+  ]
+}

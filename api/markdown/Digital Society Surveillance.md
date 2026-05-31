@@ -415,12 +415,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:civil-liberties",
-      "label": "Civil Liberties"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     },
     {
-      "@id": "urn:ngm:class:data-ethics",
-      "label": "Data Ethics"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -644,7 +644,7 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

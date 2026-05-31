@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:instant-settlement",
+  "title": "Instant Settlement",
+  "slug": "instant-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:instant-settlement",
+  "domain": "blockchain",
+  "definition": "Instant settlement is the near-immediate, final transfer of value between parties, eliminating the multi-day clearing and settlement delays of traditional banking and card networks. In blockchain and payment-channel systems it is achieved through cryptographic finality or off-chain channel updates that make funds usable within seconds. It reduces counterparty and credit risk, frees up working capital, and is a defining property of digital money.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-money",
+        "label": "Digital Money"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

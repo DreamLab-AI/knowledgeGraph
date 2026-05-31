@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:transaction-manager",
+  "title": "Transaction Manager",
+  "slug": "transaction-manager",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-manager",
+  "domain": "data",
+  "definition": "A transaction manager is a software component that coordinates the atomic execution of operations against a database or distributed system, enforcing the ACID properties of atomicity, consistency, isolation, and durability. It governs commit and rollback, manages concurrency control and locking, and in distributed settings orchestrates multi-resource protocols such as two-phase commit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

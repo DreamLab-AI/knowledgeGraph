@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:66702125f30de51091d9cbe51f8ff6d0127d6873a0395384de76504de45fd03c",
+  "title": "Eventual Consistency",
+  "slug": "eventual-consistency",
+  "public": true,
+  "classIri": "urn:ngm:class:eventual-consistency",
+  "domain": "distributed-systems",
+  "definition": "A consistency model for distributed data stores in which, given no new updates, all replicas eventually converge to the same value. It favours availability and partition tolerance over immediate consistency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
+    }
+  ]
+}

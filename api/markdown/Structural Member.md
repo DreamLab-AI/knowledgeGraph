@@ -1,4 +1,5 @@
 public:: true
+alias:: StructuralMember
 
 # Structural Member
 ```json-ld

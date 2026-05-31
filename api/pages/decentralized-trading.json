@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:decentralized-trading",
+  "title": "Decentralized Trading",
+  "slug": "decentralized-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralized-trading",
+  "domain": "blockchain",
+  "definition": "Decentralized trading is the exchange of crypto-assets directly between parties through smart contracts on a blockchain, without a centralized intermediary holding custody of funds or matching orders. Trades settle peer-to-contract against liquidity pools or order books governed by deterministic on-chain logic, giving traders self-custody and permissionless access. It is the activity layer enabled by decentralized exchanges and automated market makers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-making",
+        "label": "Automated Market Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    }
+  ]
+}

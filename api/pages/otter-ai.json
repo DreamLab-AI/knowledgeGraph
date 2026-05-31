@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:12bf81ce08bd9fe49756aafdf3a67a1003e6a87cc1048ecf44f6b9001d6853ca",
+  "title": "Otter.ai",
+  "slug": "otter-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:otter-ai",
+  "domain": "natural-language-processing",
+  "definition": "An American company that provides automatic speech recognition and transcription software for meetings and conversations. It generates real-time transcripts, summaries, and notes from audio.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -12,12 +12,12 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:physics-simulator",
-      "label": "Physics Simulator"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
-      "id": "urn:ngm:class:robotics-development-tool",
-      "label": "Robotics Development Tool"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",

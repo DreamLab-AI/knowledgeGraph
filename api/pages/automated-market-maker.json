@@ -95,8 +95,40 @@
   ],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "constant-product-formula",
+      "label": "Constant Product Formula"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "curve",
+      "label": "Curve"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
     },
     {
       "slug": "decentralized-exchange-dex",
@@ -111,8 +143,36 @@
       "label": "Decentralized Finance (DeFi)"
     },
     {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "mango-markets",
+      "label": "Mango Markets"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "Prediction Markets"
     },
     {
       "slug": "smart-contract",
@@ -121,6 +181,10 @@
     {
       "slug": "smart-contracts",
       "label": "Smart Contracts"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "token-bonding-curve",

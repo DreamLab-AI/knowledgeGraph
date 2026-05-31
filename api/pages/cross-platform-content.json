@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-platform-content",
+  "title": "Cross-Platform Content",
+  "slug": "cross-platform-content",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-platform-content",
+  "domain": "metaverse",
+  "definition": "Cross-platform content is digital media and 3D assets authored once and made usable across multiple platforms, engines, or devices through standardised formats and conversion pipelines. It depends on format parsers and content pipelines that normalise assets to each target's runtime requirements. It enables creators to reach diverse metaverse environments without bespoke re-authoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:format-parser",
+        "label": "Format Parser"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "format-parser",
+      "label": "Format Parser"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    }
+  ]
+}

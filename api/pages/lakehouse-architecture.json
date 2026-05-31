@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:lakehouse-architecture",
+  "title": "Lakehouse Architecture",
+  "slug": "lakehouse-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:lakehouse-architecture",
+  "domain": "data",
+  "definition": "Lakehouse architecture is a data management pattern that combines the low-cost, open storage of a data lake with the transactional reliability and performance of a data warehouse. It layers ACID transactions, schema enforcement and indexing over inexpensive object storage using open table formats such as Delta Lake, Apache Iceberg or Hudi. This unifies analytics, business intelligence and machine learning on a single copy of data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

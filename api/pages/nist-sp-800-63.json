@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d39f224b31aa6b4b05d565d0690decdf576d8f6f0010876876b3e1c79b1a5fd0",
+  "title": "NIST SP 800-63",
+  "slug": "nist-sp-800-63",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-sp-800-63",
+  "domain": "standards",
+  "definition": "A NIST Special Publication providing digital identity guidelines, covering enrolment, identity proofing, authentication and federation. It defines assurance levels for identity systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

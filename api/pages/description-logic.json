@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:37ef9af6ddbf60246830b0e0feac5406c6d37b48b999548290a3512f4c525c86",
+  "title": "Description Logic",
+  "slug": "description-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:description-logic",
+  "domain": "mathematics",
+  "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ontology",
+      "label": "Ontology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "owl",
+      "label": "OWL"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    }
+  ]
+}

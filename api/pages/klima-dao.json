@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:ef6df39f895cf6f900559056df88711a2694c8939753cec8b1066d69012a9440",
+  "title": "KlimaDAO",
+  "slug": "klima-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:klima-dao",
+  "domain": "blockchain",
+  "definition": "A decentralised organisation that acquires and holds tokenised carbon credits in its treasury, issuing a token backed by those credits to channel capital toward carbon retirement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

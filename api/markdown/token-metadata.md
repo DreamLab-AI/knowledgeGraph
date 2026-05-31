@@ -1,0 +1,4 @@
+- ### Definition
+  - The structured descriptive data describing a token's name, traits, media, and provenance, usually referenced by a tokenURI. It is a required component of a [[Non-Fungible Token (NFT)]] and is fixed during [[NFT Minting]].
+- ### Content
+  - Metadata schemas such as the ERC-721 and ERC-1155 metadata standards define expected fields so that marketplaces and wallets can render tokens consistently. Because on-chain storage is costly, metadata is frequently kept off-chain on IPFS or Arweave with the chain holding only a content hash or URI for verifiable integrity.

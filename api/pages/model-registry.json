@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:9aec0f0d0f93e90b49c528c01345e606b4c709993194a42d73ac80533344d052",
+  "title": "Model Registry",
+  "slug": "model-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:model-registry",
+  "domain": "machine-learning",
+  "definition": "A model registry is a system for cataloguing trained machine learning models with their versions, metadata and lifecycle stage. It provides a central record that links a model to its training data, metrics and deployment status.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    }
+  ]
+}

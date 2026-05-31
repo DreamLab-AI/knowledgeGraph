@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:8fe085446c7b23c3f0eefa1b83951999a6c9c01ee9b7822fe26f1ac094a8e871",
+  "title": "Squid Router",
+  "slug": "squid-router",
+  "public": true,
+  "classIri": "urn:ngm:class:squid-router",
+  "domain": "blockchain",
+  "definition": "Squid Router is a cross-chain liquidity and routing protocol built on the Axelar network that allows token swaps and transfers between different blockchains in a single transaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "axelar",
+      "label": "Axelar"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ]
+}

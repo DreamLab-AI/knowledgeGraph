@@ -1,0 +1,4 @@
+- ### Definition
+  - Stability is the [[Control Theory]] property whereby a system's state stays bounded and converges back toward equilibrium after a perturbation rather than diverging, formalised via Lyapunov and bounded-input bounded-output criteria.
+- ### Content
+  - It is the foundational requirement of controller design, since performance objectives such as tracking and disturbance rejection are meaningless for a divergent system. A correctly tuned [[Feedback Loop]] is the principal means of achieving stability, adjusting actuation in response to measured error, and stability analysis sits at the centre of the [[Control Systems Domain]] alongside controllability and robustness.

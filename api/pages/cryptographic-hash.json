@@ -124,12 +124,24 @@
       "label": "Consensus Mechanism"
     },
     {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
       "slug": "digital-evidence-chain-of-custody",
       "label": "Digital Evidence Chain of Custody"
     },
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
+    },
+    {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
+      "slug": "ipfs-content-addressing",
+      "label": "IPFS Content Addressing"
     },
     {
       "slug": "non-fungible-token-nft",

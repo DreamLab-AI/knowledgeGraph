@@ -72,6 +72,14 @@
       "label": "Central Bank Digital Currency (CBDC)"
     },
     {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
       "slug": "monetary-system",
       "label": "Monetary System"
     }

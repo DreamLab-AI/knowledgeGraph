@@ -1,4 +1,5 @@
 public:: true
+alias:: Foundation Model
 
 # Foundation Models
 
@@ -18,13 +19,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:foundation-models",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:foundation-models",
+  "@type": "Class",
   "label": "Foundation Models",
   "definition": "Foundation models are large-scale neural networks trained on broad, diverse datasets via self-supervised learning that acquire general-purpose representations transferable to a wide range of downstream tasks. They are characterised by massive parameter counts, emergent capabilities not explicitly trained for, and the ability to be fine-tuned or prompted for specialised applications. Prominent examples include GPT-4, BERT, CLIP, and Stable Diffusion, spanning language, vision, and multimodal domains. Their scale and generality make them qualitatively distinct from narrow task-specific models.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}],
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"},

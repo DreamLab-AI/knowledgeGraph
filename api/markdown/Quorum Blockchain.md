@@ -1,4 +1,5 @@
 public:: true
+alias:: QuorumBlockchain
 
 # Quorum Blockchain
 ```json-ld
@@ -483,7 +484,7 @@ public:: true
       "label": "Consortium Blockchain"
     },
     {
-      "@id": "urn:ngm:individual:ethereum",
+      "@id": "urn:ngm:class:ethereum",
       "label": "Ethereum"
     }
   ],
@@ -596,7 +597,7 @@ public:: true
         "label": "Enterprise Ethereum Alliance Specification"
       },
       {
-        "@id": "urn:ngm:class:erc-20-standard",
+        "@id": "urn:ngm:class:erc20-standard",
         "label": "ERC-20 Standard"
       },
       {

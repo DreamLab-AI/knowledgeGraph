@@ -1,4 +1,5 @@
 public:: true
+alias:: Human-Computer Interaction, HumanComputerInteraction
 
 # Human Computer Interaction
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:inflation-hedging",
+  "title": "Inflation Hedging",
+  "slug": "inflation-hedging",
+  "public": true,
+  "classIri": "urn:ngm:class:inflation-hedging",
+  "domain": "blockchain",
+  "definition": "Inflation hedging is an investment strategy that protects the real value of capital against the erosion of purchasing power caused by rising consumer prices. It allocates wealth to assets whose nominal value tends to rise with or outpace inflation, such as commodities, real estate, inflation-linked bonds, and scarce stores of value. Both gold and Bitcoin are frequently cited as inflation hedges because their supply is constrained relative to fiat currency issuance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    }
+  ]
+}

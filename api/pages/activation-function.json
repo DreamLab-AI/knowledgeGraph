@@ -85,6 +85,10 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

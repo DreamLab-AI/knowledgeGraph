@@ -1,4 +1,5 @@
 public:: true
+alias:: BlockchainScalability
 
 # Blockchain Scalability
 ```json-ld
@@ -115,18 +116,18 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:protocol-architecture",
-      "label": "Protocol Architecture"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:system-performance",
-      "label": "System Performance"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:layer-2-solution",
+        "@id": "urn:ngm:class:layer-2-solutions",
         "label": "Layer 2 Solution"
       },
       {

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:263bb723692d9a87974d158235545a69bda6f5a7a46547b400da9075d976ad00",
+  "title": "Reproducibility",
+  "slug": "reproducibility",
+  "public": true,
+  "classIri": "urn:ngm:class:reproducibility",
+  "domain": "general",
+  "definition": "The ability to obtain consistent results using the same data and methods, a central criterion for the reliability and credibility of scientific findings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quality-assurance",
+      "label": "Quality Assurance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "replication",
+      "label": "Replication"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "parameter-set",
+      "label": "Parameter Set"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    }
+  ]
+}

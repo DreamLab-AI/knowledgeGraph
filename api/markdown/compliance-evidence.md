@@ -1,0 +1,4 @@
+- ### Definition
+  - Compliance Evidence is the verifiable documentation proving a requirement is met, produced through [[Evidence Collection]] and generated continuously by systems such as [[Cold Chain Monitoring]].
+- ### Content
+  - High-quality evidence is timestamped, attributable, and tamper-evident, increasingly anchored to immutable logs or distributed ledgers to resist after-the-fact alteration. In regulated supply chains, sensor telemetry such as temperature traces becomes evidence that goods stayed within tolerance, supporting audits and dispute resolution.

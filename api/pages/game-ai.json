@@ -71,6 +71,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
       "slug": "reinforcement-learning",
       "label": "Reinforcement Learning"
     },

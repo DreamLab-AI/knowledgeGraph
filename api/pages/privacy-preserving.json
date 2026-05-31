@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:c120c7252dfd4d3e664a764006c6b2a3710e618a86f7956201fa942d127030fa",
+  "title": "Privacy-Preserving",
+  "slug": "privacy-preserving",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-preserving",
+  "domain": "cryptography",
+  "definition": "Privacy-preserving describes methods and systems designed to perform useful computation or data analysis while limiting exposure of the underlying personal or sensitive data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

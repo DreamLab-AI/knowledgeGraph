@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:permissionless-participation",
+  "title": "Permissionless Participation",
+  "slug": "permissionless-participation",
+  "public": true,
+  "classIri": "urn:ngm:class:permissionless-participation",
+  "domain": "blockchain",
+  "definition": "Permissionless participation is the property of a network whereby any actor may join, transact, validate, or contribute without requesting approval from a central authority. It is a defining characteristic of public blockchains, where open access to running nodes and proposing or validating blocks underpins censorship resistance and decentralisation. The property is enforced by economic and cryptographic mechanisms rather than identity vetting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Blockchain Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

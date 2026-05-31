@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:visual-grounding",
+  "title": "Visual Grounding",
+  "slug": "visual-grounding",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-grounding",
+  "domain": "ai",
+  "definition": "Visual grounding is the task of localising the region of an image or scene that corresponds to a natural-language expression, linking words to specific visual entities. It connects language understanding to perception, enabling models to point at, select or act on the object a user refers to. Visual grounding is foundational for vision-language models and for agents that operate graphical interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

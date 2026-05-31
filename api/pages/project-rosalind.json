@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:7bdf6a4567af6e4006c85e4095688def8c1178e99b2d594b3b6ff18696e13526",
+  "title": "Project Rosalind",
+  "slug": "project-rosalind",
+  "public": true,
+  "classIri": "urn:ngm:class:project-rosalind",
+  "domain": "finance",
+  "definition": "A joint experiment by the Bank of England and the Bank for International Settlements Innovation Hub that explored how an application programming interface layer could support retail central bank digital currency payments. It tested programmability and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

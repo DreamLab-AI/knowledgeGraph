@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:e5cd859b6a22ba40cc9ebaed197dab2e0a8f861260fc8a7c003f945b477a8351",
+  "title": "University of Manchester",
+  "slug": "university-of-manchester",
+  "public": true,
+  "classIri": "urn:ngm:class:university-of-manchester",
+  "domain": "university-of-manchester",
+  "definition": "The University of Manchester is a public research university in Manchester, England, formed in 2004 by the merger of the Victoria University of Manchester and UMIST, with institutional roots dating to 1824. It is a member of the Russell Group and has a strong record in physics, engineering, computing and materials science. The university is the site of early computing history, including the Manchester Baby, the first stored-program electronic computer, and of the isolation of graphene. It has been associated with a large number of Nobel laureates across its history.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    }
+  ]
+}

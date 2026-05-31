@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:aea877a068348acdd730c3da947f43acd2d7e356bab53ae80dc992ece1035102",
+  "title": "Stacks",
+  "slug": "stacks",
+  "public": true,
+  "classIri": "urn:ngm:class:stacks",
+  "domain": "blockchain",
+  "definition": "A Bitcoin Layer that enables smart contracts and applications whose state is anchored to the Bitcoin blockchain through its proof-of-transfer consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
+    }
+  ]
+}

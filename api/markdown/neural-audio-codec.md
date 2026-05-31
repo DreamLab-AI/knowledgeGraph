@@ -1,0 +1,4 @@
+- ### Definition
+  - A neural audio codec is a learned model that compresses and reconstructs audio with neural encoders and decoders, used in [[Music and Audio]] processing.
+- ### Content
+  - Architectures such as residual vector-quantised autoencoders (for example SoundStream and EnCodec) achieve transparent quality at bitrates well below classical codecs. Their quantised token streams have become a standard interface for language-model-style audio generation, tying compression and synthesis together in a single learned representation.

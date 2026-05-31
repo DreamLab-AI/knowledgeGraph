@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:wireless-hart",
+  "title": "WirelessHART",
+  "slug": "wireless-hart",
+  "public": true,
+  "classIri": "urn:ngm:class:wireless-hart",
+  "domain": "infrastructure",
+  "definition": "WirelessHART is an open wireless communication standard for industrial process automation, built on the IEEE 802.15.4 physical layer and using time-synchronised, self-organising mesh networking with channel hopping for reliability. It extends the HART field-device protocol to wireless sensor networks in plants, providing deterministic, secure, low-power monitoring and control. Centrally managed by a network manager, it prioritises robustness against interference in harsh RF environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

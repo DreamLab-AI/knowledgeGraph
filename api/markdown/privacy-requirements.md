@@ -1,0 +1,4 @@
+- ### Definition
+  - Privacy requirements are the obligations a system must meet to protect personal data, derived from law and policy. They implement a [[Legal Framework]] in concrete system constraints and are a required input to a [[Privacy Impact Assessment (PIA)]].
+- ### Content
+  - Requirements typically cover lawful basis for processing, purpose limitation, data minimisation, retention limits, security controls, and data-subject rights such as access, rectification, and erasure. They translate regulations like GDPR into testable design constraints, and they feed assessments that identify residual risks and mitigations before a system is deployed.

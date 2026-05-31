@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:neural-audio-codec",
+  "title": "Neural Audio Codec",
+  "slug": "neural-audio-codec",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-audio-codec",
+  "domain": "ai",
+  "definition": "A neural audio codec is a learned compression model that encodes audio into a compact discrete or latent representation and decodes it back to a waveform using neural networks. Unlike hand-designed codecs, it is trained end-to-end with reconstruction and adversarial objectives to maximise perceptual quality at very low bitrates. The discrete tokens it produces also serve as a representation for generative audio and speech models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    }
+  ]
+}

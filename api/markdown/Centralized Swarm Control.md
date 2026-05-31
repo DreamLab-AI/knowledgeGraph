@@ -123,8 +123,8 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:centralized-control-architecture",
-      "label": "Centralized Control Architecture"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "@id": "urn:ngm:class:swarm-control",

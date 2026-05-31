@@ -61,5 +61,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    }
+  ]
 }

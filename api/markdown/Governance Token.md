@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0463-governance-token, GovernanceToken
 
 # Governance Token
 ```json-ld
@@ -1120,7 +1121,7 @@ public:: true
         "label": "Crypto-Asset"
       },
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       }
     ],
@@ -1342,7 +1343,7 @@ public:: true
         "label": "ERC-5805 Voting Token"
       },
       {
-        "@id": "urn:ngm:class:erc20-votes",
+        "@id": "urn:ngm:class:erc-20-votes",
         "label": "ERC20Votes"
       },
       {

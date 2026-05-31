@@ -3,11 +3,16 @@
   "title": "Bitcoin",
   "slug": "bitcoin",
   "public": true,
-  "classIri": "urn:ngm:individual:bitcoin",
+  "classIri": "urn:ngm:class:bitcoin",
   "domain": "blockchain",
   "definition": "Bitcoin is the first decentralised peer-to-peer electronic cash system, introduced by the pseudonymous Satoshi Nakamoto in a 2008 white paper and launched in January 2009. It operates on a public, permissionless blockchain secured by proof-of-work consensus, with a fixed supply cap of 21 million BTC enforced by its protocol. Bitcoin is simultaneously a payment network, a monetary asset, and the foundational reference implementation for the broader cryptocurrency and blockchain industry.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -100,6 +105,10 @@
       "label": "51% Attack"
     },
     {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -116,16 +125,44 @@
       "label": "Agentic Internet"
     },
     {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
       "slug": "atomic-swap",
       "label": "Atomic Swap"
+    },
+    {
+      "slug": "bip-341-taproot",
+      "label": "BIP-341 Taproot"
+    },
+    {
+      "slug": "bip-342-tapscript",
+      "label": "BIP-342 Tapscript"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
     },
     {
       "slug": "btc-layer-3",
       "label": "BTC Layer 3"
     },
     {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
     },
     {
       "slug": "bitcoin-centralisation-risks",
@@ -144,16 +181,32 @@
       "label": "Bitcoin Environmental Issues"
     },
     {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
       "slug": "bitcoin-mining",
       "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
     },
     {
       "slug": "bitcoin-value-proposition",
       "label": "Bitcoin Value Proposition"
     },
     {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitfinex",
+      "label": "Bitfinex"
     },
     {
       "slug": "blockchain-network",
@@ -164,16 +217,36 @@
       "label": "Blockchain Oracle"
     },
     {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
       "slug": "cbdcs",
       "label": "CBDCs"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
     },
     {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "cash-app",
+      "label": "Cash App"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
+    },
+    {
+      "slug": "clean-spark",
+      "label": "CleanSpark"
     },
     {
       "slug": "consensus-mechanism",
@@ -182,6 +255,10 @@
     {
       "slug": "consortium-blockchain",
       "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
     },
     {
       "slug": "cryptocurrency",
@@ -200,8 +277,20 @@
       "label": "Digital Signature"
     },
     {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
+    },
+    {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
     },
     {
       "slug": "gold",
@@ -216,6 +305,10 @@
       "label": "Interoperability"
     },
     {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
       "slug": "layer-normalisation",
       "label": "Layer Normalisation"
     },
@@ -224,12 +317,28 @@
       "label": "Layer2"
     },
     {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
     },
     {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
     },
     {
       "slug": "metaverse-ontology",
@@ -248,12 +357,24 @@
       "label": "Money"
     },
     {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
       "slug": "nft-minting",
       "label": "NFT Minting"
     },
     {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
     },
     {
       "slug": "perception-system",
@@ -288,12 +409,36 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
     },
     {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
+    },
+    {
       "slug": "safety",
       "label": "Safety"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
     },
     {
       "slug": "self-sovereign-identity",
@@ -302,6 +447,18 @@
     {
       "slug": "sovereign-mesh",
       "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "stacker-news",
+      "label": "Stacker News"
+    },
+    {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
     },
     {
       "slug": "suggested-reading-order",
@@ -330,6 +487,10 @@
     {
       "slug": "us-regulatory-framework",
       "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
     },
     {
       "slug": "value-transfer",

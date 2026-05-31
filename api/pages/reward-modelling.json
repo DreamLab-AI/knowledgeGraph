@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:reward-modelling",
+  "title": "Reward Modelling",
+  "slug": "reward-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:reward-modelling",
+  "domain": "ai",
+  "definition": "Reward modelling is a machine-learning technique that trains a separate model to predict human preferences and use its scores as a reward signal for optimising another agent. It underpins reinforcement learning from human feedback, where the reward model ranks candidate outputs so a policy can be tuned toward preferred behaviour. It is central to aligning large language models with human values and intent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

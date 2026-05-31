@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:sensory-immersion",
+  "title": "Sensory Immersion",
+  "slug": "sensory-immersion",
+  "public": true,
+  "classIri": "urn:ngm:class:sensory-immersion",
+  "domain": "metaverse",
+  "definition": "Sensory immersion is the dimension of immersion produced by saturating a user's perceptual channels with synthetic stimuli, such that the virtual environment dominates their awareness over the physical surroundings. It is driven by display fidelity, spatial audio, haptics, and wide field of view, and is distinct from narrative or cognitive immersion. It is a constituent component of the broader experience of immersion.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      },
+      {
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    }
+  ]
+}

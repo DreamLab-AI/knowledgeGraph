@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:dc2f48e7a7535a8754dba8848069c6ef1a1ef16fe5e6de66577f3bae93b19d94",
+  "title": "ISO-IEC TR 24027",
+  "slug": "iso-iec-tr-24027",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-tr-24027",
+  "domain": "standards",
+  "definition": "ISO/IEC TR 24027 is a technical report addressing bias in artificial intelligence systems and in AI-aided decision making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection Methods"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "label": "Fairness Auditing Tools"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    },
+    {
+      "slug": "privacy-preserving-data-mining",
+      "label": "Privacy Preserving Data Mining"
+    }
+  ]
+}

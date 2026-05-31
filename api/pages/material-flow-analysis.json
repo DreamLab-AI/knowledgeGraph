@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:material-flow-analysis",
+  "title": "Material Flow Analysis",
+  "slug": "material-flow-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:material-flow-analysis",
+  "domain": "supply-chain",
+  "definition": "Material flow analysis (MFA) is a systematic accounting of the flows and stocks of materials within a defined system in space and time, grounded in the principle of mass conservation. It quantifies inputs, outputs, and accumulations to reveal resource use, losses, and recycling potential across an economy, industry, or region. MFA is a foundational method for industrial ecology, circular-economy design, and sustainability assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

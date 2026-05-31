@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:gov-uk-one-login",
+  "title": "GOV.UK One Login",
+  "slug": "gov-uk-one-login",
+  "public": true,
+  "classIri": "urn:ngm:class:gov-uk-one-login",
+  "domain": "security",
+  "definition": "GOV.UK One Login is the UK government's single sign-on and identity-verification service that lets people access central-government digital services with one account. It combines authentication with identity proofing to a defined assurance level, replacing a fragmented landscape of departmental logins. It is a national digital-identity infrastructure aligned with emerging standards for verifiable credentials and digital identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

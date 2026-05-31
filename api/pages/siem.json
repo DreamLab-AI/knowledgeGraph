@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:siem",
+  "title": "SIEM",
+  "slug": "siem",
+  "public": true,
+  "classIri": "urn:ngm:class:siem",
+  "domain": "security",
+  "definition": "SIEM (Security Information and Event Management) is a platform that aggregates, normalises, and correlates log and event data from across an organisation's IT estate to detect threats and support compliance. It combines real-time alerting, anomaly detection, and historical search with dashboards and audit reporting. It is a foundational tool of security operations centres and regulatory compliance programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

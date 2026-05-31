@@ -169,7 +169,7 @@
         "label": "Python"
       },
       {
-        "id": "urn:ngm:individual:docker",
+        "id": "urn:ngm:class:docker",
         "label": "Docker"
       },
       {

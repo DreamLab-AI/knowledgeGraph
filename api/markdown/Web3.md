@@ -348,7 +348,7 @@ public:: true
         "label": "Digital Identity"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

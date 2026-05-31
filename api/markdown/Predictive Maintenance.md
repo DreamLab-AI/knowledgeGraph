@@ -335,12 +335,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:asset-health-management",
-      "label": "Asset Health Management"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:condition-based-maintenance",
-      "label": "Condition-Based Maintenance"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -490,7 +490,7 @@ public:: true
         "label": "Siemens Xcelerator"
       },
       {
-        "@id": "urn:ngm:individual:nvidia-omniverse",
+        "@id": "urn:ngm:class:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       }
     ],

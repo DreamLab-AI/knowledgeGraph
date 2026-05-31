@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:10fd74d4844e267b22f3820bf7dfc491c64ad432cb756c9118a891ac7d2cdd51",
+  "title": "Innovation Diffusion",
+  "slug": "innovation-diffusion",
+  "public": true,
+  "classIri": "urn:ngm:class:innovation-diffusion",
+  "domain": "artificial-intelligence",
+  "definition": "Innovation diffusion is the process by which a new technology, practice or idea spreads through a population over time. It is studied with adoption curves that describe how successive groups take up an innovation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    }
+  ]
+}

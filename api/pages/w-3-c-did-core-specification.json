@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:1f80b7172a9e3dc6bebbfab6c45f3c755ea3be2de50afb1f335d78af93c8dc4c",
+  "title": "W3C DID Core Specification",
+  "slug": "w-3-c-did-core-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-did-core-specification",
+  "domain": "standards",
+  "definition": "A W3C specification defining decentralised identifiers (DIDs), a type of identifier that enables verifiable, self-sovereign digital identity independent of any centralised registry. It defines the DID data model and syntax.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

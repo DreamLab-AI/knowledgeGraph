@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:feedforward-compensation",
+  "title": "Feedforward Compensation",
+  "slug": "feedforward-compensation",
+  "public": true,
+  "classIri": "urn:ngm:class:feedforward-compensation",
+  "domain": "robotics",
+  "definition": "Feedforward compensation is a control technique that uses a model of the system or known disturbances to compute corrective control action in advance, rather than waiting for an error to appear at the output. By anticipating required effort, for example to overcome inertia, friction, or measurable load disturbances, it improves tracking and disturbance rejection beyond what feedback alone provides. It is typically combined with feedback control to handle modelling errors and unmeasured disturbances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "Velocity Control"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "Position Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Lakehouse architecture is a [[Data Management]] pattern that adds warehouse-grade transactions and governance to data-lake [[Storage Infrastructure]], enabling and relating directly to scalable object-store deployments.
+- ### Content
+  - Open table formats provide ACID guarantees, time travel, schema evolution and metadata-driven query optimisation directly over files in object storage. By eliminating the copy-and-sync between separate lake and warehouse tiers, the lakehouse reduces cost and staleness while serving SQL analytics and ML feature pipelines from one governed source.

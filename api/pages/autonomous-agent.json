@@ -201,8 +201,24 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "aiethics",
       "label": "AIEthics"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
     },
     {
       "slug": "cbdcs",
@@ -213,12 +229,28 @@
       "label": "Particle Filter"
     },
     {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },
     {
       "slug": "robot",
       "label": "Robot"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
     }
   ]
 }

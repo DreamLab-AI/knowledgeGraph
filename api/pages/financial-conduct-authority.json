@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:4ceb261b46e0285f07625d15d2b5ba218ef6123856482a0f007768f737edb280",
+  "title": "Financial Conduct Authority",
+  "slug": "financial-conduct-authority",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-conduct-authority",
+  "domain": "governance",
+  "definition": "The conduct regulator for financial services firms and markets in the United Kingdom, responsible for protecting consumers, maintaining market integrity and promoting competition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "fca",
+      "label": "FCA"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ]
+}

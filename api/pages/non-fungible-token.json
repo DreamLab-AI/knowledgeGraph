@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:cda08ea4dba68c83f2253c16dea57c26d6caf8315ceeec4a7086adae783cf86e",
+  "title": "Non-Fungible Token",
+  "slug": "non-fungible-token",
+  "public": true,
+  "classIri": "urn:ngm:class:non-fungible-token",
+  "domain": "blockchain",
+  "definition": "A token standard in which each unit is distinct and not interchangeable, used to represent ownership of a specific digital or referenced physical item on a ledger.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token",
+      "label": "Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "erc-721",
+      "label": "ERC-721"
+    },
+    {
+      "slug": "nft-standard",
+      "label": "NFT Standard"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
+      "slug": "erc721-token",
+      "label": "ERC721 Token"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "land-economics",
+      "label": "Land Economics"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:57dc0db224135b593ef64e52bf8cec6db17924d94391a6bb472ee566dcad9dcd",
+  "title": "Optimistic Rollup",
+  "slug": "optimistic-rollup",
+  "public": true,
+  "classIri": "urn:ngm:class:optimistic-rollup",
+  "domain": "blockchain",
+  "definition": "A layer-two scaling design that posts transaction data to a base chain and assumes results are valid unless challenged within a dispute window through a fraud proof.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rollup",
+      "label": "Rollup"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "evm",
+      "label": "EVM"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

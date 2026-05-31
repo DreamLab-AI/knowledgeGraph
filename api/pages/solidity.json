@@ -72,7 +72,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -104,8 +104,20 @@
       "label": "Enterprise Token Standards"
     },
     {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
       "slug": "grant-programs",
       "label": "Grant Programs"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
     },
     {
       "slug": "interoperability",
@@ -122,6 +134,10 @@
     {
       "slug": "nft-minting",
       "label": "NFT Minting"
+    },
+    {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
     },
     {
       "slug": "private-blockchain",
@@ -146,6 +162,10 @@
     {
       "slug": "virtual-machine",
       "label": "Virtual Machine"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
     }
   ]
 }

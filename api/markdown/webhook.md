@@ -1,0 +1,4 @@
+- ### Definition
+  - A webhook delivers event notifications via outbound HTTP callbacks, a push-based integration pattern often fronted by an [[API Gateway]] and used to drive real-time features such as a [[Presence Indicator]].
+- ### Content
+  - The provider registers a consumer endpoint and POSTs a payload on each event; robust implementations sign payloads (e.g. HMAC), retry with exponential backoff on failure, and expect consumers to respond quickly and deduplicate by event ID. Webhooks trade the simplicity of polling for lower latency and load, at the cost of requiring publicly reachable, secured receiver endpoints.

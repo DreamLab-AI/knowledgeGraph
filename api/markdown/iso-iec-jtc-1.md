@@ -1,0 +1,4 @@
+- ### Definition
+  - ISO/IEC JTC 1 is the joint ISO and IEC committee that develops international information-technology standards. Its work drives [[Convergence]] across IT domains and standardises layers down to the [[Physical Layer]].
+- ### Content
+  - Organised into subcommittees and working groups, JTC 1 covers AI, IoT, cloud, biometrics, multimedia coding, and data management. By harmonising IT standards under one umbrella, it reduces fragmentation and supports interoperability across vendors, sectors, and national bodies.

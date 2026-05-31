@@ -1,0 +1,4 @@
+- ### Definition
+  - A joint encoder is a position-measuring [[Sensor]] at each joint of an [[Industrial Robot]], serving as a core [[Proprioceptive Sensor]] that closes the control loop for accurate motion.
+- ### Content
+  - Incremental encoders report relative motion and require homing, whereas absolute encoders retain position through power cycles. The resolution and accuracy of joint encoders directly determine a robot's repeatability and trajectory-tracking performance, making them essential components of every servo-controlled axis.

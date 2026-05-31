@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:hsbc-orion",
+  "title": "HSBC Orion",
+  "slug": "hsbc-orion",
+  "public": true,
+  "classIri": "urn:ngm:class:hsbc-orion",
+  "domain": "blockchain",
+  "definition": "HSBC Orion is HSBC's institutional tokenisation platform for issuing and managing digital bonds and other assets on a permissioned distributed ledger. It enables on-chain issuance, settlement, and custody of tokenised securities within a regulated banking framework, used for sovereign and corporate digital bond programmes. Orion exemplifies enterprise adoption of consortium blockchain for capital markets infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:9702267c34f74c4c31ee42fffe9987a2d7727548a63199cdc6957a560d183556",
+  "title": "Computer Science",
+  "slug": "computer-science",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-science",
+  "domain": "computer-science",
+  "definition": "Computer science is the study of computation, algorithms, data structures, and the design of computing systems and software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "humaninthe-loop-learning",
+      "label": "Humaninthe Loop Learning"
+    },
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
+    },
+    {
+      "slug": "semiconductor-fabrication",
+      "label": "Semiconductor Fabrication"
+    }
+  ]
+}

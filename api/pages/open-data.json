@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:open-data",
+  "title": "Open Data",
+  "slug": "open-data",
+  "public": true,
+  "classIri": "urn:ngm:class:open-data",
+  "domain": "data",
+  "definition": "Open Data is data that is freely available for anyone to access, use, modify, and share, subject at most to attribution and share-alike requirements. It is typically published in machine-readable formats with open licenses to maximize reuse, transparency, and interoperability across organizations. Open Data underpins public-sector transparency, research reproducibility, and decentralized web ecosystems built on user-controlled data stores.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

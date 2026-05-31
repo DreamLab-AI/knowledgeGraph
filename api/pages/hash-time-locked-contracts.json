@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:f47a8108d34ab8998ae72f108e920730fb7748442d176cc2e59a81d64b1e9f6f",
+  "title": "Hash Time-Locked Contracts",
+  "slug": "hash-time-locked-contracts",
+  "public": true,
+  "classIri": "urn:ngm:class:hash-time-locked-contracts",
+  "domain": "blockchain",
+  "definition": "A type of smart contract that conditions a payment on the recipient revealing a cryptographic preimage before a deadline, enabling trustless conditional and cross-chain transfers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "timelock",
+      "label": "Timelock"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

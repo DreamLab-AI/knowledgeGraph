@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:product-management",
+  "title": "Product Management",
+  "slug": "product-management",
+  "public": true,
+  "classIri": "urn:ngm:class:product-management",
+  "domain": "infrastructure",
+  "definition": "Product management is the organisational function responsible for guiding a product through its lifecycle by defining vision, strategy, and roadmap based on user needs, business goals, and market conditions. It coordinates design, engineering, and go-to-market work and prioritises features against constraints. AI tools increasingly assist with research synthesis, prioritisation, and roadmap visualisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

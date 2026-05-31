@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:crew-ai",
+  "title": "CrewAI",
+  "slug": "crew-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:crew-ai",
+  "domain": "ai",
+  "definition": "CrewAI is an open-source Python framework for orchestrating teams of autonomous LLM-powered agents that collaborate on tasks through defined roles, goals, and processes. It models a crew of specialised agents that delegate, share context, and execute sequential or hierarchical workflows. It is widely used to build multi-agent automation and tool-using assistants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

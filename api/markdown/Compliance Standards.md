@@ -104,7 +104,7 @@ public:: true
         "label": "Legal Expertise"
       },
       {
-        "@id": "urn:ngm:class:monitoring-systems",
+        "@id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring Systems"
       },
       {

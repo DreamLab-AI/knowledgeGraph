@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:42e3109a7053e1ea3ae70f0c0ed877d90d7c771f7dffb09b345c66d3c66a1e89",
+  "title": "W3C Standards",
+  "slug": "w-3-c-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-standards",
+  "domain": "standards",
+  "definition": "A general reference to standards published by the World Wide Web Consortium (W3C). No specific standard is identified by this label alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkSlicing
 
 # Network Slicing
 ```json-ld

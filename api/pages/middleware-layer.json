@@ -295,6 +295,10 @@
       "label": "Identity Provider (IdP)"
     },
     {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
       "slug": "knowledge-graph",
       "label": "Knowledge Graph"
     },
@@ -409,6 +413,10 @@
     {
       "slug": "service-layer",
       "label": "Service Layer"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "Smart Contract Layer"
     },
     {
       "slug": "smart-royalties-ledger",

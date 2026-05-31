@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:open-metaverse-interoperability-group",
+  "title": "Open Metaverse Interoperability Group",
+  "slug": "open-metaverse-interoperability-group",
+  "public": true,
+  "classIri": "urn:ngm:class:open-metaverse-interoperability-group",
+  "domain": "metaverse",
+  "definition": "The Open Metaverse Interoperability Group (OMI) is a community-driven body that develops open protocols and schemas for moving identity, avatars, and virtual objects between independent virtual worlds. It produces specifications for portable avatars, glTF extensions, and cross-platform identity so that metaverse experiences are not locked into single proprietary platforms. Its work aims to make virtual environments composable and interoperable rather than walled gardens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vircadia",
+        "label": "Vircadia"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

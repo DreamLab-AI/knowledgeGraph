@@ -100,6 +100,10 @@
       "label": "Cognitive AI"
     },
     {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },

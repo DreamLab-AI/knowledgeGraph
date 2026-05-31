@@ -93,8 +93,16 @@
   ],
   "backlinks": [
     {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
       "slug": "consensus-algorithm",
       "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     },
     {
       "slug": "etsi-domain-virtual-society",
@@ -107,6 +115,10 @@
     {
       "slug": "grant-programs",
       "label": "Grant Programs"
+    },
+    {
+      "slug": "karpatkey",
+      "label": "Karpatkey"
     },
     {
       "slug": "multi-sig-governance",
@@ -135,6 +147,14 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
     },
     {
       "slug": "telecollaboration-and-telepresence",

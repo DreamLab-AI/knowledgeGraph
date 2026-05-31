@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:net-zero-target-setting",
+  "title": "Net Zero Target Setting",
+  "slug": "net-zero-target-setting",
+  "public": true,
+  "classIri": "urn:ngm:class:net-zero-target-setting",
+  "domain": "governance",
+  "definition": "Net zero target setting is the structured process by which an organisation or jurisdiction defines, scopes, and commits to balancing its greenhouse-gas emissions with removals by a stated date. It involves establishing a baseline, defining the emission scopes covered, setting interim milestones, and aligning the trajectory with a science-based decarbonisation pathway. Credible targets specify boundaries and the role of offsets to avoid greenwashing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

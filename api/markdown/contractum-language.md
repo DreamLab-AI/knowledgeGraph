@@ -1,0 +1,4 @@
+- ### Definition
+  - Contractum is a high-level language for authoring [[RGB and Client-Side Validation]] smart contracts, compiling to AluVM bytecode.
+- ### Content
+  - Contractum expresses RGB schemas, state, and operations declaratively, abstracting the low-level AluVM and strict-encoding details. Because RGB validates contracts client-side with state anchored to Bitcoin transactions, Contractum enables confidential, scalable asset and contract logic that does not expose data on a public ledger.

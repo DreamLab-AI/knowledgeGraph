@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:a9f45d2c81caa7d1dd751ba58c456306eebae2a8f25aa7e355f3540333f1a1c0",
+  "title": "SWIFT",
+  "slug": "swift",
+  "public": true,
+  "classIri": "urn:ngm:class:swift",
+  "domain": "swift",
+  "definition": "SWIFT, the Society for Worldwide Interbank Financial Telecommunication, is a cooperative that operates a secure messaging network used by banks and other financial institutions to exchange payment and securities instructions. It does not move money itself but standardises the messages that instruct transfers between institutions, which then settle through correspondent banking relationships or payment systems. Founded in 1973 and based in Belgium, it connects thousands of institutions across most countries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:interbank-settlement",
+        "label": "Interbank Settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "interbank-settlement",
+      "label": "Interbank Settlement"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "swift-messaging",
+      "label": "SWIFT Messaging"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -136,6 +136,10 @@
       "label": "Industrial Robot"
     },
     {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
       "slug": "kinematics-model",
       "label": "Kinematics Model"
     },

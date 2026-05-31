@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:lindy-effect",
+  "title": "Lindy Effect",
+  "slug": "lindy-effect",
+  "public": true,
+  "classIri": "urn:ngm:class:lindy-effect",
+  "domain": "blockchain",
+  "definition": "The Lindy Effect is a heuristic stating that the future life expectancy of a non-perishable thing, such as a technology or idea, is proportional to its current age, so the longer it has survived the longer it is expected to persist. Popularised by Nassim Taleb, it implies robustness accrues through demonstrated longevity. In crypto discourse it is invoked to argue that Bitcoin's continued survival strengthens its credibility as a store of value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

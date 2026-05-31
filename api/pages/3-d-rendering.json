@@ -88,12 +88,20 @@
       "label": "3D Model"
     },
     {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
       "slug": "metaverse",
       "label": "Metaverse"
     },
     {
       "slug": "open-world",
       "label": "Open World"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
     },
     {
       "slug": "rasterization",

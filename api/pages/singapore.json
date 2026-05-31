@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:2b6bf9c2f542b04179fda7c24ccd4e9060dfa3bca3b09f9208d86d7fa93730aa",
+  "title": "Singapore",
+  "slug": "singapore",
+  "public": true,
+  "classIri": "urn:ngm:class:singapore",
+  "domain": "geography",
+  "definition": "A sovereign island city-state in Southeast Asia and a major financial and technology hub. It is known for its role in global trade, finance, and as a centre for fintech and digital asset regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

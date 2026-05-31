@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:3755d665cfedc145e4bc239290da7dd108487abfb7cf88cf54cf2fa47f49c14a",
+  "title": "Yoti",
+  "slug": "yoti",
+  "public": true,
+  "classIri": "urn:ngm:class:yoti",
+  "domain": "general",
+  "definition": "A digital identity company that provides identity verification, age estimation and authentication services for individuals and organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "age-verification",
+      "label": "Age Verification"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

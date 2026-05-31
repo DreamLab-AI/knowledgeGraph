@@ -81,6 +81,10 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },

@@ -89,6 +89,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
       "slug": "asymmetric-encryption",
       "label": "Asymmetric Encryption"
     },
@@ -101,12 +105,40 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
     },
     {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
     }
   ]
 }

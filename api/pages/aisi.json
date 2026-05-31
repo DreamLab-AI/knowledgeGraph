@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:dd21c0d551244224be34530977c043d768baa35bf54fc44983cc097cf7b3086a",
+  "title": "AISI",
+  "slug": "aisi",
+  "public": true,
+  "classIri": "urn:ngm:class:aisi",
+  "domain": "governance",
+  "definition": "The AI Safety Institute is a UK government body that evaluates advanced AI systems for safety and security risks. It was established to test frontier models and inform policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "https-www-aisi-gov-uk",
+      "label": "https://www.aisi.gov.uk"
+    },
+    {
+      "slug": "https-www-gov-uk-government-organisations-ai-safety-institute",
+      "label": "https://www.gov.uk/government/organisations/ai-safety-institute"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

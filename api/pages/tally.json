@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:266b56f788e8f0db51ed5045a116eccc857da4c197a29be66b65064fcd4bf31e",
+  "title": "Tally",
+  "slug": "tally",
+  "public": true,
+  "classIri": "urn:ngm:class:tally",
+  "domain": "governance",
+  "definition": "A web platform and toolset for creating and managing on-chain decentralised autonomous organisations, providing interfaces for proposal creation, delegation and governance voting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

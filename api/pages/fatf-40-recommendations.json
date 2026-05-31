@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:fatf-40-recommendations",
+  "title": "FATF 40 Recommendations",
+  "slug": "fatf-40-recommendations",
+  "public": true,
+  "classIri": "urn:ngm:class:fatf-40-recommendations",
+  "domain": "blockchain",
+  "definition": "The FATF 40 Recommendations are the international standards on combating money laundering, terrorist financing, and proliferation financing issued by the Financial Action Task Force. They define a comprehensive framework covering customer due diligence, beneficial-ownership transparency, suspicious-transaction reporting, supervision, and international cooperation. National regimes implement them to achieve compliance assessed through FATF mutual evaluations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ]
+}

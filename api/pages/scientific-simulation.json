@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:scientific-simulation",
+  "title": "Scientific Simulation",
+  "slug": "scientific-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:scientific-simulation",
+  "domain": "infrastructure",
+  "definition": "Scientific simulation is the numerical modelling of physical, chemical, or biological systems to predict behaviour that is impractical to observe directly. It solves governing equations across discretised domains, as in fluid dynamics, molecular dynamics, and climate modelling, typically on high-performance computing infrastructure. Machine learning increasingly augments simulation through learned surrogates and data-driven generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infrastructure Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ]
+}

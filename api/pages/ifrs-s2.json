@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ifrs-s2",
+  "title": "IFRS S2",
+  "slug": "ifrs-s2",
+  "public": true,
+  "classIri": "urn:ngm:class:ifrs-s2",
+  "domain": "governance",
+  "definition": "IFRS S2 is the climate-related disclosure standard issued by the International Sustainability Standards Board, specifying how entities report climate-related risks and opportunities. Building on the TCFD recommendations, it requires disclosure of physical and transition risks, greenhouse-gas emissions across Scopes 1 to 3, and climate-resilience analysis. IFRS S2 operates alongside the general IFRS S1 baseline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

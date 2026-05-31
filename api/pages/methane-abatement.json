@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:methane-abatement",
+  "title": "Methane Abatement",
+  "slug": "methane-abatement",
+  "public": true,
+  "classIri": "urn:ngm:class:methane-abatement",
+  "domain": "infrastructure",
+  "definition": "Methane abatement is the set of techniques for capturing, destroying, or preventing the release of methane, a greenhouse gas with roughly 80 times the near-term warming potential of carbon dioxide. Approaches include flaring, combustion in engines or turbines, and conversion of otherwise-vented or flared gas into useful energy. In the Bitcoin context it underpins the use of stranded or waste methane to power mining as an emissions-reduction strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: CreativeMediaDomain
 
 # Creative Media Domain
 ```json-ld

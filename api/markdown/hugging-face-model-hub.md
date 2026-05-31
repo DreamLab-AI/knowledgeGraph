@@ -1,0 +1,4 @@
+- ### Definition
+  - The Hugging Face Model Hub is a Git-backed repository for ML models and datasets; it distributes weights in formats such as [[Safetensors]] and supplies the checkpoints consumed by applications like [[Fooocus]].
+- ### Content
+  - Each repository carries a model card, configuration, and weight files, with the Hub providing search, access control, inference endpoints, and download analytics. Tight integration with the Transformers and Diffusers libraries lets developers load a model by identifier, making the Hub the de facto registry for open and community-contributed models.

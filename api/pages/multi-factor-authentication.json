@@ -72,8 +72,16 @@
       "label": "Access Control System"
     },
     {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
       "slug": "biometric-binding-mechanism",
       "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
     },
     {
       "slug": "identity-provider-id-p",

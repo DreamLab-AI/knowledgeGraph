@@ -1,0 +1,4 @@
+- ### Definition
+  - Supply chain security protects the provenance and integrity of every component and dependency in a product, a discipline closely tied to [[Cyber Security and Cryptography]].
+- ### Content
+  - Software supply chain controls include cryptographic signing of releases, software bills of materials (SBOMs), dependency pinning, provenance attestations such as SLSA, and reproducible builds that let third parties verify artefacts. Hardware supply chains add concerns of counterfeit parts and implanted firmware. Because a single compromised upstream dependency can propagate to thousands of downstream systems, supply chain security has shifted from a niche concern to a board-level priority following high-profile build-system attacks.

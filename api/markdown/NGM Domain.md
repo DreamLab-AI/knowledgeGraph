@@ -167,12 +167,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:knowledge-graph-domain",
-      "label": "Knowledge Graph Domain"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     },
     {
-      "@id": "urn:ngm:class:ontology-namespace",
-      "label": "Ontology Namespace"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

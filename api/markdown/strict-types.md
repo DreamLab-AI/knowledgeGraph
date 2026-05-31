@@ -1,0 +1,4 @@
+- ### Definition
+  - Strict types is the deterministic type system of [[RGB and Client-Side Validation]], giving each schema a content-addressed identity so that data definitions are unambiguous and verifiable.
+- ### Content
+  - A strict type definition fixes field names, ordering, and primitive widths, then hashes the definition to produce a stable type identifier that any party can reference. This eliminates schema drift and allows RGB contracts to commit to exact data shapes. Strict types and strict encoding work as a pair: the former defines the structure, the latter serialises it into the single canonical byte form required for reproducible validation.

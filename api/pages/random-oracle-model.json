@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:796b976af707e4d661c0959f38771233bfe836f743d00831b7afadbbacfb1f41",
+  "title": "Random Oracle Model",
+  "slug": "random-oracle-model",
+  "public": true,
+  "classIri": "urn:ngm:class:random-oracle-model",
+  "domain": "artificial-intelligence",
+  "definition": "A theoretical model in cryptography in which a hash function is idealised as a publicly accessible truly random function, used to analyse the security of cryptographic schemes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

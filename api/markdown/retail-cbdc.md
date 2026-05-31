@@ -1,0 +1,4 @@
+- ### Definition
+  - Retail CBDC is central-bank digital money for public use, a subtype of [[CBDCs]] often supported by a [[Distributed Ledger]] for issuance and settlement.
+- ### Content
+  - Design choices span account-based versus token-based models, offline capability, and privacy tiers. Retail CBDCs seek to combine the safety of central-bank money with the convenience of digital payments while managing disintermediation risk to commercial banks.

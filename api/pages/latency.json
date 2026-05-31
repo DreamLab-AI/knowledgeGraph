@@ -148,16 +148,48 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
       "slug": "etsi-domain-infrastructure",
       "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
     },
     {
       "slug": "presence",
       "label": "Presence"
     },
     {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:language-model-alignment",
+  "title": "Language Model Alignment",
+  "slug": "language-model-alignment",
+  "public": true,
+  "classIri": "urn:ngm:class:language-model-alignment",
+  "domain": "ai",
+  "definition": "Language model alignment is the set of techniques used to make a language model's behaviour conform to human intentions, values and safety constraints. It typically follows pretraining with supervised fine-tuning and preference-based optimisation so that outputs are helpful, honest and harmless. Methods include reinforcement learning from human feedback and direct preference optimization.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    }
+  ]
+}

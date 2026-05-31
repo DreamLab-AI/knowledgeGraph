@@ -1,4 +1,5 @@
 public:: true
+alias:: Data-Efficient Learning
 
 # Data Efficient Learning
 ```json-ld

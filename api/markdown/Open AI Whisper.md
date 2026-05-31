@@ -1,4 +1,5 @@
 public:: true
+alias:: OpenAI Whisper
 
 # Open AI Whisper
 ```json-ld
@@ -17,13 +18,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:open-ai-whisper",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:open-ai-whisper",
+  "@type": "Class",
   "label": "Open AI Whisper",
   "definition": "OpenAI Whisper is an open-source automatic speech recognition (ASR) system released by OpenAI in September 2022, trained on approximately 680,000 hours of multilingual and multitask supervised audio data sourced from the internet. It employs a Transformer encoder-decoder architecture that jointly learns transcription, translation, and language identification from weakly supervised training data, achieving near-human accuracy across a broad range of accents, recording conditions, and languages. Whisper is released as open weights in multiple sizes (tiny, base, small, medium, large, and subsequent variants), enabling local deployment without API dependency. Its robustness to background noise, accented speech, and domain-specific vocabulary—combined with zero-shot multilingual performance—has made it the de facto baseline for ASR research and a widely deployed component in transcription pipelines, voice interfaces, and accessibility applications.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
+  "subClassOf": {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},

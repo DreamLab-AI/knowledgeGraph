@@ -51,8 +51,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:social-structure",
-      "label": "Social Structure"
+      "@id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
     }
   ],
   "relations": {

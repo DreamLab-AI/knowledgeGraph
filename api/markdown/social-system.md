@@ -1,0 +1,4 @@
+- ### Definition
+  - A social system is the set of presence, communication, grouping, and reputation features through which users of a [[Virtual World]] discover and relate to one another, forming the social fabric of a persistent shared space.
+- ### Content
+  - Components typically include friend graphs, parties and guilds, spatial voice, text chat, and moderation or reputation layers. Within a [[Metaverse]], the quality of the social system drives retention and network effects, while its safety design governs harassment risk and the sense of belonging that distinguishes a thriving virtual community from an empty one.

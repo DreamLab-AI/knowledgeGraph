@@ -71,6 +71,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "dapp",
+      "label": "DApp"
+    },
+    {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
     },
@@ -81,6 +85,10 @@
     {
       "slug": "smart-contracts",
       "label": "Smart Contracts"
+    },
+    {
+      "slug": "x-402",
+      "label": "X402"
     }
   ]
 }

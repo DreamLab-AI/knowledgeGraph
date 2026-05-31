@@ -1,0 +1,4 @@
+- ### Definition
+  - An Open Bridge Standard is a vendor-neutral specification for moving assets and messages across chains, providing the shared formats that underpin [[Blockchain Interoperability]] and reduce risk in any [[Cross-Chain Bridge]].
+- ### Content
+  - By codifying lock/mint and message-passing semantics, the standard lets independent bridge implementations interoperate and be audited against common security assumptions. This counters the fragmentation and exploit history of bespoke bridges by aligning them to a published, reviewable specification.

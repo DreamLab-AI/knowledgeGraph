@@ -1,4 +1,5 @@
 public:: true
+alias:: ETSI Domain AI Human Interface
 
 # ETSI Domain AI + Human Interface
 ```json-ld

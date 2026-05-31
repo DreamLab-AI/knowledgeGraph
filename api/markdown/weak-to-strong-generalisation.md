@@ -1,0 +1,4 @@
+- ### Definition
+  - Weak-to-strong generalisation studies whether weak supervisors can elicit reliable behaviour from stronger models, a core line of [[Safety and Alignment]] research relevant to [[AI Governance]] of superhuman systems.
+- ### Content
+  - Experiments fine-tune a strong pretrained model on labels produced by a weaker model and measure how much of the strong model's potential is recovered, often boosted by auxiliary confidence-based or bootstrapping techniques. The paradigm is a proxy for future scenarios where human oversight is the "weak" signal, informing scalable-oversight and elicitation methods.

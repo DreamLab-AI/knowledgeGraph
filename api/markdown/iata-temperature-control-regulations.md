@@ -1,0 +1,4 @@
+- ### Definition
+  - The IATA Temperature Control Regulations are the air-cargo standards governing temperature-sensitive shipments, providing the compliance basis for [[Cold Chain Monitoring]] in aviation logistics.
+- ### Content
+  - The TCR specify packaging qualification, the CEIV Pharma certification scheme, and documentation such as the Time and Temperature Sensitive Label. Monitoring systems instrument shipments to demonstrate continuous adherence to the prescribed temperature envelope and to flag excursions for corrective action.

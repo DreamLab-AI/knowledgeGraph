@@ -59,6 +59,10 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "loom",
+      "label": "Loom"
+    },
+    {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
     }

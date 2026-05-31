@@ -1,0 +1,4 @@
+- ### Definition
+  - ControlNet conditioning steers a diffusion model with spatial control maps, a core building block in [[ComfyUI Workflows]] and tools such as [[Fooocus]].
+- ### Content
+  - The technique trains a parallel copy of the diffusion encoder and connects it to the frozen base via zero-initialised layers, so conditioning signals like Canny edges, depth, or OpenPose skeletons constrain the output geometry. Multiple ControlNets can be composed and weighted, enabling reproducible, layout-faithful generation.

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:e6004a3d670df2ab286ec8241473a4f6bf23961fee0eb5693c0ac2a281c48278",
+  "title": "RDF Store",
+  "slug": "rdf-store",
+  "public": true,
+  "classIri": "urn:ngm:class:rdf-store",
+  "domain": "general",
+  "definition": "A database designed to store and query data expressed as Resource Description Framework triples, typically supporting the SPARQL query language. Also called a triplestore, it manages subject-predicate-object statements rather than rows and tables.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rdf",
+      "label": "RDF"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "https-www-w-3-org-tr-sparql-11-query",
+      "label": "https://www.w3.org/TR/sparql11-query/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "provenance-ontology-prov-o",
+      "label": "Provenance Ontology (PROV-O)"
+    },
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

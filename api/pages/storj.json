@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:5d6dfd6bda599b582e0ca267123f6b4dd97cc33beb5f4e5a72a3286fd4fb2a6f",
+  "title": "Storj",
+  "slug": "storj",
+  "public": true,
+  "classIri": "urn:ngm:class:storj",
+  "domain": "blockchain",
+  "definition": "Storj is a decentralised cloud storage network in which files are encrypted, split into pieces, and distributed across independent node operators who are paid for storage and bandwidth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-storage",
+      "label": "Decentralised Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    }
+  ]
+}

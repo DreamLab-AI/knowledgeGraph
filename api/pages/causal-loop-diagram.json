@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:causal-loop-diagram",
+  "title": "Causal Loop Diagram",
+  "slug": "causal-loop-diagram",
+  "public": true,
+  "classIri": "urn:ngm:class:causal-loop-diagram",
+  "domain": "data",
+  "definition": "A causal loop diagram (CLD) is a system-dynamics visualisation tool that maps variables as nodes connected by directed causal links, each marked with a positive or negative polarity. Closed chains of links form reinforcing or balancing feedback loops that reveal the structural drivers of a system's behaviour over time. CLDs matter because they expose feedback structure and delays that linear cause-effect thinking misses, supporting qualitative analysis before quantitative simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

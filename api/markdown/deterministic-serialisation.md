@@ -1,0 +1,4 @@
+- ### Definition
+  - Deterministic serialisation guarantees that equivalent data always serialises to identical bytes by removing encoding ambiguity. It enables tools like a [[URI Canonicaliser]] and is a prerequisite component of [[Content Addressing]].
+- ### Content
+  - Canonical forms such as JCS (RFC 8785) or canonical CBOR define strict rules for key ordering, integer encoding, and string normalisation. Without determinism, two encoders could hash the same logical object to different digests, breaking signature verification and content-addressed deduplication.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:19e91ee564a3106b7dcfed3f1f9723f502ef1a46f4c02ad3af3b2edaaf4ff0a9",
+  "title": "W3C Cognitive AI Community Group",
+  "slug": "w-3-c-cognitive-ai-community-group",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-cognitive-ai-community-group",
+  "domain": "standards",
+  "definition": "The W3C Cognitive AI Community Group is a W3C community group that explores approaches to cognitive artificial intelligence and related Web technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

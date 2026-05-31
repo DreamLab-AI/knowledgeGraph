@@ -1,0 +1,4 @@
+- ### Definition
+  - Instant settlement is the immediate, final clearing of a transfer, removing legacy clearing lags. It is delivered off-chain by the [[Bitcoin Lightning Network]] and is a core promise of [[Digital Money]].
+- ### Content
+  - On base-layer chains, settlement finality follows block confirmation; payment channels and layer-two networks push effective settlement to sub-second latency by updating signed balances off-chain. The result is lower counterparty risk and continuous, around-the-clock availability.

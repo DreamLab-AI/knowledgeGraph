@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:3b4bf7a34ff4c7f5602ef75c2578d1bf9dc4014b0d0a33ac13d32e95852126bf",
+  "title": "Economic Model",
+  "slug": "economic-model",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-model",
+  "domain": "artificial-intelligence",
+  "definition": "An economic model is a simplified representation of an economy or market used to analyse behaviour and predict outcomes. It expresses relationships between variables such as supply, demand, prices and output.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    }
+  ]
+}

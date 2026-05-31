@@ -1,0 +1,4 @@
+- ### Definition
+  - Predictive processing frames cognition as the continual minimisation of prediction error between an internal generative model and sensory input. It is implemented in models of [[Embodied Minds]] and is closely related to [[Cognitive AI]].
+- ### Content
+  - Under this view, top-down predictions flow down a hierarchy while only the residual prediction errors flow upward, making inference efficient. Active inference extends the idea so that agents also act to make their predictions come true, framing perception and control as two routes to reducing surprise. It offers a unifying account linking neuroscience, Bayesian inference, and embodied agency.

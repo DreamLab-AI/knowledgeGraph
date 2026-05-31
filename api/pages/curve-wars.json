@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:6c5e6b7f43599a31fce3ccbe4a4f557132c3e4b9419c427c4b8a67eb6b3239bc",
+  "title": "Curve Wars",
+  "slug": "curve-wars",
+  "public": true,
+  "classIri": "urn:ngm:class:curve-wars",
+  "domain": "blockchain",
+  "definition": "The competition among protocols to accumulate vote-escrowed governance power in the Curve exchange in order to direct token emissions toward their own liquidity pools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vote-escrow-model",
+        "label": "Vote-Escrow Model"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vote-escrow-model",
+      "label": "Vote-Escrow Model"
+    },
+    {
+      "slug": "convex-finance",
+      "label": "Convex Finance"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

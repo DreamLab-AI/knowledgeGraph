@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:benchmark-evaluation",
+  "title": "Benchmark Evaluation",
+  "slug": "benchmark-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:benchmark-evaluation",
+  "domain": "ai",
+  "definition": "Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time. A benchmark specifies the task, the data splits, the permitted inputs, and the metrics used to rank performance. In machine learning, benchmark evaluation drives the field's empirical progress, but it is subject to well-known failure modes including train-test contamination, overfitting to leaderboards, and construct validity gaps between the benchmark and the real-world capability it purports to measure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.78,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

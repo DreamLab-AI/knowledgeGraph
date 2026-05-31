@@ -1,0 +1,4 @@
+- ### Definition
+  - Privacy-preserving compliance satisfies regulatory obligations through selective disclosure and cryptographic proofs rather than full data exposure. It is supported by [[Hyperledger Indy]] credential infrastructure and enables compliant designs within [[CBDC Frameworks]].
+- ### Content
+  - Verifiable credentials and zero-knowledge proofs allow holders to demonstrate eligibility or compliance attributes without surrendering raw identity data. In CBDC and regulated-asset designs, this enables tiered privacy: small transactions stay private while thresholds trigger auditable disclosure, balancing user privacy against anti-money-laundering and sanctions-screening obligations.

@@ -1,4 +1,5 @@
 public:: true
+alias:: Human-in-the-Loop Learning
 
 # Human-in-the- Loop Learning
 ```json-ld

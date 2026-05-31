@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:cooling-systems",
+        "@id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       },
       {

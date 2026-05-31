@@ -1,4 +1,5 @@
 public:: true
+alias:: FlashAttention
 
 # flash attention
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: Large Scale Compute
 
 # Large-Scale Compute
 ```json-ld

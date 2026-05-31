@@ -74,6 +74,10 @@
       "label": "Multi Sig Governance"
     },
     {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     },
@@ -86,8 +90,16 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
     },
     {
       "slug": "securities-regulation",
@@ -100,6 +112,10 @@
     {
       "slug": "snapshot-voting",
       "label": "Snapshot Voting"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
     },
     {
       "slug": "treasury-management",

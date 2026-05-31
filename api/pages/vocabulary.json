@@ -67,5 +67,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    }
+  ]
 }

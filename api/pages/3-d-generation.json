@@ -77,6 +77,10 @@
     {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
     }
   ]
 }

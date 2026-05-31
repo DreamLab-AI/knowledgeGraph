@@ -1,0 +1,4 @@
+- ### Definition
+  - CDLA (Community Data License Agreement) is a Linux Foundation open data licence family that standardises permissions for sharing datasets, frequently applied to govern the use of [[Training Data]].
+- ### Content
+  - CDLA distinguishes data content from any accompanying software and focuses on rights to use, modify, and redistribute data. The Sharing variant's reciprocal obligation aims to keep enhanced datasets in the commons, while the Permissive variant prioritises frictionless adoption in commercial and research pipelines.

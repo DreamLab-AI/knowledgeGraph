@@ -1,0 +1,4 @@
+- ### Definition
+  - Impact investing deploys capital for measurable social and environmental returns alongside financial gain, a central practice of [[Sustainable Finance]] that can fund initiatives such as a [[Carbon Neutral Blockchain]].
+- ### Content
+  - Practitioners define a theory of change, select impact metrics, and report outcomes using frameworks such as IRIS+ and the Impact Management Project's five dimensions. The discipline balances intentionality and additionality against the risk of impact-washing, making rigorous measurement essential to credibility.

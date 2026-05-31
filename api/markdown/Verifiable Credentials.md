@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredentials
 
 # Verifiable Credentials
 ```json-ld
@@ -303,7 +304,7 @@ public:: true
       "label": "Cryptographic Proof"
     },
     {
-      "@id": "urn:ngm:class:w3-c-standard",
+      "@id": "urn:ngm:class:w-3-c-standard",
       "label": "W3C Standard"
     }
   ],

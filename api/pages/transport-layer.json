@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:3a29b26b4663a589cccceda0db7036d0742a9df0e30ac7737ddfe70e576e9bae",
+  "title": "Transport Layer",
+  "slug": "transport-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:transport-layer",
+  "domain": "transport",
+  "definition": "The Transport Layer is the stratum that provides end-to-end delivery of data between endpoints over a network. It sits above the Network Layer that routes packets and below the protocol and integration strata that rely on reliable channels. It contains segmentation, flow and congestion control, and connection management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "protocol-layer",
+      "label": "Protocol Layer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "transmission-control-protocol",
+      "label": "Transmission Control Protocol"
+    },
+    {
+      "slug": "congestion-control",
+      "label": "Congestion Control"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "ietf-internet-engineering-task-force",
+      "label": "IETF (Internet Engineering Task Force)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "Communication Layer"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: ManipulatorArm
 
 # Manipulator Arm
 ```json-ld

@@ -155,8 +155,8 @@ public:: true
       "label": "LifeCycleAssessment"
     },
     {
-      "@id": "urn:ngm:class:sustainability-metric",
-      "label": "SustainabilityMetric"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

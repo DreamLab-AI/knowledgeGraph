@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:6c380ca49d001b6b2a8b0e751e53a3139a077813123c2cd062293a52c2377d19",
+  "title": "Ready Player Me",
+  "slug": "ready-player-me",
+  "public": true,
+  "classIri": "urn:ngm:class:ready-player-me",
+  "domain": "metaverse",
+  "definition": "Ready Player Me is a platform for creating cross-application 3D avatars that can be used across games and virtual environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:avatar",
+      "label": "Avatar"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

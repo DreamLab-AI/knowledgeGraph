@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:8228bf6b38c98af2315b89412aaac7ff1365ab48eac491e64ff2efe0f0586d8c",
+  "title": "Payment Channels",
+  "slug": "payment-channels",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-channels",
+  "domain": "blockchain",
+  "definition": "Payment channels are off-chain constructs that let two parties exchange many bitcoin transactions while only recording opening and closing balances on the blockchain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-channel",
+      "label": "Payment Channel"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

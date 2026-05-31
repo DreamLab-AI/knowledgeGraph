@@ -12,8 +12,8 @@
       "label": "Display and Rendering"
     },
     {
-      "id": "urn:ngm:class:application-programming-interface",
-      "label": "Application Programming Interface"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "id": "urn:ngm:class:hardware-abstraction-layer",
@@ -221,7 +221,7 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:individual:apple",
+        "id": "urn:ngm:class:apple",
         "label": "Apple"
       }
     ],
@@ -661,6 +661,18 @@
       "label": "Generative Design Tool"
     },
     {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
       "slug": "physics-engine",
       "label": "Physics Engine"
     },
@@ -679,6 +691,14 @@
     {
       "slug": "visualization-layer",
       "label": "Visualization Layer"
+    },
+    {
+      "slug": "web-gl",
+      "label": "WebGL"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
     },
     {
       "slug": "gl-tf-3-d-file-format",

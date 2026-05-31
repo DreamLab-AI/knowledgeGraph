@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:f8d46944f9f6fa19d258b5df4b1c42db19ac46648f8424827fd7934dac9db149",
+  "title": "Vector Search",
+  "slug": "vector-search",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-search",
+  "domain": "artificial-intelligence",
+  "definition": "The retrieval of items whose vector embeddings are most similar to a query vector, typically using distance metrics and approximate nearest neighbour indexing for efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    }
+  ]
+}

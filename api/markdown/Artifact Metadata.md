@@ -83,8 +83,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:digital-metadata",
-      "label": "Digital Metadata"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

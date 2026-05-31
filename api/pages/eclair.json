@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:719a22c3492274348ba33849e02de4cdc8fefc0b3e8383560a3df6babcc2601f",
+  "title": "Eclair",
+  "slug": "eclair",
+  "public": true,
+  "classIri": "urn:ngm:class:eclair",
+  "domain": "blockchain",
+  "definition": "Eclair is an implementation of the Bitcoin Lightning Network protocol written in Scala and maintained by ACINQ.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

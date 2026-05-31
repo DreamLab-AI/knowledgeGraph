@@ -1,0 +1,4 @@
+- ### Definition
+  - An environmental sensor measures ambient conditions such as temperature or air quality; it is a kind of [[Exteroceptive Sensor]] and feeds context to systems including [[Augmented Reality (AR)]].
+- ### Content
+  - Unlike proprioceptive sensors that report internal state, environmental sensors observe the outside world. Their readings are fused into perception and context models that drive responsive robotic and AR behaviours.

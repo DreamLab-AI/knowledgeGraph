@@ -46,6 +46,14 @@
       "label": "Accessibility"
     },
     {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
       "slug": "semantic-web-standards",
       "label": "Semantic Web Standards"
     },

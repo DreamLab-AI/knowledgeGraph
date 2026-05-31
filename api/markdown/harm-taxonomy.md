@@ -1,0 +1,4 @@
+- ### Definition
+  - A harm taxonomy is a structured classification of risks that underpins analysis of [[Digital Society Harms]] and organises the broader space of [[AI Risks]].
+- ### Content
+  - Taxonomies typically separate harms by affected party, severity, and causal mechanism, distinguishing representational from allocative harms and individual from societal effects. They give governance teams a shared vocabulary to map mitigations, regulatory obligations, and evaluation tests onto concrete categories.

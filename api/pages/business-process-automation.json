@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:bb6e0b1b4bbf2c793f56cc7fa05fd001d4d793ff0f319c3bd70b92b0127365ae",
+  "title": "Business Process Automation",
+  "slug": "business-process-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:business-process-automation",
+  "domain": "automation",
+  "definition": "The use of technology to automate complex, multi-step business processes beyond individual tasks, integrating systems and people to streamline operations. It targets end-to-end workflows rather than isolated actions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:process-automation",
+      "label": "Process Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "process-automation",
+      "label": "Process Automation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    }
+  ]
+}

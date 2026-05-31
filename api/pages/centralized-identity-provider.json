@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:50f0e22c7abd35972c5bb95249efb516796437c1c6415a88bae5030785ee6a9c",
+  "title": "Centralized Identity Provider",
+  "slug": "centralized-identity-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:centralized-identity-provider",
+  "domain": "identity",
+  "definition": "An identity service in which a single organisation issues, stores and authenticates user credentials on behalf of relying parties. It contrasts with decentralised identity models where control rests with the user.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-provider",
+      "label": "Identity Provider"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification-system",
+        "label": "Identity Verification System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    }
+  ]
+}

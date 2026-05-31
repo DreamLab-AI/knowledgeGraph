@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:lnp-bp-standards-association",
+  "title": "LNP-BP Standards Association",
+  "slug": "lnp-bp-standards-association",
+  "public": true,
+  "classIri": "urn:ngm:class:lnp-bp-standards-association",
+  "domain": "blockchain",
+  "definition": "The LNP-BP Standards Association is a non-profit body that develops and maintains specifications for Bitcoin and Lightning Network protocols, most notably the RGB smart-contract system and client-side validation. It curates the LNPBP specification series covering layer-2 and layer-3 constructs that extend Bitcoin without altering its base consensus. The association coordinates the engineers and researchers building these client-side-validated protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

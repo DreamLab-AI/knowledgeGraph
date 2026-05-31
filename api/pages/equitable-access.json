@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:equitable-access",
+  "title": "Equitable Access",
+  "slug": "equitable-access",
+  "public": true,
+  "classIri": "urn:ngm:class:equitable-access",
+  "domain": "governance",
+  "definition": "Equitable access is the principle and practice of ensuring that all people, regardless of ability, income, geography, or background, can reach and use a resource, service, or technology on fair terms. It goes beyond equal access by actively removing barriers and providing accommodations so that disadvantaged groups achieve comparable outcomes. In technology it is closely tied to accessibility standards and inclusive design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    }
+  ]
+}

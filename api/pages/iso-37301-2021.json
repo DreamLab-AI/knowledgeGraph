@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:86d5068b1eda865469360564639a6b1c8b984c9272aca5f714862ac29698ff77",
+  "title": "ISO 37301 2021",
+  "slug": "iso-37301-2021",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-37301-2021",
+  "domain": "standards",
+  "definition": "An ISO standard, published in 2021, specifying requirements and guidance for a compliance management system. It provides a basis for establishing, developing and maintaining organisational compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accountability-oecd",
+      "label": "Accountability (OECD)"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    }
+  ]
+}

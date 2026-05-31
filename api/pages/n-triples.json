@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:n-triples",
+  "title": "N-Triples",
+  "slug": "n-triples",
+  "public": true,
+  "classIri": "urn:ngm:class:n-triples",
+  "domain": "data",
+  "definition": "N-Triples is a line-based, plain-text serialization format for RDF in which each line encodes a single subject-predicate-object triple terminated by a period. It is deliberately minimal and unambiguous, using full IRIs rather than prefixes, which makes it easy to parse, stream, and compare line by line. The format is a W3C standard and serves as a canonical interchange and testing representation for RDF graphs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Historical research is the source-based study of the past; it is enabled by the [[Digital Archive]] and provides the evidentiary grounding required by [[Archaeological Site Reconstruction]].
+- ### Content
+  - Methods combine archival study, source criticism, and interdisciplinary evidence with digital tools such as photogrammetry, GIS, and text mining. Outputs feed immersive and educational applications, where rigorous historical interpretation ensures virtual reconstructions are accurate rather than speculative.

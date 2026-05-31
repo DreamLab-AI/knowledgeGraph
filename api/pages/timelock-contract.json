@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:daffdde5f7a5309c37b32a1e9f0b63a37b20d285c6a9bf8aec85cbb1c6d84f88",
+  "title": "Timelock Contract",
+  "slug": "timelock-contract",
+  "public": true,
+  "classIri": "urn:ngm:class:timelock-contract",
+  "domain": "blockchain",
+  "definition": "A smart contract or transaction condition that prevents funds or actions from being executed until a specified time or block height is reached. It is used to enforce delays and to coordinate conditional payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "hash-time-locked-contract",
+      "label": "Hash Time-Locked Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ]
+}

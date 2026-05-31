@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:chaumian-ecash",
+  "title": "Chaumian Ecash",
+  "slug": "chaumian-ecash",
+  "public": true,
+  "classIri": "urn:ngm:class:chaumian-ecash",
+  "domain": "blockchain",
+  "definition": "Chaumian ecash is a form of digital cash, invented by David Chaum, that uses blind signatures to issue bearer tokens redeemable at a central mint while preserving payer privacy. The mint signs blinded token requests so it cannot link issued tokens to the users who later spend them, providing strong untraceability with offline-style bearer transfer. It matters as the cryptographic foundation for privacy-preserving custodial payment systems, revived in Bitcoin through mints such as Cashu and Fedimint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    }
+  ]
+}

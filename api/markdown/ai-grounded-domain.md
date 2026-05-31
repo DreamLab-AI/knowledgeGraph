@@ -1,51 +1,22 @@
 - ### Definition
-  - A meta-classification domain for AI concepts that are empirically grounded in operational systems, validated through real-world deployment, and supported by measurable performance data rather than purely theoretical constructs.
+  - The AI Grounded Domain covers the connection of model representations and outputs to verifiable external referents such as sensor data, documents and physical context. Its scope includes grounding language in perception, citation and provenance, and the alignment of generated claims with sources of truth. It is a sub-area of the Artificial Intelligence Domain concerned with factual and perceptual grounding. The boundary excludes ungrounded generative behaviour, which is treated under the Generative AI Domain.
 
 - ### Semantic Classification
-  - owl-class:: artificial-intelligence:AiGroundedDomain
+  - owl-class:: aigrd:AIGroundedDomain
   - owl-role:: Domain
-  - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[ArtificialIntelligenceDomain]]
-  - requires:: [[Performance Metrics]]
+  - is-subclass-of:: [[Artificial Intelligence Domain]]
+  - bridges-to:: [[AI Safety Domain]], [[Generative AI Domain]], [[Knowledge Representation Domain]]
+  - has-part:: [[Symbol Grounding]], [[Multimodal Grounding]], [[Provenance Tracking]], [[Source Attribution]], [[Sensor Fusion]]
+  - requires:: [[Knowledge Representation Domain]], [[Information Retrieval Domain]], [[Computer Vision Domain]]
+  - enables:: [[Verifiable Generation]], [[Hallucination Reduction]], [[Context-Aware Reasoning]]
 
 - ### Content
-
-  - #### Member Concepts (Inferred by Reasoner)
-		    - Deployed AI System is-member-of AI-GroundedDomain
-		    - Production ML Model is-member-of AI-GroundedDomain
-		    - Validated AI Application is-member-of AI-GroundedDomain
-		    - Benchmarked Algorithm is-member-of AI-GroundedDomain
-		- distinguishes-from:: [[Theoretical AI]] (speculative concepts)
-		- validates-through:: [[Empirical Evaluation]]
-		- requires:: [[Performance Metrics]]
-
-  ## Definition
-
-  The **AI-Grounded Domain** represents a meta-level classification distinguishing AI concepts that have been empirically validated through real-world implementation from purely theoretical or speculative AI constructs. This domain classification ensures ontological rigour by requiring:
-
-  1. **Operational Evidence**: Concepts must be instantiated in functioning systems
-  2. **Measurable Performance**: Quantifiable metrics demonstrating capability
-  3. **Reproducible Results**: Independent verification of claimed properties
-  4. **Deployment History**: Track record in production environments
-
-  ## Ontological Purpose
-
-  This domain classification serves to:
-  - Separate implemented AI capabilities from research aspirations
-  - Ground knowledge claims in empirical evidence
-  - Enable reasoners to distinguish validated from theoretical concepts
-  - Support trust assessment in AI capability claims
-
-  ## Member Concept Criteria
-
-  Concepts classified under AI-GroundedDomain must demonstrate:
-  - Deployment in at least one production system
-  - Published performance benchmarks
-  - Reproducible evaluation methodology
-  - Clear operational constraints and limitations
+  - The AI Grounded Domain concerns the linkage between a system's internal representations and the external world they purport to describe. Its scope includes symbol grounding that ties tokens to referents, multimodal grounding that aligns language with perception, and provenance mechanisms that trace outputs back to sources. The boundary separates grounded behaviour from free generation, so a model that cites and verifies belongs here while one that generates without reference does not.
+  - Member concepts include Symbol Grounding, Multimodal Grounding, Provenance Tracking, Source Attribution and Sensor Fusion. These rely on the Knowledge Representation Domain for structured referents, the Information Retrieval Domain for source access and the Computer Vision Domain for perceptual anchors.
+  - The domain bridges to the AI Safety Domain, since grounding reduces fabricated claims, to the Generative AI Domain where retrieval augmentation supplies evidence, and to knowledge representation for the symbolic targets of grounding. It enables verifiable generation, reduction of hallucination and reasoning that respects context.
 
 - ### Provenance
   - sources::
-  - migration-date:: 2026-04-26T00:00:00Z
+  - migration-date:: 2026-05-29T00:00:00Z

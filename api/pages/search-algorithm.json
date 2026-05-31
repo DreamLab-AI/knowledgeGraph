@@ -80,8 +80,20 @@
   ],
   "backlinks": [
     {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
       "slug": "nearest-neighbor-search",
       "label": "Nearest Neighbor Search"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
     },
     {
       "slug": "task-planning",

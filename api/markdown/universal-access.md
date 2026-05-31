@@ -1,0 +1,4 @@
+- ### Definition
+  - Universal access is the goal of making digital and immersive systems usable by everyone regardless of ability or circumstance, enabling [[Accessible Experience]] outcomes guided by an [[XR Accessibility Guideline]].
+- ### Content
+  - Achieving universal access combines inclusive design, assistive-technology compatibility, and adaptable interaction modalities. In XR it means offering alternatives for vision, hearing, mobility and cognition, ensuring spatial content can be perceived and controlled through multiple input and output channels.

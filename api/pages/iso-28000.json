@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d2b3b83adc0dc4bebaa7eaf4ddb1df81c96d1476490f74fb2a27e7fecc8e7a0a",
+  "title": "ISO 28000",
+  "slug": "iso-28000",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-28000",
+  "domain": "standards",
+  "definition": "An ISO standard specifying requirements for a security management system, including aspects relevant to supply chain security. It can be used as a basis for assessing and certifying an organisation's security management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

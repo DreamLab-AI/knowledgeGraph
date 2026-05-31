@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:c04884803f95f4e3e7b0c45cacd91bcbeab3ad2059708a22fe96944780b84067",
+  "title": "Vector Databases",
+  "slug": "vector-databases",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-databases",
+  "domain": "artificial-intelligence",
+  "definition": "Database systems specialised for storing high-dimensional vector embeddings and performing similarity search over them, typically using approximate nearest neighbour indexing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: HyperledgerFoundation
 
 # hyperledger foundation
 ```json-ld

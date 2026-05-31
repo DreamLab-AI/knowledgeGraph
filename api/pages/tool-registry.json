@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tool-registry",
+  "title": "Tool Registry",
+  "slug": "tool-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-registry",
+  "domain": "ai",
+  "definition": "A tool registry is a catalogue that stores the definitions, schemas, permissions, and metadata of the external tools and functions an AI agent can invoke. It enables agents to discover, validate, and route calls to available capabilities at runtime, providing a governed and extensible interface between language models and the systems they act upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    }
+  ]
+}

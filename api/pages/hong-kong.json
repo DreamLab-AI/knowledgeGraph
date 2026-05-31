@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:6176ebd120fe9648ffc34bead6a4dd387556ef2aba209584258e1982c9daec2b",
+  "title": "Hong Kong",
+  "slug": "hong-kong",
+  "public": true,
+  "classIri": "urn:ngm:class:hong-kong",
+  "domain": "governance",
+  "definition": "A special administrative region of China and a major international financial centre active in fintech and digital currency experimentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-technology",
+      "label": "Financial Technology"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

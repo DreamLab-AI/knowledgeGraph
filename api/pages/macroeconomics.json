@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:c03586b1229f07c1a0b25a412e15f5cf988e85702dd2b59e6fc2de3b095395dc",
+  "title": "Macroeconomics",
+  "slug": "macroeconomics",
+  "public": true,
+  "classIri": "urn:ngm:class:macroeconomics",
+  "domain": "economics",
+  "definition": "Macroeconomics is the branch of economics that studies the behaviour and performance of an economy as a whole, including output, inflation, unemployment and growth. It examines aggregate variables and the effect of monetary and fiscal policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inflation-hedge",
+        "label": "Inflation Hedge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inflation-hedge",
+      "label": "Inflation Hedge"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

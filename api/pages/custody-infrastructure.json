@@ -63,12 +63,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
     },
     {
       "slug": "treasury-management",
       "label": "Treasury Management"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
     }
   ]
 }

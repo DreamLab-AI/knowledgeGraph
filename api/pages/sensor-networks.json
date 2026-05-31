@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:4a8cc6da1c4215bf5e0e59aba53d03074890148e8f1269b4d2bd57e0aa86384e",
+  "title": "Sensor Networks",
+  "slug": "sensor-networks",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-networks",
+  "domain": "robotics",
+  "definition": "Sensor networks are distributed collections of sensor nodes that collect, process and communicate measurements about their environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensors",
+      "label": "Sensors"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-wireless-sensor-network",
+      "label": "https://en.wikipedia.org/wiki/Wireless_sensor_network"
+    },
+    {
+      "slug": "https-www-nist-gov",
+      "label": "https://www.nist.gov/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

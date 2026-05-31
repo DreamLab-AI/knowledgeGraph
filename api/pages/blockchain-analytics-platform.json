@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:blockchain-analytics-platform",
+  "title": "Blockchain Analytics Platform",
+  "slug": "blockchain-analytics-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-analytics-platform",
+  "domain": "blockchain",
+  "definition": "A blockchain analytics platform is software that ingests, clusters, and analyses on-chain transaction data to trace fund flows, attribute addresses to entities, and assess risk. Platforms such as Chainalysis and Elliptic apply heuristics, machine learning, and labelled datasets to support anti-money-laundering, sanctions screening, and investigations. They are central tooling for exchange compliance teams, regulators, and law-enforcement agencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML/KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ]
+}

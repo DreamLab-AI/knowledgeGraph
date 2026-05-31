@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:abc74e15acfd12c2f78e6786842cfacedcd11bf0c2abbdc48d7c1a0409645652",
+  "title": "Real-ESRGAN",
+  "slug": "real-esrgan",
+  "public": true,
+  "classIri": "urn:ngm:class:real-esrgan",
+  "domain": "computer-vision",
+  "definition": "Real-ESRGAN is an image super-resolution model that upscales and restores low-quality images, with particular attention to real-world degradations. It extends the ESRGAN architecture using a generative adversarial network trained on synthetic degradation data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:creator-compensation",
+  "title": "Creator Compensation",
+  "slug": "creator-compensation",
+  "public": true,
+  "classIri": "urn:ngm:class:creator-compensation",
+  "domain": "blockchain",
+  "definition": "Creator compensation refers to the economic mechanisms by which content creators are paid for their work, including royalties, revenue sharing, tipping, and tokenised ownership rights. In blockchain contexts it is often automated through smart contracts that distribute proceeds on primary sale and secondary resale. It is central to sustainable creator economies and to debates over fair value capture on digital platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "id": "urn:ngm:class:royalty-mechanism",
+        "label": "Royalty Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "royalty-mechanism",
+      "label": "Royalty Mechanism"
+    }
+  ]
+}

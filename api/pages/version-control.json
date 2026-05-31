@@ -59,6 +59,14 @@
       "label": "3D Scene Exchange Protocol (SXP)"
     },
     {
+      "slug": "code-review",
+      "label": "Code Review"
+    },
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },
@@ -79,8 +87,20 @@
       "label": "GPT Engineer"
     },
     {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
       "slug": "software-development-process",
       "label": "Software Development Process"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
     }
   ]
 }

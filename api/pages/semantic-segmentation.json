@@ -132,6 +132,10 @@
       "label": "Segmentation and Identification"
     },
     {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
       "slug": "virtual-production",
       "label": "Virtual Production"
     }

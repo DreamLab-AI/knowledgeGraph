@@ -151,8 +151,8 @@ public:: true
       "label": "Human-Robot Interaction"
     },
     {
-      "@id": "urn:ngm:class:attention-control",
-      "label": "Attention Control"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     }
   ],
   "relations": {

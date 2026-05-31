@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:0e3aa7b4cef7e30897367ad09af06e9bf14a993467ad5cd098965eb2c58918e6",
+  "title": "Climate Finance",
+  "slug": "climate-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-finance",
+  "domain": "governance",
+  "definition": "Climate finance refers to funding directed towards activities that reduce greenhouse gas emissions or help adaptation to climate change. It includes public and private investment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:green-finance",
+      "label": "Green Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "green-finance",
+      "label": "Green Finance"
+    },
+    {
+      "slug": "https-unfccc-int-topics-introduction-to-climate-finance",
+      "label": "https://unfccc.int/topics/introduction-to-climate-finance"
+    },
+    {
+      "slug": "https-www-worldbank-org-en-topic-climatefinance",
+      "label": "https://www.worldbank.org/en/topic/climatefinance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "world-economic-forum",
+      "label": "World Economic Forum"
+    }
+  ]
+}

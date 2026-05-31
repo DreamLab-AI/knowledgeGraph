@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:f931480bf8389e68d171adc6f8c3d406a58c4c4524214b1e0d4866adead7d592",
+  "title": "X.509 Certificate",
+  "slug": "x-509-certificate",
+  "public": true,
+  "classIri": "urn:ngm:class:x-509-certificate",
+  "domain": "cryptographic",
+  "definition": "A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: RB-1011-cobot-safety-levels
 
 # Cobot Safety Levels
 ```json-ld

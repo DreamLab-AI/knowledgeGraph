@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:regulatory-reporting-module",
+  "title": "Regulatory Reporting Module",
+  "slug": "regulatory-reporting-module",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-reporting-module",
+  "domain": "blockchain",
+  "definition": "A regulatory reporting module is a self-contained software component that collects, formats, and dispatches the disclosures an entity owes to its regulators. It encapsulates jurisdiction-specific schemas, validation rules, and submission channels so they can be reused across systems. As a discrete subsystem it plugs into compliance-monitoring and tax-compliance pipelines to produce audit-ready outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    }
+  ]
+}

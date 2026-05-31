@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:pairwise-qf",
+  "title": "Pairwise QF",
+  "slug": "pairwise-qf",
+  "public": true,
+  "classIri": "urn:ngm:class:pairwise-qf",
+  "domain": "blockchain",
+  "definition": "Pairwise QF (Pairwise-bounded Quadratic Funding) is a variant of quadratic funding that limits the matching subsidy attributable to coordinating groups of contributors by discounting the influence of pairs who repeatedly co-fund. It mitigates collusion and Sybil attacks that plague naive quadratic funding by capping the matching any pair of donors can jointly unlock. The mechanism preserves quadratic funding's democratic weighting of many small contributions while resisting manipulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

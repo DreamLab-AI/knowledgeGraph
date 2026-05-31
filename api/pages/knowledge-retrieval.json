@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:knowledge-retrieval",
+  "title": "Knowledge Retrieval",
+  "slug": "knowledge-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-retrieval",
+  "domain": "ai",
+  "definition": "Knowledge retrieval is the process of locating and returning relevant information from a knowledge source in response to a query or information need. It extends classical information retrieval by operating over structured knowledge, semantic representations and contextual relevance rather than keyword matching alone. It is a foundational capability for question answering, retrieval-augmented generation and conversational agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

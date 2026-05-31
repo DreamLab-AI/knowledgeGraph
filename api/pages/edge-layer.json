@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:55e1bc311739948193db1bcea6c8bcf4ef45b4db49e3b3fdeafa3606c5d506cb",
+  "title": "Edge Layer",
+  "slug": "edge-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-layer",
+  "domain": "edge",
+  "definition": "The Edge Layer is the cross-cutting stratum at the periphery of a system, where it meets external devices, users, and data sources. It sits above local hardware and network resources and below the application workloads it serves close to origin. It contains edge gateways, local caches, and the boundary logic that mediates between core and periphery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:hardware-layer",
+        "label": "Hardware Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing-layer",
+        "label": "Edge Computing Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    }
+  ]
+}

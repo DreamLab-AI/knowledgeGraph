@@ -68,6 +68,14 @@
   ],
   "backlinks": [
     {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
     },

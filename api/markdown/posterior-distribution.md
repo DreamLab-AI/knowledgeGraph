@@ -1,0 +1,4 @@
+- ### Definition
+  - A posterior distribution is the updated belief over unknowns after observing data, computed via Bayes' theorem. It is a core component of the [[Bayes Filter]] and any [[Probabilistic Model]], formed by reweighting the [[Prior Distribution]] with the data likelihood.
+- ### Content
+  - Computing the posterior requires normalising the product of prior and likelihood by the marginal evidence, which is often intractable. Practical methods approximate it through conjugate priors, variational inference, Markov chain Monte Carlo, or particle representations. In sequential estimation the posterior is propagated forward as the next step's prior.

@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:cb08ccc2f7942a97a98f9f2eaa88a102a6a8d1f4fea810019e6d3c00219cb66f",
+  "title": "ISO-IEC 22989 2022",
+  "slug": "iso-iec-22989-2022",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-22989-2022",
+  "domain": "standards",
+  "definition": "ISO/IEC 22989:2022 establishes terminology for artificial intelligence and describes concepts in the field of AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

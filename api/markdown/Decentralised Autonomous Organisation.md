@@ -1,4 +1,5 @@
 public:: true
+alias:: DecentralisedAutonomousOrganisation
 
 # decentralised autonomous organisation
 ```json-ld

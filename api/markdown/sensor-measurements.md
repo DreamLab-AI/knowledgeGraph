@@ -1,0 +1,4 @@
+- ### Definition
+  - Sensor measurements are time-stamped observations with values, units, and uncertainty that estimators consume to infer latent state. They are the observation input required by a [[Bayes Filter]] and by [[Monte Carlo Localization]].
+- ### Content
+  - Each measurement is modelled by an observation likelihood that maps hidden state to expected readings plus noise. Accurate measurement models, calibration, and time synchronisation are prerequisites for correct Bayesian updates and convergence of recursive state estimators.

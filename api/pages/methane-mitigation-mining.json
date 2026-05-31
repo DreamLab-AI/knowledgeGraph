@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:methane-mitigation-mining",
+  "title": "Methane Mitigation Mining",
+  "slug": "methane-mitigation-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:methane-mitigation-mining",
+  "domain": "blockchain",
+  "definition": "Methane mitigation mining is the practice of siting Bitcoin mining hardware at sources of vented or flared methane, such as oil wellheads and landfills, to combust the gas in generators that power the miners. The mining load creates a continuous, location-flexible demand for energy that would otherwise be wasted, converting a potent greenhouse gas into electricity and revenue. It is promoted as a way to reduce net emissions while monetising stranded hydrocarbons.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

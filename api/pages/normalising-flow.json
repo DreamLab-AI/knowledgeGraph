@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:745ddc90819e39c2f986c40990044d9709fdabce59edd451e0d6c3357ac036cf",
+  "title": "Normalising Flow",
+  "slug": "normalising-flow",
+  "public": true,
+  "classIri": "urn:ngm:class:normalising-flow",
+  "domain": "machine-learning",
+  "definition": "A normalising flow is a generative model that transforms a simple base probability distribution into a complex one through a sequence of invertible mappings, allowing exact likelihood computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:inference-infrastructure",
+  "title": "Inference Infrastructure",
+  "slug": "inference-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:inference-infrastructure",
+  "domain": "ai",
+  "definition": "Inference infrastructure is the stack of hardware, serving software, and orchestration used to deploy machine-learning models for low-latency, high-throughput prediction in production. It encompasses accelerator fleets, model servers, autoscaling, load balancing, batching engines, and caching layers that route requests and manage GPU memory. It is what makes real-time AI services such as search and chat economically and operationally viable at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

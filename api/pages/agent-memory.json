@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:1062b709197b562f9dd3151ae21e021544f65376cec9b5c4b4cdb97cfd1bb1a3",
+  "title": "Agent Memory",
+  "slug": "agent-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-memory",
+  "domain": "artificial-intelligence",
+  "definition": "Agent memory is the mechanism by which an autonomous agent stores and retrieves information across steps and sessions. It allows an agent to recall past observations, decisions and facts beyond the immediate context window.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent",
+      "label": "AI Agent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    }
+  ]
+}

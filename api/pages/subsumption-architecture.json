@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:bb3a84b2f2b999344f3ea124417a4d2740223a30ed98e5fc0adc462d171c3980",
+  "title": "Subsumption Architecture",
+  "slug": "subsumption-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:subsumption-architecture",
+  "domain": "metaverse",
+  "definition": "Subsumption architecture is a layered control method for autonomous agents in which simple reactive behaviours are stacked, with higher layers able to suppress or override lower ones to produce competent behaviour without a central world model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "bdi-model",
+      "label": "BDI Model"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    }
+  ]
+}

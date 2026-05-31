@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:open-rail",
+  "title": "OpenRAIL",
+  "slug": "open-rail",
+  "public": true,
+  "classIri": "urn:ngm:class:open-rail",
+  "domain": "ai",
+  "definition": "OpenRAIL (Responsible AI License) is a family of model licenses that grant broad permission to use and distribute AI models while imposing use-based behavioral restrictions to prevent harmful applications. Unlike traditional open-source licenses, it couples openness with enforceable conditions prohibiting specified misuse such as discrimination or disinformation. OpenRAIL has become a common licensing framework for openly released foundation models and their training artifacts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

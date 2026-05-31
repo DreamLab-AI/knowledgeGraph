@@ -16,8 +16,8 @@
       "label": "Decentralised Governance"
     },
     {
-      "id": "urn:ngm:class:feedback-system",
-      "label": "Feedback System"
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
   "entityType": "Class",
@@ -185,7 +185,7 @@
         "label": "Ethereum Attestation Service"
       },
       {
-        "id": "urn:ngm:class:w3-c-did-working-group",
+        "id": "urn:ngm:class:w-3-c-did-working-group",
         "label": "W3C DID Working Group"
       },
       {
@@ -484,6 +484,10 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
     {
       "slug": "community-governance-model",
       "label": "Community Governance Model"

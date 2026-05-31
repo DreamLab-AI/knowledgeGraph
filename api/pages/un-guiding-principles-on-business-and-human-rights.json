@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:un-guiding-principles-on-business-and-human-rights",
+  "title": "UN Guiding Principles on Business and Human Rights",
+  "slug": "un-guiding-principles-on-business-and-human-rights",
+  "public": true,
+  "classIri": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+  "domain": "governance",
+  "definition": "The UN Guiding Principles on Business and Human Rights (UNGPs) are a set of 31 principles endorsed by the UN Human Rights Council in 2011 that establish a global standard for preventing and addressing adverse human rights impacts linked to business activity. They rest on three pillars: the state duty to protect, the corporate responsibility to respect, and access to remedy. The framework underpins human-rights due diligence across supply chains, including ethical sourcing of materials and labour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

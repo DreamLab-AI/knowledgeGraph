@@ -92,6 +92,22 @@
       "label": "51% Attack"
     },
     {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "anchorage-digital",
+      "label": "Anchorage Digital"
+    },
+    {
+      "slug": "aptos",
+      "label": "Aptos"
+    },
+    {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
       "slug": "btc-layer-3",
       "label": "BTC Layer 3"
     },
@@ -128,16 +144,28 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
       "slug": "consensus-algorithm",
       "label": "Consensus Algorithm"
     },
     {
       "slug": "consensus-algorithm",
       "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
     },
     {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
     },
     {
       "slug": "cryptocurrency",
@@ -148,12 +176,28 @@
       "label": "Delegated Proof of Stake"
     },
     {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
     },
     {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
     },
     {
       "slug": "liquid-proof-of-stake",
@@ -170,6 +214,14 @@
     {
       "slug": "ouroboros-consensus",
       "label": "Ouroboros Consensus"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
     },
     {
       "slug": "private-blockchain",
@@ -192,6 +244,14 @@
       "label": "Quorum Blockchain"
     },
     {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
+    },
+    {
       "slug": "sustainable-consensus",
       "label": "Sustainable Consensus"
     },
@@ -206,6 +266,10 @@
     {
       "slug": "token-economics-domain",
       "label": "Token Economics Domain"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
     },
     {
       "slug": "blockchain-core-concepts",

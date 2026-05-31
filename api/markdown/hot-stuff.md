@@ -1,0 +1,4 @@
+- ### Definition
+  - HotStuff is a linear-complexity BFT [[Consensus Mechanism]] that implements practical [[Fault Tolerance]] for large, dynamic validator sets.
+- ### Content
+  - It collapses the classic PBFT communication pattern into a pipelined sequence of prepare, pre-commit, and commit phases aggregated with threshold signatures, so each phase costs O(n) messages. The rotating leader and chained block proposals deliver high throughput with bounded latency under partial synchrony, motivating its adoption in several production blockchains.

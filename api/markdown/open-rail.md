@@ -1,0 +1,4 @@
+- ### Definition
+  - OpenRAIL is a Responsible AI License that permits broad use of models and artifacts such as [[Training Data]] while attaching use-based restrictions to curb harmful applications.
+- ### Content
+  - It blends open access with behavioral clauses prohibiting enumerated misuses, distinguishing it from permissive open-source licenses. The framework is widely applied to openly distributed foundation models, balancing reuse and downstream accountability for both weights and associated datasets.

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:258b468dba0888ad63214bdd22e71eda5fceb0121b4285ee92fc220a44b4e3a7",
+  "title": "PLONK",
+  "slug": "plonk",
+  "public": true,
+  "classIri": "urn:ngm:class:plonk",
+  "domain": "blockchain",
+  "definition": "PLONK is a zero-knowledge proof system that uses polynomial commitments and a universal trusted setup. It is used to build succinct proofs for verifiable computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "https-eprint-iacr-org-2019-953",
+      "label": "https://eprint.iacr.org/2019/953"
+    },
+    {
+      "slug": "https-vitalik-eth-limo-general-2019-09-22-plonk-html",
+      "label": "https://vitalik.eth.limo/general/2019/09/22/plonk.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

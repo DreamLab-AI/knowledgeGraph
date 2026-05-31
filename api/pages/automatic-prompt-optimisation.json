@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:automatic-prompt-optimisation",
+  "title": "Automatic Prompt Optimisation",
+  "slug": "automatic-prompt-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:automatic-prompt-optimisation",
+  "domain": "ai",
+  "definition": "Automatic prompt optimisation is a set of techniques that algorithmically search for or refine the prompts given to a large language model to maximise task performance, rather than relying on manual prompt crafting. Methods include gradient-free search, reinforcement learning, evolutionary algorithms, and LLM-driven self-improvement loops that score candidate prompts against an evaluation metric. It reduces the brittleness and labour of hand-tuned prompting and is a core component of mature prompt-engineering workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

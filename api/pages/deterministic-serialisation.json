@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:deterministic-serialisation",
+  "title": "Deterministic Serialisation",
+  "slug": "deterministic-serialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:deterministic-serialisation",
+  "domain": "data",
+  "definition": "Deterministic serialisation is the encoding of structured data into bytes such that semantically identical inputs always yield exactly the same byte sequence. It fixes ambiguities like map-key ordering, number formatting, and whitespace so that the output is canonical and reproducible. This property is essential for hashing, digital signatures, and content addressing, where any byte difference changes the resulting digest.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:8c947eabfedf5954c71c88189a4346139fc60dffef79f8308aa44b0dfdefcf45",
+  "title": "Data Confidentiality",
+  "slug": "data-confidentiality",
+  "public": true,
+  "classIri": "urn:ngm:class:data-confidentiality",
+  "domain": "information-security",
+  "definition": "The property that data is accessible only to those authorised to view it, protecting information from disclosure to unauthorised parties. It is one of the core objectives of information security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-security",
+      "label": "Information Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "tee",
+      "label": "TEE"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ]
+}

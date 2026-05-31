@@ -1,4 +1,5 @@
 public:: true
+alias:: ContentDeliveryNetwork
 
 # content delivery network
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:memory-bandwidth",
+  "title": "Memory Bandwidth",
+  "slug": "memory-bandwidth",
+  "public": true,
+  "classIri": "urn:ngm:class:memory-bandwidth",
+  "domain": "infrastructure",
+  "definition": "Memory bandwidth is the rate at which data can be read from or written to memory, typically measured in gigabytes per second. It is a primary performance constraint for data-intensive workloads such as deep-learning inference and real-time rendering, where compute units stall waiting for data. High-bandwidth memory technologies are deployed precisely to relieve this bottleneck on accelerators and edge hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

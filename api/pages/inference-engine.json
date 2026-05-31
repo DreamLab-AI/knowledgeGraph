@@ -80,8 +80,28 @@
       "label": "Cognitive AI"
     },
     {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
       "slug": "knowledge-graph",
       "label": "Knowledge Graph"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
     }
   ]
 }

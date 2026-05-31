@@ -116,6 +116,10 @@
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "bittensor",
+      "label": "Bittensor"
+    },
+    {
       "slug": "blockchain-infrastructure",
       "label": "Blockchain Infrastructure"
     },
@@ -154,6 +158,10 @@
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
     },
     {
       "slug": "ontology-technical-details",

@@ -455,8 +455,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:broadcast-standards",
-      "label": "Broadcast Standards"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
       "@id": "urn:ngm:class:content-delivery-network",
@@ -824,11 +824,11 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:individual:apple",
+        "@id": "urn:ngm:class:apple",
         "label": "Apple"
       },
       {
-        "@id": "urn:ngm:individual:google",
+        "@id": "urn:ngm:class:google",
         "label": "Google"
       }
     ]

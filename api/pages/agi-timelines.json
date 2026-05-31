@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:agi-timelines",
+  "title": "AGI Timelines",
+  "slug": "agi-timelines",
+  "public": true,
+  "classIri": "urn:ngm:class:agi-timelines",
+  "domain": "ai",
+  "definition": "AGI timelines are structured forecasts estimating when artificial general intelligence \u2014 AI matching or exceeding human cognitive ability across most economically valuable tasks \u2014 might be achieved. Such forecasts aggregate expert surveys, compute-scaling extrapolations, benchmark-progress curves, and Bayesian models of research milestones to produce probability distributions over future dates. Timelines are inherently uncertain and contested, and they materially influence research prioritisation, safety investment, and public policy. They are a distinct object of study within AI forecasting rather than a single predicted date.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:time-series-forecasting",
+      "label": "Time-Series Forecasting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:gartner-prediction",
+        "label": "Gartner Prediction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:e39e8f0964b9c7dfe4910b26861d4d7ff1c8bdce5b69a593ca5b6ff165a913af",
+  "title": "MetaMask",
+  "slug": "meta-mask",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-mask",
+  "domain": "blockchain",
+  "definition": "MetaMask is a software cryptocurrency wallet, available as a browser extension and mobile application, for interacting with Ethereum and compatible networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

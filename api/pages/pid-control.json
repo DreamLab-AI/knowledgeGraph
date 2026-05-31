@@ -63,6 +63,10 @@
       "label": "Control System"
     },
     {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },

@@ -1,4 +1,5 @@
 public:: true
+alias:: DigitalAvatar
 
 # Digital Avatar
 ```json-ld
@@ -152,8 +153,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:virtual-representation",
-      "label": "Virtual Representation"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "quality": 0.4,

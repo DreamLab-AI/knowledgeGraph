@@ -16,8 +16,8 @@
       "label": "Industrial Automation"
     },
     {
-      "id": "urn:ngm:class:mechatronics",
-      "label": "Mechatronics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "entityType": "Class",
@@ -571,6 +571,10 @@
     {
       "slug": "control-system",
       "label": "Control System"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
     },
     {
       "slug": "dc-servo-motor",

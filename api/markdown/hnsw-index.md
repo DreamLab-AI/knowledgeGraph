@@ -1,0 +1,4 @@
+- ### Definition
+  - An HNSW index is a hierarchical proximity-graph structure for fast approximate nearest-neighbour lookup; it is implemented by [[Semantic Search]] systems and embedded in vector [[Storage Infrastructure]].
+- ### Content
+  - The index trades exactness for speed, tuning recall via parameters such as the connectivity M and the search beam ef. Its logarithmic query complexity and incremental insertion make it well suited to embedding retrieval for RAG, recommendation, and similarity search over millions to billions of vectors.

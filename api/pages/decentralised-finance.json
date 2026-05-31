@@ -119,6 +119,10 @@
       "label": "Risk Assessment"
     },
     {
+      "slug": "smart-contract-layer",
+      "label": "Smart Contract Layer"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },

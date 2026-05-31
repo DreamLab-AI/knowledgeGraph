@@ -1,4 +1,5 @@
 public:: true
+alias:: Constraint-Based Design
 
 # Constraint Based Design
 ```json-ld

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bolt12-offers",
+  "title": "BOLT12 Offers",
+  "slug": "bolt12-offers",
+  "public": true,
+  "classIri": "urn:ngm:class:bolt12-offers",
+  "domain": "blockchain",
+  "definition": "BOLT12 Offers is a Lightning Network specification defining reusable, static payment requests called offers, improving on single-use BOLT11 invoices. An offer is a long-lived, shareable code from which payers fetch a fresh invoice on demand via onion messages, enabling recurring payments, refunds, and donation links without a server issuing each invoice. It also improves privacy through blinded paths that hide the recipient's node identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cqrs",
+  "title": "CQRS",
+  "slug": "cqrs",
+  "public": true,
+  "classIri": "urn:ngm:class:cqrs",
+  "domain": "infrastructure",
+  "definition": "Command Query Responsibility Segregation (CQRS) is a software architecture pattern that separates the model used to update state (commands) from the model used to read state (queries). By using distinct write and read paths, systems can independently optimise, scale, and secure each side, often pairing the write model with event sourcing. It is commonly applied in high-throughput, complex-domain systems where read and write workloads diverge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    }
+  ]
+}

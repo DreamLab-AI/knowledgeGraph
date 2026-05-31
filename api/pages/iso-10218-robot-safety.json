@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:91ce438c3d7237240e3f68375b08a3e1992d980d768396095526b618858888d1",
+  "title": "ISO 10218 Robot Safety",
+  "slug": "iso-10218-robot-safety",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-10218-robot-safety",
+  "domain": "standards",
+  "definition": "An ISO standard, in multiple parts, specifying safety requirements for industrial robots and robot systems. It addresses hazards and protective measures for robot design and integration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

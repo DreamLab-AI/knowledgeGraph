@@ -63,6 +63,10 @@
       "label": "Blockchain Energy Consumption"
     },
     {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
       "slug": "carbon-credit-tracking",
       "label": "Carbon Credit Tracking"
     },
@@ -75,12 +79,48 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    },
+    {
       "slug": "circular-economy",
       "label": "Circular Economy"
     },
     {
+      "slug": "climate-change-mitigation",
+      "label": "Climate Change Mitigation"
+    },
+    {
+      "slug": "climate-finance",
+      "label": "Climate Finance"
+    },
+    {
+      "slug": "climate-policy",
+      "label": "Climate Policy"
+    },
+    {
+      "slug": "e-waste",
+      "label": "E-Waste"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "greenwashing",
+      "label": "Greenwashing"
+    },
+    {
+      "slug": "paris-agreement",
+      "label": "Paris Agreement"
     },
     {
       "slug": "product-design",

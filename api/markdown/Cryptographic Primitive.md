@@ -1,4 +1,5 @@
 public:: true
+alias:: Cryptographic Primitives, CryptographicPrimitive
 
 # Cryptographic Primitive
 ```json-ld

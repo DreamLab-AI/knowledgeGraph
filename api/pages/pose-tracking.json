@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:pose-tracking",
+  "title": "Pose Tracking",
+  "slug": "pose-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:pose-tracking",
+  "domain": "metaverse",
+  "definition": "Pose tracking is the continuous estimation of the position and orientation (6-DoF pose) of a device, user, or body over time. In spatial computing it underpins head, hand, and controller tracking for AR and VR, fusing camera, IMU, and depth data at low latency. Accurate, drift-free pose tracking is essential for stable, comfortable immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing-domain",
+        "label": "Spatial Computing Domain"
+      },
+      {
+        "id": "urn:ngm:class:ar-display-device",
+        "label": "AR Display Device"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-display-device",
+      "label": "Ar Display Device"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ]
+}

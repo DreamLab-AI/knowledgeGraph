@@ -1,4 +1,5 @@
 public:: true
+alias:: OrganisationalTheory
 
 # Organisational Theory
 ```json-ld

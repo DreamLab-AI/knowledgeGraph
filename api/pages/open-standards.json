@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:89ce50e028d25527833466d993a9498c12986b31b27e1675137b6e9b8112caff",
+  "title": "Open Standards",
+  "slug": "open-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:open-standards",
+  "domain": "metaverse",
+  "definition": "Open standards are publicly available, openly developed specifications that any party may implement, promoting interoperability and reducing dependence on a single vendor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:khronos-open-xr",
+        "label": "Khronos OpenXR"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

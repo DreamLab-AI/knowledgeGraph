@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:29a6effe54c83991003cd33f87eec45a4b62f9ea041a955810873ceae8d79aa1",
+  "title": "Layer 1",
+  "slug": "layer-1",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-1",
+  "domain": "blockchain",
+  "definition": "The base settlement layer of a blockchain network where consensus and final transaction ordering occur, as distinct from protocols built on top of it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-networks",
+        "label": "Layer 2 Networks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aptos",
+      "label": "Aptos"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "layer-3",
+      "label": "Layer 3"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    }
+  ]
+}

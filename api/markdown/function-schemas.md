@@ -1,0 +1,4 @@
+- ### Definition
+  - Function schemas are JSON-Schema declarations of callable tools that [[Agents]] and [[Computer Use and Browser Agents]] use to invoke external capabilities with well-typed arguments.
+- ### Content
+  - A schema names a function, documents its purpose, and specifies each parameter's type, constraints, and whether it is required. The model uses these descriptions to decide when to call a tool and to generate conformant arguments, which a runtime then validates and executes. Good schema design improves grounding, reduces hallucinated parameters, and makes multi-tool agent loops dependable.

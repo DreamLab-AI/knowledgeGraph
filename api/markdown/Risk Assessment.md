@@ -359,8 +359,8 @@ public:: true
       "label": "Audit"
     },
     {
-      "@id": "urn:ngm:class:systems-analysis",
-      "label": "Systems Analysis"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {

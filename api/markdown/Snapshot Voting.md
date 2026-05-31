@@ -527,12 +527,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:cryptographic-signalling",
-      "label": "Cryptographic Signalling"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:decentralised-voting",
-      "label": "Decentralised Voting"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     }
   ],
   "relations": {

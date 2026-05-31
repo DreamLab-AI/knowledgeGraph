@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:0f5a507c5a48bd60945f8ec42bde0b730adae0d311e2517bb3fbe748951061f2",
+  "title": "Semantic Reasoning Engine",
+  "slug": "semantic-reasoning-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-reasoning-engine",
+  "domain": "general",
+  "definition": "Software that derives logically implied facts and checks consistency over a knowledge base expressed in a formal language such as OWL or RDF Schema. It applies inference rules of the underlying logic to make implicit information explicit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "https-www-w-3-org-tr-owl-2-primer",
+      "label": "https://www.w3.org/TR/owl2-primer/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "provenance-ontology-prov-o",
+      "label": "Provenance Ontology (PROV-O)"
+    },
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

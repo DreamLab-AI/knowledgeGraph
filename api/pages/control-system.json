@@ -12,10 +12,6 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:feedback-systems",
-      "label": "Feedback Systems"
-    },
-    {
       "id": "urn:ngm:class:robotic-system",
       "label": "Robotic Systems"
     }

@@ -109,6 +109,14 @@
     {
       "slug": "carbon-offset-trading",
       "label": "Carbon Offset Trading"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
     }
   ]
 }

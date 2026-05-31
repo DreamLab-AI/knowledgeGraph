@@ -1,0 +1,4 @@
+- ### Definition
+  - Resource efficiency delivers more output per unit of input, enabled by [[Performance Optimization]] and by closed-loop practices such as [[Industrial Symbiosis]].
+- ### Content
+  - Strategies include energy and material recovery, process optimisation, and circular reuse of by-products between facilities. Higher efficiency lowers operating cost and emissions while sustaining throughput.

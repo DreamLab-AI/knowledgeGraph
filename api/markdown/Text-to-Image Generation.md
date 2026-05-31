@@ -1,4 +1,5 @@
 public:: true
+alias:: Text to Image Generation
 
 # Text-to-Image Generation
 ```json-ld

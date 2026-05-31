@@ -1,0 +1,4 @@
+- ### Definition
+  - Piracy prevention deters and detects unauthorised use of digital content, primarily delivered through [[Digital Rights Management]] and its extended variants in [[Digital Rights Management Extended]].
+- ### Content
+  - Techniques combine content encryption with licence servers that gate decryption keys to authorised devices, forensic watermarking to trace leaks, and tamper-resistant clients to resist circumvention. Effective schemes must withstand the analogue hole and key extraction while not degrading legitimate playback, making piracy prevention an ongoing arms race between rights holders and circumvention efforts.

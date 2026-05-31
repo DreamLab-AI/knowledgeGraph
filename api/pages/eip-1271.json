@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:88701ee6fae54191179846cd21b82536b6e29765dc60e5260aa2d93c94ad99f1",
+  "title": "EIP-1271",
+  "slug": "eip-1271",
+  "public": true,
+  "classIri": "urn:ngm:class:eip-1271",
+  "domain": "standards",
+  "definition": "An Ethereum standard defining a method for smart contracts to validate signatures on their behalf via a standard interface. It enables contract accounts to verify that a signature is valid.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

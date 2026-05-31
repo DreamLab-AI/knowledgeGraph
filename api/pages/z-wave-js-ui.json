@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:z-wave-js-ui",
+  "title": "Z-Wave JS UI",
+  "slug": "z-wave-js-ui",
+  "public": true,
+  "classIri": "urn:ngm:class:z-wave-js-ui",
+  "domain": "infrastructure",
+  "definition": "Z-Wave JS UI is an open-source application that wraps the Z-Wave JS driver to manage a Z-Wave mesh network of smart-home devices through a web interface and to bridge it to home-automation platforms via MQTT. It handles device inclusion, configuration, firmware updates, and network healing, exposing Z-Wave nodes as controllable entities. It matters as a primary integration path between Z-Wave hardware and Home Assistant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infrastructure Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    }
+  ]
+}

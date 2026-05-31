@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:emergent-behavior",
+  "title": "Emergent Behavior",
+  "slug": "emergent-behavior",
+  "public": true,
+  "classIri": "urn:ngm:class:emergent-behavior",
+  "domain": "ai",
+  "definition": "Emergent Behavior is complex, system-level behaviour that arises from the interactions of many simpler components or agents and is not explicitly programmed into any individual part. In AI-driven game agents and open-world simulations it produces lifelike, unscripted dynamics from local rules and agent decisions. Emergence is valued for richness and replayability but can be hard to predict, test, and control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ]
+}

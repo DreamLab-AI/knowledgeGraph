@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:demand-side-response",
+  "title": "Demand-Side Response",
+  "slug": "demand-side-response",
+  "public": true,
+  "classIri": "urn:ngm:class:demand-side-response",
+  "domain": "infrastructure",
+  "definition": "Demand-side response is the adjustment of electricity consumption by end users in reaction to grid signals, time-of-use tariffs, or scarcity events, rather than altering generation. Smart-home and building automation systems shift or curtail loads such as heating, EV charging, and appliances to flatten peaks and exploit cheap or low-carbon periods. It improves grid reliability and lets consumers reduce energy cost and carbon footprint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    }
+  ]
+}

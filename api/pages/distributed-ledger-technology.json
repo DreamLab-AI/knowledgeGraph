@@ -75,12 +75,20 @@
       "label": "Blockchain Network"
     },
     {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
     {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "citi-token-services",
+      "label": "Citi Token Services"
     },
     {
       "slug": "consensus-mechanism",
@@ -107,8 +115,28 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    },
+    {
+      "slug": "paolo-tasca",
+      "label": "Paolo Tasca"
     },
     {
       "slug": "patent",
@@ -125,6 +153,14 @@
     {
       "slug": "provenance-tracking",
       "label": "Provenance Tracking"
+    },
+    {
+      "slug": "qbft",
+      "label": "QBFT"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
     }
   ]
 }

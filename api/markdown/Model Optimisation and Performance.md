@@ -363,8 +363,8 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:computational-efficiency",
-      "label": "Computational Efficiency"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:mlops",

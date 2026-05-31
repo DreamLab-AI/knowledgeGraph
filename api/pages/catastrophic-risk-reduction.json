@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:catastrophic-risk-reduction",
+  "title": "Catastrophic Risk Reduction",
+  "slug": "catastrophic-risk-reduction",
+  "public": true,
+  "classIri": "urn:ngm:class:catastrophic-risk-reduction",
+  "domain": "ai",
+  "definition": "Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that could threaten societal stability or human survival.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

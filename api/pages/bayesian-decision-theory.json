@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:ce9dc031316659a8b16130862d1c0299a6007d1fb7b9679b39ac8e7f25d9fdb8",
+  "title": "Bayesian Decision Theory",
+  "slug": "bayesian-decision-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:bayesian-decision-theory",
+  "domain": "statistics",
+  "definition": "Bayesian decision theory is a framework for making decisions under uncertainty by combining probabilities of outcomes with a loss or utility function to choose actions that minimise expected loss. It uses Bayesian updating to incorporate evidence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

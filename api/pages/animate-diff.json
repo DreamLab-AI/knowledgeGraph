@@ -3,11 +3,16 @@
   "title": "AnimateDiff",
   "slug": "animate-diff",
   "public": true,
-  "classIri": "urn:ngm:individual:animate-diff",
+  "classIri": "urn:ngm:class:animate-diff",
   "domain": "ai",
   "definition": "AnimateDiff is an open-source framework that inserts lightweight motion-module adapters into pre-trained text-to-image diffusion models to generate temporally consistent animated sequences without retraining the base image model. Developed by researchers at CUHK and ByteDance and released in 2023, it enables personalised diffusion model checkpoints to produce video clips by learning motion priors from video data in a plug-and-play manner. AnimateDiff integrates natively with the Stable Diffusion ecosystem, including ControlNet conditioning and LoRA fine-tuning.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:video-generation",
+      "label": "Video Generation"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -72,7 +77,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {

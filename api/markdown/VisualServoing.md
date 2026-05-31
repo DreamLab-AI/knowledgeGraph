@@ -1,4 +1,5 @@
 public:: true
+alias:: Visual Servoing
 
 # VisualServoing
 ```json-ld

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:connector-standards",
+  "title": "Connector Standards",
+  "slug": "connector-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:connector-standards",
+  "domain": "infrastructure",
+  "definition": "Connector standards are specifications that define the mechanical form factor, pin assignment, and electrical signalling of the physical interfaces used to join cables and devices. They guarantee interoperability across vendors at the physical layer, covering examples such as USB-C, RJ45, and HDMI. Standardised connectors reduce fragmentation and enable plug-and-play interconnection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

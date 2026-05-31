@@ -1,4 +1,5 @@
 public:: true
+alias:: Marker-Based Tracking
 
 # Marker Based Tracking
 ```json-ld

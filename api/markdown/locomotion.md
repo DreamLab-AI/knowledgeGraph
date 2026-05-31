@@ -1,0 +1,4 @@
+- ### Definition
+  - Locomotion is the coordinated bodily movement that lets an embodied system traverse an environment, generating motion through actuator forces. It underpins [[Mobile Robot]] mobility and is governed by feedback [[Control System]] loops.
+- ### Content
+  - Locomotion strategies vary by morphology: legged systems require dynamic balance and gait planning, wheeled platforms optimise for efficiency on flat terrain, and flying or swimming robots manage fluid dynamics. Stability, energy economy, and terrain adaptability are the primary trade-offs engineers balance when designing locomotion controllers.

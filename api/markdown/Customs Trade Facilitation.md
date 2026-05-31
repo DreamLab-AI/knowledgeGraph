@@ -403,8 +403,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:digital-customs",
-      "label": "Digital Customs"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
       "@id": "urn:ngm:class:trade-finance",
@@ -456,7 +456,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-hash-functions",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Functions"
       },
       {
@@ -558,7 +558,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:cryptographic-hash-functions",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Functions"
       },
       {
@@ -644,7 +644,7 @@ public:: true
         "label": "EU Union Customs Code"
       },
       {
-        "@id": "urn:ngm:class:gs1-standards",
+        "@id": "urn:ngm:class:gs-1-standards",
         "label": "GS1 Standards"
       },
       {

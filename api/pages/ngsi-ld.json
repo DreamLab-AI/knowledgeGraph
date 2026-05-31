@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:848bea5bfac9304a89a4c5c6bd4f11984a6e368a9b052e85ac489107b9deac20",
+  "title": "NGSI-LD",
+  "slug": "ngsi-ld",
+  "public": true,
+  "classIri": "urn:ngm:class:ngsi-ld",
+  "domain": "iot",
+  "definition": "NGSI-LD is an ETSI standard information model and API for representing context information as linked data using entities, properties and relationships. It is widely used in smart city and Internet of Things platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-data",
+      "label": "ETSI_Domain_Infrastructure_Data"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-interop",
+      "label": "ETSI_Domain_Infrastructure___Interop"
+    },
+    {
+      "slug": "etsi-domain-interoperability",
+      "label": "ETSI_Domain_Interoperability"
+    }
+  ]
+}

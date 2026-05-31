@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:208b7ea10a72c6ee6eea8a8e1e4e3f81a7f6e9cfc66fe787a5aa004283811f82",
+  "title": "Pipeline Parallelism",
+  "slug": "pipeline-parallelism",
+  "public": true,
+  "classIri": "urn:ngm:class:pipeline-parallelism",
+  "domain": "metaverse",
+  "definition": "Pipeline parallelism splits a computation into ordered stages assigned to different processing units, so that distinct items occupy different stages at once and throughput rises once the pipeline is filled.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ]
+}

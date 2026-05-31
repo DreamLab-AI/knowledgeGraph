@@ -1,4 +1,5 @@
 public:: true
+alias:: Near-Field Communication
 
 # Near Field Communication
 ```json-ld

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:b91b0592750df57d277457dcd5b1e84845ce636bcb99c96b60ba2210af4f080f",
+  "title": "STARK",
+  "slug": "stark",
+  "public": true,
+  "classIri": "urn:ngm:class:stark",
+  "domain": "metaverse",
+  "definition": "A STARK is a scalable transparent argument of knowledge, a cryptographic proof system that lets a verifier check a computation was performed correctly without a trusted setup and with proof verification far cheaper than re-execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography-domain",
+      "label": "Cryptography Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

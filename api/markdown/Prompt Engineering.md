@@ -363,8 +363,8 @@ public:: true
       "label": "In-Context Learning"
     },
     {
-      "@id": "urn:ngm:class:applied-artificial-intelligence",
-      "label": "Applied Artificial Intelligence"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {
@@ -390,7 +390,7 @@ public:: true
         "label": "Prompt Injection Defence"
       },
       {
-        "@id": "urn:ngm:class:prompt-templates",
+        "@id": "urn:ngm:class:prompt-template",
         "label": "Prompt Templates"
       },
       {
@@ -406,7 +406,7 @@ public:: true
         "label": "Structured Output"
       },
       {
-        "@id": "urn:ngm:class:system-prompts",
+        "@id": "urn:ngm:class:system-prompt",
         "label": "System Prompts"
       },
       {
@@ -522,15 +522,15 @@ public:: true
         "label": "DSPy"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -542,7 +542,7 @@ public:: true
         "label": "Reasoning"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -616,7 +616,7 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

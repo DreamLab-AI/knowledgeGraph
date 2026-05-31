@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:impact-metrics",
+  "title": "Impact Metrics",
+  "slug": "impact-metrics",
+  "public": true,
+  "classIri": "urn:ngm:class:impact-metrics",
+  "domain": "governance",
+  "definition": "Impact metrics are quantitative and qualitative indicators used to measure the social, environmental, or economic outcomes produced by an intervention, project, or organisation. They translate a theory of change into measurable outputs, outcomes, and longer-term impacts, enabling comparison, accountability, and decision-making. Standardised metric catalogues such as IRIS+ promote comparability across programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:social-impact-assessment-sia",
+        "label": "Social Impact Assessment (SIA)"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-action-dao",
+        "label": "Climate Action DAO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    }
+  ]
+}

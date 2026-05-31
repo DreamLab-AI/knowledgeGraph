@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bip-328",
+  "title": "BIP-328",
+  "slug": "bip-328",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-328",
+  "domain": "blockchain",
+  "definition": "BIP-328 is a Bitcoin Improvement Proposal defining the Hierarchical Deterministic Keys (HD Keys) using the Silent Payments-related and descriptor key formats for derivation, standardising how extended keys and key origins are encoded. It supports the unambiguous representation of key paths and fingerprints used by descriptor-based and Taproot-aware wallets. By standardising key encoding, it improves interoperability between wallets handling Taproot assets and multi-party setups.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

@@ -631,12 +631,12 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:authorisation-mechanism",
-      "label": "Authorisation Mechanism"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     },
     {
-      "@id": "urn:ngm:class:governance-control",
-      "label": "Governance Control"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-management-system",
+  "title": "Data Management System",
+  "slug": "data-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:data-management-system",
+  "domain": "data",
+  "definition": "A data management system is software that stores, organises, secures and provides controlled access to data throughout its lifecycle. It encompasses capabilities for ingestion, modelling, querying, integrity enforcement and governance, with database management systems and graph databases as common specialisations. It is the foundational platform on which metadata standards and downstream applications depend.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    }
+  ]
+}

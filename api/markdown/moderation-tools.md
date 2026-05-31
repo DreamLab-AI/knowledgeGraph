@@ -1,0 +1,4 @@
+- ### Definition
+  - Moderation tools detect and act on policy-violating content and behaviour through automated and human review. They operationalise [[Community Standards]] and implement [[Content Moderation Standards]].
+- ### Content
+  - Pipelines pair ML classifiers (for hate speech, CSAM, spam) with triage queues that route uncertain cases to human reviewers, balancing scale against accuracy and false-positive harm. Real-time environments add live audio transcription, proximity controls, and rapid response actions to address harassment as it occurs.

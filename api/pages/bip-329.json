@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bip-329",
+  "title": "BIP-329",
+  "slug": "bip-329",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-329",
+  "domain": "blockchain",
+  "definition": "BIP-329 is a Bitcoin Improvement Proposal that specifies a standard, wallet-agnostic format for exporting and importing wallet labels. It defines a JSONL structure associating human-readable labels and metadata with transactions, addresses, inputs, outputs, and extended public keys. The standard improves portability of bookkeeping and provenance information between wallets, which is valuable for asset tracking and compliance in Taproot-asset and multi-wallet workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

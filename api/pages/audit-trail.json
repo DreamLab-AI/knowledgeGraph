@@ -233,6 +233,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
       "slug": "aiethics",
       "label": "AIEthics"
     },
@@ -279,6 +283,14 @@
     {
       "slug": "privacy-filter",
       "label": "Privacy Filter"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
     },
     {
       "slug": "regulatory-compliance",

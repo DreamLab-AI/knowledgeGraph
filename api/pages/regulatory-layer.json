@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:621368990a7668dc96f680d85a969d2cec03a13eb98aa01a4545691b6e0c09b2",
+  "title": "Regulatory Layer",
+  "slug": "regulatory-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-layer",
+  "domain": "regulatory",
+  "definition": "The Regulatory Layer is the cross-cutting stratum that represents jurisdiction-specific legal requirements and the authorities that impose them. It sits above the Compliance Layer, supplying the obligations that compliance verifies, and informs governance and institutional structures. It contains regulations, licensing regimes, reporting duties, and the mapping of activities to applicable rules.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance-layer",
+        "label": "Compliance Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-layer",
+        "label": "Institutional Layer"
+      },
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

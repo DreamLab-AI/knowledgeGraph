@@ -401,8 +401,16 @@
       "label": "Cryptographic Commitment"
     },
     {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
       "slug": "difficulty",
       "label": "Difficulty"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
     },
     {
       "slug": "double-spending",
@@ -425,6 +433,10 @@
       "label": "Finality"
     },
     {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
       "slug": "full-node",
       "label": "Full Node"
     },
@@ -435,6 +447,10 @@
     {
       "slug": "hash-collision",
       "label": "Hash Collision"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
     },
     {
       "slug": "immutability",
@@ -501,6 +517,10 @@
       "label": "Preimage Resistance"
     },
     {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
       "slug": "private-key",
       "label": "Private Key"
     },
@@ -525,8 +545,16 @@
       "label": "Salt"
     },
     {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
       "slug": "schnorr-signature",
       "label": "Schnorr Signature"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
     },
     {
       "slug": "selfish-mining",
@@ -539,6 +567,10 @@
     {
       "slug": "sybil-attack",
       "label": "Sybil Attack"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
     },
     {
       "slug": "validator-node",

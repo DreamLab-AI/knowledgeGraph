@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anchorage-digital",
+      "label": "Anchorage Digital"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
     },
@@ -71,12 +75,20 @@
       "label": "Bitcoin related links"
     },
     {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
     },
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
     },
     {
       "slug": "decentralized-exchange",
@@ -87,8 +99,28 @@
       "label": "Digital Asset Risks"
     },
     {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
       "slug": "wallet",
       "label": "Wallet"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
     }
   ]
 }

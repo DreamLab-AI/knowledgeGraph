@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:6430912ef24bbcbd4ca2c6951b36e0384fd15d7061dbf6087b2edaa51058a1c4",
+  "title": "Monero",
+  "slug": "monero",
+  "public": true,
+  "classIri": "urn:ngm:class:monero",
+  "domain": "monero",
+  "definition": "Monero is a privacy-focused cryptocurrency launched in 2014 that obscures the sender, recipient and amount of every transaction by default. It uses ring signatures to hide the true spender among decoys, stealth addresses to conceal the recipient, and a confidential transaction scheme called RingCT to hide amounts. The protocol uses a proof-of-work algorithm designed to favour general-purpose hardware over specialised mining equipment. Monero is among the most widely used privacy coins and is governed by an open community development process.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

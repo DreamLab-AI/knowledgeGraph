@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:90acc9bbd6148ef730da90f4a6a3d8080dcc5952910c25f2651f629cf022a5ae",
+  "title": "QUIC",
+  "slug": "quic",
+  "public": true,
+  "classIri": "urn:ngm:class:quic",
+  "domain": "distributed-systems",
+  "definition": "A transport layer network protocol built on UDP that provides multiplexed, encrypted, low-latency connections and forms the basis of HTTP/3.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:245ea127dd1a1e66888346487ece73a1545144c939af8ac7e510610c47087d0e",
+  "title": "True Positive Rate",
+  "slug": "true-positive-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:true-positive-rate",
+  "domain": "machine-learning",
+  "definition": "True positive rate is a classification metric measuring the proportion of actual positive cases that a model correctly identifies, also known as sensitivity or recall.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

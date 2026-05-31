@@ -167,6 +167,10 @@
       "label": "Collaborative Operation"
     },
     {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },
@@ -181,6 +185,10 @@
     {
       "slug": "human-factors",
       "label": "Human Factors"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
     },
     {
       "slug": "humanoid-robot",

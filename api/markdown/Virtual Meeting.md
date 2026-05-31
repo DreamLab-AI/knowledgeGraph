@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualMeeting
 
 # Virtual Meeting
 ```json-ld

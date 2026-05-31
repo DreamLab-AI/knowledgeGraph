@@ -75,8 +75,16 @@
       "label": "Autonomous Agent"
     },
     {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
     }
   ]
 }

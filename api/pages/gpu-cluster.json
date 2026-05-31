@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:41000a7306cc0c992faa9c0a3f7f417279af32f654381c8c3825b83abdfbacbd",
+  "title": "GPU Cluster",
+  "slug": "gpu-cluster",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-cluster",
+  "domain": "computing",
+  "definition": "A GPU cluster is a group of interconnected computers each equipped with graphics processing units, used together for parallel computation. Such clusters are central to training large AI models and high-performance computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-h-100",
+        "label": "NVIDIA H100"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "nvidia-h-100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "nvidia-h-100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

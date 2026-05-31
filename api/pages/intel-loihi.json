@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:5a1d1d99a097b6bc239fe9266ea4b5937c24c3384b9b074d0b2221daf07c50ad",
+  "title": "Intel Loihi",
+  "slug": "intel-loihi",
+  "public": true,
+  "classIri": "urn:ngm:class:intel-loihi",
+  "domain": "general",
+  "definition": "A research neuromorphic processor developed by Intel that implements spiking neural networks in hardware with on-chip learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

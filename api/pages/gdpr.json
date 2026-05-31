@@ -144,6 +144,10 @@
       "label": "CBDC Frameworks"
     },
     {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },
@@ -186,6 +190,10 @@
     {
       "slug": "data-annotation",
       "label": "Data Annotation"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
     },
     {
       "slug": "data-protection",
@@ -244,6 +252,10 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "gdpr-article-25",
+      "label": "GDPR Article 25"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
@@ -254,6 +266,10 @@
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
     },
     {
       "slug": "privacy-preserving-blockchain",

@@ -84,12 +84,20 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
     },
     {
       "slug": "recurrent-neural-network",

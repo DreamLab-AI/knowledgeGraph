@@ -1,0 +1,4 @@
+- ### Definition
+  - Concept art is visual development that explores design and mood ahead of production, increasingly assisted by tools such as [[Midjourney]] and other [[Proprietary Image Generation]] systems.
+- ### Content
+  - Traditionally produced by specialist illustrators, concept art establishes silhouette, palette, and atmosphere to guide downstream modelling and art direction. Text-to-image diffusion models accelerate early ideation, though final assets typically require human refinement for consistency and intellectual-property clarity.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Disclosure requirements compel providers to reveal material information so users and regulators can decide and oversee. They are a component of the [[Algorithmic Transparency Index]] and a core instrument of [[Consumer Protection]].
+- ### Content
+  - Examples include AI-system transparency notices, financial prospectuses, data-processing disclosures, and labelling of synthetic media. Effective requirements specify what, when, and how information must be presented; over-disclosure can cause notice fatigue, while under-disclosure leaves users unable to assess risk.

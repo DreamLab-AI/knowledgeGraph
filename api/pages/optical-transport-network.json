@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:optical-transport-network",
+  "title": "Optical Transport Network",
+  "slug": "optical-transport-network",
+  "public": true,
+  "classIri": "urn:ngm:class:optical-transport-network",
+  "domain": "infrastructure",
+  "definition": "An Optical Transport Network (OTN) is a standardized framework, defined by ITU-T G.709, for carrying client signals over wavelength-division-multiplexed optical fiber with framing, error correction, and management overhead. It provides high-capacity, long-haul transport with operations and maintenance features that legacy SONET/SDH lacked. OTN forms a core layer of carrier and backbone networks beneath higher-layer packet and service traffic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

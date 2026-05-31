@@ -1,0 +1,4 @@
+- ### Definition
+  - Back-translation translates text into a target language and back again, serving both as a data-augmentation method and a quality check for [[Translation]] systems.
+- ### Content
+  - In neural machine translation, large monolingual corpora in the target language are translated into the source to synthesise additional training pairs, substantially improving low-resource performance. The same round-trip mechanism is used to flag mistranslations when the recovered text diverges semantically from the input.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Catastrophic Risk Assessment evaluates whether frontier AI systems could enable mass-harm events, a requirement embedded in regulation such as the [[California AI Bill]] and a methodology relevant to analyses of [[Existential Risk]].
+- ### Content
+  - Assessment combines dangerous-capability evaluations, red-teaming, and threat modelling across CBRN and cyber domains, often paired with scaling thresholds that trigger heightened scrutiny. Findings inform deployment decisions, safety mitigations, and disclosure obligations to regulators.

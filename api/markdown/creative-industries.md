@@ -1,0 +1,4 @@
+- ### Definition
+  - The creative industries are sectors whose output derives from creativity and intellectual property, including [[Fashion]], film, music, and design. They are increasingly supported by AI tooling produced by [[AI Companies]].
+- ### Content
+  - These industries blend artistic origination with industrial-scale production and IP licensing, making them sensitive to copyright, attribution, and platform economics. Generative models now augment ideation, asset creation, and personalisation, raising both productivity gains and unresolved questions about authorship and compensation.

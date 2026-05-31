@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
 
 # Consortium Blockchain
 ```json-ld
@@ -543,8 +544,8 @@ public:: true
       "label": "Federated System"
     },
     {
-      "@id": "urn:ngm:class:multi-organisation-database",
-      "label": "Multi-Organisation Database"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {

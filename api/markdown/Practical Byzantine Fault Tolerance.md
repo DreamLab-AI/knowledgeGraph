@@ -1,4 +1,5 @@
 public:: true
+alias:: PracticalByzantineFaultTolerance
 
 # Practical Byzantine Fault Tolerance
 ```json-ld

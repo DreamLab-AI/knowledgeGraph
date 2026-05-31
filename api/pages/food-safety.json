@@ -54,8 +54,16 @@
       "label": "Cold Chain Monitoring"
     },
     {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
       "slug": "product-recall-management",
       "label": "Product Recall Management"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
     }
   ]
 }

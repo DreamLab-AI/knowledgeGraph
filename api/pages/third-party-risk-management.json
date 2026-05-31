@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:third-party-risk-management",
+  "title": "Third-Party Risk Management",
+  "slug": "third-party-risk-management",
+  "public": true,
+  "classIri": "urn:ngm:class:third-party-risk-management",
+  "domain": "governance",
+  "definition": "Third-party risk management (TPRM) is the discipline of identifying, assessing, and controlling the risks an organisation inherits from vendors, suppliers, and other external partners. It covers due diligence, contractual controls, ongoing monitoring, and offboarding across security, compliance, operational, and reputational dimensions. TPRM has become essential as organisations rely on extended ecosystems of cloud services and outsourced functions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    }
+  ]
+}

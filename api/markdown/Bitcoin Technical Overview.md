@@ -546,7 +546,7 @@ public:: true
         "label": "Block Structure"
       },
       {
-        "@id": "urn:ngm:class:segwit",
+        "@id": "urn:ngm:class:seg-wit",
         "label": "Segwit"
       },
       {
@@ -682,7 +682,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bloom-filters",
+        "@id": "urn:ngm:class:bloom-filter",
         "label": "Bloom Filters"
       },
       {
@@ -762,7 +762,7 @@ public:: true
         "label": "RGB Protocol"
       },
       {
-        "@id": "urn:ngm:class:segwit",
+        "@id": "urn:ngm:class:seg-wit",
         "label": "Segwit"
       },
       {
@@ -804,7 +804,7 @@ public:: true
         "label": "Bitcoin Optech"
       },
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       }
     ]

@@ -1,4 +1,5 @@
 public:: true
+alias:: AugmentedReality
 
 # Augmented Reality
 ```json-ld

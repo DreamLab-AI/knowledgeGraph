@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:hybrid-retrieval",
+  "title": "Hybrid Retrieval",
+  "slug": "hybrid-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:hybrid-retrieval",
+  "domain": "ai",
+  "definition": "Hybrid retrieval is an information-retrieval technique that combines lexical (sparse, keyword-based) scoring such as BM25 with semantic (dense, embedding-based) vector search to rank documents. By fusing the complementary strengths of exact-term matching and meaning-based similarity, it improves recall and precision over either method alone. Fusion is typically performed with reciprocal rank fusion or weighted score combination.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:4eaa9a51768cd7c722b97380ff6a6a508de1a73b1059a8dac60e2dda34fc704d",
+  "title": "Semiconductor Fabrication",
+  "slug": "semiconductor-fabrication",
+  "public": true,
+  "classIri": "urn:ngm:class:semiconductor-fabrication",
+  "domain": "manufacturing",
+  "definition": "Semiconductor fabrication is the manufacturing process that builds integrated circuits on semiconductor wafers through repeated steps of deposition, patterning, and etching.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

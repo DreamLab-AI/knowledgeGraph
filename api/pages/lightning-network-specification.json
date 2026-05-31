@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:lightning-network-specification",
+  "title": "Lightning Network Specification",
+  "slug": "lightning-network-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:lightning-network-specification",
+  "domain": "blockchain",
+  "definition": "The Lightning Network Specification, known as BOLT (Basis of Lightning Technology), is the set of documents defining the peer-to-peer protocol for Bitcoin's Lightning payment-channel network. It standardises channel establishment, commitment transactions, HTLC-based routing, onion message encryption, and gossip propagation so that independent implementations interoperate. The specification is the canonical reference enabling trust-minimised off-chain Bitcoin payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

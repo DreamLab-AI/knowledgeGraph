@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:3b1daca0bbfa53b0e50462ba9923aad54f5fb6090d870fc7ada472ed47aad702",
+  "title": "Transparency Obligation",
+  "slug": "transparency-obligation",
+  "public": true,
+  "classIri": "urn:ngm:class:transparency-obligation",
+  "domain": "metaverse",
+  "definition": "A transparency obligation is a regulatory duty to disclose how a system works or that it is in use, such as informing people when they interact with an AI system or with generated content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ]
+}

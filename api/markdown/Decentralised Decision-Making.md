@@ -1,4 +1,5 @@
 public:: true
+alias:: Decentralised Decision Making
 
 # Decentralised Decision-Making
 ```json-ld

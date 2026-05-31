@@ -115,16 +115,36 @@
       "label": "Blockchain Environmental Impact Assessment"
     },
     {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
     },
     {
       "slug": "environmental-sustainability-label",
       "label": "Environmental Sustainability Label"
     },
     {
+      "slug": "paris-agreement",
+      "label": "Paris Agreement"
+    },
+    {
       "slug": "renewable-energy-certificates",
       "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
     }
   ]
 }

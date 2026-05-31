@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:aa57673b1f768b7c61043d9c5f2bcd6afd380836a3e244ad9f21a1785d170cf0",
+  "title": "Alan Turing Institute",
+  "slug": "alan-turing-institute",
+  "public": true,
+  "classIri": "urn:ngm:class:alan-turing-institute",
+  "domain": "general",
+  "definition": "The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "ucl",
+      "label": "UCL"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Cross Entropy Loss
 
 # Cross-Entropy Loss
 ```json-ld

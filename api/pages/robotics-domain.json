@@ -144,6 +144,10 @@
       "label": "Aerial Robot"
     },
     {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
       "slug": "agricultural-robot",
       "label": "Agricultural Robot"
     },
@@ -154,6 +158,10 @@
     {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
     },
     {
       "slug": "backlash",
@@ -188,8 +196,20 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
     },
     {
       "slug": "control-theory",
@@ -200,8 +220,16 @@
       "label": "Current Sensor"
     },
     {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
       "slug": "decentralized-swarm-control",
       "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
     },
     {
       "slug": "embodied-minds",
@@ -256,6 +284,10 @@
       "label": "Human Robot Interaction"
     },
     {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
       "slug": "hydraulic-actuator",
       "label": "Hydraulic Actuator"
     },
@@ -304,8 +336,16 @@
       "label": "Light Curtain"
     },
     {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-engineering-domain",
+      "label": "Mechanical Engineering Domain"
     },
     {
       "slug": "medical-robot",
@@ -350,6 +390,10 @@
     {
       "slug": "pressure-sensor",
       "label": "Pressure Sensor"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
     },
     {
       "slug": "proprioceptive-sensor",
@@ -416,12 +460,20 @@
       "label": "Sensor Fusion"
     },
     {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
       "slug": "service-robot",
       "label": "Service Robot"
     },
     {
       "slug": "shape-memory-alloy-actuator",
       "label": "Shape Memory Alloy Actuator"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
     },
     {
       "slug": "social-navigation",
@@ -432,12 +484,24 @@
       "label": "Soft Robotics"
     },
     {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
       "slug": "stigmergy",
       "label": "Stigmergy"
     },
     {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
       "slug": "surgical-robot",
       "label": "Surgical Robot"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
     },
     {
       "slug": "swarm-robot",

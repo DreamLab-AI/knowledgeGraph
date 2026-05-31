@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:computational-hardness-assumption",
+  "title": "Computational Hardness Assumption",
+  "slug": "computational-hardness-assumption",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-hardness-assumption",
+  "domain": "security",
+  "definition": "A computational hardness assumption is a conjecture that a particular mathematical problem cannot be solved efficiently by any probabilistic polynomial-time algorithm. Such assumptions, including integer factorisation, the discrete logarithm, and learning-with-errors, are the foundations on which provable security of cryptographic schemes is reduced. If an assumption is broken, every construction whose security reduces to it is compromised.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

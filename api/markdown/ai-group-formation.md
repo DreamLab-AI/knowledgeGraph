@@ -1,0 +1,4 @@
+- ### Definition
+  - AI Group Formation automatically partitions participants into effective subgroups. It powers [[Breakout Room]] allocation in collaboration tools and is widely used in [[Educational Technology]] to balance teams.
+- ### Content
+  - The system encodes each participant as a feature vector covering skills, interests, prior interactions, and constraints, then solves a constrained clustering or assignment problem against an objective such as balanced expertise or maximal diversity. Quality depends on the richness of participant signals and on tunable objectives that match the facilitator's pedagogical or collaborative goals.

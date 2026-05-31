@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:facial-action-coding-system",
+  "title": "Facial Action Coding System",
+  "slug": "facial-action-coding-system",
+  "public": true,
+  "classIri": "urn:ngm:class:facial-action-coding-system",
+  "domain": "ai",
+  "definition": "The Facial Action Coding System (FACS) is a comprehensive taxonomy for describing visible facial movements by decomposing expressions into discrete Action Units, each corresponding to the activation of one or more facial muscles. Developed by Ekman and Friesen, it provides an objective, anatomically grounded vocabulary that maps muscle activity to coded units independent of emotional interpretation. FACS is widely used in affective computing, animation, and behavioural research to detect and synthesise facial expressions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    }
+  ]
+}

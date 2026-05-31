@@ -65,6 +65,10 @@
     {
       "slug": "spatial-audio-scene-description",
       "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "tele-110-spatial-audio-processing",
+      "label": "TELE-110-spatial-audio-processing"
     }
   ]
 }

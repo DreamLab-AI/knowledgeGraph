@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:5a798101684a2aac20a233254f04969a6059ee17d604b13e815a55c83a1bd5df",
+  "title": "Axie Infinity",
+  "slug": "axie-infinity",
+  "public": true,
+  "classIri": "urn:ngm:class:axie-infinity",
+  "domain": "blockchain",
+  "definition": "Axie Infinity is a blockchain-based game in which players collect, breed, and battle digital creatures called Axies that are represented as non-fungible tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nft",
+      "label": "NFT"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

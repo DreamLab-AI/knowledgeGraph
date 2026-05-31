@@ -427,12 +427,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:llm-application",
-      "label": "LLM Application"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:no-code-platform",
-      "label": "No-Code Platform"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {
@@ -480,7 +480,7 @@ public:: true
         "label": "Embedding Model"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {
@@ -558,15 +558,15 @@ public:: true
         "label": "GPT-5"
       },
       {
-        "@id": "urn:ngm:individual:claude",
+        "@id": "urn:ngm:class:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:individual:gemini",
+        "@id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:individual:gpt-4",
+        "@id": "urn:ngm:class:gpt-4",
         "label": "GPT 4"
       }
     ],
@@ -584,15 +584,15 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:individual:microsoft-copilot",
+        "@id": "urn:ngm:class:microsoft-copilot",
         "label": "Microsoft Copilot"
       },
       {

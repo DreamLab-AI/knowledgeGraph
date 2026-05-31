@@ -1,0 +1,4 @@
+- ### Definition
+  - Compliance Systems are the software and process frameworks that enforce and report regulatory adherence, required by [[Digital Asset Management]] platforms and by obligations such as the [[Digital Services Act]].
+- ### Content
+  - A compliance system links a control library to monitoring that detects violations, an evidence store for audits, and reporting pipelines to regulators. Increasingly these systems embed policy-as-code and automated controls so that obligations are enforced in real time rather than verified retrospectively.

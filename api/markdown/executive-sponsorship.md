@@ -1,0 +1,4 @@
+- ### Definition
+  - Executive sponsorship is senior-leadership backing that supplies authority and resources to an initiative, a prerequisite for [[AI Adoption]] and the broader [[Adoption of Convergent Technologies]].
+- ### Content
+  - The sponsor secures budget, resolves cross-functional conflicts, and ties the programme to strategic objectives. Its presence is a repeatedly cited determinant of whether transformation and technology-adoption efforts succeed or stall.

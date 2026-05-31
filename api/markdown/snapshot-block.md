@@ -1,0 +1,4 @@
+- ### Definition
+  - A snapshot block is the fixed block height used to record [[Governance Token]] balances for determining voting power in a proposal, freezing eligibility at a single point in time. It is the timing anchor underpinning [[Snapshot Voting]].
+- ### Content
+  - By measuring holdings at a past, immutable block, the snapshot block prevents participants from acquiring or borrowing tokens after a vote opens to inflate their influence. The chosen height is published with the proposal so any observer can independently verify each voter's weight, making the mechanism transparent and resistant to last-minute manipulation.

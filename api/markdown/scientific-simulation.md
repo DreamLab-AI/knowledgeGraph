@@ -1,0 +1,4 @@
+- ### Definition
+  - Scientific simulation models complex systems numerically, is enabled by large-scale [[Compute Infrastructure]], and is increasingly supported by generative methods such as [[Generative Adversarial Networks]].
+- ### Content
+  - Traditional simulation discretises partial differential equations over meshes or particles, scaling to massive parallel clusters. Generative and neural-surrogate models can approximate or accelerate these solvers, while physics-informed constraints help keep learned outputs consistent with conservation laws.

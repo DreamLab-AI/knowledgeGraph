@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:secure-messaging",
+  "title": "Secure Messaging",
+  "slug": "secure-messaging",
+  "public": true,
+  "classIri": "urn:ngm:class:secure-messaging",
+  "domain": "security",
+  "definition": "Secure messaging is the exchange of messages protected by cryptography so that only intended participants can read or authenticate them. It typically provides end-to-end encryption, forward secrecy, and integrity, often through ratcheting key-agreement protocols. It underpins privacy-preserving communication in consumer apps, enterprise systems, and decentralised networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography, Security and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ]
+}

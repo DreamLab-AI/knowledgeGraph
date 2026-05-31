@@ -83,8 +83,8 @@ public:: true
       "label": "Governance and Safety"
     },
     {
-      "@id": "urn:ngm:class:alternative-dispute-resolution",
-      "label": "Alternative Dispute Resolution"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

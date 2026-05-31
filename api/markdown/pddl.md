@@ -1,0 +1,4 @@
+- ### Definition
+  - PDDL is a formal modelling language used to express the domains and goals of [[Task Planning]] problems so that domain-independent planners can solve them.
+- ### Content
+  - A PDDL model separates the reusable domain (types, predicates, parameterised actions) from the specific problem (objects, initial state, goal condition), enabling planners to search for valid action sequences. Successive versions added durative actions, numeric fluents, and temporal constraints, broadening PDDL from classical STRIPS-style planning to temporal and metric domains used in robotics and agentic systems.

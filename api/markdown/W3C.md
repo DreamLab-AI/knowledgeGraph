@@ -1,4 +1,5 @@
 public:: true
+alias:: W3C (World Wide Web Consortium)
 
 # W3C
 ```json-ld

@@ -204,8 +204,24 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
+    },
+    {
+      "slug": "qbft",
+      "label": "QBFT"
     },
     {
       "slug": "smart-contract",

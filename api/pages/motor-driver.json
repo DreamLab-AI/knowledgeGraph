@@ -72,6 +72,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
       "slug": "electric-actuator",
       "label": "Electric Actuator"
     },
@@ -82,6 +86,10 @@
     {
       "slug": "position-control",
       "label": "PositionControl"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
     },
     {
       "slug": "proprioceptive-sensor",

@@ -83,6 +83,14 @@
       "label": "Light field"
     },
     {
+      "slug": "tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "slug": "tele-060-instant-ngp",
+      "label": "TELE-060-instant-ngp"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

@@ -1,0 +1,4 @@
+- ### Definition
+  - Immersive collaboration is shared spatial teamwork in XR environments, a form of [[Immersive Computing]] commonly delivered through [[Mixed Reality]].
+- ### Content
+  - Participants meet as avatars in persistent rooms where spatial audio, gaze, and gesture convey presence, and where 3D models, whiteboards, and documents are co-manipulated. Effective immersive collaboration depends on low-latency networking, avatar interoperability, and ergonomics that minimise fatigue during extended sessions.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:bcb869cfd8b9c0062b96f71f16798bb98ba21d5a8176c52afbd73ff1b8719c72",
+  "title": "TELE-157-predictive-tracking",
+  "slug": "tele-157-predictive-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-157-predictive-tracking",
+  "domain": "metaverse",
+  "definition": "Predictive tracking is the estimation of a user's future head or body pose from recent motion so that rendering can be aligned to where the user will be, reducing perceived latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "low-latency",
+      "label": "Low Latency"
+    },
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

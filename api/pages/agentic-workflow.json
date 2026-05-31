@@ -96,8 +96,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
     },
     {
       "slug": "cli-multi-agent-systems",
@@ -106,6 +118,18 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
     }
   ]
 }

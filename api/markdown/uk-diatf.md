@@ -1,0 +1,4 @@
+- ### Definition
+  - A UK Government trust framework setting certification rules for digital-identity and attribute providers covering security, privacy, fraud, and inclusion. It governs [[Identity Verification]] services and underpins trust in a [[Digital Identity Wallet]].
+- ### Content
+  - DIATF certification is granted against the framework's rules by approved conformity-assessment bodies, allowing relying parties to accept identities without bespoke vetting. The framework supports interoperability between certified providers and is a pillar of the UK's wider digital-identity legislation and ecosystem.

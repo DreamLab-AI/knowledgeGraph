@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:6955539d6b14c393ad39c18f5cc03727851864360aeda7b1bdd341de3c5e6d1c",
+  "title": "State Space Models",
+  "slug": "state-space-models",
+  "public": true,
+  "classIri": "urn:ngm:class:state-space-models",
+  "domain": "deep-learning",
+  "definition": "State space models are sequence models that maintain a hidden state evolving over time according to linear dynamics, used as an alternative to attention for long sequences. Recent deep learning variants make the dynamics input-dependent to capture context.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-space-model",
+      "label": "State Space Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-models",
+        "label": "Generative Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

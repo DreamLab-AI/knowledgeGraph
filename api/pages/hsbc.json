@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:0f4ca32b5b0662e95bc7893883898e5562ee80c1a0b82f59836cd48d348fa3a1",
+  "title": "HSBC",
+  "slug": "hsbc",
+  "public": true,
+  "classIri": "urn:ngm:class:hsbc",
+  "domain": "finance",
+  "definition": "HSBC is a multinational banking and financial services group headquartered in London, providing retail, commercial, and investment banking across many countries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traditional-banking",
+      "label": "Traditional Banking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

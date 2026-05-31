@@ -1,4 +1,5 @@
 public:: true
+alias:: NIST (National Institute of Standards and Technology)
 
 # NIST
 ```json-ld

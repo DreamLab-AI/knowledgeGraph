@@ -1,0 +1,4 @@
+- ### Definition
+  - A Carbon Offset is a verified one-tonne CO2e credit used to compensate for emissions, deployed by initiatives such as a [[Carbon Neutral Blockchain]] and accounted for under the [[GHG Protocol Corporate Standard]].
+- ### Content
+  - Offset quality is judged by additionality (the reduction would not have happened otherwise), permanence, and rigorous measurement, reporting, and verification. Blockchain projects increasingly tokenise offsets to improve traceability and to neutralise their own operational emissions.

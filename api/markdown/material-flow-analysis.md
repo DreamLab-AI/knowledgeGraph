@@ -1,0 +1,4 @@
+- ### Definition
+  - Material flow analysis traces material inputs, stocks, and outputs across a system using mass-balance accounting. It is a core tool for [[Industrial Symbiosis]] and a structural component of [[Circular Economy]] design.
+- ### Content
+  - MFA constructs balanced flow networks that expose where materials are lost, dissipated, or could be cycled back as feedstock. Results inform policy targets, eco-design, and the identification of by-product exchange opportunities between co-located industries.

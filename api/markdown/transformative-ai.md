@@ -1,0 +1,4 @@
+- ### Definition
+  - AI capable of triggering change comparable to the industrial revolution, defined by its societal impact rather than a particular capability threshold. It is closely related to but distinct from [[Artificial General Intelligence]].
+- ### Content
+  - The framing is favoured in forecasting and governance because it sidesteps debates about consciousness or general intelligence and instead asks whether a system materially alters economic growth, power structures, or existential risk. It motivates much of the work on alignment, evaluation, and policy preparedness for high-impact AI.

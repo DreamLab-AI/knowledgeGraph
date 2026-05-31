@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:91602468c77fde2aaef98cae2d424f86ca94a97905ba2eff278eedf3d37c04f4",
+  "title": "Digital Divide",
+  "slug": "digital-divide",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-divide",
+  "domain": "general",
+  "definition": "The gap between groups in their access to, use of and benefit from information and communication technologies, including internet connectivity and digital skills.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

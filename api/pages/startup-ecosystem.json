@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:startup-ecosystem",
+  "title": "Startup Ecosystem",
+  "slug": "startup-ecosystem",
+  "public": true,
+  "classIri": "urn:ngm:class:startup-ecosystem",
+  "domain": "governance",
+  "definition": "A startup ecosystem is the interconnected network of founders, investors, talent, universities, accelerators, service providers, and regulators within a region that collectively enables new high-growth companies to form and scale. Its health depends on capital availability, dense knowledge spillovers, and supportive policy, which together produce self-reinforcing network effects. Concentrations such as Silicon Valley illustrate how these dynamics compound advantage and shape the trajectory of emerging technologies including AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI Bill"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:domain-access-control",
+  "title": "Domain Access Control",
+  "slug": "domain-access-control",
+  "public": true,
+  "classIri": "urn:ngm:class:domain-access-control",
+  "domain": "metaverse",
+  "definition": "Domain Access Control is the set of mechanisms that govern which users, avatars, or services may enter, view, or modify resources within a bounded virtual-world domain or server cluster. In metaverse platforms it enforces ownership and permission boundaries at the level of a hosted domain, mediating connection requests and content rights. It is foundational to multi-tenant virtual environments where independent operators host interoperable spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Metaverse Governance and Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vircadia",
+        "label": "Vircadia"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

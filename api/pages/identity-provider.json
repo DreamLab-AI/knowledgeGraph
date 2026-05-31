@@ -16,8 +16,8 @@
       "label": "Security Infrastructure"
     },
     {
-      "id": "urn:ngm:class:trust-service",
-      "label": "Trust Service"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -613,6 +613,10 @@
       "label": "Blockchain As A Service"
     },
     {
+      "slug": "centralized-identity-provider",
+      "label": "Centralized Identity Provider"
+    },
+    {
       "slug": "consent-management",
       "label": "Consent Management"
     },
@@ -633,6 +637,10 @@
       "label": "Federated Credential Exchange"
     },
     {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
       "slug": "identity-graph",
       "label": "Identity Graph"
     },
@@ -641,8 +649,16 @@
       "label": "Identity Management System"
     },
     {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
     },
     {
       "slug": "reputation-data",

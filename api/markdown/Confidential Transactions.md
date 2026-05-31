@@ -1,4 +1,5 @@
 public:: true
+alias:: Confidential-Transactions
 
 # Confidential Transactions
 ```json-ld

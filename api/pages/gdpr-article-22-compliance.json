@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:gdpr-article-22-compliance",
+  "title": "GDPR Article 22 Compliance",
+  "slug": "gdpr-article-22-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:gdpr-article-22-compliance",
+  "domain": "governance",
+  "definition": "GDPR Article 22 compliance concerns adherence to the EU General Data Protection Regulation provision that grants individuals the right not to be subject to decisions based solely on automated processing, including profiling, that produce legal or similarly significant effects. Compliance requires lawful bases, human oversight, the ability to contest decisions, and meaningful information about the logic involved. It is a key constraint on automated decision-making and policy enforcement systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    }
+  ]
+}

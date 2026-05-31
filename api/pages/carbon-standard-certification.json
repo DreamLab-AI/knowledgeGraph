@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:carbon-standard-certification",
+  "title": "Carbon Standard Certification",
+  "slug": "carbon-standard-certification",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-standard-certification",
+  "domain": "governance",
+  "definition": "Carbon standard certification is the process by which carbon-reduction projects and the credits they generate are independently validated and verified against a recognised standard such as Verra VCS, Gold Standard, or the ICVCM framework. Certification confirms that claimed emission reductions are real, additional, permanent, and properly quantified before credits are issued into a registry. It is the trust anchor of voluntary and compliance carbon markets, distinguishing high-integrity credits from low-quality ones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    }
+  ]
+}

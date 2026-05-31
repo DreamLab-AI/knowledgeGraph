@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:725ebe8351b2e6392117fe2e7d38acf90e0f2ea23893c6359f80efe71a602754",
+  "title": "Runes Protocol",
+  "slug": "runes-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:runes-protocol",
+  "domain": "blockchain",
+  "definition": "A protocol for issuing fungible tokens on Bitcoin that records token data within transaction outputs using the unspent transaction output model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

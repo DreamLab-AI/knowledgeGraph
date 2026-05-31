@@ -1,0 +1,4 @@
+- ### Definition
+  - A remediation plan is the corrective-action roadmap that resolves audit findings, central to [[Ethical Sourcing]] programmes and the operation of any [[Compliance Control]].
+- ### Content
+  - Each plan assigns root-cause-based actions to accountable owners with target dates and verification criteria, then tracks them to closure. In supply-chain settings it documents how a supplier will correct labour or environmental breaches, providing evidence of continuous improvement to buyers and regulators.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:asynchronous-coordination",
+  "title": "Asynchronous Coordination",
+  "slug": "asynchronous-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:asynchronous-coordination",
+  "domain": "infrastructure",
+  "definition": "Asynchronous Coordination is the alignment of distributed agents or processes that act without a shared global clock or blocking synchronization, communicating through messages, shared state, or eventual-consistency mechanisms. It tolerates network delay and partial failure by letting participants make progress independently and reconcile state later. This model underpins resilient distributed systems and decentralized multi-agent and swarm control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Enterprise automation executes repeatable business processes with minimal human input, enabled by [[Robotic Process Automation]] and increasingly supported by AI agents offered through [[AI Companies]].
+- ### Content
+  - It layers rule-based RPA, workflow orchestration, and ML-driven handling of unstructured work. Returns come from lower error rates and faster cycle times, with newer agentic approaches extending automation into judgement-heavy tasks.

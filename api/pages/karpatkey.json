@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:1c6b08eb4cfe513c83423038cc0850919a9935849db485d73bde209400534057",
+  "title": "Karpatkey",
+  "slug": "karpatkey",
+  "public": true,
+  "classIri": "urn:ngm:class:karpatkey",
+  "domain": "metaverse",
+  "definition": "Karpatkey is an organisation that provides treasury management and financial strategy services to decentralised autonomous organisations, allocating on-chain assets across protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

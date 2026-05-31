@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:7a78d51125f97254dbdfe424929046037528d3a91acb8385f43ab81b096b89e4",
+  "title": "Data Aggregation",
+  "slug": "data-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:data-aggregation",
+  "domain": "data",
+  "definition": "Data aggregation is the process of gathering data from multiple sources and combining or summarising it into a consolidated form. It supports analysis, reporting and downstream processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
+    }
+  ]
+}

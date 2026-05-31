@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualEconomyDomain
 
 # Virtual Economy Domain
 ```json-ld

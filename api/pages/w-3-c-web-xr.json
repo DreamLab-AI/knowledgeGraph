@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:1986282f64a27a4606fe047b5e2bf70b26de9100c7de2eb664248289c2cb278f",
+  "title": "W3C WebXR",
+  "slug": "w-3-c-web-xr",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-web-xr",
+  "domain": "standards",
+  "definition": "W3C WebXR refers to the WebXR work at W3C, which specifies interfaces for virtual reality and augmented reality experiences delivered through the Web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

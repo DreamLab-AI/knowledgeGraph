@@ -1,0 +1,4 @@
+- ### Definition
+  - OpenID4VC extends OAuth 2.0 and OpenID Connect to issue and present [[Verifiable Credentials]], connecting mainstream identity flows to [[Decentralized Identifiers]] and wallet-based selective disclosure.
+- ### Content
+  - The suite separates issuance (OpenID4VCI) from presentation (OpenID4VP), letting wallets obtain signed claims from issuers and prove them to verifiers without a central directory. Building on familiar OAuth patterns eases adoption while supporting privacy features like selective disclosure.

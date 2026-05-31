@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:3465832226bf268c9cbc7031b51b53ef57e586c6acc7f11418bb6a1e3cfdbb04",
+  "title": "GDPR Article 25",
+  "slug": "gdpr-article-25",
+  "public": true,
+  "classIri": "urn:ngm:class:gdpr-article-25",
+  "domain": "metaverse",
+  "definition": "GDPR Article 25 sets out the obligation of data protection by design and by default, requiring controllers to embed privacy safeguards into processing systems and to minimise data collection from the outset.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy By Design"
+    },
+    {
+      "slug": "pseudonymisation",
+      "label": "Pseudonymisation"
+    }
+  ]
+}

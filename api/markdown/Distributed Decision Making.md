@@ -334,7 +334,7 @@ public:: true
         "label": "Quorum Systems"
       },
       {
-        "@id": "urn:ngm:class:voting-mechanisms",
+        "@id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanisms"
       }
     ],
@@ -362,7 +362,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisations"
       },
       {

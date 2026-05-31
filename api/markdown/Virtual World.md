@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualWorld
 
 # Virtual World
 ```json-ld
@@ -163,8 +164,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:spatial-computing-core",
-      "label": "Spatial Computing"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "relations": {

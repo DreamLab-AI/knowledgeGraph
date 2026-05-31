@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:6c47734da9575fbec33e4f4718850bdc1fa3627af01ef5b535c3751cb1338fe8",
+  "title": "OpenZeppelin",
+  "slug": "open-zeppelin",
+  "public": true,
+  "classIri": "urn:ngm:class:open-zeppelin",
+  "domain": "blockchain",
+  "definition": "OpenZeppelin is a company that provides open-source smart contract libraries and security tooling for Ethereum and compatible blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

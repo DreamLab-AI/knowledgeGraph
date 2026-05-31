@@ -339,8 +339,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:model-serialisation",
-      "label": "Model Serialisation"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:model-versioning",
@@ -578,7 +578,7 @@ public:: true
         "label": "Fine-tuning"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

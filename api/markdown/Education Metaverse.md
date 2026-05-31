@@ -158,7 +158,7 @@ public:: true
         "label": "Assessment System"
       },
       {
-        "@id": "urn:ngm:class:collaboration-tool",
+        "@id": "urn:ngm:class:collaboration-tools",
         "label": "Collaboration Tool"
       },
       {

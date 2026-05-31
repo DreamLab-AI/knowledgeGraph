@@ -1,0 +1,4 @@
+- ### Definition
+  - Supply chain tracking records the provenance and custody of goods across their journey, often anchored to a shared ledger by platforms such as [[VeChain]] and backed by an [[Asset Registry]].
+- ### Content
+  - Tracking systems attach identifiers such as QR codes, NFC tags, or IoT sensors to physical items and log each handoff, location, and environmental reading as a verifiable event. Recording these events on a distributed ledger gives all parties a tamper-evident, shared source of truth, which is valuable where trust between participants is low. Applications span pharmaceutical cold chains, luxury-goods authentication, and sustainability reporting where independently auditable provenance is required.

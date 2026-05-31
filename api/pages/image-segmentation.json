@@ -12,12 +12,12 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:structured-prediction",
-      "label": "Structured Prediction"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
-      "id": "urn:ngm:class:dense-prediction",
-      "label": "Dense Prediction"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
@@ -60,7 +60,7 @@
         "label": "Convolutional Neural Networks"
       },
       {
-        "id": "urn:ngm:class:evaluation-metrics",
+        "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metrics"
       },
       {
@@ -200,7 +200,7 @@
         "label": "Keypoint Detection"
       },
       {
-        "id": "urn:ngm:class:multi-modal-learning",
+        "id": "urn:ngm:class:multimodal-learning",
         "label": "Multi-Modal Learning"
       },
       {
@@ -212,7 +212,7 @@
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ]
@@ -465,6 +465,10 @@
   ],
   "backlinks": [
     {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },
@@ -475,6 +479,14 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
     }
   ]
 }

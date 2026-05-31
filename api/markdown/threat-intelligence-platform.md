@@ -1,0 +1,4 @@
+- ### Definition
+  - A threat intelligence platform aggregates and correlates indicators of compromise into actionable intelligence, a key tool within [[Cyber Security and Cryptography]] operations and an input to a [[Threat Surface Map]].
+- ### Content
+  - A TIP ingests structured and unstructured feeds, often via standards such as STIX and TAXII, deduplicates and enriches indicators with context like geolocation and prior sightings, and assigns confidence and severity scores. It then pushes curated intelligence to SIEMs, firewalls, and endpoint tools and supports analyst workflows for investigation and attribution. The value lies in collapsing fragmented, high-volume threat data into prioritised, machine-consumable signals that shorten detection and response time.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:cf077a316a9475372e06120604e2760b6cf689a70aa8d1f2a233c8330e95073b",
+  "title": "Gnosis",
+  "slug": "gnosis",
+  "public": true,
+  "classIri": "urn:ngm:class:gnosis",
+  "domain": "blockchain",
+  "definition": "An Ethereum-based platform and chain known for prediction markets and the widely used Safe multisignature smart contract wallet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:solana",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:solana",
+  "@type": "Class",
   "label": "Solana",
   "definition": "Solana is a high-performance layer-1 blockchain designed by Anatoly Yakovenko and launched in 2020, distinguished by its Proof of History consensus innovation that creates a cryptographic clock enabling validators to agree on transaction order without communicating timestamps. Combined with a parallel transaction processing architecture called Sealevel and a pipeline optimisation called the Gulf Stream, Solana achieves sustained throughput of tens of thousands of transactions per second with sub-second finality. It is a major platform for DeFi protocols, NFT marketplaces, and consumer applications requiring low transaction costs.",
   "domain": "blockchain",
   "maturity": "established",
-  "instanceOf": {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
+  "subClassOf": {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:proof-of-history", "label": "Proof of History"},

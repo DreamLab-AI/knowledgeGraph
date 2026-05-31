@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:699f60fccf09df833887c763c7c5eaaff5288e1aa9d8f03ac22f03f83a3775de",
+  "title": "NIST Post-Quantum Cryptography",
+  "slug": "nist-post-quantum-cryptography",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-post-quantum-cryptography",
+  "domain": "standards",
+  "definition": "A reference to NIST's programme and standards for cryptographic algorithms designed to resist attacks by quantum computers. It includes standardised key-establishment and digital signature schemes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency-storage",
+      "label": "Cryptocurrency Storage"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ]
+}

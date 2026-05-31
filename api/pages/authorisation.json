@@ -71,6 +71,10 @@
       "label": "Access Control"
     },
     {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },
@@ -81,6 +85,10 @@
     {
       "slug": "identity-verification",
       "label": "Identity Verification"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
     },
     {
       "slug": "trust-infrastructure",

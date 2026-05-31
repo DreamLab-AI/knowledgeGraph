@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:501aee4ea03a497816a967670f9785cc43c58f55bbad9d07ea413c692a750469",
+  "title": "QBFT",
+  "slug": "qbft",
+  "public": true,
+  "classIri": "urn:ngm:class:qbft",
+  "domain": "blockchain",
+  "definition": "QBFT is a Byzantine fault tolerant consensus algorithm used in enterprise Ethereum clients to provide immediate finality among a known set of validators. It tolerates a minority of faulty or malicious validators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sha-3",
+  "title": "SHA-3",
+  "slug": "sha-3",
+  "public": true,
+  "classIri": "urn:ngm:class:sha-3",
+  "domain": "security",
+  "definition": "SHA-3 is a family of cryptographic hash functions standardised by NIST in FIPS 202, based on the Keccak sponge construction rather than the Merkle-Damgaard design of SHA-2. Its sponge structure provides strong resistance to length-extension attacks and offers configurable output lengths and extendable-output functions. It is used as a collision-resistant primitive in digital signatures and integrity verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

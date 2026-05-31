@@ -1,0 +1,4 @@
+- ### Definition
+  - The Screen Capture API is the standardised browser interface used by [[Screen Sharing]] and [[Screen Recording]] to obtain a display media stream after user consent.
+- ### Content
+  - Through getDisplayMedia, applications request a MediaStream and the browser presents a chooser for the surface to capture. The resulting tracks can be piped into WebRTC for sharing or the MediaRecorder API for recording, with constraints controlling frame rate, resolution, and whether the cursor or system audio is included.

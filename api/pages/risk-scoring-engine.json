@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:risk-scoring-engine",
+  "title": "Risk Scoring Engine",
+  "slug": "risk-scoring-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-scoring-engine",
+  "domain": "security",
+  "definition": "A risk scoring engine is a software component that computes a numerical risk score for an entity, transaction, or session by combining multiple weighted signals through rules or models. In compliance and identity systems it quantifies how likely an action is fraudulent or non-compliant, feeding thresholds that trigger review, blocking, or escalation. The score provides a consistent, tunable basis for automated decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infrastructure Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

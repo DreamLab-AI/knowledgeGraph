@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:51999c9d0c1ae2064b6f55d44a530a7e30bad2c57a23e948b386a4ef1fbdd38f",
+  "title": "Manchester",
+  "slug": "manchester",
+  "public": true,
+  "classIri": "urn:ngm:class:manchester",
+  "domain": "general",
+  "definition": "A major city in North West England and a centre of the Northern Powerhouse, with growing technology, digital, and research sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    }
+  ]
+}

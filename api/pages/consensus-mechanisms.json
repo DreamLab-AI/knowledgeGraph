@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:195753e896ab80720df41d6d184d66437909058f4d91704c7b0c53bf334b9f97",
+  "title": "Consensus Mechanisms",
+  "slug": "consensus-mechanisms",
+  "public": true,
+  "classIri": "urn:ngm:class:consensus-mechanisms",
+  "domain": "distributed-systems",
+  "definition": "The family of protocols by which distributed participants agree on a single shared state or ordering of events without relying on a central authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:8f131938def0b351335d5d515220d9161bd195c6ea0ddee516c56f6c6d8ca3f6",
+  "title": "W3C WebXR Device API",
+  "slug": "w-3-c-web-xr-device-api",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-web-xr-device-api",
+  "domain": "standards",
+  "definition": "The W3C WebXR Device API specifies an interface for accessing virtual reality and augmented reality devices, including sensors and head-mounted displays, in Web applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

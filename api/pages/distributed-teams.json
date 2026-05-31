@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:distributed-teams",
+  "title": "Distributed Teams",
+  "slug": "distributed-teams",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-teams",
+  "domain": "infrastructure",
+  "definition": "Distributed teams are groups of collaborators who work from different geographic locations and often across time zones, coordinating primarily through digital communication and collaboration tools. They rely on asynchronous workflows, shared documentation, and recorded or AI-assisted meetings to maintain alignment without co-location. They have become a dominant model of knowledge work, trading the spontaneity of the office for flexibility and access to a global talent pool.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    }
+  ]
+}

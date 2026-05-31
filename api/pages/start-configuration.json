@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:start-configuration",
+  "title": "Start Configuration",
+  "slug": "start-configuration",
+  "public": true,
+  "classIri": "urn:ngm:class:start-configuration",
+  "domain": "robotics",
+  "definition": "A start configuration is the initial pose of a robot or articulated system, expressed as a point in its configuration space, from which a motion or path planner must compute a feasible route to a goal configuration. It encodes the complete set of joint values or positional parameters that fully describe the system's state at the beginning of a planned motion. Together with the goal configuration, it bounds the planning query.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robotics Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "Trajectory Generation"
+    }
+  ]
+}

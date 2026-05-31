@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:iso-22000",
+  "title": "ISO 22000",
+  "slug": "iso-22000",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-22000",
+  "domain": "supply-chain",
+  "definition": "ISO 22000 is an international standard specifying the requirements for a food safety management system, enabling any organisation in the food chain to demonstrate control of food-safety hazards. It integrates HACCP principles with management-system structure, prerequisite programmes, and interactive communication across the supply chain. It is widely certified by producers, processors, and logistics providers, including those operating cold-chain monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    }
+  ]
+}

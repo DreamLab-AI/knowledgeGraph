@@ -1,0 +1,4 @@
+- ### Definition
+  - Personalized experiences adapt content and interaction to the individual, enabled by [[AI Machine Learning]] models and by [[Context Awareness]] of the user's situation.
+- ### Content
+  - Systems combine collaborative and content-based signals with real-time context, location, device, time, and recent behaviour, to rank and adapt what each user sees. Effective personalization lifts relevance and retention, but it depends on quality data and raises trade-offs around consent, transparency, and the narrowing of exposure when feedback loops over-optimise for past preferences.

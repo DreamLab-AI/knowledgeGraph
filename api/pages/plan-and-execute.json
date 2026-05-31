@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:plan-and-execute",
+  "title": "Plan and Execute",
+  "slug": "plan-and-execute",
+  "public": true,
+  "classIri": "urn:ngm:class:plan-and-execute",
+  "domain": "ai",
+  "definition": "Plan and execute is an agentic reasoning strategy in which an LLM-based agent first generates a multi-step plan for a task and then carries out each step, optionally re-planning when steps fail or new information appears. Separating planning from execution improves coherence on long-horizon tasks compared with purely reactive, single-step prompting. It is a common control pattern for autonomous and computer-use agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

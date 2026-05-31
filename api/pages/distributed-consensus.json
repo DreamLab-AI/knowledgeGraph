@@ -91,6 +91,10 @@
       "label": "Distributed Architecture"
     },
     {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

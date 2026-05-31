@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:b8d6a57d93db2f9ac55a2d1ba777ac5743e796f90161f531b8e22ed0b1e79809",
+  "title": "Differential Equations",
+  "slug": "differential-equations",
+  "public": true,
+  "classIri": "urn:ngm:class:differential-equations",
+  "domain": "mathematics",
+  "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

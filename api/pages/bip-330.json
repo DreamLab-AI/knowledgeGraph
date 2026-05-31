@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bip-330",
+  "title": "BIP-330",
+  "slug": "bip-330",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-330",
+  "domain": "blockchain",
+  "definition": "BIP-330 is a Bitcoin Improvement Proposal that introduces Erlay-style transaction reconciliation (the 'sendtxrcncl' protocol) to make mempool synchronisation between nodes more bandwidth-efficient. Instead of announcing every transaction to every peer, nodes use set-reconciliation sketches to identify only the transactions a peer is missing. This reduces redundant relay traffic, improving the scalability and privacy of the peer-to-peer network that supports applications like Taproot assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

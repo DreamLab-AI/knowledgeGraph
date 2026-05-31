@@ -1,0 +1,4 @@
+- ### Definition
+  - Agentic RAG wraps [[Retrieval-Augmented Generation (RAG)]] in an agent control loop so the model decides when, where, and how often to retrieve. It generalizes the linear [[RAG Pipeline]] into an iterative plan-retrieve-reason-verify process.
+- ### Content
+  - The agent may consult multiple tools and indexes, rewrite queries, grade retrieved passages, and re-retrieve when evidence is weak. This handles multi-hop reasoning and source selection better than fixed pipelines, while requiring careful budget control to bound the number of tool calls and tokens.

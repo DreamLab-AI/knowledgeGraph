@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:910af2fcfebff805bcafcca92b27a4709c1249f35abbc7189fd3926a9ae59598",
+  "title": "Leeds",
+  "slug": "leeds",
+  "public": true,
+  "classIri": "urn:ngm:class:leeds",
+  "domain": "general",
+  "definition": "A city in West Yorkshire, England, with a notable financial services, legal, and digital technology sector and a strong research university presence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-technology",
+      "label": "Financial Technology"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    }
+  ]
+}

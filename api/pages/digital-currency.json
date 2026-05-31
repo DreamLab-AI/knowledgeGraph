@@ -115,8 +115,16 @@
       "label": "Identity Management System"
     },
     {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
       "slug": "value-transfer",
       "label": "Value Transfer"
+    },
+    {
+      "slug": "x-402",
+      "label": "X402"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:planetary-exploration",
+  "title": "Planetary Exploration",
+  "slug": "planetary-exploration",
+  "public": true,
+  "classIri": "urn:ngm:class:planetary-exploration",
+  "domain": "robotics",
+  "definition": "Planetary exploration is the robotic investigation of planets, moons, and other bodies using rovers, landers, and orbiters operating in remote, unstructured, communication-delayed environments. It demands highly autonomous navigation and perception because round-trip signal delays make teleoperation impractical, requiring robots to plan paths and avoid hazards on their own. It is a demanding proving ground for autonomous ground-robot capability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robotics Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

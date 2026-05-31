@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:d464eb8b27ca8ce76d1a84b6aa526eb140bb637262303a0da445a2ae77e961ec",
+  "title": "Project mBridge",
+  "slug": "project-m-bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:project-m-bridge",
+  "domain": "blockchain",
+  "definition": "A multi-central-bank initiative testing a shared distributed ledger platform for cross-border payments settled in central bank digital currencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-settlement",
+      "label": "Cross-Border Settlement"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      },
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "wholesale-cbdc",
+      "label": "Wholesale CBDC"
+    },
+    {
+      "slug": "atomic-settlement",
+      "label": "Atomic Settlement"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "cross-border-settlement",
+      "label": "Cross-Border Settlement"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -71,6 +71,14 @@
       "label": "Motion Capture"
     },
     {
+      "slug": "tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "slug": "tele-102-codec-avatars",
+      "label": "TELE-102-codec-avatars"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },

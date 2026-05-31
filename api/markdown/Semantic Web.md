@@ -1,4 +1,5 @@
 public:: true
+alias:: semanticWeb
 
 # Semantic Web
 ```json-ld

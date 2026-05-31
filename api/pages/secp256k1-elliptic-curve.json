@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:secp256k1-elliptic-curve",
+  "title": "secp256k1 Elliptic Curve",
+  "slug": "secp256k1-elliptic-curve",
+  "public": true,
+  "classIri": "urn:ngm:class:secp256k1-elliptic-curve",
+  "domain": "blockchain",
+  "definition": "secp256k1 is a specific elliptic curve defined over a 256-bit prime field, standardised by the SEC and chosen for its efficient, verifiable parameters. It underpins ECDSA and Schnorr signatures used by Bitcoin, Nostr, and many other systems for key generation and digital signing. Its near-rigid, low-entropy parameters reduce concern about hidden weaknesses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Blockchain Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sovereign-keyset",
+        "label": "Sovereign Keyset"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    }
+  ]
+}

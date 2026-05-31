@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:0a6168d4d4b89f8d2cbbe15380dd9e88ac5b026a5a50331b79a7e8b020cc341a",
+  "title": "Speech Processing",
+  "slug": "speech-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:speech-processing",
+  "domain": "artificial-intelligence",
+  "definition": "The field concerned with the analysis, recognition, synthesis and transformation of human speech signals by computational systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:96498d183569285e294d1140932acc399bf74e4eb55fe83234c7764c489ed8b1",
+  "title": "Paolo Tasca",
+  "slug": "paolo-tasca",
+  "public": true,
+  "classIri": "urn:ngm:class:paolo-tasca",
+  "domain": "economics",
+  "definition": "Paolo Tasca is an economist specialising in digital economics and distributed ledger technology. He founded the Centre for Blockchain Technologies at University College London.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

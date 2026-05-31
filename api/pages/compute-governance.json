@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:compute-governance",
+  "title": "Compute Governance",
+  "slug": "compute-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:compute-governance",
+  "domain": "ai",
+  "definition": "Compute governance is the set of policies, controls, and oversight mechanisms applied to the large-scale computing hardware used to train and deploy advanced AI systems. Because frontier AI capability is tightly coupled to access to specialised accelerators, governing compute offers a measurable, supply-chain-anchored lever for AI policy. Mechanisms include export controls, usage reporting thresholds, and on-chip verification of training runs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

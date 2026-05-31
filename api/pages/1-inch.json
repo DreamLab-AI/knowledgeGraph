@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:b4284e8dbb926c35f84ee43a5cb9b1c4316f7864638716d2a7bc56d54a269e4c",
+  "title": "1inch",
+  "slug": "1-inch",
+  "public": true,
+  "classIri": "urn:ngm:class:1-inch",
+  "domain": "blockchain",
+  "definition": "A decentralised exchange aggregator that routes trades across multiple liquidity sources to find favourable execution prices on Ethereum and other chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ],
+  "backlinks": []
+}

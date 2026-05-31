@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:rehabilitation-robotics",
+  "title": "Rehabilitation Robotics",
+  "slug": "rehabilitation-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:rehabilitation-robotics",
+  "domain": "robotics",
+  "definition": "Rehabilitation robotics is the field of robotic devices that assist therapy and recovery of motor function, including exoskeletons, end-effector trainers, and assistive manipulators. These systems deliver repeatable, intensity-controlled movement while measuring patient progress, and rely on compliant, force-controlled actuation to interact safely with the body. They aim to improve outcomes and scale access to physical therapy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

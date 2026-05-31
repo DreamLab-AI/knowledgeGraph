@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:c31b7db7f1fddbf3791860559e30aadc3b36a34aa15b7eae53a0987fc678c0e4",
+  "title": "Scroll",
+  "slug": "scroll",
+  "public": true,
+  "classIri": "urn:ngm:class:scroll",
+  "domain": "blockchain",
+  "definition": "Scroll is an Ethereum layer-two network that uses zero-knowledge rollup technology to scale transactions while remaining compatible with the Ethereum Virtual Machine. It posts validity proofs to Ethereum.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:plonk",
+        "label": "PLONK"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "https-scroll-io",
+      "label": "https://scroll.io"
+    },
+    {
+      "slug": "https-docs-scroll-io",
+      "label": "https://docs.scroll.io"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    }
+  ]
+}

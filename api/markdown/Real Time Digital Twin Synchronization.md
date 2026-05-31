@@ -1,4 +1,5 @@
 public:: true
+alias:: Real-Time Digital Twin Synchronization
 
 # Real Time Digital Twin Synchronization
 ```json-ld

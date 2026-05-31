@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:7b31c45d8bc43822eabf45c09b7fe57e5e582175ea819cc53076cc7cfae4ff15",
+  "title": "Argent",
+  "slug": "argent",
+  "public": true,
+  "classIri": "urn:ngm:class:argent",
+  "domain": "blockchain",
+  "definition": "A smart contract wallet for Ethereum and Layer 2 networks that uses account abstraction to provide features such as social recovery, spending limits and gasless transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wallet",
+      "label": "Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

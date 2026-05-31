@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:identity-portability",
+  "title": "Identity Portability",
+  "slug": "identity-portability",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-portability",
+  "domain": "infrastructure",
+  "definition": "Identity portability is the capacity for a user to move their digital identity, credentials, and associated reputation across platforms, services, or virtual worlds without re-establishing them from scratch. It relies on interoperable identity standards and user-controlled wallets so that authentication and verified attributes remain valid across boundaries. Portability is a cornerstone of self-sovereign identity and an open metaverse.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "credential-format-standard",
+      "label": "Credential Format Standard"
+    }
+  ]
+}

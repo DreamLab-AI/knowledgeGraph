@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:on-chain-mrv",
+  "title": "On-Chain MRV",
+  "slug": "on-chain-mrv",
+  "public": true,
+  "classIri": "urn:ngm:class:on-chain-mrv",
+  "domain": "blockchain",
+  "definition": "On-Chain MRV (Measurement, Reporting, and Verification) is the practice of recording carbon and environmental impact data directly on a blockchain to create tamper-evident, auditable proof of climate actions. It combines sensor data, satellite imagery, and oracle feeds with on-chain attestations so that carbon credits and sustainability claims can be independently verified. By anchoring MRV data to an immutable ledger, it reduces double-counting and greenwashing in voluntary and compliance carbon markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

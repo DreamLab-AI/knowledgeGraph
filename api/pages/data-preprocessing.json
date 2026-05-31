@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:data-preprocessing",
+  "title": "Data Preprocessing",
+  "slug": "data-preprocessing",
+  "public": true,
+  "classIri": "urn:ngm:class:data-preprocessing",
+  "domain": "ai",
+  "definition": "Data preprocessing is the stage of a machine learning workflow that transforms raw data into a clean, consistent form suitable for modelling. It encompasses cleaning, normalisation, encoding, imputation and feature engineering to remove noise and align scales and types. The quality of preprocessing strongly determines downstream model accuracy and is a prerequisite for reliable training.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-cleaning",
+      "label": "Data Cleaning"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    }
+  ]
+}

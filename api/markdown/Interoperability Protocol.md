@@ -1,4 +1,5 @@
 public:: true
+alias:: InteroperabilityProtocol
 
 # Interoperability Protocol
 ```json-ld

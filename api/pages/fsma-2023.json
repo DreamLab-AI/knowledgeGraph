@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:4bd65e4e883a68b26e112ab68f63b1c8de5fbdefd5f5e6391a0c7476772fe241",
+  "title": "FSMA 2023",
+  "slug": "fsma-2023",
+  "public": true,
+  "classIri": "urn:ngm:class:fsma-2023",
+  "domain": "regulation",
+  "definition": "The Financial Services and Markets Act 2023, a United Kingdom statute that updates the framework for financial services regulation after departure from the European Union. It grants regulators new powers, including over digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

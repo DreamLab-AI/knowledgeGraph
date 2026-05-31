@@ -124,6 +124,14 @@
       "label": "Identity Provider"
     },
     {
+      "slug": "rfc-8785-canonical-json",
+      "label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "slug": "rfc-8785",
+      "label": "RFC 8785"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     },

@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:anthropic-claude",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:anthropic-claude",
+  "@type": "Class",
   "label": "Anthropic Claude",
   "definition": "Anthropic Claude is a family of large language models developed by Anthropic PBC, designed around Constitutional AI principles that prioritise safety, helpfulness, and honesty. The model series spans Claude Instant, Claude 2, Claude 3 (Haiku, Sonnet, Opus), and Claude 3.5, with each generation advancing reasoning, coding, and multilingual capabilities. Claude is distinguished by its long context windows (up to 200k tokens in Claude 3) and its training methodology that emphasises harmlessness through RLHF and Constitutional AI feedback loops.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"}],
+  "subClassOf": [{"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
@@ -44,8 +44,8 @@ public:: true
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:individual:gemini", "label": "Gemini"},
-      {"@id": "urn:ngm:individual:chat-gpt", "label": "ChatGPT"}
+      {"@id": "urn:ngm:class:gemini", "label": "Gemini"},
+      {"@id": "urn:ngm:class:chat-gpt", "label": "ChatGPT"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},

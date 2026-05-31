@@ -88,6 +88,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
       "slug": "humanity-attestation",
       "label": "Humanity Attestation"
     },
@@ -110,6 +114,10 @@
     {
       "slug": "trust-framework",
       "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
     },
     {
       "slug": "verifiable-credential-vc",

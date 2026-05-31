@@ -16,8 +16,8 @@
       "label": "Automated Compliance"
     },
     {
-      "id": "urn:ngm:class:continuous-control-monitoring",
-      "label": "Continuous Control Monitoring"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -837,6 +837,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },
@@ -871,6 +875,10 @@
     {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
     },
     {
       "slug": "regulatory-reporting",

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:raspberry-pi",
+  "title": "Raspberry Pi",
+  "slug": "raspberry-pi",
+  "public": true,
+  "classIri": "urn:ngm:class:raspberry-pi",
+  "domain": "infrastructure",
+  "definition": "Raspberry Pi is a family of low-cost, credit-card-sized single-board computers built around ARM systems-on-chip, designed originally for education and now ubiquitous in hobbyist, prototyping, and edge-computing deployments. It exposes GPIO pins for hardware interfacing and runs full Linux distributions, making it a versatile platform for home automation, robotics controllers, and small servers. Its affordability and large community make it a default choice for edge experimentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

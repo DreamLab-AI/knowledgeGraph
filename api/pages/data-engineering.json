@@ -1,0 +1,127 @@
+{
+  "id": "urn:visionflow:page:9e83cbde6aa29479ba7ea603edee466714ef269ea99cc80665845661237881c2",
+  "title": "Data Engineering",
+  "slug": "data-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:data-engineering",
+  "domain": "data-engineering",
+  "definition": "Data Engineering is the discipline concerned with designing, building and operating the systems that collect, store, transform and serve data at scale. It covers data pipelines, storage architectures, batch and streaming processing, data modelling and the orchestration and monitoring of workflows. Its purpose is to make reliable, well-structured data available for analytics, reporting and machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure-domain",
+      "label": "Infrastructure Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:etl",
+        "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "etl",
+      "label": "ETL"
+    },
+    {
+      "slug": "data-warehouse",
+      "label": "Data Warehouse"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "business-intelligence",
+      "label": "Business Intelligence"
+    },
+    {
+      "slug": "data-science",
+      "label": "Data Science"
+    },
+    {
+      "slug": "stream-processing",
+      "label": "Stream Processing"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "etl-pipeline",
+      "label": "ETL Pipeline"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

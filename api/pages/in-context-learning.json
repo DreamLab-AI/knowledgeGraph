@@ -63,6 +63,14 @@
       "label": "Attention"
     },
     {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },
@@ -81,6 +89,10 @@
     {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
     }
   ]
 }

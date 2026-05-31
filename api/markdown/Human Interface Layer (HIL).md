@@ -134,7 +134,7 @@ public:: true
         "label": "Output Devices"
       },
       {
-        "@id": "urn:ngm:class:tracking-systems",
+        "@id": "urn:ngm:class:tracking-system",
         "label": "Tracking Systems"
       }
     ],

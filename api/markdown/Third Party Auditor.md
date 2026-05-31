@@ -1,4 +1,5 @@
 public:: true
+alias:: Third-Party Auditor
 
 # Third Party Auditor
 ```json-ld

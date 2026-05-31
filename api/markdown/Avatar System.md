@@ -75,8 +75,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:virtual-character-system",
-      "label": "Virtual Character System"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "relations": {

@@ -1,4 +1,5 @@
 public:: true
+alias:: EnvironmentalAssessment
 
 # Environmental Assessment
 ```json-ld

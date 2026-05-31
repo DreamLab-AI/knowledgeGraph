@@ -207,7 +207,7 @@
         "label": "Multi Agent Systems"
       },
       {
-        "id": "urn:ngm:class:simulation-environments",
+        "id": "urn:ngm:class:simulation-environment",
         "label": "Simulation Environments"
       },
       {
@@ -252,7 +252,7 @@
         "label": "Visual Language Navigation"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -683,6 +683,10 @@
     {
       "slug": "path-planning",
       "label": "Path Planning"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
     },
     {
       "slug": "robot-hardware",

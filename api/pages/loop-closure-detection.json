@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:loop-closure-detection",
+  "title": "Loop Closure Detection",
+  "slug": "loop-closure-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:loop-closure-detection",
+  "domain": "robotics",
+  "definition": "Loop closure detection is the process by which a SLAM or mapping system recognises that it has returned to a previously visited location. By identifying these revisits, it adds constraints that correct accumulated odometry drift and produce globally consistent maps. It is a critical component of robust simultaneous localisation and mapping, typically implemented via appearance-based place recognition or geometric matching.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robotics Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "id": "urn:ngm:class:long-range-navigation",
+        "label": "Long-Range Navigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

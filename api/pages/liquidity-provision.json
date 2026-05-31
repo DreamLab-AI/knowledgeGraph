@@ -12,12 +12,12 @@
       "label": "DeFi and Economics"
     },
     {
-      "id": "urn:ngm:class:capital-deployment",
-      "label": "Capital Deployment"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "id": "urn:ngm:class:financial-mechanism",
-      "label": "Financial Mechanism"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     }
   ],
   "entityType": "Class",
@@ -60,7 +60,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:erc-20-token",
+        "id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {
@@ -617,6 +617,14 @@
       "label": "BTC Layer 3"
     },
     {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "curve-wars",
+      "label": "Curve Wars"
+    },
+    {
       "slug": "decentralized-exchange-dex",
       "label": "Decentralized Exchange (DEX)"
     },
@@ -637,8 +645,20 @@
       "label": "Instant value settlement"
     },
     {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
     }
   ]
 }

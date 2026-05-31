@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:f183660d4fd911d45a448b54e3d4b97f355bf050d456094c6c27b02cf21924d2",
+  "title": "NCSC",
+  "slug": "ncsc",
+  "public": true,
+  "classIri": "urn:ngm:class:ncsc",
+  "domain": "governance",
+  "definition": "The National Cyber Security Centre, the United Kingdom's national technical authority for cyber security, providing guidance and incident response support.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

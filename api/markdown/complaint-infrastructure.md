@@ -1,0 +1,4 @@
+- ### Definition
+  - Complaint Infrastructure is the system of intake, case-management, and redress channels that lets consumers raise and resolve grievances, a structural requirement of [[Consumer Protection]] regimes.
+- ### Content
+  - Effective complaint systems provide multiple accessible channels, transparent status tracking, defined response timelines, and escalation to ombudsmen or regulators. Aggregated complaint data also serves a surveillance function, helping authorities detect patterns of harm and target enforcement and rulemaking.

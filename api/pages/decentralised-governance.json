@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:785125842be614163393fe719d636886ea065960cfa175265546871128791063",
+  "title": "Decentralised Governance",
+  "slug": "decentralised-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-governance",
+  "domain": "governance",
+  "definition": "A model of collective decision-making in which authority is distributed across participants rather than concentrated in a central body, often implemented through on-chain voting and smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "decentralisation",
+      "label": "Decentralisation"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    }
+  ]
+}

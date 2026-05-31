@@ -1,0 +1,4 @@
+- ### Definition
+  - A MIMO antenna uses multiple transmit and receive elements to multiplex independent data streams over one channel. It operates at the wireless [[Physical Layer]].
+- ### Content
+  - Spatial multiplexing turns multipath, normally a source of fading, into extra capacity by resolving streams across spatially separated antennas. Massive MIMO and beamforming concentrate energy toward specific users, improving signal-to-interference ratios in dense 5G deployments.

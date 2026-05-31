@@ -1,0 +1,4 @@
+- ### Definition
+  - An OR-Set is an Observed-Remove [[CRDT]] supporting concurrent adds and removes with eventual consistency, used to merge edits in applications such as a [[Collaborative Whiteboard]].
+- ### Content
+  - Elements carry unique tags so that concurrent operations resolve deterministically, typically with adds winning over removes of tags a replica has not yet observed. This lets distributed replicas converge without coordination, making OR-Sets a building block for offline-capable collaborative tools.

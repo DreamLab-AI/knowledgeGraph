@@ -475,8 +475,8 @@ public:: true
       "label": "Organisational Change"
     },
     {
-      "@id": "urn:ngm:class:socio-technical-process",
-      "label": "Socio-Technical Process"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {

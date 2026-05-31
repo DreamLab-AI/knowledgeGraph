@@ -79,6 +79,10 @@
       "label": "Mobile Robot Platform"
     },
     {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
       "slug": "topological-map",
       "label": "Topological Map"
     }

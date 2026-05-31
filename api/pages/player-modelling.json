@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:player-modelling",
+  "title": "Player Modelling",
+  "slug": "player-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:player-modelling",
+  "domain": "ai",
+  "definition": "Player modelling is the computational construction of representations of a player's preferences, skill, behaviour, and emotional state from in-game data. These models enable games to personalise difficulty, content, and recommendations, and to predict future actions. It is a foundational technique for adaptive and AI-driven game systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

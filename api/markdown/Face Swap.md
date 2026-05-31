@@ -1,4 +1,5 @@
 public:: true
+alias:: FaceSwap
 
 # Face Swap
 ```json-ld
@@ -519,12 +520,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:face-manipulation",
-      "label": "Face Manipulation"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
-      "@id": "urn:ngm:class:identity-transfer",
-      "label": "Identity Transfer"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -678,7 +679,7 @@ public:: true
         "label": "XSeg"
       },
       {
-        "@id": "urn:ngm:individual:ip-adapter",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter"
       },
       {

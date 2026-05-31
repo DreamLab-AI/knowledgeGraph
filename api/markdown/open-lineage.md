@@ -1,0 +1,4 @@
+- ### Definition
+  - OpenLineage is an open specification for capturing data-lineage events from pipelines, providing the standardized metadata that systems for [[Metadata Management]] consume to trace data provenance.
+- ### Content
+  - Its event model describes jobs, runs, and datasets with their input/output edges, emitted by instrumented orchestrators and engines. By unifying lineage collection across diverse platforms, OpenLineage supports governance, root-cause analysis, and impact assessment over complex data ecosystems.

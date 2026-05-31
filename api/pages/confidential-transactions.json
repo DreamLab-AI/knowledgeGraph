@@ -68,6 +68,10 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
     },

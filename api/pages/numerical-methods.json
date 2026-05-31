@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:c16f8a14df9d0c9c89fda1b50f5ed45f140a693ab24a0d17dd983bd5cbf6a608",
+  "title": "Numerical Methods",
+  "slug": "numerical-methods",
+  "public": true,
+  "classIri": "urn:ngm:class:numerical-methods",
+  "domain": "mathematics",
+  "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    }
+  ]
+}

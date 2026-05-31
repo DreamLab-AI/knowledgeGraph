@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:geographic-distribution",
+  "title": "Geographic Distribution",
+  "slug": "geographic-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:geographic-distribution",
+  "domain": "infrastructure",
+  "definition": "Geographic distribution is the placement of computing resources, data, or services across physically separate locations and regions. In distributed systems it reduces latency for global users, improves fault tolerance against regional outages, and helps satisfy data-residency requirements. It introduces trade-offs around consistency, replication, and inter-region network costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

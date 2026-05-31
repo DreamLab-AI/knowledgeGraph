@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:d245da5f874873b9cef870092fd7c34125f3f2a860bd96955af45dec7f5895ce",
+  "title": "Scalability Solutions",
+  "slug": "scalability-solutions",
+  "public": true,
+  "classIri": "urn:ngm:class:scalability-solutions",
+  "domain": "blockchain",
+  "definition": "Techniques and architectures, particularly in blockchain systems, that increase transaction throughput and reduce cost while preserving security, such as Layer 2 networks and sharding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "sharding",
+      "label": "Sharding"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gas-optimization",
+      "label": "Gas Optimization"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "layer-3",
+      "label": "Layer 3"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - BOLT12 Offers extends the [[Lightning Network]] with reusable, static payment offers that replace single-use invoices and add recipient privacy.
+- ### Content
+  - Unlike BOLT11 invoices, an offer is a durable code that payers use to request a fresh invoice through onion messages, supporting recurring and refundable payments. Blinded paths conceal the destination node, so offers can be published openly without revealing where funds ultimately settle.

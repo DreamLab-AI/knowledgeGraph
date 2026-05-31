@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:c5c74c4ee579ae20390e97935a3635998f28aa96688788a08a983cb6e2b57137",
+  "title": "Dialogue Systems",
+  "slug": "dialogue-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:dialogue-systems",
+  "domain": "nlp",
+  "definition": "Dialogue systems are software systems that converse with users in natural language across one or more turns. They include task-oriented assistants and open-domain conversational agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "could",
+      "label": "Could"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

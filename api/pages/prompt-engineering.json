@@ -16,8 +16,8 @@
       "label": "In-Context Learning"
     },
     {
-      "id": "urn:ngm:class:applied-artificial-intelligence",
-      "label": "Applied Artificial Intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",
@@ -46,7 +46,7 @@
         "label": "Prompt Injection Defence"
       },
       {
-        "id": "urn:ngm:class:prompt-templates",
+        "id": "urn:ngm:class:prompt-template",
         "label": "Prompt Templates"
       },
       {
@@ -62,7 +62,7 @@
         "label": "Structured Output"
       },
       {
-        "id": "urn:ngm:class:system-prompts",
+        "id": "urn:ngm:class:system-prompt",
         "label": "System Prompts"
       },
       {
@@ -181,15 +181,15 @@
         "label": "DSPy"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:individual:chat-gpt",
+        "id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "id": "urn:ngm:individual:comfy-ui",
+        "id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -201,7 +201,7 @@
         "label": "Reasoning"
       },
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -241,7 +241,7 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -637,6 +637,10 @@
       "label": "Context Engineering"
     },
     {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },
@@ -647,6 +651,10 @@
     {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
     },
     {
       "slug": "image-generation",
@@ -703,6 +711,10 @@
     {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
     },
     {
       "slug": "ollama",

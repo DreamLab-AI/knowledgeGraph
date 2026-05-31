@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:75573bb5886469dae31e61b64437c56249abc1c66198160b215d3f4b2a5002a6",
+  "title": "Unity",
+  "slug": "unity",
+  "public": true,
+  "classIri": "urn:ngm:class:unity",
+  "domain": "metaverse",
+  "definition": "Unity is a cross-platform real-time 3D engine and editor used to build games, simulations and XR applications across desktop, mobile, console and head-mounted display targets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

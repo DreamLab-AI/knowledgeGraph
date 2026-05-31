@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:expectation-maximisation",
+  "title": "Expectation Maximisation",
+  "slug": "expectation-maximisation",
+  "public": true,
+  "classIri": "urn:ngm:class:expectation-maximisation",
+  "domain": "ai",
+  "definition": "Expectation Maximisation (EM) is an iterative algorithm for finding maximum-likelihood or maximum-a-posteriori estimates of parameters in statistical models with latent (unobserved) variables. It alternates between an E-step, which computes the expected value of the complete-data log-likelihood given current parameters, and an M-step, which maximises that expectation to update the parameters. EM is guaranteed to monotonically increase the likelihood at each iteration and is widely used for Gaussian mixture models, hidden Markov models, and missing-data problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

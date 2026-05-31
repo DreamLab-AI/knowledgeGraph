@@ -1,0 +1,4 @@
+- ### Definition
+  - Storage architecture describes how a system lays out, replicates, and serves persistent data, choosing among block, file, and object models to balance durability, latency, and cost for its workloads. It is a foundational layer of [[Data Storage]].
+- ### Content
+  - A storage architecture specifies the physical media, abstraction layer, partitioning scheme, and replication strategy used to keep data available and consistent. Decisions such as hot/warm/cold tiering, erasure coding versus full replication, and synchronous versus asynchronous writes determine the system's recovery guarantees and performance envelope. Modern architectures increasingly separate compute from storage so that capacity and processing scale independently.

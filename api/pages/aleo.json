@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:818121da38635e1a99346d58fb9bacb69fc3c32a10aed6842bcbd4f8e0a4866d",
+  "title": "Aleo",
+  "slug": "aleo",
+  "public": true,
+  "classIri": "urn:ngm:class:aleo",
+  "domain": "blockchain",
+  "definition": "Aleo is a blockchain platform designed for private applications using zero-knowledge proofs to keep transaction data confidential while remaining verifiable. Programs are written in its Leo language.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

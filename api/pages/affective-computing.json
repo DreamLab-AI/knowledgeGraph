@@ -87,6 +87,10 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "mental-health-monitoring",
+      "label": "Mental Health Monitoring"
+    },
+    {
       "slug": "social-robotics",
       "label": "Social Robotics"
     },

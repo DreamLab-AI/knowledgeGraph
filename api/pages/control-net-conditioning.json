@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:control-net-conditioning",
+  "title": "ControlNet Conditioning",
+  "slug": "control-net-conditioning",
+  "public": true,
+  "classIri": "urn:ngm:class:control-net-conditioning",
+  "domain": "ai",
+  "definition": "ControlNet conditioning is a technique that augments a pretrained diffusion model with an auxiliary network so generation can be steered by spatial control signals such as edge maps, depth, pose, or segmentation. The ControlNet branch copies the encoder of the base model and injects conditioning through zero-initialised connections, preserving the original weights while adding controllability. It gives image-generation pipelines precise structural control without retraining the base model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    }
+  ]
+}

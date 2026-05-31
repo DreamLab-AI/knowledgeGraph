@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:d8eea33911cce969aa4ea449d219865a3594200bb13c0b2d10c98f1ebdda1808",
+  "title": "ETSI ENI 008",
+  "slug": "etsi-eni-008",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-eni-008",
+  "domain": "standards",
+  "definition": "ETSI ENI 008 is a deliverable of the ETSI Experiential Networked Intelligence group, which works on AI-based network management and optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "6-g-network-slice",
+      "label": "6G Network Slice"
+    },
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    }
+  ]
+}

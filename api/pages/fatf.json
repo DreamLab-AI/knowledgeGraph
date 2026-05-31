@@ -63,6 +63,10 @@
       "label": "AML KYC Compliance"
     },
     {
+      "slug": "bc-0456-virtual-asset-service-providers",
+      "label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

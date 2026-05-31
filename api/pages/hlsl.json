@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:hlsl",
+  "title": "HLSL",
+  "slug": "hlsl",
+  "public": true,
+  "classIri": "urn:ngm:class:hlsl",
+  "domain": "metaverse",
+  "definition": "HLSL (High-Level Shading Language) is Microsoft's C-like programming language for writing GPU shader programs targeting the Direct3D graphics API. It lets developers author vertex, pixel, geometry, and compute shaders that run on the programmable stages of the rendering pipeline. HLSL is a cornerstone of real-time graphics on Windows and Xbox platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

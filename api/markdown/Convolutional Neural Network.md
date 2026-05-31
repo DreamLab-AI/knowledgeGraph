@@ -1,4 +1,5 @@
 public:: true
+alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
 
 # Convolutional Neural Network
 ```json-ld

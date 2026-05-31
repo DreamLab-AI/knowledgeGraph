@@ -171,6 +171,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     },
@@ -193,6 +197,14 @@
     {
       "slug": "proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
     }
   ]
 }

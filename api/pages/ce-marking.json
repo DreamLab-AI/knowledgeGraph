@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ce-marking",
+  "title": "CE Marking",
+  "slug": "ce-marking",
+  "public": true,
+  "classIri": "urn:ngm:class:ce-marking",
+  "domain": "robotics",
+  "definition": "CE marking is a mandatory conformity mark indicating that a product placed on the European Economic Area market meets the applicable EU health, safety, and environmental protection requirements. For machinery and robots it signals compliance with directives such as the Machinery Regulation, the EMC Directive, and relevant harmonised standards, often supported by a declaration of conformity and technical file. It matters because it is a legal precondition for market access and embeds robot safety standards into commercial deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Robotic Safety and Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

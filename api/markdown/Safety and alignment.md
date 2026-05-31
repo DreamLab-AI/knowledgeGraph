@@ -295,8 +295,8 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:existential-risk-research",
-      "label": "Existential Risk Research"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     },
     {
       "@id": "urn:ngm:class:ai-ethics",
@@ -460,7 +460,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

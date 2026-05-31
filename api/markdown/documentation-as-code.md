@@ -1,0 +1,4 @@
+- ### Definition
+  - Documentation as Code treats documentation as a first-class artefact managed in version control and built through CI/CD, mirroring how source code is handled. [[Diagrams as Code]] is a specialised extension of this practice for visual artefacts.
+- ### Content
+  - By writing docs in Markdown, AsciiDoc, or reStructuredText and reviewing them through pull requests, teams keep documentation versioned, testable, and automatically published. This reduces drift between code and docs and lets the same tooling enforce style and link integrity.

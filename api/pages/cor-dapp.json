@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cor-dapp",
+  "title": "CorDapp",
+  "slug": "cor-dapp",
+  "public": true,
+  "classIri": "urn:ngm:class:cor-dapp",
+  "domain": "blockchain",
+  "definition": "A CorDapp (Corda Distributed Application) is a distributed application built to run on the R3 Corda enterprise blockchain platform. It bundles the contracts, states, and flows that define shared business logic and the point-to-point messaging that coordinates transactions between participating nodes. CorDapps are the unit of deployment by which enterprises implement permissioned, privacy-preserving workflows on Corda.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

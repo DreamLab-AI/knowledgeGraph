@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:670039c124a3c68c11b64cd276694d29164e11abf25830e791720e3099e3d804",
+  "title": "Dynamical Systems Theory",
+  "slug": "dynamical-systems-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamical-systems-theory",
+  "domain": "mathematics",
+  "definition": "The mathematical study of systems that evolve over time according to fixed rules, focusing on long-term behaviour, stability, and qualitative structure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    }
+  ]
+}

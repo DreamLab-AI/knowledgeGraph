@@ -1,4 +1,5 @@
 public:: true
+alias:: Privacy-by-Design
 
 # Privacy By Design
 ```json-ld

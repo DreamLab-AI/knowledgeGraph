@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkTopology
 
 # Network Topology
 ```json-ld

@@ -1,0 +1,4 @@
+- ### Definition
+  - Model versioning tracks successive model versions together with the code, data, and [[Checkpoints]] that produced them. Tools such as [[MLflow]] provide registries that implement it.
+- ### Content
+  - Beyond naming weights, versioning binds each model to its full provenance so a result can be reproduced or a regression rolled back. Registries add stage transitions (staging, production, archived), approvals, and metadata, making model lifecycle management auditable and governable.

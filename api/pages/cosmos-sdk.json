@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:e9f271feae3ea79f85e350ccf69fd2880a4fe2faa895d7b27c5358b80ab5240b",
+  "title": "Cosmos SDK",
+  "slug": "cosmos-sdk",
+  "public": true,
+  "classIri": "urn:ngm:class:cosmos-sdk",
+  "domain": "blockchain",
+  "definition": "The Cosmos SDK is an open-source framework for building application-specific blockchains in the Cosmos ecosystem. It provides modular components and works with the Tendermint consensus engine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cosmos",
+      "label": "Cosmos"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ibc",
+        "label": "IBC"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "https-docs-cosmos-network",
+      "label": "https://docs.cosmos.network"
+    },
+    {
+      "slug": "https-github-com-cosmos-cosmos-sdk",
+      "label": "https://github.com/cosmos/cosmos-sdk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    }
+  ]
+}

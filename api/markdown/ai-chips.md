@@ -1,0 +1,4 @@
+- ### Definition
+  - AI Chips are accelerators built for the parallel tensor math of deep learning. Their supply and capability are central to [[Competition in AI]], making them a strategic class of [[Hardware]].
+- ### Content
+  - Designs trade off training versus inference, precision (FP16, BF16, FP8, INT8), and memory bandwidth, with high-bandwidth memory and fast interconnects often the limiting factors at scale. Access depends on a concentrated fabrication supply chain, so export controls and foundry capacity directly shape who can train frontier models.

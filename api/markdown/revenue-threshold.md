@@ -1,0 +1,4 @@
+- ### Definition
+  - A revenue threshold scopes regulatory obligations to entities above a defined annual revenue, a parameter used by the [[California AI Bill]] to target large developers.
+- ### Content
+  - By tying applicability to revenue, lawmakers concentrate compliance duties on well-resourced firms while shielding startups. The chosen figure directly shapes the regulated population and is often paired with compute or capability thresholds.

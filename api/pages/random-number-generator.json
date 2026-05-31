@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:random-number-generator",
+  "title": "Random Number Generator",
+  "slug": "random-number-generator",
+  "public": true,
+  "classIri": "urn:ngm:class:random-number-generator",
+  "domain": "infrastructure",
+  "definition": "A random number generator (RNG) produces sequences of numbers that lack predictable pattern, either through deterministic algorithms seeded from an initial state (pseudo-random) or from physical entropy sources (true random). RNGs are essential to stochastic sampling, Monte Carlo methods, simulation, and cryptographic key generation. Quality is judged by statistical uniformity, period length, and, for security uses, unpredictability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

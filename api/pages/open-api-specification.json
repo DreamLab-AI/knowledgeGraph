@@ -75,6 +75,10 @@
       "label": "API Gateway"
     },
     {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

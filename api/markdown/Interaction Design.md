@@ -1,4 +1,5 @@
 public:: true
+alias:: InteractionDesign
 
 # Interaction Design
 ```json-ld

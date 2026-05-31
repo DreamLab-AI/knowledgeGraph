@@ -103,8 +103,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:physics-modelling",
-      "label": "Physics Modelling"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
       "@id": "urn:ngm:class:robot-dynamics",

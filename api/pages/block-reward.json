@@ -126,6 +126,10 @@
   ],
   "backlinks": [
     {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
       "slug": "digital-asset-risks",
       "label": "Digital Asset Risks"
     },

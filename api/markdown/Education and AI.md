@@ -535,12 +535,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:applied-ai",
-      "label": "Applied AI"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:conversational-ai-applications",
-      "label": "Conversational AI Applications"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {
@@ -678,15 +678,15 @@ public:: true
         "label": "Microsoft Immersive Reader"
       },
       {
-        "@id": "urn:ngm:individual:claude",
+        "@id": "urn:ngm:class:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:individual:gemini",
+        "@id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:individual:gpt-4",
+        "@id": "urn:ngm:class:gpt-4",
         "label": "GPT 4"
       },
       {

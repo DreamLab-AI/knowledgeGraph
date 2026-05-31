@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:fluid-power-device",
+  "title": "Fluid Power Device",
+  "slug": "fluid-power-device",
+  "public": true,
+  "classIri": "urn:ngm:class:fluid-power-device",
+  "domain": "robotics",
+  "definition": "A fluid power device is a component that transmits or controls power through a pressurised fluid, either an incompressible liquid (hydraulic) or a compressible gas (pneumatic). Such devices convert fluid pressure and flow into mechanical motion and force, or regulate that flow, and include actuators, valves, pumps, and compressors. They are valued in robotics and industrial automation for high force-to-weight ratios and robust operation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:proportional-valve",
+        "label": "Proportional Valve"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

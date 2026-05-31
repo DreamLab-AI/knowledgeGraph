@@ -1,0 +1,4 @@
+- ### Definition
+  - Real-time VFX produces live, interactive visual effects within a frame budget using GPU compute and procedural methods. It is enabled by [[Procedural and Hybrid 4D]] techniques and by [[Particle Systems]].
+- ### Content
+  - Effect authoring tools (e.g. Niagara, VFX Graph) drive GPU particle simulations, vector fields, and shader-based fluids that react to gameplay or performer input. Constrained by per-frame compute, real-time VFX favours approximations and level-of-detail over the physical accuracy of offline simulation, prioritising responsiveness and visual impact.

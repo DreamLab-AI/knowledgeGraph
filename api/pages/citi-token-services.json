@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:a4a8d83836cf520f3b9f9905ed4a2d7280ec51e5c747abbd0a1dae824666e973",
+  "title": "Citi Token Services",
+  "slug": "citi-token-services",
+  "public": true,
+  "classIri": "urn:ngm:class:citi-token-services",
+  "domain": "blockchain",
+  "definition": "A service from Citi that issues tokenised representations of institutional client deposits on a permissioned blockchain to support faster cash management and trade transactions. It operates within the bank's regulated infrastructure rather than on a public network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-finance",
+      "label": "Trade Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trade-finance",
+      "label": "Trade Finance"
+    },
+    {
+      "slug": "https-www-citigroup-com-global-news",
+      "label": "https://www.citigroup.com/global/news"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

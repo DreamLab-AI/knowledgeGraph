@@ -769,6 +769,18 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },
@@ -789,6 +801,10 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
       "slug": "sustainable-consensus",
       "label": "Sustainable Consensus"
     },
@@ -803,6 +819,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
     },
     {
       "slug": "blockchain-core-concepts",

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:digital-democracy",
+  "title": "Digital Democracy",
+  "slug": "digital-democracy",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-democracy",
+  "domain": "governance",
+  "definition": "Digital democracy is the use of digital technologies to broaden and deepen citizen participation in political decision-making, including online deliberation, e-petitions, participatory budgeting, and novel voting mechanisms. It seeks to make governance more transparent, inclusive, and responsive by lowering the barriers to engagement. It encompasses both incremental e-government tools and experimental collective-choice systems such as quadratic voting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:civic-participation",
+        "label": "Civic Participation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:c76f80c7acd7ff92d0b99a31166022eaea0b8e9f3e55c777c0c2096b360b9a69",
+  "title": "Vision Transformers",
+  "slug": "vision-transformers",
+  "public": true,
+  "classIri": "urn:ngm:class:vision-transformers",
+  "domain": "computer-vision",
+  "definition": "Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vision-transformer",
+      "label": "Vision Transformer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

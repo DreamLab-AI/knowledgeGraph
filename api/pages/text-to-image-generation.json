@@ -76,12 +76,24 @@
       "label": "ComfyUI Workflows"
     },
     {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
       "slug": "fooocus",
       "label": "Fooocus"
     },
     {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
       "slug": "inpainting",
       "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
     },
     {
       "slug": "proprietary-image-generation",

@@ -112,6 +112,10 @@
       "label": "Large Language Models"
     },
     {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

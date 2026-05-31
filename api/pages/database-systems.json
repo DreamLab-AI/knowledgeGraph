@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:1d215c8cfe9e7281e74f10091e642b7d9ca34508282e8a036b25757bac439cec",
+  "title": "Database Systems",
+  "slug": "database-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:database-systems",
+  "domain": "distributed-systems",
+  "definition": "Database systems are software platforms that store, organise and retrieve structured data while enforcing consistency, concurrency and durability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-database",
+      "label": "https://en.wikipedia.org/wiki/Database"
+    },
+    {
+      "slug": "https-www-postgresql-org-docs",
+      "label": "https://www.postgresql.org/docs/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "ibm",
+      "label": "IBM"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

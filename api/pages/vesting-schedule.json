@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:f4e6ce0752f742a96aa082b79b8491f88c051875502a00dbe450482bfeef8974",
+  "title": "Vesting Schedule",
+  "slug": "vesting-schedule",
+  "public": true,
+  "classIri": "urn:ngm:class:vesting-schedule",
+  "domain": "blockchain",
+  "definition": "A predefined timetable that releases allocated tokens to recipients gradually over time, often after an initial cliff period, rather than all at once.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token",
+      "label": "Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

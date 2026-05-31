@@ -1,0 +1,4 @@
+- ### Definition
+  - Safety engineering designs systems that avoid harm under normal and fault conditions, the parent discipline of [[Functional Safety]] and [[Reliability Engineering]].
+- ### Content
+  - Practitioners use hazard analysis, fault trees, redundancy, and fail-safe design to drive residual risk to acceptable levels. Its specialised branches address how systems behave under faults and how dependably they sustain correct operation over time.

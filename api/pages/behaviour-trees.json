@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:36a43dc2f06561bd000885132ae82c677ee74084b66d5f04a0f33149f68e02f8",
+  "title": "Behaviour Trees",
+  "slug": "behaviour-trees",
+  "public": true,
+  "classIri": "urn:ngm:class:behaviour-trees",
+  "domain": "robotics",
+  "definition": "Behaviour trees are a model for organising the decision logic of autonomous agents and robots into a tree of tasks and control nodes. They are used in robotics and game artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-control",
+      "label": "Robot Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-behavior-tree-artificial-intelligence-robotics-and-control",
+      "label": "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)"
+    },
+    {
+      "slug": "https-www-behaviortree-dev",
+      "label": "https://www.behaviortree.dev"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

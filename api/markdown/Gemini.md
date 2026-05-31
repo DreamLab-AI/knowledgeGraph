@@ -17,17 +17,17 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:gemini",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:gemini",
+  "@type": "Class",
   "label": "Gemini",
   "definition": "Gemini is Google DeepMind's family of natively multimodal large language models, announced in December 2023 as the successor to PaLM 2, designed from the ground up to reason across text, images, audio, video, and code within a single unified architecture. The Gemini family spans Ultra, Pro, Flash, and Nano capability tiers, enabling deployment from data-centre scale to on-device inference. It directly competes with OpenAI's GPT-4 family and Anthropic Claude as one of the three dominant frontier model lineages.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}],
+  "subClassOf": [{"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:individual:chat-gpt", "label": "ChatGPT"},
-      {"@id": "urn:ngm:individual:anthropic-claude", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:chat-gpt", "label": "ChatGPT"},
+      {"@id": "urn:ngm:class:anthropic-claude", "label": "Anthropic Claude"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "uses": [
@@ -45,8 +45,8 @@ public:: true
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:individual:chat-gpt", "label": "ChatGPT"},
-      {"@id": "urn:ngm:individual:anthropic-claude", "label": "Anthropic Claude"}
+      {"@id": "urn:ngm:class:chat-gpt", "label": "ChatGPT"},
+      {"@id": "urn:ngm:class:anthropic-claude", "label": "Anthropic Claude"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}

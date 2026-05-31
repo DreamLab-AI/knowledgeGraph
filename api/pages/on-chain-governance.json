@@ -67,6 +67,14 @@
       "label": "Decentralized Finance (DeFi)"
     },
     {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
       "slug": "treasury-management",
       "label": "Treasury Management"
     },

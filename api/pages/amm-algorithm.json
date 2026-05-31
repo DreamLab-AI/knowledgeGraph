@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:amm-algorithm",
+  "title": "AMM Algorithm",
+  "slug": "amm-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:amm-algorithm",
+  "domain": "blockchain",
+  "definition": "An AMM Algorithm is the pricing rule of an Automated Market Maker that algorithmically sets exchange rates from the reserves held in a liquidity pool, removing the need for a traditional order book. The canonical form is the constant-product invariant x*y=k, with variants such as constant-sum, stableswap, and concentrated-liquidity curves tuned for different asset pairs. It determines slippage, price impact, and the impermanent loss that liquidity providers bear.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    }
+  ]
+}

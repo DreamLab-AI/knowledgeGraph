@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:dd353311f7c953478aeedb9a0214524e442bc1c7ac694d797440f0790846f293",
+  "title": "Wayve",
+  "slug": "wayve",
+  "public": true,
+  "classIri": "urn:ngm:class:wayve",
+  "domain": "robotics",
+  "definition": "Wayve is a British company developing self-driving technology based on end-to-end machine learning rather than hand-coded rules. It is headquartered in London.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-driving",
+      "label": "Autonomous Driving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "Autonomous Driving"
+    },
+    {
+      "slug": "https-wayve-ai",
+      "label": "https://wayve.ai"
+    },
+    {
+      "slug": "https-wayve-ai-technology",
+      "label": "https://wayve.ai/technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    }
+  ]
+}

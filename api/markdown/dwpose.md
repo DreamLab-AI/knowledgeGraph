@@ -1,0 +1,4 @@
+- ### Definition
+  - DWPose is a high-accuracy whole-body 2D [[Pose Estimation]] model covering body, hand, face, and foot keypoints. Its skeletal output is commonly fed to [[ControlNet and Similar Spatial Conditioning Systems]] for pose-controlled generation.
+- ### Content
+  - DWPose uses a teacher-student distillation scheme to produce dense, robust keypoints in real time. The resulting pose maps act as spatial conditioning signals, letting diffusion models reproduce specific human poses and gestures in synthesised images and video.

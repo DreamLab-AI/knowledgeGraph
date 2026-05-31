@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:62b07dea6983282eff45f2381fce8172f7764fb08702080487adae23ea2101c2",
+  "title": "Mango Markets",
+  "slug": "mango-markets",
+  "public": true,
+  "classIri": "urn:ngm:class:mango-markets",
+  "domain": "metaverse",
+  "definition": "Mango Markets is a decentralised trading platform on Solana offering spot and perpetual markets, notable as the site of a large 2022 exploit that manipulated an oracle price to drain its treasury.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

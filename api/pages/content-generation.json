@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:content-generation",
+  "title": "Content Generation",
+  "slug": "content-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:content-generation",
+  "domain": "ai",
+  "definition": "Content generation is the use of generative models to automatically produce media such as text, images, code, audio, or video from prompts or structured inputs. It relies on models that learn the distribution of training data and sample novel, coherent outputs from it. It is a core application domain of generative AI across publishing, marketing, software, and entertainment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai-domain",
+        "label": "Generative AI Domain"
+      },
+      {
+        "id": "urn:ngm:class:ai-machine-learning",
+        "label": "AI Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-machine-learning",
+      "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
+    }
+  ]
+}

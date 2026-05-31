@@ -1,4 +1,5 @@
 public:: true
+alias:: DigitalOwnership
 
 # Digital Ownership
 ```json-ld

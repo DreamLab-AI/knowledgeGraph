@@ -431,8 +431,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:entertainment-technology",
-      "label": "Entertainment Technology"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
       "@id": "urn:ngm:class:game-development",
@@ -714,7 +714,7 @@ public:: true
         "label": "Unity ML-Agents"
       },
       {
-        "@id": "urn:ngm:individual:unreal-engine",
+        "@id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine"
       }
     ],

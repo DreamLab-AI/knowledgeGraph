@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualCurrency
 
 # Virtual Currency
 ```json-ld

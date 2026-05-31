@@ -12,12 +12,12 @@
       "label": "Navigation and Planning"
     },
     {
-      "id": "urn:ngm:class:cognitive-map",
-      "label": "Cognitive Map"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     },
     {
-      "id": "urn:ngm:class:mobile-robot-navigation",
-      "label": "Mobile Robot Navigation"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "entityType": "Class",

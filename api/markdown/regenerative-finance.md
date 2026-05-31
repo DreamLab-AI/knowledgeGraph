@@ -1,0 +1,4 @@
+- ### Definition
+  - Regenerative finance applies DeFi mechanisms to fund ecological and social restoration, forming a core strand of [[Green Blockchain Initiatives]] and broader [[Sustainability]] efforts.
+- ### Content
+  - ReFi projects tokenise carbon credits, reward verifiable environmental outcomes, and use quadratic and retroactive funding to support public goods. By aligning financial incentives with regeneration, the field aims to make positive externalities economically self-sustaining, though measurement and additionality remain challenges.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:hiroshima-ai-process",
+  "title": "Hiroshima AI Process",
+  "slug": "hiroshima-ai-process",
+  "public": true,
+  "classIri": "urn:ngm:class:hiroshima-ai-process",
+  "domain": "governance",
+  "definition": "The Hiroshima AI Process is a G7-led international initiative, launched in 2023, to develop shared principles and a voluntary code of conduct for organisations developing advanced AI systems. It promotes safe, secure, and trustworthy AI through international cooperation on guardrails for foundation and generative models. The process represents a multilateral, soft-law approach to AI governance complementing national regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia-Pacific Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

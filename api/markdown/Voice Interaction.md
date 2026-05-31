@@ -1,4 +1,5 @@
 public:: true
+alias:: VoiceInteraction
 
 # Voice Interaction
 ```json-ld

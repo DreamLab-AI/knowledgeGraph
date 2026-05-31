@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:open-zeppelin-contracts",
+  "title": "OpenZeppelin Contracts",
+  "slug": "open-zeppelin-contracts",
+  "public": true,
+  "classIri": "urn:ngm:class:open-zeppelin-contracts",
+  "domain": "blockchain",
+  "definition": "OpenZeppelin Contracts is a widely used open-source library of secure, audited, and reusable smart-contract components for Ethereum and EVM-compatible chains. It provides standard implementations of token interfaces such as ERC-20, ERC-721, and ERC-1155, along with access control, upgradeability, and security utilities. The library is a de facto baseline for safe smart-contract development, reducing the risk of common vulnerabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    }
+  ]
+}

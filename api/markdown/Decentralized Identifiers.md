@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0457-decentralized-identifiers
 
 # Decentralized Identifiers
 ```json-ld
@@ -875,12 +876,12 @@ public:: true
       "label": "Cryptographic Primitive"
     },
     {
-      "@id": "urn:ngm:class:cryptographic-identifier",
-      "label": "Cryptographic Identifier"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:identifier",
-      "label": "Identifier"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -1128,7 +1129,7 @@ public:: true
         "label": "Trust over IP Foundation"
       },
       {
-        "@id": "urn:ngm:class:w3-c-did-working-group",
+        "@id": "urn:ngm:class:w-3-c-did-working-group",
         "label": "W3C DID Working Group"
       },
       {

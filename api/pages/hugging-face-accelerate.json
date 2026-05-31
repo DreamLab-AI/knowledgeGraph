@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:hugging-face-accelerate",
+  "title": "Hugging Face Accelerate",
+  "slug": "hugging-face-accelerate",
+  "public": true,
+  "classIri": "urn:ngm:class:hugging-face-accelerate",
+  "domain": "ai",
+  "definition": "Hugging Face Accelerate is an open-source Python library that lets PyTorch training code run unchanged across CPUs, single or multiple GPUs, and TPUs by abstracting device placement and distributed launch. It handles mixed precision, gradient accumulation, and sharded data/model parallelism with minimal boilerplate. Accelerate lowers the barrier to scaling deep-learning training and inference across hardware configurations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

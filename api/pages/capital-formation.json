@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:capital-formation",
+  "title": "Capital Formation",
+  "slug": "capital-formation",
+  "public": true,
+  "classIri": "urn:ngm:class:capital-formation",
+  "domain": "governance",
+  "definition": "Capital formation is the economic and financial process by which savings are channelled into productive investment, raising the stock of capital goods and funding enterprises. In capital markets it refers specifically to the issuance and sale of securities \u2014 equity and debt \u2014 that allow firms to raise funds from investors. Efficient capital formation underpins economic growth and is a central policy objective of securities regulation, which balances investor protection against ease of raising capital.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:capital-markets-domain",
+        "label": "Capital Markets Domain"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

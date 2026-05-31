@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:zigbee2-mqtt",
+  "title": "Zigbee2MQTT",
+  "slug": "zigbee2-mqtt",
+  "public": true,
+  "classIri": "urn:ngm:class:zigbee2-mqtt",
+  "domain": "infrastructure",
+  "definition": "Zigbee2MQTT is an open-source bridge that connects Zigbee smart-home devices to MQTT, allowing them to be controlled independently of any proprietary vendor hub or cloud. Using an inexpensive Zigbee coordinator radio, it translates device messages into MQTT topics with a large database of supported devices. It matters as a vendor-neutral, locally controlled integration path for Zigbee hardware into platforms like Home Assistant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    }
+  ]
+}

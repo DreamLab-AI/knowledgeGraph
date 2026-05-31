@@ -12,8 +12,8 @@
       "label": "AI Infrastructure (Category)"
     },
     {
-      "id": "urn:ngm:class:agent-orchestration-framework",
-      "label": "Agent Orchestration Framework"
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
       "id": "urn:ngm:class:llm-application-framework",
@@ -324,6 +324,14 @@
     {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
     },
     {
       "slug": "prompt-engineering",

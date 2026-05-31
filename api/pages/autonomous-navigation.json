@@ -96,6 +96,10 @@
       "label": "Collision Avoidance"
     },
     {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },
@@ -122,6 +126,10 @@
     {
       "slug": "perception-system",
       "label": "Perception System"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
     },
     {
       "slug": "robot-learning",

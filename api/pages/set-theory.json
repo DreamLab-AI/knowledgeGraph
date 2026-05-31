@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:4489cba90bd90295d90817752bd3c8cd61149bdcbc18c77321051ff210769d6e",
+  "title": "Set Theory",
+  "slug": "set-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:set-theory",
+  "domain": "mathematics",
+  "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    }
+  ]
+}

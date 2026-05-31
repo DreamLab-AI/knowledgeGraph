@@ -87,6 +87,10 @@
       "label": "Consensus Mechanism"
     },
     {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -115,6 +119,10 @@
       "label": "Layer2"
     },
     {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
     },
@@ -141,6 +149,10 @@
     {
       "slug": "value-transfer",
       "label": "Value Transfer"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
     }
   ]
 }

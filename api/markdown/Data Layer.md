@@ -1,4 +1,5 @@
 public:: true
+alias:: DataLayer
 
 # Data Layer
 ```json-ld
@@ -395,8 +396,8 @@ public:: true
       "label": "Architectural Layer"
     },
     {
-      "@id": "urn:ngm:class:software-layer",
-      "label": "Software Layer"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

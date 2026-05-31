@@ -363,8 +363,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:3-d-modelling",
-      "label": "3D Modelling"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     },
     {
       "@id": "urn:ngm:class:simulation",
@@ -548,7 +548,7 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {

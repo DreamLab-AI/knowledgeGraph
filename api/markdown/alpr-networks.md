@@ -1,0 +1,4 @@
+- ### Definition
+  - ALPR Networks are linked Automatic License Plate Recognition camera systems that log vehicle plates with time and location. They are a building block of [[Digital Society Surveillance]], turning isolated sightings into persistent movement records.
+- ### Content
+  - Each node performs detection, character recognition, and metadata tagging, while a backend correlates reads across cameras and operators. The privacy impact comes from aggregation: linking sparse sightings reconstructs travel patterns, and shared commercial and law-enforcement databases extend reach far beyond any single jurisdiction.

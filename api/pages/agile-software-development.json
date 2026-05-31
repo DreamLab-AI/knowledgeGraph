@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:52f52a94fb192c01d46ba135b2f90db6f7a5036905d8405e05d96a3fc5393147",
+  "title": "Agile Software Development",
+  "slug": "agile-software-development",
+  "public": true,
+  "classIri": "urn:ngm:class:agile-software-development",
+  "domain": "metaverse",
+  "definition": "Agile software development is a set of iterative, incremental methods that prioritise working software, close collaboration and adaptation to change over fixed up-front planning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering-domain",
+      "label": "Software Engineering Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-engineering-domain",
+        "label": "Software Engineering Domain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

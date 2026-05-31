@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:657aa2b2bcb448f6d1fb5feb633ff1bee7a3507430fc314061848d675dfc1611",
+  "title": "Traditional Carbon Registry",
+  "slug": "traditional-carbon-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:traditional-carbon-registry",
+  "domain": "metaverse",
+  "definition": "A traditional carbon registry is a centralised database that records the issuance, ownership, transfer and retirement of carbon credits to prevent double counting in carbon markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    },
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Automata theory formalises abstract machines and the languages they accept, underpinning [[Formal Methods Domain]] and providing the mathematical model behind the [[State Machine]].
+- ### Content
+  - The Chomsky hierarchy links automata classes to grammar classes: finite automata recognise regular languages, pushdown automata context-free languages, and Turing machines recursively enumerable languages. These results bound the expressiveness and decidability of computation, informing parsing, verification, and circuit design.

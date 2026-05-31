@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:3853591d81ca2fb6034cc9696fa693e545a6e7b40b1cab4ae91f43c4e05ff775",
+  "title": "Whisper",
+  "slug": "whisper",
+  "public": true,
+  "classIri": "urn:ngm:class:whisper",
+  "domain": "natural-language-processing",
+  "definition": "Whisper is an automatic speech recognition model from OpenAI trained on a large multilingual dataset. It transcribes and translates speech across many languages and is released as open source.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:translation",
+        "label": "Translation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

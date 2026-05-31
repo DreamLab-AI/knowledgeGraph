@@ -75,8 +75,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:system-capability",
-      "label": "System Capability"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     }
   ],
   "relations": {

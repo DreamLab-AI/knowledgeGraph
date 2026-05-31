@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:economic-growth",
+  "title": "Economic Growth",
+  "slug": "economic-growth",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-growth",
+  "domain": "governance",
+  "definition": "Economic Growth is the increase over time in the value of goods and services produced by an economy, typically measured as the rise in real gross domestic product. It is driven by accumulation of capital, growth in the labour force, and improvements in productivity from technology and innovation. Sustained growth is a primary objective of economic policy and a frequently cited benefit of technology adoption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    }
+  ]
+}

@@ -16,8 +16,8 @@
       "label": "Learning from Demonstration"
     },
     {
-      "id": "urn:ngm:class:policy-learning",
-      "label": "Policy Learning"
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     }
   ],
   "entityType": "Class",
@@ -161,7 +161,7 @@
         "label": "Transformer Policies"
       },
       {
-        "id": "urn:ngm:class:vision-language-models",
+        "id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Models"
       },
       {
@@ -252,7 +252,7 @@
         "label": "Vision Language Action Models"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ]
@@ -689,8 +689,20 @@
       "label": "Humanoid Robot"
     },
     {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
     },
     {
       "slug": "robot-learning",

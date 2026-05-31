@@ -12,12 +12,12 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:agentic-capability",
-      "label": "Agentic Capability"
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
-      "id": "urn:ngm:class:language-model-augmentation",
-      "label": "Language Model Augmentation"
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     }
   ],
   "entityType": "Class",
@@ -677,6 +677,10 @@
       "label": "Agents"
     },
     {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },
@@ -705,12 +709,20 @@
       "label": "MS Phi models"
     },
     {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     },
     {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
     },
     {
       "slug": "proprietary-ai-video",

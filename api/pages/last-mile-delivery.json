@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:last-mile-delivery",
+  "title": "Last-Mile Delivery",
+  "slug": "last-mile-delivery",
+  "public": true,
+  "classIri": "urn:ngm:class:last-mile-delivery",
+  "domain": "robotics",
+  "definition": "Last-mile delivery is the final stage of a logistics chain in which goods move from a transport hub or distribution centre to the end recipient. It is typically the most expensive, time-sensitive and operationally complex segment because of fragmented destinations and traffic constraints. It is a primary target for automation through delivery robots, drones and route-optimisation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robotics Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

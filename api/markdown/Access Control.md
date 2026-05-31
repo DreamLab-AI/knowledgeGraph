@@ -1,4 +1,5 @@
 public:: true
+alias:: AccessControl
 
 # Access Control
 ```json-ld
@@ -79,8 +80,8 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:security-mechanism",
-      "label": "Security Mechanism"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {

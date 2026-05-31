@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e7b5486c0239d4b60d86e38a186dcf9f1d720d8887901e48c1e4022a687f9f84",
+  "title": "xDai",
+  "slug": "x-dai",
+  "public": true,
+  "classIri": "urn:ngm:class:x-dai",
+  "domain": "blockchain",
+  "definition": "xDai was the original name for the stable-token chain that became Gnosis Chain, an Ethereum-compatible sidechain using a stablecoin for transaction fees. It now operates under the Gnosis Chain name.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gnosis-chain",
+      "label": "Gnosis Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
+      "slug": "https-www-gnosischain-com",
+      "label": "https://www.gnosischain.com"
+    },
+    {
+      "slug": "https-docs-gnosischain-com",
+      "label": "https://docs.gnosischain.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:agentic-rag",
+  "title": "Agentic RAG",
+  "slug": "agentic-rag",
+  "public": true,
+  "classIri": "urn:ngm:class:agentic-rag",
+  "domain": "ai",
+  "definition": "Agentic RAG is an architecture that augments retrieval-augmented generation with an autonomous agent loop, letting a language model plan, decide when and what to retrieve, issue multiple queries, and verify results before answering. Unlike single-shot RAG, it can route between sources, reformulate queries, and iterate retrieval and reasoning steps until a confidence threshold is met. This improves accuracy on multi-hop and ambiguous questions at the cost of higher latency and orchestration complexity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval-Augmented Generation (RAG)"
+      },
+      {
+        "id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

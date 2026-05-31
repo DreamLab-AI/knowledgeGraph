@@ -109,6 +109,10 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "true-positive-rate",
+      "label": "True Positive Rate"
     }
   ]
 }

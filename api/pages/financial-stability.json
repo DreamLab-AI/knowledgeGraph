@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -63,8 +67,20 @@
       "label": "CBDCs"
     },
     {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
       "slug": "cross-border-compliance",
       "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
     },
     {
       "slug": "regulatory-reporting",

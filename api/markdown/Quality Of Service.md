@@ -1,4 +1,5 @@
 public:: true
+alias:: QualityOfService
 
 # Quality Of Service
 ```json-ld

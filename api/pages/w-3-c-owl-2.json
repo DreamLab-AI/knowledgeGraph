@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:2e638a7e3d28419a39f6f3308304891f832b8c44ce7facc9f9d9a3f069f3697a",
+  "title": "W3C OWL 2",
+  "slug": "w-3-c-owl-2",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-owl-2",
+  "domain": "standards",
+  "definition": "W3C OWL 2 is the Web Ontology Language, a knowledge representation language for authoring ontologies that describe classes, properties and individuals on the Web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    }
+  ]
+}

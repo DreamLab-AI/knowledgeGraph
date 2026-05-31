@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:87d0f6803703c242cab9941870704ae02fd5d9b8b0985baf111a6ee70fc28bd3",
+  "title": "Constant Product Formula",
+  "slug": "constant-product-formula",
+  "public": true,
+  "classIri": "urn:ngm:class:constant-product-formula",
+  "domain": "blockchain",
+  "definition": "The constant product formula is the pricing rule used by many automated market makers in which the product of the two pooled token reserves is held constant during trades.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

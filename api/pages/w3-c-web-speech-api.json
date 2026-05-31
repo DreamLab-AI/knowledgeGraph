@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:w3-c-web-speech-api",
+  "title": "W3C Web Speech API",
+  "slug": "w3-c-web-speech-api",
+  "public": true,
+  "classIri": "urn:ngm:class:w3-c-web-speech-api",
+  "domain": "metaverse",
+  "definition": "The W3C Web Speech API is a browser interface specification that exposes speech recognition (speech-to-text) and speech synthesis (text-to-speech) to web applications through standardised JavaScript objects. It lets pages capture spoken input and produce spoken output without bespoke plugins, underpinning voice-driven and accessibility features on the web. Implementation depth and recognition backends vary across browsers, with some delegating recognition to cloud services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "id": "urn:ngm:class:real-time-translation",
+        "label": "Real-Time Translation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

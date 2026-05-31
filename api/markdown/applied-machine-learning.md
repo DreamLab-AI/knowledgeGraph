@@ -1,0 +1,4 @@
+- ### Definition
+  - Applied Machine Learning is the deployment-focused use of ML to solve domain problems, from demand forecasting to [[Logistics Optimization]]. It relies on [[Cross-Validation]] and similar methods to estimate generalization before models reach production.
+- ### Content
+  - The discipline prioritizes the full lifecycle: framing the problem, sourcing and cleaning data, engineering features, validating honestly, and monitoring models in production. Success is judged by business and operational impact under real constraints rather than benchmark scores, so robustness, maintainability, and clear evaluation often matter more than marginal accuracy gains.

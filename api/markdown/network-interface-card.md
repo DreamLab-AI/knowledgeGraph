@@ -1,0 +1,4 @@
+- ### Definition
+  - A network interface card is the hardware that attaches a device to a network and drives the [[Physical Layer]] and data-link functions, including signal encoding and MAC addressing.
+- ### Content
+  - NICs may be wired (Ethernet) or wireless, and high-performance variants (SmartNICs and DPUs) embed programmable processors to offload networking, storage, and security tasks. By handling framing, error detection, and media access in hardware, the NIC frees the host CPU and is essential to throughput in data-centre and edge deployments.

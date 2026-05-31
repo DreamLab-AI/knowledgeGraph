@@ -1,0 +1,4 @@
+- ### Definition
+  - Nuclear energy is low-carbon baseload electricity produced from controlled fission. It is a component of the broader [[Energy and Power]] domain.
+- ### Content
+  - Reactors convert fission heat into steam to drive turbines, delivering steady output with very low operational emissions. Interest is growing in small modular reactors to reduce capital risk and siting constraints, particularly for powering energy-intensive workloads such as data centres, while waste disposal and public acceptance remain the principal barriers.

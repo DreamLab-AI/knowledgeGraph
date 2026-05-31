@@ -70,6 +70,22 @@
     {
       "slug": "human-capture-and-recognition",
       "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
     }
   ]
 }

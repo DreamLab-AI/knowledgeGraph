@@ -79,8 +79,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:digital-identity-creation",
-      "label": "Digital Identity Creation"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "relations": {

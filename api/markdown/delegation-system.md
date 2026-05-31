@@ -1,0 +1,4 @@
+- ### Definition
+  - A delegation system lets holders assign their voting power to representatives, a core part of [[Decentralized Governance]]. It is also a building block of [[Tokenomics Governance]] models that weight influence by token holdings.
+- ### Content
+  - Delegation systems define how authority is granted, weighted, and revoked, often via an on-chain delegation registry. They improve voter turnout and decision quality but introduce risks of delegate capture, voter apathy, and concentration of power among a few large delegates.

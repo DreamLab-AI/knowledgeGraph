@@ -1,4 +1,5 @@
 public:: true
+alias:: Control Systems
 
 # Control System
 ```json-ld
@@ -169,10 +170,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:feedback-systems",
-      "label": "Feedback Systems"
     },
     {
       "@id": "urn:ngm:class:robotic-system",

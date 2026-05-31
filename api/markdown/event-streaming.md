@@ -1,0 +1,4 @@
+- ### Definition
+  - Event streaming continuously delivers ordered event records from producers to consumers in real time, enabled by a [[Message Broker]] and feeding pipelines that depend on [[Metadata Management]].
+- ### Content
+  - Events are persisted as an append-only log, decoupling producers from consumers and allowing replay. This model powers real-time analytics and event-driven microservices, with brokers like Kafka providing durable, partitioned delivery at scale.

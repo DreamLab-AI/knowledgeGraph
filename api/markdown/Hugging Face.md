@@ -1,4 +1,5 @@
 public:: true
+alias:: HuggingFace
 
 # hugging face
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: CensorshipResistance, censorship-resistance
 
 # Censorship Resistance
 ```json-ld

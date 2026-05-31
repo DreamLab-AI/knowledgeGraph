@@ -68,6 +68,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
     }
   ]
 }

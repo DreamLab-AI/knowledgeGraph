@@ -64,6 +64,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
     }

@@ -1,4 +1,5 @@
 public:: true
+alias:: InfrastructureDomain
 
 # Infrastructure Domain
 ```json-ld

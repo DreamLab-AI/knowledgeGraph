@@ -117,6 +117,10 @@
       "label": "51% Attack"
     },
     {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
       "slug": "bitcoin-centralisation-risks",
       "label": "Bitcoin Centralisation Risks"
     },
@@ -135,6 +139,10 @@
     {
       "slug": "bitcoin-mining",
       "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "f-2-pool",
+      "label": "F2Pool"
     },
     {
       "slug": "proof-of-work",

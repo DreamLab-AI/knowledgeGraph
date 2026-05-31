@@ -89,6 +89,30 @@
     {
       "slug": "computer-hardware",
       "label": "Computer Hardware"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
+      "slug": "nvidia-h-100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
     }
   ]
 }

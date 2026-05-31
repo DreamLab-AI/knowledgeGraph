@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:b5c2f77a4f3cf8ced9df9bea5003765006bec2f3e713ca13ee4144f67843c759",
+  "title": "Penetration Testing",
+  "slug": "penetration-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:penetration-testing",
+  "domain": "cryptographic",
+  "definition": "An authorised, simulated attack on a system or network carried out to identify and assess exploitable security weaknesses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    },
+    {
+      "slug": "vulnerability-scanner",
+      "label": "Vulnerability Scanner"
+    }
+  ]
+}

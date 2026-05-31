@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:6c0a812752460d31d26bf4a338913faa7416f5b993ae6fd525ea1dbd4223456e",
+  "title": "OAuth",
+  "slug": "oauth",
+  "public": true,
+  "classIri": "urn:ngm:class:oauth",
+  "domain": "cryptographic",
+  "definition": "An open standard for delegated authorisation that allows a user to grant a third-party application limited access to resources without sharing their credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authorisation",
+      "label": "Authorisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

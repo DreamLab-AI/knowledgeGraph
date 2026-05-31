@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:task-decomposition",
+  "title": "Task Decomposition",
+  "slug": "task-decomposition",
+  "public": true,
+  "classIri": "urn:ngm:class:task-decomposition",
+  "domain": "ai",
+  "definition": "Task decomposition is the process of breaking a complex goal into smaller, ordered sub-tasks that can be planned, delegated, and executed independently. In AI agent systems it lets a model or orchestrator turn an open-ended request into a tractable plan, often assigning sub-tasks to specialised agents or tools. Effective decomposition improves reliability, parallelism, and the ability to recover from partial failure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

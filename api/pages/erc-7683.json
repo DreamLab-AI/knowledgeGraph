@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:3324b3bdcc2136333bf37d226fe3ddc2fd39033bd2bc003bd94b0e2bdddae8a7",
+  "title": "ERC-7683",
+  "slug": "erc-7683",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-7683",
+  "domain": "standards",
+  "definition": "ERC-7683 is an Ethereum standard proposing a common interface for cross-chain intents and order execution between networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

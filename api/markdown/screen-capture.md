@@ -1,0 +1,4 @@
+- ### Definition
+  - Screen capture acquires display contents as images or frames; it supplies visual input to [[Computer Use and Browser Agents]] and is the underlying mechanism generalised by [[Screen Recording]].
+- ### Content
+  - Capture pipelines read framebuffers or composited surfaces through OS or browser APIs, optionally constrained to a single window or region. For AI agents, captured frames are paired with accessibility metadata to ground grounding and action selection, while permission prompts and privacy indicators mitigate misuse.

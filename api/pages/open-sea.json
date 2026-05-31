@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:c5c3d96670b55afee25d4c5583b929bf9fb1b3c2e67e9bcf8e95d3dd5ba2862c",
+  "title": "OpenSea",
+  "slug": "open-sea",
+  "public": true,
+  "classIri": "urn:ngm:class:open-sea",
+  "domain": "blockchain",
+  "definition": "OpenSea is a marketplace for buying, selling, and trading non-fungible tokens across multiple blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nft-marketplace",
+      "label": "NFT Marketplace"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

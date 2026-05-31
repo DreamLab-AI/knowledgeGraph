@@ -431,8 +431,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:generalisation-theory",
-      "label": "Generalisation Theory"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
       "@id": "urn:ngm:class:model-evaluation",

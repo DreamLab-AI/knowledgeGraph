@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:a3586453f8314d1a41622ec7c183ef0e550e7daf44a6f97f0a4e3c002d281895",
+  "title": "Cryptographic Layer",
+  "slug": "cryptographic-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-layer",
+  "domain": "cryptographic",
+  "definition": "The Cryptographic Layer is the stratum that provides confidentiality, integrity, and authenticity primitives to the layers above. It sits above the Hardware Layer, which supplies entropy and acceleration, and below identity, consensus, and security strata that depend on its guarantees. It contains ciphers, hash functions, signature schemes, and key management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-layer",
+        "label": "Hardware Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-layer",
+        "label": "Identity Layer"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "nist-national-institute-of-standards-and-technology",
+      "label": "NIST (National Institute of Standards and Technology)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "identifier-layer",
+      "label": "Identifier Layer"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

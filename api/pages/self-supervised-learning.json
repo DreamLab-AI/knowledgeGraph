@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -70,6 +70,10 @@
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
     },
     {
       "slug": "imitation-learning",

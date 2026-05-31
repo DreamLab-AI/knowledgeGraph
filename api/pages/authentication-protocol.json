@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:b4e41fb9e0b0540239ade30ec1bb022a0104f12ec08a1b9f4e2364991972b29d",
+  "title": "Authentication Protocol",
+  "slug": "authentication-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:authentication-protocol",
+  "domain": "cryptographic",
+  "definition": "A defined sequence of exchanges through which one party proves its identity to another over a communication channel.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

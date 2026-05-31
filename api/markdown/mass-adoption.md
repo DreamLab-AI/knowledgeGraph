@@ -1,0 +1,4 @@
+- ### Definition
+  - Mass adoption is the transition of a technology into mainstream, widespread use. For decentralised systems it is enabled by [[Blockchain Scalability]] and amplified by [[Network Effects]].
+- ### Content
+  - The path crosses the chasm between early adopters and the pragmatic majority, where reliability, low cost, and intuitive interfaces matter more than novelty. In blockchain, abstraction of keys and gas, fiat on-ramps, and regulatory clarity are recurring prerequisites cited for crossing into mass use.

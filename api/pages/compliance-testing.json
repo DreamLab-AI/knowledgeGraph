@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:compliance-testing",
+  "title": "Compliance Testing",
+  "slug": "compliance-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:compliance-testing",
+  "domain": "governance",
+  "definition": "Compliance testing is the systematic verification that a product, system, or process conforms to a defined standard, specification, or regulatory requirement. It produces objective, repeatable measurements that are compared against documented acceptance criteria to determine pass or fail status. It is a core component of validation and certification workflows, providing the evidentiary basis for conformity claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:validation-process",
+        "label": "Validation Process"
+      },
+      {
+        "id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

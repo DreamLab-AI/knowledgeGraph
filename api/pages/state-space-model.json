@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:73cbfefcd4d4bc1f5cc9907d818a1e542119bb349547e73892ca48357a5258af",
+  "title": "State Space Model",
+  "slug": "state-space-model",
+  "public": true,
+  "classIri": "urn:ngm:class:state-space-model",
+  "domain": "deep-learning",
+  "definition": "A class of sequence model that represents a system through a latent state evolving over time according to linear dynamics, recently adapted as an efficient alternative to attention for long sequences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    }
+  ]
+}

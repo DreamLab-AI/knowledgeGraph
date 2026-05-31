@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:d77fd08149b6a527c728a30b1f96f980a84b1c0f4bc8fa390599efb201b75668",
+  "title": "Gradient Checkpointing",
+  "slug": "gradient-checkpointing",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-checkpointing",
+  "domain": "machine-learning",
+  "definition": "A memory-saving technique for training neural networks that stores only a subset of intermediate activations during the forward pass and recomputes the rest during the backward pass. It trades extra computation for reduced memory use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:backpropagation",
+      "label": "Backpropagation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

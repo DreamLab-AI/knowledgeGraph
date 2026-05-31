@@ -395,8 +395,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:decentralised-ai",
-      "label": "Decentralised AI"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
       "@id": "urn:ngm:class:federated-learning",

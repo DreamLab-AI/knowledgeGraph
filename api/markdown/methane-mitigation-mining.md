@@ -1,0 +1,4 @@
+- ### Definition
+  - Methane mitigation mining co-locates Bitcoin miners with vented or flared methane, burning the gas for power. It is a specific form of [[Stranded Energy Monetisation]] frequently cited in [[Bitcoin Environmental Issues]] discussions.
+- ### Content
+  - Combusting methane converts it to CO2, sharply reducing its warming impact, while the miner provides a buyer of last resort for gas with no pipeline access. Operators deploy modular containerised rigs that follow the gas, ramping load up or down as supply varies.

@@ -1,4 +1,5 @@
 public:: true
+alias:: RigidBody
 
 # Rigid Body
 ```json-ld

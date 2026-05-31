@@ -1,0 +1,4 @@
+- ### Definition
+  - GPU rendering uses the parallel cores of a graphics card to compute images; it is required by [[Animation Software]] for fast viewport and final-frame output and by [[Unreal Engine]] for real-time interactive rendering.
+- ### Content
+  - Real-time GPU rendering rasterises geometry and runs programmable shaders per frame, while modern hardware adds dedicated ray-tracing and tensor cores for global illumination and AI denoising. Offline GPU renderers trade interactivity for physical accuracy, accelerating path tracing far beyond CPU-only pipelines. Throughput depends on memory bandwidth, VRAM capacity, and effective parallelism, making scene optimisation and level-of-detail management important.

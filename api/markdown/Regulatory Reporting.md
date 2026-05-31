@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0486-regulatory-reporting
 
 # Regulatory Reporting
 ```json-ld
@@ -335,8 +336,8 @@ public:: true
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:supervisory-technology",
-      "label": "Supervisory Technology"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "@id": "urn:ngm:class:financial-services",

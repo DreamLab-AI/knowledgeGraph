@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:individual:bitcoin", "label": "Bitcoin"},
+      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
     ]

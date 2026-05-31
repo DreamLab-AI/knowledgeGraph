@@ -1,4 +1,5 @@
 public:: true
+alias:: BlockchainNetwork
 
 # Blockchain Network
 ```json-ld
@@ -515,12 +516,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:fault-tolerant-system",
-      "label": "Fault Tolerant System"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "@id": "urn:ngm:class:overlay-network",
-      "label": "Overlay Network"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -746,11 +747,11 @@ public:: true
         "label": "Polkadot"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -762,7 +763,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:individual:solana",
+        "@id": "urn:ngm:class:solana",
         "label": "Solana"
       }
     ],

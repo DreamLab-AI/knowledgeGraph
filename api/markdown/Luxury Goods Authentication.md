@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0444-luxury-goods-authentication
 
 # Luxury Goods Authentication
 ```json-ld

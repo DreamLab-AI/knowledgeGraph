@@ -343,8 +343,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:image-analysis",
-      "label": "Image Analysis"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
       "@id": "urn:ngm:class:object-recognition",
@@ -536,7 +536,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:pddl",
+  "title": "PDDL",
+  "slug": "pddl",
+  "public": true,
+  "classIri": "urn:ngm:class:pddl",
+  "domain": "ai",
+  "definition": "The Planning Domain Definition Language (PDDL) is a standardised formal language for encoding automated-planning problems as domains and problem instances. A domain specifies predicates and actions with preconditions and effects, while a problem instance defines objects, an initial state, and a goal. PDDL provides a common input format that lets generic planners compute action sequences, and it underpins much of classical AI task planning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

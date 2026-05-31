@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:paris-agreement-article-6",
+  "title": "Paris Agreement Article 6",
+  "slug": "paris-agreement-article-6",
+  "public": true,
+  "classIri": "urn:ngm:class:paris-agreement-article-6",
+  "domain": "governance",
+  "definition": "Paris Agreement Article 6 is the provision of the 2015 Paris Agreement that establishes mechanisms for countries to cooperate in meeting emissions-reduction targets, including international transfer of mitigation outcomes and a centralized crediting market. It defines accounting rules to prevent double-counting when carbon reductions are traded between parties. Article 6 provides the international legal basis for cross-border carbon markets and corresponding adjustments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    }
+  ]
+}

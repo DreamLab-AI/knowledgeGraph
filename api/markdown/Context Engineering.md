@@ -451,12 +451,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:agent-engineering",
-      "label": "Agent Engineering"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
-      "@id": "urn:ngm:class:ai-engineering",
-      "label": "AI Engineering"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -590,7 +590,7 @@ public:: true
         "label": "Reranking"
       },
       {
-        "@id": "urn:ngm:class:vector-embeddings",
+        "@id": "urn:ngm:class:vector-embedding",
         "label": "Vector Embeddings"
       },
       {

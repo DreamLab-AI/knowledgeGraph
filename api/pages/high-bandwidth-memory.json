@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:high-bandwidth-memory",
+  "title": "High Bandwidth Memory",
+  "slug": "high-bandwidth-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:high-bandwidth-memory",
+  "domain": "infrastructure",
+  "definition": "High Bandwidth Memory (HBM) is a 3D-stacked DRAM technology that places multiple memory dies on a silicon interposer adjacent to a processor, delivering very wide buses and high memory bandwidth at low power per bit. It is the standard memory for AI accelerators and GPUs where feeding compute units with data is the dominant bottleneck. HBM enables training and inference of large models that would otherwise be memory-bandwidth bound.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    }
+  ]
+}

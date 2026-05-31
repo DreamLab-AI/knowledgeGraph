@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:stable-diffusion",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:stable-diffusion",
+  "@type": "Class",
   "label": "Stable Diffusion",
   "definition": "Stable Diffusion is an open-source latent diffusion model developed by Stability AI in collaboration with CompVis and Runway, released in 2022, capable of generating high-quality images from text prompts. It operates in a compressed latent space rather than pixel space, dramatically reducing computational requirements compared to earlier diffusion models. The model supports text-to-image, image-to-image, and inpainting tasks, and has become the foundation for a large ecosystem of fine-tuned variants and extension tools.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}],
+  "subClassOf": [{"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
@@ -38,7 +38,7 @@ public:: true
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
     ],
     "enables": [
-      {"@id": "urn:ngm:individual:ip-adapter", "label": "IP-Adapter"},
+      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
       {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Content generation is the automatic production of media by generative models, the flagship capability of the [[Generative AI Domain]] within [[AI Machine Learning]].
+- ### Content
+  - Modern systems use transformer language models, diffusion models, and multimodal architectures to synthesise output conditioned on prompts, examples, or other media. Practical deployment hinges on controllability, factual grounding, provenance labelling, and managing intellectual-property and safety risks.

@@ -99,7 +99,7 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:tc-0010-synchronous-collaboration",
+      "@id": "urn:ngm:class:synchronous-collaboration",
       "label": "TC-0010-Synchronous-Collaboration"
     }
   ],
@@ -118,7 +118,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:tele-150-webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "TELE-150-webrtc"
       }
     ]

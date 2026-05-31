@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:f0915fc92aca02c58873302973fa6c2a7f7943832a70831c92823a2f7928c525",
+  "title": "Payment Protocol",
+  "slug": "payment-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-protocol",
+  "domain": "distributed-systems",
+  "definition": "A payment protocol is a defined set of rules and message formats governing how value transfer is initiated, authorised and settled between parties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocols",
+      "label": "Communication Protocols"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocols",
+        "label": "Cryptographic Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-payment-system",
+      "label": "https://en.wikipedia.org/wiki/Payment_system"
+    },
+    {
+      "slug": "https-www-bis-org-cpmi",
+      "label": "https://www.bis.org/cpmi/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    }
+  ]
+}

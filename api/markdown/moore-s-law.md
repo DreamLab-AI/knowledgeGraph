@@ -1,0 +1,4 @@
+- ### Definition
+  - Moore's Law observes that transistor counts on a chip double roughly every two years, yielding exponential compute gains. It is frequently invoked in discussions of technological [[Convergence]].
+- ### Content
+  - The trend underpinned decades of falling cost-per-transistor and rising performance that enabled modern computing and AI. As atomic-scale and power-density limits bite, the industry now relies on heterogeneous accelerators, chiplets, and 3D packaging rather than pure dimensional scaling to sustain effective improvement.

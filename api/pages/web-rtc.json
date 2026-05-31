@@ -12,12 +12,12 @@
       "label": "Protocol and Infrastructure"
     },
     {
-      "id": "urn:ngm:class:peer-to-peer-network-protocol",
-      "label": "Peer-to-Peer Network Protocol"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "id": "urn:ngm:class:real-time-communication-protocol",
-      "label": "Real-Time Communication Protocol"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -350,6 +350,10 @@
       "label": "Real Time"
     },
     {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },
@@ -368,6 +372,10 @@
     {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
+    },
+    {
+      "slug": "tele-151-real-time-protocols",
+      "label": "TELE-151-real-time-protocols"
     },
     {
       "slug": "telecollaboration-and-telepresence",

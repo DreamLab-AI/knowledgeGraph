@@ -63,8 +63,20 @@
       "label": "Fault Tolerance"
     },
     {
+      "slug": "monitoring",
+      "label": "Monitoring"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
       "slug": "predictive-maintenance",
       "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
     }
   ]
 }

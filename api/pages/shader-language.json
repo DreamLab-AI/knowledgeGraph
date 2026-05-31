@@ -67,6 +67,10 @@
       "label": "Graphics API"
     },
     {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
       "slug": "procedural-texture",
       "label": "Procedural Texture"
     },

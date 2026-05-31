@@ -1,0 +1,4 @@
+- ### Definition
+  - Optimistic Verification presumes claims valid pending a fraud-proof challenge window, a model that a [[Cross-Chain Bridge]] uses to achieve [[Blockchain Interoperability]] with high throughput.
+- ### Content
+  - Watchers monitor asserted state transitions and submit fraud proofs to revert invalid ones during the dispute period. By validating only contested claims, the scheme reduces verification cost at the price of delayed finality, a trade-off central to optimistic rollups and bridges.

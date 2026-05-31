@@ -147,6 +147,10 @@
       "label": "Model Performance"
     },
     {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
       "slug": "precision",
       "label": "Precision"
     },
@@ -157,6 +161,14 @@
     {
       "slug": "recall",
       "label": "Recall"
+    },
+    {
+      "slug": "specificity",
+      "label": "Specificity"
+    },
+    {
+      "slug": "true-positive-rate",
+      "label": "True Positive Rate"
     }
   ]
 }

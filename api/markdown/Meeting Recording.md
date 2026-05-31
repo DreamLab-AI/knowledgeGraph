@@ -291,8 +291,8 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:meeting-documentation",
-      "label": "Meeting Documentation"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
       "@id": "urn:ngm:class:digital-workplace-platform",
@@ -430,7 +430,7 @@ public:: true
         "label": "Metadata Management"
       },
       {
-        "@id": "urn:ngm:individual:open-ai-whisper",
+        "@id": "urn:ngm:class:open-ai-whisper",
         "label": "Open AI Whisper"
       },
       {

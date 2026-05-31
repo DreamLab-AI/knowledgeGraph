@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:5e4d69ee4387a036bb1887a0abe1c9c80b7334e865319bba6b7b4b561117cc50",
+  "title": "BTC",
+  "slug": "btc",
+  "public": true,
+  "classIri": "urn:ngm:class:btc",
+  "domain": "blockchain",
+  "definition": "The ticker for bitcoin, the native unit of the Bitcoin network and the first widely adopted decentralised digital currency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

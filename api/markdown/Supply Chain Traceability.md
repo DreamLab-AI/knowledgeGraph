@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
 
 # Supply Chain Traceability
 ```json-ld

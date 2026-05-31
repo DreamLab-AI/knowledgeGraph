@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-representation",
+  "title": "User Representation",
+  "slug": "user-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:user-representation",
+  "domain": "metaverse",
+  "definition": "User representation is the visual and behavioural embodiment of a person within a virtual environment, encompassing avatars, presence indicators and the mapping of real movement onto a digital persona. It conveys identity, expression and social presence, allowing others to perceive and interact with the user in shared spaces. It is a defining element of avatar systems and virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

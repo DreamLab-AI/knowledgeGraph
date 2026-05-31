@@ -1,0 +1,4 @@
+- ### Definition
+  - Decentralized trading lets participants swap tokens directly via on-chain contracts rather than through a custodial venue. It is the user-facing activity made possible by [[Decentralized Exchange (DEX)]] infrastructure and [[Automated Market Making]] pricing.
+- ### Content
+  - Trades execute against liquidity pools (AMMs) or on-chain order books, settling atomically with self-custody throughout. Trade-offs include slippage, miner/validator extractable value (MEV), and gas costs, balanced against censorship resistance and the absence of counterparty custody risk.

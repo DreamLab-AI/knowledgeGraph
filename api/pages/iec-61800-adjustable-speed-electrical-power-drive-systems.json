@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:00f622a5a813ca6a1c9f10f8bf91d22ea1d5f028055733d711b9bea8e11117fb",
+  "title": "IEC 61800 Adjustable Speed Electrical Power Drive Systems",
+  "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
+  "domain": "standards",
+  "definition": "An IEC standard series covering adjustable speed electrical power drive systems, addressing ratings, electromagnetic compatibility, functional safety and energy efficiency. It applies to power drive systems used to control motor speed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

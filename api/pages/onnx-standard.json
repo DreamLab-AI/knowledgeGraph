@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:7c0af9bcd6ce2c8e1f6f9a0171dad1a5bd9f189151a85e03435e393940d22ae3",
+  "title": "ONNX Standard",
+  "slug": "onnx-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:onnx-standard",
+  "domain": "metaverse",
+  "definition": "The ONNX standard defines an open format for representing machine learning models as a computation graph of typed operators, enabling models to move between training and inference frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    }
+  ]
+}

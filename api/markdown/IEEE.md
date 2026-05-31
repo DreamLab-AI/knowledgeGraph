@@ -1,4 +1,5 @@
 public:: true
+alias:: IEEE (Institute of Electrical and Electronics Engineers)
 
 # IEEE
 ```json-ld

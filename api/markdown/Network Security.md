@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkSecurity
 
 # Network Security
 ```json-ld

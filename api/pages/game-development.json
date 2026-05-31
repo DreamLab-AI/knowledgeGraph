@@ -77,6 +77,10 @@
     {
       "slug": "universal-scene-description",
       "label": "Universal Scene Description"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
     }
   ]
 }

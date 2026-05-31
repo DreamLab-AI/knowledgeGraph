@@ -1,4 +1,5 @@
 public:: true
+alias:: LoRA, LoRa
 
 # Lo RA
 ```json-ld

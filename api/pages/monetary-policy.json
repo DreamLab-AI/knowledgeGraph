@@ -100,12 +100,36 @@
       "label": "Digital Asset Risks"
     },
     {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
     },
     {
+      "slug": "fsa",
+      "label": "FSA"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    },
+    {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "slug": "reserve-asset",
+      "label": "Reserve Asset"
     }
   ]
 }

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:f383e2e43bf4dcb05e45052eb515078444ca4fb373b3a891d26ca9a52bf70997",
+  "title": "EU HLEG AI",
+  "slug": "eu-hleg-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-hleg-ai",
+  "domain": "artificial-intelligence",
+  "definition": "The European Commission High-Level Expert Group on Artificial Intelligence, an advisory body convened in 2018 that produced the Ethics Guidelines for Trustworthy AI and related policy recommendations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-board",
+      "label": "AI Ethics Board"
+    },
+    {
+      "slug": "ai-trustworthiness-dimensions",
+      "label": "AI Trustworthiness Dimensions"
+    },
+    {
+      "slug": "human-agency-and-oversight",
+      "label": "Human Agency and Oversight"
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    },
+    {
+      "slug": "technical-robustness-and-safety",
+      "label": "Technical Robustness and Safety"
+    },
+    {
+      "slug": "trustworthy-ai-framework",
+      "label": "Trustworthy AI Framework"
+    }
+  ]
+}

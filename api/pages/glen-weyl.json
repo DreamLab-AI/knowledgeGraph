@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:33529e51ab40c77ccff1903c7a2c72be55090121a03a88e2491eea1bb5d8e2e1",
+  "title": "Glen Weyl",
+  "slug": "glen-weyl",
+  "public": true,
+  "classIri": "urn:ngm:class:glen-weyl",
+  "domain": "economics",
+  "definition": "Glen Weyl is an economist known for work on mechanism design, quadratic voting and quadratic funding, and the ideas in the book Radical Markets. He founded the RadicalxChange movement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    }
+  ]
+}

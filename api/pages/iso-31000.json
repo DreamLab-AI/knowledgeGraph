@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:24f80c86ef4671ea2d90e7d25c21abeec8c40ca8c83738bdcf2f34f94e75dd9c",
+  "title": "ISO 31000",
+  "slug": "iso-31000",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-31000",
+  "domain": "standards",
+  "definition": "An ISO standard providing principles and guidelines for risk management applicable to organisations of any type or size. It describes a framework and process for managing risk rather than certifiable requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    }
+  ]
+}

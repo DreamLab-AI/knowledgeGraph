@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:3aecc1eacdd7e08032f2b3466f96bd5e2495995ba9c2d8be103badb54dca6093",
+  "title": "BC-0442-certification-and-compliance",
+  "slug": "bc-0442-certification-and-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-0442-certification-and-compliance",
+  "domain": "blockchain",
+  "definition": "Certification and compliance in blockchain refers to the processes by which systems, service providers and tokens are assessed against technical standards and legal requirements, and formally attested as meeting them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    },
+    {
+      "slug": "waste-management",
+      "label": "Waste Management"
+    }
+  ]
+}

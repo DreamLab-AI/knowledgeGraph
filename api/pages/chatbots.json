@@ -208,15 +208,15 @@
         "label": "Voice Interfaces"
       },
       {
-        "id": "urn:ngm:individual:chat-gpt",
+        "id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "id": "urn:ngm:individual:claude",
+        "id": "urn:ngm:class:claude",
         "label": "Claude"
       },
       {
-        "id": "urn:ngm:individual:gemini",
+        "id": "urn:ngm:class:gemini",
         "label": "Gemini"
       }
     ]

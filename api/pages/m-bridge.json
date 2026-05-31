@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:m-bridge",
+  "title": "M-Bridge",
+  "slug": "m-bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:m-bridge",
+  "domain": "blockchain",
+  "definition": "mBridge (Project mBridge) is a multi-central-bank digital currency platform built on distributed ledger technology to enable real-time, cross-border, multi-currency payments and foreign-exchange settlement. Developed by the BIS Innovation Hub with central banks including those of China, Hong Kong, Thailand, and the UAE, it lets participating institutions transact wholesale CBDCs on a shared ledger. It aims to reduce cost, latency, and intermediary dependence in correspondent banking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

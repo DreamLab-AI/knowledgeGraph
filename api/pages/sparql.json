@@ -83,6 +83,14 @@
       "label": "Metadata Management"
     },
     {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
     }

@@ -81,6 +81,10 @@
     {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
     }
   ]
 }

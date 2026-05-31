@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:feedback-sensor",
+  "title": "Feedback Sensor",
+  "slug": "feedback-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:feedback-sensor",
+  "domain": "robotics",
+  "definition": "A feedback sensor is a transducer that measures the actual state of an actuator or controlled system, such as position, velocity, force, or current, and reports it back to a controller to close the control loop. By comparing the measured value with the commanded reference, the controller can correct errors and reject disturbances. Encoders, resolvers, tachometers, and load cells are common feedback sensors in servo and motion-control systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    }
+  ]
+}

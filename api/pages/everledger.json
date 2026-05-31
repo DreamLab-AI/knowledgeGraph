@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e6e3dbd4f83fe339d793b67402c1148014bf69b45f19e6a696a42c33ffd53396",
+  "title": "Everledger",
+  "slug": "everledger",
+  "public": true,
+  "classIri": "urn:ngm:class:everledger",
+  "domain": "blockchain",
+  "definition": "A technology company that built a blockchain-based registry for tracking the provenance of high-value physical assets such as diamonds and gemstones. The registry links a unique digital record to each physical item to support authenticity and ownership claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "https-everledger-io",
+      "label": "https://everledger.io/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conflict-mineral-tracking",
+      "label": "Conflict Mineral Tracking"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

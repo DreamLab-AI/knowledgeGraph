@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:66bfb77d8762eb0ea3d6e0f5a290489f24ba584718435ebed15d24336bcf8962",
+  "title": "LLM Orchestration",
+  "slug": "llm-orchestration",
+  "public": true,
+  "classIri": "urn:ngm:class:llm-orchestration",
+  "domain": "natural-language-processing",
+  "definition": "The coordination of multiple calls to one or more large language models, together with tools, retrieval and control logic, to accomplish a task that a single prompt cannot reliably handle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    }
+  ]
+}

@@ -79,6 +79,10 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },
@@ -97,6 +101,10 @@
     {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
     },
     {
       "slug": "context-engineering",
@@ -119,8 +127,24 @@
       "label": "GPTs and Custom Assistants"
     },
     {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
     },
     {
       "slug": "lang-chain",
@@ -129,6 +153,14 @@
     {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
     },
     {
       "slug": "prompt-engineering",
@@ -149,6 +181,14 @@
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

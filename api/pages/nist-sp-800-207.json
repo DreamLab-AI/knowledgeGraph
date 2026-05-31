@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:1cbd2e153d506ebba65b2abd1219092d9df9d4f5709d6db445900250a4b86f62",
+  "title": "NIST SP 800-207",
+  "slug": "nist-sp-800-207",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-sp-800-207",
+  "domain": "standards",
+  "definition": "A NIST Special Publication describing zero trust architecture, a security model that treats no implicit trust based on network location. It defines concepts, components and deployment approaches for zero trust.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

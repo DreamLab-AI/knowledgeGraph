@@ -1,0 +1,4 @@
+- ### Definition
+  - A real-time inference engine serves model predictions with low, predictable latency. It is enabled by runtimes such as [[ONNX Runtime]] and forms a constituent part of [[Hyper-Personalisation]] systems.
+- ### Content
+  - Engines optimise the inference graph through kernel fusion, quantisation (INT8/FP16), and dynamic batching, mapping operators onto CPUs, GPUs, or accelerators. Serving infrastructure adds autoscaling, model versioning, and request scheduling to sustain tail-latency SLAs under variable load while keeping per-request cost low.

@@ -80,6 +80,10 @@
       "label": "Decentralised Web"
     },
     {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },
@@ -96,6 +100,10 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
       "slug": "knowledge-representation",
       "label": "Knowledge Representation"
     },
@@ -104,16 +112,32 @@
       "label": "Linked Data Encoder"
     },
     {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
       "slug": "privacy",
       "label": "Privacy"
     },
     {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
       "slug": "semantic-segmentation",
       "label": "Semantic Segmentation"
     },
     {
       "slug": "semantic-segmentation",
       "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
     },
     {
       "slug": "solid",

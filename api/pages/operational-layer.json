@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:3fdec68bb18a40980e805a3f8b142b9bea455e3415a8988ccc83aa6d45e7e817",
+  "title": "Operational Layer",
+  "slug": "operational-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:operational-layer",
+  "domain": "operational",
+  "definition": "The Operational Layer is the cross-cutting stratum concerned with running, maintaining, and recovering a system in production. It sits above the runtime and tooling strata it relies on and supports the institutional commitments made above. It contains deployment pipelines, monitoring, incident response, and capacity management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:runtime-layer",
+        "label": "Runtime Layer"
+      },
+      {
+        "id": "urn:ngm:class:tooling-layer",
+        "label": "Tooling Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-layer",
+        "label": "Institutional Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "runtime-layer",
+      "label": "Runtime Layer"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    },
+    {
+      "slug": "incident-management",
+      "label": "Incident Management"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    }
+  ]
+}

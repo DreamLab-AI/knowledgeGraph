@@ -77,6 +77,10 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "tele-060-instant-ngp",
+      "label": "TELE-060-instant-ngp"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:anonymisation",
+  "title": "Anonymisation",
+  "slug": "anonymisation",
+  "public": true,
+  "classIri": "urn:ngm:class:anonymisation",
+  "domain": "security",
+  "definition": "Anonymisation is the process of transforming data so that individuals can no longer be identified, directly or by inference, while preserving enough utility for analysis. Techniques include suppression, generalization, pseudonymisation, k-anonymity, differential privacy, and the blurring or synthetic replacement of faces and identifiers in media. Effective anonymisation must resist re-identification through linkage with auxiliary data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infrastructure Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:face-swap",
+        "label": "Face Swap"
+      },
+      {
+        "id": "urn:ngm:class:privacy-domain",
+        "label": "Privacy Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:7706ac729d46cd0955ba0bc5bbbb74cff9cd6b8f32d7e38c6daca9e235b178af",
+  "title": "Cambridge Centre for Alternative Finance",
+  "slug": "cambridge-centre-for-alternative-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:cambridge-centre-for-alternative-finance",
+  "domain": "blockchain",
+  "definition": "A research centre at the University of Cambridge Judge Business School that studies alternative finance, including digital assets, blockchain energy consumption, and regulatory developments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

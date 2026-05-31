@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:0a0372a8200a50664dd4c742f01fd6fb85d6aa8ca4c7a78f783927c4c89c2fb3",
+  "title": "Edge Inference",
+  "slug": "edge-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-inference",
+  "domain": "machine-learning",
+  "definition": "The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-ai",
+      "label": "Edge AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

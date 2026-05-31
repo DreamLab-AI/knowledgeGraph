@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:di-lo-co",
+  "title": "DiLoCo",
+  "slug": "di-lo-co",
+  "public": true,
+  "classIri": "urn:ngm:class:di-lo-co",
+  "domain": "ai",
+  "definition": "DiLoCo (Distributed Low-Communication training) is a method for training large language models across loosely connected, geographically distributed compute clusters with minimal inter-node communication. Workers perform many local optimisation steps before periodically synchronising via an outer optimiser, drastically reducing the bandwidth and latency demands of conventional data-parallel training. It enables collaborative model training over the public internet rather than within a single tightly coupled datacentre.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prime-intellect",
+        "label": "Prime Intellect"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:virtual-transactions",
+  "title": "Virtual Transactions",
+  "slug": "virtual-transactions",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-transactions",
+  "domain": "metaverse",
+  "definition": "Virtual transactions are exchanges of value conducted entirely within digital environments, transferring virtual currency, tokens or digital goods between participants. They power in-world economies in games and metaverse platforms and rely on digital payment systems and currencies for settlement. Their integrity depends on secure accounting, fraud prevention and clear ownership semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    }
+  ]
+}

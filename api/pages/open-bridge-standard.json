@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:open-bridge-standard",
+  "title": "Open Bridge Standard",
+  "slug": "open-bridge-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:open-bridge-standard",
+  "domain": "blockchain",
+  "definition": "An Open Bridge Standard is a publicly specified protocol for transferring assets and messages between independent blockchains in an interoperable, vendor-neutral way. It defines common formats for lock/mint, burn/release, and message-passing operations so that distinct bridge implementations can interoperate and be audited against shared security assumptions. Such standards aim to reduce fragmentation and the systemic risk associated with bespoke cross-chain bridges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

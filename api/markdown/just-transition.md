@@ -1,0 +1,4 @@
+- ### Definition
+  - Just transition is a [[Sustainability]] framework ensuring decarbonisation does not deepen [[Global Inequality]], aligning climate action with fair labour outcomes and informing practices such as [[Ethical Sourcing]].
+- ### Content
+  - Originating in the labour movement and adopted by bodies such as the ILO and the Paris Agreement preamble, it emphasises stakeholder dialogue, reskilling, social protection and regional economic diversification. Applied to supply chains, it ties sourcing decisions to worker welfare and equitable distribution of transition costs.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:hodl-waves",
+  "title": "HODL Waves",
+  "slug": "hodl-waves",
+  "public": true,
+  "classIri": "urn:ngm:class:hodl-waves",
+  "domain": "blockchain",
+  "definition": "HODL Waves is an on-chain analytics visualisation that bands the entire Bitcoin supply by the age since each coin last moved, showing what proportion is held over various time horizons. The coloured bands reveal accumulation and distribution behaviour, distinguishing long-term holders from short-term speculators. It is a key tool for interpreting holder conviction and market cycles from blockchain data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-distribution",
+        "label": "Bitcoin Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    }
+  ]
+}

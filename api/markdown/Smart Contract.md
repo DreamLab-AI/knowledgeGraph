@@ -1,4 +1,5 @@
 public:: true
+alias:: SmartContract, smart-contract
 
 # Smart Contract
 ```json-ld
@@ -487,12 +488,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:digital-agreement",
-      "label": "Digital Agreement"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:executable-code",
-      "label": "Executable Code"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {
@@ -654,7 +655,7 @@ public:: true
         "label": "Vyper"
       },
       {
-        "@id": "urn:ngm:individual:rust",
+        "@id": "urn:ngm:class:rust",
         "label": "Rust"
       },
       {
@@ -688,7 +689,7 @@ public:: true
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

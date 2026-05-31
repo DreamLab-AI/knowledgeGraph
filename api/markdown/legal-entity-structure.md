@@ -1,0 +1,4 @@
+- ### Definition
+  - A legal entity structure organises incorporated bodies and their relationships, shaping the liability and tax boundaries that [[Cross-Border Compliance]] navigates and that [[Treasury Management]] requires to hold and deploy funds.
+- ### Content
+  - Common patterns include holding companies with operating subsidiaries, foundation-plus-LLC stacks for protocols, and special-purpose vehicles for asset isolation. The chosen structure governs where profits are taxed, which regulators have jurisdiction, and how governance authority maps to legal control.

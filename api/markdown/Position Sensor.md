@@ -1,4 +1,5 @@
 public:: true
+alias:: PositionSensor
 
 # Position Sensor
 ```json-ld

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:7b60640e9506da059cfbf55172f47c7c9920f412edcdc54e4c130affa1de8607",
+  "title": "W3C PROV-O",
+  "slug": "w-3-c-prov-o",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-prov-o",
+  "domain": "standards",
+  "definition": "A W3C Recommendation defining the PROV Ontology, an OWL ontology for expressing provenance information using the PROV data model. It represents entities, activities and agents involved in producing data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

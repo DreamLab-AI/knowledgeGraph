@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:5839c1f05fe47df782df3f7fffb1c64d11dd1902b2cee48a04f2f59547ed69a3",
+  "title": "Cash App",
+  "slug": "cash-app",
+  "public": true,
+  "classIri": "urn:ngm:class:cash-app",
+  "domain": "finance",
+  "definition": "Cash App is a mobile payment service operated by Block, Inc. that lets users send money, hold balances, and buy and sell bitcoin and stocks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

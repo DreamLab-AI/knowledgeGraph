@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:ed1bea2a5583c733a702553bc2eb4cdcb7c690df6188d01dfdbde48c14f18ade",
+  "title": "TensorFlow Lite",
+  "slug": "tensor-flow-lite",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-flow-lite",
+  "domain": "machine-learning",
+  "definition": "TensorFlow Lite is a framework from Google for running machine learning models on mobile, embedded, and edge devices with reduced memory and computational requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-framework",
+      "label": "Machine Learning Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "on-device-learning",
+      "label": "On-Device Learning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:privacy-requirements",
+  "title": "Privacy Requirements",
+  "slug": "privacy-requirements",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-requirements",
+  "domain": "governance",
+  "definition": "Privacy requirements are the documented obligations and constraints a system must satisfy to protect personal data, derived from law, regulation, contracts, and organisational policy. They specify what data may be collected, how it is processed and retained, and the rights afforded to data subjects. They drive system design, data-flow controls, and privacy impact assessments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment-pia",
+        "label": "Privacy Impact Assessment (PIA)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    }
+  ]
+}

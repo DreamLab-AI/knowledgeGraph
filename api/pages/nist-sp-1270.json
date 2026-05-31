@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:959ea075a408cf1d9e21e2630e36713a7a4b452581285c1d0a3390c23b700325",
+  "title": "NIST SP 1270",
+  "slug": "nist-sp-1270",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-sp-1270",
+  "domain": "standards",
+  "definition": "NIST SP 1270 provides guidance towards a standard for identifying and managing bias in artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection Methods"
+    },
+    {
+      "slug": "fairness-metrics",
+      "label": "Fairness Metrics"
+    }
+  ]
+}

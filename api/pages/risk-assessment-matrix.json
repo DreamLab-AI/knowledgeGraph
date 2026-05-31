@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:risk-assessment-matrix",
+  "title": "Risk Assessment Matrix",
+  "slug": "risk-assessment-matrix",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-assessment-matrix",
+  "domain": "security",
+  "definition": "A risk assessment matrix is a structured grid that ranks risks by cross-tabulating the likelihood of an event against the severity of its impact. Each cell maps to a qualitative or quantitative risk level, allowing teams to prioritise mitigation and allocate resources to the highest-rated risks. It is a standard visual tool in security and safety risk management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

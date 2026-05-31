@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:06b8124315c3ea8dc24113ddd4788a802f6f9de7bd11c290b1f6f6cbefdd5717",
+  "title": "ERC-3525",
+  "slug": "erc-3525",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-3525",
+  "domain": "standards",
+  "definition": "An Ethereum standard defining a semi-fungible token interface in which each token has an identifier and a value within a shared slot. It combines features of fungible and non-fungible tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

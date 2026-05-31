@@ -1,0 +1,4 @@
+- ### Definition
+  - A BRDF describes how a surface reflects light for every incoming and outgoing direction, providing the material model that [[Ray Tracing]] evaluates to produce realistic shading.
+- ### Content
+  - Physically based BRDFs obey energy conservation and reciprocity and combine diffuse and microfacet specular terms to model real materials. During ray tracing, the BRDF is sampled at each surface hit to weight reflected light and to importance-sample directions for Monte Carlo integration of the rendering equation.

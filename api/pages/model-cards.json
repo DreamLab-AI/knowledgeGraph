@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:9b249e8d5fb2a9eb2bc58ca1ab6803cf9663a32b6911a843412b4b8d1f398703",
+  "title": "Model Cards",
+  "slug": "model-cards",
+  "public": true,
+  "classIri": "urn:ngm:class:model-cards",
+  "domain": "machine-learning",
+  "definition": "Short structured documents that report the intended use, performance, limitations and ethical considerations of a machine learning model to support transparency and responsible deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "label": "Transparency and Explainability"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: R3Corda
 
 # R3 Corda
 ```json-ld
@@ -391,8 +392,8 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:financial-services-technology",
-      "label": "Financial Services Technology"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
       "@id": "urn:ngm:class:enterprise-blockchain",
@@ -478,7 +479,7 @@ public:: true
         "label": "Atomic Settlement"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -570,7 +571,7 @@ public:: true
         "label": "SQL Server"
       },
       {
-        "@id": "urn:ngm:individual:docker",
+        "@id": "urn:ngm:class:docker",
         "label": "Docker"
       }
     ],
@@ -580,7 +581,7 @@ public:: true
         "label": "BIS Innovation Hub"
       },
       {
-        "@id": "urn:ngm:class:digital-securities",
+        "@id": "urn:ngm:class:digital-security",
         "label": "Digital Securities"
       },
       {
@@ -664,7 +665,7 @@ public:: true
         "label": "ISDA"
       },
       {
-        "@id": "urn:ngm:class:iso-tc307",
+        "@id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC307"
       }
     ]

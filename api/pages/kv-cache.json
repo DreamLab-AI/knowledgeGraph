@@ -85,6 +85,10 @@
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
     }
   ]
 }

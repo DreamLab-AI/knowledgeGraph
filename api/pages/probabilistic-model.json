@@ -12,8 +12,8 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:statistical-learning",
-      "label": "Statistical Learning"
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
       "id": "urn:ngm:class:uncertainty-quantification",
@@ -585,8 +585,24 @@
   ],
   "backlinks": [
     {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State Space Model"
     }
   ]
 }

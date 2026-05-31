@@ -1,4 +1,5 @@
 public:: true
+alias:: Neural Networks, NeuralNetwork, neural network, neural networks
 
 # Neural Network
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: RB-1018-dijkstra-algorithm
 
 # Dijkstra Algorithm
 ```json-ld

@@ -1,0 +1,4 @@
+- ### Definition
+  - A deposit return scheme refunds a deposit when consumers return used containers, sustaining high-quality collection. It enables [[Reverse Logistics]] flows and is a core component of the [[Circular Economy]].
+- ### Content
+  - Schemes use manual handling or reverse vending machines to authenticate and credit returns. Well-designed systems achieve return rates above 90%, yielding food-grade recyclate; design choices around scheme operator, deposit level, and producer fees determine cost-effectiveness and material quality.

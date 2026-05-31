@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:dynamic-pricing",
+  "title": "Dynamic Pricing",
+  "slug": "dynamic-pricing",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamic-pricing",
+  "domain": "ai",
+  "definition": "Dynamic Pricing is a strategy in which the price of a good or service is adjusted in real time based on demand, supply, competitor prices, inventory, and customer signals. It is typically driven by machine-learning models that forecast willingness to pay and optimise revenue or other objectives. Common in e-commerce, ride-hailing, travel, and logistics, it relies on continuous data feeds and automated decisioning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper-Personalisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

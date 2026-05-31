@@ -1,0 +1,4 @@
+- ### Definition
+  - The plan-and-execute pattern is a reusable agent architecture pairing a planner with an executor, implemented by [[Agent Frameworks]] and realised through [[Function Calling]].
+- ### Content
+  - As a design pattern it standardises the split between a planner that emits an ordered, often typed plan and an executor that invokes tools per step, feeding results back for monitoring and conditional re-planning. Agent frameworks codify this as composable nodes or graphs, using structured function-calling to bind plan steps to concrete tool calls, which improves traceability and recovery on multi-step tasks.

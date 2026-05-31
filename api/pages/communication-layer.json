@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:1591624897f77cb027d67b1c1542ea1372d026cdac39078dd11e44aba597d3ec",
+  "title": "Communication Layer",
+  "slug": "communication-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-layer",
+  "domain": "communication",
+  "definition": "The Communication Layer is the stratum that governs the exchange of messages between components or participants. It sits above the Transport Layer that delivers bytes and below the coordination and application strata that rely on conversation. It contains messaging patterns, encoding, addressing, and delivery semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      },
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "publish-subscribe",
+      "label": "Publish-Subscribe"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ]
+}

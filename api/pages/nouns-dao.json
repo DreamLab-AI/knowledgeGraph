@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:22080c1ef77d74cc907c46e689659bbb9f3a5f010cdd11b205b5e131adad15e2",
+  "title": "Nouns DAO",
+  "slug": "nouns-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:nouns-dao",
+  "domain": "blockchain",
+  "definition": "An on-chain organisation that auctions one non-fungible token each day, with proceeds funding a shared treasury governed by token holders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "nft-standard",
+      "label": "NFT Standard"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-chain Governance"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    }
+  ]
+}

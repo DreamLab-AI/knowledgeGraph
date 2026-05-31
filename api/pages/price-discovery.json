@@ -94,6 +94,10 @@
       "label": "Bitcoin ETF"
     },
     {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
       "slug": "decentralized-exchange-dex",
       "label": "Decentralized Exchange (DEX)"
     },
@@ -110,12 +114,20 @@
       "label": "Liquidity Pool"
     },
     {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
       "slug": "marketplace",
       "label": "Marketplace"
     },
     {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
     }
   ]
 }

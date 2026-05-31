@@ -1,29 +1,71 @@
 {
-  "id": "urn:visionflow:page:5d9d318623ce6a60d21c6ce26d1fd4e42b3a9c2c9aabd9cc2a0382a4120dca4f",
-  "title": "AI-GroundedDomain",
+  "id": "urn:visionflow:page:7023fbb7d59565edac0580ea1b0eb6167b3ebde504403a422f81ac190ba452f4",
+  "title": "AI Grounded Domain",
   "slug": "ai-grounded-domain",
   "public": true,
   "classIri": "urn:ngm:class:ai-grounded-domain",
-  "domain": "artificial-intelligence",
-  "definition": "A meta-classification domain for AI concepts that are empirically grounded in operational systems, validated through real-world deployment, and supported by measurable performance data rather than purely theoretical constructs.",
+  "domain": "ai-grounded",
+  "definition": "The AI Grounded Domain covers the connection of model representations and outputs to verifiable external referents such as sensor data, documents and physical context. Its scope includes grounding language in perception, citation and provenance, and the alignment of generated claims with sources of truth. It is a sub-area of the Artificial Intelligence Domain concerned with factual and perceptual grounding. The boundary excludes ungrounded generative behaviour, which is treated under the Generative AI Domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "established",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:performance-metrics",
-        "label": "Performance Metrics"
+        "id": "urn:ngm:class:symbol-grounding",
+        "label": "Symbol Grounding"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-grounding",
+        "label": "Multimodal Grounding"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation-domain",
+        "label": "Knowledge Representation Domain"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval-domain",
+        "label": "Information Retrieval Domain"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-generation",
+        "label": "Verifiable Generation"
+      },
+      {
+        "id": "urn:ngm:class:hallucination-reduction",
+        "label": "Hallucination Reduction"
+      },
+      {
+        "id": "urn:ngm:class:context-aware-reasoning",
+        "label": "Context-Aware Reasoning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -36,24 +78,60 @@
   },
   "wikilinks": [
     {
-      "slug": "empirical-evaluation",
-      "label": "Empirical Evaluation"
+      "slug": "symbol-grounding",
+      "label": "Symbol Grounding"
     },
     {
-      "slug": "theoretical-ai",
-      "label": "Theoretical AI"
+      "slug": "multimodal-grounding",
+      "label": "Multimodal Grounding"
     },
     {
-      "slug": "artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "source-attribution",
+      "label": "Source Attribution"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "verifiable-generation",
+      "label": "Verifiable Generation"
+    },
+    {
+      "slug": "hallucination-reduction",
+      "label": "Hallucination Reduction"
+    },
+    {
+      "slug": "context-aware-reasoning",
+      "label": "Context-Aware Reasoning"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
     },
     {
       "slug": "artificial-intelligence-domain",
-      "label": "ArtificialIntelligenceDomain"
-    },
-    {
-      "slug": "performance-metrics",
-      "label": "Performance Metrics"
+      "label": "Artificial Intelligence Domain"
     }
   ],
   "backlinks": [
@@ -80,6 +158,10 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
     },
     {
       "slug": "ai-scrapers",

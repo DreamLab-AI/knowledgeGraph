@@ -1,0 +1,4 @@
+- ### Definition
+  - Vote delegation lets a holder assign voting power to a representative while retaining custody of their [[Governance Token]]; it is the on-chain primitive underlying liquid or [[Delegate Democracy]] models.
+- ### Content
+  - In ERC20Votes-style contracts, delegation is recorded as a checkpointed mapping so that voting weight at any block height can be queried for snapshot-based proposals. Liquid democracy extends this with transitive delegation and per-issue overrides, trading off accountability and expertise concentration against the risk of delegate cartels and low independent scrutiny.

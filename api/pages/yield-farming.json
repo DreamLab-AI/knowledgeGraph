@@ -75,12 +75,32 @@
       "label": "Governance Token"
     },
     {
+      "slug": "karpatkey",
+      "label": "Karpatkey"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
       "slug": "liquidity-pool",
       "label": "Liquidity Pool"
     },
     {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
+    },
+    {
+      "slug": "mango-markets",
+      "label": "Mango Markets"
+    },
+    {
+      "slug": "pendle",
+      "label": "Pendle"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
     },
     {
       "slug": "telecollaboration-and-telepresence",
@@ -93,6 +113,10 @@
     {
       "slug": "token",
       "label": "Token"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
     }
   ]
 }

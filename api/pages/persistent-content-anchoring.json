@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:persistent-content-anchoring",
+  "title": "Persistent Content Anchoring",
+  "slug": "persistent-content-anchoring",
+  "public": true,
+  "classIri": "urn:ngm:class:persistent-content-anchoring",
+  "domain": "metaverse",
+  "definition": "Persistent content anchoring is the augmented-reality capability of fixing virtual content to a precise real-world location so that it reappears in the same place across sessions, devices, and users. It relies on saving spatial-anchor data, typically derived from visual feature maps, and relocalising against that map on subsequent visits. The technique is essential for shared and durable AR experiences tied to physical space.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Spatial Computing Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    }
+  ]
+}

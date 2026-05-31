@@ -1,0 +1,4 @@
+- ### Definition
+  - Project Nexus is a BIS initiative that interlinks national instant-payment systems via a standardised hub for fast cross-border retail payments. It is related to [[CBDCs]] and to the interoperability questions addressed by [[CBDC Frameworks]].
+- ### Content
+  - Nexus defines a single connection model so that each domestic instant-payment scheme integrates once with the hub rather than building bilateral links to every other country. It handles FX, message translation, and compliance hand-offs, aiming to bring the speed and low cost of domestic instant payments to cross-border transfers, and provides a template that CBDC systems could also adopt.

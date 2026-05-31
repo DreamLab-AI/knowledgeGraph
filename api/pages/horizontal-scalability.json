@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:horizontal-scalability",
+  "title": "Horizontal Scalability",
+  "slug": "horizontal-scalability",
+  "public": true,
+  "classIri": "urn:ngm:class:horizontal-scalability",
+  "domain": "infrastructure",
+  "definition": "Horizontal scalability is the capacity of a system to increase throughput by adding more independent nodes rather than upgrading a single machine (vertical scaling). It relies on partitioning work and state so that load can be distributed across commodity servers behind a balancer. Horizontal scaling underpins cloud-native and distributed architectures because it offers near-linear, fault-tolerant growth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    }
+  ]
+}

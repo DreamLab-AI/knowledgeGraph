@@ -1,0 +1,4 @@
+- ### Definition
+  - The Securities Exchange Act 1934 is the US statute governing securities trading and the SEC; it is invoked alongside the [[Howey Test]] and frames the approval of products such as the [[Bitcoin ETF]].
+- ### Content
+  - The Act mandates ongoing disclosure by issuers, regulates exchanges and intermediaries, and prohibits market manipulation and insider trading. For crypto, its definitions and the related Howey analysis determine whether a token or fund constitutes a regulated security, shaping listing and compliance obligations.

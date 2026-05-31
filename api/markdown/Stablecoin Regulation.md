@@ -359,8 +359,8 @@ public:: true
       "label": "Crypto Regulation"
     },
     {
-      "@id": "urn:ngm:class:electronic-money-regulation",
-      "label": "Electronic Money Regulation"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
@@ -438,7 +438,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {

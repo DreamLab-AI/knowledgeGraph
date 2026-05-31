@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c9c0641ffb79c0a0aa28f27a4650757e288878d12409bb3aca1c4eebd64b6150",
+  "title": "WebGL",
+  "slug": "web-gl",
+  "public": true,
+  "classIri": "urn:ngm:class:web-gl",
+  "domain": "computer-graphics",
+  "definition": "WebGL is a JavaScript API for rendering interactive 2D and 3D graphics in web browsers without plug-ins, based on OpenGL ES. It executes on the GPU through the HTML canvas element.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

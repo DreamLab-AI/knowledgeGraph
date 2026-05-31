@@ -1,0 +1,4 @@
+- ### Definition
+  - The block reward halving periodically halves Bitcoin's mining subsidy, enforcing a fixed, disinflationary supply curve that is core to the [[Bitcoin Value Proposition]].
+- ### Content
+  - Every 210,000 blocks the coinbase subsidy drops by half, stepping issuance down until it reaches zero around 2140. The mechanism shifts miner revenue toward transaction fees over time and is a key driver of Bitcoin's absolute scarcity and security-budget debates.

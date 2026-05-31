@@ -108,12 +108,36 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "logic",
+      "label": "Logic"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     },
     {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
       "slug": "strips",
       "label": "STRIPS"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
     },
     {
       "slug": "task-planning",
@@ -122,6 +146,10 @@
     {
       "slug": "training-data",
       "label": "Training Data"
+    },
+    {
+      "slug": "vector-store",
+      "label": "Vector Store"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fid-benchmark-protocol",
+  "title": "FID Benchmark Protocol",
+  "slug": "fid-benchmark-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:fid-benchmark-protocol",
+  "domain": "ai",
+  "definition": "The FID benchmark protocol is the standardised methodology for evaluating generative image models using the Fr\u00e9chet Inception Distance, which compares the distribution of generated images with that of real images in the feature space of a pretrained Inception network. The protocol fixes the feature extractor, the number of samples, and preprocessing so that scores are comparable across models; lower FID indicates greater similarity to real data. It is the de facto standard for benchmarking GANs and diffusion models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ]
+}

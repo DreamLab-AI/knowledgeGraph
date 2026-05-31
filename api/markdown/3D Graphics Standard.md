@@ -107,8 +107,8 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:rendering-standard",
-      "label": "Rendering Standard"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     }
   ],
   "relations": {

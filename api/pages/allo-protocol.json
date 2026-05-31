@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:879c8a85440f2aa47512aa2883b1cd33d11f749960247a66e7a4336b7e8733be",
+  "title": "Allo Protocol",
+  "slug": "allo-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:allo-protocol",
+  "domain": "distributed-systems",
+  "definition": "Allo Protocol is an on-chain framework developed by Gitcoin for allocating capital, supporting funding mechanisms such as quadratic funding and grants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-3-infrastructure",
+        "label": "Web3 Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "https-allo-gitcoin-co",
+      "label": "https://allo.gitcoin.co/"
+    },
+    {
+      "slug": "https-docs-allo-gitcoin-co",
+      "label": "https://docs.allo.gitcoin.co/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

@@ -65,6 +65,10 @@
     {
       "slug": "cross-chain-bridge",
       "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
     }
   ]
 }

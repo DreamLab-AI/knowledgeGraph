@@ -12,8 +12,8 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:financial-services-technology",
-      "label": "Financial Services Technology"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
       "id": "urn:ngm:class:enterprise-blockchain",
@@ -102,7 +102,7 @@
         "label": "Atomic Settlement"
       },
       {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -197,7 +197,7 @@
         "label": "SQL Server"
       },
       {
-        "id": "urn:ngm:individual:docker",
+        "id": "urn:ngm:class:docker",
         "label": "Docker"
       }
     ],
@@ -261,7 +261,7 @@
         "label": "ISDA"
       },
       {
-        "id": "urn:ngm:class:iso-tc307",
+        "id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC307"
       }
     ],
@@ -272,7 +272,7 @@
         "label": "BIS Innovation Hub"
       },
       {
-        "id": "urn:ngm:class:digital-securities",
+        "id": "urn:ngm:class:digital-security",
         "label": "Digital Securities"
       },
       {

@@ -59,6 +59,10 @@
       "label": "Bandwidth Adaptation"
     },
     {
+      "slug": "packet-loss-recovery",
+      "label": "Packet Loss Recovery"
+    },
+    {
       "slug": "physical-layer",
       "label": "Physical Layer"
     },

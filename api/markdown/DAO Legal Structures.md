@@ -691,8 +691,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:corporate-forms",
-      "label": "Corporate Forms"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     },
     {
       "@id": "urn:ngm:class:governance-structure",
@@ -850,7 +850,7 @@ public:: true
         "label": "Legal Wrapper Service Providers"
       },
       {
-        "@id": "urn:ngm:class:multi-signature-wallets",
+        "@id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallets"
       },
       {
@@ -884,7 +884,7 @@ public:: true
         "label": "Corporate Law"
       },
       {
-        "@id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisations"
       },
       {

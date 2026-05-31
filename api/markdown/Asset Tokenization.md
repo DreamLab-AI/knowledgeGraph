@@ -1,4 +1,5 @@
 public:: true
+alias:: asset-tokenization
 
 # Asset Tokenization
 ```json-ld

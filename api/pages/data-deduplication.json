@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:data-deduplication",
+  "title": "Data Deduplication",
+  "slug": "data-deduplication",
+  "public": true,
+  "classIri": "urn:ngm:class:data-deduplication",
+  "domain": "data",
+  "definition": "Data deduplication is the process of detecting and eliminating redundant copies of data so that only unique instances are retained or referenced. In storage it reduces capacity and bandwidth needs through chunk- or block-level matching, while in data preparation it removes duplicate records to improve quality. It is foundational for clean training data and for identity resolution where records must be matched and merged.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

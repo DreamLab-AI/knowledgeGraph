@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:4df42a810eec240edd9d5162c5371f0255dbefca05ef9569ab8be56fad8c5665",
+  "title": "ISO 14040",
+  "slug": "iso-14040",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-14040",
+  "domain": "standards",
+  "definition": "ISO 14040 sets out the principles and framework for life cycle assessment as part of environmental management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ]
+}

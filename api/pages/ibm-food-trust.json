@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:72d4c86ee380ebd6b8f9dd87f39c049dd9714c07825834a0d1ed793d1171e107",
+  "title": "IBM Food Trust",
+  "slug": "ibm-food-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:ibm-food-trust",
+  "domain": "blockchain",
+  "definition": "IBM Food Trust is a blockchain-based platform for sharing food supply chain data among participants to support traceability and provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "food-safety",
+      "label": "Food Safety"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

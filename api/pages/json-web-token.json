@@ -79,6 +79,10 @@
       "label": "Identity Provider"
     },
     {
+      "slug": "sd-jwt-vc",
+      "label": "SD-JWT VC"
+    },
+    {
       "slug": "trust-framework",
       "label": "Trust Framework"
     },

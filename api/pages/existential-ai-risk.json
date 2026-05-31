@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:f73988543bdd716fafa27bf444fa57b98bdb0da2685ecf3d106c5fa8fb57fb6d",
+  "title": "Existential AI Risk",
+  "slug": "existential-ai-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:existential-ai-risk",
+  "domain": "ai-safety",
+  "definition": "Existential AI risk is the possibility that advanced artificial intelligence could cause human extinction or a permanent, drastic curtailment of humanity's potential. It is a focus of long-term AI safety research and policy debate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:existential-risk",
+      "label": "Existential Risk"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
+      "slug": "sociotechnical-risk",
+      "label": "Sociotechnical Risk"
+    }
+  ]
+}

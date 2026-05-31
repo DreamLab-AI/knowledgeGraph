@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:safety-certification",
+  "title": "Safety Certification",
+  "slug": "safety-certification",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-certification",
+  "domain": "robotics",
+  "definition": "Safety certification is the formal attestation by an accredited body that a product, system, or process conforms to applicable safety standards and regulations. It involves assessment, testing, and audit against criteria such as functional-safety integrity levels, after which a mark or certificate authorises deployment. For robots it verifies that protective measures like collision detection meet required safety levels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Robotics Safety and Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    }
+  ]
+}

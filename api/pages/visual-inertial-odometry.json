@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:visual-inertial-odometry",
+  "title": "Visual-Inertial Odometry",
+  "slug": "visual-inertial-odometry",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-inertial-odometry",
+  "domain": "robotics",
+  "definition": "Visual-inertial odometry (VIO) is a technique that estimates a device's six-degree-of-freedom motion and pose by fusing camera imagery with inertial measurement unit data. The complementary fusion compensates for the drift of inertial sensors and the scale ambiguity of monocular vision, yielding robust, low-latency tracking. VIO underpins inside-out tracking for mixed-reality headsets, drones and mobile robots.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robot Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

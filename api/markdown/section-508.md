@@ -1,0 +1,4 @@
+- ### Definition
+  - Section 508 is the US federal legal standard that operationalises [[Accessibility]] requirements for government information technology by referencing WCAG success criteria.
+- ### Content
+  - Compliance is assessed through accessibility conformance reports such as the VPAT, and applies to web content, software, hardware, and documentation procured or developed by federal agencies. By aligning with WCAG, Section 508 effectively makes recognised web-accessibility guidelines legally binding within its jurisdiction.

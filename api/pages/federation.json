@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:e542b75c551dc77dc2d6fe69f8cdeb13643c000e477f594363976c40f24327d4",
+  "title": "Federation",
+  "slug": "federation",
+  "public": true,
+  "classIri": "urn:ngm:class:federation",
+  "domain": "distributed-systems",
+  "definition": "An architecture in which autonomous systems or organisations interoperate through agreed protocols and trust relationships while retaining independent control of their own resources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

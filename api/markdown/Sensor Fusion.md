@@ -1,4 +1,5 @@
 public:: true
+alias:: SensorFusion
 
 # Sensor Fusion
 ```json-ld

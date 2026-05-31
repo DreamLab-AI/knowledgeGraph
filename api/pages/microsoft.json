@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:26e247010d21c6931c115463dc50c55963433dfb5ca23bb643b67741594a7923",
+  "title": "Microsoft",
+  "slug": "microsoft",
+  "public": true,
+  "classIri": "urn:ngm:class:microsoft",
+  "domain": "general",
+  "definition": "Microsoft is a multinational technology company that produces operating systems, productivity software, cloud services and mixed reality hardware and platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

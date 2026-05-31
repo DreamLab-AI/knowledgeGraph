@@ -1,4 +1,5 @@
 public:: true
+alias:: Record-Keeping System
 
 # Record Keeping System
 ```json-ld

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:a844c060bc2489535bfcf5b599def4a5389fe2497879144e3a353fd49e4fabb5",
+  "title": "WebXR",
+  "slug": "web-xr",
+  "public": true,
+  "classIri": "urn:ngm:class:web-xr",
+  "domain": "metaverse",
+  "definition": "WebXR is a web standard and API that lets browsers access virtual and augmented reality devices, providing pose tracking, input and rendering hooks for immersive experiences delivered over the web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "web-standard",
+      "label": "Web Standard"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    }
+  ]
+}

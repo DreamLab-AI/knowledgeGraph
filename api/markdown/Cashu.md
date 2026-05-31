@@ -688,7 +688,7 @@ public:: true
         "label": "Hash Functions"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -754,11 +754,11 @@ public:: true
         "label": "Blind Signatures"
       },
       {
-        "@id": "urn:ngm:class:bolt11",
+        "@id": "urn:ngm:class:bolt-11",
         "label": "BOLT11"
       },
       {
-        "@id": "urn:ngm:class:bolt12",
+        "@id": "urn:ngm:class:bolt-12",
         "label": "BOLT12"
       },
       {

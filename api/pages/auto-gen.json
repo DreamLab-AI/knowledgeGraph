@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fdfae3b111eba7caa003037ec66843a4aa28054a6e319fa06058fd04e124ca3a",
+  "title": "AutoGen",
+  "slug": "auto-gen",
+  "public": true,
+  "classIri": "urn:ngm:class:auto-gen",
+  "domain": "artificial-intelligence",
+  "definition": "AutoGen is an open-source framework from Microsoft for building applications with multiple cooperating language model agents. It defines conversable agents that exchange messages to complete tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

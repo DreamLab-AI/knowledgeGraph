@@ -1,0 +1,4 @@
+- ### Definition
+  - Vote escrow grants time-weighted, non-transferable voting power for locking tokens, a core lever in [[Tokenomics Governance]] that feeds weight into [[On-Chain Voting]].
+- ### Content
+  - The veToken model couples governance with emission direction (gauge voting) and fee sharing, spawning a "bribe" market where protocols incentivise lockers to steer rewards. Trade-offs include reduced token liquidity, governance capture by large lockers, and the operational burden of managing decaying, illiquid positions.

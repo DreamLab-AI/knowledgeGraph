@@ -79,6 +79,46 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },
@@ -87,12 +127,20 @@
       "label": "Semantic Search"
     },
     {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
       "slug": "translation",
       "label": "Translation"
     },
     {
       "slug": "voice-interaction",
       "label": "Voice Interaction"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
     }
   ]
 }

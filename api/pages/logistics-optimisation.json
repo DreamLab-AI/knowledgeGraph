@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:logistics-optimisation",
+  "title": "Logistics Optimisation",
+  "slug": "logistics-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:logistics-optimisation",
+  "domain": "supply-chain",
+  "definition": "Logistics optimisation is the application of mathematical optimisation and operations-research techniques to minimise cost or time across logistics operations such as routing, scheduling, and inventory placement. It formulates problems like vehicle routing, network flow, and bin packing, often solved with linear programming, heuristics, or machine learning. The goal is to extract maximal efficiency from constrained transport and storage resources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    }
+  ]
+}

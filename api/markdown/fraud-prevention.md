@@ -1,0 +1,4 @@
+- ### Definition
+  - Fraud prevention encompasses the controls that block deceptive access or transactions, and is enabled by mechanisms such as [[Humanity Attestation]] and [[Identity Verification]] that establish trust in an actor's identity.
+- ### Content
+  - Modern systems layer rule-based checks, machine-learning risk scoring, device fingerprinting, and step-up authentication to balance friction against security. In decentralised settings, proof-of-personhood and verifiable credentials counter Sybil attacks and synthetic identities. Continuous monitoring and feedback loops keep models current as fraud patterns evolve.

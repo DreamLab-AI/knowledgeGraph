@@ -1,0 +1,58 @@
+{
+  "id": "urn:visionflow:page:8eb4180cef9c7a9d91637db71f5851eac9735133dcb44abd31331e71abbf503a",
+  "title": "SAE J3016",
+  "slug": "sae-j-3016",
+  "public": true,
+  "classIri": "urn:ngm:class:sae-j-3016",
+  "domain": "general",
+  "definition": "A standard published by SAE International defining six levels of driving automation, from no automation to full automation, used as a common reference for vehicle autonomy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    }
+  ]
+}

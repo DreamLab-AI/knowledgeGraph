@@ -95,6 +95,18 @@
     {
       "slug": "ai-hardware",
       "label": "AI Hardware"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
     }
   ]
 }

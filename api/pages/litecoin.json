@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:3ba246d777e25966e24e5134132627df72cfbe4b196524e2ca8613b1aed2647d",
+  "title": "Litecoin",
+  "slug": "litecoin",
+  "public": true,
+  "classIri": "urn:ngm:class:litecoin",
+  "domain": "litecoin",
+  "definition": "Litecoin is a peer-to-peer cryptocurrency created in 2011 by Charlie Lee as an early fork of the Bitcoin codebase. It was designed for faster confirmation, using a target block time of around 2.5 minutes, and it uses the Scrypt hashing algorithm for proof-of-work in place of Bitcoin's SHA-256. It is often described as a lighter complement to Bitcoin and has served as a testing ground for protocol changes such as Segregated Witness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:scrypt",
+        "label": "Scrypt"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "scrypt",
+      "label": "Scrypt"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

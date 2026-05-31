@@ -1,4 +1,5 @@
 public:: true
+alias:: GraspPlanning
 
 # Grasp Planning
 ```json-ld

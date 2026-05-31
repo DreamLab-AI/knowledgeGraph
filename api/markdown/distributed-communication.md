@@ -1,0 +1,4 @@
+- ### Definition
+  - Distributed communication moves messages between processes on different machines, the basis of distributed systems. It is enabled by [[Middleware]] and built on the protocols of the [[Networking Domain]].
+- ### Content
+  - Common models include synchronous RPC/gRPC, asynchronous message queues, and pub-sub event buses, each trading latency, coupling, and delivery guarantees. Designers must address serialisation formats, idempotency, back-pressure, and partial-failure semantics, since the network is unreliable and messages can be lost, duplicated, or reordered.

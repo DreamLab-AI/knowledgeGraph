@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:9ed502365827686d514aa52ce992b07e9f2d44d2815eb01066a947c94b2f5b42",
+  "title": "USD",
+  "slug": "usd",
+  "public": true,
+  "classIri": "urn:ngm:class:usd",
+  "domain": "blockchain",
+  "definition": "The United States dollar, the fiat currency issued by the United States and the dominant unit against which most digital assets and stablecoins are quoted and redeemed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:money",
+      "label": "Money"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usdc",
+        "label": "USDC"
+      },
+      {
+        "id": "urn:ngm:class:usdt",
+        "label": "USDT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

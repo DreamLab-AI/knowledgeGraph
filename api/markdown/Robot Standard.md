@@ -752,7 +752,7 @@ public:: true
         "label": "Driverless Industrial Trucks"
       },
       {
-        "@id": "urn:ngm:class:exoskeletons",
+        "@id": "urn:ngm:class:exoskeleton",
         "label": "Exoskeletons"
       },
       {

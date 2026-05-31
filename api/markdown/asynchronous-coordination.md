@@ -1,0 +1,4 @@
+- ### Definition
+  - Asynchronous Coordination aligns distributed actors without a shared clock or blocking waits, relying on messaging and eventual consistency. It is required by [[Decentralized Swarm Control]] and is a core mechanism used in [[Decentralised Coordination]].
+- ### Content
+  - Because participants cannot assume synchronized time or reliable delivery, the model uses idempotent messages, vector or logical clocks, and conflict-free replicated data types to converge state. The benefit is resilience to latency and partial failure; the cost is reasoning about ordering, consistency guarantees, and the absence of a single authoritative view at any instant.

@@ -1,0 +1,4 @@
+- ### Definition
+  - A reference model defines the ideal target behaviour a system should exhibit, providing the baseline that a [[Control Algorithm]] tracks and that [[Evaluation Benchmarks and Leaderboards]] compare against.
+- ### Content
+  - In model-reference adaptive control, the controller adjusts its parameters so the plant output converges to the reference model's response despite uncertainty. More broadly, reference models give designers a precise specification of correct behaviour, separating what the system should do from how it is realised.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:5e6cd988376cb60351611a14a0f1a4fa96595d3febc0de9a2aa9374165512f62",
+  "title": "Aggelos Kiayias",
+  "slug": "aggelos-kiayias",
+  "public": true,
+  "classIri": "urn:ngm:class:aggelos-kiayias",
+  "domain": "cryptographic",
+  "definition": "A computer scientist and cryptographer known for research in cryptography and blockchain protocols, including provably secure proof-of-stake consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

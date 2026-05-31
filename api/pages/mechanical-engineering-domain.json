@@ -1,0 +1,127 @@
+{
+  "id": "urn:visionflow:page:f9da4f0af2156396061bfa1d1dd22f270de6f1c365ffc9503c968d367f5b07c7",
+  "title": "Mechanical Engineering Domain",
+  "slug": "mechanical-engineering-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:mechanical-engineering-domain",
+  "domain": "mechanical-engineering",
+  "definition": "The Mechanical Engineering Domain classifies concepts concerning the design, analysis and manufacture of physical mechanisms and structures. It covers kinematics, dynamics, materials and the actuation that produces motion and force. As a sub-domain of the Robotics Domain it provides the physical embodiment on which robotic and autonomous systems depend.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:actuation",
+        "label": "Actuation"
+      },
+      {
+        "id": "urn:ngm:class:materials",
+        "label": "Materials"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-systems-domain",
+        "label": "Control Systems Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physical-manipulation",
+        "label": "Physical Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "dynamics",
+      "label": "Dynamics"
+    },
+    {
+      "slug": "actuation",
+      "label": "Actuation"
+    },
+    {
+      "slug": "materials",
+      "label": "Materials"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "physical-manipulation",
+      "label": "Physical Manipulation"
+    },
+    {
+      "slug": "locomotion",
+      "label": "Locomotion"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

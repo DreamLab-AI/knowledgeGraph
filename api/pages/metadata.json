@@ -67,6 +67,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "content-layer",
+      "label": "Content Layer"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

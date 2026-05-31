@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:2f5bfb0f9113ba1a3d42501a5348de6a829856d7ced1adea552a1fb8741f522e",
+  "title": "Perception Layer",
+  "slug": "perception-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:perception-layer",
+  "domain": "perception",
+  "definition": "The Perception Layer is the stratum that converts raw sensor signals into structured observations of the environment. It sits above the Sensor Fusion and Hardware sensing strata and below decision-making layers, providing the interpreted percepts that agents and controllers act on. It contains detection, recognition, segmentation, and state-estimation components.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion-layer",
+        "label": "Sensor Fusion Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:control-layer",
+        "label": "Control Layer"
+      },
+      {
+        "id": "urn:ngm:class:agent-layer",
+        "label": "Agent Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

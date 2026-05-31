@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:measurement-methodology",
+  "title": "Measurement Methodology",
+  "slug": "measurement-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:measurement-methodology",
+  "domain": "governance",
+  "definition": "A measurement methodology is a defined, repeatable procedure for quantifying a property or performance characteristic, specifying scope, units, data sources, and calculation rules. It ensures that results are consistent, comparable, and auditable across observers and over time. Rigorous methodology is the precondition for trustworthy indicators, benchmarks, and standards-based reporting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-indicator",
+        "label": "Carbon Footprint Indicator"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    }
+  ]
+}

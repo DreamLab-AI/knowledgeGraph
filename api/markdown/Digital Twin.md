@@ -1,4 +1,5 @@
 public:: true
+alias:: Digital Twins, Digital-Twin, DigitalTwin
 
 # Digital Twin
 ```json-ld

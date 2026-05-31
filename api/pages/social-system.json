@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:social-system",
+  "title": "Social System",
+  "slug": "social-system",
+  "public": true,
+  "classIri": "urn:ngm:class:social-system",
+  "domain": "metaverse",
+  "definition": "A social system, in the context of virtual worlds, is the combination of features and rules that enable users to find, communicate with, and form relationships with one another, including presence, friend graphs, groups, voice and text chat, and reputation. It provides the connective fabric that turns a rendered space into an inhabited community. The design of these systems shapes safety, belonging, and the network effects that sustain a persistent virtual environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Supply-Chain Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

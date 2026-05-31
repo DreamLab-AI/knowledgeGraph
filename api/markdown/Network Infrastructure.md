@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkInfrastructure
 
 # Network Infrastructure
 ```json-ld

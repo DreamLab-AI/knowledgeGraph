@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:waveguide-optics",
+  "title": "Waveguide Optics",
+  "slug": "waveguide-optics",
+  "public": true,
+  "classIri": "urn:ngm:class:waveguide-optics",
+  "domain": "metaverse",
+  "definition": "Waveguide optics is the optical-engineering approach used in augmented- and mixed-reality displays to channel projected light from a microdisplay into the user's eye via total internal reflection in a thin transparent substrate. Diffractive, reflective, or holographic gratings couple light in and out, enabling compact, see-through eyewear with a wide eyebox. It is the dominant optical architecture for consumer AR glasses, trading manufacturing complexity for form factor and transparency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

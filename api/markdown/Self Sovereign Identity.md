@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-Sovereign Identity, self-sovereign identity
 
 # Self Sovereign Identity
 ```json-ld
@@ -455,7 +456,7 @@ public:: true
       "label": "Decentralised Identity"
     },
     {
-      "@id": "urn:ngm:class:privacy-enhancing-technology",
+      "@id": "urn:ngm:class:privacy-enhancing-technologies",
       "label": "Privacy-Enhancing Technology"
     }
   ],

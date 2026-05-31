@@ -1,4 +1,5 @@
 public:: true
+alias:: CryptographicHash
 
 # Cryptographic Hash
 ```json-ld

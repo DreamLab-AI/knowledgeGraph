@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:e7c04479cde0e5a245fc94928ec043e437a2e784ad18759a5bad8a55890f58fb",
+  "title": "Aragon",
+  "slug": "aragon",
+  "public": true,
+  "classIri": "urn:ngm:class:aragon",
+  "domain": "governance",
+  "definition": "A framework and set of smart contracts for creating and operating decentralised autonomous organisations on Ethereum, providing modular governance, treasury and permission components.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

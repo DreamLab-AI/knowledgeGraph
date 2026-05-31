@@ -1,0 +1,337 @@
+{
+  "id": "urn:visionflow:page:04a390802694f6738f37f36940a1e5532b68ae36280079f56561e8cdaed8a8a8",
+  "title": "Algorithm Layer",
+  "slug": "algorithm-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithm-layer",
+  "domain": "computation",
+  "definition": "The Algorithm Layer is the architectural stratum that defines the computational methods, procedures, and decision logic operating above the data and protocol layers. It encompasses the design, selection, and composition of algorithms \u2014 sorting, search, optimisation, consensus, cryptographic, and learning algorithms \u2014 that transform inputs into outputs under defined correctness and complexity guarantees.",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

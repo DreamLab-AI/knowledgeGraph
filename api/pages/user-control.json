@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-control",
+  "title": "User Control",
+  "slug": "user-control",
+  "public": true,
+  "classIri": "urn:ngm:class:user-control",
+  "domain": "governance",
+  "definition": "User control is the principle and set of mechanisms that give individuals meaningful authority over how their data, identity and experience are managed, including the ability to grant, review and revoke permissions. It is central to data-protection and consent frameworks, embodying user autonomy and self-determination over personal information. Strong user control is a prerequisite for trustworthy, ethically governed digital systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-data-management-ethics",
+        "label": "ETSI Domain Data Management Ethics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    }
+  ]
+}

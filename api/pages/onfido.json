@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:f840577bbf9a7bb81f080a251b16b6e97c33c0db511e394ee4814c14c3b91886",
+  "title": "Onfido",
+  "slug": "onfido",
+  "public": true,
+  "classIri": "urn:ngm:class:onfido",
+  "domain": "identity",
+  "definition": "Onfido is an identity verification company that combines document checks with facial biometrics to confirm users during remote onboarding. It was acquired by Entrust in 2024.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification-system",
+      "label": "Identity Verification System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    }
+  ]
+}

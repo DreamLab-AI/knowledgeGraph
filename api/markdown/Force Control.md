@@ -1,4 +1,5 @@
 public:: true
+alias:: ForceControl
 
 # Force Control
 ```json-ld
@@ -467,8 +468,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:cyber-physical-control",
-      "label": "Cyber-Physical Control"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
       "@id": "urn:ngm:class:robotic-control",

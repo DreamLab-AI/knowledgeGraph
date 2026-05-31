@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:dense-retrieval",
+  "title": "Dense Retrieval",
+  "slug": "dense-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:dense-retrieval",
+  "domain": "ai",
+  "definition": "Dense retrieval is an information-retrieval method that encodes queries and documents into dense vector embeddings and ranks results by vector similarity rather than lexical term overlap. A learned bi-encoder maps text into a shared semantic space so that conceptually related items are close even without shared keywords. It underpins semantic search and retrieval-augmented generation, often paired with approximate nearest-neighbour indexes for scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

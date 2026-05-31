@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:f110604ec31a99501fcd84d8b2cb496e180eb82b479d22aa8ef9c25bfc30e640",
+  "title": "UCL",
+  "slug": "ucl",
+  "public": true,
+  "classIri": "urn:ngm:class:ucl",
+  "domain": "general",
+  "definition": "The common abbreviation for University College London, a major research university in London active in computing and artificial intelligence research.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:university-college-london",
+      "label": "University College London"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

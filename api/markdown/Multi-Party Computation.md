@@ -1,4 +1,5 @@
 public:: true
+alias:: Multi Party Computation
 
 # Multi-Party Computation
 ```json-ld

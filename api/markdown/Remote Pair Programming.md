@@ -435,8 +435,8 @@ public:: true
       "label": "Agile Software Development"
     },
     {
-      "@id": "urn:ngm:class:collaborative-development",
-      "label": "Collaborative Development"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

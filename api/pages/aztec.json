@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:ec3d155457fd47ac1f199db85bcc7eaf319693f0b35963c087251ded1bcf3ce1",
+  "title": "Aztec",
+  "slug": "aztec",
+  "public": true,
+  "classIri": "urn:ngm:class:aztec",
+  "domain": "blockchain",
+  "definition": "A privacy-focused Layer 2 network for Ethereum that uses zero-knowledge proofs to enable confidential transactions and private smart contract execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

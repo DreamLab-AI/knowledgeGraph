@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:virtual-world-operation",
+  "title": "Virtual World Operation",
+  "slug": "virtual-world-operation",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-world-operation",
+  "domain": "metaverse",
+  "definition": "Virtual world operation is the ongoing technical and administrative running of a persistent virtual environment, including server orchestration, state synchronisation, content updates, moderation and economy management. It keeps the world available, consistent and safe for concurrent users across sessions. Operation is the runtime layer that realises the design encoded in a metaverse architecture or stack.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse-architecture",
+      "label": "Metaverse Architecture"
+    },
+    {
+      "slug": "metaverse-stack",
+      "label": "Metaverse Stack"
+    }
+  ]
+}

@@ -67,6 +67,10 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },
@@ -99,12 +103,32 @@
       "label": "Meeting AI Assistant"
     },
     {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
     },
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "vector-store",
+      "label": "Vector Store"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
     }
   ]
 }

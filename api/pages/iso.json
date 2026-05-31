@@ -79,6 +79,122 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "iso-10218-robot-safety",
+      "label": "ISO 10218 Robot Safety"
+    },
+    {
+      "slug": "iso-10218-1",
+      "label": "ISO 10218-1"
+    },
+    {
+      "slug": "iso-11179",
+      "label": "ISO 11179"
+    },
+    {
+      "slug": "iso-13849",
+      "label": "ISO 13849"
+    },
+    {
+      "slug": "iso-14040",
+      "label": "ISO 14040"
+    },
+    {
+      "slug": "iso-21448",
+      "label": "ISO 21448"
+    },
+    {
+      "slug": "iso-22144",
+      "label": "ISO 22144"
+    },
+    {
+      "slug": "iso-22166",
+      "label": "ISO 22166"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "iso-26000",
+      "label": "ISO 26000"
+    },
+    {
+      "slug": "iso-27701",
+      "label": "ISO 27701"
+    },
+    {
+      "slug": "iso-28000",
+      "label": "ISO 28000"
+    },
+    {
+      "slug": "iso-29134",
+      "label": "ISO 29134"
+    },
+    {
+      "slug": "iso-29184",
+      "label": "ISO 29184"
+    },
+    {
+      "slug": "iso-31000-risk-management",
+      "label": "ISO 31000 Risk Management"
+    },
+    {
+      "slug": "iso-31000",
+      "label": "ISO 31000"
+    },
+    {
+      "slug": "iso-3691-4",
+      "label": "ISO 3691-4"
+    },
+    {
+      "slug": "iso-37301-2021",
+      "label": "ISO 37301 2021"
+    },
+    {
+      "slug": "iso-4217",
+      "label": "ISO 4217"
+    },
+    {
+      "slug": "iso-639-language-codes",
+      "label": "ISO 639 Language Codes"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373 2021"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "iso-8373",
+      "label": "ISO 8373"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "iso-9241-940",
+      "label": "ISO 9241-940"
+    },
+    {
+      "slug": "iso-9241-960",
+      "label": "ISO 9241-960"
+    },
+    {
+      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+      "label": "ISO 9283 Manipulating Industrial Robots Performance Criteria"
+    },
+    {
+      "slug": "iso-tc-307-blockchain-standards",
+      "label": "ISO TC 307 Blockchain Standards"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },

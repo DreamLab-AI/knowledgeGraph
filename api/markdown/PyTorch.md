@@ -48,7 +48,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:individual:foundation-models", "label": "Foundation Models"}
+      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
     ]
   },
   "quality": 0.8

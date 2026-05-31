@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:60265dd3994053c30cbdca061f7333332d0de03b434e9f8e81ab6c53bb637912",
+  "title": "ISO 8373",
+  "slug": "iso-8373",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-8373",
+  "domain": "standards",
+  "definition": "An ISO standard defining terms and vocabulary for robots and robotic devices. It establishes standardised terminology used across robotics standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

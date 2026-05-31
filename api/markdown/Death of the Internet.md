@@ -459,12 +459,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:information-integrity",
-      "label": "Information Integrity"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     },
     {
-      "@id": "urn:ngm:class:platform-decay",
-      "label": "Platform Decay"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

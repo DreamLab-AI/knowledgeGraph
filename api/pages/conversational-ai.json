@@ -112,8 +112,24 @@
       "label": "Call Centres"
     },
     {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "dialogue-state-tracking",
+      "label": "Dialogue State Tracking"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
     },
     {
       "slug": "education-and-ai",
@@ -124,12 +140,24 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
       "slug": "human-computer-interaction",
       "label": "Human Computer Interaction"
     },
     {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
     },
     {
       "slug": "meeting-ai-assistant",
@@ -142,6 +170,14 @@
     {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
     }
   ]
 }

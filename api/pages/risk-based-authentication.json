@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:risk-based-authentication",
+  "title": "Risk-Based Authentication",
+  "slug": "risk-based-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-based-authentication",
+  "domain": "security",
+  "definition": "Risk-based authentication (RBA) is an adaptive security method that adjusts the strength of identity verification based on the assessed risk of a login attempt. It evaluates contextual signals such as device, location, network reputation, and behaviour to decide whether to allow access, require step-up factors, or block the request. RBA balances security and usability by escalating friction only when risk is elevated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

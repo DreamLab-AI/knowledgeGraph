@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:a4ddaaafae7f2c0b3b2ca65c7197b05627de9d6900bfe6c6316c2ac945fbfb35",
+  "title": "Greenwashing",
+  "slug": "greenwashing",
+  "public": true,
+  "classIri": "urn:ngm:class:greenwashing",
+  "domain": "sustainability",
+  "definition": "Greenwashing is the practice of making misleading or unsubstantiated claims about the environmental benefits of a product, service, or organisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "climate-policy",
+      "label": "Climate Policy"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

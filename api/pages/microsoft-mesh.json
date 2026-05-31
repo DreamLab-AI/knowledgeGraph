@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:4520e6ec246dd5f227bf105672cd1ea5801aa17bd7efb4a661e48077d3a9c287",
+  "title": "Microsoft Mesh",
+  "slug": "microsoft-mesh",
+  "public": true,
+  "classIri": "urn:ngm:class:microsoft-mesh",
+  "domain": "metaverse",
+  "definition": "Microsoft Mesh is a platform for shared mixed-reality experiences that lets distributed participants meet as avatars in persistent 3D spaces across headsets and conventional devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

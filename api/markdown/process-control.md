@@ -1,0 +1,4 @@
+- ### Definition
+  - Process control regulates continuous industrial processes to hold outputs at setpoints despite disturbances. It is supported by [[Model-Based Control]] strategies and built on the [[Feedback Loop]] as its core regulatory mechanism.
+- ### Content
+  - Classic process control uses cascaded PID loops tuned for stability and disturbance rejection, while advanced control employs model predictive control to handle constraints and multivariable interactions. Modern plants integrate distributed control systems and SCADA, increasingly augmented with data-driven soft sensors and optimisation layers that adjust setpoints for efficiency and quality.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fca-consumer-duty",
+  "title": "FCA Consumer Duty",
+  "slug": "fca-consumer-duty",
+  "public": true,
+  "classIri": "urn:ngm:class:fca-consumer-duty",
+  "domain": "governance",
+  "definition": "The FCA Consumer Duty is a regulatory standard set by the UK Financial Conduct Authority requiring financial firms to deliver good outcomes for retail customers. It mandates that firms act in good faith, avoid foreseeable harm, support customers in pursuing their financial objectives, and demonstrate fair value, clear communications, and adequate support. The Duty raises the bar above prior 'treating customers fairly' expectations and applies across products, pricing, and service channels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

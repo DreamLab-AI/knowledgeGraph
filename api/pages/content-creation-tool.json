@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:content-creation-tool",
+  "title": "Content Creation Tool",
+  "slug": "content-creation-tool",
+  "public": true,
+  "classIri": "urn:ngm:class:content-creation-tool",
+  "domain": "metaverse",
+  "definition": "A content creation tool is software that enables users to author, edit, and produce digital media such as text, images, audio, 3D assets, or video. It provides the interfaces and primitives needed to turn creative intent into finished, exportable artefacts. Generative AI has expanded this category to include tools that synthesise content from prompts and steer it within a production pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Spatial Computing Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    }
+  ]
+}

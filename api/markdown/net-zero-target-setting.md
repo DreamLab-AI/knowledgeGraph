@@ -1,0 +1,4 @@
+- ### Definition
+  - Net zero target setting is the process of defining and committing to a dated emissions-balancing goal. It produces concrete [[Net Zero Targets]] and is enabled by reliable [[Carbon Footprint Measurement]].
+- ### Content
+  - Robust target setting follows recognised frameworks (for example the Science Based Targets initiative) that require coverage of Scopes 1 to 3, near-term milestones, and limits on the use of carbon credits. Without an accurate emissions inventory the target lacks a baseline, so measurement and target setting are tightly coupled in practice.

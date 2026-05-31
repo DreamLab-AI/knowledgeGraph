@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:enterprise-ethereum-alliance-specification",
+  "title": "Enterprise Ethereum Alliance Specification",
+  "slug": "enterprise-ethereum-alliance-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-ethereum-alliance-specification",
+  "domain": "blockchain",
+  "definition": "The Enterprise Ethereum Alliance (EEA) Specification is a set of open standards defining how Ethereum technology can be implemented for enterprise use, covering permissioning, privacy, performance, and interoperability requirements. It provides a common reference so that permissioned and private Ethereum-based platforms remain compatible with the public Ethereum ecosystem. Conforming implementations gain a portable, vendor-neutral baseline for business deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quorum-blockchain",
+        "label": "Quorum Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

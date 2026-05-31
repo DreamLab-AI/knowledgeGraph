@@ -76,12 +76,20 @@
       "label": "Autonomous Robot"
     },
     {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
       "slug": "control-system",
       "label": "Control System"
     },
     {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
     },
     {
       "slug": "robotics",

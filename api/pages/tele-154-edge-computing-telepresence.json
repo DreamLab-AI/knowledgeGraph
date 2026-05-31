@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:21a8178a8b2f4445a24ab5013c2acb3fd3e942378187dd975e8373393d0bfb4e",
+  "title": "TELE-154-edge-computing-telepresence",
+  "slug": "tele-154-edge-computing-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-154-edge-computing-telepresence",
+  "domain": "metaverse",
+  "definition": "Edge computing for telepresence places processing such as encoding, rendering and reconstruction close to users at the network edge to reduce latency and bandwidth for immersive remote communication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "low-latency",
+      "label": "Low Latency"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

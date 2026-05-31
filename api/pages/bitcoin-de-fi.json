@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bitcoin-de-fi",
+  "title": "Bitcoin DeFi",
+  "slug": "bitcoin-de-fi",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-de-fi",
+  "domain": "blockchain",
+  "definition": "Bitcoin DeFi is the emerging set of decentralised finance applications, such as lending, swaps, and stablecoins, built on or anchored to the Bitcoin network. Because Bitcoin's base layer has limited scripting, these applications typically rely on layers and sidechains, including Lightning, Taproot assets, RGB, and Layer-3 protocols, to add programmability. The goal is to bring DeFi functionality to Bitcoin's liquidity and security while preserving its conservative base-layer design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer-3"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    }
+  ]
+}

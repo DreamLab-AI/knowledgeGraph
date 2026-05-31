@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:automata-theory",
+  "title": "Automata Theory",
+  "slug": "automata-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:automata-theory",
+  "domain": "infrastructure",
+  "definition": "Automata theory is the branch of theoretical computer science that studies abstract computing machines (automata) and the classes of formal languages they can recognise. It classifies machines such as finite-state automata, pushdown automata, and Turing machines by their computational power, establishing a hierarchy that defines what problems are decidable. The theory provides the formal foundations for compiler design, regular expressions, protocol verification, and model checking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-methods-domain",
+        "label": "Formal Methods Domain"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

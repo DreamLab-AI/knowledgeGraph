@@ -67,6 +67,10 @@
       "label": "Accelerometer"
     },
     {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
       "slug": "ground-robot",
       "label": "Ground Robot"
     },
@@ -85,6 +89,10 @@
     {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
     }
   ]
 }

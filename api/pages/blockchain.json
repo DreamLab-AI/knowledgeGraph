@@ -296,12 +296,20 @@
       "label": "Ai Transparency Framework"
     },
     {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
       "slug": "algorithm",
       "label": "Algorithm"
     },
     {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
     },
     {
       "slug": "arbitration-decision-engine",
@@ -368,6 +376,10 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
       "slug": "bitcoin-distribution",
       "label": "Bitcoin Distribution"
     },
@@ -386,6 +398,10 @@
     {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bittensor",
+      "label": "Bittensor"
     },
     {
       "slug": "blockchain-application",
@@ -422,6 +438,10 @@
     {
       "slug": "blockchain-sustainability",
       "label": "Blockchain Sustainability"
+    },
+    {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
     },
     {
       "slug": "blockchain-transaction",
@@ -500,6 +520,10 @@
       "label": "Circular Economy"
     },
     {
+      "slug": "clarity",
+      "label": "Clarity"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -554,6 +578,10 @@
     {
       "slug": "consensus-domain",
       "label": "Consensus Domain"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
     },
     {
       "slug": "consensus-protocol",
@@ -1112,6 +1140,10 @@
       "label": "Distributed System"
     },
     {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
       "slug": "distributed-systems",
       "label": "Distributed Systems"
     },
@@ -1348,6 +1380,10 @@
       "label": "Gasper Consensus"
     },
     {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
       "slug": "gold",
       "label": "Gold"
     },
@@ -1358,6 +1394,10 @@
     {
       "slug": "high-energy-consumption",
       "label": "High Energy Consumption"
+    },
+    {
+      "slug": "hop-protocol",
+      "label": "Hop Protocol"
     },
     {
       "slug": "hot-stuff-consensus",
@@ -1438,6 +1478,10 @@
     {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
     },
     {
       "slug": "money",
@@ -1604,6 +1648,22 @@
       "label": "Royalty Distribution"
     },
     {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "scalability-solutions",
+      "label": "Scalability Solutions"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
       "slug": "security-token",
       "label": "Security Token"
     },
@@ -1660,6 +1720,10 @@
       "label": "State Synchronization"
     },
     {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
       "slug": "strategic-planning",
       "label": "Strategic Planning"
     },
@@ -1692,12 +1756,20 @@
       "label": "Tendermint Consensus"
     },
     {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
       "slug": "threat-actor",
       "label": "Threat Actor"
     },
     {
       "slug": "token-standard",
       "label": "Token Standard"
+    },
+    {
+      "slug": "trade-lens",
+      "label": "TradeLens"
     },
     {
       "slug": "transaction-finality",
@@ -1710,6 +1782,10 @@
     {
       "slug": "trusted-execution-pbft",
       "label": "Trusted Execution PBFT"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
     },
     {
       "slug": "us-regulatory-framework",
@@ -1746,6 +1822,10 @@
     {
       "slug": "wallet",
       "label": "Wallet"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
     },
     {
       "slug": "security-audit-guide",

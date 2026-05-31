@@ -1,0 +1,4 @@
+- ### Definition
+  - An observation model gives the likelihood of a measurement given the system state. It is a component of both the [[Bayes Filter]] and the [[Particle Filter]] estimation methods.
+- ### Content
+  - During the update step, the model weights candidate states by how well they explain the latest sensor reading, with measurement noise typically modelled as Gaussian or via a learned likelihood. A mis-specified observation model causes overconfident or biased estimates, so calibrating sensor noise and handling outliers are central to reliable localisation and tracking.

@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:de17278f132e9b74050a21a825b67bb18f7628fca6d9d5a278406c55b51c098f",
+  "title": "Control Layer",
+  "slug": "control-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:control-layer",
+  "domain": "control",
+  "definition": "The Control Layer is the stratum that issues commands to actuators or subsystems to drive a system toward desired states. It sits above the Perception Layer, on whose estimates it acts, and below planning and agent strata that set goals. It contains controllers, feedback loops, set-point logic, and the actuation interfaces that effect change.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception-layer",
+        "label": "Perception Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-layer",
+        "label": "Agent Layer"
+      },
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "Policy Layer"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

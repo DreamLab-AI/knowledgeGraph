@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:fdcd6eab11926d93fae1347f5bfe1d325a30e14f49d1c2b10134421deaa6d812",
+  "title": "Voice Assistant",
+  "slug": "voice-assistant",
+  "public": true,
+  "classIri": "urn:ngm:class:voice-assistant",
+  "domain": "artificial-intelligence",
+  "definition": "A voice assistant is a software agent that responds to spoken commands and questions using speech recognition and natural language processing. Examples include assistants built into phones and smart speakers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-virtual-assistant",
+      "label": "https://en.wikipedia.org/wiki/Virtual_assistant"
+    },
+    {
+      "slug": "https-developer-amazon-com-en-us-alexa",
+      "label": "https://developer.amazon.com/en-US/alexa"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    }
+  ]
+}

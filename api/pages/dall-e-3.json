@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:a970720dbca87371ed034b48221be487b15162014045e95686368efcf40119bd",
+  "title": "DALL-E 3",
+  "slug": "dall-e-3",
+  "public": true,
+  "classIri": "urn:ngm:class:dall-e-3",
+  "domain": "generative-ai",
+  "definition": "DALL-E 3 is a text-to-image generation model developed by OpenAI that produces images from natural language descriptions. It improves prompt adherence over earlier versions by reformulating user prompts with a language model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

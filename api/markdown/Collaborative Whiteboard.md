@@ -399,12 +399,12 @@ public:: true
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:digital-workspace",
-      "label": "Digital Workspace"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
-      "@id": "urn:ngm:class:visual-collaboration-tools",
-      "label": "Visual Collaboration Tools"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

@@ -87,6 +87,10 @@
       "label": "Layer2"
     },
     {
+      "slug": "squid-router",
+      "label": "Squid Router"
+    },
+    {
       "slug": "value-transfer",
       "label": "Value Transfer"
     }

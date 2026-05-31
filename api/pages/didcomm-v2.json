@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:didcomm-v2",
+  "title": "DIDComm v2",
+  "slug": "didcomm-v2",
+  "public": true,
+  "classIri": "urn:ngm:class:didcomm-v2",
+  "domain": "security",
+  "definition": "DIDComm v2 is a transport-agnostic, end-to-end encrypted messaging protocol that lets two or more parties communicate securely using their Decentralized Identifiers. Messages are signed and encrypted with keys discovered from DID documents, providing confidentiality, authenticity, and mutual authentication independent of any central server or transport. It is the secure communication layer underpinning self-sovereign identity interactions such as verifiable credential exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

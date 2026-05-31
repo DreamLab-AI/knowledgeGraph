@@ -1,0 +1,4 @@
+- ### Definition
+  - Quasi-direct drive couples a high-torque motor with a low-ratio gearbox for backdrivable, force-transparent actuation. It is implemented and enabled as a [[Mechanical Component]] in dynamic and legged robots.
+- ### Content
+  - Compared with highly geared actuators, QDD offers superior backdrivability, proprioceptive force estimation from motor current, and resilience to impacts, at the cost of lower peak torque density and higher thermal load. It became prominent through MIT Cheetah-style designs and is now standard in agile quadrupeds and torque-controlled manipulators.

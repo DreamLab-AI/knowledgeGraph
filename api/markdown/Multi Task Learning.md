@@ -1,4 +1,5 @@
 public:: true
+alias:: multi-task learning
 
 # Multi Task Learning
 ```json-ld

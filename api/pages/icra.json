@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:6cf6c99bf345be02d2934500fda6c4f74ecfcb2d800d0792f6a6b2b5fdda8a28",
+  "title": "ICRA",
+  "slug": "icra",
+  "public": true,
+  "classIri": "urn:ngm:class:icra",
+  "domain": "robotics",
+  "definition": "ICRA, the International Conference on Robotics and Automation, is an annual academic conference organised by the IEEE Robotics and Automation Society.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

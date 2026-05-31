@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:91a11a8101ad49ebb019259e4454274e4b96edfdeb49303c8c241d8fdabf206d",
+  "title": "ISO 22144",
+  "slug": "iso-22144",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-22144",
+  "domain": "standards",
+  "definition": "A standard published by ISO. The specific subject area is not determined from the identifier alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

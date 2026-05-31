@@ -1,0 +1,4 @@
+- ### Definition
+  - GOV.UK One Login is the UK's unified government sign-on and identity-proofing service; it supports identity assurance that can underpin [[Verifiable Credentials]] and relates to [[Decentralized Identifiers]] as the public sector explores user-controlled identity.
+- ### Content
+  - The service provides account creation, multi-factor authentication, and identity verification using documents and biometrics to meet government assurance standards. It aims to give departments a reusable, accessible identity layer while reducing duplication and fraud. Its roadmap intersects with wider digital-identity trust frameworks and the potential use of credentials held in citizen wallets.

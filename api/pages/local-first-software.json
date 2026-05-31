@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:local-first-software",
+  "title": "Local-First Software",
+  "slug": "local-first-software",
+  "public": true,
+  "classIri": "urn:ngm:class:local-first-software",
+  "domain": "infrastructure",
+  "definition": "Local-first software is a design philosophy in which the primary copy of a user's data lives on their own device, with the network used for optional synchronisation rather than as a dependency. It prioritises offline availability, low latency, data ownership, and longevity while still supporting real-time collaboration via conflict-free merging. The approach typically relies on CRDTs to reconcile concurrent edits across devices without a central authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    }
+  ]
+}

@@ -503,8 +503,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:control-engineering",
-      "label": "Control Engineering"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "@id": "urn:ngm:class:cybernetics",

@@ -1,0 +1,4 @@
+- ### Definition
+  - Cross-chain communication is the protocol-mediated exchange of verified messages and value between separate blockchains. It is exemplified by [[Cosmos IBC]] and is the enabling layer for [[Blockchain Interoperability]].
+- ### Content
+  - Approaches range from light-client and relay schemes that cryptographically verify source-chain state to trust-minimised messaging and liquidity bridges. The central engineering tension is achieving low-latency, generic messaging without introducing trusted intermediaries whose compromise would put bridged assets at risk.

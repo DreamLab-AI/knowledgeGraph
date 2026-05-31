@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:enforcement-action",
+  "title": "Enforcement Action",
+  "slug": "enforcement-action",
+  "public": true,
+  "classIri": "urn:ngm:class:enforcement-action",
+  "domain": "governance",
+  "definition": "An enforcement action is a formal measure taken by a regulatory or supervisory authority against an entity that has violated laws, rules, or licence conditions. It can include fines, cease-and-desist orders, licence revocation, restitution to affected parties, or referral for prosecution. Enforcement actions are the operative mechanism by which consumer-protection and market-conduct regulations are made binding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    }
+  ]
+}

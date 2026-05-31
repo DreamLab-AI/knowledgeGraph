@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d39f6ecdaf79b1f78024616055ac376da435216e9595cc3be337b53b31ea3187",
+  "title": "BIP-342 Tapscript",
+  "slug": "bip-342-tapscript",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-342-tapscript",
+  "domain": "standards",
+  "definition": "A Bitcoin Improvement Proposal defining Tapscript, the scripting semantics used within Taproot spends. It specifies the validation rules for scripts committed under the Taproot output type.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    }
+  ]
+}

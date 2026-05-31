@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:b2a8c7b07bb878e29ad81cd59f3f075a4515258269916dfb901582975235ed6e",
+  "title": "NVIDIA H100",
+  "slug": "nvidia-h-100",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-h-100",
+  "domain": "computing",
+  "definition": "The NVIDIA H100 is a data-centre GPU based on the Hopper architecture, designed for AI training and inference and high-performance computing. It introduced a Transformer Engine and FP8 support for large model workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu",
+      "label": "GPU"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    }
+  ]
+}

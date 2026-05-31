@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:travel-rule-protocol",
+  "title": "Travel Rule Protocol",
+  "slug": "travel-rule-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:travel-rule-protocol",
+  "domain": "blockchain",
+  "definition": "A travel rule protocol is a technical standard that lets virtual asset service providers securely exchange the originator and beneficiary information required by the FATF Travel Rule when transferring crypto-assets. Implementations such as the IVMS101 data model and the TRP and OpenVASP messaging schemes define how counterparty identity data is formatted, transmitted, and verified between regulated entities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

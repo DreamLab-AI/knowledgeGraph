@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:storage-architecture",
+  "title": "Storage Architecture",
+  "slug": "storage-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:storage-architecture",
+  "domain": "infrastructure",
+  "definition": "Storage architecture is the structured design of how data is persisted, organised, and accessed across hardware and software layers, encompassing block, file, and object paradigms as well as tiering, replication, and consistency models. It defines the trade-offs between durability, latency, throughput, and cost for a given workload. Sound storage architecture underpins databases, data lakes, and distributed systems by matching access patterns to the right storage substrate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-management-domain",
+        "label": "Data Management Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-management-domain",
+      "label": "Data Management Domain"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    }
+  ]
+}

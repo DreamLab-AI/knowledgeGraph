@@ -1,4 +1,5 @@
 public:: true
+alias:: OccupancyGrid
 
 # Occupancy Grid
 ```json-ld

@@ -83,6 +83,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
@@ -131,6 +135,10 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
     },
@@ -139,8 +147,20 @@
       "label": "Fault Tolerance"
     },
     {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
+    },
+    {
+      "slug": "ibm",
+      "label": "IBM"
     },
     {
       "slug": "identity-management-system",
@@ -201,6 +221,14 @@
     {
       "slug": "system-architecture",
       "label": "System Architecture"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
     }
   ]
 }

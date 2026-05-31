@@ -1,0 +1,4 @@
+- ### Definition
+  - A compact binary serialisation format using a type identifier, length descriptor, and value payload, enabling self-describing and extensible records. It underpins optional-field handling in protocols like [[Taproot Assets]].
+- ### Content
+  - TLV streams allow newer fields to be added without breaking older parsers, since unknown types can be identified by their declared length and skipped. Even-numbered types are typically mandatory and odd-numbered types optional under the Lightning/Taproot convention, supporting graceful protocol evolution.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:cross-modal-conditioning",
+  "title": "Cross-Modal Conditioning",
+  "slug": "cross-modal-conditioning",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-modal-conditioning",
+  "domain": "ai",
+  "definition": "Cross-modal conditioning is a technique in which a generative or predictive model is guided by information from a different modality than its output, such as conditioning image generation on text or audio on video. It typically uses cross-attention to inject signals from one modality into the representation of another. It is fundamental to text-to-image, text-to-audio, and other multimodal generative systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - The SMPL Body Model is a parametric, skinned 3D human mesh used widely in [[Computer Vision]] to represent body shape and articulated pose with a compact parameter set. It is a core target representation for [[Pose Estimation]] systems.
+- ### Content
+  - SMPL decomposes a body into identity shape blend shapes and pose-dependent corrective blend shapes applied via linear blend skinning over a fixed-topology mesh. This factorisation lets it be fitted to [[Motion Capture]] markers, depth scans, or monocular images, making it a standard intermediary for reconstructing and re-animating human bodies in graphics and vision research.

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:0eb7bdeecf305b4e90a972883aa71d8bb5fc5c44e687da3dfa7785d35b7a7e34",
+  "title": "MetaversePlatforms",
+  "slug": "metaverse-platforms",
+  "public": true,
+  "classIri": "urn:ngm:class:metaverse-platforms",
+  "domain": "metaverse",
+  "definition": "MetaversePlatforms denotes the category of systems that host persistent, shared 3D virtual worlds with avatars, user interaction and often user-generated content and economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "resilience-metric",
+      "label": "Resilience Metric"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    }
+  ]
+}

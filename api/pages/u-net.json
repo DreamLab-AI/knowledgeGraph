@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:20c285e2f48fc9f5c8d0f1b9c9a25055a6f8b69b78d8f7f452e5bcf90c04b274",
+  "title": "U-Net",
+  "slug": "u-net",
+  "public": true,
+  "classIri": "urn:ngm:class:u-net",
+  "domain": "computer-vision",
+  "definition": "A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "decoder",
+      "label": "Decoder"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

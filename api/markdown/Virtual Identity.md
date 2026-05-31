@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualIdentity
 
 # Virtual Identity
 ```json-ld

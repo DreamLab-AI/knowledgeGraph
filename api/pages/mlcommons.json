@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mlcommons",
+  "title": "MLCommons",
+  "slug": "mlcommons",
+  "public": true,
+  "classIri": "urn:ngm:class:mlcommons",
+  "domain": "ai",
+  "definition": "MLCommons is an open engineering consortium that builds benchmarks, datasets, and best practices to accelerate machine learning innovation in a fair and reproducible way. It is best known for the MLPerf benchmark suites, which measure training and inference performance across hardware and software stacks. Membership includes major chip vendors, cloud providers, and research institutions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks and Leaderboards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

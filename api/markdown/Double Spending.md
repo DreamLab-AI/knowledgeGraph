@@ -1,4 +1,5 @@
 public:: true
+alias:: Double-Spending, Double-spending, double-spending
 
 # Double Spending
 ```json-ld

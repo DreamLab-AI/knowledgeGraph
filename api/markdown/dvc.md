@@ -1,0 +1,4 @@
+- ### Definition
+  - DVC (Data Version Control) is an open-source system that applies Git-like versioning to ML data, models, and pipelines. It tracks model [[Checkpoints]] and dataset versions to make experiments reproducible.
+- ### Content
+  - DVC decouples large artefacts from the code repository by storing them in remote object storage while committing hash-based pointers to Git. Its pipeline definitions capture dependencies and stages, allowing teams to reproduce, compare, and roll back training runs and checkpoints with full lineage.

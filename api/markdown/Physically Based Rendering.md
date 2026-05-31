@@ -1,4 +1,5 @@
 public:: true
+alias:: Physically-Based Rendering
 
 # Physically Based Rendering
 ```json-ld

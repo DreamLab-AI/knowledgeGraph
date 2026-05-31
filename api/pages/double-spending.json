@@ -156,6 +156,10 @@
     {
       "slug": "proof-of-work",
       "label": "Proof Of Work"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
     }
   ]
 }

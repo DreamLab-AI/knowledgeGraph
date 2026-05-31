@@ -375,12 +375,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:knowledge-intensive-nlp",
-      "label": "Knowledge-Intensive NLP"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     },
     {
-      "@id": "urn:ngm:class:open-domain-question-answering",
-      "label": "Open Domain Question Answering"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "relations": {
@@ -538,11 +538,11 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -550,7 +550,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

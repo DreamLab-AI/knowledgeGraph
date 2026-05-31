@@ -88,6 +88,10 @@
       "label": "Translation"
     },
     {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

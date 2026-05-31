@@ -1,0 +1,4 @@
+- ### Definition
+  - The LoRa Alliance is the standards body that defines and certifies [[LoRaWAN]], governing the interoperable low-power wide-area connectivity used by an [[IoT Sensor Network]].
+- ### Content
+  - The alliance publishes the LoRaWAN link-layer specification and regional frequency-plan parameters, and runs certification to guarantee cross-vendor device interoperability. Its open governance has driven broad adoption of LoRaWAN for metering, asset tracking, and environmental sensing.

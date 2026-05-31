@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:business-intelligence",
+  "title": "Business Intelligence",
+  "slug": "business-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:business-intelligence",
+  "domain": "data",
+  "definition": "Business intelligence is the set of technologies, processes, and practices for collecting, integrating, analysing, and presenting business data to support managerial decision-making. It encompasses data warehousing, reporting, dashboards, online analytical processing (OLAP), and ad-hoc querying that turn raw operational records into actionable insight. BI matters because it converts dispersed enterprise data into a coherent, queryable foundation for performance monitoring and strategic planning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:gfpgan",
+  "title": "GFPGAN",
+  "slug": "gfpgan",
+  "public": true,
+  "classIri": "urn:ngm:class:gfpgan",
+  "domain": "ai",
+  "definition": "GFPGAN (Generative Facial Prior GAN) is a practical deep-learning model for blind face restoration that leverages the rich facial priors encoded in a pretrained StyleGAN to recover realistic detail from degraded portraits. It restores resolution, removes artefacts, and reconstructs plausible facial features in a single forward pass. It is widely used in photo restoration and as a face-enhancement component in image and video pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:face-swap",
+        "label": "Face Swap"
+      },
+      {
+        "id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Image and Video Restoration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    }
+  ]
+}

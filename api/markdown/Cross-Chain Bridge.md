@@ -1,4 +1,5 @@
 public:: true
+alias:: CrossChainBridge
 
 # Cross-Chain Bridge
 ```json-ld
@@ -503,12 +504,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:asset-transfer-mechanism",
-      "label": "Asset Transfer Mechanism"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "@id": "urn:ngm:class:cross-chain-application",
-      "label": "Cross-Chain Application"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {

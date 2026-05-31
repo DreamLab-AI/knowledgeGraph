@@ -656,7 +656,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

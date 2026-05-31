@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:14d8036f18d86765c45e87f94b8a8388d0692889f4e596e220d3eb4a2d5b3e54",
+  "title": "W3C 2022 DID Core 1.0 Recommendation",
+  "slug": "w-3-c-2022-did-core-1-0-recommendation",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-2022-did-core-1-0-recommendation",
+  "domain": "standards",
+  "definition": "The W3C Recommendation for Decentralized Identifiers (DIDs) version 1.0, published in 2022, defining the core DID data model, syntax and resolution architecture. It establishes DIDs as a standard type of verifiable identifier.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

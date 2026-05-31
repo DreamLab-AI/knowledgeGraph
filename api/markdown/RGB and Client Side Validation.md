@@ -891,8 +891,8 @@ public:: true
       "label": "Client-Side Validation Theory"
     },
     {
-      "@id": "urn:ngm:class:off-chain-protocol",
-      "label": "Off-Chain Protocol"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -1090,7 +1090,7 @@ public:: true
         "label": "OpRet"
       },
       {
-        "@id": "urn:ngm:class:pedersen-commitments",
+        "@id": "urn:ngm:class:pedersen-commitment",
         "label": "Pedersen Commitments"
       },
       {

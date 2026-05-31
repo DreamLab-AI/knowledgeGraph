@@ -1,0 +1,4 @@
+- ### Definition
+  - Enterprise AI adoption is the at-scale integration of AI into business operations, enabled by [[AI Companies]] and underlying [[Machine Learning Platform]] infrastructure.
+- ### Content
+  - Adoption maturity progresses from pilots to embedded production workflows, gated by data quality, governance, and change management. ROI accrues only when models are paired with redesigned processes and sustained organisational support.

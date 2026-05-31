@@ -1,4 +1,5 @@
 public:: true
+alias:: EnterpriseArchitecture
 
 # Enterprise Architecture
 ```json-ld

@@ -1,0 +1,4 @@
+- ### Definition
+  - Privacy preservation protects sensitive data from unauthorised access or inference while enabling legitimate use. It is enabled by [[Cryptographic Protocol]] mechanisms and by techniques such as the [[Privacy Filter]] that strip or obscure identifying information.
+- ### Content
+  - Approaches include encryption at rest and in transit, differential privacy for statistical release, secure multiparty computation and homomorphic encryption for computation on encrypted data, and anonymisation or pseudonymisation of stored records. Effective privacy preservation combines these technical controls with governance, consent management, and data-minimisation policies to meet regulatory obligations.

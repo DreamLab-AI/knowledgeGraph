@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:5aaa0b47dcd40e47b867fbea94ebcb38dc08b880ce8863db4059c27829c7f324",
+  "title": "Coordination Layer",
+  "slug": "coordination-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:coordination-layer",
+  "domain": "coordination",
+  "definition": "The Coordination Layer is the cross-cutting stratum that orchestrates the work of multiple agents or services toward a shared objective. It sits above control and integration concerns and below the application goals it serves. It contains schedulers, workflow engines, consensus on task assignment, and the protocols that keep distributed actors aligned.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-layer",
+        "label": "Control Layer"
+      },
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-layer",
+        "label": "Agent Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "task-allocation",
+      "label": "Task Allocation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "Communication Layer"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

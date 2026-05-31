@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-border-transfer",
+  "title": "Cross-Border Transfer",
+  "slug": "cross-border-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-transfer",
+  "domain": "blockchain",
+  "definition": "A cross-border transfer is the movement of value or funds between parties located in different countries, settled across distinct currency and regulatory regimes. It encompasses bank wires, card networks, money-transfer operators, and increasingly digital-payment and cryptocurrency rails. Speed, cost, foreign-exchange handling, and compliance with multiple jurisdictions are its defining constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    }
+  ]
+}

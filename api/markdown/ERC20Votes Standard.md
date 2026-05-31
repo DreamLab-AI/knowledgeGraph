@@ -23,7 +23,7 @@ public:: true
   "definition": "ERC20Votes is an extension of the ERC-20 fungible-token standard that adds on-chain governance capabilities by tracking historical voting power through checkpointed balances and supporting delegation of votes. It records a snapshot of each account's balance at every block where it changes, so a governance contract can query voting weight at a specific past block, preventing double-voting and flash-loan manipulation. Implemented in widely audited libraries, it is the dominant pattern for token-based voting in decentralised autonomous organisations.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:erc-20-standard", "label": "ERC-20 Standard"}],
+  "subClassOf": [{"@id": "urn:ngm:class:erc20-standard", "label": "ERC-20 Standard"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:dao", "label": "DAO"}
@@ -33,7 +33,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:erc-20-votes", "label": "ERC-20 Votes"},
-      {"@id": "urn:ngm:individual:ethereum", "label": "Ethereum"}
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
     ]
   },
   "quality": 0.8

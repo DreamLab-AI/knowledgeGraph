@@ -1,4 +1,5 @@
 public:: true
+alias:: low-latency
 
 # Low Latency
 ```json-ld

@@ -327,12 +327,12 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:geometric-model",
-      "label": "Geometric Model"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     },
     {
-      "@id": "urn:ngm:class:mathematical-model",
-      "label": "Mathematical Model"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

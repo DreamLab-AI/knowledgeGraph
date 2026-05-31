@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e76ae3a37b338306d2b993ec050cd4f073ae22075511f7cc0724afb2ab99ebdc",
+  "title": "Hedera Hashgraph",
+  "slug": "hedera-hashgraph",
+  "public": true,
+  "classIri": "urn:ngm:class:hedera-hashgraph",
+  "domain": "blockchain",
+  "definition": "Hedera is a public distributed ledger that uses the hashgraph consensus algorithm based on gossip about gossip and virtual voting. It is governed by a council of organisations and uses the HBAR token.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

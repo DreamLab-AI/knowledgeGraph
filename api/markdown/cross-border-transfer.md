@@ -1,0 +1,4 @@
+- ### Definition
+  - A cross-border transfer is the international movement of value across currency and regulatory boundaries. It is enabled by [[Digital Payments]] infrastructure and increasingly by [[Cryptocurrency]] settlement networks.
+- ### Content
+  - Traditional cross-border transfers traverse correspondent-banking chains, adding intermediaries, FX spreads, and settlement delay. Digital and crypto rails aim to collapse these hops, but must still satisfy multi-jurisdictional AML, sanctions, and travel-rule obligations while managing currency conversion and liquidity at each endpoint.

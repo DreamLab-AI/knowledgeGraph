@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkLatency
 
 # Network Latency
 ```json-ld

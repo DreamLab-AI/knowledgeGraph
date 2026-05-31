@@ -1,0 +1,4 @@
+- ### Definition
+  - Digital cinema captures, distributes, and projects films as digital files under the DCI standard rather than on photochemical film. It is closely tied to [[Proprietary Video]] formats and codecs used in professional media pipelines.
+- ### Content
+  - A Digital Cinema Package bundles JPEG 2000 image essence, audio, and subtitles, optionally encrypted with KDM-controlled keys for secure exhibition. The standard fixed 2K/4K resolutions, XYZ colour, and frame-rate options, eliminating print costs and enabling instant global release while imposing strict conformance and key-management requirements.

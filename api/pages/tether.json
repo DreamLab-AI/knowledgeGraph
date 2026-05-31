@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:10d6b636d5bc00849a85433264c3d72586d737fe3296670341bc1c4a3afa37d4",
+  "title": "Tether",
+  "slug": "tether",
+  "public": true,
+  "classIri": "urn:ngm:class:tether",
+  "domain": "tether",
+  "definition": "Tether is the issuer of USDT, the largest fiat-collateralised stablecoin by circulating supply, designed to maintain a value pegged to the United States dollar. Tokens are issued on numerous blockchains and are intended to be redeemable one-to-one for dollars, backed by reserves held by the issuer. Tether is widely used for trading, settlement and as a dollar proxy on exchanges, and its reserve composition and transparency have been subjects of regulatory scrutiny.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:reserve-backing",
+        "label": "Reserve Backing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:crypto-trading",
+        "label": "Crypto Trading"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "reserve-backing",
+      "label": "Reserve Backing"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "crypto-trading",
+      "label": "Crypto Trading"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitfinex",
+      "label": "Bitfinex"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

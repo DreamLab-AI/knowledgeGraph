@@ -110,6 +110,22 @@
     {
       "slug": "bitcoin-value-proposition",
       "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
+      "slug": "inflation-hedge",
+      "label": "Inflation Hedge"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    },
+    {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
     }
   ]
 }

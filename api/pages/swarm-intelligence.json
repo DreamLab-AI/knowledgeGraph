@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:809468c60386881965c790340a6ead7b8f7761409bac036c53d0d0d75f6448c9",
+  "title": "Swarm Intelligence",
+  "slug": "swarm-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:swarm-intelligence",
+  "domain": "robotics",
+  "definition": "Swarm intelligence is the collective behaviour that emerges from many simple agents following local rules and interactions, producing coordinated global behaviour without central control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "multi-robot-systems",
+      "label": "Multi-Robot Systems"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "stigmergy",
+      "label": "Stigmergy"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    }
+  ]
+}

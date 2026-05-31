@@ -89,6 +89,10 @@
   ],
   "backlinks": [
     {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
       "slug": "camera-parameters",
       "label": "Camera Parameters"
     },

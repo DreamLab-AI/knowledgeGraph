@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:91417f9d93362f8857248c5c502ec895a813cf76979865f6fdb94ce2a87097d4",
+  "title": "Reality.eth",
+  "slug": "reality-eth",
+  "public": true,
+  "classIri": "urn:ngm:class:reality-eth",
+  "domain": "blockchain",
+  "definition": "Reality.eth is an Ethereum-based oracle that answers questions by crowdsourcing responses with an escalating bond mechanism, allowing economic dispute resolution. It is used to bring real-world facts on chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safe-snap",
+        "label": "SafeSnap"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

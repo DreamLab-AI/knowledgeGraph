@@ -1,4 +1,5 @@
 public:: true
+alias:: RB-1005-forward-kinematics
 
 # Forward Kinematics
 ```json-ld

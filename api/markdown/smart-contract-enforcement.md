@@ -1,0 +1,4 @@
+- ### Definition
+  - Smart contract enforcement is the automatic, irreversible execution of [[Smart Contract]] terms once coded conditions are satisfied, with no need to trust a counterparty. It supports [[Non-Repudiation]] by anchoring outcomes in immutable ledger state.
+- ### Content
+  - Because execution is deterministic and recorded on a distributed ledger, parties cannot unilaterally reverse an agreed outcome, which strengthens dispute resilience and can feed into an [[Arbitration Process]] when off-chain interpretation is required. The mechanism shifts enforcement from external legal institutions toward the protocol itself, though hybrid designs increasingly bind code-based execution to legally recognised agreements.

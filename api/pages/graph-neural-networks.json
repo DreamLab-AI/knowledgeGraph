@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fd18558e6717f863b00f5358bf13ac671d4f7b1cf425928fcb7249a3aa9b92e1",
+  "title": "Graph Neural Networks",
+  "slug": "graph-neural-networks",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-neural-networks",
+  "domain": "deep-learning",
+  "definition": "A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by exchanging information along edges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

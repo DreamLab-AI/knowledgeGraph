@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:75a71973b8d80bbea8bb2f936f0db78abb5fca4d465259c3231d24a7f2102a5f",
+  "title": "Agent Layer",
+  "slug": "agent-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-layer",
+  "domain": "agent",
+  "definition": "The Agent Layer is the stratum that hosts autonomous entities capable of perceiving, deciding, and acting toward goals. It sits above control and inference strata that supply its capabilities and below coordination and application strata that direct collectives of agents. It contains agent policies, goal representations, memory, and decision loops.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      },
+      {
+        "id": "urn:ngm:class:control-layer",
+        "label": "Control Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    }
+  ]
+}

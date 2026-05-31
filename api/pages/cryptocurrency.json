@@ -12,12 +12,12 @@
       "label": "Token and Asset"
     },
     {
-      "id": "urn:ngm:class:cryptoasset",
-      "label": "Cryptoasset"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "id": "urn:ngm:class:distributed-ledger-native-token",
-      "label": "Distributed Ledger Native Token"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -213,7 +213,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       },
       {
@@ -260,15 +260,15 @@
         "label": "Spot Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:individual:micro-strategy",
+        "id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       },
       {
@@ -917,12 +917,28 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
     {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitfinex",
+      "label": "Bitfinex"
     },
     {
       "slug": "blockchain",
@@ -937,8 +953,24 @@
       "label": "CBDCs"
     },
     {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
       "slug": "cryptocurrency-remuneration",
       "label": "Cryptocurrency Remuneration"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
     },
     {
       "slug": "distributed-ledger-technology-dlt",
@@ -953,20 +985,48 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
       "slug": "fatfrecommendations",
       "label": "FATFRecommendations"
+    },
+    {
+      "slug": "global-digital-finance",
+      "label": "Global Digital Finance"
     },
     {
       "slug": "gold",
       "label": "Gold"
     },
     {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
     },
     {
+      "slug": "institutional-investment",
+      "label": "Institutional Investment"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
+    },
+    {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
     },
     {
       "slug": "money",
@@ -975,6 +1035,10 @@
     {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
     },
     {
       "slug": "play-to-earn-p2-e",
@@ -987,6 +1051,10 @@
     {
       "slug": "proof-of-stake-sustainability",
       "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "revolut",
+      "label": "Revolut"
     },
     {
       "slug": "stablecoin-regulation",

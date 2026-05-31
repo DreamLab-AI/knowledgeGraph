@@ -89,6 +89,10 @@
   ],
   "backlinks": [
     {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },
@@ -97,8 +101,16 @@
       "label": "Global Illumination"
     },
     {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
       "slug": "level-of-detail",
       "label": "Level of Detail"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
     },
     {
       "slug": "ray-tracing",

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:world-inequality-database",
+  "title": "World Inequality Database",
+  "slug": "world-inequality-database",
+  "public": true,
+  "classIri": "urn:ngm:class:world-inequality-database",
+  "domain": "data",
+  "definition": "The World Inequality Database (WID.world) is an open, collaboratively maintained data resource that compiles harmonised series on the distribution of income and wealth within and between countries over long historical periods. It combines national accounts, tax records, surveys, and estimation methods to produce comparable inequality statistics, and underpins the World Inequality Report. It is a primary reference for empirical research on global inequality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

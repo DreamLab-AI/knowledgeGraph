@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:environmental-sensor",
+  "title": "Environmental Sensor",
+  "slug": "environmental-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:environmental-sensor",
+  "domain": "robotics",
+  "definition": "An environmental sensor is a device that measures ambient physical conditions of its surroundings, such as temperature, humidity, pressure, light level, air quality, or sound. As an exteroceptive sensor it perceives the external world rather than a system's internal state. These sensors supply the contextual data used by robots, augmented-reality systems, and smart-environment applications to adapt their behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exteroceptive-sensor",
+        "label": "Exteroceptive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    }
+  ]
+}

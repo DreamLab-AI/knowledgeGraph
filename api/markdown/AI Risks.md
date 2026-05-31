@@ -571,8 +571,8 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:governance-object",
-      "label": "Governance Object"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     },
     {
       "@id": "urn:ngm:class:harm-taxonomy",
@@ -686,7 +686,7 @@ public:: true
         "label": "Pre-deployment Evaluation"
       },
       {
-        "@id": "urn:ngm:class:responsible-scaling-policies",
+        "@id": "urn:ngm:class:responsible-scaling-policy",
         "label": "Responsible Scaling Policies"
       },
       {

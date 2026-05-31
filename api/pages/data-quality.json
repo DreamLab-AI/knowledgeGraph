@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:e47bd45c8a61fe23a1eca640d215cef57ecf5ebf550f8f0c63d5563df0283a2f",
+  "title": "Data Quality",
+  "slug": "data-quality",
+  "public": true,
+  "classIri": "urn:ngm:class:data-quality",
+  "domain": "data-management",
+  "definition": "The degree to which data is fit for its intended use, assessed against dimensions such as accuracy, completeness, consistency, timeliness, and validity. Poor data quality undermines analysis and decision making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

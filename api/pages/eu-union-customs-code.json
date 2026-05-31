@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:eu-union-customs-code",
+  "title": "EU Union Customs Code",
+  "slug": "eu-union-customs-code",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-union-customs-code",
+  "domain": "supply-chain",
+  "definition": "The EU Union Customs Code (UCC) is the legal framework governing customs rules and procedures for goods entering, leaving, or moving within the European Union. It standardises declarations, tariff classification, valuation, origin rules, and the move toward fully electronic, paperless customs processing. The UCC is the reference regime for customs and trade-facilitation systems operating across the EU single market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    }
+  ]
+}

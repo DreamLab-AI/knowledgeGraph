@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:9dafe0fa6384c2b0e6bdf6ac15503d39f0679ab3ed26d68d35f7cc074bd61990",
+  "title": "Pinecone",
+  "slug": "pinecone",
+  "public": true,
+  "classIri": "urn:ngm:class:pinecone",
+  "domain": "artificial-intelligence",
+  "definition": "A managed cloud vector database service that stores embeddings and provides scalable approximate nearest neighbour similarity search for machine learning applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

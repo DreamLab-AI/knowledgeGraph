@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:standardized-formats",
+  "title": "Standardized Formats",
+  "slug": "standardized-formats",
+  "public": true,
+  "classIri": "urn:ngm:class:standardized-formats",
+  "domain": "metaverse",
+  "definition": "Standardized formats are openly specified, consistently structured file and data encodings, such as glTF for 3D assets, USD for scene description, or VRM for avatars, that allow content to be created in one tool and faithfully consumed in another. By fixing geometry, material, animation, and metadata conventions, they decouple content from any single application or platform. They are the precondition for portability, archival longevity, and interoperability across the metaverse content pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Supply-Chain Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:ngm:class:asset-archive",
+        "label": "Asset Archive"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-archive",
+      "label": "Asset Archive"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    }
+  ]
+}

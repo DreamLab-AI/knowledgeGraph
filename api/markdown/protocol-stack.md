@@ -1,0 +1,4 @@
+- ### Definition
+  - A protocol stack is the layered arrangement of cooperating network protocols, each layer serving the one above it. It structures [[Network Communication]] and gives each [[Network Layer]] a defined role and interface.
+- ### Content
+  - In the TCP/IP model, the link layer handles local frame delivery, the internet layer (IP) routes packets across networks, the transport layer (TCP/UDP) provides end-to-end delivery and optional reliability, and the application layer carries protocols such as HTTP. Encapsulation wraps higher-layer data in lower-layer headers, and well-defined interfaces between layers let implementations evolve independently while preserving interoperability.

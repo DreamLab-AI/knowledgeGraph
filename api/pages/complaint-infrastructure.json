@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:complaint-infrastructure",
+  "title": "Complaint Infrastructure",
+  "slug": "complaint-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:complaint-infrastructure",
+  "domain": "governance",
+  "definition": "Complaint infrastructure is the organisational and technical system through which consumers can submit, track, escalate, and resolve grievances against providers, and through which regulators monitor systemic harms. It comprises intake channels, case-management workflows, redress mechanisms, and reporting that feed enforcement and policy. It matters because accessible, auditable complaint handling is a structural requirement of consumer-protection regimes, turning individual grievances into actionable signals and remedies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ]
+}

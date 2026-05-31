@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:hugging-face-model-hub",
+  "title": "Hugging Face Model Hub",
+  "slug": "hugging-face-model-hub",
+  "public": true,
+  "classIri": "urn:ngm:class:hugging-face-model-hub",
+  "domain": "ai",
+  "definition": "The Hugging Face Model Hub is a public repository and platform for sharing, discovering, and versioning machine-learning models, datasets, and demo spaces. Built on Git and Git-LFS, it hosts hundreds of thousands of pretrained models with standardised model cards, metadata, and direct integration into the Transformers ecosystem. It functions as the central distribution layer for open machine-learning artefacts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    }
+  ]
+}

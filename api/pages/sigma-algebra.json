@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sigma-algebra",
+  "title": "Sigma-Algebra",
+  "slug": "sigma-algebra",
+  "public": true,
+  "classIri": "urn:ngm:class:sigma-algebra",
+  "domain": "data",
+  "definition": "A sigma-algebra is a collection of subsets of a sample space that contains the whole space and is closed under complementation and countable unions. It specifies exactly which sets are measurable, providing the domain on which measures and probability are rigorously defined. It is the structural foundation of measure theory, integration, and the theory of stochastic processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:multi-hop-reasoning",
+  "title": "Multi-Hop Reasoning",
+  "slug": "multi-hop-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-hop-reasoning",
+  "domain": "ai",
+  "definition": "Multi-hop reasoning is the capability to answer a question or draw a conclusion by chaining together several intermediate inferences or retrieved facts, rather than relying on a single piece of evidence. In language models and retrieval systems it requires composing information across multiple documents or knowledge-graph edges. It is central to complex question answering and is a known weak point for shallow retrieval and single-pass models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval-Augmented Generation (RAG)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

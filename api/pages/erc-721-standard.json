@@ -23,7 +23,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:erc-20-standard",
+        "id": "urn:ngm:class:erc20-standard",
         "label": "ERC-20 Standard"
       }
     ],

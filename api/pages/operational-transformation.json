@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:59299c267d0d88a6d2dec23b86ea103f429c5adb260c8e566e7a67a58d1dfb67",
+  "title": "Operational Transformation",
+  "slug": "operational-transformation",
+  "public": true,
+  "classIri": "urn:ngm:class:operational-transformation",
+  "domain": "distributed-systems",
+  "definition": "A concurrency control technique for collaborative editing that transforms concurrent operations against each other so that all replicas converge to the same consistent state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaboration-tools",
+        "label": "Collaboration Tools"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "conflict-resolution",
+      "label": "Conflict Resolution"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

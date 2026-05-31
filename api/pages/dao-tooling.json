@@ -12,8 +12,8 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:coordination-technology",
-      "label": "Coordination Technology"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
       "id": "urn:ngm:class:governance-infrastructure",
@@ -3007,5 +3007,14 @@
       "label": "Zero-Knowledge Proof"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
+    }
+  ]
 }

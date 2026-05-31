@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:98d8b72dcbdd836df63665507b7acd22d7e13a1453706a03058ca94d9d3e18a0",
+  "title": "Runtime Layer",
+  "slug": "runtime-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:runtime-layer",
+  "domain": "runtime",
+  "definition": "The Runtime Layer is the stratum that provides the execution environment in which higher-level code and models actually run. It sits above the Compute Layer that allocates resources and below the application and inference strata it hosts. It contains process and memory management, schedulers, sandboxes, and the libraries that support running programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    },
+    {
+      "slug": "garbage-collection",
+      "label": "Garbage Collection"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

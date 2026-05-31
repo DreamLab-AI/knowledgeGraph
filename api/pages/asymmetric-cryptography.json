@@ -67,6 +67,10 @@
       "label": "Digital Signature"
     },
     {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
     }

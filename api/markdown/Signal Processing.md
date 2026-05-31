@@ -1,4 +1,5 @@
 public:: true
+alias:: SignalProcessing
 
 # Signal Processing
 ```json-ld

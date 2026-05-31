@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-200-robotic-telepresence
 
 # Robotic Telepresence
 ```json-ld

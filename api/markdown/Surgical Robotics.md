@@ -1,4 +1,5 @@
 public:: true
+alias:: SurgicalRobotics
 
 # surgical robotics
 ```json-ld

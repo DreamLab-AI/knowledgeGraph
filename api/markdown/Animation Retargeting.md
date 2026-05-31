@@ -83,8 +83,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:animation-technology",
-      "label": "Animation Technology"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     }
   ],
   "relations": {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Data lineage tracking automatically captures provenance metadata across pipelines, often modelled with the [[Provenance Ontology PROV-O]] and embedded in a [[Data Fabric Architecture]].
+- ### Content
+  - Tracking instruments ETL jobs, SQL engines and orchestration tools to emit lineage events that assemble into a live graph of derivations. This continuous record enables reproducibility of analyses, automated impact assessment and standards-based interchange of provenance.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:2be4293f7d8f9c06fa0a4becc0110115c60b90418ad9e55941eca20f08fcf2c5",
+  "title": "Constraint Satisfaction",
+  "slug": "constraint-satisfaction",
+  "public": true,
+  "classIri": "urn:ngm:class:constraint-satisfaction",
+  "domain": "artificial-intelligence",
+  "definition": "A problem class in which the goal is to assign values to variables subject to constraints that restrict the allowable combinations, and the methods used to find such assignments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

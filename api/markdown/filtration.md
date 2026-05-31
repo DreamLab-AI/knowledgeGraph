@@ -1,0 +1,4 @@
+- ### Definition
+  - A filtration is a time-indexed increasing family of sigma-algebras encoding the information available as a [[Stochastic Process]] evolves, providing the rigorous notion of "information up to time t". It underpins adaptedness and conditioning used across [[Probabilistic Model]]s.
+- ### Content
+  - Formally, a filtration is a collection of nested sigma-algebras where earlier ones are contained in later ones, capturing the irreversible growth of knowledge over time. A process is adapted to a filtration when its value at each time is measurable with respect to the corresponding sigma-algebra, a condition essential to defining martingales, stopping times, and the conditional expectations central to sequential inference and stochastic modelling.

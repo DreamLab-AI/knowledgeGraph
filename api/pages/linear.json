@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:ab8c676a233e75a1ac7af513451341dcb599cead844adb95d2bd2271d21b237f",
+  "title": "Linear",
+  "slug": "linear",
+  "public": true,
+  "classIri": "urn:ngm:class:linear",
+  "domain": "metaverse",
+  "definition": "Linear refers to relationships, mappings or systems whose output is proportional to and additive in their input, a property exploited heavily in graphics colour spaces and numerical methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

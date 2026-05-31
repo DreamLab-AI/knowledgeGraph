@@ -463,8 +463,8 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:accessibility-tools",
-      "label": "Accessibility Tools"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
       "@id": "urn:ngm:class:communication-infrastructure",

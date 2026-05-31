@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:37af839b916080653798a1429c807be2444c13a92726cd64ef69c459ff69d698",
+  "title": "BitGo",
+  "slug": "bit-go",
+  "public": true,
+  "classIri": "urn:ngm:class:bit-go",
+  "domain": "blockchain",
+  "definition": "BitGo is a company that provides digital asset custody, wallet, and security services, including multi-signature wallet technology, for institutional clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:institutional-custody",
+      "label": "Institutional Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    },
+    {
+      "slug": "institutional-custody",
+      "label": "Institutional Custody"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

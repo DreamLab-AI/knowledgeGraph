@@ -1,4 +1,5 @@
 public:: true
+alias:: Mobile Robots, MobileRobot
 
 # Mobile Robot
 ```json-ld

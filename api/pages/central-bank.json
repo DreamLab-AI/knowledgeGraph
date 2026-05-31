@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -63,12 +67,24 @@
       "label": "CBDCs"
     },
     {
+      "slug": "cpmi-iosco-pfmi",
+      "label": "CPMI-IOSCO PFMI"
+    },
+    {
       "slug": "central-bank-digital-currency-cbdc",
       "label": "Central Bank Digital Currency (CBDC)"
     },
     {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
     }
   ]
 }

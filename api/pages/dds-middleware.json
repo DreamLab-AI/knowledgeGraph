@@ -75,12 +75,20 @@
       "label": "Mobile Robot Platform"
     },
     {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     },
     {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
     }
   ]
 }

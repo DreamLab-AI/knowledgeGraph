@@ -382,7 +382,7 @@ public:: true
         "label": "Payload Bay"
       },
       {
-        "@id": "urn:ngm:class:power-system",
+        "@id": "urn:ngm:class:power-systems",
         "label": "Power System"
       },
       {

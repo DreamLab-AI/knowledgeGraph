@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:341860a3132d4e6cb474e02c5713288b476677b89f788b0a9055909c8952df2a",
+  "title": "Radar",
+  "slug": "radar",
+  "public": true,
+  "classIri": "urn:ngm:class:radar",
+  "domain": "robotics",
+  "definition": "Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity and angle of objects, used in robotics and autonomous systems for reliable perception.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

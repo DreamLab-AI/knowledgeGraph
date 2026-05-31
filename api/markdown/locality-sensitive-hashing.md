@@ -1,0 +1,4 @@
+- ### Definition
+  - Locality-sensitive hashing buckets similar vectors together to allow fast approximate nearest-neighbour search; it supports deduplication and filtering of [[Training Data]] and accelerates [[Information Retrieval]] over large corpora.
+- ### Content
+  - Hash families are chosen so that collision probability rises with input similarity under a target metric such as cosine or Jaccard distance. Multiple hash tables and amplification via AND/OR constructions tune the precision-recall trade-off, and LSH is a common preprocessing step for deduplicating massive training sets.

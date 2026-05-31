@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:eecdcfadae1499ea57656e5cd1147fb30212e729a80c34ab2c1b3938fe0565e8",
+  "title": "ISO 27701",
+  "slug": "iso-27701",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-27701",
+  "domain": "standards",
+  "definition": "An ISO/IEC standard extending ISO/IEC 27001 and 27002 with requirements and guidance for a privacy information management system. It supports management of personally identifiable information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    }
+  ]
+}

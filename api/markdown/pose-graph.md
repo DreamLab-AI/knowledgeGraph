@@ -1,0 +1,4 @@
+- ### Definition
+  - A pose graph encodes robot poses as nodes and inter-pose spatial constraints as edges, optimised to minimise overall error. It is a structural component of [[Topological Map]] construction and graph-based SLAM.
+- ### Content
+  - Edges fuse relative motion estimates from odometry with loop-closure constraints detected when the robot revisits a place. Nonlinear least-squares solvers (e.g. Gauss-Newton, Levenberg-Marquardt) optimise the graph to redistribute drift, producing globally consistent trajectories and maps even over large, looping environments.

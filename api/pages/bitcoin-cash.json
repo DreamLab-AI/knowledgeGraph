@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:98b5f0cc79564bdf20dd7e0df96825a021f5e8a486aa1228e33d3270739d0218",
+  "title": "Bitcoin Cash",
+  "slug": "bitcoin-cash",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-cash",
+  "domain": "blockchain",
+  "definition": "A cryptocurrency and blockchain created in 2017 as a hard fork of Bitcoin, with a larger block size intended to increase on-chain transaction throughput. It uses the same proof-of-work consensus model as Bitcoin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "https-bitcoincash-org",
+      "label": "https://bitcoincash.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

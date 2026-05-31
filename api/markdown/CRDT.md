@@ -403,12 +403,12 @@ public:: true
       "label": "Protocol and Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:commutative-data-structure",
-      "label": "Commutative Data Structure"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "@id": "urn:ngm:class:distributed-data-synchronisation",
-      "label": "Distributed Data Synchronisation"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

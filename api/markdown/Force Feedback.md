@@ -1,4 +1,5 @@
 public:: true
+alias:: ForceFeedback
 
 # Force Feedback
 ```json-ld

@@ -311,12 +311,12 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:collaborative-learning-infrastructure",
-      "label": "Collaborative Learning Infrastructure"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
-      "@id": "urn:ngm:class:group-facilitation-tools",
-      "label": "Group Facilitation Tools"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {
@@ -524,7 +524,7 @@ public:: true
         "label": "IETF RFC 3550 RTP"
       },
       {
-        "@id": "urn:ngm:class:web-rtc-w3-c-specification",
+        "@id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "WebRTC W3C Specification"
       }
     ]

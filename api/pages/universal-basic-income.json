@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:universal-basic-income",
+  "title": "Universal Basic Income",
+  "slug": "universal-basic-income",
+  "public": true,
+  "classIri": "urn:ngm:class:universal-basic-income",
+  "domain": "governance",
+  "definition": "Universal basic income (UBI) is an economic policy under which all members of a population receive a regular, unconditional cash payment from the state or another institution, independent of employment status or means. It is debated as a mechanism to reduce poverty, buffer labour displacement from automation and AI, and address structural inequality. Proponents view it as a redistributive instrument while critics question its fiscal sustainability and incentive effects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

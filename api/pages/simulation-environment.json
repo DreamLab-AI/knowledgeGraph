@@ -68,8 +68,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
       "slug": "physics-engine",
       "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
     },
     {
       "slug": "robot-hardware",

@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:a9fd8ceb9b20a7523558398e86c52ea745122e498f6d405fa61fd33f8f03d3fd",
+  "title": "BIS Innovation Hub",
+  "slug": "bis-innovation-hub",
+  "public": true,
+  "classIri": "urn:ngm:class:bis-innovation-hub",
+  "domain": "governance",
+  "definition": "The innovation arm of the Bank for International Settlements, established to develop public goods for central banks and explore financial technology.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bis",
+      "label": "BIS"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "wholesale-cbdc",
+      "label": "Wholesale CBDC"
+    },
+    {
+      "slug": "central-bank",
+      "label": "Central Bank"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

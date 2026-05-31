@@ -229,6 +229,10 @@
       "label": "Access Control"
     },
     {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
@@ -249,8 +253,24 @@
       "label": "Data Anonymization Pipeline"
     },
     {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
+      "slug": "gdpr-article-25",
+      "label": "GDPR Article 25"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
       "slug": "privacy-filter",
       "label": "Privacy Filter"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
     },
     {
       "slug": "trust-and-safety",

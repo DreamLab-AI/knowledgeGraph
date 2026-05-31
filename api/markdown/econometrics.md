@@ -1,0 +1,4 @@
+- ### Definition
+  - Econometrics applies statistical and mathematical methods to economic data to estimate relationships, test theory, and forecast outcomes. It is a quantitative discipline within [[Economics]] and shares methods with [[Time-Series Forecasting]].
+- ### Content
+  - Core techniques include linear and instrumental-variable regression, panel models, and time-series methods such as ARIMA and VAR, alongside causal-inference designs for policy evaluation. Modern practice blends classical inference with machine-learning estimators to improve out-of-sample prediction while preserving interpretability.

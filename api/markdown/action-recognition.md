@@ -1,0 +1,4 @@
+- ### Definition
+  - Action Recognition classifies human or agent activity from video and motion sequences. It is closely coupled with [[Pose Estimation]], whose skeletal keypoints frequently serve as the input features that make recognition more robust to appearance variation.
+- ### Content
+  - Architectures range from two-stream and 3D CNNs to skeleton-based graph networks and video transformers that model temporal dynamics. Performance depends on labeled motion datasets and on disambiguating visually similar actions, and the task feeds downstream systems for behaviour analysis, safety monitoring, and interactive applications.

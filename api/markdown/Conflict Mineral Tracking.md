@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0445-conflict-mineral-tracking
 
 # Conflict Mineral Tracking
 ```json-ld

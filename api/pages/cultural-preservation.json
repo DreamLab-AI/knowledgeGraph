@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cultural-preservation",
+  "title": "Cultural Preservation",
+  "slug": "cultural-preservation",
+  "public": true,
+  "classIri": "urn:ngm:class:cultural-preservation",
+  "domain": "governance",
+  "definition": "Cultural preservation is the systematic safeguarding, documentation and transmission of tangible and intangible cultural heritage so that it survives for future generations. In digital contexts it involves capturing artefacts as durable metadata-rich records, archiving collective memory, and ensuring long-term accessibility against media decay and format obsolescence. It matters as a governance concern for who controls heritage data and how it remains discoverable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "id": "urn:ngm:class:collective-memory-archive",
+        "label": "Collective Memory Archive"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "collective-memory-archive",
+      "label": "Collective Memory Archive"
+    }
+  ]
+}

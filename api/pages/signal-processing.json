@@ -71,6 +71,10 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },
@@ -121,6 +125,10 @@
     {
       "slug": "proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
     },
     {
       "slug": "speech-and-voice",

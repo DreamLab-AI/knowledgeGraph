@@ -1,0 +1,4 @@
+- ### Definition
+  - Cultural preservation is the safeguarding and transmission of cultural heritage, in digital form relying on [[Artifact Metadata]] and a [[Collective Memory Archive]] to keep records durable and accessible.
+- ### Content
+  - Effective preservation pairs rich descriptive metadata with stable storage and migration strategies that survive format obsolescence. Governance questions, ownership, provenance and access rights, are as central as the technical archiving itself.

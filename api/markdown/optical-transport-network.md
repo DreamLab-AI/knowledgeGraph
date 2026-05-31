@@ -1,0 +1,4 @@
+- ### Definition
+  - An Optical Transport Network is an ITU-T G.709 framework for carrying client signals over WDM fiber with forward error correction and management overhead, operating closely with the [[Physical Layer]].
+- ### Content
+  - OTN wraps client traffic in standardized frames that add monitoring and error correction for long-haul, high-capacity transport. It underpins carrier backbones, multiplexing many wavelengths onto a single fiber while exposing operations and maintenance capabilities absent from earlier transport technologies.

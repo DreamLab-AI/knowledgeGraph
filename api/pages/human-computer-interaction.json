@@ -112,6 +112,10 @@
       "label": "Pose Estimation"
     },
     {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    },
+    {
       "slug": "product-design",
       "label": "Product Design"
     },

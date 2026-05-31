@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:e8a216b915e4072baf218e121de5832b689f49a2d2b37df99d01a259d1b66c55",
+  "title": "Oracle Service",
+  "slug": "oracle-service",
+  "public": true,
+  "classIri": "urn:ngm:class:oracle-service",
+  "domain": "blockchain",
+  "definition": "A service that supplies external data to smart contracts, bridging the gap between on-chain logic and off-chain information such as prices, events or sensor readings. It provides the inputs that contracts cannot read directly from the blockchain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:price-oracle",
+      "label": "Price Oracle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "chainlink",
+      "label": "Chainlink"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "https-ethereum-org-en-developers-docs-oracles",
+      "label": "https://ethereum.org/en/developers/docs/oracles/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    },
+    {
+      "slug": "smart-royalty-contract",
+      "label": "Smart Royalty Contract"
+    }
+  ]
+}

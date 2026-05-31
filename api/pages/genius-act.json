@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:eedbc1f90bc336d6722b9c1ad7190e668774dfc61a74226f7b8e04853f892f66",
+  "title": "GENIUS Act",
+  "slug": "genius-act",
+  "public": true,
+  "classIri": "urn:ngm:class:genius-act",
+  "domain": "governance",
+  "definition": "The GENIUS Act is United States legislation establishing a federal regulatory framework for the issuance of payment stablecoins.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:crypto-regulation",
+      "label": "Crypto Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "https-www-congress-gov-bill-119-th-congress-senate-bill-394",
+      "label": "https://www.congress.gov/bill/119th-congress/senate-bill/394"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-genius-act",
+      "label": "https://en.wikipedia.org/wiki/GENIUS_Act"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

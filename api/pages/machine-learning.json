@@ -141,12 +141,20 @@
       "label": "Adaptive Virtual Experience"
     },
     {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
     },
     {
       "slug": "behavior-analysis",
@@ -209,6 +217,10 @@
       "label": "Collective Intelligence System"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
@@ -221,12 +233,20 @@
       "label": "Computation And Intelligence Domain"
     },
     {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
       "slug": "context-aware-response",
       "label": "Context Aware Response"
     },
     {
       "slug": "context-awareness",
       "label": "Context Awareness"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
     },
     {
       "slug": "control-algorithm",
@@ -241,6 +261,10 @@
       "label": "Convergence"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
       "slug": "customs-trade-facilitation",
       "label": "Customs Trade Facilitation"
     },
@@ -251,6 +275,10 @@
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
     },
     {
       "slug": "delta-robot",
@@ -281,12 +309,24 @@
       "label": "Ensemble Methods"
     },
     {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
       "slug": "explainable-ai",
       "label": "Explainable AI"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
     },
     {
       "slug": "generative-ai",
@@ -295,6 +335,14 @@
     {
       "slug": "generative-model",
       "label": "Generative Model"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
     },
     {
       "slug": "haptic-feedback",
@@ -345,6 +393,14 @@
       "label": "Industrial Robot"
     },
     {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
       "slug": "interpretable-ai",
       "label": "Interpretable AI"
     },
@@ -353,16 +409,28 @@
       "label": "IoT Sensor Network"
     },
     {
+      "slug": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "keras",
+      "label": "Keras"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
     {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
     },
     {
       "slug": "large-language-models",
@@ -373,8 +441,20 @@
       "label": "Learning Algorithm"
     },
     {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
     },
     {
       "slug": "lo-ra-do-ra-etc",
@@ -383,6 +463,10 @@
     {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
     },
     {
       "slug": "machine-learning-technique",
@@ -409,6 +493,10 @@
       "label": "Model Interpretability"
     },
     {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },
@@ -421,12 +509,32 @@
       "label": "Model Training"
     },
     {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
       "slug": "navigation",
       "label": "Navigation"
     },
     {
+      "slug": "onnx-operator-set",
+      "label": "ONNX Operator Set"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
       "slug": "online-learning",
       "label": "Online Learning"
+    },
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
     },
     {
       "slug": "optical-sensor-array",
@@ -461,6 +569,10 @@
       "label": "Privacy Preserving Analytics"
     },
     {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },
@@ -485,12 +597,20 @@
       "label": "Reasoning"
     },
     {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
       "slug": "robot-control",
       "label": "Robot Control"
     },
     {
       "slug": "robot-learning",
       "label": "Robot Learning"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
     },
     {
       "slug": "robot-standard",
@@ -513,6 +633,10 @@
       "label": "Safety and alignment"
     },
     {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
       "slug": "security",
       "label": "Security"
     },
@@ -529,6 +653,14 @@
       "label": "Speech and Voice"
     },
     {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
     },
@@ -539,6 +671,14 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tensor-flow-lite",
+      "label": "TensorFlow Lite"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
     },
     {
       "slug": "time-series-forecasting",
@@ -561,8 +701,28 @@
       "label": "Training and fine tuning"
     },
     {
+      "slug": "ucl",
+      "label": "UCL"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
     },
     {
       "slug": "ai-core-concepts",

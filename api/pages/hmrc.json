@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:b7ef47ae9ccfd6bfd522a079d9cb0f781e5701433c95f3a687cbf109d8c5afb7",
+  "title": "HMRC",
+  "slug": "hmrc",
+  "public": true,
+  "classIri": "urn:ngm:class:hmrc",
+  "domain": "governance",
+  "definition": "His Majesty's Revenue and Customs, the United Kingdom government department responsible for tax collection and the administration of certain payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tax",
+        "label": "Tax"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tax",
+      "label": "Tax"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "tax-treatment-crypto",
+      "label": "Tax Treatment Crypto"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

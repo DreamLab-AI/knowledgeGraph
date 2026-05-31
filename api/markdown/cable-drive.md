@@ -1,0 +1,4 @@
+- ### Definition
+  - A Cable Drive is a [[Mechanical Component]] transmission that moves robotic joints via tensioned cables over pulleys, relocating actuator mass away from the moving end-effector.
+- ### Content
+  - Cable-driven systems reduce reflected inertia and enable compliant, backdrivable behaviour valued in collaborative and surgical robots. Their principal trade-offs are cable stretch, friction, and routing complexity, which require pretensioning and periodic maintenance to preserve positioning accuracy.

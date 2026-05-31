@@ -1,0 +1,4 @@
+- ### Definition
+  - A credential store is the backing repository of identifiers and secrets that an [[Identity Provider]] consults to perform [[Authentication]]. It is a structural part of identity provider deployments.
+- ### Content
+  - Credential stores range from LDAP directories and relational user tables to dedicated secrets vaults, often hashing passwords and isolating high-value secrets. Hardening focuses on encryption at rest, least-privilege access, rotation, and replication so that the store remains both highly available and resistant to compromise.

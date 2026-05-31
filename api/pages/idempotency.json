@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:idempotency",
+  "title": "Idempotency",
+  "slug": "idempotency",
+  "public": true,
+  "classIri": "urn:ngm:class:idempotency",
+  "domain": "infrastructure",
+  "definition": "Idempotency is the property of an operation whereby applying it multiple times produces the same result as applying it once. In distributed systems and APIs it is essential for safe retries, ensuring that duplicated requests caused by network failures do not corrupt state or cause unintended side effects. Idempotency is commonly enforced via idempotency keys, deterministic merge functions, or naturally commutative state updates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

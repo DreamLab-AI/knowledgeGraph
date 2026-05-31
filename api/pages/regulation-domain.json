@@ -1,0 +1,179 @@
+{
+  "id": "urn:visionflow:page:a129ce1bd2f35ab665b5611f523ceeb3d78934bd031330d85aa15d655e6ae9a1",
+  "title": "Regulation Domain",
+  "slug": "regulation-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:regulation-domain",
+  "domain": "regulation",
+  "definition": "The Regulation Domain covers the creation, interpretation and enforcement of rules that govern conduct across sectors. Its scope includes statutory frameworks, standards, supervisory regimes and enforcement mechanisms. It is a top-level subject classification that supplies obligations to many other domains. The boundary excludes the demonstration of adherence to those rules, which belongs to the Compliance Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:statutory-framework",
+        "label": "Statutory Framework"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-regime",
+        "label": "Supervisory Regime"
+      },
+      {
+        "id": "urn:ngm:class:enforcement",
+        "label": "Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:rule-making",
+        "label": "Rule-Making"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:legal-tech-domain",
+        "label": "Legal Tech Domain"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation-domain",
+        "label": "Knowledge Representation Domain"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:supervision",
+        "label": "Supervision"
+      },
+      {
+        "id": "urn:ngm:class:obligation-definition",
+        "label": "Obligation Definition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "statutory-framework",
+      "label": "Statutory Framework"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "supervisory-regime",
+      "label": "Supervisory Regime"
+    },
+    {
+      "slug": "enforcement",
+      "label": "Enforcement"
+    },
+    {
+      "slug": "rule-making",
+      "label": "Rule-Making"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "Legal Tech Domain"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "logic",
+      "label": "Logic"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "supervision",
+      "label": "Supervision"
+    },
+    {
+      "slug": "obligation-definition",
+      "label": "Obligation Definition"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "Legal Tech Domain"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

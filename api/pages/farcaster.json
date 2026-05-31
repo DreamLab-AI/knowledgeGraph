@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:7da6a1e81fe5ea8f94127b0368b538abde5b7657c115b3cf00073c67f1853acc",
+  "title": "Farcaster",
+  "slug": "farcaster",
+  "public": true,
+  "classIri": "urn:ngm:class:farcaster",
+  "domain": "blockchain",
+  "definition": "Farcaster is a decentralised social networking protocol that stores user identity on a blockchain while distributing message data across nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

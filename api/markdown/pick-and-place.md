@@ -1,0 +1,4 @@
+- ### Definition
+  - Pick and place is the robotic task of grasping an object and relocating it to a target, typically executed through [[Position Control]] and by mechanisms such as a [[Cylindrical Robot]].
+- ### Content
+  - A pick-and-place cycle localises the part, plans a collision-free trajectory to a grasp pose, actuates an end-effector to secure it, then transports and releases it at the destination. In structured industrial lines, position control and fixed feeders yield very high throughput and repeatability, while unstructured bin-picking adds vision and learned grasping to handle variable object pose and geometry.

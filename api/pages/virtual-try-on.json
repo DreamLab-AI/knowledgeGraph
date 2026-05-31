@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:7cd914f40ec391703bffcda827d89a513dcdb1f3c37eb9e8422eb390d5f46ec1",
+  "title": "Virtual Try-On",
+  "slug": "virtual-try-on",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-try-on",
+  "domain": "machine-learning",
+  "definition": "Virtual try-on is a computer vision and graphics technique that overlays clothing, accessories, or cosmetics onto an image or video of a person so they can preview how an item would look.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

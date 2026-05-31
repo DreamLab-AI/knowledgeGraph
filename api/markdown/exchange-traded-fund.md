@@ -1,0 +1,4 @@
+- ### Definition
+  - An exchange-traded fund is an exchange-listed pooled investment that tracks an asset or index, the general category specialised by [[Spot Bitcoin ETF]] and [[Bitcoin ETF]].
+- ### Content
+  - Authorised participants create and redeem shares to keep ETF prices aligned with net asset value, providing intraday liquidity. Crypto ETFs extend this regulated wrapper to digital assets, giving traditional investors exposure without direct custody.

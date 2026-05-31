@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:695cb187e8a9cfa9bcd22a4f6eae0adb1aec1c43bdfb758affb09623e996d218",
+  "title": "FIPS 186-5",
+  "slug": "fips-186-5",
+  "public": true,
+  "classIri": "urn:ngm:class:fips-186-5",
+  "domain": "standards",
+  "definition": "Revision 5 of the NIST Digital Signature Standard, specifying approved digital signature algorithms including ECDSA and EdDSA. It defines requirements for generating and verifying digital signatures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    }
+  ]
+}

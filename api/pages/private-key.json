@@ -117,6 +117,14 @@
       "label": "Cryptographic Key Management"
     },
     {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
       "slug": "did-nostr-identity",
       "label": "DID Nostr Identity"
     },
@@ -137,12 +145,24 @@
       "label": "Key Derivation Function"
     },
     {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
       "slug": "sovereign-keyset",
       "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
     }
   ]
 }

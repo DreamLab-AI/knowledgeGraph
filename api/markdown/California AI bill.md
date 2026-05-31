@@ -419,12 +419,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:frontier-model-governance",
-      "label": "Frontier Model Governance"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     },
     {
-      "@id": "urn:ngm:class:legislative-instrument",
-      "label": "Legislative Instrument"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -640,7 +640,7 @@ public:: true
         "label": "Yoshua Bengio"
       },
       {
-        "@id": "urn:ngm:individual:google-deep-mind",
+        "@id": "urn:ngm:class:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

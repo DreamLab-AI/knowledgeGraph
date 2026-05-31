@@ -77,6 +77,10 @@
   ],
   "backlinks": [
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
     },
@@ -121,6 +125,10 @@
       "label": "MS Phi models"
     },
     {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
       "slug": "multi-head-attention",
       "label": "Multi-Head Attention"
     },
@@ -155,6 +163,14 @@
     {
       "slug": "translation",
       "label": "Translation"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
     }
   ]
 }

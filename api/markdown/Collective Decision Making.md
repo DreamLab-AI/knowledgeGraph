@@ -1,4 +1,5 @@
 public:: true
+alias:: Collective Decision-Making
 
 # Collective Decision Making
 ```json-ld

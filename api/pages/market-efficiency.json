@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:market-efficiency",
+  "title": "Market Efficiency",
+  "slug": "market-efficiency",
+  "public": true,
+  "classIri": "urn:ngm:class:market-efficiency",
+  "domain": "blockchain",
+  "definition": "Market efficiency is the degree to which asset prices fully and rapidly reflect all available information, leaving no systematic opportunity for risk-adjusted excess returns. The efficient-market hypothesis frames it in weak, semi-strong, and strong forms according to the information set incorporated. Higher efficiency implies accurate price signals, lower transaction costs, and effective capital allocation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    }
+  ]
+}

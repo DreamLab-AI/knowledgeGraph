@@ -1,0 +1,4 @@
+- ### Definition
+  - Benign overfitting describes overparameterised models that interpolate noisy training data yet generalise well, challenging classical [[Algorithmic Bias and Variance]] theory and complicating model selection via [[Cross-Validation]].
+- ### Content
+  - The effect arises when a model has far more parameters than data points and an implicit bias (from the optimiser or architecture) toward low-norm interpolating solutions. Theoretical work links it to the double-descent curve, where test error first rises then falls again as capacity grows past the interpolation threshold.

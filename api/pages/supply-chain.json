@@ -75,8 +75,36 @@
       "label": "Cold Chain Monitoring"
     },
     {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "trade-lens",
+      "label": "TradeLens"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

@@ -1,0 +1,4 @@
+- ### Definition
+  - An LLM extended with the ability to call external tools, APIs, and code at inference time to access live data and act beyond its training knowledge. It is the foundation for autonomous [[Agents]] and [[Computer Use and Browser Agents]].
+- ### Content
+  - Tool use is typically realised through function-calling interfaces in which the model proposes a tool and arguments, the runtime executes it, and the result is fed back into the context. This pattern grounds outputs in authoritative sources, reduces hallucination, and enables multi-step reasoning over real-world systems.

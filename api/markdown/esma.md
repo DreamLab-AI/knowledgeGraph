@@ -1,0 +1,4 @@
+- ### Definition
+  - ESMA is the EU's securities-markets regulator that sets and harmonises rules for [[Securities Regulation]] and [[Regulatory Reporting]] across member states.
+- ### Content
+  - It issues binding technical standards, supervises selected entities, and promotes supervisory convergence among national authorities. ESMA is a key implementer of EU frameworks covering markets, disclosure, and crypto-assets under MiCA.

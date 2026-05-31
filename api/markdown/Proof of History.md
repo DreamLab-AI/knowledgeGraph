@@ -1,4 +1,5 @@
 public:: true
+alias:: Proof-of-History
 
 # Proof of History
 ```json-ld

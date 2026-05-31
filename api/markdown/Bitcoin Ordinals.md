@@ -1,4 +1,5 @@
 public:: true
+alias:: Bitcoin-Ordinals
 
 # Bitcoin Ordinals
 ```json-ld

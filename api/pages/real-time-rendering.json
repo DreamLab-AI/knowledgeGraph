@@ -102,12 +102,24 @@
       "label": "Compute Layer"
     },
     {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
       "slug": "data-processing-hardware",
       "label": "Data Processing Hardware"
     },
     {
       "slug": "extended-reality-xr",
       "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
     },
     {
       "slug": "game-engine",
@@ -122,8 +134,36 @@
       "label": "Graphics API"
     },
     {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
     },
     {
       "slug": "rendering-pipeline",
@@ -144,6 +184,22 @@
     {
       "slug": "virtual-reality-vr",
       "label": "Virtual Reality (VR)"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "web-gl",
+      "label": "WebGL"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
     }
   ]
 }

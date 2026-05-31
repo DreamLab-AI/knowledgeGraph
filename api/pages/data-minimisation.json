@@ -105,6 +105,14 @@
       "label": "Digital Society Surveillance"
     },
     {
+      "slug": "gdpr-article-25",
+      "label": "GDPR Article 25"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
       "slug": "privacy-filter",
       "label": "Privacy Filter"
     },

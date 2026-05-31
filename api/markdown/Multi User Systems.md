@@ -1,4 +1,5 @@
 public:: true
+alias:: Multi-User Systems, multi-user systems
 
 # Multi User Systems
 ```json-ld

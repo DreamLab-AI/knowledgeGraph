@@ -219,8 +219,8 @@ public:: true
       "label": "Agent Communication Protocol"
     },
     {
-      "@id": "urn:ngm:class:json-rpc-protocol",
-      "label": "JSON-RPC Protocol"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Chunking segments documents into retrievable passages prior to embedding, a foundational step in any [[RAG Pipeline]] and in knowledge-grounding for [[GPTs and Custom Assistants]].
+- ### Content
+  - Effective chunking balances chunk granularity against context coherence: too-small chunks fragment meaning while too-large chunks dilute relevance and waste context budget. Overlap, structure-aware splitting, and metadata enrichment improve recall and let the retriever surface focused, well-bounded evidence for generation.

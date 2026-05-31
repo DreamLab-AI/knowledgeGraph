@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ecb-digital-euro-regulation",
+  "title": "ECB Digital Euro Regulation",
+  "slug": "ecb-digital-euro-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:ecb-digital-euro-regulation",
+  "domain": "blockchain",
+  "definition": "The ECB Digital Euro Regulation is the legal and regulatory framework governing a potential central bank digital currency issued by the European Central Bank for the euro area. It defines the digital euro's legal-tender status, privacy safeguards, holding limits, and the roles of the Eurosystem and intermediaries in distribution. It establishes the rules under which a retail CBDC would operate alongside cash and commercial bank money.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

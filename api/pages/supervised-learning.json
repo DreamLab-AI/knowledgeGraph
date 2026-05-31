@@ -89,12 +89,32 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
     {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
     },
     {
       "slug": "ai-core-concepts",

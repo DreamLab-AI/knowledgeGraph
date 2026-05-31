@@ -1,0 +1,4 @@
+- ### Definition
+  - Heatmap regression predicts per-keypoint probability maps instead of raw coordinates; it is a core method used by [[Pose Estimation]] pipelines.
+- ### Content
+  - Encoding each landmark as a Gaussian peak preserves spatial structure and tolerates annotation noise better than direct coordinate regression. Decoding the sub-pixel argmax of each map yields the final keypoints, and the approach scales naturally to multiple landmarks and multi-person scenes via grouping post-processing.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:just-transition",
+  "title": "Just Transition",
+  "slug": "just-transition",
+  "public": true,
+  "classIri": "urn:ngm:class:just-transition",
+  "domain": "governance",
+  "definition": "A just transition is a framework for shifting economies toward low-carbon and sustainable production while ensuring that the burdens and benefits of that shift are distributed fairly. It seeks to protect workers, communities and developing regions dependent on carbon-intensive industries through retraining, social support and inclusive planning. The concept links climate policy with social equity and labour rights.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

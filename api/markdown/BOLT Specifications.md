@@ -33,7 +33,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:individual:bitcoin", "label": "Bitcoin"}
+      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
     ]
   },
   "quality": 0.8

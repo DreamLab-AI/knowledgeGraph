@@ -68,6 +68,10 @@
     {
       "slug": "model-property",
       "label": "Model Property"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
     }
   ]
 }

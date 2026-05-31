@@ -1,0 +1,4 @@
+- ### Definition
+  - Term definitions bind each label or identifier to its precise meaning, forming the core entries of a [[Glossary Index]] and a [[Semantic Metadata Registry]].
+- ### Content
+  - A well-formed term definition records the term, a unique identifier, the intended meaning, and often the source, scope notes, and relationships to broader or related terms. Capturing definitions in a machine-readable registry allows automated validation, disambiguation, and reuse across datasets and applications. Standards such as SKOS and ISO 11179 provide structures for representing definitions so that vocabularies remain consistent and interoperable as they evolve.

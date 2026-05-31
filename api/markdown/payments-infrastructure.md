@@ -1,0 +1,4 @@
+- ### Definition
+  - Payments infrastructure is the layered system of rails, clearing, and settlement that moves value, and it enables instruments like [[Stablecoins]] to function as transactional money alongside a [[Payment Processor]].
+- ### Content
+  - Traditional payments infrastructure relies on card networks, ACH, RTGS, and interbank messaging such as ISO 20022, while emerging blockchain rails offer programmable, near-instant settlement. The choice of infrastructure dictates latency, fees, cross-border reach, and settlement finality, shaping how digital economies transfer money at scale.

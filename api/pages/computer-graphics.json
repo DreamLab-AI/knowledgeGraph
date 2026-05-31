@@ -67,6 +67,34 @@
       "label": "3D Rendering Engine"
     },
     {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "holographic-display",
+      "label": "Holographic Display"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },
@@ -81,6 +109,22 @@
     {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
+    },
+    {
+      "slug": "web-gl",
+      "label": "WebGL"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
     }
   ]
 }

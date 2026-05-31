@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:b0be6b353b0aab69ce8ec59d246276b646677fc18f965f9b3038aa64b16a91d0",
+  "title": "Inworld AI",
+  "slug": "inworld-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:inworld-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Inworld AI is a company providing tools for building interactive AI-driven characters for games and virtual experiences. Its platform combines language models, speech and behaviour controls to drive non-player characters and avatars.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

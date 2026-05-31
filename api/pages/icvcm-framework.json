@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:icvcm-framework",
+  "title": "ICVCM Framework",
+  "slug": "icvcm-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:icvcm-framework",
+  "domain": "governance",
+  "definition": "The ICVCM Framework is the governance framework established by the Integrity Council for the Voluntary Carbon Market to set quality benchmarks for carbon credits. Centred on the Core Carbon Principles and an associated Assessment Framework, it defines criteria for additionality, permanence, robust quantification, and transparent governance. The framework aims to restore trust and comparability across voluntary carbon-credit issuers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

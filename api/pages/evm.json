@@ -67,6 +67,10 @@
       "label": "Account Abstraction"
     },
     {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -83,12 +87,20 @@
       "label": "ERC20"
     },
     {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
       "slug": "interoperability",
       "label": "Interoperability"
     },
     {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
     },
     {
       "slug": "private-blockchain",

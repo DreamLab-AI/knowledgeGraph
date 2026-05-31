@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:24a575c8a4299bf99e29f373f8fba0d62307c6bb9ae61ecc2643778d16191864",
+  "title": "Oxford Internet Institute",
+  "slug": "oxford-internet-institute",
+  "public": true,
+  "classIri": "urn:ngm:class:oxford-internet-institute",
+  "domain": "research",
+  "definition": "The Oxford Internet Institute is a department of the University of Oxford that conducts multidisciplinary research on the social and economic effects of the internet and digital technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

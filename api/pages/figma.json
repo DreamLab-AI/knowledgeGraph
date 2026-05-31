@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:figma",
+  "title": "Figma",
+  "slug": "figma",
+  "public": true,
+  "classIri": "urn:ngm:class:figma",
+  "domain": "metaverse",
+  "definition": "Figma is a browser-based collaborative interface-design and prototyping platform that lets multiple designers work simultaneously on the same files in real time. It provides vector editing, component and design-system management, interactive prototyping, and developer hand-off, all stored in the cloud for seamless multiplayer collaboration. Figma has become a standard tool for UI/UX design and cross-functional product teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:fig-jam",
+        "label": "FigJam"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

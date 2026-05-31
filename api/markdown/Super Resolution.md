@@ -1,4 +1,5 @@
 public:: true
+alias:: Super-resolution
 
 # Super Resolution
 ```json-ld

@@ -1,0 +1,4 @@
+- ### Definition
+  - RTAB-Map is an appearance-based graph SLAM library with loop closure, implemented on a [[Ground Robot]] to build a [[Topological Map]] alongside dense metric maps.
+- ### Content
+  - Its memory management retains recent and salient locations in working memory while moving older nodes to long-term memory, keeping loop-closure detection real-time even over large areas. Recognising revisited places lets it correct drift and produce globally consistent maps.

@@ -83,8 +83,16 @@
       "label": "Scene Capture and Reconstruction"
     },
     {
+      "slug": "tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "volumetric-video",
+      "label": "Volumetric Video"
     },
     {
       "slug": "rb-0069-lidar",

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:af24dbeb3d07382756c78baba9fd2a63c74feb3377af84a091ec563752d4ae55",
+  "title": "Hop Protocol",
+  "slug": "hop-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:hop-protocol",
+  "domain": "distributed-systems",
+  "definition": "Hop Protocol is a cross-chain bridge that enables the transfer of tokens between Ethereum and its layer-two rollup networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "https-hop-exchange",
+      "label": "https://hop.exchange/"
+    },
+    {
+      "slug": "https-docs-hop-exchange",
+      "label": "https://docs.hop.exchange/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

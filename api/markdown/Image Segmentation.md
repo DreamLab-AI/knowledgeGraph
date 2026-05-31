@@ -291,12 +291,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:structured-prediction",
-      "label": "Structured Prediction"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
-      "@id": "urn:ngm:class:dense-prediction",
-      "label": "Dense Prediction"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -336,7 +336,7 @@ public:: true
         "label": "Convolutional Neural Networks"
       },
       {
-        "@id": "urn:ngm:class:evaluation-metrics",
+        "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metrics"
       },
       {
@@ -428,7 +428,7 @@ public:: true
         "label": "Keypoint Detection"
       },
       {
-        "@id": "urn:ngm:class:multi-modal-learning",
+        "@id": "urn:ngm:class:multimodal-learning",
         "label": "Multi-Modal Learning"
       },
       {
@@ -440,7 +440,7 @@ public:: true
         "label": "3D Reconstruction"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],

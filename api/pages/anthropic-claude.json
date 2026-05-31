@@ -3,11 +3,16 @@
   "title": "Anthropic Claude",
   "slug": "anthropic-claude",
   "public": true,
-  "classIri": "urn:ngm:individual:anthropic-claude",
+  "classIri": "urn:ngm:class:anthropic-claude",
   "domain": "ai",
   "definition": "Anthropic Claude is a family of large language models developed by Anthropic PBC, designed around Constitutional AI principles that prioritise safety, helpfulness, and honesty. The model series spans Claude Instant, Claude 2, Claude 3 (Haiku, Sonnet, Opus), and Claude 3.5, with each generation advancing reasoning, coding, and multilingual capabilities. Claude is distinguished by its long context windows (up to 200k tokens in Claude 3) and its training methodology that emphasises harmlessness through RLHF and Constitutional AI feedback loops.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -45,11 +50,11 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:individual:gemini",
+        "id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:individual:chat-gpt",
+        "id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       }
     ],

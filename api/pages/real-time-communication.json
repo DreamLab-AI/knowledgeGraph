@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:82fd72376ee7577dedef8f39d2770f137ae2d54601c4ce5fd1df00d4d455d720",
+  "title": "Real-Time Communication",
+  "slug": "real-time-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-communication",
+  "domain": "networking",
+  "definition": "Real-time communication is the exchange of audio, video or data between parties with minimal delay, supporting interactive use such as calls and conferencing. Web-based real-time communication is commonly built on WebRTC.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "wireless-connectivity",
+      "label": "Wireless Connectivity"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "wireless-connectivity",
+      "label": "Wireless Connectivity"
+    }
+  ]
+}

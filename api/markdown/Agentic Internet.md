@@ -1239,8 +1239,8 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:agent-oriented-computing",
-      "label": "Agent-Oriented Computing"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
       "@id": "urn:ngm:class:sociotechnical-system",
@@ -1418,11 +1418,11 @@ public:: true
         "label": "Vector Database"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:mistral",
+        "@id": "urn:ngm:class:mistral",
         "label": "Mistral"
       }
     ],

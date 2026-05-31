@@ -1,0 +1,4 @@
+- ### Definition
+  - Customer retention is the practice of keeping existing customers engaged and reducing churn, often enabled by [[Omnichannel]] experiences and [[Customer Rewards]] programmes.
+- ### Content
+  - Retention is measured through churn rate, repeat-purchase rate and lifetime value, and is driven by personalised engagement and incentive design. Because retaining a customer is generally far cheaper than acquiring a new one, retention is a core lever for profitability.

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:2c8cb5c97cce43887662937f1f0c8a146d073d1fa1aedff95f36a71da50cc0e2",
+  "title": "IEEE 802.3",
+  "slug": "ieee-802-3",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-802-3",
+  "domain": "standards",
+  "definition": "An IEEE standard defining Ethernet, including the physical layer and media access control for wired local area networks. It covers a range of speeds and media types.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

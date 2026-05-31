@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:llama-3",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:llama-3",
+  "@type": "Class",
   "label": "Llama 3",
   "definition": "Llama 3 is a family of open-weight large language models developed and released by Meta AI in April 2024, spanning 8 billion and 70 billion parameter base and instruction-tuned variants, with a 405 billion parameter model subsequently released in July 2024. Llama 3 models are trained on approximately 15 trillion tokens from a curated multilingual corpus, use a 128,000-token vocabulary with a custom BPE tokeniser, incorporate grouped-query attention for inference efficiency, and are post-trained with supervised fine-tuning and reinforcement learning from human feedback. The models are released under a custom Meta Llama 3 Community License that permits commercial use for most organisations while imposing restrictions on deployments exceeding 700 million monthly active users.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},

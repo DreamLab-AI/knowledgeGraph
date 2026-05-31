@@ -1,0 +1,4 @@
+- ### Definition
+  - A data fabric is a unified metadata-driven integration and governance layer over distributed data sources, leveraging [[Metadata Management]] and knowledge graphs to connect data without physical consolidation.
+- ### Content
+  - The fabric relies on active metadata and machine learning to recommend integrations, enforce policy and automate access across clouds and systems. It contrasts with data mesh by emphasising a technology-led integration layer rather than domain-oriented ownership.

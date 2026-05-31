@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:d314fa7544861e16b55b17c618196bcdc66cbbf0e7b3a408d15072f3bfdcca7b",
+  "title": "Power Electronics",
+  "slug": "power-electronics",
+  "public": true,
+  "classIri": "urn:ngm:class:power-electronics",
+  "domain": "robotics",
+  "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices, central to motor drives, power supplies and energy systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "battery-management-system",
+      "label": "Battery Management System"
+    },
+    {
+      "slug": "servo-motor",
+      "label": "Servo Motor"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

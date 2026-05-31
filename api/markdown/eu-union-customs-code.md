@@ -1,0 +1,4 @@
+- ### Definition
+  - The EU Union Customs Code is the EU's legal framework for customs procedures, implemented by [[Customs Trade Facilitation]] systems and a basis for cross-border [[Regulatory Compliance]].
+- ### Content
+  - The UCC harmonises declarations, tariff classification, valuation, and origin rules while mandating electronic processing. It is the authoritative standard against which trade-facilitation platforms and customs-data exchanges are built within the single market.

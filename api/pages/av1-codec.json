@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:av1-codec",
+  "title": "AV1 Codec",
+  "slug": "av1-codec",
+  "public": true,
+  "classIri": "urn:ngm:class:av1-codec",
+  "domain": "infrastructure",
+  "definition": "AV1 is a royalty-free video coding format developed by the Alliance for Open Media to deliver high compression efficiency for streaming and real-time video. It typically achieves around 30 percent better compression than HEVC/VP9 at equivalent quality, making it well suited to bandwidth-constrained applications such as screen sharing and live video. Being open and licence-free, it is widely adopted across browsers, hardware decoders, and conferencing platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

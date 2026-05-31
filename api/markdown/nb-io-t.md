@@ -1,0 +1,4 @@
+- ### Definition
+  - NB-IoT is a 3GPP narrowband cellular standard for low-power, wide-area connectivity. It is implemented within an [[IoT Sensor Network]] and used by applications such as [[Cold Chain Monitoring]].
+- ### Content
+  - The standard achieves its range and efficiency through narrowband transmission, repetition coding, and extended sleep modes (PSM and eDRX) that let devices run for years on a single battery. It suits stationary or slow-moving sensors but is unsuitable for high-throughput or low-latency workloads, where LTE-M or 5G is preferred.

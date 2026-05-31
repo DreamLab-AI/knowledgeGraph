@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:5c72627069ddb8db52f4aaad25a4cc5b9afe45da4a221dd6f88ad3be7f60c221",
+  "title": "ROS",
+  "slug": "ros",
+  "public": true,
+  "classIri": "urn:ngm:class:ros",
+  "domain": "robotics",
+  "definition": "ROS (Robot Operating System) is an open-source middleware framework providing communication, tooling and libraries for building robot software from reusable, distributed components.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dds-middleware",
+      "label": "DDS Middleware"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    }
+  ]
+}

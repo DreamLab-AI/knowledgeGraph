@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:7a2541c7a3b2b0b1083fcd53965ce0c022500f561ae182347c231398072c7be7",
+  "title": "LND",
+  "slug": "lnd",
+  "public": true,
+  "classIri": "urn:ngm:class:lnd",
+  "domain": "blockchain",
+  "definition": "The Lightning Network Daemon, a widely used implementation of a Bitcoin Lightning Network node that manages payment channels and routes off-chain payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

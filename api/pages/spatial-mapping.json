@@ -73,6 +73,10 @@
     {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
     }
   ]
 }

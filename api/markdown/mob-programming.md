@@ -1,0 +1,4 @@
+- ### Definition
+  - Mob programming has the whole team build software together at one workstation, rotating driver and navigator roles. It generalises pair programming and is often realised through [[Remote Pair Programming]] tooling.
+- ### Content
+  - Continuous review by the group catches defects and design issues immediately and eliminates knowledge silos, at the cost of dedicating several people to one stream of work. Distributed teams run mobs over screen-sharing and remote control tools with timed driver rotations to keep everyone engaged.

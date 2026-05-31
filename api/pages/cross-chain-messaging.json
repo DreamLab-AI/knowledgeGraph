@@ -16,8 +16,8 @@
       "label": "Interoperability Protocol"
     },
     {
-      "id": "urn:ngm:class:message-passing-system",
-      "label": "Message Passing System"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -140,8 +140,16 @@
   ],
   "backlinks": [
     {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
     }
   ]
 }

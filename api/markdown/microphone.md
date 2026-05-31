@@ -1,0 +1,4 @@
+- ### Definition
+  - A microphone is a transducer converting sound into an electrical signal. It is a hardware part of a [[Telepresence Robot]] and a requirement for [[Voice Interaction]].
+- ### Content
+  - MEMS microphones dominate embedded and mobile applications due to their small size and digital output. Multi-element arrays support beamforming, far-field pickup, and acoustic echo cancellation, which are essential for hands-free voice control and clear two-way telepresence audio.

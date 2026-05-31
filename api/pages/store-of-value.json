@@ -54,12 +54,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
     },
     {
       "slug": "bitcoin-value-proposition",
       "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "inflation-hedge",
+      "label": "Inflation Hedge"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
     }
   ]
 }

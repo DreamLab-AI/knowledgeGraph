@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:contract-theory",
+  "title": "Contract Theory",
+  "slug": "contract-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:contract-theory",
+  "domain": "blockchain",
+  "definition": "Contract theory is the branch of economics that studies how parties design agreements under asymmetric information, incentive conflicts, and incomplete contracting. It analyses problems such as moral hazard, adverse selection, and signalling to derive incentive-compatible contracts that align the interests of principals and agents. It provides the formal foundations for mechanism and incentive design, including in tokenised and decentralised systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ]
+}

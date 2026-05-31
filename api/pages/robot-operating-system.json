@@ -12,12 +12,12 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:publish-subscribe-framework",
-      "label": "Publish-Subscribe Framework"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
-      "id": "urn:ngm:class:robotic-middleware",
-      "label": "Robotic Middleware"
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "entityType": "Class",
@@ -334,6 +334,10 @@
       "label": "AutoML"
     },
     {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
       "slug": "gazebo-simulator",
       "label": "Gazebo Simulator"
     },
@@ -370,6 +374,10 @@
       "label": "Proprioceptive Sensor"
     },
     {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     },
@@ -384,6 +392,10 @@
     {
       "slug": "web-rtc",
       "label": "WebRTC"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
     }
   ]
 }

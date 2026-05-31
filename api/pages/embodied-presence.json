@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:9a9ae91a19fba35d1b540c28f0d7fb35881f81e9c53c2f186b950650f33e9bb6",
+  "title": "Embodied Presence",
+  "slug": "embodied-presence",
+  "public": true,
+  "classIri": "urn:ngm:class:embodied-presence",
+  "domain": "metaverse",
+  "definition": "Embodied presence is the sense of being physically located within a virtual or remote environment, often through an avatar or robotic proxy. It is studied in virtual reality and telepresence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-immersion-virtual-reality",
+      "label": "https://en.wikipedia.org/wiki/Immersion_(virtual_reality)"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-telepresence",
+      "label": "https://en.wikipedia.org/wiki/Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    }
+  ]
+}

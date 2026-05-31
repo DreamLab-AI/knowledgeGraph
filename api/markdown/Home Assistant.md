@@ -475,12 +475,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:home-automation",
-      "label": "Home Automation"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
-      "@id": "urn:ngm:class:io-t-platform",
-      "label": "IoT Platform"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
   "relations": {
@@ -584,7 +584,7 @@ public:: true
         "label": "Zigbee Radio Dongle"
       },
       {
-        "@id": "urn:ngm:individual:docker",
+        "@id": "urn:ngm:class:docker",
         "label": "Docker"
       }
     ],
@@ -718,7 +718,7 @@ public:: true
         "label": "Zigbee2MQTT"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

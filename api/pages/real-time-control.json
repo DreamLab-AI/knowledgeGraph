@@ -75,6 +75,10 @@
       "label": "Autonomous Robot"
     },
     {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },
@@ -93,6 +97,10 @@
     {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
     }
   ]
 }

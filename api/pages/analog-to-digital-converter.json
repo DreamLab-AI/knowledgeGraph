@@ -12,8 +12,8 @@
       "label": "Display and Rendering"
     },
     {
-      "id": "urn:ngm:class:signal-processing-hardware",
-      "label": "Signal Processing Hardware"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "entityType": "Class",

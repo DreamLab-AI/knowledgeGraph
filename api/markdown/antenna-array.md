@@ -1,0 +1,4 @@
+- ### Definition
+  - An Antenna Array combines multiple phased elements to steer and shape radio beams electronically. It is core to [[Wireless Radio]] systems and improves the multipath rejection and accuracy of [[GPS]] receivers.
+- ### Content
+  - Adjusting per-element phase and amplitude lets the array beamform toward a target while nulling interferers, raising effective gain and spectral efficiency without moving parts. The same principle enables MIMO spatial streams in 5G and Wi-Fi and underpins phased-array radar and high-precision GNSS antennas.

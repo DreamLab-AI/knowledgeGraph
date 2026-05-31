@@ -1,4 +1,5 @@
 public:: true
+alias:: DistributedConsensus
 
 # Distributed Consensus
 ```json-ld

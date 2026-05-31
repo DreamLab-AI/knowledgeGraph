@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-302-shared-whiteboards
 
 # Shared Whiteboards
 ```json-ld

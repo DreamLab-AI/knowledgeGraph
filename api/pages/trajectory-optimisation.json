@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:d1b3cd903e5f979aa2324bc539edca42ef6def86f853c39a6f8b3318b90ab3b3",
+  "title": "Trajectory Optimisation",
+  "slug": "trajectory-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:trajectory-optimisation",
+  "domain": "robotics",
+  "definition": "Trajectory optimisation is the computation of a path and control profile for a dynamic system that minimises a cost subject to physical and operational constraints. It is widely used in robotics, aerospace and autonomous vehicles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    }
+  ]
+}

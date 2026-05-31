@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:scope-definition",
+  "title": "Scope Definition",
+  "slug": "scope-definition",
+  "public": true,
+  "classIri": "urn:ngm:class:scope-definition",
+  "domain": "governance",
+  "definition": "Scope definition is the act of establishing the precise boundaries, entities, and conditions to which an assessment, consent, or measurement applies. In governance and consent systems it specifies which permissions, data, or activities are covered, while in environmental assessment it delineates the system boundary for impact accounting. Clear scope is a prerequisite for auditable and comparable results.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-consent-token",
+        "label": "User Consent Token"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-environmental-impact-assessment",
+        "label": "Blockchain Environmental Impact Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

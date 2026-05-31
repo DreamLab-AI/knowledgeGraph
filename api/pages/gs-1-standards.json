@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:533295cc7c84719ec6d63a1886c565c1857225055e04de3b185410b43a062849",
+  "title": "GS1 Standards",
+  "slug": "gs-1-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:gs-1-standards",
+  "domain": "metaverse",
+  "definition": "GS1 standards are a global system of identification keys, barcodes and data formats that uniquely identify products, locations and assets across supply chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "standards",
+      "label": "Standards"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    }
+  ]
+}

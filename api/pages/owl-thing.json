@@ -1,0 +1,1458 @@
+{
+  "id": "urn:visionflow:page:7124f67da9018ac4ef93f89eabe3b1854c12f023ef4b8d67e31f223463af9a11",
+  "title": "owl:Thing",
+  "slug": "owl-thing",
+  "public": true,
+  "classIri": "urn:ngm:class:owl-thing",
+  "domain": "ontology",
+  "definition": "owl:Thing is the universal superclass of the OWL 2 ontology: the class whose extension is the set of all individuals. Every named class in this knowledge graph is, directly or transitively, a subclass of owl:Thing, which therefore serves as the single root of the subclass hierarchy and the anchor for the two orthogonal classification axes used throughout the graph, the subject Domain axis and the architectural Layer axis.",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "animation-standard",
+      "label": "Animation Standard"
+    },
+    {
+      "slug": "animation-technique",
+      "label": "Animation Technique"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "audio-processing-system",
+      "label": "Audio Processing System"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "automated-modeling",
+      "label": "Automated Modeling"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
+      "slug": "blockchain-economics",
+      "label": "Blockchain Economics"
+    },
+    {
+      "slug": "blockchain-gaming",
+      "label": "Blockchain Gaming"
+    },
+    {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
+      "slug": "cap-theorem",
+      "label": "CAP Theorem"
+    },
+    {
+      "slug": "calibration-equipment",
+      "label": "Calibration Equipment"
+    },
+    {
+      "slug": "calibration-tools",
+      "label": "Calibration Tools"
+    },
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "china",
+      "label": "China"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
+      "slug": "collaboration-technology",
+      "label": "Collaboration Technology"
+    },
+    {
+      "slug": "communication-layer",
+      "label": "Communication Layer"
+    },
+    {
+      "slug": "community-governance",
+      "label": "Community Governance"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "computer-vision-system",
+      "label": "Computer Vision System"
+    },
+    {
+      "slug": "computing-hardware",
+      "label": "Computing Hardware"
+    },
+    {
+      "slug": "computing-platform",
+      "label": "Computing Platform"
+    },
+    {
+      "slug": "configuration-setting",
+      "label": "Configuration Setting"
+    },
+    {
+      "slug": "configuration",
+      "label": "Configuration"
+    },
+    {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    },
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "content-layer",
+      "label": "Content Layer"
+    },
+    {
+      "slug": "content-production-workflow",
+      "label": "Content Production Workflow"
+    },
+    {
+      "slug": "content-protection",
+      "label": "Content Protection"
+    },
+    {
+      "slug": "context-aware-computing",
+      "label": "Context Aware Computing"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "coordinate-system",
+      "label": "Coordinate System"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
+    },
+    {
+      "slug": "creative-software",
+      "label": "Creative Software"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
+      "slug": "cryptographic-security",
+      "label": "Cryptographic Security"
+    },
+    {
+      "slug": "cryptographic-verification",
+      "label": "Cryptographic Verification"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "data-access-interface",
+      "label": "Data Access Interface"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "data-efficient-learning",
+      "label": "Data Efficient Learning"
+    },
+    {
+      "slug": "data-format",
+      "label": "Data Format"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    },
+    {
+      "slug": "data-management-domain",
+      "label": "Data Management Domain"
+    },
+    {
+      "slug": "data-processing",
+      "label": "Data Processing"
+    },
+    {
+      "slug": "data-protection-regulation",
+      "label": "Data Protection Regulation"
+    },
+    {
+      "slug": "data-registry",
+      "label": "Data Registry"
+    },
+    {
+      "slug": "data-security",
+      "label": "Data Security"
+    },
+    {
+      "slug": "data-sharing",
+      "label": "Data Sharing"
+    },
+    {
+      "slug": "data-standards",
+      "label": "Data Standards"
+    },
+    {
+      "slug": "data-visualisation",
+      "label": "Data Visualisation"
+    },
+    {
+      "slug": "database-query",
+      "label": "Database Query"
+    },
+    {
+      "slug": "de-fi-services",
+      "label": "De Fi Services"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "democratic-engagement",
+      "label": "Democratic Engagement"
+    },
+    {
+      "slug": "democratic-governance",
+      "label": "Democratic Governance"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "design-software",
+      "label": "Design Software"
+    },
+    {
+      "slug": "development-platform",
+      "label": "Development Platform"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "digital-asset-market",
+      "label": "Digital Asset Market"
+    },
+    {
+      "slug": "digital-asset-standards",
+      "label": "Digital Asset Standards"
+    },
+    {
+      "slug": "digital-commerce",
+      "label": "Digital Commerce"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "digital-content",
+      "label": "Digital Content"
+    },
+    {
+      "slug": "digital-entertainment",
+      "label": "Digital Entertainment"
+    },
+    {
+      "slug": "digital-experience",
+      "label": "Digital Experience"
+    },
+    {
+      "slug": "digital-gaming",
+      "label": "Digital Gaming"
+    },
+    {
+      "slug": "digital-governance",
+      "label": "Digital Governance"
+    },
+    {
+      "slug": "digital-heritage",
+      "label": "Digital Heritage"
+    },
+    {
+      "slug": "digital-human-technology",
+      "label": "Digital Human Technology"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "digital-model",
+      "label": "Digital Model"
+    },
+    {
+      "slug": "digital-modeling",
+      "label": "Digital Modeling"
+    },
+    {
+      "slug": "digital-platform",
+      "label": "Digital Platform"
+    },
+    {
+      "slug": "digital-preservation",
+      "label": "Digital Preservation"
+    },
+    {
+      "slug": "digital-property-rights",
+      "label": "Digital Property Rights"
+    },
+    {
+      "slug": "digital-regulation",
+      "label": "Digital Regulation"
+    },
+    {
+      "slug": "digital-safety",
+      "label": "Digital Safety"
+    },
+    {
+      "slug": "digital-security",
+      "label": "Digital Security"
+    },
+    {
+      "slug": "digital-society",
+      "label": "Digital Society"
+    },
+    {
+      "slug": "digital-technology",
+      "label": "Digital Technology"
+    },
+    {
+      "slug": "digital-twin-technology",
+      "label": "Digital Twin Technology"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "dynamical-systems",
+      "label": "Dynamical Systems"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "economic-governance",
+      "label": "Economic Governance"
+    },
+    {
+      "slug": "economic-systems",
+      "label": "Economic Systems"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
+      "slug": "edge-layer",
+      "label": "Edge Layer"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "educational-methodology",
+      "label": "Educational Methodology"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "environmental-accounting",
+      "label": "Environmental Accounting"
+    },
+    {
+      "slug": "environmental-assessment",
+      "label": "Environmental Assessment"
+    },
+    {
+      "slug": "environmental-certificate",
+      "label": "Environmental Certificate"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
+    },
+    {
+      "slug": "environmental-k-p-i",
+      "label": "Environmental K P I"
+    },
+    {
+      "slug": "environmental-registry",
+      "label": "Environmental Registry"
+    },
+    {
+      "slug": "environmental-trading",
+      "label": "Environmental Trading"
+    },
+    {
+      "slug": "environmental-verification",
+      "label": "Environmental Verification"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ethical-design-standard",
+      "label": "Ethical Design Standard"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "event-management",
+      "label": "Event Management"
+    },
+    {
+      "slug": "exchange-mechanism",
+      "label": "Exchange Mechanism"
+    },
+    {
+      "slug": "fda",
+      "label": "FDA"
+    },
+    {
+      "slug": "ftx",
+      "label": "FTX"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "financial-system",
+      "label": "Financial System"
+    },
+    {
+      "slug": "financial-technology",
+      "label": "Financial Technology"
+    },
+    {
+      "slug": "financial-trading",
+      "label": "Financial Trading"
+    },
+    {
+      "slug": "financial-transactions",
+      "label": "Financial Transactions"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    },
+    {
+      "slug": "game-mechanics",
+      "label": "Game Mechanics"
+    },
+    {
+      "slug": "generative-content",
+      "label": "Generative Content"
+    },
+    {
+      "slug": "geospatial-information",
+      "label": "Geospatial Information"
+    },
+    {
+      "slug": "geospatial-technology",
+      "label": "Geospatial Technology"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "graph-algorithms",
+      "label": "Graph Algorithms"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "graphics-library",
+      "label": "Graphics Library"
+    },
+    {
+      "slug": "hm-treasury",
+      "label": "HM Treasury"
+    },
+    {
+      "slug": "hardware-abstraction",
+      "label": "Hardware Abstraction"
+    },
+    {
+      "slug": "hardware-component",
+      "label": "Hardware Component"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "healthcare-technology",
+      "label": "Healthcare Technology"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
+    },
+    {
+      "slug": "human-computer-interface",
+      "label": "Human Computer Interface"
+    },
+    {
+      "slug": "humaninthe-loop-learning",
+      "label": "Humaninthe Loop Learning"
+    },
+    {
+      "slug": "hybrid-robot",
+      "label": "Hybrid Robot"
+    },
+    {
+      "slug": "identifier-layer",
+      "label": "Identifier Layer"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "identity-standards",
+      "label": "Identity Standards"
+    },
+    {
+      "slug": "identity-systems",
+      "label": "Identity Systems"
+    },
+    {
+      "slug": "identity",
+      "label": "Identity"
+    },
+    {
+      "slug": "imaging-parameters",
+      "label": "Imaging Parameters"
+    },
+    {
+      "slug": "immersive-audio-technology",
+      "label": "Immersive Audio Technology"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "information-protection",
+      "label": "Information Protection"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "informed-search",
+      "label": "Informed Search"
+    },
+    {
+      "slug": "infrastructure-component",
+      "label": "Infrastructure Component"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "intelligent-systems",
+      "label": "Intelligent Systems"
+    },
+    {
+      "slug": "interaction-control",
+      "label": "Interaction Control"
+    },
+    {
+      "slug": "interactive-learning",
+      "label": "Interactive Learning"
+    },
+    {
+      "slug": "interactive-storytelling",
+      "label": "Interactive Storytelling"
+    },
+    {
+      "slug": "interchange-protocol",
+      "label": "Interchange Protocol"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
+      "slug": "investment-management",
+      "label": "Investment Management"
+    },
+    {
+      "slug": "kinematic-element",
+      "label": "Kinematic Element"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    },
+    {
+      "slug": "knowledge-management-system",
+      "label": "Knowledge Management System"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "label": "Knowledge Organization System"
+    },
+    {
+      "slug": "knowledge-organization",
+      "label": "Knowledge Organization"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "language-translation",
+      "label": "Language Translation"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "Legal Tech Domain"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "Lightning Network Layer"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "logic",
+      "label": "Logic"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "mathematical-science",
+      "label": "Mathematical Science"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    },
+    {
+      "slug": "media-theory",
+      "label": "Media Theory"
+    },
+    {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
+      "slug": "metaverse-application",
+      "label": "Metaverse Application"
+    },
+    {
+      "slug": "metaverse-classification",
+      "label": "Metaverse Classification"
+    },
+    {
+      "slug": "mixed-reality-platform",
+      "label": "Mixed Reality Platform"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "motion-capture-technology",
+      "label": "Motion Capture Technology"
+    },
+    {
+      "slug": "multi-user-systems",
+      "label": "Multi User Systems"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
+    },
+    {
+      "slug": "narrative-structure",
+      "label": "Narrative Structure"
+    },
+    {
+      "slug": "network-quality-metric",
+      "label": "Network Quality Metric"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
+      "slug": "neural-network-layer",
+      "label": "Neural Network Layer"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "ontology-structure",
+      "label": "Ontology Structure"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "organisational-theory",
+      "label": "Organisational Theory"
+    },
+    {
+      "slug": "oxford-internet-institute",
+      "label": "Oxford Internet Institute"
+    },
+    {
+      "slug": "peerto-peer-protocol",
+      "label": "Peerto Peer Protocol"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "perceptual-experience",
+      "label": "Perceptual Experience"
+    },
+    {
+      "slug": "performing-arts",
+      "label": "Performing Arts"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "Policy Layer"
+    },
+    {
+      "slug": "pre-production",
+      "label": "Pre Production"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    },
+    {
+      "slug": "privacy-disclosure",
+      "label": "Privacy Disclosure"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "privacy-mechanism",
+      "label": "Privacy Mechanism"
+    },
+    {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    },
+    {
+      "slug": "product-liability-directive",
+      "label": "Product Liability Directive"
+    },
+    {
+      "slug": "production-design",
+      "label": "Production Design"
+    },
+    {
+      "slug": "production-pipeline",
+      "label": "Production Pipeline"
+    },
+    {
+      "slug": "programming-paradigm",
+      "label": "Programming Paradigm"
+    },
+    {
+      "slug": "property-rights",
+      "label": "Property Rights"
+    },
+    {
+      "slug": "rb-1002-closedloopcontrol",
+      "label": "RB 1002 closedloopcontrol"
+    },
+    {
+      "slug": "rb-1013-localization",
+      "label": "RB 1013 localization"
+    },
+    {
+      "slug": "rb-1016-pathplanning",
+      "label": "RB 1016 pathplanning"
+    },
+    {
+      "slug": "reactive-control",
+      "label": "Reactive Control"
+    },
+    {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
+      "slug": "record-keeping-system",
+      "label": "Record Keeping System"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "Regulatory Layer"
+    },
+    {
+      "slug": "regulatory-technology",
+      "label": "Regulatory Technology"
+    },
+    {
+      "slug": "reinforcement-learning-algorithm",
+      "label": "Reinforcement Learning Algorithm"
+    },
+    {
+      "slug": "remote-communication",
+      "label": "Remote Communication"
+    },
+    {
+      "slug": "rendering-technology",
+      "label": "Rendering Technology"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "research-methods",
+      "label": "Research Methods"
+    },
+    {
+      "slug": "revenue-distribution",
+      "label": "Revenue Distribution"
+    },
+    {
+      "slug": "rigid-body",
+      "label": "Rigid Body"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    },
+    {
+      "slug": "robot-actuator",
+      "label": "Robot Actuator"
+    },
+    {
+      "slug": "robotic-system",
+      "label": "Robotic System"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "Runtime Layer"
+    },
+    {
+      "slug": "smpte-st-2128",
+      "label": "SMPTE ST 2128"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "search-technology",
+      "label": "Search Technology"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "security-services",
+      "label": "Security Services"
+    },
+    {
+      "slug": "security-technology",
+      "label": "Security Technology"
+    },
+    {
+      "slug": "security-token-offering",
+      "label": "Security Token Offering"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
+      "slug": "semiconductor-fabrication",
+      "label": "Semiconductor Fabrication"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    },
+    {
+      "slug": "servo-control",
+      "label": "Servo Control"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
+      "slug": "simulation-software",
+      "label": "Simulation Software"
+    },
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "Smart Contract Layer"
+    },
+    {
+      "slug": "social-layer",
+      "label": "Social Layer"
+    },
+    {
+      "slug": "social-network-graph",
+      "label": "Social Network Graph"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
+    },
+    {
+      "slug": "software-infrastructure",
+      "label": "Software Infrastructure"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    },
+    {
+      "slug": "spatial-mapping-technology",
+      "label": "Spatial Mapping Technology"
+    },
+    {
+      "slug": "spatial-tracking-technology",
+      "label": "Spatial Tracking Technology"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "standards-based-taxonomy",
+      "label": "Standards Based Taxonomy"
+    },
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    },
+    {
+      "slug": "state-machine-replication",
+      "label": "State Machine Replication"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "storytelling-structure",
+      "label": "Storytelling Structure"
+    },
+    {
+      "slug": "storytelling",
+      "label": "Storytelling"
+    },
+    {
+      "slug": "strategic-planning",
+      "label": "Strategic Planning"
+    },
+    {
+      "slug": "structural-member",
+      "label": "Structural Member"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    },
+    {
+      "slug": "synthetic-biology",
+      "label": "Synthetic Biology"
+    },
+    {
+      "slug": "system-software",
+      "label": "System Software"
+    },
+    {
+      "slug": "systems-theory",
+      "label": "Systems Theory"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE 001 telepresence"
+    },
+    {
+      "slug": "tele-050-neuralrenderingtelepresence",
+      "label": "TELE 050 neuralrenderingtelepresence"
+    },
+    {
+      "slug": "taxonomic-framework",
+      "label": "Taxonomic Framework"
+    },
+    {
+      "slug": "technical-architecture-framework",
+      "label": "Technical Architecture Framework"
+    },
+    {
+      "slug": "technical-architecture",
+      "label": "Technical Architecture"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    },
+    {
+      "slug": "technology-infrastructure",
+      "label": "Technology Infrastructure"
+    },
+    {
+      "slug": "technology-stack",
+      "label": "Technology Stack"
+    },
+    {
+      "slug": "testing-infrastructure",
+      "label": "Testing Infrastructure"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    },
+    {
+      "slug": "tourism-industry",
+      "label": "Tourism Industry"
+    },
+    {
+      "slug": "tracking-hardware",
+      "label": "Tracking Hardware"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
+      "slug": "transferable-right",
+      "label": "Transferable Right"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "university-of-sheffield",
+      "label": "University of Sheffield"
+    },
+    {
+      "slug": "user-education",
+      "label": "User Education"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
+    },
+    {
+      "slug": "user-safety",
+      "label": "User Safety"
+    },
+    {
+      "slug": "vfx-tools",
+      "label": "VFX Tools"
+    },
+    {
+      "slug": "vr-psychology",
+      "label": "VR Psychology"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "virtual-event",
+      "label": "Virtual Event"
+    },
+    {
+      "slug": "virtual-experience",
+      "label": "Virtual Experience"
+    },
+    {
+      "slug": "virtual-reality-applications",
+      "label": "Virtual Reality Applications"
+    },
+    {
+      "slug": "virtual-reality-platform",
+      "label": "Virtual Reality Platform"
+    },
+    {
+      "slug": "virtual-workspace",
+      "label": "Virtual Workspace"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    },
+    {
+      "slug": "wheeled-robot",
+      "label": "Wheeled Robot"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "world-economic-forum",
+      "label": "World Economic Forum"
+    },
+    {
+      "slug": "xr-framework",
+      "label": "XR Framework"
+    },
+    {
+      "slug": "xr-hardware",
+      "label": "XR Hardware"
+    },
+    {
+      "slug": "xr-technical-standard",
+      "label": "XR Technical Standard"
+    },
+    {
+      "slug": "community",
+      "label": "community"
+    },
+    {
+      "slug": "performance",
+      "label": "performance"
+    },
+    {
+      "slug": "supports",
+      "label": "supports"
+    }
+  ]
+}

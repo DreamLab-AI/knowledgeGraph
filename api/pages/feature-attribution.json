@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:6fc8829222692b03cf6c9e57d1a5ad2a91c9e3718b9e58dc26fe81152c283557",
+  "title": "Feature Attribution",
+  "slug": "feature-attribution",
+  "public": true,
+  "classIri": "urn:ngm:class:feature-attribution",
+  "domain": "artificial-intelligence",
+  "definition": "A family of explainable AI techniques that assign a contribution score to each input feature, indicating how much it influenced a model's particular prediction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    }
+  ]
+}

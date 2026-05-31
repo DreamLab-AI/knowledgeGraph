@@ -59,7 +59,7 @@
         "label": "Decentralized Finance (DeFi)"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ]
@@ -103,6 +103,14 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "argent",
+      "label": "Argent"
+    },
     {
       "slug": "asset-registry",
       "label": "Asset Registry"
@@ -170,6 +178,10 @@
     {
       "slug": "carbon-credit-tracking",
       "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "clarity",
+      "label": "Clarity"
     },
     {
       "slug": "climate-action-dao",
@@ -264,6 +276,10 @@
       "label": "Green Blockchain Initiatives"
     },
     {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -294,6 +310,10 @@
     {
       "slug": "pharmaceutical-traceability",
       "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "Prediction Markets"
     },
     {
       "slug": "provenance-tracking",
@@ -330,6 +350,10 @@
     {
       "slug": "wallet",
       "label": "Wallet"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
     },
     {
       "slug": "ecash",

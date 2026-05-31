@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:cff38d4673125d9090f2490e92832f254fe509993044c56c1e3a9e975e969942",
+  "title": "Probabilistic Robotics",
+  "slug": "probabilistic-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-robotics",
+  "domain": "robotics",
+  "definition": "Probabilistic robotics is an approach to robot perception and control that represents uncertainty explicitly using probability distributions, and reasons about state and action through Bayesian estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

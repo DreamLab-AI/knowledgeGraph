@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:electricity-consumption",
+  "title": "Electricity Consumption",
+  "slug": "electricity-consumption",
+  "public": true,
+  "classIri": "urn:ngm:class:electricity-consumption",
+  "domain": "blockchain",
+  "definition": "Electricity Consumption is the total quantity of electrical energy used by a system over a period, typically measured in kilowatt- or terawatt-hours. For blockchains it quantifies the energy drawn by mining, validation, and node operation, and is a central metric in debates over their environmental impact. Indices such as the Cambridge Bitcoin Electricity Consumption Index estimate network-wide consumption from hardware and hashrate data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:cbeci",
+        "label": "CBECI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    }
+  ]
+}

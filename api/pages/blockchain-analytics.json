@@ -42,7 +42,7 @@
         "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ],
@@ -118,6 +118,14 @@
     {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
+    },
+    {
+      "slug": "dune-analytics",
+      "label": "Dune Analytics"
+    },
+    {
+      "slug": "elliptic",
+      "label": "Elliptic"
     },
     {
       "slug": "fatfrecommendations",

@@ -113,6 +113,14 @@
       "label": "AI in Games"
     },
     {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },
@@ -149,16 +157,32 @@
       "label": "Control System"
     },
     {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
     },
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
     {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
+    },
+    {
+      "slug": "environment",
+      "label": "Environment"
     },
     {
       "slug": "feed-forward-network",
@@ -193,12 +217,28 @@
       "label": "Kinematics Model"
     },
     {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     },
     {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
       "slug": "manipulator-arm",
       "label": "Manipulator Arm"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
     },
     {
       "slug": "mobile-robot-platform",
@@ -221,12 +261,20 @@
       "label": "Navigation"
     },
     {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },
     {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
     },
     {
       "slug": "proprietary-large-language-models",
@@ -269,6 +317,10 @@
       "label": "Stochastic Process"
     },
     {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     },
@@ -287,6 +339,10 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
     },
     {
       "slug": "ai-core-concepts",

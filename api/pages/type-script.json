@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:4ce5e3912e70101a60f278a73b4d30f085d209b152de076da4280a75b9085e94",
+  "title": "TypeScript",
+  "slug": "type-script",
+  "public": true,
+  "classIri": "urn:ngm:class:type-script",
+  "domain": "general",
+  "definition": "A statically typed superset of JavaScript developed by Microsoft that compiles to plain JavaScript and adds optional type annotations and compile-time checking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "programming-language",
+      "label": "Programming Language"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

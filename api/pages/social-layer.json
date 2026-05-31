@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:802994d0f091df83d01cb43946c706b52a7f72e465232a3695b55e1094e66157",
+  "title": "Social Layer",
+  "slug": "social-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:social-layer",
+  "domain": "social",
+  "definition": "The Social Layer is the cross-cutting stratum that represents the human relationships, norms, and communities that surround and use a system. It sits above the institutional structures that formalise it and informs governance and application design. It contains community norms, reputation, communication channels, and the informal conventions that shape behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:institutional-layer",
+        "label": "Institutional Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "social-capital",
+      "label": "Social Capital"
+    },
+    {
+      "slug": "network-effect",
+      "label": "Network Effect"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
+    }
+  ]
+}

@@ -87,6 +87,10 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
       "slug": "taproot-assets",
       "label": "Taproot Assets"
     },

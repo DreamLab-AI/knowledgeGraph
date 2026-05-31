@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:demand-response-mining",
+  "title": "Demand Response Mining",
+  "slug": "demand-response-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:demand-response-mining",
+  "domain": "blockchain",
+  "definition": "Demand response mining is the practice of operating cryptocurrency miners as a flexible, interruptible electrical load that ramps up or down in response to grid conditions and price signals. Miners absorb surplus or stranded generation and shut off during peak demand, helping balance the grid while monetising otherwise curtailed energy. It is studied as both a grid-stabilisation tool and a mitigation for the environmental criticism of proof-of-work mining.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

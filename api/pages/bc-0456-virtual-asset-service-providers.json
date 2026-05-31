@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:594a777faaf417b0f7d4fe1d7249015ffcfdb196d286bf6487bb9bf66fefae95",
+  "title": "BC-0456-virtual-asset-service-providers",
+  "slug": "bc-0456-virtual-asset-service-providers",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
+  "domain": "blockchain",
+  "definition": "Virtual asset service providers are businesses that conduct activities such as exchange, transfer, custody or issuance of crypto-assets on behalf of others, and that are subject to financial regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "fatf",
+      "label": "FATF"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

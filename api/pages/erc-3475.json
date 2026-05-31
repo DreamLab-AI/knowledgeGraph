@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:9d911748521e7459ed30b3133816c5a55692f28dc05222f08919f5bc1c5151fe",
+  "title": "ERC-3475",
+  "slug": "erc-3475",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-3475",
+  "domain": "standards",
+  "definition": "ERC-3475 is an Ethereum standard defining an interface for abstract bonds, supporting multiple redemption conditions within a single token contract.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

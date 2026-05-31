@@ -347,12 +347,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:development-economics",
-      "label": "Development Economics"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "@id": "urn:ngm:class:distributive-justice",
-      "label": "Distributive Justice"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

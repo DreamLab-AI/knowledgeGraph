@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:a934aa22b912a3fa426f180fd89e6af812aee14223061e80175a182e773d0f9f",
+  "title": "Regulatory Frameworks",
+  "slug": "regulatory-frameworks",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-frameworks",
+  "domain": "governance",
+  "definition": "Regulatory frameworks are the structured systems of laws, rules, authorities and procedures that govern conduct within a sector or activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-requirements",
+        "label": "Regulatory Requirements"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "https-www-oecd-org-gov-regulatory-policy",
+      "label": "https://www.oecd.org/gov/regulatory-policy/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regulation",
+      "label": "https://en.wikipedia.org/wiki/Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
+      "slug": "law-commission",
+      "label": "Law Commission"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "regulatory-capture",
+      "label": "Regulatory Capture"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    }
+  ]
+}

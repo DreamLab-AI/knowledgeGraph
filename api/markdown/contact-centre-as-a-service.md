@@ -1,0 +1,4 @@
+- ### Definition
+  - Contact Centre as a Service is the cloud delivery model for omnichannel customer-interaction software, the modern successor to on-premises [[Call Centres]].
+- ### Content
+  - CCaaS supplies automatic call distribution, IVR, omnichannel routing, workforce management, and reporting as elastic cloud services. AI components such as virtual agents, real-time transcription, and sentiment analysis are commonly layered on top to deflect routine contacts and augment human agents.

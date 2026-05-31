@@ -83,8 +83,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:virtual-reality-experience",
-      "label": "Virtual Reality Experience"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "relations": {

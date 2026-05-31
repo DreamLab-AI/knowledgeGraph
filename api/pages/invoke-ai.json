@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:97fe57b39d3fcc9de63aa3cb7e79e0825426cb77032b8e498c36aaef732a9fcf",
+  "title": "InvokeAI",
+  "slug": "invoke-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:invoke-ai",
+  "domain": "generative-ai",
+  "definition": "An open-source application and toolkit for running text-to-image diffusion models such as Stable Diffusion, providing a web interface and workflow tools for image generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

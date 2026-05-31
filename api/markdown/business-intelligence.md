@@ -1,0 +1,4 @@
+- ### Definition
+  - Business Intelligence is a discipline combining [[Data Engineering]] pipelines and [[Metadata Management]] to deliver reporting, dashboards, and analytics that inform organisational decisions.
+- ### Content
+  - A BI stack typically layers a data warehouse or lakehouse, an OLAP/semantic model, and a presentation tier of reports and interactive dashboards. Modern BI emphasises self-service exploration and governed metric definitions so that analysts and business users share consistent measures across the enterprise.

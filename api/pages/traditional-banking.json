@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:31b6cf3e8f000416f0418f481016eb9237dfaf3863a5916545f36af0ef7cb6a6",
+  "title": "Traditional Banking",
+  "slug": "traditional-banking",
+  "public": true,
+  "classIri": "urn:ngm:class:traditional-banking",
+  "domain": "finance",
+  "definition": "Traditional banking is the conventional system of deposit-taking, lending, and payment services provided by licensed banks operating under regulatory supervision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "hsbc",
+      "label": "HSBC"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    }
+  ]
+}

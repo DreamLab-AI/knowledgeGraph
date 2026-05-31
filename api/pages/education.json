@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:9c639bec6c28f4553ac92e5f9b887d8978ed009a99fee7a4fbab2ff58b48d83b",
+  "title": "Education",
+  "slug": "education",
+  "public": true,
+  "classIri": "urn:ngm:class:education",
+  "domain": "education",
+  "definition": "Education is the structured process of facilitating learning, knowledge and skills through teaching, study and training. It occurs in formal institutions and through informal and online means.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:did-resolver",
+  "title": "DID Resolver",
+  "slug": "did-resolver",
+  "public": true,
+  "classIri": "urn:ngm:class:did-resolver",
+  "domain": "security",
+  "definition": "A DID resolver is a component that takes a Decentralized Identifier (DID) and returns its associated DID document containing public keys, verification methods, and service endpoints. It implements the W3C DID Resolution specification, dispatching to method-specific drivers (e.g. did:web, did:ion, did:key) to locate and verify the document. Resolvers are the lookup layer that makes DIDs actionable for authentication and credential exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    }
+  ]
+}

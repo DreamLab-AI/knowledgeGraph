@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ca5d1477daab058759788f9ccc448e23bb709b057877083ec1a3ebca6b23c1d9",
+  "title": "WebRTC W3C Specification",
+  "slug": "web-rtc-w-3-c-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:web-rtc-w-3-c-specification",
+  "domain": "standards",
+  "definition": "A W3C specification defining WebRTC, an API enabling real-time peer-to-peer audio, video and data communication between browsers. It defines the JavaScript interfaces for media and data transport.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

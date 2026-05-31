@@ -1,0 +1,4 @@
+- ### Definition
+  - The ISDA Common Domain Model is the canonical, machine-readable model of derivatives products and lifecycle events; it is the expanded name of the [[ISDA CDM]]. It standardises how a [[Distributed Ledger]] and [[Enterprise Smart Contracts]] represent trades.
+- ### Content
+  - Adopting one shared model eliminates the divergent in-house representations that drive costly reconciliation, enabling deterministic lifecycle automation. It is increasingly paired with DLT pilots that tokenise and settle derivatives with consistent legal and operational semantics.

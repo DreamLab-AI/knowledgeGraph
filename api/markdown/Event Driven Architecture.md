@@ -1,4 +1,5 @@
 public:: true
+alias:: Event-Driven Architecture
 
 # Event Driven Architecture
 ```json-ld

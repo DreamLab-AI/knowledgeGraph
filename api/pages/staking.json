@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:2c9ae4bee5dd5fb1f115974c5ce3fcacb636f0d72944ab7f54f168897cddfc3e",
+  "title": "Staking",
+  "slug": "staking",
+  "public": true,
+  "classIri": "urn:ngm:class:staking",
+  "domain": "blockchain",
+  "definition": "The act of locking cryptocurrency as a stake to participate in a proof-of-stake network's validation process, earning rewards and risking penalties for misbehaviour. The staked amount aligns a validator's incentives with the network's correct operation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "validator",
+      "label": "Validator"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "https-ethereum-org-en-staking",
+      "label": "https://ethereum.org/en/staking/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

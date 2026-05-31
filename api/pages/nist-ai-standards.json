@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:cce284e0e72f5b751b9228d312183f942f9535e101f6cc34fb318f7b3b36557f",
+  "title": "NIST AI Standards",
+  "slug": "nist-ai-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-ai-standards",
+  "domain": "standards",
+  "definition": "A general reference to NIST work and publications relating to artificial intelligence standards and guidance. No single specific standard is identified by this label alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
+}

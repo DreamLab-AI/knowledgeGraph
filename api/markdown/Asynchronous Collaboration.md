@@ -103,7 +103,7 @@ public:: true
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:tc-0001-telecollaboration-domain",
+      "@id": "urn:ngm:class:telecollaboration-domain",
       "label": "TC-0001-telecollaboration-domain"
     }
   ],

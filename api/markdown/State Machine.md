@@ -343,8 +343,8 @@ public:: true
       "label": "Automata Theory"
     },
     {
-      "@id": "urn:ngm:class:computational-model",
-      "label": "Computational Model"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     }
   ],
   "relations": {
@@ -362,7 +362,7 @@ public:: true
         "label": "Output Function"
       },
       {
-        "@id": "urn:ngm:class:stack",
+        "@id": "urn:ngm:class:stacks",
         "label": "Stack"
       },
       {
@@ -516,7 +516,7 @@ public:: true
         "label": "Distributed Computing"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:a4e5f01bdc81e5fb3c737c79f714dfcfe7082e9395b74164f60e1956ebf70a37",
+  "title": "Foundry",
+  "slug": "foundry",
+  "public": true,
+  "classIri": "urn:ngm:class:foundry",
+  "domain": "blockchain",
+  "definition": "Foundry is a development toolkit for Ethereum smart contracts, providing tools for compilation, testing, and deployment written in Rust.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:solidity",
+      "label": "Solidity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "solidity",
+      "label": "Solidity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

@@ -181,6 +181,10 @@
   ],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -189,8 +193,32 @@
       "label": "Asset Trading"
     },
     {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "constant-product-formula",
+      "label": "Constant Product Formula"
+    },
+    {
       "slug": "cross-chain-bridge",
       "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "curve-wars",
+      "label": "Curve Wars"
+    },
+    {
+      "slug": "curve",
+      "label": "Curve"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "decentralized-exchange-dex",
@@ -209,12 +237,32 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },
     {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "telecollaboration-and-telepresence",
@@ -227,6 +275,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
     }
   ]
 }

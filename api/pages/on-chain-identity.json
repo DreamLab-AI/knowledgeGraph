@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:on-chain-identity",
+  "title": "On-Chain Identity",
+  "slug": "on-chain-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:on-chain-identity",
+  "domain": "blockchain",
+  "definition": "On-chain identity is a persistent, cryptographically controlled identifier recorded on a blockchain that an entity uses to accumulate verifiable attributes, history, and reputation. Anchored to an address or smart contract and controlled by private keys, it can hold credentials, tokens, and attestations that other applications read trustlessly. It enables portable reputation and access control across decentralised applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

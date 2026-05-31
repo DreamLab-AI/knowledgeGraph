@@ -1,4 +1,5 @@
 public:: true
+alias:: BiometricAuthentication
 
 # Biometric Authentication
 ```json-ld

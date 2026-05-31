@@ -147,12 +147,28 @@
       "label": "Compliance Audit Trail"
     },
     {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    },
+    {
       "slug": "ethical-ai",
       "label": "Ethical AI"
     },
     {
       "slug": "ethical-framework",
       "label": "Ethical Framework"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
     },
     {
       "slug": "governance-framework",
@@ -167,16 +183,32 @@
       "label": "Human in the Loop"
     },
     {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
       "slug": "legal-framework",
       "label": "Legal Framework"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
     },
     {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
     },
     {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
       "slug": "responsible-ai",
       "label": "Responsible AI"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
     },
     {
       "slug": "stakeholder",

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:95d21d51cd67e0f65af5750126fce651543df16238e0ad7711bdacfb4a2504b2",
+  "title": "Master Data Management",
+  "slug": "master-data-management",
+  "public": true,
+  "classIri": "urn:ngm:class:master-data-management",
+  "domain": "data-management",
+  "definition": "A discipline and set of processes for creating and maintaining a single, consistent view of an organisation's core business entities such as customers, products, and suppliers. It governs how master data is defined, stored, and shared.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

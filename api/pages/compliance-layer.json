@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:96e1363e5e2aa207c05bc72c0caa92d5de7dc21a8570f064086577cf4061df22",
+  "title": "Compliance Layer",
+  "slug": "compliance-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:compliance-layer",
+  "domain": "compliance",
+  "definition": "The Compliance Layer is the cross-cutting stratum that checks system behaviour against external obligations such as law, regulation, and contractual terms. It sits above the Policy Layer, consuming its enforcement records, and reports to the Regulatory and Governance Layers. It contains controls, evidence collection, audit trails, and conformance assessments rather than the operations being assessed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:policy-layer",
+        "label": "Policy Layer"
+      },
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-layer",
+        "label": "Regulatory Layer"
+      },
+      {
+        "id": "urn:ngm:class:institutional-layer",
+        "label": "Institutional Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "policy-layer",
+      "label": "Policy Layer"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "Regulatory Layer"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "Policy Layer"
+    },
+    {
+      "slug": "regulatory-layer",
+      "label": "Regulatory Layer"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

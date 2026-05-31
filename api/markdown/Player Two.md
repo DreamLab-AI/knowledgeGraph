@@ -1,4 +1,5 @@
 public:: true
+alias:: PlayerTwo
 
 # Player Two
 ```json-ld

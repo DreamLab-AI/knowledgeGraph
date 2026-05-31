@@ -93,6 +93,10 @@
     {
       "slug": "task-planning",
       "label": "Task Planning"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
     }
   ]
 }

@@ -1,0 +1,4 @@
+- ### Definition
+  - A graphical model is a [[Probabilistic Model]] whose dependency structure among variables is drawn as a graph, allowing a high-dimensional joint distribution to be factorised into local terms.
+- ### Content
+  - Directed variants (Bayesian networks) capture causal or generative orderings; undirected variants (Markov random fields) capture symmetric interactions. Inference algorithms such as belief propagation and variational methods exploit the graph's sparsity, making graphical models central to structured prediction, computer vision, and probabilistic reasoning.

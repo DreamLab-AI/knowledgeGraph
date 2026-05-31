@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:clock-recovery",
+  "title": "Clock Recovery",
+  "slug": "clock-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:clock-recovery",
+  "domain": "infrastructure",
+  "definition": "Clock recovery (clock and data recovery, CDR) is the physical-layer process by which a receiver extracts a synchronised timing reference from an incoming data stream that carries no separate clock signal. It uses phase-locked loops or oversampling to align sampling instants with the centre of each symbol, compensating for jitter and frequency offset between transmitter and receiver. It matters because correct sampling timing is essential for reliable symbol detection in serial communication links.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infrastructure Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

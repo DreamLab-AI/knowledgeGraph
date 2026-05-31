@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:4c4eb309df2cd6304fa35186828d5d2e9f70d36d61dfbb99f8514fc158641638",
+  "title": "ISO-IEC JTC 1-SC 24",
+  "slug": "iso-iec-jtc-1-sc-24",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-jtc-1-sc-24",
+  "domain": "standards",
+  "definition": "A subcommittee of ISO/IEC Joint Technical Committee 1 responsible for standardisation of computer graphics, image processing and environmental data representation. It is a standards-development body rather than a single document.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-animation",
+      "label": "3D Animation"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    }
+  ]
+}

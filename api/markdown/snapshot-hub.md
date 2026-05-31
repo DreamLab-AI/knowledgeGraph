@@ -1,0 +1,4 @@
+- ### Definition
+  - Snapshot Hub is the indexing and tallying backend of the Snapshot governance platform, a [[Blockchain Network Component]] that stores proposals and aggregates gasless signed votes. It is the service [[Snapshot Voting]] depends on to compute outcomes.
+- ### Content
+  - The hub reads token balances at a designated [[Snapshot Block]], applies a configurable voting strategy, and tallies cryptographically signed off-chain messages so participation costs no gas. Results are verifiable by anyone, but execution of a passed proposal is not automatic and typically requires a separate on-chain transaction or a bridge such as an execution module.

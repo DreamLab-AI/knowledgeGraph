@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:b8ac87abd4d2ed8bec8240e670f66ba7ab4591f833e5b821ca599f22914b495b",
+  "title": "ETSI GR ARF 007",
+  "slug": "etsi-gr-arf-007",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-gr-arf-007",
+  "domain": "standards",
+  "definition": "ETSI GR ARF 007 is a group report from the ETSI Augmented Reality Framework activity addressing aspects of AR interoperability and architecture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    }
+  ]
+}

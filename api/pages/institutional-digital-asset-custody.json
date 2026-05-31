@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:institutional-digital-asset-custody",
+  "title": "Institutional Digital Asset Custody",
+  "slug": "institutional-digital-asset-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-digital-asset-custody",
+  "domain": "blockchain",
+  "definition": "Institutional digital asset custody is the regulated safekeeping of cryptocurrencies and tokenised assets on behalf of funds, banks, and corporations, with controls meeting fiduciary and compliance standards. It combines hardware security modules, multi-party computation or multi-signature key management, segregation of duties, insurance, and audited operational procedures. It is the trust layer that enables large pools of capital to hold crypto assets without bearing single-key loss or theft risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi-Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

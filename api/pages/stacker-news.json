@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:9036a98b781be8af16d342791283353a03a6096a8adaee66dbe67cbf752582a8",
+  "title": "Stacker News",
+  "slug": "stacker-news",
+  "public": true,
+  "classIri": "urn:ngm:class:stacker-news",
+  "domain": "blockchain",
+  "definition": "Stacker News is an online community platform where users post and curate content and reward contributions with bitcoin payments over the Lightning Network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community",
+        "label": "community"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "community",
+      "label": "community"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    }
+  ]
+}

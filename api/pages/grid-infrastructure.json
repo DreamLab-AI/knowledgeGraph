@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:grid-infrastructure",
+  "title": "Grid Infrastructure",
+  "slug": "grid-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:grid-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Grid infrastructure is the physical and control system of generation, transmission, distribution, and balancing assets that delivers electrical power from sources to consumers. It includes substations, transmission lines, transformers, and increasingly digital control layers for monitoring and demand response. Reliable grid infrastructure is a prerequisite for energy-intensive computing, mining, and data-centre operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

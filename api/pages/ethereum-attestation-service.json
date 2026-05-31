@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ethereum-attestation-service",
+  "title": "Ethereum Attestation Service",
+  "slug": "ethereum-attestation-service",
+  "public": true,
+  "classIri": "urn:ngm:class:ethereum-attestation-service",
+  "domain": "blockchain",
+  "definition": "The Ethereum Attestation Service (EAS) is an open, public infrastructure for making on-chain and off-chain attestations about any subject using registered, reusable schemas. Each attestation is a signed, timestamped claim that can be verified, revoked, and composed by other applications. EAS provides a neutral primitive for building reputation systems, identity credentials, and trust layers without a centralised issuer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Blockchain Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

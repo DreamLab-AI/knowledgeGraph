@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:carbon-credit-retirement",
+  "title": "Carbon Credit Retirement",
+  "slug": "carbon-credit-retirement",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-credit-retirement",
+  "domain": "governance",
+  "definition": "Carbon credit retirement is the permanent cancellation of a carbon credit in a registry so that it can no longer be sold, transferred, or double-counted, formally claiming the underlying emission reduction or removal. Retirement is the terminal step that converts a tradable credit into a fulfilled offset claim against a specific buyer's emissions. It is fundamental to carbon market integrity because it guarantees that each tonne of avoided or removed CO2 is claimed only once.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      },
+      {
+        "id": "urn:ngm:class:climate-action-dao",
+        "label": "Climate Action DAO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    }
+  ]
+}

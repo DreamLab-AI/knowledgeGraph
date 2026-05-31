@@ -61,6 +61,10 @@
     {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
     }
   ]
 }

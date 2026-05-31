@@ -118,7 +118,7 @@ public:: true
         "label": "Protocol Specifications"
       },
       {
-        "@id": "urn:ngm:class:standards-bodies",
+        "@id": "urn:ngm:class:standards-body",
         "label": "Standards Bodies"
       }
     ],

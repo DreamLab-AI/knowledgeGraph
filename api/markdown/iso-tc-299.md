@@ -1,0 +1,4 @@
+- ### Definition
+  - ISO/TC 299 is the technical committee that authors the international [[Robot Standard]] portfolio, defining safety, terminology and performance requirements for industrial, service and collaborative robotics.
+- ### Content
+  - The committee maintains foundational documents such as ISO 8373 (vocabulary), the ISO 10218 series (industrial robot safety) and ISO/TS 15066 (collaborative robot safety). By harmonising definitions and safety criteria, ISO/TC 299 enables consistent certification, risk assessment and cross-border deployment of robotic systems.

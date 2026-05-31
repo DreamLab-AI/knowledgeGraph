@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:e4c29e3c8cabd4dfc4c47983c813a270da8ac045636fd93e1325057fdaefc1af",
+  "title": "Intel",
+  "slug": "intel",
+  "public": true,
+  "classIri": "urn:ngm:class:intel",
+  "domain": "distributed-systems",
+  "definition": "Intel is a semiconductor manufacturer that designs and produces microprocessors, chipsets and related hardware including security features such as Software Guard Extensions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "https-www-intel-com",
+      "label": "https://www.intel.com/"
+    },
+    {
+      "slug": "https-www-intel-com-content-www-us-en-developer-tools-software-guard-extensions-overview-html",
+      "label": "https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/overview.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

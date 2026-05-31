@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:antenna-array",
+  "title": "Antenna Array",
+  "slug": "antenna-array",
+  "public": true,
+  "classIri": "urn:ngm:class:antenna-array",
+  "domain": "infrastructure",
+  "definition": "An Antenna Array is a set of multiple antenna elements arranged and phased together so that their combined radiation pattern can be electronically steered and shaped. By controlling the relative phase and amplitude of each element, the array forms directional beams, increases gain, and supports spatial multiplexing in techniques such as MIMO and beamforming. Arrays are foundational to modern wireless radio, 5G, radar, and precise satellite positioning receivers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infrastructure Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gps",
+      "label": "Gps"
+    }
+  ]
+}

@@ -435,12 +435,12 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:adversarial-learning-system",
-      "label": "Adversarial Learning System"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     },
     {
-      "@id": "urn:ngm:class:implicit-density-model",
-      "label": "Implicit Density Model"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     }
   ],
   "relations": {

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:government-digital-identity",
+  "title": "Government Digital Identity",
+  "slug": "government-digital-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:government-digital-identity",
+  "domain": "security",
+  "definition": "Government digital identity is a state-issued or state-recognised electronic identity that citizens and residents use to prove who they are when accessing public and private services online. It provides identity proofing and authentication backed by authoritative government records, often within a national trust framework. It increasingly draws on verifiable credentials and decentralised identity standards to give users portable, privacy-preserving credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    }
+  ]
+}

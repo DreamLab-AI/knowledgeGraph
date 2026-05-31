@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:eu-green-deal",
+  "title": "EU Green Deal",
+  "slug": "eu-green-deal",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-green-deal",
+  "domain": "governance",
+  "definition": "The EU Green Deal is the European Union's overarching policy package aimed at making Europe climate-neutral by 2050. It sets binding emissions-reduction targets and coordinates legislation across energy, industry, transport, agriculture, and finance, including circular-economy and sustainable-finance measures. As a governance framework it shapes regulation, funding, and reporting obligations that ripple through technology and supply-chain sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

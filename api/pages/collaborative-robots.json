@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:c9ef3cc643fad069192124aee5b1affdc894716ab9cfff5535bc6d8a6f2c2b51",
+  "title": "Collaborative Robots",
+  "slug": "collaborative-robots",
+  "public": true,
+  "classIri": "urn:ngm:class:collaborative-robots",
+  "domain": "robotics",
+  "definition": "Collaborative robots, or cobots, are robots designed to work safely alongside humans within a shared workspace.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-robotics",
+      "label": "Industrial Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "actuators",
+      "label": "Actuators"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "https-www-iso-org-standard-62996-html",
+      "label": "https://www.iso.org/standard/62996.html"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-cobot",
+      "label": "https://en.wikipedia.org/wiki/Cobot"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

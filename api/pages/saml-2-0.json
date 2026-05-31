@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:8f08cfe7e78db5b5b4ee1926fe4b5084166a5aace2d5771c816d7f2b1a6c1cb2",
+  "title": "SAML 2.0",
+  "slug": "saml-2-0",
+  "public": true,
+  "classIri": "urn:ngm:class:saml-2-0",
+  "domain": "artificial-intelligence",
+  "definition": "Version 2.0 of the Security Assertion Markup Language, an OASIS standard for exchanging authentication and authorisation assertions between identity providers and service providers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    }
+  ]
+}

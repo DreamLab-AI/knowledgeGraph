@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:c52be17061dfb57c1be5d03e7a32d95ed194165fd2125c2df53e5df646dcdcf4",
+  "title": "ISO-IEC 18013-5 mDL",
+  "slug": "iso-iec-18013-5-m-dl",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-18013-5-m-dl",
+  "domain": "standards",
+  "definition": "ISO/IEC 18013-5 specifies the mobile driving licence application, defining the interface and data model for a driving licence held on a mobile device.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

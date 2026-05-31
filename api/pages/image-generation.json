@@ -289,6 +289,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -305,16 +309,40 @@
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
     },
     {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },
     {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
       "slug": "image-to-image-translation",
       "label": "Image to Image Translation"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
@@ -333,6 +361,14 @@
       "label": "Pre Training"
     },
     {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
+    },
+    {
       "slug": "style-transfer",
       "label": "Style Transfer"
     },
@@ -345,8 +381,16 @@
       "label": "Training for Design Practitioners"
     },
     {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
     },
     {
       "slug": "web-dev-and-consumer-tooling",

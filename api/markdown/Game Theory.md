@@ -39,7 +39,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:incentive-structures", "label": "Incentive Structures"},
-      {"@id": "urn:ngm:class:prediction-market", "label": "Prediction Market"}
+      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Market"}
     ]
   },
   "quality": 0.8

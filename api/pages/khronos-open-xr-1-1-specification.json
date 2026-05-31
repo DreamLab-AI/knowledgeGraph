@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:86dddd9df8bf919253374897c845b503d40b67c9f9b8c2d58f39e3fa206d6183",
+  "title": "Khronos OpenXR 1.1 Specification",
+  "slug": "khronos-open-xr-1-1-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:khronos-open-xr-1-1-specification",
+  "domain": "metaverse",
+  "definition": "The OpenXR 1.1 specification is a revision of the OpenXR standard that consolidates widely adopted extensions into the core and refines the cross-vendor XR application interface.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:khronos-open-xr",
+      "label": "Khronos OpenXR"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:khronos-open-xr",
+        "label": "Khronos OpenXR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    }
+  ]
+}

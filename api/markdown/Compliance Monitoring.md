@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0487-compliance-monitoring
 
 # Compliance Monitoring
 ```json-ld
@@ -615,8 +616,8 @@ public:: true
       "label": "Automated Compliance"
     },
     {
-      "@id": "urn:ngm:class:continuous-control-monitoring",
-      "label": "Continuous Control Monitoring"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

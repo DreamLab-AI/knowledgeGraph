@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:6c2ee6b501098a37c782c29e51fc78ea9b8715cb5632a1f356c2eeacbe2c54ca",
+  "title": "Volumetric Video",
+  "slug": "volumetric-video",
+  "public": true,
+  "classIri": "urn:ngm:class:volumetric-video",
+  "domain": "metaverse",
+  "definition": "Volumetric video captures a subject from many viewpoints to reconstruct a moving three-dimensional representation that can be viewed from any angle, rather than a fixed two-dimensional image sequence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    }
+  ]
+}

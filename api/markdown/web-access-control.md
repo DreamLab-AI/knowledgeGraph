@@ -1,0 +1,4 @@
+- ### Definition
+  - Web Access Control is an RDF-based authorisation scheme for linked-data resources, implemented by [[Solid]] to let individuals enforce per-resource permissions tied to WebID [[Digital Identity]].
+- ### Content
+  - Each protected resource references an ACL document whose authorizations grant Read, Write, Append, or Control modes to specific agents, groups, or the public. Because rules are themselves linked data, access policies are portable across servers; the model's trade-offs include the complexity of managing fine-grained ACLs at scale and reliance on robust WebID authentication.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:kyc-aml-compliance",
+  "title": "KYC/AML Compliance",
+  "slug": "kyc-aml-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:kyc-aml-compliance",
+  "domain": "governance",
+  "definition": "KYC/AML compliance is the operational implementation of Know Your Customer and Anti-Money Laundering obligations within a product or platform, embedding identity verification, screening and monitoring into business processes. It encompasses the controls, workflows and audit evidence needed to demonstrate adherence to regulators. In tokenised systems it is increasingly encoded into smart contracts and asset standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

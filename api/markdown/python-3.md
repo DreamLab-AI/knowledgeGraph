@@ -1,0 +1,4 @@
+- ### Definition
+  - Python 3 is the current major version of the Python language, widely used across AI, data, and robotics. It is a runtime requirement for frameworks such as [[Robot Operating System]] and [[LangChain]].
+- ### Content
+  - Its strengths are readability, rapid development, and a rich ecosystem (NumPy, PyTorch, asyncio). Trade-offs include the Global Interpreter Lock limiting CPU-bound threading and interpreter overhead, mitigated in practice by C-extension acceleration and multiprocessing.

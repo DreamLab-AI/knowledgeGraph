@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:2585a94b8686304580db555e0b4d51dda8d519ac04f06ddb1a16315b7781493d",
+  "title": "TELE-151-real-time-protocols",
+  "slug": "tele-151-real-time-protocols",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-151-real-time-protocols",
+  "domain": "metaverse",
+  "definition": "Real-time protocols are network communication standards designed to deliver time-sensitive media and data with low latency and predictable timing, accepting some loss in exchange for timeliness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "low-latency",
+      "label": "Low Latency"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}

@@ -172,8 +172,16 @@
   ],
   "backlinks": [
     {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
     },
     {
       "slug": "vircadia",

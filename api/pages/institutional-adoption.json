@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:1637792bef542f030dbdc403573ba301e4f8e897088c6c82030e482e776db903",
+  "title": "Institutional Adoption",
+  "slug": "institutional-adoption",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-adoption",
+  "domain": "finance",
+  "definition": "Institutional adoption is the process by which large organisations such as banks, asset managers, and corporations begin to use a technology or asset class at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "black-rock-buidl",
+      "label": "BlackRock BUIDL"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "maple-finance",
+      "label": "Maple Finance"
+    },
+    {
+      "slug": "ondo-finance",
+      "label": "Ondo Finance"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ]
+}

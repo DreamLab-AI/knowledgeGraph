@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:web-access-control",
+  "title": "Web Access Control",
+  "slug": "web-access-control",
+  "public": true,
+  "classIri": "urn:ngm:class:web-access-control",
+  "domain": "security",
+  "definition": "Web Access Control (WAC) is a decentralised authorisation system for web resources that uses RDF-based access control lists to specify which agents may read, write, append, or control linked-data resources identified by URIs. It is a core mechanism in the Solid ecosystem, letting individuals govern access to their personal data pods using WebID-based identity. WAC decouples authorisation from any central server, aligning with self-sovereign data principles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

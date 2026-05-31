@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tokenization-system",
+  "title": "Tokenization System",
+  "slug": "tokenization-system",
+  "public": true,
+  "classIri": "urn:ngm:class:tokenization-system",
+  "domain": "blockchain",
+  "definition": "A tokenization system is the end-to-end technical and operational infrastructure that converts rights, assets, or value into blockchain tokens and manages their lifecycle of issuance, transfer, custody, and redemption. It combines smart-contract templates, identity and compliance modules, and registry services to ensure that tokens reliably represent and preserve their underlying claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Blockchain Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:open-x-embodiment",
+  "title": "Open X-Embodiment",
+  "slug": "open-x-embodiment",
+  "public": true,
+  "classIri": "urn:ngm:class:open-x-embodiment",
+  "domain": "robotics",
+  "definition": "Open X-Embodiment is a large, collaborative open dataset and associated model effort that aggregates robot manipulation demonstrations across many robot embodiments and labs. By pooling trajectories from diverse hardware into a unified format, it enables training generalist robot policies that transfer across different platforms. The initiative supports research into cross-embodiment learning and the RT-X family of robotic foundation models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

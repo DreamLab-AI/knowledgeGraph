@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0319-micropayments
 
 # Micropayments
 ```json-ld
@@ -339,8 +340,8 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:digital-finance",
-      "label": "Digital Finance"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
       "@id": "urn:ngm:class:payment-system",
@@ -384,7 +385,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -488,7 +489,7 @@ public:: true
         "label": "AI Search"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -530,7 +531,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

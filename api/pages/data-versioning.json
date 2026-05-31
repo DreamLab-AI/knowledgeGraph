@@ -108,6 +108,10 @@
     {
       "slug": "etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
     }
   ]
 }

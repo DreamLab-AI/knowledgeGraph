@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-system-querying",
+  "title": "Cross-System Querying",
+  "slug": "cross-system-querying",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-system-querying",
+  "domain": "data",
+  "definition": "Cross-system querying is the ability to issue a single query that retrieves and joins data residing in multiple independent systems or data stores. It is achieved through federation surfaces, linked-data encoding, and query mediators that translate and route requests to heterogeneous sources. It enables unified access to distributed data without centralising or duplicating it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federation-surface",
+        "label": "Federation Surface"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-encoder",
+        "label": "Linked Data Encoder"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    }
+  ]
+}

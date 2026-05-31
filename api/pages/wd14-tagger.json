@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:wd14-tagger",
+  "title": "WD14 Tagger",
+  "slug": "wd14-tagger",
+  "public": true,
+  "classIri": "urn:ngm:class:wd14-tagger",
+  "domain": "ai",
+  "definition": "WD14 Tagger is an automatic image-tagging model and tool that predicts Danbooru-style descriptive tags for images, widely used to caption training datasets for diffusion-model fine-tuning. Built on convolutional or transformer backbones trained on large tagged anime/illustration corpora, it outputs ranked tag confidences that captioning pipelines threshold and assemble into prompts. It is a standard preprocessing step in DreamBooth and LoRA training workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "Kohya DreamBooth and Similar"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:7f2ced3ef671a5f0db505a5b9ffde3515f80b66688546e8fcb25ba8e7ac7d028",
+  "title": "Usability",
+  "slug": "usability",
+  "public": true,
+  "classIri": "urn:ngm:class:usability",
+  "domain": "general",
+  "definition": "Usability is the degree to which a product or system can be used effectively, efficiently, and with satisfaction by its intended users. It is a central concern of human-computer interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "https-www-nngroup-com-articles-usability-101-introduction-to-usability",
+      "label": "https://www.nngroup.com/articles/usability-101-introduction-to-usability/"
+    },
+    {
+      "slug": "https-www-iso-org-standard-77520-html",
+      "label": "https://www.iso.org/standard/77520.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
+    }
+  ]
+}

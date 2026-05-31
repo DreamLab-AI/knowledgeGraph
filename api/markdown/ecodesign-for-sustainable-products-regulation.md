@@ -1,0 +1,4 @@
+- ### Definition
+  - The Ecodesign for Sustainable Products Regulation (ESPR) is an EU framework mandating durability, repairability, and recyclability requirements and the Digital Product Passport. It is a central instrument standardising the EU [[Circular Economy]] agenda.
+- ### Content
+  - ESPR replaces and broadens the earlier Ecodesign Directive, extending requirements beyond energy-related products to most physical goods. Its Digital Product Passport links each product to traceable sustainability, material, and end-of-life data, enabling circular supply-chain practices and compliance verification.

@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:762018aba7544a89f77f99e4f2193fcaf279cfef82629e85e35637e85ebbb0f5",
+  "title": "LLM Application Framework",
+  "slug": "llm-application-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:llm-application-framework",
+  "domain": "natural-language-processing",
+  "definition": "A software library that provides abstractions for building applications on top of large language models, including prompt management, tool integration, retrieval and chaining of model calls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ]
+}

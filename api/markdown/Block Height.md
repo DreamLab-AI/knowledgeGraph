@@ -1,4 +1,5 @@
 public:: true
+alias:: block-height
 
 # Block Height
 ```json-ld

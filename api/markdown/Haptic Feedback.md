@@ -1,4 +1,5 @@
 public:: true
+alias:: HapticFeedback
 
 # Haptic Feedback
 ```json-ld

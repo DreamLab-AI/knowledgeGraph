@@ -354,7 +354,7 @@ public:: true
         "label": "Decentralised Exchange"
       },
       {
-        "@id": "urn:ngm:class:flash-loans",
+        "@id": "urn:ngm:class:flash-loan",
         "label": "Flash Loans"
       },
       {
@@ -408,7 +408,7 @@ public:: true
         "label": "Cryptographic Oracle"
       },
       {
-        "@id": "urn:ngm:class:gas-fees",
+        "@id": "urn:ngm:class:gas-fee",
         "label": "Gas Fees"
       },
       {
@@ -416,7 +416,7 @@ public:: true
         "label": "Liquidity Provider"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

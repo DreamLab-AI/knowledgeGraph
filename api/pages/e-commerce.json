@@ -68,6 +68,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
       "slug": "digital-marketplace",
       "label": "Digital Marketplace"
     },
@@ -78,6 +82,10 @@
     {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
     }
   ]
 }

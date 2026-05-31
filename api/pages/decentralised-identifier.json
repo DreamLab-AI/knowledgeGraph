@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:479d51b89f122e6b1e23f8dc63d720d38b887829282643b6cf4525fa6c3745be",
+  "title": "Decentralised Identifier",
+  "slug": "decentralised-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-identifier",
+  "domain": "cryptographic",
+  "definition": "A type of globally unique identifier, defined by a W3C standard, that is controlled by its subject and resolves to a document without depending on a central registry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

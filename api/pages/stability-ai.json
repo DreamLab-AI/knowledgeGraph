@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cfc535350b6ba0836a3cc59ef3942d504b62a3dbc6b6e979204314082f62d129",
+  "title": "Stability AI",
+  "slug": "stability-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:stability-ai",
+  "domain": "generative-ai",
+  "definition": "A company that develops and releases open generative models, best known for the Stable Diffusion family of text-to-image models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -234,7 +234,7 @@ public:: true
         "label": "MetaverseEnvironment"
       },
       {
-        "@id": "urn:ngm:class:realtime-synchronization",
+        "@id": "urn:ngm:class:real-time-synchronization",
         "label": "RealtimeSynchronization"
       },
       {

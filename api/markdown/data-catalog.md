@@ -1,0 +1,4 @@
+- ### Definition
+  - A data catalog is a searchable metadata-driven inventory of data assets that underpins [[Metadata Management]] and [[Data Fabric Architecture]] for discovery and governance.
+- ### Content
+  - Catalogs harvest technical and business metadata, tag assets with ownership and sensitivity, and expose search, lineage and glossary capabilities. They are the discovery layer that lets analysts and stewards locate, evaluate and govern data without manual tribal knowledge.

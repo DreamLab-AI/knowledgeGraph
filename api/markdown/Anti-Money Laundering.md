@@ -1,4 +1,5 @@
 public:: true
+alias:: Anti Money Laundering
 
 # anti-money laundering
 ```json-ld

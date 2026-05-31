@@ -1,0 +1,4 @@
+- ### Definition
+  - XBRL is an XML-based standard for structured, machine-readable financial and business reporting, widely required for [[Regulatory Reporting]].
+- ### Content
+  - XBRL separates the reported data (instance documents) from the definitions that give them meaning (taxonomies), so each fact carries explicit concept, period, unit, and entity context. This lets regulators and analysts validate filings automatically against business rules and compare disclosures across companies and jurisdictions, with the Inline XBRL variant embedding tags directly in human-readable HTML.

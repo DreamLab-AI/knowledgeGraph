@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:benign-overfitting",
+  "title": "Benign Overfitting",
+  "slug": "benign-overfitting",
+  "public": true,
+  "classIri": "urn:ngm:class:benign-overfitting",
+  "domain": "ai",
+  "definition": "Benign overfitting is the phenomenon, observed in heavily overparameterised models such as deep neural networks, where a model fits its training data exactly, including noise, yet still generalises well to unseen data. This contradicts the classical bias-variance trade-off, which predicts that interpolating noise should harm generalisation. It is closely associated with the double-descent risk curve and is a central puzzle in modern statistical learning theory.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

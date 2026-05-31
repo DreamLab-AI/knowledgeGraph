@@ -1,0 +1,4 @@
+- ### Definition
+  - A risk assessment matrix ranks risks by likelihood against impact, used alongside a [[Threat Surface Map]] and implementing a [[Risk Assessment Methodology]].
+- ### Content
+  - Plotting each identified risk on the likelihood-severity grid produces a priority ordering that guides where mitigation effort and budget should go. The matrix makes trade-offs explicit and communicable to stakeholders across technical and management audiences.

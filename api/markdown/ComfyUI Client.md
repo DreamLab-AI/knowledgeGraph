@@ -499,12 +499,12 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:api-client",
-      "label": "API Client"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:graphical-user-interface",
-      "label": "Graphical User Interface"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -580,7 +580,7 @@ public:: true
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -724,7 +724,7 @@ public:: true
         "label": "ComfyUI Workflows"
       },
       {
-        "@id": "urn:ngm:individual:flux-1",
+        "@id": "urn:ngm:class:flux-1",
         "label": "Flux.1"
       },
       {
@@ -740,7 +740,7 @@ public:: true
         "label": "LoRA"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

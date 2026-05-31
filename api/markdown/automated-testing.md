@@ -1,0 +1,4 @@
+- ### Definition
+  - Automated testing executes test suites programmatically to verify software behaviour, forming the backbone of [[Continuous Integration]] and supporting reliable workflows in [[CLI Multi-Agent Systems]].
+- ### Content
+  - Test frameworks assert expected behaviour at varying granularities, from isolated units to full system flows. Integrated into CI/CD pipelines, automated tests gate merges and deployments, providing fast feedback and guarding against regressions as codebases evolve.

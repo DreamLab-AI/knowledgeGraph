@@ -1,0 +1,4 @@
+- ### Definition
+  - CQRS is an architectural pattern that splits write operations from read operations into separate models, allowing each to be tuned independently. It is frequently implemented within the [[Data Layer]] and pairs naturally with eventually-consistent structures like [[CRDT]].
+- ### Content
+  - Commands mutate aggregate state and emit events, while queries serve denormalised read models built for fast retrieval. The pattern trades increased complexity and eventual consistency for scalability, clearer domain boundaries, and the ability to project the same event stream into multiple specialised read stores.

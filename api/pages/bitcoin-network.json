@@ -76,8 +76,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "btc",
+      "label": "BTC"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
     },
     {
       "slug": "bitcoin-centralisation-risks",
@@ -92,12 +100,48 @@
       "label": "Bitcoin Value Proposition"
     },
     {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "f-2-pool",
+      "label": "F2Pool"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "peter-todd",
+      "label": "Peter Todd"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
+    },
+    {
       "slug": "taproot-assets",
       "label": "Taproot Assets"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
     }
   ]
 }

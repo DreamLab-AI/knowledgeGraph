@@ -1,4 +1,5 @@
 public:: true
+alias:: OnionRouting, onion-routing
 
 # Onion Routing
 ```json-ld

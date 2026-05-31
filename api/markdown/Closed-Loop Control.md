@@ -1,4 +1,5 @@
 public:: true
+alias:: Closed Loop Control, RB-1002-closed-loop-control
 
 # Closed-Loop Control
 ```json-ld
@@ -158,7 +159,7 @@ public:: true
         "label": "PID Control"
       },
       {
-        "@id": "urn:ngm:class:rb-1004-adaptive-control",
+        "@id": "urn:ngm:class:adaptive-control",
         "label": "RB-1004-adaptive-control"
       }
     ],

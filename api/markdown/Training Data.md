@@ -1,4 +1,5 @@
 public:: true
+alias:: TrainingData
 
 # Training Data
 ```json-ld
@@ -347,8 +348,8 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:dataset",
-      "label": "Dataset"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     },
     {
       "@id": "urn:ngm:class:data-governance",
@@ -438,7 +439,7 @@ public:: true
         "label": "Fine Tuning"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

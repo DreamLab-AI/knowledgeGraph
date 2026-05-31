@@ -1,0 +1,4 @@
+- ### Definition
+  - A fee tier is a preset swap-fee level assigned to a liquidity pool on a [[Decentralized Exchange]], calibrating fee income for [[Liquidity Provision]] against the risk of the traded pair. It is an economic-mechanism construct within DeFi and economics.
+- ### Content
+  - Concentrated-liquidity AMMs typically offer several fee tiers per token pair, and liquidity fragments across them as providers and traders gravitate toward the most efficient market. Higher tiers compensate providers for impermanent-loss risk on volatile assets, while low tiers maximise capital efficiency on correlated or stable pairs, making fee-tier selection a key determinant of pool depth and execution quality.

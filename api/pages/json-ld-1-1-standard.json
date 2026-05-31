@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:json-ld-1-1-standard",
+  "title": "JSON-LD 1.1 Standard",
+  "slug": "json-ld-1-1-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:json-ld-1-1-standard",
+  "domain": "data",
+  "definition": "JSON-LD 1.1 is a W3C Recommendation defining a JSON-based serialization for Linked Data, allowing JSON documents to be interpreted as RDF graphs. It introduces a context mechanism that maps JSON keys to IRIs, plus features such as framing, nested contexts and typed values added in the 1.1 revision. It is the dominant format for embedding machine-readable semantics in web data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data-encoder",
+        "label": "Linked Data Encoder"
+      },
+      {
+        "id": "urn:ngm:class:federation-surface",
+        "label": "Federation Surface"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    }
+  ]
+}

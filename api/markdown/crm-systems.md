@@ -1,0 +1,4 @@
+- ### Definition
+  - CRM systems are platforms that consolidate customer data and interactions to support sales, marketing, and service operations. They increasingly interoperate with tools such as a [[Meeting AI Assistant]] and are a generalisation of specific products like [[CRM]].
+- ### Content
+  - Modern CRM platforms combine relational contact data with workflow automation, analytics, and embedded AI that drafts messages, scores leads, and surfaces next-best actions. Their value grows with integration breadth, but depends on data hygiene, adoption discipline, and careful governance of the sensitive customer information they aggregate.

@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:f4855b114005dd0e2248c8748b21f92114fa091bb93f2bd7f811a75921538aa3",
+  "title": "China",
+  "slug": "china",
+  "public": true,
+  "classIri": "urn:ngm:class:china",
+  "domain": "geography",
+  "definition": "A country in East Asia and the world's most populous nation for much of recent history, with a large economy and significant influence in technology, manufacturing, and digital currency policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "singapore",
+      "label": "Singapore"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    }
+  ]
+}

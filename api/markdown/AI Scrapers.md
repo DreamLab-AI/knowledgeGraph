@@ -331,12 +331,12 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:automated-agent",
-      "label": "Automated Agent"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
-      "@id": "urn:ngm:class:data-acquisition-pipeline",
-      "label": "Data Acquisition Pipeline"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     }
   ],
   "relations": {
@@ -506,7 +506,7 @@ public:: true
         "label": "Multimodal Model Training"
       },
       {
-        "@id": "urn:ngm:class:rag-pipelines",
+        "@id": "urn:ngm:class:rag-pipeline",
         "label": "RAG Pipelines"
       },
       {

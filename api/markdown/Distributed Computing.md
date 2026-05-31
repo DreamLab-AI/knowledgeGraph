@@ -471,12 +471,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "@id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

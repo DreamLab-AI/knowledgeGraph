@@ -1,0 +1,4 @@
+- ### Definition
+  - A verification process independently validates claims against evidence, a prerequisite for credible [[Carbon Accounting]] and for entries in a [[Carbon Registry]].
+- ### Content
+  - Independent third-party auditors apply approved methodologies to assess data quality, additionality and permanence. Successful verification triggers issuance and registration of credits, while documented audit trails support transparency, dispute resolution and ongoing monitoring.

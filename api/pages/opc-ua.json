@@ -75,6 +75,10 @@
       "label": "Digital Twin Interop Protocol"
     },
     {
+      "slug": "isa-95",
+      "label": "ISA-95"
+    },
+    {
       "slug": "industrial-metaverse",
       "label": "Industrial Metaverse"
     },

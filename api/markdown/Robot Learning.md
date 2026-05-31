@@ -1,4 +1,5 @@
 public:: true
+alias:: RobotLearning
 
 # Robot Learning
 ```json-ld

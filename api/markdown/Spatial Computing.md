@@ -1,4 +1,5 @@
 public:: true
+alias:: SpatialComputing
 
 # Spatial Computing
 ```json-ld

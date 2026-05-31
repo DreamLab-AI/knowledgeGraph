@@ -1,4 +1,5 @@
 public:: true
+alias:: SemanticSegmentation
 
 # Semantic Segmentation
 ```json-ld

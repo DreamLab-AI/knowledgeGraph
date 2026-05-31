@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:consumer-trust",
+  "title": "Consumer Trust",
+  "slug": "consumer-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:consumer-trust",
+  "domain": "supply-chain",
+  "definition": "Consumer trust is the confidence buyers place in a brand, product, or supply chain to behave reliably, safely, and ethically. It is built through verifiable provenance, transparent practices, consistent quality, and accountable handling of grievances. In supply-chain contexts it is increasingly underpinned by traceability data and ethical-sourcing attestations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

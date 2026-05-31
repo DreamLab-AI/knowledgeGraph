@@ -85,6 +85,10 @@
     {
       "slug": "ngm-domain",
       "label": "NGM Domain"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
     }
   ]
 }

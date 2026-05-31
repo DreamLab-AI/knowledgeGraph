@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:siopv2",
+  "title": "SIOPv2",
+  "slug": "siopv2",
+  "public": true,
+  "classIri": "urn:ngm:class:siopv2",
+  "domain": "security",
+  "definition": "SIOPv2 (Self-Issued OpenID Provider v2) is an OpenID Foundation specification that extends OpenID Connect so a user's own wallet acts as the identity provider, authenticating with self-issued and decentralised identifiers rather than a third-party server. It lets relying parties verify a subject controls a DID and, paired with OpenID for Verifiable Presentations, accept verifiable credentials. It is a key protocol for decentralised, wallet-centric digital identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    }
+  ]
+}

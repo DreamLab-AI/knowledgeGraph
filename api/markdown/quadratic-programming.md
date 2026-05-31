@@ -1,0 +1,4 @@
+- ### Definition
+  - Quadratic programming minimises a quadratic objective under linear constraints, yielding convex, globally solvable problems. It is used by [[Force Control]] and implemented within [[Model-Based Control]] schemes for real-time constrained optimisation.
+- ### Content
+  - In robotics, QP underpins whole-body controllers and model predictive control, where contact forces, joint limits, and dynamics are expressed as linear constraints around a quadratic cost. Active-set and interior-point solvers achieve the kilohertz solve rates required for closed-loop control on physical hardware.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Emergent Behavior is system-level behaviour that arises from interactions among simpler components rather than from explicit programming. It is enabled by an [[AI Game Agent]] acting under local rules and gives [[Open World]] simulations unscripted dynamics.
+- ### Content
+  - In multi-agent systems, simple local policies combined with environmental feedback can yield coordinated or surprising global patterns. Designers harness emergence for richer simulation and gameplay, balancing it against the difficulty of predicting, debugging, and constraining unintended outcomes.

@@ -91,6 +91,14 @@
       "label": "Avatar Standard"
     },
     {
+      "slug": "bip-341-taproot",
+      "label": "BIP-341 Taproot"
+    },
+    {
+      "slug": "bip-342-tapscript",
+      "label": "BIP-342 Tapscript"
+    },
+    {
       "slug": "benchmark-standard",
       "label": "Benchmark Standard"
     },
@@ -101,6 +109,406 @@
     {
       "slug": "calibration-standards",
       "label": "Calibration Standards"
+    },
+    {
+      "slug": "eip-1271",
+      "label": "EIP-1271"
+    },
+    {
+      "slug": "eip-2981",
+      "label": "EIP-2981"
+    },
+    {
+      "slug": "eip-4337",
+      "label": "EIP-4337"
+    },
+    {
+      "slug": "eip-4844",
+      "label": "EIP-4844"
+    },
+    {
+      "slug": "eip-7702",
+      "label": "EIP-7702"
+    },
+    {
+      "slug": "erc-1400",
+      "label": "ERC-1400"
+    },
+    {
+      "slug": "erc-20-tokens",
+      "label": "ERC-20 Tokens"
+    },
+    {
+      "slug": "erc-20-votes",
+      "label": "ERC-20 Votes"
+    },
+    {
+      "slug": "erc-2612-permit",
+      "label": "ERC-2612 Permit"
+    },
+    {
+      "slug": "erc-3475",
+      "label": "ERC-3475"
+    },
+    {
+      "slug": "erc-3525",
+      "label": "ERC-3525"
+    },
+    {
+      "slug": "erc-3643",
+      "label": "ERC-3643"
+    },
+    {
+      "slug": "erc-4337-account-abstraction",
+      "label": "ERC-4337 Account Abstraction"
+    },
+    {
+      "slug": "erc-4626",
+      "label": "ERC-4626"
+    },
+    {
+      "slug": "erc-7540",
+      "label": "ERC-7540"
+    },
+    {
+      "slug": "erc-7683",
+      "label": "ERC-7683"
+    },
+    {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
+      "slug": "etsi-eni-008",
+      "label": "ETSI ENI 008"
+    },
+    {
+      "slug": "etsi-gr-arf-007",
+      "label": "ETSI GR ARF 007"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "etsi-gs-mec-003",
+      "label": "ETSI GS MEC 003"
+    },
+    {
+      "slug": "fips-140-3",
+      "label": "FIPS 140-3"
+    },
+    {
+      "slug": "fips-186-5",
+      "label": "FIPS 186-5"
+    },
+    {
+      "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
+      "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
+    },
+    {
+      "slug": "iec-62061",
+      "label": "IEC 62061"
+    },
+    {
+      "slug": "iec-62443",
+      "label": "IEC 62443"
+    },
+    {
+      "slug": "ieee-1451",
+      "label": "IEEE 1451"
+    },
+    {
+      "slug": "ieee-1588-ptp",
+      "label": "IEEE 1588 PTP"
+    },
+    {
+      "slug": "ieee-1872",
+      "label": "IEEE 1872"
+    },
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "ieee-7000-model-process",
+      "label": "IEEE 7000 Model Process"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "ieee-802-11",
+      "label": "IEEE 802.11"
+    },
+    {
+      "slug": "ieee-802-3",
+      "label": "IEEE 802.3"
+    },
+    {
+      "slug": "ieee-p-2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "ieee-p-2048-9",
+      "label": "IEEE P2048-9"
+    },
+    {
+      "slug": "ieee-p-2048",
+      "label": "IEEE P2048"
+    },
+    {
+      "slug": "ieee-p-7000",
+      "label": "IEEE P7000"
+    },
+    {
+      "slug": "ieee-p-7003-2021",
+      "label": "IEEE P7003-2021"
+    },
+    {
+      "slug": "ieee-p-7009",
+      "label": "IEEE P7009"
+    },
+    {
+      "slug": "iso-10218-robot-safety",
+      "label": "ISO 10218 Robot Safety"
+    },
+    {
+      "slug": "iso-10218-1",
+      "label": "ISO 10218-1"
+    },
+    {
+      "slug": "iso-11179",
+      "label": "ISO 11179"
+    },
+    {
+      "slug": "iso-13849",
+      "label": "ISO 13849"
+    },
+    {
+      "slug": "iso-14040",
+      "label": "ISO 14040"
+    },
+    {
+      "slug": "iso-21448",
+      "label": "ISO 21448"
+    },
+    {
+      "slug": "iso-22144",
+      "label": "ISO 22144"
+    },
+    {
+      "slug": "iso-22166",
+      "label": "ISO 22166"
+    },
+    {
+      "slug": "iso-23247",
+      "label": "ISO 23247"
+    },
+    {
+      "slug": "iso-23257",
+      "label": "ISO 23257"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "iso-26000",
+      "label": "ISO 26000"
+    },
+    {
+      "slug": "iso-27701",
+      "label": "ISO 27701"
+    },
+    {
+      "slug": "iso-28000",
+      "label": "ISO 28000"
+    },
+    {
+      "slug": "iso-29100",
+      "label": "ISO 29100"
+    },
+    {
+      "slug": "iso-29134",
+      "label": "ISO 29134"
+    },
+    {
+      "slug": "iso-29184",
+      "label": "ISO 29184"
+    },
+    {
+      "slug": "iso-31000-risk-management",
+      "label": "ISO 31000 Risk Management"
+    },
+    {
+      "slug": "iso-31000",
+      "label": "ISO 31000"
+    },
+    {
+      "slug": "iso-3691-4",
+      "label": "ISO 3691-4"
+    },
+    {
+      "slug": "iso-37301-2021",
+      "label": "ISO 37301 2021"
+    },
+    {
+      "slug": "iso-42001",
+      "label": "ISO 42001"
+    },
+    {
+      "slug": "iso-4217",
+      "label": "ISO 4217"
+    },
+    {
+      "slug": "iso-639-language-codes",
+      "label": "ISO 639 Language Codes"
+    },
+    {
+      "slug": "iso-8373-2021",
+      "label": "ISO 8373 2021"
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "label": "ISO 8373 Robotics Vocabulary"
+    },
+    {
+      "slug": "iso-8373",
+      "label": "ISO 8373"
+    },
+    {
+      "slug": "iso-9241-112",
+      "label": "ISO 9241-112"
+    },
+    {
+      "slug": "iso-9241-940",
+      "label": "ISO 9241-940"
+    },
+    {
+      "slug": "iso-9241-960",
+      "label": "ISO 9241-960"
+    },
+    {
+      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+      "label": "ISO 9283 Manipulating Industrial Robots Performance Criteria"
+    },
+    {
+      "slug": "iso-iec-42001-ai-management-system",
+      "label": "ISO IEC 42001 AI Management System"
+    },
+    {
+      "slug": "iso-tc-307-blockchain-standards",
+      "label": "ISO TC 307 Blockchain Standards"
+    },
+    {
+      "slug": "iso-iec-14888",
+      "label": "ISO-IEC 14888"
+    },
+    {
+      "slug": "iso-iec-17820",
+      "label": "ISO-IEC 17820"
+    },
+    {
+      "slug": "iso-iec-18013-5-m-dl",
+      "label": "ISO-IEC 18013-5 mDL"
+    },
+    {
+      "slug": "iso-iec-18033",
+      "label": "ISO-IEC 18033"
+    },
+    {
+      "slug": "iso-iec-18039",
+      "label": "ISO-IEC 18039"
+    },
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO-IEC 22989 2022"
+    },
+    {
+      "slug": "iso-iec-23053-2022",
+      "label": "ISO-IEC 23053 2022"
+    },
+    {
+      "slug": "iso-iec-23053",
+      "label": "ISO-IEC 23053"
+    },
+    {
+      "slug": "iso-iec-23090-3",
+      "label": "ISO-IEC 23090-3"
+    },
+    {
+      "slug": "iso-iec-23247",
+      "label": "ISO-IEC 23247"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO-IEC 23257 2021"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO-IEC 23894 2023"
+    },
+    {
+      "slug": "iso-iec-23894",
+      "label": "ISO-IEC 23894"
+    },
+    {
+      "slug": "iso-iec-24760",
+      "label": "ISO-IEC 24760"
+    },
+    {
+      "slug": "iso-iec-25010",
+      "label": "ISO-IEC 25010"
+    },
+    {
+      "slug": "iso-iec-25024",
+      "label": "ISO-IEC 25024"
+    },
+    {
+      "slug": "iso-iec-25059",
+      "label": "ISO-IEC 25059"
+    },
+    {
+      "slug": "iso-iec-27001-2022",
+      "label": "ISO-IEC 27001 2022"
+    },
+    {
+      "slug": "iso-iec-27701",
+      "label": "ISO-IEC 27701"
+    },
+    {
+      "slug": "iso-iec-30170",
+      "label": "ISO-IEC 30170"
+    },
+    {
+      "slug": "iso-iec-38500",
+      "label": "ISO-IEC 38500"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO-IEC 42001 2023"
+    },
+    {
+      "slug": "iso-iec-5338-2023",
+      "label": "ISO-IEC 5338 2023"
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-24",
+      "label": "ISO-IEC JTC 1-SC 24"
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "label": "ISO-IEC TR 24027"
+    },
+    {
+      "slug": "iso-iec-tr-24029-1-2021",
+      "label": "ISO-IEC TR 24029-1 2021"
     },
     {
       "slug": "interface-standards",
@@ -115,8 +523,160 @@
       "label": "Iso Standards"
     },
     {
+      "slug": "nist-800-63",
+      "label": "NIST 800-63"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "nist-ai-standards",
+      "label": "NIST AI Standards"
+    },
+    {
+      "slug": "nist-blockchain-technology-overview",
+      "label": "NIST Blockchain Technology Overview"
+    },
+    {
+      "slug": "nist-cryptographic-standards",
+      "label": "NIST Cryptographic Standards"
+    },
+    {
+      "slug": "nist-fips-186",
+      "label": "NIST FIPS 186"
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-sphincs",
+      "label": "NIST FIPS 205 SLH-DSA SPHINCS+"
+    },
+    {
+      "slug": "nist-fips-205",
+      "label": "NIST FIPS 205"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "nist-post-quantum-cryptography",
+      "label": "NIST Post-Quantum Cryptography"
+    },
+    {
+      "slug": "nist-privacy-framework",
+      "label": "NIST Privacy Framework"
+    },
+    {
+      "slug": "nist-sp-1270",
+      "label": "NIST SP 1270"
+    },
+    {
+      "slug": "nist-sp-800-207",
+      "label": "NIST SP 800-207"
+    },
+    {
+      "slug": "nist-sp-800-53",
+      "label": "NIST SP 800-53"
+    },
+    {
+      "slug": "nist-sp-800-63-4",
+      "label": "NIST SP 800-63-4"
+    },
+    {
+      "slug": "nist-sp-800-63",
+      "label": "NIST SP 800-63"
+    },
+    {
+      "slug": "rfc-8785-canonical-json",
+      "label": "RFC 8785 Canonical JSON"
+    },
+    {
+      "slug": "rfc-8785",
+      "label": "RFC 8785"
+    },
+    {
       "slug": "robot-standard",
       "label": "Robot Standard"
+    },
+    {
+      "slug": "w-3-c-2022-did-core-1-0-recommendation",
+      "label": "W3C 2022 DID Core 1.0 Recommendation"
+    },
+    {
+      "slug": "w-3-c-cognitive-ai-community-group",
+      "label": "W3C Cognitive AI Community Group"
+    },
+    {
+      "slug": "w-3-c-did-core-1-0",
+      "label": "W3C DID Core 1.0"
+    },
+    {
+      "slug": "w-3-c-did-core-specification",
+      "label": "W3C DID Core Specification"
+    },
+    {
+      "slug": "w-3-c-did-working-group",
+      "label": "W3C DID Working Group"
+    },
+    {
+      "slug": "w-3-c-linked-data-platform",
+      "label": "W3C Linked Data Platform"
+    },
+    {
+      "slug": "w-3-c-owl-2",
+      "label": "W3C OWL 2"
+    },
+    {
+      "slug": "w-3-c-prov-o",
+      "label": "W3C PROV-O"
+    },
+    {
+      "slug": "w-3-c-rdf-1-1",
+      "label": "W3C RDF 1.1"
+    },
+    {
+      "slug": "w-3-c-sparql-1-1",
+      "label": "W3C SPARQL 1.1"
+    },
+    {
+      "slug": "w-3-c-standard",
+      "label": "W3C Standard"
+    },
+    {
+      "slug": "w-3-c-standards",
+      "label": "W3C Standards"
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-2-0",
+      "label": "W3C Verifiable Credentials 2.0"
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-data-model-2-0",
+      "label": "W3C Verifiable Credentials Data Model 2.0"
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-data-model-v-2-0",
+      "label": "W3C Verifiable Credentials Data Model v2.0"
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-data-model",
+      "label": "W3C Verifiable Credentials Data Model"
+    },
+    {
+      "slug": "w-3-c-vocabulary",
+      "label": "W3C Vocabulary"
+    },
+    {
+      "slug": "w-3-c-web-xr-device-api",
+      "label": "W3C WebXR Device API"
+    },
+    {
+      "slug": "w-3-c-web-xr",
+      "label": "W3C WebXR"
+    },
+    {
+      "slug": "web-rtc-w-3-c-specification",
+      "label": "WebRTC W3C Specification"
     }
   ]
 }

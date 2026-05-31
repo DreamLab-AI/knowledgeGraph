@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:121b1b30e25a38bec2715e92bc3cda8a57c91cfcf3e4c9f23910c2a561ad4fc3",
+  "title": "ISO 21448",
+  "slug": "iso-21448",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-21448",
+  "domain": "standards",
+  "definition": "ISO 21448 addresses the safety of the intended functionality for road vehicles, covering hazards arising from functional insufficiencies rather than system faults.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

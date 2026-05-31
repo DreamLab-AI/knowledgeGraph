@@ -1,0 +1,4 @@
+- ### Definition
+  - Miro is a cloud collaborative whiteboard offering an infinite shared canvas for distributed teams. It is a leading [[Collaborative Whiteboard]] used heavily in [[Product Design]].
+- ### Content
+  - The platform combines free-form drawing with structured templates for journey maps, retrospectives, and wireframes, plus real-time cursors and commenting for synchronous and asynchronous work. Deep integrations and an apps marketplace let teams pull live data and embed boards into their existing toolchains.

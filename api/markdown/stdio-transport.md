@@ -1,0 +1,4 @@
+- ### Definition
+  - Stdio transport carries [[Model Context Protocol]] messages over a child process's standard input and output streams, framing JSON-RPC requests without any network layer.
+- ### Content
+  - The host application spawns the server executable and writes newline-delimited or length-prefixed JSON-RPC payloads to its stdin while reading responses from stdout, reserving stderr for logging. Because both endpoints run on the same machine under the same user, stdio transport avoids the authentication and TLS overhead of remote transports, making it the default choice for local tools and editor integrations. Its main limitations are that it cannot span hosts and that one process pair is bound for the session lifetime.

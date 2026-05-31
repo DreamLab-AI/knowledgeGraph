@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:637bb23a06a6365f40d6c181d3791f9da9b4a64bfbe1dbab0be42ec14d22b734",
+  "title": "NVIDIA Isaac Sim",
+  "slug": "nvidia-isaac-sim",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-isaac-sim",
+  "domain": "robotics",
+  "definition": "NVIDIA Isaac Sim is a robotics simulation application built on the Omniverse platform for designing, testing, and training robots in virtual environments. It is developed by NVIDIA.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation-environment",
+      "label": "Simulation Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "https-developer-nvidia-com-isaac-sim",
+      "label": "https://developer.nvidia.com/isaac/sim"
+    },
+    {
+      "slug": "https-docs-isaacsim-omniverse-nvidia-com",
+      "label": "https://docs.isaacsim.omniverse.nvidia.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

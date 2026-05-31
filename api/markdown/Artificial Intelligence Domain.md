@@ -1,4 +1,5 @@
 public:: true
+alias:: AI, AI Domain, ArtificialIntelligenceDomain
 
 # Artificial Intelligence Domain
 ```json-ld

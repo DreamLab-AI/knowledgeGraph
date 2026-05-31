@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:5058a527c22c7c694f4dbe1f454f0697663dee73fd130e85945f2091e18c21a7",
+  "title": "Sensitivity",
+  "slug": "sensitivity",
+  "public": true,
+  "classIri": "urn:ngm:class:sensitivity",
+  "domain": "general",
+  "definition": "The degree to which the output of a model or system changes in response to variation in its inputs, parameters or assumptions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robustness",
+      "label": "Robustness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "parameter",
+      "label": "Parameter"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "true-positive-rate",
+      "label": "True Positive Rate"
+    }
+  ]
+}

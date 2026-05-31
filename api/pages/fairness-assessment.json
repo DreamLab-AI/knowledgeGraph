@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fairness-assessment",
+  "title": "Fairness Assessment",
+  "slug": "fairness-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:fairness-assessment",
+  "domain": "governance",
+  "definition": "Fairness assessment is the systematic evaluation of whether an AI or machine-learning system produces equitable outcomes across protected groups and individuals. It quantifies disparities using metrics such as demographic parity, equalised odds, and predictive parity, often computed from confusion-matrix statistics segmented by subgroup. The results inform mitigation, auditing, and governance decisions about model deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-domain",
+        "label": "AI Governance Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ]
+}

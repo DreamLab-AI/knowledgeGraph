@@ -1,0 +1,4 @@
+- ### Definition
+  - Portable identity lets users carry their identity and credentials across services without provider lock-in. It is enabled by [[Self-Sovereign Identity]] models and [[Decentralized Identifiers]] that anchor user-controlled, verifiable identity data.
+- ### Content
+  - Portability is achieved by storing identifiers and verifiable credentials in user-controlled wallets rather than centralised account silos. Relying parties verify credentials against decentralised resolution methods (e.g. DID documents), enabling cross-platform login, reusable KYC, and reduced re-onboarding friction while keeping the user in control of disclosure.

@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:82bdf392883c2b45ade0f0538ff9654d40ca3598108416f601edd9b4da22b601",
+  "title": "Reed Smith",
+  "slug": "reed-smith",
+  "public": true,
+  "classIri": "urn:ngm:class:reed-smith",
+  "domain": "governance",
+  "definition": "Reed Smith is an international law firm headquartered in the United States with offices across several regions. It provides legal services to corporate and institutional clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "https-www-reedsmith-com",
+      "label": "https://www.reedsmith.com"
+    },
+    {
+      "slug": "https-www-reedsmith-com-en-about",
+      "label": "https://www.reedsmith.com/en/about"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    }
+  ]
+}

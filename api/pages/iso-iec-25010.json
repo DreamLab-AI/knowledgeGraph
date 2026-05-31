@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:9ed82fbcfbc84a7ae7ec359739f7d20825cca204ff325aa2de7ef08fd418704c",
+  "title": "ISO-IEC 25010",
+  "slug": "iso-iec-25010",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-25010",
+  "domain": "standards",
+  "definition": "An ISO/IEC standard defining a quality model for systems and software product quality, part of the SQuaRE series. It specifies characteristics such as functional suitability, reliability and usability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:graphical-model",
+  "title": "Graphical Model",
+  "slug": "graphical-model",
+  "public": true,
+  "classIri": "urn:ngm:class:graphical-model",
+  "domain": "ai",
+  "definition": "A graphical model is a probabilistic model that expresses the conditional dependence structure among random variables as a graph, where nodes are variables and edges encode statistical relationships. Bayesian networks use directed acyclic graphs while Markov random fields use undirected graphs, both enabling compact representation of joint distributions. They support efficient inference and learning by exploiting conditional independence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

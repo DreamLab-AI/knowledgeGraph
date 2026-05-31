@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:intelligence-explosion",
+  "title": "Intelligence Explosion",
+  "slug": "intelligence-explosion",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligence-explosion",
+  "domain": "ai",
+  "definition": "Intelligence explosion is the hypothesised scenario in which an artificial intelligence capable of improving its own design enters a positive feedback loop, rapidly producing successively more capable systems and far surpassing human intelligence. First articulated by I. J. Good, it underpins many formulations of the technological singularity and motivates work on AI alignment and control. It remains a contested, largely theoretical concept rather than an observed phenomenon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      },
+      {
+        "id": "urn:ngm:class:intelligence-amplification",
+        "label": "Intelligence Amplification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

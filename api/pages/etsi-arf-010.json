@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:1a497f63be2abd01e84f0c0778ee66a020f458d51c341c0ac8e7d15be2a72fc0",
+  "title": "ETSI ARF 010",
+  "slug": "etsi-arf-010",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-arf-010",
+  "domain": "standards",
+  "definition": "ETSI ARF 010 is a deliverable of the ETSI Augmented Reality Framework activity concerning interoperability and architecture for augmented reality systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    }
+  ]
+}

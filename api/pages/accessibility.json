@@ -12,12 +12,12 @@
       "label": "Governance and Safety"
     },
     {
-      "id": "urn:ngm:class:design-principle",
-      "label": "Design Principle"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
-      "id": "urn:ngm:class:non-functional-requirement",
-      "label": "Non-Functional Requirement"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -677,6 +677,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
       "slug": "civic-participation",
       "label": "Civic Participation"
     },
@@ -689,8 +693,16 @@
       "label": "Disruptive Technology"
     },
     {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
     },
     {
       "slug": "patent",
@@ -719,6 +731,10 @@
     {
       "slug": "translation",
       "label": "Translation"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
     },
     {
       "slug": "voice-interaction",

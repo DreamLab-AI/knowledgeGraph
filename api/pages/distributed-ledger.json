@@ -12,12 +12,12 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:append-only-log",
-      "label": "Append-Only Log"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "id": "urn:ngm:class:multi-party-database",
-      "label": "Multi-Party Database"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -945,6 +945,18 @@
       "label": "Consensus Mechanism"
     },
     {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
     },
@@ -953,8 +965,16 @@
       "label": "Decentralized Identity (DID)"
     },
     {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
       "slug": "distributed-identity",
       "label": "Distributed Identity"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
     },
     {
       "slug": "gold",
@@ -965,8 +985,16 @@
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
     },
     {
       "slug": "lightning-network",
@@ -983,6 +1011,10 @@
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
     },
     {
       "slug": "private-blockchain",
@@ -1013,8 +1045,16 @@
       "label": "Tokenization"
     },
     {
+      "slug": "trade-lens",
+      "label": "TradeLens"
+    },
+    {
       "slug": "verifiable-credentials",
       "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
     }
   ]
 }

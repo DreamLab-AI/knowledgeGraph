@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:encrypted-storage",
+  "title": "Encrypted Storage",
+  "slug": "encrypted-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:encrypted-storage",
+  "domain": "security",
+  "definition": "Encrypted Storage is the protection of data at rest by transforming it with cryptographic algorithms so that it is unreadable without the corresponding decryption keys. It can operate at the disk, filesystem, database, or object level, and is essential for confidentiality of sensitive data such as biometric templates. Proper key management, including secure key generation, rotation, and access control, is critical to its effectiveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-data-management-security",
+        "label": "ETSI Domain Data Management Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    }
+  ]
+}

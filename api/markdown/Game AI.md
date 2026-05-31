@@ -1,4 +1,5 @@
 public:: true
+alias:: GameAI
 
 # Game AI
 ```json-ld

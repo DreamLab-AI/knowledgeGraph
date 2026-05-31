@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:format-compliance",
+  "title": "Format Compliance",
+  "slug": "format-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:format-compliance",
+  "domain": "supply-chain",
+  "definition": "Format compliance is the property of a digital asset or file conforming exactly to the structural, encoding, and schema rules of a defined file or data format specification. Verifying compliance ensures that assets can be reliably parsed, exchanged, and rendered by conformant tools across the supply chain. It is a precondition for interoperability between content producers and consumers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      },
+      {
+        "id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "avatar-standard",
+      "label": "Avatar Standard"
+    }
+  ]
+}

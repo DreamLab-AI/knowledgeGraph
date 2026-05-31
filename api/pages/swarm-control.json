@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:68a78d89aa8062b9b48df7ad96cea30c5c53062f25d13ac98a2312d555200994",
+  "title": "Swarm Control",
+  "slug": "swarm-control",
+  "public": true,
+  "classIri": "urn:ngm:class:swarm-control",
+  "domain": "metaverse",
+  "definition": "Swarm control coordinates many simple agents through local rules and interactions so that useful collective behaviour emerges without centralised command.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

@@ -12,8 +12,8 @@
       "label": "Security and Identity"
     },
     {
-      "id": "urn:ngm:class:authentication-method",
-      "label": "Authentication Method"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     },
     {
       "id": "urn:ngm:class:identity-proofing",
@@ -985,6 +985,10 @@
       "label": "Authentication Service"
     },
     {
+      "slug": "bc-0480-kyc-requirements",
+      "label": "BC-0480-kyc-requirements"
+    },
+    {
       "slug": "biometric-binding-mechanism",
       "label": "Biometric Binding Mechanism"
     },
@@ -1037,16 +1041,40 @@
       "label": "E-Contract Arbitration"
     },
     {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
       "slug": "humanity-attestation",
       "label": "Humanity Attestation"
+    },
+    {
+      "slug": "idnow",
+      "label": "IDnow"
     },
     {
       "slug": "identity-provider",
       "label": "Identity Provider"
     },
     {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    },
+    {
+      "slug": "kyc",
+      "label": "KYC"
+    },
+    {
       "slug": "metaverse-liability-model",
       "label": "Metaverse Liability Model"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
     },
     {
       "slug": "quadratic-voting",
@@ -1077,8 +1105,20 @@
       "label": "Virtual Notary Service"
     },
     {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
       "slug": "zero-trust-architecture-zta",
       "label": "Zero-Trust Architecture (ZTA)"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
     }
   ]
 }

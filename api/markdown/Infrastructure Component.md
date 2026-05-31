@@ -1,4 +1,5 @@
 public:: true
+alias:: InfrastructureComponent
 
 # Infrastructure Component
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-portability",
+  "title": "Data Portability",
+  "slug": "data-portability",
+  "public": true,
+  "classIri": "urn:ngm:class:data-portability",
+  "domain": "data",
+  "definition": "Data portability is the ability for users to obtain, move and reuse their personal or application data across services in a structured, machine-readable format without lock-in. It is both a legal right under regimes such as GDPR and a technical property enabled by open formats and interoperable storage. In decentralised-web designs it lets individuals carry data between providers, shifting control from platforms to users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

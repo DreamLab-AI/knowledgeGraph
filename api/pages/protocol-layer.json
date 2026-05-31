@@ -65,6 +65,10 @@
       "label": "Coinbase Transaction"
     },
     {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },
@@ -271,6 +275,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
     },
     {
       "slug": "travel-rule",

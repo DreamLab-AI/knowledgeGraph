@@ -579,8 +579,8 @@ public:: true
       "label": "Data Management System"
     },
     {
-      "@id": "urn:ngm:class:database",
-      "label": "Database"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {
@@ -820,11 +820,11 @@ public:: true
         "label": "ISO/IEC 39075:2024 GQL"
       },
       {
-        "@id": "urn:ngm:class:w3-c-owl-2",
+        "@id": "urn:ngm:class:w-3-c-owl-2",
         "label": "W3C OWL 2"
       },
       {
-        "@id": "urn:ngm:class:w3-c-rdf-1-1",
+        "@id": "urn:ngm:class:w-3-c-rdf-1-1",
         "label": "W3C RDF 1.1"
       },
       {
@@ -832,7 +832,7 @@ public:: true
         "label": "W3C SHACL"
       },
       {
-        "@id": "urn:ngm:class:w3-c-sparql-1-1",
+        "@id": "urn:ngm:class:w-3-c-sparql-1-1",
         "label": "W3C SPARQL 1.1"
       }
     ]

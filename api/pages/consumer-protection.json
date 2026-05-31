@@ -12,12 +12,12 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:competition-law",
-      "label": "Competition Law"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "id": "urn:ngm:class:market-regulation",
-      "label": "Market Regulation"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -701,6 +701,14 @@
       "label": "Bitcoin related links"
     },
     {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },
@@ -713,8 +721,20 @@
       "label": "Death of the Internet"
     },
     {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
       "slug": "product-recall-management",
       "label": "Product Recall Management"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
     },
     {
       "slug": "stablecoin-regulation",

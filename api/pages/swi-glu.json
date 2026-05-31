@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:swi-glu",
+  "title": "SwiGLU",
+  "slug": "swi-glu",
+  "public": true,
+  "classIri": "urn:ngm:class:swi-glu",
+  "domain": "ai",
+  "definition": "SwiGLU is a gated activation function for neural networks that combines the Swish (SiLU) nonlinearity with a Gated Linear Unit, computing the element-wise product of a Swish-activated projection and a linear gate projection. It is widely used in the feed-forward sublayers of modern transformer models because it empirically improves quality over ReLU or GELU at comparable cost. Its gating mechanism gives the network a learnable, input-dependent pathway through each feed-forward block.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

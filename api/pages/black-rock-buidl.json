@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:2c76fb7ef06e97f39313541a9ca88e1cd3bfa5e246211d5299c93a628f84e99e",
+  "title": "BlackRock BUIDL",
+  "slug": "black-rock-buidl",
+  "public": true,
+  "classIri": "urn:ngm:class:black-rock-buidl",
+  "domain": "finance",
+  "definition": "BlackRock BUIDL is a tokenised money market fund issued by BlackRock on public blockchains that invests in cash, US Treasury bills, and repurchase agreements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: KinematicElement
 
 # Kinematic Element
 ```json-ld

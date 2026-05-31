@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:4b2c3db3472ee94e6395b38c727968d8d476017dd60afa7febd23f6d49fe68ac",
+  "title": "Precision-Recall Curve",
+  "slug": "precision-recall-curve",
+  "public": true,
+  "classIri": "urn:ngm:class:precision-recall-curve",
+  "domain": "blockchain",
+  "definition": "A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "f-1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "f1-score",
+      "label": "F1 Score"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "recall",
+      "label": "Recall"
+    }
+  ]
+}

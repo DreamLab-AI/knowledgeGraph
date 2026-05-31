@@ -1,0 +1,4 @@
+- ### Definition
+  - A real-time rendering engine produces interactive-rate imagery from 3D scenes within a fixed frame budget. It is required by a [[Metaverse Content Pipeline]] and by a [[Virtual Production Volume]] for live in-camera VFX.
+- ### Content
+  - Modern engines combine deferred or forward rendering, physically based shading, and increasingly hardware ray tracing with denoising. Maintaining frame-rate stability demands level-of-detail, culling, and GPU-driven pipelines. In virtual production, the engine drives LED walls in sync with camera tracking for real-time, photoreal backgrounds.

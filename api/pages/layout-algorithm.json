@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:layout-algorithm",
+  "title": "Layout Algorithm",
+  "slug": "layout-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:layout-algorithm",
+  "domain": "infrastructure",
+  "definition": "A layout algorithm is a computational procedure that automatically assigns spatial positions to graphical elements such as nodes, edges, or boxes to produce a readable diagram or interface. Common families include force-directed, hierarchical (Sugiyama), orthogonal, and tree layouts, each optimising criteria like minimal edge crossings, uniform spacing, or compactness. Layout algorithms are central to diagram rendering and graph visualisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infrastructure Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

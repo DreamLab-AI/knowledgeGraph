@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:ca481047fed10a1d2027591b6d7dfbec20ab078455a702afb3a48c8b02b72889",
+  "title": "BOLT11",
+  "slug": "bolt-11",
+  "public": true,
+  "classIri": "urn:ngm:class:bolt-11",
+  "domain": "blockchain",
+  "definition": "BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment details into a string that the payer scans or pastes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bolt",
+      "label": "BOLT"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bolt",
+        "label": "BOLT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning",
+        "label": "Lightning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "https-github-com-lightning-bolts-blob-master-11-payment-encoding-md",
+      "label": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
+    },
+    {
+      "slug": "https-www-bolt-11-org",
+      "label": "https://www.bolt11.org"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

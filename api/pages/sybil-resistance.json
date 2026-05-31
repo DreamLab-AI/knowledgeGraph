@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },
@@ -91,12 +95,24 @@
       "label": "Distributed Identity"
     },
     {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    },
+    {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
     },
     {
       "slug": "reputation-system",
       "label": "Reputation System"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
     }
   ]
 }

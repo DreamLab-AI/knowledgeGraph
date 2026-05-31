@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:feea43a0255384610ceb105c83bea1acd41397f99135e1aa5d4f97ae743038f3",
+  "title": "Votium",
+  "slug": "votium",
+  "public": true,
+  "classIri": "urn:ngm:class:votium",
+  "domain": "defi",
+  "definition": "Votium is a marketplace on Ethereum where protocols pay holders of vote-escrowed CRV to direct Curve gauge emissions. It operates as a bribery market for governance influence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hidden-hand",
+      "label": "Hidden Hand"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "convex-finance",
+      "label": "Convex Finance"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

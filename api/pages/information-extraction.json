@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:e7730d0c74eb0802b37c5415e49629f792cf4eabd647eaee725cffc6c8da34fb",
+  "title": "Information Extraction",
+  "slug": "information-extraction",
+  "public": true,
+  "classIri": "urn:ngm:class:information-extraction",
+  "domain": "machine-learning",
+  "definition": "Information extraction is the task of automatically deriving structured information, such as entities and relations, from unstructured or semi-structured text.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    }
+  ]
+}

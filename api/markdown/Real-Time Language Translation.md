@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-105-real-time-language-translation
 
 # Real-Time Language Translation
 ```json-ld

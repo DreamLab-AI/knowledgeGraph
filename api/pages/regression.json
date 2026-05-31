@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e116f6e9d8c91e841624f47e8926e3e088d75088f9bb45b2521d0cd5e3b91ec5",
+  "title": "Regression",
+  "slug": "regression",
+  "public": true,
+  "classIri": "urn:ngm:class:regression",
+  "domain": "artificial-intelligence",
+  "definition": "Regression is a class of statistical and machine learning methods that model the relationship between input variables and a continuous output. It is used for prediction and for estimating effects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regression-analysis",
+      "label": "https://en.wikipedia.org/wiki/Regression_analysis"
+    },
+    {
+      "slug": "https-scikit-learn-org-stable-modules-linear-model-html",
+      "label": "https://scikit-learn.org/stable/modules/linear_model.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "mean-absolute-error",
+      "label": "Mean Absolute Error"
+    },
+    {
+      "slug": "root-mean-square-error",
+      "label": "Root Mean Square Error"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ]
+}

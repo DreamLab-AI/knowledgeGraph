@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fatf-guidance-on-virtual-assets",
+  "title": "FATF Guidance on Virtual Assets",
+  "slug": "fatf-guidance-on-virtual-assets",
+  "public": true,
+  "classIri": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+  "domain": "blockchain",
+  "definition": "The FATF Guidance on Virtual Assets is the Financial Action Task Force's risk-based interpretation of how its anti-money-laundering standards apply to virtual assets and virtual-asset service providers (VASPs). It defines key terms, requires VASP licensing or registration and supervision, and introduces the 'travel rule' obliging the transfer of originator and beneficiary information with transactions. The guidance shapes how exchanges, custodians, and DeFi arrangements are regulated worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ]
+}

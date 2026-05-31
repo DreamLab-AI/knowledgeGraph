@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:42f4757160a6ea99da58930aebd977bdb784212388f4124100febb9d8f5b4332",
+  "title": "Joint Configuration",
+  "slug": "joint-configuration",
+  "public": true,
+  "classIri": "urn:ngm:class:joint-configuration",
+  "domain": "robotics",
+  "definition": "Joint configuration is the complete set of joint positions of a robot manipulator that together determine the pose of its links and end effector.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
+      "slug": "manipulator",
+      "label": "Manipulator"
+    },
+    {
+      "slug": "kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    }
+  ]
+}

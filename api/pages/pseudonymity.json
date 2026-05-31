@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:d9758e6bff1e527de849b67b8c2c8e39827d222ea5905f4e972ed613cea040a0",
+  "title": "Pseudonymity",
+  "slug": "pseudonymity",
+  "public": true,
+  "classIri": "urn:ngm:class:pseudonymity",
+  "domain": "identity",
+  "definition": "Pseudonymity is the state of acting under a persistent identifier that is not linked to one's real-world identity. It allows consistent reputation while concealing who a participant is.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy",
+      "label": "Privacy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

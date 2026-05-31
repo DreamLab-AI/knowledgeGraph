@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:radio-transceiver",
+  "title": "Radio Transceiver",
+  "slug": "radio-transceiver",
+  "public": true,
+  "classIri": "urn:ngm:class:radio-transceiver",
+  "domain": "infrastructure",
+  "definition": "A radio transceiver is a hardware device that combines a transmitter and receiver in a single unit to send and receive radio-frequency signals over a shared channel. It performs modulation, demodulation, amplification, and frequency conversion, forming the physical link layer of wireless devices. Transceivers underpin IoT nodes, mobile devices, and short-range wireless links.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

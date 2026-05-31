@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:f7455094980915c998293ffacc8485d9cdec7393cefbc3f76e8a48f323617c93",
+  "title": "DDS",
+  "slug": "dds",
+  "public": true,
+  "classIri": "urn:ngm:class:dds",
+  "domain": "software-engineering",
+  "definition": "DDS, the Data Distribution Service, is an Object Management Group standard for a publish-subscribe middleware that distributes real-time data between distributed system components.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

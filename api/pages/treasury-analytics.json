@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:treasury-analytics",
+  "title": "Treasury Analytics",
+  "slug": "treasury-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:treasury-analytics",
+  "domain": "blockchain",
+  "definition": "Treasury analytics is the analysis of an organisation's or DAO's financial holdings, cash flows, and asset allocation to inform liquidity, runway, and risk-management decisions. In the on-chain context it aggregates wallet balances, token positions, and protocol revenues into dashboards and metrics that support transparent, data-driven treasury governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: ConsensusMechanism
 
 # Consensus Mechanism
 ```json-ld
@@ -623,8 +624,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:atomic-broadcast",
-      "label": "Atomic Broadcast"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     },
     {
       "@id": "urn:ngm:class:coordination-protocol",

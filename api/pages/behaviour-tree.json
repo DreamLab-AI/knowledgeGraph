@@ -81,6 +81,10 @@
       "label": "AI in Games"
     },
     {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },

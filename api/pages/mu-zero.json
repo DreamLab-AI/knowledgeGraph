@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mu-zero",
+  "title": "MuZero",
+  "slug": "mu-zero",
+  "public": true,
+  "classIri": "urn:ngm:class:mu-zero",
+  "domain": "ai",
+  "definition": "MuZero is a model-based reinforcement learning algorithm from DeepMind that achieves superhuman performance in board games and Atari without being given the rules of the environment. It learns a latent dynamics model predicting reward, value, and policy, then plans with Monte Carlo Tree Search over this learned model. It generalises AlphaZero to domains where the environment dynamics are unknown.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

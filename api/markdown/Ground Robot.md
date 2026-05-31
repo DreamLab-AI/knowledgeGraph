@@ -386,7 +386,7 @@ public:: true
         "label": "Navigation Stack"
       },
       {
-        "@id": "urn:ngm:class:power-system",
+        "@id": "urn:ngm:class:power-systems",
         "label": "Power System"
       },
       {

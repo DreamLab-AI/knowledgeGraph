@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:e27dcfa38a0696b849c8acf527cf8d56cceac814114024a005789cd8ec2ad2d3",
+  "title": "Threat Intelligence",
+  "slug": "threat-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:threat-intelligence",
+  "domain": "distributed-systems",
+  "definition": "Threat intelligence is the collection, analysis and sharing of information about cyber threats to support detection, prevention and response.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "https-www-cisa-gov-topics-cyber-threats-and-advisories",
+      "label": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
+    },
+    {
+      "slug": "https-attack-mitre-org",
+      "label": "https://attack.mitre.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    }
+  ]
+}

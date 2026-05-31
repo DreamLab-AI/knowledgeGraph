@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:712518f397e886760fc6d69a083eddf926917d82b7bd72a6de1fdfbcfe147321",
+  "title": "AI Energy Optimisation",
+  "slug": "ai-energy-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-energy-optimisation",
+  "domain": "artificial-intelligence",
+  "definition": "The set of techniques and engineering practices that reduce the energy consumed by training and running artificial intelligence systems while preserving acceptable task performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "edge-ai",
+      "label": "Edge AI"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "archival-node",
+      "label": "Archival Node"
+    },
+    {
+      "slug": "block-header",
+      "label": "Block Header"
+    },
+    {
+      "slug": "block-height",
+      "label": "Block Height"
+    },
+    {
+      "slug": "block-propagation-time",
+      "label": "Block Propagation Time"
+    },
+    {
+      "slug": "block-propagation",
+      "label": "Block Propagation"
+    },
+    {
+      "slug": "block-size",
+      "label": "Block Size"
+    },
+    {
+      "slug": "block-time",
+      "label": "Block Time"
+    },
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "blockchain-sustainability",
+      "label": "Blockchain Sustainability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "bootstrap-node",
+      "label": "Bootstrap Node"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

@@ -112,6 +112,10 @@
       "label": "ADAS"
     },
     {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
       "slug": "ar-frame",
       "label": "AR Frame"
     },
@@ -124,6 +128,10 @@
       "label": "Autonomous Robot"
     },
     {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
       "slug": "autonomous-vehicle",
       "label": "Autonomous Vehicle"
     },
@@ -134,6 +142,14 @@
     {
       "slug": "context-awareness",
       "label": "Context Awareness"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
     },
     {
       "slug": "extended-reality-xr",
@@ -154,6 +170,10 @@
     {
       "slug": "haptic-feedback",
       "label": "Haptic Feedback"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
     },
     {
       "slug": "kalman-filter",
@@ -192,6 +212,14 @@
       "label": "Proprioceptive Sensor"
     },
     {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
       "slug": "robot-control",
       "label": "Robot Control"
     },
@@ -202,6 +230,10 @@
     {
       "slug": "robot-operating-system",
       "label": "Robot Operating System"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
     },
     {
       "slug": "robotics-control",
@@ -218,6 +250,18 @@
     {
       "slug": "robotics-core-concepts",
       "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "sensor-networks",
+      "label": "Sensor Networks"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
     },
     {
       "slug": "rb-0069-lidar",

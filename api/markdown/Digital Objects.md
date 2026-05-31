@@ -499,12 +499,12 @@ public:: true
       "label": "Data Management"
     },
     {
-      "@id": "urn:ngm:class:digital-artefact",
-      "label": "Digital Artefact"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     },
     {
-      "@id": "urn:ngm:class:identified-entity",
-      "label": "Identified Entity"
+      "@id": "urn:ngm:class:entity",
+      "label": "Entity"
     }
   ],
   "relations": {

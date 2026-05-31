@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:8b51705197925e731588f98569284401201d796910e9809102c39ab3d3fdcf1f",
+  "title": "ISO-IEC 18039",
+  "slug": "iso-iec-18039",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-18039",
+  "domain": "standards",
+  "definition": "ISO/IEC 18039 addresses mixed and augmented reality, defining a reference model for systems in that field.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

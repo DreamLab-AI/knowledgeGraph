@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:117ceeda5eba0d7048971204b5db359f90f79294c2cb87e667665d8d57f08f47",
+  "title": "OWL 2 Web Ontology Language",
+  "slug": "owl-2-web-ontology-language",
+  "public": true,
+  "classIri": "urn:ngm:class:owl-2-web-ontology-language",
+  "domain": "general",
+  "definition": "A World Wide Web Consortium standard for representing ontologies on the web, providing formal semantics based on description logic for classes, properties and individuals. It extends earlier web ontology work with richer modelling features and defined reasoning profiles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl",
+      "label": "OWL"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-reasoning-engine",
+        "label": "Semantic Reasoning Engine"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "owl",
+      "label": "OWL"
+    },
+    {
+      "slug": "https-www-w-3-org-tr-owl-2-overview",
+      "label": "https://www.w3.org/TR/owl2-overview/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "ontology-property-definitions",
+      "label": "Ontology Property Definitions"
+    },
+    {
+      "slug": "rdf-schema",
+      "label": "RDF Schema"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    }
+  ]
+}

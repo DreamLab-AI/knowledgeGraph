@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:351e7a7c614b3e1f0f56d34bf0e4a4bd913354d8547d4a265acdc15fc7c2d629",
+  "title": "ISO 9241-112",
+  "slug": "iso-9241-112",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9241-112",
+  "domain": "standards",
+  "definition": "ISO 9241-112 is part of the ISO 9241 series on ergonomics of human-system interaction, addressing principles for the presentation of information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "cognitive-load-metric",
+      "label": "Cognitive Load Metric"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

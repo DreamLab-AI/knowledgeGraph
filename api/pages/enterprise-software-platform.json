@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:enterprise-software-platform",
+  "title": "Enterprise Software Platform",
+  "slug": "enterprise-software-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-software-platform",
+  "domain": "infrastructure",
+  "definition": "An enterprise software platform is an integrated software environment that provides shared services, data, and tooling on which an organisation's business applications are built and run. Examples include ERP, CRM, and blockchain-as-a-service platforms that offer multi-tenant infrastructure, security, integration, and extensibility. The platform model lets enterprises consolidate capabilities and accelerate delivery of line-of-business applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain as a Service"
+      },
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    }
+  ]
+}

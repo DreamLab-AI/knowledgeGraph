@@ -1,0 +1,259 @@
+{
+  "id": "urn:visionflow:page:d993d2994544808be5c5f77ced5bb96f776af492f6788558fecf1fbeb528186f",
+  "title": "Information Theory",
+  "slug": "information-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:information-theory",
+  "domain": "information-theory",
+  "definition": "Information Theory is the mathematical study of the quantification, storage and communication of information, founded by Claude Shannon in 1948. It introduces entropy as a measure of uncertainty in a random source and defines channel capacity, the maximum rate at which information can be transmitted reliably over a noisy channel. The theory underpins data compression, error-correcting codes and modern digital communication. It also connects to statistics, cryptography and machine learning through measures such as mutual information and Kullback-Leibler divergence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:mutual-information",
+        "label": "Mutual Information"
+      },
+      {
+        "id": "urn:ngm:class:channel-capacity",
+        "label": "Channel Capacity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:error-correcting-code",
+        "label": "Error Correcting Code"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "mutual-information",
+      "label": "Mutual Information"
+    },
+    {
+      "slug": "channel-capacity",
+      "label": "Channel Capacity"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "error-correcting-code",
+      "label": "Error Correcting Code"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "shannon-1948-a-mathematical-theory-of-communication",
+      "label": "Shannon 1948, A Mathematical Theory of Communication"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "logic",
+      "label": "Logic"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

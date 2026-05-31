@@ -167,5 +167,10 @@
       "label": "Visual Marker"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ]
 }

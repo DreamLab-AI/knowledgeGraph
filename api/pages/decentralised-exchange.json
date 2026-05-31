@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:99a655de862d5053aefa52c83b9b8e20be4c3e14458258dd37546dbdcf6b214b",
+  "title": "Decentralised Exchange",
+  "slug": "decentralised-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-exchange",
+  "domain": "blockchain",
+  "definition": "A trading venue that allows users to swap digital assets directly through smart contracts, without a central operator holding custody of funds or matching orders off-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exchange-mechanism",
+      "label": "Exchange Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "permissionless-trading",
+      "label": "Permissionless Trading"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "exchange-mechanism",
+      "label": "Exchange Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

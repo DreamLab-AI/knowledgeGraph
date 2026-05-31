@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ontology-engineering",
+  "title": "Ontology Engineering",
+  "slug": "ontology-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:ontology-engineering",
+  "domain": "data",
+  "definition": "Ontology Engineering is the discipline of designing, formalizing, and maintaining ontologies: explicit, machine-readable specifications of concepts, properties, and relationships within a domain. It applies methodologies and logic languages such as OWL and RDFS to produce consistent, reusable, and reasoning-capable knowledge models. The field underpins semantic interoperability, knowledge graphs, and automated inference across heterogeneous data sources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

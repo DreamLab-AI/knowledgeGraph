@@ -215,6 +215,10 @@
     {
       "slug": "etsi-domain-virtual-economy",
       "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
     }
   ]
 }

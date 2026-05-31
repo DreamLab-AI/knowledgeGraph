@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:5eb4157094224daa8d1290bae7c28a2580be32028a70a2ba27e44d3f958d5905",
+  "title": "Strike",
+  "slug": "strike",
+  "public": true,
+  "classIri": "urn:ngm:class:strike",
+  "domain": "blockchain",
+  "definition": "A financial payments company that uses the Bitcoin Lightning Network to offer instant, low-cost payments and remittances denominated in conventional currency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-payments",
+      "label": "Cross-Border Payments"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

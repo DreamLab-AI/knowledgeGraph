@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c76f52af94288dab849f91dc03a05f0ce705920e053e7e6559368e62609cf97a",
+  "title": "Project Dunbar",
+  "slug": "project-dunbar",
+  "public": true,
+  "classIri": "urn:ngm:class:project-dunbar",
+  "domain": "metaverse",
+  "definition": "Project Dunbar was a multi-central-bank experiment exploring a shared platform for multiple central bank digital currencies to settle cross-border transactions directly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

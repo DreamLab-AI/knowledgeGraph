@@ -70,6 +70,14 @@
       "label": "Spatial Computing Layer"
     },
     {
+      "slug": "tele-025-microsoft-hololens",
+      "label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

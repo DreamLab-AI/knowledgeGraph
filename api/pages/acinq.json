@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:2925ac2f637d4648c084891a1082c4d2fe5739d21ad79206dedcdb4315c37659",
+  "title": "ACINQ",
+  "slug": "acinq",
+  "public": true,
+  "classIri": "urn:ngm:class:acinq",
+  "domain": "blockchain",
+  "definition": "ACINQ is a company that develops Lightning Network software, including an implementation of the protocol and a mobile Bitcoin wallet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -98,12 +98,20 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
       "slug": "medical-ai",
       "label": "Medical AI"
     },
     {
       "slug": "perception-system",
       "label": "Perception System"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
     },
     {
       "slug": "probabilistic-model",

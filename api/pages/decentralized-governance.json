@@ -177,7 +177,7 @@
         "label": "Tally"
       },
       {
-        "id": "urn:ngm:class:timelocks",
+        "id": "urn:ngm:class:timelock",
         "label": "Timelocks"
       }
     ],
@@ -581,12 +581,20 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
       "slug": "governance-model",
       "label": "Governance Model"
     },
     {
       "slug": "governance-structure",
       "label": "Governance Structure"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
     }
   ]
 }

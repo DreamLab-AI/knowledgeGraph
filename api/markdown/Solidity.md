@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:individual:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
       {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
     ],

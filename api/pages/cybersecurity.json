@@ -86,6 +86,26 @@
     {
       "slug": "digital-forensics-framework",
       "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
+    },
+    {
+      "slug": "vulnerability-scanner",
+      "label": "Vulnerability Scanner"
     }
   ]
 }

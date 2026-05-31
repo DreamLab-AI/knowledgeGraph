@@ -1,0 +1,4 @@
+- ### Definition
+  - A URDF robot model is an XML description of a robot's links, joints and physical properties, used as the standard structural model by the [[Robot Operating System]] and consumed by tools such as the [[Gazebo Simulator]].
+- ### Content
+  - URDF captures the parent-child joint tree, joint limits, mass and inertia, and references to visual and collision meshes. Extensions and macro languages such as Xacro make large models maintainable, while plugins map URDF entities onto physics-engine bodies during simulation.

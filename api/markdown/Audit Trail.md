@@ -1,4 +1,5 @@
 public:: true
+alias:: AuditTrail
 
 # Audit Trail
 ```json-ld

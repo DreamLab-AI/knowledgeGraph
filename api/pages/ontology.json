@@ -67,6 +67,10 @@
       "label": "COMPLETE ONTOLOGY INDEX"
     },
     {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },
@@ -83,6 +87,10 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
       "slug": "knowledge-representation",
       "label": "Knowledge Representation"
     },
@@ -95,12 +103,28 @@
       "label": "Metadata Standard"
     },
     {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    },
+    {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     },
     {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
       "slug": "semantic-web",
       "label": "Semantic Web"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
     }
   ]
 }

@@ -343,8 +343,8 @@ public:: true
       "label": "Image Processing"
     },
     {
-      "@id": "urn:ngm:class:inverse-problems",
-      "label": "Inverse Problems"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:2517d25dc6a9130d160505796d109de3625c6cfae0bae22a92b761307be24f2e",
+  "title": "TELE-025-microsoft-hololens",
+  "slug": "tele-025-microsoft-hololens",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-025-microsoft-hololens",
+  "domain": "metaverse",
+  "definition": "Microsoft HoloLens is a self-contained mixed reality head-mounted display that overlays interactive holographic content onto the wearer's view of the real world.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:head-mounted-display",
+      "label": "Head-Mounted Display"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-mesh",
+        "label": "Spatial Mesh"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "spatial-mesh",
+      "label": "Spatial Mesh"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "head-mounted-display",
+      "label": "Head-Mounted Display"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    }
+  ]
+}

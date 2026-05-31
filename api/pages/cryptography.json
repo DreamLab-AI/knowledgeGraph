@@ -155,6 +155,22 @@
       "label": "Access Control"
     },
     {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "anoma",
+      "label": "Anoma"
+    },
+    {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
       "slug": "authentication-service",
       "label": "Authentication Service"
     },
@@ -179,12 +195,20 @@
       "label": "Cold Chain Monitoring"
     },
     {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
     },
     {
       "slug": "cryptographic-key-management",
       "label": "Cryptographic Key Management"
+    },
+    {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
     },
     {
       "slug": "cryptographic-keys",
@@ -199,8 +223,28 @@
       "label": "Cryptographic Protocol"
     },
     {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
       "slug": "cyber-security-and-military",
       "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
     },
     {
       "slug": "decentralised-web",
@@ -223,12 +267,32 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },
     {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
       "slug": "hash-function",
       "label": "Hash Function"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
     },
     {
       "slug": "io-t-sensor-network",
@@ -239,12 +303,52 @@
       "label": "Key Derivation Function"
     },
     {
+      "slug": "key-exchange",
+      "label": "Key Exchange"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
       "slug": "micropayments",
       "label": "Micropayments"
     },
     {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "peter-todd",
+      "label": "Peter Todd"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
       "slug": "random-number-generation",
       "label": "Random Number Generation"
+    },
+    {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
     },
     {
       "slug": "regulatory-reporting",
@@ -255,12 +359,24 @@
       "label": "Reputation System"
     },
     {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     },
     {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "storj",
+      "label": "Storj"
     },
     {
       "slug": "symmetric-encryption",
@@ -271,8 +387,24 @@
       "label": "Testnet"
     },
     {
+      "slug": "timestamping-service",
+      "label": "Timestamping Service"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
       "slug": "trust-framework",
       "label": "Trust Framework"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
     },
     {
       "slug": "web3",

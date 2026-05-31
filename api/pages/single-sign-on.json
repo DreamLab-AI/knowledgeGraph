@@ -85,6 +85,22 @@
     {
       "slug": "identity-provider",
       "label": "Identity Provider"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "saml-2-0",
+      "label": "SAML 2.0"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
     }
   ]
 }

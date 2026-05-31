@@ -1,4 +1,5 @@
 public:: true
+alias:: DisruptiveTechDomain
 
 # Disruptive Tech Domain
 ```json-ld

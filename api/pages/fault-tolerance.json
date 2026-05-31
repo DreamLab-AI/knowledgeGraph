@@ -12,8 +12,8 @@
       "label": "Computing and Cloud"
     },
     {
-      "id": "urn:ngm:class:dependability",
-      "label": "Dependability"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
       "id": "urn:ngm:class:reliability-engineering",
@@ -845,8 +845,20 @@
       "label": "Distributed Computing"
     },
     {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
       "slug": "edge-mesh-network",
       "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
     },
     {
       "slug": "prime-intellect",

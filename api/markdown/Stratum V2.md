@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:individual:bitcoin", "label": "Bitcoin"}
+      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
     ]
   },
   "quality": 0.8

@@ -1,0 +1,4 @@
+- ### Definition
+  - The Safety Integrity Level quantifies the dependability target for a [[Safety Function]], as referenced by the relevant [[Robot Standard]]. Higher levels demand lower probabilities of dangerous failure.
+- ### Content
+  - SIL classification drives architectural constraints, diagnostic coverage, and proof-test intervals. Determining a target SIL involves risk graphs or layer-of-protection analysis, and verification combines hardware fault-tolerance metrics with systematic-capability evidence across the safety lifecycle.

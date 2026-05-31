@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:e50077ebe2a5c65ac4ad4af19ac91c70f3feb7c14dc697fbca064fb44ed5bf9a",
+  "title": "Model Layer",
+  "slug": "model-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:model-layer",
+  "domain": "model",
+  "definition": "The Model Layer is the stratum that holds trained machine learning models as deployable artefacts with fixed parameters. In the canonical stack it sits above the Algorithm Layer and below the Inference Layer, packaging learned functions for use. It contains weight sets, model metadata, and the serialised representations that inference engines load.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm-layer",
+        "label": "Algorithm Layer"
+      },
+      {
+        "id": "urn:ngm:class:training-layer",
+        "label": "Training Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    }
+  ]
+}

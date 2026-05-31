@@ -1,4 +1,5 @@
 public:: true
+alias:: ImmersiveInterface
 
 # Immersive Interface
 ```json-ld

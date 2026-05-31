@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:111ebb0b0150791f58e4da71b5e7af0bd0d297687fa9d8d3cf0587e984d489f0",
+  "title": "Robot Perception",
+  "slug": "robot-perception",
+  "public": true,
+  "classIri": "urn:ngm:class:robot-perception",
+  "domain": "robotics",
+  "definition": "Robot perception is the process by which a robot interprets sensor data to build an understanding of its environment and state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-machine-perception",
+      "label": "https://en.wikipedia.org/wiki/Machine_perception"
+    },
+    {
+      "slug": "https-www-ros-org",
+      "label": "https://www.ros.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ]
+}

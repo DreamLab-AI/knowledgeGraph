@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:protocol-stack",
+  "title": "Protocol Stack",
+  "slug": "protocol-stack",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-stack",
+  "domain": "infrastructure",
+  "definition": "A protocol stack is the layered set of network protocols that cooperate to provide communication services, where each layer offers services to the layer above and uses services of the layer below. Canonical examples are the OSI seven-layer model and the TCP/IP suite. Layering isolates concerns such as physical transmission, routing, transport reliability, and application semantics, enabling modular interoperable networking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    }
+  ]
+}

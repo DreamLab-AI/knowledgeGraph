@@ -1,4 +1,5 @@
 public:: true
+alias:: SoftwareEngineering
 
 # Software Engineering
 ```json-ld

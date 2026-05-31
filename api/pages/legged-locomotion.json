@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
       "slug": "kinematics-model",
       "label": "Kinematics Model"
     },

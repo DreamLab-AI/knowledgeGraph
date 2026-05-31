@@ -1,0 +1,4 @@
+- ### Definition
+  - NBIC convergence is the integration of nano-, bio-, info-, and cognitive technologies into reinforcing capabilities. It is a specific case and component of broader technological [[Convergence]].
+- ### Content
+  - The concept originated in early-2000s science-policy reports arguing that breakthroughs at the nanoscale, in genomics, in computing, and in neuroscience would compound. Critics note that real integration is uneven and that ethical, safety, and governance questions, from human enhancement to dual-use risk, grow sharply as these domains merge.

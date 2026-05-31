@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:9114e6a5b85f5f691f49c3e9f8205bd05d843eae7d6fcb5f8d79b476ea00254d",
+  "title": "Quantum Key Distribution",
+  "slug": "quantum-key-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-key-distribution",
+  "domain": "cryptography",
+  "definition": "A method of securely sharing cryptographic keys using the principles of quantum mechanics, such that any eavesdropping disturbs the transmission and can be detected. It provides key exchange whose security rests on physics rather than computational hardness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "quantum-network-node",
+      "label": "Quantum Network Node"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

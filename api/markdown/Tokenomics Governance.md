@@ -496,7 +496,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:multisignature-wallet",
+        "@id": "urn:ngm:class:multisignature-wallets",
         "label": "Multisignature Wallet"
       },
       {
@@ -590,7 +590,7 @@ public:: true
         "label": "EIP-1559"
       },
       {
-        "@id": "urn:ngm:class:erc-20-standard",
+        "@id": "urn:ngm:class:erc20-standard",
         "label": "ERC-20 Standard"
       },
       {

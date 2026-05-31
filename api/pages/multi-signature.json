@@ -75,6 +75,10 @@
       "label": "Cross-Chain Bridge"
     },
     {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
       "slug": "digital-signature",
       "label": "Digital Signature"
     },

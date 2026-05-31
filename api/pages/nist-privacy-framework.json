@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:36754d88ec7fc84fad0d8413727b3aa89b31db8dae129fae22d02c9e2b190a96",
+  "title": "NIST Privacy Framework",
+  "slug": "nist-privacy-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-privacy-framework",
+  "domain": "standards",
+  "definition": "A NIST framework providing voluntary guidance to help organisations manage privacy risks arising from data processing. It is structured around core functions to support privacy risk management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "privacy-budget-management",
+      "label": "Privacy Budget Management"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-utility-tradeoffs",
+      "label": "Privacy Utility Tradeoffs"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:ecf0a366b2104ae529627aad2ddd1660a7bdf5cb0c85378529ee6aeac9ff68bb",
+  "title": "Satoshi Nakamoto",
+  "slug": "satoshi-nakamoto",
+  "public": true,
+  "classIri": "urn:ngm:class:satoshi-nakamoto",
+  "domain": "satoshi-nakamoto",
+  "definition": "Satoshi Nakamoto is the pseudonym used by the unidentified person or group who designed Bitcoin, authored its 2008 white paper and released the first reference implementation in 2009. Nakamoto introduced a practical solution to double-spending in a peer-to-peer electronic cash system through proof-of-work and a public, append-only ledger. The true identity behind the name remains unknown, and Nakamoto withdrew from public involvement in the project around 2010 to 2011.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "bitcoin-white-paper-2008",
+      "label": "Bitcoin white paper (2008)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-whitepaper",
+      "label": "Bitcoin Whitepaper"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

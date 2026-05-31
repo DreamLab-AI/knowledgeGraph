@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:0e9270b398e2a96dab95bdf71149f68962b659fab4a5089eedbe15f3b1fd80e8",
+  "title": "Networking Domain",
+  "slug": "networking-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:networking-domain",
+  "domain": "networking",
+  "definition": "The Networking Domain classifies concepts concerned with the transport of data between computing endpoints across links and networks. It covers protocols, addressing, routing, and the layered models that organise communication. As a top-level subject classification, it scopes the movement of data rather than the applications that consume it or the security controls applied to it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transport-protocol",
+        "label": "Transport Protocol"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physical-link",
+        "label": "Physical Link"
+      },
+      {
+        "id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-transport",
+        "label": "Data Transport"
+      },
+      {
+        "id": "urn:ngm:class:distributed-communication",
+        "label": "Distributed Communication"
+      },
+      {
+        "id": "urn:ngm:class:service-reachability",
+        "label": "Service Reachability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transport-protocol",
+      "label": "Transport Protocol"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "addressing-scheme",
+      "label": "Addressing Scheme"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "physical-link",
+      "label": "Physical Link"
+    },
+    {
+      "slug": "data-transport",
+      "label": "Data Transport"
+    },
+    {
+      "slug": "distributed-communication",
+      "label": "Distributed Communication"
+    },
+    {
+      "slug": "service-reachability",
+      "label": "Service Reachability"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-iec-7498-1",
+      "label": "ISO/IEC 7498-1"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "Distributed Collaboration Domain"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    }
+  ]
+}

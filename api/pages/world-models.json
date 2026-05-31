@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:9b7a4f8fe2d93b58ef2c12fd230bbc163f55ca95a64ccb5b94ea82930841c91d",
+  "title": "World Models",
+  "slug": "world-models",
+  "public": true,
+  "classIri": "urn:ngm:class:world-models",
+  "domain": "machine-learning",
+  "definition": "World models are learned internal representations of an environment that predict how it evolves in response to actions. They let an agent plan and reason by simulating outcomes rather than acting directly in the world.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:world-model",
+      "label": "World Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -151,8 +151,8 @@ public:: true
       "label": "CarbonCredit"
     },
     {
-      "@id": "urn:ngm:class:environmental-commodity",
-      "label": "EnvironmentalCommodity"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     }
   ],
   "relations": {

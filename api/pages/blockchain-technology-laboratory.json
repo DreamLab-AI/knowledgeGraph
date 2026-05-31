@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:29c67eb3baac7eb34fa0729f97b68e9add9c49db09be00da275d4cd857f4e7ac",
+  "title": "Blockchain Technology Laboratory",
+  "slug": "blockchain-technology-laboratory",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-technology-laboratory",
+  "domain": "blockchain",
+  "definition": "An academic or institutional research unit dedicated to the study, prototyping and evaluation of distributed ledger systems and their applications. Such laboratories produce experimental implementations, measurements and analyses rather than production services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "https-www-bitcoin-com",
+      "label": "https://www.bitcoin.com/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

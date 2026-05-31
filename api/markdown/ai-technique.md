@@ -1,4 +1,5 @@
 public:: true
+alias:: AI Technique
 
 ```json-ld
 {

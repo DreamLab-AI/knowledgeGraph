@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:98acc22b2ea55e298badb3ffeaaef0d015a70a3cb82e23a7c0d7c6c35444c13d",
+  "title": "FSB",
+  "slug": "fsb",
+  "public": true,
+  "classIri": "urn:ngm:class:fsb",
+  "domain": "governance",
+  "definition": "The Financial Stability Board, an international body that monitors the global financial system and makes recommendations to promote financial stability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "systemic-risk",
+      "label": "Systemic Risk"
+    },
+    {
+      "slug": "financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

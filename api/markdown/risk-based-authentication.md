@@ -1,0 +1,4 @@
+- ### Definition
+  - Risk-based authentication adapts verification strength to contextual risk signals, enabling a [[Trust Framework]] and supported by an [[Identity Provider]].
+- ### Content
+  - By scoring device, location, and behavioural signals at sign-in, RBA permits low-friction access for trusted contexts and demands additional factors or denies access when anomalies appear. This reduces account takeover risk without burdening every legitimate user with maximal challenges.

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:dfa17370644ba07de370f8094354a44b73313895fb65d919d4bb35079d0232ad",
+  "title": "BRC-20",
+  "slug": "brc-20",
+  "public": true,
+  "classIri": "urn:ngm:class:brc-20",
+  "domain": "blockchain",
+  "definition": "An experimental token standard on Bitcoin that records fungible token operations as JSON inscriptions using ordinal theory.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "fungible-token",
+      "label": "Fungible Token"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

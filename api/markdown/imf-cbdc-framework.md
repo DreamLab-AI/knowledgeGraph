@@ -1,0 +1,4 @@
+- ### Definition
+  - The IMF CBDC Framework is the [[IMF]]'s policy guidance for designing and assessing [[CBDCs]], covering monetary, stability, and cross-border considerations.
+- ### Content
+  - Through products such as its CBDC Virtual Handbook, the IMF distils lessons across pilots into modular guidance on architecture choices, privacy, and interoperability. It emphasises that CBDC design must align with each economy's monetary objectives and financial-inclusion goals rather than following a single template.

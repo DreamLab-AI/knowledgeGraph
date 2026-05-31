@@ -1,0 +1,4 @@
+- ### Definition
+  - Pegasus is commercial zero-click spyware used to covertly surveil targeted smartphones, a flagship example within [[Digital Society Surveillance]].
+- ### Content
+  - Pegasus chains exploits against mobile operating systems to install a stealth implant with elevated privileges, enabling exfiltration of encrypted-app contents before encryption and silent activation of sensors. Its documented deployment against journalists, activists, and officials has driven debate over export controls, lawful-intercept norms, and the proliferation of mercenary surveillance tooling.

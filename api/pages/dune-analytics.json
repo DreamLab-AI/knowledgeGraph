@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:4522cdd052165caa8ca667c328a4d92468c728c74668e6420ed8529dd1aefc17",
+  "title": "Dune Analytics",
+  "slug": "dune-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:dune-analytics",
+  "domain": "blockchain",
+  "definition": "Dune Analytics is a platform for querying and visualising blockchain data through user-created dashboards and shared queries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "data-visualisation",
+      "label": "Data Visualisation"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

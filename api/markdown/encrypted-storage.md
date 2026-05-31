@@ -1,0 +1,4 @@
+- ### Definition
+  - Encrypted Storage protects data at rest by encrypting it so that it is unreadable without the decryption keys. It is required by a [[Biometric Binding Mechanism]] and is a component of [[ETSI Domain Data Management Security]].
+- ### Content
+  - Encryption may be applied at disk, filesystem, database, or application level, often using AES with keys held in hardware security modules or key-management services. The security of stored data depends as much on key lifecycle management and access control as on the cipher strength itself.

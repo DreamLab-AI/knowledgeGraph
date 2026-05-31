@@ -56,6 +56,10 @@
     {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
     }
   ]
 }

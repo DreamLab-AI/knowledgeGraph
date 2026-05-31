@@ -1,4 +1,5 @@
 public:: true
+alias:: Hash-Function, HashFunction
 
 # Hash Function
 ```json-ld
@@ -576,7 +577,7 @@ public:: true
         "label": "Indistinguishability"
       },
       {
-        "@id": "urn:ngm:class:pre-image-resistance",
+        "@id": "urn:ngm:class:preimage-resistance",
         "label": "Pre-Image Resistance"
       },
       {
@@ -666,11 +667,11 @@ public:: true
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:bc4c82bb0644193966ed59e016fc9ce9b2dd4f191dd4c502c4ec4aedbae17dbf",
+  "title": "Git",
+  "slug": "git",
+  "public": true,
+  "classIri": "urn:ngm:class:git",
+  "domain": "general",
+  "definition": "Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:version-control",
+      "label": "Version Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:git-hub",
+        "label": "GitHub"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "https-git-scm-com",
+      "label": "https://git-scm.com"
+    },
+    {
+      "slug": "https-git-scm-com-book",
+      "label": "https://git-scm.com/book"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

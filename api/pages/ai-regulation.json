@@ -59,6 +59,10 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "aisi",
+      "label": "AISI"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },
@@ -71,8 +75,16 @@
       "label": "Cross Border Compliance"
     },
     {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
+    },
+    {
+      "slug": "transparency-obligation",
+      "label": "Transparency Obligation"
     }
   ]
 }

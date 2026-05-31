@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:8287aa3b51c9c5185241e6792e137644f25a83833a0a3111c9db21b9805c9df8",
+  "title": "OpenAI Agents SDK",
+  "slug": "open-ai-agents-sdk",
+  "public": true,
+  "classIri": "urn:ngm:class:open-ai-agents-sdk",
+  "domain": "artificial-intelligence",
+  "definition": "The OpenAI Agents SDK is a software development kit for building agentic applications on OpenAI models, providing primitives for agents, tools and handoffs. It supports orchestrating one or more agents that call functions and pass control between each other.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

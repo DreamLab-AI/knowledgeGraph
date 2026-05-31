@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:30cd874c5683afbbfb655184ed229c165f02a4155d25476c43f4f4b4afff6b6d",
+  "title": "USDT",
+  "slug": "usdt",
+  "public": true,
+  "classIri": "urn:ngm:class:usdt",
+  "domain": "blockchain",
+  "definition": "A fiat-backed stablecoin pegged to the United States dollar, issued across multiple ledgers and intended to be redeemable for dollar value held in reserve.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "custody-infrastructure",
+      "label": "Custody Infrastructure"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

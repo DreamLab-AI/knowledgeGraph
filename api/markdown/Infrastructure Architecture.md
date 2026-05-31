@@ -1,4 +1,5 @@
 public:: true
+alias:: InfrastructureArchitecture
 
 # Infrastructure Architecture
 ```json-ld

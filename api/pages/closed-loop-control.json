@@ -56,7 +56,7 @@
         "label": "PID Control"
       },
       {
-        "id": "urn:ngm:class:rb-1004-adaptive-control",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "RB-1004-adaptive-control"
       }
     ],

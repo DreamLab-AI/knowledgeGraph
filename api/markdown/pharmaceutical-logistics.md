@@ -1,0 +1,4 @@
+- ### Definition
+  - Pharmaceutical logistics manages the regulated, temperature-controlled movement of medicines, supported by [[Logistics Optimization]] and operating within the [[Pharmaceutical Supply Chain]].
+- ### Content
+  - The field maintains validated cold chains, continuous temperature and humidity monitoring, and tamper-evident packaging, with serialisation enabling unit-level traceability for anti-counterfeiting and recall. Good Distribution Practice and track-and-trace mandates drive heavy use of IoT sensors and data systems, while route and inventory optimisation reduce spoilage and stockouts of time- and temperature-sensitive products.

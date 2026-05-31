@@ -79,6 +79,14 @@
       "label": "Bitcoin Value Proposition"
     },
     {
+      "slug": "ledger",
+      "label": "Ledger"
+    },
+    {
+      "slug": "trezor",
+      "label": "Trezor"
+    },
+    {
       "slug": "wallet",
       "label": "Wallet"
     }

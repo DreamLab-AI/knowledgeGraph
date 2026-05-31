@@ -223,8 +223,8 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:agent-orchestration-framework",
-      "label": "Agent Orchestration Framework"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
       "@id": "urn:ngm:class:llm-application-framework",

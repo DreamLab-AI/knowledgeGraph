@@ -231,8 +231,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:decentralised-communication-protocol",
-      "label": "Decentralised Communication Protocol"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

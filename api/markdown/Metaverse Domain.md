@@ -1,4 +1,5 @@
 public:: true
+alias:: MetaverseDomain
 
 # Metaverse Domain
 ```json-ld

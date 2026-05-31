@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:e9b27f7d3084d475b6222f56d8c7b26f9a67e621b24b207b8530a93303332bf8",
+  "title": "Gas Mechanism",
+  "slug": "gas-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:gas-mechanism",
+  "domain": "blockchain",
+  "definition": "The system in a blockchain such as Ethereum that meters and prices computation, requiring users to pay fees denominated in units of gas for the operations their transactions perform. It limits resource use and prioritises transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "auction-theory",
+      "label": "Auction Theory"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e17a24fd67b6d22271987d702f99fc4a03cc70b81eb5b12b8335543d0d2c7e9c",
+  "title": "Basel III",
+  "slug": "basel-iii",
+  "public": true,
+  "classIri": "urn:ngm:class:basel-iii",
+  "domain": "governance",
+  "definition": "Basel III is an international set of banking regulatory standards on capital adequacy, borrowing limits and liquidity developed by the Basel Committee on Banking Supervision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "https-www-bis-org-bcbs-basel-3-htm",
+      "label": "https://www.bis.org/bcbs/basel3.htm"
+    },
+    {
+      "slug": "https-www-bis-org-bcbs",
+      "label": "https://www.bis.org/bcbs/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    }
+  ]
+}

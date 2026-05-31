@@ -1,0 +1,4 @@
+- ### Definition
+  - Contract code is the executable logic of a [[Smart Contract]], compiled to deterministic bytecode and used in platforms such as [[R3 Corda]].
+- ### Content
+  - Authored in languages such as Solidity, Vyper, or Corda's Kotlin/Java, contract code encodes state transitions and access rules and is generally immutable after deployment. Its determinism is essential for consensus, and its irreversibility makes static analysis, auditing, and formal verification standard pre-deployment practice.

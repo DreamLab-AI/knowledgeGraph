@@ -76,12 +76,48 @@
       "label": "Cross Platform Digital Twins"
     },
     {
+      "slug": "customer-data-platform",
+      "label": "Customer Data Platform"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "data-management-domain",
+      "label": "Data Management Domain"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
       "slug": "data-virtualization",
       "label": "Data Virtualization"
     },
     {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
     },
     {
       "slug": "semantic-metadata-registry",

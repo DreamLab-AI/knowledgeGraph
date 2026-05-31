@@ -151,8 +151,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:motion-mathematics",
-      "label": "Motion Mathematics"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
       "@id": "urn:ngm:class:robot-kinematics",

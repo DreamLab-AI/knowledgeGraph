@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:real-time-inference-engine",
+  "title": "Real-Time Inference Engine",
+  "slug": "real-time-inference-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-inference-engine",
+  "domain": "ai",
+  "definition": "A real-time inference engine is an optimised runtime that executes trained machine-learning models with low, predictable latency to serve predictions within interactive or streaming time budgets. It applies techniques such as operator fusion, quantisation, batching, and hardware acceleration to meet throughput and latency targets. It is the serving layer that turns offline-trained models into responsive online services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper-Personalisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

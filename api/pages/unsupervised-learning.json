@@ -85,6 +85,10 @@
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:contract-code",
+  "title": "Contract Code",
+  "slug": "contract-code",
+  "public": true,
+  "classIri": "urn:ngm:class:contract-code",
+  "domain": "blockchain",
+  "definition": "Contract code is the executable program logic that defines the rules, state, and behaviour of a smart contract deployed on a distributed ledger. It is typically written in a high-level language such as Solidity or Kotlin and compiled to bytecode that nodes execute deterministically. Because it is immutable once deployed and controls value, contract code is a primary target for auditing and formal verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

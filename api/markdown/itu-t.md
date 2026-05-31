@@ -1,0 +1,4 @@
+- ### Definition
+  - ITU-T is the standardization sector of the International Telecommunication Union, issuing the Recommendations that standardise video coding underpinning [[Proprietary Video]] formats and the X.509 framework behind [[Digital Signature]] infrastructure.
+- ### Content
+  - Its H.26x video coding standards (developed jointly with ISO/IEC), the X-series security and directory standards, and Y-series networking Recommendations are referenced across telecommunications, broadcasting and the public internet. ITU-T operates through study groups and a formal approval process that gives its outputs treaty-level recognition among member states.

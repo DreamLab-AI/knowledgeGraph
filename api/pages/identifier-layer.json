@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:d8e237dc19e3eb1f2923a1814c544fb1f0c88ef0b5344a09ef7d09cdc9289378",
+  "title": "Identifier Layer",
+  "slug": "identifier-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:identifier-layer",
+  "domain": "identifier",
+  "definition": "The Identifier Layer is the stratum that defines and manages the names and references used to denote entities unambiguously. It sits above the data and cryptographic primitives that make identifiers durable and verifiable and below the Identity Layer that binds meaning to them. It contains naming schemes, resolution mechanisms, and uniqueness guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-layer",
+        "label": "Cryptographic Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-layer",
+        "label": "Identity Layer"
+      },
+      {
+        "id": "urn:ngm:class:custody-layer",
+        "label": "Custody Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
+      "slug": "uniform-resource-identifier",
+      "label": "Uniform Resource Identifier"
+    },
+    {
+      "slug": "namespace",
+      "label": "Namespace"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "w-3-c-world-wide-web-consortium",
+      "label": "W3C (World Wide Web Consortium)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    }
+  ]
+}

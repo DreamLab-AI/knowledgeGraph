@@ -23,7 +23,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:enforcement-mechanisms",
+        "id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanisms"
       },
       {
@@ -125,6 +125,14 @@
     {
       "slug": "human-rights",
       "label": "Human Rights"
+    },
+    {
+      "slug": "open-rights-group",
+      "label": "Open Rights Group"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
     }
   ]
 }

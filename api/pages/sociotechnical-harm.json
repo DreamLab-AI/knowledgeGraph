@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:sociotechnical-harm",
+  "title": "Sociotechnical Harm",
+  "slug": "sociotechnical-harm",
+  "public": true,
+  "classIri": "urn:ngm:class:sociotechnical-harm",
+  "domain": "governance",
+  "definition": "Sociotechnical harm is an adverse outcome that emerges from the interaction between a technical system and its social context rather than from a technical fault alone, such as representational harm, allocative discrimination, or erosion of public discourse. These harms are often diffuse, cumulative, and unevenly distributed across affected groups, making them hard to detect with conventional accuracy metrics. Identifying them requires attention to who is affected, how, and through what social mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    }
+  ]
+}

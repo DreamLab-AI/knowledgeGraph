@@ -431,8 +431,8 @@ public:: true
       "label": "Applied Machine Learning"
     },
     {
-      "@id": "urn:ngm:class:combinatorial-optimization",
-      "label": "Combinatorial Optimization"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

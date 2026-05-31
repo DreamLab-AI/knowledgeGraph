@@ -1,4 +1,5 @@
 public:: true
+alias:: Infrared Sensor
 
 # InfraredSensor
 ```json-ld
@@ -163,12 +164,12 @@ public:: true
       "label": "Perception and Sensing"
     },
     {
-      "@id": "urn:ngm:class:optoelectronic-device",
-      "label": "OptoelectronicDevice"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     },
     {
-      "@id": "urn:ngm:class:thermal-imager",
-      "label": "ThermalImager"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "relations": {

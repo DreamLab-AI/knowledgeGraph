@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:internet-of-agents",
+  "title": "Internet of Agents",
+  "slug": "internet-of-agents",
+  "public": true,
+  "classIri": "urn:ngm:class:internet-of-agents",
+  "domain": "ai",
+  "definition": "The Internet of Agents is an envisioned network architecture in which autonomous AI agents discover, communicate, transact, and collaborate with one another across organisational boundaries using shared protocols. It extends the web from human- and document-centric interaction to machine-to-machine delegation, negotiation, and task execution among agents. It depends on interoperable identity, messaging, and trust standards to let heterogeneous agents cooperate safely.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

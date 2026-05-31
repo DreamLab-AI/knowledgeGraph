@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d8df5d681a1e54f464e9a99895f75bf3814efa0b677c73f86da8f1164b05e3d4",
+  "title": "ISO 13849",
+  "slug": "iso-13849",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-13849",
+  "domain": "standards",
+  "definition": "An ISO standard on safety of machinery, specifying safety-related parts of control systems. It provides requirements and guidance for the design of such parts to achieve required performance levels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

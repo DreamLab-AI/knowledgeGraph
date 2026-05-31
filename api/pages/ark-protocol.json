@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b008198a351a72f09de022f864ac3d9a3998f6af7f480c11dbba8b3111df4ae7",
+  "title": "Ark Protocol",
+  "slug": "ark-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:ark-protocol",
+  "domain": "metaverse",
+  "definition": "Ark is a layer-two protocol for Bitcoin that uses shared, periodically refreshed off-chain outputs to let users transact cheaply and privately while retaining the ability to settle on the base chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

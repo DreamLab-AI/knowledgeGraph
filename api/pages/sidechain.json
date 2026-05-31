@@ -103,12 +103,20 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
     {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x-dai",
+      "label": "xDai"
     }
   ]
 }

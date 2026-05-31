@@ -1,0 +1,4 @@
+- ### Definition
+  - User control gives people authority over their data and experience, enabling [[Consent Management]] and aligning with frameworks such as [[ETSI Domain Data Management Ethics]].
+- ### Content
+  - Implementations expose granular permission toggles, data-access dashboards, portability and deletion rights. User control operationalises principles found in data-protection regulation, ensuring choices are informed, revocable and respected throughout the data lifecycle.

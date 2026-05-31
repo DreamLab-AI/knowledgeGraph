@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b7a51e6da29d50cb3325d50202bc09ca430e3c144fab7555b6c8859b0254a961",
+  "title": "Wireless Connectivity",
+  "slug": "wireless-connectivity",
+  "public": true,
+  "classIri": "urn:ngm:class:wireless-connectivity",
+  "domain": "networking",
+  "definition": "Wireless connectivity is the transmission of data between devices over radio frequencies without physical cabling. It spans short-range links such as Wi-Fi and Bluetooth and wide-area mobile networks such as 5G.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "5-g",
+      "label": "5G"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:d5408aa1843d5a796fc3e5188ea126c2aa1dcc66c63fbe146dbc995ce2c49ef7",
+  "title": "Canaan",
+  "slug": "canaan",
+  "public": true,
+  "classIri": "urn:ngm:class:canaan",
+  "domain": "blockchain",
+  "definition": "Canaan is a Chinese company that designs and produces Bitcoin mining hardware under the Avalon brand. It is a publicly listed manufacturer of ASIC machines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asic",
+      "label": "ASIC"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "https-www-canaan-io",
+      "label": "https://www.canaan.io"
+    },
+    {
+      "slug": "https-www-canaan-io-products",
+      "label": "https://www.canaan.io/products"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

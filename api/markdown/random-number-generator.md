@@ -1,0 +1,4 @@
+- ### Definition
+  - A random number generator yields unpredictable or statistically uniform sequences via algorithmic or physical entropy. It is required by [[Sampling]] procedures and by the resampling step of a [[Particle Filter]].
+- ### Content
+  - Pseudo-random generators (e.g. Mersenne Twister, PCG) are fast and reproducible from a seed, suiting simulation. Cryptographically secure RNGs add unpredictability guarantees for keys and nonces. In probabilistic state estimation, high-quality RNGs ensure unbiased Monte Carlo sampling, while poor generators can introduce correlations that bias filter estimates.

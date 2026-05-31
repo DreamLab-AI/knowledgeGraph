@@ -367,8 +367,8 @@ public:: true
       "label": "Protocol and Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:adaptive-bitrate-streaming",
-      "label": "Adaptive Bitrate Streaming"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:congestion-control",

@@ -180,6 +180,10 @@
       "label": "Accessibility Audit Tool"
     },
     {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },
@@ -198,6 +202,30 @@
     {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "anchorage-digital",
+      "label": "Anchorage Digital"
+    },
+    {
+      "slug": "bc-0442-certification-and-compliance",
+      "label": "BC-0442-certification-and-compliance"
+    },
+    {
+      "slug": "bc-0456-virtual-asset-service-providers",
+      "label": "BC-0456-virtual-asset-service-providers"
+    },
+    {
+      "slug": "bc-0480-kyc-requirements",
+      "label": "BC-0480-kyc-requirements"
+    },
+    {
+      "slug": "bc-0482-eu-mica-regulation",
+      "label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "slug": "bc-0484-markets-in-crypto-assets",
+      "label": "BC-0484-markets-in-crypto-assets"
     },
     {
       "slug": "bitcoin-related-links",
@@ -248,8 +276,20 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "fsa",
+      "label": "FSA"
+    },
+    {
+      "slug": "fsma-2023",
+      "label": "FSMA 2023"
+    },
+    {
       "slug": "functional-safety",
       "label": "Functional Safety"
+    },
+    {
+      "slug": "gdpr-article-25",
+      "label": "GDPR Article 25"
     },
     {
       "slug": "governance-model",
@@ -260,12 +300,24 @@
       "label": "Governance Structure"
     },
     {
+      "slug": "idnow",
+      "label": "IDnow"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
     {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
       "slug": "iso-standards",
       "label": "Iso Standards"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
     },
     {
       "slug": "meeting-ai-assistant",
@@ -278,6 +330,10 @@
     {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
     },
     {
       "slug": "privacy-preserving-blockchain",
@@ -316,6 +372,14 @@
       "label": "Token Custody Service"
     },
     {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "transparency-obligation",
+      "label": "Transparency Obligation"
+    },
+    {
       "slug": "trust-framework-policy",
       "label": "Trust Framework Policy"
     },
@@ -326,6 +390,10 @@
     {
       "slug": "trust-and-governance-domain",
       "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
     },
     {
       "slug": "blockchain-core-concepts",

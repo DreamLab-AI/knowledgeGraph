@@ -71,6 +71,10 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "tele-153-5-g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

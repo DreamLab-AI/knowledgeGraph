@@ -1,0 +1,4 @@
+- ### Definition
+  - The EEA Specification is an open standard for enterprise-grade Ethereum, defining permissioning, privacy, and interoperability; it is implemented by platforms such as [[Quorum Blockchain]] within the wider [[Blockchain]] ecosystem.
+- ### Content
+  - The specification standardises private transactions, access control, and conformance layers so permissioned networks stay aligned with public Ethereum semantics. This portability lets enterprises adopt private chains without forking away from the mainstream protocol.

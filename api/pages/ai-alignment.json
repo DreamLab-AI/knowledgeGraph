@@ -77,6 +77,14 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },
@@ -95,6 +103,10 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
     },
     {
       "slug": "history-and-path-to-agi",

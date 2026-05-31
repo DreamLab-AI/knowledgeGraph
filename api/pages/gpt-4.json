@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:c2d1c26e9b97b83132df03d9bb5b02d125f9d22e2d025bbc2caa05062caadd5a",
+  "title": "GPT 4",
+  "slug": "gpt-4",
+  "public": true,
+  "classIri": "urn:ngm:class:gpt-4",
+  "domain": "natural-language-processing",
+  "definition": "A large multimodal language model released by OpenAI in 2023, capable of accepting text and image inputs and producing text outputs, and a successor to the GPT-3.5 series.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

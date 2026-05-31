@@ -1,0 +1,4 @@
+- ### Definition
+  - A hidden layer is an internal computational layer of a neural network; it is a component of a [[Feed-Forward Network]] and the defining building block of [[Deep Learning]] depth.
+- ### Content
+  - Each hidden unit computes a weighted sum of its inputs plus a bias, passed through a non-linearity such as ReLU, enabling the network to model non-linear functions. The number and width of hidden layers control capacity, with deeper stacks learning hierarchical features but requiring careful initialisation, normalisation, and regularisation to train stably.

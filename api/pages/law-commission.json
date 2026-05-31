@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:d6659c6598887e53efd67bc265382f7089b1cc7b796444af41e87eece67365a1",
+  "title": "Law Commission",
+  "slug": "law-commission",
+  "public": true,
+  "classIri": "urn:ngm:class:law-commission",
+  "domain": "governance",
+  "definition": "The Law Commission is the statutory independent body for England and Wales that reviews the law and recommends reform to government.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "https-www-lawcom-gov-uk",
+      "label": "https://www.lawcom.gov.uk/"
+    },
+    {
+      "slug": "https-www-legislation-gov-uk-ukpga-1965-22",
+      "label": "https://www.legislation.gov.uk/ukpga/1965/22"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

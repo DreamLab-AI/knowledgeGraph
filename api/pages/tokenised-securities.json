@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tokenised-securities",
+  "title": "Tokenised Securities",
+  "slug": "tokenised-securities",
+  "public": true,
+  "classIri": "urn:ngm:class:tokenised-securities",
+  "domain": "blockchain",
+  "definition": "Tokenised securities are regulated financial instruments such as equities, bonds, or fund units issued and transferred as blockchain tokens that carry the same legal rights as their traditional counterparts. They embed compliance logic, including transfer restrictions and investor accreditation checks, directly into smart contracts so that securities laws are enforced programmatically at the point of transaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

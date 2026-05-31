@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:4a541a32d6e868268299ae31b6f366345e987ca3a37ede8b69df5febcfd21afc",
+  "title": "Hidden Hand",
+  "slug": "hidden-hand",
+  "public": true,
+  "classIri": "urn:ngm:class:hidden-hand",
+  "domain": "defi",
+  "definition": "Hidden Hand is a governance incentive marketplace operated by Redacted Cartel that lets protocols offer rewards to direct gauge votes across multiple DeFi systems. It generalises the bribery market model beyond a single protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gauge-voting",
+      "label": "Gauge Voting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    }
+  ]
+}

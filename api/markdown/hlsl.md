@@ -1,0 +1,4 @@
+- ### Definition
+  - HLSL is a high-level shading language whose programs run on the [[Rendering Pipeline]] and are compiled and dispatched through a [[Graphics API]] such as Direct3D.
+- ### Content
+  - Shaders authored in HLSL are compiled to GPU bytecode (DXIL/DXBC) and bound to programmable pipeline stages to control transformation, lighting, and post-processing. Its semantics, intrinsics, and resource-binding model make it the de facto language for Direct3D titles, with cross-compilation tooling enabling reuse on other backends.

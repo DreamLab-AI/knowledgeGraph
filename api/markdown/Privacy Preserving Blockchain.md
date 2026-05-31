@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
 
 # Privacy Preserving Blockchain
 ```json-ld
@@ -731,12 +732,12 @@ public:: true
       "label": "Cryptographic Primitive"
     },
     {
-      "@id": "urn:ngm:class:privacy-technology",
-      "label": "Privacy Technology"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:zero-knowledge-system",
-      "label": "Zero-Knowledge System"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {
@@ -882,7 +883,7 @@ public:: true
         "label": "MPC Wallets"
       },
       {
-        "@id": "urn:ngm:class:secure-enclaves",
+        "@id": "urn:ngm:class:secure-enclave",
         "label": "Secure Enclaves"
       },
       {

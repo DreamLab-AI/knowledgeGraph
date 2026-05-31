@@ -479,8 +479,8 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:situated-cognition",
-      "label": "Situated Cognition"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
       "@id": "urn:ngm:class:philosophy-of-mind",

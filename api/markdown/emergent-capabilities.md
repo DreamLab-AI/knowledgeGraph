@@ -1,0 +1,4 @@
+- ### Definition
+  - Emergent Capabilities are abilities that appear in large models at scale yet are absent in smaller ones, arising from [[Model Training]] at increasing scale. They are most pronounced in [[Frontier Models]] and complicate capability forecasting.
+- ### Content
+  - Capabilities such as chain-of-thought reasoning, in-context learning, and tool use often improve sharply past certain scale thresholds, though some apparent discontinuities depend on the metric used. Because emergence is hard to anticipate, it motivates careful evaluation and safety testing before deployment of larger models.

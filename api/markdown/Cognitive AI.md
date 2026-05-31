@@ -447,12 +447,12 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:hybrid-ai",
-      "label": "Hybrid AI"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:neurosymbolic-ai",
-      "label": "Neurosymbolic AI"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {

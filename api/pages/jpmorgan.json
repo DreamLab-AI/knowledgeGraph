@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c415b61278ea2acaa338e61c0826ad06f44d08a42362cda77a302f2a961aa458",
+  "title": "JPMorgan",
+  "slug": "jpmorgan",
+  "public": true,
+  "classIri": "urn:ngm:class:jpmorgan",
+  "domain": "artificial-intelligence",
+  "definition": "JPMorgan Chase, a large United States financial services and banking institution that invests in and applies artificial intelligence and machine learning across its operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

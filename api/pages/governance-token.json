@@ -62,7 +62,7 @@
         "label": "Crypto-Asset"
       },
       {
-        "id": "urn:ngm:class:erc-20-token",
+        "id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       }
     ],
@@ -253,7 +253,7 @@
         "label": "ERC-5805 Voting Token"
       },
       {
-        "id": "urn:ngm:class:erc20-votes",
+        "id": "urn:ngm:class:erc-20-votes",
         "label": "ERC20Votes"
       },
       {
@@ -1333,6 +1333,10 @@
   ],
   "backlinks": [
     {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
       "slug": "climate-action-dao",
       "label": "Climate Action DAO"
     },
@@ -1357,12 +1361,28 @@
       "label": "Digital Jurisdiction"
     },
     {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
     },
     {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
     },
     {
       "slug": "on-chain-voting",
@@ -1385,6 +1405,10 @@
       "label": "Stable Coins"
     },
     {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
       "slug": "token-economics",
       "label": "Token Economics"
     },
@@ -1399,6 +1423,10 @@
     {
       "slug": "treasury-management",
       "label": "Treasury Management"
+    },
+    {
+      "slug": "vesting-schedule",
+      "label": "Vesting Schedule"
     }
   ]
 }

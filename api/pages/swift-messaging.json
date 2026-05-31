@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c94b378e886cce913123e2ca6b02faca2c74b148f95c3c59f54642e3fe7ec037",
+  "title": "SWIFT Messaging",
+  "slug": "swift-messaging",
+  "public": true,
+  "classIri": "urn:ngm:class:swift-messaging",
+  "domain": "finance",
+  "definition": "SWIFT messaging is the standardised financial message exchange operated over the SWIFT network, used by banks to communicate payment and securities instructions. Messages follow formats such as the MT and ISO 20022 MX standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:swift",
+      "label": "SWIFT"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "cpmi-iosco-pfmi",
+      "label": "CPMI-IOSCO PFMI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cpmi-iosco-pfmi",
+      "label": "CPMI-IOSCO PFMI"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

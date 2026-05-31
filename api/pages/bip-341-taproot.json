@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:b60948e206197d5e503e27e52b2672865f2224dbb9b3624bbea3958de25e14c1",
+  "title": "BIP-341 Taproot",
+  "slug": "bip-341-taproot",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-341-taproot",
+  "domain": "standards",
+  "definition": "A Bitcoin Improvement Proposal defining Taproot, an upgrade introducing a new output type using Schnorr signatures and Merkle-branch script commitments. It improves privacy and flexibility of Bitcoin transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    }
+  ]
+}

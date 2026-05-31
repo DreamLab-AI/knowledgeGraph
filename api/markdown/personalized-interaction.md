@@ -1,0 +1,4 @@
+- ### Definition
+  - Personalized interaction adapts dialogue and interface behaviour to the individual in real time, enabled by [[Context-Aware Response]] generation and a [[Behavioural Feedback Loop]].
+- ### Content
+  - The system maintains a model of the user across turns, conditioning each response on conversational history, expressed preferences, and observed reactions, then refines its behaviour as new feedback arrives. This produces interactions that grow more relevant over time, but requires careful state management and privacy controls to avoid drift, over-fitting to noise, or unwelcome inference about the user.

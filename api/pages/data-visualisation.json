@@ -69,6 +69,10 @@
   ],
   "backlinks": [
     {
+      "slug": "dune-analytics",
+      "label": "Dune Analytics"
+    },
+    {
       "slug": "monitoring-dashboard",
       "label": "Monitoring Dashboard"
     }

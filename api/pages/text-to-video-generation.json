@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:text-to-video-generation",
+  "title": "Text-to-Video Generation",
+  "slug": "text-to-video-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:text-to-video-generation",
+  "domain": "ai",
+  "definition": "Text-to-video generation is a generative-AI task in which a model synthesises a coherent video clip directly from a natural-language description. It extends text-to-image diffusion and transformer methods with temporal modelling so that motion, object permanence, and scene consistency hold across frames. The field advanced rapidly with large latent-diffusion and spatiotemporal-transformer models capable of producing seconds of high-fidelity footage from a prompt.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    }
+  ]
+}

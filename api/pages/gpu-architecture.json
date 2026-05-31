@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:04e5e9772ead33c39f649092435a27196fc11ede08854d847237e4685b0c385e",
+  "title": "GPU Architecture",
+  "slug": "gpu-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-architecture",
+  "domain": "metaverse",
+  "definition": "GPU architecture describes the design of graphics processing units as massively parallel processors built around many simple cores, wide memory interfaces and hardware for graphics-specific tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "slug": "memory-hierarchy",
+      "label": "Memory Hierarchy"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

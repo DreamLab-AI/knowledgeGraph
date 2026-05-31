@@ -1,0 +1,4 @@
+- ### Definition
+  - Distributed AI training spreads model training across multiple nodes and accelerators to scale beyond single-machine limits. It is enabled by [[Distributed Computing]] infrastructure and includes low-communication methods such as [[DiLoCo]].
+- ### Content
+  - Data parallelism replicates the model and averages gradients (e.g. via all-reduce), while tensor and pipeline parallelism shard the model itself across devices. Throughput is bounded by interconnect bandwidth and synchronisation overhead, motivating techniques like gradient compression, ZeRO sharding, and asynchronous or low-frequency communication for geographically distributed clusters.

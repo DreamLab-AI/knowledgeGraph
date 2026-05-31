@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:player-engagement",
+  "title": "Player Engagement",
+  "slug": "player-engagement",
+  "public": true,
+  "classIri": "urn:ngm:class:player-engagement",
+  "domain": "metaverse",
+  "definition": "Player engagement is the degree to which a game holds a player's attention, motivation, and continued participation over time. It is measured through behavioural signals such as session length, retention, progression, and emotional investment. Game designers and AI systems optimise engagement to sustain player communities and, in token-based games, to drive economic activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    }
+  ]
+}

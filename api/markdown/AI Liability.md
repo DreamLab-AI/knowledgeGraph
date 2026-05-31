@@ -487,12 +487,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:civil-liability",
-      "label": "Civil Liability"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     },
     {
-      "@id": "urn:ngm:class:tort-law",
-      "label": "Tort Law"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -632,7 +632,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {

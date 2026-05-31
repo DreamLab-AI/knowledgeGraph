@@ -75,6 +75,14 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     },

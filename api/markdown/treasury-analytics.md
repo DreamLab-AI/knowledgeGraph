@@ -1,0 +1,4 @@
+- ### Definition
+  - The analysis of holdings, cash flows, and allocation to inform liquidity, runway, and risk decisions, often surfaced through on-chain dashboards. It is a component of [[DAO Analytics]] and a supporting capability for [[Treasury Management]].
+- ### Content
+  - Analytics pipelines ingest on-chain balances, token prices, and protocol revenue to compute metrics such as runway, diversification, and value-at-risk. For DAOs in particular, transparent treasury reporting strengthens member trust and enables governance votes grounded in current financial reality.

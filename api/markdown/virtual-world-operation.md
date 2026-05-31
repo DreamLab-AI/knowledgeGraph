@@ -1,0 +1,4 @@
+- ### Definition
+  - Virtual world operation is the runtime management of a persistent shared environment, enabled by a [[Metaverse Architecture]] and realised across the [[Metaverse Stack]].
+- ### Content
+  - Operational concerns include scaling simulation and networking to many concurrent users, synchronising authoritative world state, deploying live content, enforcing moderation, and managing the in-world economy. Reliability, latency and cost are continuous engineering trade-offs.

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:6603fa13d605afcef69149aff5da1fc3b832ee5b3b345a68888544c3af21d982",
+  "title": "Maple Finance",
+  "slug": "maple-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:maple-finance",
+  "domain": "blockchain",
+  "definition": "Maple Finance is a decentralised finance protocol that arranges undercollateralised and collateralised lending to institutional borrowers through on-chain credit pools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

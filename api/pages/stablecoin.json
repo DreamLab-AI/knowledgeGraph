@@ -160,12 +160,20 @@
   ],
   "backlinks": [
     {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
     },
     {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
     },
     {
       "slug": "crypto-token",
@@ -176,12 +184,28 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
       "slug": "decentralized-exchange",
       "label": "Decentralized Exchange"
     },
     {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-asset-risks",
@@ -196,6 +220,18 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "eu-mi-ca-regulation",
+      "label": "EU MiCA Regulation"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "genius-act",
+      "label": "GENIUS Act"
+    },
+    {
       "slug": "gold",
       "label": "Gold"
     },
@@ -204,20 +240,60 @@
       "label": "Lightning and Similar L2"
     },
     {
+      "slug": "mastercard",
+      "label": "Mastercard"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
     },
     {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },
     {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "reserve-asset",
+      "label": "Reserve Asset"
+    },
+    {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
     },
     {
       "slug": "token",
@@ -226,6 +302,18 @@
     {
       "slug": "treasury-management",
       "label": "Treasury Management"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "x-402",
+      "label": "X402"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

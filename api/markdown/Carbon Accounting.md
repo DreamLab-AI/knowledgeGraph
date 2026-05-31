@@ -1,4 +1,5 @@
 public:: true
+alias:: CarbonAccounting
 
 # Carbon Accounting
 ```json-ld

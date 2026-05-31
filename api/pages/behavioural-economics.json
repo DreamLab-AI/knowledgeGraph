@@ -59,8 +59,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
       "slug": "consumer-protection",
       "label": "Consumer Protection"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
     },
     {
       "slug": "economics",
@@ -69,6 +77,10 @@
     {
       "slug": "emergence",
       "label": "Emergence"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
     }
   ]
 }

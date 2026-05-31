@@ -1,0 +1,133 @@
+{
+  "id": "urn:visionflow:page:57e697b0eac44ab6eb15c2bbd2fd63b4b820c921f76f22417ca6a09cbeb761be",
+  "title": "Nakamoto 2008 Bitcoin Whitepaper",
+  "slug": "nakamoto-2008-bitcoin-whitepaper",
+  "public": true,
+  "classIri": "urn:ngm:class:nakamoto-2008-bitcoin-whitepaper",
+  "domain": "nakamoto-2008-bitcoin-whitepaper",
+  "definition": "The Nakamoto 2008 Bitcoin Whitepaper, titled Bitcoin: A Peer-to-Peer Electronic Cash System, is the founding document of Bitcoin, published in October 2008 under the pseudonym Satoshi Nakamoto. It describes a system for electronic payments that allows two parties to transact directly without a trusted intermediary, solving the double-spending problem through a proof-of-work timestamp server. The paper introduces a public chain of blocks secured by computational work, where the longest valid chain represents the agreed transaction history. It established the conceptual basis for cryptocurrencies and decentralised consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-a-peer-to-peer-electronic-cash-system",
+      "label": "Nakamoto 2008, Bitcoin: A Peer-to-Peer Electronic Cash System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

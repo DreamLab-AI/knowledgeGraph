@@ -1,4 +1,5 @@
 public:: true
+alias:: Self Custody
 
 # self-custody
 ```json-ld

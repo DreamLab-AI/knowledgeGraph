@@ -113,6 +113,10 @@
     {
       "slug": "digital-economy",
       "label": "Digital Economy"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
     }
   ]
 }

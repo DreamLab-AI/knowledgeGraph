@@ -1,0 +1,4 @@
+- ### Definition
+  - An enforcement action is a regulator's formal sanction against a rule violation, the tool used by [[Consumer Protection]] regimes and a constituent of the [[Regulatory Domain]].
+- ### Content
+  - Actions range from monetary penalties to operating bans and are usually preceded by investigation and notice. Their deterrent and corrective effect underpins the credibility of consumer-protection and financial-conduct frameworks.

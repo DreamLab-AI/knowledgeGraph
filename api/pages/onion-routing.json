@@ -69,6 +69,10 @@
     {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:video-production-pipeline",
+  "title": "Video Production Pipeline",
+  "slug": "video-production-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:video-production-pipeline",
+  "domain": "ai",
+  "definition": "A video production pipeline is the end-to-end sequence of stages through which video content moves from capture or generation through editing, effects, colour, restoration and final delivery. Increasingly it incorporates AI stages such as upscaling, denoising and restoration alongside traditional editorial and compositing steps. The pipeline coordinates assets, tools and review across teams to produce polished output efficiently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Image and Video Restoration"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    }
+  ]
+}

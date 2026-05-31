@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:service-robotics",
+  "title": "Service Robotics",
+  "slug": "service-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:service-robotics",
+  "domain": "robotics",
+  "definition": "Service robotics is the branch of robotics concerned with robots that perform useful tasks for humans outside industrial manufacturing, including cleaning, logistics, hospitality, healthcare, and domestic assistance. These systems emphasise autonomous navigation in unstructured human environments, safe interaction, and task planning under uncertainty. It is a rapidly growing application domain of mobile and collaborative robots.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-core-concepts",
+        "label": "Robotics Core Concepts"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

@@ -99,8 +99,16 @@
       "label": "Feature Importance"
     },
     {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
       "slug": "high-risk-ai-system",
       "label": "High Risk AI System"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
     },
     {
       "slug": "image-generation",
@@ -133,6 +141,14 @@
     {
       "slug": "trust-in-automation",
       "label": "Trust in Automation"
+    },
+    {
+      "slug": "usability",
+      "label": "Usability"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
     }
   ]
 }

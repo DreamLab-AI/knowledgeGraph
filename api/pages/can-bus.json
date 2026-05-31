@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:e97ad1b0fa0e064d02e5503ed0462738b23f73e3747500a6a703723400994bb0",
+  "title": "CAN Bus",
+  "slug": "can-bus",
+  "public": true,
+  "classIri": "urn:ngm:class:can-bus",
+  "domain": "robotics",
+  "definition": "CAN Bus (Controller Area Network) is a reliable serial communication standard that lets microcontrollers and devices exchange messages over a shared two-wire bus without a host computer, widely used in vehicles and robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-Time Control"
+    },
+    {
+      "slug": "motor-driver",
+      "label": "Motor Driver"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

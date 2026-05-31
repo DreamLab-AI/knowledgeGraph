@@ -1,4 +1,5 @@
 public:: true
+alias:: TimelockController
 
 # Timelock Controller
 ```json-ld

@@ -83,6 +83,10 @@
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },
@@ -95,12 +99,32 @@
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },
     {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
       "slug": "inpainting",
       "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
     },
     {
       "slug": "music-and-audio",
@@ -121,6 +145,10 @@
     {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "score-matching",
+      "label": "Score Matching"
     }
   ]
 }

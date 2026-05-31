@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:fdb89e946414cb506cccbb197c08a6270fd1d36a258ae2299d9876fb612d4d6b",
+  "title": "ISO 29134",
+  "slug": "iso-29134",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-29134",
+  "domain": "standards",
+  "definition": "An ISO/IEC standard providing guidelines for privacy impact assessment, including process and structure. It supports assessing the impact of processing on the privacy of individuals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    },
+    {
+      "slug": "privacy-impact-assessment",
+      "label": "Privacy Impact Assessment"
+    }
+  ]
+}

@@ -171,6 +171,10 @@
       "label": "Hand Tracking"
     },
     {
+      "slug": "holographic-display",
+      "label": "Holographic Display"
+    },
+    {
       "slug": "land-economics",
       "label": "Land Economics"
     },
@@ -193,6 +197,14 @@
     {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
     },
     {
       "slug": "mixed-reality-mr",
@@ -279,12 +291,24 @@
       "label": "Virtual Reality (VR)"
     },
     {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
     },
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
+    },
+    {
+      "slug": "park-2022-metaverse",
+      "label": "park2022metaverse"
     }
   ]
 }

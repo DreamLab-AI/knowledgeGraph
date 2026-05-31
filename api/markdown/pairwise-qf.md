@@ -1,0 +1,4 @@
+- ### Definition
+  - Pairwise QF is a collusion-resistant variant of quadratic funding that caps the matching any coordinating pair can unlock, refining the quadratic-weighting logic shared with [[Quadratic Voting]].
+- ### Content
+  - By discounting the influence of donors who repeatedly co-fund the same projects, the mechanism blunts Sybil and collusion attacks against standard quadratic funding. It retains the property that many small, independent contributions attract proportionally more matching than a few large ones.

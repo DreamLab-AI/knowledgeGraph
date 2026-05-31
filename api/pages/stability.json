@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:stability",
+  "title": "Stability",
+  "slug": "stability",
+  "public": true,
+  "classIri": "urn:ngm:class:stability",
+  "domain": "robotics",
+  "definition": "Stability is the property of a dynamical or control system whereby its state remains bounded and returns toward an equilibrium following a disturbance, rather than diverging. Formalised through notions such as Lyapunov stability and bounded-input bounded-output stability, it is a primary design objective for any feedback controller. Ensuring stability is prerequisite to performance, since an unstable system cannot be made to track references reliably.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:control-systems-domain",
+        "label": "Control Systems Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

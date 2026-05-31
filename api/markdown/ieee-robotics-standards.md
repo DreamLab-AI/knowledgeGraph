@@ -1,0 +1,4 @@
+- ### Definition
+  - IEEE Robotics Standards are the normative specifications governing robot ontologies, ethics, and components, informing the design of [[Embodied Minds]] and the specification of any [[Mechanical Component]].
+- ### Content
+  - The standards span machine-readable ontologies that align terminology across systems, ethically aligned design guidance for autonomous behaviour, and interface specifications for mechanical and control subsystems. Adoption promotes interoperability between vendors and supports certification and accountability for deployed robots.

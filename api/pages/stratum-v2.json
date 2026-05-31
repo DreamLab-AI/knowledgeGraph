@@ -43,7 +43,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       }
     ]

@@ -54,6 +54,10 @@
       "label": "Non-Repudiation"
     },
     {
+      "slug": "timestamping-service",
+      "label": "Timestamping Service"
+    },
+    {
       "slug": "virtual-notary-service",
       "label": "Virtual Notary Service"
     }

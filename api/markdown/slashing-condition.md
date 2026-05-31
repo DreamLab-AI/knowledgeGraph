@@ -1,0 +1,4 @@
+- ### Definition
+  - A slashing condition is a proof-of-stake rule that defines provable validator faults and burns part of the staked collateral when they occur. It is a structural part of a [[Consensus Mechanism]] and of [[Sustainable Consensus]] designs.
+- ### Content
+  - Typical conditions penalise double-signing two conflicting blocks or surround votes that violate finality rules; severe correlated faults attract proportionally larger penalties. By bonding economic value to honest behaviour, slashing replaces the energy expenditure of proof-of-work as the deterrent against consensus attacks.

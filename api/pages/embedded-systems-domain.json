@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:9395c54ca3c80b4f01ddd920d29ce80e1089a0890d84de53e76921186348a36b",
+  "title": "Embedded Systems Domain",
+  "slug": "embedded-systems-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:embedded-systems-domain",
+  "domain": "embedded-systems",
+  "definition": "The Embedded Systems Domain covers computing systems built into devices to perform dedicated functions under constraints on power, memory and timing. Its scope includes microcontrollers, real-time operating systems, firmware and hardware-software co-design. It is a sub-area of the Robotics Domain that provides the computational substrate for physical machines. The boundary excludes general-purpose server and cloud computing, which belongs to the Infrastructure Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:sensor-interface",
+        "label": "Sensor Interface"
+      },
+      {
+        "id": "urn:ngm:class:hardware-software-co-design",
+        "label": "Hardware-Software Co-Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-electronics",
+        "label": "Digital Electronics"
+      },
+      {
+        "id": "urn:ngm:class:control-theory-domain",
+        "label": "Control Theory Domain"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:device-control",
+        "label": "Device Control"
+      },
+      {
+        "id": "urn:ngm:class:real-time-sensing",
+        "label": "Real-Time Sensing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "microcontroller",
+      "label": "Microcontroller"
+    },
+    {
+      "slug": "real-time-operating-system",
+      "label": "Real-Time Operating System"
+    },
+    {
+      "slug": "firmware",
+      "label": "Firmware"
+    },
+    {
+      "slug": "sensor-interface",
+      "label": "Sensor Interface"
+    },
+    {
+      "slug": "hardware-software-co-design",
+      "label": "Hardware-Software Co-Design"
+    },
+    {
+      "slug": "digital-electronics",
+      "label": "Digital Electronics"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "device-control",
+      "label": "Device Control"
+    },
+    {
+      "slug": "real-time-sensing",
+      "label": "Real-Time Sensing"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: MotorDriver
 
 # Motor Driver
 ```json-ld

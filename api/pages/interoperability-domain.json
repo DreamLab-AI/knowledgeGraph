@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:068e42499ba7489481deea0c221774c2c1bf223da8cd40b750f69d6164fb0488",
+  "title": "Interoperability Domain",
+  "slug": "interoperability-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:interoperability-domain",
+  "domain": "interoperability",
+  "definition": "The Interoperability Domain classifies concepts that allow distinct systems, ledgers, or networks to exchange data and value and to act on it consistently. It covers bridges, messaging protocols, common data formats, and the standards that define shared semantics. As a top-level subject classification, it scopes the connective mechanisms between systems rather than the systems themselves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:messaging-protocol",
+        "label": "Messaging Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:semantic-standard",
+        "label": "Semantic Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-transfer",
+        "label": "Cross-Chain Transfer"
+      },
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      },
+      {
+        "id": "urn:ngm:class:composable-networks",
+        "label": "Composable Networks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "messaging-protocol",
+      "label": "Messaging Protocol"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "interoperability-protocol",
+      "label": "Interoperability Protocol"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "semantic-standard",
+      "label": "Semantic Standard"
+    },
+    {
+      "slug": "cross-chain-transfer",
+      "label": "Cross-Chain Transfer"
+    },
+    {
+      "slug": "system-integration",
+      "label": "System Integration"
+    },
+    {
+      "slug": "composable-networks",
+      "label": "Composable Networks"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-20022",
+      "label": "ISO 20022"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "etsi-domain-interoperability-creative",
+      "label": "ETSI_Domain_Interoperability___Creative"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

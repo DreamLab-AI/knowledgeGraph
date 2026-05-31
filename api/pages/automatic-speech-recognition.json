@@ -89,6 +89,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
     }
   ]
 }

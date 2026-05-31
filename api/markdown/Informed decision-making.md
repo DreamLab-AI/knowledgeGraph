@@ -1,4 +1,5 @@
 public:: true
+alias:: Informed Decision Making
 
 # Informed decision-making
 ```json-ld

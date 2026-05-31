@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:inference-algorithm",
+  "title": "Inference Algorithm",
+  "slug": "inference-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:inference-algorithm",
+  "domain": "ai",
+  "definition": "An inference algorithm is a computational procedure for deriving conclusions about unobserved quantities from a model and observed data, typically by computing or approximating posterior distributions in probabilistic models. Common families include exact methods (variable elimination, belief propagation), sampling methods (Markov chain Monte Carlo, importance sampling), and variational approximations. It is the engine that turns a model specification into actionable estimates or predictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

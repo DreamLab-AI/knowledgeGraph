@@ -1,0 +1,4 @@
+- ### Definition
+  - Multi-chain DeFi spreads decentralised finance across multiple blockchains, moving assets and liquidity between them. It is enabled by a [[Cross-Chain Bridge]] and depends on [[Blockchain Interoperability]].
+- ### Content
+  - Protocols deploy on several chains and connect them via bridges and cross-chain messaging, so users can supply, borrow, and trade across ecosystems. The model raises capital efficiency and reach but concentrates systemic risk in bridges, which have been frequent and high-value exploit targets.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:fb4cfb97fb977cedbb79dfb8606cd31d9e653191f7a39a8bf6b4246466e2f56f",
+  "title": "CBDC Cross-Border Settlement",
+  "slug": "cbdc-cross-border-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:cbdc-cross-border-settlement",
+  "domain": "blockchain",
+  "definition": "CBDC cross-border settlement refers to the use of central bank digital currencies to settle payments between parties in different jurisdictions. It aims to reduce cost and delay in international transfers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "https-www-bis-org-about-bisih-topics-cbdc-htm",
+      "label": "https://www.bis.org/about/bisih/topics/cbdc.htm"
+    },
+    {
+      "slug": "https-www-bis-org-publ-othp-59-htm",
+      "label": "https://www.bis.org/publ/othp59.htm"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    }
+  ]
+}

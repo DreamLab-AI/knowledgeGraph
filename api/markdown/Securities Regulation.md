@@ -407,12 +407,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:capital-markets-regulation",
-      "label": "Capital Markets Regulation"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "@id": "urn:ngm:class:digital-asset-law",
-      "label": "Digital Asset Law"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

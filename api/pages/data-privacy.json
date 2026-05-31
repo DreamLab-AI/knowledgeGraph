@@ -68,12 +68,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
       "slug": "consent-management",
       "label": "Consent Management"
     },
     {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
       "slug": "data-protection",
       "label": "Data Protection"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
     },
     {
       "slug": "privacy-architecture",

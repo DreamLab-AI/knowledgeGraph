@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:ieee-802-x",
+  "title": "IEEE 802-X",
+  "slug": "ieee-802-x",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-802-x",
+  "domain": "infrastructure",
+  "definition": "IEEE 802 is the family of IEEE standards governing local area, metropolitan area, and personal area networks, defining the physical and data-link layers for technologies such as Ethernet (802.3), Wi-Fi (802.11), and low-rate wireless PANs (802.15.4). The suite standardises framing, medium access control, and addressing so that heterogeneous equipment can interoperate. It forms the backbone of most wired and wireless networking in use today.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

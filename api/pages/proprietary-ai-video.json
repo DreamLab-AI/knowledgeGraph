@@ -50,7 +50,7 @@
         "label": "Model Optimisation and Performance"
       },
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -68,7 +68,7 @@
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -161,7 +161,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:individual:animate-diff",
+        "id": "urn:ngm:class:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -169,7 +169,7 @@
         "label": "Attention"
       },
       {
-        "id": "urn:ngm:individual:comfy-ui",
+        "id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -185,11 +185,11 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
-        "id": "urn:ngm:individual:stable-diffusion-training",
+        "id": "urn:ngm:class:stable-diffusion-training",
         "label": "Stable Diffusion Training"
       },
       {
@@ -268,7 +268,7 @@
         "label": "AI Video"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -280,11 +280,11 @@
         "label": "Deepfakes and fraudulent content"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:individual:google-deep-mind",
+        "id": "urn:ngm:class:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

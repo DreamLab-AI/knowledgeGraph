@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:information-asymmetry",
+  "title": "Information Asymmetry",
+  "slug": "information-asymmetry",
+  "public": true,
+  "classIri": "urn:ngm:class:information-asymmetry",
+  "domain": "governance",
+  "definition": "Information asymmetry is a condition in which one party to a transaction or interaction possesses more or better information than another, distorting decisions and market outcomes. It gives rise to adverse selection and moral hazard, and motivates institutions such as signalling, screening, disclosure rules, and reputation systems. It is a foundational concept in microeconomics and is increasingly relevant to AI systems whose training data and outputs can encode hidden biases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ]
+}

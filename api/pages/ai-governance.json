@@ -128,6 +128,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "aisi",
+      "label": "AISI"
+    },
+    {
       "slug": "ai-transparency-framework",
       "label": "Ai Transparency Framework"
     },
@@ -152,6 +156,14 @@
       "label": "Consumer Protection"
     },
     {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
+      "slug": "eu-hleg-ai",
+      "label": "EU HLEG AI"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },
@@ -166,6 +178,10 @@
     {
       "slug": "global-inequality",
       "label": "Global Inequality"
+    },
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
     },
     {
       "slug": "governance-structure",
@@ -188,12 +204,24 @@
       "label": "Metadata Management"
     },
     {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "oxford-internet-institute",
+      "label": "Oxford Internet Institute"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     },
     {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
     },
     {
       "slug": "responsible-ai",

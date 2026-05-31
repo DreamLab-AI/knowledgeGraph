@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:84232cb71e670e8b152c50735c06d540a170f7c276ad00e269ba34eb40b2406b",
+  "title": "ISO 8373 Robotics Vocabulary",
+  "slug": "iso-8373-robotics-vocabulary",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-8373-robotics-vocabulary",
+  "domain": "standards",
+  "definition": "ISO 8373 defines terms used in relation to robots and robotic devices operating in industrial and non-industrial environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "robot-link",
+      "label": "RobotLink"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

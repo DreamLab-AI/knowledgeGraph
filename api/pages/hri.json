@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:2309035946dcc416c6a381e3c474e3e1695d5652fdaa8c15a13a477c2272cc07",
+  "title": "HRI",
+  "slug": "hri",
+  "public": true,
+  "classIri": "urn:ngm:class:hri",
+  "domain": "robotics",
+  "definition": "Human-Robot Interaction is the study and design of how people and robots communicate and work together. It draws on robotics, psychology, and human-computer interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "https-humanrobotinteraction-org",
+      "label": "https://humanrobotinteraction.org"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-human-e-2-80-93-robot-interaction",
+      "label": "https://en.wikipedia.org/wiki/Human%E2%80%93robot_interaction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "proxemics",
+      "label": "Proxemics"
+    },
+    {
+      "slug": "social-navigation",
+      "label": "Social Navigation"
+    },
+    {
+      "slug": "usability",
+      "label": "Usability"
+    }
+  ]
+}

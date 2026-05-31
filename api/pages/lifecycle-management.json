@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:lifecycle-management",
+  "title": "Lifecycle Management",
+  "slug": "lifecycle-management",
+  "public": true,
+  "classIri": "urn:ngm:class:lifecycle-management",
+  "domain": "infrastructure",
+  "definition": "Lifecycle management is the disciplined coordination of an asset, product, or system across all phases of its existence, from creation and deployment through operation, maintenance, and decommissioning. It defines processes, versioning, and governance that keep the entity consistent and accountable over time. For digital twins it ensures the virtual model stays synchronised with the physical asset throughout its operational life.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infrastructure Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "id": "urn:ngm:class:construction-digital-twin",
+        "label": "Construction Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    }
+  ]
+}

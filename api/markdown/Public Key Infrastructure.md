@@ -1,4 +1,5 @@
 public:: true
+alias:: Public-Key Infrastructure, PublicKeyInfrastructure
 
 # Public Key Infrastructure
 ```json-ld

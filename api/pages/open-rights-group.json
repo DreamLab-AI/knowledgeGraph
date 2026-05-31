@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:e8afd17d2e7f353fe278a5e7d1e60b5efd03fc57dce970126c0be6c1f6374b8f",
+  "title": "Open Rights Group",
+  "slug": "open-rights-group",
+  "public": true,
+  "classIri": "urn:ngm:class:open-rights-group",
+  "domain": "governance",
+  "definition": "Open Rights Group is a United Kingdom organisation that campaigns for digital rights, including privacy, free expression, and data protection. It is a membership-funded non-profit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-rights",
+      "label": "Digital Rights"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "https-www-openrightsgroup-org",
+      "label": "https://www.openrightsgroup.org"
+    },
+    {
+      "slug": "https-www-openrightsgroup-org-about",
+      "label": "https://www.openrightsgroup.org/about/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    }
+  ]
+}

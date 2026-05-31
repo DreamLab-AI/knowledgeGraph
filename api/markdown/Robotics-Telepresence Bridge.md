@@ -106,7 +106,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:tele-203-haptic-feedback-telepresence",
+        "@id": "urn:ngm:class:haptic-feedback-telepresence",
         "label": "TELE-203-haptic-feedback-telepresence"
       }
     ],

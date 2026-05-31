@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:media-production",
+  "title": "Media Production",
+  "slug": "media-production",
+  "public": true,
+  "classIri": "urn:ngm:class:media-production",
+  "domain": "metaverse",
+  "definition": "Media production is the end-to-end process of creating audiovisual content, spanning pre-production planning, capture, editing, and post-production finishing. It increasingly integrates generative AI, virtual production, and automated voice and speech tools to accelerate and personalise output. As a workflow it coordinates creative, technical, and asset-management activities across a content pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Metaverse Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

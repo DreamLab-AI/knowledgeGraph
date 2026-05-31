@@ -1,0 +1,4 @@
+- ### Definition
+  - An octree spatial index recursively partitions 3D space into octants to speed spatial queries. It is a component implemented within the [[Vircadia]] virtual-world platform.
+- ### Content
+  - By keeping subdivision adaptive to object density, octrees give logarithmic-time region queries and enable scalable interest management in large scenes, deciding which entities to render or replicate to each client. The trade-off is rebalancing cost as objects move, which dynamic worlds mitigate with loose octrees or periodic rebuilds.

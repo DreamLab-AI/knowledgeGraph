@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:587940cdb39ddc27176876df3aec80ccb7019ca0810c253c39001e9adf697106",
+  "title": "Presentation Layer",
+  "slug": "presentation-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:presentation-layer",
+  "domain": "presentation",
+  "definition": "The Presentation Layer is the topmost stratum of the canonical stack, responsible for rendering application state into a form humans can perceive and act on. It sits directly above the Application Layer and has nothing above it in the stack. It contains user interface components, rendering pipelines, formatting, and interaction handling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience-layer",
+        "label": "User Experience Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "information-visualisation",
+      "label": "Information Visualisation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "cognitive-load-metric",
+      "label": "Cognitive Load Metric"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "content-layer",
+      "label": "Content Layer"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "emotional-immersion",
+      "label": "Emotional Immersion"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "user-experience-layer",
+      "label": "User Experience Layer"
+    }
+  ]
+}

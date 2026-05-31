@@ -12,12 +12,12 @@
       "label": "Protocol and Consensus"
     },
     {
-      "id": "urn:ngm:class:cryptographic-mining",
-      "label": "Cryptographic Mining"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "id": "urn:ngm:class:industrial-process",
-      "label": "Industrial Process"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -244,7 +244,7 @@
         "label": "Stranded Gas"
       },
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -1653,6 +1653,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "argo-blockchain",
+      "label": "Argo Blockchain"
+    },
+    {
       "slug": "bitcoin-distribution",
       "label": "Bitcoin Distribution"
     },
@@ -1669,12 +1677,32 @@
       "label": "Bitcoin related links"
     },
     {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "cambridge-bitcoin-electricity-consumption-index",
+      "label": "Cambridge Bitcoin Electricity Consumption Index"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "clean-spark",
+      "label": "CleanSpark"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "f-2-pool",
+      "label": "F2Pool"
     },
     {
       "slug": "green-blockchain-initiatives",
@@ -1689,6 +1717,14 @@
       "label": "Lightning Network"
     },
     {
+      "slug": "marathon-digital",
+      "label": "Marathon Digital"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
       "slug": "micropayments",
       "label": "Micropayments"
     },
@@ -1697,8 +1733,16 @@
       "label": "Proof Of Work"
     },
     {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
+    },
+    {
       "slug": "sustainable-consensus",
       "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
     }
   ]
 }

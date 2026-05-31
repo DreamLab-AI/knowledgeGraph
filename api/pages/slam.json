@@ -197,12 +197,20 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },
     {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
     },
     {
       "slug": "exteroceptive-sensor",
@@ -263,6 +271,14 @@
     {
       "slug": "particle-filter",
       "label": "Particle Filter"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
     },
     {
       "slug": "robotics-platform",

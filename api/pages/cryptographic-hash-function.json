@@ -111,8 +111,20 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "hashcash",
+      "label": "Hashcash"
+    },
+    {
       "slug": "identity-provider",
       "label": "Identity Provider"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "nakamoto-2008-bitcoin-whitepaper",
+      "label": "Nakamoto 2008 Bitcoin Whitepaper"
     },
     {
       "slug": "nft-minting",
@@ -123,12 +135,24 @@
       "label": "R3 Corda"
     },
     {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },
     {
       "slug": "smart-contracts",
       "label": "Smart Contracts"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
     },
     {
       "slug": "virtual-notary-service",

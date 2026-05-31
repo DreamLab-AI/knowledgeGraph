@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:51f90841dcf3df7b8d46d48530602e14bb475228d3d9800410423a1eb90f0399",
+  "title": "MicroBT",
+  "slug": "micro-bt",
+  "public": true,
+  "classIri": "urn:ngm:class:micro-bt",
+  "domain": "blockchain",
+  "definition": "MicroBT is a Chinese manufacturer of Bitcoin mining hardware, known for its Whatsminer series of ASIC machines. It competes with other mining hardware producers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asic",
+      "label": "ASIC"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "https-www-microbt-com",
+      "label": "https://www.microbt.com"
+    },
+    {
+      "slug": "https-whatsminer-net",
+      "label": "https://whatsminer.net"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

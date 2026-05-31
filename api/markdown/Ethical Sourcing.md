@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0453-ethical-sourcing
 
 # Ethical Sourcing
 ```json-ld
@@ -627,12 +628,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:corporate-social-responsibility",
-      "label": "Corporate Social Responsibility"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "@id": "urn:ngm:class:human-rights-due-diligence",
-      "label": "Human Rights Due Diligence"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

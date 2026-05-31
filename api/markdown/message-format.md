@@ -1,0 +1,4 @@
+- ### Definition
+  - A message format defines the structure, encoding, and fields of data exchanged between systems so it can be parsed unambiguously. It is a constituent part of any [[Communication Protocol]] and of every [[Transaction Standard]].
+- ### Content
+  - Formats range from text-based JSON and XML to compact binary schemas such as Protocol Buffers and ISO 20022 financial messages. Versioning, backward compatibility, and validation rules are central concerns, since format mismatches break interoperability and can corrupt downstream processing.

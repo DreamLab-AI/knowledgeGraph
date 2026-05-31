@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:919011fe5396dff660dab48499986fed39f9b9010e6c7b6aed4f9ee3109d87eb",
+  "title": "Khronos Group glTF 2.0 Specification",
+  "slug": "khronos-group-gl-tf-2-0-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:khronos-group-gl-tf-2-0-specification",
+  "domain": "computer-graphics",
+  "definition": "The glTF 2.0 specification is the Khronos Group standard defining the GL Transmission Format for efficient transmission and loading of 3D scenes and models. It uses JSON for structure with binary buffers for geometry and a physically based material model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gl-tf",
+      "label": "glTF"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-asset",
+      "label": "3D Asset"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "etsi-domain-interoperability-creative",
+      "label": "ETSI_Domain_Interoperability___Creative"
+    }
+  ]
+}

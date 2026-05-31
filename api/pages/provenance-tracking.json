@@ -224,6 +224,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
       "slug": "ai-generated-content-disclosure",
       "label": "AI-Generated Content Disclosure"
     },
@@ -258,6 +262,10 @@
     {
       "slug": "non-fungible-token-nft",
       "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
     },
     {
       "slug": "training-data",

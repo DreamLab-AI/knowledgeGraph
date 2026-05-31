@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:intelligent-environment",
+  "title": "Intelligent Environment",
+  "slug": "intelligent-environment",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligent-environment",
+  "domain": "metaverse",
+  "definition": "An intelligent environment is a physical or virtual space embedded with sensing, computation, and adaptive agents that perceive context and respond to occupants without explicit commands. In metaverse and ambient-computing settings it hosts autonomous agents and virtual entities that react to user presence, intent, and environmental state. It blends ubiquitous sensing with embodied AI to deliver context-aware, responsive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

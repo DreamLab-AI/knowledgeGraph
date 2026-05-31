@@ -87,6 +87,10 @@
       "label": "Decentralized Storage"
     },
     {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
       "slug": "layer2",
       "label": "Layer2"
     },

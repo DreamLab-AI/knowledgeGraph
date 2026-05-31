@@ -1,0 +1,4 @@
+- ### Definition
+  - Photorealistic telepresence renders remote participants as lifelike volumetric representations, drawing on [[AI Avatars]] and reconstruction methods such as [[3D Gaussian Splatting]].
+- ### Content
+  - Systems capture a subject with multi-view cameras or depth sensors, build a driveable photoreal model of their face and body, and render it in real time into a shared 3D space viewed through headsets or light-field displays. Achieving convincing co-presence requires low latency, accurate relighting, and faithful expression transfer, which remain active research challenges constraining the technology to early deployments.

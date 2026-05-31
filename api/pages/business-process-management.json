@@ -63,6 +63,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "process-layer",
+      "label": "Process Layer"
+    },
+    {
       "slug": "process",
       "label": "Process"
     }

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:pharmaceutical-logistics",
+  "title": "Pharmaceutical Logistics",
+  "slug": "pharmaceutical-logistics",
+  "public": true,
+  "classIri": "urn:ngm:class:pharmaceutical-logistics",
+  "domain": "supply-chain",
+  "definition": "Pharmaceutical logistics is the specialised management of storage, handling, and transport of medicines and biologics under strict regulatory and environmental controls. It enforces cold-chain integrity, serialisation, and chain-of-custody to preserve product efficacy and prevent counterfeiting or diversion. The discipline combines temperature-controlled distribution with traceability and compliance reporting across the supply chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Supply Chain Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

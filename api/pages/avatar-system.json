@@ -12,8 +12,8 @@
       "label": "Platform and Environment"
     },
     {
-      "id": "urn:ngm:class:virtual-character-system",
-      "label": "Virtual Character System"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "entityType": "Class",
@@ -91,6 +91,10 @@
   ],
   "backlinks": [
     {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
       "slug": "digital-ritual",
       "label": "Digital Ritual"
     },
@@ -107,8 +111,32 @@
       "label": "Metaverse Technology"
     },
     {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-102-codec-avatars",
+      "label": "TELE-102-codec-avatars"
+    },
+    {
       "slug": "tourism-metaverse",
       "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
     },
     {
       "slug": "vircadia",

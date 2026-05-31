@@ -1,4 +1,5 @@
 public:: true
+alias:: DistributedLedger
 
 # Distributed Ledger
 ```json-ld
@@ -683,12 +684,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:append-only-log",
-      "label": "Append-Only Log"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "@id": "urn:ngm:class:multi-party-database",
-      "label": "Multi-Party Database"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {

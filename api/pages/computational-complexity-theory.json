@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:04d825c3edc368bf9aa45d8ec7583293647695143e950379402e9269f079b285",
+  "title": "Computational Complexity Theory",
+  "slug": "computational-complexity-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-complexity-theory",
+  "domain": "mathematics",
+  "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems into complexity classes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

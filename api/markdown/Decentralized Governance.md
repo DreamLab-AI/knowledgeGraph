@@ -504,7 +504,7 @@ public:: true
         "label": "Tally"
       },
       {
-        "@id": "urn:ngm:class:timelocks",
+        "@id": "urn:ngm:class:timelock",
         "label": "Timelocks"
       }
     ],

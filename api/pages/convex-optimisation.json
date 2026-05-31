@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:ad14db76317906bcda2611cf705aa4ee1016c50df25e4af0773da6b97ff54132",
+  "title": "Convex Optimisation",
+  "slug": "convex-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:convex-optimisation",
+  "domain": "mathematics",
+  "definition": "Convex optimisation is the study of minimising convex functions over convex sets, a class of problems for which any local minimum is global and efficient algorithms exist. It is widely applied in machine learning, control and finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

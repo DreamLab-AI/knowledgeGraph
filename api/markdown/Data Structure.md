@@ -1,4 +1,5 @@
 public:: true
+alias:: DataStructure
 
 # Data Structure
 ```json-ld

@@ -387,12 +387,12 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:capital-deployment",
-      "label": "Capital Deployment"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "@id": "urn:ngm:class:financial-mechanism",
-      "label": "Financial Mechanism"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     }
   ],
   "relations": {
@@ -432,7 +432,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {

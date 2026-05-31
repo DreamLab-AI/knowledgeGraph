@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:8ffe8b4556a074fe9fbfce5317c57128401772b55106377cf5fbc1e91dddecfe",
+  "title": "Sequential Monte Carlo",
+  "slug": "sequential-monte-carlo",
+  "public": true,
+  "classIri": "urn:ngm:class:sequential-monte-carlo",
+  "domain": "metaverse",
+  "definition": "Sequential Monte Carlo is a family of methods that approximate evolving probability distributions using a set of weighted samples updated recursively as new observations arrive.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "importance-sampling",
+      "label": "Importance Sampling"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

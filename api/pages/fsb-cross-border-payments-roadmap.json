@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:fsb-cross-border-payments-roadmap",
+  "title": "FSB Cross-Border Payments Roadmap",
+  "slug": "fsb-cross-border-payments-roadmap",
+  "public": true,
+  "classIri": "urn:ngm:class:fsb-cross-border-payments-roadmap",
+  "domain": "blockchain",
+  "definition": "The FSB Cross-Border Payments Roadmap is a coordinated programme led by the Financial Stability Board to make international payments faster, cheaper, more transparent, and more inclusive. Endorsed by the G20, it sets quantitative targets and prioritises work on interoperability, legal and regulatory frameworks, and emerging payment infrastructures including CBDCs. It frames how new settlement rails are evaluated against global policy goals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

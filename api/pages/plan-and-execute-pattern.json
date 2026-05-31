@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:plan-and-execute-pattern",
+  "title": "Plan and Execute Pattern",
+  "slug": "plan-and-execute-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:plan-and-execute-pattern",
+  "domain": "ai",
+  "definition": "The plan-and-execute pattern is an agent-architecture design in which a dedicated planner component produces a structured task plan that an executor component then realises step by step using tools. Formalising the strategy as a reusable pattern lets agent frameworks separate high-level reasoning from low-level tool invocation, enabling re-planning and observability. It is widely implemented through function-calling pipelines in LLM agent frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    }
+  ]
+}

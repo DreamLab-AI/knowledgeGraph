@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:1850c131bf05c44af22093cb892d5c648212949d6c55a537bf1a75f98b84ba01",
+  "title": "Aave Companies",
+  "slug": "aave-companies",
+  "public": true,
+  "classIri": "urn:ngm:class:aave-companies",
+  "domain": "defi",
+  "definition": "Aave Companies is the development company, founded by Stani Kulechov, behind the Aave decentralised lending protocol and related products. It was formerly known as ETHLend.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:aave",
+      "label": "Aave"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "aave",
+      "label": "Aave"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

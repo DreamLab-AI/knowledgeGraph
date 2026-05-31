@@ -1,4 +1,5 @@
 public:: true
+alias:: OPC-UA
 
 # OPC UA
 ```json-ld

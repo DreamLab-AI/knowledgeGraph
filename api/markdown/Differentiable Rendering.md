@@ -1,4 +1,5 @@
 public:: true
+alias:: DifferentiableRendering
 
 # differentiable rendering
 ```json-ld

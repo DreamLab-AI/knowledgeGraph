@@ -1,4 +1,5 @@
 public:: true
+alias:: ProtocolLayer
 
 # Protocol Layer
 ```json-ld

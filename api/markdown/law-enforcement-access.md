@@ -1,0 +1,4 @@
+- ### Definition
+  - Law enforcement access is the lawful provision of data to authorities for investigation; it is enabled and supported by the [[Travel Rule]], which mandates that originator and beneficiary information accompany regulated transfers.
+- ### Content
+  - Frameworks balance investigatory needs against due process and privacy through warrant requirements, data-minimisation and oversight. In crypto-asset markets, Travel Rule information sharing and exchange recordkeeping create the data trails that, under appropriate legal authority, support tracing of illicit flows while constraining indiscriminate surveillance.

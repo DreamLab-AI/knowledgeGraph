@@ -72,6 +72,10 @@
       "label": "Character Model"
     },
     {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
       "slug": "pixel-shader",
       "label": "Pixel Shader"
     }

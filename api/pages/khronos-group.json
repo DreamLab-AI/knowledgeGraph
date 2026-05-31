@@ -111,6 +111,10 @@
       "label": "Graphics API"
     },
     {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
     },

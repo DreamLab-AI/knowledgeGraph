@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:go-quorum",
+  "title": "GoQuorum",
+  "slug": "go-quorum",
+  "public": true,
+  "classIri": "urn:ngm:class:go-quorum",
+  "domain": "blockchain",
+  "definition": "GoQuorum is an open-source, enterprise-focused Ethereum client originally developed by J.P. Morgan and forked from go-ethereum to support permissioned consortium networks. It adds private transactions and contracts, permissioning, and pluggable consensus algorithms such as IBFT, QBFT, and Raft suited to known-validator settings. It is widely used to build private and consortium blockchains for financial and supply-chain applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Blockchain Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quorum-blockchain",
+        "label": "Quorum Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

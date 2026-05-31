@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:69a153197509866ffad1ba51b59093e14eb6a256312bb8b8166a6a8cf0cc66e5",
+  "title": "Access Controls",
+  "slug": "access-controls",
+  "public": true,
+  "classIri": "urn:ngm:class:access-controls",
+  "domain": "distributed-systems",
+  "definition": "Access controls are mechanisms that govern which subjects may perform which operations on resources, enforcing authorisation policies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authorisation",
+      "label": "Authorisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "https-csrc-nist-gov-glossary-term-access-control",
+      "label": "https://csrc.nist.gov/glossary/term/access_control"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-access-control",
+      "label": "https://en.wikipedia.org/wiki/Access_control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-repository",
+      "label": "Digital Repository"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    }
+  ]
+}

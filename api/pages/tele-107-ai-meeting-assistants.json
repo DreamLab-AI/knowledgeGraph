@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:0a966a9c92601d82533eca4631338b3722a69f9f30ac859dad1ccf28a300d6f8",
+  "title": "TELE-107-ai-meeting-assistants",
+  "slug": "tele-107-ai-meeting-assistants",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-107-ai-meeting-assistants",
+  "domain": "metaverse",
+  "definition": "AI meeting assistants are software agents that join or process meetings to provide transcription, summarisation, action-item extraction and live support using speech recognition and language models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "meeting-transcription",
+      "label": "Meeting Transcription"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "real-time-language-translation",
+      "label": "Real-Time Language Translation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "video-conferencing",
+      "label": "Video Conferencing"
+    }
+  ]
+}

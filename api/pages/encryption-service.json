@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:49095f1b97c4168d2cfe1a52cf42e55cebb4ab2114b45883a5e37dbe717249e8",
+  "title": "Encryption Service",
+  "slug": "encryption-service",
+  "public": true,
+  "classIri": "urn:ngm:class:encryption-service",
+  "domain": "general",
+  "definition": "An encryption service is a system or component that provides cryptographic protection of data, typically offering key management and encryption operations through an interface. It supports confidentiality of stored and transmitted data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "https-csrc-nist-gov-glossary-term-encryption",
+      "label": "https://csrc.nist.gov/glossary/term/encryption"
+    },
+    {
+      "slug": "https-www-nist-gov-cryptography",
+      "label": "https://www.nist.gov/cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ]
+}

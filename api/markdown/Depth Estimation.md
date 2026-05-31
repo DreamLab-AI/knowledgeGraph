@@ -503,8 +503,8 @@ public:: true
       "label": "3D Perception"
     },
     {
-      "@id": "urn:ngm:class:geometric-vision",
-      "label": "Geometric Vision"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -658,7 +658,7 @@ public:: true
         "label": "Kinect"
       },
       {
-        "@id": "urn:ngm:class:li-dar",
+        "@id": "urn:ngm:class:lidar",
         "label": "LiDAR"
       },
       {

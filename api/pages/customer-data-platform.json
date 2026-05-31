@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:e64264581dae9869f02c24faa75a7b26aa1a7351922f87f84b21f870dcedfe2f",
+  "title": "Customer Data Platform",
+  "slug": "customer-data-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-data-platform",
+  "domain": "general",
+  "definition": "A software system that consolidates customer data from multiple sources into a unified, persistent profile that other marketing and analytics systems can access.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

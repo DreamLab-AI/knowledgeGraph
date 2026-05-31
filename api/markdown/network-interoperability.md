@@ -1,0 +1,4 @@
+- ### Definition
+  - Network interoperability is the capacity of distinct networks to exchange and correctly interpret data. It is enabled by [[Network Standards]] and underpins specialised cases such as [[Blockchain Interoperability]].
+- ### Content
+  - Achieving interoperability requires agreement on syntax (encoding and formats), semantics (meaning of exchanged data), and behaviour (protocol state machines). Gateways and translation layers can bridge incompatible systems, but native standards-based interoperability avoids the fragility, latency, and trust assumptions introduced by intermediaries.

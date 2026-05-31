@@ -114,7 +114,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:tele-020-virtual-reality-telepresence",
+        "@id": "urn:ngm:class:virtual-reality-telepresence",
         "label": "TELE-020-virtual-reality-telepresence"
       }
     ],

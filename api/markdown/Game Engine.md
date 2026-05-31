@@ -1,4 +1,5 @@
 public:: true
+alias:: GameEngine
 
 # Game Engine
 ```json-ld

@@ -117,6 +117,10 @@
       "label": "Consortium Blockchain"
     },
     {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
       "slug": "testnet",
       "label": "Testnet"
     }

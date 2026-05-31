@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:9790fc4dbe262eace3bf01a952d8b4d01da6cc6b3fc6f74ac78051fee57bb44d",
+  "title": "AUTOMATIC1111 WebUI",
+  "slug": "automatic-1111-web-ui",
+  "public": true,
+  "classIri": "urn:ngm:class:automatic-1111-web-ui",
+  "domain": "generative-ai",
+  "definition": "AUTOMATIC1111 WebUI is an open-source browser interface for running Stable Diffusion image models locally. It exposes generation, image-to-image, inpainting and extension features through a web front end.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "backlinks": []
+}

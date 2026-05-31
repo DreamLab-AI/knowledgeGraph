@@ -1,4 +1,5 @@
 public:: true
+alias:: PersistentStorage
 
 # Persistent Storage
 ```json-ld

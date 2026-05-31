@@ -185,8 +185,16 @@
       "label": "API Gateway"
     },
     {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
       "slug": "etsi-domain-infrastructure",
       "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
     },
     {
       "slug": "robotics-platform",

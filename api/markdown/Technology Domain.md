@@ -1,4 +1,5 @@
 public:: true
+alias:: TechnologyDomain
 
 # Technology Domain
 ```json-ld

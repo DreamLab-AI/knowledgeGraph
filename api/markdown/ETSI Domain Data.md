@@ -106,7 +106,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-systems",
+        "@id": "urn:ngm:class:ai-system",
         "label": "AI Systems"
       },
       {

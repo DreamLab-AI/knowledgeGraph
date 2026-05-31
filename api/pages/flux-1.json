@@ -3,11 +3,16 @@
   "title": "Flux.1",
   "slug": "flux-1",
   "public": true,
-  "classIri": "urn:ngm:individual:flux-1",
+  "classIri": "urn:ngm:class:flux-1",
   "domain": "ai",
   "definition": "Flux.1 is a family of open-weight text-to-image generative models developed by Black Forest Labs, founded by former Stability AI researchers including Robin Rombach, the co-creator of Latent Diffusion. Released in August 2024, Flux.1 employs a hybrid architecture combining multimodal and parallel diffusion transformer (DiT) blocks, achieving state-of-the-art image quality and prompt adherence that surpasses earlier diffusion models on benchmarks such as GenEval and T2I-CompBench. The family offers three variants \u2014 Flux.1 [pro], Flux.1 [dev], and Flux.1 [schnell] \u2014 spanning commercial API, open-weights research, and fast inference use cases respectively.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -32,7 +37,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

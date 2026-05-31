@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:edc617ccecb9341b35f928f953d1e2a9b6c401f71d00df138d74f76a65cd61ba",
+  "title": "Simulation Layer",
+  "slug": "simulation-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:simulation-layer",
+  "domain": "simulation",
+  "definition": "The Simulation Layer is the cross-cutting stratum that models system or environment behaviour to test and predict outcomes without acting on the real world. It sits above compute and model strata it uses and supports research, evaluation, and planning. It contains simulators, environment models, and the scenarios run within them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:research-layer",
+        "label": "Research Layer"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-layer",
+        "label": "Evaluation Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "monte-carlo-method",
+      "label": "Monte Carlo Method"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    }
+  ]
+}

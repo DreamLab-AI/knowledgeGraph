@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e4f4564525fe4330bcb8da7dea4cb796ad387a8c202aaccd075bac535796544e",
+  "title": "Situational Awareness",
+  "slug": "situational-awareness",
+  "public": true,
+  "classIri": "urn:ngm:class:situational-awareness",
+  "domain": "metaverse",
+  "definition": "Situational awareness is an agent's perception of relevant elements in its environment, comprehension of their meaning and projection of their near-future state, supporting timely decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "smart-city",
+      "label": "Smart City"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

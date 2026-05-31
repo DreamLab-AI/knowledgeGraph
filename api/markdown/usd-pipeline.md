@@ -1,0 +1,4 @@
+- ### Definition
+  - A USD pipeline organises 3D content production around the Universal Scene Description format, standardising data such as [[Motion Capture]] and supporting [[Procedural and Hybrid 4D]] authoring.
+- ### Content
+  - USD's layered composition lets multiple departments edit the same scene non-destructively via sublayers, references and variants. Pipelines pair USD with Hydra for rendering and MaterialX for shading, enabling scalable interchange across studios and real-time engines.

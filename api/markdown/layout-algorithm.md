@@ -1,0 +1,4 @@
+- ### Definition
+  - A layout algorithm computes spatial positions for diagram elements, underpinning [[Diagrams as Code]] tooling and [[AI Diagram Tools]] that must render structured graphs automatically.
+- ### Content
+  - Force-directed methods model edges as springs and nodes as repelling charges, while hierarchical methods layer directed graphs to expose flow. The choice of algorithm and its tuned constraints determine legibility, runtime, and the visual identity of generated diagrams.

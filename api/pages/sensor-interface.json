@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sensor-interface",
+  "title": "Sensor Interface",
+  "slug": "sensor-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-interface",
+  "domain": "robotics",
+  "definition": "A sensor interface is the hardware and protocol boundary through which a controller acquires data from a sensor, encompassing signal conditioning, analogue-to-digital conversion, and bus protocols such as I2C, SPI, CAN, or analogue voltage lines. It standardises timing, addressing, and electrical levels so that heterogeneous sensors can be integrated into a control loop. It is a core subsystem of embedded and robotic control architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems-domain",
+        "label": "Embedded Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    }
+  ]
+}

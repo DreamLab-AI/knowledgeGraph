@@ -1,0 +1,4 @@
+- ### Definition
+  - Complexity Science studies complex adaptive systems whose collective behaviour transcends their parts, supplying the theoretical framing for fields such as [[Economics]] and concepts such as [[Emergence]].
+- ### Content
+  - Core constructs include emergence, self-organisation, feedback, path dependence, and scale-free network structure, often explored with agent-based modelling and network analysis. In economics it motivates complexity economics, which treats markets as evolving systems of interacting, boundedly rational agents rather than equilibrium-seeking machines.

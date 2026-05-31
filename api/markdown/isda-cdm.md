@@ -1,0 +1,4 @@
+- ### Definition
+  - The ISDA CDM is a standardised, machine-readable model of derivatives trades and their lifecycle. It standardises [[Enterprise Token Standards]] and [[Enterprise Smart Contracts]] so systems interpret financial events consistently.
+- ### Content
+  - By defining events, products, and processes once, the CDM removes the reconciliation overhead of bespoke representations and lets smart contracts execute lifecycle actions deterministically. It is a key enabler of tokenised derivatives and automated, auditable post-trade workflows.

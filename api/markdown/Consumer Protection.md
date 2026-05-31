@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0489-consumer-protection
 
 # Consumer Protection
 ```json-ld
@@ -435,12 +436,12 @@ public:: true
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:competition-law",
-      "label": "Competition Law"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "@id": "urn:ngm:class:market-regulation",
-      "label": "Market Regulation"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

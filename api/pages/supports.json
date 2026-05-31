@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:12ca1543b6f7f0ec13292daa7fb703447a4c0ffa2d176d159f500146e394bb0a",
+  "title": "supports",
+  "slug": "supports",
+  "public": true,
+  "classIri": "urn:ngm:class:supports",
+  "domain": "ontology",
+  "definition": "Supports is a relational predicate used in the knowledge graph to indicate that one entity provides backing, compatibility, or enabling capability for another.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": []
+}

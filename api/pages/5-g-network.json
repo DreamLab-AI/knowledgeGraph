@@ -77,6 +77,10 @@
     {
       "slug": "infrastructure-layer",
       "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "tele-153-5-g-telepresence",
+      "label": "TELE-153-5g-telepresence"
     }
   ]
 }

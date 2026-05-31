@@ -1,0 +1,4 @@
+- ### Definition
+  - Government digital identity is a state-backed electronic identity for accessing services; credentials are commonly held in a [[Digital Identity Wallet]] and may be issued over decentralised-identity platforms such as [[Hyperledger Indy]].
+- ### Content
+  - Schemes vary from centralised national ID systems to federated and user-centric models built on W3C verifiable credentials and decentralised identifiers. Design priorities include high-assurance proofing, inclusion and accessibility, data minimisation, and resistance to surveillance and exclusion. Cross-border interoperability, exemplified by the EU eIDAS framework and digital identity wallets, is a growing focus for public-sector identity.

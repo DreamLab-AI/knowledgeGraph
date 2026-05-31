@@ -75,6 +75,10 @@
       "label": "AML KYC Compliance"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },
@@ -85,6 +89,18 @@
     {
       "slug": "graph-database",
       "label": "Graph Database"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "network-theory",
+      "label": "Network Theory"
     }
   ]
 }

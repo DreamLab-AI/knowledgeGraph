@@ -1,0 +1,4 @@
+- ### Definition
+  - Credential portability is the ability to move verifiable credentials freely between systems and verifiers without reliance on a single issuer. It is enabled by a [[Trust Framework]] and held in a [[Digital Identity Wallet]].
+- ### Content
+  - Portability depends on standardised credential formats, cryptographic proofs, and agreed governance so that a credential issued in one context is trusted in another. It reduces lock-in and re-verification cost while preserving holder control, but requires shared schemas, revocation infrastructure, and aligned legal recognition across domains.

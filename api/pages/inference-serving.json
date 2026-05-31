@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:4f2264cd683228e4854430d164c6b389f0a433a282887119aa5678a502b459d6",
+  "title": "Inference Serving",
+  "slug": "inference-serving",
+  "public": true,
+  "classIri": "urn:ngm:class:inference-serving",
+  "domain": "machine-learning",
+  "definition": "Inference serving is the operation of running trained models in production to answer prediction requests at scale. It combines an inference engine with infrastructure for batching, scaling and monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-serving",
+      "label": "Model Serving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    }
+  ]
+}

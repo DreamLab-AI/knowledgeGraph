@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:464fad7894c7f20ccb38c69552b82708d97297e069c66156ff54119025b879f7",
+  "title": "Drone Navigation",
+  "slug": "drone-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:drone-navigation",
+  "domain": "robotics",
+  "definition": "Drone navigation is the set of methods by which unmanned aerial vehicles determine position, plan routes and control flight to reach objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mobile-robotics",
+      "label": "Mobile Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "mapping",
+      "label": "Mapping"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "mobile-robotics",
+      "label": "Mobile Robotics"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-unmanned-aerial-vehicle",
+      "label": "https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle"
+    },
+    {
+      "slug": "https-ardupilot-org",
+      "label": "https://ardupilot.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

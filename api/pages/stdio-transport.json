@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:stdio-transport",
+  "title": "Stdio Transport",
+  "slug": "stdio-transport",
+  "public": true,
+  "classIri": "urn:ngm:class:stdio-transport",
+  "domain": "infrastructure",
+  "definition": "Stdio transport is a communication mechanism in which a client and server exchange messages over the standard input and standard output streams of a locally spawned process. It is one of the primary transports defined by the Model Context Protocol, where the host launches the server as a subprocess and frames JSON-RPC messages through stdin/stdout. It suits local, single-machine integrations because it requires no network sockets and inherits the operating system's process isolation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols Like MCP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

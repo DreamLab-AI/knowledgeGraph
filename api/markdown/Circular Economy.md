@@ -1,4 +1,5 @@
 public:: true
+alias:: CircularEconomy
 
 # Circular Economy
 ```json-ld
@@ -347,8 +348,8 @@ public:: true
       "label": "Economic Model"
     },
     {
-      "@id": "urn:ngm:class:environmental-policy",
-      "label": "Environmental Policy"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

@@ -74,6 +74,10 @@
       "label": "Learning Algorithm"
     },
     {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

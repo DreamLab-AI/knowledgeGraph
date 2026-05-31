@@ -467,12 +467,12 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:diagram-as-code",
-      "label": "Diagram-as-Code"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:knowledge-visualisation",
-      "label": "Knowledge Visualisation"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

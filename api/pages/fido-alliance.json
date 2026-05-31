@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ecb81096bdd736a2917259e3de160bf08eedc5cb508cfbc48b4b97660798f9ae",
+  "title": "FIDO Alliance",
+  "slug": "fido-alliance",
+  "public": true,
+  "classIri": "urn:ngm:class:fido-alliance",
+  "domain": "cryptographic",
+  "definition": "An industry association that develops open authentication standards intended to reduce reliance on passwords through public key cryptography.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
+    },
+    {
+      "slug": "passwordless-authentication",
+      "label": "Passwordless Authentication"
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

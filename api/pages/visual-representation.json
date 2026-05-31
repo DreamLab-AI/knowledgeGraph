@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:visual-representation",
+  "title": "Visual Representation",
+  "slug": "visual-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-representation",
+  "domain": "ai",
+  "definition": "A visual representation is a learned encoding of image or video content into a feature vector or embedding that captures semantic and structural properties useful for downstream tasks. Such representations, produced by convolutional or transformer-based encoders, support classification, retrieval, detection, and multimodal alignment. The quality of a visual representation determines transferability and sample efficiency across vision applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ]
+}

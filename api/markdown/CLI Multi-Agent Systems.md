@@ -1,4 +1,5 @@
 public:: true
+alias:: CLI multi agent systems
 
 # CLI Multi-Agent Systems
 ```json-ld
@@ -438,7 +439,7 @@ public:: true
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:individual:docker",
+        "@id": "urn:ngm:class:docker",
         "label": "Docker"
       },
       {

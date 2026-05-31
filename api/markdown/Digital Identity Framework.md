@@ -148,7 +148,7 @@ public:: true
         "label": "Cryptographic Systems"
       },
       {
-        "@id": "urn:ngm:class:policy-frameworks",
+        "@id": "urn:ngm:class:policy-framework",
         "label": "Policy Frameworks"
       },
       {

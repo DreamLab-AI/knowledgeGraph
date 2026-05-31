@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:b057c89b0d1cf05d404ad90cc0b826a385d991f0c5241a592474fd6bbffa669a",
+  "title": "DTCC",
+  "slug": "dtcc",
+  "public": true,
+  "classIri": "urn:ngm:class:dtcc",
+  "domain": "finance",
+  "definition": "DTCC, the Depository Trust and Clearing Corporation, is a United States company that provides clearing, settlement, and recordkeeping services for securities markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

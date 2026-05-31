@@ -1,0 +1,4 @@
+- ### Definition
+  - Grid infrastructure is the networked system that generates, transmits, and distributes electricity, and is a foundational requirement of the broader [[Energy and Power]] domain.
+- ### Content
+  - Modern grids add sensing, automation, and smart-meter telemetry to balance variable renewable supply against demand. Capacity, latency of load response, and carbon intensity of the grid directly shape the siting and sustainability of compute clusters and blockchain mining facilities.

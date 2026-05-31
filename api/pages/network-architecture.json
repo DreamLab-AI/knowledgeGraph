@@ -77,12 +77,32 @@
   ],
   "backlinks": [
     {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
       "slug": "network-function-virtualization",
       "label": "Network Function Virtualization"
     },
     {
+      "slug": "osi-model",
+      "label": "OSI Model"
+    },
+    {
       "slug": "physical-layer",
       "label": "Physical Layer"
+    },
+    {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
     }
   ]
 }

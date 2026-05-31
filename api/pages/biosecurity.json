@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:biosecurity",
+  "title": "Biosecurity",
+  "slug": "biosecurity",
+  "public": true,
+  "classIri": "urn:ngm:class:biosecurity",
+  "domain": "governance",
+  "definition": "Biosecurity is the set of policies, practices, and controls aimed at preventing the accidental or deliberate misuse of biological agents, including pathogens, toxins, and biotechnology. It spans laboratory containment, pathogen access controls, dual-use research oversight, and increasingly the governance of AI tools that could lower barriers to engineering dangerous organisms. As a field, it is central to mitigating biological existential and catastrophic risks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:bio-terror",
+        "label": "Bio-Terror"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    }
+  ]
+}

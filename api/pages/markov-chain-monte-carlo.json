@@ -59,6 +59,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

@@ -16,8 +16,8 @@
       "label": "Image Editing"
     },
     {
-      "id": "urn:ngm:class:image-restoration",
-      "label": "Image Restoration"
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
@@ -224,7 +224,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ]
@@ -625,6 +625,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -643,6 +647,10 @@
     {
       "slug": "fooocus",
       "label": "Fooocus"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
     }
   ]
 }

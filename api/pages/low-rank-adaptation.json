@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:2babea07310d76324f0527fcc3df345f7ff0a27c5ad06afd2bff1e5069014e2c",
+  "title": "Low-Rank Adaptation",
+  "slug": "low-rank-adaptation",
+  "public": true,
+  "classIri": "urn:ngm:class:low-rank-adaptation",
+  "domain": "artificial-intelligence",
+  "definition": "Low-Rank Adaptation is a parameter-efficient fine-tuning method that adds small trainable low-rank matrices to a frozen pre-trained model. It reduces the cost of adapting large models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "https-arxiv-org-abs-2106-09685",
+      "label": "https://arxiv.org/abs/2106.09685"
+    },
+    {
+      "slug": "https-github-com-microsoft-lo-ra",
+      "label": "https://github.com/microsoft/LoRA"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Search & Discovery
 
 # Search Discovery
 ```json-ld

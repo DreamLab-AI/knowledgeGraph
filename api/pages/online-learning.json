@@ -48,5 +48,10 @@
       "label": "Machine Learning"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    }
+  ]
 }

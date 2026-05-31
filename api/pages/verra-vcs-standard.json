@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:25068757fd02f0f58fb2b608b9439b41c9bb3a710ab66041611c8deaea43266b",
+  "title": "Verra VCS Standard",
+  "slug": "verra-vcs-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:verra-vcs-standard",
+  "domain": "metaverse",
+  "definition": "The Verra Verified Carbon Standard is a widely used programme for certifying voluntary carbon credits, setting rules for quantifying, verifying and issuing emission reductions and removals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-markets",
+      "label": "Carbon Markets"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "carbon-registry",
+      "label": "Carbon Registry"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    }
+  ]
+}

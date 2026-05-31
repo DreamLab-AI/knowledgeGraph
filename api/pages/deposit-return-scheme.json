@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:deposit-return-scheme",
+  "title": "Deposit Return Scheme",
+  "slug": "deposit-return-scheme",
+  "public": true,
+  "classIri": "urn:ngm:class:deposit-return-scheme",
+  "domain": "supply-chain",
+  "definition": "A deposit return scheme is a circular-economy mechanism in which consumers pay a small refundable deposit on a beverage container at purchase and reclaim it on returning the empty for recycling or reuse. The financial incentive drives high collection rates and clean material streams, reducing litter and supporting closed-loop recycling. It is a recognised instrument of reverse logistics and extended producer responsibility.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

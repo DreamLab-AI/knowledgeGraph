@@ -1,4 +1,5 @@
 public:: true
+alias:: Multi-Party Royalties
 
 # Multi Party Royalties
 ```json-ld

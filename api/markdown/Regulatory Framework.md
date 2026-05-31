@@ -1,4 +1,5 @@
 public:: true
+alias:: RegulatoryFramework
 
 # Regulatory Framework
 ```json-ld

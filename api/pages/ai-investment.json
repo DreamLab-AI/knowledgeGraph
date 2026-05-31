@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-investment",
+  "title": "AI Investment",
+  "slug": "ai-investment",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-investment",
+  "domain": "ai",
+  "definition": "AI Investment is the allocation of capital toward artificial-intelligence research, talent, compute infrastructure, startups, and data assets in pursuit of strategic or financial returns. It spans venture funding, corporate capital expenditure on data centres and chips, sovereign funds, and public research grants. The scale and concentration of this capital is a primary driver of competitive dynamics among firms and nations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

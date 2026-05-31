@@ -1,0 +1,4 @@
+- ### Definition
+  - Non-destructive editing records changes as reversible layers over an untouched source. It is enabled by [[Universal Scene Description]] and implemented by the [[3D Scene Exchange Protocol (SXP)]].
+- ### Content
+  - In USD this is realised through composition arcs and layer stacks, where stronger layers override weaker ones without modifying them, enabling collaborative, version-friendly workflows. The same principle underlies adjustment layers in image and video editors, allowing experimentation and reproducibility at the cost of resolving the edit graph at read time.

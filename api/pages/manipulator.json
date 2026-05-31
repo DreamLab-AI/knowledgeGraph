@@ -54,6 +54,14 @@
   ],
   "backlinks": [
     {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
       "slug": "robotics-systems",
       "label": "Robotics Systems"
     }

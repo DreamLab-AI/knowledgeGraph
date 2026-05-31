@@ -1,4 +1,5 @@
 public:: true
+alias:: Structure from Motion
 
 # structure-from-motion
 ```json-ld

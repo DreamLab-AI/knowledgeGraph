@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:50b4df0da6aa362c1f3ff9642b97d3dbec6743b9b8dc8e0186c381e9a3e86c18",
+  "title": "NIST FIPS 205 SLH-DSA SPHINCS+",
+  "slug": "nist-fips-205-slh-dsa-sphincs",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-fips-205-slh-dsa-sphincs",
+  "domain": "standards",
+  "definition": "A NIST Federal Information Processing Standard specifying the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA), derived from the SPHINCS+ scheme. It provides hash-based signatures designed to resist quantum attacks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

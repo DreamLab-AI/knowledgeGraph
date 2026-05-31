@@ -1,4 +1,5 @@
 public:: true
+alias:: Layer-2 Solutions
 
 # Layer 2 Solutions
 ```json-ld

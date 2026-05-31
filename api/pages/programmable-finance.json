@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:programmable-finance",
+  "title": "Programmable Finance",
+  "slug": "programmable-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:programmable-finance",
+  "domain": "blockchain",
+  "definition": "Programmable finance is the encoding of financial logic, agreements, and assets as executable code on blockchains, so that payments, lending, settlement, and compliance execute automatically and verifiably. It is enabled by smart contracts that compose into open, permissionless financial primitives. It underpins decentralised finance and emerging layered scaling on networks such as Bitcoin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

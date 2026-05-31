@@ -1,4 +1,5 @@
 public:: true
+alias:: SwarmRobotics
 
 # Swarm Robotics
 ```json-ld

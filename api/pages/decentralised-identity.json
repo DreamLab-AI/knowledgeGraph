@@ -63,6 +63,10 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
       "slug": "digital-objects",
       "label": "Digital Objects"
     },
@@ -71,8 +75,20 @@
       "label": "ETSI Domain Identity and Trust"
     },
     {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
+    },
+    {
+      "slug": "lens-protocol",
+      "label": "Lens Protocol"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
     },
     {
       "slug": "nft-minting",
@@ -95,6 +111,10 @@
       "label": "Social VR"
     },
     {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
+    },
+    {
       "slug": "solid-pod",
       "label": "Solid Pod"
     },
@@ -105,6 +125,10 @@
     {
       "slug": "trust-framework",
       "label": "Trust Framework"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
     },
     {
       "slug": "web3",

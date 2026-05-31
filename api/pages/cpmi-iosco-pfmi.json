@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:416c254d921875b2638a12f7c8376b60995345a73175a7918a485d5fdbaeca0d",
+  "title": "CPMI-IOSCO PFMI",
+  "slug": "cpmi-iosco-pfmi",
+  "public": true,
+  "classIri": "urn:ngm:class:cpmi-iosco-pfmi",
+  "domain": "finance",
+  "definition": "The Principles for Financial Market Infrastructures are international standards published by the Committee on Payments and Market Infrastructures and the International Organization of Securities Commissions. They set requirements for the safety and efficiency of payment, clearing and settlement systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "swift-messaging",
+      "label": "SWIFT Messaging"
+    },
+    {
+      "slug": "central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "swift-messaging",
+      "label": "SWIFT Messaging"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:personalized-experiences",
+  "title": "Personalized Experiences",
+  "slug": "personalized-experiences",
+  "public": true,
+  "classIri": "urn:ngm:class:personalized-experiences",
+  "domain": "ai",
+  "definition": "Personalized experiences are interactions, content, or services dynamically tailored to an individual's preferences, history, and context. They are produced by models that infer user intent and situation from behavioural signals and contextual data, then adapt recommendations, interfaces, or responses accordingly. Personalization aims to increase relevance and engagement while balancing privacy and the risk of filter bubbles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-machine-learning",
+        "label": "AI Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-machine-learning",
+      "label": "Ai Machine Learning"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    }
+  ]
+}

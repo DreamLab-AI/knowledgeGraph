@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:85195ede1aabda49f6638eaf47e2a84f8ad4e8c42dd4509d95f25d67342043c4",
+  "title": "Measure Theory",
+  "slug": "measure-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:measure-theory",
+  "domain": "measure-theory",
+  "definition": "Measure Theory is the branch of mathematical analysis that studies measures, which assign a consistent notion of size, length, area, volume or probability to subsets of a space. It provides the rigorous foundation for the Lebesgue integral, which generalises the Riemann integral and handles a wider class of functions and limiting operations. It is the formal basis of modern probability theory, where a probability is a measure of total mass one.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lebesgue-integral",
+        "label": "Lebesgue Integral"
+      },
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma-Algebra"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lebesgue-integral",
+      "label": "Lebesgue Integral"
+    },
+    {
+      "slug": "sigma-algebra",
+      "label": "Sigma-Algebra"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "real-analysis",
+      "label": "Real Analysis"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    }
+  ]
+}

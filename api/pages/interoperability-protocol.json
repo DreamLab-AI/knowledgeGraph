@@ -95,6 +95,10 @@
       "label": "Cross-Chain Messaging"
     },
     {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
       "slug": "layer2-scaling",
       "label": "Layer2Scaling"
     },

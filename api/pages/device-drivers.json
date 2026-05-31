@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:device-drivers",
+  "title": "Device Drivers",
+  "slug": "device-drivers",
+  "public": true,
+  "classIri": "urn:ngm:class:device-drivers",
+  "domain": "infrastructure",
+  "definition": "A device driver is a software component that mediates between an operating system and a specific hardware device, translating generic OS calls into the device's command and register protocol. Drivers expose a uniform interface so applications can use peripherals without knowing their internal details, and they handle interrupts, buffering, and power state. They are the foundation of the hardware abstraction layer that makes hardware portable to software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infrastructure Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-interface-device",
+        "label": "Human Interface Device"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    }
+  ]
+}

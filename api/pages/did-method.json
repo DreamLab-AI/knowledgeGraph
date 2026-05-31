@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:5290719e8be7f4171f1c414cd057bbaa91524ab55d0641395b4af5b3f0d06aae",
+  "title": "DID Method",
+  "slug": "did-method",
+  "public": true,
+  "classIri": "urn:ngm:class:did-method",
+  "domain": "identity",
+  "definition": "A specification that defines how a particular type of decentralised identifier is created, resolved, updated, and deactivated. Each method describes the syntax and operations for DIDs anchored to a specific system such as a blockchain or registry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identity",
+      "label": "Decentralized Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    }
+  ]
+}

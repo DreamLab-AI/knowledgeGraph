@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:9d12168ccf14eb473f3a1bc96f031b14a177d1234568d2c70232612053ad9a94",
+  "title": "Markov Decision Process",
+  "slug": "markov-decision-process",
+  "public": true,
+  "classIri": "urn:ngm:class:markov-decision-process",
+  "domain": "mathematics",
+  "definition": "A mathematical framework for modelling sequential decision-making where outcomes are partly random and partly under the control of a decision maker.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:markov-chain",
+      "label": "Markov Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:constraint-specification",
+  "title": "Constraint Specification",
+  "slug": "constraint-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:constraint-specification",
+  "domain": "robotics",
+  "definition": "A constraint specification is a formal statement of the limits and conditions a control system or plan must satisfy, such as joint limits, actuator bounds, obstacle avoidance, and safety envelopes. It is supplied to control and optimisation algorithms so that generated commands remain feasible and safe. Precise constraint specification is essential for model-based and optimisation-based control design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model-Based Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

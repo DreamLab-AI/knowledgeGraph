@@ -1,0 +1,4 @@
+- ### Definition
+  - Energy Attribute Certificates are tradable proofs that a unit of electricity was generated from a defined source, used within [[Green Blockchain Initiatives]] to evidence renewable consumption and support [[Sustainability]] goals.
+- ### Content
+  - Each certificate corresponds to one MWh and carries metadata such as generation source, location, and vintage. Tokenising EACs on-chain enables transparent retirement and prevents double-counting, which is central to credible green-blockchain and carbon-offset claims.

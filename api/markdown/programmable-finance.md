@@ -1,0 +1,4 @@
+- ### Definition
+  - Programmable finance encodes financial agreements and assets as executable on-chain logic that settles automatically and verifiably. It is supported by higher-layer designs such as [[BTC Layer 3]] and is enabled by the [[Smart Contract]] as its core building block.
+- ### Content
+  - By expressing instruments and rules as composable smart contracts, programmable finance allows automated lending, automated market making, conditional payments, and embedded compliance without trusted intermediaries. Composability lets protocols stack into complex products, while transparency and determinism reduce settlement risk, at the cost of new attack surfaces such as contract bugs and oracle manipulation.

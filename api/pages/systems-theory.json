@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:a61dda12352b01cb0b2a12c3194473431a9d1ff39ef852e83b081cc96b6c1e50",
+  "title": "Systems Theory",
+  "slug": "systems-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:systems-theory",
+  "domain": "systems",
+  "definition": "Systems theory is an interdisciplinary study of systems as sets of interrelated components, focusing on the relationships, feedback, and emergent behaviour that arise from interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "process",
+      "label": "Process"
+    }
+  ]
+}

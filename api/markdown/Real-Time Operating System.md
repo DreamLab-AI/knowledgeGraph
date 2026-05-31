@@ -1,4 +1,5 @@
 public:: true
+alias:: Real Time Operating System
 
 # Real-Time Operating System
 ```json-ld

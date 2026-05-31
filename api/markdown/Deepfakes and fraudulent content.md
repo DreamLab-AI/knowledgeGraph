@@ -507,12 +507,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:generative-ai-misuse",
-      "label": "Generative AI Misuse"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     },
     {
-      "@id": "urn:ngm:class:identity-fraud",
-      "label": "Identity Fraud"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     }
   ],
   "relations": {
@@ -654,7 +654,7 @@ public:: true
         "label": "Wav2Lip"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {

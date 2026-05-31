@@ -535,8 +535,8 @@ public:: true
       "label": "Central Bank Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:monetary-policy-framework",
-      "label": "Monetary Policy Framework"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {

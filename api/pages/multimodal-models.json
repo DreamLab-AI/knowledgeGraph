@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:e49ba7ecf25403e4ff7fed01bf70015ea4b6239d03f7bdc2543088d8f7b6e00a",
+  "title": "Multimodal Models",
+  "slug": "multimodal-models",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-models",
+  "domain": "machine-learning",
+  "definition": "Machine learning models that process and relate information from more than one modality, such as text, images, audio or video, within a single model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

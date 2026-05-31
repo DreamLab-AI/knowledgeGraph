@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:geopolitics",
+  "title": "Geopolitics",
+  "slug": "geopolitics",
+  "public": true,
+  "classIri": "urn:ngm:class:geopolitics",
+  "domain": "governance",
+  "definition": "Geopolitics is the study and practice of how geography, resources, and national power shape relations and competition among states. In technology it frames how control over compute, semiconductors, data, and AI capability translates into strategic advantage and influences export controls, alliances, and standards-setting. It is a core lens for understanding international competition in AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

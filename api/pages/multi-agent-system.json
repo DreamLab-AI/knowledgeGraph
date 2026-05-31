@@ -104,6 +104,18 @@
       "label": "Consensus Algorithm"
     },
     {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    },
+    {
       "slug": "swarm-robotics",
       "label": "Swarm Robotics"
     }

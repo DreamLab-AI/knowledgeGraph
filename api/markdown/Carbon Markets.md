@@ -1,4 +1,5 @@
 public:: true
+alias:: CarbonMarkets
 
 # Carbon Markets
 ```json-ld

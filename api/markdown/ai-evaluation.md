@@ -1,0 +1,4 @@
+- ### Definition
+  - AI Evaluation measures how well models perform, behave, and stay safe across tasks. It is operationalized through [[Evaluation Benchmarks and Leaderboards]] and reported via standardized [[Evaluation Metric]] families.
+- ### Content
+  - Methods span static benchmarks, dynamic and adversarial probes, LLM-as-judge scoring, and human preference studies. Credible evaluation controls for data contamination and prompt sensitivity, reports uncertainty, and pairs aggregate leaderboard numbers with targeted capability and safety tests to avoid Goodhart-style gaming.

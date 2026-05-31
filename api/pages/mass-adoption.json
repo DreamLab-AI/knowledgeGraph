@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:mass-adoption",
+  "title": "Mass Adoption",
+  "slug": "mass-adoption",
+  "public": true,
+  "classIri": "urn:ngm:class:mass-adoption",
+  "domain": "blockchain",
+  "definition": "Mass adoption is the stage at which a technology moves beyond early enthusiasts to be used by a large mainstream population. For blockchain and digital assets it implies usability, scalability, and trust sufficient for everyday consumers and enterprises. Reaching it typically requires solving cost, throughput, and user-experience barriers that gate the transition across the technology adoption lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ]
+}

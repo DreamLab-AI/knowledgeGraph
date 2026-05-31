@@ -1,0 +1,4 @@
+- ### Definition
+  - Video object segmentation tracks pixel-level object masks across video frames, extending [[Image Segmentation]] into the temporal domain and supporting [[Segmentation and Identification]].
+- ### Content
+  - Methods range from semi-supervised mask propagation from a first-frame annotation to unsupervised and promptable models. Key challenges are temporal consistency, occlusion handling and real-time performance, addressed with memory networks, optical flow and transformer architectures.

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:b5867f2b87ecc8c29bb811538d4a2f083db0ab2a0391b1130f32feff1f8c5f98",
+  "title": "Microsoft Teams",
+  "slug": "microsoft-teams",
+  "public": true,
+  "classIri": "urn:ngm:class:microsoft-teams",
+  "domain": "distributed-systems",
+  "definition": "Microsoft Teams is a collaboration application combining chat, video meetings, file sharing and application integration within the Microsoft 365 suite.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaboration-tools",
+      "label": "Collaboration Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "collaboration-tools",
+      "label": "Collaboration Tools"
+    },
+    {
+      "slug": "https-www-microsoft-com-en-us-microsoft-teams-group-chat-software",
+      "label": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
+    },
+    {
+      "slug": "https-learn-microsoft-com-en-us-microsoftteams",
+      "label": "https://learn.microsoft.com/en-us/microsoftteams/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

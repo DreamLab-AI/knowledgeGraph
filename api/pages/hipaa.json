@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:0c2f5a92fb51be7e4e6f92264fd0f8de31b8cf9928a9c450bfb4b7973426a56e",
+  "title": "HIPAA",
+  "slug": "hipaa",
+  "public": true,
+  "classIri": "urn:ngm:class:hipaa",
+  "domain": "governance",
+  "definition": "The Health Insurance Portability and Accountability Act, a United States law that sets requirements for protecting the privacy and security of certain health information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection-law",
+      "label": "Data Protection Law"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

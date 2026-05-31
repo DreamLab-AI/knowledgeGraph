@@ -1,0 +1,4 @@
+- ### Definition
+  - A federated system coordinates multiple autonomous servers under common protocols while preserving local control, occupying a middle ground between centralised and fully decentralised designs. It is the architectural basis for systems like [[Fedimint]] and the trust model of a [[Consortium Blockchain]], and is a class of [[Distributed Systems]].
+- ### Content
+  - Federation reduces single-point-of-failure and single-operator-control risks by distributing authority across a known set of cooperating nodes, while keeping coordination tractable through shared standards and inter-server protocols. Trade-offs include the need to govern membership and inter-operator trust, and reliance on the honesty and availability of a quorum of federation members rather than open, permissionless participation.

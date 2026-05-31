@@ -67,8 +67,32 @@
       "label": "Digital Signature"
     },
     {
+      "slug": "etsi-arf-010",
+      "label": "ETSI ARF 010"
+    },
+    {
       "slug": "etsi-domain-identity-and-trust",
       "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "etsi-eni-008",
+      "label": "ETSI ENI 008"
+    },
+    {
+      "slug": "etsi-gr-arf-007",
+      "label": "ETSI GR ARF 007"
+    },
+    {
+      "slug": "etsi-gr-arf-010",
+      "label": "ETSI GR ARF 010"
+    },
+    {
+      "slug": "etsi-gr-mec-032",
+      "label": "ETSI GR MEC 032"
+    },
+    {
+      "slug": "etsi-gs-mec-003",
+      "label": "ETSI GS MEC 003"
     },
     {
       "slug": "etsi-domain-governance-compliance",

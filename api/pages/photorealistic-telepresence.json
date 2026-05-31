@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:photorealistic-telepresence",
+  "title": "Photorealistic Telepresence",
+  "slug": "photorealistic-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:photorealistic-telepresence",
+  "domain": "metaverse",
+  "definition": "Photorealistic telepresence is remote real-time communication in which participants appear as lifelike, volumetrically accurate representations rather than video tiles or stylised avatars. It reconstructs a person's appearance and motion using techniques such as neural avatars and 3D Gaussian splatting, rendering them convincingly in a shared spatial scene. The goal is a sense of co-presence that closely matches being physically together.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    }
+  ]
+}

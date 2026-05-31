@@ -491,8 +491,8 @@ public:: true
       "label": "Affective Computing System"
     },
     {
-      "@id": "urn:ngm:class:consumer-ai-product",
-      "label": "Consumer AI Product"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

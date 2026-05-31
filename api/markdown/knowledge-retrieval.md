@@ -1,0 +1,4 @@
+- ### Definition
+  - Knowledge retrieval finds relevant information in response to a query; [[Semantic Search]] is a specialised form of it, and it enables knowledge-grounded [[Chatbots]].
+- ### Content
+  - Modern systems combine dense vector embeddings, sparse lexical signals and re-ranking to surface contextually relevant passages or facts. As the retrieval stage in retrieval-augmented generation, it grounds language-model outputs in authoritative sources, reducing hallucination and enabling answers over private or up-to-date corpora.

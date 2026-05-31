@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:f233b4c0d922e4e9dcba50bf635e31b558a587fbe20104f46023a236bfdeaeca",
+  "title": "Applied Mathematics",
+  "slug": "applied-mathematics",
+  "public": true,
+  "classIri": "urn:ngm:class:applied-mathematics",
+  "domain": "mathematics",
+  "definition": "Applied mathematics is the use of mathematical methods to solve problems in science, engineering, economics and industry. It includes areas such as modelling, numerical analysis and optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

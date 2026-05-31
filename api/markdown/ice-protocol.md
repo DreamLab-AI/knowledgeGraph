@@ -1,0 +1,4 @@
+- ### Definition
+  - The ICE Protocol negotiates NAT-traversing peer connections using STUN and TURN candidates, providing the connectivity layer required by [[WebRTC]].
+- ### Content
+  - ICE collects host, server-reflexive, and relayed candidates, exchanges them via signalling, and runs prioritised connectivity checks to converge on the lowest-latency viable path. When direct paths fail, it falls back to TURN relaying, guaranteeing connectivity at the cost of an extra hop.

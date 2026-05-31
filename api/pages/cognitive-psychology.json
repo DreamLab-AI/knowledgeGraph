@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:7ed7ef05160ef053e94f1aba5c92030e2cca191f69e971ecb7b2fda7d59e616d",
+  "title": "Cognitive Psychology",
+  "slug": "cognitive-psychology",
+  "public": true,
+  "classIri": "urn:ngm:class:cognitive-psychology",
+  "domain": "psychology",
+  "definition": "Cognitive psychology is the branch of psychology that studies internal mental processes such as perception, attention, memory, language, and reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

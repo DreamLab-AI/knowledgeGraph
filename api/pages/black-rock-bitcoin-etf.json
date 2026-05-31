@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:black-rock-bitcoin-etf",
+  "title": "BlackRock Bitcoin ETF",
+  "slug": "black-rock-bitcoin-etf",
+  "public": true,
+  "classIri": "urn:ngm:class:black-rock-bitcoin-etf",
+  "domain": "blockchain",
+  "definition": "The BlackRock Bitcoin ETF (iShares Bitcoin Trust, ticker IBIT) is a spot Bitcoin exchange-traded fund issued by BlackRock and approved by the US SEC in January 2024. It holds bitcoin in qualified custody and tracks the spot price, giving traditional investors regulated, brokerage-accessible exposure to bitcoin without managing keys. As one of the largest and fastest-growing spot Bitcoin ETFs, it is frequently cited as evidence of institutional adoption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

@@ -114,6 +114,14 @@
     {
       "slug": "digital-workplace-platform",
       "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
     }
   ]
 }

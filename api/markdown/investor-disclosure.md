@@ -1,0 +1,4 @@
+- ### Definition
+  - Investor disclosure mandates material, timely information to investors, a pillar of [[Securities Regulation]]. It now also encompasses environmental reporting tied to [[Blockchain Environmental Impact Assessment]].
+- ### Content
+  - Disclosure regimes specify what must be reported (financials, risk factors, conflicts) and on what cadence, with liability for omissions or misstatements. Extending disclosure to crypto issuers and ESG metrics aims to give markets a clearer view of both financial and environmental risk.

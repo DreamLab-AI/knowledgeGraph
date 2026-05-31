@@ -135,8 +135,8 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:distributed-application",
-      "label": "Distributed Application"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

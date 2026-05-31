@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:7020754142b489fd593975b4b32172b02ab5d31db07ff3c44a027ba779a1eff2",
+  "title": "3D Engine",
+  "slug": "3-d-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-engine",
+  "domain": "general",
+  "definition": "A 3D engine is software that handles the representation, rendering, and often the physics and animation of three-dimensional scenes. It forms the core of many games and simulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-game-engine",
+      "label": "https://en.wikipedia.org/wiki/Game_engine"
+    },
+    {
+      "slug": "https-docs-unity-3-d-com-manual-index-html",
+      "label": "https://docs.unity3d.com/Manual/index.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ]
+}

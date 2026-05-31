@@ -144,8 +144,16 @@
       "label": "Networkcomponent"
     },
     {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
       "slug": "networking-layer",
       "label": "Networking Layer"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
     },
     {
       "slug": "threat-surface-map",

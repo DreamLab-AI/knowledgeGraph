@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:automated-testing",
+  "title": "Automated Testing",
+  "slug": "automated-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-testing",
+  "domain": "infrastructure",
+  "definition": "Automated testing is the practice of using software tools to execute predefined test cases against a system and compare actual outcomes to expected results without manual intervention. It spans unit, integration, end-to-end, and regression tests, and is typically wired into build pipelines so defects are caught early and consistently. By making verification repeatable and fast, it enables continuous integration and reliable software delivery at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

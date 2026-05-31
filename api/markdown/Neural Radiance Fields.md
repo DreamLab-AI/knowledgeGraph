@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-052-neural-radiance-fields
 
 # Neural Radiance Fields
 ```json-ld

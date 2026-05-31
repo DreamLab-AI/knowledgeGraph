@@ -1,4 +1,5 @@
 public:: true
+alias:: InternetOfThings
 
 # internet of things
 ```json-ld

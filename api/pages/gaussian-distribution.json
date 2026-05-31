@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:e1b01a265b717e3c1191bf79d6b7127395e5e66d1ffbb3fbc63107402b4981a6",
+  "title": "Gaussian Distribution",
+  "slug": "gaussian-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:gaussian-distribution",
+  "domain": "mathematics",
+  "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

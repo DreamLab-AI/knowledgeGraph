@@ -499,8 +499,8 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:foundation-model-capability",
-      "label": "Foundation Model Capability"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
       "@id": "urn:ngm:class:frontier-ai",
@@ -648,7 +648,7 @@ public:: true
         "label": "Existential Risk"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {

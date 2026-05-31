@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:20fd0630f33a07f2940ecab4004f0f4577533de9e9169011178bf44fd6a451f9",
+  "title": "Layer 2 Networks",
+  "slug": "layer-2-networks",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-2-networks",
+  "domain": "blockchain",
+  "definition": "Protocols built on top of a base blockchain that process transactions off the main chain while inheriting its settlement and security guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-1",
+      "label": "Layer 1"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

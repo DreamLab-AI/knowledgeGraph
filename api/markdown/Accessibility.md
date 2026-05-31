@@ -439,12 +439,12 @@ public:: true
       "label": "Governance and Safety"
     },
     {
-      "@id": "urn:ngm:class:design-principle",
-      "label": "Design Principle"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:non-functional-requirement",
-      "label": "Non-Functional Requirement"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {

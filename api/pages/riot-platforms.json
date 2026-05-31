@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:bfadbb573de9f14686303c0f69714c17dac43485e2aa2ffccbce0b6726a22f17",
+  "title": "Riot Platforms",
+  "slug": "riot-platforms",
+  "public": true,
+  "classIri": "urn:ngm:class:riot-platforms",
+  "domain": "blockchain",
+  "definition": "Riot Platforms is a United States company that operates large-scale Bitcoin mining facilities. It is listed on a public stock exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "https-www-riotplatforms-com",
+      "label": "https://www.riotplatforms.com"
+    },
+    {
+      "slug": "https-www-riotplatforms-com-investors",
+      "label": "https://www.riotplatforms.com/investors"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

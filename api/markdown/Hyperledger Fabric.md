@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabric
 
 # Hyperledger Fabric
 ```json-ld

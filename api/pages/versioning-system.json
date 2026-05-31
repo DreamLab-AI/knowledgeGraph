@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:versioning-system",
+  "title": "Versioning System",
+  "slug": "versioning-system",
+  "public": true,
+  "classIri": "urn:ngm:class:versioning-system",
+  "domain": "infrastructure",
+  "definition": "A versioning system is a mechanism that tracks, identifies and manages successive states of an artefact such as code, data, documents or taxonomy entries over time. It records changes, supports retrieval of historical versions, and resolves concurrent edits, enabling reproducibility, auditability and rollback. In curation and registry contexts it ensures controlled evolution of records while preserving provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-taxonomy-registry",
+        "label": "Digital Taxonomy Registry"
+      },
+      {
+        "id": "urn:ngm:class:digital-curation-platform",
+        "label": "Digital Curation Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    }
+  ]
+}

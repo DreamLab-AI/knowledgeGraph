@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualAsset
 
 # Virtual Asset
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: FederatedLearning
 
 # Federated Learning
 ```json-ld

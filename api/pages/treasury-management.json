@@ -12,12 +12,12 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:corporate-finance",
-      "label": "Corporate Finance"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "id": "urn:ngm:class:financial-management",
-      "label": "Financial Management"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -328,7 +328,7 @@
         "label": "Uniswap"
       },
       {
-        "id": "urn:ngm:individual:micro-strategy",
+        "id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ]
@@ -765,6 +765,10 @@
       "label": "Decentralized Governance"
     },
     {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },
@@ -773,8 +777,24 @@
       "label": "Instant value settlement"
     },
     {
+      "slug": "karpatkey",
+      "label": "Karpatkey"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
     },
     {
       "slug": "on-chain-voting",
@@ -783,6 +803,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "yearn",
+      "label": "Yearn"
     }
   ]
 }

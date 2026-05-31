@@ -56,6 +56,10 @@
     {
       "slug": "synthetic-data-generator",
       "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "tensor-flow-lite",
+      "label": "TensorFlow Lite"
     }
   ]
 }

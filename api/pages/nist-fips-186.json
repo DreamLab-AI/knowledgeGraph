@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:883cc65bc2d69b5a2500d66656ae223a21de01e6ca3c3e90e1cfa527acff3fed",
+  "title": "NIST FIPS 186",
+  "slug": "nist-fips-186",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-fips-186",
+  "domain": "standards",
+  "definition": "A NIST Federal Information Processing Standard specifying the Digital Signature Standard (DSS), defining approved algorithms for generating and verifying digital signatures. It covers algorithms such as DSA, RSA and ECDSA depending on the revision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

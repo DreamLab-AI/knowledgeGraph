@@ -1,0 +1,4 @@
+- ### Definition
+  - Remote education delivers teaching to distributed learners over networks, increasingly realised through the [[Education Metaverse]] and interactive features such as the [[Breakout Room]].
+- ### Content
+  - Modalities include synchronous virtual classrooms, asynchronous courseware, and immersive 3D spaces that support small-group work and hands-on simulation. Effective remote education balances accessibility and bandwidth constraints with the social presence and interactivity needed to sustain attention and learning outcomes.

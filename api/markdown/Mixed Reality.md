@@ -1,4 +1,5 @@
 public:: true
+alias:: MixedReality
 
 # Mixed Reality
 ```json-ld
@@ -447,8 +448,8 @@ public:: true
       "label": "Immersive Computing"
     },
     {
-      "@id": "urn:ngm:class:perceptual-computing",
-      "label": "Perceptual Computing"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "relations": {
@@ -764,7 +765,7 @@ public:: true
         "label": "USD AOUSD"
       },
       {
-        "@id": "urn:ngm:class:w3-c-web-xr-device-api",
+        "@id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "W3C WebXR Device API"
       }
     ]

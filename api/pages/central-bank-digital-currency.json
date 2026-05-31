@@ -99,12 +99,20 @@
   ],
   "backlinks": [
     {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
       "slug": "bitcoin-as-money",
       "label": "Bitcoin As Money"
     },
     {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "cbdc-cross-border-settlement",
+      "label": "CBDC Cross-Border Settlement"
     },
     {
       "slug": "cryptocurrency",
@@ -115,28 +123,60 @@
       "label": "Digital Asset Risks"
     },
     {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    },
+    {
       "slug": "etsi-domain-virtual-economy",
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
     },
     {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "mastercard",
+      "label": "Mastercard"
     },
     {
       "slug": "micropayment",
       "label": "Micropayment"
     },
     {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
       "slug": "money",
       "label": "Money"
     },
     {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
+      "slug": "project-rosalind",
+      "label": "Project Rosalind"
     },
     {
       "slug": "r3-corda",

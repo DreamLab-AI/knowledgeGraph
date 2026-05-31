@@ -1,4 +1,5 @@
 public:: true
+alias:: Vote Escrow Model
 
 # Vote-Escrow Model
 ```json-ld

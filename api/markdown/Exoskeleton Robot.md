@@ -99,8 +99,8 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:wearable-robotics",
-      "label": "Wearable Robotics"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     }
   ],
   "relations": {

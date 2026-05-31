@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:9d81be709be7c21b21e3b19733710cee781f76f6453dd07f46792834ca748c8d",
+  "title": "Sensors",
+  "slug": "sensors",
+  "public": true,
+  "classIri": "urn:ngm:class:sensors",
+  "domain": "robotics",
+  "definition": "Sensors are devices that measure physical quantities and convert them into signals a robot or system can process, providing the perceptual input for estimation, control and decision making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
+    },
+    {
+      "slug": "sensor-networks",
+      "label": "Sensor Networks"
+    }
+  ]
+}

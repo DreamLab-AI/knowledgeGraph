@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:80390f20922896cd7aaa9b13937a59b5b877570c7ce300990aaf4a77fba6f11d",
+  "title": "Yearn",
+  "slug": "yearn",
+  "public": true,
+  "classIri": "urn:ngm:class:yearn",
+  "domain": "metaverse",
+  "definition": "Yearn is a decentralised finance protocol that automates the allocation of deposited assets across yield-generating strategies, abstracting away manual position management for users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    }
+  ]
+}

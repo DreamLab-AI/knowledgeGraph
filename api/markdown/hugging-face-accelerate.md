@@ -1,0 +1,4 @@
+- ### Definition
+  - Hugging Face Accelerate is a device-agnostic distributed-training library that relates to [[DeepSpeed]] and [[fast.ai]] in the ecosystem of tools that simplify scaling PyTorch workloads.
+- ### Content
+  - A thin wrapper prepares models, optimisers, and dataloaders, then dispatches them across the available accelerators with a single launch command. It integrates backends such as DeepSpeed and FSDP for memory-efficient large-model training, providing a uniform API so the same script runs from a laptop to a multi-node cluster.

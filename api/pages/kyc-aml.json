@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:kyc-aml",
+  "title": "KYC/AML",
+  "slug": "kyc-aml",
+  "public": true,
+  "classIri": "urn:ngm:class:kyc-aml",
+  "domain": "governance",
+  "definition": "KYC/AML refers to Know Your Customer and Anti-Money Laundering regulatory requirements that obligate financial institutions to verify customer identities and monitor transactions for illicit activity. KYC governs identity verification and risk profiling at onboarding, while AML covers ongoing monitoring, suspicious-activity reporting and sanctions screening. These regimes shape compliance for banks, exchanges and crypto-asset service providers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

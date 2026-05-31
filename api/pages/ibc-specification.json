@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:ibc-specification",
+  "title": "IBC Specification",
+  "slug": "ibc-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:ibc-specification",
+  "domain": "blockchain",
+  "definition": "The Inter-Blockchain Communication (IBC) specification is an open protocol standard for authenticated, ordered, and reliable message passing between independent distributed ledgers. Originating in the Cosmos ecosystem, it uses light-client verification and Merkle proofs so that two chains can trustlessly relay packets such as token transfers without a trusted intermediary. IBC underpins much of the modular and cross-chain interoperability landscape.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

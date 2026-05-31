@@ -86,6 +86,14 @@
     {
       "slug": "global-inequality",
       "label": "Global Inequality"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
     }
   ]
 }

@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:c6f41fce8f11f02876eb366d4a4828222b5dab253e3fef6ad933c8dad0f70702",
+  "title": "Northern Powerhouse",
+  "slug": "northern-powerhouse",
+  "public": true,
+  "classIri": "urn:ngm:class:northern-powerhouse",
+  "domain": "governance",
+  "definition": "A United Kingdom government policy initiative aimed at boosting economic growth across the cities and regions of northern England.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "leeds-digital-hub",
+      "label": "Leeds Digital Hub"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "liverpool-smart-cities",
+      "label": "Liverpool Smart Cities"
+    },
+    {
+      "slug": "manchester-tech-cluster",
+      "label": "Manchester Tech Cluster"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "newcastle-ai-and-health-innovation",
+      "label": "Newcastle AI & Health Innovation"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "north-england-innovation-corridor",
+      "label": "North England Innovation Corridor"
+    },
+    {
+      "slug": "sheffield-advanced-manufacturing",
+      "label": "Sheffield Advanced Manufacturing"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    }
+  ]
+}

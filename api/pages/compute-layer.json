@@ -205,6 +205,14 @@
       "label": "AI Game Agent"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
       "slug": "application-layer",
       "label": "Application Layer"
     },
@@ -223,6 +231,14 @@
     {
       "slug": "behavioural-feedback-loop",
       "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
     },
     {
       "slug": "deep-learning",
@@ -249,6 +265,10 @@
       "label": "Edge Network"
     },
     {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
       "slug": "experience-layer",
       "label": "Experience Layer"
     },
@@ -257,12 +277,20 @@
       "label": "Extended Reality (XR)"
     },
     {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
     {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
+    },
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
     },
     {
       "slug": "human-capture-and-recognition",
@@ -275,6 +303,10 @@
     {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
     },
     {
       "slug": "metaverse-architecture-stack",
@@ -337,8 +369,20 @@
       "label": "Robot Hardware"
     },
     {
+      "slug": "runtime-layer",
+      "label": "Runtime Layer"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
       "slug": "spatial-audio-scene-description",
       "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
     },
     {
       "slug": "virtual-lighting-model",

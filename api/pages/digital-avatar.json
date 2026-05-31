@@ -12,8 +12,8 @@
       "label": "Content and Assets"
     },
     {
-      "id": "urn:ngm:class:virtual-representation",
-      "label": "Virtual Representation"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,161 @@
+{
+  "id": "urn:visionflow:page:990fc9415832112b020217eed731bb846cc66213ca36698d622b9dc3c7017a8f",
+  "title": "NIST AI Risk Management Framework",
+  "slug": "nist-ai-risk-management-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-ai-risk-management-framework",
+  "domain": "standards",
+  "definition": "A NIST framework providing voluntary guidance for managing risks associated with artificial intelligence systems. It describes functions and practices for governing, mapping, measuring and managing AI risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "ai-security",
+      "label": "AI Security"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "ai-trust-risk-and-security-management",
+      "label": "AI Trust Risk and Security Management"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:gs1-epcis",
+  "title": "GS1 EPCIS",
+  "slug": "gs1-epcis",
+  "public": true,
+  "classIri": "urn:ngm:class:gs1-epcis",
+  "domain": "supply-chain",
+  "definition": "GS1 EPCIS (Electronic Product Code Information Services) is a global standard that defines a common data model and interface for capturing and sharing supply-chain visibility events, answering what, when, where, why, and how for product movements. It standardises event-based traceability across trading partners using GS1 identifiers. EPCIS is widely deployed in pharmaceuticals, food safety, and logistics to enable end-to-end provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    }
+  ]
+}

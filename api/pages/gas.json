@@ -117,6 +117,10 @@
       "label": "Blockchain Oracle"
     },
     {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
       "slug": "gas-optimization",
       "label": "Gas Optimization"
     },

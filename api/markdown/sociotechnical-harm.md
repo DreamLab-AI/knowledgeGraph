@@ -1,0 +1,4 @@
+- ### Definition
+  - Sociotechnical harm is an adverse effect arising from the interaction of a technical system with its social setting, including representational and allocative harms, that falls within [[AI Governance and Ethics]] concern and is not reducible to a technical defect.
+- ### Content
+  - Such harms tend to be diffuse, cumulative, and unequally borne, escaping detection by accuracy-focused metrics. [[Bias in Large Language Models]] is a prominent subtype, where stereotyped or skewed outputs propagate into downstream decisions; analysing these effects requires mapping the broader [[Sociotechnical System]] to identify who is harmed and through which social mechanisms.

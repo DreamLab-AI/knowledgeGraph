@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:ceef99ca7a20ce62800bc505eb2f0ffdda8ccb3115b521b869b36f85e5f3b9f9",
+  "title": "Model Serving",
+  "slug": "model-serving",
+  "public": true,
+  "classIri": "urn:ngm:class:model-serving",
+  "domain": "machine-learning",
+  "definition": "Model serving is the practice of making a trained machine learning model available to handle inference requests, typically behind an API. It covers loading models, routing requests and returning predictions under latency and throughput constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

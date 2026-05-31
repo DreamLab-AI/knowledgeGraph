@@ -1,0 +1,4 @@
+- ### Definition
+  - Hallucination reduction comprises methods to make model output factually grounded, enabled by approaches such as [[Retrieval-Augmented Generation (RAG)]] and central to the [[AI Grounded Domain]].
+- ### Content
+  - Practical pipelines combine retrieval of authoritative context, citation enforcement, self-consistency checks, and uncertainty-aware decoding so the model can decline rather than fabricate. Evaluation relies on faithfulness and attribution metrics, and the techniques trade some generative freedom for verifiable reliability.

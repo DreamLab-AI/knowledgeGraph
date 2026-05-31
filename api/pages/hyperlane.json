@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:d6b3efe47cfd41067a9759849196ae092573ff8b66d0c10a2e5b4b718af801b6",
+  "title": "Hyperlane",
+  "slug": "hyperlane",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperlane",
+  "domain": "blockchain",
+  "definition": "Hyperlane is an interoperability protocol that allows smart contracts on different blockchains to send messages and transfer assets between chains. It supports permissionless deployment to new chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "https-hyperlane-xyz",
+      "label": "https://hyperlane.xyz"
+    },
+    {
+      "slug": "https-docs-hyperlane-xyz",
+      "label": "https://docs.hyperlane.xyz"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

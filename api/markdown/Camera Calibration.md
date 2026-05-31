@@ -1,4 +1,5 @@
 public:: true
+alias:: CameraCalibration
 
 # camera calibration
 ```json-ld

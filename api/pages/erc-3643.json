@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:d5cf4bc54bec0b02b1f0729161adb22a62fd1b9b7312488ccfc6c4d41be461fe",
+  "title": "ERC-3643",
+  "slug": "erc-3643",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-3643",
+  "domain": "standards",
+  "definition": "ERC-3643 is an Ethereum token standard for permissioned tokens that embeds identity and compliance checks for the transfer of regulated assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:44831a868415a0f7fbc1fb570e5bd794f2689f1f95779dd051224854537cfac1",
+  "title": "Learning from Demonstration",
+  "slug": "learning-from-demonstration",
+  "public": true,
+  "classIri": "urn:ngm:class:learning-from-demonstration",
+  "domain": "machine-learning",
+  "definition": "Learning from demonstration is an approach in which an agent acquires behaviour by observing examples performed by a teacher. It is used to bootstrap policies in robotics and control without hand-specified reward functions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:offline-reinforcement-learning",
+        "label": "Offline Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    }
+  ]
+}

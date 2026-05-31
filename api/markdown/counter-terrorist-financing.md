@@ -1,0 +1,4 @@
+- ### Definition
+  - Counter-Terrorist Financing comprises the controls that obligated institutions apply to stop funds reaching terrorist actors. It is operationalised in crypto by mechanisms such as the [[Travel Rule]], which requires sharing of counterparty data on transfers.
+- ### Content
+  - CTF frameworks derive from FATF recommendations and national statutes, layering risk-based due diligence, sanctions screening, and suspicious-activity reporting. For virtual asset service providers, compliance increasingly depends on protocol-level data-sharing tools that attach identity attestations to on-chain or off-chain transfers without breaking settlement.

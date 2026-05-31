@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-catalog",
+  "title": "Data Catalog",
+  "slug": "data-catalog",
+  "public": true,
+  "classIri": "urn:ngm:class:data-catalog",
+  "domain": "data",
+  "definition": "A data catalog is a centralised, searchable inventory of an organisation's data assets enriched with metadata, descriptions, ownership and usage context. It enables discovery, governance and self-service analytics by indexing datasets, schemas and their relationships, often integrating glossaries and lineage. As a component of metadata management and data fabric architectures it is essential for finding and trusting data at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:data-fabric-architecture",
+        "label": "Data Fabric Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

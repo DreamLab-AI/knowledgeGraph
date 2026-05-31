@@ -1,4 +1,5 @@
 public:: true
+alias:: ImitationLearning
 
 # Imitation Learning
 ```json-ld
@@ -463,8 +464,8 @@ public:: true
       "label": "Learning from Demonstration"
     },
     {
-      "@id": "urn:ngm:class:policy-learning",
-      "label": "Policy Learning"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     }
   ],
   "relations": {
@@ -602,7 +603,7 @@ public:: true
         "label": "Transformer Policies"
       },
       {
-        "@id": "urn:ngm:class:vision-language-models",
+        "@id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Models"
       },
       {
@@ -640,7 +641,7 @@ public:: true
         "label": "Vision Language Action Models"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],

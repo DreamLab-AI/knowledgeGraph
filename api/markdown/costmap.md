@@ -1,0 +1,4 @@
+- ### Definition
+  - A costmap is a layered occupancy grid used by [[Navigation]] systems that assigns a cost to each cell, representing obstacles and the desirability of traversing space. It is a key data structure consumed by [[Nav2]] planners.
+- ### Content
+  - Costmaps are typically composed of layered plugins (static, obstacle, inflation) that combine map priors with live sensor readings. Inflation layers expand obstacle costs outward to keep the robot footprint clear, while global and local costmaps operate at different update rates and spatial extents for planning versus reactive control.

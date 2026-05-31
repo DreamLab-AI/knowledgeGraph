@@ -85,7 +85,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ]
@@ -117,8 +117,16 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "fooocus",
       "label": "Fooocus"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
@@ -147,6 +155,10 @@
     {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
     },
     {
       "slug": "transformer",

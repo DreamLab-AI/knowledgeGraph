@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-004-media-richness-theory
 
 # Media Richness Theory
 ```json-ld

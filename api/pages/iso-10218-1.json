@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:27d15ba412f5afc53c5a12749eeb9be0cdbb606067178449282ff523f6ebfedd",
+  "title": "ISO 10218-1",
+  "slug": "iso-10218-1",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-10218-1",
+  "domain": "standards",
+  "definition": "ISO 10218-1 specifies safety requirements for the design and construction of industrial robots.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    }
+  ]
+}

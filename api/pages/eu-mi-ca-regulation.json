@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:d442b18f16de79daa1aab157e10e40758f2728124b2b90f9e5a92f70c13ae5c0",
+  "title": "EU MiCA Regulation",
+  "slug": "eu-mi-ca-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-mi-ca-regulation",
+  "domain": "governance",
+  "definition": "The EU Markets in Crypto-Assets Regulation is a European Union framework establishing harmonised rules for crypto-asset issuance, trading and service provision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:crypto-regulation",
+      "label": "Crypto Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "crypto-regulation",
+      "label": "Crypto Regulation"
+    },
+    {
+      "slug": "https-eur-lex-europa-eu-legal-content-en-txt-uri-celex-3-a-32023-r-1114",
+      "label": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114"
+    },
+    {
+      "slug": "https-www-esma-europa-eu-esmas-activities-digital-finance-and-innovation-markets-crypto-assets-regulation-mica",
+      "label": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

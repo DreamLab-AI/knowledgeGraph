@@ -12,12 +12,12 @@
       "label": "Computing and Cloud"
     },
     {
-      "id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -709,6 +709,10 @@
       "label": "Bitcoin Mining"
     },
     {
+      "slug": "bittensor",
+      "label": "Bittensor"
+    },
+    {
       "slug": "collective-intelligence-system",
       "label": "Collective Intelligence System"
     },
@@ -721,8 +725,16 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
     },
     {
       "slug": "hardware-and-edge",
@@ -753,6 +765,14 @@
       "label": "Networking Layer"
     },
     {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
       "slug": "prime-intellect",
       "label": "Prime Intellect"
     },
@@ -763,6 +783,10 @@
     {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "vector-clocks",
+      "label": "Vector Clocks"
     }
   ]
 }

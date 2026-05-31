@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:intelligent-automation",
+  "title": "Intelligent Automation",
+  "slug": "intelligent-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligent-automation",
+  "domain": "ai",
+  "definition": "Intelligent automation is the combination of process automation with artificial intelligence so that workflows can handle unstructured inputs, make context-dependent decisions, and adapt over time. It extends rule-based robotic process automation with machine learning, natural language processing, and computer vision to automate tasks that previously required human judgement. It is widely applied to back-office operations, customer service, and document-intensive processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ]
+}

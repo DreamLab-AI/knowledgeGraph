@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:a740eb528a189c92d77fcead0dfe59e8563df9c6296a8e51b7a74b3823801c35",
+  "title": "APILayer",
+  "slug": "apilayer",
+  "public": true,
+  "classIri": "urn:ngm:class:apilayer",
+  "domain": "apilayer",
+  "definition": "The API Layer is the stratum that exposes a system's capabilities as callable, contractually defined endpoints. It sits above the application logic it fronts and below integration and interface strata that connect consumers. It contains endpoint definitions, request and response schemas, authentication hooks, and versioning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      },
+      {
+        "id": "urn:ngm:class:interface-layer",
+        "label": "Interface Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
+      "slug": "open-api-specification",
+      "label": "OpenAPI Specification"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

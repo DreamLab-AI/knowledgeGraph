@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:de54608fc86ee42965a6f03cff54657e90ee61e637b2b15c43deb7ef07ba448d",
+  "title": "ISDA",
+  "slug": "isda",
+  "public": true,
+  "classIri": "urn:ngm:class:isda",
+  "domain": "finance",
+  "definition": "ISDA, the International Swaps and Derivatives Association, is a trade body that produces standard documentation and definitions for over-the-counter derivatives markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

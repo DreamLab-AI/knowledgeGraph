@@ -1,0 +1,4 @@
+- ### Definition
+  - Intent recognition infers a user's goal from their input, mapping language to actionable intents. It closely relates to [[Intent Classification]] and is a core component within [[Chatbots]].
+- ### Content
+  - Classical pipelines pair intent classifiers with slot-filling for entity extraction; modern systems use transformer encoders or large language models that jointly interpret intent and context. Disambiguation and out-of-scope detection are key to robust dialogue management.

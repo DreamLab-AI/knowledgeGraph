@@ -180,7 +180,7 @@ public:: true
         "label": "Distributed Consensus"
       },
       {
-        "@id": "urn:ngm:class:synchronization-protocols",
+        "@id": "urn:ngm:class:synchronization-protocol",
         "label": "Synchronization Protocols"
       },
       {

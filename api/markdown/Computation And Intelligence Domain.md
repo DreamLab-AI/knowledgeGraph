@@ -1,4 +1,5 @@
 public:: true
+alias:: ComputationAndIntelligenceDomain
 
 # Computation And Intelligence Domain
 ```json-ld

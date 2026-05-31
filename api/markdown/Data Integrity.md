@@ -1,4 +1,5 @@
 public:: true
+alias:: DataIntegrity
 
 # data integrity
 ```json-ld

@@ -319,8 +319,8 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:commodity",
-      "label": "Commodity"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
       "@id": "urn:ngm:class:hard-money",
@@ -502,7 +502,7 @@ public:: true
         "label": "Asset Tokenization"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {

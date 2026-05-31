@@ -1,0 +1,4 @@
+- ### Definition
+  - FSDP (Fully Sharded Data Parallel) shards model state across GPUs to enable large-model training, and it implements sharded [[Checkpoints]] that save and restore each worker's parameter slice.
+- ### Content
+  - By sharding parameters, gradients, and optimizer state, FSDP cuts per-device memory roughly in proportion to the number of workers, enabling models with billions of parameters. It overlaps communication with computation via all-gather and reduce-scatter collectives. Checkpointing requires careful coordination so that sharded state can be reassembled or resharded across different cluster topologies.

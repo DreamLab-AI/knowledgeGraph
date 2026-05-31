@@ -1,4 +1,5 @@
 public:: true
+alias:: DecentralisedFinance
 
 # decentralised finance
 ```json-ld

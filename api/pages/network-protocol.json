@@ -75,12 +75,28 @@
   ],
   "backlinks": [
     {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
       "slug": "blockchain-protocol",
       "label": "Blockchain Protocol"
     },
     {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
       "slug": "content-delivery-network-cdn",
       "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
     },
     {
       "slug": "digital-twin-interop-protocol",
@@ -95,12 +111,28 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
+      "slug": "ethernet",
+      "label": "Ethernet"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
       "slug": "networking-layer",
       "label": "Networking Layer"
     },
     {
+      "slug": "packet-loss-recovery",
+      "label": "Packet Loss Recovery"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "tele-151-real-time-protocols",
+      "label": "TELE-151-real-time-protocols"
     },
     {
       "slug": "transaction-standard",
@@ -109,6 +141,10 @@
     {
       "slug": "virtual-world",
       "label": "Virtual World"
+    },
+    {
+      "slug": "wi-fi",
+      "label": "Wi-Fi"
     }
   ]
 }

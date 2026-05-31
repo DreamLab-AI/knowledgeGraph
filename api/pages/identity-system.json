@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:07ea506777480727b8d195283ab33ae91ba22affde7b9026eb16880c8c62e403",
+  "title": "Identity System",
+  "slug": "identity-system",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-system",
+  "domain": "general",
+  "definition": "An organised set of processes and technologies used to establish, manage and verify the identities of subjects within a defined context.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    }
+  ]
+}

@@ -144,6 +144,10 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

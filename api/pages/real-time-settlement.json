@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:real-time-settlement",
+  "title": "Real-Time Settlement",
+  "slug": "real-time-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-settlement",
+  "domain": "infrastructure",
+  "definition": "Real-time settlement is the immediate, final transfer of value between parties at the moment of transaction, eliminating the delay and counterparty risk of deferred net settlement cycles. In payments and securities it collapses the gap between trade and final exchange of funds. Distributed ledgers and central bank digital currencies enable atomic, near-instant settlement around the clock.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure-domain",
+        "label": "Financial Infrastructure Domain"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ]
+}

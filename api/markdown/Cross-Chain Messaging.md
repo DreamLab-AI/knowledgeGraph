@@ -1,4 +1,5 @@
 public:: true
+alias:: Cross Chain Messaging, cross-chain-messaging
 
 # Cross-Chain Messaging
 ```json-ld
@@ -111,8 +112,8 @@ public:: true
       "label": "Interoperability Protocol"
     },
     {
-      "@id": "urn:ngm:class:message-passing-system",
-      "label": "Message Passing System"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {

@@ -1,4 +1,5 @@
 public:: true
+alias:: Cross-Platform Digital Twins
 
 # Cross Platform Digital Twins
 ```json-ld

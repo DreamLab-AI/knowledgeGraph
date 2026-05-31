@@ -59,6 +59,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
       "slug": "cryptography",
       "label": "Cryptography"
     },
@@ -69,6 +77,18 @@
     {
       "slug": "hash-function",
       "label": "Hash Function"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
     },
     {
       "slug": "private-channels",
@@ -83,12 +103,24 @@
       "label": "Proprietary Video"
     },
     {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
     },
     {
       "slug": "zero-trust-architecture-zta",

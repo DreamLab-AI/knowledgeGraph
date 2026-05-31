@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:observation-model",
+  "title": "Observation Model",
+  "slug": "observation-model",
+  "public": true,
+  "classIri": "urn:ngm:class:observation-model",
+  "domain": "robotics",
+  "definition": "An observation model (or measurement model) is the probabilistic relationship that specifies the likelihood of a sensor measurement given the underlying state of a system. In recursive Bayesian estimation it provides the likelihood term used to correct a predicted state belief against incoming data. Its accuracy, including the noise characteristics it encodes, directly governs the quality of state estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robotics Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}

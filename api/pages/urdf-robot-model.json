@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:urdf-robot-model",
+  "title": "URDF Robot Model",
+  "slug": "urdf-robot-model",
+  "public": true,
+  "classIri": "urn:ngm:class:urdf-robot-model",
+  "domain": "robotics",
+  "definition": "A URDF (Unified Robot Description Format) robot model is an XML specification that describes a robot's kinematic and dynamic properties, including links, joints, inertial parameters, visual meshes and collision geometry. It is the canonical model format in the ROS ecosystem, consumed by simulators, motion planners and visualisation tools to reason about a robot's physical structure. URDF files enable consistent representation of articulated robots across simulation and control software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ]
+}

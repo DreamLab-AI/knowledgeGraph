@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:5bbce0385b9531f35bf6cf9d7dd6ec203839b357fa0e2b09341bb6999098c8cb",
+  "title": "Cross-Chain Bridges",
+  "slug": "cross-chain-bridges",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-bridges",
+  "domain": "blockchain",
+  "definition": "The category of protocols that move assets and data between distinct blockchains, treated collectively as connective infrastructure between ledgers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "cross-chain-asset-transfer",
+      "label": "Cross Chain Asset Transfer"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

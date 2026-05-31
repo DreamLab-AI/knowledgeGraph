@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:oecd-due-diligence-guidance",
+  "title": "OECD Due Diligence Guidance",
+  "slug": "oecd-due-diligence-guidance",
+  "public": true,
+  "classIri": "urn:ngm:class:oecd-due-diligence-guidance",
+  "domain": "supply-chain",
+  "definition": "The OECD Due Diligence Guidance is an internationally recognised framework that sets out how companies should identify, prevent, and mitigate human-rights and ethical risks in their supply chains, most notably for minerals from conflict-affected and high-risk areas. It defines a five-step, risk-based process for responsible sourcing and reporting. It serves as the reference standard underpinning many corporate and regulatory responsible-sourcing requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

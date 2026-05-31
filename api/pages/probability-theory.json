@@ -75,6 +75,10 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },
@@ -95,12 +99,60 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "functional-analysis",
+      "label": "Functional Analysis"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
     },
     {
       "slug": "particle-filter",
@@ -111,12 +163,36 @@
       "label": "Probabilistic Model"
     },
     {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     },
     {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
     },
     {
       "slug": "task-planning",

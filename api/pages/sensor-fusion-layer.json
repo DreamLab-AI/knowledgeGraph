@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:002538022d22b25aa97a09bcc639a49c4cd50ea305763e543c772c1f3a15b741",
+  "title": "Sensor Fusion Layer",
+  "slug": "sensor-fusion-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-fusion-layer",
+  "domain": "sensor-fusion",
+  "definition": "The Sensor Fusion Layer is the stratum that combines data from multiple sensors into a single, more reliable estimate of state. It sits above the Hardware sensing devices and below the Perception Layer that interprets the fused result. It contains alignment, filtering, and fusion algorithms together with uncertainty models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-layer",
+        "label": "Hardware Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception-layer",
+        "label": "Perception Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    }
+  ]
+}

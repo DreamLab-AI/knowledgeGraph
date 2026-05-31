@@ -68,8 +68,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "communication-layer",
+      "label": "Communication Layer"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
     },
     {
       "slug": "probabilistic-model",

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:8da2566e2828d0def182cc39ec33981a62f02cce08fdf8c110bfa315898c2ae4",
+  "title": "OSI Model",
+  "slug": "osi-model",
+  "public": true,
+  "classIri": "urn:ngm:class:osi-model",
+  "domain": "artificial-intelligence",
+  "definition": "The OSI model is a conceptual framework that divides network communication into seven layers, from the physical medium to the application. It provides a reference for describing how protocols interact across a network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "metaverse-architecture-stack",
+      "label": "Metaverse Architecture Stack"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

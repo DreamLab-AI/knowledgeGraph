@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:real-time-synchronisation",
+  "title": "Real-Time Synchronisation",
+  "slug": "real-time-synchronisation",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-synchronisation",
+  "domain": "infrastructure",
+  "definition": "Real-time synchronisation is the continuous propagation of state changes across distributed participants so that all observers converge on a consistent, up-to-date view with minimal delay. It combines low-latency transport, conflict resolution, and clock or causal ordering to keep replicas aligned. It is essential for collaborative tools, multiplayer environments, and digital-twin mirroring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration-domain",
+        "label": "Distributed Collaboration Domain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "Distributed Collaboration Domain"
+    }
+  ]
+}

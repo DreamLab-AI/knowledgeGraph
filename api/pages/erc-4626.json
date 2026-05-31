@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:c343ffb8c227d44df2e44b793eca89afbcc3deb0e66188efe388e912606d577e",
+  "title": "ERC-4626",
+  "slug": "erc-4626",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-4626",
+  "domain": "standards",
+  "definition": "ERC-4626 is an Ethereum standard defining a common interface for tokenised yield-bearing vaults built on the ERC-20 token standard.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

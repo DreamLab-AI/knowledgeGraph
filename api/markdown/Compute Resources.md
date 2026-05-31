@@ -1,4 +1,5 @@
 public:: true
+alias:: ComputeResources
 
 # Compute Resources
 ```json-ld

@@ -87,7 +87,7 @@ public:: true
       "label": "Governance and Safety"
     },
     {
-      "@id": "urn:ngm:class:environmental-kpi",
+      "@id": "urn:ngm:class:environmental-k-p-i",
       "label": "Environmental KPI"
     }
   ],

@@ -1,0 +1,4 @@
+- ### Definition
+  - The error signal is the difference between setpoint and measured output that drives a [[Control System]]; its rate of change is required by [[Derivative Control]] and it is a core part of any [[Feedback Loop]].
+- ### Content
+  - Controllers consume the error signal through proportional, integral, and derivative paths to compute corrective output. Its time history determines transient response and steady-state error, making it the central variable of closed-loop control.

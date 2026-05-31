@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0485-travel-rule
 
 # Travel Rule
 ```json-ld

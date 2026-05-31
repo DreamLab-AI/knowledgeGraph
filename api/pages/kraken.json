@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:a979bfe33b0f6fa86010681ecec0595ece8735db945b9e04cf8dc9cb1438179f",
+  "title": "Kraken",
+  "slug": "kraken",
+  "public": true,
+  "classIri": "urn:ngm:class:kraken",
+  "domain": "kraken",
+  "definition": "Kraken is a centralised cryptocurrency exchange founded in 2011 and headquartered in the United States. It provides spot trading, margin and futures trading, staking and custody services across a wide range of digital assets and fiat currencies. It is among the longer-established exchanges and is noted for its emphasis on regulatory compliance, security and the provision of fiat on-ramps in multiple jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:crypto-trading",
+        "label": "Crypto Trading"
+      },
+      {
+        "id": "urn:ngm:class:fiat-on-ramp",
+        "label": "Fiat On-Ramp"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
+      "slug": "crypto-trading",
+      "label": "Crypto Trading"
+    },
+    {
+      "slug": "fiat-on-ramp",
+      "label": "Fiat On-Ramp"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:formal-specification",
+  "title": "Formal Specification",
+  "slug": "formal-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:formal-specification",
+  "domain": "infrastructure",
+  "definition": "A formal specification is a precise, mathematically grounded description of the intended behaviour or structure of a system, written in a language with well-defined syntax and semantics. It allows properties of the system to be stated unambiguously and reasoned about or verified mechanically. Formal specifications underpin formal methods, model checking, and the construction of provably correct software and ontologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods-domain",
+        "label": "Formal Methods Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    }
+  ]
+}

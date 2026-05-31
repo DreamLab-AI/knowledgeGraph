@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:time-of-flight-sensor",
+  "title": "Time-of-Flight Sensor",
+  "slug": "time-of-flight-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:time-of-flight-sensor",
+  "domain": "robotics",
+  "definition": "A time-of-flight (ToF) sensor measures distance by emitting a light signal, typically infrared, and timing how long it takes to reflect back from a surface, yielding a per-pixel depth map. Because it directly measures travel time, it produces depth in real time without the baseline geometry needed by stereo cameras. ToF sensors are widely used for hand and gesture tracking, scene reconstruction, and mixed-reality depth sensing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

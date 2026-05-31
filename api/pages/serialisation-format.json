@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:serialisation-format",
+  "title": "Serialisation Format",
+  "slug": "serialisation-format",
+  "public": true,
+  "classIri": "urn:ngm:class:serialisation-format",
+  "domain": "infrastructure",
+  "definition": "A serialisation format is a specification for encoding in-memory data structures into a byte or text stream that can be persisted or transmitted and later reconstructed. Formats differ in schema rigidity, compactness, speed, and cross-language support, spanning text formats like JSON and YAML and binary formats like Protocol Buffers, Avro, and Parquet. It is fundamental to checkpointing, messaging, and distributed computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

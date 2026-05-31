@@ -1,4 +1,5 @@
 public:: true
+alias:: Open AI
 
 # OpenAI
 ```json-ld

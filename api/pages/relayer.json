@@ -92,6 +92,10 @@
       "label": "Cross-Platform Interoperability"
     },
     {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
       "slug": "light-client",
       "label": "Light Client"
     }

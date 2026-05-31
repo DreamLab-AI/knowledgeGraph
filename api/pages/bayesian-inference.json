@@ -59,20 +59,40 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
     },
     {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },
     {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
     },
     {
       "slug": "risk-assessment",
@@ -85,6 +105,18 @@
     {
       "slug": "sampling",
       "label": "Sampling"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
     },
     {
       "slug": "stochastic-process",

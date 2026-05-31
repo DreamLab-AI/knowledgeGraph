@@ -198,6 +198,10 @@
     {
       "slug": "centralized-swarm-control",
       "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
     }
   ]
 }

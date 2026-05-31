@@ -1,0 +1,4 @@
+- ### Definition
+  - Extended Producer Responsibility shifts the cost and management of post-consumer waste onto manufacturers, forming a core regulatory instrument of the [[Circular Economy]] and broader [[Sustainability]] policy. It operates as a form of [[Regulatory Compliance]] tied to product lifecycle obligations.
+- ### Content
+  - EPR schemes commonly cover packaging, batteries, vehicles, and electronic equipment, requiring producers to fund collection and recycling infrastructure or join collective compliance organisations. The economic signal is designed to drive eco-design, but effectiveness depends on enforcement, accurate fee modulation, and prevention of free-riding by non-registered producers.

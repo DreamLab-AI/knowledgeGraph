@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:a8d8d259e1c46824f654bae3b118c45547d6802094636a88cdc4f77f2d7ce30b",
+  "title": "iProov",
+  "slug": "i-proov",
+  "public": true,
+  "classIri": "urn:ngm:class:i-proov",
+  "domain": "identity",
+  "definition": "iProov is a British company providing biometric face verification used for remote identity assurance. Its technology checks that a genuine, live person is present during authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification-system",
+        "label": "Identity Verification System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    }
+  ]
+}

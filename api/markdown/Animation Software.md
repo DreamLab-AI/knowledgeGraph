@@ -83,8 +83,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:digital-content-creation-tools",
-      "label": "Digital Content Creation Tools"
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content And Assets"
     }
   ],
   "relations": {

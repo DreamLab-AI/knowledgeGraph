@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:workflow-orchestration",
+  "title": "Workflow Orchestration",
+  "slug": "workflow-orchestration",
+  "public": true,
+  "classIri": "urn:ngm:class:workflow-orchestration",
+  "domain": "ai",
+  "definition": "Workflow orchestration is the coordination of multiple interdependent tasks, services, or agents into a coherent end-to-end process, managing ordering, data flow, conditional branching, error handling, and resource allocation. It centralises control logic so that distributed components execute in the correct sequence with the right inputs. In agentic AI systems, orchestration governs how tool calls, sub-agents, and model invocations are sequenced to accomplish complex goals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-systems-domain",
+        "label": "Agentic Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    }
+  ]
+}

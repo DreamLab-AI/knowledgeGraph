@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:23ee7a6b291bf5709f4fbc9dfd549f726606ec45a53dff58e31f980b5569985a",
+  "title": "FLP Impossibility",
+  "slug": "flp-impossibility",
+  "public": true,
+  "classIri": "urn:ngm:class:flp-impossibility",
+  "domain": "distributed-systems",
+  "definition": "A foundational result in distributed computing showing that no deterministic consensus protocol can guarantee agreement in an asynchronous system if even a single process may fail.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-consensus",
+      "label": "Distributed Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-consensus",
+      "label": "Distributed Consensus"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

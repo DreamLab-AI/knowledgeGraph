@@ -1,0 +1,4 @@
+- ### Definition
+  - A query strategy decides which unlabelled samples an active learner should request labels for to maximise information gain. It is a core part of [[Active Learning]] and of the broader [[Learning Algorithm]] design space.
+- ### Content
+  - Uncertainty sampling selects instances the model is least confident about; query-by-committee picks points of maximal disagreement among an ensemble; expected-error-reduction estimates downstream impact. The choice trades off computational cost against labelling efficiency, and poorly chosen strategies can introduce sampling bias that degrades generalisation.

@@ -103,8 +103,24 @@
       "label": "Digital Asset Ecosystem"
     },
     {
+      "slug": "digital-divide",
+      "label": "Digital Divide"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
     },
     {
       "slug": "virtual-economy-domain",

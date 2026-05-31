@@ -175,8 +175,8 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:nonholonomic-robot",
-      "label": "Nonholonomic Robot"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     },
     {
       "@id": "urn:ngm:class:wheeled-robot",
@@ -212,7 +212,7 @@ public:: true
         "label": "Independent Wheel Motors"
       },
       {
-        "@id": "urn:ngm:class:motor-drivers",
+        "@id": "urn:ngm:class:motor-driver",
         "label": "Motor Drivers"
       },
       {

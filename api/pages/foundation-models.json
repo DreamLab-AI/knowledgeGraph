@@ -3,11 +3,16 @@
   "title": "Foundation Models",
   "slug": "foundation-models",
   "public": true,
-  "classIri": "urn:ngm:individual:foundation-models",
+  "classIri": "urn:ngm:class:foundation-models",
   "domain": "ai",
   "definition": "Foundation models are large-scale neural networks trained on broad, diverse datasets via self-supervised learning that acquire general-purpose representations transferable to a wide range of downstream tasks. They are characterised by massive parameter counts, emergent capabilities not explicitly trained for, and the ability to be fine-tuned or prompted for specialised applications. Prominent examples include GPT-4, BERT, CLIP, and Stable Diffusion, spanning language, vision, and multimodal domains. Their scale and generality make them qualitatively distinct from narrow task-specific models.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -115,6 +120,10 @@
       "label": "Death of the Internet"
     },
     {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
@@ -153,6 +162,10 @@
     {
       "slug": "model-training",
       "label": "Model Training"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
     },
     {
       "slug": "music-and-audio",

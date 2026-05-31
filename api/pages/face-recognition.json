@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:8e1f0581ccfe1e05f9749fe4a2136c5f74b6bf3d22c4093db3b04abe8b263c5a",
+  "title": "Face Recognition",
+  "slug": "face-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:face-recognition",
+  "domain": "computer-vision",
+  "definition": "A biometric technique that identifies or verifies a person from an image or video of their face by comparing facial features against stored templates. It is a subfield of computer vision and biometrics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    }
+  ]
+}

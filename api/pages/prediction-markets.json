@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:fccd79dff4d2c345f0c7f577ecf16cabd29458eca46797f1b8ffff247a6896ab",
+  "title": "Prediction Markets",
+  "slug": "prediction-markets",
+  "public": true,
+  "classIri": "urn:ngm:class:prediction-markets",
+  "domain": "metaverse",
+  "definition": "Prediction markets are exchanges where participants trade contracts whose payoff depends on the outcome of future events, so the market price reflects an aggregated probability estimate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

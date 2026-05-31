@@ -359,7 +359,7 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:peer-to-peer-protocol",
+      "@id": "urn:ngm:class:peerto-peer-protocol",
       "label": "Peer-to-Peer Protocol"
     },
     {

@@ -76,8 +76,20 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
     },
     {
       "slug": "kalman-filter",
@@ -98,6 +110,10 @@
     {
       "slug": "particle-filter",
       "label": "Particle Filter"
+    },
+    {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
     },
     {
       "slug": "proprioceptive-sensor",

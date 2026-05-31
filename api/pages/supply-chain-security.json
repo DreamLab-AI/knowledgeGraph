@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:supply-chain-security",
+  "title": "Supply Chain Security",
+  "slug": "supply-chain-security",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-security",
+  "domain": "security",
+  "definition": "Supply chain security is the practice of protecting the integrity, provenance, and trustworthiness of the components, dependencies, and processes that compose a product, with particular emphasis on software supply chains. It addresses threats such as compromised dependencies, malicious build tooling, and tampered artefacts through measures like signed releases, software bills of materials, and reproducible builds. It has become a critical discipline as systems increasingly assemble third-party code and hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

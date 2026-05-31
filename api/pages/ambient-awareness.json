@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ambient-awareness",
+  "title": "Ambient Awareness",
+  "slug": "ambient-awareness",
+  "public": true,
+  "classIri": "urn:ngm:class:ambient-awareness",
+  "domain": "metaverse",
+  "definition": "Ambient Awareness is the peripheral, low-effort sense of others' presence, activity, and availability that collaborative systems convey through subtle continuous signals rather than explicit notifications. It is realized through presence indicators, status cues, activity streams, and spatial audio in shared digital workspaces. By keeping collaborators loosely informed of each other's context, it supports coordination and a feeling of co-location in distributed teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    }
+  ]
+}

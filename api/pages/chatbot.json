@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:52c8ebcab5ad36b26666c86d46b18bb997945df4da5171307dd829ba7084a906",
+  "title": "Chatbot",
+  "slug": "chatbot",
+  "public": true,
+  "classIri": "urn:ngm:class:chatbot",
+  "domain": "artificial-intelligence",
+  "definition": "A software application that conducts a conversation with users through text or speech, increasingly built on large language models to generate natural-language responses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    }
+  ]
+}

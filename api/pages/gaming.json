@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:df0e67b478dd30079cb4337ddb51d25164423d2799aaa86292aeef9876aea201",
+  "title": "gaming",
+  "slug": "gaming",
+  "public": true,
+  "classIri": "urn:ngm:class:gaming",
+  "domain": "general",
+  "definition": "Gaming is the activity of playing electronic games and the industry that produces them. It spans hardware, software, online services, and competitive play.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-development",
+      "label": "Game Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-fi",
+        "label": "GameFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-video-game",
+      "label": "https://en.wikipedia.org/wiki/Video_game"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-video-game-industry",
+      "label": "https://en.wikipedia.org/wiki/Video_game_industry"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

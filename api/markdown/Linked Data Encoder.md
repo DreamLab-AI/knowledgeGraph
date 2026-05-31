@@ -200,7 +200,7 @@ public:: true
         "label": "JSON-LD 1.1 Standard"
       },
       {
-        "@id": "urn:ngm:class:w3-c-vocabulary",
+        "@id": "urn:ngm:class:w-3-c-vocabulary",
         "label": "W3C Vocabulary"
       },
       {

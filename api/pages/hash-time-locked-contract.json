@@ -79,8 +79,16 @@
       "label": "Cross-Chain Bridge"
     },
     {
+      "slug": "lightning-network-layer",
+      "label": "Lightning Network Layer"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "timelock-contract",
+      "label": "Timelock Contract"
     }
   ]
 }

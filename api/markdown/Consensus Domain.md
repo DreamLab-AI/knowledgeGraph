@@ -1,4 +1,5 @@
 public:: true
+alias:: ConsensusDomain
 
 # Consensus Domain
 ```json-ld

@@ -164,7 +164,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:interoperability-protocols",
+        "@id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocols"
       },
       {

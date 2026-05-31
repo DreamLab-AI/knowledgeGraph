@@ -12,8 +12,8 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:supervisory-technology",
-      "label": "Supervisory Technology"
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "id": "urn:ngm:class:financial-services",
@@ -567,6 +567,10 @@
     {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
     },
     {
       "slug": "domain-ontology",

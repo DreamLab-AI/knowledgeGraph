@@ -71,6 +71,10 @@
       "label": "Identity Graph"
     },
     {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
       "slug": "reputation-data",
       "label": "Reputation Data"
     },

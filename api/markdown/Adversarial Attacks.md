@@ -83,8 +83,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:ai-security-threats",
-      "label": "AI Security Threats"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     }
   ],
   "relations": {

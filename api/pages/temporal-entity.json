@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:temporal-entity",
+  "title": "Temporal Entity",
+  "slug": "temporal-entity",
+  "public": true,
+  "classIri": "urn:ngm:class:temporal-entity",
+  "domain": "data",
+  "definition": "A temporal entity is an ontological category for anything that exists in or is defined by time, such as an instant, an interval, an event, or a process. In knowledge representation it serves as a shared superclass that anchors time-bearing concepts so they can be related by ordering, duration, and containment. The notion follows established time ontologies like the W3C OWL-Time vocabulary.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:process",
+        "label": "Process"
+      },
+      {
+        "id": "urn:ngm:class:event",
+        "label": "Event"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "event",
+      "label": "Event"
+    },
+    {
+      "slug": "process",
+      "label": "Process"
+    }
+  ]
+}

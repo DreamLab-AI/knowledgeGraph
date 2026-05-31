@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:visual-perception",
+  "title": "Visual Perception",
+  "slug": "visual-perception",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-perception",
+  "domain": "robotics",
+  "definition": "Visual perception is a robot or agent's capability to interpret its environment from camera and visual sensor data, extracting the objects, surfaces, motion and spatial structure needed to act. It transforms raw imagery into actionable scene understanding that drives behaviours such as gaze control, manipulation and navigation. Visual perception is a core perceptual modality for embodied robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaze-control",
+        "label": "Gaze Control"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    }
+  ]
+}

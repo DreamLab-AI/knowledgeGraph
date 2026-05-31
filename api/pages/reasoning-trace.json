@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:reasoning-trace",
+  "title": "Reasoning Trace",
+  "slug": "reasoning-trace",
+  "public": true,
+  "classIri": "urn:ngm:class:reasoning-trace",
+  "domain": "ai",
+  "definition": "A reasoning trace is the recorded sequence of intermediate thoughts, tool calls, and decisions a model produces while solving a task, distinct from its final output. It serves as both a working scratchpad that improves accuracy and an audit artefact for inspecting how an agent reached a conclusion. Traces underpin debugging, evaluation, and self-correction in agentic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

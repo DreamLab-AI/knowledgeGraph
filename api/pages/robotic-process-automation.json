@@ -68,6 +68,14 @@
       "label": "Agents"
     },
     {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },

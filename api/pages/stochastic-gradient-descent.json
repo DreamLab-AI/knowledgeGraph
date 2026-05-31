@@ -60,6 +60,10 @@
   ],
   "backlinks": [
     {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
     },

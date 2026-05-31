@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:21971f3947477832dc1f0d764d46aa62a02944929bd920d938cad9b6d760327b",
+  "title": "MediLedger",
+  "slug": "medi-ledger",
+  "public": true,
+  "classIri": "urn:ngm:class:medi-ledger",
+  "domain": "blockchain",
+  "definition": "A permissioned blockchain network for the pharmaceutical industry that records product provenance and verifies the legitimacy of drug transactions between trading partners. It was built to support compliance with United States drug supply chain security regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pharmaceutical-supply-chain",
+      "label": "Pharmaceutical Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "slug": "gs-1",
+      "label": "GS1"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "pharmaceutical-supply-chain",
+      "label": "Pharmaceutical Supply Chain"
+    },
+    {
+      "slug": "https-www-mediledger-com",
+      "label": "https://www.mediledger.com/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:transformative-ai",
+  "title": "Transformative AI",
+  "slug": "transformative-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:transformative-ai",
+  "domain": "ai",
+  "definition": "Transformative AI refers to artificial intelligence advanced enough to precipitate change on the scale of the agricultural or industrial revolutions, fundamentally reshaping the economy, society, and the trajectory of civilisation. The term, used prominently in AI strategy and safety research, deliberately focuses on societal impact rather than on a specific architecture or a threshold of human-level cognition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ]
+}

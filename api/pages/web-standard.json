@@ -35,5 +35,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    }
+  ]
 }

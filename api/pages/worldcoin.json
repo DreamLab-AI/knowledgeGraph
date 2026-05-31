@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:234191a67f1725f08278562ec10d0c0395bf07511899c7dccaf43a8b556d12e2",
+  "title": "Worldcoin",
+  "slug": "worldcoin",
+  "public": true,
+  "classIri": "urn:ngm:class:worldcoin",
+  "domain": "general",
+  "definition": "A digital identity and cryptocurrency project that uses iris biometrics to issue a unique identifier intended to distinguish individual humans online.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

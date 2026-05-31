@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:regulatory-sandbox",
+  "title": "Regulatory Sandbox",
+  "slug": "regulatory-sandbox",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-sandbox",
+  "domain": "governance",
+  "definition": "A regulatory sandbox is a supervised testing environment in which firms can trial innovative products, services, or business models with real customers under temporary regulatory relief and close oversight. It lets regulators observe emerging technology and firms validate compliance before full-scale launch. Sandboxes are a common policy tool for fintech, blockchain, and other convergent technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia-Pacific Regulation"
+      },
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

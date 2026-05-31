@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:caf093f3e42aba22123f02e29363cae01d81d847ca2d308cff33ca53b9235955",
+  "title": "LSTM",
+  "slug": "lstm",
+  "public": true,
+  "classIri": "urn:ngm:class:lstm",
+  "domain": "deep-learning",
+  "definition": "Long short-term memory: a recurrent neural network architecture that uses gating mechanisms and a memory cell to learn long-range dependencies and mitigate the vanishing gradient problem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

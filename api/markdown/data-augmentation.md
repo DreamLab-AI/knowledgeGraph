@@ -1,0 +1,4 @@
+- ### Definition
+  - Data augmentation enlarges a training set with label-preserving transformations or generated samples, often using a [[Synthetic Data Generator]] or [[Generative Adversarial Networks]] to improve model generalisation.
+- ### Content
+  - Classic augmentation applies transforms such as rotation, cropping, colour jitter and noise that preserve semantic labels, while generative approaches synthesise entirely new plausible examples. By exposing models to greater variation, augmentation reduces overfitting and improves performance on limited or imbalanced datasets.

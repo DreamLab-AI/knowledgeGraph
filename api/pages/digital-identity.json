@@ -99,6 +99,10 @@
   ],
   "backlinks": [
     {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
       "slug": "cbdcs",
       "label": "CBDCs"
     },
@@ -123,8 +127,24 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "did-method",
+      "label": "DID Method"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
     },
     {
       "slug": "digital-avatar",
@@ -171,6 +191,10 @@
       "label": "Identity Provider"
     },
     {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
     },
@@ -179,12 +203,20 @@
       "label": "Private Blockchain"
     },
     {
+      "slug": "ready-player-me",
+      "label": "Ready Player Me"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
     },
     {
       "slug": "reputation-system",
       "label": "Reputation System"
+    },
+    {
+      "slug": "sd-jwt-vc",
+      "label": "SD-JWT VC"
     },
     {
       "slug": "self-sovereign-identity",
@@ -239,8 +271,20 @@
       "label": "Web3"
     },
     {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
       "slug": "zero-knowledge",
       "label": "Zero Knowledge"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
     }
   ]
 }

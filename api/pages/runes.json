@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:3545c9d3ad395efbb5fb21d0cfa7b6ae950fe5ef9bd25561ce870a561ce2cd75",
+  "title": "Runes",
+  "slug": "runes",
+  "public": true,
+  "classIri": "urn:ngm:class:runes",
+  "domain": "blockchain",
+  "definition": "Runes is a protocol for issuing fungible tokens directly on the Bitcoin blockchain, using the transaction model and recorded in the witness data. It launched at the Bitcoin halving in April 2024.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "bitcoin-ordinals",
+      "label": "Bitcoin Ordinals"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    }
+  ]
+}

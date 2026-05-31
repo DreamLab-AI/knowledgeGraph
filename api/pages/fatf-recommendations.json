@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:ab23fc7695fe1e306ce76cd6a688e162604605ce64d601a0c8f3d35990f2e03b",
+  "title": "FATF Recommendations",
+  "slug": "fatf-recommendations",
+  "public": true,
+  "classIri": "urn:ngm:class:fatf-recommendations",
+  "domain": "governance",
+  "definition": "The FATF Recommendations are international standards on combating money laundering, terrorist financing and proliferation financing issued by the Financial Action Task Force.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "https-www-fatf-gafi-org-en-publications-fatfrecommendations-fatf-recommendations-html",
+      "label": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+    },
+    {
+      "slug": "https-www-fatf-gafi-org",
+      "label": "https://www.fatf-gafi.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

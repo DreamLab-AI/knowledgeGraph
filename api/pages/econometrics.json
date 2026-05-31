@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:econometrics",
+  "title": "Econometrics",
+  "slug": "econometrics",
+  "public": true,
+  "classIri": "urn:ngm:class:econometrics",
+  "domain": "data",
+  "definition": "Econometrics is the application of statistical and mathematical methods to economic data in order to test hypotheses, estimate relationships, and forecast economic phenomena. It combines economic theory with regression analysis, time-series modelling, and causal-inference techniques to quantify effects such as elasticities and policy impacts. Econometrics is foundational to empirical economics and increasingly overlaps with machine learning for prediction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time-Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:62b621f2d78c491bf01f38f3eb8341cdfa631ce11631909f430c3c50f88ae53a",
+  "title": "Quantexa",
+  "slug": "quantexa",
+  "public": true,
+  "classIri": "urn:ngm:class:quantexa",
+  "domain": "artificial-intelligence",
+  "definition": "Quantexa is a company that provides data analytics software for connecting and analysing data to support decision intelligence, including fraud and financial crime detection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

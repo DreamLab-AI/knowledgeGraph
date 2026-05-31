@@ -359,12 +359,12 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:digital-asset-creation",
-      "label": "Digital Asset Creation"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:provenance-recording",
-      "label": "Provenance Recording"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     }
   ],
   "relations": {
@@ -374,11 +374,11 @@ public:: true
         "label": "Arweave"
       },
       {
-        "@id": "urn:ngm:class:creator-royalty",
+        "@id": "urn:ngm:class:creator-royalties",
         "label": "Creator Royalty"
       },
       {
-        "@id": "urn:ngm:class:erc-1155-standard",
+        "@id": "urn:ngm:class:erc1155-standard",
         "label": "ERC-1155 Standard"
       },
       {
@@ -454,7 +454,7 @@ public:: true
         "label": "Real World Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:soulbound-token",
+        "@id": "urn:ngm:class:soulbound-tokens",
         "label": "Soulbound Token"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "EIP-712 Typed Signing"
       },
       {
-        "@id": "urn:ngm:class:erc-1155-standard",
+        "@id": "urn:ngm:class:erc1155-standard",
         "label": "ERC-1155 Standard"
       },
       {

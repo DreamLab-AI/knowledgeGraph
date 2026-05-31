@@ -54,6 +54,10 @@
   ],
   "backlinks": [
     {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
       "slug": "digital-citizenship",
       "label": "Digital Citizenship"
     },
@@ -74,8 +78,16 @@
       "label": "Infrastructure Architecture"
     },
     {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
       "slug": "tourism-metaverse",
       "label": "Tourism Metaverse"
+    },
+    {
+      "slug": "vrchat",
+      "label": "VRChat"
     },
     {
       "slug": "virtual-world",

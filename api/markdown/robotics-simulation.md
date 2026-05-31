@@ -1,0 +1,4 @@
+- ### Definition
+  - Robotics simulation builds high-fidelity virtual worlds for robot development and synthetic data, supported by [[Universal Scene Description]] and [[Procedural and Hybrid 4D]] scene techniques.
+- ### Content
+  - Interoperable scene formats let environments, robots, and assets be composed and reused across simulators. Combined with physically based rendering and procedural generation, this produces diverse, photorealistic scenes that improve sim-to-real transfer.

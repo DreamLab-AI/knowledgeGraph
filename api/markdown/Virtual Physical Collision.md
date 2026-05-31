@@ -1,4 +1,5 @@
 public:: true
+alias:: Virtual-Physical Collision
 
 # Virtual Physical Collision
 ```json-ld

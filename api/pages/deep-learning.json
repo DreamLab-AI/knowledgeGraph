@@ -289,6 +289,10 @@
       "label": "AI User"
     },
     {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
       "slug": "ai-art-categorization",
       "label": "Ai Art Categorization"
     },
@@ -301,12 +305,20 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
     },
     {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
     },
     {
       "slug": "bias",
@@ -329,6 +341,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
       "slug": "deepfakes",
       "label": "Deepfakes"
     },
@@ -337,8 +353,16 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
     },
     {
       "slug": "gaussian-splatting",
@@ -351,6 +375,10 @@
     {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
     },
     {
       "slug": "history-and-path-to-agi",
@@ -377,8 +405,20 @@
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "keras",
+      "label": "Keras"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
     },
     {
       "slug": "lens-and-camera-calibration",
@@ -401,8 +441,24 @@
       "label": "Music and Audio"
     },
     {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
     },
     {
       "slug": "optical-sensor-array",
@@ -437,6 +493,14 @@
       "label": "Proprietary Image Generation"
     },
     {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
       "slug": "robot-control",
       "label": "Robot Control"
     },
@@ -459,6 +523,10 @@
     {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
     },
     {
       "slug": "stochastic-process",
@@ -487,6 +555,10 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
     }
   ]
 }

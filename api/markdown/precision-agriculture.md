@@ -1,0 +1,4 @@
+- ### Definition
+  - Precision agriculture manages farms at fine spatial resolution using sensing and analytics to apply inputs only where needed. It is enabled by [[IoT Sensor Network]] deployments and supported by [[Ground Robot]] platforms for monitoring and intervention.
+- ### Content
+  - The approach fuses soil-moisture and weather sensors, multispectral imagery, and GPS-guided machinery to build per-zone prescriptions. Autonomous and semi-autonomous robots perform targeted weeding, spraying, planting, and harvesting, while machine-learning models predict yields and detect disease early, reducing chemical use and environmental impact.

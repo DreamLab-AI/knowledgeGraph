@@ -1,0 +1,4 @@
+- ### Definition
+  - A control signal is the command a controller applies to a system, for example the drive command sent to an [[Electric Actuator]] or the conditioning input used by [[ControlNet and Similar Spatial Conditioning Systems]].
+- ### Content
+  - In electromechanical control the signal is conditioned, amplified, and converted into actuator force or motion, with bandwidth and noise determining achievable performance. The term generalises to any directive input that steers a process toward a target output.

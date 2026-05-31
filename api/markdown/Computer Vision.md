@@ -1,4 +1,5 @@
 public:: true
+alias:: ComputerVision
 
 # Computer Vision
 ```json-ld

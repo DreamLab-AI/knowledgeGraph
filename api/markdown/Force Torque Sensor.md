@@ -1,4 +1,5 @@
 public:: true
+alias:: Force-Torque Sensor, Force/Torque Sensor
 
 # Force Torque Sensor
 ```json-ld

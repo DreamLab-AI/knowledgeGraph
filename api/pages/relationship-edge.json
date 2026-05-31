@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:relationship-edge",
+  "title": "Relationship Edge",
+  "slug": "relationship-edge",
+  "public": true,
+  "classIri": "urn:ngm:class:relationship-edge",
+  "domain": "data",
+  "definition": "A relationship edge is a directed or undirected connection in a graph that represents a typed association between two entity nodes, often carrying a label and properties. In knowledge and identity graphs, edges encode facts such as ownership, membership, or similarity that give the graph its semantic structure. Edge type and weight determine how the graph can be queried, traversed, and reasoned over.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:identity-graph",
+        "label": "Identity Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ]
+}

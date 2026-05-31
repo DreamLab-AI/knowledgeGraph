@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:e8a47e5cb7d553bae5df0a9ae1368c70e34c1557150a2d4840756a074426c06d",
+  "title": "Revolut",
+  "slug": "revolut",
+  "public": true,
+  "classIri": "urn:ngm:class:revolut",
+  "domain": "fintech",
+  "definition": "Revolut is a British financial technology company offering banking, payments, currency exchange and investment services through a mobile app. It holds banking licences in several jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

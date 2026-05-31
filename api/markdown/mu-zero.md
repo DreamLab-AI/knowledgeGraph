@@ -1,0 +1,4 @@
+- ### Definition
+  - MuZero is a model-based RL algorithm that masters games without being told their rules, learning a latent model and planning with MCTS. It is a [[Learning Algorithm]] notable in [[AI in Games]].
+- ### Content
+  - Rather than predicting raw observations, MuZero learns just the quantities needed for planning, reward, value, and policy, in an abstract latent space, sidestepping the difficulty of modelling full environment dynamics. This let it match AlphaZero on Go, chess, and shogi while also excelling at Atari from pixels.

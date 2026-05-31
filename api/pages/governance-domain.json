@@ -1,0 +1,235 @@
+{
+  "id": "urn:visionflow:page:66a961523e61c44824447716014c0b5ef6cfcb870e02787f73e7d7cda40f8c1e",
+  "title": "Governance Domain",
+  "slug": "governance-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:governance-domain",
+  "domain": "governance",
+  "definition": "The Governance Domain classifies concepts concerned with the structures, processes and decision rights by which collective systems are directed and held accountable. It covers the formation, ratification and enforcement of rules across organisations, protocols and public institutions. As a top-level subject axis, it is orthogonal to architectural Layer and provides the social and procedural framing for systems that other domains realise technically.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-representation",
+        "label": "Stakeholder Representation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-domain",
+        "label": "Identity Domain"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade-process",
+        "label": "Protocol Upgrade Process"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decision-rights",
+      "label": "Decision Rights"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "policy-framework",
+      "label": "Policy Framework"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "stakeholder-representation",
+      "label": "Stakeholder Representation"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "collective-decision-making",
+      "label": "Collective Decision Making"
+    },
+    {
+      "slug": "protocol-upgrade-process",
+      "label": "Protocol Upgrade Process"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-iec-38500",
+      "label": "ISO/IEC 38500"
+    },
+    {
+      "slug": "oecd-principles-of-corporate-governance",
+      "label": "OECD Principles of Corporate Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

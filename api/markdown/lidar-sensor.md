@@ -1,0 +1,4 @@
+- ### Definition
+  - A LiDAR sensor emits laser pulses to build 3D point clouds; this data populates the [[Occupancy Grid]] used for navigation and feeds the geometry captured by a [[Reality Capture System]].
+- ### Content
+  - Time-of-flight ranging yields centimetre-accurate depth independent of ambient lighting, complementing cameras in sensor fusion. Point density, scan rate, and range determine suitability for high-speed driving versus detailed indoor mapping.

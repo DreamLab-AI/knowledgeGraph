@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fee-tier",
+  "title": "Fee Tier",
+  "slug": "fee-tier",
+  "public": true,
+  "classIri": "urn:ngm:class:fee-tier",
+  "domain": "blockchain",
+  "definition": "A fee tier is a discrete level of trading or swap fee applied to a market or liquidity pool, allowing different markets to charge fees commensurate with their volatility and liquidity risk. On automated-market-maker decentralized exchanges, each pool is created under a chosen fee tier (for example 0.05%, 0.30%, or 1.00%), and the collected fees accrue to liquidity providers. Tiering lets stable pairs use low fees while volatile or exotic pairs use higher fees to compensate providers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:221b3348710b050fc6a35638d5b514e56d76eefa161a935c54fc734dfa709dbe",
+  "title": "Number Theory",
+  "slug": "number-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:number-theory",
+  "domain": "number-theory",
+  "definition": "Number Theory is the branch of pure mathematics concerned with the properties of integers and related structures, including divisibility, prime numbers, congruences and Diophantine equations. It ranges from elementary results, such as the fundamental theorem of arithmetic, to deep areas like analytic and algebraic number theory. Beyond its theoretical importance, it underpins much of modern cryptography, where the difficulty of certain number-theoretic problems provides security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prime-number",
+        "label": "Prime Number"
+      },
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptography-domain",
+        "label": "Cryptography Domain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "prime-number",
+      "label": "Prime Number"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "slug": "algebra",
+      "label": "Algebra"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

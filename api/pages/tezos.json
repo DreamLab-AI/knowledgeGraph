@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e1b182a2295cb100a7062fdb4c02c3e236315a89ec72ab2b6906268b8e644238",
+  "title": "Tezos",
+  "slug": "tezos",
+  "public": true,
+  "classIri": "urn:ngm:class:tezos",
+  "domain": "blockchain",
+  "definition": "A proof-of-stake Layer 1 blockchain with on-chain governance that allows the protocol to amend itself through a formal voting process.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-1",
+      "label": "Layer 1"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "liquid-proof-of-stake",
+      "label": "Liquid Proof of Stake"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

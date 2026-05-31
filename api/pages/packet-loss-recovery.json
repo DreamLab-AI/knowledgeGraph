@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:ea57a7acd315dccf86fb2b58444c8933fcb93a27969ff399a0b44960c84d613e",
+  "title": "Packet Loss Recovery",
+  "slug": "packet-loss-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:packet-loss-recovery",
+  "domain": "networking",
+  "definition": "Techniques used to recover from or mitigate the loss of data packets during transmission over a network. They include retransmission, forward error correction, and concealment of missing data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "forward-error-correction",
+      "label": "Forward Error Correction"
+    },
+    {
+      "slug": "video-streaming",
+      "label": "Video Streaming"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

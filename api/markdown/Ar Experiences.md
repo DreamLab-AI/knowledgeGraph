@@ -83,8 +83,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:immersive-technology-applications",
-      "label": "Immersive Technology Applications"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "relations": {

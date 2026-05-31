@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:2bec496484a28b5f78e66e697e0cc4ff4825383796aee1e70852336cfa929d8a",
+  "title": "Aztec Protocol",
+  "slug": "aztec-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:aztec-protocol",
+  "domain": "blockchain",
+  "definition": "The protocol underlying the Aztec network that combines zero-knowledge proofs with an encrypted note model to provide confidential transactions and private contracts on Ethereum.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:aztec",
+      "label": "Aztec"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

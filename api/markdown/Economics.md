@@ -648,7 +648,7 @@ public:: true
         "label": "CBDC Frameworks"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {

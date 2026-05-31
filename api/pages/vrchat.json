@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:e93c93be27ed00009c68fecf95627c68fb17938cf6b3d71953c74e7737daf732",
+  "title": "VRChat",
+  "slug": "vrchat",
+  "public": true,
+  "classIri": "urn:ngm:class:vrchat",
+  "domain": "metaverse",
+  "definition": "VRChat is a social virtual reality platform where users interact as custom avatars in user-created 3D worlds, with support for both VR headsets and desktop access.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "avatar-customization",
+      "label": "Avatar Customization"
+    },
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

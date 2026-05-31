@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:e6895b775af7de0c9dd1899747bd9967cfdee5a71248b9e5ea37578ab6c26944",
+  "title": "KYC",
+  "slug": "kyc",
+  "public": true,
+  "classIri": "urn:ngm:class:kyc",
+  "domain": "governance",
+  "definition": "Know Your Customer, the set of procedures by which a regulated entity verifies the identity of its clients and assesses associated risks before and during a business relationship.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

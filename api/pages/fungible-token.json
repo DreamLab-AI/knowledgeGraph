@@ -80,6 +80,14 @@
   ],
   "backlinks": [
     {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
       "slug": "erc20-token",
       "label": "ERC20 Token"
     },
@@ -102,6 +110,10 @@
     {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "runes-protocol",
+      "label": "Runes Protocol"
     },
     {
       "slug": "security-token",

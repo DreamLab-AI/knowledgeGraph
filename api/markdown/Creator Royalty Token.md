@@ -1,4 +1,5 @@
 public:: true
+alias:: CreatorRoyaltyToken
 
 # Creator Royalty Token
 ```json-ld

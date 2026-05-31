@@ -134,6 +134,10 @@
       "label": "Model Performance"
     },
     {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
       "slug": "recall",
       "label": "Recall"
     }

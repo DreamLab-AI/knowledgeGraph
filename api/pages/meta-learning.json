@@ -75,6 +75,10 @@
       "label": "AutoML"
     },
     {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     },

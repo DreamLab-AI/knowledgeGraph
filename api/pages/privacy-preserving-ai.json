@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:2c25567b1795736f8d54c7902adcdc06f34e247ef863cccefa9ab9ea94c7cce8",
+  "title": "Privacy-Preserving AI",
+  "slug": "privacy-preserving-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-preserving-ai",
+  "domain": "machine-learning",
+  "definition": "Privacy-preserving AI is the application of privacy-preserving techniques to machine learning so that models can be trained and used without exposing the underlying training or input data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy-preserving",
+      "label": "Privacy-Preserving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy-Preserving"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "privacy-preserving",
+      "label": "Privacy-Preserving"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

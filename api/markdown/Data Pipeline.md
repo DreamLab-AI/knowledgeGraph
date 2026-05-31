@@ -1,4 +1,5 @@
 public:: true
+alias:: DataPipeline
 
 # Data Pipeline
 ```json-ld

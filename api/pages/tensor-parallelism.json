@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tensor-parallelism",
+  "title": "Tensor Parallelism",
+  "slug": "tensor-parallelism",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-parallelism",
+  "domain": "ai",
+  "definition": "Tensor parallelism is a model-parallel training and inference technique that splits individual weight tensors, and the matrix multiplications that use them, across multiple accelerators so that each device holds and computes a shard of every layer. Partial results are combined with collective communication such as all-reduce. It lets models whose layers exceed a single device's memory run at scale, and is typically combined with data and pipeline parallelism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

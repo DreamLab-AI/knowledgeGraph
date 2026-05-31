@@ -583,8 +583,8 @@ public:: true
       "label": "Austrian Economics"
     },
     {
-      "@id": "urn:ngm:class:cryptocurrency-economics",
-      "label": "Cryptocurrency Economics"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     }
   ],
   "relations": {
@@ -644,7 +644,7 @@ public:: true
         "label": "Price Stability Analysis"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -718,7 +718,7 @@ public:: true
         "label": "Fedimint"
       },
       {
-        "@id": "urn:ngm:class:l402-protocol",
+        "@id": "urn:ngm:class:l-402-protocol",
         "label": "L402 Protocol"
       },
       {
@@ -776,11 +776,11 @@ public:: true
         "label": "Sound Money"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

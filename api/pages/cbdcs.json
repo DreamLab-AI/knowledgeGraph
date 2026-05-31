@@ -12,12 +12,12 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:central-bank-money",
-      "label": "Central Bank Money"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
-      "id": "urn:ngm:class:legal-tender",
-      "label": "Legal Tender"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     }
   ],
   "entityType": "Class",

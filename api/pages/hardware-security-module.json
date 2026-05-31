@@ -87,6 +87,10 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },

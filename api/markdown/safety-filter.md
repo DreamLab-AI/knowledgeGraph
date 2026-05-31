@@ -1,0 +1,4 @@
+- ### Definition
+  - A safety filter screens generative-AI inputs and outputs to block harmful content, a safeguard component of [[AI Companions]] and [[Proprietary Image Generation]] systems.
+- ### Content
+  - Filters apply classifiers and policy rules at prompt and output stages, refusing or sanitising violations before content reaches users. Tuning thresholds trades off over-blocking against missed harms, and layered filters provide defence in depth around the base model.

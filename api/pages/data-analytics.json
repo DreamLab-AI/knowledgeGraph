@@ -96,6 +96,10 @@
       "label": "Healthcare Analytics"
     },
     {
+      "slug": "quantexa",
+      "label": "Quantexa"
+    },
+    {
       "slug": "virtual-interaction-logging",
       "label": "Virtual Interaction Logging"
     }

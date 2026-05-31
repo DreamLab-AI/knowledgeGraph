@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:744515476e155384699c796ed40329585dabfe9b9c46379cb8c08424590ef86a",
+  "title": "MuSig2",
+  "slug": "mu-sig-2",
+  "public": true,
+  "classIri": "urn:ngm:class:mu-sig-2",
+  "domain": "cryptographic",
+  "definition": "A two-round multi-signature scheme based on Schnorr signatures that lets several signers produce a single aggregate signature verifiable as one key.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multisignature",
+      "label": "Multisignature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    }
+  ]
+}

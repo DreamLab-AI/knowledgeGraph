@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:section-508",
+  "title": "Section 508",
+  "slug": "section-508",
+  "public": true,
+  "classIri": "urn:ngm:class:section-508",
+  "domain": "governance",
+  "definition": "Section 508 is an amendment to the US Rehabilitation Act requiring federal agencies to make their electronic and information technology accessible to people with disabilities. Its 2017 refresh harmonised the technical requirements with the WCAG 2.0 Level AA success criteria. It functions as an enforceable procurement and compliance standard for accessibility in US government IT.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    }
+  ]
+}

@@ -76,6 +76,10 @@
       "label": "Governance Token"
     },
     {
+      "slug": "safe",
+      "label": "Safe"
+    },
+    {
       "slug": "token-custody-service",
       "label": "Token Custody Service"
     }

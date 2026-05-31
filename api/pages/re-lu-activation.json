@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:re-lu-activation",
+  "title": "ReLU Activation",
+  "slug": "re-lu-activation",
+  "public": true,
+  "classIri": "urn:ngm:class:re-lu-activation",
+  "domain": "ai",
+  "definition": "The Rectified Linear Unit (ReLU) is a nonlinear activation function defined as f(x) = max(0, x), outputting the input directly when positive and zero otherwise. Its simplicity, sparse activation, and non-saturating gradient for positive inputs make it the default activation in most deep neural networks, mitigating the vanishing-gradient problem. Variants such as Leaky ReLU and GELU address its dead-neuron limitation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

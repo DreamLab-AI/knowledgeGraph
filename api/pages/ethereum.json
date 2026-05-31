@@ -3,11 +3,16 @@
   "title": "Ethereum",
   "slug": "ethereum",
   "public": true,
-  "classIri": "urn:ngm:individual:ethereum",
+  "classIri": "urn:ngm:class:ethereum",
   "domain": "blockchain",
   "definition": "Ethereum is a decentralised, open-source blockchain platform that introduced Turing-complete smart contracts, enabling programmable, self-executing agreements without trusted intermediaries. Launched in 2015 by Vitalik Buterin and co-founders, it underpins the largest ecosystem of decentralised applications (dApps), decentralised finance (DeFi), and NFT markets. Its transition to proof-of-stake consensus via The Merge in September 2022 dramatically reduced its energy footprint while preserving security.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -83,6 +88,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "51-attack",
       "label": "51% Attack"
     },
@@ -99,12 +108,44 @@
       "label": "Account Abstraction"
     },
     {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
       "slug": "atomic-swap",
       "label": "Atomic Swap"
     },
     {
+      "slug": "axie-infinity",
+      "label": "Axie Infinity"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
       "slug": "btc-layer-3",
       "label": "BTC Layer 3"
+    },
+    {
+      "slug": "base",
+      "label": "Base"
     },
     {
       "slug": "bitcoin-centralisation-risks",
@@ -143,12 +184,24 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },
     {
       "slug": "conflict-mineral-tracking",
       "label": "Conflict Mineral Tracking"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
     },
     {
       "slug": "consortium-blockchain",
@@ -163,12 +216,24 @@
       "label": "Cryptographic Domain"
     },
     {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
     },
     {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
     },
     {
       "slug": "decentralized-exchange",
@@ -195,6 +260,74 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "dune-analytics",
+      "label": "Dune Analytics"
+    },
+    {
+      "slug": "eip-1271",
+      "label": "EIP-1271"
+    },
+    {
+      "slug": "eip-2981",
+      "label": "EIP-2981"
+    },
+    {
+      "slug": "eip-4337",
+      "label": "EIP-4337"
+    },
+    {
+      "slug": "eip-4844",
+      "label": "EIP-4844"
+    },
+    {
+      "slug": "eip-7702",
+      "label": "EIP-7702"
+    },
+    {
+      "slug": "erc-1400",
+      "label": "ERC-1400"
+    },
+    {
+      "slug": "erc-20-tokens",
+      "label": "ERC-20 Tokens"
+    },
+    {
+      "slug": "erc-20-votes",
+      "label": "ERC-20 Votes"
+    },
+    {
+      "slug": "erc-2612-permit",
+      "label": "ERC-2612 Permit"
+    },
+    {
+      "slug": "erc-3475",
+      "label": "ERC-3475"
+    },
+    {
+      "slug": "erc-3525",
+      "label": "ERC-3525"
+    },
+    {
+      "slug": "erc-3643",
+      "label": "ERC-3643"
+    },
+    {
+      "slug": "erc-4337-account-abstraction",
+      "label": "ERC-4337 Account Abstraction"
+    },
+    {
+      "slug": "erc-4626",
+      "label": "ERC-4626"
+    },
+    {
+      "slug": "erc-7540",
+      "label": "ERC-7540"
+    },
+    {
+      "slug": "erc-7683",
+      "label": "ERC-7683"
+    },
+    {
       "slug": "erc20",
       "label": "ERC20"
     },
@@ -207,8 +340,48 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "ethereum-foundation",
+      "label": "Ethereum Foundation"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "farcaster",
+      "label": "Farcaster"
+    },
+    {
       "slug": "food-safety-blockchain",
       "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
+      "slug": "gas-fee",
+      "label": "Gas Fee"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "gnosis",
+      "label": "Gnosis"
     },
     {
       "slug": "governance-token",
@@ -221,6 +394,10 @@
     {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
     },
     {
       "slug": "hash-function",
@@ -251,6 +428,14 @@
       "label": "Luxury Goods Authentication"
     },
     {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
       "slug": "money",
       "label": "Money"
     },
@@ -271,8 +456,20 @@
       "label": "On Chain Voting"
     },
     {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
       "slug": "pharmaceutical-traceability",
       "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
     },
     {
       "slug": "privacy-preserving-blockchain",
@@ -299,6 +496,10 @@
       "label": "Public Blockchain"
     },
     {
+      "slug": "qbft",
+      "label": "QBFT"
+    },
+    {
       "slug": "quorum-blockchain",
       "label": "Quorum Blockchain"
     },
@@ -311,8 +512,32 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
     },
     {
       "slug": "self-sovereign-identity",
@@ -331,12 +556,20 @@
       "label": "Snapshot Voting"
     },
     {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
       "slug": "sovereign-mesh",
       "label": "Sovereign Mesh"
     },
     {
       "slug": "stable-coins",
       "label": "Stable Coins"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
     },
     {
       "slug": "state-machine",
@@ -355,6 +588,14 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "timelock-contract",
+      "label": "Timelock Contract"
+    },
+    {
       "slug": "token-economics-domain",
       "label": "Token Economics Domain"
     },
@@ -365,6 +606,14 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "uma",
+      "label": "UMA"
     },
     {
       "slug": "us-regulatory-framework",
@@ -393,6 +642,14 @@
     {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x-dai",
+      "label": "xDai"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
     }
   ]
 }

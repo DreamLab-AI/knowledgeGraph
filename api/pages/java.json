@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:java",
+  "title": "Java",
+  "slug": "java",
+  "public": true,
+  "classIri": "urn:ngm:class:java",
+  "domain": "infrastructure",
+  "definition": "Java is a class-based, object-oriented, statically typed programming language designed to run on the Java Virtual Machine, enabling write-once-run-anywhere portability across platforms. It compiles to bytecode executed by the JVM and emphasises strong typing, automatic memory management and a vast standard library. Java is widely used in enterprise back-end systems, Android development and permissioned blockchain platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

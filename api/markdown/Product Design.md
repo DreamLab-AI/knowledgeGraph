@@ -379,8 +379,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:creative-practice",
-      "label": "Creative Practice"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
       "@id": "urn:ngm:class:design-thinking",

@@ -1,4 +1,5 @@
 public:: true
+alias:: ArchitecturalLayer
 
 # Architectural Layer
 ```json-ld

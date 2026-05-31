@@ -105,6 +105,10 @@
     {
       "slug": "federated-learning",
       "label": "Federated Learning"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
     }
   ]
 }

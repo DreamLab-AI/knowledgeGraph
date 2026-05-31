@@ -1,0 +1,4 @@
+- ### Definition
+  - Reciprocal Rank Fusion is a score-agnostic method for merging ranked lists, widely used to combine lexical and dense results in [[Semantic Search]] and [[AI Search]] systems.
+- ### Content
+  - For each document, RRF computes a fused score of the form sum over lists of 1/(k + rank), where k (often 60) dampens the influence of top ranks. Because it ignores raw relevance scores, it sidesteps the calibration problems of weighted-sum fusion and reliably improves recall in hybrid retrieval.

@@ -99,6 +99,18 @@
       "label": "Interoperability"
     },
     {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "Oracle Service"
+    },
+    {
+      "slug": "oracle",
+      "label": "Oracle"
+    },
+    {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },

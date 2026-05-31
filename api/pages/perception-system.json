@@ -647,6 +647,10 @@
       "label": "Object Detection and Tracking"
     },
     {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
       "slug": "scene-understanding",
       "label": "Scene Understanding"
     },
@@ -657,6 +661,10 @@
     {
       "slug": "sensor-fusion",
       "label": "Sensor Fusion"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
     }
   ]
 }

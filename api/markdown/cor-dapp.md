@@ -1,0 +1,4 @@
+- ### Definition
+  - A CorDapp is a distributed application packaging contracts, states, and flows for the [[R3 Corda]] platform, the delivery mechanism for [[Enterprise Smart Contracts]] on Corda.
+- ### Content
+  - CorDapps define legal-prose-linked contract code that validates state transitions, the immutable states they govern, and flows that orchestrate the multi-party protocols for proposing and finalising transactions. Corda's notary service prevents double-spends while keeping transaction data shared only with the relevant parties, supporting regulated, privacy-sensitive use cases.

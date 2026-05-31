@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:xbrl",
+  "title": "XBRL",
+  "slug": "xbrl",
+  "public": true,
+  "classIri": "urn:ngm:class:xbrl",
+  "domain": "governance",
+  "definition": "XBRL (eXtensible Business Reporting Language) is an open XML-based standard for tagging and exchanging business and financial reporting data in a machine-readable form. It uses taxonomies of defined concepts to attach semantic meaning, units, and context to each reported fact, enabling automated validation, comparison, and analysis. It matters because regulators worldwide mandate it for filings, making financial disclosures consistently structured and computable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - A measurement methodology is a documented, repeatable procedure defining how a quantity is measured and computed, ensuring comparability. It is required to produce a credible [[Carbon Footprint Indicator]] and underpins any [[Benchmark Standard]].
+- ### Content
+  - A sound methodology fixes the system boundary, data collection protocol, units, and aggregation logic, and documents uncertainty. Standardised methodologies enable third-party verification and prevent the cherry-picking and incomparability that undermine self-reported metrics.

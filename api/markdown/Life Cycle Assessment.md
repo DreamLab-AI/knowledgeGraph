@@ -1,4 +1,5 @@
 public:: true
+alias:: LifeCycleAssessment
 
 # life cycle assessment
 ```json-ld

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b58513f6be68ef0cb7bc5522ac3150da8af9a59375bc01133cfa38fb01c84b4b",
+  "title": "Fireblocks",
+  "slug": "fireblocks",
+  "public": true,
+  "classIri": "urn:ngm:class:fireblocks",
+  "domain": "blockchain",
+  "definition": "Fireblocks is a company that provides digital asset custody and transfer infrastructure for institutions, using secure key management technology.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:institutional-custody",
+      "label": "Institutional Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "institutional-custody",
+      "label": "Institutional Custody"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

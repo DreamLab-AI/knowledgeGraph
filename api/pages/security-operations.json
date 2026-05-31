@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:security-operations",
+  "title": "Security Operations",
+  "slug": "security-operations",
+  "public": true,
+  "classIri": "urn:ngm:class:security-operations",
+  "domain": "security",
+  "definition": "Security operations is the ongoing practice of monitoring, detecting, investigating, and responding to security threats across an organisation's systems. Centred on a security operations centre, it integrates log collection, SIEM correlation, alert triage, threat intelligence, and incident response. Its goal is to reduce dwell time and limit the impact of attacks through continuous vigilance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ]
+}

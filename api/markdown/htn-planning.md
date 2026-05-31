@@ -1,0 +1,4 @@
+- ### Definition
+  - HTN planning decomposes compound tasks into executable primitives via method libraries; it is a core part of [[Task Planning]] and a common technique in [[AI in Games]].
+- ### Content
+  - Planners select applicable methods for each non-primitive task, expanding the network top-down while respecting ordering and precondition constraints. Encoding expert decomposition knowledge makes HTN plans efficient and explainable, though it requires hand-authored methods, trading generality for domain-tailored performance.

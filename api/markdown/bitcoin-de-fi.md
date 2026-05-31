@@ -1,0 +1,4 @@
+- ### Definition
+  - Bitcoin DeFi brings decentralised finance to the Bitcoin economy, largely enabled by higher layers such as [[BTC Layer-3]] that add programmability without changing the base chain.
+- ### Content
+  - Lacking rich on-chain smart contracts, Bitcoin DeFi composes functionality across Lightning, client-side-validated assets, and dedicated DeFi layers. This stacked architecture aims to deliver lending, trading, and stablecoin rails secured by Bitcoin while keeping the base protocol minimal.

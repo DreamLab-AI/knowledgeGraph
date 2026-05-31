@@ -1,4 +1,5 @@
 public:: true
+alias:: DigitalIdentity
 
 # Digital Identity
 ```json-ld

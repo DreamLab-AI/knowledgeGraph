@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cd2fff140744ce9c7b2876f1154e5025592eadef49d86d98c05916ded07a6756",
+  "title": "Peer Learning",
+  "slug": "peer-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:peer-learning",
+  "domain": "machine-learning",
+  "definition": "Peer learning refers to settings where multiple agents improve by exchanging information or imitating each other rather than relying on a central teacher. In multi-agent systems it covers cooperative protocols for sharing experience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaborative-learning",
+      "label": "Collaborative Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "knowledge-sharing",
+      "label": "Knowledge Sharing"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

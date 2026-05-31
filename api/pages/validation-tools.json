@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:validation-tools",
+  "title": "Validation Tools",
+  "slug": "validation-tools",
+  "public": true,
+  "classIri": "urn:ngm:class:validation-tools",
+  "domain": "infrastructure",
+  "definition": "Validation tools are software utilities that verify whether data, documents or implementations conform to a defined specification, schema or interoperability profile. They automate conformance checking, report violations, and support certification and compatibility testing across standards-based ecosystems. By catching errors early they reduce integration risk and ensure data and formats interoperate as intended.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    }
+  ]
+}

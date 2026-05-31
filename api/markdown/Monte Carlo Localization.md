@@ -1,4 +1,5 @@
 public:: true
+alias:: RB-1014-monte-carlo-localization
 
 # Monte Carlo Localization
 ```json-ld

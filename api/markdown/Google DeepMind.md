@@ -17,16 +17,16 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:google-deep-mind",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:google-deep-mind",
+  "@type": "Class",
   "label": "Google DeepMind",
   "definition": "Google DeepMind is an AI research laboratory formed in 2023 by the merger of Google Brain and the original DeepMind (acquired by Google in 2014), operating as a division of Alphabet Inc. It is responsible for foundational advances including AlphaGo, AlphaFold, Gemini, and numerous contributions to reinforcement learning and deep learning theory. The organisation pursues both long-term fundamental AI research and the development of AI products deployed across Google's services. With thousands of researchers across London, Mountain View, and other global locations, it is one of the largest and most influential AI research institutions in the world.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": {"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"},
+  "subClassOf": {"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"},
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:individual:gemini", "label": "Gemini"},
+      {"@id": "urn:ngm:class:gemini", "label": "Gemini"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
     ],
     "uses": [

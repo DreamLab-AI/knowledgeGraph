@@ -1,0 +1,4 @@
+- ### Definition
+  - Platform accountability holds online services responsible for their systems and the harms they enable, codified by instruments such as the [[Digital Services Act]] and invoked in debates like [[Death of the Internet]].
+- ### Content
+  - Accountability regimes require platforms to assess and mitigate systemic risks, publish transparency reports, offer appealable moderation decisions, and grant regulators audit access, scaling obligations to platform size and reach. By attaching legal duties to algorithmic and content systems, these frameworks reframe platforms as governed institutions answerable for amplification, manipulation, and the integrity of the information environment.

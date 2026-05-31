@@ -1,4 +1,5 @@
 public:: true
+alias:: RenderingPipeline
 
 # Rendering Pipeline
 ```json-ld

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:action-recognition",
+  "title": "Action Recognition",
+  "slug": "action-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:action-recognition",
+  "domain": "ai",
+  "definition": "Action Recognition is a computer-vision task that classifies the activity being performed by one or more agents from video or motion-sequence data. Models ingest spatiotemporal features, often built on detected body keypoints or 3D convolutions and transformers, to label actions such as walking, waving, or falling. It underpins applications in surveillance, sports analytics, human-robot interaction, and assistive monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "video-processing",
+      "label": "Video Processing"
+    }
+  ]
+}

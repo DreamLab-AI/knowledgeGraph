@@ -1,4 +1,5 @@
 public:: true
+alias:: LinkedData
 
 # linked data
 ```json-ld

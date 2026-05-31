@@ -1,0 +1,4 @@
+- ### Definition
+  - Optical Systems are arrangements of lenses, mirrors, and waveguides that form and relay images, a core requirement of any [[AR Display Device]] and of [[Display Hardware]] generally.
+- ### Content
+  - They determine field of view, focal depth, and image clarity in head-mounted displays. Technologies such as waveguide combiners and pancake lenses let compact headsets project virtual content and, in AR, blend it optically with the surrounding environment.

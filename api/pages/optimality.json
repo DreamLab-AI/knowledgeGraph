@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:24c7fef6ba4d0adaf196528d73326dfbb3680328a85944627cf6c0bea98856c0",
+  "title": "Optimality",
+  "slug": "optimality",
+  "public": true,
+  "classIri": "urn:ngm:class:optimality",
+  "domain": "general",
+  "definition": "The property of being the best achievable solution with respect to a defined objective and set of constraints, central to optimisation and decision problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    }
+  ]
+}

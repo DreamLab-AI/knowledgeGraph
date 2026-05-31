@@ -63,6 +63,18 @@
       "label": "Consensus Mechanism"
     },
     {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
     },
@@ -73,6 +85,10 @@
     {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
     },
     {
       "slug": "private-blockchain",

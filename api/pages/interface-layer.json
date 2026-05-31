@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:1f292a50bf844a12222add4928fce7c2a91433aa4b2be7271def0c8ec9946157",
+  "title": "Interface Layer",
+  "slug": "interface-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:interface-layer",
+  "domain": "interface",
+  "definition": "The Interface Layer is the cross-cutting stratum that defines the boundaries and contracts through which components communicate. It sits above the integration and transport mechanisms that carry calls and below the applications that consume the contracts. It contains interface definitions, schemas, and the conventions that govern interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:apilayer",
+        "label": "APILayer"
+      },
+      {
+        "id": "urn:ngm:class:integration-layer",
+        "label": "Integration Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:presentation-layer",
+        "label": "Presentation Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    },
+    {
+      "slug": "interface-segregation-principle",
+      "label": "Interface Segregation Principle"
+    },
+    {
+      "slug": "schema",
+      "label": "Schema"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    }
+  ]
+}

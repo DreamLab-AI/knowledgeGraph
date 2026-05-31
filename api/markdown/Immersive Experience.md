@@ -1,4 +1,5 @@
 public:: true
+alias:: ImmersiveExperience
 
 # Immersive Experience
 ```json-ld

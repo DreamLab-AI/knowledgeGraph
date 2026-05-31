@@ -1,0 +1,4 @@
+- ### Definition
+  - Mind uploading is the speculative emulation of a scanned brain on a computer to instantiate a person's mind digitally. It is frequently discussed as a component of the [[Singularity]].
+- ### Content
+  - Proposals span whole-brain emulation, gradual neuron-by-neuron replacement, and connectome scanning, each raising open questions about continuity of identity and the hard problem of consciousness. The concept remains philosophical and experimental, far beyond present neuroscience and computing capability.

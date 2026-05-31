@@ -100,8 +100,20 @@
       "label": "Cryptographic Primitive"
     },
     {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
+      "slug": "key-exchange",
+      "label": "Key Exchange"
     }
   ]
 }

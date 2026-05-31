@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:research-agents",
+  "title": "Research Agents",
+  "slug": "research-agents",
+  "public": true,
+  "classIri": "urn:ngm:class:research-agents",
+  "domain": "ai",
+  "definition": "Research agents are autonomous LLM-based systems that plan and execute multi-step information-gathering tasks, issuing searches, reading sources, and synthesising cited findings into reports. They combine tool use, memory, and reasoning to pursue an objective across many web or document queries with minimal supervision. They represent a leading application of agentic AI for knowledge work.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:b61ee358bc0484899c4277c3a9bb5bed9665a1e29548aa01f1d2b3ab49d7917a",
+  "title": "ISO-IEC 23090-3",
+  "slug": "iso-iec-23090-3",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-23090-3",
+  "domain": "standards",
+  "definition": "Part 3 of the ISO/IEC 23090 series on coded representation of immersive media (MPEG-I), covering versatile video coding (VVC). It defines a video compression standard.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    }
+  ]
+}

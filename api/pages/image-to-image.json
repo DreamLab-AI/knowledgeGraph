@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:0314e7a6fb2696c3d7ab087563f8463a6f3ecd3d581b1d35a25d57727c96e597",
+  "title": "Image-to-Image",
+  "slug": "image-to-image",
+  "public": true,
+  "classIri": "urn:ngm:class:image-to-image",
+  "domain": "generative-ai",
+  "definition": "Image-to-image is a class of generative tasks where a model transforms an input image into an output image, conditioned on the input and often a text prompt. Examples include style transfer, editing and translation between domains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    }
+  ]
+}

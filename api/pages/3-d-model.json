@@ -137,6 +137,10 @@
     {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
     }
   ]
 }

@@ -1,4 +1,5 @@
 public:: true
+alias:: ERC-3643 Standard
 
 # ERC3643 Standard
 ```json-ld

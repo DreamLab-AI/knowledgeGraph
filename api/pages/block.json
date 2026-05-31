@@ -140,12 +140,20 @@
       "label": "Blockchain"
     },
     {
+      "slug": "cash-app",
+      "label": "Cash App"
+    },
+    {
       "slug": "non-genesis-block",
       "label": "Non Genesis Block"
     },
     {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
     },
     {
       "slug": "value-transfer",

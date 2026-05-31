@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:252ad11d1616c49b332acac5352425f59fe31323912aa0f6bd00aa1c6369677f",
+  "title": "Perception",
+  "slug": "perception",
+  "public": true,
+  "classIri": "urn:ngm:class:perception",
+  "domain": "artificial-intelligence",
+  "definition": "In artificial intelligence, the capability of a system to acquire and interpret sensory input, such as images, audio or other signals, to build an internal representation of its environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
+      "slug": "environmental-understanding",
+      "label": "Environmental Understanding"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

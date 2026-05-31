@@ -1,4 +1,5 @@
 public:: true
+alias:: ZeroKnowledge
 
 # Zero Knowledge
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:usage-analytics",
+  "title": "Usage Analytics",
+  "slug": "usage-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:usage-analytics",
+  "domain": "data",
+  "definition": "Usage analytics is the collection, measurement and interpretation of data describing how users interact with a product, service or platform, including session frequency, feature adoption, retention and engagement patterns. It transforms raw event telemetry into actionable insight for product, design and governance decisions. When applied responsibly it can inform well-being metrics while raising privacy considerations about behavioural tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry and Analytics"
+      },
+      {
+        "id": "urn:ngm:class:digital-well-being-index",
+        "label": "Digital Well-Being Index"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-well-being-index",
+      "label": "Digital Well-Being Index"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

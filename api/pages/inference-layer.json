@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:718b5caad35483acb13912850d283291d81cc426b839378ec3c716da212eb08d",
+  "title": "Inference Layer",
+  "slug": "inference-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:inference-layer",
+  "domain": "inference",
+  "definition": "The Inference Layer is the stratum that executes trained models to produce predictions from new inputs. In the canonical stack it sits above the Model Layer and below the Middleware Layer, turning static artefacts into a live serving capability. It contains serving runtimes, batching and caching logic, and the request handling that delivers predictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-layer",
+      "label": "Agent Layer"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "Runtime Layer"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

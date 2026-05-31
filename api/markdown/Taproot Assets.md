@@ -423,8 +423,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:asset-issuance-protocol",
-      "label": "Asset Issuance Protocol"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
       "@id": "urn:ngm:class:bitcoin-protocol",
@@ -596,7 +596,7 @@ public:: true
         "label": "Joltz Wallet"
       },
       {
-        "@id": "urn:ngm:class:l402-protocol",
+        "@id": "urn:ngm:class:l-402-protocol",
         "label": "L402 Protocol"
       },
       {

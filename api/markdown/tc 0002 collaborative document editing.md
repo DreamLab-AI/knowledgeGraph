@@ -279,8 +279,8 @@ public:: true
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:knowledge-co-creation",
-      "label": "Knowledge Co-Creation"
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "DC Telepresence"
     },
     {
       "@id": "urn:ngm:class:remote-collaboration",

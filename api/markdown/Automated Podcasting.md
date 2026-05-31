@@ -307,12 +307,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:ai-audio",
-      "label": "AI Audio"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:content-automation",
-      "label": "Content Automation"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {
@@ -470,7 +470,7 @@ public:: true
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "@id": "urn:ngm:individual:open-ai-whisper",
+        "@id": "urn:ngm:class:open-ai-whisper",
         "label": "OpenAI Whisper"
       }
     ],
@@ -488,11 +488,11 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {

@@ -1,0 +1,4 @@
+- ### Definition
+  - A fixed supply monetary policy caps total issuance by protocol rule, creating credible digital scarcity that supports [[Bitcoin as Money]] and the [[Store of Value]] thesis. It is an [[Economic Mechanism]] enforced by consensus rather than discretion.
+- ### Content
+  - Fixed-supply schemes typically combine a hard cap with a disinflationary emission curve, such as Bitcoin's periodic halving of block rewards, so that new issuance asymptotically approaches zero. Proponents argue this immunity to discretionary debasement underwrites long-term value, while critics note that a fully fixed supply offers no monetary flexibility to respond to demand shocks or fee-market sustainability after issuance ends.

@@ -1,0 +1,4 @@
+- ### Definition
+  - A persistence layer durably stores and retrieves state behind a uniform interface, a requirement for maintaining a [[Spatial Anchor]] and for stateful [[Agent Frameworks]].
+- ### Content
+  - The layer mediates between in-memory application objects and durable backends, handling serialisation, transactions, indexing, and consistency guarantees. For autonomous agents it stores conversational memory and tool state, while for spatial computing it persists anchor poses and scene meshes so that virtual content reliably reattaches to the physical world across sessions.

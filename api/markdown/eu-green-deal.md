@@ -1,0 +1,4 @@
+- ### Definition
+  - The EU Green Deal is the EU's climate-neutrality [[Governance Framework]] for 2050, driving [[Circular Economy]] policy and broad [[Sustainability]] regulation.
+- ### Content
+  - It bundles cross-sector legislation on emissions, energy, transport, and finance with funding and disclosure mandates. The deal operationalises the circular economy and sustainable-finance agendas, setting the regulatory backdrop for green technology adoption.

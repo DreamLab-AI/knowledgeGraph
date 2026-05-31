@@ -1,4 +1,5 @@
 public:: true
+alias:: RoboticControl
 
 # Robotic Control
 ```json-ld

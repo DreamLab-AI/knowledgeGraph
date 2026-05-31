@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:6c2d225ad5cce4c2334bd9e811776fbb4dcfd05d3b38d13d00a69427672914b6",
+  "title": "Ethan Mollick",
+  "slug": "ethan-mollick",
+  "public": true,
+  "classIri": "urn:ngm:class:ethan-mollick",
+  "domain": "artificial-intelligence",
+  "definition": "An American academic and professor at the Wharton School of the University of Pennsylvania known for research and writing on entrepreneurship, innovation and the practical use of generative artificial intelligence in work and education.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "preference-learning",
+      "label": "Preference Learning"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    }
+  ]
+}

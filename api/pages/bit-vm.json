@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:c213de2647f5ebea9fcffbc72a8f539ddc071b6132c209cfe2a4370e617c2b3b",
+  "title": "BitVM",
+  "slug": "bit-vm",
+  "public": true,
+  "classIri": "urn:ngm:class:bit-vm",
+  "domain": "blockchain",
+  "definition": "BitVM is a proposed approach for expressing complex computations that can be verified on Bitcoin without changing its consensus rules. It uses fraud proofs and challenge-response interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-script",
+      "label": "Bitcoin Script"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "https-bitvm-org",
+      "label": "https://bitvm.org"
+    },
+    {
+      "slug": "https-github-com-bit-vm-bit-vm",
+      "label": "https://github.com/BitVM/BitVM"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

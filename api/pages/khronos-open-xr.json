@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:6837385f8a4d8e39c2ccfa26b12631d735d9865a46771ed81fa87235f51bcec8",
+  "title": "Khronos OpenXR",
+  "slug": "khronos-open-xr",
+  "public": true,
+  "classIri": "urn:ngm:class:khronos-open-xr",
+  "domain": "metaverse",
+  "definition": "Khronos OpenXR is an open, royalty-free standard that defines a common application interface for virtual and augmented reality devices, decoupling XR applications from specific runtimes and hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
+    },
+    {
+      "slug": "khronos-group",
+      "label": "Khronos Group"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

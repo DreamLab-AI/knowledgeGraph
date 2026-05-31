@@ -42,6 +42,10 @@
   ],
   "backlinks": [
     {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
       "slug": "standardization-bodies",
       "label": "Standardization Bodies"
     }

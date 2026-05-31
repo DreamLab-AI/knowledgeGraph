@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:79cd6843be580ccd1e98d85095e3280d9dfb8bbddc860326fea54cd83ca7998c",
+  "title": "USDC",
+  "slug": "usdc",
+  "public": true,
+  "classIri": "urn:ngm:class:usdc",
+  "domain": "blockchain",
+  "definition": "A fiat-backed stablecoin pegged to the United States dollar, issued against reserves of cash and short-term government securities and redeemable on a one-for-one basis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "custody-infrastructure",
+      "label": "Custody Infrastructure"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

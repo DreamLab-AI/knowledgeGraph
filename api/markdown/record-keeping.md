@@ -1,0 +1,4 @@
+- ### Definition
+  - Record keeping is the disciplined retention of transaction and customer data needed to satisfy [[AML KYC Compliance]] and the [[Travel Rule]], enabling later audit and reconstruction.
+- ### Content
+  - Regulated entities must capture originator and beneficiary information, identity evidence, and the rationale for risk decisions, retaining them for jurisdiction-specific periods (commonly five years). Inadequate records expose firms to enforcement action and undermine investigations into illicit flows.

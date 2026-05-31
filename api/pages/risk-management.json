@@ -72,6 +72,10 @@
       "label": "AI Deployment"
     },
     {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
       "slug": "ai-governance",
       "label": "AI Governance"
     },
@@ -108,12 +112,36 @@
       "label": "Asset Management"
     },
     {
+      "slug": "basel-iii",
+      "label": "Basel III"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
     {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
     },
     {
       "slug": "cyber-security-and-cryptography",
@@ -126,6 +154,10 @@
     {
       "slug": "etsi-domain-governance-and-compliance",
       "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
     },
     {
       "slug": "functional-safety",
@@ -152,6 +184,14 @@
       "label": "Metaverse Liability Model"
     },
     {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
+      "slug": "product-liability",
+      "label": "Product Liability"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     },
@@ -162,6 +202,10 @@
     {
       "slug": "trust-and-governance-domain",
       "label": "Trust and Governance Domain"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
     }
   ]
 }

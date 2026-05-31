@@ -647,12 +647,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:non-financial-reporting",
-      "label": "Non-Financial Reporting"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "@id": "urn:ngm:class:stakeholder-reporting",
-      "label": "Stakeholder Reporting"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
@@ -686,7 +686,7 @@ public:: true
         "label": "Reasonable Assurance Opinion"
       },
       {
-        "@id": "urn:ngm:class:science-based-target",
+        "@id": "urn:ngm:class:science-based-targets",
         "label": "Science-Based Target"
       },
       {

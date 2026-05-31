@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:712a925c6e26e411db7d009bf37dc01235b96e3ae632ba0b74b9d6320eeb3a2a",
+  "title": "Corda",
+  "slug": "corda",
+  "public": true,
+  "classIri": "urn:ngm:class:corda",
+  "domain": "blockchain",
+  "definition": "A permissioned distributed ledger platform designed for regulated enterprises, where transactions are shared only between the parties involved rather than broadcast to all nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "enterprise-blockchain-architecture",
+      "label": "Enterprise Blockchain Architecture"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "pharmaceutical-traceability",
+      "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

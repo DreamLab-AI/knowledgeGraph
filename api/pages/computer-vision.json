@@ -412,6 +412,10 @@
       "label": "Composite AI"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "compute-layer",
       "label": "Compute Layer"
     },
@@ -724,6 +728,10 @@
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -820,6 +828,14 @@
       "label": "LoRA DoRA etc"
     },
     {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "machine-vision",
+      "label": "Machine Vision"
+    },
+    {
       "slug": "manipulator-arm",
       "label": "Manipulator Arm"
     },
@@ -852,6 +868,10 @@
       "label": "Motion Capture"
     },
     {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
       "slug": "navigation",
       "label": "Navigation"
     },
@@ -870,6 +890,10 @@
     {
       "slug": "object-detection",
       "label": "Object Detection"
+    },
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
     },
     {
       "slug": "optical-sensor-array",
@@ -892,8 +916,16 @@
       "label": "Pattern Recognition"
     },
     {
+      "slug": "perception-layer",
+      "label": "Perception Layer"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
+    },
+    {
+      "slug": "perception",
+      "label": "Perception"
     },
     {
       "slug": "pose-estimation",
@@ -902,6 +934,10 @@
     {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
     },
     {
       "slug": "recurrent-neural-network",
@@ -942,6 +978,10 @@
     {
       "slug": "semantic-segmentation",
       "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
     },
     {
       "slug": "social-robotics",
@@ -998,6 +1038,22 @@
     {
       "slug": "virtual-set-design",
       "label": "Virtual Set Design"
+    },
+    {
+      "slug": "virtual-try-on",
+      "label": "Virtual Try-On"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
+    },
+    {
+      "slug": "wearable-ai",
+      "label": "Wearable AI"
     },
     {
       "slug": "ai-core-concepts",

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:noise-schedule",
+  "title": "Noise Schedule",
+  "slug": "noise-schedule",
+  "public": true,
+  "classIri": "urn:ngm:class:noise-schedule",
+  "domain": "ai",
+  "definition": "A noise schedule is the function that determines how much Gaussian noise is added at each step of a diffusion model's forward process and, correspondingly, removed during sampling. It governs the variance trajectory from clean data to pure noise and strongly affects sample quality, training stability, and the number of steps required. Common forms include linear, cosine, and learned schedules.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

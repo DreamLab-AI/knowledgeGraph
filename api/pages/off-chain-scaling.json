@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:off-chain-scaling",
+  "title": "Off-Chain Scaling",
+  "slug": "off-chain-scaling",
+  "public": true,
+  "classIri": "urn:ngm:class:off-chain-scaling",
+  "domain": "blockchain",
+  "definition": "Off-chain scaling is a class of blockchain scalability techniques that move transaction execution and state off the main chain while retaining its security as a settlement and dispute-resolution layer. By processing many interactions outside the base layer and committing only summaries or final balances on-chain, it greatly increases throughput and lowers fees. Examples include payment and state channels and various layer-2 constructions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    }
+  ]
+}

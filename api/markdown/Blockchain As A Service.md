@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0434-blockchain-as-a-service
 
 # Blockchain As A Service
 ```json-ld
@@ -703,8 +704,8 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:cloud-service-model",
-      "label": "Cloud Service Model"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:enterprise-software-platform",
@@ -844,7 +845,7 @@ public:: true
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -902,7 +903,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:individual:docker",
+        "@id": "urn:ngm:class:docker",
         "label": "Docker"
       }
     ],

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:d33da262fa1abf030017894eff63ba661149f17e91a8a53e40d888ec2aacf847",
+  "title": "Ethereum Name Service",
+  "slug": "ethereum-name-service",
+  "public": true,
+  "classIri": "urn:ngm:class:ethereum-name-service",
+  "domain": "blockchain",
+  "definition": "A decentralised naming system on Ethereum that maps human-readable names to addresses and other resources using smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contracts",
+        "label": "Ethereum Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "identity",
+      "label": "Identity"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

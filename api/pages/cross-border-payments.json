@@ -56,6 +56,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ark-protocol",
+      "label": "Ark Protocol"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
@@ -68,6 +72,10 @@
       "label": "CBDCs"
     },
     {
+      "slug": "correspondent-banking",
+      "label": "Correspondent Banking"
+    },
+    {
       "slug": "digital-payment-system",
       "label": "Digital Payment System"
     },
@@ -76,12 +84,36 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "mastercard",
+      "label": "Mastercard"
+    },
+    {
       "slug": "money",
       "label": "Money"
     },
     {
+      "slug": "project-dunbar",
+      "label": "Project Dunbar"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
       "slug": "quorum-blockchain",
       "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "stellar",
+      "label": "Stellar"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
     }
   ]
 }

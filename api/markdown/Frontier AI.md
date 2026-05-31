@@ -23,7 +23,7 @@ public:: true
   "definition": "Frontier AI refers to the most capable and computationally intensive artificial intelligence systems at the leading edge of current technical progress, typically characterised by unprecedentedly large training compute budgets, novel emergent capabilities, and performance that approaches or exceeds human expert level across diverse cognitive tasks. These systems, predominantly large language models and multimodal foundation models, exhibit qualitatively new behaviours not present in smaller predecessors, including in-context learning, chain-of-thought reasoning, and cross-domain generalisation. Their development is concentrated among a small number of resource-rich organisations and raises distinct safety, governance, and geopolitical considerations absent from earlier AI generations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:individual:foundation-models", "label": "Foundation Models"}],
+  "subClassOf": [{"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},

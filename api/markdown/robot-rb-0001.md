@@ -1,0 +1,4 @@
+- ### Definition
+  - Robot RB-0001 is a reference mobile-manipulator platform combining a [[Mobile Robot]] base with a [[Manipulator]] arm as integrated subsystems.
+- ### Content
+  - The platform unifies locomotion and manipulation, letting it move to a workspace and then grasp or place objects. As a composite type it illustrates how navigation and arm-control stacks compose into a single coordinated system.

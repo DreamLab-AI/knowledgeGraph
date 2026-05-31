@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:miro",
+  "title": "Miro",
+  "slug": "miro",
+  "public": true,
+  "classIri": "urn:ngm:class:miro",
+  "domain": "infrastructure",
+  "definition": "Miro is a cloud-based collaborative whiteboard platform that provides an infinite canvas for distributed teams to brainstorm, diagram, map workflows, and run workshops in real time. It offers sticky notes, templates, frameworks, and integrations with tools such as Jira, Slack, and design suites. It is widely adopted for product discovery, agile ceremonies, and remote facilitation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

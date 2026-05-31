@@ -1,0 +1,4 @@
+- ### Definition
+  - An Access Control Policy declaratively states who may access a resource and in what mode. In [[Solid]] pods such policies are stored as RDF and bound to resources, enabling user-controlled sharing of personal data.
+- ### Content
+  - Policies reference principals by [[Identity Management]] identifiers such as WebIDs and grant access modes like read, write, append, and control. Authorization servers interpret the policy at request time, separating the rules from the enforcement code so that permissions can be edited without changing application logic.

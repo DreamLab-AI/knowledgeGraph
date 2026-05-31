@@ -59,8 +59,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "axie-infinity",
+      "label": "Axie Infinity"
+    },
+    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "creator-royalties",
+      "label": "Creator Royalties"
     },
     {
       "slug": "decentralised-file-storage",
@@ -91,12 +99,24 @@
       "label": "Fractionalized NFT"
     },
     {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
     {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "lens-protocol",
+      "label": "Lens Protocol"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
     },
     {
       "slug": "portability",

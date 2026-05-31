@@ -70,6 +70,10 @@
     {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
     }
   ]
 }

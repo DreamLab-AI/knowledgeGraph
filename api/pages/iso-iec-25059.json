@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:1d6cb905700572051e590e42f7b72e3fb1b7a4cca0cdd3e9237b7b28398e8d3c",
+  "title": "ISO-IEC 25059",
+  "slug": "iso-iec-25059",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-25059",
+  "domain": "standards",
+  "definition": "ISO/IEC 25059 extends the SQuaRE series with a quality model for artificial intelligence systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ]
+}

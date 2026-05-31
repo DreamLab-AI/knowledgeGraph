@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:5af2eeb12c0d58fb6091a9aa0385c90b5577d1c58d280d8b142d4a3298b5c476",
+  "title": "Custody Layer",
+  "slug": "custody-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:custody-layer",
+  "domain": "custody",
+  "definition": "The Custody Layer is the stratum that governs the safekeeping and authorised control of assets and the keys that command them. It sits above the Cryptographic and Identity strata it depends on and below the settlement and application activity that moves assets. It contains key storage, signing policies, and the authorisation rules for asset control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-layer",
+        "label": "Cryptographic Layer"
+      },
+      {
+        "id": "urn:ngm:class:identity-layer",
+        "label": "Identity Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "multi-signature",
+      "label": "Multi-Signature"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "identifier-layer",
+      "label": "Identifier Layer"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

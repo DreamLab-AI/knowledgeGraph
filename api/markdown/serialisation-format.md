@@ -1,0 +1,4 @@
+- ### Definition
+  - A serialisation format specifies how in-memory data is encoded into a transmittable or storable stream and decoded back. It is required to write [[Checkpoints]] and to exchange state across nodes in [[Distributed Computing]].
+- ### Content
+  - Choice of format trades human-readability against size and parsing cost: JSON and YAML favour interoperability, while binary schemas such as Protocol Buffers and Avro favour throughput and schema evolution. In distributed and ML systems, columnar and zero-copy formats reduce checkpoint size and accelerate fault recovery.

@@ -451,12 +451,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:probabilistic-filter",
-      "label": "Probabilistic Filter"
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     },
     {
-      "@id": "urn:ngm:class:recursive-estimator",
-      "label": "Recursive Estimator"
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     }
   ],
   "relations": {

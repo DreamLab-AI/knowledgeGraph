@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-models",
+  "title": "Data Models",
+  "slug": "data-models",
+  "public": true,
+  "classIri": "urn:ngm:class:data-models",
+  "domain": "data",
+  "definition": "Data models are the collected structural specifications that define how information is represented, related and constrained within a system or framework. In digital-twin and layered service architectures they describe the shape of state, telemetry and interactions exchanged between components. Well-defined data models are a prerequisite for interoperability, validation and consistent behaviour across service layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

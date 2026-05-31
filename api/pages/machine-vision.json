@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:bb335785bb2e9051879a6bdcddc84fac18cf243b318d62c91c68004aa38dfe32",
+  "title": "Machine Vision",
+  "slug": "machine-vision",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-vision",
+  "domain": "computer-vision",
+  "definition": "The application of imaging and image analysis to automate inspection, measurement and guidance tasks, particularly in industrial and manufacturing settings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

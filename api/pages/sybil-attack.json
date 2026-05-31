@@ -116,6 +116,10 @@
       "label": "Blockchain Network"
     },
     {
+      "slug": "bright-id",
+      "label": "BrightID"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },

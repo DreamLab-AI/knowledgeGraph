@@ -188,8 +188,16 @@
       "label": "Task Planning"
     },
     {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
       "slug": "trajectory-generation",
       "label": "Trajectory Generation"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
     },
     {
       "slug": "variational-autoencoders",

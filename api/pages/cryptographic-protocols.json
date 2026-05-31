@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:25833591468e53f237f9628ca7a67bd29b56fe8e43ef23ebb30274cefbaf44cd",
+  "title": "Cryptographic Protocols",
+  "slug": "cryptographic-protocols",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-protocols",
+  "domain": "distributed-systems",
+  "definition": "Cryptographic protocols are sequences of operations using cryptographic primitives to achieve security goals such as confidentiality, integrity and authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-cryptographic-protocol",
+      "label": "https://en.wikipedia.org/wiki/Cryptographic_protocol"
+    },
+    {
+      "slug": "https-csrc-nist-gov",
+      "label": "https://csrc.nist.gov/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

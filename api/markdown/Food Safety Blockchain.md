@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0443-food-safety-blockchain
 
 # Food Safety Blockchain
 ```json-ld

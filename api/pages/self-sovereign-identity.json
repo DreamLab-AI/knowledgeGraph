@@ -16,7 +16,7 @@
       "label": "Decentralised Identity"
     },
     {
-      "id": "urn:ngm:class:privacy-enhancing-technology",
+      "id": "urn:ngm:class:privacy-enhancing-technologies",
       "label": "Privacy-Enhancing Technology"
     }
   ],
@@ -773,6 +773,10 @@
       "label": "Consortium Blockchain"
     },
     {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
@@ -801,6 +805,10 @@
       "label": "Hyperledger Indy"
     },
     {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -827,6 +835,10 @@
     {
       "slug": "reputation-system",
       "label": "Reputation System"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
     },
     {
       "slug": "sovereign-keyset",

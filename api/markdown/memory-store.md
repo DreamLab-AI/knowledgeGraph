@@ -1,0 +1,4 @@
+- ### Definition
+  - A memory store persists an agent's information across turns and sessions, often as retrievable embeddings, enabling continuity and recall. It is a component of [[Agent Frameworks]] and a building block required for effective [[Context Engineering]].
+- ### Content
+  - Designs distinguish short-term working memory from long-term stores, and episodic from semantic memory, with retrieval gated by relevance and recency. Vector stores support semantic search, while summarisation and forgetting policies manage growth so that the most pertinent context is surfaced into the model's window.

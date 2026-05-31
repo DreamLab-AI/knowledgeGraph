@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:gaussian-process-regression",
+  "title": "Gaussian Process Regression",
+  "slug": "gaussian-process-regression",
+  "public": true,
+  "classIri": "urn:ngm:class:gaussian-process-regression",
+  "domain": "ai",
+  "definition": "Gaussian process regression is a non-parametric Bayesian method that models an unknown function as a distribution over functions defined by a mean and a covariance (kernel) function. Given observations, it produces a posterior that yields predictions together with calibrated uncertainty estimates. It is widely used where data is scarce and quantified uncertainty matters, such as Bayesian optimisation and surrogate modelling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Service-Oriented Architecture
 
 # Service Oriented Architecture
 ```json-ld

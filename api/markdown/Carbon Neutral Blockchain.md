@@ -547,12 +547,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:climate-aligned-finance",
-      "label": "Climate-Aligned Finance"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     },
     {
-      "@id": "urn:ngm:class:green-infrastructure",
-      "label": "Green Infrastructure"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     }
   ],
   "relations": {
@@ -792,11 +792,11 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:individual:cardano",
+        "@id": "urn:ngm:class:cardano",
         "label": "Cardano"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -804,7 +804,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:individual:solana",
+        "@id": "urn:ngm:class:solana",
         "label": "Solana"
       }
     ],

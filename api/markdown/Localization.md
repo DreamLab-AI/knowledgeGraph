@@ -158,11 +158,11 @@ public:: true
         "label": "RB-1008-odometry"
       },
       {
-        "@id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "@id": "urn:ngm:class:monte-carlo-localization",
         "label": "RB-1014-monte-carlo-localization"
       },
       {
-        "@id": "urn:ngm:class:rb-1015-kalman-filter",
+        "@id": "urn:ngm:class:kalman-filter",
         "label": "RB-1015-kalman-filter"
       }
     ]

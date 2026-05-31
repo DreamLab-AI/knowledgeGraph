@@ -1,0 +1,4 @@
+- ### Definition
+  - Renewable energy tracking is the auditable accounting of clean-energy production and use, the mechanism behind [[Renewable Energy Certificates]] and supportive of the [[Crypto Climate Accord]].
+- ### Content
+  - By recording generation data and certificate ownership on tamper-evident ledgers, tracking systems prevent the same green attribute from being claimed twice. Granular, time-stamped tracking is moving toward hourly matching, giving buyers stronger assurance that their consumption is genuinely covered by renewable supply.

@@ -1,4 +1,5 @@
 public:: true
+alias:: ETSI Domain AI Creative Media
 
 # ETSI Domain AI + Creative Media
 ```json-ld

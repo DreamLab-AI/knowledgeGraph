@@ -89,8 +89,20 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
       "slug": "ai-in-games",
       "label": "AI in Games"
+    },
+    {
+      "slug": "aisi",
+      "label": "AISI"
+    },
+    {
+      "slug": "aisafety-domain",
+      "label": "AISafetyDomain"
     },
     {
       "slug": "agents",
@@ -113,12 +125,20 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
       "slug": "ground-robot",
       "label": "Ground Robot"
     },
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
     },
     {
       "slug": "ms-phi-models",
@@ -129,12 +149,20 @@
       "label": "Model Optimisation and Performance"
     },
     {
+      "slug": "product-liability-directive",
+      "label": "Product Liability Directive"
+    },
+    {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
     },
     {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
+    },
+    {
+      "slug": "sociotechnical-risk",
+      "label": "Sociotechnical Risk"
     },
     {
       "slug": "training-data",

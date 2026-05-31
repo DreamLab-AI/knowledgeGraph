@@ -327,12 +327,12 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:image-based-rendering",
-      "label": "Image Based Rendering"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
-      "@id": "urn:ngm:class:optical-representation",
-      "label": "Optical Representation"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {

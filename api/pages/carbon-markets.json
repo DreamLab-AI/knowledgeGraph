@@ -71,12 +71,32 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "climate-finance",
+      "label": "Climate Finance"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
       "slug": "renewable-energy-certificates",
       "label": "Renewable Energy Certificates"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
+    },
+    {
+      "slug": "traditional-carbon-registry",
+      "label": "Traditional Carbon Registry"
+    },
+    {
+      "slug": "verra-vcs-standard",
+      "label": "Verra VCS Standard"
     }
   ]
 }

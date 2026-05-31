@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:dbpedia",
+  "title": "DBpedia",
+  "slug": "dbpedia",
+  "public": true,
+  "classIri": "urn:ngm:class:dbpedia",
+  "domain": "data",
+  "definition": "DBpedia is a community project that extracts structured information from Wikipedia and publishes it as an interlinked, openly licensed knowledge graph in RDF. It exposes millions of entities through a SPARQL endpoint and dereferenceable URIs, forming a central hub of the Linked Open Data cloud. It is widely used as background knowledge for knowledge-graph construction, entity linking and semantic search.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

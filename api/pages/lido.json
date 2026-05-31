@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:00a69ae37337ef2aafb5a6a584976cd38a5b701d501bff8de0799830ce89bbad",
+  "title": "Lido",
+  "slug": "lido",
+  "public": true,
+  "classIri": "urn:ngm:class:lido",
+  "domain": "blockchain",
+  "definition": "A liquid staking protocol that stakes users' assets with network validators and issues a transferable token representing the staked position and its accruing rewards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquid-proof-of-stake",
+      "label": "Liquid Proof of Stake"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "liquid-proof-of-stake",
+      "label": "Liquid Proof of Stake"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

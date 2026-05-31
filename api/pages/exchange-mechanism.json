@@ -66,6 +66,14 @@
     {
       "slug": "barter-system",
       "label": "Barter System"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
     }
   ]
 }

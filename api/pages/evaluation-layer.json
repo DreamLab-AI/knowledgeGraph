@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:62d0429be2fb515968c303068b1c729edbb075eedbc53fe9e3b50c3880cacb1b",
+  "title": "Evaluation Layer",
+  "slug": "evaluation-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:evaluation-layer",
+  "domain": "evaluation",
+  "definition": "The Evaluation Layer is the cross-cutting stratum that measures the quality, safety, and performance of system components against defined criteria. It sits alongside training and inference, drawing on their outputs to produce judgements that feed governance and research strata. It contains benchmarks, metrics, test harnesses, and the scoring procedures that quantify behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      },
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:research-layer",
+        "label": "Research Layer"
+      },
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "benchmark",
+      "label": "Benchmark"
+    },
+    {
+      "slug": "statistical-significance",
+      "label": "Statistical Significance"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - ShEx (Shape Expressions) is a schema language for describing and validating the structure of RDF graphs by constraining properties, cardinalities, and values. It is used by [[Solid]] to validate pod data and is used to enforce a [[Domain Ontology]].
+- ### Content
+  - A ShEx schema defines shapes that nodes must conform to, supporting closed and open shapes, logical operators, and value-set constraints. Compared with SHACL it favours a compact grammar and a clear conformance semantics, making it well suited to data interchange contracts and decentralised storage validation.

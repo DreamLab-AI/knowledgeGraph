@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:812bc1e9539a1c4f0f80a207c57afe2a2a32253195792af45cef83872300a4df",
+  "title": "Rainbow Wallet",
+  "slug": "rainbow-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:rainbow-wallet",
+  "domain": "blockchain",
+  "definition": "A self-custodial Ethereum wallet application focused on a consumer-friendly interface for holding tokens and interacting with decentralised applications. The user controls the private keys directly rather than entrusting them to a custodian.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "digital-wallet",
+      "label": "Digital Wallet"
+    },
+    {
+      "slug": "https-rainbow-me",
+      "label": "https://rainbow.me/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

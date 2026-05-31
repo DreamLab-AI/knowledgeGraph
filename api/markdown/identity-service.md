@@ -1,0 +1,4 @@
+- ### Definition
+  - An identity service provides authentication and authorisation to applications, operating within the [[Service Layer]] and exposing identity capabilities to the [[Platform Layer]].
+- ### Content
+  - By centralising identity logic the service enables single sign-on, role- and attribute-based access control, and federation with external identity providers. It maintains the user directory, issues and validates tokens, and enforces policies, letting downstream services remain agnostic to the mechanics of identity.

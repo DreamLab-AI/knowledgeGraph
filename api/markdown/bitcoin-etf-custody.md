@@ -1,0 +1,4 @@
+- ### Definition
+  - Bitcoin ETF custody is the regulated, institutional safekeeping of the bitcoin backing a spot ETF, commonly enforced through [[Multi-Sig Governance]] over cold-storage keys.
+- ### Content
+  - Qualified custodians segregate fund assets, hold keys in geographically distributed cold storage, and publish reserve attestations. Multi-signature and MPC schemes ensure no single operator can move funds, satisfying the security and compliance demands of issuers and regulators.

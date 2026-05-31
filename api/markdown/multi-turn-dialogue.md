@@ -1,0 +1,4 @@
+- ### Definition
+  - Multi-turn dialogue is conversation over several exchanges where context, state, and references must persist across turns. It is the core capability implemented by [[Chatbots]].
+- ### Content
+  - Handling it well requires tracking dialogue state, resolving anaphora and ellipsis, and conditioning each response on accumulated history within the model's context window. Long conversations strain context limits, motivating summarisation, retrieval of prior turns, and explicit memory mechanisms to preserve coherence.

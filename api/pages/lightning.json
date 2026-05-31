@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:13236e97f8f0eedf2ef4328373fa74c2448d8fa83453d1bc484b4d0a6c181764",
+  "title": "Lightning",
+  "slug": "lightning",
+  "public": true,
+  "classIri": "urn:ngm:class:lightning",
+  "domain": "blockchain",
+  "definition": "Lightning is a layer-two payment protocol built on Bitcoin that uses payment channels to enable fast, low-cost transactions off the main chain. It settles to the Bitcoin blockchain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bolt",
+        "label": "BOLT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "https-lightning-network",
+      "label": "https://lightning.network"
+    },
+    {
+      "slug": "https-github-com-lightning-bolts",
+      "label": "https://github.com/lightning/bolts"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "bolt-11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

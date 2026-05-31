@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:9d6e5b3a489bfb22adef802c5f99337673f4f25fc432fccadcfd70e272abf94c",
+  "title": "Mantle",
+  "slug": "mantle",
+  "public": true,
+  "classIri": "urn:ngm:class:mantle",
+  "domain": "blockchain",
+  "definition": "Mantle is an Ethereum layer-two network that uses a rollup design to lower transaction costs and increase throughput. It separates data availability from execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "https-www-mantle-xyz",
+      "label": "https://www.mantle.xyz"
+    },
+    {
+      "slug": "https-docs-mantle-xyz",
+      "label": "https://docs.mantle.xyz"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

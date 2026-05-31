@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:scientific-discovery-acceleration",
+  "title": "Scientific Discovery Acceleration",
+  "slug": "scientific-discovery-acceleration",
+  "public": true,
+  "classIri": "urn:ngm:class:scientific-discovery-acceleration",
+  "domain": "ai",
+  "definition": "Scientific discovery acceleration is the application of artificial intelligence to compress the cycle of hypothesis generation, experimentation, and analysis across scientific disciplines. It includes AI-driven literature synthesis, simulation surrogates, automated experiment design, and prediction of structures or materials. It is often cited as a transformative potential outcome of advanced and general-purpose AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    }
+  ]
+}

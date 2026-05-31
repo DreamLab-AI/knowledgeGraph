@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:5539ad5f46aa77c2e59e525ccf95c70741eb3f120c5682eb27ffab6d23dcd2d5",
+  "title": "Superfluid",
+  "slug": "superfluid",
+  "public": true,
+  "classIri": "urn:ngm:class:superfluid",
+  "domain": "physics",
+  "definition": "A phase of matter that flows without viscosity, exhibiting effects such as frictionless flow and the ability to climb container walls. It arises in certain quantum systems at very low temperatures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

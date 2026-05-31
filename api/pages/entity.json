@@ -92,5 +92,54 @@
       "label": "Digital Twin"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "hmrc",
+      "label": "HMRC"
+    },
+    {
+      "slug": "hong-kong",
+      "label": "Hong Kong"
+    },
+    {
+      "slug": "king-s-college-london",
+      "label": "King's College London"
+    },
+    {
+      "slug": "leeds",
+      "label": "Leeds"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "newcastle",
+      "label": "Newcastle"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "sheffield",
+      "label": "Sheffield"
+    },
+    {
+      "slug": "university-college-london",
+      "label": "University College London"
+    },
+    {
+      "slug": "university-of-oxford",
+      "label": "University of Oxford"
+    }
+  ]
 }

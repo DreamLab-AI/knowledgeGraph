@@ -63,6 +63,10 @@
       "label": "Deepfakes"
     },
     {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

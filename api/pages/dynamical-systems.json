@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:319bb99f12b72e8efe23a179668210fee3e6e0590c9019e12c837111de45219b",
+  "title": "Dynamical Systems",
+  "slug": "dynamical-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamical-systems",
+  "domain": "general",
+  "definition": "Dynamical systems is the mathematical study of how the state of a system evolves over time according to fixed rules. It applies to physics, biology, engineering, and control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-dynamical-system",
+      "label": "https://en.wikipedia.org/wiki/Dynamical_system"
+    },
+    {
+      "slug": "https-mathworld-wolfram-com-dynamical-system-html",
+      "label": "https://mathworld.wolfram.com/DynamicalSystem.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    }
+  ]
+}

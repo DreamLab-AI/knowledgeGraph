@@ -1,0 +1,4 @@
+- ### Definition
+  - Methane abatement captures, combusts, or otherwise prevents the venting of methane, a potent greenhouse gas. It links to [[Stranded Energy Monetisation]] and is raised in debates over [[Bitcoin Environmental Issues]].
+- ### Content
+  - Because methane traps far more heat than CO2 over short horizons, combusting it (even without useful work) yields a large net warming reduction. Bitcoin miners deployed at oil wells or landfills can consume vented or flared gas on-site, converting a wasted emission into electricity and an economic incentive to abate.

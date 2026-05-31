@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:7cac2662e4d8b98e15be1be604992fc663a547671773127930421aef685cd467",
+  "title": "Markov Chain",
+  "slug": "markov-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:markov-chain",
+  "domain": "mathematics",
+  "definition": "A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    }
+  ]
+}

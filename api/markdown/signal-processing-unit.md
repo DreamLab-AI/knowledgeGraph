@@ -1,0 +1,4 @@
+- ### Definition
+  - A signal processing unit filters, transforms, and extracts features from raw sensor streams, typically with DSP cores and digital filters. It is required by [[Haptics]] rendering and is a part of a [[Biosensing Interface]].
+- ### Content
+  - Real-time constraints drive the use of fixed-point DSPs, FFT accelerators, and low-latency filter pipelines. In haptics it computes force and texture signals from contact data, while in biosensing it denoises and decodes physiological signals into commands within tight latency budgets.

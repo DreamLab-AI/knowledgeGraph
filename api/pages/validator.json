@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:0e2c61ade807ae5a776fa24b9c9e583ff2f8176d2ce9ab1130701d1d14997e71",
+  "title": "Validator",
+  "slug": "validator",
+  "public": true,
+  "classIri": "urn:ngm:class:validator",
+  "domain": "blockchain",
+  "definition": "A network participant in a proof-of-stake system that proposes and attests to blocks, committing stake that can be slashed for misbehaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "consensus-protocol",
+      "label": "Consensus Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

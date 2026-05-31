@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:652240e4af324d1a3a3ef9bbae761811179c68fafc176b2c727a1c9e46f26697",
+  "title": "BC-0482-eu-mica-regulation",
+  "slug": "bc-0482-eu-mica-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-0482-eu-mica-regulation",
+  "domain": "blockchain",
+  "definition": "The EU MiCA regulation is the European Union's Markets in Crypto-Assets framework, which establishes harmonised rules for the issuance, offering and provision of services relating to crypto-assets across member states.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

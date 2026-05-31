@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:965e8fb1c620d16bb7079a8617c0998dfc2fc91c09f61748e9aadde28db612ee",
+  "title": "Keras",
+  "slug": "keras",
+  "public": true,
+  "classIri": "urn:ngm:class:keras",
+  "domain": "machine-learning",
+  "definition": "Keras is an open-source high-level neural network API written in Python, designed for fast experimentation. It runs on top of backends such as TensorFlow and is integrated as TensorFlow's official high-level interface.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning-framework",
+      "label": "Deep Learning Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:market-expansion",
+  "title": "Market Expansion",
+  "slug": "market-expansion",
+  "public": true,
+  "classIri": "urn:ngm:class:market-expansion",
+  "domain": "governance",
+  "definition": "Market expansion is the growth strategy of extending a product or service into new customer segments, geographies, or use cases to increase the total addressable market. In technology contexts it is often unlocked by removing access barriers such as language, cost, or accessibility limitations. It is a primary commercial outcome of capabilities like real-time translation and inclusive design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-translation",
+        "label": "Real-Time Translation"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

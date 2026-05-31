@@ -1,0 +1,4 @@
+- ### Definition
+  - Blockchain core is the base-layer machinery — consensus, ledger, networking, and validation — on which higher-level constructs such as [[Token Economics]] and the [[Digital Wallet]] depend.
+- ### Content
+  - The core enforces the rules that make state shared and tamper-resistant: nodes validate blocks against protocol rules, reach consensus on canonical history, and gossip data over the P2P network. Its parameters determine the security and decentralisation guarantees inherited by every application layered on top.

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:6f81b8dbdc2cb8e3c31b70ccfdeed30185ebcc66f973d69bbf21f604a2253d31",
+  "title": "ISO 29100",
+  "slug": "iso-29100",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-29100",
+  "domain": "standards",
+  "definition": "ISO/IEC 29100 provides a privacy framework defining terminology, actors, roles and principles for the protection of personally identifiable information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy By Design"
+    }
+  ]
+}

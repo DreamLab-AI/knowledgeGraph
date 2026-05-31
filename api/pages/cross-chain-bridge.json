@@ -12,12 +12,12 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:asset-transfer-mechanism",
-      "label": "Asset Transfer Mechanism"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "id": "urn:ngm:class:cross-chain-application",
-      "label": "Cross-Chain Application"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -777,6 +777,18 @@
       "label": "Blockchain Infrastructure"
     },
     {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
+      "slug": "connext",
+      "label": "Connext"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
       "slug": "cross-platform-interoperability",
       "label": "Cross-Platform Interoperability"
     },
@@ -785,8 +797,20 @@
       "label": "Distributed Ledger"
     },
     {
+      "slug": "hyperlane",
+      "label": "Hyperlane"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
     },
     {
       "slug": "layer-0",
@@ -811,6 +835,14 @@
     {
       "slug": "sidechain",
       "label": "Sidechain"
+    },
+    {
+      "slug": "squid-router",
+      "label": "Squid Router"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "blockchain-core-concepts",

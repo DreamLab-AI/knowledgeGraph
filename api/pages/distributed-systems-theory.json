@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:91f66aa18c9b50b875b96775f42e908147e4f3312d1f6f6f0877a13cdef49653",
+  "title": "Distributed Systems Theory",
+  "slug": "distributed-systems-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-systems-theory",
+  "domain": "mathematics",
+  "definition": "The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

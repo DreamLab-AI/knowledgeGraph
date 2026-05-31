@@ -118,12 +118,28 @@
       "label": "CBDCs"
     },
     {
+      "slug": "citi-token-services",
+      "label": "Citi Token Services"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
       "slug": "enterprise-smart-contracts",
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
     },
     {
       "slug": "ontology-technical-details",

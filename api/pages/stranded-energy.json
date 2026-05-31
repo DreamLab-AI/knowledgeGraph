@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:stranded-energy",
+  "title": "Stranded Energy",
+  "slug": "stranded-energy",
+  "public": true,
+  "classIri": "urn:ngm:class:stranded-energy",
+  "domain": "blockchain",
+  "definition": "Stranded energy is generated power that cannot be economically transmitted to demand centres because it is produced in remote locations, lacks grid connection, or is curtailed when supply exceeds local demand. Examples include flared associated gas at oil wells, over-built hydro and wind capacity, and geothermal sites far from population. Because it would otherwise be wasted, stranded energy can be monetised by co-locating energy-intensive computation such as Bitcoin mining at the source.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

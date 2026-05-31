@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:04f5fcbe4a2a8e3a90ebdda247391cd50a1df62af26c03cc23c57cb4ce0b7d03",
+  "title": "Mastercard",
+  "slug": "mastercard",
+  "public": true,
+  "classIri": "urn:ngm:class:mastercard",
+  "domain": "metaverse",
+  "definition": "Mastercard is a global payments technology company operating a card network that authorises, clears and settles transactions between issuing and acquiring banks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

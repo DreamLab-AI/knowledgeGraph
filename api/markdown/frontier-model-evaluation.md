@@ -1,0 +1,4 @@
+- ### Definition
+  - Frontier model evaluation rigorously tests the capabilities and risks of [[Frontier Models]], supplying the evidence that informs deployment policy and emerging regimes such as [[Asia-Pacific Regulation]].
+- ### Content
+  - Evaluations span standard capability benchmarks, adversarial red-teaming, and assessments of dangerous capabilities such as cyber-offence, biological uplift, and autonomous replication. Results feed safety cases and responsible-scaling policies that set thresholds for additional safeguards. Independent third-party evaluation and pre-deployment testing are central to frontier AI safety frameworks.

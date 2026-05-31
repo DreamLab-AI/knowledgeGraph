@@ -483,12 +483,12 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:applied-ai-research-lab",
-      "label": "Applied AI Research Lab"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:deep-learning-library",
-      "label": "Deep Learning Library"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -664,11 +664,11 @@ public:: true
         "label": "ULMFiT"
       },
       {
-        "@id": "urn:ngm:individual:bert",
+        "@id": "urn:ngm:class:bert",
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -698,7 +698,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion-training",
+        "@id": "urn:ngm:class:stable-diffusion-training",
         "label": "Stable Diffusion Training"
       }
     ],

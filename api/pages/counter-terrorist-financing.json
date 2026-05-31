@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:counter-terrorist-financing",
+  "title": "Counter-Terrorist Financing",
+  "slug": "counter-terrorist-financing",
+  "public": true,
+  "classIri": "urn:ngm:class:counter-terrorist-financing",
+  "domain": "blockchain",
+  "definition": "Counter-Terrorist Financing (CTF or CFT) is a set of legal, regulatory, and operational measures designed to detect, prevent, and disrupt the funding of terrorist activities. It complements anti-money-laundering regimes and is enforced through obligations such as customer due diligence, transaction monitoring, and reporting of suspicious activity. In digital assets, CTF underpins requirements like the FATF Travel Rule that mandate originator and beneficiary information for transfers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

@@ -121,6 +121,10 @@
       "label": "Information Security"
     },
     {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     },

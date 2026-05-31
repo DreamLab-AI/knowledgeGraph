@@ -1,0 +1,4 @@
+- ### Definition
+  - The CBECI Methodology is the estimation approach behind the [[CBECI]], modelling [[Bitcoin Mining]] electricity demand from hashrate, a profitability-weighted hardware efficiency distribution, and overhead assumptions.
+- ### Content
+  - The model bounds consumption between a lower estimate (most efficient hardware) and an upper estimate (least efficient still-profitable hardware), reporting a best-guess central figure. Carbon estimates extend the methodology by mapping consumption onto a geographically weighted grid emission factor derived from miner location data.

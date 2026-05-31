@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:decarbonisation",
+  "title": "Decarbonisation",
+  "slug": "decarbonisation",
+  "public": true,
+  "classIri": "urn:ngm:class:decarbonisation",
+  "domain": "governance",
+  "definition": "Decarbonisation is the systematic reduction of carbon dioxide and other greenhouse-gas emissions from an activity, organisation or economy, ultimately toward net zero. It combines energy efficiency, electrification, renewable energy procurement and removal of residual emissions, often guided by science-based targets. For energy-intensive systems such as blockchains it is the pathway to credible carbon-neutral operation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Reality-Virtuality Continuum
 
 # Reality Virtuality Continuum
 ```json-ld

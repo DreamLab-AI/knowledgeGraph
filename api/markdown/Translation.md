@@ -327,12 +327,12 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:computational-linguistics",
-      "label": "Computational Linguistics"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     },
     {
-      "@id": "urn:ngm:class:cross-lingual-transfer",
-      "label": "Cross-Lingual Transfer"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
   "relations": {

@@ -447,8 +447,8 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:socio-technical-transition",
-      "label": "Socio-Technical Transition"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     },
     {
       "@id": "urn:ngm:class:innovation-diffusion",

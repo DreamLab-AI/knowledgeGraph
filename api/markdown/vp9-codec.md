@@ -1,0 +1,4 @@
+- ### Definition
+  - VP9 is an open, royalty-free video codec used to encode real-time streams such as [[Screen Sharing]], and a direct predecessor to the [[AV1 Codec]].
+- ### Content
+  - VP9 employs larger superblocks, more flexible partitioning, and improved entropy coding over VP8, with hardware decode support across modern GPUs and mobile SoCs. In low-latency contexts it competes with H.264 by offering better compression at the cost of higher encode complexity, a trade-off mitigated by real-time-tuned encoder presets.

@@ -1,0 +1,4 @@
+- ### Definition
+  - DBpedia is an RDF knowledge graph extracted from Wikipedia and a hub of the Linked Open Data cloud, widely reused in [[Knowledge Graphing]] for entity linking and semantic enrichment.
+- ### Content
+  - Extraction frameworks parse Wikipedia infoboxes and content into typed triples aligned to the DBpedia ontology, queryable via SPARQL. Its dense interlinking with other datasets makes it a default source of background knowledge for semantic applications.

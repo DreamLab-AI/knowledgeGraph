@@ -1,0 +1,4 @@
+- ### Definition
+  - A BLIP-2 captioner uses the BLIP-2 vision-language model to generate image captions, frequently to auto-label training data for fine-tuning workflows such as [[Kohya DreamBooth and Similar]].
+- ### Content
+  - BLIP-2's Q-Former extracts a compact set of visual query tokens that condition a frozen LLM, yielding strong captioning and visual question answering at low training cost. In image-generation pipelines, batch captioning with BLIP-2 produces the text-image pairs needed to fine-tune or personalise diffusion models.

@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:70e94d64df199dd26757ad052fb9f3488886a5fea47808964de9c21c485269f6",
+  "title": "Visa",
+  "slug": "visa",
+  "public": true,
+  "classIri": "urn:ngm:class:visa",
+  "domain": "general",
+  "definition": "Visa is a multinational payment technology company that operates one of the largest electronic payment networks, connecting cardholders, merchants, and banks. It is headquartered in the United States.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "https-www-visa-com",
+      "label": "https://www.visa.com"
+    },
+    {
+      "slug": "https-usa-visa-com-about-visa-html",
+      "label": "https://usa.visa.com/about-visa.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

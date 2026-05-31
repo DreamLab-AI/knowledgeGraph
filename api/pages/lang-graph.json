@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:bcd185b3299b94a4291e5cd547410d626d0bbb8bc3a63903fabe0237b749b633",
+  "title": "LangGraph",
+  "slug": "lang-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:lang-graph",
+  "domain": "artificial-intelligence",
+  "definition": "LangGraph is a library for building stateful, multi-step language model applications by representing control flow as a graph. It is part of the LangChain ecosystem and supports cyclic agent workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

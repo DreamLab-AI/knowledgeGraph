@@ -1,0 +1,4 @@
+- ### Definition
+  - GoQuorum is a permissioned Ethereum client; it is a core part of the [[Quorum Blockchain]] platform and is widely used to operate [[Consortium Blockchain]] networks with private transactions.
+- ### Content
+  - GoQuorum extends go-ethereum with a privacy manager (Tessera) that keeps the payloads of private transactions off the public state, sharing only hashes on-chain. It replaces proof-of-work with Byzantine-fault-tolerant consensus such as QBFT/IBFT or crash-fault-tolerant Raft, appropriate for vetted validator sets. Account- and node-level permissioning controls who may join the network and submit transactions.

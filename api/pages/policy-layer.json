@@ -1,0 +1,206 @@
+{
+  "id": "urn:visionflow:page:ebd6da40c4ce054df8bcf0704da3a1c7e7e82cd19fede28f33da1b61a7a263b0",
+  "title": "Policy Layer",
+  "slug": "policy-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-layer",
+  "domain": "policy",
+  "definition": "The Policy Layer is the cross-cutting stratum that encodes machine-readable rules, constraints, and authorisations governing system behaviour. It sits above operational concerns and below the human-facing Governance Layer, translating governance intent into enforceable statements that other layers consult before acting. It contains policy definitions, decision points, and enforcement hooks rather than the data or compute those policies regulate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-layer",
+        "label": "Identity Layer"
+      },
+      {
+        "id": "urn:ngm:class:control-layer",
+        "label": "Control Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-layer",
+        "label": "Governance Layer"
+      },
+      {
+        "id": "urn:ngm:class:compliance-layer",
+        "label": "Compliance Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "attribute-based-access-control",
+      "label": "Attribute-Based Access Control"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "nist-national-institute-of-standards-and-technology",
+      "label": "NIST (National Institute of Standards and Technology)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-layer",
+      "label": "Compliance Layer"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "governance-layer",
+      "label": "Governance Layer"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

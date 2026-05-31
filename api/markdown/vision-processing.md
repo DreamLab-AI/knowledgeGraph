@@ -1,0 +1,4 @@
+- ### Definition
+  - Vision processing turns raw imagery into structured representations and decisions, providing the computational substrate for [[Medical Imaging AI]] and tasks like [[Image Segmentation]].
+- ### Content
+  - Pipelines chain preprocessing, feature extraction, detection, segmentation and recognition, with modern systems dominated by convolutional and transformer models. Performance and latency requirements drive deployment on GPUs, vision-processing units and edge accelerators.

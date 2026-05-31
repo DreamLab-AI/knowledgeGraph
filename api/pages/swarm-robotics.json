@@ -182,6 +182,10 @@
     {
       "slug": "robotics-core-concepts",
       "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
     }
   ]
 }

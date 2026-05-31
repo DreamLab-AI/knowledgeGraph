@@ -135,12 +135,12 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:coordinate-robots",
-      "label": "Coordinate Robots"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
     },
     {
-      "@id": "urn:ngm:class:fixed-base-manipulator",
-      "label": "Fixed-Base Manipulator"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {

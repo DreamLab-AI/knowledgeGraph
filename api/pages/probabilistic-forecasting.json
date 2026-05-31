@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:probabilistic-forecasting",
+  "title": "Probabilistic Forecasting",
+  "slug": "probabilistic-forecasting",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-forecasting",
+  "domain": "ai",
+  "definition": "Probabilistic forecasting predicts future quantities as full probability distributions rather than single point estimates, quantifying uncertainty in the prediction. Outputs are typically expressed as predictive intervals, quantiles, or samples. It is essential for risk-aware decision-making in domains such as demand planning, energy, and finance where the cost of error is asymmetric.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time-Series Forecasting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

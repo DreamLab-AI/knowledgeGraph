@@ -67,6 +67,14 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "boston-dynamics-spot",
+      "label": "Boston Dynamics Spot"
+    },
+    {
+      "slug": "drone-navigation",
+      "label": "Drone Navigation"
+    },
+    {
       "slug": "localization",
       "label": "Localization"
     },

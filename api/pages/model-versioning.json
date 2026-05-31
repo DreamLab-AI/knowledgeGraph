@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:model-versioning",
+  "title": "Model Versioning",
+  "slug": "model-versioning",
+  "public": true,
+  "classIri": "urn:ngm:class:model-versioning",
+  "domain": "ai",
+  "definition": "Model versioning is the practice of tracking and managing successive versions of machine learning models, recording the code, data, hyperparameters, and checkpoints that produced each one. It enables reproducibility, rollback, lineage tracing, and controlled promotion of models through development and production stages. Model registries and artefact stores implement versioning as a core MLOps capability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    }
+  ]
+}

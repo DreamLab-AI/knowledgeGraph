@@ -67,6 +67,10 @@
       "label": "Enterprise Token Standards"
     },
     {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },

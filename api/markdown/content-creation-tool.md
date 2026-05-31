@@ -1,0 +1,4 @@
+- ### Definition
+  - A content creation tool is software for authoring digital media, including specialised [[Generative Design Tool]] applications, and forms a stage within a [[Content Creation Pipeline]].
+- ### Content
+  - Tools range from raster and vector editors to 3D modellers, digital audio workstations, and prompt-driven generators. In a production pipeline they sit alongside asset management and review stages, with interoperable formats and metadata determining how cleanly their output flows downstream.

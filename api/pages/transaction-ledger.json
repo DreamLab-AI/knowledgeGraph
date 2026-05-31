@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:transaction-ledger",
+  "title": "Transaction Ledger",
+  "slug": "transaction-ledger",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-ledger",
+  "domain": "blockchain",
+  "definition": "A transaction ledger is an ordered, append-only record of value transfers or state changes that serves as the authoritative history of activity within a financial or blockchain system. Each entry captures the parties, amounts, and timing of a transaction, and in distributed settings the ledger is cryptographically chained and replicated to guarantee integrity and auditability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      },
+      {
+        "id": "urn:ngm:class:transaction-standard",
+        "label": "Transaction Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    }
+  ]
+}

@@ -12,12 +12,12 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:digital-asset-ecology",
-      "label": "Digital Asset Ecology"
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     },
     {
-      "id": "urn:ngm:class:energy-economics",
-      "label": "Energy Economics"
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     }
   ],
   "entityType": "Class",
@@ -707,6 +707,10 @@
     {
       "slug": "bitcoin-distribution",
       "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "cambridge-centre-for-alternative-finance",
+      "label": "Cambridge Centre for Alternative Finance"
     },
     {
       "slug": "death-of-the-internet",

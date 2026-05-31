@@ -336,7 +336,7 @@
         "label": "CBDC Frameworks"
       },
       {
-        "id": "urn:ngm:individual:chat-gpt",
+        "id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -711,5 +711,46 @@
       "label": "Tokenomics"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "auction-theory",
+      "label": "Auction Theory"
+    },
+    {
+      "slug": "cambridge-judge-business-school",
+      "label": "Cambridge Judge Business School"
+    },
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "glen-weyl",
+      "label": "Glen Weyl"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    },
+    {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "slug": "paolo-tasca",
+      "label": "Paolo Tasca"
+    },
+    {
+      "slug": "political-economy",
+      "label": "Political Economy"
+    }
+  ]
 }

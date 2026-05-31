@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:treasury-diversification",
+  "title": "Treasury Diversification",
+  "slug": "treasury-diversification",
+  "public": true,
+  "classIri": "urn:ngm:class:treasury-diversification",
+  "domain": "blockchain",
+  "definition": "Treasury diversification is the practice of spreading an organisation's or DAO's reserves across multiple asset types, such as stablecoins, native tokens, blue-chip crypto, and yield-bearing positions, to reduce concentration risk and stabilise runway. It mitigates the volatility and correlation exposure that arises when a treasury holds predominantly its own governance token.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Cradle-to-Cradle design treats every material as a continuously circulating nutrient, designing products for safe biological return or technical recovery. It is a core implementation philosophy of the [[Circular Economy]].
+- ### Content
+  - The framework, formalised by McDonough and Braungart, evaluates products across material health, reutilisation, renewable energy use, water stewardship, and social fairness. Certification tiers incentivise manufacturers to redesign supply chains so that components can be disassembled and recovered without downcycling or contamination.

@@ -16,7 +16,7 @@
       "label": "Neural Network"
     },
     {
-      "id": "urn:ngm:individual:foundation-models",
+      "id": "urn:ngm:class:foundation-models",
       "label": "Foundation Models"
     }
   ],
@@ -329,6 +329,10 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -385,6 +389,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -399,6 +407,10 @@
     {
       "slug": "co-training",
       "label": "Co Training"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
     },
     {
       "slug": "collaborative-whiteboard",
@@ -435,6 +447,10 @@
     {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT 4"
     },
     {
       "slug": "gpt-engineer",
@@ -497,6 +513,14 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },
@@ -523,6 +547,10 @@
     {
       "slug": "metaverse-ontology",
       "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "mistral",
+      "label": "Mistral"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -609,6 +637,10 @@
       "label": "Speech and Voice"
     },
     {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     },
@@ -649,8 +681,16 @@
       "label": "Variational Autoencoders"
     },
     {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
+    },
+    {
       "slug": "multimodal",
       "label": "multimodal"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
     }
   ]
 }

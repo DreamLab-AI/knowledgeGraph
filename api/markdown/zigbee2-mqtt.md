@@ -1,0 +1,4 @@
+- ### Definition
+  - Zigbee2MQTT bridges Zigbee devices to MQTT for local, vendor-neutral smart-home control, commonly paired with [[Home Assistant]].
+- ### Content
+  - Running with a supported Zigbee coordinator dongle, it forms its own Zigbee network and exposes each device's state and commands as MQTT topics, drawing on an extensive community-maintained device database. This removes dependence on manufacturer bridges and cloud services, keeping automation entirely on the local network.

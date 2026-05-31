@@ -323,8 +323,8 @@ public:: true
       "label": "Neural Processing Unit"
     },
     {
-      "@id": "urn:ngm:class:ai-accelerator",
-      "label": "AI Accelerator"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -492,7 +492,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

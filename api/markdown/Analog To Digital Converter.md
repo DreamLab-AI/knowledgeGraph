@@ -1,4 +1,5 @@
 public:: true
+alias:: Analog-to-Digital Converter
 
 # Analog To Digital Converter
 ```json-ld
@@ -83,8 +84,8 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:signal-processing-hardware",
-      "label": "Signal Processing Hardware"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "relations": {

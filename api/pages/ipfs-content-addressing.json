@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:0f7d3bfecc17faa60b01c89c7e59de612d6ed9fb8f3223277b52aec4529e8d08",
+  "title": "IPFS Content Addressing",
+  "slug": "ipfs-content-addressing",
+  "public": true,
+  "classIri": "urn:ngm:class:ipfs-content-addressing",
+  "domain": "distributed-systems",
+  "definition": "The addressing scheme used by the InterPlanetary File System, in which content is identified by a cryptographic hash of its data rather than by location. The resulting content identifier changes if the content changes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ipfs",
+      "label": "IPFS"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

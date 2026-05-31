@@ -1,0 +1,4 @@
+- ### Definition
+  - The ICO AI Guidance applies UK data-protection principles to AI systems, shaping how practices such as [[Hyper-Personalisation]] and [[AI Search]] handle personal data lawfully and fairly.
+- ### Content
+  - It articulates expectations around explainability, statistical accuracy, bias mitigation, and the rights attached to automated decisions under UK GDPR. Organisations use it alongside DPIAs to balance model performance against the privacy and fairness obligations owed to individuals.

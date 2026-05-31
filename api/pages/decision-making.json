@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:f73f72fc78aeafdfd6e7be9915174cecbcacf1c5e6044e55b7ac550ac8b3f62d",
+  "title": "Decision Making",
+  "slug": "decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:decision-making",
+  "domain": "cognitive-science",
+  "definition": "Decision making is the cognitive and computational process of selecting a course of action from a set of alternatives based on available information and objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

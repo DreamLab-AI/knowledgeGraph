@@ -58,6 +58,10 @@
       "label": "Data Protection"
     },
     {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
+    },
+    {
       "slug": "privacy-enhancing-computation-pec",
       "label": "Privacy-Enhancing Computation (PEC)"
     }

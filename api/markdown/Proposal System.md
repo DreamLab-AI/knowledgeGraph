@@ -1,4 +1,5 @@
 public:: true
+alias:: ProposalSystem
 
 # Proposal System
 ```json-ld

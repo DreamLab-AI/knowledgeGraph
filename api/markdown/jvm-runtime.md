@@ -1,0 +1,4 @@
+- ### Definition
+  - The JVM runtime is the bytecode execution environment required by [[R3 Corda]] and by JVM languages such as [[Kotlin]], providing JIT compilation, garbage collection and a managed security model.
+- ### Content
+  - Bytecode verification, adaptive JIT optimisation and generational garbage collection let the JVM deliver near-native performance with strong memory safety. Its mature, portable runtime is the reason permissioned ledgers and large enterprise back ends standardise on it as a deployment target.

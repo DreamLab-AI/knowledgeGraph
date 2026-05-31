@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:real-time-analytics",
+  "title": "Real-Time Analytics",
+  "slug": "real-time-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-analytics",
+  "domain": "data",
+  "definition": "Real-time analytics is the processing and analysis of data immediately as it is generated, producing insights and triggering actions with sub-second to low-second latency. It relies on stream-processing engines, in-memory computation, and windowed aggregation rather than batch ETL. It enables responsive dashboards, anomaly detection, and adaptive systems that act on fresh data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adaptive-virtual-experience",
+        "label": "Adaptive Virtual Experience"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adaptive-virtual-experience",
+      "label": "Adaptive Virtual Experience"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ]
+}

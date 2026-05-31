@@ -56,6 +56,10 @@
     {
       "slug": "digital-ontology-repository",
       "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
     }
   ]
 }

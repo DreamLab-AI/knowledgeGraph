@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:warehouse-robotics",
+  "title": "Warehouse Robotics",
+  "slug": "warehouse-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:warehouse-robotics",
+  "domain": "robotics",
+  "definition": "Warehouse robotics is the application of autonomous mobile robots, robotic arms, and coordinated fleets to automate storage, picking, sorting, and transport tasks within fulfilment and distribution centres. Systems integrate navigation, perception, fleet orchestration, and warehouse management software to move goods and people efficiently. It is one of the most commercially mature robotics domains, driven by e-commerce throughput and labour demands.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:4e62a33e5c8ffbfb692a16325971214712c68589a652f963c17f4a3b246a3e14",
+  "title": "Voting System",
+  "slug": "voting-system",
+  "public": true,
+  "classIri": "urn:ngm:class:voting-system",
+  "domain": "governance",
+  "definition": "A voting system is a method for collecting and aggregating participants' preferences into a collective decision, used in governance, elections, and on-chain protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    }
+  ]
+}

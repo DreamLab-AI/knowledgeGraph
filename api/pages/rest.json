@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:093c0f25e6cde6eae904d9f701e66595ee46f9db57aff86ff5bc81dba38c56d6",
+  "title": "REST",
+  "slug": "rest",
+  "public": true,
+  "classIri": "urn:ngm:class:rest",
+  "domain": "distributed-systems",
+  "definition": "REST is an architectural style for distributed systems that uses stateless requests over HTTP and a uniform interface based on resources and standard methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-protocol",
+        "label": "Payment Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    },
+    {
+      "slug": "https-www-ics-uci-edu-fielding-pubs-dissertation-rest-arch-style-htm",
+      "label": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+    },
+    {
+      "slug": "https-developer-mozilla-org-en-us-docs-glossary-rest",
+      "label": "https://developer.mozilla.org/en-US/docs/Glossary/REST"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "apilayer",
+      "label": "APILayer"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    }
+  ]
+}

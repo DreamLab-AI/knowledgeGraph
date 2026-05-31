@@ -1,4 +1,5 @@
 public:: true
+alias:: Model-based Control
 
 # Model Based Control
 ```json-ld
@@ -327,8 +328,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:predictive-control",
-      "label": "Predictive Control"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "@id": "urn:ngm:class:trajectory-optimisation",

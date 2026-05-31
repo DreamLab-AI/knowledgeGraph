@@ -467,8 +467,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:geometric-camera-models",
-      "label": "Geometric Camera Models"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
       "@id": "urn:ngm:class:sensor-calibration",

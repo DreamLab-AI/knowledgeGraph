@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:28895d99406aaa0f7a7a5baf190590c1d9d9ea86ff50026757a8fb46f9eeba5c",
+  "title": "Intel SGX",
+  "slug": "intel-sgx",
+  "public": true,
+  "classIri": "urn:ngm:class:intel-sgx",
+  "domain": "distributed-systems",
+  "definition": "Intel SGX is a set of processor instructions that create isolated memory regions called enclaves, protecting code and data from other software on the same system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intel",
+        "label": "Intel"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    },
+    {
+      "slug": "https-www-intel-com-content-www-us-en-developer-tools-software-guard-extensions-overview-html",
+      "label": "https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/overview.html"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-software-guard-extensions",
+      "label": "https://en.wikipedia.org/wiki/Software_Guard_Extensions"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -16,8 +16,8 @@
       "label": "Federated System"
     },
     {
-      "id": "urn:ngm:class:multi-organisation-database",
-      "label": "Multi-Organisation Database"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",

@@ -1,4 +1,5 @@
 public:: true
+alias:: SelectiveDisclosure
 
 # selective disclosure
 ```json-ld

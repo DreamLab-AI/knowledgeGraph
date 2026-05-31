@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:1dba69b085927740f8cf6309c8d4a5605a4446cfc3614e13a55132774e02226b",
+  "title": "Graph Theory",
+  "slug": "graph-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-theory",
+  "domain": "graph-theory",
+  "definition": "Graph Theory is the branch of mathematics that studies graphs, structures consisting of vertices connected by edges, used to model pairwise relationships between objects. It examines properties such as connectivity, paths, cycles, colourings, matchings and flows, and classifies graphs by structure (for example trees, bipartite and planar graphs). Originating with Euler's 1736 solution of the Seven Bridges of Konigsberg problem, it now underpins network analysis, optimisation and computer science. Graph algorithms are fundamental to routing, scheduling, social network analysis and the representation of knowledge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tree",
+        "label": "Tree"
+      },
+      {
+        "id": "urn:ngm:class:shortest-path",
+        "label": "Shortest Path"
+      },
+      {
+        "id": "urn:ngm:class:graph-colouring",
+        "label": "Graph Colouring"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tree",
+      "label": "Tree"
+    },
+    {
+      "slug": "shortest-path",
+      "label": "Shortest Path"
+    },
+    {
+      "slug": "graph-colouring",
+      "label": "Graph Colouring"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "network-theory",
+      "label": "Network Theory"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

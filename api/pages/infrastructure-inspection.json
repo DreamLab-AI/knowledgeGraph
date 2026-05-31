@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:infrastructure-inspection",
+  "title": "Infrastructure Inspection",
+  "slug": "infrastructure-inspection",
+  "public": true,
+  "classIri": "urn:ngm:class:infrastructure-inspection",
+  "domain": "robotics",
+  "definition": "Infrastructure inspection is the robotic application of surveying and assessing physical assets such as power lines, pipelines, bridges, wind turbines, and buildings to detect defects, corrosion, and structural risk. Robots equipped with cameras, thermal and LiDAR sensors capture data in environments that are hazardous, remote, or costly for human crews. It improves safety and inspection frequency while generating quantitative condition records for predictive maintenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: CryptographicProof
 
 # Cryptographic Proof
 ```json-ld

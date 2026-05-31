@@ -1,4 +1,5 @@
 public:: true
+alias:: VisualOdometry
 
 # visual odometry
 ```json-ld

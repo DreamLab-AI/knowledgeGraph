@@ -17,16 +17,16 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:comfy-ui",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:comfy-ui",
+  "@type": "Class",
   "label": "ComfyUI",
   "definition": "ComfyUI is an open-source, node-based graphical interface for constructing and executing Stable Diffusion image-generation pipelines. It exposes the underlying diffusion inference graph as a visual workflow of interconnected nodes, enabling non-destructive, reproducible experimentation. The tool has become a de-facto community standard for advanced image and video synthesis workflows.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:individual:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
     ],

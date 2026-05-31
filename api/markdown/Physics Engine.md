@@ -1,4 +1,5 @@
 public:: true
+alias:: PhysicsEngine
 
 # Physics Engine
 ```json-ld

@@ -155,8 +155,8 @@ public:: true
       "label": "CollectiveGovernance"
     },
     {
-      "@id": "urn:ngm:class:impact-investment",
-      "label": "ImpactInvestment"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

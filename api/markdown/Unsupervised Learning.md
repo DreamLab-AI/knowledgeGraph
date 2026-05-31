@@ -1,4 +1,5 @@
 public:: true
+alias:: UnsupervisedLearning
 
 # Unsupervised Learning
 ```json-ld

@@ -90,6 +90,10 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
       "slug": "digital-content-overlay",
       "label": "Digital Content Overlay"
     },
@@ -122,6 +126,14 @@
       "label": "Image Segmentation"
     },
     {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
     },
@@ -130,12 +142,20 @@
       "label": "Light field"
     },
     {
+      "slug": "meta",
+      "label": "Meta"
+    },
+    {
       "slug": "metaverse-domain",
       "label": "Metaverse Domain"
     },
     {
       "slug": "metaverse-technology",
       "label": "Metaverse Technology"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
     },
     {
       "slug": "mixed-reality",
@@ -178,6 +198,10 @@
       "label": "Shared Ar Experiences"
     },
     {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
@@ -186,8 +210,24 @@
       "label": "Teleoperation"
     },
     {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "wearable-ai",
+      "label": "Wearable AI"
+    },
+    {
+      "slug": "web-xr",
+      "label": "WebXR"
     },
     {
       "slug": "metaverse-core-concepts",

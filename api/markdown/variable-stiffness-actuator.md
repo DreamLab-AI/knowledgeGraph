@@ -1,0 +1,4 @@
+- ### Definition
+  - A variable stiffness actuator adjusts its mechanical compliance independently of position, supporting [[Force Control]] and contrasting with the soft compliance of a [[Pneumatic Actuator]].
+- ### Content
+  - VSAs use antagonistic spring arrangements or mechanically tunable elastic transmissions to set stiffness on demand. Lowering stiffness improves safety and impact absorption, while raising it enables precise positioning, making VSAs valuable for collaborative robots, prosthetics and dynamic locomotion.

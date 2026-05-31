@@ -141,6 +141,10 @@
       "label": "Distributed Identity"
     },
     {
+      "slug": "groth-16",
+      "label": "Groth16"
+    },
+    {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
     },
@@ -149,8 +153,16 @@
       "label": "Non-Repudiation"
     },
     {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
+    },
+    {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
     },
     {
       "slug": "sustainable-consensus",
@@ -163,6 +175,10 @@
     {
       "slug": "verifiable-credentials",
       "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
     },
     {
       "slug": "zero-knowledge-proof-zkp",

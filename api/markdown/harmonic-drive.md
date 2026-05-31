@@ -1,0 +1,4 @@
+- ### Definition
+  - A harmonic drive is a zero-backlash strain-wave gear; it is a [[Mechanical Component]] central to precise robotic actuation.
+- ### Content
+  - The mechanism comprises a wave generator, a flexible flexspline, and a rigid circular spline; the slight tooth-count difference yields large reduction in a single stage. Its low backlash and high stiffness make it the standard choice for the rotary joints of industrial and collaborative robot arms, at the cost of higher price and some flexspline compliance.

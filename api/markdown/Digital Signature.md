@@ -1,4 +1,5 @@
 public:: true
+alias:: Digital-Signature, DigitalSignature
 
 # Digital Signature
 ```json-ld
@@ -858,11 +859,11 @@ public:: true
         "label": "TLS"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ],

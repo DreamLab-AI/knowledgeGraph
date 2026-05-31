@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:rocks-db",
+  "title": "RocksDB",
+  "slug": "rocks-db",
+  "public": true,
+  "classIri": "urn:ngm:class:rocks-db",
+  "domain": "data",
+  "definition": "RocksDB is an embedded, high-performance key-value store built on a log-structured merge-tree and optimised for fast storage such as SSDs. It provides ordered keys, atomic batch writes, snapshots, and tunable compaction, and is embedded as a library rather than run as a server. It is widely used as the local state backend in databases and blockchain platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

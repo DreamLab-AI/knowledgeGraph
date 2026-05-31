@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:sustainable-bitcoin-certificates",
+  "title": "Sustainable Bitcoin Certificates",
+  "slug": "sustainable-bitcoin-certificates",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainable-bitcoin-certificates",
+  "domain": "blockchain",
+  "definition": "Sustainable Bitcoin certificates are tradable attestations that a defined quantity of bitcoin mining was powered by clean or low-carbon energy, allowing holders to claim the environmental attributes of that hashrate. They function analogously to renewable energy certificates, decoupling the green-energy claim from the mined coins so it can be sold to ESG-conscious buyers. The mechanism aims to channel capital toward decarbonising proof-of-work mining.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:dae8fc59f15708b82bf45646ffcd778d131ab5d29909a4f0c6025b58734c2687",
+  "title": "ISO 29184",
+  "slug": "iso-29184",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-29184",
+  "domain": "standards",
+  "definition": "An ISO/IEC standard providing requirements and recommendations for the content and structure of online privacy notices and for obtaining consent. It addresses how personally identifiable information processing is communicated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

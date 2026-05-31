@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-150-webrtc
 
 # WebRTC
 ```json-ld
@@ -227,12 +228,12 @@ public:: true
       "label": "Protocol and Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:peer-to-peer-network-protocol",
-      "label": "Peer-to-Peer Network Protocol"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "@id": "urn:ngm:class:real-time-communication-protocol",
-      "label": "Real-Time Communication Protocol"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

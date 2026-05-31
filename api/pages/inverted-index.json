@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:inverted-index",
+  "title": "Inverted Index",
+  "slug": "inverted-index",
+  "public": true,
+  "classIri": "urn:ngm:class:inverted-index",
+  "domain": "data",
+  "definition": "An inverted index is a data structure that maps each term to the list of documents (and often positions) in which it appears, enabling fast full-text retrieval over large corpora. It inverts the natural document-to-terms relationship so that a query term immediately yields its posting list, which can then be intersected or scored. It is the foundational index behind search engines and lexical information retrieval.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval-domain",
+        "label": "Information Retrieval Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

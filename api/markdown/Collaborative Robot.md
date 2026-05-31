@@ -1,4 +1,5 @@
 public:: true
+alias:: CollaborativeRobot
 
 # Collaborative Robot
 ```json-ld

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:3cf2b9f0a706cff3aa6c5a575b9b9e20c4f3738e39dd1bc8f41bbcb2d0332ae5",
+  "title": "RFC 8785 Canonical JSON",
+  "slug": "rfc-8785-canonical-json",
+  "public": true,
+  "classIri": "urn:ngm:class:rfc-8785-canonical-json",
+  "domain": "standards",
+  "definition": "RFC 8785 specifies the JSON Canonicalization Scheme, a method for producing a deterministic serialisation of JSON data to support cryptographic operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

@@ -117,5 +117,10 @@
       "label": "Digital Twin"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
+    }
+  ]
 }

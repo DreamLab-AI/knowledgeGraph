@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:80c75c61424223b81725b1fb2c86138e13c334b775edce7ba096570902553f49",
+  "title": "W3C Linked Data Platform",
+  "slug": "w-3-c-linked-data-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-linked-data-platform",
+  "domain": "standards",
+  "definition": "The W3C Linked Data Platform defines a set of rules for read-write operations on Linked Data resources using HTTP.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

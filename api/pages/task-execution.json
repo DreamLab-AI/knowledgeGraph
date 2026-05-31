@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:cb15234628816d99e7c029ed6e5c6f534b570383552de3bd9db3b1dabd0c90cc",
+  "title": "Task Execution",
+  "slug": "task-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:task-execution",
+  "domain": "automation",
+  "definition": "The process of carrying out a defined unit of work, including scheduling, resource allocation, and tracking of completion. In computing and robotics it covers running operations in response to plans or requests.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:task-planning",
+      "label": "Task Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "Trajectory Generation"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

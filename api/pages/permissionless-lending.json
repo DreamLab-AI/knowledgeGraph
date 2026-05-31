@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:permissionless-lending",
+  "title": "Permissionless Lending",
+  "slug": "permissionless-lending",
+  "public": true,
+  "classIri": "urn:ngm:class:permissionless-lending",
+  "domain": "blockchain",
+  "definition": "Permissionless lending is the provision of on-chain credit through open protocols that anyone may access without identity gating or intermediary approval. Lenders deposit assets into smart-contract liquidity pools and borrowers draw against over-collateralised positions, with interest rates set algorithmically by utilisation. It is a foundational DeFi primitive that replaces credit underwriting with collateralisation and code-enforced liquidation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ]
+}

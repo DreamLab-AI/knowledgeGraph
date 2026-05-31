@@ -1,0 +1,4 @@
+- ### Definition
+  - Regulatory reporting automation generates and submits compliance reports straight from ledger data, a capability enabled by [[Enterprise Smart Contracts]] running on a [[Consortium Blockchain]].
+- ### Content
+  - Smart contracts can encode reporting logic so that qualifying transactions automatically populate standardised filings, while permissioned ledgers give regulators a verified shared view. This shifts compliance from periodic batch reconciliation toward continuous, machine-readable supervision.

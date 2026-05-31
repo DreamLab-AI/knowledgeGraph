@@ -391,8 +391,8 @@ public:: true
       "label": "Telepresence"
     },
     {
-      "@id": "urn:ngm:class:telepresence-technology",
-      "label": "Telepresence Technology"
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "DC Telepresence"
     },
     {
       "@id": "urn:ngm:class:mobile-robot",

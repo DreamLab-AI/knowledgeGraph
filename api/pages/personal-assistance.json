@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:personal-assistance",
+  "title": "Personal Assistance",
+  "slug": "personal-assistance",
+  "public": true,
+  "classIri": "urn:ngm:class:personal-assistance",
+  "domain": "ai",
+  "definition": "Personal assistance is an AI application class in which an agent helps an individual accomplish everyday tasks such as scheduling, information lookup, communication, and device or browser control. It combines natural-language understanding with tool use and memory to act on the user's behalf within their personal context. Modern personal assistants increasingly automate multi-step workflows rather than only answering questions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

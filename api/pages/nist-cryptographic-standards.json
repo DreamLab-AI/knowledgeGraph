@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:7279f0d837d9d7b02c411c088f40c0c07d2b4953b41b3ef5178098b6823c7837",
+  "title": "NIST Cryptographic Standards",
+  "slug": "nist-cryptographic-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-cryptographic-standards",
+  "domain": "standards",
+  "definition": "A general reference to the body of cryptographic standards and guidelines published by NIST, including FIPS and Special Publications. No single specific standard is identified by this label alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    }
+  ]
+}

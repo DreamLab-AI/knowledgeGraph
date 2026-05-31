@@ -1,0 +1,4 @@
+- ### Definition
+  - A sensor housing is the protective mechanical enclosure that shields a sensing element while preserving its measurement window. It is a [[Mechanical Component]] and a structural part of every [[Exteroceptive Sensor]] package.
+- ### Content
+  - Design balances ingress protection, thermal dissipation, and material choice against an unobstructed path for the measured signal. Optical sensors require transparent or coated apertures, acoustic sensors need acoustically matched membranes, and field-robotics housings often target high IP ratings for outdoor and submerged operation.

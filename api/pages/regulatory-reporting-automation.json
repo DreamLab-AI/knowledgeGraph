@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:regulatory-reporting-automation",
+  "title": "Regulatory Reporting Automation",
+  "slug": "regulatory-reporting-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-reporting-automation",
+  "domain": "blockchain",
+  "definition": "Regulatory reporting automation is the use of software, and increasingly smart contracts, to generate and submit mandated regulatory reports directly from source transaction data without manual compilation. On enterprise and consortium blockchains, shared ledgers let supervisors receive standardised, near-real-time disclosures. Automating reporting reduces error, lowers compliance cost, and shortens the lag between activity and oversight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

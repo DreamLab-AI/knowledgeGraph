@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:98cf97c4cf4582b9c3d400d28780271337affa84ff03484871ae5e73992bf482",
+  "title": "Lightning Service Provider",
+  "slug": "lightning-service-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:lightning-service-provider",
+  "domain": "blockchain",
+  "definition": "A Lightning Service Provider is a business that supplies channel liquidity and connectivity services to Lightning Network users. It helps wallets open channels and receive payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning",
+        "label": "Lightning"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:phoenix",
+        "label": "Phoenix"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "https-github-com-bitcoin-and-lightning-layer-specs-lsp",
+      "label": "https://github.com/BitcoinAndLightningLayerSpecs/lsp"
+    },
+    {
+      "slug": "https-docs-lightning-engineering",
+      "label": "https://docs.lightning.engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Validator selection is the stake-weighted process for choosing block proposers in proof-of-stake networks, tested on a [[Testnet]] and central to [[Proof of Stake Sustainability]].
+- ### Content
+  - Mechanisms use verifiable random functions or committee sampling weighted by stake to assign duties unpredictably yet fairly. Good selection design balances liveness, finality and decentralisation while limiting the influence of large stakeholders and minimising energy use relative to proof-of-work.

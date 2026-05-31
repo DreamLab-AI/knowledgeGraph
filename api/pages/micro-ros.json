@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:636053e4cb56ec85eeff9e0f816096f3bf81fb42ad98435da8dadcf7cd998aec",
+  "title": "micro-ROS",
+  "slug": "micro-ros",
+  "public": true,
+  "classIri": "urn:ngm:class:micro-ros",
+  "domain": "robotics",
+  "definition": "micro-ROS is a framework that brings the ROS 2 programming model and communication to resource-constrained microcontrollers, allowing embedded devices to participate as first-class nodes in a ROS graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "real-time-operating-system",
+      "label": "Real-Time Operating System"
+    },
+    {
+      "slug": "real-time-control",
+      "label": "Real-Time Control"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "dds-middleware",
+      "label": "DDS Middleware"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
+      "slug": "ros",
+      "label": "ROS"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

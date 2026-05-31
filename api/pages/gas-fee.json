@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:f12270ce08a004c74291bf426e8187079b2f0ffa64c4defe726b13972915bb7a",
+  "title": "Gas Fee",
+  "slug": "gas-fee",
+  "public": true,
+  "classIri": "urn:ngm:class:gas-fee",
+  "domain": "blockchain",
+  "definition": "A gas fee is the payment a user makes to a blockchain network to have a transaction or smart contract operation executed and included in a block.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction-fee",
+      "label": "Transaction Fee"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

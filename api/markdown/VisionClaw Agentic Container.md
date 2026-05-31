@@ -416,7 +416,7 @@ public:: true
         "label": "W3C DID Core"
       },
       {
-        "@id": "urn:ngm:class:w3-c-verifiable-credentials-2-0",
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-2-0",
         "label": "W3C Verifiable Credentials 2.0"
       }
     ]

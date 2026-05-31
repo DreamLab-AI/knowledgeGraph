@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:ccb14b95b19ee307e220c674de40d11ab79866f6e02c85ee3cd9bb639f0ad551",
+  "title": "Hash Functions",
+  "slug": "hash-functions",
+  "public": true,
+  "classIri": "urn:ngm:class:hash-functions",
+  "domain": "general",
+  "definition": "Hash functions are algorithms that map data of arbitrary size to a fixed-size output, with cryptographic hash functions designed to be one-way and collision resistant. They are central to security and blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "https-csrc-nist-gov-projects-hash-functions",
+      "label": "https://csrc.nist.gov/projects/hash-functions"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-cryptographic-hash-function",
+      "label": "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

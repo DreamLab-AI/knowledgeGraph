@@ -1,0 +1,4 @@
+- ### Definition
+  - Software development automation is the application of tooling and AI to carry out [[Software Development]] tasks such as code generation, testing, refactoring, and pull-request authoring with limited manual effort.
+- ### Content
+  - Contemporary systems pair large language models with sandboxed execution and version-control APIs so that [[Agents]] can edit, run, and verify code rather than only propose snippets. The approach overlaps with [[Computer Use and Browser Agents]] when automation extends to operating IDEs, terminals, and web tooling directly, while review gates retain human authority over intent and correctness.

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:7ea8ef9719b43baf58d77eb32d70c2ab1ab45dc61ee8ef90e59eb9b5a9ef70fd",
+  "title": "ISO 8373 2021",
+  "slug": "iso-8373-2021",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-8373-2021",
+  "domain": "standards",
+  "definition": "ISO 8373:2021 defines terms used in relation to robots and robotic devices operating in industrial and non-industrial environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    },
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "manipulator",
+      "label": "Manipulator"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "robot",
+      "label": "Robot"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

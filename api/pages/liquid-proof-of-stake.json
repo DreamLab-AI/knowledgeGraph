@@ -97,6 +97,14 @@
     {
       "slug": "carbon-neutral-blockchain",
       "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
     }
   ]
 }

@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualEnvironment
 
 # Virtual Environment
 ```json-ld

@@ -95,5 +95,10 @@
       "label": "ArtificialIntelligenceDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    }
+  ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:real-time-streaming",
+  "title": "Real-Time Streaming",
+  "slug": "real-time-streaming",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-streaming",
+  "domain": "infrastructure",
+  "definition": "Real-time streaming is the continuous delivery of data, audio, or video as an ongoing flow consumed incrementally with minimal latency rather than downloaded in full beforehand. It uses low-latency transport protocols and buffering strategies to balance smoothness against delay. It underpins live media, event streams, and interactive low-latency experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:virtual-performance-space",
+        "label": "Virtual Performance Space"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    }
+  ]
+}

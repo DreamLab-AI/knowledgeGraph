@@ -1,0 +1,4 @@
+- ### Definition
+  - Clock Recovery extracts a synchronised sampling clock from a self-clocked data stream, a required function of the [[Physical Layer]] in serial communication.
+- ### Content
+  - CDR circuits typically employ a phase-locked loop that tracks data transitions, with line coding (such as 8b/10b) guaranteeing sufficient transition density for lock. Robust clock recovery tolerates jitter, drift, and bounded frequency offset, enabling embedded-clock serial standards like PCIe, SATA, and high-speed Ethernet.

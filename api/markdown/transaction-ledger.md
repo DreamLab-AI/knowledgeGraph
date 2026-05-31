@@ -1,0 +1,4 @@
+- ### Definition
+  - An append-only, ordered record of value transfers and state changes that forms the authoritative transaction history of a system. It is a required substrate for a [[Digital Tax Compliance Node]] and a component of any [[Transaction Standard]].
+- ### Content
+  - In distributed ledgers, entries are grouped into blocks, hash-chained, and replicated across nodes so that tampering with any record invalidates subsequent ones. This structure provides verifiable provenance, supports reconciliation and audit, and underpins regulatory reporting and tax-compliance workflows.

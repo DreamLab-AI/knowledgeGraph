@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
       {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
       {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:individual:ethereum", "label": "Ethereum"}
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},

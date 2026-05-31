@@ -1,0 +1,4 @@
+- ### Definition
+  - Chaos Theory studies deterministic systems whose sensitivity to initial conditions yields unpredictable behaviour, a field closely tied to the study of [[Emergence]] and [[Self-Organisation]] in complex systems.
+- ### Content
+  - Hallmarks include the butterfly effect, fractal strange attractors, and period-doubling routes to chaos. The theory connects to complexity science by showing that deterministic nonlinearity, not stochastic noise, can underlie irregular dynamics in weather, ecosystems, and markets.

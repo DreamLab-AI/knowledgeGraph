@@ -16,8 +16,8 @@
       "label": "Immersive Computing"
     },
     {
-      "id": "urn:ngm:class:perceptual-computing",
-      "label": "Perceptual Computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "entityType": "Class",
@@ -297,7 +297,7 @@
         "label": "USD AOUSD"
       },
       {
-        "id": "urn:ngm:class:w3-c-web-xr-device-api",
+        "id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "W3C WebXR Device API"
       }
     ],
@@ -765,8 +765,20 @@
       "label": "Hand Tracking"
     },
     {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
       "slug": "screen-sharing",
       "label": "Screen Sharing"
+    },
+    {
+      "slug": "tele-025-microsoft-hololens",
+      "label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
     },
     {
       "slug": "technical-history-extended-cv",
@@ -779,6 +791,14 @@
     {
       "slug": "vircadia",
       "label": "Vircadia"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "park-2022-metaverse",
+      "label": "park2022metaverse"
     }
   ]
 }

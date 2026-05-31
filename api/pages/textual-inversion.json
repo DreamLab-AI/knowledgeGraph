@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:textual-inversion",
+  "title": "Textual Inversion",
+  "slug": "textual-inversion",
+  "public": true,
+  "classIri": "urn:ngm:class:textual-inversion",
+  "domain": "ai",
+  "definition": "Textual inversion is a fine-tuning technique for text-to-image diffusion models that learns a new embedding vector for a placeholder token from a handful of example images, capturing a specific subject or style without altering the model weights. The learned pseudo-word can then be composed into prompts like any ordinary token. It is lightweight and shareable because only a small embedding, not the full network, is trained.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "Kohya, DreamBooth and Similar"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

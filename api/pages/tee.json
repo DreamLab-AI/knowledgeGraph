@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:0f03366df69de0d6258a5dac8edd1088701a791eca6486ecedf55da0d5153a84",
+  "title": "TEE",
+  "slug": "tee",
+  "public": true,
+  "classIri": "urn:ngm:class:tee",
+  "domain": "information-security",
+  "definition": "A trusted execution environment, a secure area of a processor that isolates code and data so that they are protected from the rest of the system, including a compromised operating system. It provides confidentiality and integrity for sensitive computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

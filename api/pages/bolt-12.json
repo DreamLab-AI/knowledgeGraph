@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:a0a8eda769466ece1f5706c93fb838ffb89709ef73ece47b8eda5211b25dd2ae",
+  "title": "BOLT12",
+  "slug": "bolt-12",
+  "public": true,
+  "classIri": "urn:ngm:class:bolt-12",
+  "domain": "blockchain",
+  "definition": "BOLT12 is a Lightning Network specification that defines offers, a reusable payment request format that improves on single-use invoices. It supports recurring and static payment requests.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bolt",
+      "label": "BOLT"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bolt",
+        "label": "BOLT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:phoenix",
+        "label": "Phoenix"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "slug": "bolt-11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "https-github-com-lightning-bolts-blob-master-12-offer-encoding-md",
+      "label": "https://github.com/lightning/bolts/blob/master/12-offer-encoding.md"
+    },
+    {
+      "slug": "https-bolt-12-org",
+      "label": "https://bolt12.org"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "bolt-11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Cross-border enforcement is the recognition and execution of legal or regulatory measures across jurisdictions. It is enabled by [[Cross-Border Compliance]] regimes and complicated by questions of [[Digital Jurisdiction]].
+- ### Content
+  - Effective enforcement relies on treaties, information-sharing, and reciprocal recognition of judgments, yet decentralised and pseudonymous systems blunt these tools. Regulators increasingly coordinate through international bodies and target identifiable intermediaries—exchanges, custodians, and fiat on-ramps—to project authority over otherwise borderless activity.

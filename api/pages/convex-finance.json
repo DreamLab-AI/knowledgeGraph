@@ -75,6 +75,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "curve-wars",
+      "label": "Curve Wars"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -93,6 +97,10 @@
     {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
     }
   ]
 }

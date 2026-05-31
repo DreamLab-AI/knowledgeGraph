@@ -16,8 +16,8 @@
       "label": "Assistive Technology"
     },
     {
-      "id": "urn:ngm:class:biomedical-device",
-      "label": "Biomedical Device"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",

@@ -231,8 +231,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:environmental-technology",
-      "label": "Environmental Technology"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     },
     {
       "@id": "urn:ngm:class:blockchain-sustainability",

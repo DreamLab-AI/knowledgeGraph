@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:open-zeppelin-governor-contracts",
+  "title": "OpenZeppelin Governor Contracts",
+  "slug": "open-zeppelin-governor-contracts",
+  "public": true,
+  "classIri": "urn:ngm:class:open-zeppelin-governor-contracts",
+  "domain": "blockchain",
+  "definition": "OpenZeppelin Governor Contracts are a modular on-chain governance framework that lets DAOs run proposal, voting, and execution workflows tied to governance tokens. The Governor base contract integrates with token-based voting power (including delegation and timelock execution) and is configurable for quorum, voting periods, and vote-counting strategies. It is a widely adopted standard for implementing token-weighted decentralized governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

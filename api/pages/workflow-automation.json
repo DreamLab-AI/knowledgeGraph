@@ -63,6 +63,10 @@
       "label": "Agents"
     },
     {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -79,12 +83,24 @@
       "label": "Context Engineering"
     },
     {
+      "slug": "enterprise-workflow",
+      "label": "Enterprise Workflow"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
     {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "service-now",
+      "label": "ServiceNow"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
     }
   ]
 }

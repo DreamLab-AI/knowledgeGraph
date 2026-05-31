@@ -1,0 +1,143 @@
+{
+  "id": "urn:visionflow:page:c772c520703cdbaa63977484afb4df3142e83f23a871fbd16786921d18ac3bbd",
+  "title": "Creative AI Domain",
+  "slug": "creative-ai-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:creative-ai-domain",
+  "domain": "creative-ai",
+  "definition": "The Creative AI Domain covers the application of artificial intelligence to artistic and design tasks across image, music, writing and interactive media. Its scope includes computational creativity, style transfer, generative art and human-machine co-creation. It is an applied sub-area of the Artificial Intelligence Domain that builds on generative methods. The boundary excludes the underlying model training, which belongs to the Generative Modelling Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:generative-art",
+        "label": "Generative Art"
+      },
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:co-creative-tools",
+        "label": "Co-Creative Tools"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:generative-ai-domain",
+        "label": "Generative AI Domain"
+      },
+      {
+        "id": "urn:ngm:class:generative-modelling-domain",
+        "label": "Generative Modelling Domain"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics-domain",
+        "label": "Computer Graphics Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assisted-design",
+        "label": "Assisted Design"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:interactive-media",
+        "label": "Interactive Media"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "generative-art",
+      "label": "Generative Art"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "co-creative-tools",
+      "label": "Co-Creative Tools"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "assisted-design",
+      "label": "Assisted Design"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "interactive-media",
+      "label": "Interactive Media"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    }
+  ]
+}

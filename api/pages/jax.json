@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:7d2edcdc11232c191a98693ae70bebdf5d5fb4c528e49117d512ffe625c1591b",
+  "title": "JAX",
+  "slug": "jax",
+  "public": true,
+  "classIri": "urn:ngm:class:jax",
+  "domain": "deep-learning",
+  "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning-domain",
+      "label": "Deep Learning Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

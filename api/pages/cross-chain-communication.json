@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:cross-chain-communication",
+  "title": "Cross-Chain Communication",
+  "slug": "cross-chain-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-communication",
+  "domain": "blockchain",
+  "definition": "Cross-chain communication is the exchange of messages, data, and asset-transfer instructions between distinct blockchain networks that do not natively share state. It is implemented through protocols, relays, and light-client verification that let one chain trust and act on events from another. It is the foundation of blockchain interoperability and multi-chain applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    }
+  ]
+}

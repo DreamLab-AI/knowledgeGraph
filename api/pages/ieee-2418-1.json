@@ -1,0 +1,473 @@
+{
+  "id": "urn:visionflow:page:df63359c2547ed22c8ee4199f3d9b7b70a8eb70eee8692fa69b882cc1a8572ee",
+  "title": "IEEE 2418.1",
+  "slug": "ieee-2418-1",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-2418-1",
+  "domain": "standards",
+  "definition": "IEEE 2418.1 defines a framework for the use of blockchain in Internet of Things applications, including a common reference, terminology and architectural building blocks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "account-model",
+      "label": "Account Model"
+    },
+    {
+      "slug": "address",
+      "label": "Address"
+    },
+    {
+      "slug": "archival-node",
+      "label": "Archival Node"
+    },
+    {
+      "slug": "blake2",
+      "label": "BLAKE2"
+    },
+    {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
+      "slug": "block-header",
+      "label": "Block Header"
+    },
+    {
+      "slug": "block-height",
+      "label": "Block Height"
+    },
+    {
+      "slug": "block-propagation-time",
+      "label": "Block Propagation Time"
+    },
+    {
+      "slug": "block-propagation",
+      "label": "Block Propagation"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "block-size",
+      "label": "Block Size"
+    },
+    {
+      "slug": "block-time",
+      "label": "Block Time"
+    },
+    {
+      "slug": "block",
+      "label": "Block"
+    },
+    {
+      "slug": "bootstrap-node",
+      "label": "Bootstrap Node"
+    },
+    {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "chain-reorganization",
+      "label": "Chain Reorganization"
+    },
+    {
+      "slug": "chain-state",
+      "label": "Chain State"
+    },
+    {
+      "slug": "circulating-supply",
+      "label": "Circulating Supply"
+    },
+    {
+      "slug": "coin",
+      "label": "Coin"
+    },
+    {
+      "slug": "coinbase-transaction",
+      "label": "Coinbase Transaction"
+    },
+    {
+      "slug": "collision-resistance",
+      "label": "Collision Resistance"
+    },
+    {
+      "slug": "consensus-rule",
+      "label": "Consensus Rule"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "decentralization",
+      "label": "Decentralization"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "Difficulty Target"
+    },
+    {
+      "slug": "difficulty",
+      "label": "Difficulty"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
+      "slug": "economic-security",
+      "label": "Economic Security"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "fork-choice-rule",
+      "label": "Fork Choice Rule"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gas-price",
+      "label": "Gas Price"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "genesis-block",
+      "label": "Genesis Block"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "hash-collision",
+      "label": "Hash Collision"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "inflationary-token",
+      "label": "Inflationary Token"
+    },
+    {
+      "slug": "input",
+      "label": "Input"
+    },
+    {
+      "slug": "keccak-256",
+      "label": "Keccak-256"
+    },
+    {
+      "slug": "light-node",
+      "label": "Light Node"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest Chain Rule"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "Market Capitalization"
+    },
+    {
+      "slug": "mempool",
+      "label": "Mempool"
+    },
+    {
+      "slug": "merkle-proof",
+      "label": "Merkle Proof"
+    },
+    {
+      "slug": "merkle-root",
+      "label": "Merkle Root"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "miner",
+      "label": "Miner"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-reward",
+      "label": "Mining Reward"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "minting",
+      "label": "Minting"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "native-token",
+      "label": "Native Token"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "network-synchronization",
+      "label": "Network Synchronization"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "nonce",
+      "label": "Nonce"
+    },
+    {
+      "slug": "opcodes",
+      "label": "Opcodes"
+    },
+    {
+      "slug": "output",
+      "label": "Output"
+    },
+    {
+      "slug": "partition-attack",
+      "label": "Partition Attack"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "permissioned-network",
+      "label": "Permissioned Network"
+    },
+    {
+      "slug": "permissionless-network",
+      "label": "Permissionless Network"
+    },
+    {
+      "slug": "pool-share",
+      "label": "Pool Share"
+    },
+    {
+      "slug": "preimage-resistance",
+      "label": "Preimage Resistance"
+    },
+    {
+      "slug": "priority-fee",
+      "label": "Priority Fee"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "pruned-node",
+      "label": "Pruned Node"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "salt",
+      "label": "Salt"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "script",
+      "label": "Script"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "signature-scheme",
+      "label": "Signature Scheme"
+    },
+    {
+      "slug": "solo-mining",
+      "label": "Solo Mining"
+    },
+    {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "timestamp",
+      "label": "Timestamp"
+    },
+    {
+      "slug": "total-supply",
+      "label": "Total Supply"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    },
+    {
+      "slug": "transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "utxo-model",
+      "label": "UTXO Model"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ]
+}

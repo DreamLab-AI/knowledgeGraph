@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:6b24a2d3c9042dbd6a1240fb90404790c793ba09ed5e700dde081251d444ad34",
+  "title": "Walmart",
+  "slug": "walmart",
+  "public": true,
+  "classIri": "urn:ngm:class:walmart",
+  "domain": "general",
+  "definition": "Walmart is a multinational retail company operating a chain of stores and e-commerce services, and an early adopter of blockchain-based supply chain traceability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "food-safety",
+      "label": "Food Safety"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    }
+  ]
+}

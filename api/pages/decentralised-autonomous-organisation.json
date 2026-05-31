@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
       "slug": "blockchain-collaboration",
       "label": "Blockchain Collaboration"
     },
@@ -75,6 +79,14 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },
@@ -87,16 +99,40 @@
       "label": "Green Blockchain Initiatives"
     },
     {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
       "slug": "quadratic-voting",
       "label": "Quadratic Voting"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
     },
     {
       "slug": "sovereign-mesh",
       "label": "Sovereign Mesh"
     },
     {
+      "slug": "tally",
+      "label": "Tally"
+    },
+    {
       "slug": "tokenomics-governance",
       "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
     }
   ]
 }

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ab077b53213fb45c801d37dbe430fd676737717ebff4a94559306de824593aa0",
+  "title": "Corporate Governance",
+  "slug": "corporate-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:corporate-governance",
+  "domain": "governance",
+  "definition": "The system of rules, practices and processes by which a company is directed and controlled, balancing the interests of shareholders, management and other stakeholders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    }
+  ]
+}

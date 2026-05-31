@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:cross-border-payment-transparency",
+  "title": "Cross-Border Payment Transparency",
+  "slug": "cross-border-payment-transparency",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-payment-transparency",
+  "domain": "blockchain",
+  "definition": "Cross-border payment transparency is the requirement and practice of making the originator, beneficiary, fees, and routing of international payments visible to counterparties and regulators. It supports anti-money-laundering controls and consumer protection by exposing hidden costs and identifying parties to a transfer. In crypto it is advanced through measures such as the FATF Travel Rule and on-chain settlement traceability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

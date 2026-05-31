@@ -1,0 +1,4 @@
+- ### Definition
+  - The priority ceiling protocol is a real-time resource-access discipline that bounds priority inversion and prevents deadlock. It is a component of [[Real-Time]] scheduling theory and is implemented in real-time operating systems and standards such as POSIX and Ada.
+- ### Content
+  - By assigning each shared resource a ceiling priority and restricting acquisition relative to active ceilings, the protocol guarantees that a high-priority task is blocked by lower-priority tasks for at most one critical section. This bound makes worst-case blocking analysable, a prerequisite for response-time analysis in safety-critical and embedded real-time systems.

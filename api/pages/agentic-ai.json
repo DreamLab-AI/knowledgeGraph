@@ -59,6 +59,10 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
@@ -89,6 +93,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
     }
   ]
 }

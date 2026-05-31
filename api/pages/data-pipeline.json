@@ -197,6 +197,10 @@
       "label": "AI System Component"
     },
     {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

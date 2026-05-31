@@ -16,8 +16,8 @@
       "label": "Audit"
     },
     {
-      "id": "urn:ngm:class:systems-analysis",
-      "label": "Systems Analysis"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -605,6 +605,10 @@
       "label": "Ethical Sourcing"
     },
     {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },
@@ -627,6 +631,10 @@
     {
       "slug": "reputation-scoring-model",
       "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
     },
     {
       "slug": "robot-standard",

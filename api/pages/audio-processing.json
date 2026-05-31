@@ -71,6 +71,14 @@
       "label": "Deepfakes"
     },
     {
+      "slug": "otter-ai",
+      "label": "Otter.ai"
+    },
+    {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
     },

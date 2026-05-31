@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:fc7e4360ef4a816d38ac6ee676f5dd3ab7736a5f43c4e1de94a763f4d24c417c",
+  "title": "Code Review",
+  "slug": "code-review",
+  "public": true,
+  "classIri": "urn:ngm:class:code-review",
+  "domain": "software-engineering",
+  "definition": "Code review is the systematic examination of source code by people other than the author to find defects, improve quality and share knowledge. It is commonly conducted through pull requests in modern development workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:003bf5e09bd6b5de5c8991a474fa210174cc0a1bb8b9d8407a12ef3fd5eb1d60",
+  "title": "Luma AI",
+  "slug": "luma-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:luma-ai",
+  "domain": "generative-ai",
+  "definition": "Luma AI is a company developing generative tools for 3D capture and video generation. Its products include neural reconstruction of scenes from photographs and a text-to-video model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "3-d-asset",
+      "label": "3D Asset"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

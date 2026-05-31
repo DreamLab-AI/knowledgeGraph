@@ -1,0 +1,4 @@
+- ### Definition
+  - The principal UK regulations imposing anti-money-laundering and counter-terrorist-financing duties on regulated firms, including crypto-asset businesses. They are the legal basis for much UK [[AML KYC Compliance]] activity.
+- ### Content
+  - MLR 2017 requires firms to apply risk-based customer due diligence, enhanced checks for higher-risk relationships, ongoing monitoring, and suspicious-activity reporting. Their amendment to register and supervise crypto-asset exchange and custodian-wallet providers under the FCA marked a significant extension of AML supervision into digital assets.

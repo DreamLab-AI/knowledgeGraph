@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:235f0b65a00ae6c7b3f519a593e60a246f70b015a2d29112320362d5953df23b",
+  "title": "Planning",
+  "slug": "planning",
+  "public": true,
+  "classIri": "urn:ngm:class:planning",
+  "domain": "artificial-intelligence",
+  "definition": "In artificial intelligence, the process of selecting a sequence of actions that transforms an initial state into a desired goal state, given a model of how actions change the world.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
+    }
+  ]
+}

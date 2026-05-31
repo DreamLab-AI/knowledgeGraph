@@ -327,8 +327,8 @@ public:: true
       "label": "Creative Industries"
     },
     {
-      "@id": "urn:ngm:class:retail-technology",
-      "label": "Retail Technology"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -456,7 +456,7 @@ public:: true
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -520,7 +520,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:individual:animate-diff",
+        "@id": "urn:ngm:class:animate-diff",
         "label": "AnimateDiff"
       },
       {

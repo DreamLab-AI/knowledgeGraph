@@ -79,8 +79,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:art-classification",
-      "label": "Art Classification"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

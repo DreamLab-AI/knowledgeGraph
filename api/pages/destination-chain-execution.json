@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:destination-chain-execution",
+  "title": "Destination Chain Execution",
+  "slug": "destination-chain-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:destination-chain-execution",
+  "domain": "blockchain",
+  "definition": "Destination chain execution is the phase of a cross-chain operation in which a message or transaction validated from a source chain is finally executed on the target blockchain. After relayers and verification prove the source event, the destination chain mints, releases, or calls a contract to complete the bridged action. Correct execution requires replay protection, message ordering guarantees, and trust in the verification layer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:reflexion",
+  "title": "Reflexion",
+  "slug": "reflexion",
+  "public": true,
+  "classIri": "urn:ngm:class:reflexion",
+  "domain": "ai",
+  "definition": "Reflexion is a framework for language-model agents that converts feedback from failed attempts into reflective verbal self-critiques stored in an episodic memory, which condition subsequent attempts. Rather than updating model weights, it reinforces behaviour through natural-language reflections, enabling rapid trial-and-error learning. It improves agent performance on decision-making, reasoning, and coding benchmarks across repeated episodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

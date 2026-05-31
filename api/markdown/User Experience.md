@@ -1,4 +1,5 @@
 public:: true
+alias:: UserExperience
 
 # user experience
 ```json-ld

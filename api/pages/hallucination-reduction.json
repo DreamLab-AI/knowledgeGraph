@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:hallucination-reduction",
+  "title": "Hallucination Reduction",
+  "slug": "hallucination-reduction",
+  "public": true,
+  "classIri": "urn:ngm:class:hallucination-reduction",
+  "domain": "ai",
+  "definition": "Hallucination reduction is the set of techniques used to decrease the rate at which large language models generate fluent but factually incorrect or unsupported output. Approaches include grounding generation in retrieved evidence, fact-checking against trusted sources, calibrated abstention, and fine-tuning for faithfulness. It is central to deploying generative AI in high-stakes domains where accuracy is critical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval-Augmented Generation (RAG)"
+      },
+      {
+        "id": "urn:ngm:class:ai-grounded-domain",
+        "label": "AI Grounded Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

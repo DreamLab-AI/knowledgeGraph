@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:move-it-2",
+  "title": "MoveIt 2",
+  "slug": "move-it-2",
+  "public": true,
+  "classIri": "urn:ngm:class:move-it-2",
+  "domain": "robotics",
+  "definition": "MoveIt 2 is the open-source motion-planning framework for ROS 2, providing manipulation capabilities including inverse kinematics, collision-aware path planning, trajectory generation, and execution for robotic arms and mobile manipulators. It integrates planners, perception, and control through a plugin architecture and is the de facto standard for arm motion planning in the ROS ecosystem. The ROS 2 version adds real-time and lifecycle improvements over the original MoveIt.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

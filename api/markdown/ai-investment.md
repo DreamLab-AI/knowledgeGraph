@@ -1,0 +1,4 @@
+- ### Definition
+  - AI Investment is capital directed at AI research, compute, and companies. It is a core lever in [[Competition in AI]] and increasingly flows toward scarce resources such as [[AI Chips]] and data-centre capacity.
+- ### Content
+  - Investment concentrates in frontier-model labs, accelerator hardware, and cloud capacity, with returns gated by access to compute, data, and talent. Heavy capital expenditure on training clusters has shifted the field toward economies of scale, raising barriers to entry and concentrating capability among a small number of well-funded actors.

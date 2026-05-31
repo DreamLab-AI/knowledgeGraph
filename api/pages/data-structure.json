@@ -76,8 +76,16 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
       "slug": "binary-buffer",
       "label": "Binary Buffer"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
     },
     {
       "slug": "distributed-ledger",
@@ -86,6 +94,10 @@
     {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
     },
     {
       "slug": "search-index",

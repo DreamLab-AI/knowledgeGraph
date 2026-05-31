@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:2cc595daedb8e22da80482097df03c23bd91f1c53adb15c27ddb583392e0c119",
+  "title": "Curve Finance",
+  "slug": "curve-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:curve-finance",
+  "domain": "curve-finance",
+  "definition": "Curve Finance is a decentralised exchange protocol on Ethereum and other chains, launched in 2020, specialising in efficient trading between assets expected to hold similar values, such as stablecoins and wrapped tokens. It uses an automated market maker with a bonding curve designed to minimise slippage and impermanent loss for like-valued assets. Liquidity providers earn trading fees and additional rewards, and the protocol's CRV token is used in a vote-escrow governance model that directs liquidity incentives. Curve has been a significant venue for stablecoin liquidity within decentralised finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "curve",
+      "label": "Curve"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    }
+  ]
+}

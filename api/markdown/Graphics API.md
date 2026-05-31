@@ -443,8 +443,8 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:application-programming-interface",
-      "label": "Application Programming Interface"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:hardware-abstraction-layer",
@@ -668,7 +668,7 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:individual:apple",
+        "@id": "urn:ngm:class:apple",
         "label": "Apple"
       }
     ]

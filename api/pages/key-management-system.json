@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:key-management-system",
+  "title": "Key Management System",
+  "slug": "key-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:key-management-system",
+  "domain": "security",
+  "definition": "A key management system (KMS) is a service or appliance that generates, stores, rotates, distributes and revokes cryptographic keys over their full lifecycle. It enforces access policies and isolates key material, often backed by hardware security modules, so that applications can perform cryptographic operations without directly handling private keys. A KMS is foundational to secure identity, encryption and digital-asset custody.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infrastructure Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

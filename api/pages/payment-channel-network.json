@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:payment-channel-network",
+  "title": "Payment Channel Network",
+  "slug": "payment-channel-network",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-channel-network",
+  "domain": "blockchain",
+  "definition": "A Payment Channel Network is a layer-2 scaling architecture in which participants open bilateral payment channels and route payments across a graph of connected channels without settling each transaction on the underlying blockchain. Funds are locked in multisignature channels, and balances update off-chain through signed state, with only channel opening and closing recorded on-chain. This enables high-throughput, low-fee, near-instant payments while inheriting base-layer security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Blockchain Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

@@ -535,12 +535,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:collective-behaviour",
-      "label": "Collective Behaviour"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:complex-systems-concept",
-      "label": "Complex Systems Concept"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {

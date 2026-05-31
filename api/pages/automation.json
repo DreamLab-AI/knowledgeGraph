@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:006b3003579e8b28b4167104b15782e7927ff093c3c811af7f3c5cd0ac8b62a0",
+  "title": "Automation",
+  "slug": "automation",
+  "public": true,
+  "classIri": "urn:ngm:class:automation",
+  "domain": "automation",
+  "definition": "The use of technology to perform tasks with reduced human intervention. It spans physical processes in manufacturing and robotics as well as software workflows and business processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "model-parameters",
+      "label": "Model Parameters"
+    },
+    {
+      "slug": "process",
+      "label": "Process"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    },
+    {
+      "slug": "task-execution",
+      "label": "Task Execution"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

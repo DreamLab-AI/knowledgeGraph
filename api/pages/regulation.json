@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:25ea82264cab617c37b9d91bbedb62b54858ea815904a29b882f56d866360243",
+  "title": "Regulation",
+  "slug": "regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:regulation",
+  "domain": "governance",
+  "definition": "Regulation is the use of rules and authority by government or designated bodies to direct, constrain or oversee the conduct of activities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "https-www-oecd-org-gov-regulatory-policy",
+      "label": "https://www.oecd.org/gov/regulatory-policy/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regulation",
+      "label": "https://en.wikipedia.org/wiki/Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "law-commission",
+      "label": "Law Commission"
+    },
+    {
+      "slug": "process-regulation",
+      "label": "Process Regulation"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "regulatory-capture",
+      "label": "Regulatory Capture"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

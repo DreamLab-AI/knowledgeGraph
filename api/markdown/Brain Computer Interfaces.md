@@ -1,4 +1,5 @@
 public:: true
+alias:: Brain-Computer Interfaces
 
 # Brain Computer Interfaces
 ```json-ld
@@ -547,8 +548,8 @@ public:: true
       "label": "Assistive Technology"
     },
     {
-      "@id": "urn:ngm:class:biomedical-device",
-      "label": "Biomedical Device"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

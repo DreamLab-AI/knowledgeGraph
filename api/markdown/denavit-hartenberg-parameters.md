@@ -1,0 +1,4 @@
+- ### Definition
+  - DH parameters encode each robot link with four numbers that build a per-joint transform. They are the standard input used by [[Forward Kinematics]] and form the core of a manipulator's [[Kinematics Model]].
+- ### Content
+  - Using the DH convention, the pose of the end-effector is computed by multiplying the per-joint homogeneous transforms in sequence. The convention's appeal is uniformity and minimal parameters, though singular configurations and the classic-versus-modified DH variants require care to avoid sign and frame errors.

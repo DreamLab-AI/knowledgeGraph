@@ -1,4 +1,5 @@
 public:: true
+alias:: MotionPlanning
 
 # Motion Planning
 ```json-ld

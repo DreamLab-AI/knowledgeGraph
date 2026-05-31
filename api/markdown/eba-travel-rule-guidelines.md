@@ -1,0 +1,4 @@
+- ### Definition
+  - The EBA Travel Rule Guidelines are European Banking Authority guidance implementing the FATF [[Travel Rule]] for crypto-asset and fund transfers under the EU Transfer of Funds Regulation. They define what originator and beneficiary data must travel with a transfer.
+- ### Content
+  - The guidelines set out required data fields, handling of missing information, and obligations of intermediary providers, aligning EU crypto-asset transfers with anti-money-laundering and counter-terrorist-financing standards. Crypto-asset service providers implement them through travel-rule messaging protocols and compliance tooling.

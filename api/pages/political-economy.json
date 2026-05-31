@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:01d6018fd8aa14c31f2a816b92b5e09241e8ba4cbd61bddaf066a01627f596d7",
+  "title": "Political Economy",
+  "slug": "political-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:political-economy",
+  "domain": "economics",
+  "definition": "The study of how political institutions, the political environment, and economic systems interact and influence one another. It examines how power and policy shape the production and distribution of wealth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

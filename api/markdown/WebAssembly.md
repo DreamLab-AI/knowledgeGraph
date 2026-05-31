@@ -239,12 +239,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:binary-instruction-format",
-      "label": "Binary Instruction Format"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
-      "@id": "urn:ngm:class:portable-execution-environment",
-      "label": "Portable Execution Environment"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:owasp-llm-top-10-2025",
+  "title": "OWASP LLM Top 10 2025",
+  "slug": "owasp-llm-top-10-2025",
+  "public": true,
+  "classIri": "urn:ngm:class:owasp-llm-top-10-2025",
+  "domain": "security",
+  "definition": "The OWASP LLM Top 10 2025 is the updated edition of OWASP's ranked list of the most critical security risks for applications built on large language models. It catalogs threats such as prompt injection, sensitive information disclosure, supply-chain vulnerabilities, excessive agency, and improper output handling, with guidance on mitigation. The list is a widely referenced baseline for securing LLM and agentic AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

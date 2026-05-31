@@ -1,4 +1,5 @@
 public:: true
+alias:: SecurityInfrastructure
 
 # Security Infrastructure
 ```json-ld

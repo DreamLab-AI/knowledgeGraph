@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:d4416c7e00f87e5b2f29caacb4fcdc917b0c1fed51fb2e4d3b4e90de5e1b810d",
+  "title": "Dialogue State Tracking",
+  "slug": "dialogue-state-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:dialogue-state-tracking",
+  "domain": "natural-language-processing",
+  "definition": "A component of conversational systems that maintains a structured representation of the user's goals and the context of a conversation across turns. It updates the dialogue state as new utterances are processed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dialogue-system",
+      "label": "Dialogue System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    }
+  ]
+}

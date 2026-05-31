@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:fffaaa7841def48220059d12027f91d4748cbe34a5bf2bbbc950ae287f53e76a",
+  "title": "FTX",
+  "slug": "ftx",
+  "public": true,
+  "classIri": "urn:ngm:class:ftx",
+  "domain": "blockchain",
+  "definition": "A cryptocurrency exchange founded in 2019 that collapsed in November 2022 amid a liquidity crisis and revelations of misuse of customer funds. Its failure led to bankruptcy proceedings and criminal convictions of its leadership.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    }
+  ]
+}

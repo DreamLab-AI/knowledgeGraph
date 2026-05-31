@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -67,16 +71,76 @@
       "label": "Atomic Swap"
     },
     {
+      "slug": "bolt",
+      "label": "BOLT"
+    },
+    {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
+      "slug": "citi-token-services",
+      "label": "Citi Token Services"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
+    },
+    {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "Lightning Network Layer"
     },
     {
       "slug": "lightning-network",
       "label": "Lightning Network"
     },
     {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
       "slug": "micropayments",
       "label": "Micropayments"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
     },
     {
       "slug": "rgb-and-client-side-validation",

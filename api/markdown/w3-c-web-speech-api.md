@@ -1,0 +1,4 @@
+- ### Definition
+  - The W3C Web Speech API standardises browser-based speech recognition and synthesis, the interop layer for [[Speech and Voice]] features and web-delivered [[Real-Time Translation]].
+- ### Content
+  - The specification defines two interfaces: SpeechRecognition for capturing and transcribing audio with interim and final results, and SpeechSynthesis with SpeechSynthesisUtterance for configurable voices, pitch, and rate. Cross-browser inconsistency, dependence on remote recognition servers, and privacy implications of streaming audio are the main adoption considerations.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:cbeci-methodology",
+  "title": "CBECI Methodology",
+  "slug": "cbeci-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:cbeci-methodology",
+  "domain": "blockchain",
+  "definition": "The CBECI methodology is the estimation framework underlying the Cambridge Bitcoin Electricity Consumption Index, used to model the Bitcoin network's real-time electricity demand. It derives a plausible consumption range by combining network hashrate, a profitability-weighted mix of mining hardware efficiencies, data-centre overheads, and assumptions about miner economics. The methodology matters because it provides the most widely cited, transparent academic estimate of Bitcoin's energy use and the basis for its carbon analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbeci",
+        "label": "CBECI"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

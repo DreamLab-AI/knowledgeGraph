@@ -12,8 +12,8 @@
       "label": "Protocol and Consensus"
     },
     {
-      "id": "urn:ngm:class:atomic-broadcast",
-      "label": "Atomic Broadcast"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     },
     {
       "id": "urn:ngm:class:coordination-protocol",
@@ -917,6 +917,10 @@
       "label": "Blockchain Scalability"
     },
     {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
       "slug": "blockchain",
       "label": "Blockchain"
     },
@@ -969,6 +973,10 @@
       "label": "Distributed Protocol"
     },
     {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
       "slug": "enterprise-blockchain-architecture",
       "label": "Enterprise Blockchain Architecture"
     },
@@ -989,6 +997,10 @@
       "label": "Hybrid Consensus"
     },
     {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
       "slug": "layer-0",
       "label": "Layer 0"
     },
@@ -999,6 +1011,14 @@
     {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
     },
     {
       "slug": "permissioned-blockchain",
@@ -1025,8 +1045,16 @@
       "label": "Proof-Based Consensus"
     },
     {
+      "slug": "slashing",
+      "label": "Slashing"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
     },
     {
       "slug": "sustainable-consensus",
@@ -1051,6 +1079,10 @@
     {
       "slug": "transaction-standard",
       "label": "Transaction Standard"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
     },
     {
       "slug": "web3",

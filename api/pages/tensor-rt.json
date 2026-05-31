@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:6e05c2a391373a9df3f28ddcf8959e24a9c370fbdeda8e9b096908b7f92e80e9",
+  "title": "TensorRT",
+  "slug": "tensor-rt",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-rt",
+  "domain": "deep-learning",
+  "definition": "A software development kit from NVIDIA for optimising and running deep learning inference on NVIDIA GPUs, performing graph optimisations, precision calibration and kernel selection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:sign-language-recognition",
+  "title": "Sign Language Recognition",
+  "slug": "sign-language-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:sign-language-recognition",
+  "domain": "ai",
+  "definition": "Sign language recognition is the computer-vision and sequence-modelling task of translating the manual and non-manual gestures of a signed language into text or speech. It must model hand shape, motion trajectory, facial expression, and grammatical structure that differs fundamentally from spoken languages. It is an accessibility-focused application that builds on robust hand tracking and temporal recognition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    }
+  ]
+}

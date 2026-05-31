@@ -127,12 +127,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:blockchain-performance",
-      "label": "BlockchainPerformance"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:environmental-impact",
-      "label": "EnvironmentalImpact"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     }
   ],
   "relations": {

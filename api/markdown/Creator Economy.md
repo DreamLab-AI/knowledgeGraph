@@ -1,4 +1,5 @@
 public:: true
+alias:: CreatorEconomy
 
 # Creator Economy
 ```json-ld

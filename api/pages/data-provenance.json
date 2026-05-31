@@ -217,6 +217,10 @@
       "label": "Compliance Audit Trail"
     },
     {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
       "slug": "traceability-mechanism",
       "label": "Traceability Mechanism"
     }

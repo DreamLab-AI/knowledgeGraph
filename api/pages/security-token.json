@@ -105,6 +105,10 @@
       "label": "Identity Federation"
     },
     {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
       "slug": "token",
       "label": "Token"
     }

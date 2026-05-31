@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:94a025ea4f813303847aa93ac454245fba45a7d12a9af4cd6ee011ab381c8322",
+  "title": "Holographic Display",
+  "slug": "holographic-display",
+  "public": true,
+  "classIri": "urn:ngm:class:holographic-display",
+  "domain": "display-technology",
+  "definition": "A display technology that reconstructs the wavefront of light to present three-dimensional images viewable without special eyewear. It relies on diffraction and interference to recreate depth cues such as parallax and accommodation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:display-technology",
+      "label": "Display Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:holography",
+        "label": "Holography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "display-technology",
+      "label": "Display Technology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

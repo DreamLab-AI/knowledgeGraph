@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:timer",
+  "title": "Timer",
+  "slug": "timer",
+  "public": true,
+  "classIri": "urn:ngm:class:timer",
+  "domain": "metaverse",
+  "definition": "A timer is a software or hardware mechanism that measures elapsed time or schedules an action to occur after a delay or at a recurring interval. In collaborative and real-time applications it provides shared countdowns, time-boxing, and synchronised triggers that all participants observe consistently. Timers are a basic building block of event scheduling, animation, and time-bounded interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real-Time"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

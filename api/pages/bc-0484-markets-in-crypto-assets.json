@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:352e60f3b21fc81b3c53ff7a29a3cf6dbbbb066232e21d6923c178f0204cd642",
+  "title": "BC-0484-markets-in-crypto-assets",
+  "slug": "bc-0484-markets-in-crypto-assets",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-0484-markets-in-crypto-assets",
+  "domain": "blockchain",
+  "definition": "Markets in Crypto-Assets is the European Union regulatory framework that defines categories of crypto-assets and sets authorisation and conduct rules for their issuers and service providers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    }
+  ]
+}

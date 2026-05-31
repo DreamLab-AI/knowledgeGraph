@@ -1,4 +1,5 @@
 public:: true
+alias:: ExplainableAI
 
 # Explainable AI
 ```json-ld

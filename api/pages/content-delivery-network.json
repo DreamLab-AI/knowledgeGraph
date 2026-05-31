@@ -71,6 +71,10 @@
       "label": "Collaborative Whiteboard"
     },
     {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
     },
@@ -87,12 +91,24 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "edge-layer",
+      "label": "Edge Layer"
+    },
+    {
       "slug": "metaverse-content-pipeline",
       "label": "Metaverse Content Pipeline"
     },
     {
       "slug": "proprietary-video",
       "label": "Proprietary Video"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
     },
     {
       "slug": "virtual-performance-space",

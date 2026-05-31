@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:825b14a4f3f321798b7e52992fbb7f125f111702bd8cd29e6d88e8016bc59fad",
+  "title": "Gauge Voting",
+  "slug": "gauge-voting",
+  "public": true,
+  "classIri": "urn:ngm:class:gauge-voting",
+  "domain": "defi",
+  "definition": "Gauge voting is a mechanism in protocols such as Curve where token holders allocate weights to liquidity pools, determining how reward emissions are distributed. Voting power is usually tied to time-locked governance tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-token",
+      "label": "Governance Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:votium",
+        "label": "Votium"
+      },
+      {
+        "id": "urn:ngm:class:hidden-hand",
+        "label": "Hidden Hand"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "curve",
+      "label": "Curve"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    }
+  ]
+}

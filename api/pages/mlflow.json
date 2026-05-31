@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:mlflow",
+  "title": "MLflow",
+  "slug": "mlflow",
+  "public": true,
+  "classIri": "urn:ngm:class:mlflow",
+  "domain": "ai",
+  "definition": "MLflow is an open-source platform for managing the machine learning lifecycle, covering experiment tracking, reproducible runs, model packaging, and a model registry. It records parameters, metrics, code versions, and artefacts including checkpoints, enabling teams to compare experiments and promote models to production. It is framework-agnostic and integrates with most training libraries and serving backends.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Market abuse detection identifies manipulative or illegal trading conduct through automated surveillance of orders, trades, and communications. It enables [[Regulatory Reporting]] of suspicious activity and supports continuous [[Compliance Monitoring]].
+- ### Content
+  - Detection engines combine rule-based scenarios for known typologies with unsupervised anomaly detection and network analysis to surface novel abuse patterns. False-positive reduction is a central challenge, driving adoption of supervised models trained on confirmed cases and explainable scoring for investigator triage.

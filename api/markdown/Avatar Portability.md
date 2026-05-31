@@ -103,8 +103,8 @@ public:: true
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:digital-asset-portability",
-      "label": "Digital Asset Portability"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     }
   ],
   "relations": {

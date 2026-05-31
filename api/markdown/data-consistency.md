@@ -1,0 +1,4 @@
+- ### Definition
+  - Data consistency is the guarantee that data stays coherent across replicas and transactions, a property central to [[Fault Tolerance]] and a robust [[Data Layer]].
+- ### Content
+  - Consistency models range from linearisable strong consistency to eventual consistency, with the CAP theorem framing the trade-off against availability under partition. The chosen model shapes replication, conflict resolution and the correctness guarantees an application can rely on.

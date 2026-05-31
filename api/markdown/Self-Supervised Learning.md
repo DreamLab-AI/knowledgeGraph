@@ -1,4 +1,5 @@
 public:: true
+alias:: SelfSupervisedLearning
 
 # Self-Supervised Learning
 ```json-ld
@@ -35,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"}
     ],
     "enables": [
-      {"@id": "urn:ngm:individual:foundation-models", "label": "Foundation Models"},
+      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "supports": [

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:3348cf64a1becc86baedbc32d8d180a90e2f40c1b3afc64b78423c0d39ce7401",
+  "title": "community",
+  "slug": "community",
+  "public": true,
+  "classIri": "urn:ngm:class:community",
+  "domain": "social",
+  "definition": "A community is a group of people who interact around a shared interest, project, or platform, contributing to its development, governance, or use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "open source"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "open-source",
+      "label": "open source"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "stacker-news",
+      "label": "Stacker News"
+    }
+  ]
+}

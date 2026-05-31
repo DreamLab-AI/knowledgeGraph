@@ -46,7 +46,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:individual:ethereum", "label": "Ethereum"}
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
     ]
   },
   "quality": 0.8

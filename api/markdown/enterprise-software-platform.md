@@ -1,0 +1,4 @@
+- ### Definition
+  - An enterprise software platform is an integrated environment of shared services on which business applications run, generalising offerings such as [[Blockchain as a Service]] and [[CRM]].
+- ### Content
+  - Platforms provide multi-tenant infrastructure, identity, integration buses, and extensibility frameworks. By consolidating these capabilities they reduce duplication and shorten the time to deliver new line-of-business systems.

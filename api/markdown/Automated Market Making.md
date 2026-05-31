@@ -83,8 +83,8 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:de-fi-operations",
-      "label": "DeFi Operations"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     }
   ],
   "relations": {

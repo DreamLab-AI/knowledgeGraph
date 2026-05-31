@@ -1,0 +1,4 @@
+- ### Definition
+  - Application Window Capture records or streams the pixels of one chosen window instead of the whole screen. It is a capture mode within [[Screen Recording]] and a component of selective [[Screen Sharing]] that protects unrelated content.
+- ### Content
+  - The OS provides window handles and per-window framebuffers so capture follows the window as it moves or resizes, excluding overlapping windows and system overlays. This isolation is valued for privacy and clarity in demos and conferences, though it must handle occlusion, GPU-composited surfaces, and protected-content windows that may render as blank.

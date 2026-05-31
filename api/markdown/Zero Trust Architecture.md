@@ -1,4 +1,5 @@
 public:: true
+alias:: Zero-Trust Architecture, ZeroTrustArchitecture
 
 # zero trust architecture
 ```json-ld

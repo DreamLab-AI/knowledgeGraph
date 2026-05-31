@@ -1,0 +1,4 @@
+- ### Definition
+  - Artificial Intelligence Core is a foundational anchor class for AI concepts in the ontology. It serves as a parent for subfields including [[Machine Learning]] and [[AI Agent System]], grouping the discipline's essential theory and methods.
+- ### Content
+  - As an upper-level structural class, it gathers the capabilities that define AI such as learning, reasoning, perception, planning, and decision-making, then refines them into specialized subclasses. Its role is organizational, providing a stable hierarchical root so that more concrete techniques and applications inherit a consistent semantic lineage.

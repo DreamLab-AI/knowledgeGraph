@@ -177,6 +177,14 @@
       "label": "Hash Function"
     },
     {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
       "slug": "light-client",
       "label": "Light Client"
     },

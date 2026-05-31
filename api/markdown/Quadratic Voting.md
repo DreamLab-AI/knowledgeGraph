@@ -463,8 +463,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:governance-protocol",
-      "label": "Governance Protocol"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     },
     {
       "@id": "urn:ngm:class:public-goods-funding",

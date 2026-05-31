@@ -1,4 +1,5 @@
 public:: true
+alias:: StorageInfrastructure
 
 # Storage Infrastructure
 ```json-ld
@@ -474,7 +475,7 @@ public:: true
         "label": "Big Data Analytics"
       },
       {
-        "@id": "urn:ngm:class:content-delivery-networks",
+        "@id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Networks"
       },
       {

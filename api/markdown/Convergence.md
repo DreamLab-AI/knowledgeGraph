@@ -339,12 +339,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:general-purpose-technology",
-      "label": "General Purpose Technology"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:innovation-systems",
-      "label": "Innovation Systems"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -396,7 +396,7 @@ public:: true
         "label": "Cross-Domain Research Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:interoperability-protocols",
+        "@id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocols"
       },
       {
@@ -478,7 +478,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

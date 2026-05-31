@@ -1,4 +1,5 @@
 public:: true
+alias:: CryptoToken
 
 # Crypto Token
 ```json-ld

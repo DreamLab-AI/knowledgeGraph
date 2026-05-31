@@ -1,4 +1,5 @@
 public:: true
+alias:: ConsentManagement
 
 # Consent Management
 ```json-ld

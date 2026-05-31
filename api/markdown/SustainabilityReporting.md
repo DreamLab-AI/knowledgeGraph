@@ -1,4 +1,5 @@
 public:: true
+alias:: Sustainability Reporting
 
 # sustainabilityreporting
 ```json-ld

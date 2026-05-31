@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:5b71fd351624f65ef012536729f721eb5437500843f585ac8002cd5ebfd7c7de",
+  "title": "Mobile Manipulation",
+  "slug": "mobile-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:mobile-manipulation",
+  "domain": "robotics",
+  "definition": "Mobile manipulation is the field of robotics that combines a mobile base with one or more manipulator arms so a robot can move through an environment and physically interact with objects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "manipulator",
+      "label": "Manipulator"
+    },
+    {
+      "slug": "mobile-robot",
+      "label": "Mobile Robot"
+    },
+    {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "environmental-understanding",
+      "label": "Environmental Understanding"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "icra",
+      "label": "ICRA"
+    },
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
+      "slug": "joint-configuration",
+      "label": "Joint Configuration"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

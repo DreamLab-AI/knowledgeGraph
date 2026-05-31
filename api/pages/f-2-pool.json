@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:8cfc0ecc5b4e1b85e9d3d376bbaff490dd70ddcd2fbdf91d8748d16026d080b7",
+  "title": "F2Pool",
+  "slug": "f-2-pool",
+  "public": true,
+  "classIri": "urn:ngm:class:f-2-pool",
+  "domain": "blockchain",
+  "definition": "F2Pool is one of the oldest Bitcoin mining pools, allowing miners to combine hash power and share block rewards. It also supports mining for other cryptocurrencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mining-pool",
+      "label": "Mining Pool"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "https-www-f-2-pool-com",
+      "label": "https://www.f2pool.com"
+    },
+    {
+      "slug": "https-www-f-2-pool-com-help",
+      "label": "https://www.f2pool.com/help"
+    }
+  ],
+  "backlinks": []
+}

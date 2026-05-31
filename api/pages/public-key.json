@@ -116,6 +116,10 @@
       "label": "DID Nostr Identity"
     },
     {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
       "slug": "digital-signature-verification",
       "label": "Digital Signature Verification"
     },

@@ -1,0 +1,4 @@
+- ### Definition
+  - A catalogue of the tools, schemas, and permissions an agent may call, enabling runtime discovery and governed routing of capabilities. It is a core component of [[Agent Frameworks]] and the emerging [[Agentic Internet]].
+- ### Content
+  - Registries typically expose machine-readable descriptions, such as JSON schemas or MCP tool manifests, that let a model select an appropriate tool and bind arguments correctly. By centralising authorisation and versioning, a registry also enforces access control and auditability over what autonomous agents are permitted to do.

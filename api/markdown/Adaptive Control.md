@@ -1,4 +1,5 @@
 public:: true
+alias:: AdaptiveControl, RB-1004-adaptive-control
 
 # Adaptive Control
 ```json-ld
@@ -115,7 +116,7 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:rb-1002-closed-loop-control",
+      "@id": "urn:ngm:class:closed-loop-control",
       "label": "RB-1002-closed-loop-control"
     }
   ],

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:kto",
+  "title": "KTO",
+  "slug": "kto",
+  "public": true,
+  "classIri": "urn:ngm:class:kto",
+  "domain": "ai",
+  "definition": "KTO (Kahneman-Tversky Optimization) is a method for aligning language models that learns from binary good or bad feedback on individual outputs rather than paired preference comparisons. Drawing on prospect theory, it defines a utility-based loss that down-weights losses relative to gains, simplifying data collection compared with preference-pair methods. It is an alternative to direct preference optimization in the post-training alignment toolkit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

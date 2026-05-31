@@ -267,8 +267,8 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:ownership-system",
-      "label": "Ownership System"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token And Asset"
     },
     {
       "@id": "urn:ngm:class:blockchain-application",
@@ -360,7 +360,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:erc-3643-standard",
+        "@id": "urn:ngm:class:erc3643-standard",
         "label": "ERC-3643 Standard"
       },
       {
@@ -456,7 +456,7 @@ public:: true
         "label": "CMTA Token Standard"
       },
       {
-        "@id": "urn:ngm:class:erc-3643-standard",
+        "@id": "urn:ngm:class:erc3643-standard",
         "label": "ERC-3643 Standard"
       },
       {

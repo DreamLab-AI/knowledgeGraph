@@ -1,0 +1,4 @@
+- ### Definition
+  - Equitable access ensures fair, barrier-free use of resources for all groups, a goal enabled by [[Accessibility Standard]] compliance and the broader practice of [[Accessibility]].
+- ### Content
+  - The concept distinguishes equity from mere equality by accounting for differing starting positions and needs. In technology it drives accommodations, assistive compatibility, and inclusive design that close outcome gaps for disadvantaged users.

@@ -1,4 +1,5 @@
 public:: true
+alias:: PhysicalLayer
 
 # Physical Layer
 ```json-ld
@@ -395,8 +396,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:communications-engineering",
-      "label": "Communications Engineering"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:hardware-layer",

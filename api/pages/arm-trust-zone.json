@@ -49,6 +49,10 @@
     {
       "slug": "proprietary-video",
       "label": "Proprietary Video"
+    },
+    {
+      "slug": "trusted-execution-environments",
+      "label": "Trusted Execution Environments"
     }
   ]
 }

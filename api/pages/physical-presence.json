@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:physical-presence",
+  "title": "Physical Presence",
+  "slug": "physical-presence",
+  "public": true,
+  "classIri": "urn:ngm:class:physical-presence",
+  "domain": "metaverse",
+  "definition": "Physical presence is the perceptual sense of being bodily situated in a remote or virtual environment, including the ability to act on and feel that environment. In telepresence it is produced by combining spatial audio-visual immersion with embodiment cues such as haptic feedback and a controllable remote body or robot. Strong physical presence makes a mediated location feel as though the user is genuinely there.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:tc-0003-telepresence-robot",
+        "label": "TC-0003 Telepresence Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0440-blockchain-interoperability
 
 # Blockchain Interoperability
 ```json-ld
@@ -744,7 +745,7 @@ public:: true
         "label": "Polygon AggLayer"
       },
       {
-        "@id": "urn:ngm:class:rollups",
+        "@id": "urn:ngm:class:rollup",
         "label": "Rollups"
       },
       {

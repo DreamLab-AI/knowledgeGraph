@@ -1,0 +1,243 @@
+{
+  "id": "urn:visionflow:page:a8dfbc4d2dfe9a1ce9c7c15b5f9277c1b4fc66fbd4744daba4df7eeff1ffab2b",
+  "title": "Computer Vision Domain",
+  "slug": "computer-vision-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-vision-domain",
+  "domain": "computer-vision",
+  "definition": "The Computer Vision Domain covers the extraction of structured information from images, video and other visual signals. Its scope includes image formation, feature detection, recognition, segmentation and three-dimensional scene understanding. It is an application sub-area of the Artificial Intelligence Domain and relies heavily on the methods of the Machine Learning Domain. The boundary excludes the generation of imagery for display purposes, which belongs to the Computer Graphics Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:visual-inspection",
+        "label": "Visual Inspection"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "visual-inspection",
+      "label": "Visual Inspection"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "iso-iec-22989-2022",
+      "label": "ISO/IEC 22989:2022"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    }
+  ]
+}

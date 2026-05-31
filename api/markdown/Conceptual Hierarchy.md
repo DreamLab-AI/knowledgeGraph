@@ -1,4 +1,5 @@
 public:: true
+alias:: ConceptualHierarchy
 
 # Conceptual Hierarchy
 ```json-ld

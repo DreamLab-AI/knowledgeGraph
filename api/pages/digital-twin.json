@@ -312,6 +312,10 @@
       "label": "Cryptography"
     },
     {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
       "slug": "decision-transparency",
       "label": "Decision Transparency"
     },
@@ -564,6 +568,18 @@
       "label": "Scene Capture and Reconstruction"
     },
     {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "smart-city",
+      "label": "Smart City"
+    },
+    {
       "slug": "state-channel",
       "label": "State Channel"
     },
@@ -578,6 +594,10 @@
     {
       "slug": "uk-tech-ecosystem",
       "label": "UK Tech Ecosystem"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
     },
     {
       "slug": "variational-autoencoders",

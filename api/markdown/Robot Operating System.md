@@ -243,12 +243,12 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:publish-subscribe-framework",
-      "label": "Publish-Subscribe Framework"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
-      "@id": "urn:ngm:class:robotic-middleware",
-      "label": "Robotic Middleware"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
   "relations": {

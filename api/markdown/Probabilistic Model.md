@@ -351,8 +351,8 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:statistical-learning",
-      "label": "Statistical Learning"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
       "@id": "urn:ngm:class:uncertainty-quantification",

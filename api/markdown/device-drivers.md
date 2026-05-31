@@ -1,0 +1,4 @@
+- ### Definition
+  - Device drivers translate operating-system calls into hardware-specific commands, giving software a uniform view of devices. A [[Human Interface Device]] requires a driver to function, and drivers form a core part of the [[Hardware Abstraction Layer (HAL)]].
+- ### Content
+  - Drivers run in kernel or user space, manage interrupts and DMA, and expose standardised class interfaces (e.g. HID, USB, block). Their correctness and security are critical, since a faulty privileged driver can crash or compromise the entire system.

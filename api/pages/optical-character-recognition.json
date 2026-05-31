@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:26f90a86d5aba314db04ff2fc3e228821f4b1acdb54f659ba3e4dcd80167dab0",
+  "title": "Optical Character Recognition",
+  "slug": "optical-character-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:optical-character-recognition",
+  "domain": "metaverse",
+  "definition": "Optical character recognition converts images of printed or handwritten text into machine-readable character data, enabling search, editing and downstream processing of documents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:legal-research",
+        "label": "Legal Research"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "legal-research",
+      "label": "Legal Research"
+    }
+  ]
+}

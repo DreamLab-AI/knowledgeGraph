@@ -1,0 +1,4 @@
+- ### Definition
+  - Carbon Credit Retirement permanently cancels a credit in a registry to claim its emission reduction, a step governed by integrity frameworks such as the [[ICVCM Core Carbon Principles]] and increasingly automated by a [[Climate Action DAO]].
+- ### Content
+  - On-chain carbon markets tokenise credits and execute retirement via smart contracts, emitting an immutable retirement record that prevents resale or double-counting. Robust retirement accounting, with serial-number tracking and beneficiary attribution, is the linchpin of credible offset claims.

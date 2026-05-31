@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:isda-cdm",
+  "title": "ISDA CDM",
+  "slug": "isda-cdm",
+  "public": true,
+  "classIri": "urn:ngm:class:isda-cdm",
+  "domain": "blockchain",
+  "definition": "The ISDA CDM (Common Domain Model) is a standardised, machine-readable data and process model for derivatives and other financial transactions, published by the International Swaps and Derivatives Association. It provides a single, consistent representation of trade events, lifecycle processes, and legal terms so that disparate systems and smart contracts interpret them identically. It is foundational to interoperable enterprise tokenisation and automated post-trade processing on distributed ledgers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

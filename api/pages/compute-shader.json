@@ -104,6 +104,10 @@
       "label": "Global Illumination"
     },
     {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
       "slug": "pixel-shader",
       "label": "Pixel Shader"
     },

@@ -1,4 +1,5 @@
 public:: true
+alias:: InfrastructureLayer
 
 # Infrastructure Layer
 ```json-ld

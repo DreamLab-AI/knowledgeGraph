@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:829f83e211d68cd258c25f40c926d9bd7f83528f4b21f9222591047f0a5dc4f0",
+  "title": "Web3 Domain",
+  "slug": "web-3-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:web-3-domain",
+  "domain": "web",
+  "definition": "The Web3 Domain classifies concepts for an internet architecture in which applications interact directly with public ledgers and user-controlled keys rather than centralised platforms. It covers decentralised applications, wallets, naming, and storage that together let users own assets and identity. As a subject classification under the Blockchain Domain, it scopes the application and interaction model rather than the consensus layer or the finance built upon it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:naming-service",
+        "label": "Naming Service"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-applications",
+        "label": "Permissionless Applications"
+      },
+      {
+        "id": "urn:ngm:class:user-owned-data",
+        "label": "User-Owned Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-application",
+      "label": "Decentralised Application"
+    },
+    {
+      "slug": "crypto-wallet",
+      "label": "Crypto Wallet"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "naming-service",
+      "label": "Naming Service"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "permissionless-applications",
+      "label": "Permissionless Applications"
+    },
+    {
+      "slug": "user-owned-data",
+      "label": "User-Owned Data"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    }
+  ]
+}

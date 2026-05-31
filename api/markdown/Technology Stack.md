@@ -1,4 +1,5 @@
 public:: true
+alias:: TechnologyStack
 
 # Technology Stack
 ```json-ld

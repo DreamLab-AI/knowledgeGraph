@@ -1,4 +1,5 @@
 public:: true
+alias:: GenerativeAI
 
 # Generative AI
 ```json-ld

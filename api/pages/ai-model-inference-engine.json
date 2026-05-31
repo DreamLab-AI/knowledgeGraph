@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:54c23d0fe22a02398980de314a9827ea4b1881045ab82099a222d3889bce19c0",
+  "title": "AI Model Inference Engine",
+  "slug": "ai-model-inference-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-model-inference-engine",
+  "domain": "machine-learning",
+  "definition": "An AI model inference engine is the software runtime that executes a trained model to produce predictions from new inputs. It manages computation graph execution, hardware acceleration and memory to run models efficiently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-serving",
+      "label": "Inference Serving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

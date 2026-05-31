@@ -75,6 +75,10 @@
       "label": "Blockchain Compliance"
     },
     {
+      "slug": "did-method",
+      "label": "DID Method"
+    },
+    {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
     },
@@ -91,6 +95,14 @@
       "label": "Identity Federation"
     },
     {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
+    },
+    {
       "slug": "summary",
       "label": "SUMMARY"
     },
@@ -101,6 +113,10 @@
     {
       "slug": "solid",
       "label": "Solid"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
     },
     {
       "slug": "telecollaboration-and-telepresence",

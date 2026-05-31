@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:semantic-scene-understanding",
+  "title": "Semantic Scene Understanding",
+  "slug": "semantic-scene-understanding",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-scene-understanding",
+  "domain": "ai",
+  "definition": "Semantic scene understanding is the computer-vision task of parsing a visual environment into labelled, structured representations of objects, surfaces, and their spatial and functional relationships. It goes beyond object detection by assigning meaning to regions, inferring affordances, and building a coherent model of the scene that downstream systems can reason over. It is foundational to spatial computing, where digital content must be anchored to real-world geometry and semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ar-scene-graph",
+        "label": "AR Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-scene-graph",
+      "label": "Ar Scene Graph"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

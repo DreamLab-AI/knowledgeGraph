@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:e040cb14bcd781f60159146ba96930904aed1c14656178ef608a01aecbbf7779",
+  "title": "Content Provenance",
+  "slug": "content-provenance",
+  "public": true,
+  "classIri": "urn:ngm:class:content-provenance",
+  "domain": "digital-media",
+  "definition": "Content provenance is the recorded history of the origin, authorship, and edits of a piece of digital media, used to establish whether content is authentic or has been altered.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:provenance",
+      "label": "Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "timestamping-service",
+      "label": "Timestamping Service"
+    }
+  ]
+}

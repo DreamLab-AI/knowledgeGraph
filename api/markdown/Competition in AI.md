@@ -283,8 +283,8 @@ public:: true
       "label": "Geopolitics"
     },
     {
-      "@id": "urn:ngm:class:industrial-competition",
-      "label": "Industrial Competition"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -414,7 +414,7 @@ public:: true
         "label": "Inference Optimisation"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -460,7 +460,7 @@ public:: true
         "label": "Mistral AI"
       },
       {
-        "@id": "urn:ngm:individual:google-deep-mind",
+        "@id": "urn:ngm:class:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

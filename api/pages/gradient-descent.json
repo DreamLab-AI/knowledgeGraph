@@ -60,12 +60,20 @@
   ],
   "backlinks": [
     {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
     {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
     },
     {
       "slug": "history-and-path-to-agi",
@@ -84,8 +92,16 @@
       "label": "LoRA DoRA etc"
     },
     {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
     },
     {
       "slug": "optimization-algorithms",
@@ -102,6 +118,10 @@
     {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
     },
     {
       "slug": "training-and-fine-tuning",

@@ -12,8 +12,8 @@
       "label": "Security and Identity"
     },
     {
-      "id": "urn:ngm:class:security-mechanism",
-      "label": "Security Mechanism"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "entityType": "Class",
@@ -95,6 +95,10 @@
       "label": "AI Governance Framework"
     },
     {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
       "slug": "biometric-binding-mechanism",
       "label": "Biometric Binding Mechanism"
     },
@@ -143,12 +147,32 @@
       "label": "Hyperledger Fabric"
     },
     {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
       "slug": "identity-provider-id-p",
       "label": "Identity Provider (IdP)"
     },
     {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
+    },
+    {
+      "slug": "policy-layer",
+      "label": "Policy Layer"
     },
     {
       "slug": "private-blockchain",
@@ -161,6 +185,10 @@
     {
       "slug": "reputation-data",
       "label": "Reputation Data"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
     },
     {
       "slug": "trust-infrastructure",

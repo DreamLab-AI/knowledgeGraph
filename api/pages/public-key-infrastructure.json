@@ -92,6 +92,10 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
       "slug": "customs-trade-facilitation",
       "label": "Customs Trade Facilitation"
     },
@@ -148,6 +152,10 @@
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "identity-layer",
+      "label": "Identity Layer"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -188,6 +196,10 @@
       "label": "Sustainable Consensus"
     },
     {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
       "slug": "travel-rule",
       "label": "Travel Rule"
     },
@@ -206,6 +218,14 @@
     {
       "slug": "virtual-notary-service",
       "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
     }
   ]
 }

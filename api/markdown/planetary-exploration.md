@@ -1,0 +1,4 @@
+- ### Definition
+  - Planetary exploration uses autonomous rovers and landers to study remote bodies, depending on robust [[Navigation]] and capable [[Ground Robot]] platforms.
+- ### Content
+  - Because communication latency to Earth precludes real-time control, exploration robots perform onboard hazard detection, visual odometry, and autonomous path planning across rough, unmapped terrain. Power, thermal, and radiation constraints, combined with the impossibility of repair, force conservative autonomy and extensive redundancy, making planetary missions a driver of advances in self-reliant navigation and perception.

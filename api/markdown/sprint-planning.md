@@ -1,0 +1,4 @@
+- ### Definition
+  - Sprint planning is the Scrum event within [[Software Development]] where a team selects backlog items, sets a sprint goal, and decomposes the work into a committed plan for a time-boxed iteration.
+- ### Content
+  - The team balances forecasted scope against its capacity, breaking chosen backlog items into tasks and surfacing dependencies and risks. Distributed teams frequently run the session on a [[Collaborative Whiteboard]], using shared sticky-note boards and estimation grids to visualise the backlog, reach consensus on the sprint goal, and record the resulting plan transparently.

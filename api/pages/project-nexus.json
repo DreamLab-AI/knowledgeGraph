@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:project-nexus",
+  "title": "Project Nexus",
+  "slug": "project-nexus",
+  "public": true,
+  "classIri": "urn:ngm:class:project-nexus",
+  "domain": "blockchain",
+  "definition": "Project Nexus is a Bank for International Settlements initiative to interlink domestic instant-payment systems across countries through a standardised hub, enabling fast, low-cost cross-border retail payments. Rather than building a single global system, it provides a common protocol that connects existing national fast-payment rails. It is relevant to discussions of cross-border CBDC interoperability and payment-system modernisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

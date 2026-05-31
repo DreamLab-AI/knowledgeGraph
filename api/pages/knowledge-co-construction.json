@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:knowledge-co-construction",
+  "title": "Knowledge Co-Construction",
+  "slug": "knowledge-co-construction",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-co-construction",
+  "domain": "ai",
+  "definition": "Knowledge co-construction is a process in which participants jointly build shared understanding through dialogue, negotiation and the integration of multiple perspectives. Rather than transmitting fixed knowledge, it treats understanding as emergent from collaborative interaction. It is a central mechanism in collaborative and collective learning environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:collective-learning",
+        "label": "Collective Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    }
+  ]
+}

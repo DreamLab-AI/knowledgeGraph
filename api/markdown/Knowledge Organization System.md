@@ -1,4 +1,5 @@
 public:: true
+alias:: KnowledgeOrganizationSystem
 
 # Knowledge Organization System
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-contracts
 
 # Smart Contracts
 ```json-ld
@@ -118,7 +119,7 @@ public:: true
         "label": "Decentralized Finance (DeFi)"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ]

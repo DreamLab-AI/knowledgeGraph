@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:134a336c965c6f9a3040d4020a4b88a325535b8abcf7026b1ed99940e295fa6b",
+  "title": "Kerberos",
+  "slug": "kerberos",
+  "public": true,
+  "classIri": "urn:ngm:class:kerberos",
+  "domain": "distributed-systems",
+  "definition": "Kerberos is a network authentication protocol that uses tickets and symmetric key cryptography to allow nodes to prove identity over an untrusted network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "https-web-mit-edu-kerberos",
+      "label": "https://web.mit.edu/kerberos/"
+    },
+    {
+      "slug": "https-datatracker-ietf-org-doc-html-rfc-4120",
+      "label": "https://datatracker.ietf.org/doc/html/rfc4120"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

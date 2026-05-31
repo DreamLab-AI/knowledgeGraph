@@ -16,8 +16,8 @@
       "label": "Monte Carlo Method"
     },
     {
-      "id": "urn:ngm:class:nonparametric-filter",
-      "label": "Nonparametric Filter"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     }
   ],
   "entityType": "Class",
@@ -577,8 +577,16 @@
       "label": "Probabilistic Model"
     },
     {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
+    },
+    {
+      "slug": "sequential-monte-carlo",
+      "label": "Sequential Monte Carlo"
     }
   ]
 }

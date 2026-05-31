@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:ecec0d8203bef3920d491f3f6d4da82a25567536f7290a3cf4374381d1568a2c",
+  "title": "Soulbound Tokens",
+  "slug": "soulbound-tokens",
+  "public": true,
+  "classIri": "urn:ngm:class:soulbound-tokens",
+  "domain": "blockchain",
+  "definition": "Non-transferable tokens bound to a single account that represent credentials, affiliations or reputation rather than tradable value. Because they cannot be sold or moved, they encode persistent attributes of an identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identity",
+      "label": "Decentralized Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "identity",
+      "label": "Identity"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "https-papers-ssrn-com-sol-3-papers-cfm-abstract-id-4105763",
+      "label": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

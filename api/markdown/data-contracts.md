@@ -1,0 +1,4 @@
+- ### Definition
+  - Data contracts are formal versioned agreements defining a dataset's schema, semantics and quality guarantees, a [[Metadata Management]] practice that makes data interfaces explicit and enforceable.
+- ### Content
+  - By codifying expectations between producers and consumers, contracts allow pipelines to validate incoming data and detect breaking schema changes before they propagate. They are central to data-as-a-product and data-mesh approaches where ownership is distributed across teams.

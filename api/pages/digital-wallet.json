@@ -159,6 +159,10 @@
       "label": "Marketplace"
     },
     {
+      "slug": "meta-mask",
+      "label": "MetaMask"
+    },
+    {
       "slug": "micropayment",
       "label": "Micropayment"
     },
@@ -177,6 +181,10 @@
     {
       "slug": "play-to-earn-p2-e",
       "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
     },
     {
       "slug": "self-sovereign-identity",

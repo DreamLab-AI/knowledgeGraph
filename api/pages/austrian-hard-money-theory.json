@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:austrian-hard-money-theory",
+  "title": "Austrian Hard Money Theory",
+  "slug": "austrian-hard-money-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:austrian-hard-money-theory",
+  "domain": "blockchain",
+  "definition": "Austrian hard money theory is the monetary doctrine, rooted in the Austrian School of economics, holding that sound money must have a credibly fixed or hard-to-inflate supply so it can reliably preserve purchasing power over time. It favours commodity-like monies (historically gold, latterly Bitcoin) over fiat currencies whose supply central banks can expand at will, arguing that inflation distorts price signals and the capital structure. The theory underpins Bitcoin's framing as a deflationary store of value with an absolutely scarce, algorithmically capped issuance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin as Money"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    }
+  ]
+}

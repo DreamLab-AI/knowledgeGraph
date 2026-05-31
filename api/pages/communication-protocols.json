@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:8e6e6de3d9db9f28f5920aebee886cd5c6555c4081037fa5250c6404798e77b3",
+  "title": "Communication Protocols",
+  "slug": "communication-protocols",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-protocols",
+  "domain": "general",
+  "definition": "Formal rules and conventions that govern how data is formatted, transmitted, received and acknowledged between communicating systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "complete-hri-terms-reference",
+      "label": "COMPLETE_HRI_TERMS_REFERENCE"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    },
+    {
+      "slug": "payment-protocol",
+      "label": "Payment Protocol"
+    }
+  ]
+}

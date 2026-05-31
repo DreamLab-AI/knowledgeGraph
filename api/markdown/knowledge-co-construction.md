@@ -1,0 +1,4 @@
+- ### Definition
+  - Knowledge co-construction is the collaborative building of shared understanding through dialogue, and is the mechanism enabled by [[Collaborative Learning]] and [[Collective Learning]] settings.
+- ### Content
+  - Grounded in socio-constructivist learning theory, it emphasises mutual explanation, conflict resolution and synthesis of differing viewpoints. Digital platforms support co-construction through shared artefacts, threaded discussion and AI facilitation, turning groups into distributed cognitive systems that produce understanding no individual held at the outset.

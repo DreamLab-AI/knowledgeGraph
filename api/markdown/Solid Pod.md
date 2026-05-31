@@ -227,8 +227,8 @@ public:: true
       "label": "Data Management"
     },
     {
-      "@id": "urn:ngm:class:linked-data-platform-resource",
-      "label": "Linked Data Platform Resource"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     },
     {
       "@id": "urn:ngm:class:personal-data-store",
@@ -296,7 +296,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3-c-linked-data-platform",
+        "@id": "urn:ngm:class:w-3-c-linked-data-platform",
         "label": "W3C Linked Data Platform"
       },
       {

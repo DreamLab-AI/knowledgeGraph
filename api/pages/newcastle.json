@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:03cc80ce2d992ab6b2b96a1c42d15579dc651d952501943cb8f6e613eed1855b",
+  "title": "Newcastle",
+  "slug": "newcastle",
+  "public": true,
+  "classIri": "urn:ngm:class:newcastle",
+  "domain": "general",
+  "definition": "A city in North East England with growing digital, data science, and life sciences sectors anchored by its universities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-economy",
+      "label": "Digital Economy"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

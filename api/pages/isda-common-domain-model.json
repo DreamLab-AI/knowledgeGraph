@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:isda-common-domain-model",
+  "title": "ISDA Common Domain Model",
+  "slug": "isda-common-domain-model",
+  "public": true,
+  "classIri": "urn:ngm:class:isda-common-domain-model",
+  "domain": "blockchain",
+  "definition": "The ISDA Common Domain Model is the full name of the standardised, machine-readable representation of financial products, trade events, and lifecycle processes maintained by the International Swaps and Derivatives Association. It establishes a single canonical model so that distributed ledgers, smart contracts, and institutional systems process derivatives transactions identically and without reconciliation. It is a cornerstone standard for interoperable, automated post-trade infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

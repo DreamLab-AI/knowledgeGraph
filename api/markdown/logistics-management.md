@@ -1,0 +1,4 @@
+- ### Definition
+  - Logistics management orchestrates the flow and storage of goods across a network, integrating transport, inventory, and fulfilment functions. It subsumes specialised disciplines such as [[Reverse Logistics]] and temperature-controlled [[Cold Chain Monitoring]].
+- ### Content
+  - Modern logistics management increasingly relies on real-time tracking, predictive analytics, and optimisation algorithms to route shipments, allocate inventory, and absorb disruption. Key performance levers include lead-time reduction, transport-mode selection, and warehouse network design, all balanced against carbon and cost constraints.

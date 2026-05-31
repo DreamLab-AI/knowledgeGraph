@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:player-agency",
+  "title": "Player Agency",
+  "slug": "player-agency",
+  "public": true,
+  "classIri": "urn:ngm:class:player-agency",
+  "domain": "metaverse",
+  "definition": "Player agency is the degree to which a participant's choices meaningfully shape the state, narrative, and outcomes of an interactive virtual experience. High agency means decisions have consequential, non-trivial effects rather than cosmetic ones, giving players authorship over their path through the world. It is a core design value of open-world and non-linear interactive systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Spatial Computing Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-narrative",
+        "label": "Non-Linear Narrative"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "non-linear-narrative",
+      "label": "Non Linear Narrative"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    }
+  ]
+}

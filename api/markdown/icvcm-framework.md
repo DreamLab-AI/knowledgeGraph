@@ -1,0 +1,4 @@
+- ### Definition
+  - The ICVCM Framework sets integrity benchmarks for voluntary carbon credits through its [[ICVCM Core Carbon Principles]], underpinning the credibility of [[Green Blockchain Initiatives]] that tokenise such credits.
+- ### Content
+  - Credits assessed against the Core Carbon Principles earn a CCP label, signalling that they meet thresholds for additionality, no double counting, and sound governance. Tokenised carbon-market projects reference the framework to anchor on-chain assets to verifiable real-world climate outcomes.

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:dff4093d4b9fbbc882c744886bfd99d22a0474fc1cc2b4942e9de4449049486e",
+  "title": "Physics Simulation Engine",
+  "slug": "physics-simulation-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:physics-simulation-engine",
+  "domain": "general",
+  "definition": "A physics simulation engine is software that computes the motion and interaction of objects according to physical laws, such as rigid body dynamics and collisions. It is used in games, robotics, and engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rigid-body-dynamics",
+      "label": "Rigid Body Dynamics"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-physics-engine",
+      "label": "https://en.wikipedia.org/wiki/Physics_engine"
+    },
+    {
+      "slug": "https-pybullet-org",
+      "label": "https://pybullet.org"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "dynamical-systems",
+      "label": "Dynamical Systems"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "nvidia-isaac-sim",
+      "label": "NVIDIA Isaac Sim"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:a327da01500f39109206bb5a3a2615c9186a4f601b12a94217ea618a5f31340d",
+  "title": "ECB",
+  "slug": "ecb",
+  "public": true,
+  "classIri": "urn:ngm:class:ecb",
+  "domain": "governance",
+  "definition": "The European Central Bank, the central bank responsible for monetary policy across the member states that use the euro and for supervisory functions within the banking union.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "central-bank",
+      "label": "Central Bank"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "financial-stability",
+      "label": "Financial Stability"
+    },
+    {
+      "slug": "financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

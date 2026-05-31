@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:9772b8455a1df0978a393f789612133d6bad0406239b75a107edc1ee3f12e603",
+  "title": "Linked Data Platform",
+  "slug": "linked-data-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:linked-data-platform",
+  "domain": "general",
+  "definition": "A W3C specification defining rules and HTTP conventions for reading and writing linked data resources, enabling RESTful management of RDF data on the web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "web-standards",
+      "label": "Web Standards"
+    },
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "provenance-ontology-prov-o",
+      "label": "Provenance Ontology (PROV-O)"
+    },
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: ComputeLayer
 
 # Compute Layer
 ```json-ld

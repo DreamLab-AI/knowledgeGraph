@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:escrow-system",
+  "title": "Escrow System",
+  "slug": "escrow-system",
+  "public": true,
+  "classIri": "urn:ngm:class:escrow-system",
+  "domain": "blockchain",
+  "definition": "An escrow system is a mechanism that holds assets or funds with a trusted third party or, on blockchains, in a smart contract until predefined release conditions are met. It reduces counterparty risk in transactions by guaranteeing that neither party can unilaterally seize value before obligations are fulfilled. On-chain escrows use conditional logic and timelocks to release or refund funds automatically.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    }
+  ]
+}

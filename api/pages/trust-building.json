@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:trust-building",
+  "title": "Trust Building",
+  "slug": "trust-building",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-building",
+  "domain": "governance",
+  "definition": "Trust building is the deliberate process of establishing confidence among participants in a digital system through transparency, accountability, reliable behaviour, and clear communication. In online communities and AI-mediated platforms it is fostered by practices such as content provenance, disclosure of automated generation, and enforced community standards that make actors and outputs verifiable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    }
+  ]
+}

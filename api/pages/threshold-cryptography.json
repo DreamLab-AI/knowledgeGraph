@@ -96,6 +96,10 @@
       "label": "Multi Sig Governance"
     },
     {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
       "slug": "sustainable-consensus",
       "label": "Sustainable Consensus"
     }

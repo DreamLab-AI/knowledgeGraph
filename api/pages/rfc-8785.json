@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:4ac89bac42605bd0e1cbf6343af631f8372b139051bd511a5d6ff81337aca787",
+  "title": "RFC 8785",
+  "slug": "rfc-8785",
+  "public": true,
+  "classIri": "urn:ngm:class:rfc-8785",
+  "domain": "standards",
+  "definition": "An IETF Request for Comments defining the JSON Canonicalization Scheme (JCS), a method for producing a deterministic serialisation of JSON data. It supports consistent hashing and signing of JSON.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

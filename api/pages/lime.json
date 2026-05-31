@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:f3a71ce3812499b1da8fd4483b7a80763bcdc1bf03a9aa1a5ca83568a7e344d2",
+  "title": "LIME",
+  "slug": "lime",
+  "public": true,
+  "classIri": "urn:ngm:class:lime",
+  "domain": "artificial-intelligence",
+  "definition": "Local Interpretable Model-agnostic Explanations, a technique that explains individual predictions of any machine learning model by fitting a simple interpretable model to perturbed samples around the instance of interest.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "label": "Transparency and Explainability"
+    }
+  ]
+}

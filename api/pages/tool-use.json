@@ -63,6 +63,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "ai-search",
       "label": "AI Search"
     },
@@ -75,8 +79,20 @@
       "label": "Agentic Internet"
     },
     {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
     },
     {
       "slug": "cli-multi-agent-systems",
@@ -99,8 +115,20 @@
       "label": "GPT Engineer"
     },
     {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
     },
     {
       "slug": "prompt-engineering",
@@ -109,6 +137,10 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "tool-augmented-reasoning",
+      "label": "Tool-Augmented Reasoning"
     }
   ]
 }

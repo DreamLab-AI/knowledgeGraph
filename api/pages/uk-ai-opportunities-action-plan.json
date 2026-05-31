@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:uk-ai-opportunities-action-plan",
+  "title": "UK AI Opportunities Action Plan",
+  "slug": "uk-ai-opportunities-action-plan",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-ai-opportunities-action-plan",
+  "domain": "governance",
+  "definition": "The UK AI Opportunities Action Plan is a 2025 UK Government strategy setting out recommendations to accelerate national adoption of artificial intelligence across the public and private sectors. It covers building sovereign compute and data infrastructure, expanding AI skills, establishing AI Growth Zones, and embedding AI in public services to drive productivity and economic growth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    }
+  ]
+}

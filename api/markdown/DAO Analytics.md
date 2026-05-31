@@ -507,8 +507,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:analytics-platforms",
-      "label": "Analytics Platforms"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
       "@id": "urn:ngm:class:blockchain-analytics",
@@ -780,7 +780,7 @@ public:: true
         "label": "Sybil Resistance"
       },
       {
-        "@id": "urn:ngm:class:voting-mechanisms",
+        "@id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanisms"
       },
       {

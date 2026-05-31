@@ -1,0 +1,4 @@
+- ### Definition
+  - User navigation lets people move through and orient within digital and spatial environments, enabling [[Search Discovery]] and shaping the [[3D User Interface]].
+- ### Content
+  - In XR, navigation must mitigate motion discomfort through techniques like teleportation, vignetting and snap turning. Across all interfaces, clear wayfinding, breadcrumbs and spatial anchors help users build a mental model and locate content efficiently.

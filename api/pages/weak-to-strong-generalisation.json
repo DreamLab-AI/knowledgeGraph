@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:weak-to-strong-generalisation",
+  "title": "Weak-to-Strong Generalisation",
+  "slug": "weak-to-strong-generalisation",
+  "public": true,
+  "classIri": "urn:ngm:class:weak-to-strong-generalisation",
+  "domain": "ai",
+  "definition": "Weak-to-strong generalisation is an AI-alignment research paradigm investigating whether a more capable model can be reliably supervised and improved using labels or feedback from a weaker supervisor. It serves as an empirical analogue for the superalignment problem, in which humans must oversee superhuman systems they cannot fully evaluate. Findings explore how strong students recover latent capabilities beyond the noisy weak teacher's own performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

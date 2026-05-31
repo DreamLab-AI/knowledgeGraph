@@ -1,0 +1,4 @@
+- ### Definition
+  - Regulatory conformance is the verified alignment of an organisation's practices with applicable law, a central objective of the [[AI Governance Domain]] and the wider [[Compliance Domain]].
+- ### Content
+  - Achieving conformance requires translating regulations into concrete controls, maintaining evidence of their operation, and undergoing periodic assessment. In fast-moving areas such as AI, conformance frameworks are evolving toward continuous monitoring and machine-readable obligations to keep pace with new rules.

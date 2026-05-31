@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:a3d1aaa8a17ac05a5dfcdc1d70ba80ae47be20b47ef68a747a64b5bbc8a7d087",
+  "title": "Real-Time Computing",
+  "slug": "real-time-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-computing",
+  "domain": "computing",
+  "definition": "Computing in which correctness depends not only on the logical result but also on meeting timing deadlines. Systems are classified as hard, firm, or soft real-time according to the consequences of missing a deadline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "real-time-operating-system",
+      "label": "Real-Time Operating System"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
+      "slug": "monitoring",
+      "label": "Monitoring"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - An image sensor converts light into a digital image and is the central capture component of a [[Camera]], also providing the raw input for techniques such as [[Eye Tracking]].
+- ### Content
+  - Modern CMOS sensors integrate the photodiode array with on-chip amplification and analogue-to-digital conversion, enabling high frame rates, low noise, and global or rolling shutter readout. Sensor characteristics such as resolution, pixel pitch, dynamic range, and spectral sensitivity directly determine the fidelity available to downstream vision algorithms.

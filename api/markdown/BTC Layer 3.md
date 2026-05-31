@@ -767,12 +767,12 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:application-layer-protocol",
-      "label": "Application Layer Protocol"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "@id": "urn:ngm:class:bitcoin-protocol-stack",
-      "label": "Bitcoin Protocol Stack"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -848,7 +848,7 @@ public:: true
         "label": "Taproot"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -878,7 +878,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:non-fungible-tokens",
+        "@id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Tokens"
       },
       {
@@ -904,7 +904,7 @@ public:: true
         "label": "Client-Side Validation"
       },
       {
-        "@id": "urn:ngm:class:fraud-proofs",
+        "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proofs"
       },
       {
@@ -984,7 +984,7 @@ public:: true
         "label": "State Channels"
       },
       {
-        "@id": "urn:ngm:individual:bitcoin",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {

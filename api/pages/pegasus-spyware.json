@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:pegasus-spyware",
+  "title": "Pegasus Spyware",
+  "slug": "pegasus-spyware",
+  "public": true,
+  "classIri": "urn:ngm:class:pegasus-spyware",
+  "domain": "security",
+  "definition": "Pegasus is commercial surveillance spyware developed by the NSO Group that covertly compromises smartphones, often via zero-click exploits requiring no user interaction. Once installed it can exfiltrate messages, calls, location, microphone, and camera data, granting near-total device control. It is a prominent case study in state-level digital surveillance and the human-rights risks of the commercial intrusion-software market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    }
+  ]
+}

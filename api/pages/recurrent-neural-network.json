@@ -836,12 +836,24 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },
     {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
     },
     {
       "slug": "transformer",

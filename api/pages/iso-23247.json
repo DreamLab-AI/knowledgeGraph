@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:b524d1049ff663149c6c6caecbbcff6098dc38af12669cbf65169e5b29937650",
+  "title": "ISO 23247",
+  "slug": "iso-23247",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-23247",
+  "domain": "standards",
+  "definition": "ISO 23247 defines a framework for digital twins in manufacturing, covering reference architecture and the representation of manufacturing elements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "digital-twin-collaboration",
+      "label": "Digital Twin Collaboration"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ]
+}

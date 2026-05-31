@@ -1,0 +1,4 @@
+- ### Definition
+  - Knowledge preservation captures and retains organisational knowledge over time, enabled by a [[Digital Archive]] for durable storage and by a [[Meeting AI Assistant]] that records and structures discussions.
+- ### Content
+  - Effective preservation converts tacit expertise into explicit, searchable artefacts through documentation, transcription, tagging and version control. AI tools increasingly automate capture by summarising meetings, extracting decisions and linking related material, reducing the risk that critical knowledge is lost when people or systems change.

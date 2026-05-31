@@ -92,8 +92,20 @@
       "label": "Cryptographic Keys"
     },
     {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "entropy",
+      "label": "Entropy"
+    },
+    {
+      "slug": "monte-carlo-integration",
+      "label": "Monte Carlo Integration"
     },
     {
       "slug": "post-quantum-cryptography",

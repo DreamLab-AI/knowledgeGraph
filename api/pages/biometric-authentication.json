@@ -76,8 +76,40 @@
       "label": "ETSI Domain Identity and Trust"
     },
     {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
+      "slug": "idnow",
+      "label": "IDnow"
+    },
+    {
       "slug": "identity-provider",
       "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "jumio",
+      "label": "Jumio"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "worldcoin",
+      "label": "Worldcoin"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
     }
   ]
 }

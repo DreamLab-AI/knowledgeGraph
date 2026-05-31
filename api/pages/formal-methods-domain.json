@@ -1,0 +1,175 @@
+{
+  "id": "urn:visionflow:page:42b291ac8c3d26fe680f7c252340d59b1aa34c1fed65e1c6115fc9aa1eeef19d",
+  "title": "Formal Methods Domain",
+  "slug": "formal-methods-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:formal-methods-domain",
+  "domain": "formal-methods",
+  "definition": "The Formal Methods Domain covers mathematically rigorous techniques for specifying, developing and verifying software and hardware systems. Its scope includes formal specification, model checking, theorem proving and program verification. It is a top-level subject classification rooted in logic and computer science. The boundary excludes empirical testing without formal guarantees, which is treated as conventional quality assurance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:program-verification",
+        "label": "Program Verification"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:correctness-proofs",
+        "label": "Correctness Proofs"
+      },
+      {
+        "id": "urn:ngm:class:safety-verification",
+        "label": "Safety Verification"
+      },
+      {
+        "id": "urn:ngm:class:protocol-validation",
+        "label": "Protocol Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "formal-specification",
+      "label": "Formal Specification"
+    },
+    {
+      "slug": "model-checking",
+      "label": "Model Checking"
+    },
+    {
+      "slug": "theorem-proving",
+      "label": "Theorem Proving"
+    },
+    {
+      "slug": "program-verification",
+      "label": "Program Verification"
+    },
+    {
+      "slug": "type-theory",
+      "label": "Type Theory"
+    },
+    {
+      "slug": "logic",
+      "label": "Logic"
+    },
+    {
+      "slug": "discrete-mathematics",
+      "label": "Discrete Mathematics"
+    },
+    {
+      "slug": "automata-theory",
+      "label": "Automata Theory"
+    },
+    {
+      "slug": "correctness-proofs",
+      "label": "Correctness Proofs"
+    },
+    {
+      "slug": "safety-verification",
+      "label": "Safety Verification"
+    },
+    {
+      "slug": "protocol-validation",
+      "label": "Protocol Validation"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

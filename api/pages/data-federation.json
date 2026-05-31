@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-federation",
+  "title": "Data Federation",
+  "slug": "data-federation",
+  "public": true,
+  "classIri": "urn:ngm:class:data-federation",
+  "domain": "data",
+  "definition": "Data federation is a data integration technique that presents multiple distributed and heterogeneous data sources as a single virtual database queryable in place, without physically moving or copying the data. A federation engine decomposes queries, pushes work to source systems and combines results on the fly. It enables real-time unified access and is a core mechanism behind data virtualization and integration interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-virtualization",
+        "label": "Data Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:data-integration-interface",
+        "label": "Data Integration Interface"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    }
+  ]
+}

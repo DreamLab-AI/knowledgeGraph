@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:a98ed02b3cf211adb0e258fb65d01d457246ee30fe9f601070ae794f10d8eec1",
+  "title": "Product Liability",
+  "slug": "product-liability",
+  "public": true,
+  "classIri": "urn:ngm:class:product-liability",
+  "domain": "governance",
+  "definition": "The area of law concerning the responsibility of producers and sellers for harm caused by defective or unsafe products placed on the market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

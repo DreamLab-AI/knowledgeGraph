@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-253-cryptocurrency-remuneration
 
 # Cryptocurrency Remuneration
 ```json-ld

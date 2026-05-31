@@ -18,13 +18,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:animate-diff",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:animate-diff",
+  "@type": "Class",
   "label": "AnimateDiff",
   "definition": "AnimateDiff is an open-source framework that inserts lightweight motion-module adapters into pre-trained text-to-image diffusion models to generate temporally consistent animated sequences without retraining the base image model. Developed by researchers at CUHK and ByteDance and released in 2023, it enables personalised diffusion model checkpoints to produce video clips by learning motion priors from video data in a plug-and-play manner. AnimateDiff integrates natively with the Stable Diffusion ecosystem, including ControlNet conditioning and LoRA fine-tuning.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}],
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
@@ -43,7 +43,7 @@ public:: true
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:individual:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
       {"@id": "urn:ngm:class:video-processing", "label": "Video Processing"}

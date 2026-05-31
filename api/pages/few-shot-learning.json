@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:3082005ae1a690760d384a0f99881c07ac96507f82ae5f7faf8e4db6fa8cb063",
+  "title": "Few-Shot Learning",
+  "slug": "few-shot-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:few-shot-learning",
+  "domain": "machine-learning",
+  "definition": "A learning setting in which a model is required to generalise to a new task or class from only a small number of labelled examples.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
+    }
+  ]
+}

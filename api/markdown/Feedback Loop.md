@@ -499,12 +499,12 @@ public:: true
       "label": "Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:circular-causality",
-      "label": "Circular Causality"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
-      "@id": "urn:ngm:class:closed-loop-system",
-      "label": "Closed-Loop System"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
   "relations": {

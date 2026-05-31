@@ -1,0 +1,4 @@
+- ### Definition
+  - Figma is a cloud-based collaborative UI/UX design and prototyping tool supporting real-time multiplayer editing, paired with its [[FigJam]] whiteboard and acting as a structured complement to a [[Collaborative Whiteboard]]. It is a digital-collaboration workspace tool.
+- ### Content
+  - Figma combines vector design, reusable components, shared design systems, and interactive prototyping with developer hand-off via inspectable specs and code snippets. Running in the browser with continuous cloud sync, it removes file-versioning friction and enables distributed teams to co-design simultaneously, which has driven its broad adoption in product-design workflows.

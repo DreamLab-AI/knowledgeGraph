@@ -211,12 +211,12 @@ public:: true
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:extended-reality-api",
-      "label": "Extended Reality API"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     },
     {
-      "@id": "urn:ngm:class:khronos-group-standard",
-      "label": "Khronos Group Standard"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     }
   ],
   "relations": {

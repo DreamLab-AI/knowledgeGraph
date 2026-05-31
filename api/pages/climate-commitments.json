@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:climate-commitments",
+  "title": "Climate Commitments",
+  "slug": "climate-commitments",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-commitments",
+  "domain": "governance",
+  "definition": "Climate commitments are formal pledges by governments, companies, or coalitions to achieve specified greenhouse-gas reduction or removal outcomes by defined dates, such as net-zero or science-based emissions targets. They typically combine a headline goal with interim milestones, accounting boundaries, and reporting obligations to make progress verifiable. They matter as the governance mechanism that translates climate ambition into measurable, accountable action and that shapes corporate sustainability and offsetting strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

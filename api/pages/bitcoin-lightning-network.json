@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:e69997fc25c5b4d394af396b9d7610d2e9026f33007e500720f5a4dd3ada7ef3",
+  "title": "Bitcoin Lightning Network",
+  "slug": "bitcoin-lightning-network",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-lightning-network",
+  "domain": "bitcoin-lightning-network",
+  "definition": "The Bitcoin Lightning Network is a layer-two payment protocol built on top of Bitcoin that enables fast, low-cost transactions through bidirectional payment channels. Two parties lock funds in a multisignature channel and exchange signed balance updates off-chain, settling the final state on the Bitcoin blockchain only when the channel closes. Payments can be routed across a network of connected channels, allowing transfers between parties that do not share a direct channel.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:instant-settlement",
+        "label": "Instant Settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "multisignature",
+      "label": "Multisignature"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "instant-settlement",
+      "label": "Instant Settlement"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

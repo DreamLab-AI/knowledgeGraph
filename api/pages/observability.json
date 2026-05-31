@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:3a60356b2e94489cea7a9f92d1e957242281093b03635cb92da8443814ff6e80",
+  "title": "Observability",
+  "slug": "observability",
+  "public": true,
+  "classIri": "urn:ngm:class:observability",
+  "domain": "software-engineering",
+  "definition": "Observability is the property of a software system that allows its internal state to be inferred from external outputs such as logs, metrics, and traces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:performance",
+        "label": "performance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "performance",
+      "label": "performance"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    },
+    {
+      "slug": "performance",
+      "label": "performance"
+    }
+  ]
+}

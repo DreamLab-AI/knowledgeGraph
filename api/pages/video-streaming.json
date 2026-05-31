@@ -64,6 +64,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bandwidth",
+      "label": "Bandwidth"
+    },
+    {
+      "slug": "loom",
+      "label": "Loom"
+    },
+    {
+      "slug": "packet-loss-recovery",
+      "label": "Packet Loss Recovery"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },

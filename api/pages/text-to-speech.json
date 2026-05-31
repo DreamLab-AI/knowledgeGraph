@@ -96,6 +96,18 @@
       "label": "Deepfakes and fraudulent content"
     },
     {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
     },
@@ -110,6 +122,10 @@
     {
       "slug": "voice-interaction",
       "label": "Voice Interaction"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
     }
   ]
 }

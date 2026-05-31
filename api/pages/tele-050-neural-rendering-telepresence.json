@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:3d638c0d5cb4356cfb197786e8539895312966917553cb76e4fb3bb5c6e07a6e",
+  "title": "TELE-050-neural-rendering-telepresence",
+  "slug": "tele-050-neural-rendering-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+  "domain": "metaverse",
+  "definition": "Neural rendering for telepresence is the application of learned, image-synthesis models to reconstruct and display remote people and scenes with photorealistic appearance and free viewpoint control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    }
+  ]
+}

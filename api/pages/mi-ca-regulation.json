@@ -89,13 +89,21 @@
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "bc-0482-eu-mica-regulation",
+      "label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "slug": "bc-0484-markets-in-crypto-assets",
+      "label": "BC-0484-markets-in-crypto-assets"
+    },
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"

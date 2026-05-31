@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:noise-protocol",
+  "title": "Noise Protocol",
+  "slug": "noise-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:noise-protocol",
+  "domain": "security",
+  "definition": "The Noise Protocol Framework is a toolkit for building secure cryptographic handshake protocols based on Diffie-Hellman key agreement. Rather than a single fixed protocol, it defines a set of composable handshake patterns from which designers select to obtain specific authentication, confidentiality, and forward-secrecy properties. Its simplicity and clear security properties have made it the basis for transport security in messaging and peer-to-peer systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ]
+}

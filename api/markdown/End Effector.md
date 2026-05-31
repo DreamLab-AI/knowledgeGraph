@@ -1,4 +1,5 @@
 public:: true
+alias:: End-Effector
 
 # End Effector
 ```json-ld

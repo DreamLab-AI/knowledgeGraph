@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:eac4b6f1fe01cdf3f049701b91fae8bdc44a12239f21f92c8f81d3a223319375",
+  "title": "Trusted Execution Environments",
+  "slug": "trusted-execution-environments",
+  "public": true,
+  "classIri": "urn:ngm:class:trusted-execution-environments",
+  "domain": "cryptographic",
+  "definition": "Hardware-isolated execution environments that protect the confidentiality and integrity of code and data running inside them, even from a compromised operating system or host.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "secure-enclave",
+      "label": "Secure Enclave"
+    },
+    {
+      "slug": "arm-trust-zone",
+      "label": "ARM TrustZone"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    }
+  ]
+}

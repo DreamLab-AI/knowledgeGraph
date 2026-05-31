@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:7d94a74b273c7d51f40d9bc94e07f6e41a7158ffd93ae4cbece4b055dc3c403b",
+  "title": "University of Edinburgh",
+  "slug": "university-of-edinburgh",
+  "public": true,
+  "classIri": "urn:ngm:class:university-of-edinburgh",
+  "domain": "university-of-edinburgh",
+  "definition": "The University of Edinburgh is a public research university in Scotland, founded in 1582, making it one of the oldest universities in the English-speaking world. It is a member of the Russell Group and is recognised internationally for research in informatics, artificial intelligence, medicine and the humanities. Its School of Informatics is among the largest computer science research centres in Europe and has a long history in machine learning and natural language processing. The university has been associated with many notable figures across science, philosophy and engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    }
+  ]
+}

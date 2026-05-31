@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:43d71c4215928b032f8bf7dc8854b6a5df3f10e9bfa5986c35052268e2717dcb",
+  "title": "Carbon Offsetting",
+  "slug": "carbon-offsetting",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-offsetting",
+  "domain": "governance",
+  "definition": "The practice of compensating for emissions of carbon dioxide or other greenhouse gases by funding an equivalent reduction or removal of emissions elsewhere.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    },
+    {
+      "slug": "voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "integrity-council-for-the-voluntary-carbon-market",
+      "label": "Integrity Council for the Voluntary Carbon Market"
+    }
+  ]
+}

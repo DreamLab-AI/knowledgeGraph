@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:3a22095a6a2d86bcb4e22745fc4d6948531d6d09a665afc33173db7355c0ebb0",
+  "title": "Ouroboros",
+  "slug": "ouroboros",
+  "public": true,
+  "classIri": "urn:ngm:class:ouroboros",
+  "domain": "blockchain",
+  "definition": "A family of provably secure proof-of-stake consensus protocols that divide time into epochs and slots and select block producers in proportion to stake.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

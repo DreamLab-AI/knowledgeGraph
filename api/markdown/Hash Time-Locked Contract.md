@@ -1,4 +1,5 @@
 public:: true
+alias:: Hash Time Locked Contract
 
 # Hash Time-Locked Contract
 ```json-ld

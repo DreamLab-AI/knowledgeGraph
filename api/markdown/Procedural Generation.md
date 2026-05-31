@@ -1,4 +1,5 @@
 public:: true
+alias:: ProceduralGeneration
 
 # Procedural Generation
 ```json-ld

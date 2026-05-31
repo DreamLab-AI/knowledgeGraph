@@ -1,4 +1,5 @@
 public:: true
+alias:: ROS2
 
 # ros 2
 ```json-ld

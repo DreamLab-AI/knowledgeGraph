@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:7f4f2df7d86904893501174b06a5c949d4e110eca34847952da26c8d7d4487e3",
+  "title": "E-Waste",
+  "slug": "e-waste",
+  "public": true,
+  "classIri": "urn:ngm:class:e-waste",
+  "domain": "governance",
+  "definition": "E-waste is discarded electrical and electronic equipment, including devices that have reached the end of their useful life. Managing it involves recycling, recovery, and safe disposal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:circular-economy",
+      "label": "Circular Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "https-www-unep-org-topics-chemicals-and-pollution-action-pollution-and-health-e-waste",
+      "label": "https://www.unep.org/topics/chemicals-and-pollution-action/pollution-and-health/e-waste"
+    },
+    {
+      "slug": "https-globalewaste-org",
+      "label": "https://globalewaste.org"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "waste-management",
+      "label": "Waste Management"
+    }
+  ]
+}

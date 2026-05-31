@@ -1,0 +1,4 @@
+- ### Definition
+  - Engagement optimisation applies ML and [[Feedback Loop]] signals to maximise user interaction, a technique implemented by systems such as [[AI Companions]].
+- ### Content
+  - Models ingest behavioural telemetry and adjust content, cadence, and prompts to increase measured engagement. The approach delivers personalisation but demands ethical guardrails to avoid optimising for compulsive use over genuine value.

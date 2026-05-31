@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:4fe25c8675d860c69cbac7102a60267e5e662b6074a676b62d262265fc3a2a9e",
+  "title": "Phoenix",
+  "slug": "phoenix",
+  "public": true,
+  "classIri": "urn:ngm:class:phoenix",
+  "domain": "blockchain",
+  "definition": "Phoenix is a self-custodial Bitcoin Lightning wallet developed by ACINQ that manages channels automatically on behalf of the user. It is available as a mobile application.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wallet",
+      "label": "Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning",
+        "label": "Lightning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "https-phoenix-acinq-co",
+      "label": "https://phoenix.acinq.co"
+    },
+    {
+      "slug": "https-github-com-acinq-phoenix",
+      "label": "https://github.com/ACINQ/phoenix"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

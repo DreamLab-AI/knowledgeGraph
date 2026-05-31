@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:714dd29a96b4d35d04da15e27a3e01a07b7abbf3757725bddc5de74f1c06ef2d",
+  "title": "Bitfinex",
+  "slug": "bitfinex",
+  "public": true,
+  "classIri": "urn:ngm:class:bitfinex",
+  "domain": "blockchain",
+  "definition": "Bitfinex is a cryptocurrency exchange that allows trading of digital assets and is associated with the issuer of the Tether stablecoin. It is operated by iFinex.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "https-www-bitfinex-com",
+      "label": "https://www.bitfinex.com"
+    },
+    {
+      "slug": "https-docs-bitfinex-com",
+      "label": "https://docs.bitfinex.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

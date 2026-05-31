@@ -87,8 +87,20 @@
       "label": "Data Layer"
     },
     {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
     },
     {
       "slug": "software-architecture",

@@ -1,0 +1,4 @@
+- ### Definition
+  - Text-to-video generation synthesises a coherent video clip from a natural-language prompt, the core capability behind [[AI Video]] systems including [[Proprietary AI Video]] offerings.
+- ### Content
+  - These models add a temporal dimension to image generation, learning to produce frame sequences that are consistent in motion, lighting, and object identity over time, usually in a compressed latent space to keep computation tractable. Architectures combine diffusion or flow-matching objectives with spatiotemporal attention or 3D convolutions, and recent systems condition on additional signals such as reference images or camera trajectories. Open challenges include long-horizon coherence, controllability, and the substantial compute required for both training and sampling.

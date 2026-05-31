@@ -82,6 +82,10 @@
       "label": "Procedural and Hybrid 4D"
     },
     {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
     }

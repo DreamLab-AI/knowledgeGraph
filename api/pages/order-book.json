@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:6b029de9d9eb5e955b95ab10c45bae3e443f0b2304b40fdf6ba662f74cba2a55",
+  "title": "Order Book",
+  "slug": "order-book",
+  "public": true,
+  "classIri": "urn:ngm:class:order-book",
+  "domain": "blockchain",
+  "definition": "A continuously updated record of outstanding buy and sell orders for an asset, organised by price level, against which incoming orders are matched.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exchange-mechanism",
+      "label": "Exchange Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "exchange-mechanism",
+      "label": "Exchange Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "Prediction Markets"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    }
+  ]
+}

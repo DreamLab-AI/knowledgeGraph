@@ -87,8 +87,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:next-generation-mobile",
-      "label": "Next Generation Mobile"
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     }
   ],
   "relations": {

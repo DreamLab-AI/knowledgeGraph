@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:648c8cbe59e37c13aceec7c252638afa2926471819d4d86b8819f41c6b247b36",
+  "title": "Research Layer",
+  "slug": "research-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:research-layer",
+  "domain": "research",
+  "definition": "The Research Layer is the cross-cutting stratum where new methods, models, and understanding are generated before adoption into production strata. It sits above evaluation and experimentation concerns and feeds the algorithm and model layers with validated advances. It contains experiments, hypotheses, prototypes, and the findings that justify changes elsewhere.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evaluation-layer",
+        "label": "Evaluation Layer"
+      },
+      {
+        "id": "urn:ngm:class:simulation-layer",
+        "label": "Simulation Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithm-layer",
+        "label": "Algorithm Layer"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture-layer",
+        "label": "Model Architecture Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "scientific-method",
+      "label": "Scientific Method"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "evaluation-layer",
+      "label": "Evaluation Layer"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "simulation-layer",
+      "label": "Simulation Layer"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
+    }
+  ]
+}

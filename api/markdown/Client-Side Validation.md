@@ -1,4 +1,5 @@
 public:: true
+alias:: client-side-validation
 
 # Client-Side Validation
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: GestureRecognition
 
 # Gesture Recognition
 ```json-ld

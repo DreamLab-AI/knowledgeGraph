@@ -79,6 +79,10 @@
       "label": "Digital Workplace Platform"
     },
     {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     },

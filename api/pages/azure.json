@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:97c0d1a6e7a283b8e75ed6d34a1ce148dfeaa8b705fe5f08b531e4f937253318",
+  "title": "Azure",
+  "slug": "azure",
+  "public": true,
+  "classIri": "urn:ngm:class:azure",
+  "domain": "distributed-systems",
+  "definition": "Azure is Microsoft's public cloud computing platform offering compute, storage, networking, identity and managed services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-3-infrastructure",
+        "label": "Web3 Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "web-3-infrastructure",
+      "label": "Web3 Infrastructure"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "https-learn-microsoft-com-en-us-azure",
+      "label": "https://learn.microsoft.com/en-us/azure/"
+    },
+    {
+      "slug": "https-azure-microsoft-com",
+      "label": "https://azure.microsoft.com/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

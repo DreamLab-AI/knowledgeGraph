@@ -1,0 +1,4 @@
+- ### Definition
+  - SLAM Toolbox is an open-source ROS package for 2D LiDAR-based simultaneous localisation and mapping using pose-graph optimisation. It is used by a [[Ground Robot]] and by a [[Mobile Robot Platform]] to build and reuse maps.
+- ### Content
+  - It performs scan matching to construct a pose graph that is optimised to produce consistent occupancy maps, and its lifelong-mapping mode lets robots serialise, reload, and extend maps across sessions. Integration with the ROS Navigation2 stack makes it a standard choice for autonomous indoor navigation.

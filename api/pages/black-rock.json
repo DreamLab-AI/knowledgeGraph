@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:6aad8363169adbb9075aa5b9675b23091444efd441310d19beec0f4642c9556e",
+  "title": "BlackRock",
+  "slug": "black-rock",
+  "public": true,
+  "classIri": "urn:ngm:class:black-rock",
+  "domain": "general",
+  "definition": "BlackRock is an investment management company that provides asset management, advisory, and risk management services to institutional and retail clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "investment-management",
+      "label": "Investment Management"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

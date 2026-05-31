@@ -1,4 +1,5 @@
 public:: true
+alias:: NetworkLayer
 
 # Network Layer
 ```json-ld

@@ -95,6 +95,10 @@
       "label": "Open Generative AI tools"
     },
     {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },

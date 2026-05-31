@@ -443,12 +443,12 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:latent-variable-model",
-      "label": "Latent Variable Model"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     },
     {
-      "@id": "urn:ngm:class:markov-chain-model",
-      "label": "Markov Chain Model"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     }
   ],
   "relations": {

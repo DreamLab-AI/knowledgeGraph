@@ -73,6 +73,10 @@
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
+    },
+    {
+      "slug": "mitre-atlas",
+      "label": "MITRE ATLAS"
     }
   ]
 }

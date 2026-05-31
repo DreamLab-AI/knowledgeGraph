@@ -595,12 +595,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:continuous-decision-making",
-      "label": "Continuous Decision-Making"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     },
     {
-      "@id": "urn:ngm:class:dao-governance-mechanism",
-      "label": "DAO Governance Mechanism"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     }
   ],
   "relations": {

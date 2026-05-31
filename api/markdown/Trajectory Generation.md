@@ -150,11 +150,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rb-1005-forward-kinematics",
+        "@id": "urn:ngm:class:forward-kinematics",
         "label": "RB-1005-forward-kinematics"
       },
       {
-        "@id": "urn:ngm:class:rb-1006-inverse-kinematics",
+        "@id": "urn:ngm:class:inverse-kinematics",
         "label": "RB-1006-inverse-kinematics"
       }
     ]

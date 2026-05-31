@@ -1,0 +1,4 @@
+- ### Definition
+  - A persistent identifier is a stable, resolvable, globally unique reference that decouples a [[Digital Objects]] identity from its storage location.
+- ### Content
+  - PID systems separate identity from address through a resolver that maps the opaque identifier to current metadata and access URLs, so links survive relocation and avoid reference rot. Schemes including DOI, Handle, ARK, and ORCID layer governance, metadata, and resolution policies on top of this indirection, making PIDs the backbone of reliable citation and machine-readable provenance.

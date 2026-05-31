@@ -483,8 +483,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:compliant-mechanism",
-      "label": "Compliant Mechanism"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
       "@id": "urn:ngm:class:fluid-power-device",

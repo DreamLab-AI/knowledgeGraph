@@ -67,12 +67,36 @@
       "label": "BTC Layer 3"
     },
     {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
     }
   ]
 }

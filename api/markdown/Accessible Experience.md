@@ -107,8 +107,8 @@ public:: true
       "label": "Governance and Safety"
     },
     {
-      "@id": "urn:ngm:class:inclusive-experience",
-      "label": "Inclusive Experience"
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "SC Interaction"
     },
     {
       "@id": "urn:ngm:class:user-experience",

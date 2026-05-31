@@ -1,0 +1,4 @@
+- ### Definition
+  - Annotated Training Data is labeled data that supplies the ground truth supervised learning requires. It is partitioned and reused during [[Cross-Validation]], and is a hard requirement for tasks such as [[Segmentation and Identification]].
+- ### Content
+  - Labels may be class tags, boxes, pixel masks, keypoints, or text spans, created by human annotators, weak supervision, or model-in-the-loop pipelines. Because models inherit the biases and errors of their labels, annotation guidelines, inter-annotator agreement, and quality control are as important as raw volume, and labeled data is often the scarcest and most expensive resource in a project.

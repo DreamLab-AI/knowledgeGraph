@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:d72f11ef7663c07c0f671e5ff1ebbb0a6d2054d9f3dda48878ab99a7efc771cc",
+  "title": "Complex Systems",
+  "slug": "complex-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:complex-systems",
+  "domain": "mathematics",
+  "definition": "Systems composed of many interacting components whose collective behaviour cannot be simply inferred from the behaviour of the individual parts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: MechanicalComponent
 
 # Mechanical Component
 ```json-ld
@@ -699,8 +700,8 @@ public:: true
       "label": "Kinematic Chain"
     },
     {
-      "@id": "urn:ngm:class:manufacturing-product",
-      "label": "Manufacturing Product"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {

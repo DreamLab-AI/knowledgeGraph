@@ -1,4 +1,5 @@
 public:: true
+alias:: PublicBlockchain
 
 # Public Blockchain
 ```json-ld

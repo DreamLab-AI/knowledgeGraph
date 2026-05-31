@@ -1,0 +1,4 @@
+- ### Definition
+  - Positive feedback amplifies a system's output back into its input, reinforcing rather than correcting change. It is a specific implementation of a [[Feedback Loop]] and is the mechanistic basis of [[Network Effects]].
+- ### Content
+  - In engineered control systems positive feedback can drive instability, oscillation, or saturation and is generally avoided unless intentionally used for switching (e.g. latches, Schmitt triggers). In economic and social systems it produces self-reinforcing growth such as adoption cascades, winner-take-all markets, and viral spread, where each new participant increases the value or pressure that attracts the next.

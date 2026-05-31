@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:b9ad683889ff726d3abb25361cbc030c3841537f5fc4d1f71f40f205d4199edb",
+  "title": "Entropy",
+  "slug": "entropy",
+  "public": true,
+  "classIri": "urn:ngm:class:entropy",
+  "domain": "information-theory",
+  "definition": "A measure of disorder or uncertainty. In thermodynamics it quantifies the unavailable energy in a system, and in information theory it quantifies the average uncertainty or information content of a source.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "superfluid",
+      "label": "Superfluid"
+    }
+  ]
+}

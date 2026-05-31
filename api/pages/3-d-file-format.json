@@ -121,6 +121,10 @@
     {
       "slug": "vrm-format",
       "label": "VRM Format"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
     }
   ]
 }

@@ -99,6 +99,10 @@
   ],
   "backlinks": [
     {
+      "slug": "hardware-layer",
+      "label": "Hardware Layer"
+    },
+    {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
     },

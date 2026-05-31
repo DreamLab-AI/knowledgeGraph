@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:safety-filter",
+  "title": "Safety Filter",
+  "slug": "safety-filter",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-filter",
+  "domain": "ai",
+  "definition": "A safety filter is a content-moderation component placed around a generative AI model that screens inputs and outputs to block disallowed, harmful, or policy-violating content. It typically combines classifiers, keyword and pattern rules, and policy thresholds to detect unsafe prompts or generations and refuse, redact, or regenerate them. It is a core safeguard in deployed image and conversational AI products.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI Companions"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

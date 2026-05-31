@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:5c27fb394e2178993a977205d0cde01f6b393136937b514b5df10cb171ca5f3e",
+  "title": "Cambridge Judge Business School",
+  "slug": "cambridge-judge-business-school",
+  "public": true,
+  "classIri": "urn:ngm:class:cambridge-judge-business-school",
+  "domain": "education",
+  "definition": "Cambridge Judge Business School is the business school of the University of Cambridge, located in Cambridge, England. It conducts research and teaching in management, finance and alternative finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:university-of-cambridge",
+      "label": "University of Cambridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

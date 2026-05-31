@@ -525,12 +525,20 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "glossary-index",
       "label": "Glossary Index"
     },
     {
       "slug": "graph-database",
       "label": "Graph Database"
+    },
+    {
+      "slug": "information-retrieval-domain",
+      "label": "Information Retrieval Domain"
     },
     {
       "slug": "knowledge-graph",
@@ -541,6 +549,10 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
     },
@@ -549,12 +561,28 @@
       "label": "Nearest Neighbor Search"
     },
     {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
       "slug": "semantic-metadata-registry",
       "label": "Semantic Metadata Registry"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
     }
   ]
 }

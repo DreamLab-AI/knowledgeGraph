@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:df5a54b853d978959a045248495aee927fd291bc37b4d8ac693ac2b6d21cbeb8",
+  "title": "Logic",
+  "slug": "logic",
+  "public": true,
+  "classIri": "urn:ngm:class:logic",
+  "domain": "mathematics",
+  "definition": "The systematic study of valid inference and reasoning, concerned with the principles that distinguish correct from incorrect arguments. It underpins mathematics, philosophy, and computer science.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    }
+  ]
+}

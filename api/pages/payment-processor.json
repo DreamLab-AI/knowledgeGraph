@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:payment-processor",
+  "title": "Payment Processor",
+  "slug": "payment-processor",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-processor",
+  "domain": "infrastructure",
+  "definition": "A payment processor is a service that handles the transaction lifecycle between a merchant, the customer's payment instrument, and the settlement networks. It authorises, captures, clears, and settles funds while applying fraud checks, currency conversion, and compliance controls. Processors are foundational components of digital payment infrastructure, abstracting card networks, bank rails, and blockchain settlement behind a single integration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infrastructure Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-payments",
+      "label": "Digital Payments"
+    }
+  ]
+}

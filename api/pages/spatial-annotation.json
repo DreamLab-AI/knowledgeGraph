@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:spatial-annotation",
+  "title": "Spatial Annotation",
+  "slug": "spatial-annotation",
+  "public": true,
+  "classIri": "urn:ngm:class:spatial-annotation",
+  "domain": "metaverse",
+  "definition": "Spatial annotation is the placement of digital notes, labels, or markers anchored to specific positions in a three-dimensional physical or virtual space, so that the content persists relative to real-world geometry as the viewer moves. It relies on spatial mapping and pose tracking to keep annotations registered to surfaces or objects. It is a foundational interaction for augmented reality collaboration, maintenance guidance, and shared spatial computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Supply-Chain Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content-overlay",
+        "label": "Digital Content Overlay"
+      },
+      {
+        "id": "urn:ngm:class:ar-overlay",
+        "label": "AR Overlay"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-overlay",
+      "label": "Ar Overlay"
+    },
+    {
+      "slug": "digital-content-overlay",
+      "label": "Digital Content Overlay"
+    }
+  ]
+}

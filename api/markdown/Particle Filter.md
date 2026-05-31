@@ -355,8 +355,8 @@ public:: true
       "label": "Monte Carlo Method"
     },
     {
-      "@id": "urn:ngm:class:nonparametric-filter",
-      "label": "Nonparametric Filter"
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation And Planning"
     }
   ],
   "relations": {

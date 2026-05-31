@@ -1,4 +1,5 @@
 public:: true
+alias:: DeFi Protocol, DeFiProtocol
 
 # De Fi Protocol
 ```json-ld

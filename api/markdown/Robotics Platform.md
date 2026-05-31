@@ -606,7 +606,7 @@ public:: true
         "label": "USD"
       },
       {
-        "@id": "urn:ngm:individual:rust",
+        "@id": "urn:ngm:class:rust",
         "label": "Rust"
       }
     ],

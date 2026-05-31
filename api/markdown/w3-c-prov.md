@@ -1,0 +1,4 @@
+- ### Definition
+  - W3C PROV is a standardised model for expressing data provenance, used by [[Metadata Management]] and broader [[Data Management]] systems to record how artefacts were produced, derived, and attributed.
+- ### Content
+  - The PROV-O ontology maps the core PROV-DM concepts (Entity, Activity, Agent and relations such as wasDerivedFrom, wasGeneratedBy, wasAttributedTo) into RDF/OWL, enabling provenance graphs queryable via SPARQL. Adoption supports reproducible pipelines and regulatory auditability, though capturing fine-grained provenance imposes instrumentation overhead and storage cost.

@@ -1,4 +1,5 @@
 public:: true
+alias:: DelegatedProofOfStake
 
 # Delegated Proof of Stake
 ```json-ld

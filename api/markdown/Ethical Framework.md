@@ -1,4 +1,5 @@
 public:: true
+alias:: EthicalFramework
 
 # Ethical Framework
 ```json-ld

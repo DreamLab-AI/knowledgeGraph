@@ -1,0 +1,4 @@
+- ### Definition
+  - Matrix factorisation decomposes a matrix into lower-rank factors to expose latent structure. The low-rank principle underlies parameter-efficient methods like [[LoRA, DoRA, etc]] and powers the embeddings behind [[Hyper-Personalisation]].
+- ### Content
+  - In recommendation, learned user and item vectors reconstruct observed interactions and predict missing ones, with regularisation and bias terms improving accuracy. The same low-rank idea reappears in model compression and adapter-based fine-tuning, where weight updates are constrained to a small factorised subspace.

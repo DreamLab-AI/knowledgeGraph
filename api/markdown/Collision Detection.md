@@ -988,7 +988,7 @@ public:: true
         "label": "USD Physics Schema"
       },
       {
-        "@id": "urn:ngm:class:w3-c-web-xr",
+        "@id": "urn:ngm:class:w-3-c-web-xr",
         "label": "W3C WebXR"
       }
     ]

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:91de33e19cc5c50f075f98ef1964b6b104b009c91b610f6fc5109b9f463f5315",
+  "title": "MITRE ATLAS",
+  "slug": "mitre-atlas",
+  "public": true,
+  "classIri": "urn:ngm:class:mitre-atlas",
+  "domain": "artificial-intelligence",
+  "definition": "MITRE ATLAS is a knowledge base of adversary tactics and techniques against machine learning systems. It is modelled on the MITRE ATT&CK framework and curated by MITRE.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "security-framework",
+      "label": "Security Framework"
+    },
+    {
+      "slug": "https-atlas-mitre-org",
+      "label": "https://atlas.mitre.org"
+    },
+    {
+      "slug": "https-github-com-mitre-atlas",
+      "label": "https://github.com/mitre-atlas"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ]
+}

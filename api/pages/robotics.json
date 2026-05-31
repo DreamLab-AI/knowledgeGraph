@@ -216,6 +216,10 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
       "slug": "backlash",
       "label": "Backlash"
     },
@@ -388,6 +392,10 @@
       "label": "Gyroscope"
     },
     {
+      "slug": "hri",
+      "label": "HRI"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
@@ -408,6 +416,14 @@
       "label": "Hydraulic Motor"
     },
     {
+      "slug": "icra",
+      "label": "ICRA"
+    },
+    {
+      "slug": "iros",
+      "label": "IROS"
+    },
+    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },
@@ -416,12 +432,20 @@
       "label": "Impedance Control"
     },
     {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
       "slug": "inertia",
       "label": "Inertia"
     },
     {
       "slug": "inspection-robot",
       "label": "Inspection Robot"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
     },
     {
       "slug": "inverse-kinematics",
@@ -442,6 +466,10 @@
     {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
+    },
+    {
+      "slug": "learning-from-demonstration",
+      "label": "Learning from Demonstration"
     },
     {
       "slug": "lens-and-camera-calibration",
@@ -556,6 +584,10 @@
       "label": "Perception System"
     },
     {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
       "slug": "planning-and-scheduling",
       "label": "Planning and Scheduling"
     },
@@ -648,6 +680,10 @@
       "label": "Robot Learning"
     },
     {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
+    },
+    {
       "slug": "robot-safety",
       "label": "Robot Safety"
     },
@@ -720,12 +756,20 @@
       "label": "Stigmergy"
     },
     {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
       "slug": "surface-marine-robot",
       "label": "Surface Marine Robot"
     },
     {
       "slug": "tactile-sensor",
       "label": "Tactile Sensor"
+    },
+    {
+      "slug": "task-execution",
+      "label": "Task Execution"
     },
     {
       "slug": "task-planning",
@@ -754,6 +798,10 @@
     {
       "slug": "trajectory-generation",
       "label": "Trajectory Generation"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
     },
     {
       "slug": "trajectory-planning",

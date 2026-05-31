@@ -1,0 +1,169 @@
+{
+  "id": "urn:visionflow:page:eccfabf86a40c0763bb4ee8515c5cae2233b482c18f5798a60a641fcb1cb50b0",
+  "title": "Hardware Layer",
+  "slug": "hardware-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-layer",
+  "domain": "hardware",
+  "definition": "The Hardware Layer is the lowest stratum of the canonical stack, comprising the physical computing, storage, and signalling devices on which everything above runs. Nothing sits below it; immediately above it is the Network Layer, which connects discrete machines. It contains processors, memory, storage media, accelerators, and the physical transmission media that carry signals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "computer-architecture",
+      "label": "Computer Architecture"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "ieee-institute-of-electrical-and-electronics-engineers",
+      "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "edge-computing-layer",
+      "label": "Edge Computing Layer"
+    },
+    {
+      "slug": "edge-layer",
+      "label": "Edge Layer"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "sensor-fusion-layer",
+      "label": "Sensor Fusion Layer"
+    }
+  ]
+}

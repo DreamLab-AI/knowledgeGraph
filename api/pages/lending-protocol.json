@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:85fd1b9a73a9ec3bf65f1960e968bf0f7cae5ca719c4be83ebdf077bdef68623",
+  "title": "Lending Protocol",
+  "slug": "lending-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:lending-protocol",
+  "domain": "blockchain",
+  "definition": "A smart-contract system that lets users supply assets to earn interest and borrow against deposited collateral, with rates and liquidations governed by code.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Management"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collateral-management",
+      "label": "Collateral Management"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aave-companies",
+      "label": "Aave Companies"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

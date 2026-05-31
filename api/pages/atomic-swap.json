@@ -128,12 +128,24 @@
       "label": "Decentralized Exchange"
     },
     {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
     },
     {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
     },
     {
       "slug": "lock-and-mint-mechanism",
@@ -146,6 +158,10 @@
     {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "telecollaboration-and-telepresence",

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:589115cda5f3dc880ef4e297961b7ed72dac1c3fd9ec11ecc7f018e9244aa2d9",
+  "title": "Omniverse",
+  "slug": "omniverse",
+  "public": true,
+  "classIri": "urn:ngm:class:omniverse",
+  "domain": "metaverse",
+  "definition": "A platform developed by NVIDIA for building and operating three-dimensional simulation and collaboration applications, based on the Universal Scene Description framework. It is used for digital twins and physically accurate simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

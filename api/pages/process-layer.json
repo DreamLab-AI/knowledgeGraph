@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:1369533b604975e7c52aec9fec0dc75567d36cf221e8e3d72b25fc5355d53a13",
+  "title": "Process Layer",
+  "slug": "process-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:process-layer",
+  "domain": "process",
+  "definition": "The Process Layer is the cross-cutting stratum that defines the ordered activities and workflows by which work is carried out. It sits above the Organisational structure that staffs it and supports operational execution. It contains process definitions, workflows, hand-offs, and the rules that sequence activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:organisational-layer",
+        "label": "Organisational Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-layer",
+        "label": "Operational Layer"
+      },
+      {
+        "id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "business-process-management",
+      "label": "Business Process Management"
+    },
+    {
+      "slug": "workflow",
+      "label": "Workflow"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "organisational-layer",
+      "label": "Organisational Layer"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

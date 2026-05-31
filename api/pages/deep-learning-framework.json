@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:51a0e2d5fe1182b890eb633a79751ed06a76220016388cf1f5eed5441cac8d67",
+  "title": "Deep Learning Framework",
+  "slug": "deep-learning-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-learning-framework",
+  "domain": "deep-learning",
+  "definition": "A software library that provides the building blocks for defining, training and deploying deep neural networks, including tensor operations, automatic differentiation and hardware acceleration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning-domain",
+      "label": "Deep Learning Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "hardware-acceleration",
+      "label": "Hardware Acceleration"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "keras",
+      "label": "Keras"
+    }
+  ]
+}

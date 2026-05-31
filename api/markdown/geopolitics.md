@@ -1,0 +1,4 @@
+- ### Definition
+  - Geopolitics analyses how geography and national power drive state competition, and it provides the strategic frame for [[Competition in AI]], where access to compute and talent becomes a source of leverage.
+- ### Content
+  - Technological geopolitics centres on chokepoints such as advanced semiconductor fabrication, AI accelerators, and critical-mineral supply, which states seek to control through export restrictions and industrial policy. Standards bodies, talent flows, and data governance also become arenas of strategic competition. The resulting dynamics shape investment, regulation, and the diffusion of frontier capabilities.

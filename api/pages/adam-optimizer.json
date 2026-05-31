@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:2a38d8fcbf3334697767875dcb55c6ea8c771b10889366d736fb1b6c227dfaec",
+  "title": "Adam Optimizer",
+  "slug": "adam-optimizer",
+  "public": true,
+  "classIri": "urn:ngm:class:adam-optimizer",
+  "domain": "machine-learning",
+  "definition": "An optimisation algorithm widely used to train neural networks, combining momentum with per-parameter adaptive learning rates derived from estimates of the first and second moments of the gradients. Its name stands for adaptive moment estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimization-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

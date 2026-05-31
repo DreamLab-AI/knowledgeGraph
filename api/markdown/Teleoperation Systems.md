@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-201-teleoperation-systems
 
 # Teleoperation Systems
 ```json-ld

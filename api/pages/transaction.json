@@ -157,12 +157,20 @@
       "label": "Transaction Finality"
     },
     {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
       "slug": "value-transfer",
       "label": "Value Transfer"
     },
     {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

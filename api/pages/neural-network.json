@@ -119,6 +119,10 @@
       "label": "AISystem"
     },
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
@@ -147,8 +151,48 @@
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
+      "slug": "learning",
+      "label": "Learning"
+    },
+    {
+      "slug": "low-rank-adaptation",
+      "label": "Low-Rank Adaptation"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
     },
     {
       "slug": "network-architecture",
@@ -183,12 +227,24 @@
       "label": "State Machine"
     },
     {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "world-models",
+      "label": "World Models"
     },
     {
       "slug": "ai-core-concepts",

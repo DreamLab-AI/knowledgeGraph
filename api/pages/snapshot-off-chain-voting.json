@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:f6e1feb2356bed361a5a19d2a4cc86b3f90337b60e721f81e3dc1c8a390a4285",
+  "title": "Snapshot Off-Chain Voting",
+  "slug": "snapshot-off-chain-voting",
+  "public": true,
+  "classIri": "urn:ngm:class:snapshot-off-chain-voting",
+  "domain": "blockchain",
+  "definition": "A gasless governance platform that records votes off-chain by having participants sign messages, using token balances captured at a chosen block as voting weight. It avoids transaction fees while preserving a verifiable tally tied to on-chain holdings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:daogovernance",
+        "label": "DAOGovernance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "https-snapshot-org",
+      "label": "https://snapshot.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Intelligent automation fuses [[Robotic Process Automation]] with [[Artificial Intelligence]] so workflows can interpret unstructured data and make adaptive decisions. It moves beyond deterministic scripting toward judgement-bearing tasks.
+- ### Content
+  - A typical stack layers document understanding, NLP, and ML models on top of RPA bots and orchestration. The result automates end-to-end processes such as claims handling or invoice processing where inputs are variable and exceptions are common.

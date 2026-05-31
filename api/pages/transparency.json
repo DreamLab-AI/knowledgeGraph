@@ -78,6 +78,18 @@
       "label": "Consent Management"
     },
     {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "esg",
+      "label": "ESG"
+    },
+    {
       "slug": "ethical-ai",
       "label": "Ethical AI"
     },
@@ -90,8 +102,24 @@
       "label": "Human Oversight"
     },
     {
+      "slug": "integrity-council-for-the-voluntary-carbon-market",
+      "label": "Integrity Council for the Voluntary Carbon Market"
+    },
+    {
+      "slug": "model-cards",
+      "label": "Model Cards"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
       "slug": "responsible-ai",
       "label": "Responsible AI"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
     },
     {
       "slug": "stakeholder",

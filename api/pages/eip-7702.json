@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ea056309434464d570543c04294da595bfb087dd66b5084dcd23ff81c952d173",
+  "title": "EIP-7702",
+  "slug": "eip-7702",
+  "public": true,
+  "classIri": "urn:ngm:class:eip-7702",
+  "domain": "standards",
+  "definition": "EIP-7702 is an Ethereum Improvement Proposal that lets externally owned accounts temporarily act with smart contract code to support account abstraction features.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

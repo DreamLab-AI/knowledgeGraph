@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:2c20523921f51b22d08c6cccadd0ee044bb7e4d1d43037eba61d0c9c38dca991",
+  "title": "Computer Graphics Domain",
+  "slug": "computer-graphics-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-graphics-domain",
+  "domain": "computer-graphics",
+  "definition": "The Computer Graphics Domain covers the synthesis and manipulation of visual content through computation. Its scope includes rendering, geometric modelling, animation and real-time visualisation. It is a top-level subject classification concerned with the generation of imagery. The boundary is the inverse of computer vision, since it produces images from models rather than inferring models from images.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:geometric-modelling",
+        "label": "Geometric Modelling"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "id": "urn:ngm:class:shading",
+        "label": "Shading"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:geometry",
+        "label": "Geometry"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visualisation",
+        "label": "Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environments"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rendering",
+      "label": "Rendering"
+    },
+    {
+      "slug": "geometric-modelling",
+      "label": "Geometric Modelling"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation"
+    },
+    {
+      "slug": "shading",
+      "label": "Shading"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "geometry",
+      "label": "Geometry"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "visualisation",
+      "label": "Visualisation"
+    },
+    {
+      "slug": "virtual-environments",
+      "label": "Virtual Environments"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ]
+}

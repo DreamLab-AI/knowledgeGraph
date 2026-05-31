@@ -1,0 +1,4 @@
+- ### Definition
+  - Infrastructure inspection uses robotic platforms to survey and assess physical assets for defects and degradation. It is a flagship use case for the [[Aerial Robot]] and the [[Ground Robot]], which reach hazardous or remote sites.
+- ### Content
+  - Aerial platforms cover linear and elevated assets like transmission lines and turbines, while ground robots crawl confined spaces such as tunnels and tanks. Captured imagery and sensor data feed defect-detection models and condition-based maintenance schedules.

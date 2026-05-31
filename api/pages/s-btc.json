@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:2cc8de3a0e13eea20ccdb7cf41feff90ef617f012a9b329dd26b0473e20e11d7",
+  "title": "sBTC",
+  "slug": "s-btc",
+  "public": true,
+  "classIri": "urn:ngm:class:s-btc",
+  "domain": "blockchain",
+  "definition": "sBTC is an asset on the Stacks blockchain designed to represent Bitcoin in a decentralised manner so that it can be used in smart contracts. It is backed by bitcoin held under the protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stacks",
+      "label": "Stacks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
+      "slug": "https-www-stacks-co-sbtc",
+      "label": "https://www.stacks.co/sbtc"
+    },
+    {
+      "slug": "https-docs-stacks-co",
+      "label": "https://docs.stacks.co"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

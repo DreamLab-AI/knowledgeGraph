@@ -71,6 +71,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     }

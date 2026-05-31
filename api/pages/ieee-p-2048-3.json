@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:d37778b77586401fc9faab96d8910ac97110600d970f46b6d03f1824e6712e84",
+  "title": "IEEE P2048-3",
+  "slug": "ieee-p-2048-3",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-p-2048-3",
+  "domain": "standards",
+  "definition": "IEEE P2048-3 is a draft standard within the IEEE 2048 series on virtual reality and augmented reality, addressing a specific part of that family.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

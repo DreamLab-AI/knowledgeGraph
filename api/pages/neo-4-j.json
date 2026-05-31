@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:7ca59e3a182cebacde68b87d35687eee524c9bbbd65cfd0c6864791fa8611bee",
+  "title": "Neo4j",
+  "slug": "neo-4-j",
+  "public": true,
+  "classIri": "urn:ngm:class:neo-4-j",
+  "domain": "data-management",
+  "definition": "A graph database management system that stores data as nodes and relationships and queries it with the Cypher query language. It is one of the most widely used native graph databases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-database",
+      "label": "Graph Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    }
+  ],
+  "backlinks": []
+}

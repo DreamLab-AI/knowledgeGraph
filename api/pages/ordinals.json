@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:18bb4e8497a1640e5a0a82455085bdf8039429dd4e08c64f84b2b2d7071cac05",
+  "title": "Ordinals",
+  "slug": "ordinals",
+  "public": true,
+  "classIri": "urn:ngm:class:ordinals",
+  "domain": "blockchain",
+  "definition": "A scheme for numbering individual satoshis by order of issuance and transfer, allowing arbitrary data to be inscribed onto specific satoshis on the Bitcoin blockchain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:brc-20",
+        "label": "BRC-20"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "bitcoin-script",
+      "label": "Bitcoin Script"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "brc-20",
+      "label": "BRC-20"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

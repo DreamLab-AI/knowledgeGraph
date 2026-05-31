@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:459a9fba5b35d3f47cb88a9c5fd1cb8a8004849d1dd02306c952affb45a3cfd5",
+  "title": "Foundation Model Layer",
+  "slug": "foundation-model-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:foundation-model-layer",
+  "domain": "foundation-model",
+  "definition": "The Foundation Model Layer is the stratum that holds large, broadly pretrained models intended for adaptation to many downstream tasks. It sits above the Training Layer that produced it and below the Model and Inference Layers that specialise and serve it. It contains base model weights, pretraining configurations, and adaptation interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-layer",
+        "label": "Training Layer"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture-layer",
+        "label": "Model Architecture Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      },
+      {
+        "id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "inference-layer",
+      "label": "Inference Layer"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    }
+  ]
+}

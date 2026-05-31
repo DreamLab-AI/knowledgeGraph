@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:moderation-tools",
+  "title": "Moderation Tools",
+  "slug": "moderation-tools",
+  "public": true,
+  "classIri": "urn:ngm:class:moderation-tools",
+  "domain": "governance",
+  "definition": "Moderation tools are software systems that detect, review, and act on user-generated content or behaviour that violates platform policies, combining automated classifiers, reporting queues, and human-review workflows. They enforce community standards by flagging, filtering, age-gating, or removing content and sanctioning accounts. In immersive and social platforms they increasingly cover real-time voice, spatial, and behavioural moderation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse Governance and Safeguarding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "content-moderation-standards",
+      "label": "Content Moderation Standards"
+    }
+  ]
+}

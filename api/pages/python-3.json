@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:python-3",
+  "title": "Python 3",
+  "slug": "python-3",
+  "public": true,
+  "classIri": "urn:ngm:class:python-3",
+  "domain": "infrastructure",
+  "definition": "Python 3 is the current major series of the Python programming language, a high-level, dynamically typed, interpreted language emphasising readability and a large standard library. It is the dominant language for machine learning, data science, automation, and robotics scripting, supported by an extensive ecosystem of scientific and AI packages. Python 3 introduced Unicode-by-default strings and other breaking changes relative to the discontinued Python 2 series.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ]
+}

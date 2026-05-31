@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:blip-2-captioner",
+  "title": "BLIP-2 Captioner",
+  "slug": "blip-2-captioner",
+  "public": true,
+  "classIri": "urn:ngm:class:blip-2-captioner",
+  "domain": "ai",
+  "definition": "BLIP-2 is a vision-language model that bridges a frozen image encoder and a frozen large language model with a lightweight Querying Transformer (Q-Former), and a BLIP-2 captioner uses this model to generate natural-language descriptions of images. It produces high-quality captions efficiently because only the Q-Former is trained, leaving the heavy backbones fixed. Such captioners are commonly used to auto-label image datasets for training diffusion models and fine-tuning pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "Kohya DreamBooth and Similar"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

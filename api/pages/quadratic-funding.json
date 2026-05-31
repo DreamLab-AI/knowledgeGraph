@@ -59,6 +59,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
       "slug": "conviction-voting",
       "label": "Conviction Voting"
     },
@@ -77,6 +85,10 @@
     {
       "slug": "economics",
       "label": "Economics"
+    },
+    {
+      "slug": "glen-weyl",
+      "label": "Glen Weyl"
     },
     {
       "slug": "quadratic-voting",

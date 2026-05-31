@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:encryption-protocol",
+  "title": "Encryption Protocol",
+  "slug": "encryption-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:encryption-protocol",
+  "domain": "security",
+  "definition": "An Encryption Protocol is a defined set of rules and message exchanges that uses cryptographic algorithms to establish keys and protect the confidentiality and integrity of data in transit or at rest. It specifies handshakes, cipher negotiation, key exchange, and authentication so that interoperating parties can communicate securely. TLS 1.3 is a widely deployed example securing internet traffic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    }
+  ]
+}

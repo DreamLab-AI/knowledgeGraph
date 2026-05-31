@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:b8d7076c542e5db6c6b1f9c990050deb9e5e817f1416b2557d2b208cfbdc6d72",
+  "title": "ISO 24165",
+  "slug": "iso-24165",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-24165",
+  "domain": "standards",
+  "definition": "ISO 24165 specifies a Digital Token Identifier for the unique identification of digital tokens, including the structure and assignment of the identifier.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "crypto-token",
+      "label": "Crypto Token"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

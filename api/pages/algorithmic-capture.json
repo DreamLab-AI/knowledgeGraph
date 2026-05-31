@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:algorithmic-capture",
+  "title": "Algorithmic Capture",
+  "slug": "algorithmic-capture",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-capture",
+  "domain": "governance",
+  "definition": "Algorithmic Capture describes the process by which recommendation and ranking algorithms come to dominate the flow of attention, shaping what content people see and produce until human discretion is largely supplanted. By optimizing for engagement, these systems can homogenize discourse, amplify synthetic or low-quality content, and entrench platform control over information ecosystems. It is a central mechanism in narratives about the decline and automation of the open internet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ]
+}

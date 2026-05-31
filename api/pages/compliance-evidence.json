@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:compliance-evidence",
+  "title": "Compliance Evidence",
+  "slug": "compliance-evidence",
+  "public": true,
+  "classIri": "urn:ngm:class:compliance-evidence",
+  "domain": "governance",
+  "definition": "Compliance evidence is the documented, verifiable record that an organisation or process meets a regulatory, contractual, or standards-based requirement. It includes artefacts such as audit logs, sensor readings, certificates, attestations, and chain-of-custody records, ideally tamper-evident and timestamped. It matters because it converts asserted compliance into auditable proof, supporting attestations to regulators and customers and enabling automated verification in areas such as cold-chain integrity and supply-chain assurance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    }
+  ]
+}

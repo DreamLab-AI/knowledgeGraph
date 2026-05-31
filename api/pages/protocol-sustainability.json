@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:protocol-sustainability",
+  "title": "Protocol Sustainability",
+  "slug": "protocol-sustainability",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-sustainability",
+  "domain": "blockchain",
+  "definition": "Protocol sustainability is the capacity of a blockchain or DeFi protocol to remain economically viable, secure, and well-governed over the long term without relying on unsustainable token emissions or external subsidies. It depends on durable revenue, balanced tokenomics, treasury resilience, and active governance that can fund maintenance and development. It contrasts with growth models that depend on continuous inflationary incentives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

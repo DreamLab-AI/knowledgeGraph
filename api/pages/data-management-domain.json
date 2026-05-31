@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:4d1c7e4db971fb9cbdb944607180d5f5415e4fe7c5d41853e59d602e062e3670",
+  "title": "Data Management Domain",
+  "slug": "data-management-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:data-management-domain",
+  "domain": "data-management",
+  "definition": "The Data Management Domain classifies concepts concerning the storage, organisation, retrieval and lifecycle of data within systems. It covers data models, storage architectures, integration and the operations that maintain availability and integrity. As a top-level subject axis it provides the technical foundation on which analytics, governance and applications operate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:storage-architecture",
+        "label": "Storage Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-systems-domain",
+        "label": "Distributed Systems Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:analytics",
+        "label": "Analytics"
+      },
+      {
+        "id": "urn:ngm:class:reliable-persistence",
+        "label": "Reliable Persistence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-model",
+      "label": "Data Model"
+    },
+    {
+      "slug": "storage-architecture",
+      "label": "Storage Architecture"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "indexing",
+      "label": "Indexing"
+    },
+    {
+      "slug": "backup-and-recovery",
+      "label": "Backup and Recovery"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "analytics",
+      "label": "Analytics"
+    },
+    {
+      "slug": "reliable-persistence",
+      "label": "Reliable Persistence"
+    },
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "dama-dmbok",
+      "label": "DAMA-DMBOK"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ]
+}

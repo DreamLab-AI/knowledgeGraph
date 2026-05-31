@@ -1,0 +1,4 @@
+- ### Definition
+  - A reflection loop is a generate-critique-revise cycle that lets [[Agents]] and [[Computer Use and Browser Agents]] catch and fix their own mistakes before acting or responding.
+- ### Content
+  - Implementations prompt the model to evaluate its draft against goals, constraints, or test results, then feed the critique back as additional context for a revised attempt. The loop terminates on a quality threshold or iteration budget, trading extra compute for markedly higher reliability on multi-step tasks.

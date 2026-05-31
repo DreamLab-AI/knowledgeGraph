@@ -71,6 +71,10 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
@@ -103,6 +107,10 @@
       "label": "Hash Function"
     },
     {
+      "slug": "ipfs-content-addressing",
+      "label": "IPFS Content Addressing"
+    },
+    {
       "slug": "nft-minting",
       "label": "NFT Minting"
     },
@@ -129,6 +137,10 @@
     {
       "slug": "snapshot-voting",
       "label": "Snapshot Voting"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
     },
     {
       "slug": "solid",

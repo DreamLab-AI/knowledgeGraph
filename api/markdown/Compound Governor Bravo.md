@@ -1,4 +1,5 @@
 public:: true
+alias:: Compound GovernorBravo
 
 # Compound Governor Bravo
 ```json-ld

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:9dd1a8c44218448992e56c635f3fd071edd46c3167f356e9c6212fd3fa516f02",
+  "title": "Tornado Cash",
+  "slug": "tornado-cash",
+  "public": true,
+  "classIri": "urn:ngm:class:tornado-cash",
+  "domain": "tornado-cash",
+  "definition": "Tornado Cash is a set of non-custodial smart contracts on Ethereum and compatible networks that obscure the on-chain link between a deposit and a withdrawal. Users deposit a fixed denomination of a token into a pool and later withdraw the same amount to a different address, using a zero-knowledge proof to demonstrate ownership of a valid deposit without revealing which one. It became widely known both as a privacy tool and as the subject of sanctions by the United States Office of Foreign Assets Control in 2022.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-domain",
+      "label": "Cryptographic Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "transaction-privacy",
+      "label": "Transaction Privacy"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "zk-SNARK"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

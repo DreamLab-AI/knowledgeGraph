@@ -42,7 +42,7 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:reserve-assets",
+        "id": "urn:ngm:class:reserve-asset",
         "label": "Reserve Assets"
       },
       {
@@ -149,11 +149,11 @@
         "label": "Tron Network"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:individual:solana",
+        "id": "urn:ngm:class:solana",
         "label": "Solana"
       }
     ],

@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:0da987c1e5c23db72d9597a1335d873fe570531aa3ab7811e7bb5353437629ec",
+  "title": "VeChain",
+  "slug": "ve-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:ve-chain",
+  "domain": "vechain",
+  "definition": "VeChain is a public blockchain platform oriented toward supply-chain management and enterprise applications. It uses a proof-of-authority consensus model in which a limited set of authorised validators produce blocks, prioritising throughput and predictability for business use. The platform employs a dual-token design, separating the asset used to hold value from the token used to pay for transaction costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-tracking",
+        "label": "Supply Chain Tracking"
+      },
+      {
+        "id": "urn:ngm:class:product-provenance",
+        "label": "Product Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-authority",
+      "label": "Proof of Authority"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "supply-chain-tracking",
+      "label": "Supply Chain Tracking"
+    },
+    {
+      "slug": "product-provenance",
+      "label": "Product Provenance"
+    },
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:3f7563f310921a4ad216fe5ed5dd4e051bb69f9fc624629ce7337cef24e4e950",
+  "title": "Smart City",
+  "slug": "smart-city",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-city",
+  "domain": "metaverse",
+  "definition": "A smart city uses networked sensors, data platforms and analytics to manage urban systems such as transport, energy and public services, often paired with spatial digital twins.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

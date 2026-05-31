@@ -79,6 +79,10 @@
       "label": "Risk Assessment"
     },
     {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
       "slug": "threat-surface-map",
       "label": "Threat Surface Map"
     }

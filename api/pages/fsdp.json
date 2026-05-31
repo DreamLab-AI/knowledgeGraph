@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:fsdp",
+  "title": "FSDP",
+  "slug": "fsdp",
+  "public": true,
+  "classIri": "urn:ngm:class:fsdp",
+  "domain": "ai",
+  "definition": "Fully Sharded Data Parallel (FSDP) is a distributed training technique that shards a model's parameters, gradients, and optimizer states across multiple GPUs to train models too large for a single device's memory. Each worker holds only a fraction of the state and gathers parameters on demand during the forward and backward passes. FSDP underpins memory-efficient training and checkpointing of large neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

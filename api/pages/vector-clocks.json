@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:de96586621d3fdaba13935e993a73e043955925e610f39c3b31433be7a182e7f",
+  "title": "Vector Clocks",
+  "slug": "vector-clocks",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-clocks",
+  "domain": "distributed-systems",
+  "definition": "A mechanism for ordering events in a distributed system by assigning each process a vector of counters. Comparing vectors determines whether one event causally precedes another or whether they are concurrent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:clock-synchronization",
+      "label": "Clock Synchronization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "clock-synchronization",
+      "label": "Clock Synchronization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

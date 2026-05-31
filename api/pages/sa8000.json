@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:sa8000",
+  "title": "SA8000",
+  "slug": "sa8000",
+  "public": true,
+  "classIri": "urn:ngm:class:sa8000",
+  "domain": "supply-chain",
+  "definition": "SA8000 is a voluntary, auditable social-accountability standard developed by Social Accountability International that certifies organisations against decent-work criteria. It covers child and forced labour, health and safety, freedom of association, discrimination, working hours, and management systems, drawing on ILO conventions and human-rights instruments. Certification is used to demonstrate ethical labour practices across supply chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

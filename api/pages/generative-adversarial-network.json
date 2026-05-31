@@ -84,12 +84,36 @@
       "label": "Deepfakes"
     },
     {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },
     {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
       "slug": "image-to-image-translation",
       "label": "Image to Image Translation"
+    },
+    {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
+      "slug": "real-esrgan",
+      "label": "Real-ESRGAN"
     },
     {
       "slug": "synthetic-data-generator",

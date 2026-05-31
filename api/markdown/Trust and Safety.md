@@ -283,8 +283,8 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:online-safety",
-      "label": "Online Safety"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     },
     {
       "@id": "urn:ngm:class:digital-society-harms",
@@ -448,7 +448,7 @@ public:: true
         "label": "Jailbreaking"
       },
       {
-        "@id": "urn:ngm:individual:meta-platforms",
+        "@id": "urn:ngm:class:meta-platforms",
         "label": "Meta Platforms"
       },
       {

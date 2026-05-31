@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:8520a32402ed7c79655e896118dc56b63f575f95d42b74ccd948eb6db76f729e",
+  "title": "RDF Data Model",
+  "slug": "rdf-data-model",
+  "public": true,
+  "classIri": "urn:ngm:class:rdf-data-model",
+  "domain": "artificial-intelligence",
+  "definition": "The RDF data model represents information as triples of subject, predicate and object, forming a directed labelled graph. It is the foundation of the Resource Description Framework used to publish structured data on the web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:4fbd0cf75635ff481480bcb0214877028792b46b98b2f4f1fb31b113bcbc3f1c",
+  "title": "ISO-IEC 18033",
+  "slug": "iso-iec-18033",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-18033",
+  "domain": "standards",
+  "definition": "ISO/IEC 18033 is a multi-part standard specifying encryption algorithms for the protection of data confidentiality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ]
+}

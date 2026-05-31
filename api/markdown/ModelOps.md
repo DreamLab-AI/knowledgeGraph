@@ -1,4 +1,5 @@
 public:: true
+alias:: Model Ops
 
 # ModelOps
 ```json-ld

@@ -96,6 +96,18 @@
       "label": "Machine Learning"
     },
     {
+      "slug": "tc-0080-team-coordination",
+      "label": "TC-0080-Team-Coordination"
+    },
+    {
+      "slug": "tele-005-common-ground-theory",
+      "label": "TELE-005-common-ground-theory"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

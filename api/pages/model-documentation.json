@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:model-documentation",
+  "title": "Model Documentation",
+  "slug": "model-documentation",
+  "public": true,
+  "classIri": "urn:ngm:class:model-documentation",
+  "domain": "ai",
+  "definition": "Model documentation is the structured recording of a machine learning model's intended use, training data, performance, limitations, and ethical considerations, typically through artefacts such as model cards and datasheets. It supports transparency, accountability, and informed deployment decisions for downstream users and regulators. It is increasingly required by AI governance frameworks and procurement standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-domain",
+        "label": "AI Governance Domain"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    }
+  ]
+}

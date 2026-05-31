@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
       "slug": "conviction-voting",
       "label": "Conviction Voting"
     },

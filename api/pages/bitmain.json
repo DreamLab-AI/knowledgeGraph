@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:c2c28820550c2fe927c6ef42a6c498a941fb0cda7985c711cb00eaf9665b4ba2",
+  "title": "Bitmain",
+  "slug": "bitmain",
+  "public": true,
+  "classIri": "urn:ngm:class:bitmain",
+  "domain": "blockchain",
+  "definition": "Bitmain is a Chinese company that designs and manufactures application-specific integrated circuit mining hardware, best known for its Antminer product line. It also operates mining services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asic",
+      "label": "ASIC"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ant-pool",
+        "label": "AntPool"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "asic",
+      "label": "ASIC"
+    },
+    {
+      "slug": "https-www-bitmain-com",
+      "label": "https://www.bitmain.com"
+    },
+    {
+      "slug": "https-shop-bitmain-com",
+      "label": "https://shop.bitmain.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

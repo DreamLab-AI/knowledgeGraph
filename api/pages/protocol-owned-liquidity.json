@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:protocol-owned-liquidity",
+  "title": "Protocol-Owned Liquidity",
+  "slug": "protocol-owned-liquidity",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-owned-liquidity",
+  "domain": "blockchain",
+  "definition": "Protocol-owned liquidity (POL) is a DeFi treasury strategy in which a protocol acquires and holds its own trading-pair liquidity rather than renting it from third-party liquidity providers through mercenary incentives. By owning the liquidity, the protocol earns trading fees, gains durable market depth, and reduces dependence on emissions that can trigger capital flight. It was popularised by bonding mechanisms in OlympusDAO-style designs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

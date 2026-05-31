@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:4035c6b844056866261f5064af7cb83ff33adf1f9acfdb34f35a3da4699bc164",
+  "title": "Entity Resolution",
+  "slug": "entity-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:entity-resolution",
+  "domain": "data-management",
+  "definition": "The process of determining whether multiple records refer to the same real-world entity and linking or merging them accordingly. It is central to data integration and master data management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "master-data-management",
+      "label": "Master Data Management"
+    }
+  ]
+}

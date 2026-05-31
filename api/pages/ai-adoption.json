@@ -16,8 +16,8 @@
       "label": "Organisational Change"
     },
     {
-      "id": "urn:ngm:class:socio-technical-process",
-      "label": "Socio-Technical Process"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "entityType": "Class",
@@ -717,6 +717,10 @@
       "label": "Energy and Power"
     },
     {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -775,6 +779,10 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
     },
     {
       "slug": "trust-and-safety",

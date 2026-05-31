@@ -379,8 +379,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:networked-embedded-systems",
-      "label": "Networked Embedded Systems"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "@id": "urn:ngm:class:pervasive-computing",
@@ -558,7 +558,7 @@ public:: true
         "label": "TLS"
       },
       {
-        "@id": "urn:ngm:class:x-509-certificates",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificates"
       },
       {
@@ -568,7 +568,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:5-g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       },
       {

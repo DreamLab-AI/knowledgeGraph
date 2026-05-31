@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:9ad391f6c68fc3e36089178e6221950ebcc95682ae3dccbb5dc84ea1d32de530",
+  "title": "Identity Domain",
+  "slug": "identity-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-domain",
+  "domain": "identity",
+  "definition": "The Identity Domain classifies concepts concerning the representation, verification and management of the identities of people, organisations and devices. It covers credentials, authentication assurance and the lifecycle of identity records and their attributes. As a top-level subject axis it provides the foundation on which access control, accountability and personalisation depend.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:credential",
+        "label": "Credential"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:attribute-assertion",
+        "label": "Attribute Assertion"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-domain",
+        "label": "Cryptographic Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "credential",
+      "label": "Credential"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "attribute-assertion",
+      "label": "Attribute Assertion"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "nist-sp-800-63",
+      "label": "NIST SP 800-63"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
+    }
+  ]
+}

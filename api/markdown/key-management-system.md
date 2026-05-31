@@ -1,0 +1,4 @@
+- ### Definition
+  - A key management system handles the full lifecycle of cryptographic keys and is required to secure the key material behind [[Decentralized Identifiers]] and the private keys managed by [[Custody Infrastructure]].
+- ### Content
+  - Core functions include secure generation, hardware-backed storage, controlled distribution, scheduled rotation, and auditable revocation. Strong KMS implementations separate duties, log all key operations and meet standards such as FIPS 140 and KMIP, providing the trust anchor on which encryption, signing and authentication ultimately depend.

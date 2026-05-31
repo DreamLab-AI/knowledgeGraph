@@ -1,0 +1,4 @@
+- ### Definition
+  - The EU Taxonomy is a legal classification standard for environmentally sustainable activities, used by [[Sustainable Finance]] and implemented through [[ESG Reporting]].
+- ### Content
+  - It applies technical screening criteria across six environmental objectives to determine taxonomy-alignment. By giving investors and issuers a shared definition of "green", it anchors disclosure regimes and curbs greenwashing.

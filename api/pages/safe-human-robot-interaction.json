@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:safe-human-robot-interaction",
+  "title": "Safe Human-Robot Interaction",
+  "slug": "safe-human-robot-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:safe-human-robot-interaction",
+  "domain": "robotics",
+  "definition": "Safe human-robot interaction is the body of methods and controls that allow robots to operate in close proximity to people without causing harm. It combines compliant control, force and contact limiting, collision avoidance, and speed-and-separation monitoring so that physical contact, when it occurs, stays within safe limits. It is essential for collaborative robots that share workspaces with humans.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Robotics Human-Robot Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    }
+  ]
+}

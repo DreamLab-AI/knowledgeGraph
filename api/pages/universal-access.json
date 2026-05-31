@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:universal-access",
+  "title": "Universal Access",
+  "slug": "universal-access",
+  "public": true,
+  "classIri": "urn:ngm:class:universal-access",
+  "domain": "metaverse",
+  "definition": "Universal access is the design principle and policy goal that products, services and digital experiences be usable by the widest possible range of people regardless of ability, device, connectivity or context. In immersive and metaverse settings it requires accommodating diverse sensory, motor and cognitive capabilities so that no user is excluded from participation. It is the foundation on which accessible experiences and accessibility guidelines are built.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Metaverse Governance and Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      },
+      {
+        "id": "urn:ngm:class:xr-accessibility-guideline",
+        "label": "XR Accessibility Guideline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "urn:visionflow:page:2eea1248aa5679306bcbec014100ca91147dcc1e33cb661dffe26a428542b52b",
+  "title": "Linear Algebra",
+  "slug": "linear-algebra",
+  "public": true,
+  "classIri": "urn:ngm:class:linear-algebra",
+  "domain": "linear-algebra",
+  "definition": "Linear Algebra is the branch of mathematics concerned with vector spaces, linear transformations and systems of linear equations. Its central objects include vectors, matrices, determinants, eigenvalues and eigenvectors, and operations such as matrix multiplication and inversion. The field provides the language for representing and solving problems in geometry, physics, computer graphics and data analysis. It is foundational to machine learning, where data, model parameters and transformations are expressed and manipulated as tensors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
+        "id": "urn:ngm:class:eigenvalue",
+        "label": "Eigenvalue"
+      },
+      {
+        "id": "urn:ngm:class:vector-space",
+        "label": "Vector Space"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "matrix",
+      "label": "Matrix"
+    },
+    {
+      "slug": "eigenvalue",
+      "label": "Eigenvalue"
+    },
+    {
+      "slug": "vector-space",
+      "label": "Vector Space"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "principal-component-analysis",
+      "label": "Principal Component Analysis"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:d4c5b5378ddb05c1f5b25b415587e315f237a62f1d509caa4faa920ab382e3d5",
+  "title": "Attention Mechanisms",
+  "slug": "attention-mechanisms",
+  "public": true,
+  "classIri": "urn:ngm:class:attention-mechanisms",
+  "domain": "deep-learning",
+  "definition": "Attention mechanisms let a neural network weight different parts of its input when computing a representation, focusing on the most relevant elements. They are the core component of transformer architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "state-space-models",
+      "label": "State Space Models"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: PresenceDetection
 
 # Presence Detection
 ```json-ld

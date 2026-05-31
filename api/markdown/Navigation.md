@@ -636,7 +636,7 @@ public:: true
         "label": "Visual Language Navigation"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -654,7 +654,7 @@ public:: true
         "label": "Multi Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:simulation-environments",
+        "@id": "urn:ngm:class:simulation-environment",
         "label": "Simulation Environments"
       },
       {

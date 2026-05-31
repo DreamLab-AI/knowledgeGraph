@@ -75,6 +75,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "base",
+      "label": "Base"
+    },
+    {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
     },
@@ -83,16 +91,48 @@
       "label": "Blockchain Infrastructure"
     },
     {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
     },
     {
       "slug": "lightning-network",
       "label": "Lightning Network"
     },
     {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "scalability-solutions",
+      "label": "Scalability Solutions"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
       "slug": "sustainable-consensus",
       "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
     }
   ]
 }

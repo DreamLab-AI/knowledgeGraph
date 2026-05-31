@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:8acb9606ce3489bec4f345a7e368b1dc8865ecb881aaebceffcdb3a7c552051d",
+  "title": "Bayesian Deep Learning",
+  "slug": "bayesian-deep-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:bayesian-deep-learning",
+  "domain": "deep-learning",
+  "definition": "Bayesian deep learning combines neural networks with Bayesian inference to represent uncertainty over model parameters and predictions. It treats network weights as random variables with distributions rather than fixed values.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

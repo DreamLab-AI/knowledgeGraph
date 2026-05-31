@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ros-rep",
+  "title": "ROS REP",
+  "slug": "ros-rep",
+  "public": true,
+  "classIri": "urn:ngm:class:ros-rep",
+  "domain": "robotics",
+  "definition": "A ROS Enhancement Proposal (REP) is a design document that defines conventions and standards for the Robot Operating System ecosystem, analogous to internet RFCs or Python PEPs. REPs codify agreements such as coordinate-frame conventions, units, naming, and message interfaces so that independently developed robotics components interoperate. They provide the normative reference that aligns platforms and libraries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

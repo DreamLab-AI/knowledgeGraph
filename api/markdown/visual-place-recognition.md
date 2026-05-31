@@ -1,0 +1,4 @@
+- ### Definition
+  - Visual place recognition determines whether a robot is revisiting a known location by matching imagery against a database, providing loop-closure constraints for [[Visual SLAM]] and nodes for a [[Topological Map]].
+- ### Content
+  - Modern VPR pipelines extract compact global descriptors (e.g. NetVLAD, learned aggregation of CNN features) and perform nearest-neighbour retrieval, optionally followed by geometric verification. Performance is measured by recall@N under appearance change, making invariance to lighting, weather, and viewpoint the key trade-off against retrieval speed and memory footprint.

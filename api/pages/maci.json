@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:807d06aa928b51a37b21ab5239373ece1db06e8aff8315ceac89fdfaf2add1ed",
+  "title": "MACI",
+  "slug": "maci",
+  "public": true,
+  "classIri": "urn:ngm:class:maci",
+  "domain": "blockchain",
+  "definition": "Minimal Anti-Collusion Infrastructure, a set of smart contracts and zero-knowledge techniques designed to reduce bribery and collusion in on-chain voting. It hides individual votes from coercers while allowing public verification of results.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

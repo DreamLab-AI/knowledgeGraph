@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sports-analytics",
+  "title": "Sports Analytics",
+  "slug": "sports-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:sports-analytics",
+  "domain": "ai",
+  "definition": "Sports analytics is the application of data capture, statistical modelling, and machine learning to athletic performance, tactics, and injury prevention, drawing on tracking data, biomechanics, and event logs. Computer-vision pipelines increasingly supply the underlying movement data by extracting player positions and body pose from video. It informs coaching decisions, talent evaluation, broadcast insight, and load management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

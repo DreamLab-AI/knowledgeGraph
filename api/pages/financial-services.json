@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aml",
+      "label": "AML"
+    },
+    {
       "slug": "asset-management",
       "label": "Asset Management"
     },
@@ -63,12 +67,32 @@
       "label": "Asset Trading"
     },
     {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "revolut",
+      "label": "Revolut"
+    },
+    {
+      "slug": "stripe",
+      "label": "Stripe"
     }
   ]
 }

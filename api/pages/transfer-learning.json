@@ -63,12 +63,24 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
     },
     {
       "slug": "image-classification",
@@ -93,6 +105,10 @@
     {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "low-rank-adaptation",
+      "label": "Low-Rank Adaptation"
     },
     {
       "slug": "parameter-efficient-fine-tuning",

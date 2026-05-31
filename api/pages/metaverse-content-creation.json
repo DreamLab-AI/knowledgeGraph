@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:metaverse-content-creation",
+  "title": "Metaverse Content Creation",
+  "slug": "metaverse-content-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:metaverse-content-creation",
+  "domain": "metaverse",
+  "definition": "Metaverse content creation is the production of three-dimensional assets, environments, avatars, and interactive experiences for immersive virtual worlds. It spans modelling, texturing, animation, scripting, and increasingly generative AI workflows, and is the supply side that populates persistent shared spaces. Quality, interoperability, and real-time performance constraints distinguish it from conventional digital media production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse-application-platform",
+      "label": "Metaverse Application Platform"
+    }
+  ]
+}

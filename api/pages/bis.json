@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -77,6 +81,10 @@
     {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
     },
     {
       "slug": "regulatory-reporting",

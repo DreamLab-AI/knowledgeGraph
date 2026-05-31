@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:64687a445a7dbf34424eb38bf98240aa5541208248dccc8251c963e7ec5d7697",
+  "title": "Correspondent Banking",
+  "slug": "correspondent-banking",
+  "public": true,
+  "classIri": "urn:ngm:class:correspondent-banking",
+  "domain": "general",
+  "definition": "An arrangement in which one bank provides services, particularly cross-border payments and settlement, on behalf of another bank that lacks a direct presence in a given market or currency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-payments",
+      "label": "Cross-Border Payments"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cross-border-payments",
+      "label": "Cross-Border Payments"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    }
+  ]
+}

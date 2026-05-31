@@ -67,12 +67,28 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bit-go",
+      "label": "BitGo"
+    },
+    {
+      "slug": "bitcoin-lightning-network",
+      "label": "Bitcoin Lightning Network"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "gnosis",
+      "label": "Gnosis"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
+    },
+    {
+      "slug": "mu-sig-2",
+      "label": "MuSig2"
     }
   ]
 }

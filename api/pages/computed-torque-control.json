@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:computed-torque-control",
+  "title": "Computed Torque Control",
+  "slug": "computed-torque-control",
+  "public": true,
+  "classIri": "urn:ngm:class:computed-torque-control",
+  "domain": "robotics",
+  "definition": "Computed torque control is a model-based robot control method that uses the inverse dynamics of the manipulator to cancel nonlinear coupling and gravity terms, linearising the closed-loop behaviour. The controller computes the joint torques required to achieve a desired acceleration, then adds a linear feedback term to correct tracking error. It enables high-accuracy trajectory following at the cost of requiring an accurate dynamic model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robotics Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

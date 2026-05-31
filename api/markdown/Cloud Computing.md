@@ -1,4 +1,5 @@
 public:: true
+alias:: CloudComputing
 
 # Cloud Computing
 ```json-ld

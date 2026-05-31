@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:protein-structure-prediction",
+  "title": "Protein Structure Prediction",
+  "slug": "protein-structure-prediction",
+  "public": true,
+  "classIri": "urn:ngm:class:protein-structure-prediction",
+  "domain": "ai",
+  "definition": "Protein structure prediction is the computational determination of a protein's three-dimensional folded structure from its amino-acid sequence. Deep-learning systems such as AlphaFold, built on attention-based architectures, achieved near-experimental accuracy and transformed structural biology. It is a landmark AI application with deep impact on drug discovery and molecular biology.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

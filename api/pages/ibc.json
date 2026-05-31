@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:d8101d7e093c686817756b534c19fe12ba24f92912a16581fdb4e3f1a34449bc",
+  "title": "IBC",
+  "slug": "ibc",
+  "public": true,
+  "classIri": "urn:ngm:class:ibc",
+  "domain": "blockchain",
+  "definition": "Inter-Blockchain Communication is a protocol for relaying authenticated data and tokens between independent blockchains. It is the native interoperability standard of the Cosmos ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "tendermint",
+      "label": "Tendermint"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "https-www-ibcprotocol-dev",
+      "label": "https://www.ibcprotocol.dev"
+    },
+    {
+      "slug": "https-github-com-cosmos-ibc",
+      "label": "https://github.com/cosmos/ibc"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

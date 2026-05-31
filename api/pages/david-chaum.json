@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:bc0b467b02fd6ce04bf2667808dcac74881d4103702c02c9df169f134ed3cb8d",
+  "title": "David Chaum",
+  "slug": "david-chaum",
+  "public": true,
+  "classIri": "urn:ngm:class:david-chaum",
+  "domain": "cryptographic",
+  "definition": "American computer scientist and cryptographer who pioneered digital cash, blind signatures and anonymous communication, and is widely regarded as a founder of the cypherpunk and privacy technology fields.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:0f4b344b016b0b733d3705a32add86bae2e92f73c318aec5f03df2e936ae2092",
+  "title": "User Experience Layer",
+  "slug": "user-experience-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:user-experience-layer",
+  "domain": "user-experience",
+  "definition": "The User Experience Layer is the topmost human-facing stratum concerned with how effective, accessible, and satisfying interaction with a system is. It sits above the Presentation Layer that renders the interface and has no technical layer above it. It contains interaction design, usability criteria, accessibility requirements, and user research findings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:presentation-layer",
+        "label": "Presentation Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-layer",
+        "label": "Social Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    },
+    {
+      "slug": "social-layer",
+      "label": "Social Layer"
+    },
+    {
+      "slug": "usability",
+      "label": "Usability"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "presentation-layer",
+      "label": "Presentation Layer"
+    }
+  ]
+}

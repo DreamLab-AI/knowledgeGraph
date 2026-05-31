@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:99a6e40d39cd44eca5cb7cd6f68c8a5ca838f6eaf3958ea2c4d511c74f2143f9",
+  "title": "Cyber Physical Systems Domain",
+  "slug": "cyber-physical-systems-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:cyber-physical-systems-domain",
+  "domain": "cyber-physical-systems",
+  "definition": "The Cyber Physical Systems Domain classifies concepts for engineered systems in which computation and networking are tightly coupled with physical processes through sensing and actuation. It covers control loops, embedded computing, and the integration of digital models with physical behaviour. As a subject classification under the Robotics Domain, it scopes the joint design of the computational and physical elements rather than the mechanical platform alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:embedded-control-system",
+        "label": "Embedded Control System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:actuator-system",
+        "label": "Actuator System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control-loop",
+        "label": "Real-Time Control Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensing-infrastructure",
+        "label": "Sensing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:networking-domain",
+        "label": "Networking Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-control",
+        "label": "Autonomous Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embedded-control-system",
+      "label": "Embedded Control System"
+    },
+    {
+      "slug": "sensor-network",
+      "label": "Sensor Network"
+    },
+    {
+      "slug": "actuator-system",
+      "label": "Actuator System"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "real-time-control-loop",
+      "label": "Real-Time Control Loop"
+    },
+    {
+      "slug": "sensing-infrastructure",
+      "label": "Sensing Infrastructure"
+    },
+    {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
+      "slug": "autonomous-control",
+      "label": "Autonomous Control"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "Industrial Automation"
+    },
+    {
+      "slug": "condition-monitoring",
+      "label": "Condition Monitoring"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "iec-61131",
+      "label": "IEC 61131"
+    },
+    {
+      "slug": "nist-sp-1500-201",
+      "label": "NIST SP 1500-201"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

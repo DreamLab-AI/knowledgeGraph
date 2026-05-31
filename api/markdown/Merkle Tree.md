@@ -1,4 +1,5 @@
 public:: true
+alias:: Merkle Trees, MerkleTree
 
 # Merkle Tree
 ```json-ld

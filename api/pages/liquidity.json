@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:496854887b543626702438f4225e9aa97c3de85445004aa25f575b33ed5025a6",
+  "title": "Liquidity",
+  "slug": "liquidity",
+  "public": true,
+  "classIri": "urn:ngm:class:liquidity",
+  "domain": "blockchain",
+  "definition": "The degree to which an asset can be bought or sold quickly without causing a large change in its price. In decentralised markets liquidity is supplied by participants who deposit assets into pools or order books.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "market-making",
+      "label": "Market Making"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "https-www-investopedia-com-terms-l-liquidity-asp",
+      "label": "https://www.investopedia.com/terms/l/liquidity.asp"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

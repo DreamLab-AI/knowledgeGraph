@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:e9584bb7628eb2e5f7df4f18ed714a702e2d84c3a35735d33b53eb5cb8412089",
+  "title": "TELE-153-5g-telepresence",
+  "slug": "tele-153-5-g-telepresence",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-153-5-g-telepresence",
+  "domain": "metaverse",
+  "definition": "5G telepresence is the delivery of real-time immersive communication over fifth-generation mobile networks, using their higher bandwidth and lower latency to support volumetric and high-resolution remote presence on mobile devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "5-g-network",
+      "label": "5G Network"
+    },
+    {
+      "slug": "network-slicing",
+      "label": "Network Slicing"
+    },
+    {
+      "slug": "low-latency",
+      "label": "Low Latency"
+    },
+    {
+      "slug": "5-g",
+      "label": "5G"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": []
+}

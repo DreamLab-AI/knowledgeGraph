@@ -263,8 +263,8 @@ public:: true
       "label": "Existential Risk"
     },
     {
-      "@id": "urn:ngm:class:futures-studies",
-      "label": "Futures Studies"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
@@ -316,7 +316,7 @@ public:: true
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],
@@ -384,7 +384,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

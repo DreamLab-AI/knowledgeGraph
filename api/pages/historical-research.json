@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:historical-research",
+  "title": "Historical Research",
+  "slug": "historical-research",
+  "public": true,
+  "classIri": "urn:ngm:class:historical-research",
+  "domain": "metaverse",
+  "definition": "Historical research is the systematic investigation of past events, peoples, and material culture through the examination of primary and secondary sources. In digital contexts it increasingly draws on digitised archives, 3D reconstructions, and computational analysis to interpret and present the past. It provides the evidentiary and interpretive basis for cultural heritage applications such as site reconstruction and virtual museums.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "id": "urn:ngm:class:archaeological-site-reconstruction",
+        "label": "Archaeological Site Reconstruction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "archaeological-site-reconstruction",
+      "label": "Archaeological Site Reconstruction"
+    },
+    {
+      "slug": "digital-archive",
+      "label": "Digital Archive"
+    }
+  ]
+}

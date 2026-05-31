@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:voting-round",
+  "title": "Voting Round",
+  "slug": "voting-round",
+  "public": true,
+  "classIri": "urn:ngm:class:voting-round",
+  "domain": "blockchain",
+  "definition": "A voting round is a discrete phase within a Byzantine fault-tolerant consensus protocol during which participating nodes exchange and tally votes on a proposed value or block. Multi-round protocols such as PBFT and Tendermint progress through prepare, pre-commit, and commit rounds to achieve agreement despite faulty or malicious participants. The round abstraction provides liveness via view changes and safety via supermajority thresholds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

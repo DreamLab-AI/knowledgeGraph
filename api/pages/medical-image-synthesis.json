@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:a65fc29caf5e66b81fdcb6deabc2bfdcf3701404c5537bbb5fb63dc155091e75",
+  "title": "Medical Image Synthesis",
+  "slug": "medical-image-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:medical-image-synthesis",
+  "domain": "machine-learning",
+  "definition": "Medical image synthesis is the use of generative models to produce artificial medical images, such as scans, for training data augmentation, modality translation, or privacy-preserving sharing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-synthesis",
+      "label": "Image Synthesis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

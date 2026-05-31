@@ -1,0 +1,4 @@
+- ### Definition
+  - Sliding mode control forces a system's state onto a sliding surface via switching control, yielding robustness to matched disturbances and uncertainty once the surface is reached. It is a [[Control Theory]] method realised as a robust [[Control Algorithm]].
+- ### Content
+  - The design chooses a sliding surface defining desired error dynamics, then a discontinuous control law that enforces a reaching condition toward it. The main practical drawback is chattering from the switching action, mitigated by boundary-layer smoothing or higher-order sliding-mode schemes such as super-twisting.

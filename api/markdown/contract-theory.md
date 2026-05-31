@@ -1,0 +1,4 @@
+- ### Definition
+  - Contract theory studies agreement design under asymmetric information and incentive conflict, a foundational area of [[Economics]] and of mechanism design.
+- ### Content
+  - Core models address moral hazard (hidden action), adverse selection (hidden type), and signalling, deriving contracts that are incentive-compatible and individually rational. Its results inform token incentive structures, staking and slashing schemes, and the design of decentralised mechanisms where actors cannot be directly monitored.

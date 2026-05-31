@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:86313babd6e625d5943e8b8323fd88d3b77d890465859907880ba12c1c897401",
+  "title": "Peter Todd",
+  "slug": "peter-todd",
+  "public": true,
+  "classIri": "urn:ngm:class:peter-todd",
+  "domain": "blockchain",
+  "definition": "Peter Todd is a Bitcoin developer and applied cryptography consultant known for contributions to the Bitcoin protocol and related projects. He has worked on consensus and transaction issues.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-core",
+      "label": "Bitcoin Core"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "bitcoin-core",
+      "label": "Bitcoin Core"
+    },
+    {
+      "slug": "https-petertodd-org",
+      "label": "https://petertodd.org"
+    },
+    {
+      "slug": "https-github-com-petertodd",
+      "label": "https://github.com/petertodd"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

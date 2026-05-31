@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:b6f0cecc5184d5dda9bdea6049fcb6b58ad6cd3e792003f96f57b5f9130c525e",
+  "title": "Autoregressive Model",
+  "slug": "autoregressive-model",
+  "public": true,
+  "classIri": "urn:ngm:class:autoregressive-model",
+  "domain": "machine-learning",
+  "definition": "A model that generates a sequence by predicting each element conditioned on the previously generated elements, factorising the joint distribution into a product of conditional distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "generative-modelling-domain",
+      "label": "Generative Modelling Domain"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
+    }
+  ]
+}

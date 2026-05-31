@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:navigation-mesh",
+  "title": "Navigation Mesh",
+  "slug": "navigation-mesh",
+  "public": true,
+  "classIri": "urn:ngm:class:navigation-mesh",
+  "domain": "ai",
+  "definition": "A navigation mesh (navmesh) is a data structure that decomposes the traversable area of a virtual environment into a set of convex polygons over which an agent can move freely. By abstracting walkable space into connected regions, it enables efficient pathfinding without searching a dense uniform grid. Navmeshes are the standard representation for movement and obstacle avoidance in game AI and simulated 3D worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

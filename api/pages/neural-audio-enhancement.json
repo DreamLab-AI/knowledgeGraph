@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:neural-audio-enhancement",
+  "title": "Neural Audio Enhancement",
+  "slug": "neural-audio-enhancement",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-audio-enhancement",
+  "domain": "ai",
+  "definition": "Neural audio enhancement is the use of deep learning models to improve the perceptual quality of recorded audio by removing noise, reverberation, and artefacts or by restoring lost detail. Models are trained on paired clean and degraded audio to learn a mapping that suppresses unwanted components while preserving the target signal. It is widely applied to speech in podcasting, conferencing, and media post-production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automated-podcasting",
+        "label": "Automated Podcasting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    }
+  ]
+}

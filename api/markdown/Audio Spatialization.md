@@ -83,8 +83,8 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:spatial-audio-technology",
-      "label": "Spatial Audio Technology"
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "SC Display And Rendering"
     }
   ],
   "relations": {

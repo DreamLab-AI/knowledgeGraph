@@ -1,0 +1,4 @@
+- ### Definition
+  - Data models are the structural specifications of how information is represented and related, required by a [[Digital Twin Framework]] and by each [[Service Layer]] to ensure interoperability.
+- ### Content
+  - In a digital twin, data models define the synchronised representation of a physical asset's state and telemetry. Across layered architectures they provide the shared contracts that let services exchange and validate information consistently.

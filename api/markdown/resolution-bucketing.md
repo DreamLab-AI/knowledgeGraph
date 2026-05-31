@@ -1,0 +1,4 @@
+- ### Definition
+  - Resolution bucketing groups training images into aspect-ratio buckets so batches share dimensions without aggressive cropping, as implemented in [[Kohya DreamBooth and Similar]] fine-tuning toolchains.
+- ### Content
+  - By assigning each image to the nearest valid bucket and batching within buckets, the technique preserves composition and detail for portraits, landscapes, and other non-square inputs. This reduces aspect-ratio artefacts in the trained model while keeping memory layout uniform for efficient GPU throughput.

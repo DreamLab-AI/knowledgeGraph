@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:trust-mechanism",
+  "title": "Trust Mechanism",
+  "slug": "trust-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-mechanism",
+  "domain": "blockchain",
+  "definition": "A trust mechanism is a system, protocol, or institution that allows parties who lack prior knowledge of one another to transact or cooperate with reasonable assurance of honest behaviour. Such mechanisms range from intermediaries and reputation systems to cryptographic and consensus protocols that replace interpersonal trust with verifiable, incentive-aligned guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

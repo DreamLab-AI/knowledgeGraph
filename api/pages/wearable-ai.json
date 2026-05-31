@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:dbc68f421713b4f4545cf16dac2f0388a67d3bad91d3593154d0fdf4aa5f9aa0",
+  "title": "Wearable AI",
+  "slug": "wearable-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:wearable-ai",
+  "domain": "metaverse",
+  "definition": "Wearable AI refers to body-worn devices that run or stream machine learning to sense context, recognise speech and imagery, and present information, often through glasses, earbuds or wrist devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    }
+  ]
+}

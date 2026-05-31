@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:decision-rights",
+  "title": "Decision Rights",
+  "slug": "decision-rights",
+  "public": true,
+  "classIri": "urn:ngm:class:decision-rights",
+  "domain": "governance",
+  "definition": "Decision rights are the formally allocated authorities that determine who may make, approve, or veto a given class of decisions within an organisation or governance system. They specify the mapping between roles or stakeholders and the scope of choices they control, forming the backbone of accountability. Clear decision rights reduce ambiguity, prevent conflicting actions, and enable auditable governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    }
+  ]
+}

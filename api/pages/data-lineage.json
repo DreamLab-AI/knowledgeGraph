@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-lineage",
+  "title": "Data Lineage",
+  "slug": "data-lineage",
+  "public": true,
+  "classIri": "urn:ngm:class:data-lineage",
+  "domain": "data",
+  "definition": "Data lineage is the documented record of data's origins, movements, transformations and consumption as it flows through systems and pipelines. It maps how a data element is derived end to end, supporting impact analysis, debugging, audit and regulatory compliance. As a pillar of data governance and metadata management it makes data trustworthy by exposing its provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-governance-domain",
+        "label": "Data Governance Domain"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

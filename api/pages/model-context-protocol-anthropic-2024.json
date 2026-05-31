@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:model-context-protocol-anthropic-2024",
+  "title": "Model Context Protocol Anthropic 2024",
+  "slug": "model-context-protocol-anthropic-2024",
+  "public": true,
+  "classIri": "urn:ngm:class:model-context-protocol-anthropic-2024",
+  "domain": "ai",
+  "definition": "The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 2024 that defines a uniform JSON-RPC interface for connecting large language model applications to external tools, data sources, and prompts. It standardises how AI agents discover and invoke capabilities exposed by MCP servers, decoupling model hosts from integrations. It has been broadly adopted as a common plug-in layer for agentic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

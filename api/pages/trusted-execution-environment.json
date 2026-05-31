@@ -75,12 +75,28 @@
       "label": "Digital Identity Wallet"
     },
     {
+      "slug": "hardware-security",
+      "label": "Hardware Security"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     },
     {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "tee",
+      "label": "TEE"
     },
     {
       "slug": "telecollaboration-and-telepresence",

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:screen-capture-api",
+  "title": "Screen Capture API",
+  "slug": "screen-capture-api",
+  "public": true,
+  "classIri": "urn:ngm:class:screen-capture-api",
+  "domain": "infrastructure",
+  "definition": "The Screen Capture API is a W3C web platform interface, centred on getDisplayMedia, that lets web applications obtain a live media stream of a user-selected screen, window, or browser tab. It exposes the captured display as a MediaStream usable for recording, sharing, or processing, gated by an explicit user-selection prompt. It is the standard browser foundation for screen sharing and recording features.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

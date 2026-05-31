@@ -1,4 +1,5 @@
 public:: true
+alias:: DomainOntology
 
 # Domain Ontology
 ```json-ld
@@ -479,8 +480,8 @@ public:: true
       "label": "Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:conceptual-model",
-      "label": "Conceptual Model"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     },
     {
       "@id": "urn:ngm:class:formal-specification",
@@ -708,11 +709,11 @@ public:: true
         "label": "OBO Foundry"
       },
       {
-        "@id": "urn:ngm:class:w3-c-owl-2",
+        "@id": "urn:ngm:class:w-3-c-owl-2",
         "label": "W3C OWL 2"
       },
       {
-        "@id": "urn:ngm:class:w3-c-rdf-1-1",
+        "@id": "urn:ngm:class:w-3-c-rdf-1-1",
         "label": "W3C RDF 1.1"
       },
       {
@@ -720,7 +721,7 @@ public:: true
         "label": "W3C SKOS"
       },
       {
-        "@id": "urn:ngm:class:w3-c-sparql-1-1",
+        "@id": "urn:ngm:class:w-3-c-sparql-1-1",
         "label": "W3C SPARQL 1.1"
       }
     ]

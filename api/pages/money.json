@@ -457,6 +457,14 @@
       "label": "Bitcoin As Money"
     },
     {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "gold-standard",
+      "label": "Gold Standard"
+    },
+    {
       "slug": "micropayments",
       "label": "Micropayments"
     },
@@ -471,6 +479,10 @@
     {
       "slug": "suggested-reading-order",
       "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
     },
     {
       "slug": "value-alignment",

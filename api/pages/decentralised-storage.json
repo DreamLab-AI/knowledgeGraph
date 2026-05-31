@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:4bf538c06a1a77083cd40f80c73f6efe3c6a64fe31c2c84140b9fb0acf5ba8f8",
+  "title": "Decentralised Storage",
+  "slug": "decentralised-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-storage",
+  "domain": "distributed-systems",
+  "definition": "Storage systems that distribute data across many independent nodes rather than a single central provider, often using content addressing and cryptographic verification to ensure integrity and availability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "filecoin",
+      "label": "Filecoin"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralised-database",
+      "label": "Centralised Database"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "storj",
+      "label": "Storj"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
+    }
+  ]
+}

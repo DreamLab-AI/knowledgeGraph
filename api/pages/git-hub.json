@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:f093f3bfb1c3f2e48e4bce761cefdf3ad6b08cb148a061b39c4d32c7e2924d1d",
+  "title": "GitHub",
+  "slug": "git-hub",
+  "public": true,
+  "classIri": "urn:ngm:class:git-hub",
+  "domain": "general",
+  "definition": "GitHub is a web platform for hosting Git repositories, providing version control, code review, issue tracking, and collaboration features. It is owned by Microsoft.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:version-control",
+      "label": "Version Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "https-github-com",
+      "label": "https://github.com"
+    },
+    {
+      "slug": "https-docs-github-com",
+      "label": "https://docs.github.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "open-source",
+      "label": "Open Source"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

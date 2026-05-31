@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:legal-wrapper",
+  "title": "Legal Wrapper",
+  "slug": "legal-wrapper",
+  "public": true,
+  "classIri": "urn:ngm:class:legal-wrapper",
+  "domain": "governance",
+  "definition": "A legal wrapper is an off-chain legal entity, such as a foundation, LLC, or association, established to give a DAO or on-chain protocol recognised legal personality. It enables the organisation to enter contracts, hold assets, limit member liability, and interface with regulators while preserving on-chain governance. Jurisdictions like Wyoming (DAO LLC), the Marshall Islands, and the Cayman Islands offer purpose-built wrapper forms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

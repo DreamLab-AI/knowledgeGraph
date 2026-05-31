@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:fa20ffa366794235d20db4bb31437191085e689d5327581be1c98e74e9da3a80",
+  "title": "Fraud Proof",
+  "slug": "fraud-proof",
+  "public": true,
+  "classIri": "urn:ngm:class:fraud-proof",
+  "domain": "blockchain",
+  "definition": "A succinct piece of evidence demonstrating that a proposed off-chain state transition was invalid, used by optimistic rollups to challenge incorrect results.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-availability",
+      "label": "Data Availability"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    }
+  ]
+}

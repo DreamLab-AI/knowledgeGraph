@@ -1,0 +1,4 @@
+- ### Definition
+  - A green mining pool aggregates renewable-powered hashrate and is used by frameworks such as the [[Sustainable Bitcoin Protocol]] and is a component of broader [[Green Blockchain Initiatives]].
+- ### Content
+  - Operators may integrate renewable energy certificates, flexible load balancing against grid demand, and on-chain attestation of the energy mix. This lets miners monetise otherwise-wasted renewable capacity while improving the sustainability credentials of the underlying network.

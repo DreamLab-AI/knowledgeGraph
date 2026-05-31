@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mind-map",
+  "title": "Mind Map",
+  "slug": "mind-map",
+  "public": true,
+  "classIri": "urn:ngm:class:mind-map",
+  "domain": "infrastructure",
+  "definition": "A mind map is a diagram that organises information hierarchically around a central concept, with branches radiating to related topics and sub-topics. It is used for brainstorming, note-taking, and knowledge organisation, leveraging spatial and associative structure to aid recall and ideation. Digital mind-mapping tools support collaborative editing and links to external resources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

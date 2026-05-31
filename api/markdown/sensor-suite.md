@@ -1,0 +1,4 @@
+- ### Definition
+  - A sensor suite is the integrated set of complementary sensors on a robot, combined for redundant, fusable perception. It is a structural part of [[Robot Hardware]] and of a [[Mobile Robot Platform]].
+- ### Content
+  - Suite composition trades cost, weight, and power against coverage and reliability, pairing modalities such as cameras for semantics with LiDAR for range and IMUs for motion. Fusion algorithms exploit this diversity to maintain robust state estimation under occlusion, glare, or individual sensor dropout.

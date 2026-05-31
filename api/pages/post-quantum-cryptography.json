@@ -209,6 +209,14 @@
       "label": "Hash Function"
     },
     {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "quantum-key-distribution",
+      "label": "Quantum Key Distribution"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

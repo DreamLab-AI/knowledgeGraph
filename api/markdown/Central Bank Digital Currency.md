@@ -1,4 +1,5 @@
 public:: true
+alias:: CBDC, CentralBankDigitalCurrency
 
 # Central Bank Digital Currency
 ```json-ld

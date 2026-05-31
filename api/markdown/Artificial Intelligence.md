@@ -1,4 +1,5 @@
 public:: true
+alias:: ArtificialIntelligence
 
 # Artificial Intelligence
 ```json-ld

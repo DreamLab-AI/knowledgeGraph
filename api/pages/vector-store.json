@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:3a29827a1113505d89f80626d760748f798557d2638b450cf13cf975b6fd25e7",
+  "title": "Vector Store",
+  "slug": "vector-store",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-store",
+  "domain": "data-management",
+  "definition": "A storage system optimised for holding high-dimensional vector embeddings and retrieving them by similarity. It supports nearest-neighbour search used in semantic retrieval and machine learning applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    }
+  ]
+}

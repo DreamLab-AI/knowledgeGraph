@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:7ffc75808287721df765cfaefb195caac8943fd65049e81d326c9f4a48a9d2bf",
+  "title": "Assistive Technology",
+  "slug": "assistive-technology",
+  "public": true,
+  "classIri": "urn:ngm:class:assistive-technology",
+  "domain": "accessibility",
+  "definition": "Assistive technology is equipment or software that helps people with disabilities perform tasks they would otherwise find difficult. Examples include screen readers, hearing aids and alternative input devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accessibility",
+      "label": "Accessibility"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "education",
+      "label": "Education"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "education",
+      "label": "Education"
+    }
+  ]
+}

@@ -113,12 +113,28 @@
   ],
   "backlinks": [
     {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
     },
     {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",
@@ -149,6 +165,10 @@
       "label": "Green Blockchain Initiatives"
     },
     {
+      "slug": "groth-16",
+      "label": "Groth16"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },
@@ -161,8 +181,32 @@
       "label": "Layer2Scaling"
     },
     {
+      "slug": "maci",
+      "label": "MACI"
+    },
+    {
+      "slug": "modular-arithmetic",
+      "label": "Modular Arithmetic"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
+    },
+    {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "pedersen-commitment",
+      "label": "Pedersen Commitment"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
     },
     {
       "slug": "privacy-preserving-blockchain",
@@ -189,12 +233,28 @@
       "label": "Reputation System"
     },
     {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "stark",
+      "label": "STARK"
+    },
+    {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
     },
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
     },
     {
       "slug": "state-machine",
@@ -205,8 +265,20 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
     },
     {
       "slug": "zk-snarks",
@@ -215,6 +287,14 @@
     {
       "slug": "zk-starks",
       "label": "ZK-STARKs"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
     }
   ]
 }

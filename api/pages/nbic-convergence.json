@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:nbic-convergence",
+  "title": "NBIC Convergence",
+  "slug": "nbic-convergence",
+  "public": true,
+  "classIri": "urn:ngm:class:nbic-convergence",
+  "domain": "governance",
+  "definition": "NBIC convergence refers to the integration of Nanotechnology, Biotechnology, Information technology, and Cognitive science into mutually reinforcing capabilities. The premise is that advances in each field accelerate the others, enabling systems that span the molecular, biological, computational, and cognitive scales. It is a foundational framing in technology-foresight and innovation-policy discussions of long-horizon transformative change.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    }
+  ]
+}

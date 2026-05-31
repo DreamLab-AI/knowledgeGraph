@@ -69,6 +69,10 @@
     {
       "slug": "nft-minting",
       "label": "NFT Minting"
+    },
+    {
+      "slug": "runes",
+      "label": "Runes"
     }
   ]
 }

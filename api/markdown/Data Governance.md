@@ -1,4 +1,5 @@
 public:: true
+alias:: DataGovernance
 
 # Data Governance
 ```json-ld

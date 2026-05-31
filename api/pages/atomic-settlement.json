@@ -71,6 +71,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
     },
@@ -79,8 +83,20 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
+    },
+    {
       "slug": "r3-corda",
       "label": "R3 Corda"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
     }
   ]
 }

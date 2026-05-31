@@ -1,0 +1,4 @@
+- ### Definition
+  - A governance system codifies how decisions are proposed, ratified, and enforced; it is a part of a [[Blockchain Protocol]]'s upgrade machinery and its decisions are recorded in an [[Audit Trail]].
+- ### Content
+  - Governance can be on-chain, where votes directly trigger parameter changes, or off-chain, where social consensus and core-developer coordination drive upgrades adopted by node operators. Key design dimensions include voting power distribution, quorum and threshold rules, proposal lifecycles, and safeguards against capture or low participation. Recording proposals and outcomes immutably provides accountability and a verifiable history of how the system evolved.

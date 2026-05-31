@@ -1,4 +1,5 @@
 public:: true
+alias:: CryptographicDomain, Cryptography Domain, CryptographyDomain
 
 # Cryptographic Domain
 ```json-ld

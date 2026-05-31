@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:63e98d6e81eac3eb817d8e298a18c404fae4f2b7acb9a4dcbcdc742a5c2275fd",
+  "title": "Fiat Currency",
+  "slug": "fiat-currency",
+  "public": true,
+  "classIri": "urn:ngm:class:fiat-currency",
+  "domain": "blockchain",
+  "definition": "Money issued by a state and declared legal tender, whose value derives from government authority and public confidence rather than from a physical commodity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:money",
+      "label": "Money"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "usd",
+      "label": "USD"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "monetary-theory",
+      "label": "Monetary Theory"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:reality-eth-oracle",
+  "title": "Reality ETH Oracle",
+  "slug": "reality-eth-oracle",
+  "public": true,
+  "classIri": "urn:ngm:class:reality-eth-oracle",
+  "domain": "blockchain",
+  "definition": "Reality.eth is an Ethereum-based crowdsourced oracle that resolves arbitrary questions by escalating bonds, allowing anyone to post or challenge answers until an economically final result is reached. It feeds resolved outcomes into smart contracts and is widely used to settle governance proposals and prediction-market events. The escalation-game design lets it answer subjective or off-chain questions that price-feed oracles cannot.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

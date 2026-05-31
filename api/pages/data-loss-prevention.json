@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-loss-prevention",
+  "title": "Data Loss Prevention",
+  "slug": "data-loss-prevention",
+  "public": true,
+  "classIri": "urn:ngm:class:data-loss-prevention",
+  "domain": "security",
+  "definition": "Data loss prevention (DLP) is a set of security controls and technologies that detect and block the unauthorised exfiltration, leakage or misuse of sensitive data. DLP systems classify content, monitor data in use, in motion and at rest, and enforce policies at endpoints, networks and cloud services. It is a core data-protection capability supporting compliance with privacy and confidentiality requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infrastructure Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    }
+  ]
+}

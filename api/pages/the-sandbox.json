@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:d397d96211af654b1dc591b369349d93740f73c1e7f33db2c5e690eba7a80230",
+  "title": "The Sandbox",
+  "slug": "the-sandbox",
+  "public": true,
+  "classIri": "urn:ngm:class:the-sandbox",
+  "domain": "metaverse",
+  "definition": "The Sandbox is a blockchain-based virtual world and game-creation platform where users build, own and monetise voxel-based experiences and assets recorded as tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "asset-tokenization",
+      "label": "Asset Tokenization"
+    },
+    {
+      "slug": "blockchain-gaming",
+      "label": "Blockchain Gaming"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "persistence",
+      "label": "Persistence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "metaverse-core-concepts",
+      "label": "metaverse core concepts"
+    }
+  ]
+}

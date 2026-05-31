@@ -100,12 +100,28 @@
   ],
   "backlinks": [
     {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
       "slug": "climate-action-dao",
       "label": "Climate Action DAO"
     },
     {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
       "slug": "community-governance-model",
       "label": "Community Governance Model"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
     },
     {
       "slug": "digital-constitution",
@@ -114,6 +130,18 @@
     {
       "slug": "distributed-identity",
       "label": "Distributed Identity"
+    },
+    {
+      "slug": "karpatkey",
+      "label": "Karpatkey"
+    },
+    {
+      "slug": "maci",
+      "label": "MACI"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
     },
     {
       "slug": "snapshot-voting",

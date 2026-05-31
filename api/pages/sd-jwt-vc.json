@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:2182061083f865d260e3e78cb279242ed9c5c8202bcfce4de0ff5d9f54b2093b",
+  "title": "SD-JWT VC",
+  "slug": "sd-jwt-vc",
+  "public": true,
+  "classIri": "urn:ngm:class:sd-jwt-vc",
+  "domain": "identity",
+  "definition": "A verifiable credential format that uses Selective Disclosure JSON Web Tokens, allowing a holder to reveal only chosen claims to a verifier. It combines the JWT structure with salted hashes that support selective disclosure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:json-web-token",
+      "label": "JSON Web Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "json-web-token",
+      "label": "JSON Web Token"
+    },
+    {
+      "slug": "selective-disclosure",
+      "label": "Selective Disclosure"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    }
+  ]
+}

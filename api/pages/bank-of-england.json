@@ -79,6 +79,10 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
+    },
+    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
     },
@@ -91,12 +95,20 @@
       "label": "Enterprise Token Standards"
     },
     {
+      "slug": "fsma-2023",
+      "label": "FSMA 2023"
+    },
+    {
       "slug": "interoperability",
       "label": "Interoperability"
     },
     {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "project-rosalind",
+      "label": "Project Rosalind"
     },
     {
       "slug": "r3-corda",

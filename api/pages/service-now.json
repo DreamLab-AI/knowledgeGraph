@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:30880c3d24429f3e74b462342ee4d8310a9d44ab49b50d38bfee2b50e89e5e09",
+  "title": "ServiceNow",
+  "slug": "service-now",
+  "public": true,
+  "classIri": "urn:ngm:class:service-now",
+  "domain": "distributed-systems",
+  "definition": "ServiceNow is a cloud platform for IT service management and workflow automation, delivering digital workflows across IT, security and business operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "https-www-servicenow-com",
+      "label": "https://www.servicenow.com/"
+    },
+    {
+      "slug": "https-docs-servicenow-com",
+      "label": "https://docs.servicenow.com/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ]
+}

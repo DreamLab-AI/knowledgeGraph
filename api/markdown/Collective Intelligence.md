@@ -1,4 +1,5 @@
 public:: true
+alias:: CollectiveIntelligence
 
 # Collective Intelligence
 ```json-ld

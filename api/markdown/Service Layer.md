@@ -1,4 +1,5 @@
 public:: true
+alias:: ServiceLayer
 
 # Service Layer
 ```json-ld

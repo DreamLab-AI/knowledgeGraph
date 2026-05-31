@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:cd1ae895983abd4c65b9cf01c07c4e5afaea2ea479fbf035777fa65ee9a86171",
+  "title": "Digital Pound",
+  "slug": "digital-pound",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-pound",
+  "domain": "blockchain",
+  "definition": "The Digital Pound is a proposed central bank digital currency for the United Kingdom issued by the Bank of England. It is intended for retail payments and remains under design and consultation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "cbdc-cross-border-settlement",
+      "label": "CBDC Cross-Border Settlement"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "https-www-bankofengland-co-uk-the-digital-pound",
+      "label": "https://www.bankofengland.co.uk/the-digital-pound"
+    },
+    {
+      "slug": "https-www-bankofengland-co-uk-paper-2023-the-digital-pound-consultation-paper",
+      "label": "https://www.bankofengland.co.uk/paper/2023/the-digital-pound-consultation-paper"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-cross-border-settlement",
+      "label": "CBDC Cross-Border Settlement"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

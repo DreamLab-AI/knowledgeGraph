@@ -1,0 +1,4 @@
+- ### Definition
+  - Computed torque control uses inverse-dynamics feedforward to linearise a manipulator, implementing precise [[Motion Control]] and forming a basis for [[Force Control]].
+- ### Content
+  - The method splits the control law into a model-based feedforward term that cancels Coriolis, centrifugal, and gravity effects, and a feedback term (typically PD) acting on the linearised error dynamics. Tracking accuracy depends directly on the fidelity of the identified dynamic parameters.

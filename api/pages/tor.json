@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:d55a3f1ba4850f712fccc97fdfb14c1ffa461d8568388786a15f454d68751992",
+  "title": "Tor",
+  "slug": "tor",
+  "public": true,
+  "classIri": "urn:ngm:class:tor",
+  "domain": "cryptographic",
+  "definition": "A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:onion-routing",
+      "label": "Onion Routing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "onion-routing",
+      "label": "Onion Routing"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

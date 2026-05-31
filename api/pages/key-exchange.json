@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:b0af3401543579535326e5922de9eacef629bc040e86691c0d15b15d999ea99e",
+  "title": "Key Exchange",
+  "slug": "key-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:key-exchange",
+  "domain": "cryptography",
+  "definition": "Key exchange is a cryptographic procedure by which two parties establish a shared secret over an insecure channel for use in subsequent encrypted communication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ]
+}

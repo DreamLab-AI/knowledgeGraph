@@ -71,6 +71,10 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
     },

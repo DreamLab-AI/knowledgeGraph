@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:operational-efficiency",
+  "title": "Operational Efficiency",
+  "slug": "operational-efficiency",
+  "public": true,
+  "classIri": "urn:ngm:class:operational-efficiency",
+  "domain": "infrastructure",
+  "definition": "Operational Efficiency is the capability of an organization or system to deliver outputs while minimizing wasted resources such as time, cost, energy, and labor. It is achieved through process optimization, automation, and measurement of input-to-output ratios across workflows. In industrial and digital contexts it is a primary target of automation and transformation initiatives that seek higher throughput and lower unit cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:manufacturing-domain",
+        "label": "Manufacturing Domain"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    }
+  ]
+}

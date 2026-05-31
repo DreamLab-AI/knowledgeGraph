@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:f7baf3c476fa644e10439fb0adc523c6b3af2ca559f34d5d499ba1fc02d00e44",
+  "title": "Cursor",
+  "slug": "cursor",
+  "public": true,
+  "classIri": "urn:ngm:class:cursor",
+  "domain": "artificial-intelligence",
+  "definition": "Cursor is a code editor built on Visual Studio Code that integrates large language models for code completion, editing, and chat-based assistance. It is developed by Anysphere.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "https-cursor-com",
+      "label": "https://cursor.com"
+    },
+    {
+      "slug": "https-docs-cursor-com",
+      "label": "https://docs.cursor.com"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

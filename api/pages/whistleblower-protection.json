@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:whistleblower-protection",
+  "title": "Whistleblower Protection",
+  "slug": "whistleblower-protection",
+  "public": true,
+  "classIri": "urn:ngm:class:whistleblower-protection",
+  "domain": "governance",
+  "definition": "Whistleblower protection comprises legal and procedural safeguards that shield individuals who report wrongdoing, safety risks, or legal violations from retaliation such as dismissal, demotion, or harassment. In the AI-governance context, it empowers employees of AI developers to disclose information about unmitigated risks from frontier models to regulators or the public. Such provisions appear in legislation like California's frontier-AI safety bills, creating accountability channels beyond internal controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI Bill"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ]
+}

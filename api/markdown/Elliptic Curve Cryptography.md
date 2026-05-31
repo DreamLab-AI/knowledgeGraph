@@ -1,4 +1,5 @@
 public:: true
+alias:: EllipticCurveCryptography
 
 # Elliptic Curve Cryptography
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:parallel-corpus",
+  "title": "Parallel Corpus",
+  "slug": "parallel-corpus",
+  "public": true,
+  "classIri": "urn:ngm:class:parallel-corpus",
+  "domain": "ai",
+  "definition": "A Parallel Corpus is a collection of texts paired with their translations in one or more other languages, aligned at the sentence or segment level. It provides the supervised training signal for statistical and neural machine-translation systems by exemplifying how meaning maps across languages. The size, quality, and domain coverage of a parallel corpus strongly influence the accuracy of trained translation models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:translation",
+        "label": "Translation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-translation",
+        "label": "Real-Time Translation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

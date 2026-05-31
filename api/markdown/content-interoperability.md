@@ -1,0 +1,4 @@
+- ### Definition
+  - Content interoperability lets assets move and render consistently across platforms, enabled by open formats such as the [[glTF 3D File Format]] and exercised across the [[Metaverse Content Pipeline]].
+- ### Content
+  - Achieving it requires common geometry, material, and animation schemas plus conformance testing so that exporters and importers agree on semantics. Without it, assets fragment per-engine, raising production cost and blocking the cross-world portability central to an open metaverse.

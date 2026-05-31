@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:25c80382ca6f27f1fddfbfbb4dcae26462d36f041305b737a3b69f0c9df7cd43",
+  "title": "WebSockets",
+  "slug": "web-sockets",
+  "public": true,
+  "classIri": "urn:ngm:class:web-sockets",
+  "domain": "general",
+  "definition": "WebSockets is a protocol providing full-duplex communication channels over a single TCP connection between a client and a server. It is widely used for real-time web applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "network-communication",
+      "label": "Network Communication"
+    },
+    {
+      "slug": "web-technology",
+      "label": "Web Technology"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "https-datatracker-ietf-org-doc-html-rfc-6455",
+      "label": "https://datatracker.ietf.org/doc/html/rfc6455"
+    },
+    {
+      "slug": "https-developer-mozilla-org-en-us-docs-web-api-web-sockets-api",
+      "label": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:44a7bc95908649a0622146b221cbf637d79ee1d9112850d698a3e1be3d059875",
+  "title": "Site Reliability Engineering",
+  "slug": "site-reliability-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:site-reliability-engineering",
+  "domain": "software-engineering",
+  "definition": "Site reliability engineering is a discipline that applies software engineering methods to operations work, aiming to build and run scalable and reliable systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    }
+  ]
+}

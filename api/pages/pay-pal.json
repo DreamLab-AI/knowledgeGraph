@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:998403cbdd0b4406d57566493dfde3de2bef443385f1b3969c21f72a2a2d03cc",
+  "title": "PayPal",
+  "slug": "pay-pal",
+  "public": true,
+  "classIri": "urn:ngm:class:pay-pal",
+  "domain": "general",
+  "definition": "PayPal is a company that operates an online payments platform enabling money transfers and digital transactions between individuals and merchants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

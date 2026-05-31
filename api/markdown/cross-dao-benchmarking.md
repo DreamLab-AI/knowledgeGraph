@@ -1,0 +1,4 @@
+- ### Definition
+  - Cross-DAO benchmarking compares decentralised autonomous organisations using common governance and treasury metrics. It is a capability enabled by and embedded within [[DAO Analytics]] platforms.
+- ### Content
+  - By normalising on-chain data—participation rates, quorum, treasury diversification, and proposal success—benchmarking exposes relative governance health and outlier behaviour. Comparability is constrained by heterogeneous governance models and token designs, so robust benchmarks require careful metric definitions and context-aware peer grouping.

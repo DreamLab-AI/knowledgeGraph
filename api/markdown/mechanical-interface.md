@@ -1,0 +1,4 @@
+- ### Definition
+  - A mechanical interface is the physical coupling that defines how components mate, fasten, and transfer load. It is what an [[End-Effector]] requires to mount to a robot and a structural feature of an [[Electric Actuator]] output.
+- ### Content
+  - Standardised flange patterns, such as ISO 9409 tool-side plates, allow tools from different vendors to attach interchangeably. Design considerations include stiffness, repeatability of re-attachment, routing of power and signal services, and tolerance to misalignment under dynamic loads.

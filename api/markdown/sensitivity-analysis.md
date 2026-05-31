@@ -1,0 +1,4 @@
+- ### Definition
+  - Sensitivity analysis measures how changes in inputs and [[Calculation Parameters]] propagate to a model's outputs, revealing which factors most influence results. It supports robustness and budgeting decisions in [[Privacy-Preserving Analytics]].
+- ### Content
+  - Methods range from local one-at-a-time perturbation and gradient-based derivatives to global variance-based approaches such as Sobol indices and Morris screening. In differentially private analytics, sensitivity bounds the maximum change one record can cause, directly setting the noise scale required for a given privacy guarantee.

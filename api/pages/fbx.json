@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:4ca6c9353a86c0653164c5761ae14ba1da2706257806cf17596e895034673ae0",
+  "title": "FBX",
+  "slug": "fbx",
+  "public": true,
+  "classIri": "urn:ngm:class:fbx",
+  "domain": "metaverse",
+  "definition": "FBX is a proprietary 3D asset interchange format used to transfer geometry, materials, skeletal rigs and animation between digital content creation tools and game engines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "skeletal-animation",
+      "label": "Skeletal Animation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

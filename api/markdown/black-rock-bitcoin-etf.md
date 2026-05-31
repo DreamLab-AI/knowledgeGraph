@@ -1,0 +1,4 @@
+- ### Definition
+  - The BlackRock Bitcoin ETF (IBIT) is a regulated spot Bitcoin fund that gives mainstream investors price exposure to bitcoin, reinforcing the institutional [[Bitcoin Value Proposition]].
+- ### Content
+  - Approved alongside other spot ETFs in early 2024, IBIT holds bitcoin via a qualified custodian and creates or redeems shares to track net asset value. Its rapid inflows are widely treated as a milestone in the integration of bitcoin into traditional capital markets.

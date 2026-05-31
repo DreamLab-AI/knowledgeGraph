@@ -132,6 +132,10 @@
       "label": "Human Robot Interaction"
     },
     {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
     },

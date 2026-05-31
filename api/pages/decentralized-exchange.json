@@ -12,12 +12,12 @@
       "label": "DeFi and Economics"
     },
     {
-      "id": "urn:ngm:class:decentralised-finance-primitive",
-      "label": "Decentralised Finance Primitive"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "id": "urn:ngm:class:financial-protocol",
-      "label": "Financial Protocol"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     }
   ],
   "entityType": "Class",
@@ -941,6 +941,10 @@
   ],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "asset-trading",
       "label": "Asset Trading"
     },
@@ -951,6 +955,10 @@
     {
       "slug": "crypto-token",
       "label": "Crypto Token"
+    },
+    {
+      "slug": "curve",
+      "label": "Curve"
     },
     {
       "slug": "etsi-domain-virtual-economy",
@@ -969,12 +977,28 @@
       "label": "Liquidity Provision"
     },
     {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "mango-markets",
+      "label": "Mango Markets"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
       "slug": "nft-swapping",
       "label": "NFT Swapping"
     },
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "osmosis",
+      "label": "Osmosis"
     },
     {
       "slug": "smart-contract",
@@ -991,6 +1015,10 @@
     {
       "slug": "stablecoin-regulation",
       "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "thorchain",
+      "label": "THORChain"
     },
     {
       "slug": "token-bonding-curve",

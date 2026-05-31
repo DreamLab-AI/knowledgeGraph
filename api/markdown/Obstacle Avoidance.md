@@ -1,4 +1,5 @@
 public:: true
+alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
 
 # Obstacle Avoidance
 ```json-ld

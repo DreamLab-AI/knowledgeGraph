@@ -1,0 +1,4 @@
+- ### Definition
+  - The FID benchmark protocol standardises how Fréchet Inception Distance is computed so that [[Diffusion Models]] and [[Generative Adversarial Networks]] can be compared fairly. It is a widely used image-generation [[Evaluation Metric]] procedure.
+- ### Content
+  - The protocol mandates extracting features from a fixed Inception-v3 layer, modelling real and generated features as multivariate Gaussians, and computing the Fréchet distance between them over a prescribed sample count. Although FID correlates reasonably with perceived quality and diversity, it is sensitive to sample size, preprocessing, and the choice of feature extractor, so consistent protocol adherence is essential for valid cross-model comparison.

@@ -924,8 +924,16 @@
       "label": "Blockchain Protocol"
     },
     {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
     },
     {
       "slug": "stablecoin",

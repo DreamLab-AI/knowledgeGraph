@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-group-formation",
+  "title": "AI Group Formation",
+  "slug": "ai-group-formation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-group-formation",
+  "domain": "ai",
+  "definition": "AI Group Formation is the automated assignment of participants into subgroups using models that optimize for criteria such as skill balance, topic affinity, social diversity, or learning objectives. In collaborative and meeting platforms it drives features like intelligent breakout-room allocation, replacing manual or random grouping. The technique combines clustering, optimization, and sometimes reinforcement learning over participant attributes and interaction signals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    }
+  ]
+}

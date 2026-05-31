@@ -58,5 +58,14 @@
       "label": "ArtificialIntelligenceDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    }
+  ]
 }

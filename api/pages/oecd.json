@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:035ec2e3e8e191ef7e131ae83c5b7e2df07ec9c2d6d907f8685305f8299d29d1",
+  "title": "OECD",
+  "slug": "oecd",
+  "public": true,
+  "classIri": "urn:ngm:class:oecd",
+  "domain": "oecd",
+  "definition": "The OECD (Organisation for Economic Co-operation and Development) is an intergovernmental organisation founded in 1961 and headquartered in Paris, comprising mostly high-income member countries committed to market economies and democratic governance. It produces economic analysis, statistics and policy recommendations, and develops international standards on taxation, trade, education and digital policy. In the technology and finance domains it has led work on the taxation of digital assets through its Crypto-Asset Reporting Framework and on principles for trustworthy artificial intelligence. Its outputs are influential in shaping national and international policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-domain",
+      "label": "Governance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "accountability-oecd",
+      "label": "Accountability (OECD)"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "anti-counterfeiting",
+      "label": "Anti Counterfeiting"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "tax-treatment-crypto",
+      "label": "Tax Treatment Crypto"
+    }
+  ]
+}

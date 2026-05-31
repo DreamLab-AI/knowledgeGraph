@@ -1,0 +1,137 @@
+{
+  "id": "urn:visionflow:page:b1b1911134c198ace47eebdbe9ac9002c27b3e4cf8ef13ccb7e9ef13a3212aeb",
+  "title": "ETSI GR MEC 032",
+  "slug": "etsi-gr-mec-032",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-gr-mec-032",
+  "domain": "standards",
+  "definition": "ETSI GR MEC 032 is a group report produced by the ETSI Multi-access Edge Computing committee, addressing aspects of the MEC framework and its application scenarios.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-data",
+      "label": "ETSI Domain Data"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "etsi-domain-immersive-reality-capture-crossover",
+      "label": "ETSI Domain Immersive + Reality Capture Crossover"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "etsi-domain-data-management",
+      "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "label": "ETSI_Domain_Governance___Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "label": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    }
+  ]
+}

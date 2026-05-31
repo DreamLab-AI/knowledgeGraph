@@ -79,8 +79,16 @@
       "label": "3D Reconstruction"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
     },
     {
       "slug": "human-capture-and-recognition",

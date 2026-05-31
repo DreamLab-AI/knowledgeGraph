@@ -1,0 +1,146 @@
+{
+  "id": "urn:visionflow:page:9c2cfa64bdefb697cc1b63a1a18287d7564815123f466e51dd60bfee9d63527d",
+  "title": "Schnorr Signatures",
+  "slug": "schnorr-signatures",
+  "public": true,
+  "classIri": "urn:ngm:class:schnorr-signatures",
+  "domain": "cryptographic",
+  "definition": "A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mu-sig-2",
+        "label": "MuSig2"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "mu-sig-2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "taproot",
+      "label": "Taproot"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "mu-sig-2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

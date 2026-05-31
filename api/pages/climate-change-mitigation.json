@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:28eafeebf76efc94be563e99c7a290ec55e89ddae175f84d2a84c56842975232",
+  "title": "Climate Change Mitigation",
+  "slug": "climate-change-mitigation",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-change-mitigation",
+  "domain": "sustainability",
+  "definition": "Efforts to reduce or prevent the emission of greenhouse gases and to enhance their removal from the atmosphere, with the aim of limiting the extent of climate change. It includes shifting to low-carbon energy and improving efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - DiLoCo trains LLMs across distributed clusters using many local steps between rare global synchronisations, cutting communication by orders of magnitude. It is implemented in decentralised-training efforts such as [[Prime Intellect]].
+- ### Content
+  - Each worker runs an inner AdamW loop locally; periodically the accumulated pseudo-gradients are aggregated by an outer optimiser (e.g. Nesterov momentum) and broadcast back. This tolerates heterogeneous, unreliable nodes and high latency, making large-scale training feasible over commodity internet links at the cost of some convergence efficiency.

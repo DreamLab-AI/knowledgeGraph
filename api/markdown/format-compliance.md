@@ -1,0 +1,4 @@
+- ### Definition
+  - Format compliance is the degree to which an asset satisfies the rules of a target format, as required by [[Asset Format Standards]] and the [[Avatar Standard]]. Compliance is what makes cross-tool exchange of 3D models, textures, and avatars predictable.
+- ### Content
+  - Compliance is typically checked by validators that test files against a schema, magic-number signatures, and semantic constraints (e.g. valid node hierarchies in glTF). Non-compliant assets may load partially, render incorrectly, or fail security checks. Certification programmes and automated CI validators are common deployment mechanisms.

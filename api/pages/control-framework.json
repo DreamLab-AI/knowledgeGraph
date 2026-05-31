@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:control-framework",
+  "title": "Control Framework",
+  "slug": "control-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:control-framework",
+  "domain": "governance",
+  "definition": "A control framework is a structured set of governance, risk, and compliance controls that an organisation adopts to manage risk and demonstrate conformance to regulatory or industry requirements. Examples include NIST CSF, COBIT, ISO 27001, and SOC 2, each mapping objectives to specific control activities and evidence. It provides a common reference for designing, operating, and auditing controls consistently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-domain",
+        "label": "Compliance Domain"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance-domain",
+        "label": "Regulatory Compliance Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    }
+  ]
+}

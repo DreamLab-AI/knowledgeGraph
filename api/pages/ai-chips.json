@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-chips",
+  "title": "AI Chips",
+  "slug": "ai-chips",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-chips",
+  "domain": "infrastructure",
+  "definition": "AI Chips are specialized processors optimized for the massively parallel linear-algebra workloads of machine-learning training and inference, including GPUs, TPUs, NPUs, and custom ASICs. They deliver high throughput on matrix and tensor operations through wide SIMD execution, high-bandwidth memory, and reduced-precision arithmetic. Control over advanced AI-chip design and fabrication has become a strategic axis of geopolitical and commercial competition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

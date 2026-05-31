@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:frontier-model-evaluation",
+  "title": "Frontier Model Evaluation",
+  "slug": "frontier-model-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:frontier-model-evaluation",
+  "domain": "ai",
+  "definition": "Frontier model evaluation is the systematic assessment of the capabilities, limitations, and risks of the most advanced AI systems, including dangerous-capability and safety testing. It uses benchmarks, red-teaming, and threat-model-driven evaluations to inform deployment decisions and regulation. Such evaluation is increasingly required by AI governance regimes before high-capability models are released.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia-Pacific Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

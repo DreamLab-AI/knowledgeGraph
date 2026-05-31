@@ -1,0 +1,4 @@
+- ### Definition
+  - Rehabilitation robotics covers therapy and assistive robots that retrain motor function, depending on [[Force Control]] and compliant drives such as the [[Pneumatic Actuator]] for safe physical interaction.
+- ### Content
+  - Devices range from lower-limb gait exoskeletons to upper-limb training robots that adapt assistance to the patient's effort. Soft and compliant actuation, sensitive force control, and progress measurement let clinicians deliver high-repetition, individualised therapy while keeping interaction forces within safe limits.

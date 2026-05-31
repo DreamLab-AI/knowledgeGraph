@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:54b7fc7d12a259d71aa5604b1917f796ecfc96213ce2abb00d0c2d85f0da8aff",
+  "title": "Bandwidth",
+  "slug": "bandwidth",
+  "public": true,
+  "classIri": "urn:ngm:class:bandwidth",
+  "domain": "networking",
+  "definition": "The maximum rate at which data can be transferred over a network path or communication channel, commonly measured in bits per second. In signal processing it also refers to the range of frequencies a channel can carry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "video-streaming",
+      "label": "Video Streaming"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

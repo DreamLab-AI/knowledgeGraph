@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:feedforward-control",
+  "title": "Feedforward Control",
+  "slug": "feedforward-control",
+  "public": true,
+  "classIri": "urn:ngm:class:feedforward-control",
+  "domain": "robotics",
+  "definition": "Feedforward control is a control strategy in which the controller acts on a reference command or a measured disturbance before it affects the output, rather than reacting to output error after the fact. Because it does not rely on output measurement, pure feedforward cannot correct for unmodelled effects and is therefore usually paired with feedback. It is widely used in motion and process control to improve command tracking and pre-empt known disturbances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "Velocity Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

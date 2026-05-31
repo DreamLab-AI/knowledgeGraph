@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:48288d06bcb9a1172a94d4604571ebc39ff09d8bbc63a523018326264d0ecaea",
+  "title": "Web3 Infrastructure",
+  "slug": "web-3-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:web-3-infrastructure",
+  "domain": "distributed-systems",
+  "definition": "Web3 infrastructure is the set of protocols, nodes, storage and tooling that supports decentralised applications built on blockchain networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "https-ethereum-org-en-developers-docs",
+      "label": "https://ethereum.org/en/developers/docs/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-web-3",
+      "label": "https://en.wikipedia.org/wiki/Web3"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "allo-protocol",
+      "label": "Allo Protocol"
+    },
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "hop-protocol",
+      "label": "Hop Protocol"
+    },
+    {
+      "slug": "ibm",
+      "label": "IBM"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    }
+  ]
+}

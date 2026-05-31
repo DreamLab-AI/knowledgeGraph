@@ -1,0 +1,4 @@
+- ### Definition
+  - Cross-modal conditioning steers a model's output in one modality using inputs from another, commonly via cross-attention. It builds on the [[Attention]] mechanism and is a core method within [[Multimodal Learning]].
+- ### Content
+  - In practice, an encoded conditioning signal (e.g. a text embedding) is attended to by the generative backbone at each layer, aligning the produced output with the conditioning intent. Effective cross-modal conditioning depends on shared or aligned embedding spaces and large paired datasets, and underpins controllable diffusion and transformer-based generation.

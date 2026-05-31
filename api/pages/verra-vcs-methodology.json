@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:verra-vcs-methodology",
+  "title": "Verra VCS Methodology",
+  "slug": "verra-vcs-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:verra-vcs-methodology",
+  "domain": "governance",
+  "definition": "A Verra VCS methodology is an approved technical protocol under Verra's Verified Carbon Standard that specifies how a particular project type must quantify, monitor and report greenhouse-gas emission reductions or removals. Each methodology defines baselines, additionality tests, measurement procedures and monitoring requirements so that issued Verified Carbon Units are credible and comparable. It is the rule set against which carbon-credit projects are validated and verified.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

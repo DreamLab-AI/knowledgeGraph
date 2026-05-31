@@ -292,7 +292,7 @@
         "label": "Polygon AggLayer"
       },
       {
-        "id": "urn:ngm:class:rollups",
+        "id": "urn:ngm:class:rollup",
         "label": "Rollups"
       },
       {
@@ -797,12 +797,24 @@
       "label": "Bitcoin Distribution"
     },
     {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
       "slug": "consortium-blockchain",
       "label": "Consortium Blockchain"
     },
     {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
       "slug": "cross-chain-bridge",
       "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
     },
     {
       "slug": "cross-chain-messaging",
@@ -819,6 +831,14 @@
     {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "hyperlane",
+      "label": "Hyperlane"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
     },
     {
       "slug": "instant-value-settlement",

@@ -1,0 +1,4 @@
+- ### Definition
+  - Text embeddings map text to dense vectors so that semantic similarity becomes geometric proximity, providing the retrieval substrate for [[Semantic Search]] and [[Retrieval-Augmented Generation (RAG)]].
+- ### Content
+  - An embedding model encodes a span of text into a fixed-length vector whose direction captures meaning, allowing similarity to be measured by cosine distance or dot product. These vectors are indexed in approximate-nearest-neighbour stores so that a query can retrieve the most relevant passages from millions of candidates in milliseconds. Embedding quality depends on the training objective and domain coverage, and modern instruction-tuned embedding models support asymmetric query-document matching used throughout RAG pipelines.

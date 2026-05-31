@@ -137,12 +137,28 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
     },
     {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "decentralised-web",
@@ -177,6 +193,10 @@
       "label": "Multi Sig Governance"
     },
     {
+      "slug": "number-theory",
+      "label": "Number Theory"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     },
@@ -187,6 +207,10 @@
     {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
     },
     {
       "slug": "web3",

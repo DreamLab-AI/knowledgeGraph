@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tool-augmented-llm",
+  "title": "Tool-Augmented LLM",
+  "slug": "tool-augmented-llm",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-augmented-llm",
+  "domain": "ai",
+  "definition": "A tool-augmented large language model is an LLM that can invoke external tools, APIs, code execution, or retrieval systems during inference to overcome the limits of its parametric knowledge. By emitting structured calls and incorporating the returned results, it can perform calculations, access live data, and act on the world rather than relying solely on text generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

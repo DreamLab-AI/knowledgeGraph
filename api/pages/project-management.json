@@ -87,6 +87,10 @@
       "label": "Prompt Tuning"
     },
     {
+      "slug": "tc-0080-team-coordination",
+      "label": "TC-0080-Team-Coordination"
+    },
+    {
       "slug": "virtual-stand-up",
       "label": "virtual-stand-up"
     }

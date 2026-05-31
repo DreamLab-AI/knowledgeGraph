@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-trust",
+  "title": "User Trust",
+  "slug": "user-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:user-trust",
+  "domain": "governance",
+  "definition": "User trust is the confidence individuals place in a system to handle their data, decisions and interactions reliably, securely and in their interests. It is built through transparency, predictable behaviour, privacy safeguards and demonstrable accountability, and is a key outcome of privacy and data-protection practices. Eroded trust undermines adoption, while sustained trust is a competitive and ethical asset.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment-pia",
+        "label": "Privacy Impact Assessment (PIA)"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    }
+  ]
+}

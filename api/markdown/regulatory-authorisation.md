@@ -1,0 +1,4 @@
+- ### Definition
+  - Regulatory authorisation is the licence-like approval an entity must secure before conducting regulated financial activity, a prerequisite for compliant [[Enterprise Token Standards]] deployments and [[CBDC Frameworks]].
+- ### Content
+  - Applicants typically prove adequate capital, fit-and-proper management, AML controls, and operational resilience to a supervisor before being granted authorisation. The scope of authorisation defines exactly which activities are permitted, and breaching its conditions can trigger suspension or revocation.

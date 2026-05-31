@@ -205,6 +205,10 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    },
+    {
       "slug": "virtual-notary-service",
       "label": "Virtual Notary Service"
     }

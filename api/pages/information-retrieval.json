@@ -98,6 +98,10 @@
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
     }
   ]
 }

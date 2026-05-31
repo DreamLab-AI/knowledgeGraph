@@ -660,7 +660,7 @@ public:: true
         "label": "Tool Use"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {

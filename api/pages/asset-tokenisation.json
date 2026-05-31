@@ -59,12 +59,28 @@
       "label": "Asset Registry"
     },
     {
+      "slug": "black-rock-buidl",
+      "label": "BlackRock BUIDL"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
     {
+      "slug": "centrifuge",
+      "label": "Centrifuge"
+    },
+    {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
       "slug": "decentralized-exchange",
       "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
     },
     {
       "slug": "enterprise-token-standards",
@@ -75,8 +91,20 @@
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "ondo-finance",
+      "label": "Ondo Finance"
+    },
+    {
       "slug": "r3-corda",
       "label": "R3 Corda"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
     }
   ]
 }

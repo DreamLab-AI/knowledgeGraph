@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:supply-chain-tracking",
+  "title": "Supply Chain Tracking",
+  "slug": "supply-chain-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-tracking",
+  "domain": "blockchain",
+  "definition": "Supply chain tracking is the end-to-end recording of a product's movement, custody, and condition as it passes through producers, logistics, and retailers. Blockchain-based approaches anchor these events to an immutable, shared ledger so that participants can verify provenance and detect tampering without trusting a single intermediary. It enables traceability for food safety, anti-counterfeiting, and regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ve-chain",
+        "label": "VeChain"
+      },
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    }
+  ]
+}

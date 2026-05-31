@@ -86,6 +86,10 @@
       "label": "Metaverse"
     },
     {
+      "slug": "neo-4-j",
+      "label": "Neo4j"
+    },
+    {
       "slug": "platform-layer",
       "label": "Platform Layer"
     },

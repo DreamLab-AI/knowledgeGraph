@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:dde028094952107488483f46274eee9ab056ef32b3bb76ce5e6423877d43395c",
+  "title": "Video Compression",
+  "slug": "video-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:video-compression",
+  "domain": "computing",
+  "definition": "Video compression is the encoding of video data to reduce its size for storage and transmission while preserving acceptable quality. It exploits spatial, temporal and perceptual redundancy through codecs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-delivery",
+        "label": "Content Delivery"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "smpte-st-2128",
+      "label": "SMPTE ST 2128"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

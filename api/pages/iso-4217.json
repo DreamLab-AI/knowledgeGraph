@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:8675c36b8fd2bd79de48fcd5cf27cfa6eb8c13804ac2e483ec8696be6ed5cdd9",
+  "title": "ISO 4217",
+  "slug": "iso-4217",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-4217",
+  "domain": "standards",
+  "definition": "An ISO standard defining three-letter alphabetic and numeric codes for the representation of currencies and funds. It is widely used in banking and finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

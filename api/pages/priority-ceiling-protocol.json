@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:priority-ceiling-protocol",
+  "title": "Priority Ceiling Protocol",
+  "slug": "priority-ceiling-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:priority-ceiling-protocol",
+  "domain": "infrastructure",
+  "definition": "The priority ceiling protocol is a real-time scheduling and resource-access protocol that prevents unbounded priority inversion and deadlock among tasks sharing mutually exclusive resources. Each resource is assigned a ceiling equal to the highest priority of any task that may lock it, and a task may acquire a resource only if its priority exceeds the ceilings of all currently locked resources. It bounds blocking time, enabling provable schedulability in hard real-time systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real-Time"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

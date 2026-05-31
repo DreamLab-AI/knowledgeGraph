@@ -1,4 +1,5 @@
 public:: true
+alias:: MotionControl
 
 # Motion Control
 ```json-ld
@@ -347,8 +348,8 @@ public:: true
       "label": "Industrial Automation"
     },
     {
-      "@id": "urn:ngm:class:mechatronics",
-      "label": "Mechatronics"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {

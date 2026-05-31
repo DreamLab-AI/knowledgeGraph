@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:piracy-prevention",
+  "title": "Piracy Prevention",
+  "slug": "piracy-prevention",
+  "public": true,
+  "classIri": "urn:ngm:class:piracy-prevention",
+  "domain": "security",
+  "definition": "Piracy prevention is the set of technical and procedural measures that deter and detect unauthorised copying, distribution, and use of digital content. It encompasses encryption, licensing, access control, watermarking, and tamper resistance, typically delivered through digital rights management systems. Its objective is to enforce usage rights while balancing legitimate user access and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infrastructure Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management-extended",
+        "label": "Digital Rights Management Extended"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ]
+}

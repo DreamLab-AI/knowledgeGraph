@@ -1,4 +1,5 @@
 public:: true
+alias:: Cryptographic Hash Functions
 
 # cryptographic hash function
 ```json-ld

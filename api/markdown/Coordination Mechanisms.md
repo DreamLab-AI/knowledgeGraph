@@ -1,4 +1,5 @@
 public:: true
+alias:: CoordinationMechanisms
 
 # Coordination Mechanisms
 ```json-ld

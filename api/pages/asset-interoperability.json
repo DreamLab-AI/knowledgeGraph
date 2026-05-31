@@ -72,6 +72,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
       "slug": "nft-wrapping",
       "label": "NFT Wrapping"
     },
@@ -80,8 +84,16 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
       "slug": "universal-manifest",
       "label": "Universal Manifest"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
     }
   ]
 }

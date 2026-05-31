@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:1ffe0426a5e09d3f821d747700dd248360baf912326f288917640d94efa220c6",
+  "title": "Customer Experience Management",
+  "slug": "customer-experience-management",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-experience-management",
+  "domain": "business",
+  "definition": "Customer experience management is the practice of designing and coordinating customer interactions across channels to improve satisfaction and retention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:crm",
+      "label": "CRM"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "crm",
+      "label": "CRM"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

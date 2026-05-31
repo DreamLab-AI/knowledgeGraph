@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:09e213b77b433bf238eb34f574a342ef37d2f3eb4eb90d8acf50727c63026516",
+  "title": "Model Deployment",
+  "slug": "model-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:model-deployment",
+  "domain": "machine-learning",
+  "definition": "The engineering process of making a trained machine learning model available for use in a production environment so that it can serve predictions to applications or users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "label": "ETSI Domain: Data Management + AI"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "tensor-rt",
+      "label": "TensorRT"
+    }
+  ]
+}

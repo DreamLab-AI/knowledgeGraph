@@ -60,6 +60,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
       "slug": "autonomy-level",
       "label": "Autonomy Level"
     },

@@ -1,0 +1,4 @@
+- ### Definition
+  - An AprilTag is a robust square fiducial marker that vision systems detect to recover a unique ID and full 6-DoF pose. It is a standard target for [[Lens and Camera Calibration]] and for providing known reference points in a scene.
+- ### Content
+  - The detector locates the tag's quad border, decodes its error-correcting payload, and solves for the camera-to-tag transform from the known marker geometry. Strong error correction and high contrast make detection reliable at distance and under occlusion, which is why AprilTags anchor robot localization, multi-camera calibration, and AR alignment.

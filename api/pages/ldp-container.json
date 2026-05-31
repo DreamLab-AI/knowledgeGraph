@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ldp-container",
+  "title": "LDP Container",
+  "slug": "ldp-container",
+  "public": true,
+  "classIri": "urn:ngm:class:ldp-container",
+  "domain": "data",
+  "definition": "An LDP Container is a resource defined by the W3C Linked Data Platform specification that groups and manages other linked-data resources, exposing them through HTTP affordances for creation, retrieval, and deletion. Containers come in basic, direct, and indirect variants that differ in how membership triples are generated. They provide the hierarchical, REST-like structure that Solid pods and other LDP servers use to organise data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

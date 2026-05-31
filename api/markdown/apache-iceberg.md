@@ -1,0 +1,4 @@
+- ### Definition
+  - Apache Iceberg is an open table format that brings ACID transactions, schema evolution, and time travel to data-lake files on [[Storage Infrastructure]]. It turns raw object storage into reliable, engine-agnostic tables.
+- ### Content
+  - Iceberg organizes data as immutable snapshots described by hierarchical metadata and manifest files, so writers add new files and atomically swap a metadata pointer rather than mutating in place. This enables concurrent readers and writers, hidden partitioning, and safe schema changes, and its open spec lets multiple query engines share one source of truth in the lakehouse.

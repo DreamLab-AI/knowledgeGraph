@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cross-border-data-transfer",
+  "title": "Cross-Border Data Transfer",
+  "slug": "cross-border-data-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-data-transfer",
+  "domain": "governance",
+  "definition": "Cross-border data transfer is the movement of personal or regulated data across national jurisdictions, governed by data-protection laws that restrict where and how such data may be processed. Compliance mechanisms include adequacy decisions, standard contractual clauses, binding corporate rules, and localisation requirements. It is a central concern of privacy regimes such as GDPR and various Asia-Pacific frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia-Pacific Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

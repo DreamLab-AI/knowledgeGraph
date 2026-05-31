@@ -101,6 +101,10 @@
       "label": "Asset Trading"
     },
     {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
       "slug": "digital-content-layer",
       "label": "Digital Content Layer"
     },
@@ -115,6 +119,10 @@
     {
       "slug": "etsi-domain-governance-economy",
       "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "institutional-investment",
+      "label": "Institutional Investment"
     },
     {
       "slug": "metaverse",

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:client-side-validation-theory",
+  "title": "Client-Side Validation Theory",
+  "slug": "client-side-validation-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:client-side-validation-theory",
+  "domain": "blockchain",
+  "definition": "Client-side validation theory is the conceptual framework in which the validity of state transitions is verified by the affected parties themselves rather than by every node of a global consensus layer, with the blockchain used only to commit to and order single-use seals. Data and proofs are kept off-chain and shared peer-to-peer, so the base chain provides ordering and double-spend prevention without learning transaction contents. It matters because it underpins scalable, private smart-contract systems such as RGB that inherit Bitcoin's security without bloating its chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Blockchain Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client-Side Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

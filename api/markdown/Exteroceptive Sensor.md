@@ -1,4 +1,5 @@
 public:: true
+alias:: ExteroceptiveSensor
 
 # Exteroceptive Sensor
 ```json-ld
@@ -471,8 +472,8 @@ public:: true
       "label": "Environmental Sensor"
     },
     {
-      "@id": "urn:ngm:class:perception-transducer",
-      "label": "Perception Transducer"
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Robo Perception"
     }
   ],
   "relations": {
@@ -632,7 +633,7 @@ public:: true
         "label": "Bird's-Eye-View Perception"
       },
       {
-        "@id": "urn:ngm:class:multi-modal-learning",
+        "@id": "urn:ngm:class:multimodal-learning",
         "label": "Multi-Modal Learning"
       },
       {
@@ -692,7 +693,7 @@ public:: true
         "label": "ROS sensor_msgs"
       },
       {
-        "@id": "urn:ngm:class:sae-j3016",
+        "@id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
       }
     ]

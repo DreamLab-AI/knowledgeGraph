@@ -741,6 +741,10 @@
       "label": "Game Engine"
     },
     {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
       "slug": "physics-engine",
       "label": "Physics Engine"
     },

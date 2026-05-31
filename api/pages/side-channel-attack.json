@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:side-channel-attack",
+  "title": "Side-Channel Attack",
+  "slug": "side-channel-attack",
+  "public": true,
+  "classIri": "urn:ngm:class:side-channel-attack",
+  "domain": "security",
+  "definition": "A side-channel attack recovers secret information by observing physical or behavioural artefacts of a cryptographic implementation rather than breaking its underlying mathematics. Exploitable channels include timing variation, power consumption, electromagnetic emissions, cache access patterns, and acoustic emanations. It is a critical implementation-level threat that motivates constant-time code and masking countermeasures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

@@ -367,8 +367,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:commercial-ai-systems",
-      "label": "Commercial AI Systems"
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     },
     {
       "@id": "urn:ngm:class:text-to-image-generation",
@@ -418,7 +418,7 @@ public:: true
         "label": "API Gateway"
       },
       {
-        "@id": "urn:ngm:individual:midjourney",
+        "@id": "urn:ngm:class:midjourney",
         "label": "Midjourney"
       },
       {
@@ -608,7 +608,7 @@ public:: true
         "label": "C2PA Content Provenance Standards"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "@id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC1 SC42"
       },
       {

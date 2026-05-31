@@ -228,6 +228,26 @@
       "label": "Accessibility"
     },
     {
+      "slug": "aleo",
+      "label": "Aleo"
+    },
+    {
+      "slug": "anoma",
+      "label": "Anoma"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -244,8 +264,36 @@
       "label": "CBDCs"
     },
     {
+      "slug": "ccpa",
+      "label": "CCPA"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
+    },
+    {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
+      "slug": "customer-data-platform",
+      "label": "Customer Data Platform"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "data-protection-law",
+      "label": "Data Protection Law"
+    },
+    {
+      "slug": "david-chaum",
+      "label": "David Chaum"
+    },
+    {
+      "slug": "digital-divide",
+      "label": "Digital Divide"
     },
     {
       "slug": "digital-society-surveillance",
@@ -256,6 +304,10 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
+      "slug": "encryption-service",
+      "label": "Encryption Service"
+    },
+    {
       "slug": "ethical-ai",
       "label": "Ethical AI"
     },
@@ -264,16 +316,48 @@
       "label": "Ethical Framework"
     },
     {
+      "slug": "gdpr-article-25",
+      "label": "GDPR Article 25"
+    },
+    {
+      "slug": "hipaa",
+      "label": "HIPAA"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "open-rights-group",
+      "label": "Open Rights Group"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "sd-jwt-vc",
+      "label": "SD-JWT VC"
     },
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
       "slug": "training-data",
       "label": "Training Data"
+    },
+    {
+      "slug": "transparency-obligation",
+      "label": "Transparency Obligation"
+    },
+    {
+      "slug": "user-sovereignty",
+      "label": "User Sovereignty"
     },
     {
       "slug": "wallet",

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:json-serialisation",
+  "title": "JSON Serialisation",
+  "slug": "json-serialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:json-serialisation",
+  "domain": "data",
+  "definition": "JSON serialisation is the process of encoding in-memory data structures into JavaScript Object Notation text and decoding that text back into structured values. It provides a human-readable, language-independent representation for objects, arrays, numbers, strings and booleans. JSON serialisation is the default interchange format for web APIs, configuration files and message-passing between heterogeneous systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    }
+  ]
+}

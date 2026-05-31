@@ -88,24 +88,56 @@
   ],
   "backlinks": [
     {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
     },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },
     {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
     },
     {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },
     {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
       "slug": "synthetic-data-generator",
       "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
     },
     {
       "slug": "variational-autoencoders",

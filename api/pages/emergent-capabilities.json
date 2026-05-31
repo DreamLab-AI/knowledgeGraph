@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:emergent-capabilities",
+  "title": "Emergent Capabilities",
+  "slug": "emergent-capabilities",
+  "public": true,
+  "classIri": "urn:ngm:class:emergent-capabilities",
+  "domain": "ai",
+  "definition": "Emergent Capabilities are abilities that appear in large language models at scale but are absent or near-random in smaller models, seemingly arising abruptly as parameters, data, or compute increase. Examples include multi-step reasoning, in-context learning, and instruction following. Their unpredictability complicates capability forecasting and is central to debates about scaling and AI safety.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

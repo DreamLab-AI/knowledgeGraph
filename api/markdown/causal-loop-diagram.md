@@ -1,0 +1,4 @@
+- ### Definition
+  - A Causal Loop Diagram represents system variables and their polarised causal links to surface reinforcing and balancing structures, making it the primary notation for reasoning about a [[Feedback Loop]].
+- ### Content
+  - In a CLD, reinforcing loops drive exponential growth or collapse while balancing loops seek equilibrium, and delays on links explain oscillation and overshoot. Analysts use CLDs as the conceptual stage that precedes building stock-and-flow models for quantitative system-dynamics simulation.

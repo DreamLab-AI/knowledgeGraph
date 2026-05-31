@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:data-model",
+  "title": "Data Model",
+  "slug": "data-model",
+  "public": true,
+  "classIri": "urn:ngm:class:data-model",
+  "domain": "data",
+  "definition": "A data model is an abstract specification of how data elements are structured, related and constrained within a domain or system. It defines entities, attributes, relationships and integrity rules at conceptual, logical or physical levels of abstraction. Data models are prerequisites for metadata standards and for designing storage, exchange and querying of data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-management-domain",
+        "label": "Data Management Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-management-domain",
+      "label": "Data Management Domain"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    }
+  ]
+}

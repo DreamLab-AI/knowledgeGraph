@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:smart-bft",
+  "title": "SMaRT-BFT",
+  "slug": "smart-bft",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-bft",
+  "domain": "blockchain",
+  "definition": "SMaRT-BFT is a Byzantine fault tolerant consensus approach built on the SMaRt (State Machine Replication) library, used to order transactions deterministically across a fixed set of validating nodes. It tolerates up to f faulty replicas out of 3f+1 total while guaranteeing safety and liveness under partial synchrony. It is commonly deployed in permissioned ledgers where validator identity is known and high throughput with finality is required.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain as a Service"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    }
+  ]
+}

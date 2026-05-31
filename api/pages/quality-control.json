@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:quality-control",
+  "title": "Quality Control",
+  "slug": "quality-control",
+  "public": true,
+  "classIri": "urn:ngm:class:quality-control",
+  "domain": "ai",
+  "definition": "Quality control is the operational process of inspecting, testing, and verifying products or outputs against defined specifications to detect and remove defects before delivery. In manufacturing it spans dimensional inspection, surface-defect detection, and statistical process control, increasingly automated through machine vision. It reduces scrap, ensures conformance, and provides feedback for process improvement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-domain",
+        "label": "Manufacturing Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

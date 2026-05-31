@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:eff5e7fb78bcbd245650055f37b4fce5bc61aafd03ae50f16c4dc640014bb425",
+  "title": "ISO-IEC TR 24029-1 2021",
+  "slug": "iso-iec-tr-24029-1-2021",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-tr-24029-1-2021",
+  "domain": "standards",
+  "definition": "ISO/IEC TR 24029-1:2021 is a technical report providing an overview of methods for assessing the robustness of neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adversarial-attack",
+      "label": "Adversarial Attack"
+    },
+    {
+      "slug": "adversarial-robustness",
+      "label": "Adversarial Robustness"
+    }
+  ]
+}

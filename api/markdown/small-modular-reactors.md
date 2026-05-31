@@ -1,0 +1,4 @@
+- ### Definition
+  - Small modular reactors are sub-300 MWe nuclear reactors built from factory-fabricated modules with passive safety. They are an emerging option within [[Energy and Power]] infrastructure and contribute to data-centre [[Sustainability]].
+- ### Content
+  - Factory production and standardisation target shorter build times and lower financing risk, while passive cooling reduces reliance on active safety systems. SMRs are being explored as dedicated, carbon-free baseload for hyperscale compute, though regulatory licensing and fuel-cycle questions remain to be resolved at scale.

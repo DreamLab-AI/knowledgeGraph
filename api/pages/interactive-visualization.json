@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:interactive-visualization",
+  "title": "Interactive Visualization",
+  "slug": "interactive-visualization",
+  "public": true,
+  "classIri": "urn:ngm:class:interactive-visualization",
+  "domain": "metaverse",
+  "definition": "Interactive visualization is the graphical presentation of data or models that users can manipulate in real time through navigation, filtering, selection, and parameter adjustment to explore and understand information. It couples rendering with responsive input handling so that views update immediately as the user probes the underlying data or 3D scene. It supports analysis, design review, and decision-making across scientific, engineering, and immersive contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ]
+}

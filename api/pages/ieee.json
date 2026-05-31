@@ -93,6 +93,62 @@
     {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "ieee-1451",
+      "label": "IEEE 1451"
+    },
+    {
+      "slug": "ieee-1588-ptp",
+      "label": "IEEE 1588 PTP"
+    },
+    {
+      "slug": "ieee-1872",
+      "label": "IEEE 1872"
+    },
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "ieee-7000-model-process",
+      "label": "IEEE 7000 Model Process"
+    },
+    {
+      "slug": "ieee-7000",
+      "label": "IEEE 7000"
+    },
+    {
+      "slug": "ieee-802-11",
+      "label": "IEEE 802.11"
+    },
+    {
+      "slug": "ieee-802-3",
+      "label": "IEEE 802.3"
+    },
+    {
+      "slug": "ieee-p-2048-3",
+      "label": "IEEE P2048-3"
+    },
+    {
+      "slug": "ieee-p-2048-9",
+      "label": "IEEE P2048-9"
+    },
+    {
+      "slug": "ieee-p-2048",
+      "label": "IEEE P2048"
+    },
+    {
+      "slug": "ieee-p-7000",
+      "label": "IEEE P7000"
+    },
+    {
+      "slug": "ieee-p-7003-2021",
+      "label": "IEEE P7003-2021"
+    },
+    {
+      "slug": "ieee-p-7009",
+      "label": "IEEE P7009"
     }
   ]
 }

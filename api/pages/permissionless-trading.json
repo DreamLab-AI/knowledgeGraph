@@ -75,6 +75,10 @@
       "label": "Automated Market Maker"
     },
     {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
       "slug": "decentralized-exchange",
       "label": "Decentralized Exchange"
     },

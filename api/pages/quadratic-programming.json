@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:quadratic-programming",
+  "title": "Quadratic Programming",
+  "slug": "quadratic-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:quadratic-programming",
+  "domain": "robotics",
+  "definition": "Quadratic programming (QP) is a class of mathematical optimisation problems in which a quadratic objective function is minimised subject to linear equality and inequality constraints. It is a convex optimisation problem when the quadratic term is positive semidefinite, admitting efficient and globally optimal solvers. QP is foundational to model-based control, trajectory optimisation, and constrained robotic motion generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model-Based Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Stablecoins
 
 # Stable Coins
 ```json-ld
@@ -434,7 +435,7 @@ public:: true
         "label": "Oracle Network"
       },
       {
-        "@id": "urn:ngm:class:reserve-assets",
+        "@id": "urn:ngm:class:reserve-asset",
         "label": "Reserve Assets"
       },
       {
@@ -538,11 +539,11 @@ public:: true
         "label": "Tron Network"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:individual:solana",
+        "@id": "urn:ngm:class:solana",
         "label": "Solana"
       }
     ],

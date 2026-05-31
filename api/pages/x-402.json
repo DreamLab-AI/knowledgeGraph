@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:d2e07be4f83c27dcbc96995a1fc8c80b1a92391e3ad90578107b2a9ce9c128cc",
+  "title": "X402",
+  "slug": "x-402",
+  "public": true,
+  "classIri": "urn:ngm:class:x-402",
+  "domain": "blockchain",
+  "definition": "An open protocol that uses the HTTP 402 Payment Required status code to enable machine-to-machine payments for accessing web resources and services. It allows clients to pay programmatically before a request is served.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-currency",
+      "label": "Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "decentralized-application",
+      "label": "Decentralized Application"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    }
+  ],
+  "backlinks": []
+}

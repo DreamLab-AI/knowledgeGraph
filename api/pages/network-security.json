@@ -79,6 +79,10 @@
       "label": "Consensus Algorithm"
     },
     {
+      "slug": "cryptographic-protocols",
+      "label": "Cryptographic Protocols"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     },
@@ -101,6 +105,22 @@
     {
       "slug": "proof-of-work",
       "label": "Proof Of Work"
+    },
+    {
+      "slug": "staking",
+      "label": "Staking"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
     }
   ]
 }

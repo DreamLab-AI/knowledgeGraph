@@ -1,0 +1,4 @@
+- ### Definition
+  - FMEA is a systematic technique for enumerating and ranking potential failure modes by severity, occurrence, and detectability, used by [[Reliability Engineering]] and as a form of [[Risk Assessment]]. It is a method within safety and standards practice.
+- ### Content
+  - An FMEA proceeds by decomposing a system into items or process steps, listing each item's possible failure modes, tracing their causes and downstream effects, and scoring them to compute Risk Priority Numbers that direct mitigation effort. Variants such as Design FMEA and Process FMEA target different lifecycle stages, and the analysis is most effective when conducted early, revisited iteratively, and tied to verifiable corrective actions.

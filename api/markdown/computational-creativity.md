@@ -1,0 +1,4 @@
+- ### Definition
+  - Computational creativity studies systems that produce novel, valuable artefacts and the means of evaluating their novelty and worth, spanning the [[Creative AI Domain]] and applications such as [[AI in Games]].
+- ### Content
+  - Approaches range from search and constraint methods to deep generative models, paired with metrics for novelty, surprise, and aesthetic value. The discipline grapples with attribution, intentionality, and how to assess outputs without a fixed ground truth.

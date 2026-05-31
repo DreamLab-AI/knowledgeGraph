@@ -68,6 +68,14 @@
   ],
   "backlinks": [
     {
+      "slug": "agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "slug": "anoma",
+      "label": "Anoma"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -80,8 +88,36 @@
       "label": "CRDT"
     },
     {
+      "slug": "centralised-database",
+      "label": "Centralised Database"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "coordination-layer",
+      "label": "Coordination Layer"
+    },
+    {
+      "slug": "dds",
+      "label": "DDS"
+    },
+    {
       "slug": "data-replication",
       "label": "Data Replication"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
     },
     {
       "slug": "decentralized-governance",
@@ -92,8 +128,20 @@
       "label": "Distributed Decision Making"
     },
     {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
       "slug": "etsi-domain-data-management",
       "label": "ETSI Domain: Data Management"
+    },
+    {
+      "slug": "ethernet",
+      "label": "Ethernet"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
     },
     {
       "slug": "internet-infrastructure",
@@ -104,12 +152,36 @@
       "label": "IoT Sensor Network"
     },
     {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },
     {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
+    },
+    {
+      "slug": "publish-subscribe-pattern",
+      "label": "Publish-Subscribe Pattern"
+    },
+    {
+      "slug": "sensor-networks",
+      "label": "Sensor Networks"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
     },
     {
       "slug": "smart-contract",
@@ -122,6 +194,10 @@
     {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
     },
     {
       "slug": "synchronous-execution",

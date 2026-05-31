@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:f47577df72766e2f59542c4ea99a1c6c4e0737e4e8bf5c86ab34b1db5db8b612",
+  "title": "Load Balancer",
+  "slug": "load-balancer",
+  "public": true,
+  "classIri": "urn:ngm:class:load-balancer",
+  "domain": "distributed-systems",
+  "definition": "A component that distributes incoming network or application traffic across multiple servers to improve throughput, reliability and resource utilisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "high-availability",
+      "label": "High Availability"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "networkcomponent",
+      "label": "Networkcomponent"
+    }
+  ]
+}

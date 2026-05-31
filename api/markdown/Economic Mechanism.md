@@ -1,4 +1,5 @@
 public:: true
+alias:: EconomicMechanism
 
 # Economic Mechanism
 ```json-ld

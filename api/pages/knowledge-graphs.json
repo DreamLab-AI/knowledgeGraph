@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:b93ee167b182e4b1a4e6a340599c8ddd0bf3e9169cd3e71267e1181d4c66c14c",
+  "title": "Knowledge Graphs",
+  "slug": "knowledge-graphs",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-graphs",
+  "domain": "general",
+  "definition": "Structured representations of knowledge as entities and the relationships between them, typically expressed as a graph of nodes and labelled edges to support querying and inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

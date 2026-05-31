@@ -55,7 +55,7 @@
         "label": "Markov Chain Monte Carlo"
       },
       {
-        "id": "urn:ngm:class:prediction-market",
+        "id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       }
     ]
@@ -77,6 +77,10 @@
     {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
     }
   ]
 }

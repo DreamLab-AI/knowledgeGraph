@@ -1,0 +1,4 @@
+- ### Definition
+  - The OECD Due Diligence Guidance is a risk-based framework for responsible supply-chain sourcing. It is implemented by and standardises [[Ethical Sourcing]] programmes.
+- ### Content
+  - The guidance prescribes establishing management systems, identifying and assessing supply-chain risks, designing mitigation strategies, conducting independent audits, and publicly reporting on due diligence. Although voluntary in origin, it has been embedded into laws such as the EU Conflict Minerals Regulation, making it a de facto baseline for ethical sourcing of tin, tantalum, tungsten, and gold.

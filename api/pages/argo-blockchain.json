@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:251195a51c3578d2228d52f13e07c6f097fdbb0c6f40bb6251eb3077bb898e39",
+  "title": "Argo Blockchain",
+  "slug": "argo-blockchain",
+  "public": true,
+  "classIri": "urn:ngm:class:argo-blockchain",
+  "domain": "metaverse",
+  "definition": "Argo Blockchain is a publicly listed cryptocurrency mining company that operates data centres performing the hashing that secures proof-of-work networks, chiefly Bitcoin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

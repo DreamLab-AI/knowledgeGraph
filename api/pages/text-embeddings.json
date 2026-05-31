@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:text-embeddings",
+  "title": "Text Embeddings",
+  "slug": "text-embeddings",
+  "public": true,
+  "classIri": "urn:ngm:class:text-embeddings",
+  "domain": "ai",
+  "definition": "Text embeddings are dense numerical vector representations of words, sentences, or documents that place semantically similar text close together in a high-dimensional space. They are produced by neural models trained so that distance or cosine similarity in the vector space reflects meaning rather than surface form. Embeddings are the foundation of semantic search, clustering, and retrieval-augmented generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval-Augmented Generation (RAG)"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

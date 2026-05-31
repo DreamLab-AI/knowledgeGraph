@@ -599,12 +599,12 @@ public:: true
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:business-logic-code",
-      "label": "Business Logic Code"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:multi-party-agreement",
-      "label": "Multi-Party Agreement"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "relations": {

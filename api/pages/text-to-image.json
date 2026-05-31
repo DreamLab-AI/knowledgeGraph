@@ -97,8 +97,20 @@
       "label": "Image Generation"
     },
     {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
     }
   ]
 }

@@ -1,0 +1,4 @@
+- ### Definition
+  - Perpetual futures are expiry-free leveraged derivatives anchored to spot by a funding rate, offered by venues such as [[dYdX]] and [[GMX]].
+- ### Content
+  - The funding mechanism periodically transfers payments from the side trading at a premium to the side at a discount, incentivising arbitrage that keeps the perpetual price near the spot index. On-chain perpetual DEXs implement this with oracle-fed mark prices, automated liquidation engines, and either order books or liquidity-pool counterparties, exposing traders to funding cost, liquidation, and oracle risk.

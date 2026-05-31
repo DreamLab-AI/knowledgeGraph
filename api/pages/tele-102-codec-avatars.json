@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:986ed80805be2d2c5013912d9f7c408ffb3ba031cfc8f4b9f364c564a3bbccd4",
+  "title": "TELE-102-codec-avatars",
+  "slug": "tele-102-codec-avatars",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-102-codec-avatars",
+  "domain": "metaverse",
+  "definition": "Codec Avatars are a research effort by Meta to produce photorealistic, real-time avatars of people that are learned from capture data and driven by sensors to reproduce expression and appearance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:avatar-system",
+      "label": "Avatar System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    },
+    {
+      "slug": "volumetric-capture",
+      "label": "Volumetric Capture"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

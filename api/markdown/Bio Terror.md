@@ -455,8 +455,8 @@ public:: true
       "label": "Biosecurity"
     },
     {
-      "@id": "urn:ngm:class:dual-use-research",
-      "label": "Dual-Use Research"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {
@@ -592,7 +592,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -624,7 +624,7 @@ public:: true
         "label": "Embodied Minds"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],

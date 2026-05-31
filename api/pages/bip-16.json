@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:bip-16",
+  "title": "BIP-16",
+  "slug": "bip-16",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-16",
+  "domain": "blockchain",
+  "definition": "BIP-16 is the Bitcoin Improvement Proposal that introduced Pay-to-Script-Hash (P2SH), allowing funds to be sent to the hash of a redeem script rather than to a full script. The spender supplies the matching script and its satisfying inputs at redemption time, shifting the burden of specifying complex spending conditions from sender to recipient. P2SH made multi-signature and other complex scripts practical and is the standard mechanism behind multi-sig wallet addresses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi-Sig Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

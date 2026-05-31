@@ -1,0 +1,4 @@
+- ### Definition
+  - A spot Ethereum ETF is a regulated [[Digital Asset]] fund holding physical ether and tracking its spot price, giving investors ETH exposure through standard brokerage accounts without managing private keys.
+- ### Content
+  - Each share is backed by ether held with a qualified custodian, distinguishing it from futures-based vehicles and tying its value directly to the underlying [[Cryptocurrency]]. Its authorisation under [[Securities Regulation]] required satisfying surveillance-sharing and custody requirements, and represented a milestone in bringing a second major crypto asset into mainstream regulated investment products.

@@ -1,4 +1,5 @@
 public:: true
+alias:: Robotics Core Concepts
 
 # RoboticsCoreConcepts
 ```json-ld

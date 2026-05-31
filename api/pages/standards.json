@@ -55,6 +55,22 @@
   ],
   "backlinks": [
     {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
+    },
+    {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
+      "slug": "open-standards",
+      "label": "Open Standards"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
       "slug": "standards-compliance",
       "label": "Standards Compliance"
     },

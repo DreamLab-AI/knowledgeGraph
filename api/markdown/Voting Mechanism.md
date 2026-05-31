@@ -1,4 +1,5 @@
 public:: true
+alias:: VotingMechanism
 
 # voting mechanism
 ```json-ld

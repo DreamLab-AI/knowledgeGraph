@@ -1,0 +1,4 @@
+- ### Definition
+  - Market surveillance continuously monitors trading to detect abuse and systemic risk, escalating suspected breaches for enforcement. It is required by [[Securities Regulation]] and intersects with [[AI Liability]] as automated monitoring and trading proliferate.
+- ### Content
+  - Surveillance systems span single-venue and cross-market views, correlating activity to detect coordinated manipulation. As AI-driven trading grows, regulators extend surveillance to algorithmic behaviour, raising governance questions about accountability when autonomous systems contribute to disorderly conditions.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Intelligence amplification augments human cognition with computational tools rather than substituting autonomous machines. It is a recurring theme in narratives about the [[Singularity]] and contrasts with a purely machine-driven [[Intelligence Explosion]].
+- ### Content
+  - Examples range from search and writing assistants to decision-support and exoskeleton-like cognitive prosthetics. The philosophy, traceable to Engelbart and Licklider, prioritises keeping humans in the loop while extending their effective capability.

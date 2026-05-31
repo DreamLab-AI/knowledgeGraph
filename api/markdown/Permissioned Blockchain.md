@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, PermissionedBlockchain
 
 # Permissioned Blockchain
 ```json-ld

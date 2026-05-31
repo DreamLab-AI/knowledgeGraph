@@ -91,6 +91,10 @@
       "label": "Predictive Maintenance"
     },
     {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     },

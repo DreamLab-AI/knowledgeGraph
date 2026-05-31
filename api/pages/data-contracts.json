@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:data-contracts",
+  "title": "Data Contracts",
+  "slug": "data-contracts",
+  "public": true,
+  "classIri": "urn:ngm:class:data-contracts",
+  "domain": "data",
+  "definition": "A data contract is a formal, versioned agreement between data producers and consumers that specifies the schema, semantics, quality guarantees and service-level expectations of a dataset or stream. It makes data interfaces explicit and enforceable, enabling automated validation and breaking-change detection in data pipelines. Data contracts are a metadata-management practice that improves reliability and trust across decentralised data ownership.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

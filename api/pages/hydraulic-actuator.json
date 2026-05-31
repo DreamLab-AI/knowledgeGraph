@@ -12,12 +12,12 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:fluid-power-system",
-      "label": "Fluid Power System"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
-      "id": "urn:ngm:class:force-control-system",
-      "label": "Force Control System"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "entityType": "Class",

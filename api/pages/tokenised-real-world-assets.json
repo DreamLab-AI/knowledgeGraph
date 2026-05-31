@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:tokenised-real-world-assets",
+  "title": "Tokenised Real World Assets",
+  "slug": "tokenised-real-world-assets",
+  "public": true,
+  "classIri": "urn:ngm:class:tokenised-real-world-assets",
+  "domain": "blockchain",
+  "definition": "Tokenised real-world assets (RWAs) are blockchain tokens that represent ownership or economic rights in tangible or traditional financial assets such as property, bonds, equities, or commodities. By mapping off-chain value onto programmable tokens, they enable fractional ownership, continuous settlement, and integration with decentralised finance while still depending on legal frameworks and custodians for enforceability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

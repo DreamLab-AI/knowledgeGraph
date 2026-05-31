@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:b9b358e2f5211595dbdaa8c6a9ffb2ecc55c7d806a824bffbd67892fd3990f06",
+  "title": "SAML",
+  "slug": "saml",
+  "public": true,
+  "classIri": "urn:ngm:class:saml",
+  "domain": "artificial-intelligence",
+  "definition": "Security Assertion Markup Language: an XML-based open standard for exchanging authentication and authorisation data between an identity provider and a service provider.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

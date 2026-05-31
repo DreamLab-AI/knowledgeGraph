@@ -87,6 +87,10 @@
       "label": "Model Control Protocols like MCP"
     },
     {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
     }

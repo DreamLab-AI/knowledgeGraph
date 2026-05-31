@@ -1,0 +1,4 @@
+- ### Definition
+  - A retention policy governs how long data is kept before archival or deletion, applied to artefacts such as [[Meeting Recording]] and forming part of the [[Data Governance Domain]].
+- ### Content
+  - Policies balance regulatory minimums against privacy mandates like data minimisation and right-to-erasure. Automated lifecycle rules trigger tiered storage, archival, and secure disposal so that retention is enforced uniformly rather than manually.

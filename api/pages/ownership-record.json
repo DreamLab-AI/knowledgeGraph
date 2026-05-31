@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ownership-record",
+  "title": "Ownership Record",
+  "slug": "ownership-record",
+  "public": true,
+  "classIri": "urn:ngm:class:ownership-record",
+  "domain": "blockchain",
+  "definition": "An Ownership Record is a persistent entry that attests who holds title to an asset at a given time. On a blockchain it is an immutable, timestamped ledger entry binding an asset identifier to a controlling address, providing tamper-evident provenance and transfer history. Such records underpin tokenized assets like certificates and royalty instruments where verifiable, auditable ownership is essential.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Blockchain Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    }
+  ]
+}

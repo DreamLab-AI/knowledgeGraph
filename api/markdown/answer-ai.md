@@ -1,0 +1,4 @@
+- ### Definition
+  - Answer.AI is an applied research lab co-founded by Jeremy Howard that builds practical, open machine-learning tools. It is closely related to [[fast.ai]], sharing its pragmatic, accessibility-first research philosophy.
+- ### Content
+  - The lab favours research that ships as usable software, releasing libraries for efficient fine-tuning, agent tooling, and developer ergonomics. Its output targets practitioners deploying models in production, prioritizing reproducible methods, clear documentation, and techniques that work on modest hardware over leaderboard-chasing scale.

@@ -60,6 +60,14 @@
   ],
   "backlinks": [
     {
+      "slug": "code-review",
+      "label": "Code Review"
+    },
+    {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
       "slug": "performance-benchmarks",
       "label": "Performance Benchmarks"
     }

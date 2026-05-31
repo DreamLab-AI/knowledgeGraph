@@ -1,0 +1,4 @@
+- ### Definition
+  - Data preprocessing transforms raw data into a clean, model-ready form, encompassing [[Data Cleaning]] and [[Feature Engineering]] as constituent steps of the machine learning pipeline.
+- ### Content
+  - Typical operations include handling missing values, removing outliers, scaling numeric features, encoding categoricals and constructing informative derived features. Because models learn only from what they are given, disciplined preprocessing is often the highest-leverage step in improving performance.

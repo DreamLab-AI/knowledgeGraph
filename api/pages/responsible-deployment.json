@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:responsible-deployment",
+  "title": "Responsible Deployment",
+  "slug": "responsible-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:responsible-deployment",
+  "domain": "ai",
+  "definition": "Responsible deployment is the disciplined release of AI systems into production with safeguards that manage risk to users and society throughout the system lifecycle. It involves staged rollout, monitoring, impact assessment, access controls, and the ability to roll back or restrict capabilities when harms emerge. It operationalises governance principles at the point where models meet real users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-impact-assessment-sia",
+        "label": "Social Impact Assessment (SIA)"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-domain",
+        "label": "AI Governance Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    }
+  ]
+}

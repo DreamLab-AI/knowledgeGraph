@@ -1,4 +1,5 @@
 public:: true
+alias:: account-abstraction
 
 # Account Abstraction
 ```json-ld
@@ -252,7 +253,7 @@ public:: true
         "label": "Signature Verification"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {

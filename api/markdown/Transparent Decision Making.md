@@ -1,4 +1,5 @@
 public:: true
+alias:: TransparentDecisionMaking
 
 # Transparent Decision Making
 ```json-ld

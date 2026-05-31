@@ -1,4 +1,5 @@
 public:: true
+alias:: TrustAndGovernanceDomain
 
 # Trust and Governance Domain
 ```json-ld

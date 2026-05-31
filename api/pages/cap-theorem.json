@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:63468c27dee0c80fbc3878c4be8e410de2e2ad3301efa2080623986b3e9d1f51",
+  "title": "CAP Theorem",
+  "slug": "cap-theorem",
+  "public": true,
+  "classIri": "urn:ngm:class:cap-theorem",
+  "domain": "cap-theorem",
+  "definition": "The CAP Theorem states that a distributed data store cannot simultaneously guarantee all three of consistency, availability and partition tolerance. When a network partition occurs and messages between nodes are lost or delayed, a system must choose between remaining available, by serving possibly stale data, and remaining consistent, by refusing requests it cannot safely satisfy. Formulated by Eric Brewer and later proved formally by Gilbert and Lynch, it frames a fundamental trade-off in distributed systems design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-database-design",
+        "label": "Distributed Database Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-database-design",
+      "label": "Distributed Database Design"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "gilbert-and-lynch-2002",
+      "label": "Gilbert and Lynch (2002)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

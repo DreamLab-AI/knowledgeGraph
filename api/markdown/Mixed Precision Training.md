@@ -1,4 +1,5 @@
 public:: true
+alias:: Mixed-Precision Training
 
 # Mixed Precision Training
 ```json-ld

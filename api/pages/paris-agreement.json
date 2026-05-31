@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:9087fa5930e92627dfd061ea7d585ae73f25c0011e39428b8472293726517ff7",
+  "title": "Paris Agreement",
+  "slug": "paris-agreement",
+  "public": true,
+  "classIri": "urn:ngm:class:paris-agreement",
+  "domain": "governance",
+  "definition": "An international treaty on climate change adopted in 2015 under which parties commit to limiting global temperature rise and to reporting on their emissions reduction efforts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "voluntary-carbon-market",
+      "label": "Voluntary Carbon Market"
+    },
+    {
+      "slug": "carbon-credits",
+      "label": "Carbon Credits"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

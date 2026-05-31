@@ -1,0 +1,4 @@
+- ### Definition
+  - The Internet of Agents is a network where autonomous agents discover and collaborate via shared protocols. It overlaps with the [[Agentic Internet]] vision and draws on the [[Decentralised Web]] for open, permissionless interaction.
+- ### Content
+  - Realising it requires agent identity, capability discovery, secure messaging, and economic settlement layers so agents can delegate work and verify counterparties. Emerging interoperability protocols aim to make agent-to-agent commerce and coordination as routine as web requests are today.

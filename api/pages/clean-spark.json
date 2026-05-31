@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:2d98624ff4e8b975cf838196055bb00a4a2111127a6e7904ad618e1c3976ac6c",
+  "title": "CleanSpark",
+  "slug": "clean-spark",
+  "public": true,
+  "classIri": "urn:ngm:class:clean-spark",
+  "domain": "blockchain",
+  "definition": "A publicly traded company that operates Bitcoin mining facilities in the United States, focusing on the use of low-cost and lower-carbon energy sources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

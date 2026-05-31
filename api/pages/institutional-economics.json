@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:d39a1671f3189454d6ce766a7da5194ce796a20f45042309b2c998f0077f636f",
+  "title": "Institutional Economics",
+  "slug": "institutional-economics",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-economics",
+  "domain": "general",
+  "definition": "A school of economic thought that studies how institutions, the formal and informal rules governing behaviour, shape economic activity and outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "property-rights",
+      "label": "Property Rights"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "institutional-investment",
+      "label": "Institutional Investment"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "Institutional Layer"
+    }
+  ]
+}

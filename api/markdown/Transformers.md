@@ -435,8 +435,8 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:sequence-modelling",
-      "label": "Sequence Modelling"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
       "@id": "urn:ngm:class:attention-mechanism",
@@ -604,15 +604,15 @@ public:: true
         "label": "Whisper"
       },
       {
-        "@id": "urn:ngm:individual:bert",
+        "@id": "urn:ngm:class:bert",
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:individual:claude",
+        "@id": "urn:ngm:class:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:individual:gemini",
+        "@id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
@@ -620,15 +620,15 @@ public:: true
         "label": "GPT"
       },
       {
-        "@id": "urn:ngm:individual:lla-ma",
+        "@id": "urn:ngm:class:llama",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:individual:mistral",
+        "@id": "urn:ngm:class:mistral",
         "label": "Mistral"
       },
       {
-        "@id": "urn:ngm:individual:t5",
+        "@id": "urn:ngm:class:t5",
         "label": "T5"
       }
     ],

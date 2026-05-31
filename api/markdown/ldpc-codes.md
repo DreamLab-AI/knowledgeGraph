@@ -1,0 +1,4 @@
+- ### Definition
+  - LDPC codes are capacity-approaching linear codes that form a key building block of [[Forward Error Correction]], operating in the [[Physical Layer]] of modern wireless and broadcast systems.
+- ### Content
+  - The sparse parity-check matrix is represented as a Tanner graph over which messages are passed between variable and check nodes until convergence. Code rate, block length, and decoder iteration count trade off coding gain against latency and silicon cost.

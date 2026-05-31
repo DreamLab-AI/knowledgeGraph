@@ -1,0 +1,4 @@
+- ### Definition
+  - Educational Credentials are verifiable attestations of learning, such as degrees and certificates. As verifiable credentials they support [[Self-Sovereign Identity]] and [[Distributed Identity]] by letting learners hold and present signed proofs of achievement.
+- ### Content
+  - Issuers sign credentials that conform to standards such as W3C Verifiable Credentials, binding claims to a learner's decentralised identifier. Verifiers check signatures and revocation status cryptographically, enabling instant, tamper-evident validation while minimising disclosure of personal data.

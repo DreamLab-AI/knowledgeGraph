@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:ebsi",
+  "title": "EBSI",
+  "slug": "ebsi",
+  "public": true,
+  "classIri": "urn:ngm:class:ebsi",
+  "domain": "blockchain",
+  "definition": "The European Blockchain Services Infrastructure (EBSI) is a pan-European permissioned blockchain network operated by EU member states and the European Commission to deliver cross-border public services. It anchors verifiable credentials and decentralised identifiers, enabling trusted exchange of diplomas, official documents, and identity attestations between governments. EBSI is a leading example of a public-sector consortium blockchain supporting self-sovereign identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Blockchain Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

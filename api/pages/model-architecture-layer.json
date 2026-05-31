@@ -1,0 +1,150 @@
+{
+  "id": "urn:visionflow:page:33af29676ebbbccfc1b67eb34b2dd0103f86f5b55b71271be9f35fb8c9d5ce9f",
+  "title": "Model Architecture Layer",
+  "slug": "model-architecture-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:model-architecture-layer",
+  "domain": "model-architecture",
+  "definition": "The Model Architecture Layer is the stratum that specifies the structural design of a machine learning model: its operators, connectivity, and parameterisation. It sits above the Algorithm Layer, which supplies the primitives it composes, and below the Model Layer, which holds trained instances of these architectures. It contains layer definitions, network topologies, and architectural hyperparameters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm-layer",
+        "label": "Algorithm Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      },
+      {
+        "id": "urn:ngm:class:training-layer",
+        "label": "Training Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "foundation-model-layer",
+      "label": "Foundation Model Layer"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

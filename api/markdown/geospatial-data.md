@@ -1,0 +1,4 @@
+- ### Definition
+  - Geospatial data binds attributes to locations through coordinates and geometries, and is a required input for [[Logistics Optimization]] and closely related to [[Point Cloud Generation]] for 3D spatial capture.
+- ### Content
+  - It is stored in vector formats (points, lines, polygons) and raster formats (imagery, elevation grids), referenced to coordinate systems and datums. Geographic information systems and spatial databases index it for queries such as nearest-neighbour, routing, and overlay analysis. Standards from the OGC and ISO ensure interoperability across mapping, remote sensing, and location services.

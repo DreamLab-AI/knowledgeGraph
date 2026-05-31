@@ -125,7 +125,7 @@
         "label": "Indistinguishability"
       },
       {
-        "id": "urn:ngm:class:pre-image-resistance",
+        "id": "urn:ngm:class:preimage-resistance",
         "label": "Pre-Image Resistance"
       },
       {
@@ -191,11 +191,11 @@
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -701,6 +701,10 @@
       "label": "Atomic Swap"
     },
     {
+      "slug": "bitcoin-cash",
+      "label": "Bitcoin Cash"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -709,12 +713,20 @@
       "label": "Blockchain Protocol"
     },
     {
+      "slug": "cryptographic-layer",
+      "label": "Cryptographic Layer"
+    },
+    {
       "slug": "cryptographic-primitive",
       "label": "Cryptographic Primitive"
     },
     {
       "slug": "cryptographic-protocol",
       "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",
@@ -735,6 +747,18 @@
     {
       "slug": "distributed-identity",
       "label": "Distributed Identity"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "hashcash",
+      "label": "Hashcash"
     },
     {
       "slug": "instant-value-settlement",
@@ -765,6 +789,10 @@
       "label": "Random Number Generation"
     },
     {
+      "slug": "random-oracle-model",
+      "label": "Random Oracle Model"
+    },
+    {
       "slug": "stablecoin-regulation",
       "label": "Stablecoin Regulation"
     },
@@ -775,6 +803,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "timestamping-service",
+      "label": "Timestamping Service"
     },
     {
       "slug": "verifiable-credentials",

@@ -475,12 +475,12 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:ar-hardware",
-      "label": "AR Hardware"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     },
     {
-      "@id": "urn:ngm:class:optical-see-through-hmd",
-      "label": "Optical See-Through HMD"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "relations": {
@@ -716,7 +716,7 @@ public:: true
         "label": "USB-IF"
       },
       {
-        "@id": "urn:ngm:class:w3-c-web-xr",
+        "@id": "urn:ngm:class:w-3-c-web-xr",
         "label": "W3C WebXR"
       }
     ]

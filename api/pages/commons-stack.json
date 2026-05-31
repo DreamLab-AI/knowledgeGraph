@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:68774d58f998b39ccee534c81545de833ba131abd06d36c6a5ce560a4b9036b0",
+  "title": "Commons Stack",
+  "slug": "commons-stack",
+  "public": true,
+  "classIri": "urn:ngm:class:commons-stack",
+  "domain": "defi",
+  "definition": "Commons Stack is an initiative providing tools and economic models for funding and governing public goods through token-based communities. It draws on mechanisms such as bonding curves and continuous funding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-goods-funding",
+      "label": "Public Goods Funding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "public-goods-funding",
+      "label": "Public Goods Funding"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

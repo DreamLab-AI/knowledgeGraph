@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-platform-authentication",
+  "title": "Cross-Platform Authentication",
+  "slug": "cross-platform-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-platform-authentication",
+  "domain": "security",
+  "definition": "Cross-platform authentication is the verification of a user's identity in a way that is valid across multiple platforms, devices, or virtual worlds without re-registration. It uses federated identity, single sign-on, and portable credentials so that one verified identity unlocks access everywhere. It is a foundational requirement for interoperable avatars and multiverse experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

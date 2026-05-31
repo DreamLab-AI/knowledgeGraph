@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:92478159d64bd2cc56a5cac596b7bf3a0b3eccf7a6d0b428bafa8f9897748f1f",
+  "title": "Model Optimization",
+  "slug": "model-optimization",
+  "public": true,
+  "classIri": "urn:ngm:class:model-optimization",
+  "domain": "machine-learning",
+  "definition": "Model optimisation is the set of techniques that reduce the size or computational cost of a trained model while preserving accuracy. It includes quantisation, pruning and distillation to make deployment more efficient.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
+}

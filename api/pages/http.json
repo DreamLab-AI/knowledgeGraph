@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:863f56516448fcb5392faaf6e769fcc8fe564fbd3eca3b6807dafcd5bdfdf09c",
+  "title": "HTTP",
+  "slug": "http",
+  "public": true,
+  "classIri": "urn:ngm:class:http",
+  "domain": "general",
+  "definition": "The Hypertext Transfer Protocol, a stateless application-layer protocol for transferring hypertext and other resources between clients and servers that underpins the World Wide Web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:application-layer",
+      "label": "Application Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "dns",
+      "label": "DNS"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "rest",
+      "label": "REST"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

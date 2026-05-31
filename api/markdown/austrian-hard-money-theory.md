@@ -1,0 +1,4 @@
+- ### Definition
+  - Austrian hard money theory argues that sound money requires a supply that cannot be inflated at will, making it a credible [[Store of Value]]. It provides the economic justification for [[Bitcoin as Money]].
+- ### Content
+  - Drawing on Mises and Hayek, the theory treats monetary expansion as the root of business cycles and capital misallocation. Proponents view Bitcoin's fixed 21-million-coin cap and predictable issuance as a digital implementation of hard money principles, contrasting it with discretionary fiat regimes.

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:806d4c2b7c78c6d53488a8e59e7ad57edfe8ef0b822dadad183559341a8fcb88",
+  "title": "L402",
+  "slug": "l-402",
+  "public": true,
+  "classIri": "urn:ngm:class:l-402",
+  "domain": "blockchain",
+  "definition": "An authentication and payment protocol that combines the HTTP 402 Payment Required status code with Lightning Network invoices and macaroon-based authorisation tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "l-402-protocol",
+      "label": "L402 Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "l-402-protocol",
+      "label": "L402 Protocol"
+    }
+  ]
+}

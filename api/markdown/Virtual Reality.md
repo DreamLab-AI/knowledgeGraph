@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualReality
 
 # Virtual Reality
 ```json-ld

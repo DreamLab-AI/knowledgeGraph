@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:5629502975e77529c195b938a46a18e5aff309f0aaafd6754d36eee710898697",
+  "title": "Validation Rules",
+  "slug": "validation-rules",
+  "public": true,
+  "classIri": "urn:ngm:class:validation-rules",
+  "domain": "general",
+  "definition": "Defined constraints that data or input must satisfy to be accepted, used to enforce correctness, consistency and integrity before processing or storage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "calculation-parameters",
+      "label": "Calculation Parameters"
+    },
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

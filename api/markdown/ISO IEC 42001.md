@@ -1,4 +1,5 @@
 public:: true
+alias:: ISO/IEC 42001
 
 # iso iec 42001
 ```json-ld

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:63a6983f7696ce77fd73627d91bd2f3da5c9c9b91d207bca5e22870bb1d49a2d",
+  "title": "TC-0080-Team-Coordination",
+  "slug": "tc-0080-team-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:tc-0080-team-coordination",
+  "domain": "metaverse",
+  "definition": "Team coordination is the management of dependencies between people, tasks and resources so that members of a group act in a consistent and timely way towards shared objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "project-management",
+      "label": "Project Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    }
+  ]
+}

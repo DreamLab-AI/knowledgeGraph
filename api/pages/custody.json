@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:e78b6d6989ed232289266673d7c22a9fc7339633c3bb92b8dd764406b1534bff",
+  "title": "Custody",
+  "slug": "custody",
+  "public": true,
+  "classIri": "urn:ngm:class:custody",
+  "domain": "blockchain",
+  "definition": "The holding and safekeeping of assets and the keys that control them, defining who has the authority to move funds on behalf of an owner.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:custody-infrastructure",
+      "label": "Custody Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "institutional-custody",
+      "label": "Institutional Custody"
+    },
+    {
+      "slug": "custody-infrastructure",
+      "label": "Custody Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asset-management",
+      "label": "Asset Management"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "copper-co",
+      "label": "Copper.co"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

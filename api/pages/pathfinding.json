@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:dd7e951f19884014e14bb2839fc1cf7fcb8e906e35a03e89395bbf8d8b45e351",
+  "title": "Pathfinding",
+  "slug": "pathfinding",
+  "public": true,
+  "classIri": "urn:ngm:class:pathfinding",
+  "domain": "general",
+  "definition": "Pathfinding is the computation of a route between two points in a graph or space, often the shortest or lowest-cost route. It is widely used in games, robotics, and navigation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "pathfinding-algorithm",
+      "label": "Pathfinding Algorithm"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-pathfinding",
+      "label": "https://en.wikipedia.org/wiki/Pathfinding"
+    },
+    {
+      "slug": "https-www-redblobgames-com-pathfinding-a-star-introduction-html",
+      "label": "https://www.redblobgames.com/pathfinding/a-star/introduction.html"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "search-algorithms",
+      "label": "Search Algorithms"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Dense retrieval matches queries to documents by comparing learned embeddings in a shared vector space. It is the engine behind [[Embedding Search]] and a common implementation of [[Semantic Search]].
+- ### Content
+  - A bi-encoder produces fixed-length vectors stored in an ANN index (HNSW, IVF); retrieval is a nearest-neighbour lookup over these vectors. Compared with sparse lexical methods such as BM25, dense retrieval captures synonymy and paraphrase but can miss exact-term matches, motivating hybrid dense-plus-sparse pipelines.

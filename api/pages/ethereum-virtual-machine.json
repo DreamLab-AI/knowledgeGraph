@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:91cf97b859c05a1a1522e6cdaa051f0564bf8b26581f2bbf1b95a0604f2e4480",
+  "title": "Ethereum Virtual Machine",
+  "slug": "ethereum-virtual-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:ethereum-virtual-machine",
+  "domain": "blockchain",
+  "definition": "The deterministic stack-based virtual machine that executes Ethereum smart contract bytecode and updates the shared world state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contracts",
+        "label": "Ethereum Smart Contracts"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "Smart Contract Layer"
+    },
+    {
+      "slug": "vyper",
+      "label": "Vyper"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:reporting-mechanisms",
+  "title": "Reporting Mechanisms",
+  "slug": "reporting-mechanisms",
+  "public": true,
+  "classIri": "urn:ngm:class:reporting-mechanisms",
+  "domain": "governance",
+  "definition": "Reporting mechanisms are the user-facing tools and processes through which people flag illegal content, abuse, or policy violations to a platform or authority. They are a mandated component of content-moderation regimes, requiring accessible channels, acknowledgement, and traceable handling of notices. Well-designed mechanisms balance ease of reporting against abuse of the reporting system itself.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse Governance and Safeguarding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    }
+  ]
+}

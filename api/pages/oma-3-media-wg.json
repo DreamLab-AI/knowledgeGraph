@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:aa40e9688325468c50e1f31af1150425106fc255a742b3ecf40e19410e34359f",
+  "title": "OMA3 Media WG",
+  "slug": "oma-3-media-wg",
+  "public": true,
+  "classIri": "urn:ngm:class:oma-3-media-wg",
+  "domain": "metaverse",
+  "definition": "A working group within the Open Metaverse Alliance for Web3 (OMA3) focused on media-related interoperability standards for metaverse and Web3 applications. It coordinates specifications among member organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:oma-3",
+      "label": "OMA3"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:oma-3",
+        "label": "OMA3"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "oma-3",
+      "label": "OMA3"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    }
+  ],
+  "backlinks": []
+}

@@ -103,8 +103,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:distributed-agreement",
-      "label": "Distributed Agreement"
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol And Consensus"
     },
     {
       "@id": "urn:ngm:class:consensus-mechanism",

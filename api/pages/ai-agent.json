@@ -1,0 +1,138 @@
+{
+  "id": "urn:visionflow:page:73d762cf4574064331f4f3e6cf83504b1e2c6e77b16b557999e239ced5845903",
+  "title": "AI Agent",
+  "slug": "ai-agent",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-agent",
+  "domain": "artificial-intelligence",
+  "definition": "A software system that perceives its environment, makes decisions and takes actions to achieve goals, often using a language model together with tools and memory.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-agent",
+      "label": "Autonomous Agent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "growing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "auto-gpt",
+      "label": "AutoGPT"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "enterprise-workflow",
+      "label": "Enterprise Workflow"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-ai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

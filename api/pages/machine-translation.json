@@ -112,6 +112,10 @@
   ],
   "backlinks": [
     {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
     },

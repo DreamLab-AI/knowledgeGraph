@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:persistence-layer",
+  "title": "Persistence Layer",
+  "slug": "persistence-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:persistence-layer",
+  "domain": "infrastructure",
+  "definition": "A persistence layer is the architectural tier responsible for durably storing and retrieving application state across sessions and process restarts. It abstracts the underlying storage technology, databases, object stores, or distributed logs, behind a uniform interface for reading and writing data. In agent and spatial-computing systems it preserves memory, anchors, and context so that state survives beyond a single runtime.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    }
+  ]
+}

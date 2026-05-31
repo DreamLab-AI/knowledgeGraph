@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:a679cafa3e852e467763a1d15a1effba0a6c83a3e96fa2b92fb9980ff51a32aa",
+  "title": "HM Treasury",
+  "slug": "hm-treasury",
+  "public": true,
+  "classIri": "urn:ngm:class:hm-treasury",
+  "domain": "government",
+  "definition": "HM Treasury is the United Kingdom government department responsible for economic and financial policy, including taxation, public spending, and financial services regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-regulation",
+      "label": "Financial Regulation"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Monitoring infrastructure collects and analyses metrics, logs, and traces to observe system health and performance. It is required to compute an [[Environmental Impact Metric]] and to support [[AI Monitoring]].
+- ### Content
+  - A typical stack ingests telemetry via agents into a time-series store, surfaces it through dashboards, and triggers alerts on thresholds or anomalies. For AI workloads it additionally captures inference latency, data and concept drift, token cost, and energy and carbon figures needed for sustainability reporting.

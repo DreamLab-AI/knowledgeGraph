@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:enterprise-automation",
+  "title": "Enterprise Automation",
+  "slug": "enterprise-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-automation",
+  "domain": "ai",
+  "definition": "Enterprise automation is the application of software and AI to execute repeatable business processes with minimal human intervention across an organisation. It combines techniques such as robotic process automation, workflow orchestration, business rules engines, and increasingly AI agents that handle unstructured tasks. The goal is to reduce cost, error rates, and cycle time while freeing human workers for higher-value activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    }
+  ]
+}

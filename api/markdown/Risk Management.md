@@ -1,4 +1,5 @@
 public:: true
+alias:: RiskManagement
 
 # Risk Management
 ```json-ld

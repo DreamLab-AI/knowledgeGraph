@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:47b26585eab3c82acbbcb74135f9af3d15de7abcc504c736b059fdc0b4cccd52",
+  "title": "ERC-7540",
+  "slug": "erc-7540",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-7540",
+  "domain": "standards",
+  "definition": "ERC-7540 extends the ERC-4626 tokenised vault interface to support asynchronous deposit and redemption requests.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

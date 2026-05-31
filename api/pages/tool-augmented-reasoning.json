@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:d4c9e12380acc7e5369eb0e7f9c669b50751c218e1c719782937e7c6455fdd19",
+  "title": "Tool-Augmented Reasoning",
+  "slug": "tool-augmented-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-augmented-reasoning",
+  "domain": "ai",
+  "definition": "Tool-augmented reasoning is an approach in which a language model invokes external tools such as calculators, search or code execution to solve tasks beyond its parametric knowledge. The model interleaves reasoning steps with tool calls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    }
+  ]
+}

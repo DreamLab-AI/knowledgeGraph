@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:45c136d8f686da8a20bdaaf04901279178e2518f01466eba25a5a51bf8c51b5a",
+  "title": "GPU",
+  "slug": "gpu",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu",
+  "domain": "general",
+  "definition": "A GPU (Graphics Processing Unit) is a highly parallel processor optimised for the throughput-oriented computation required to render images and to accelerate data-parallel workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-processing",
+      "label": "Graphics Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "shader",
+      "label": "Shader"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "gpu-cluster",
+      "label": "GPU Cluster"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "nvidia-h-100",
+      "label": "NVIDIA H100"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    },
+    {
+      "slug": "web-gl",
+      "label": "WebGL"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
+    }
+  ]
+}

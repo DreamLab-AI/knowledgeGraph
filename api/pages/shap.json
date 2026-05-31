@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:1da538899a01ba70168b399f5f2b3b49122ca5a355369565bd16a69fa79759c2",
+  "title": "SHAP",
+  "slug": "shap",
+  "public": true,
+  "classIri": "urn:ngm:class:shap",
+  "domain": "shap",
+  "definition": "SHAP, short for SHapley Additive exPlanations, is a method for explaining the output of machine-learning models by attributing each prediction to its input features. It is grounded in Shapley values from cooperative game theory, which fairly distribute a payoff among contributors, treating each feature as a player and the prediction as the payoff. SHAP provides locally accurate, consistent feature attributions and unifies several earlier explanation techniques under a common framework.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-domain",
+      "label": "Machine Learning Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "shapley-value",
+      "label": "Shapley Value"
+    },
+    {
+      "slug": "machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "lundberg-and-lee-a-unified-approach-to-interpreting-model-predictions-2017",
+      "label": "Lundberg and Lee, A Unified Approach to Interpreting Model Predictions (2017)"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "global-explanation",
+      "label": "Global Explanation"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "local-explanation",
+      "label": "Local Explanation"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "label": "Transparency and Explainability"
+    }
+  ]
+}

@@ -380,7 +380,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:pre-trained-model",
+        "@id": "urn:ngm:class:pretrained-model",
         "label": "Pre-trained Model"
       },
       {
@@ -522,27 +522,27 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:individual:gemini",
+        "@id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:individual:lla-ma",
+        "@id": "urn:ngm:class:llama",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:individual:llama-3",
+        "@id": "urn:ngm:class:llama-3",
         "label": "Llama 3"
       },
       {
-        "@id": "urn:ngm:individual:mistral-and-mixtral",
+        "@id": "urn:ngm:class:mistral-and-mixtral",
         "label": "Mistral and Mixtral"
       },
       {

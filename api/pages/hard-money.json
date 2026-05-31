@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:hard-money",
+  "title": "Hard Money",
+  "slug": "hard-money",
+  "public": true,
+  "classIri": "urn:ngm:class:hard-money",
+  "domain": "blockchain",
+  "definition": "Hard money refers to a form of money whose supply is difficult to expand, giving it a high stock-to-flow ratio and resistance to debasement. Historically embodied by gold, the concept extends to assets like Bitcoin whose issuance is algorithmically constrained. Hard money is valued as a store of value because its scarcity cannot be diluted by discretionary issuance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gold",
+      "label": "Gold"
+    }
+  ]
+}

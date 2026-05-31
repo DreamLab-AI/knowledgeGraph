@@ -85,6 +85,10 @@
     {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     }
   ]
 }

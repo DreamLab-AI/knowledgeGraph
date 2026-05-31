@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:iso-tc-299",
+  "title": "ISO/TC 299",
+  "slug": "iso-tc-299",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-tc-299",
+  "domain": "robotics",
+  "definition": "ISO/TC 299 is the ISO technical committee responsible for standardization in the field of robotics, excluding toys and military applications. It develops international standards covering robot terminology, safety requirements, performance criteria and modularity for industrial, service and collaborative robots. Its work underpins the regulatory and interoperability framework for robot deployment worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

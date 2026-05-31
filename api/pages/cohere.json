@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:3c39053f39a8bdcf05b07a21c1c5f8b6a747ea10117a8e7a54279b61ed63f479",
+  "title": "Cohere",
+  "slug": "cohere",
+  "public": true,
+  "classIri": "urn:ngm:class:cohere",
+  "domain": "natural-language-processing",
+  "definition": "Cohere is a company that develops large language models and text embedding models offered through an API, with a focus on enterprise applications. Its products include generation, embedding and reranking models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

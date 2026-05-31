@@ -1,0 +1,4 @@
+- ### Definition
+  - Knowledge transfer is the spread of skills and expertise between people or teams; it is directly enabled by and closely related to [[Remote Pair Programming]], where two developers share context in real time.
+- ### Content
+  - Transfer is most effective when it surfaces tacit knowledge through demonstration, narration and feedback rather than documentation alone. In software teams, pairing, code review and shared incident response accelerate it, reducing key-person risk and raising collective competence across the codebase.

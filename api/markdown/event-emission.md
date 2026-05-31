@@ -1,0 +1,4 @@
+- ### Definition
+  - Event emission is how a [[Smart Contract]] publishes structured logs of significant occurrences, forming a record that downstream systems such as an [[Agent Event Stream]] consume.
+- ### Content
+  - Because contracts cannot call external systems, emitted events written to transaction logs are the standard outbound channel. Indexers and dApps subscribe to these logs to track state changes cheaply and reconstruct application history.

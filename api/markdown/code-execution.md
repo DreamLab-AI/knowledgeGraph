@@ -1,0 +1,4 @@
+- ### Definition
+  - Code Execution lets an AI agent write and run code in a sandboxed runtime and feed the results back into its reasoning, a core capability underpinning [[CLI Multi-Agent Systems]].
+- ### Content
+  - Implementations isolate execution in containers or restricted interpreters to contain side effects, enforce resource limits, and mediate filesystem and network access. Coupled with tool-calling and planning, code execution enables agents to perform data analysis, run tests, and self-correct by inspecting program output.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Expectation Maximisation is an iterative method for fitting [[Probabilistic Model]]s containing latent variables, alternating an expectation step with a maximisation step to climb the likelihood surface. It underlies inference in mixture models and is closely related to the recursive estimation performed by a [[Bayes Filter]].
+- ### Content
+  - Each EM iteration is guaranteed not to decrease the observed-data likelihood, which makes it numerically stable, though it may converge to local optima and is sensitive to initialisation. Common applications include clustering with Gaussian mixtures, training hidden Markov models, and imputing missing data, where the latent structure makes direct [[Optimisation]] of the marginal likelihood intractable.

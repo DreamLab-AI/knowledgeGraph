@@ -1,4 +1,5 @@
 public:: true
+alias:: Non-Linear Narrative
 
 # Non Linear Narrative
 ```json-ld

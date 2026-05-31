@@ -12,12 +12,12 @@
       "label": "Standards and Interoperability"
     },
     {
-      "id": "urn:ngm:class:extended-reality-api",
-      "label": "Extended Reality API"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     },
     {
-      "id": "urn:ngm:class:khronos-group-standard",
-      "label": "Khronos Group Standard"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "SC Standards And Interop"
     }
   ],
   "entityType": "Class",
@@ -310,6 +310,14 @@
       "label": "Gazebo Simulator"
     },
     {
+      "slug": "khronos-open-xr-1-1-specification",
+      "label": "Khronos OpenXR 1.1 Specification"
+    },
+    {
+      "slug": "khronos-open-xr",
+      "label": "Khronos OpenXR"
+    },
+    {
       "slug": "lang-chain",
       "label": "LangChain"
     },
@@ -324,6 +332,10 @@
     {
       "slug": "robot-operating-system",
       "label": "Robot Operating System"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
     },
     {
       "slug": "web-assembly",

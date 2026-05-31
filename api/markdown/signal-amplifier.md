@@ -1,0 +1,4 @@
+- ### Definition
+  - A signal amplifier boosts a weak signal's power or voltage above the noise floor while preserving its shape. It is a front-end part of an [[Infrared Sensor]] and of the acquisition chain in [[Brain-Computer Interfaces]].
+- ### Content
+  - Low-noise and instrumentation amplifiers are chosen for microvolt-level biosignals, where common-mode rejection and input impedance dominate design. Trade-offs among gain, bandwidth, and noise figure determine how faithfully faint transducer outputs survive digitisation and downstream processing.

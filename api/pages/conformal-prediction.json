@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:conformal-prediction",
+  "title": "Conformal Prediction",
+  "slug": "conformal-prediction",
+  "public": true,
+  "classIri": "urn:ngm:class:conformal-prediction",
+  "domain": "ai",
+  "definition": "Conformal prediction is a distribution-free framework for quantifying predictive uncertainty by producing prediction sets that contain the true outcome with a user-specified probability. Using a held-out calibration set and a nonconformity score, it provides finite-sample, model-agnostic coverage guarantees under the exchangeability assumption. It wraps around any underlying point predictor to deliver statistically valid confidence regions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

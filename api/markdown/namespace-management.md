@@ -1,0 +1,4 @@
+- ### Definition
+  - Namespace management governs prefix-to-IRI mappings so identifiers stay unambiguous and resolvable. It is a component of a [[Semantic Metadata Registry]] and is required by any [[Metadata Standard]] that reuses external vocabularies.
+- ### Content
+  - Practically it covers prefix registration, version pinning of vocabulary IRIs, and policies for deprecation and aliasing. Poor namespace hygiene produces clashing terms, broken links, and ambiguous queries, so registries enforce uniqueness and provide authoritative resolution of each registered namespace.

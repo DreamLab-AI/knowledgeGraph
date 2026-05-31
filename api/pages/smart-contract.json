@@ -12,12 +12,12 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:digital-agreement",
-      "label": "Digital Agreement"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "id": "urn:ngm:class:executable-code",
-      "label": "Executable Code"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
   "entityType": "Class",
@@ -185,7 +185,7 @@
         "label": "Vyper"
       },
       {
-        "id": "urn:ngm:individual:rust",
+        "id": "urn:ngm:class:rust",
         "label": "Rust"
       },
       {
@@ -280,7 +280,7 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -741,6 +741,10 @@
   ],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -833,6 +837,10 @@
       "label": "Algorithmic Transparency Reports"
     },
     {
+      "slug": "aptos",
+      "label": "Aptos"
+    },
+    {
       "slug": "asset-registry",
       "label": "Asset Registry"
     },
@@ -841,8 +849,20 @@
       "label": "Asset Trading"
     },
     {
+      "slug": "axie-infinity",
+      "label": "Axie Infinity"
+    },
+    {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
       "slug": "btc-layer-3",
       "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bit-vm",
+      "label": "BitVM"
     },
     {
       "slug": "blockchain-entity",
@@ -865,6 +885,10 @@
       "label": "Blockchain"
     },
     {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -877,16 +901,40 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "centrifuge",
+      "label": "Centrifuge"
+    },
+    {
+      "slug": "citi-token-services",
+      "label": "Citi Token Services"
+    },
+    {
       "slug": "community-governance-model",
       "label": "Community Governance Model"
+    },
+    {
+      "slug": "consen-sys",
+      "label": "ConsenSys"
     },
     {
       "slug": "consortium-blockchain",
       "label": "Consortium Blockchain"
     },
     {
+      "slug": "corda",
+      "label": "Corda"
+    },
+    {
       "slug": "creator-economy",
       "label": "Creator Economy"
+    },
+    {
+      "slug": "creator-royalties",
+      "label": "Creator Royalties"
     },
     {
       "slug": "creator-royalty-token",
@@ -897,6 +945,10 @@
       "label": "Cross-Chain Bridge"
     },
     {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
       "slug": "crypto-token",
       "label": "Crypto Token"
     },
@@ -905,12 +957,28 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "dai",
+      "label": "DAI"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
     {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "dapp",
+      "label": "DApp"
+    },
+    {
+      "slug": "dex",
+      "label": "DEX"
     },
     {
       "slug": "did-nostr-identity",
@@ -923,6 +991,26 @@
     {
       "slug": "de-fi-protocol",
       "label": "De Fi Protocol"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     },
     {
       "slug": "decentralised-file-storage",
@@ -943,6 +1031,10 @@
     {
       "slug": "delta-robot",
       "label": "Delta Robot"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-asset-risks",
@@ -971,6 +1063,10 @@
     {
       "slug": "digital-tax-compliance-node",
       "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
     },
     {
       "slug": "dispute-resolution-mechanism",
@@ -1013,6 +1109,18 @@
       "label": "Enterprise Token Standards"
     },
     {
+      "slug": "ethereum-classic",
+      "label": "Ethereum Classic"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "ethereum-smart-contracts",
+      "label": "Ethereum Smart Contracts"
+    },
+    {
       "slug": "federated-learning",
       "label": "Federated Learning"
     },
@@ -1025,8 +1133,24 @@
       "label": "Federation Surface"
     },
     {
+      "slug": "foundry",
+      "label": "Foundry"
+    },
+    {
       "slug": "fractionalized-nft",
       "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "game-fi",
+      "label": "GameFi"
+    },
+    {
+      "slug": "gas-fee",
+      "label": "Gas Fee"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
     },
     {
       "slug": "gas-optimization",
@@ -1035,6 +1159,18 @@
     {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "gnosis-chain",
+      "label": "Gnosis Chain"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "gnosis",
+      "label": "Gnosis"
     },
     {
       "slug": "gold",
@@ -1047,6 +1183,22 @@
     {
       "slug": "governance-token",
       "label": "Governance Token"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "hardhat",
+      "label": "Hardhat"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "hyperlane",
+      "label": "Hyperlane"
     },
     {
       "slug": "hyperledger-fabric",
@@ -1063,6 +1215,14 @@
     {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "layer-zero",
+      "label": "LayerZero"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
     },
     {
       "slug": "lightning-and-similar-l2",
@@ -1085,6 +1245,10 @@
       "label": "Loyalty Token"
     },
     {
+      "slug": "maple-finance",
+      "label": "Maple Finance"
+    },
+    {
       "slug": "marketplace",
       "label": "Marketplace"
     },
@@ -1095,6 +1259,10 @@
     {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "multisig",
+      "label": "Multisig"
     },
     {
       "slug": "multiverse",
@@ -1113,6 +1281,10 @@
       "label": "Non-Fungible Token (NFT)"
     },
     {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
     },
@@ -1127,6 +1299,34 @@
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "open-zeppelin",
+      "label": "OpenZeppelin"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "Oracle Service"
+    },
+    {
+      "slug": "oracle",
+      "label": "Oracle"
+    },
+    {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
+      "slug": "pendle",
+      "label": "Pendle"
     },
     {
       "slug": "permissioned-blockchain",
@@ -1153,12 +1353,36 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     },
     {
+      "slug": "rootstock",
+      "label": "Rootstock"
+    },
+    {
       "slug": "royalty-mechanism",
       "label": "Royalty Mechanism"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
     },
     {
       "slug": "securities-regulation",
@@ -1185,6 +1409,10 @@
       "label": "Stablecoin"
     },
     {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
     },
@@ -1193,8 +1421,24 @@
       "label": "Supply Chain Traceability"
     },
     {
+      "slug": "synthetix",
+      "label": "Synthetix"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "timelock-contract",
+      "label": "Timelock Contract"
     },
     {
       "slug": "token-bonding-curve",
@@ -1221,12 +1465,24 @@
       "label": "Tokenomics Governance"
     },
     {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
+    },
+    {
       "slug": "treasury-management",
       "label": "Treasury Management"
     },
     {
       "slug": "treasury-management",
       "label": "Treasury Management"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
+      "slug": "uma",
+      "label": "UMA"
     },
     {
       "slug": "value-transfer",
@@ -1235,6 +1491,14 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "vesting-schedule",
+      "label": "Vesting Schedule"
     },
     {
       "slug": "virtual-asset",
@@ -1257,12 +1521,20 @@
       "label": "VisionClaw Agentic Container"
     },
     {
+      "slug": "vyper",
+      "label": "Vyper"
+    },
+    {
       "slug": "wallet",
       "label": "Wallet"
     },
     {
       "slug": "waste-management",
       "label": "Waste Management"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
     },
     {
       "slug": "web3",
@@ -1275,6 +1547,14 @@
     {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "s-btc",
+      "label": "sBTC"
     },
     {
       "slug": "security-audit-guide",

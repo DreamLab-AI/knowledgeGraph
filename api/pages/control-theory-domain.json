@@ -1,0 +1,159 @@
+{
+  "id": "urn:visionflow:page:ad30c8d88dec44b9e0a3bb130e6a4f1860b3430fce4133543e653c8d978a9c5f",
+  "title": "Control Theory Domain",
+  "slug": "control-theory-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:control-theory-domain",
+  "domain": "control-theory",
+  "definition": "The Control Theory Domain covers the mathematical analysis and design of systems that regulate their own behaviour through feedback. Its scope includes feedback control, state estimation, stability analysis and optimal control. It is a sub-area of the Robotics Domain that governs how machines maintain desired states. The boundary excludes the high-level task planning of agents, which belongs to the Agentic Systems Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:process-regulation",
+        "label": "Process Regulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-stabilisation",
+        "label": "Autonomous Stabilisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    },
+    {
+      "slug": "stability-analysis",
+      "label": "Stability Analysis"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "pid-controller",
+      "label": "PID Controller"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "dynamical-systems",
+      "label": "Dynamical Systems"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "process-regulation",
+      "label": "Process Regulation"
+    },
+    {
+      "slug": "autonomous-stabilisation",
+      "label": "Autonomous Stabilisation"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    }
+  ]
+}

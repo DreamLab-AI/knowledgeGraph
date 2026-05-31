@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:directed-acyclic-graph-execution",
+  "title": "Directed Acyclic Graph Execution",
+  "slug": "directed-acyclic-graph-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:directed-acyclic-graph-execution",
+  "domain": "infrastructure",
+  "definition": "Directed acyclic graph (DAG) execution is a computation model in which tasks are nodes connected by directed dependency edges that contain no cycles, so the graph defines a partial order of operations. An execution engine performs a topological sort and runs nodes as soon as their inputs are ready, enabling parallelism, caching of unchanged subgraphs, and deterministic recomputation. It is the scheduling backbone of workflow engines and node-based authoring tools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-client",
+        "label": "ComfyUI Client"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    }
+  ]
+}

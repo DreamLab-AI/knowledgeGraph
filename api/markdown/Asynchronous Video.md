@@ -387,12 +387,12 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:digital-workplace-technology",
-      "label": "Digital Workplace Technology"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
-      "@id": "urn:ngm:class:video-based-communication",
-      "label": "Video-based Communication"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {
@@ -620,7 +620,7 @@ public:: true
         "label": "ISO/IEC 14496 MPEG-4"
       },
       {
-        "@id": "urn:ngm:class:web-rtc-w3-c-specification",
+        "@id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "WebRTC W3C Specification"
       }
     ]

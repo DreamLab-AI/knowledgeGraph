@@ -63,8 +63,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
     },
     {
       "slug": "learning-algorithm",
@@ -73,6 +81,10 @@
     {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
+    },
+    {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
     }
   ]
 }

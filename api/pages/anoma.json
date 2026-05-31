@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:03c75ef1b745274c2243e85b380899064f5589c1e198c1df2c8bda0bd73689c0",
+  "title": "Anoma",
+  "slug": "anoma",
+  "public": true,
+  "classIri": "urn:ngm:class:anoma",
+  "domain": "blockchain",
+  "definition": "Anoma is a protocol and architecture for intent-centric and privacy-preserving decentralised applications. It allows users to express desired outcomes that the network matches and settles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "https-anoma-net",
+      "label": "https://anoma.net"
+    },
+    {
+      "slug": "https-specs-anoma-net",
+      "label": "https://specs.anoma.net"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

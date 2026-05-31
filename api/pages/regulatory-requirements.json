@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:af6d08fad2af265daf314aa1ce81a761d4db1cdb3f19bb772a7eb4a26586520a",
+  "title": "Regulatory Requirements",
+  "slug": "regulatory-requirements",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-requirements",
+  "domain": "governance",
+  "definition": "Regulatory requirements are the obligations imposed on entities by laws, regulations and supervisory rules that they must meet to operate lawfully.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "https-www-oecd-org-gov-regulatory-policy",
+      "label": "https://www.oecd.org/gov/regulatory-policy/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regulatory-compliance",
+      "label": "https://en.wikipedia.org/wiki/Regulatory_compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "investor-protection",
+      "label": "Investor Protection"
+    },
+    {
+      "slug": "process-regulation",
+      "label": "Process Regulation"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: Text to Image
 
 # Text-to-Image
 ```json-ld

@@ -87,8 +87,16 @@
       "label": "3D Modeling"
     },
     {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
       "slug": "gl-tf-3-d-file-format",
       "label": "glTF (3D File Format)"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
     }
   ]
 }

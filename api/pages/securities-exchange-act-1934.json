@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:securities-exchange-act-1934",
+  "title": "Securities Exchange Act 1934",
+  "slug": "securities-exchange-act-1934",
+  "public": true,
+  "classIri": "urn:ngm:class:securities-exchange-act-1934",
+  "domain": "blockchain",
+  "definition": "The Securities Exchange Act of 1934 is the US federal law that governs secondary trading of securities and created the Securities and Exchange Commission. It establishes registration, disclosure, and anti-fraud requirements for exchanges, brokers, and listed companies. It is a foundational reference for determining how digital assets and investment products are regulated in the United States.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    }
+  ]
+}

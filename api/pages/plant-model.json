@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:plant-model",
+  "title": "Plant Model",
+  "slug": "plant-model",
+  "public": true,
+  "classIri": "urn:ngm:class:plant-model",
+  "domain": "robotics",
+  "definition": "A plant model is a mathematical representation of the dynamic system being controlled, mapping control inputs and disturbances to the system's state and outputs over time. Usually expressed as differential equations, transfer functions, or state-space form, it captures how the plant responds so a controller can be designed and tuned against it. Accurate plant models are central to control theory and to model-based control synthesis and simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:taxonomy",
+  "title": "Taxonomy",
+  "slug": "taxonomy",
+  "public": true,
+  "classIri": "urn:ngm:class:taxonomy",
+  "domain": "data",
+  "definition": "A taxonomy is a hierarchical classification scheme that organises concepts or entities into nested categories based on shared characteristics, typically expressing broader-than and narrower-than relationships. It provides a controlled vocabulary that supports consistent naming, navigation, and retrieval within a domain. Taxonomies are a simpler precursor to fuller ontologies, which add richer relations and formal axioms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "etsi-metaverse-domain-taxonomy",
+      "label": "Etsi Metaverse Domain Taxonomy"
+    }
+  ]
+}

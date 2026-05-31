@@ -44,6 +44,10 @@
     {
       "slug": "gltf-standard",
       "label": "Gltf Standard"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
     }
   ]
 }

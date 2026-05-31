@@ -54,6 +54,10 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "existential-ai-risk",
+      "label": "Existential AI Risk"
+    },
+    {
       "slug": "singularity",
       "label": "Singularity"
     }

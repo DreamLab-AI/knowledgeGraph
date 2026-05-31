@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:perception-module",
+  "title": "Perception Module",
+  "slug": "perception-module",
+  "public": true,
+  "classIri": "urn:ngm:class:perception-module",
+  "domain": "ai",
+  "definition": "A perception module is the component of an autonomous or cognitive agent that transforms raw sensory input into structured representations of the environment. It performs sensing, filtering, feature extraction, object detection, and state estimation to produce a world model usable by planning and control. As the agent's interface to reality, its accuracy bounds the quality of all downstream decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    }
+  ]
+}

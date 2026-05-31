@@ -503,8 +503,8 @@ public:: true
       "label": "Carbon Markets"
     },
     {
-      "@id": "urn:ngm:class:distributed-ledger-application",
-      "label": "Distributed Ledger Application"
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -594,7 +594,7 @@ public:: true
         "label": "Real-Time Carbon Offsetting"
       },
       {
-        "@id": "urn:ngm:class:voluntary-carbon-markets",
+        "@id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Voluntary Carbon Markets"
       }
     ],
@@ -650,7 +650,7 @@ public:: true
         "label": "Polygon Network"
       },
       {
-        "@id": "urn:ngm:individual:ethereum",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ],
@@ -676,11 +676,11 @@ public:: true
         "label": "MRV"
       },
       {
-        "@id": "urn:ngm:class:nfts",
+        "@id": "urn:ngm:class:nft",
         "label": "NFTs"
       },
       {
-        "@id": "urn:ngm:class:voluntary-carbon-markets",
+        "@id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Voluntary Carbon Markets"
       },
       {

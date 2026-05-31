@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:125b1f9c58db2101ddcebd38915a1a8af42181d9481b2e1638548da01b421a02",
+  "title": "vLLM",
+  "slug": "v-llm",
+  "public": true,
+  "classIri": "urn:ngm:class:v-llm",
+  "domain": "natural-language-processing",
+  "definition": "vLLM is an open-source library for high-throughput serving of large language models. It introduced paged attention, a memory management technique that reduces waste in the key-value cache during generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-serving",
+      "label": "Inference Serving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

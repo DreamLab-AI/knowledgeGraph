@@ -91,8 +91,8 @@ public:: true
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:preservation-standards",
-      "label": "Preservation Standards"
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {

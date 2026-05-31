@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0066-ethereum
 
 # Ethereum
 ```json-ld
@@ -17,13 +18,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:ethereum",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:ethereum",
+  "@type": "Class",
   "label": "Ethereum",
   "definition": "Ethereum is a decentralised, open-source blockchain platform that introduced Turing-complete smart contracts, enabling programmable, self-executing agreements without trusted intermediaries. Launched in 2015 by Vitalik Buterin and co-founders, it underpins the largest ecosystem of decentralised applications (dApps), decentralised finance (DeFi), and NFT markets. Its transition to proof-of-stake consensus via The Merge in September 2022 dramatically reduced its energy footprint while preserving security.",
   "domain": "blockchain",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}],
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:posterior-distribution",
+  "title": "Posterior Distribution",
+  "slug": "posterior-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:posterior-distribution",
+  "domain": "ai",
+  "definition": "A posterior distribution is the probability distribution over unknown quantities after observing data, obtained by combining a prior distribution with the likelihood via Bayes' theorem. It represents updated belief and is the central object of Bayesian inference. In recursive estimators such as Bayes and particle filters, the posterior at each step becomes the basis for the next prediction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

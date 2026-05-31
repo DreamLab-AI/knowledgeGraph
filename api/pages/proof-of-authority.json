@@ -106,6 +106,10 @@
     {
       "slug": "value-transfer",
       "label": "Value Transfer"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
     }
   ]
 }

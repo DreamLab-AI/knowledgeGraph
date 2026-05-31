@@ -1,4 +1,5 @@
 public:: true
+alias:: 5G Networks
 
 # 5G Network
 ```json-ld

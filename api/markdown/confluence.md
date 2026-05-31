@@ -1,0 +1,4 @@
+- ### Definition
+  - Confluence is Atlassian's collaborative wiki and knowledge-management product, functioning as a [[Digital Workplace Platform]] and complementing tools such as the [[Collaborative Whiteboard]].
+- ### Content
+  - Content is structured into spaces and versioned pages with permissions, templates, and macros, and integrates closely with Jira for traceability between documentation and work items. It is commonly used for runbooks, decision records, and team handbooks in distributed organisations.

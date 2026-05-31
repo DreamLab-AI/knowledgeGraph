@@ -1,4 +1,5 @@
 public:: true
+alias:: AI Research Area
 
 ```json-ld
 {

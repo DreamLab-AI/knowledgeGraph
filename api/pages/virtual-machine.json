@@ -97,6 +97,14 @@
       "label": "Blockchain Protocol"
     },
     {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    },
+    {
+      "slug": "runtime-layer",
+      "label": "Runtime Layer"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     }

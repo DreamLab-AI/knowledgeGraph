@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:bitcoin",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:bitcoin",
+  "@type": "Class",
   "label": "Bitcoin",
   "definition": "Bitcoin is the first decentralised peer-to-peer electronic cash system, introduced by the pseudonymous Satoshi Nakamoto in a 2008 white paper and launched in January 2009. It operates on a public, permissionless blockchain secured by proof-of-work consensus, with a fixed supply cap of 21 million BTC enforced by its protocol. Bitcoin is simultaneously a payment network, a monetary asset, and the foundational reference implementation for the broader cryptocurrency and blockchain industry.",
   "domain": "blockchain",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}],
+  "subClassOf": [{"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},

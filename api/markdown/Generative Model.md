@@ -1,4 +1,5 @@
 public:: true
+alias:: GenerativeModel
 
 # Generative Model
 ```json-ld

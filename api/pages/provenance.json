@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:79bfcc9bc4e2cbac5a1f1fde914c5c38872241087db132b41967aa1914098139",
+  "title": "Provenance",
+  "slug": "provenance",
+  "public": true,
+  "classIri": "urn:ngm:class:provenance",
+  "domain": "general",
+  "definition": "The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-provenance",
+      "label": "Data Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "Trust and Governance Domain"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:d61d1471e92a36ae0c9c324ac278c0276fc015503ab2d73084c570b5ea1cb9d4",
+  "title": "Task Automation",
+  "slug": "task-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:task-automation",
+  "domain": "automation",
+  "definition": "The automation of individual, often repetitive tasks so that they run without manual effort. It addresses discrete actions rather than coordinating entire business processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    }
+  ]
+}

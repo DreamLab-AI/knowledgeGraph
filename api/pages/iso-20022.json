@@ -80,12 +80,28 @@
       "label": "Cross-Chain Bridge"
     },
     {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
     },
     {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
     },
     {
       "slug": "transaction-standard",

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:6ac7e20b9cb428e2ff900d48cacf8ba39c0c642fae05660d8ae11be2f6220e54",
+  "title": "ONNX Operator Set",
+  "slug": "onnx-operator-set",
+  "public": true,
+  "classIri": "urn:ngm:class:onnx-operator-set",
+  "domain": "machine-learning",
+  "definition": "An ONNX operator set is a versioned collection of the computational operators defined by the Open Neural Network Exchange format, fixing the operators and their semantics that a model may use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:onnx",
+      "label": "ONNX"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    }
+  ]
+}

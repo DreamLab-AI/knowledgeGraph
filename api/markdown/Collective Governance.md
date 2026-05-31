@@ -1,4 +1,5 @@
 public:: true
+alias:: CollectiveGovernance
 
 # Collective Governance
 ```json-ld

@@ -1,4 +1,5 @@
 public:: true
+alias:: InteractionDomain
 
 # Interaction Domain
 ```json-ld

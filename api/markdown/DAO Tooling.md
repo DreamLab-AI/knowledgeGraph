@@ -2767,8 +2767,8 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:coordination-technology",
-      "label": "Coordination Technology"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
       "@id": "urn:ngm:class:governance-infrastructure",

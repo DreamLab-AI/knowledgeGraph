@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:86cb3b335eae6f7ea90793d62e5deb0babf0f312863a06ca53c79237a29558fa",
+  "title": "OpenGL",
+  "slug": "open-gl",
+  "public": true,
+  "classIri": "urn:ngm:class:open-gl",
+  "domain": "general",
+  "definition": "OpenGL is a cross-platform graphics API for rendering 2D and 3D vector graphics, providing a standardised interface to the rendering capabilities of graphics hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "shader-language",
+      "label": "Shader Language"
+    },
+    {
+      "slug": "3-d-rendering",
+      "label": "3D Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "vulkan",
+      "label": "Vulkan"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

@@ -799,8 +799,8 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:open-protocol",
-      "label": "Open Protocol"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
       "@id": "urn:ngm:class:sociotechnical-system",

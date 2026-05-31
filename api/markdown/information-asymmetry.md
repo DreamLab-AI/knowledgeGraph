@@ -1,0 +1,4 @@
+- ### Definition
+  - Information asymmetry describes unequal access to relevant information between parties, a core problem in [[Economics]] that produces adverse selection and moral hazard. Analogous opacity in model behaviour relates to [[Bias in Large Language Models]].
+- ### Content
+  - Markets address asymmetry through warranties, certification, disclosure mandates, and intermediaries that aggregate information. In AI, the inability to inspect what a model has learned creates a comparable gap between developers, deployers, and users.

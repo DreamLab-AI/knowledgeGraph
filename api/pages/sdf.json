@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:sdf",
+  "title": "SDF",
+  "slug": "sdf",
+  "public": true,
+  "classIri": "urn:ngm:class:sdf",
+  "domain": "robotics",
+  "definition": "SDF (Simulation Description Format) is an XML-based format for describing robots, sensors, and environments for simulation and control. Developed alongside the Gazebo simulator, it specifies kinematic and dynamic properties, links, joints, visual and collision geometry, and world contents. It is widely used in robotics for modelling platforms and scenes consistently across simulation and tooling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      },
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - A layout engine is the runtime that drives [[Layout Algorithm]] execution, turning an abstract model into positioned elements for [[AI Diagram Tools]] and [[Diagrams as Code]] pipelines.
+- ### Content
+  - Engines such as Graphviz, ELK, and dagre encapsulate algorithm selection, constraint solving, and edge routing behind a stable API. Performance hinges on incremental relayout and caching so that interactive diagrams remain responsive as the underlying graph evolves.

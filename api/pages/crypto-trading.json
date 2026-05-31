@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:crypto-trading",
+  "title": "Crypto Trading",
+  "slug": "crypto-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:crypto-trading",
+  "domain": "blockchain",
+  "definition": "Crypto trading is the buying and selling of cryptocurrencies and digital assets for profit, conducted on centralised exchanges, decentralised exchanges, and over-the-counter desks. It spans spot, margin, derivatives, and algorithmic strategies, with prices driven by liquidity, sentiment, and on-chain activity. It is a primary use case and liquidity source for the broader crypto-asset market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      },
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    }
+  ]
+}

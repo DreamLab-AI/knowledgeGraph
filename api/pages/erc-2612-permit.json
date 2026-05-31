@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:fecd8d86cb8c5fcbb8b63e58f45340edb192ce4ce2ec1a4a3f0b61501b4ed24a",
+  "title": "ERC-2612 Permit",
+  "slug": "erc-2612-permit",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-2612-permit",
+  "domain": "standards",
+  "definition": "ERC-2612 adds a permit function to ERC-20 tokens, allowing approvals to be granted through signed messages rather than separate on-chain transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

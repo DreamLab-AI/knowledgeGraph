@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:alpr-networks",
+  "title": "ALPR Networks",
+  "slug": "alpr-networks",
+  "public": true,
+  "classIri": "urn:ngm:class:alpr-networks",
+  "domain": "security",
+  "definition": "ALPR Networks are interconnected systems of Automatic License Plate Recognition cameras that capture, read, timestamp, and geotag vehicle plates at scale across roads, lots, and checkpoints. Aggregated across many cameras and operators, the resulting databases reconstruct vehicle movement histories and enable mass location tracking. They are a prominent component of contemporary surveillance infrastructure and a focal point of privacy and civil-liberties concern.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    }
+  ]
+}

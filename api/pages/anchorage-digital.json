@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:79023f7738127dfa93d5cac1f11bdc76acfb0f91559a99f271f3544c8a713b71",
+  "title": "Anchorage Digital",
+  "slug": "anchorage-digital",
+  "public": true,
+  "classIri": "urn:ngm:class:anchorage-digital",
+  "domain": "blockchain",
+  "definition": "A United States digital asset platform that holds a federal bank charter and provides custody, trading, staking, and financing services for institutional clients. It was the first crypto firm to receive a national trust bank charter from the Office of the Comptroller of the Currency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:self-custody",
+      "label": "Self-Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ]
+}

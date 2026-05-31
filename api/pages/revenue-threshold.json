@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:revenue-threshold",
+  "title": "Revenue Threshold",
+  "slug": "revenue-threshold",
+  "public": true,
+  "classIri": "urn:ngm:class:revenue-threshold",
+  "domain": "governance",
+  "definition": "A revenue threshold is a regulatory trigger that applies obligations only to entities whose annual revenue exceeds a defined monetary level. In AI legislation such thresholds scope rules to large developers, exempting smaller firms to reduce compliance burden while targeting actors with the greatest capacity and impact. The threshold value is a key parameter determining who falls within a law's reach.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI Bill"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    }
+  ]
+}

@@ -12,12 +12,12 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:anti-financial-crime-regime",
-      "label": "Anti-Financial Crime Regime"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     },
     {
-      "id": "urn:ngm:class:customer-onboarding-discipline",
-      "label": "Customer Onboarding Discipline"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -1115,6 +1115,10 @@
     {
       "slug": "asset-registry",
       "label": "Asset Registry"
+    },
+    {
+      "slug": "bc-0456-virtual-asset-service-providers",
+      "label": "BC-0456-virtual-asset-service-providers"
     },
     {
       "slug": "bitcoin-distribution",

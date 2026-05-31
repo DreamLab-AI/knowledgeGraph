@@ -75,6 +75,22 @@
       "label": "Infrastructure Layer"
     },
     {
+      "slug": "tele-151-real-time-protocols",
+      "label": "TELE-151-real-time-protocols"
+    },
+    {
+      "slug": "tele-153-5-g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

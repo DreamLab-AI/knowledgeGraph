@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:intent-recognition",
+  "title": "Intent Recognition",
+  "slug": "intent-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:intent-recognition",
+  "domain": "ai",
+  "definition": "Intent recognition is the natural-language-processing task of inferring a user's underlying goal or desired action from an utterance, query, or interaction. It maps free-form input to a discrete set of intents and extracts associated parameters, forming the comprehension layer of conversational systems. Accurate intent recognition is what lets chatbots and voice assistants route requests to the correct skill or response.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    }
+  ]
+}

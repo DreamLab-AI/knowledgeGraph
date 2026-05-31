@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:71962648662bb65d98325a0869e7ad51dc61bfe94b7c9d28ddf2828f4a9c7160",
+  "title": "Interoperability Standards",
+  "slug": "interoperability-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:interoperability-standards",
+  "domain": "general",
+  "definition": "Agreed specifications that allow independently developed systems, protocols or networks to exchange data and operate together reliably.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "standards",
+      "label": "Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross Metaverse Commerce"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "oma-3",
+      "label": "OMA3"
+    }
+  ]
+}

@@ -65,6 +65,14 @@
     {
       "slug": "network-protocol",
       "label": "Network Protocol"
+    },
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    },
+    {
+      "slug": "wi-fi",
+      "label": "Wi-Fi"
     }
   ]
 }

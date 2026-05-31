@@ -113,6 +113,10 @@
       "label": "Compliance Audit Trail"
     },
     {
+      "slug": "timestamping-service",
+      "label": "Timestamping Service"
+    },
+    {
       "slug": "user-consent-token",
       "label": "User Consent Token"
     }

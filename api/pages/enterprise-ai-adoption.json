@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:enterprise-ai-adoption",
+  "title": "Enterprise AI Adoption",
+  "slug": "enterprise-ai-adoption",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-ai-adoption",
+  "domain": "ai",
+  "definition": "Enterprise AI adoption is the organisational process of integrating artificial-intelligence capabilities into business operations, products, and decision-making at scale. It spans strategy, data readiness, platform selection, governance, change management, and measurement of return on investment. Successful adoption depends as much on workflow redesign, skills, and executive sponsorship as on the underlying models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-platform",
+        "label": "Machine Learning Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "machine-learning-platform",
+      "label": "Machine Learning Platform"
+    }
+  ]
+}

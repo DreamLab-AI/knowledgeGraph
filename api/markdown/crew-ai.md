@@ -1,0 +1,4 @@
+- ### Definition
+  - CrewAI is a framework for orchestrating collaborating LLM agents organised as a role-based crew with shared goals and processes. It is one implementation underpinning [[CLI Multi-Agent Systems]].
+- ### Content
+  - Developers define agents with roles, backstories, and tools, then compose them into crews that run sequential or hierarchical task pipelines with delegation and memory. The framework abstracts inter-agent communication and tool invocation, making it a common choice for prototyping agentic workflows alongside alternatives such as AutoGen and LangGraph.

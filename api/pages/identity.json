@@ -64,8 +64,20 @@
   ],
   "backlinks": [
     {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
       "slug": "digital-identity",
       "label": "Digital Identity"
+    },
+    {
+      "slug": "ethereum-name-service",
+      "label": "Ethereum Name Service"
+    },
+    {
+      "slug": "soulbound-tokens",
+      "label": "Soulbound Tokens"
     }
   ]
 }

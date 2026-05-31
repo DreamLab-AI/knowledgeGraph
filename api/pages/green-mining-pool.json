@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:green-mining-pool",
+  "title": "Green Mining Pool",
+  "slug": "green-mining-pool",
+  "public": true,
+  "classIri": "urn:ngm:class:green-mining-pool",
+  "domain": "blockchain",
+  "definition": "A green mining pool is a cooperative of cryptocurrency miners that aggregates hashing power while sourcing electricity predominantly from renewable or low-carbon generation, often coupling mining to surplus or curtailed grid energy. It rewards participants for verified sustainable energy use and reports the carbon intensity of the pooled hashrate. The model aims to reduce the environmental footprint of proof-of-work consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

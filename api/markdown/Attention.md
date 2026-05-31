@@ -455,12 +455,12 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:differentiable-memory",
-      "label": "Differentiable Memory"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
-      "@id": "urn:ngm:class:neural-network-mechanism",
-      "label": "Neural Network Mechanism"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     }
   ],
   "relations": {
@@ -474,7 +474,7 @@ public:: true
         "label": "Key"
       },
       {
-        "@id": "urn:ngm:class:query",
+        "@id": "urn:ngm:class:queries",
         "label": "Query"
       },
       {
@@ -634,7 +634,7 @@ public:: true
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {

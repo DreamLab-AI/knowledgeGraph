@@ -1,0 +1,4 @@
+- ### Definition
+  - The FATF Guidance on Virtual Assets applies AML/CFT standards to crypto markets, defining VASP obligations and the travel rule that directly affect [[Decentralized Finance (DeFi)]] and the design of [[CBDCs]]. It is a key instrument of [[Financial Regulation]] for digital assets.
+- ### Content
+  - The guidance extends customer due diligence, recordkeeping, and suspicious-transaction reporting to virtual-asset activity, while the travel rule requires VASPs to share counterparty identity data. Its application to fully decentralised protocols remains contested, since the absence of an identifiable intermediary complicates the VASP definition and enforcement.

@@ -60,6 +60,10 @@
   ],
   "backlinks": [
     {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -80,6 +84,14 @@
       "label": "Economics"
     },
     {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
       "slug": "play-to-earn-p2-e",
       "label": "Play-to-Earn (P2E)"
     },
@@ -96,8 +108,16 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "token-engineering",
+      "label": "Token Engineering"
+    },
+    {
       "slug": "token",
       "label": "Token"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
     },
     {
       "slug": "web3",

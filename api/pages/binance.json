@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:ed7d1957ec5f4c16b77066bd2c604351473dc42b3c288f39c0c3341bd3c677e6",
+  "title": "Binance",
+  "slug": "binance",
+  "public": true,
+  "classIri": "urn:ngm:class:binance",
+  "domain": "binance",
+  "definition": "Binance is a cryptocurrency exchange founded in 2017 by Changpeng Zhao and Yi He, and by trading volume it has been among the largest in the world. It offers spot and derivatives trading, staking, lending and a range of related services across many supported assets. The company developed the BNB token and the BNB Chain, an EVM-compatible blockchain network used for decentralised applications. Binance has faced significant regulatory scrutiny across multiple jurisdictions, including a 2023 settlement with United States authorities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bnb-chain",
+      "label": "BNB Chain"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

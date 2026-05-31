@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:un-global-compact",
+  "title": "UN Global Compact",
+  "slug": "un-global-compact",
+  "public": true,
+  "classIri": "urn:ngm:class:un-global-compact",
+  "domain": "governance",
+  "definition": "The UN Global Compact is a voluntary United Nations initiative encouraging businesses worldwide to adopt sustainable and socially responsible policies aligned with ten principles covering human rights, labour, environment, and anti-corruption. Signatory companies commit to embedding these principles in their operations and to reporting annual progress, making it the world's largest corporate sustainability initiative.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

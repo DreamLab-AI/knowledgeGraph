@@ -1,4 +1,5 @@
 public:: true
+alias:: Delivery Versus Payment
 
 # Delivery-Versus-Payment
 ```json-ld

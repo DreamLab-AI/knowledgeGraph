@@ -124,7 +124,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:privacy-control",
+        "@id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Control"
       },
       {

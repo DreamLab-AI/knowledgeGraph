@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:goal-specification",
+  "title": "Goal Specification",
+  "slug": "goal-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:goal-specification",
+  "domain": "ai",
+  "definition": "Goal specification is the formal description of what an autonomous agent or planner is meant to achieve, expressed as target states, conditions, objectives, or reward functions. It translates high-level intent into a representation that planning and reasoning systems can evaluate and pursue. Clear goal specification is essential for task planning and avoiding misaligned or unsafe agent behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

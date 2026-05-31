@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:1fad7e6a149ebb894d0aa42471082c84e483dd5e7d3835c1bb6200f5db353e2e",
+  "title": "ElevenLabs",
+  "slug": "eleven-labs",
+  "public": true,
+  "classIri": "urn:ngm:class:eleven-labs",
+  "domain": "artificial-intelligence",
+  "definition": "ElevenLabs is a company that develops artificial intelligence software for speech synthesis and voice generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "voice-cloning",
+      "label": "Voice Cloning"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

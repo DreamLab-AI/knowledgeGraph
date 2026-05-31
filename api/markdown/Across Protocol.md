@@ -1,4 +1,5 @@
 public:: true
+alias:: Across-Protocol
 
 # Across Protocol
 ```json-ld

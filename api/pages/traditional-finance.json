@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:5b4df3365f86b8822a4a0397d8e5a1b85cb45a013d0c909a6ff63a2e29cc445d",
+  "title": "Traditional Finance",
+  "slug": "traditional-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:traditional-finance",
+  "domain": "finance",
+  "definition": "Traditional finance refers to the established financial system of banks, exchanges, brokers, and regulated intermediaries that predates decentralised and blockchain-based finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "isda",
+      "label": "ISDA"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

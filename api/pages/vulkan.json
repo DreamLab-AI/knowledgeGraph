@@ -75,6 +75,10 @@
       "label": "3D Graphics Standard"
     },
     {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },

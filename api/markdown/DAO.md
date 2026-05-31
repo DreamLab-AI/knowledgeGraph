@@ -1,4 +1,5 @@
 public:: true
+alias:: DAOs
 
 # DAO
 ```json-ld

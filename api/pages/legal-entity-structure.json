@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:legal-entity-structure",
+  "title": "Legal Entity Structure",
+  "slug": "legal-entity-structure",
+  "public": true,
+  "classIri": "urn:ngm:class:legal-entity-structure",
+  "domain": "governance",
+  "definition": "A legal entity structure is the organisational arrangement of incorporated bodies, subsidiaries, foundations, and operating companies through which an organisation conducts business and holds assets. It determines liability boundaries, tax treatment, governance rights, and regulatory obligations across jurisdictions. In crypto and DAO contexts it often pairs on-chain governance with off-chain foundations or LLCs to obtain legal personality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infrastructure Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross-Border Compliance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

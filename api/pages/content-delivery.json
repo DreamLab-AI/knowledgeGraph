@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:7bc2705f55abeff825cc3d7e6a617e8de7f71e22ff30704f8d8a28b1cb84c553",
+  "title": "Content Delivery",
+  "slug": "content-delivery",
+  "public": true,
+  "classIri": "urn:ngm:class:content-delivery",
+  "domain": "networking",
+  "definition": "Content delivery is the distribution of digital media such as web pages, video and software to end users, typically optimised for speed and reliability. It is commonly accelerated by content delivery networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "smpte-st-2128",
+      "label": "SMPTE ST 2128"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    }
+  ]
+}

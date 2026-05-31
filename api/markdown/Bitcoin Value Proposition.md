@@ -631,8 +631,8 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:economic-philosophy",
-      "label": "Economic Philosophy"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
       "@id": "urn:ngm:class:store-of-value",
@@ -810,7 +810,7 @@ public:: true
         "label": "Corporate Treasury Reserve"
       },
       {
-        "@id": "urn:ngm:class:l402",
+        "@id": "urn:ngm:class:l-402",
         "label": "L402"
       },
       {
@@ -822,11 +822,11 @@ public:: true
         "label": "Self Custody Wallets"
       },
       {
-        "@id": "urn:ngm:class:spot-bitcoin-etfs",
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
         "label": "Spot Bitcoin ETFs"
       },
       {
-        "@id": "urn:ngm:class:x402",
+        "@id": "urn:ngm:class:x-402",
         "label": "X402"
       },
       {
@@ -884,7 +884,7 @@ public:: true
         "label": "Bitcoin Mining"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ],
@@ -918,7 +918,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

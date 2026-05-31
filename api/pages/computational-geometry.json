@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:1cec7ba8f5bcd43d51b5bf57cbe440ee7bc576f4f95bc7571cb3ebeb6b08c51d",
+  "title": "Computational Geometry",
+  "slug": "computational-geometry",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-geometry",
+  "domain": "general",
+  "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It supports graphics, robotics, and geographic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:algorithm",
+      "label": "Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "computational-geometry",
+      "label": "Computational Geometry"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-computational-geometry",
+      "label": "https://en.wikipedia.org/wiki/Computational_geometry"
+    },
+    {
+      "slug": "https-www-cgal-org",
+      "label": "https://www.cgal.org"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

@@ -83,6 +83,10 @@
       "label": "Marine Robot"
     },
     {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },

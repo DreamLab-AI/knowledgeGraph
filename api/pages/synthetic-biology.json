@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:620303ec6c07337de2347000a1ef0b0abd6d17b085c8e4016a65a4282e0bdb5f",
+  "title": "Synthetic Biology",
+  "slug": "synthetic-biology",
+  "public": true,
+  "classIri": "urn:ngm:class:synthetic-biology",
+  "domain": "general",
+  "definition": "Synthetic biology is a field that applies engineering principles to design and construct biological systems and organisms. It combines biology, genetics, and engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fda",
+      "label": "FDA"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-synthetic-biology",
+      "label": "https://en.wikipedia.org/wiki/Synthetic_biology"
+    },
+    {
+      "slug": "https-www-genome-gov-genetics-glossary-synthetic-biology",
+      "label": "https://www.genome.gov/genetics-glossary/Synthetic-Biology"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "fda",
+      "label": "FDA"
+    }
+  ]
+}

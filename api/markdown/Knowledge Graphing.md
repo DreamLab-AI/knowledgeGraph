@@ -680,7 +680,7 @@ public:: true
         "label": "ComplEx"
       },
       {
-        "@id": "urn:ngm:class:description-logics",
+        "@id": "urn:ngm:class:description-logic",
         "label": "Description Logics"
       },
       {
@@ -730,7 +730,7 @@ public:: true
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -838,11 +838,11 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {

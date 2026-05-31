@@ -67,8 +67,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
     },
     {
       "slug": "gpts-and-custom-assistants",
@@ -77,6 +85,22 @@
     {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "vector-databases",
+      "label": "Vector Databases"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
     }
   ]
 }

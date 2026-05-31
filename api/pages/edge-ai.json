@@ -63,12 +63,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "ar-frame",
       "label": "AR Frame"
     },
     {
       "slug": "data-compression",
       "label": "Data Compression"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
     },
     {
       "slug": "home-assistant",

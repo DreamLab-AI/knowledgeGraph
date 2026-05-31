@@ -3,11 +3,16 @@
   "title": "Mistral and Mixtral",
   "slug": "mistral-and-mixtral",
   "public": true,
-  "classIri": "urn:ngm:individual:mistral-and-mixtral",
+  "classIri": "urn:ngm:class:mistral-and-mixtral",
   "domain": "ai",
   "definition": "Mistral AI is a French AI company that developed a family of open-weight large language models, including the dense Mistral 7B and the sparse Mixture-of-Experts Mixtral 8x7B and 8x22B architectures. These models are distinguished by their efficient use of grouped-query attention, sliding window attention, and sparse expert routing, achieving performance competitive with much larger models at a fraction of the inference cost. Released under permissive licences, they have become foundational reference models for the open-source AI community.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -18,7 +23,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

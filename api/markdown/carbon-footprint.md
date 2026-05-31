@@ -1,0 +1,4 @@
+- ### Definition
+  - A Carbon Footprint quantifies total CO2-equivalent emissions of an entity or activity, forming a core measure within the [[Sustainability Domain]] and a focal point of debates over [[Bitcoin Environmental Issues]].
+- ### Content
+  - Footprint accounting follows protocols such as the GHG Protocol, partitioning emissions into operational (scope 1), purchased-energy (scope 2), and value-chain (scope 3) categories. Energy-intensive systems like proof-of-work mining are scrutinised through footprint analysis that weighs electricity sources and grid carbon intensity.

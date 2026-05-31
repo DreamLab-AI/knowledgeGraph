@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:aa3b4580e17b77c569feccf581c44b78382c27b6e22b56b24c9f131b67920d45",
+  "title": "MiCA",
+  "slug": "mi-ca",
+  "public": true,
+  "classIri": "urn:ngm:class:mi-ca",
+  "domain": "mica",
+  "definition": "MiCA (Markets in Crypto-Assets Regulation) is a European Union regulation establishing a harmonised legal framework for crypto-assets not already covered by existing financial services law. Adopted in 2023 and applying in phases through 2024, it sets rules for issuers of asset-referenced tokens and e-money tokens, and for crypto-asset service providers such as exchanges and custodians. The regulation covers authorisation, capital and governance requirements, market-abuse provisions and consumer protection, including reserve and redemption rules for stablecoins. It is one of the first comprehensive crypto regulatory regimes among major jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-domain",
+      "label": "Regulatory Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "regulation-eu-2023-1114-on-markets-in-crypto-assets",
+      "label": "Regulation (EU) 2023/1114 on Markets in Crypto-Assets"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

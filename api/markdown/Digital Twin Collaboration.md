@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-300-digital-twin-collaboration
 
 # Digital Twin Collaboration
 ```json-ld

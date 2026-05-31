@@ -1,4 +1,5 @@
 public:: true
+alias:: PlatformLayer
 
 # Platform Layer
 ```json-ld

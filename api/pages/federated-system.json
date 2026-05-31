@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:federated-system",
+  "title": "Federated System",
+  "slug": "federated-system",
+  "public": true,
+  "classIri": "urn:ngm:class:federated-system",
+  "domain": "infrastructure",
+  "definition": "A federated system is a distributed architecture composed of autonomous, independently operated nodes or servers that cooperate under shared protocols while retaining local control over their own data and policies. Unlike fully centralised systems, federation distributes authority across multiple operators, and unlike fully decentralised peer-to-peer networks, it relies on a finite set of identifiable, semi-trusted servers. This model underpins federated social networks, messaging, and consortium-style trust arrangements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    }
+  ]
+}

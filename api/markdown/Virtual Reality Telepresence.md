@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-020-virtual-reality-telepresence
 
 # Virtual Reality Telepresence
 ```json-ld

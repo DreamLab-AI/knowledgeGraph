@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:9c31a8b7c1310d72810b758ce9008b46d461d79166dcf458ce805467a02176eb",
+  "title": "Agent-Based Modelling",
+  "slug": "agent-based-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-based-modelling",
+  "domain": "artificial-intelligence",
+  "definition": "Agent-based modelling is a simulation method in which many autonomous agents follow local rules and their interactions produce system-level behaviour. It is used to study emergent phenomena that are hard to capture with aggregate equations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:innovation-diffusion",
+        "label": "Innovation Diffusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    }
+  ]
+}

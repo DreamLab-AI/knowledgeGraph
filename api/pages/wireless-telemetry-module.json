@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:wireless-telemetry-module",
+  "title": "Wireless Telemetry Module",
+  "slug": "wireless-telemetry-module",
+  "public": true,
+  "classIri": "urn:ngm:class:wireless-telemetry-module",
+  "domain": "infrastructure",
+  "definition": "A wireless telemetry module is an embedded hardware subsystem that acquires sensor measurements and transmits them over a radio link to a remote receiver without a wired connection. It combines signal conditioning, analogue-to-digital conversion, a microcontroller, and a low-power radio, and is used where wired tethering is impractical, such as implanted devices or remote field sensors. Power efficiency, antenna design, and link reliability are its central engineering constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    }
+  ]
+}

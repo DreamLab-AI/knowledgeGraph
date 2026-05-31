@@ -76,6 +76,10 @@
       "label": "Mobile Robot Platform"
     },
     {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     }

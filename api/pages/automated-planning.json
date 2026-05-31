@@ -54,6 +54,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     }

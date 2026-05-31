@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:strategic-bitcoin-reserve",
+  "title": "Strategic Bitcoin Reserve",
+  "slug": "strategic-bitcoin-reserve",
+  "public": true,
+  "classIri": "urn:ngm:class:strategic-bitcoin-reserve",
+  "domain": "blockchain",
+  "definition": "A strategic Bitcoin reserve is a holding of bitcoin maintained by a state, corporation, or institution as a long-term store of value and hedge against fiat debasement, analogous to gold or foreign-currency reserves. Proponents argue that bitcoin's fixed supply and censorship resistance make it a credible reserve asset, while critics cite volatility and custody risk. The concept gained prominence as governments and large treasuries began formal accumulation programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-distribution",
+        "label": "Bitcoin Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

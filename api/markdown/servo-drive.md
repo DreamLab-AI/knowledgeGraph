@@ -1,0 +1,4 @@
+- ### Definition
+  - A servo drive is the power-electronic controller that closes current, velocity, and position loops around a servomotor using encoder feedback. It is a part of [[Motion Control]] subsystems and of every joint in an [[Industrial Robot]].
+- ### Content
+  - Drives typically implement cascaded PID or model-based control with field-oriented commutation for brushless motors. Performance is set by loop bandwidth, switching frequency, and feedback resolution, which together determine the smoothness, stiffness, and tracking accuracy of robotic motion.

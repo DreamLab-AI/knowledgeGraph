@@ -1,4 +1,5 @@
 public:: true
+alias:: NaturalLanguageProcessing
 
 # Natural Language Processing
 ```json-ld

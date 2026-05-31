@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:4c6a522df4fb9c02ca8d361e1521c6f275f2e3324934e6272afeecaa1b893b32",
+  "title": "TELE-060-instant-ngp",
+  "slug": "tele-060-instant-ngp",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-060-instant-ngp",
+  "domain": "metaverse",
+  "definition": "Instant-NGP (Instant Neural Graphics Primitives) is a method that uses a multi-resolution hash encoding to train and evaluate neural graphics representations such as neural radiance fields far faster than earlier approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-rendering",
+      "label": "Neural Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "neural-rendering",
+      "label": "Neural Rendering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "ai-avatars",
+      "label": "AI Avatars"
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "label": "Neural Radiance Fields"
+    }
+  ]
+}

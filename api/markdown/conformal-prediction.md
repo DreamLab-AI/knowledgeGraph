@@ -1,0 +1,4 @@
+- ### Definition
+  - Conformal prediction produces calibrated prediction sets with guaranteed marginal coverage, complementing any [[Probabilistic Model]] with distribution-free uncertainty quantification.
+- ### Content
+  - The method ranks a test point's nonconformity score against a calibration set to form a set of plausible labels at the chosen error rate. Its guarantees hold under exchangeability for any base model, making it attractive for safety-critical and regulated deployments where calibrated uncertainty is required.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Scientific research is a knowledge-producing application area increasingly supported by [[AI Companies]] and autonomous [[Agents]] across data analysis, modelling, and experiment design.
+- ### Content
+  - AI assistance ranges from retrieval and summarisation of literature to statistical analysis, code generation, and tool-using agents that orchestrate computational experiments. These capabilities raise throughput but require rigorous validation, provenance tracking, and reproducibility safeguards to preserve scientific integrity.

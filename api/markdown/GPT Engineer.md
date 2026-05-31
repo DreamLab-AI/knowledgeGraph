@@ -426,7 +426,7 @@ public:: true
         "label": "TypeScript"
       },
       {
-        "@id": "urn:ngm:individual:docker",
+        "@id": "urn:ngm:class:docker",
         "label": "Docker"
       }
     ],
@@ -444,11 +444,11 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:individual:chat-gpt",
+        "@id": "urn:ngm:class:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -504,7 +504,7 @@ public:: true
         "label": "SWE-bench Benchmark"
       },
       {
-        "@id": "urn:ngm:individual:anthropic-claude",
+        "@id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       }
     ]

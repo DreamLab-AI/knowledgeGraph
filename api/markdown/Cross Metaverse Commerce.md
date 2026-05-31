@@ -1,4 +1,5 @@
 public:: true
+alias:: Cross-Metaverse Commerce
 
 # Cross Metaverse Commerce
 ```json-ld

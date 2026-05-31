@@ -1,0 +1,4 @@
+- ### Definition
+  - Reality.eth is a crowdsourced Ethereum oracle that resolves questions via bonded answer escalation, providing dispute-resistant outcomes to smart contracts and tools such as [[Snapshot Voting]] and [[DAO Tooling]].
+- ### Content
+  - Answerers post a bond backing their response; any challenger must double the bond to overturn it, so converging on truth becomes the cheapest strategy. Unresolved or disputed cases can fall back to an arbitrator such as Kleros, making the oracle suitable for executing DAO decisions and settling subjective market questions.

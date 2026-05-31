@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:cac7c875469903d16951db71135b1d274ad44117b319a82b04b90b16a5e70089",
+  "title": "DEX",
+  "slug": "dex",
+  "public": true,
+  "classIri": "urn:ngm:class:dex",
+  "domain": "blockchain",
+  "definition": "The common abbreviation for a decentralised exchange, a smart-contract trading venue where users swap assets without surrendering custody to a central operator.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-exchange",
+      "label": "Decentralised Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

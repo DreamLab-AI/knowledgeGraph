@@ -59,8 +59,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cbdc-cross-border-settlement",
+      "label": "CBDC Cross-Border Settlement"
+    },
+    {
+      "slug": "cpmi-iosco-pfmi",
+      "label": "CPMI-IOSCO PFMI"
+    },
+    {
+      "slug": "cash-app",
+      "label": "Cash App"
+    },
+    {
       "slug": "central-bank-digital-currency-cbdc",
       "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "digital-pound",
+      "label": "Digital Pound"
     },
     {
       "slug": "money",
@@ -71,12 +87,40 @@
       "label": "NFT Renting"
     },
     {
+      "slug": "revolut",
+      "label": "Revolut"
+    },
+    {
+      "slug": "swift-messaging",
+      "label": "SWIFT Messaging"
+    },
+    {
+      "slug": "settlement",
+      "label": "Settlement"
+    },
+    {
+      "slug": "traditional-banking",
+      "label": "Traditional Banking"
+    },
+    {
       "slug": "transaction-standard",
       "label": "Transaction Standard"
     },
     {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "usdt",
+      "label": "USDT"
+    },
+    {
       "slug": "value-transfer",
       "label": "Value Transfer"
+    },
+    {
+      "slug": "visa",
+      "label": "Visa"
     }
   ]
 }

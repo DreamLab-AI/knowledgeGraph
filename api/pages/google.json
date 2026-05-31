@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:e57d4a6b4f8011ca6e87e583076f2462fd1c18160f8a64b71f3beff26871b68b",
+  "title": "Google",
+  "slug": "google",
+  "public": true,
+  "classIri": "urn:ngm:class:google",
+  "domain": "artificial-intelligence",
+  "definition": "Google is a technology company that operates a search engine and a broad portfolio of internet, advertising, cloud, and artificial intelligence products and services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "deep-mind",
+      "label": "DeepMind"
+    },
+    {
+      "slug": "google-cloud",
+      "label": "Google Cloud"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "rb-0022-robot-dynamics",
+      "label": "rb 0022 robot dynamics"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

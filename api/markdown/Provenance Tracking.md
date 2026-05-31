@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0441-provenance-tracking
 
 # Provenance Tracking
 ```json-ld

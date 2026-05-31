@@ -1,4 +1,5 @@
 public:: true
+alias:: NeuralMachineTranslation
 
 # Neural Machine Translation
 ```json-ld

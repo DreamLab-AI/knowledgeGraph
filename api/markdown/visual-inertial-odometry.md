@@ -1,0 +1,4 @@
+- ### Definition
+  - Visual-inertial odometry fuses camera and IMU data to estimate pose and motion, a technique required by [[Mixed Reality]] for robust inside-out tracking.
+- ### Content
+  - VIO tightly or loosely couples visual feature tracking with high-rate inertial integration through filtering or optimisation back-ends. The fusion resolves monocular scale, bridges visual dropouts, and delivers the low-latency, drift-corrected pose needed for stable headset and robot localisation.

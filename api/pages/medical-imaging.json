@@ -79,6 +79,10 @@
       "label": "Light field"
     },
     {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
       "slug": "patent",
       "label": "Patent"
     },

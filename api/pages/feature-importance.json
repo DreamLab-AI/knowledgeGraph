@@ -108,6 +108,10 @@
   ],
   "backlinks": [
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "global-explanation",
       "label": "Global Explanation"
     },

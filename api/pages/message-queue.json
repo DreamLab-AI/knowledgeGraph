@@ -87,8 +87,16 @@
       "label": "Distributed Computing"
     },
     {
+      "slug": "integration-layer",
+      "label": "Integration Layer"
+    },
+    {
       "slug": "middleware",
       "label": "Middleware"
+    },
+    {
+      "slug": "publish-subscribe-pattern",
+      "label": "Publish-Subscribe Pattern"
     },
     {
       "slug": "service-layer",

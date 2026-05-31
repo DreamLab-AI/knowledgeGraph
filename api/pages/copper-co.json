@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:6b4ed806e24e823d582ab00a987544467f262c70884034dc5c9767a2deac1f74",
+  "title": "Copper.co",
+  "slug": "copper-co",
+  "public": true,
+  "classIri": "urn:ngm:class:copper-co",
+  "domain": "fintech",
+  "definition": "Copper.co is a digital asset custody and infrastructure company serving institutional clients. It provides secure storage, settlement and prime services for cryptocurrencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:custody",
+      "label": "Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

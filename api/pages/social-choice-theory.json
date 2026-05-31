@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:social-choice-theory",
+  "title": "Social Choice Theory",
+  "slug": "social-choice-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:social-choice-theory",
+  "domain": "governance",
+  "definition": "Social choice theory is the formal study of how individual preferences can be aggregated into a collective decision, examining the properties, fairness, and impossibility constraints of voting rules and welfare functions. Foundational results such as Arrow's impossibility theorem show that no rank-aggregation rule can simultaneously satisfy a small set of seemingly reasonable fairness axioms. It provides the theoretical underpinning for voting mechanism design in both political and digital governance systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ]
+}

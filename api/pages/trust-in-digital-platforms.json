@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:trust-in-digital-platforms",
+  "title": "Trust in Digital Platforms",
+  "slug": "trust-in-digital-platforms",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-in-digital-platforms",
+  "domain": "governance",
+  "definition": "Trust in digital platforms is the confidence users place in online services to handle their data, transactions, and interactions safely, fairly, and reliably. It is shaped by security and privacy guarantees, transparent policies, dispute resolution, and consumer-protection measures, and is a prerequisite for sustained participation and economic activity in digital markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "participant-protection",
+      "label": "Participant Protection"
+    }
+  ]
+}

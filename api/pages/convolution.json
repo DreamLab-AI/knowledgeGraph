@@ -58,6 +58,14 @@
     {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
     }
   ]
 }

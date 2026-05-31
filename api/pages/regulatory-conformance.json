@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:regulatory-conformance",
+  "title": "Regulatory Conformance",
+  "slug": "regulatory-conformance",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-conformance",
+  "domain": "governance",
+  "definition": "Regulatory conformance is the demonstrable state of an organisation's systems and processes meeting the legal and regulatory requirements applicable to its domain. It is evidenced through controls, documentation, and audits that map obligations to operational practice. For AI and data systems, conformance increasingly covers risk classification, transparency, and accountability mandates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-domain",
+        "label": "AI Governance Domain"
+      },
+      {
+        "id": "urn:ngm:class:compliance-domain",
+        "label": "Compliance Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    }
+  ]
+}

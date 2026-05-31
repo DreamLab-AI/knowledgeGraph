@@ -92,6 +92,10 @@
       "label": "Humanity Attestation"
     },
     {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
       "slug": "neural-network",
       "label": "Neural Network"
     }

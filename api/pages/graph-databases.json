@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:1b2687c59b1359ab70c161ed1558e0c333cf701bc2179a56c5dbb5daa6b2378b",
+  "title": "Graph Databases",
+  "slug": "graph-databases",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-databases",
+  "domain": "distributed-systems",
+  "definition": "Graph databases are database systems that store data as nodes and edges, modelling entities and their relationships directly for traversal-based queries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-systems",
+      "label": "Database Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "knowledge-graphs",
+      "label": "Knowledge Graphs"
+    },
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-graph-database",
+      "label": "https://en.wikipedia.org/wiki/Graph_database"
+    },
+    {
+      "slug": "https-neo-4-j-com-developer-graph-database",
+      "label": "https://neo4j.com/developer/graph-database/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "database-systems",
+      "label": "Database Systems"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "network-theory",
+      "label": "Network Theory"
+    }
+  ]
+}

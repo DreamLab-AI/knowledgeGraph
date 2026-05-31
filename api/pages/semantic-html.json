@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:semantic-html",
+  "title": "Semantic HTML",
+  "slug": "semantic-html",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-html",
+  "domain": "infrastructure",
+  "definition": "Semantic HTML is the practice of using HTML elements according to their intended meaning rather than for presentation alone. Elements such as header, nav, main, article, and button convey document structure and role to browsers and assistive technologies. It is a foundational requirement for accessible, machine-interpretable web content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    }
+  ]
+}

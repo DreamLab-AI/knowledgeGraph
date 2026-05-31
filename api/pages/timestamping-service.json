@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:6c7f6d0800c7a872a3f85914eb9601b39c8e52631202c07584078f7952048ad2",
+  "title": "Timestamping Service",
+  "slug": "timestamping-service",
+  "public": true,
+  "classIri": "urn:ngm:class:timestamping-service",
+  "domain": "cryptography",
+  "definition": "A timestamping service is a system that issues verifiable proof that a piece of data existed at or before a particular time, often using cryptographic methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trusted-timestamping",
+      "label": "Trusted Timestamping"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
+      "slug": "timestamp",
+      "label": "Timestamp"
+    },
+    {
+      "slug": "trusted-timestamping",
+      "label": "Trusted Timestamping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

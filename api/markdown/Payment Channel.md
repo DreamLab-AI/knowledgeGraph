@@ -1,4 +1,5 @@
 public:: true
+alias:: payment-channel
 
 # Payment Channel
 ```json-ld

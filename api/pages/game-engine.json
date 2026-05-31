@@ -217,6 +217,10 @@
       "label": "3D Development"
     },
     {
+      "slug": "3-d-engine",
+      "label": "3D Engine"
+    },
+    {
       "slug": "3-d-scene-exchange-protocol-sxp",
       "label": "3D Scene Exchange Protocol (SXP)"
     },
@@ -229,8 +233,16 @@
       "label": "AI in Games"
     },
     {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
       "slug": "etsi-domain-infrastructure-immersive",
       "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "fbx",
+      "label": "FBX"
     },
     {
       "slug": "metaverse",
@@ -261,6 +273,10 @@
       "label": "Scene Graph"
     },
     {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
       "slug": "vr-rendering-engine",
       "label": "VR Rendering Engine"
     },
@@ -275,6 +291,10 @@
     {
       "slug": "virtual-production",
       "label": "Virtual Production"
+    },
+    {
+      "slug": "gaming",
+      "label": "gaming"
     }
   ]
 }

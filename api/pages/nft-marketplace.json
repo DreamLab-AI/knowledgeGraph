@@ -105,6 +105,14 @@
       "label": "NFT Minting"
     },
     {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
       "slug": "token",
       "label": "Token"
     }

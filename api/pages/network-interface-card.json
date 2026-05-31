@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:network-interface-card",
+  "title": "Network Interface Card",
+  "slug": "network-interface-card",
+  "public": true,
+  "classIri": "urn:ngm:class:network-interface-card",
+  "domain": "infrastructure",
+  "definition": "A network interface card (NIC) is the hardware component that connects a computing device to a network and implements the physical and data-link layer functions for sending and receiving frames. It encodes outgoing data onto the transmission medium, decodes incoming signals, and carries a unique MAC address for link-layer addressing. Modern NICs often offload checksum, segmentation, and encryption work from the CPU.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

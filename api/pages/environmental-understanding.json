@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:9122ad63c6763f09f0537c944c03a732b03a3b1a7632b42d5b91fe034d4b092d",
+  "title": "Environmental Understanding",
+  "slug": "environmental-understanding",
+  "public": true,
+  "classIri": "urn:ngm:class:environmental-understanding",
+  "domain": "robotics",
+  "definition": "Environmental understanding is the capability of a robot or autonomous system to perceive, interpret, and build a usable model of its surroundings from sensor data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scene-understanding",
+      "label": "Scene Understanding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "mobile-manipulation",
+      "label": "Mobile Manipulation"
+    },
+    {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ar-overlay",
+      "label": "Ar Overlay"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    }
+  ]
+}

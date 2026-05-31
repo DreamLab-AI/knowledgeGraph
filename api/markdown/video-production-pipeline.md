@@ -1,0 +1,4 @@
+- ### Definition
+  - A video production pipeline moves footage from capture through editing and delivery, incorporating [[Image and Video Restoration]] and overlapping with the broader [[Content Creation Pipeline]].
+- ### Content
+  - Stages typically include ingest, editorial assembly, visual effects and compositing, colour grading, audio, and encoding for distribution. AI tooling now augments restoration, upscaling, rotoscoping and generation, while asset management and review systems keep large teams synchronised.

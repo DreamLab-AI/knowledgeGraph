@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:b14c0e4cce079e57aee65ff3a95c7b2fde75c5dbfa02e9a4bcf92fb039036e9e",
+  "title": "University of Sheffield",
+  "slug": "university-of-sheffield",
+  "public": true,
+  "classIri": "urn:ngm:class:university-of-sheffield",
+  "domain": "education",
+  "definition": "A public research university in Sheffield, England, and a member of the Russell Group of research-intensive universities. It is known for engineering, materials science, and natural language processing research.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "united-states",
+      "label": "United States"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

@@ -67,6 +67,10 @@
       "label": "Governance Token"
     },
     {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
     }

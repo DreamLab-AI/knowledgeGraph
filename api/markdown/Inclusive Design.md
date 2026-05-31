@@ -1,4 +1,5 @@
 public:: true
+alias:: InclusiveDesign
 
 # Inclusive Design
 ```json-ld

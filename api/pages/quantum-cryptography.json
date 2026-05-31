@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:quantum-cryptography",
+  "title": "Quantum Cryptography",
+  "slug": "quantum-cryptography",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-cryptography",
+  "domain": "security",
+  "definition": "Quantum cryptography uses principles of quantum mechanics, such as the no-cloning theorem and measurement disturbance, to perform cryptographic tasks whose security rests on physical law rather than computational hardness. Its best-known application, quantum key distribution, lets two parties establish a shared secret with detectable eavesdropping. It is distinct from post-quantum cryptography, which is classical algorithms resistant to quantum attack.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantum-network-node",
+        "label": "Quantum Network Node"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "quantum-network-node",
+      "label": "Quantum Network Node"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:identity-proofing",
+  "title": "Identity Proofing",
+  "slug": "identity-proofing",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-proofing",
+  "domain": "security",
+  "definition": "Identity proofing is the process of collecting and validating evidence to establish that a claimed identity corresponds to a real, unique person before issuing credentials or granting access. It typically combines document verification, biometric checks, and authoritative-source confirmation, graded by assurance levels such as those defined in NIST SP 800-63A. Identity proofing precedes authentication and is foundational to trustworthy onboarding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

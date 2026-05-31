@@ -75,6 +75,10 @@
       "label": "NFT Minting"
     },
     {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
       "slug": "reputation-system",
       "label": "Reputation System"
     },

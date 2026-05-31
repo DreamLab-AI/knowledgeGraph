@@ -54,8 +54,20 @@
       "label": "Access Control System"
     },
     {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
       "slug": "attribute-sharing",
       "label": "Attribute Sharing"
+    },
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "centralized-identity-provider",
+      "label": "Centralized Identity Provider"
     },
     {
       "slug": "collaborative-whiteboard",
@@ -74,6 +86,10 @@
       "label": "Cybersecurity Standard"
     },
     {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
     },
@@ -88,6 +104,14 @@
     {
       "slug": "data-provenance",
       "label": "Data Provenance"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "decentralized-identifier",
+      "label": "Decentralized Identifier"
     },
     {
       "slug": "digital-citizenship",
@@ -126,8 +150,16 @@
       "label": "Enterprise Smart Contracts"
     },
     {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
       "slug": "ethics-and-law-layer",
       "label": "Ethics & Law Layer"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
     },
     {
       "slug": "governance-model",
@@ -142,8 +174,32 @@
       "label": "Identity Provider"
     },
     {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
+      "slug": "identity-verification-system",
+      "label": "Identity Verification System"
+    },
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "microsoft-entra-verified-id",
+      "label": "Microsoft Entra Verified ID"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
     },
     {
       "slug": "participant-authentication",
@@ -152,6 +208,10 @@
     {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
+    },
+    {
+      "slug": "polygon-id",
+      "label": "Polygon ID"
     },
     {
       "slug": "presence-indicator",
@@ -168,6 +228,14 @@
     {
       "slug": "r3-corda",
       "label": "R3 Corda"
+    },
+    {
+      "slug": "saml-2-0",
+      "label": "SAML 2.0"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
     },
     {
       "slug": "smart-contract",

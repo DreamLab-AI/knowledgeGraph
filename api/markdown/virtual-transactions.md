@@ -1,0 +1,4 @@
+- ### Definition
+  - Virtual transactions transfer value within digital environments, settled through a [[Digital Payment System]] and denominated in a [[Digital Currency]].
+- ### Content
+  - They span purchases of virtual goods, peer-to-peer transfers and marketplace trades. Reliable virtual transactions require atomic settlement, double-spend prevention, balance accounting and audit trails, whether implemented through centralised ledgers or on-chain smart contracts.

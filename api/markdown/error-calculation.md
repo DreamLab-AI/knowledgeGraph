@@ -1,0 +1,4 @@
+- ### Definition
+  - Error calculation computes the difference between setpoint and measured variable within a [[Control System]], serving as the core input to both [[Velocity Control]] and [[Position Control]] loops.
+- ### Content
+  - The error signal it produces feeds proportional, integral, and derivative terms that determine the controller output. Precision and timing of this computation directly govern loop stability, overshoot, and steady-state accuracy.

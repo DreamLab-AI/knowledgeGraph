@@ -1,4 +1,5 @@
 public:: true
+alias:: Context-Aware Computing
 
 # Context Aware Computing
 ```json-ld

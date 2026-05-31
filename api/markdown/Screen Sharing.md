@@ -315,12 +315,12 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:remote-desktop-technology",
-      "label": "Remote Desktop Technology"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     },
     {
-      "@id": "urn:ngm:class:synchronous-collaboration-tools",
-      "label": "Synchronous Collaboration Tools"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

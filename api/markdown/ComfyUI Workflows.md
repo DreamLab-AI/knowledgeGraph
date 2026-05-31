@@ -475,12 +475,12 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:diffusion-model-interface",
-      "label": "Diffusion Model Interface"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     },
     {
-      "@id": "urn:ngm:class:generative-ai-pipeline",
-      "label": "Generative AI Pipeline"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {
@@ -548,11 +548,11 @@ public:: true
         "label": "Python Runtime"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -672,7 +672,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:individual:animate-diff",
+        "@id": "urn:ngm:class:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "ControlNet and Similar Spatial Conditioning Systems"
       },
       {
-        "@id": "urn:ngm:individual:flux-1",
+        "@id": "urn:ngm:class:flux-1",
         "label": "Flux.1"
       },
       {
@@ -696,11 +696,11 @@ public:: true
         "label": "Inpainting"
       },
       {
-        "@id": "urn:ngm:individual:ip-adapter",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -726,7 +726,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:individual:animate-diff",
+        "@id": "urn:ngm:class:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -734,7 +734,7 @@ public:: true
         "label": "Inpainting"
       },
       {
-        "@id": "urn:ngm:individual:ip-adapter",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter"
       },
       {

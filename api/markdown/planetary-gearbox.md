@@ -1,0 +1,4 @@
+- ### Definition
+  - A planetary gearbox is an epicyclic reduction mechanism that delivers high torque in a compact coaxial package, a key [[Mechanical Component]] of robotic actuators.
+- ### Content
+  - Because torque is shared among multiple planet gears, the gearbox achieves greater load capacity and stiffness than a comparable single-mesh design, while its concentric layout keeps the output axis aligned with the input. These traits, together with selectable high reduction ratios, make planetary gearboxes the standard choice for compact, high-torque robot joints, with backlash and efficiency being the main design trade-offs.

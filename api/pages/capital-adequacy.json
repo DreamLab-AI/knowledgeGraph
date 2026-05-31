@@ -59,6 +59,10 @@
       "label": "Regulatory Reporting"
     },
     {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    },
+    {
       "slug": "stablecoin-regulation",
       "label": "Stablecoin Regulation"
     }

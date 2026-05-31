@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:584c83a798f53eeabbbb5b984873655eac78cba68da115d74ed25ca3dce95531",
+  "title": "MaterialX",
+  "slug": "material-x",
+  "public": true,
+  "classIri": "urn:ngm:class:material-x",
+  "domain": "metaverse",
+  "definition": "MaterialX is an open standard for describing surface and procedural materials, shading networks and look development data in a renderer-independent form for exchange between content creation tools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:material-definition",
+      "label": "Material Definition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "shader",
+      "label": "Shader"
+    },
+    {
+      "slug": "texture-mapping",
+      "label": "Texture Mapping"
+    },
+    {
+      "slug": "physically-based-rendering",
+      "label": "Physically Based Rendering"
+    },
+    {
+      "slug": "asset-interoperability",
+      "label": "Asset Interoperability"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
+    },
+    {
+      "slug": "material-definition",
+      "label": "Material Definition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "siggraph-pipeline-wg",
+      "label": "SIGGRAPH Pipeline WG"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ]
+}

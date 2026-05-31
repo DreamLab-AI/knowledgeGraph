@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:28b1c598ddabee92696abc238f4a386a13fb9bbc463c4ce452c248c4b045fed7",
+  "title": "Computational Photography",
+  "slug": "computational-photography",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-photography",
+  "domain": "computer-vision",
+  "definition": "A set of techniques that use digital computation to extend or improve the capabilities of a camera beyond what its optics and sensor alone can capture. It combines multiple exposures, sensor data, and algorithms to form a final image.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

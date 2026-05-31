@@ -1,0 +1,4 @@
+- ### Definition
+  - ISO/IEC JTC 1/SC 27 is the international subcommittee that produces consensus standards for [[Cryptography, Security and Privacy]], including the ISO/IEC 27000 management series, cryptographic mechanisms and identity frameworks referenced by systems such as [[Decentralized Identifiers]].
+- ### Content
+  - The subcommittee organises its work across working groups covering information security management systems, cryptography and security mechanisms, security evaluation, security controls and services, and identity management and privacy. Its standards are widely adopted in regulatory and procurement contexts, making SC 27 a foundational authority for security and privacy interoperability.

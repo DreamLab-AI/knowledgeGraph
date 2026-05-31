@@ -1,4 +1,5 @@
 public:: true
+alias:: MicroservicesArchitecture
 
 # Microservices Architecture
 ```json-ld

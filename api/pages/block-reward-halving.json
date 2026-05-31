@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:block-reward-halving",
+  "title": "Block Reward Halving",
+  "slug": "block-reward-halving",
+  "public": true,
+  "classIri": "urn:ngm:class:block-reward-halving",
+  "domain": "blockchain",
+  "definition": "The block reward halving is the protocol rule in Bitcoin and similar proof-of-work chains that cuts the newly minted coin subsidy paid to miners in half at fixed block intervals, roughly every four years for Bitcoin. This geometric reduction enforces a predictable, disinflationary issuance schedule that converges on a fixed total supply of 21 million bitcoin. Halvings are central to Bitcoin's scarcity narrative and have historically been focal points for market and security-budget analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

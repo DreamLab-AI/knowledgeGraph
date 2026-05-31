@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:d45a13badeccfa8bf32573d851909294ecf720cabaf94d4390e324886eb9f1ba",
+  "title": "Graphics Processing Unit",
+  "slug": "graphics-processing-unit",
+  "public": true,
+  "classIri": "urn:ngm:class:graphics-processing-unit",
+  "domain": "general",
+  "definition": "A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-processing",
+      "label": "Graphics Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "shader",
+      "label": "Shader"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "compute-shader",
+      "label": "Compute Shader"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "open-gl",
+      "label": "OpenGL"
+    },
+    {
+      "slug": "graphics-processing",
+      "label": "Graphics Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    },
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

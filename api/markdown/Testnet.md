@@ -455,8 +455,8 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:protocol-implementation",
-      "label": "Protocol Implementation"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
       "@id": "urn:ngm:class:testing-infrastructure",
@@ -508,7 +508,7 @@ public:: true
         "label": "Native Token Distribution"
       },
       {
-        "@id": "urn:ngm:class:peer-to-peer-protocol",
+        "@id": "urn:ngm:class:peerto-peer-protocol",
         "label": "Peer-to-Peer Protocol"
       },
       {

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-identity-management",
+  "title": "User Identity Management",
+  "slug": "user-identity-management",
+  "public": true,
+  "classIri": "urn:ngm:class:user-identity-management",
+  "domain": "security",
+  "definition": "User identity management is the set of processes and systems that create, maintain, authenticate and deprovision the digital identities of users across a platform's lifecycle. It governs how users register, prove who they are, manage profiles and link accounts, and is foundational to access control and personalised experiences. In collaborative and metaverse platforms it also coordinates presence, avatars and cross-session continuity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      },
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    }
+  ]
+}

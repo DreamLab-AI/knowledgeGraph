@@ -1,0 +1,4 @@
+- ### Definition
+  - A consent registry is the auditable system of record for granted and withdrawn consent, forming the core of [[Consent Management]] and validating each [[User Consent Token]].
+- ### Content
+  - The registry records purpose, scope, timestamp, and version of each consent event, supporting withdrawal, expiry, and proof-of-consent queries demanded by regulations such as GDPR. Downstream services check the registry before processing, and consent tokens or receipts can reference registry entries to bind a transaction to a verified permission.

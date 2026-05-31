@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:law-enforcement-access",
+  "title": "Law Enforcement Access",
+  "slug": "law-enforcement-access",
+  "public": true,
+  "classIri": "urn:ngm:class:law-enforcement-access",
+  "domain": "governance",
+  "definition": "Law enforcement access refers to the legally authorised mechanisms by which police and regulatory authorities obtain data, records or information held by service providers for investigation and prosecution. In financial and crypto contexts it covers lawful requests for customer and transaction information under court orders, subpoenas or statutory disclosure rules such as the FATF Travel Rule. It sits at the intersection of compliance obligations and privacy safeguards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

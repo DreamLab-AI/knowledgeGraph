@@ -59,8 +59,40 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "acm",
+      "label": "ACM"
+    },
+    {
+      "slug": "adr-008",
+      "label": "ADR-008"
+    },
+    {
+      "slug": "adr-012",
+      "label": "ADR-012"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "code-review",
+      "label": "Code Review"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "git-hub",
+      "label": "GitHub"
     },
     {
       "slug": "image-generation",
@@ -85,6 +117,10 @@
     {
       "slug": "task-specific-head",
       "label": "Task Specific Head"
+    },
+    {
+      "slug": "type-script",
+      "label": "TypeScript"
     }
   ]
 }

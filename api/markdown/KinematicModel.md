@@ -1,4 +1,5 @@
 public:: true
+alias:: Kinematic Model
 
 # kinematicmodel
 ```json-ld

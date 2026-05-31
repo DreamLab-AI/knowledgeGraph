@@ -1,0 +1,4 @@
+- ### Definition
+  - Data observability continuously monitors data and pipeline health across freshness, volume, schema and lineage, extending [[Metadata Management]] with software-style monitoring of data systems.
+- ### Content
+  - Platforms profile datasets and learn baselines, then alert on anomalies such as stale tables, row-count drops or schema drift. By surfacing problems at the source, observability shortens incident resolution and protects downstream analytics and models.

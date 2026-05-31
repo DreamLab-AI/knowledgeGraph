@@ -104,7 +104,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:real-time-collaboration",
+        "@id": "urn:ngm:class:realtime-collaboration",
         "label": "Real-Time Collaboration"
       },
       {

@@ -1,4 +1,5 @@
 public:: true
+alias:: ContentDistribution
 
 # Content Distribution
 ```json-ld

@@ -1,0 +1,4 @@
+- ### Definition
+  - Set-of-mark prompting overlays segmented image regions with numbered marks so a multimodal model can reference and act on specific elements by label. It is a building block implemented by [[Computer Use and Browser Agents]].
+- ### Content
+  - A segmentation model partitions the screenshot or image, each region receives a visible identifier, and the prompt instructs the model to answer or act in terms of those identifiers. This converts ambiguous pixel-space grounding into discrete symbolic choices, markedly improving the reliability with which agents click, type, and navigate user interfaces.

@@ -67,12 +67,40 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "linked-data-platform",
+      "label": "Linked Data Platform"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
       "slug": "sparql-examples",
       "label": "SPARQL EXAMPLES"
     },
     {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
       "slug": "semantic-web",
       "label": "Semantic Web"
+    },
+    {
+      "slug": "solid-pod-storage",
+      "label": "Solid Pod Storage"
     },
     {
       "slug": "solid",

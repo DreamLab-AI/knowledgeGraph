@@ -10,6 +10,7 @@
   "vc:outboundWikilinks": []
 }
 ```
+alias:: TransferLearning
 
 ```json-ld
 {

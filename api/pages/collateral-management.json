@@ -71,8 +71,16 @@
       "label": "Digital Asset Lending"
     },
     {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
       "slug": "nft-renting",
       "label": "NFT Renting"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
     }
   ]
 }

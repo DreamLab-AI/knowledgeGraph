@@ -71,8 +71,16 @@
       "label": "Blockchain Interoperability"
     },
     {
+      "slug": "bridge",
+      "label": "Bridge"
+    },
+    {
       "slug": "cross-chain-bridge",
       "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
     },
     {
       "slug": "nft-wrapping",

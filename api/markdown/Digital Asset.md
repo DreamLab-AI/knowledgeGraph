@@ -1,4 +1,5 @@
 public:: true
+alias:: Digital-Asset, DigitalAsset
 
 # Digital Asset
 ```json-ld

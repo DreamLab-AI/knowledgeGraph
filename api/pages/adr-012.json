@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:455a88873923678cb6c6b79e2becaf6f970ab18af196ab00f1b78195f2678d8f",
+  "title": "ADR-012",
+  "slug": "adr-012",
+  "public": true,
+  "classIri": "urn:ngm:class:adr-012",
+  "domain": "software-architecture",
+  "definition": "An architecture decision record numbered 012, capturing a particular architectural decision within a project alongside its context and consequences. It is part of a numbered sequence of design records.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

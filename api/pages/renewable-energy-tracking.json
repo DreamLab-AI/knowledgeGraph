@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:renewable-energy-tracking",
+  "title": "Renewable Energy Tracking",
+  "slug": "renewable-energy-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:renewable-energy-tracking",
+  "domain": "blockchain",
+  "definition": "Renewable energy tracking is the verifiable measurement and accounting of clean-energy generation and consumption, often recorded on a ledger to prevent double counting of attributes. It underpins renewable energy certificates by binding each megawatt-hour to a unique, auditable claim. Reliable tracking is essential for credible decarbonisation reporting and voluntary climate commitments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:etsi-mec",
+  "title": "ETSI MEC",
+  "slug": "etsi-mec",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-mec",
+  "domain": "infrastructure",
+  "definition": "ETSI MEC (Multi-access Edge Computing) is a set of standards from the European Telecommunications Standards Institute defining an open framework for running applications at the edge of mobile and fixed networks, close to end users. It specifies APIs and a reference architecture so applications can access low-latency compute, radio-network information, and location services hosted at base stations or aggregation points. MEC is foundational to latency-sensitive use cases such as AR, autonomous systems, and IoT.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "label": "Edge-Cloud Collaboration"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:14737f64c9b7a3e32641e77319bcdb4de7c0353031a8a1b39df5e467857a16ac",
+  "title": "Human-Robot Collaboration",
+  "slug": "human-robot-collaboration",
+  "public": true,
+  "classIri": "urn:ngm:class:human-robot-collaboration",
+  "domain": "robotics",
+  "definition": "Human-robot collaboration is the design and operation of robots that work alongside people in a shared workspace, coordinating tasks safely through sensing, control and interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "assistive-robotics",
+      "label": "Assistive Robotics"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "exoskeleton",
+      "label": "Exoskeleton"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

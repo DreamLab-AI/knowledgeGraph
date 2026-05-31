@@ -3,11 +3,16 @@
   "title": "Google DeepMind",
   "slug": "google-deep-mind",
   "public": true,
-  "classIri": "urn:ngm:individual:google-deep-mind",
+  "classIri": "urn:ngm:class:google-deep-mind",
   "domain": "ai",
   "definition": "Google DeepMind is an AI research laboratory formed in 2023 by the merger of Google Brain and the original DeepMind (acquired by Google in 2014), operating as a division of Alphabet Inc. It is responsible for foundational advances including AlphaGo, AlphaFold, Gemini, and numerous contributions to reinforcement learning and deep learning theory. The organisation pursues both long-term fundamental AI research and the development of AI products deployed across Google's services. With thousands of researchers across London, Mountain View, and other global locations, it is one of the largest and most influential AI research institutions in the world.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-companies",
+      "label": "AI Companies"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -15,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:individual:gemini",
+        "id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {

@@ -59,12 +59,24 @@
       "label": "Access Control System"
     },
     {
+      "slug": "access-controls",
+      "label": "Access Controls"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },
     {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
       "slug": "collaborative-whiteboard",
       "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",
@@ -91,12 +103,40 @@
       "label": "Digital Signatures"
     },
     {
+      "slug": "fido-alliance",
+      "label": "FIDO Alliance"
+    },
+    {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
     {
       "slug": "human-robot-interaction",
       "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "identity-system",
+      "label": "Identity System"
+    },
+    {
+      "slug": "kerberos",
+      "label": "Kerberos"
+    },
+    {
+      "slug": "l-402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "l-402",
+      "label": "L402"
     },
     {
       "slug": "meeting-recording",
@@ -107,12 +147,32 @@
       "label": "Presence Indicator"
     },
     {
+      "slug": "saml-2-0",
+      "label": "SAML 2.0"
+    },
+    {
+      "slug": "saml",
+      "label": "SAML"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
       "slug": "trust-framework",
       "label": "Trust Framework"
     },
     {
       "slug": "trust-infrastructure",
       "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

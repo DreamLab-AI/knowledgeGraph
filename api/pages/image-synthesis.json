@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:7c69014b4555532d7f24d731f59bade76a8aceb6628c03afd06908587bfc6ae2",
+  "title": "Image Synthesis",
+  "slug": "image-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:image-synthesis",
+  "domain": "general",
+  "definition": "The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

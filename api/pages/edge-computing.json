@@ -12,12 +12,12 @@
       "label": "Computing and Cloud"
     },
     {
-      "id": "urn:ngm:class:decentralised-architecture",
-      "label": "Decentralised Architecture"
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "id": "urn:ngm:class:latency-sensitive-infrastructure",
-      "label": "Latency-Sensitive Infrastructure"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "entityType": "Class",
@@ -709,6 +709,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "aiops",
       "label": "AIOps"
     },
@@ -787,6 +791,14 @@
     {
       "slug": "edge-ai-accelerator",
       "label": "Edge AI Accelerator"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
     },
     {
       "slug": "gartner-prediction",
@@ -877,8 +889,16 @@
       "label": "Robotics Platform"
     },
     {
+      "slug": "smart-city",
+      "label": "Smart City"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
     },
     {
       "slug": "telecollaboration-and-telepresence",
@@ -887,6 +907,10 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "wearable-ai",
+      "label": "Wearable AI"
     },
     {
       "slug": "tc-0003-telepresence-robot",

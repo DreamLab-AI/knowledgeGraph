@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:203ffdfeaded7afa1eb65adeb09db980c50e4a2f01a9bed96da20defbcd8f4a9",
+  "title": "ISO 9241-960",
+  "slug": "iso-9241-960",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9241-960",
+  "domain": "standards",
+  "definition": "A part of the ISO 9241 series on ergonomics of human-system interaction, concerning gesture-based interactions. It provides guidance within the broader human-system interaction framework.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:921898c15bbecd43464adf2a4a2e951c30f57f8d5dfbb42a8194404948a72438",
+  "title": "Google Cloud",
+  "slug": "google-cloud",
+  "public": true,
+  "classIri": "urn:ngm:class:google-cloud",
+  "domain": "artificial-intelligence",
+  "definition": "Google Cloud is a cloud computing platform offering infrastructure, data, and machine learning services operated by Google.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-platform",
+      "label": "Cloud Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "tpu",
+      "label": "TPU"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:interaction-manager",
+  "title": "Interaction Manager",
+  "slug": "interaction-manager",
+  "public": true,
+  "classIri": "urn:ngm:class:interaction-manager",
+  "domain": "metaverse",
+  "definition": "An interaction manager is the software component that coordinates the flow of communication between a user and an intelligent virtual entity, governing turn-taking, context tracking, and the selection of responses or behaviours. It mediates between perception, dialogue state, and action so that an agent's experience layer feels coherent and responsive. It is the control hub that converts understood input into appropriately timed and styled output.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Supply Chain Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
+        "id": "urn:ngm:class:experience-layer",
+        "label": "Experience Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

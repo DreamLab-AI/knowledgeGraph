@@ -1,4 +1,5 @@
 public:: true
+alias:: Physical-Virtual Registration
 
 # Physical Virtual Registration
 ```json-ld

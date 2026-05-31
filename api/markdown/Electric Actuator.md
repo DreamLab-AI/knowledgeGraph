@@ -195,8 +195,8 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:electromechanical-systems",
-      "label": "Electromechanical Systems"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
       "@id": "urn:ngm:class:robot-actuator",

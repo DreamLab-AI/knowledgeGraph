@@ -74,20 +74,36 @@
       "label": "Force Torque Sensor"
     },
     {
+      "slug": "machine-vision",
+      "label": "Machine Vision"
+    },
+    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
     },
     {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
+    },
+    {
+      "slug": "mental-health-monitoring",
+      "label": "Mental Health Monitoring"
     },
     {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
     },
     {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
       "slug": "proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "radar",
+      "label": "Radar"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

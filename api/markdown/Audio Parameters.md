@@ -79,8 +79,8 @@ public:: true
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:audio-configuration",
-      "label": "Audio Configuration"
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "SC Display And Rendering"
     }
   ],
   "relations": {

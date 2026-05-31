@@ -1,0 +1,4 @@
+- ### Definition
+  - Algorithmic Capture is the takeover of attention and content flows by engagement-optimizing algorithms. It is a constituent mechanism of the [[Death of the Internet]] thesis and a form of [[Algorithmic Governance]] over discourse.
+- ### Content
+  - As ranking systems mediate ever more of what is seen, incentives shift toward content engineered for the algorithm rather than for people, enabling feedback loops that reward outrage, synthetic media, and engagement bait. The result is reduced diversity, weakened human editorial agency, and concentration of informational power in the platforms that own the algorithms.

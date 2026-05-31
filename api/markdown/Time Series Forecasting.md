@@ -1,4 +1,5 @@
 public:: true
+alias:: Time-Series Forecasting
 
 # Time Series Forecasting
 ```json-ld
@@ -335,8 +336,8 @@ public:: true
       "label": "Probabilistic Forecasting"
     },
     {
-      "@id": "urn:ngm:class:sequential-data-processing",
-      "label": "Sequential Data Processing"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Smart contract governance is the [[Governance Framework]] that controls how deployed [[Smart Contract]] logic, parameters, and upgrades are proposed and enacted, usually via token voting, multisig, or upgradeable proxies.
+- ### Content
+  - It reconciles the ideal of immutable code with the practical need to patch vulnerabilities and adjust economic parameters. Governance design intersects with [[DAO Legal Structures]] when on-chain decisions must map to off-chain legal entities, and with [[E-Contract Arbitration]] when disputes over contract behaviour require structured resolution beyond the protocol itself.

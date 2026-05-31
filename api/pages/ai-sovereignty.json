@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-sovereignty",
+  "title": "AI Sovereignty",
+  "slug": "ai-sovereignty",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-sovereignty",
+  "domain": "governance",
+  "definition": "AI Sovereignty is the capacity of a nation or bloc to develop, control, and govern artificial-intelligence systems and their underlying compute, data, and models without dependence on foreign providers. It motivates domestic investment in chips, data centres, foundation models, and regulation to retain strategic autonomy. The concept frames AI capability as critical national infrastructure subject to security, economic, and geopolitical considerations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

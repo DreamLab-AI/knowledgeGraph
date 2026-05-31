@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:renewable-energy-integration",
+  "title": "Renewable Energy Integration",
+  "slug": "renewable-energy-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:renewable-energy-integration",
+  "domain": "blockchain",
+  "definition": "Renewable energy integration is the practice of powering computational or industrial loads with solar, wind, hydro, and other low-carbon sources, often using flexible demand to absorb intermittent or otherwise curtailed generation. In blockchain it refers to siting mining near renewable supply to lower emissions and monetise stranded energy. Effective integration reduces carbon intensity and can improve grid economics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

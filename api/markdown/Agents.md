@@ -552,7 +552,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:individual:foundation-models",
+        "@id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {

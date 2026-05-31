@@ -1,4 +1,5 @@
 public:: true
+alias:: BlockchainGovernance
 
 # Blockchain Governance
 ```json-ld

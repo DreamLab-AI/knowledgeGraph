@@ -63,6 +63,22 @@
       "label": "Collaborative Learning"
     },
     {
+      "slug": "tc-0080-team-coordination",
+      "label": "TC-0080-Team-Coordination"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
       "slug": "tc-0002-collaborative-document-editing",
       "label": "tc 0002 collaborative document editing"
     },

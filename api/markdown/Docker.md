@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:docker",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:docker",
+  "@type": "Class",
   "label": "Docker",
   "definition": "Docker is an open-source platform that automates the deployment, scaling, and management of applications using containerisation technology, packaging applications and their dependencies into lightweight, portable containers that run consistently across different computing environments. Founded in 2013 by Solomon Hykes, Docker Inc. commercialised Linux container technology and brought it to mainstream adoption, fundamentally transforming software development and deployment workflows. Docker containers share the host operating system kernel, making them more resource-efficient than virtual machines while providing process and filesystem isolation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:software-platform", "label": "Software Platform"}],
+  "subClassOf": [{"@id": "urn:ngm:class:software-platform", "label": "Software Platform"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},

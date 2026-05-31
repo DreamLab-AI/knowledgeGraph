@@ -1,0 +1,4 @@
+- ### Definition
+  - The high-voltage grid infrastructure that transports bulk electricity from generators to distribution substations with minimal loss. It is a foundational component of the [[Energy and Power]] system.
+- ### Content
+  - Transmission operators continuously balance generation against load while maintaining frequency and voltage within tight tolerances across interconnected regions. Modern networks integrate variable renewables, HVDC links, and digital monitoring to improve resilience, capacity, and the routing of power across wide geographies.

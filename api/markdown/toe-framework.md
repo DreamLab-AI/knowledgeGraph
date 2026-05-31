@@ -1,0 +1,4 @@
+- ### Definition
+  - An organisational adoption theory in which technological, organisational, and environmental contexts together determine how firms take up innovations. It is frequently used to explain [[AI Adoption]] and convergent-technology uptake.
+- ### Content
+  - The technological context covers internal and available technologies; the organisational context covers structure, size, and resources; and the environmental context covers industry, competitors, and regulation. Researchers operationalise these three dimensions into measurable constructs to predict and explain enterprise innovation decisions.

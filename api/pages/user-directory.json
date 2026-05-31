@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-directory",
+  "title": "User Directory",
+  "slug": "user-directory",
+  "public": true,
+  "classIri": "urn:ngm:class:user-directory",
+  "domain": "security",
+  "definition": "A user directory is a centralised repository that stores and organises identity records, attributes and credentials for the principals of a system, supporting authentication and authorisation queries. Common implementations include LDAP directories, Active Directory and cloud identity stores, which identity providers consume to validate and describe users. It is a core component of identity and access management infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider-id-p",
+        "label": "Identity Provider (IdP)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

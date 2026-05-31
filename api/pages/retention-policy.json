@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:retention-policy",
+  "title": "Retention Policy",
+  "slug": "retention-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:retention-policy",
+  "domain": "data",
+  "definition": "A retention policy is a set of governance rules that specify how long data records are kept and when they are archived or permanently deleted. It encodes legal, regulatory, and operational requirements such as minimum retention for audit and maximum retention for privacy compliance. Automated enforcement ensures consistent lifecycle management across storage systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      },
+      {
+        "id": "urn:ngm:class:data-governance-domain",
+        "label": "Data Governance Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-governance-domain",
+      "label": "Data Governance Domain"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    }
+  ]
+}

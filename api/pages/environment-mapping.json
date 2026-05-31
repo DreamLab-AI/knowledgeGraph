@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:environment-mapping",
+  "title": "Environment Mapping",
+  "slug": "environment-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:environment-mapping",
+  "domain": "robotics",
+  "definition": "Environment mapping is the robotics and computer-vision process of building a spatial representation of a robot's surroundings from sensor data such as lidar, cameras, or depth sensors. Representations include occupancy grids, point clouds, and topological or semantic maps that record obstacles, free space, and landmarks. Accurate mapping is a prerequisite for localisation, path planning, and safe autonomous navigation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robot Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

@@ -615,8 +615,8 @@ public:: true
       "label": "Collective Decision Making"
     },
     {
-      "@id": "urn:ngm:class:hybrid-democracy",
-      "label": "Hybrid Democracy"
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     }
   ],
   "relations": {

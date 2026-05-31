@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:593aa1a4187aa5298cb31299b67ab14c6c4ea181d2605bd0763b4ca55844328a",
+  "title": "SMPTE ST 2128",
+  "slug": "smpte-st-2128",
+  "public": true,
+  "classIri": "urn:ngm:class:smpte-st-2128",
+  "domain": "media",
+  "definition": "SMPTE ST 2128 is a standard from the Society of Motion Picture and Television Engineers in the area of professional media and video signalling. It forms part of the SMPTE family of broadcast and production standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-delivery",
+        "label": "Content Delivery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "video-compression",
+      "label": "Video Compression"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

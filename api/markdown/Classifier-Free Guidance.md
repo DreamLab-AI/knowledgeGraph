@@ -1,4 +1,5 @@
 public:: true
+alias:: Classifier Free Guidance
 
 # classifier-free guidance
 ```json-ld

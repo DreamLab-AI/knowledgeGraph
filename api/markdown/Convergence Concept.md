@@ -1,4 +1,5 @@
 public:: true
+alias:: ConvergenceConcept
 
 # Convergence Concept
 ```json-ld

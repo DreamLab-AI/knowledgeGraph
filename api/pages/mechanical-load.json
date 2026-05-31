@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mechanical-load",
+  "title": "Mechanical Load",
+  "slug": "mechanical-load",
+  "public": true,
+  "classIri": "urn:ngm:class:mechanical-load",
+  "domain": "robotics",
+  "definition": "A mechanical load is the external force, torque, or resistance that a motor, actuator, or structure must work against during operation. Characterised by inertia, friction, gravity, and process forces, it determines the torque-speed demand placed on a drive system. Accurate load characterisation is essential for sizing motors, selecting gearing, and designing stable control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robotics Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "electric-motor",
+      "label": "Electric Motor"
+    }
+  ]
+}

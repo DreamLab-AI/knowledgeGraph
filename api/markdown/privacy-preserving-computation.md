@@ -1,0 +1,4 @@
+- ### Definition
+  - Privacy-preserving computation processes data without revealing its plaintext to the processor. It is enabled by edge deployment such as [[Edge Computing]] and falls within the broader field of [[Cryptography, Security and Privacy]].
+- ### Content
+  - Homomorphic encryption permits arithmetic on ciphertexts; secure multiparty computation splits computation across parties so none sees the whole input; trusted execution environments isolate computation in hardware enclaves; and federated learning trains models on-device, sharing only updates. Differential privacy adds calibrated noise to bound what any output reveals about an individual. These approaches trade additional computation or accuracy for strong confidentiality guarantees.

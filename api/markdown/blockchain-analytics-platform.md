@@ -1,0 +1,4 @@
+- ### Definition
+  - A blockchain analytics platform performs [[Blockchain Analysis]] at scale to trace funds and attribute addresses, providing the tooling that powers [[AML/KYC Compliance]].
+- ### Content
+  - These platforms combine address-clustering heuristics, entity labelling, and risk scoring over the full transaction graph. Exchanges and financial institutions use them to screen counterparties against sanctions lists and to file suspicious-activity reports, while investigators use them to follow illicit flows across chains.

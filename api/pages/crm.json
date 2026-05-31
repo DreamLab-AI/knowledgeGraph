@@ -66,6 +66,10 @@
     {
       "slug": "call-centres",
       "label": "Call Centres"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
     }
   ]
 }

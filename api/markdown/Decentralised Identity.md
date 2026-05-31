@@ -1,4 +1,5 @@
 public:: true
+alias:: DecentralisedIdentity
 
 # decentralised identity
 ```json-ld

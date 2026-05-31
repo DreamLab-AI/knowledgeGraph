@@ -149,6 +149,10 @@
       "label": "Threat Actor"
     },
     {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
+    },
+    {
       "slug": "vulnerability",
       "label": "Vulnerability"
     },

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:087166cac5679e1fff911a8dc1caad46585909a638a8f5fa904db24db85bf9f9",
+  "title": "ISO TC 307 Blockchain Standards",
+  "slug": "iso-tc-307-blockchain-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-tc-307-blockchain-standards",
+  "domain": "standards",
+  "definition": "ISO Technical Committee 307, responsible for standardisation of blockchain and distributed ledger technologies. It is a standards-development committee that produces multiple standards rather than a single document.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

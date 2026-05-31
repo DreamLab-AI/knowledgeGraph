@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:seoul-declaration",
+  "title": "Seoul Declaration",
+  "slug": "seoul-declaration",
+  "public": true,
+  "classIri": "urn:ngm:class:seoul-declaration",
+  "domain": "governance",
+  "definition": "The Seoul Declaration is an international AI-safety commitment adopted at the 2024 AI Seoul Summit, in which participating states and companies affirmed principles of safe, innovative, and inclusive AI and pledged cooperation on frontier-model risk. It built on the Bletchley Declaration and advanced commitments to risk thresholds and safety frameworks for advanced AI systems. It is a governance instrument shaping Asia-Pacific and global AI regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia-Pacific Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

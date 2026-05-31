@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:508b3f46b0287f694021ece6d49a5e2ec744cc8c6a5530391d2f25f9c9f98dc9",
+  "title": "ADR-008",
+  "slug": "adr-008",
+  "public": true,
+  "classIri": "urn:ngm:class:adr-008",
+  "domain": "software-architecture",
+  "definition": "An architecture decision record numbered 008, documenting a specific architectural choice within a project together with its context, options considered, and consequences. ADRs form a chronological log of design decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

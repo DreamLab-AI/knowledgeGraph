@@ -1,0 +1,4 @@
+- ### Definition
+  - Legal expertise is the professional capability to interpret and apply law; it is required to meet [[Compliance Standards]] and to manage the multi-jurisdictional analysis at the heart of [[Cross-Border Compliance]].
+- ### Content
+  - In emerging-technology domains, legal expertise must combine traditional doctrine with rapidly evolving regulatory guidance, often under uncertainty. Organisations source it through in-house counsel, external firms, and specialist advisers to reduce regulatory and contractual risk.

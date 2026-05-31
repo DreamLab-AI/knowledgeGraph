@@ -1,0 +1,4 @@
+- ### Definition
+  - Link prediction infers missing or future edges in a graph; it enables [[Knowledge Graphing]] completion and is a core capability within [[Graph Analytics]] pipelines.
+- ### Content
+  - Embedding methods such as TransE and graph neural networks learn latent node representations whose geometry encodes the likelihood of a connection. Evaluation uses ranking metrics like mean reciprocal rank and Hits@k against held-out edges, balancing precision against the sparsity of true links.

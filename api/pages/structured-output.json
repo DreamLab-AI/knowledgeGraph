@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:structured-output",
+  "title": "Structured Output",
+  "slug": "structured-output",
+  "public": true,
+  "classIri": "urn:ngm:class:structured-output",
+  "domain": "ai",
+  "definition": "Structured output is a technique for constraining a language model to emit responses that conform to a predefined schema such as JSON, a regular grammar, or a typed object. It is enforced through prompt instructions, constrained decoding, or function-calling interfaces so that downstream systems can parse results reliably. Structured output bridges free-form generation and deterministic software by guaranteeing machine-readable, validatable responses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

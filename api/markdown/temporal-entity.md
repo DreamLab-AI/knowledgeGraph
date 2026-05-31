@@ -1,0 +1,4 @@
+- ### Definition
+  - A temporal entity is anything situated in or defined by time, serving as the ontological superclass for time-bearing concepts such as [[Process]] and [[Event]].
+- ### Content
+  - In a formal ontology, temporal entities divide broadly into temporal instants, which mark points on a timeline, and temporal intervals, which have duration and can contain or precede one another. Treating events and processes as subclasses of temporal entity lets a reasoner apply uniform ordering, overlap, and duration relations across the model. The pattern mirrors the W3C OWL-Time ontology, which formalises Allen interval relations and links temporal positions to calendar and clock values.

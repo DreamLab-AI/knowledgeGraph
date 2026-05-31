@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:4d41961997d587d3c7958f9c2b19bdf920e9f2f07ee90bf373bdbc3b78b5afdc",
+  "title": "NIST SP 800-63-4",
+  "slug": "nist-sp-800-63-4",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-sp-800-63-4",
+  "domain": "standards",
+  "definition": "Revision 4 of the NIST Special Publication 800-63 digital identity guidelines, covering identity proofing, authentication and federation. It defines assurance levels and related requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

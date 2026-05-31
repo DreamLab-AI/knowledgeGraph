@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mteb-benchmark",
+  "title": "MTEB Benchmark",
+  "slug": "mteb-benchmark",
+  "public": true,
+  "classIri": "urn:ngm:class:mteb-benchmark",
+  "domain": "ai",
+  "definition": "MTEB (Massive Text Embedding Benchmark) is a standardised evaluation suite that measures text embedding models across many tasks, including retrieval, classification, clustering, reranking, and semantic similarity, over numerous datasets and languages. It provides a public leaderboard that has become the reference for comparing embedding models. Strong MTEB scores are widely used to select embeddings for semantic search and retrieval-augmented generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval-Augmented Generation (RAG)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

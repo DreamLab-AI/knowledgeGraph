@@ -84,6 +84,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "elliptic",
+      "label": "Elliptic"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

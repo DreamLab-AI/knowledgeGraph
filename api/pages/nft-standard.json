@@ -50,6 +50,14 @@
       "label": "NFT Wrapping"
     },
     {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
       "slug": "royalty-mechanism",
       "label": "Royalty Mechanism"
     }

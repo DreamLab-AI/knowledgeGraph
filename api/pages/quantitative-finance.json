@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:quantitative-finance",
+  "title": "Quantitative Finance",
+  "slug": "quantitative-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:quantitative-finance",
+  "domain": "infrastructure",
+  "definition": "Quantitative finance is the application of mathematical models, statistical methods, and computational techniques to financial markets for pricing, risk management, and trading. It draws heavily on stochastic calculus, probability theory, and optimisation to value derivatives, model asset dynamics, and construct portfolios. It is the analytical backbone of derivatives desks, algorithmic trading, and risk analytics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    }
+  ]
+}

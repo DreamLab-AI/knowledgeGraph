@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:micro-oled-display",
+  "title": "Micro-OLED Display",
+  "slug": "micro-oled-display",
+  "public": true,
+  "classIri": "urn:ngm:class:micro-oled-display",
+  "domain": "metaverse",
+  "definition": "A micro-OLED display is an organic light-emitting diode panel fabricated directly on a silicon backplane (OLED-on-silicon), yielding pixel pitches of a few micrometres and very high pixel densities. Its compact size, high contrast, fast response, and low power make it the dominant near-eye display technology for AR and VR headsets. The silicon substrate enables integrated drive circuitry impossible on glass.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

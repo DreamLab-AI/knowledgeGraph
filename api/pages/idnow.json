@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:28eb8d5a64f55dd95b92692bf7df2b0301aa4e8a6198f50213550a355bf8c717",
+  "title": "IDnow",
+  "slug": "idnow",
+  "public": true,
+  "classIri": "urn:ngm:class:idnow",
+  "domain": "identity",
+  "definition": "A German identity verification company that provides electronic identification, know-your-customer, and digital signing services. It offers automated and agent-assisted verification of identity documents and biometrics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

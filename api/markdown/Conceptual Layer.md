@@ -1,4 +1,5 @@
 public:: true
+alias:: ConceptualLayer
 
 # Conceptual Layer
 ```json-ld

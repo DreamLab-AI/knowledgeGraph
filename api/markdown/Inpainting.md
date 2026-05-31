@@ -443,8 +443,8 @@ public:: true
       "label": "Image Editing"
     },
     {
-      "@id": "urn:ngm:class:image-restoration",
-      "label": "Image Restoration"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -592,7 +592,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

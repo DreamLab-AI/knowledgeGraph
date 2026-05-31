@@ -1,4 +1,5 @@
 public:: true
+alias:: StateChannel
 
 # State Channel
 ```json-ld

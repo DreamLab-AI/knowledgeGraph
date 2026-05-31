@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:sparse-autoencoders",
+  "title": "Sparse Autoencoders",
+  "slug": "sparse-autoencoders",
+  "public": true,
+  "classIri": "urn:ngm:class:sparse-autoencoders",
+  "domain": "ai",
+  "definition": "Sparse autoencoders are neural networks trained to reconstruct their input through a wide hidden layer subject to a sparsity penalty, so that only a small number of latent units activate for any given input. In mechanistic interpretability they are applied to the activations of large language models to decompose dense, polysemantic representations into more monosemantic, human-interpretable features. They have become a leading tool for understanding what concepts a model internally represents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

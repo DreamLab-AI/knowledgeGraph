@@ -1,0 +1,4 @@
+- ### Definition
+  - Neural audio enhancement applies deep models to denoise, dereverberate, and restore audio quality. It is a component implemented within [[Automated Podcasting]] workflows.
+- ### Content
+  - Common approaches operate in the time domain or on spectrograms, using masking, regression, or generative restoration to reconstruct clean audio. Trade-offs centre on suppressing noise aggressively without introducing musical artefacts or distorting the speaker's voice, and real-time variants must keep latency low enough for live use.

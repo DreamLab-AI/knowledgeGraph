@@ -471,8 +471,8 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:light-transport",
-      "label": "Light Transport"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     },
     {
       "@id": "urn:ngm:class:monte-carlo-methods",

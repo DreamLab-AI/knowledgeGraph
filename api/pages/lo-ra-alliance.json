@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:lo-ra-alliance",
+  "title": "LoRa Alliance",
+  "slug": "lo-ra-alliance",
+  "public": true,
+  "classIri": "urn:ngm:class:lo-ra-alliance",
+  "domain": "infrastructure",
+  "definition": "The LoRa Alliance is an open, non-profit association that defines and certifies the LoRaWAN standard for low-power wide-area networking. It maintains the LoRaWAN specification, regional parameters, and a device-certification programme to ensure interoperability across vendors and operators. The alliance governs the ecosystem enabling long-range, low-power IoT connectivity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lo-ra-wan",
+        "label": "LoRaWAN"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

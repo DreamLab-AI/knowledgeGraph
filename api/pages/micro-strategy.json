@@ -3,11 +3,16 @@
   "title": "MicroStrategy",
   "slug": "micro-strategy",
   "public": true,
-  "classIri": "urn:ngm:individual:micro-strategy",
+  "classIri": "urn:ngm:class:micro-strategy",
   "domain": "blockchain",
   "definition": "MicroStrategy (rebranded Strategy in 2025) is a Nasdaq-listed business intelligence and analytics software company that became the first publicly traded corporation to adopt Bitcoin as its primary treasury reserve asset, initiating this strategy in August 2020 under executive chairman Michael Saylor. The company has since deployed multiple capital market instruments\u2014including convertible notes, equity offerings, and preferred stock\u2014to continuously acquire Bitcoin, accumulating over 500,000 BTC by early 2025 and creating a leveraged Bitcoin exposure vehicle accessible through public equity markets. MicroStrategy's approach established a corporate treasury model that has been studied and replicated by other public companies seeking Bitcoin exposure.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -72,7 +77,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {

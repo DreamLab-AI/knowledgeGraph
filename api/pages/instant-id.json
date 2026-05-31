@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:instant-id",
+  "title": "InstantID",
+  "slug": "instant-id",
+  "public": true,
+  "classIri": "urn:ngm:class:instant-id",
+  "domain": "ai",
+  "definition": "InstantID is a diffusion-model technique for identity-preserving image generation that synthesises new images of a specific person from a single reference photograph, without per-subject fine-tuning. It combines a face encoder with an IdentityNet adapter that injects facial identity and spatial landmarks into a text-to-image diffusion backbone. While powerful for personalised avatars and stylisation, its zero-shot fidelity also raises misuse concerns around impersonation and synthetic media.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and Fraudulent Content"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    }
+  ]
+}

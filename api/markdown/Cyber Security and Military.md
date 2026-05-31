@@ -491,12 +491,12 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:cyber-operations",
-      "label": "Cyber Operations"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "@id": "urn:ngm:class:defence-capability",
-      "label": "Defence Capability"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {

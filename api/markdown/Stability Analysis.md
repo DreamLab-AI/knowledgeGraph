@@ -1,4 +1,5 @@
 public:: true
+alias:: StabilityAnalysis
 
 # Stability Analysis
 ```json-ld

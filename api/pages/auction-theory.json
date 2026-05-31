@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:b12bcdb51ebbbe03f644f67a39f34f54983fa6ce79008a175d3c28c04c1c7acc",
+  "title": "Auction Theory",
+  "slug": "auction-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:auction-theory",
+  "domain": "economics",
+  "definition": "A branch of economics and game theory that studies how auctions allocate goods and set prices under different rules and information conditions. It analyses bidder behaviour and the properties of auction formats.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "gas-mechanism",
+      "label": "Gas Mechanism"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

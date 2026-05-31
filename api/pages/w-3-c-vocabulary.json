@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ff1f3b131a862be6c2eaf67770a9ab17290040ca134d9d0589544c48af4f56d2",
+  "title": "W3C Vocabulary",
+  "slug": "w-3-c-vocabulary",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-vocabulary",
+  "domain": "standards",
+  "definition": "A vocabulary published by the World Wide Web Consortium (W3C). The specific vocabulary is not determined from the identifier alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": []
+}

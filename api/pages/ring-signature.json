@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:4d27784836f35b7305227536811583793b42bc147d9c7676d4c914bb4c165c0f",
+  "title": "Ring Signature",
+  "slug": "ring-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:ring-signature",
+  "domain": "cryptography",
+  "definition": "A ring signature is a digital signature produced by one member of a group such that verifiers learn the signature came from the group but cannot identify which member signed. It provides signer anonymity within an ad hoc set.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "pseudonymity",
+      "label": "Pseudonymity"
+    }
+  ]
+}

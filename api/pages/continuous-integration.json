@@ -67,8 +67,16 @@
       "label": "Remote Pair Programming"
     },
     {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
+    },
+    {
       "slug": "testing-process",
       "label": "Testing Process"
+    },
+    {
+      "slug": "tooling-layer",
+      "label": "Tooling Layer"
     }
   ]
 }

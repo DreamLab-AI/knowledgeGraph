@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cdla",
+  "title": "CDLA",
+  "slug": "cdla",
+  "public": true,
+  "classIri": "urn:ngm:class:cdla",
+  "domain": "infrastructure",
+  "definition": "The Community Data License Agreement (CDLA) is a family of open data licences published by the Linux Foundation to govern the sharing and reuse of curated datasets. Its principal variants are CDLA-Permissive, which allows broad reuse with attribution, and CDLA-Sharing, which adds a copyleft-style obligation to share derived datasets under the same terms. CDLA matters for AI because it provides clear, machine-readable licensing for training-data corpora, reducing legal uncertainty over data provenance and downstream use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infrastructure Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

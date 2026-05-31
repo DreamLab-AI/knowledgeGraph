@@ -147,6 +147,14 @@
   ],
   "backlinks": [
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "holography",
+      "label": "Holography"
+    },
+    {
       "slug": "monocular-camera",
       "label": "Monocular Camera"
     },

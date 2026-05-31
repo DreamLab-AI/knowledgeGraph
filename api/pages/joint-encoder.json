@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:joint-encoder",
+  "title": "Joint Encoder",
+  "slug": "joint-encoder",
+  "public": true,
+  "classIri": "urn:ngm:class:joint-encoder",
+  "domain": "robotics",
+  "definition": "A joint encoder is a sensor mounted at a robot joint that measures angular or linear position, and often velocity, of that joint. It provides the proprioceptive feedback required for closed-loop position and motion control of articulated mechanisms. Encoders may be optical, magnetic or capacitive and are typically classed as incremental or absolute.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

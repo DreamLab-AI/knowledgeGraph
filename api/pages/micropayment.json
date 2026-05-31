@@ -157,6 +157,14 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
+      "slug": "l-402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "l-402",
+      "label": "L402"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:b3af4ca06b5798f54827e4b79ec5c0f301c08aacfc073bfc9b9beede58c21e48",
+  "title": "Securitize",
+  "slug": "securitize",
+  "public": true,
+  "classIri": "urn:ngm:class:securitize",
+  "domain": "general",
+  "definition": "A financial technology company providing infrastructure for issuing, managing and trading tokenised securities on blockchain networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "security-token",
+      "label": "Security Token"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:eba-travel-rule-guidelines",
+  "title": "EBA Travel Rule Guidelines",
+  "slug": "eba-travel-rule-guidelines",
+  "public": true,
+  "classIri": "urn:ngm:class:eba-travel-rule-guidelines",
+  "domain": "blockchain",
+  "definition": "The EBA Travel Rule Guidelines are guidance issued by the European Banking Authority on how payment service providers and crypto-asset service providers must comply with the EU Transfer of Funds Regulation. They specify the originator and beneficiary information that must accompany transfers of funds and crypto-assets, implementing the FATF Travel Rule within EU law. They define data fields, thresholds, and responsibilities for intermediaries to support anti-money-laundering controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

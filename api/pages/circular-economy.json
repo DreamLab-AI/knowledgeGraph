@@ -16,8 +16,8 @@
       "label": "Economic Model"
     },
     {
-      "id": "urn:ngm:class:environmental-policy",
-      "label": "Environmental Policy"
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -621,6 +621,10 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
+      "slug": "e-waste",
+      "label": "E-Waste"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
     },
@@ -639,6 +643,10 @@
     {
       "slug": "supply-chain-traceability",
       "label": "Supply Chain Traceability"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
     },
     {
       "slug": "waste-management",

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:6952023c097f4b2a27a74b0b3e62744d740822e86480e2bfbab94d326400fd58",
+  "title": "TELE-026-microsoft-mesh",
+  "slug": "tele-026-microsoft-mesh",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-026-microsoft-mesh",
+  "domain": "metaverse",
+  "definition": "Microsoft Mesh is a platform for shared mixed reality experiences that lets people in different physical locations join a common virtual space using avatars or holographic representations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "spatial-anchors",
+      "label": "Spatial Anchors"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-office-spaces",
+      "label": "Virtual Office Spaces"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

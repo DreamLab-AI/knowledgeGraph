@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:09de472ad3b3fb57e44edac65b60d070dc113959fdb956f2a265612f40089ff5",
+  "title": "Network Theory",
+  "slug": "network-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:network-theory",
+  "domain": "general",
+  "definition": "Network theory is the study of graphs representing relations between objects, analysing structure, connectivity and dynamics across networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-analysis",
+      "label": "Network Analysis"
+    },
+    {
+      "slug": "graph-databases",
+      "label": "Graph Databases"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-network-theory",
+      "label": "https://en.wikipedia.org/wiki/Network_theory"
+    },
+    {
+      "slug": "https-networkx-org",
+      "label": "https://networkx.org/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

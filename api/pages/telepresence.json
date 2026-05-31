@@ -80,12 +80,52 @@
       "label": "Depth Estimation"
     },
     {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
     },
     {
       "slug": "presence-indicator",
       "label": "Presence Indicator"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform"
+    },
+    {
+      "slug": "tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "slug": "tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "slug": "tele-102-codec-avatars",
+      "label": "TELE-102-codec-avatars"
+    },
+    {
+      "slug": "tele-110-spatial-audio-processing",
+      "label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "slug": "tele-153-5-g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
+      "slug": "tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence"
+    },
+    {
+      "slug": "tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking"
     },
     {
       "slug": "telecollaboration-and-telepresence",

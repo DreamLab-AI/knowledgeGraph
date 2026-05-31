@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:set-of-mark-prompting",
+  "title": "Set-of-Mark Prompting",
+  "slug": "set-of-mark-prompting",
+  "public": true,
+  "classIri": "urn:ngm:class:set-of-mark-prompting",
+  "domain": "ai",
+  "definition": "Set-of-mark prompting is a visual-prompting technique that overlays an image with numbered or coloured marks on segmented regions so a multimodal language model can refer to and reason about specific elements by label. By grounding the model's references in explicit visual tokens, it sharply improves spatial grounding, visual question answering, and GUI element selection. It is a key enabler of vision-driven computer-use agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

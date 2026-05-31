@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:1adde26c7caf4d3acc1ab4eb5ba9fd4e43cc3fe05398f68190e67006f8b970e3",
+  "title": "Extended Kalman Filter",
+  "slug": "extended-kalman-filter",
+  "public": true,
+  "classIri": "urn:ngm:class:extended-kalman-filter",
+  "domain": "robotics",
+  "definition": "The Extended Kalman Filter is a recursive state estimator that applies the Kalman filter to non-linear systems by linearising the process and measurement models about the current estimate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kalman-filter",
+      "label": "Kalman Filter"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

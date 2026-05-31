@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:lumen",
+  "title": "Lumen",
+  "slug": "lumen",
+  "public": true,
+  "classIri": "urn:ngm:class:lumen",
+  "domain": "metaverse",
+  "definition": "Lumen is Unreal Engine's fully dynamic global illumination and reflections system that computes indirect lighting in real time without precomputed lightmaps. It uses a combination of screen-space tracing, software ray tracing against signed distance fields, and optional hardware ray tracing to produce diffuse interreflection and reflections that update as scenes and lights change. Lumen enables physically plausible lighting in interactive applications and games.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

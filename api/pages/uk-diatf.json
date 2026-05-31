@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:uk-diatf",
+  "title": "UK DIATF",
+  "slug": "uk-diatf",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-diatf",
+  "domain": "security",
+  "definition": "The UK Digital Identity and Attributes Trust Framework (DIATF) is a government-published set of rules and standards that digital-identity providers must meet to be certified as trustworthy. It defines requirements for security, privacy, fraud management, and inclusion so that certified identity and attribute services can be relied upon across public and private sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

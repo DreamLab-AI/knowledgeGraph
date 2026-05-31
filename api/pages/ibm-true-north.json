@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:372c1cf0b8ce4362c47057d3b07c3f94e1c0fcca3120ab4d6e7962b3276102e7",
+  "title": "IBM TrueNorth",
+  "slug": "ibm-true-north",
+  "public": true,
+  "classIri": "urn:ngm:class:ibm-true-north",
+  "domain": "robotics",
+  "definition": "IBM TrueNorth is a neuromorphic processor developed by IBM that implements spiking neural network architecture in hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "neuromorphic-chip",
+      "label": "Neuromorphic Chip"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -3,11 +3,16 @@
   "title": "IP-Adapter",
   "slug": "ip-adapter",
   "public": true,
-  "classIri": "urn:ngm:individual:ip-adapter",
+  "classIri": "urn:ngm:class:ip-adapter",
   "domain": "ai",
   "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight adapter module for pre-trained text-to-image diffusion models that enables image-conditioned generation by injecting reference image features via a decoupled cross-attention mechanism. Introduced by Tencent AI Lab in 2023, it allows users to supply a reference image alongside a text prompt to control style, subject identity, or composition without fine-tuning the base diffusion model. The adapter architecture inserts parallel cross-attention layers that process image embeddings from a pre-trained image encoder such as CLIP, keeping base model weights frozen.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adapter-modules",
+      "label": "Adapter Modules"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -25,7 +30,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:individual:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {

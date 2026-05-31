@@ -1,4 +1,5 @@
 public:: true
+alias:: ValueFunction
 
 # Value Function
 ```json-ld

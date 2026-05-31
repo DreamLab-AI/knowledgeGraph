@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:f88396b8b5beb7a37a557ffc47e6a4e4dd873ec1bf8ad00ef3a2d30d633a5616",
+  "title": "Settlement Layer",
+  "slug": "settlement-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:settlement-layer",
+  "domain": "settlement",
+  "definition": "The Settlement Layer is the stratum that achieves final, irreversible transfer of value or state between parties. In layered ledger systems it sits beneath faster execution and netting strata and above the Consensus Layer that secures finality. It contains the records, accounts, and finality conditions under which obligations are discharged.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract-layer",
+        "label": "Smart Contract Layer"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network-layer",
+        "label": "Lightning Network Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "consensus-layer",
+      "label": "Consensus Layer"
+    },
+    {
+      "slug": "smart-contract-layer",
+      "label": "Smart Contract Layer"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "Lightning Network Layer"
+    },
+    {
+      "slug": "atomic-settlement",
+      "label": "Atomic Settlement"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double-Spending"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "capital-markets-domain",
+      "label": "Capital Markets Domain"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "lightning-network-layer",
+      "label": "Lightning Network Layer"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

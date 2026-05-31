@@ -1,4 +1,5 @@
 public:: true
+alias:: BlockchainLedger
 
 # Blockchain Ledger
 ```json-ld

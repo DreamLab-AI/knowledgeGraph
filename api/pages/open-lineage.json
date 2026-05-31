@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:open-lineage",
+  "title": "OpenLineage",
+  "slug": "open-lineage",
+  "public": true,
+  "classIri": "urn:ngm:class:open-lineage",
+  "domain": "data",
+  "definition": "OpenLineage is an open standard and specification for collecting data-lineage metadata from data pipelines as they run. It defines a common event model describing jobs, runs, datasets, and their input/output relationships, emitted by instrumented orchestration and processing tools. This enables consistent tracking of how data is produced and transformed across heterogeneous platforms for governance, debugging, and impact analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

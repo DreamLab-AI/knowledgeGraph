@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:6b9043fb4251999f2b9d30b73bb33275134fb8bcb7a96f98c6f8f97b2bc0adb5",
+  "title": "Sheffield",
+  "slug": "sheffield",
+  "public": true,
+  "classIri": "urn:ngm:class:sheffield",
+  "domain": "general",
+  "definition": "A city in South Yorkshire, England, historically associated with steel and now with advanced manufacturing, materials research, and engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:material-science",
+        "label": "Material Science"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    },
+    {
+      "slug": "manchester",
+      "label": "Manchester"
+    },
+    {
+      "slug": "entity",
+      "label": "Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "northern-powerhouse",
+      "label": "Northern Powerhouse"
+    }
+  ]
+}

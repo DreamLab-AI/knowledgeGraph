@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:podcast-production",
+  "title": "Podcast Production",
+  "slug": "podcast-production",
+  "public": true,
+  "classIri": "urn:ngm:class:podcast-production",
+  "domain": "ai",
+  "definition": "Podcast production is the end-to-end process of creating episodic audio programmes, encompassing recording, editing, mixing, mastering, and distribution. AI tools increasingly automate transcription, voice synthesis, noise removal, and chaptering. It is a key application domain for speech and audio machine-learning systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

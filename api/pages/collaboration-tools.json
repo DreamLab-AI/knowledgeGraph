@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:690accc3f5bf277fc4a206acfdab6d6488f13ab88dd5d57ce412393bca22ae5b",
+  "title": "Collaboration Tools",
+  "slug": "collaboration-tools",
+  "public": true,
+  "classIri": "urn:ngm:class:collaboration-tools",
+  "domain": "distributed-systems",
+  "definition": "Software that supports people working together on shared tasks or documents, including communication, coordination and concurrent editing features.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "software-development",
+      "label": "Software Development"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bim-software",
+      "label": "BIM Software"
+    },
+    {
+      "slug": "microsoft-teams",
+      "label": "Microsoft Teams"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "threaded-messaging",
+      "label": "Threaded Messaging"
+    },
+    {
+      "slug": "video-async",
+      "label": "Video Async"
+    },
+    {
+      "slug": "voice-memo",
+      "label": "Voice Memo"
+    }
+  ]
+}

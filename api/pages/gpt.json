@@ -78,12 +78,24 @@
       "label": "Agentic Internet"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
       "slug": "graph-neural-network",
       "label": "Graph Neural Network"
     },
     {
       "slug": "language-modeling",
       "label": "Language Modeling"
+    },
+    {
+      "slug": "low-rank-adaptation",
+      "label": "Low-Rank Adaptation"
     },
     {
       "slug": "text-generation",

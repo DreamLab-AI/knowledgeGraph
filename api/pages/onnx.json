@@ -72,6 +72,14 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "onnx-operator-set",
+      "label": "ONNX Operator Set"
+    },
+    {
+      "slug": "onnx-standard",
+      "label": "ONNX Standard"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

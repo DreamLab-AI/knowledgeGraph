@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:persistent-identifier",
+  "title": "Persistent Identifier",
+  "slug": "persistent-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:persistent-identifier",
+  "domain": "data",
+  "definition": "A persistent identifier (PID) is a long-lasting, globally unique reference to a digital object that remains stable even as the object's location or custodian changes. PIDs such as DOIs, Handles, and ARKs are resolved through a managed indirection service that maps the identifier to current metadata and access endpoints. They are foundational to citation, provenance, and interoperability in scholarly and digital-object infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    }
+  ]
+}

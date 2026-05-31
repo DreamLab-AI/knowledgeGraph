@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:decentralised-application",
+  "title": "Decentralised Application",
+  "slug": "decentralised-application",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-application",
+  "domain": "blockchain",
+  "definition": "A decentralised application (dApp) is software whose backend logic runs on a decentralised peer-to-peer network, typically as smart contracts on a blockchain, rather than on centrally controlled servers. It combines on-chain contracts for trustless state and logic with off-chain front ends and storage. dApps are a defining component of Web3, enabling permissionless, censorship-resistant services such as exchanges, lending and marketplaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

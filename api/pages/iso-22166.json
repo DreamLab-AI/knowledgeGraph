@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:d11d62564ee78116c4b35f4bdc0a5f58f9ce39888a002a6a7df8ca3a781076f5",
+  "title": "ISO 22166",
+  "slug": "iso-22166",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-22166",
+  "domain": "standards",
+  "definition": "An ISO standard, in the robotics area, concerning modularity for service robots. It addresses requirements and information for modular robotic components.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

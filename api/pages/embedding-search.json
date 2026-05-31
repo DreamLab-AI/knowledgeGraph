@@ -35,7 +35,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:vector-embeddings",
+        "id": "urn:ngm:class:vector-embedding",
         "label": "Vector Embeddings"
       },
       {

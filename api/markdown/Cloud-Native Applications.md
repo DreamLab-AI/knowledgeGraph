@@ -1,4 +1,5 @@
 public:: true
+alias:: CloudNativeApplications
 
 # Cloud-Native Applications
 ```json-ld

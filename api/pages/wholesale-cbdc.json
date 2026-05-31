@@ -76,6 +76,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bis-innovation-hub",
+      "label": "BIS Innovation Hub"
+    },
+    {
       "slug": "cbdcs",
       "label": "CBDCs"
     },
@@ -86,6 +90,10 @@
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
+    },
+    {
+      "slug": "project-m-bridge",
+      "label": "Project mBridge"
     },
     {
       "slug": "quorum-blockchain",

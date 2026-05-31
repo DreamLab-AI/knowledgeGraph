@@ -110,6 +110,14 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "intel-loihi",
+      "label": "Intel Loihi"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

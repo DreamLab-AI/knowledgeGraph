@@ -1,0 +1,4 @@
+- ### Definition
+  - Quality control is the inspection and verification of outputs against specifications to detect defects. It is increasingly enabled by [[Computer Vision]] and forms a core part of the [[Manufacturing Domain]] value chain.
+- ### Content
+  - Automated visual quality control uses cameras and convolutional models to detect surface flaws, missing components, or dimensional deviations at production speed. Combined with statistical process control, it shifts inspection from sampling-based to in-line 100% coverage, lowering defect escape rates and feeding anomaly signals back into manufacturing process tuning.

@@ -1,0 +1,4 @@
+- ### Definition
+  - Language model alignment is an [[AI Safety]] discipline that shapes model behaviour toward human intent; [[Direct Preference Optimization]] is a key alignment method, and alignment is central to deploying [[Large Language Models]] responsibly.
+- ### Content
+  - The dominant pipeline combines instruction tuning with preference optimisation derived from human or AI feedback, optionally augmented by constitutional rules and red-teaming. Alignment addresses both capability shaping (following instructions) and safety (refusing harmful requests, avoiding deception), and remains an active research frontier as models grow more capable.

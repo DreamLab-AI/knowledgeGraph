@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:variable-stiffness-actuator",
+  "title": "Variable Stiffness Actuator",
+  "slug": "variable-stiffness-actuator",
+  "public": true,
+  "classIri": "urn:ngm:class:variable-stiffness-actuator",
+  "domain": "robotics",
+  "definition": "A variable stiffness actuator (VSA) is a compliant robotic actuator whose mechanical stiffness can be adjusted independently of its position, typically using antagonistic springs or adjustable elastic elements. This adjustable compliance lets robots store and release energy, absorb impacts and interact safely with humans and uncertain environments. VSAs are central to safe, energy-efficient force control in physical human-robot interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robot Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

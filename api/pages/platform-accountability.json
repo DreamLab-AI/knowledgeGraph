@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:platform-accountability",
+  "title": "Platform Accountability",
+  "slug": "platform-accountability",
+  "public": true,
+  "classIri": "urn:ngm:class:platform-accountability",
+  "domain": "governance",
+  "definition": "Platform accountability is the principle and regulatory expectation that online platforms bear responsibility for the systems, content, and harms arising on their services. It encompasses obligations such as transparency reporting, risk assessment, content-moderation due process, and remedies for illegal or harmful material. Frameworks like the Digital Services Act codify these duties, shifting platforms from passive intermediaries toward governed actors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infrastructure Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    }
+  ]
+}

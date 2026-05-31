@@ -152,7 +152,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:enforcement-mechanisms",
+        "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanisms"
       },
       {

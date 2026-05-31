@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:2a0cb15fb9431f9f3c074eff284bf7041af0aa4980f7001405a14a5161ad43a0",
+  "title": "Clarity",
+  "slug": "clarity",
+  "public": true,
+  "classIri": "urn:ngm:class:clarity",
+  "domain": "metaverse",
+  "definition": "Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that could otherwise fail silently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

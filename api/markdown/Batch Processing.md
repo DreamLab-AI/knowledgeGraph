@@ -56,8 +56,8 @@ public:: true
       "label": "AI Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:processing-model",
-      "label": "Processing Model"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "provenance": {

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:regulatory-licence",
+  "title": "Regulatory Licence",
+  "slug": "regulatory-licence",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-licence",
+  "domain": "blockchain",
+  "definition": "A regulatory licence is a specific, often named permission issued by a financial supervisor that authorises an entity to carry out a defined regulated activity such as issuing e-money or operating as a payment institution. It binds the holder to ongoing conditions including capital adequacy, reporting, and conduct rules. For stablecoin issuers, the appropriate licence determines whether the token may legally be offered to the public.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stablecoins"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

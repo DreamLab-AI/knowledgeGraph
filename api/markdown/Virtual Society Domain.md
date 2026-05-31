@@ -1,4 +1,5 @@
 public:: true
+alias:: VirtualSocietyDomain
 
 # Virtual Society Domain
 ```json-ld

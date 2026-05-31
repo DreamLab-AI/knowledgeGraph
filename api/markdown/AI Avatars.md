@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-100-ai-avatars
 
 # AI Avatars
 ```json-ld

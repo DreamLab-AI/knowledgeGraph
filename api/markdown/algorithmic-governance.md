@@ -1,0 +1,4 @@
+- ### Definition
+  - Algorithmic Governance applies automated systems to governance decisions and enforcement. It enables forms of [[Digital Society Surveillance]] and intersects with [[Decentralised Coordination]] where rules are enforced by code rather than institutions.
+- ### Content
+  - Implementations range from content-moderation classifiers and welfare-eligibility scoring to smart-contract rule execution. Key tensions are the opacity of model-driven decisions, difficulty of appeal, and the risk that encoded rules entrench bias; mitigations include auditability, explainability requirements, and human-in-the-loop review.

@@ -479,12 +479,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:digital-asset-ecology",
-      "label": "Digital Asset Ecology"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     },
     {
-      "@id": "urn:ngm:class:energy-economics",
-      "label": "Energy Economics"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     }
   ],
   "relations": {

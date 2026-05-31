@@ -1,0 +1,4 @@
+- ### Definition
+  - The FCA Consumer Duty is a UK outcomes-based [[Financial Regulation]] obliging firms to deliver good results for retail customers, overlapping with [[Securities Regulation]] and shaping conduct standards in service channels such as [[Call Centres]]. It centres on good faith, harm avoidance, and fair value.
+- ### Content
+  - The Duty is structured around a Consumer Principle, three cross-cutting rules, and four outcomes covering products and services, price and value, consumer understanding, and consumer support. Firms must evidence ongoing monitoring of customer outcomes, making the Duty a continuous compliance obligation rather than a one-time disclosure requirement, with implications for AI-driven support and call-centre interactions.

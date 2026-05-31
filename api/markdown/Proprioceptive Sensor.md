@@ -327,12 +327,12 @@ public:: true
       "label": "Perception and Sensing"
     },
     {
-      "@id": "urn:ngm:class:control-feedback-element",
-      "label": "Control Feedback Element"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     },
     {
-      "@id": "urn:ngm:class:mechatronic-component",
-      "label": "Mechatronic Component"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {

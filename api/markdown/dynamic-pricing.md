@@ -1,0 +1,4 @@
+- ### Definition
+  - Dynamic Pricing adjusts prices in real time using demand, supply, and behavioural signals, usually via machine-learning optimisation. It enables [[Logistics Optimization]] and is a lever of [[Hyper-Personalisation]] in commerce.
+- ### Content
+  - Models forecast demand elasticity and optimise prices against revenue, margin, or capacity-utilisation objectives, often within guardrails set by business rules. Effective dynamic pricing depends on timely data, experimentation, and controls to avoid fairness, perception, and regulatory pitfalls.

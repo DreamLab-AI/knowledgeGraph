@@ -483,8 +483,8 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:representational-harm",
-      "label": "Representational Harm"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     },
     {
       "@id": "urn:ngm:class:sociotechnical-harm",

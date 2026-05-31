@@ -1,4 +1,5 @@
 public:: true
+alias:: PoseEstimation
 
 # Pose Estimation
 ```json-ld

@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:c8e21698f4fcf6ca2e243b4ca512a65c4409cc99ff64abed0e192028ac7ee212",
+  "title": "Settlement",
+  "slug": "settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:settlement",
+  "domain": "blockchain",
+  "definition": "The final and irreversible transfer of an asset from one party to another that discharges the obligation arising from a trade or payment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "atomic-settlement",
+      "label": "Atomic Settlement"
+    },
+    {
+      "slug": "payment-system",
+      "label": "Payment System"
+    },
+    {
+      "slug": "cross-border-settlement",
+      "label": "Cross-Border Settlement"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cbdc-cross-border-settlement",
+      "label": "CBDC Cross-Border Settlement"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "visa",
+      "label": "Visa"
+    }
+  ]
+}

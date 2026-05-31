@@ -75,6 +75,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
       "slug": "kinematics-model",
       "label": "Kinematics Model"
     },
@@ -83,8 +87,20 @@
       "label": "Learning Algorithm"
     },
     {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
     }
   ]
 }

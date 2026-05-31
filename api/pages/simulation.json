@@ -59,12 +59,48 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },
     {
+      "slug": "economic-model",
+      "label": "Economic Model"
+    },
+    {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
+      "slug": "material-science",
+      "label": "Material Science"
+    },
+    {
+      "slug": "material-system",
+      "label": "Material System"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "omniverse",
+      "label": "Omniverse"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
+    },
+    {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
     },
     {
       "slug": "procedural-and-hybrid-4-d",

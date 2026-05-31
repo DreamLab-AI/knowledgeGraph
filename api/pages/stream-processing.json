@@ -80,6 +80,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "data-engineering",
+      "label": "Data Engineering"
+    },
+    {
       "slug": "real-time-processing",
       "label": "Real-time Processing"
     },

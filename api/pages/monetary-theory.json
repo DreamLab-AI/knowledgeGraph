@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:6235881c40e1adebd55c51e9d25182ba943e5697211d05335f9b81b8357b5813",
+  "title": "Monetary Theory",
+  "slug": "monetary-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:monetary-theory",
+  "domain": "metaverse",
+  "definition": "Monetary theory studies the nature of money, how its supply is created and managed, and how monetary conditions affect prices, output and financial stability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "fiat-currency",
+      "label": "Fiat Currency"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    }
+  ]
+}

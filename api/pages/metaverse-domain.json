@@ -260,6 +260,10 @@
       "label": "Adversarial Testing"
     },
     {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
       "slug": "augmented-connected-workforce",
       "label": "Augmented Connected Workforce"
     },
@@ -330,6 +334,10 @@
     {
       "slug": "composite-ai",
       "label": "Composite AI"
+    },
+    {
+      "slug": "computer-graphics-domain",
+      "label": "Computer Graphics Domain"
     },
     {
       "slug": "confusion-matrix",
@@ -414,6 +422,10 @@
     {
       "slug": "direct-preference-optimisation",
       "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "Distributed Collaboration Domain"
     },
     {
       "slug": "distributor",
@@ -808,6 +820,14 @@
       "label": "Metaverse Navigation Systems"
     },
     {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
+    },
+    {
       "slug": "minimal-risk-ai",
       "label": "Minimal Risk AI"
     },
@@ -1172,6 +1192,10 @@
       "label": "Sparse Mixture of Experts"
     },
     {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
       "slug": "stakeholder",
       "label": "Stakeholder"
     },
@@ -1256,6 +1280,10 @@
       "label": "Underfitting"
     },
     {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
       "slug": "validation-report",
       "label": "VALIDATION_REPORT"
     },
@@ -1294,6 +1322,10 @@
     {
       "slug": "warmup",
       "label": "Warmup"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
     },
     {
       "slug": "web-assembly",
@@ -1354,6 +1386,10 @@
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
+    },
+    {
+      "slug": "park-2022-metaverse",
+      "label": "park2022metaverse"
     },
     {
       "slug": "security-audit-guide",

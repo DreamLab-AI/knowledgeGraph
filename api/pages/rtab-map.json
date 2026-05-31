@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:rtab-map",
+  "title": "RTAB-Map",
+  "slug": "rtab-map",
+  "public": true,
+  "classIri": "urn:ngm:class:rtab-map",
+  "domain": "robotics",
+  "definition": "RTAB-Map (Real-Time Appearance-Based Mapping) is an open-source library for RGB-D, stereo, and lidar graph-based SLAM with a memory-management scheme that bounds computation for large-scale, long-term operation. Its core is an appearance-based loop-closure detector that recognises previously visited places to correct accumulated drift. It is widely used on ground robots to build consistent metric and topological maps.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robotics Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

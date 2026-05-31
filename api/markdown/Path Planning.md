@@ -1,4 +1,5 @@
 public:: true
+alias:: PathPlanning, RB-1016-path-planning
 
 # Path Planning
 ```json-ld
@@ -170,11 +171,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rb-1017-rrt-algorithm",
+        "@id": "urn:ngm:class:rrt-algorithm",
         "label": "RB-1017-rrt-algorithm"
       },
       {
-        "@id": "urn:ngm:class:rb-1018-dijkstra-algorithm",
+        "@id": "urn:ngm:class:dijkstra-algorithm",
         "label": "RB-1018-dijkstra-algorithm"
       }
     ]

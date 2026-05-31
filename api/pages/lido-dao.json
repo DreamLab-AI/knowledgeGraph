@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:df417b5c349223249e3cd4131165f81513f2eea1b561a215b3d46055300a4cb2",
+  "title": "Lido DAO",
+  "slug": "lido-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:lido-dao",
+  "domain": "blockchain",
+  "definition": "The decentralised organisation that governs the Lido liquid staking protocol, setting node operator policy, fees, and treasury decisions through token-holder voting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "on-chain-governance",
+      "label": "On-chain Governance"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "lido",
+      "label": "Lido"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

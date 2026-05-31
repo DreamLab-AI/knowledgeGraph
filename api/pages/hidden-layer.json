@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:hidden-layer",
+  "title": "Hidden Layer",
+  "slug": "hidden-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:hidden-layer",
+  "domain": "ai",
+  "definition": "A hidden layer is an intermediate layer of neurons in a neural network situated between the input and output layers, whose activations are not directly observed. Each hidden layer applies a learned linear transformation followed by a non-linear activation, building increasingly abstract feature representations. Stacking multiple hidden layers is what gives deep networks their representational power.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    }
+  ]
+}

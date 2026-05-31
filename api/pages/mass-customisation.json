@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:mass-customisation",
+  "title": "Mass Customisation",
+  "slug": "mass-customisation",
+  "public": true,
+  "classIri": "urn:ngm:class:mass-customisation",
+  "domain": "robotics",
+  "definition": "Mass customisation is a production strategy that delivers individually tailored goods or services at costs approaching those of mass production. It combines flexible manufacturing, modular design, and digital configuration so customers can specify variants without sacrificing scale economies. Robotics, additive manufacturing, and data-driven personalisation are key enablers across sectors such as fashion and consumer goods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

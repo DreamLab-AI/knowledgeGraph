@@ -1,0 +1,4 @@
+- ### Definition
+  - The ILO Core Labour Standards codify fundamental rights at work, providing the normative benchmark for [[Ethical Sourcing]] and supply-chain labour due-diligence.
+- ### Content
+  - The standards are anchored in the 1998 Declaration on Fundamental Principles and Rights at Work, with health and safety added as a fifth category in 2022. Brands and suppliers reference them in codes of conduct, audits, and traceability programmes to demonstrate that goods are produced under acceptable labour conditions.

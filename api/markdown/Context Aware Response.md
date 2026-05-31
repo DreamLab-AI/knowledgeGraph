@@ -1,4 +1,5 @@
 public:: true
+alias:: Context-Aware Response
 
 # Context Aware Response
 ```json-ld

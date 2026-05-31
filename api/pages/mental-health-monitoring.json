@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:24c256bc88c17467faaf4b897551f983a1c6c873f977f89e6dd23fea37a042c8",
+  "title": "Mental Health Monitoring",
+  "slug": "mental-health-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:mental-health-monitoring",
+  "domain": "healthcare",
+  "definition": "The use of sensors, applications, and data analysis to track indicators related to a person's psychological wellbeing over time. It may use self-reports, physiological signals, and behavioural data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "sensor",
+      "label": "Sensor"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

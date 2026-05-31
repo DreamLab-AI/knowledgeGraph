@@ -399,12 +399,12 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:climate-technology",
-      "label": "Climate Technology"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "@id": "urn:ngm:class:energy-efficient-computing",
-      "label": "Energy Efficient Computing"
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
     }
   ],
   "relations": {

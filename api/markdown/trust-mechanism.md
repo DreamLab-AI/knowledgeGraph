@@ -1,0 +1,4 @@
+- ### Definition
+  - A system or protocol that lets parties cooperate with assurance of honest behaviour, replacing interpersonal trust with verifiable guarantees. It is a prerequisite for reliable [[Value Transfer]] and underpins exchange systems including a [[Barter System]].
+- ### Content
+  - Traditional trust mechanisms rely on trusted third parties such as banks, escrow, and courts, while blockchains substitute decentralised consensus and cryptography to achieve trust-minimisation. The design of incentives, penalties, and verifiability determines how robustly a mechanism deters defection and sustains cooperation at scale.

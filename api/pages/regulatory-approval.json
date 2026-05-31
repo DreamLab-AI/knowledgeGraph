@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:e654e4451064a99d2db39963da7c989bb066192a40efad533e028b022bf2a52b",
+  "title": "Regulatory Approval",
+  "slug": "regulatory-approval",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-approval",
+  "domain": "governance",
+  "definition": "Regulatory approval is the formal authorisation by a regulator that permits an entity, product or activity to proceed under defined conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-requirements",
+        "label": "Regulatory Requirements"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "https-www-oecd-org-gov-regulatory-policy",
+      "label": "https://www.oecd.org/gov/regulatory-policy/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-regulatory-agency",
+      "label": "https://en.wikipedia.org/wiki/Regulatory_agency"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

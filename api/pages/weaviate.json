@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:3467223a86afc63ac0ad128770840955742e2d524c7ba0122888373574d1d8f3",
+  "title": "Weaviate",
+  "slug": "weaviate",
+  "public": true,
+  "classIri": "urn:ngm:class:weaviate",
+  "domain": "artificial-intelligence",
+  "definition": "Weaviate is an open-source vector database for storing objects and their vector embeddings to support semantic search and retrieval. It is developed by Weaviate B.V.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vector-database",
+      "label": "Vector Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "https-weaviate-io",
+      "label": "https://weaviate.io"
+    },
+    {
+      "slug": "https-weaviate-io-developers-weaviate",
+      "label": "https://weaviate.io/developers/weaviate"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

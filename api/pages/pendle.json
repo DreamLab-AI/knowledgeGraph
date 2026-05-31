@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:eea8b46c60d141cc25e1b4e451b86514c6a65ef653bcb289442d5703402f1de3",
+  "title": "Pendle",
+  "slug": "pendle",
+  "public": true,
+  "classIri": "urn:ngm:class:pendle",
+  "domain": "blockchain",
+  "definition": "Pendle is a decentralised finance protocol that tokenises future yield, splitting yield-bearing assets into separate principal and yield tokens that can be traded.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

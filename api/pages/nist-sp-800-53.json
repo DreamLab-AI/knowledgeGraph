@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ac93efbf932f24082a25ec0526ff5ea2306f180c324998b7f8b00d712497ac95",
+  "title": "NIST SP 800-53",
+  "slug": "nist-sp-800-53",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-sp-800-53",
+  "domain": "standards",
+  "definition": "NIST SP 800-53 provides a catalogue of security and privacy controls for information systems and organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    }
+  ]
+}

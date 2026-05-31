@@ -79,8 +79,8 @@ public:: true
       "label": "Interaction Technology"
     },
     {
-      "@id": "urn:ngm:class:social-computing",
-      "label": "Social Computing"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

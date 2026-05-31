@@ -1,4 +1,5 @@
 public:: true
+alias:: CollaborativeSimulation
 
 # Collaborative Simulation
 ```json-ld

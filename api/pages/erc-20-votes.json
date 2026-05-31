@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:f96918731e4ead3168b67ac51e4df790355c430fe410103f4c7da8c6a841c02c",
+  "title": "ERC-20 Votes",
+  "slug": "erc-20-votes",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-20-votes",
+  "domain": "standards",
+  "definition": "An extension pattern building on the ERC-20 fungible token standard to track voting power and historical balances for on-chain governance. It associates token holdings with delegated voting rights.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

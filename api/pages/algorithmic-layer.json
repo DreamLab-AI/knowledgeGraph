@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:195d4aff20a15f9f88e691e03dee8385981967de05f44b45e5aef431cfa410a5",
+  "title": "Algorithmic Layer",
+  "slug": "algorithmic-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-layer",
+  "domain": "algorithmic",
+  "definition": "The Algorithmic Layer is the stratum that holds the step-by-step procedures a system uses to transform inputs into outputs. In the canonical stack it corresponds to the Algorithm Layer, sitting above the Compute Layer and below the Model strata that compose its primitives. It contains algorithms, data structures, and their complexity characteristics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-architecture-layer",
+        "label": "Model Architecture Layer"
+      },
+      {
+        "id": "urn:ngm:class:model-layer",
+        "label": "Model Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-agent-coordination",
+  "title": "AI Agent Coordination",
+  "slug": "ai-agent-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-agent-coordination",
+  "domain": "ai",
+  "definition": "AI Agent Coordination is the set of mechanisms by which multiple autonomous AI agents align their actions, share state, allocate tasks, and resolve conflicts to achieve goals that exceed any single agent's capability. It covers communication protocols, role assignment, consensus, and negotiation, and may be centralized through an orchestrator or fully decentralized. Effective coordination is essential for multi-agent systems operating over shared resources or distributed ledgers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client-Side Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

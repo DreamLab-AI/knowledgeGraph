@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:stablecoins-on-bitcoin",
+  "title": "Stablecoins on Bitcoin",
+  "slug": "stablecoins-on-bitcoin",
+  "public": true,
+  "classIri": "urn:ngm:class:stablecoins-on-bitcoin",
+  "domain": "blockchain",
+  "definition": "Stablecoins on Bitcoin are price-stable tokens issued and transferred on Bitcoin-based protocols such as Taproot Assets, Liquid, or RGB, rather than on smart-contract chains like Ethereum. They aim to bring dollar-denominated value transfer to the Bitcoin ecosystem, leveraging Bitcoin's settlement security and, where combined with the Lightning Network, near-instant low-cost payments. They extend Bitcoin's utility from a single monetary asset toward a broader settlement layer for fiat-pegged value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

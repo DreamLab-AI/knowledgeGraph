@@ -1,0 +1,4 @@
+- ### Definition
+  - The WTO Trade Facilitation Agreement is a binding multilateral treaty establishing measures to speed and simplify cross-border goods clearance, central to [[Customs Trade Facilitation]].
+- ### Content
+  - The TFA harmonises customs practice through single-window electronic submission, advance rulings, and inter-agency border cooperation. Its differentiated implementation schedule lets developing and least-developed members phase in commitments according to their administrative capacity, often with technical assistance.

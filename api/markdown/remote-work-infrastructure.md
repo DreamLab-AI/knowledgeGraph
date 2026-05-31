@@ -1,0 +1,4 @@
+- ### Definition
+  - Remote work infrastructure is the stack of telepresence and collaboration technologies for distributed teams, relying on signals like the [[Presence Indicator]] and techniques such as [[Bandwidth Adaptation]].
+- ### Content
+  - It spans secure connectivity, video and spatial-audio communication, shared documents and whiteboards, and identity and access controls. Robust presence signalling and adaptive media keep collaboration fluid across heterogeneous networks, while security layers protect data outside the traditional office perimeter.

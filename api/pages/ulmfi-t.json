@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ulmfi-t",
+  "title": "ULMFiT",
+  "slug": "ulmfi-t",
+  "public": true,
+  "classIri": "urn:ngm:class:ulmfi-t",
+  "domain": "ai",
+  "definition": "ULMFiT (Universal Language Model Fine-tuning) is a transfer-learning method introduced by Howard and Ruder in 2018 that adapts a language model pre-trained on a large general corpus to downstream NLP tasks such as text classification. It popularised techniques including discriminative learning rates, slanted triangular learning rates, and gradual unfreezing, demonstrating that language-model pre-training transfers effectively to many tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

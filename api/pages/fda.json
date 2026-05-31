@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:d668e4ffffe923db2109edf0842b145ce99faf20f4e48d2cc29e59f738190370",
+  "title": "FDA",
+  "slug": "fda",
+  "public": true,
+  "classIri": "urn:ngm:class:fda",
+  "domain": "governance",
+  "definition": "The Food and Drug Administration is a United States federal agency that regulates food, drugs, medical devices, and related products. It oversees their safety and approval.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "synthetic-biology",
+      "label": "Synthetic Biology"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "https-www-fda-gov",
+      "label": "https://www.fda.gov"
+    },
+    {
+      "slug": "https-www-fda-gov-about-fda",
+      "label": "https://www.fda.gov/about-fda"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "synthetic-biology",
+      "label": "Synthetic Biology"
+    }
+  ]
+}

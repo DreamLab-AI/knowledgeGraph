@@ -1,0 +1,4 @@
+- ### Definition
+  - Network participation is an entity's resource contribution to a decentralised network in return for influence and rewards. It is required of a [[Blockchain Entity]] and drives [[Reward Distribution]].
+- ### Content
+  - Protocols encode participation through validator sets, staking thresholds, slashing conditions, and governance weights, aligning individual incentives with network health. Higher and more diverse participation improves security and censorship resistance, while concentration of stake or compute among few actors undermines the decentralisation the network depends on.

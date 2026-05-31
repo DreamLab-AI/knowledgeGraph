@@ -60,8 +60,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "1-inch",
+      "label": "1inch"
+    },
+    {
       "slug": "blockchain-application",
       "label": "Blockchain Application"
+    },
+    {
+      "slug": "constant-product-formula",
+      "label": "Constant Product Formula"
     },
     {
       "slug": "dao-tooling",

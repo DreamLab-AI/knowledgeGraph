@@ -1,0 +1,4 @@
+- ### Definition
+  - CRM integration links a [[CRM]] system to surrounding applications so customer data and interactions stay synchronised across channels. It is heavily used in [[Call Centres]] to unify telephony with contact records.
+- ### Content
+  - Integrations rely on REST APIs, webhooks, and middleware to push and pull contacts, tickets, call logs, and AI-generated summaries between systems. Well-designed integration reduces duplicate entry and gives agents a single customer timeline, while raising concerns around data residency, rate limits, and schema drift between vendors.

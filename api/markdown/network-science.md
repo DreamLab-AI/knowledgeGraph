@@ -1,0 +1,4 @@
+- ### Definition
+  - Network science studies systems as graphs to understand how connection structure drives behaviour. It relies on storage such as a [[Graph Database]] and includes applied subfields like [[Social Network Analysis]].
+- ### Content
+  - Core results include the prevalence of scale-free degree distributions, the small-world phenomenon, and the role of community structure in information and contagion spread. These tools support tasks from identifying influential nodes and detecting clusters to modelling resilience against targeted or random failures.

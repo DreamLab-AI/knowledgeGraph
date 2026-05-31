@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:logistics",
+  "title": "Logistics",
+  "slug": "logistics",
+  "public": true,
+  "classIri": "urn:ngm:class:logistics",
+  "domain": "supply-chain",
+  "definition": "Logistics is the planning, execution, and control of the efficient movement and storage of goods, services, and related information between points of origin and consumption. It encompasses transportation, warehousing, inventory management, order fulfilment, and reverse flows, with the objective of meeting demand at the required service level and lowest total cost. Logistics is a constituent function of supply-chain management and is increasingly mediated by sensor data, real-time tracking, and optimisation algorithms that coordinate multimodal networks under uncertainty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:process",
+      "label": "Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.78,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "supply-chain-domain",
+      "label": "Supply Chain Domain"
+    }
+  ]
+}

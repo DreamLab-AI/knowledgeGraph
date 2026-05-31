@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:federated-identity-system",
+  "title": "Federated Identity System",
+  "slug": "federated-identity-system",
+  "public": true,
+  "classIri": "urn:ngm:class:federated-identity-system",
+  "domain": "security",
+  "definition": "A federated identity system enables a user's digital identity and authentication to be recognised across multiple independent organisations or domains without each maintaining separate credentials. It relies on trust relationships between identity providers and relying parties, exchanging assertions via protocols such as SAML, OpenID Connect, and OAuth. Federation underpins single sign-on, cross-organisation access, and trust-framework governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-credential-exchange",
+        "label": "Federated Credential Exchange"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework-policy",
+        "label": "Trust Framework Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    }
+  ]
+}

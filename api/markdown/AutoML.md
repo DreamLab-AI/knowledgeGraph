@@ -1,4 +1,5 @@
 public:: true
+alias:: Auto-ML
 
 # AutoML
 ```json-ld
@@ -215,8 +216,8 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:automated-optimisation-system",
-      "label": "Automated Optimisation System"
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
     },
     {
       "@id": "urn:ngm:class:machine-learning-pipeline",

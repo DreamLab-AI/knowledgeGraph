@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:error-signal",
+  "title": "Error Signal",
+  "slug": "error-signal",
+  "public": true,
+  "classIri": "urn:ngm:class:error-signal",
+  "domain": "robotics",
+  "definition": "An error signal is the quantity in a feedback control system representing the instantaneous difference between the reference setpoint and the actual measured output. It is the driving input to the controller, which acts to reduce it toward zero. The error signal's magnitude, rate of change, and accumulated value are processed by proportional, derivative, and integral control terms respectively.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:derivative-control",
+        "label": "Derivative Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

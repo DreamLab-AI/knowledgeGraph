@@ -1,4 +1,5 @@
 public:: true
+alias:: Mixture-of-Experts
 
 # Mixture of Experts
 ```json-ld

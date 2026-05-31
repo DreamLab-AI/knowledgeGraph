@@ -1,4 +1,5 @@
 public:: true
+alias:: ISO TC307, ISO/TC 307
 
 # iso tc 307
 ```json-ld

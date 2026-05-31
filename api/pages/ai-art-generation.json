@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ai-art-generation",
+  "title": "AI Art Generation",
+  "slug": "ai-art-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-art-generation",
+  "domain": "ai",
+  "definition": "AI Art Generation is the production of visual artwork by generative models, most commonly text-to-image diffusion systems that synthesize images from natural-language prompts. Outputs can be steered through prompting, fine-tuning, and lightweight adapters such as LoRA or DreamBooth that teach a model new subjects or styles. It has reshaped creative workflows in illustration, concept art, and design while raising questions about training-data provenance and authorship.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "Kohya, DreamBooth and Similar"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

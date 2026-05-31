@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:enterprise-risk-management",
+  "title": "Enterprise Risk Management",
+  "slug": "enterprise-risk-management",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-risk-management",
+  "domain": "governance",
+  "definition": "Enterprise Risk Management (ERM) is a structured, organisation-wide approach to identifying, assessing, prioritising, and mitigating risks that could affect an entity's objectives. It integrates financial, operational, strategic, compliance, and reputational risk into a single governance framework with defined ownership and reporting. Established frameworks such as COSO ERM and ISO 31000 provide the reference models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    }
+  ]
+}

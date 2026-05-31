@@ -64,8 +64,44 @@
   ],
   "backlinks": [
     {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "cooling-system",
+      "label": "Cooling System"
+    },
+    {
       "slug": "display-hardware",
       "label": "Display Hardware"
+    },
+    {
+      "slug": "e-waste",
+      "label": "E-Waste"
+    },
+    {
+      "slug": "ibm-true-north",
+      "label": "IBM TrueNorth"
+    },
+    {
+      "slug": "intel-sgx",
+      "label": "Intel SGX"
+    },
+    {
+      "slug": "intel",
+      "label": "Intel"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
     },
     {
       "slug": "optical-sensor-array",
@@ -74,6 +110,10 @@
     {
       "slug": "physical-hardware",
       "label": "Physical Hardware"
+    },
+    {
+      "slug": "tee",
+      "label": "TEE"
     }
   ]
 }

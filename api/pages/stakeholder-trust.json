@@ -71,12 +71,20 @@
       "label": "AI Ethics Checklist"
     },
     {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
     },
     {
       "slug": "carbon-neutrality-verification",
       "label": "Carbon Neutrality Verification"
+    },
+    {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
     }
   ]
 }

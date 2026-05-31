@@ -1,4 +1,5 @@
 public:: true
+alias:: AdaptiveInterfaces
 
 # Adaptive Interfaces
 ```json-ld

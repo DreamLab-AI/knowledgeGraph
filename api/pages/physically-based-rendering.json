@@ -67,6 +67,10 @@
       "label": "Global Illumination"
     },
     {
+      "slug": "material-x",
+      "label": "MaterialX"
+    },
+    {
       "slug": "physics-material",
       "label": "Physics Material"
     },

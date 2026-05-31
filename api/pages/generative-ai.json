@@ -385,6 +385,14 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },
@@ -413,6 +421,14 @@
       "label": "Education and AI"
     },
     {
+      "slug": "eleven-labs",
+      "label": "ElevenLabs"
+    },
+    {
+      "slug": "ethan-mollick",
+      "label": "Ethan Mollick"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },
@@ -429,6 +445,14 @@
       "label": "Generative Adversarial Networks"
     },
     {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },
@@ -437,12 +461,24 @@
       "label": "Inpainting"
     },
     {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
     },
     {
       "slug": "music-and-audio",
@@ -479,6 +515,10 @@
     {
       "slug": "social-impact",
       "label": "Social Impact"
+    },
+    {
+      "slug": "stability-ai",
+      "label": "Stability AI"
     },
     {
       "slug": "stochastic-process",

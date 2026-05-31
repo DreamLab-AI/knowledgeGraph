@@ -1,4 +1,5 @@
 public:: true
+alias:: Layer 2, Layer-2
 
 # Layer2
 ```json-ld

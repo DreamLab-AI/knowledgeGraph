@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:on-chain-data-indexing",
+  "title": "On-Chain Data Indexing",
+  "slug": "on-chain-data-indexing",
+  "public": true,
+  "classIri": "urn:ngm:class:on-chain-data-indexing",
+  "domain": "blockchain",
+  "definition": "On-chain data indexing is the process of extracting, transforming, and organising raw blockchain events and state into queryable structures suited to application access patterns. Because base-layer data is optimised for consensus rather than retrieval, indexers ingest blocks and logs, decode them, and serve them through APIs such as GraphQL. It is the data backbone for analytics dashboards and decentralised applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    }
+  ]
+}

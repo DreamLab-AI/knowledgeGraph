@@ -1,4 +1,5 @@
 public:: true
+alias:: MachineLearningModel
 
 # Machine Learning Model
 ```json-ld

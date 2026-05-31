@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:8f63117566be4bef2fe6f40b9da2842486b5769664591a718b9928abae0dcb4d",
+  "title": "API",
+  "slug": "api",
+  "public": true,
+  "classIri": "urn:ngm:class:api",
+  "domain": "general",
+  "definition": "An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "communication-protocols",
+      "label": "Communication Protocols"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "interoperability-standards",
+      "label": "Interoperability Standards"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "http",
+      "label": "HTTP"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

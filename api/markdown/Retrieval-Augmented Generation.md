@@ -1,4 +1,5 @@
 public:: true
+alias:: Retrieval Augmented Generation
 
 # retrieval-augmented generation
 ```json-ld

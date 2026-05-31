@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:b5c45178c43b76c30317ddc6d0694a249aea4ed273e14741b63fe7d4cea56655",
+  "title": "Classification",
+  "slug": "classification",
+  "public": true,
+  "classIri": "urn:ngm:class:classification",
+  "domain": "machine-learning",
+  "definition": "A supervised learning task in which a model assigns inputs to one of a fixed set of discrete categories.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml",
+      "label": "AML"
+    },
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

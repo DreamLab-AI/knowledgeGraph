@@ -1147,12 +1147,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:cross-border-ai-law",
-      "label": "Cross-Border AI Law"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     },
     {
-      "@id": "urn:ngm:class:digital-technology-policy",
-      "label": "Digital Technology Policy"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
@@ -1294,7 +1294,7 @@ public:: true
         "label": "Algorithm Registry"
       },
       {
-        "@id": "urn:ngm:class:model-card",
+        "@id": "urn:ngm:class:model-cards",
         "label": "Model Card"
       },
       {

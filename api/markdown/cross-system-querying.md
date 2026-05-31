@@ -1,0 +1,4 @@
+- ### Definition
+  - Cross-system querying retrieves and combines data spanning multiple independent systems through one logical query. It is enabled by a [[Federation Surface]] and by linked-data structures produced via a [[Linked Data Encoder]].
+- ### Content
+  - Federated query engines decompose a request, push sub-queries to each source, and merge results, often relying on shared schemas, ontologies, or RDF/SPARQL semantics for alignment. The approach avoids costly data duplication but must contend with source heterogeneity, latency, partial availability, and consistent identity resolution across systems.

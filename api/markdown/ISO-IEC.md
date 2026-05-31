@@ -1,4 +1,5 @@
 public:: true
+alias:: ISO IEC, ISO/IEC
 
 # ISO/IEC
 ```json-ld

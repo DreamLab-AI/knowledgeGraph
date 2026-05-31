@@ -162,7 +162,7 @@ public:: true
         "label": "End-Effector Platform"
       },
       {
-        "@id": "urn:ngm:class:kinematic-chains",
+        "@id": "urn:ngm:class:kinematic-chain",
         "label": "Kinematic Chains"
       },
       {

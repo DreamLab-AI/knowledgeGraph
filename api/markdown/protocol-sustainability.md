@@ -1,0 +1,4 @@
+- ### Definition
+  - Protocol sustainability is a protocol's ability to stay economically viable, secure, and well-governed without depending on unsustainable emissions. It is supported by sound [[Tokenomics Governance]] and disciplined [[Treasury Management]].
+- ### Content
+  - Sustainable protocols derive recurring revenue from fees or services that exceed the cost of security and incentives, hold diversified treasuries to weather market cycles, and adopt emission schedules that taper rather than dilute indefinitely. Governance mechanisms must be able to redirect funds toward maintenance, audits, and growth, aligning long-term contributor incentives with the health of the network.

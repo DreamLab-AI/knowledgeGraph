@@ -94,6 +94,10 @@
   ],
   "backlinks": [
     {
+      "slug": "bittensor",
+      "label": "Bittensor"
+    },
+    {
       "slug": "blockchain",
       "label": "Blockchain"
     },
@@ -114,8 +118,20 @@
       "label": "Digital Economy"
     },
     {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
       "slug": "proof-of-stake-sustainability",
       "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "sablier",
+      "label": "Sablier"
+    },
+    {
+      "slug": "token-engineering",
+      "label": "Token Engineering"
     }
   ]
 }

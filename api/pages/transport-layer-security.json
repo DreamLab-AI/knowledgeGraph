@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:4728ce7f4fb39662415dc1554e167f9e0e71f2d111bef79e793a7faea17bde25",
+  "title": "Transport Layer Security",
+  "slug": "transport-layer-security",
+  "public": true,
+  "classIri": "urn:ngm:class:transport-layer-security",
+  "domain": "cryptographic",
+  "definition": "A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "certificate-authority",
+      "label": "Certificate Authority"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "tls",
+      "label": "TLS"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
+    }
+  ]
+}

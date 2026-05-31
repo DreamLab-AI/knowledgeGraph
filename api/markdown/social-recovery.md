@@ -1,0 +1,4 @@
+- ### Definition
+  - Social recovery is an [[Identity Management]] scheme for blockchain wallets in which a quorum of trusted guardians can restore account control after key loss, removing single-seed-phrase fragility while keeping assets self-custodied.
+- ### Content
+  - Guardians never hold funds; they collectively authorise a key rotation to a new owner address through the wallet contract. The pattern is enabled by [[Account Abstraction]], which makes wallets programmable, and shares cryptographic foundations with [[Multi-Sig Governance]] where thresholds of independent signers govern privileged actions.

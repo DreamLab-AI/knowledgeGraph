@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:c44c73fcc5c5bde97174029ab4ad1d22204d241616538400a846b517df045131",
+  "title": "Functional Analysis",
+  "slug": "functional-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:functional-analysis",
+  "domain": "mathematics",
+  "definition": "Functional analysis is the branch of mathematics studying vector spaces with a notion of limit, such as Banach and Hilbert spaces, and the linear operators acting on them. It underlies much of modern analysis and its applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

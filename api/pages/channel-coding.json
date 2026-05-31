@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:channel-coding",
+  "title": "Channel Coding",
+  "slug": "channel-coding",
+  "public": true,
+  "classIri": "urn:ngm:class:channel-coding",
+  "domain": "infrastructure",
+  "definition": "Channel coding is the branch of coding theory that adds controlled redundancy to transmitted data so that errors introduced by a noisy communication channel can be detected and corrected at the receiver. Techniques include block codes, convolutional codes, turbo codes, and LDPC codes, with forward error correction being its dominant application. It matters because it lets systems approach the Shannon channel capacity, trading bandwidth for reliability in wireless, storage, and deep-space links.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infrastructure Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

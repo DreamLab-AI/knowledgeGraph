@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:9ba0d1a085ae9880becd566963054b3c29eabfd023d07fa93358a613f34295b6",
+  "title": "Wi-Fi",
+  "slug": "wi-fi",
+  "public": true,
+  "classIri": "urn:ngm:class:wi-fi",
+  "domain": "general",
+  "definition": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet. It is managed by the Wi-Fi Alliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "slug": "network-communication",
+      "label": "Network Communication"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "slug": "https-www-wi-fi-org",
+      "label": "https://www.wi-fi.org"
+    },
+    {
+      "slug": "https-standards-ieee-org-ieee-802-11",
+      "label": "https://standards.ieee.org/ieee/802.11/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

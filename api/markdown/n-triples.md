@@ -1,0 +1,4 @@
+- ### Definition
+  - N-Triples is a minimal RDF serialization where every line is one fully-expanded triple. It is closely related to [[Turtle]] (a more compact superset) and is consumed by data platforms such as [[Solid]].
+- ### Content
+  - Because each statement is independent and uses absolute IRIs, N-Triples is ideal for streaming large graphs, line-oriented diffing, and deterministic canonicalisation. The trade-off is verbosity: there is no prefixing, abbreviation, or nesting, so files are larger than equivalent Turtle or JSON-LD documents.

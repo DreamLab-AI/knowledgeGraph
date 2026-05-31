@@ -111,6 +111,10 @@
     {
       "slug": "metadata-management",
       "label": "Metadata Management"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
     }
   ]
 }

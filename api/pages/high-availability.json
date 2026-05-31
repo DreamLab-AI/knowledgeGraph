@@ -67,12 +67,20 @@
       "label": "Distributed Computing"
     },
     {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },
     {
       "slug": "infrastructure-layer",
       "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
     },
     {
       "slug": "scalable-architecture",

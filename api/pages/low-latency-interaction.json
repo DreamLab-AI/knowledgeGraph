@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:low-latency-interaction",
+  "title": "Low-Latency Interaction",
+  "slug": "low-latency-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:low-latency-interaction",
+  "domain": "metaverse",
+  "definition": "Low-latency interaction is the design property of a system in which the delay between a user action and the corresponding system response is minimised to preserve a sense of immediacy. In immersive and real-time contexts such as the metaverse, latency below roughly 20 milliseconds is critical to avoid perceptual disconnect and motion sickness. Achieving it requires optimised networking, predictive rendering, and edge computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Metaverse Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking-layer",
+        "label": "Networking Layer"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "networking-layer",
+      "label": "Networking Layer"
+    }
+  ]
+}

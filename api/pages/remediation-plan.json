@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:remediation-plan",
+  "title": "Remediation Plan",
+  "slug": "remediation-plan",
+  "public": true,
+  "classIri": "urn:ngm:class:remediation-plan",
+  "domain": "governance",
+  "definition": "A remediation plan is a structured set of corrective actions, owners, and deadlines drawn up to address identified non-conformities, risks, or harms discovered through audit or monitoring. It links each finding to a specific fix and tracks progress to closure. In compliance and ethical-sourcing contexts it is the mechanism that turns a violation into demonstrable improvement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

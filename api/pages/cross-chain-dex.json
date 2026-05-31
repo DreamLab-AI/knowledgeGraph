@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:cross-chain-dex",
+  "title": "Cross-Chain DEX",
+  "slug": "cross-chain-dex",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-dex",
+  "domain": "blockchain",
+  "definition": "A cross-chain DEX is a decentralised exchange that lets users swap assets native to different blockchains without a centralised custodian. It relies on bridges, atomic swaps, or liquidity-network protocols to coordinate settlement across chains while preserving non-custodial trading. It extends decentralised finance beyond single-chain liquidity silos.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

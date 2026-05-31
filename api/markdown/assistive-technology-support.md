@@ -1,0 +1,4 @@
+- ### Definition
+  - Assistive Technology Support enables software to work with screen readers, magnifiers, and other aids by exposing semantics through accessibility APIs. It is a capability of the [[Accessibility Domain]] and a requirement for delivering an [[Accessible Experience]].
+- ### Content
+  - Implementations populate the accessibility tree with correct roles, names, and states, ensure full keyboard operability, and respect user preferences such as reduced motion and high contrast. Without this support, assistive tools cannot interpret the interface, so it is both an engineering practice and a legal-compliance obligation under accessibility standards.

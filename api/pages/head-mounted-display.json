@@ -87,6 +87,10 @@
       "label": "Mixed Reality"
     },
     {
+      "slug": "tele-025-microsoft-hololens",
+      "label": "TELE-025-microsoft-hololens"
+    },
+    {
       "slug": "virtual-reality-vr",
       "label": "Virtual Reality (VR)"
     }

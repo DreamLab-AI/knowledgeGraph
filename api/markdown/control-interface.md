@@ -1,0 +1,4 @@
+- ### Definition
+  - A control interface is the command-and-feedback boundary to actuated hardware such as an [[End Effector]], and a component that a [[Digital Twin]] uses to mirror and drive physical systems.
+- ### Content
+  - It defines signal semantics, transport protocol, update rate, and real-time guarantees, abstracting hardware so that controllers and planners can issue commands consistently. Standardised interfaces (e.g. EtherCAT, CANopen, ROS control) decouple control software from specific drives, easing integration and substitution of components.

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:73984444299f725110f52638ed2f9310bce792671cd7f5aff051796554efd416",
+  "title": "Customer Support Automation",
+  "slug": "customer-support-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-support-automation",
+  "domain": "nlp",
+  "definition": "Customer support automation is the use of software, including chatbots and virtual agents, to handle customer enquiries with reduced human intervention. It aims to resolve common requests quickly and at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

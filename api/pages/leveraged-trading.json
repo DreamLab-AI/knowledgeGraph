@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:leveraged-trading",
+  "title": "Leveraged Trading",
+  "slug": "leveraged-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:leveraged-trading",
+  "domain": "blockchain",
+  "definition": "Leveraged trading is the practice of opening market positions whose notional size exceeds the trader's posted collateral by borrowing capital or using derivatives such as perpetual futures. It amplifies both gains and losses and exposes positions to liquidation when collateral falls below maintenance margin. In DeFi it is implemented by perpetual and margin protocols that enforce margin rules through smart contracts and on-chain oracles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      },
+      {
+        "id": "urn:ngm:class:d-yd-x",
+        "label": "dYdX"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    }
+  ]
+}

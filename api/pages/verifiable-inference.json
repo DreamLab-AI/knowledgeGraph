@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:verifiable-inference",
+  "title": "Verifiable Inference",
+  "slug": "verifiable-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:verifiable-inference",
+  "domain": "ai",
+  "definition": "Verifiable inference is the capability to cryptographically prove that a specific machine-learning model produced a given output for a given input without requiring trust in the compute provider. Techniques include zero-knowledge proofs of model execution (zkML), trusted execution environments and optimistic verification, which let third parties audit results. It is essential for decentralised and trust-minimised AI compute markets where inference is outsourced.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prime-intellect",
+        "label": "Prime Intellect"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

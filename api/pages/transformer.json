@@ -20,11 +20,11 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:individual:bert",
+        "id": "urn:ngm:class:bert",
         "label": "BERT"
       },
       {
@@ -42,7 +42,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:individual:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Model"
       },
       {
@@ -143,8 +143,24 @@
       "label": "AI Video"
     },
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
     },
     {
       "slug": "face-swap",
@@ -155,8 +171,16 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "gpt-4",
+      "label": "GPT 4"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
     },
     {
       "slug": "language-modeling",
@@ -167,6 +191,10 @@
       "label": "Large Language Models"
     },
     {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },
@@ -175,8 +203,20 @@
       "label": "Machine Translation"
     },
     {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
       "slug": "motion-capture",
       "label": "Motion Capture"
+    },
+    {
+      "slug": "multimodal-models",
+      "label": "Multimodal Models"
     },
     {
       "slug": "neural-network",
@@ -199,12 +239,24 @@
       "label": "Recurrent Neural Network"
     },
     {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
     }
   ]
 }

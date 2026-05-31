@@ -3,11 +3,16 @@
   "title": "ChatGPT",
   "slug": "chat-gpt",
   "public": true,
-  "classIri": "urn:ngm:individual:chat-gpt",
+  "classIri": "urn:ngm:class:chat-gpt",
   "domain": "ai",
   "definition": "ChatGPT is a large language model-based conversational AI assistant developed by OpenAI, publicly released in November 2022 and built on successive GPT model families. It demonstrated that general-purpose instruction-following dialogue could be deployed at consumer scale, triggering rapid adoption across education, coding, and knowledge-work domains. Its interface popularised prompt-based interaction as the dominant paradigm for human\u2013AI collaboration.",
-  "subClassOf": [],
-  "entityType": "Individual",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
@@ -36,11 +41,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:individual:gemini",
+        "id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       }
     ],
@@ -68,11 +73,11 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:individual:gemini",
+        "id": "urn:ngm:class:gemini",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:individual:anthropic-claude",
+        "id": "urn:ngm:class:anthropic-claude",
         "label": "Anthropic Claude"
       }
     ]

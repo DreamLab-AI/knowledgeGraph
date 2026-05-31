@@ -92,8 +92,20 @@
       "label": "Hardware and Edge"
     },
     {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
       "slug": "meeting-transcription",
       "label": "Meeting Transcription"
+    },
+    {
+      "slug": "otter-ai",
+      "label": "Otter.ai"
     },
     {
       "slug": "real-time-translation",
@@ -112,6 +124,14 @@
       "label": "Recurrent Neural Network"
     },
     {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
@@ -128,8 +148,20 @@
       "label": "Translation"
     },
     {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
+    },
+    {
       "slug": "voice-interaction",
       "label": "Voice Interaction"
+    },
+    {
+      "slug": "wave-net",
+      "label": "WaveNet"
+    },
+    {
+      "slug": "whisper",
+      "label": "Whisper"
     }
   ]
 }

@@ -109,6 +109,10 @@
     {
       "slug": "virtual-notary-service",
       "label": "Virtual Notary Service"
+    },
+    {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
     }
   ]
 }

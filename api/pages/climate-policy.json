@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:1c457ce32460c2914a89fdaedb5e54f4d60548c221be3eb96d886528bded43c5",
+  "title": "Climate Policy",
+  "slug": "climate-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-policy",
+  "domain": "public-policy",
+  "definition": "Climate policy is the set of government measures, regulations, and commitments intended to reduce greenhouse gas emissions and address the effects of climate change.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "greenwashing",
+      "label": "Greenwashing"
+    },
+    {
+      "slug": "energy-consumption",
+      "label": "Energy Consumption"
+    },
+    {
+      "slug": "sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

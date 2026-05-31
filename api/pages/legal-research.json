@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:28908a60645e6d9598faf82b69900187c7928cbe51a0e69a656e348d92434637",
+  "title": "Legal Research",
+  "slug": "legal-research",
+  "public": true,
+  "classIri": "urn:ngm:class:legal-research",
+  "domain": "metaverse",
+  "definition": "Legal research is the systematic process of finding, analysing and applying statutes, case law, regulations and secondary sources to answer a legal question, increasingly assisted by retrieval and language models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "Legal Tech Domain"
+    },
+    {
+      "slug": "optical-character-recognition",
+      "label": "Optical Character Recognition"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - A workflow engine executes and tracks multi-step processes from a declarative definition; it provides the orchestration substrate for [[Agent Frameworks]] and broader [[Workflow Orchestration]].
+- ### Content
+  - Engines such as Temporal, Camunda, and Airflow persist execution state so workflows survive crashes, support timers, signals, compensation, and parallel branches, and expose visibility into in-flight runs. Design choices distinguish data-pipeline DAG schedulers from durable-execution and BPMN-style human-task engines, with the common goal of reliable, resumable coordination of distributed steps.

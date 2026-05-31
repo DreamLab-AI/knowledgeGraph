@@ -1,0 +1,54 @@
+{
+  "id": "urn:visionflow:page:communication-network",
+  "title": "Communication Network",
+  "slug": "communication-network",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-network",
+  "domain": "infrastructure",
+  "definition": "A communication network is an interconnected collection of nodes and links that transports information between endpoints according to shared protocols. Networks are characterised by their topology, switching method, transmission media, and the protocol stack that governs addressing, routing, and error control. They span scales from local wireless links to global packet-switched internetworks, and they provide the substrate on which distributed systems, decentralised ledgers, and immersive media depend. Performance is described by metrics including bandwidth, latency, jitter, and reliability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-infrastructure",
+      "label": "Communication Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.76,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    }
+  ]
+}

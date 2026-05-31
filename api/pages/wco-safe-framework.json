@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:wco-safe-framework",
+  "title": "WCO SAFE Framework",
+  "slug": "wco-safe-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:wco-safe-framework",
+  "domain": "supply-chain",
+  "definition": "The WCO SAFE Framework of Standards is a World Customs Organization instrument that sets out principles and standards to secure and facilitate global supply chains. It establishes customs-to-customs network arrangements, customs-to-business partnerships through Authorised Economic Operator (AEO) programmes, and risk-based advance electronic cargo data exchange. SAFE balances trade facilitation with security against terrorism and illicit trade.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:eu-taxonomy",
+  "title": "EU Taxonomy",
+  "slug": "eu-taxonomy",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-taxonomy",
+  "domain": "governance",
+  "definition": "The EU Taxonomy is a classification system that defines which economic activities count as environmentally sustainable under European Union law. It sets technical screening criteria across climate and environmental objectives so that investors, companies, and regulators apply a common definition of green activity. The taxonomy underpins sustainable-finance disclosure and ESG reporting by preventing greenwashing through standardised criteria.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

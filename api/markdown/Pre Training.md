@@ -1,4 +1,5 @@
 public:: true
+alias:: Pre-Training, Pre-training
 
 # Pre Training
 ```json-ld

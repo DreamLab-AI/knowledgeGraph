@@ -1,0 +1,4 @@
+- ### Definition
+  - Creative expression denotes the production of original content and aesthetic artefacts by participants in interactive systems. It is enabled by [[Virtual World]] and [[Open World]] environments that provide construction, customisation, and authoring tools.
+- ### Content
+  - Platforms support creative expression through building tools, scripting, asset import, and social sharing, turning consumers into creators. The depth of these tools, combined with ownership and monetisation mechanisms, shapes how much durable cultural and economic value a virtual environment can sustain.

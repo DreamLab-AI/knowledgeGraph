@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:fair-adjudication",
+  "title": "Fair Adjudication",
+  "slug": "fair-adjudication",
+  "public": true,
+  "classIri": "urn:ngm:class:fair-adjudication",
+  "domain": "governance",
+  "definition": "Fair adjudication is the principle and process by which disputes are decided impartially, with due process, transparent rules, and the absence of bias toward any party. In legal and decentralised-arbitration contexts it requires neutral decision-makers, equal opportunity to present evidence, and reasoned, consistent rulings. It is a foundational requirement for legitimate dispute-resolution and arbitration mechanisms, including those implemented on-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dispute-resolution-mechanism",
+        "label": "Dispute Resolution Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:payments-infrastructure",
+  "title": "Payments Infrastructure",
+  "slug": "payments-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:payments-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Payments infrastructure is the aggregate of networks, rails, processors, and settlement systems that move value between parties. It spans card schemes, interbank transfer rails, clearing houses, and blockchain-based settlement layers that enable assets such as stablecoins to circulate. As a backbone system it determines the speed, cost, reach, and finality of monetary transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Infrastructure Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stablecoins"
+      },
+      {
+        "id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

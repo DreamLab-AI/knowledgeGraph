@@ -177,6 +177,10 @@
   ],
   "backlinks": [
     {
+      "slug": "authentication-protocol",
+      "label": "Authentication Protocol"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -205,8 +209,16 @@
       "label": "Identity Management System"
     },
     {
+      "slug": "key-exchange",
+      "label": "Key Exchange"
+    },
+    {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "noir",
+      "label": "Noir"
     },
     {
       "slug": "privacy-preserving-blockchain",
@@ -219,6 +231,10 @@
     {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "transport-layer-security",
+      "label": "Transport Layer Security"
     }
   ]
 }

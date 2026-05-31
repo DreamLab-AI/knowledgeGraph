@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:cc1e2aa0e76b066fd91842e8d37a47ea45272e513ae01a05a414cfe5fa953eda",
+  "title": "ETSI GS MEC 003",
+  "slug": "etsi-gs-mec-003",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-gs-mec-003",
+  "domain": "standards",
+  "definition": "An ETSI Group Specification within the Multi-access Edge Computing (MEC) series defining the framework and reference architecture for MEC. It describes functional elements and reference points of an edge computing platform.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    }
+  ]
+}

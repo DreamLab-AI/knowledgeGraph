@@ -1,4 +1,5 @@
 public:: true
+alias:: DistributedWork
 
 # Distributed Work
 ```json-ld

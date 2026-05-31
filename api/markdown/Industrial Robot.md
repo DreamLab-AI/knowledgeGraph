@@ -303,8 +303,8 @@ public:: true
       "label": "Manufacturing Automation"
     },
     {
-      "@id": "urn:ngm:class:programmable-logic-controller",
-      "label": "Programmable Logic Controller"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation And Control"
     }
   ],
   "relations": {
@@ -352,7 +352,7 @@ public:: true
         "label": "Industrial Network"
       },
       {
-        "@id": "urn:ngm:class:safety-standards",
+        "@id": "urn:ngm:class:safety-standard",
         "label": "Safety Standards"
       },
       {

@@ -1,0 +1,4 @@
+- ### Definition
+  - Destination chain execution is the step where a verified cross-chain message is applied on the target chain, completing the transfer or call. It is required by [[Blockchain Interoperability]] designs and is the settlement half of a [[Cross-Chain Bridge]].
+- ### Content
+  - The destination contract checks proofs and a unique message identifier before executing, preventing replay and double-spend. Failure modes include stuck or unexecuted messages, reorg-induced inconsistency, and reliance on the bridge's validator or light-client security assumptions.

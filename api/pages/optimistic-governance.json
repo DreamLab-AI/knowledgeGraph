@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:optimistic-governance",
+  "title": "Optimistic Governance",
+  "slug": "optimistic-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:optimistic-governance",
+  "domain": "blockchain",
+  "definition": "Optimistic Governance is a DAO decision-making pattern in which proposals are assumed approved and can execute unless challenged within a defined dispute window. It reduces voting fatigue and gas costs by requiring active participation only to veto or contest actions rather than to ratify every routine decision. Disputes are resolved by escalation to a vote or an arbitration mechanism, trading some upfront scrutiny for operational efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

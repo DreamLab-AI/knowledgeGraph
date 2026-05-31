@@ -12,8 +12,8 @@
       "label": "Platform and Environment"
     },
     {
-      "id": "urn:ngm:class:spatial-computing-core",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "SC Platform And Environment"
     }
   ],
   "entityType": "Class",
@@ -245,6 +245,10 @@
       "label": "Adaptive Virtual World"
     },
     {
+      "slug": "altspace-vr",
+      "label": "AltspaceVR"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },
@@ -257,6 +261,10 @@
       "label": "Digital Real Estate"
     },
     {
+      "slug": "embodied-presence",
+      "label": "Embodied Presence"
+    },
+    {
       "slug": "metaverse-platform",
       "label": "Metaverse Platform"
     },
@@ -267,6 +275,14 @@
     {
       "slug": "metaverse",
       "label": "Metaverse"
+    },
+    {
+      "slug": "metaverse-platforms",
+      "label": "MetaversePlatforms"
+    },
+    {
+      "slug": "microsoft-mesh",
+      "label": "Microsoft Mesh"
     },
     {
       "slug": "neural-3-d-generation",
@@ -289,12 +305,20 @@
       "label": "Vircadia"
     },
     {
+      "slug": "gaming",
+      "label": "gaming"
+    },
+    {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
     },
     {
       "slug": "metaverse-core-concepts",
       "label": "metaverse core concepts"
+    },
+    {
+      "slug": "park-2022-metaverse",
+      "label": "park2022metaverse"
     }
   ]
 }

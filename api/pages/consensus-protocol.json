@@ -42,6 +42,10 @@
   ],
   "backlinks": [
     {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
       "slug": "block-propagation",
       "label": "Block Propagation"
     },
@@ -114,6 +118,10 @@
       "label": "Hyperledger Besu"
     },
     {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
       "slug": "longest-chain-rule",
       "label": "Longest Chain Rule"
     },
@@ -162,8 +170,20 @@
       "label": "Solo Mining"
     },
     {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
     },
     {
       "slug": "virtual-notary-service",

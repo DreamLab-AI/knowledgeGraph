@@ -379,8 +379,8 @@ public:: true
       "label": "Security Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:trust-service",
-      "label": "Trust Service"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {

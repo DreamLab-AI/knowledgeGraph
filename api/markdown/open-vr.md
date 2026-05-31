@@ -1,0 +1,4 @@
+- ### Definition
+  - OpenVR is Valve's VR SDK and API that abstracts headset tracking, input, and rendering across vendors, used by virtual-world platforms such as [[Vircadia]] to support multiple devices.
+- ### Content
+  - Running atop the SteamVR runtime, OpenVR lets a single application drive compatible headsets without device-specific code. It served as an early cross-vendor VR interface and remains relevant, increasingly alongside the broader OpenXR standard.

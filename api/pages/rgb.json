@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:2c2eb6555cd9e6b4e19ae51c8a8dcb816bd61be35ddf6514535cdf136168ebf7",
+  "title": "RGB",
+  "slug": "rgb",
+  "public": true,
+  "classIri": "urn:ngm:class:rgb",
+  "domain": "blockchain",
+  "definition": "A protocol for issuing and transferring assets and running smart contracts on Bitcoin using client-side validation and single-use seals anchored to the chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "client-side-validation",
+      "label": "Client-Side Validation"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

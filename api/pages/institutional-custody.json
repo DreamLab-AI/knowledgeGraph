@@ -55,8 +55,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bit-go",
+      "label": "BitGo"
+    },
+    {
       "slug": "bitcoin-centralisation-risks",
       "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
     },
     {
       "slug": "multi-sig-governance",

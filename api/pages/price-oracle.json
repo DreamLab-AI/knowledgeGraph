@@ -55,8 +55,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
       "slug": "decentralized-exchange-dex",
       "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
     },
     {
       "slug": "liquidity-pool",
@@ -65,6 +73,18 @@
     {
       "slug": "liquidity-provision",
       "label": "Liquidity Provision"
+    },
+    {
+      "slug": "optimistic-oracle",
+      "label": "Optimistic Oracle"
+    },
+    {
+      "slug": "oracle-service",
+      "label": "Oracle Service"
+    },
+    {
+      "slug": "oracle",
+      "label": "Oracle"
     },
     {
       "slug": "stable-coins",
@@ -77,6 +97,10 @@
     {
       "slug": "stablecoin",
       "label": "Stablecoin"
+    },
+    {
+      "slug": "synthetix",
+      "label": "Synthetix"
     },
     {
       "slug": "token-bonding-curve",

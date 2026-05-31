@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:peer-to-peer-trading",
+  "title": "Peer-to-Peer Trading",
+  "slug": "peer-to-peer-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:peer-to-peer-trading",
+  "domain": "blockchain",
+  "definition": "Peer-to-peer trading is the direct exchange of assets between two parties without a centralised intermediary holding or matching the order. On blockchains it is typically mediated by smart contracts that escrow assets and enforce settlement atomically, removing custodial risk. It enables markets for tokens, NFTs, and goods to operate trustlessly through code rather than a central exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Blockchain DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft-swapping",
+        "label": "NFT Swapping"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "barter-system",
+      "label": "Barter System"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    }
+  ]
+}

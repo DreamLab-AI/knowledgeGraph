@@ -60,7 +60,7 @@
         "label": "Signature Verification"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -285,12 +285,20 @@
   ],
   "backlinks": [
     {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
     {
       "slug": "layer2",
       "label": "Layer2"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
     },
     {
       "slug": "smart-contract",

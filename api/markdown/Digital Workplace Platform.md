@@ -431,8 +431,8 @@ public:: true
       "label": "Cloud Platform"
     },
     {
-      "@id": "urn:ngm:class:employee-experience-system",
-      "label": "Employee Experience System"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {

@@ -455,8 +455,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:conditional-image-generation",
-      "label": "Conditional Image Generation"
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
     },
     {
       "@id": "urn:ngm:class:fine-tuning",
@@ -620,7 +620,7 @@ public:: true
         "label": "Depth Estimation"
       },
       {
-        "@id": "urn:ngm:individual:flux-1",
+        "@id": "urn:ngm:class:flux-1",
         "label": "Flux.1"
       },
       {
@@ -628,7 +628,7 @@ public:: true
         "label": "Image Generation"
       },
       {
-        "@id": "urn:ngm:individual:ip-adapter",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter"
       },
       {
@@ -636,7 +636,7 @@ public:: true
         "label": "Pose Estimation"
       },
       {
-        "@id": "urn:ngm:individual:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -658,7 +658,7 @@ public:: true
         "label": "Image-to-Image"
       },
       {
-        "@id": "urn:ngm:individual:comfy-ui",
+        "@id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {

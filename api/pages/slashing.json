@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:84ef3300010a793c0315987840ce99ac990cb8ef5b8d6efeb3ed789fe7df14b3",
+  "title": "Slashing",
+  "slug": "slashing",
+  "public": true,
+  "classIri": "urn:ngm:class:slashing",
+  "domain": "blockchain",
+  "definition": "A penalty mechanism in proof-of-stake blockchains that confiscates part or all of a validator's staked funds when it behaves improperly, such as by double-signing or being persistently unavailable. It deters misbehaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+- ### Definition
+  - Carbon Standard Certification validates and verifies carbon projects against a recognised standard, providing the integrity layer that [[Carbon Credit Tracking]] relies on and aligning issuance with the [[ICVCM Core Carbon Principles]].
+- ### Content
+  - Certification involves project-design validation, methodology approval, and periodic third-party verification of monitored emission reductions. The resulting accredited credits carry registry serial numbers that enable downstream tracking, trading, and retirement with auditable provenance.

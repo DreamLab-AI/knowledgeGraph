@@ -1,0 +1,4 @@
+- ### Definition
+  - User monitoring observes behaviour to enforce safety and policy, supporting a [[Metaverse Safety Protocol]] and forming part of [[User Agreement Compliance]].
+- ### Content
+  - Monitoring systems aggregate signals such as reports, behavioural patterns and content flags to identify harmful conduct. Responsible deployment scopes data collection to safety purposes, applies retention limits, and provides transparency to affected users.

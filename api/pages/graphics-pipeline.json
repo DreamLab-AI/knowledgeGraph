@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:5b877fdead7dd767d67f8ce4c1ad18c827e2c1cf82c4b01fc93131e903d3c7ed",
+  "title": "Graphics Pipeline",
+  "slug": "graphics-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:graphics-pipeline",
+  "domain": "metaverse",
+  "definition": "The graphics pipeline is the ordered sequence of stages that transforms 3D scene description into a 2D image, covering vertex processing, primitive assembly, rasterisation and fragment shading.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "rasterization",
+      "label": "Rasterization"
+    },
+    {
+      "slug": "shader",
+      "label": "Shader"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "linear",
+      "label": "Linear"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "unity",
+      "label": "Unity"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    },
+    {
+      "slug": "volume-rendering",
+      "label": "Volume Rendering"
+    }
+  ]
+}

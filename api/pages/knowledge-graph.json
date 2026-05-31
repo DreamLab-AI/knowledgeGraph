@@ -213,12 +213,20 @@
       "label": "Asynchronous Collaboration"
     },
     {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
       "slug": "data-fabric-architecture",
       "label": "Data Fabric Architecture"
     },
     {
       "slug": "data-layer",
       "label": "Data Layer"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
     },
     {
       "slug": "domain-ontology",
@@ -231,6 +239,18 @@
     {
       "slug": "graph-database",
       "label": "Graph Database"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
     },
     {
       "slug": "knowledge-representation",
@@ -249,6 +269,26 @@
       "label": "Metadata Management"
     },
     {
+      "slug": "neo-4-j",
+      "label": "Neo4j"
+    },
+    {
+      "slug": "rdf-data-model",
+      "label": "RDF Data Model"
+    },
+    {
+      "slug": "rdf-store",
+      "label": "RDF Store"
+    },
+    {
+      "slug": "semantic-reasoning-engine",
+      "label": "Semantic Reasoning Engine"
+    },
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    },
+    {
       "slug": "semantic-web",
       "label": "Semantic Web"
     },
@@ -259,6 +299,10 @@
     {
       "slug": "verification-report",
       "label": "VERIFICATION REPORT"
+    },
+    {
+      "slug": "visionflow",
+      "label": "visionflow"
     }
   ]
 }

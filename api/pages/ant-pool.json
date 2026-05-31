@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:846d0f9085f75b5cee3dbd865e94b90b1b7e04bec0e8e1fbae21c7acd6097c1f",
+  "title": "AntPool",
+  "slug": "ant-pool",
+  "public": true,
+  "classIri": "urn:ngm:class:ant-pool",
+  "domain": "blockchain",
+  "definition": "AntPool is a Bitcoin mining pool operated in association with Bitmain. It is one of the larger pools by share of network hash rate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mining-pool",
+      "label": "Mining Pool"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "https-www-antpool-com",
+      "label": "https://www.antpool.com"
+    },
+    {
+      "slug": "https-www-antpool-com-help",
+      "label": "https://www.antpool.com/help"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

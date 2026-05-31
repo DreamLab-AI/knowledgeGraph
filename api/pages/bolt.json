@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:b9a874c8f94e3d269227e1c269ed1816e24edfe9226c0a43af1cdc13e713e0e9",
+  "title": "BOLT",
+  "slug": "bolt",
+  "public": true,
+  "classIri": "urn:ngm:class:bolt",
+  "domain": "blockchain",
+  "definition": "BOLT, the Basis of Lightning Technology, is the set of specifications that define how Lightning Network implementations interoperate. The documents cover channels, routing, and messaging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lightning",
+        "label": "Lightning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bolt-11",
+        "label": "BOLT11"
+      },
+      {
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "bolt-11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "payment-channel",
+      "label": "Payment Channel"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "https-github-com-lightning-bolts",
+      "label": "https://github.com/lightning/bolts"
+    },
+    {
+      "slug": "https-github-com-lightning-bolts-blob-master-00-introduction-md",
+      "label": "https://github.com/lightning/bolts/blob/master/00-introduction.md"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bolt-11",
+      "label": "BOLT11"
+    },
+    {
+      "slug": "bolt-12",
+      "label": "BOLT12"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

@@ -177,6 +177,10 @@
       "label": "KOHYA Dreambooth and similar"
     },
     {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
+    },
+    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },

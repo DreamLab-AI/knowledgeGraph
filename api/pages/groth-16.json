@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:e2068b1bf960e9321948580fc9c60bdd5e3ceb0bf187a7541abd1cf907c160d7",
+  "title": "Groth16",
+  "slug": "groth-16",
+  "public": true,
+  "classIri": "urn:ngm:class:groth-16",
+  "domain": "cryptographic",
+  "definition": "A pairing-based zk-SNARK proving system that produces constant-size proofs verifiable with a few elliptic curve pairing operations, at the cost of a per-circuit trusted setup.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zk-snark",
+      "label": "ZK-SNARK"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
+    }
+  ]
+}

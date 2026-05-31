@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:eded4bf26967be95e460085f0b8f5201477f636a8ba9030889b2bd56d95f2d96",
+  "title": "Unreal Engine",
+  "slug": "unreal-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:unreal-engine",
+  "domain": "unreal-engine",
+  "definition": "Unreal Engine is a real-time three-dimensional creation tool and game engine developed by Epic Games. It provides rendering, physics, animation, audio and scripting systems used to build games, virtual production environments, architectural visualisations and simulations. The engine is widely adopted for its high-fidelity rendering, its visual scripting system Blueprints, and its use in film and television virtual production with LED volume stages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nanite",
+        "label": "Nanite"
+      },
+      {
+        "id": "urn:ngm:class:lumen",
+        "label": "Lumen"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nanite",
+      "label": "Nanite"
+    },
+    {
+      "slug": "lumen",
+      "label": "Lumen"
+    },
+    {
+      "slug": "gpu-rendering",
+      "label": "GPU Rendering"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

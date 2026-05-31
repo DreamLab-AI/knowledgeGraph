@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:mind-uploading",
+  "title": "Mind Uploading",
+  "slug": "mind-uploading",
+  "public": true,
+  "classIri": "urn:ngm:class:mind-uploading",
+  "domain": "ai",
+  "definition": "Mind uploading is the hypothetical process of scanning a biological brain in sufficient detail to emulate its structure and function on a computational substrate, producing a digital instantiation of an individual's mind. It is a speculative concept central to transhumanist visions of substrate-independent consciousness and digital immortality. No current technology approaches the required resolution or theoretical understanding of consciousness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "experimental",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

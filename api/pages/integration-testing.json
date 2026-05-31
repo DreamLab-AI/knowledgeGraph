@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:integration-testing",
+  "title": "Integration Testing",
+  "slug": "integration-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:integration-testing",
+  "domain": "infrastructure",
+  "definition": "Integration testing is a software verification phase that exercises the interfaces and interactions between combined components or systems, rather than units in isolation. It detects defects in data contracts, protocols, timing, and configuration that emerge only when modules are wired together. Sitting between unit and system testing, it is essential for catching interface mismatches before end-to-end and acceptance stages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infrastructure Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      },
+      {
+        "id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    }
+  ]
+}

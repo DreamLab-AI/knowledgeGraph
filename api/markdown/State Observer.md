@@ -1,4 +1,5 @@
 public:: true
+alias:: StateObserver
 
 # State Observer
 ```json-ld

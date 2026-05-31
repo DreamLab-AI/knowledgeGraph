@@ -1,0 +1,4 @@
+- ### Definition
+  - Last-mile delivery is the final, costliest leg of distribution; it is a key part of [[Logistics Optimization]] and is increasingly supported by autonomous a [[Ground Robot]] navigating sidewalks and roads to reach recipients.
+- ### Content
+  - Because it aggregates many short, low-density trips, the last mile dominates delivery cost and carbon footprint. Automation approaches range from sidewalk and curbside delivery robots to aerial drones and dynamic route optimisation, all of which depend on robust navigation, obstacle avoidance and planning under real-world uncertainty.

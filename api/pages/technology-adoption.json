@@ -200,6 +200,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
       "slug": "trust-in-automation",
       "label": "Trust in Automation"
     }

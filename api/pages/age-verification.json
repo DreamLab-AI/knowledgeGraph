@@ -85,6 +85,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "yoti",
+      "label": "Yoti"
     }
   ]
 }

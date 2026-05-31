@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:7f886262c8a8fef47abf2e8f96b32a7e71058ba8d41e587c3e1a9c51548b11f6",
+  "title": "ISO 639 Language Codes",
+  "slug": "iso-639-language-codes",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-639-language-codes",
+  "domain": "standards",
+  "definition": "An ISO standard, in multiple parts, defining codes for the representation of names of languages. It is widely used to identify languages in data and software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

@@ -157,8 +157,16 @@
       "label": "Cryptographic Commitment"
     },
     {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
       "slug": "difficulty",
       "label": "Difficulty"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
     },
     {
       "slug": "digital-signature",
@@ -173,12 +181,28 @@
       "label": "Elliptic Curve Cryptography"
     },
     {
+      "slug": "groth-16",
+      "label": "Groth16"
+    },
+    {
       "slug": "hash-collision",
       "label": "Hash Collision"
     },
     {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "interoperability-domain",
+      "label": "Interoperability Domain"
+    },
+    {
       "slug": "keccak-256",
       "label": "Keccak-256"
+    },
+    {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
     },
     {
       "slug": "merkle-proof",

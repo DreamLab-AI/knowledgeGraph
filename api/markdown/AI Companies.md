@@ -575,12 +575,12 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:commercial-enterprise",
-      "label": "Commercial Enterprise"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:industry-sector",
-      "label": "Industry Sector"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     }
   ],
   "relations": {

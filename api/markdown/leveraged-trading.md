@@ -1,0 +1,4 @@
+- ### Definition
+  - Leveraged trading multiplies exposure relative to collateral via borrowed capital or derivatives; on-chain perpetual venues such as [[GMX]] and [[dYdX]] enable it through smart-contract margin and liquidation engines.
+- ### Content
+  - Positions are governed by initial and maintenance margin requirements, funding rates that anchor perpetuals to spot, and oracle-driven liquidation. Higher leverage tightens the liquidation buffer, making oracle latency and market depth critical to solvency.

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:652e86f71ad7fbe8298f360a9aa3c76bfcab0ffce29a5d35320f3b13e251320a",
+  "title": "Permissionless Innovation",
+  "slug": "permissionless-innovation",
+  "public": true,
+  "classIri": "urn:ngm:class:permissionless-innovation",
+  "domain": "technology-policy",
+  "definition": "A policy stance holding that new technologies and business models should generally be allowed to develop without prior approval, with regulation applied only to address demonstrated harms. It is often discussed in the context of the internet and digital finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralization",
+      "label": "Decentralization"
+    },
+    {
+      "slug": "web-3",
+      "label": "Web3"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ]
+}

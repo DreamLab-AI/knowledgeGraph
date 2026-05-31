@@ -73,6 +73,10 @@
       "label": "AR Frame"
     },
     {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
       "slug": "digital-identity-wallet",
       "label": "Digital Identity Wallet"
     }

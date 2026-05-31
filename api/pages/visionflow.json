@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:edc0e271beb985fcc5584ab399824e08343eda11222ea899a5c64d162798327e",
+  "title": "visionflow",
+  "slug": "visionflow",
+  "public": true,
+  "classIri": "urn:ngm:class:visionflow",
+  "domain": "computer-graphics",
+  "definition": "visionflow is a project for rendering and interacting with knowledge graphs in a 3D, GPU-accelerated environment, including extended reality interfaces. It combines graph layout computation with real-time visualisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "data-aggregation",
+      "label": "Data Aggregation"
+    },
+    {
+      "slug": "computer-graphics",
+      "label": "Computer Graphics"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "sovereign-ai-bid",
+      "label": "Sovereign AI bid"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

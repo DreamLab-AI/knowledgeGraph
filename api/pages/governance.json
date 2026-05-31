@@ -42,8 +42,16 @@
   ],
   "backlinks": [
     {
+      "slug": "aragon",
+      "label": "Aragon"
+    },
+    {
       "slug": "authorised-representative",
       "label": "Authorised Representative"
+    },
+    {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
     },
     {
       "slug": "decentralized-governance",
@@ -58,8 +66,48 @@
       "label": "Economics"
     },
     {
+      "slug": "fda",
+      "label": "FDA"
+    },
+    {
+      "slug": "governance-frameworks",
+      "label": "Governance Frameworks"
+    },
+    {
+      "slug": "law-commission",
+      "label": "Law Commission"
+    },
+    {
+      "slug": "permissionless-innovation",
+      "label": "Permissionless Innovation"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
+    },
+    {
+      "slug": "political-economy",
+      "label": "Political Economy"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    },
+    {
+      "slug": "tally",
+      "label": "Tally"
     },
     {
       "slug": "telecollaboration-and-telepresence",
@@ -80,6 +128,18 @@
     {
       "slug": "transparent-governance",
       "label": "Transparent Governance"
+    },
+    {
+      "slug": "voting-system",
+      "label": "Voting System"
+    },
+    {
+      "slug": "world-economic-forum",
+      "label": "World Economic Forum"
+    },
+    {
+      "slug": "community",
+      "label": "community"
     }
   ]
 }

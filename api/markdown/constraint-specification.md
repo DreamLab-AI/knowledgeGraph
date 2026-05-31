@@ -1,0 +1,4 @@
+- ### Definition
+  - A constraint specification formally states the feasibility and safety limits a [[Control Algorithm]] must respect, and is a required input to [[Model-Based Control]].
+- ### Content
+  - Constraints may be equality or inequality, hard or soft, and span kinematic, dynamic, and environmental limits. Optimisation-based controllers such as model predictive control encode them directly in the solver, while reactive schemes enforce them through saturation or barrier functions.

@@ -12,12 +12,12 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:fault-tolerant-system",
-      "label": "Fault Tolerant System"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     },
     {
-      "id": "urn:ngm:class:overlay-network",
-      "label": "Overlay Network"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -207,11 +207,11 @@
         "label": "Polkadot"
       },
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
@@ -223,7 +223,7 @@
         "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:individual:solana",
+        "id": "urn:ngm:class:solana",
         "label": "Solana"
       }
     ],
@@ -771,6 +771,10 @@
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "aptos",
+      "label": "Aptos"
     },
     {
       "slug": "asset-registry",

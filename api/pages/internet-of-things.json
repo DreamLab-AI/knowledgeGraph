@@ -63,6 +63,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "bluetooth",
+      "label": "Bluetooth"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -91,8 +95,16 @@
       "label": "Edge Computing"
     },
     {
+      "slug": "edge-layer",
+      "label": "Edge Layer"
+    },
+    {
       "slug": "food-safety-blockchain",
       "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
     },
     {
       "slug": "hardware-and-edge",
@@ -115,6 +127,10 @@
       "label": "Luxury Goods Authentication"
     },
     {
+      "slug": "ngsi-ld",
+      "label": "NGSI-LD"
+    },
+    {
       "slug": "pharmaceutical-traceability",
       "label": "Pharmaceutical Traceability"
     },
@@ -131,8 +147,24 @@
       "label": "Robotics Platform"
     },
     {
+      "slug": "smart-city",
+      "label": "Smart City"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "wi-fi",
+      "label": "Wi-Fi"
+    },
+    {
+      "slug": "wireless-connectivity",
+      "label": "Wireless Connectivity"
     }
   ]
 }

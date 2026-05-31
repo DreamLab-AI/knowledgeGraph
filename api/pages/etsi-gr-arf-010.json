@@ -1,0 +1,173 @@
+{
+  "id": "urn:visionflow:page:b075a6813add770a8b88e4efe11637879eb6171f8691eea56d5faa8d3230f14a",
+  "title": "ETSI GR ARF 010",
+  "slug": "etsi-gr-arf-010",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-gr-arf-010",
+  "domain": "standards",
+  "definition": "ETSI GR ARF 010 is a group report from the ETSI Augmented Reality Framework activity, addressing interoperability requirements and architecture for augmented reality systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "etsi",
+      "label": "ETSI"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-standard",
+      "label": "API Standard"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    },
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

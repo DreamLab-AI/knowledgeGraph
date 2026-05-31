@@ -91,8 +91,16 @@
       "label": "Digital Performance Capture"
     },
     {
+      "slug": "fbx",
+      "label": "FBX"
+    },
+    {
       "slug": "motion-capture",
       "label": "Motion Capture"
+    },
+    {
+      "slug": "performance-capture",
+      "label": "Performance Capture"
     }
   ]
 }

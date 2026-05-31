@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:841b88b8da0ef1191a57529ab116d30c86d62242d25e9fcf6559e27c4e750946",
+  "title": "Safe",
+  "slug": "safe",
+  "public": true,
+  "classIri": "urn:ngm:class:safe",
+  "domain": "blockchain",
+  "definition": "A smart contract wallet platform on Ethereum and compatible chains, formerly Gnosis Safe, that provides multi-signature account management and programmable transaction approval.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-signature-wallet",
+      "label": "Multi-Signature Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "multi-signature-wallet",
+      "label": "Multi-Signature Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

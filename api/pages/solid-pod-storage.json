@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:b1fe400cee96fc094bd6277b3960b967e730ea39d3e3ef51ab29734c531e638b",
+  "title": "Solid Pod Storage",
+  "slug": "solid-pod-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:solid-pod-storage",
+  "domain": "solid-pod-storage",
+  "definition": "Solid Pod Storage refers to the personal online data stores used in the Solid project, a web specification initiated by Tim Berners-Lee for decentralising data ownership. A Pod is a user-controlled storage space that holds data as linked-data resources, with access governed by the user rather than the applications that consume it. Applications authenticate against a Pod and read or write data only with the owner's permission, separating data from the services built on top of it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "developing",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:web-id",
+        "label": "WebID"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "web-id",
+      "label": "WebID"
+    },
+    {
+      "slug": "data-sovereignty",
+      "label": "Data Sovereignty"
+    },
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

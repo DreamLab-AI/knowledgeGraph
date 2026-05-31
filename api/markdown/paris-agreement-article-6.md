@@ -1,0 +1,4 @@
+- ### Definition
+  - Paris Agreement Article 6 establishes international mechanisms and accounting rules for trading emissions reductions, providing the legal basis that [[Carbon Credit Tracking]] systems implement.
+- ### Content
+  - It covers cooperative approaches with internationally transferred mitigation outcomes and a centralized crediting mechanism. Its corresponding-adjustment rules prevent two parties from counting the same reduction, making robust, auditable tracking infrastructure essential to compliant cross-border carbon markets.

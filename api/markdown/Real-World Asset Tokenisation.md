@@ -1,4 +1,5 @@
 public:: true
+alias:: Real World Asset Tokenisation
 
 # real-world asset tokenisation
 ```json-ld

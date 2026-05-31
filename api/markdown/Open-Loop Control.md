@@ -1,4 +1,5 @@
 public:: true
+alias:: Open Loop Control
 
 # Open-Loop Control
 ```json-ld

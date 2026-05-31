@@ -1,0 +1,231 @@
+{
+  "id": "urn:visionflow:page:da472384e95d38e2c5173caf6b5d749f47fcca53ae631b14fab5f02c77075e5f",
+  "title": "Decentralised Finance Domain",
+  "slug": "decentralised-finance-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-finance-domain",
+  "domain": "decentralised-finance",
+  "definition": "The Decentralised Finance Domain classifies concepts for financial services that operate through smart contracts on public ledgers without a central intermediary. It covers protocols for trading, lending, derivatives, and asset management, together with the composability that lets them interoperate. As a subject classification under the Blockchain Domain, it scopes the on-ledger financial primitives rather than the underlying tokens or the regulation that may apply.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:automated-liquidity-provision",
+        "label": "Automated Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:composable-financial-products",
+        "label": "Composable Financial Products"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "lending-protocol",
+      "label": "Lending Protocol"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "yield-aggregator",
+      "label": "Yield Aggregator"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
+      "slug": "price-oracle",
+      "label": "Price Oracle"
+    },
+    {
+      "slug": "permissionless-lending",
+      "label": "Permissionless Lending"
+    },
+    {
+      "slug": "automated-liquidity-provision",
+      "label": "Automated Liquidity Provision"
+    },
+    {
+      "slug": "composable-financial-products",
+      "label": "Composable Financial Products"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "fatf-virtual-asset-guidance",
+      "label": "FATF Virtual Asset Guidance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "de-fi-domain",
+      "label": "DeFi Domain"
+    },
+    {
+      "slug": "digital-asset-domain",
+      "label": "Digital Asset Domain"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "payment-systems-domain",
+      "label": "Payment Systems Domain"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
+    },
+    {
+      "slug": "d-yd-x",
+      "label": "dYdX"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    }
+  ]
+}

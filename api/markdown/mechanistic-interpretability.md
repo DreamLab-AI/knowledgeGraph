@@ -1,0 +1,4 @@
+- ### Definition
+  - Mechanistic interpretability reverse-engineers neural networks into legible internal algorithms by analysing features and circuits. It is a component of [[Safety and Alignment]] research and a tool for diagnosing [[AI Risks]].
+- ### Content
+  - Techniques include activation patching, sparse autoencoders for feature disentanglement, and circuit analysis that traces how attention heads and MLP layers compose to implement a task. The goal is faithful, causal explanations rather than post-hoc rationalisations, enabling auditing of deception, capability, and failure modes in frontier models.

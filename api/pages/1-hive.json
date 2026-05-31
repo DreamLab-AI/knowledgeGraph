@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:b82f7b7212d41b4decc443e2c3dd1e81f069ea37fd51a1122cc706b17dde51a5",
+  "title": "1Hive",
+  "slug": "1-hive",
+  "public": true,
+  "classIri": "urn:ngm:class:1-hive",
+  "domain": "governance",
+  "definition": "A decentralised community and DAO that issues the Honey community currency and develops governance tooling such as the Gardens framework for conviction voting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "quadratic-funding",
+      "label": "Quadratic Funding"
+    },
+    {
+      "slug": "liquid-democracy",
+      "label": "Liquid Democracy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    }
+  ]
+}

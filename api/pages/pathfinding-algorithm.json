@@ -91,5 +91,14 @@
       "label": "Artificial Intelligence"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "task-and-motion-planning",
+      "label": "Task and Motion Planning"
+    }
+  ]
 }

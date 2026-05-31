@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:data-fabric",
+  "title": "Data Fabric",
+  "slug": "data-fabric",
+  "public": true,
+  "classIri": "urn:ngm:class:data-fabric",
+  "domain": "data",
+  "definition": "A data fabric is an architectural approach that provides a unified, metadata-driven layer for accessing, integrating and governing data across heterogeneous and distributed sources. It uses active metadata, knowledge graphs and automation to connect data without forcing physical consolidation. By abstracting underlying systems it delivers consistent discovery, access and governance, reducing the friction of fragmented data estates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infrastructure Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    }
+  ]
+}

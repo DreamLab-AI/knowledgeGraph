@@ -116,6 +116,18 @@
       "label": "Digital Signature"
     },
     {
+      "slug": "discreet-log-contracts",
+      "label": "Discreet Log Contracts"
+    },
+    {
+      "slug": "mu-sig-2",
+      "label": "MuSig2"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
       "slug": "sovereign-keyset",
       "label": "Sovereign Keyset"
     },

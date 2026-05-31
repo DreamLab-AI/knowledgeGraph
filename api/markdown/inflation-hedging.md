@@ -1,0 +1,4 @@
+- ### Definition
+  - Inflation hedging preserves real purchasing power by holding assets resistant to monetary debasement. It is central to the [[Bitcoin Value Proposition]] and the traditional role of [[Gold]] as a store of value.
+- ### Content
+  - The effectiveness of any hedge depends on its supply elasticity, correlation with the inflation regime, and liquidity. Scarce assets with fixed or predictable issuance schedules are favoured precisely because they cannot be inflated by policy.

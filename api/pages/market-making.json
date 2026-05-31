@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:53a50ea792773ca23f9fc5b93abb67b12b957cf20d472709f6df84fa492f958a",
+  "title": "Market Making",
+  "slug": "market-making",
+  "public": true,
+  "classIri": "urn:ngm:class:market-making",
+  "domain": "blockchain",
+  "definition": "The practice of quoting both buy and sell prices for an asset to supply liquidity and earn the spread between them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "price-discovery",
+      "label": "Price Discovery"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "asset-trading",
+      "label": "Asset Trading"
+    },
+    {
+      "slug": "digital-asset-trading",
+      "label": "Digital Asset Trading"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "liquidity",
+      "label": "Liquidity"
+    },
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    }
+  ]
+}

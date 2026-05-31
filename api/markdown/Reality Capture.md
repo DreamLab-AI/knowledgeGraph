@@ -1,4 +1,5 @@
 public:: true
+alias:: RealityCapture
 
 # Reality Capture
 ```json-ld

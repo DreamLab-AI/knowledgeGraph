@@ -1,0 +1,4 @@
+- ### Definition
+  - Proprioceptive sensing gives a robot awareness of its own internal state such as joint positions, torques, and body orientation. It depends on the robot's [[Mechanical Component]] instrumentation and is a critical subsystem of the [[Humanoid Robot]].
+- ### Content
+  - Joint encoders report angles, force/torque sensors measure interaction loads, and IMUs estimate body attitude and angular rates. Fused at high rate, these signals enable closed-loop joint control, balance and posture regulation, contact detection, and torque-limited compliant motion. In legged and humanoid systems, proprioception is indispensable for dynamic stability when external sensing is delayed or occluded.

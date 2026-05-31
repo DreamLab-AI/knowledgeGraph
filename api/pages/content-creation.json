@@ -79,6 +79,10 @@
       "label": "Authoring Tool"
     },
     {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
       "slug": "deepfakes",
       "label": "Deepfakes"
     },

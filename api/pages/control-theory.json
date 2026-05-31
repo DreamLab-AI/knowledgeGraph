@@ -12,8 +12,8 @@
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:control-engineering",
-      "label": "Control Engineering"
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
     },
     {
       "id": "urn:ngm:class:cybernetics",
@@ -745,12 +745,24 @@
       "label": "Closed-Loop Control"
     },
     {
+      "slug": "collaborative-robots",
+      "label": "Collaborative Robots"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-layer",
+      "label": "Control Layer"
+    },
+    {
+      "slug": "dynamical-systems",
+      "label": "Dynamical Systems"
     },
     {
       "slug": "feedback-control",
@@ -767,6 +779,10 @@
     {
       "slug": "hydraulic-actuator",
       "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
     },
     {
       "slug": "kalman-filter",
@@ -819,6 +835,10 @@
     {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
+    },
+    {
+      "slug": "trajectory-optimisation",
+      "label": "Trajectory Optimisation"
     }
   ]
 }

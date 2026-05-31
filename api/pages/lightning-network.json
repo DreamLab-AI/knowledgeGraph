@@ -42,7 +42,7 @@
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "id": "urn:ngm:class:lightning-service-providers",
+        "id": "urn:ngm:class:lightning-service-provider",
         "label": "Lightning Service Providers"
       },
       {
@@ -161,7 +161,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:mu-sig2",
+        "id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {
@@ -537,6 +537,10 @@
   ],
   "backlinks": [
     {
+      "slug": "acinq",
+      "label": "ACINQ"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -551,6 +555,10 @@
     {
       "slug": "atomic-swap",
       "label": "Atomic Swap"
+    },
+    {
+      "slug": "bolt",
+      "label": "BOLT"
     },
     {
       "slug": "btc-layer-3",
@@ -597,8 +605,20 @@
       "label": "Blockchain Oracle"
     },
     {
+      "slug": "blockstream",
+      "label": "Blockstream"
+    },
+    {
+      "slug": "breez",
+      "label": "Breez"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
+    },
+    {
+      "slug": "core-lightning",
+      "label": "Core Lightning"
     },
     {
       "slug": "deep-learning",
@@ -609,8 +629,24 @@
       "label": "Digital Asset Risks"
     },
     {
+      "slug": "eclair",
+      "label": "Eclair"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "slug": "htlc",
+      "label": "HTLC"
+    },
+    {
+      "slug": "hash-time-locked-contracts",
+      "label": "Hash Time-Locked Contracts"
     },
     {
       "slug": "instant-value-settlement",
@@ -621,6 +657,18 @@
       "label": "Interoperability"
     },
     {
+      "slug": "l-402-protocol",
+      "label": "L402 Protocol"
+    },
+    {
+      "slug": "l-402",
+      "label": "L402"
+    },
+    {
+      "slug": "lnd",
+      "label": "LND"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },
@@ -629,12 +677,24 @@
       "label": "Layer2"
     },
     {
+      "slug": "lightning-labs",
+      "label": "Lightning Labs"
+    },
+    {
+      "slug": "lightning-service-provider",
+      "label": "Lightning Service Provider"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },
     {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning",
+      "label": "Lightning"
     },
     {
       "slug": "money",
@@ -645,6 +705,10 @@
       "label": "Multi Sig Governance"
     },
     {
+      "slug": "payment-channels",
+      "label": "Payment Channels"
+    },
+    {
       "slug": "privacy",
       "label": "Privacy"
     },
@@ -653,12 +717,28 @@
       "label": "RGB and Client Side Validation"
     },
     {
+      "slug": "rgb",
+      "label": "RGB"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },
     {
+      "slug": "stacker-news",
+      "label": "Stacker News"
+    },
+    {
       "slug": "state-channel",
       "label": "State Channel"
+    },
+    {
+      "slug": "strike",
+      "label": "Strike"
     },
     {
       "slug": "taproot-assets",

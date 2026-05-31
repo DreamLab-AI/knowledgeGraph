@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:transport-protocol",
+  "title": "Transport Protocol",
+  "slug": "transport-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:transport-protocol",
+  "domain": "infrastructure",
+  "definition": "A transport protocol is a network-layer specification that governs end-to-end delivery of data between processes, handling concerns such as multiplexing, reliability, ordering, and flow and congestion control. Examples including TCP, UDP, and QUIC sit above the network layer and provide the communication substrate over which higher-level application and agent protocols operate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      },
+      {
+        "id": "urn:ngm:class:networking-domain",
+        "label": "Networking Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    }
+  ]
+}

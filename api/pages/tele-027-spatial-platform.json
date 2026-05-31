@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:694d25f73a9d7736c65961605de6348d7d4e3d7fded1dae7d7da5018bd309302",
+  "title": "TELE-027-spatial-platform",
+  "slug": "tele-027-spatial-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-027-spatial-platform",
+  "domain": "metaverse",
+  "definition": "Spatial is a collaboration platform that hosts virtual rooms where participants meet as avatars to share documents, 3D models and media for meetings, events and presentations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "telepresence",
+      "label": "Telepresence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "horizon-workrooms",
+      "label": "Horizon Workrooms"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "virtual-office-spaces",
+      "label": "Virtual Office Spaces"
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "label": "Virtual Reality Telepresence"
+    }
+  ]
+}

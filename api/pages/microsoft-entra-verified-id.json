@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:d24689d7c4c750076321f2ae26923b57c0dbd0eaf69c5c49c09af24642bbed8e",
+  "title": "Microsoft Entra Verified ID",
+  "slug": "microsoft-entra-verified-id",
+  "public": true,
+  "classIri": "urn:ngm:class:microsoft-entra-verified-id",
+  "domain": "distributed-systems",
+  "definition": "Microsoft Entra Verified ID is a managed service for issuing and verifying decentralised identity credentials based on open standards for verifiable credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "decentralised-identity",
+      "label": "Decentralised Identity"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "https-learn-microsoft-com-en-us-entra-verified-id",
+      "label": "https://learn.microsoft.com/en-us/entra/verified-id/"
+    },
+    {
+      "slug": "https-www-w-3-org-tr-vc-data-model",
+      "label": "https://www.w3.org/TR/vc-data-model/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "azure",
+      "label": "Azure"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

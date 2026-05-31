@@ -82,12 +82,20 @@
       "label": "Particle Filter"
     },
     {
+      "slug": "radar",
+      "label": "Radar"
+    },
+    {
       "slug": "robot-control",
       "label": "Robot Control"
     },
     {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
     }
   ]
 }

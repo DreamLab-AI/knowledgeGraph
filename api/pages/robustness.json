@@ -68,12 +68,28 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },
     {
       "slug": "adaptive-control",
       "label": "Adaptive Control"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "sensitivity",
+      "label": "Sensitivity"
     }
   ]
 }

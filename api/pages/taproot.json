@@ -63,6 +63,10 @@
       "label": "BTC Layer 3"
     },
     {
+      "slug": "bit-vm",
+      "label": "BitVM"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },
@@ -79,12 +83,28 @@
       "label": "Layer2"
     },
     {
+      "slug": "mu-sig-2",
+      "label": "MuSig2"
+    },
+    {
       "slug": "nostr-protocol",
       "label": "Nostr Protocol"
     },
     {
+      "slug": "ordinals",
+      "label": "Ordinals"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
+      "slug": "seg-wit",
+      "label": "SegWit"
     },
     {
       "slug": "taproot-assets",

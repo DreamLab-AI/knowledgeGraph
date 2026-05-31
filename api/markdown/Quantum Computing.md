@@ -1,4 +1,5 @@
 public:: true
+alias:: Quantum-Computing, QuantumComputing
 
 # Quantum Computing
 ```json-ld

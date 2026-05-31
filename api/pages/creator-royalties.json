@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:c0dd42fc1db55e7919e470c7cbc721260f9b30e62eaf883f14b866e0d26afc43",
+  "title": "Creator Royalties",
+  "slug": "creator-royalties",
+  "public": true,
+  "classIri": "urn:ngm:class:creator-royalties",
+  "domain": "blockchain",
+  "definition": "Creator royalties are payments made to the original creator of a digital asset, such as an NFT, on subsequent resales of that asset.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nft",
+      "label": "NFT"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "creator-royalties",
+      "label": "Creator Royalties"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

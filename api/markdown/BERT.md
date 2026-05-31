@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:individual:bert",
-  "@type": "Individual",
+  "@id": "urn:ngm:class:bert",
+  "@type": "Class",
   "label": "BERT",
   "definition": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained deep language representation model developed by Google AI Language and published in 2018. It applies a bidirectional Transformer encoder trained with masked language modelling (MLM) and next sentence prediction (NSP) objectives on large text corpora, producing contextualised word embeddings. BERT established a new paradigm of pre-train-then-fine-tune for natural language processing tasks, achieving state-of-the-art performance across eleven NLP benchmarks upon release. Its architecture underpins a large family of subsequent models including RoBERTa, ALBERT, and multilingual mBERT.",
   "domain": "ai",
   "maturity": "established",
-  "instanceOf": [{"@id": "urn:ngm:class:language-model", "label": "Language Model"}],
+  "subClassOf": [{"@id": "urn:ngm:class:language-model", "label": "Language Model"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},

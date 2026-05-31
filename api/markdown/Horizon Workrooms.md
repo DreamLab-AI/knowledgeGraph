@@ -1,4 +1,5 @@
 public:: true
+alias:: TELE-028-horizon-workrooms
 
 # Horizon Workrooms
 ```json-ld
@@ -95,14 +96,14 @@ public:: true
       "label": "Telepresence"
     },
     {
-      "@id": "urn:ngm:class:tele-020-virtual-reality-telepresence",
+      "@id": "urn:ngm:class:virtual-reality-telepresence",
       "label": "TELE-020-virtual-reality-telepresence"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:tele-100-ai-avatars",
+        "@id": "urn:ngm:class:ai-avatars",
         "label": "TELE-100-ai-avatars"
       }
     ],

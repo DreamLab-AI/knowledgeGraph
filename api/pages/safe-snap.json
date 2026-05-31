@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:bbacb2743695a44b1bd7120c2caae0030b94cec007581d874d9215dbc4a52bd9",
+  "title": "SafeSnap",
+  "slug": "safe-snap",
+  "public": true,
+  "classIri": "urn:ngm:class:safe-snap",
+  "domain": "defi",
+  "definition": "SafeSnap is a tool that connects off-chain Snapshot governance votes to on-chain execution through a Gnosis Safe and the Reality.eth oracle. It lets DAOs enact decisions without paying gas to vote.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:reality-eth",
+        "label": "Reality.eth"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "snapshot",
+      "label": "Snapshot"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "reality-eth",
+      "label": "Reality.eth"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

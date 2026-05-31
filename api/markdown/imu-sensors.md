@@ -1,0 +1,4 @@
+- ### Definition
+  - IMU sensors fuse accelerometer and gyroscope data to estimate motion and orientation, forming part of a [[Motion Capture Rig]] and assisting tasks such as [[Lens and Camera Calibration]].
+- ### Content
+  - Raw inertial measurements drift over time, so IMUs are commonly fused with vision, GPS, or magnetic references through Kalman or complementary filters to bound error. MEMS fabrication has made IMUs small and inexpensive enough to embed in headsets, controllers, drones, and wearable trackers.

@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0464-treasury-management, TreasuryManagement
 
 # Treasury Management
 ```json-ld
@@ -459,12 +460,12 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:corporate-finance",
-      "label": "Corporate Finance"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     },
     {
-      "@id": "urn:ngm:class:financial-management",
-      "label": "Financial Management"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
   "relations": {
@@ -712,7 +713,7 @@ public:: true
         "label": "Uniswap"
       },
       {
-        "@id": "urn:ngm:individual:micro-strategy",
+        "@id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

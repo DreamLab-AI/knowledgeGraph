@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:strict-types",
+  "title": "Strict Types",
+  "slug": "strict-types",
+  "public": true,
+  "classIri": "urn:ngm:class:strict-types",
+  "domain": "blockchain",
+  "definition": "Strict types is a type system and schema language used by the RGB protocol to define data structures with a fully deterministic memory layout and a content-addressable type identity. Each type has a unique hash derived from its definition, so schemas can be referenced and verified without ambiguity. It provides the typed foundation that strict encoding serialises during client-side validation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client-Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:strict-encoding",
+        "label": "Strict Encoding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

@@ -84,6 +84,14 @@
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
@@ -92,16 +100,36 @@
       "label": "Feed Forward Network"
     },
     {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
     },
     {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
     {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "layer-normalization",
+      "label": "Layer Normalization"
     },
     {
       "slug": "learning-algorithm",
@@ -128,12 +156,24 @@
       "label": "Recurrent Neural Network"
     },
     {
+      "slug": "tensor-flow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
     },
     {
       "slug": "transformers",
       "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
     },
     {
       "slug": "variational-autoencoders",

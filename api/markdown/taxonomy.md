@@ -1,0 +1,4 @@
+- ### Definition
+  - A taxonomy is a hierarchical classification of concepts using broader and narrower relationships, providing a controlled vocabulary that underpins schemes such as the [[ETSI Metaverse Domain Taxonomy]] and relates closely to a [[Domain Ontology]].
+- ### Content
+  - Each node in a taxonomy is a category positioned by an is-a or part-of relation to its parent, producing a tree or shallow polyhierarchy that aids browsing and tagging. Taxonomies enforce naming consistency and let systems roll up or drill down across levels of abstraction. They differ from ontologies in expressiveness: a taxonomy captures hierarchy alone, whereas an ontology adds arbitrary typed relations, constraints, and inference rules.

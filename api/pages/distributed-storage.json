@@ -125,6 +125,14 @@
       "label": "ETSI_Domain_Infrastructure___Immersive"
     },
     {
+      "slug": "eventual-consistency",
+      "label": "Eventual Consistency"
+    },
+    {
+      "slug": "ipfs-content-addressing",
+      "label": "IPFS Content Addressing"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     }

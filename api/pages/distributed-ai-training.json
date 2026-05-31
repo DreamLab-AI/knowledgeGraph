@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:distributed-ai-training",
+  "title": "Distributed AI Training",
+  "slug": "distributed-ai-training",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-ai-training",
+  "domain": "ai",
+  "definition": "Distributed AI training is the practice of training machine-learning models across many compute nodes in parallel to handle datasets and model sizes that exceed a single machine. It uses strategies such as data parallelism, model and tensor parallelism, and pipeline parallelism, coordinated by collective communication and gradient synchronisation. It is essential for training large neural networks within feasible time and memory budgets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:di-lo-co",
+        "label": "DiLoCo"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

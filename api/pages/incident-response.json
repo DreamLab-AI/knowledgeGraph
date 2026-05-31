@@ -71,6 +71,14 @@
       "label": "Access Control System"
     },
     {
+      "slug": "information-security-domain",
+      "label": "Information Security Domain"
+    },
+    {
+      "slug": "ncsc",
+      "label": "NCSC"
+    },
+    {
       "slug": "resilience-metric",
       "label": "Resilience Metric"
     },

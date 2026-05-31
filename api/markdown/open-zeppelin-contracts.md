@@ -1,0 +1,4 @@
+- ### Definition
+  - OpenZeppelin Contracts is an audited open-source library of reusable smart-contract components used by [[DAO Tooling]] and [[NFT Minting]] workflows to implement token and access-control standards safely.
+- ### Content
+  - It supplies canonical implementations of ERC-20, ERC-721, and ERC-1155 plus access control, upgradeable proxies, and security primitives. By offering battle-tested building blocks, the library lowers the incidence of reentrancy and access-control bugs in production contracts.

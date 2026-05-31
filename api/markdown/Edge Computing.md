@@ -1,4 +1,5 @@
 public:: true
+alias:: EdgeComputing
 
 # Edge Computing
 ```json-ld
@@ -463,12 +464,12 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:decentralised-architecture",
-      "label": "Decentralised Architecture"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     },
     {
-      "@id": "urn:ngm:class:latency-sensitive-infrastructure",
-      "label": "Latency-Sensitive Infrastructure"
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network And Comms"
     }
   ],
   "relations": {

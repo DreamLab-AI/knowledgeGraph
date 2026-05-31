@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:3cc4a713522ee92287d45b67e1f4f52cd1e13aa967d9689bf36577cbc386edcd",
+  "title": "ISO 11179",
+  "slug": "iso-11179",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-11179",
+  "domain": "standards",
+  "definition": "An ISO standard, in multiple parts, for metadata registries that specifies how to represent and manage data element definitions and metadata. It supports consistent description and sharing of data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    }
+  ]
+}

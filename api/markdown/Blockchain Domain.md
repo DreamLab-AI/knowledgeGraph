@@ -1,4 +1,5 @@
 public:: true
+alias:: BlockchainDomain
 
 # Blockchain Domain
 ```json-ld

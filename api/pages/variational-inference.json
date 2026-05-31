@@ -59,6 +59,10 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },
@@ -75,6 +79,10 @@
       "label": "Inpainting"
     },
     {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },
@@ -85,6 +93,10 @@
     {
       "slug": "stochastic-process",
       "label": "Stochastic Process"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
     },
     {
       "slug": "variational-autoencoders",

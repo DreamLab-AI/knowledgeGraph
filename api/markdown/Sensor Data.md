@@ -1,4 +1,5 @@
 public:: true
+alias:: SensorData
 
 # sensor data
 ```json-ld

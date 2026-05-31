@@ -1,0 +1,4 @@
+- ### Definition
+  - The Accessibility Tree is a semantic, role-and-name model of an interface that browsers build from the DOM for assistive technologies. It is a key input for [[Computer Use and Browser Agents]], which read it to identify actionable elements reliably.
+- ### Content
+  - Each node carries an ARIA role, an accessible name, and interaction states such as focused, checked, or disabled. Because it abstracts away styling and layout, agents and screen readers can target elements deterministically, making it more robust than coordinate- or vision-based interaction for many web tasks.

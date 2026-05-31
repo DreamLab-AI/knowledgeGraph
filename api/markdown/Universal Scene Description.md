@@ -492,15 +492,15 @@ public:: true
         "label": "Houdini"
       },
       {
-        "@id": "urn:ngm:individual:blender",
+        "@id": "urn:ngm:class:blender",
         "label": "Blender"
       },
       {
-        "@id": "urn:ngm:individual:nvidia-omniverse",
+        "@id": "urn:ngm:class:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       },
       {
-        "@id": "urn:ngm:individual:unreal-engine",
+        "@id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine"
       }
     ],

@@ -84,6 +84,14 @@
       "label": "Depth Estimation"
     },
     {
+      "slug": "environment",
+      "label": "Environment"
+    },
+    {
+      "slug": "environmental-understanding",
+      "label": "Environmental Understanding"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },
@@ -110,6 +118,10 @@
     {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
     },
     {
       "slug": "topological-map",

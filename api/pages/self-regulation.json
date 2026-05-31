@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:3b45ad8dc3dad2f71eb599da81599753f9dfe79836148792ce3b38412273a7c7",
+  "title": "Self-Regulation",
+  "slug": "self-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:self-regulation",
+  "domain": "governance",
+  "definition": "An arrangement in which an industry or professional community sets and enforces its own rules of conduct, typically through codes of practice and member oversight rather than direct state legislation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

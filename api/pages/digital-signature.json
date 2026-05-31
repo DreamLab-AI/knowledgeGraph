@@ -203,11 +203,11 @@
         "label": "TLS"
       },
       {
-        "id": "urn:ngm:individual:bitcoin",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:individual:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       }
     ],
@@ -937,6 +937,10 @@
       "label": "Cryptographic Key Management"
     },
     {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
       "slug": "cryptographic-keys",
       "label": "Cryptographic Keys"
     },
@@ -951,6 +955,10 @@
     {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
     },
     {
       "slug": "cryptography-security-and-privacy",
@@ -997,6 +1005,10 @@
       "label": "Instant value settlement"
     },
     {
+      "slug": "lattice-cryptography",
+      "label": "Lattice Cryptography"
+    },
+    {
       "slug": "lightning-network",
       "label": "Lightning Network"
     },
@@ -1025,12 +1037,20 @@
       "label": "R3 Corda"
     },
     {
+      "slug": "schnorr-signatures",
+      "label": "Schnorr Signatures"
+    },
+    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },
     {
       "slug": "smart-contracts",
       "label": "Smart Contracts"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
     },
     {
       "slug": "stablecoin-regulation",
@@ -1047,6 +1067,10 @@
     {
       "slug": "tokenization",
       "label": "Tokenization"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
     },
     {
       "slug": "verification",
@@ -1069,8 +1093,16 @@
       "label": "Virtual Property Right"
     },
     {
+      "slug": "x-509-certificate",
+      "label": "X.509 Certificate"
+    },
+    {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
+    },
+    {
+      "slug": "e-idas",
+      "label": "eIDAS"
     }
   ]
 }

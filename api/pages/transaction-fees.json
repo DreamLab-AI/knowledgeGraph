@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:1c370b9935c962576a5b24a7d722a66de560eee0ba37c20f728cfdefccdaa376",
+  "title": "transaction fees",
+  "slug": "transaction-fees",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-fees",
+  "domain": "blockchain",
+  "definition": "Transaction fees are amounts paid by users to have their transactions included in a blockchain block. They compensate miners or validators and help prioritise transactions when capacity is limited.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "transaction-validation",
+      "label": "Transaction Validation"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "https-developer-bitcoin-org-devguide-transactions-html",
+      "label": "https://developer.bitcoin.org/devguide/transactions.html"
+    },
+    {
+      "slug": "https-en-bitcoin-it-wiki-transaction-fees",
+      "label": "https://en.bitcoin.it/wiki/Transaction_fees"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

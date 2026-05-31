@@ -233,6 +233,10 @@
       "label": "API Standard"
     },
     {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
       "slug": "collective-intelligence-system",
       "label": "Collective Intelligence System"
     },
@@ -249,6 +253,10 @@
       "label": "EMC Standard"
     },
     {
+      "slug": "federation",
+      "label": "Federation"
+    },
+    {
       "slug": "io-t-sensor-network",
       "label": "IoT Sensor Network"
     },
@@ -257,8 +265,32 @@
       "label": "Middleware"
     },
     {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "routing-protocol",
+      "label": "Routing Protocol"
+    },
+    {
+      "slug": "web-sockets",
+      "label": "WebSockets"
+    },
+    {
+      "slug": "wi-fi",
+      "label": "Wi-Fi"
+    },
+    {
+      "slug": "wireless-connectivity",
+      "label": "Wireless Connectivity"
     }
   ]
 }

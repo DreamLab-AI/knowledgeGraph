@@ -12,12 +12,12 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:capital-markets-regulation",
-      "label": "Capital Markets Regulation"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "id": "urn:ngm:class:digital-asset-law",
-      "label": "Digital Asset Law"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -705,6 +705,18 @@
   ],
   "backlinks": [
     {
+      "slug": "bc-0482-eu-mica-regulation",
+      "label": "BC-0482-eu-mica-regulation"
+    },
+    {
+      "slug": "bc-0484-markets-in-crypto-assets",
+      "label": "BC-0484-markets-in-crypto-assets"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
       "slug": "dao-legal-structures",
       "label": "DAO Legal Structures"
     },
@@ -713,8 +725,16 @@
       "label": "Enterprise Token Standards"
     },
     {
+      "slug": "financial-conduct-authority",
+      "label": "Financial Conduct Authority"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
     },
     {
       "slug": "us-regulatory-framework",

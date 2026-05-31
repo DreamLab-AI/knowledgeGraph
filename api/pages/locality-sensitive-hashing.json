@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:locality-sensitive-hashing",
+  "title": "Locality-Sensitive Hashing",
+  "slug": "locality-sensitive-hashing",
+  "public": true,
+  "classIri": "urn:ngm:class:locality-sensitive-hashing",
+  "domain": "ai",
+  "definition": "Locality-sensitive hashing (LSH) is a family of hashing techniques that map similar high-dimensional inputs to the same hash bucket with high probability, enabling sub-linear approximate nearest-neighbour search. By trading exactness for speed, LSH makes similarity search and deduplication tractable over very large datasets. It is widely applied to embeddings, document near-duplicate detection, and retrieval pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:2f7082ae04f0ac70cb83b7c8aa6e23343df70b7a6660aea9ec8c1618544f2ce5",
+  "title": "Rollup",
+  "slug": "rollup",
+  "public": true,
+  "classIri": "urn:ngm:class:rollup",
+  "domain": "rollup",
+  "definition": "A Rollup is a blockchain scaling technique that executes transactions off a base layer such as Ethereum while posting compressed transaction data and state commitments back to it for settlement and data availability. By batching many transactions and proving or asserting their validity on the main chain, rollups increase throughput and reduce fees while inheriting much of the base layer's security. Two main types exist: optimistic rollups, which assume validity and rely on fraud proofs during a challenge window, and zero-knowledge rollups, which post validity proofs verifying each batch. Rollups are central to Ethereum's layer-2 scaling strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "arbitrum",
+      "label": "Arbitrum"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "layer-3",
+      "label": "Layer 3"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "mantle",
+      "label": "Mantle"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "optimistic-rollup",
+      "label": "Optimistic Rollup"
+    },
+    {
+      "slug": "plonk",
+      "label": "PLONK"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "scroll",
+      "label": "Scroll"
+    },
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "zk-snark",
+      "label": "ZK-SNARK"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    }
+  ]
+}

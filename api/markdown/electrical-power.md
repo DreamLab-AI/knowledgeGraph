@@ -1,0 +1,4 @@
+- ### Definition
+  - Electrical Power is the rate of electrical energy transfer, measured in watts, that energises computing and robotic systems. It is required by [[Compute Infrastructure]] and by every [[Electric Actuator]] in a robot.
+- ### Content
+  - Power delivery, conversion efficiency, and thermal limits shape the design of data centres, edge devices, and battery-powered robots. Rising compute demand makes power capacity and sourcing a central planning and sustainability concern, while actuator power budgets constrain robot payload, speed, and runtime.

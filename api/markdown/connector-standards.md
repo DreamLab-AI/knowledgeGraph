@@ -1,0 +1,4 @@
+- ### Definition
+  - Connector standards specify the form factor, pinout, and signalling of physical interfaces, defining interoperability at the [[Physical Layer]].
+- ### Content
+  - A connector standard fixes the geometry and contact layout so that any compliant plug mates with any compliant receptacle, and pairs this with electrical and protocol specifications for signalling. Examples include USB-C, RJ45, and fibre connectors, each constraining mechanical tolerances, durability cycles, and impedance characteristics.

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:application-window-capture",
+  "title": "Application Window Capture",
+  "slug": "application-window-capture",
+  "public": true,
+  "classIri": "urn:ngm:class:application-window-capture",
+  "domain": "metaverse",
+  "definition": "Application Window Capture is a screen-capture technique that grabs the pixels of a single specified application window rather than the entire display or a region. It lets users share or record one program while keeping other windows, notifications, and private content off-screen. Operating systems expose it through window-enumeration and per-window framebuffer APIs used by recording and conferencing software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

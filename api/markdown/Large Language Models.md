@@ -1,4 +1,5 @@
 public:: true
+alias:: LLM, Large Language Model
 
 # Large Language Models
 ```json-ld
@@ -243,7 +244,7 @@ public:: true
       "label": "Neural Network"
     },
     {
-      "@id": "urn:ngm:individual:foundation-models",
+      "@id": "urn:ngm:class:foundation-models",
       "label": "Foundation Models"
     }
   ],

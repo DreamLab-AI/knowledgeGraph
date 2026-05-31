@@ -59,6 +59,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
@@ -69,6 +73,10 @@
     {
       "slug": "metadata-management",
       "label": "Metadata Management"
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
     },
     {
       "slug": "ontology-definition",

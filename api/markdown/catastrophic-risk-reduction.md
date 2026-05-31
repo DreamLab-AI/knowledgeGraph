@@ -1,0 +1,4 @@
+- ### Definition
+  - Catastrophic Risk Reduction comprises the technical and policy measures that lower the likelihood or impact of large-scale harms, directly targeting [[Existential Risk]] and operationalised through [[Safety and Alignment]] research.
+- ### Content
+  - Reduction strategies layer defence in depth: alignment techniques to keep systems controllable, evaluations and tripwires to detect dangerous capabilities, and governance such as responsible scaling policies and compute oversight. The aim is to keep residual catastrophic risk within tolerable bounds even as capability advances.

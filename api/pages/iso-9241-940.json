@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:eb4d511432bcb1979af92b2746b6c4165a6031124c4c75db1e107e2fc7795709",
+  "title": "ISO 9241-940",
+  "slug": "iso-9241-940",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9241-940",
+  "domain": "standards",
+  "definition": "ISO 9241-940 is part of the ISO 9241 series on ergonomics of human-system interaction, addressing the evaluation of tactile and haptic interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "iso",
+      "label": "ISO"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    }
+  ]
+}

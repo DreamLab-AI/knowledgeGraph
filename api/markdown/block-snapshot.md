@@ -1,0 +1,4 @@
+- ### Definition
+  - A block snapshot freezes on-chain balances or voting weights at a given block height, providing the tamper-evident baseline that [[On-Chain Voting]] requires for fair vote weighting.
+- ### Content
+  - By fixing eligibility and voting power at a pre-announced block, snapshots prevent vote-buying via last-minute token transfers. The same mechanism supports reproducible airdrop eligibility and any process that must reference a deterministic past state of the ledger.

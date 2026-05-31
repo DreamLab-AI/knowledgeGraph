@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:creative-industries",
+  "title": "Creative Industries",
+  "slug": "creative-industries",
+  "public": true,
+  "classIri": "urn:ngm:class:creative-industries",
+  "domain": "ai",
+  "definition": "The creative industries are the economic sectors that generate value primarily from individual creativity, skill, and intellectual property, spanning design, fashion, film, music, gaming, advertising, and publishing. They combine cultural production with commercial distribution and are increasingly reshaped by generative AI tooling. As an economic domain they are a significant employer and exporter of cultural goods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    }
+  ]
+}

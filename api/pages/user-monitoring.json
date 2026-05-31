@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:user-monitoring",
+  "title": "User Monitoring",
+  "slug": "user-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:user-monitoring",
+  "domain": "governance",
+  "definition": "User monitoring is the observation and logging of user behaviour and interactions within a platform to detect policy violations, abuse, safety risks or anomalous activity. In metaverse and online environments it supports trust-and-safety enforcement and agreement compliance, balancing protective oversight against privacy and consent. It typically feeds moderation, incident response and compliance reporting workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Metaverse Governance and Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-safety-protocol",
+        "label": "Metaverse Safety Protocol"
+      },
+      {
+        "id": "urn:ngm:class:user-agreement-compliance",
+        "label": "User Agreement Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    }
+  ]
+}

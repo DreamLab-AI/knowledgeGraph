@@ -335,8 +335,8 @@ public:: true
       "label": "Ambient Awareness"
     },
     {
-      "@id": "urn:ngm:class:awareness-mechanisms",
-      "label": "Awareness Mechanisms"
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
     }
   ],
   "relations": {
@@ -396,7 +396,7 @@ public:: true
         "label": "Push Notification"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "Websocket"
       }
     ],

@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:1a57a2dc7fed8ea46a932f38c9333e961f4699394db4cb59c1e1abd0f3c8bcf9",
+  "title": "Statistics",
+  "slug": "statistics",
+  "public": true,
+  "classIri": "urn:ngm:class:statistics",
+  "domain": "mathematics",
+  "definition": "The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probability-theory",
+      "label": "Probability Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    }
+  ]
+}

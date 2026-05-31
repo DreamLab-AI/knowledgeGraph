@@ -1249,6 +1249,10 @@
   ],
   "backlinks": [
     {
+      "slug": "argent",
+      "label": "Argent"
+    },
+    {
       "slug": "crypto-token",
       "label": "Crypto Token"
     },
@@ -1257,12 +1261,32 @@
       "label": "Cryptocurrency"
     },
     {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
       "slug": "governance-token",
       "label": "Governance Token"
     },
     {
+      "slug": "multisig",
+      "label": "Multisig"
+    },
+    {
+      "slug": "phoenix",
+      "label": "Phoenix"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rainbow-wallet",
+      "label": "Rainbow Wallet"
+    },
+    {
+      "slug": "safe",
+      "label": "Safe"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

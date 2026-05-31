@@ -435,12 +435,12 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:dynamical-system",
+      "@id": "urn:ngm:class:dynamical-systems",
       "label": "Dynamical System"
     },
     {
-      "@id": "urn:ngm:class:mathematical-statistics",
-      "label": "Mathematical Statistics"
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
     }
   ],
   "relations": {

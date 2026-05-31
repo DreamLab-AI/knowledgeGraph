@@ -1,0 +1,4 @@
+- ### Definition
+  - Real-time synchronisation continuously propagates state so distributed participants share a consistent, current view. It is a constituent part of the [[Distributed Collaboration Domain]] and of [[Digital Twin]] state mirroring.
+- ### Content
+  - Synchronisation must handle concurrent updates, network partitions, and ordering, using techniques such as CRDTs, operational transformation, vector clocks, or authoritative-server reconciliation. The central trade-off is between strong consistency and low latency; interactive systems favour eventual consistency with client-side prediction to mask network delay.

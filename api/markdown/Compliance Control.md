@@ -483,8 +483,8 @@ public:: true
       "label": "Enterprise Risk Management"
     },
     {
-      "@id": "urn:ngm:class:information-security-management",
-      "label": "Information Security Management"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     }
   ],
   "relations": {

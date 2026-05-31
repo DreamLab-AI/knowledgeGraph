@@ -116,6 +116,14 @@
     {
       "slug": "aiethics",
       "label": "AIEthics"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "sociotechnical-risk",
+      "label": "Sociotechnical Risk"
     }
   ]
 }

@@ -1,0 +1,4 @@
+- ### Definition
+  - The green bond market issues use-of-proceeds debt earmarked for environmental projects, forming a core instrument of [[Sustainable Finance]] and supporting initiatives such as [[Carbon Neutral Blockchain]].
+- ### Content
+  - Issuance requires transparent allocation reporting and frequently third-party verification of environmental impact. Tokenisation efforts aim to bring green bonds on-chain to improve traceability of proceeds and impact metrics, reducing greenwashing risk and lowering settlement costs.

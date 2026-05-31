@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:ac6c5604862da5892db318b885e5da3d5b393feb558ae9916f2c9e718786f175",
+  "title": "Intelligent System",
+  "slug": "intelligent-system",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligent-system",
+  "domain": "general",
+  "definition": "An intelligent system is a computational system that perceives its environment, reasons over data and takes actions to achieve defined objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "Robot Perception"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "https-plato-stanford-edu-entries-artificial-intelligence",
+      "label": "https://plato.stanford.edu/entries/artificial-intelligence/"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-intelligent-agent",
+      "label": "https://en.wikipedia.org/wiki/Intelligent_agent"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

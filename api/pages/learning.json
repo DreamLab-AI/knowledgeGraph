@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:48cb8de2a269a0e2ce3ff4bb715e9886fb07c24e14a3945c807fc63e00f6d56a",
+  "title": "Learning",
+  "slug": "learning",
+  "public": true,
+  "classIri": "urn:ngm:class:learning",
+  "domain": "artificial-intelligence",
+  "definition": "Learning is the process by which a system improves its performance on a task through experience or data. In artificial intelligence it refers to algorithms that adjust internal parameters or rules from observations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

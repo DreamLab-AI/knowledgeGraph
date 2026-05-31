@@ -1,0 +1,4 @@
+- ### Definition
+  - A data warehouse is a centralised analytical store integrating data from many sources for reporting, a core [[Data Engineering]] asset that depends on [[Metadata Management]] for trust and discovery.
+- ### Content
+  - Data is loaded through ETL or ELT into dimensional models that separate facts from descriptive dimensions, then served to BI tools. Modern cloud warehouses decouple storage from compute and use columnar formats to scale analytical queries elastically.

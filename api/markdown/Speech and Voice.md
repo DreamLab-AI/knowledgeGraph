@@ -360,7 +360,7 @@ public:: true
         "label": "Audio Data"
       },
       {
-        "@id": "urn:ngm:class:language-models",
+        "@id": "urn:ngm:class:language-model",
         "label": "Language Models"
       },
       {
@@ -386,7 +386,7 @@ public:: true
         "label": "Podcast Production"
       },
       {
-        "@id": "urn:ngm:class:voice-assistants",
+        "@id": "urn:ngm:class:voice-assistant",
         "label": "Voice Assistants"
       },
       {
@@ -454,7 +454,7 @@ public:: true
         "label": "ONNX Runtime"
       },
       {
-        "@id": "urn:ngm:class:rest-apis",
+        "@id": "urn:ngm:class:rest-api",
         "label": "REST APIs"
       },
       {

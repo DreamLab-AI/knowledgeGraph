@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:b24f213b2e78dd645e50a75696759438d8dfccb8b443cc9d71d4e060bd4aad43",
+  "title": "Publish-Subscribe Pattern",
+  "slug": "publish-subscribe-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:publish-subscribe-pattern",
+  "domain": "software-architecture",
+  "definition": "A messaging pattern in which senders, called publishers, categorise messages into topics without knowledge of which receivers, called subscribers, will consume them. A broker or event channel delivers messages to interested subscribers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:message-queue",
+      "label": "Message Queue"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "message-queue",
+      "label": "Message Queue"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    }
+  ]
+}

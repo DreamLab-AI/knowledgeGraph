@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:fourth-industrial-revolution",
+  "title": "Fourth Industrial Revolution",
+  "slug": "fourth-industrial-revolution",
+  "public": true,
+  "classIri": "urn:ngm:class:fourth-industrial-revolution",
+  "domain": "governance",
+  "definition": "The Fourth Industrial Revolution (Industry 4.0) is the contemporary wave of technological change characterised by the fusion of physical, digital, and biological systems through AI, robotics, the Internet of Things, and cyber-physical systems. Popularised by the World Economic Forum, it describes how automation and data exchange reshape manufacturing, economies, and society. It is distinguished from prior revolutions by the speed, scope, and systemic impact of convergent technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:owl-thing",
+      "label": "Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    }
+  ]
+}

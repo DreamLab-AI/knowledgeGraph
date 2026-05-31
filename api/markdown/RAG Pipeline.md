@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:chunking", "label": "Chunking"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rag-pipelines", "label": "RAG Pipelines"},
+      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipelines"},
       {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ]

@@ -1,4 +1,5 @@
 public:: true
+alias:: Proof-of-Stake, ProofOfStake, proof-of-stake
 
 # Proof of Stake
 ```json-ld

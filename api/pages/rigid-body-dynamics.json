@@ -84,6 +84,10 @@
       "label": "Physics Material"
     },
     {
+      "slug": "physics-simulation-engine",
+      "label": "Physics Simulation Engine"
+    },
+    {
       "slug": "physics-based-animation",
       "label": "Physics-Based Animation"
     }

@@ -108,6 +108,10 @@
       "label": "Economic Mechanism"
     },
     {
+      "slug": "gas-fee",
+      "label": "Gas Fee"
+    },
+    {
       "slug": "gas-optimization",
       "label": "Gas Optimization"
     },

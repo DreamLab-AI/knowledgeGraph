@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:3a1ff0ab73168a2a0dcddf61efb4b5d8755feb83fdf81209fa92d853f2fa66f6",
+  "title": "Task and Motion Planning",
+  "slug": "task-and-motion-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:task-and-motion-planning",
+  "domain": "robotics",
+  "definition": "Task and motion planning is an approach in robotics that combines high-level task planning with low-level motion planning to produce executable plans. It addresses both what to do and how to move.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "pathfinding-algorithm",
+      "label": "Pathfinding Algorithm"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-motion-planning",
+      "label": "https://en.wikipedia.org/wiki/Motion_planning"
+    },
+    {
+      "slug": "https-arxiv-org-abs-2010-01083",
+      "label": "https://arxiv.org/abs/2010.01083"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "behaviour-trees",
+      "label": "Behaviour Trees"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

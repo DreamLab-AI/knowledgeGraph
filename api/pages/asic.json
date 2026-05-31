@@ -79,12 +79,28 @@
       "label": "Bitcoin Mining"
     },
     {
+      "slug": "bitmain",
+      "label": "Bitmain"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
       "slug": "proof-of-stake-sustainability",
       "label": "Proof Of Stake Sustainability"
     },
     {
       "slug": "proof-of-work",
       "label": "Proof Of Work"
+    },
+    {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
     }
   ]
 }

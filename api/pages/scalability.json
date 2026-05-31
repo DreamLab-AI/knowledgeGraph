@@ -79,6 +79,10 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "blockchain-technology-laboratory",
+      "label": "Blockchain Technology Laboratory"
+    },
+    {
       "slug": "cloud-infrastructure",
       "label": "Cloud Infrastructure"
     },
@@ -95,20 +99,48 @@
       "label": "Distributed Architecture"
     },
     {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
       "slug": "infrastructure-layer",
       "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "load-balancer",
+      "label": "Load Balancer"
     },
     {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
     },
     {
+      "slug": "quic",
+      "label": "QUIC"
+    },
+    {
       "slug": "question-answering",
       "label": "Question Answering"
     },
     {
+      "slug": "starknet",
+      "label": "Starknet"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "vercel",
+      "label": "Vercel"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
     },
     {
       "slug": "blockchain-core-concepts",

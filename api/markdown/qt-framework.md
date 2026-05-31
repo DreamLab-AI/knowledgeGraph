@@ -1,0 +1,4 @@
+- ### Definition
+  - Qt is a cross-platform C++/QML framework for building graphical applications with native performance. It is used and required by clients such as [[Vircadia]] for their desktop interfaces and rendering integration.
+- ### Content
+  - Qt's signals-and-slots model decouples event producers from consumers, while QML enables declarative, GPU-accelerated UIs. It spans desktop, embedded, and mobile targets, with licensing available under commercial and open-source (LGPL/GPL) terms, an important consideration for distribution.

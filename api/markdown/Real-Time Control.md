@@ -1,4 +1,5 @@
 public:: true
+alias:: Real Time Control
 
 # Real-Time Control
 ```json-ld

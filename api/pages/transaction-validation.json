@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:905f3743b7932010b162d4a5e9afa0b4dfda369af1afe74ca41eb75eaa5a47ae",
+  "title": "Transaction Validation",
+  "slug": "transaction-validation",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-validation",
+  "domain": "blockchain",
+  "definition": "Transaction validation is the process by which network participants check that a blockchain transaction conforms to the protocol rules before accepting it. It ensures only valid transactions enter the ledger.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus",
+      "label": "Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "bitcoin-network",
+      "label": "Bitcoin Network"
+    },
+    {
+      "slug": "transaction",
+      "label": "Transaction"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "https-developer-bitcoin-org-devguide-transactions-html",
+      "label": "https://developer.bitcoin.org/devguide/transactions.html"
+    },
+    {
+      "slug": "https-en-bitcoin-it-wiki-protocol-rules",
+      "label": "https://en.bitcoin.it/wiki/Protocol_rules"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ant-pool",
+      "label": "AntPool"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "canaan",
+      "label": "Canaan"
+    },
+    {
+      "slug": "f-2-pool",
+      "label": "F2Pool"
+    },
+    {
+      "slug": "hash-functions",
+      "label": "Hash Functions"
+    },
+    {
+      "slug": "micro-bt",
+      "label": "MicroBT"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    },
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "riot-platforms",
+      "label": "Riot Platforms"
+    },
+    {
+      "slug": "transaction-fees",
+      "label": "transaction fees"
+    }
+  ]
+}

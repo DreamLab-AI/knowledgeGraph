@@ -1,0 +1,4 @@
+- ### Definition
+  - Reflexion is a verbal reinforcement framework that lets [[Agents]] and [[Computer Use and Browser Agents]] learn from failure by storing self-critiques in memory and reusing them on later attempts.
+- ### Content
+  - After each trial the agent generates a reflection explaining what went wrong, appends it to an episodic buffer, and uses the accumulated reflections to guide future actions. Because learning happens in language rather than parameters, Reflexion adapts quickly without fine-tuning and complements reasoning and self-correction techniques.

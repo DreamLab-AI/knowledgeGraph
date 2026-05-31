@@ -120,5 +120,10 @@
       "label": "TokenEconomicsDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "mechanism-design-domain",
+      "label": "Mechanism Design Domain"
+    }
+  ]
 }

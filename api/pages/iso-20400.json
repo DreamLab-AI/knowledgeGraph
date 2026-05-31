@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:iso-20400",
+  "title": "ISO 20400",
+  "slug": "iso-20400",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-20400",
+  "domain": "supply-chain",
+  "definition": "ISO 20400 is an international standard providing guidance on integrating sustainability into procurement processes and decisions across an organisation and its supply chains. It helps buyers consider environmental, social, and economic impacts when sourcing goods and services, aligning purchasing with responsible and ethical principles. As a guidance standard rather than a certifiable requirement, it shapes policy, supplier engagement, and accountability for sustainable sourcing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

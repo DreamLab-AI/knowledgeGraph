@@ -67,8 +67,48 @@
       "label": "Accountability"
     },
     {
+      "slug": "bc-0442-certification-and-compliance",
+      "label": "BC-0442-certification-and-compliance"
+    },
+    {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
+    },
+    {
+      "slug": "corporate-governance",
+      "label": "Corporate Governance"
+    },
+    {
+      "slug": "kyc",
+      "label": "KYC"
+    },
+    {
+      "slug": "process-regulation",
+      "label": "Process Regulation"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "regulatory-approval",
+      "label": "Regulatory Approval"
+    },
+    {
+      "slug": "regulatory-clarity",
+      "label": "Regulatory Clarity"
+    },
+    {
+      "slug": "regulatory-frameworks",
+      "label": "Regulatory Frameworks"
+    },
+    {
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

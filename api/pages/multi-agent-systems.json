@@ -59,8 +59,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
     },
     {
       "slug": "cli-multi-agent-systems",
@@ -79,8 +87,16 @@
       "label": "Distributed Decision Making"
     },
     {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
       "slug": "navigation",
       "label": "Navigation"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
     },
     {
       "slug": "task-planning",

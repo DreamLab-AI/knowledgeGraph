@@ -1,4 +1,5 @@
 public:: true
+alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
 
 # On Chain Voting
 ```json-ld
@@ -642,7 +643,7 @@ public:: true
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:prediction-market",
+        "@id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       },
       {
@@ -740,7 +741,7 @@ public:: true
         "label": "EIP-712"
       },
       {
-        "@id": "urn:ngm:class:erc20-votes",
+        "@id": "urn:ngm:class:erc-20-votes",
         "label": "ERC20Votes"
       },
       {

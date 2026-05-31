@@ -1,4 +1,5 @@
 public:: true
+alias:: ReinforcementLearning
 
 # Reinforcement Learning
 ```json-ld

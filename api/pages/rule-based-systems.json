@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:897aacfbfe6c7b204f08160f22f6c49d506baa6382cefe847a2ac440f22fa219",
+  "title": "Rule-Based Systems",
+  "slug": "rule-based-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:rule-based-systems",
+  "domain": "general",
+  "definition": "Systems that represent knowledge as a set of condition-action rules and use an inference engine to derive conclusions or trigger actions from facts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:expert-systems",
+      "label": "Expert Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "validation-rules",
+      "label": "Validation Rules"
+    }
+  ]
+}

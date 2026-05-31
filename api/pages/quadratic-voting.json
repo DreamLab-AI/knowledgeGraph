@@ -12,8 +12,8 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:governance-protocol",
-      "label": "Governance Protocol"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance And Regulation"
     },
     {
       "id": "urn:ngm:class:public-goods-funding",
@@ -745,6 +745,10 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "daogovernance",
+      "label": "DAOGovernance"
+    },
+    {
       "slug": "decentralized-governance",
       "label": "Decentralized Governance"
     },
@@ -765,12 +769,20 @@
       "label": "Governance Token"
     },
     {
+      "slug": "maci",
+      "label": "MACI"
+    },
+    {
       "slug": "multi-sig-governance",
       "label": "Multi Sig Governance"
     },
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "snapshot-off-chain-voting",
+      "label": "Snapshot Off-Chain Voting"
     },
     {
       "slug": "snapshot-voting",

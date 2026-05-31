@@ -136,6 +136,10 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
       "slug": "derivative-control",
       "label": "Derivative Control"
     },

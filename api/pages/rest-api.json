@@ -87,6 +87,14 @@
       "label": "Model Control Protocols like MCP"
     },
     {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "osi-model",
+      "label": "OSI Model"
+    },
+    {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
     },

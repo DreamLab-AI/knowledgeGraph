@@ -1,0 +1,4 @@
+- ### Definition
+  - Spreading treasury reserves across asset types to reduce concentration risk and stabilise runway against volatility. It is a key practice within [[Treasury Management]] and is increasingly automated by [[DAO Tooling]].
+- ### Content
+  - DAOs often begin over-exposed to their own governance token, whose value can collapse precisely when funding is most needed; diversification into stablecoins and uncorrelated assets cushions this. Common mechanisms include token swaps, OTC deals, and protocol-owned liquidity, each balancing risk reduction against signalling and market-impact concerns.

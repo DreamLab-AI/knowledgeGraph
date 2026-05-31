@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:1e4e08721b1f8a5774d9e8146ff062cf2da115ddbe4e3859549ae2b20fc134ac",
+  "title": "Identity Verification System",
+  "slug": "identity-verification-system",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-verification-system",
+  "domain": "identity",
+  "definition": "An identity verification system is a set of processes and technologies that confirm a person is who they claim to be, often during onboarding. It typically combines document checks, biometrics and data validation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "biometric-authentication",
+      "label": "Biometric Authentication"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-identity-provider",
+      "label": "Centralized Identity Provider"
+    },
+    {
+      "slug": "did-resolution",
+      "label": "DID Resolution"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "label": "Digital Tax Compliance Node"
+    },
+    {
+      "slug": "onfido",
+      "label": "Onfido"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    },
+    {
+      "slug": "i-proov",
+      "label": "iProov"
+    }
+  ]
+}

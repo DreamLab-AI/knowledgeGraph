@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:resource-efficiency",
+  "title": "Resource Efficiency",
+  "slug": "resource-efficiency",
+  "public": true,
+  "classIri": "urn:ngm:class:resource-efficiency",
+  "domain": "infrastructure",
+  "definition": "Resource efficiency is the practice of producing the same output or value while consuming fewer material, energy, or computational inputs. It encompasses minimising waste, reusing by-products, and optimising processes so that resources deliver maximum useful work. In sustainability and industrial contexts it is a primary lever for reducing cost and environmental footprint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    }
+  ]
+}

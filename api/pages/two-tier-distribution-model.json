@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:two-tier-distribution-model",
+  "title": "Two-Tier Distribution Model",
+  "slug": "two-tier-distribution-model",
+  "public": true,
+  "classIri": "urn:ngm:class:two-tier-distribution-model",
+  "domain": "blockchain",
+  "definition": "The two-tier distribution model is the architecture commonly proposed for central bank digital currencies in which the central bank issues the digital currency but commercial banks and licensed intermediaries handle distribution, wallets, and customer service. This preserves the central bank's monetary authority while leveraging existing financial institutions for onboarding, compliance, and the user-facing layer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:4c760c8d781eaa172e9cf238533216d1ed5af258008a8e4fb73af795ac4feb2b",
+  "title": "GAN",
+  "slug": "gan",
+  "public": true,
+  "classIri": "urn:ngm:class:gan",
+  "domain": "deep-learning",
+  "definition": "Generative adversarial network: a generative model in which a generator and a discriminator are trained in opposition, the generator producing samples and the discriminator distinguishing real from generated data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

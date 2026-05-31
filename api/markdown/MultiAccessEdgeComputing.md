@@ -1,4 +1,5 @@
 public:: true
+alias:: Multi-access Edge Computing
 
 # MultiAccessEdgeComputing
 ```json-ld

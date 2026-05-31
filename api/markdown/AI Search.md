@@ -371,8 +371,8 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:question-answering-system",
-      "label": "Question Answering System"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     },
     {
       "@id": "urn:ngm:class:retrieval-augmented-generation",

@@ -1,0 +1,4 @@
+- ### Definition
+  - Digital democracy applies digital tools to widen citizen participation in collective decisions. It is supported by mechanisms like [[Quadratic Voting]] and aims to strengthen [[Civic Participation]].
+- ### Content
+  - Implementations span online consultation platforms, participatory budgeting portals, and cryptographically secured voting trials. Promised benefits include scale, transparency, and inclusion; persistent challenges are the digital divide, identity and Sybil resistance, misinformation, and ensuring deliberation quality rather than mere clicktivism.

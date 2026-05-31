@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:1e20f9dc5350a178c90e23af11430322d9a6f63058aec2afce2e953fa18941a3",
+  "title": "W3C RDF 1.1",
+  "slug": "w-3-c-rdf-1-1",
+  "public": true,
+  "classIri": "urn:ngm:class:w-3-c-rdf-1-1",
+  "domain": "standards",
+  "definition": "W3C RDF 1.1 is the Resource Description Framework, a data model for representing information about resources as subject-predicate-object triples on the Web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "w-3-c",
+      "label": "W3C"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "semantic-web-domain",
+      "label": "Semantic Web Domain"
+    }
+  ]
+}

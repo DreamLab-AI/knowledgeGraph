@@ -1,0 +1,4 @@
+- ### Definition
+  - A risk scoring engine computes weighted risk scores driving automated decisions, forming part of [[Compliance Monitoring]] and [[Identity Verification]] systems.
+- ### Content
+  - Signals are normalised, weighted, and combined into a score compared against configurable thresholds. Tuning weights and cut-offs lets operators trade off false positives against missed risk, while logged scores support audit and model refinement.

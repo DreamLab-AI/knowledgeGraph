@@ -1,4 +1,5 @@
 public:: true
+alias:: RoboticSystem
 
 # Robotic System
 ```json-ld

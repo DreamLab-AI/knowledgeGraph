@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:c844fc67f5e04ed581a7042fef714c4c91a9e8cc0ac3175cf6a1d74bcd2a71b1",
+  "title": "Stripe",
+  "slug": "stripe",
+  "public": true,
+  "classIri": "urn:ngm:class:stripe",
+  "domain": "general",
+  "definition": "Stripe is a company that provides payment processing infrastructure and software for online and in-person transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

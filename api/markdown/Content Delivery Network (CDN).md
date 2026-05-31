@@ -164,7 +164,7 @@ public:: true
         "label": "DNS Service"
       },
       {
-        "@id": "urn:ngm:class:storage-system",
+        "@id": "urn:ngm:class:storage-systems",
         "label": "Storage System"
       },
       {

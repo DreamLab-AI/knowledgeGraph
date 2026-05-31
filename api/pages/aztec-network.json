@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:e7d4e3980ae07e03a52377afabd5b6f3e3f58a7331f9141b2c80c279032bfc74",
+  "title": "Aztec Network",
+  "slug": "aztec-network",
+  "public": true,
+  "classIri": "urn:ngm:class:aztec-network",
+  "domain": "blockchain",
+  "definition": "The privacy-preserving Layer 2 network operated under the Aztec protocol, providing confidential transactions and private smart contracts settled on Ethereum.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:aztec",
+      "label": "Aztec"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aztec-protocol",
+        "label": "Aztec Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    },
+    {
+      "slug": "aztec",
+      "label": "Aztec"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aztec-protocol",
+      "label": "Aztec Protocol"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

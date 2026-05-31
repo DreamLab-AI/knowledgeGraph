@@ -63,8 +63,28 @@
       "label": "Carbon Neutral Blockchain"
     },
     {
+      "slug": "carbon-offsetting",
+      "label": "Carbon Offsetting"
+    },
+    {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "integrity-council-for-the-voluntary-carbon-market",
+      "label": "Integrity Council for the Voluntary Carbon Market"
+    },
+    {
+      "slug": "klima-dao",
+      "label": "KlimaDAO"
+    },
+    {
+      "slug": "paris-agreement",
+      "label": "Paris Agreement"
+    },
+    {
+      "slug": "toucan-protocol",
+      "label": "Toucan Protocol"
     }
   ]
 }

@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:13d37d1c8404028fd8e640fdc08b264c30886ec2bf261504786fba0ac4872303",
+  "title": "Inflation Hedge",
+  "slug": "inflation-hedge",
+  "public": true,
+  "classIri": "urn:ngm:class:inflation-hedge",
+  "domain": "finance",
+  "definition": "An inflation hedge is an asset expected to retain or increase its value as the general price level rises, protecting purchasing power. Commonly cited examples include gold, real estate and index-linked bonds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:store-of-value",
+      "label": "Store of Value"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:e7ab4ac4d63b20916a45124bb26d5f9a7cf11c48d4282d258994000c9e71d47a",
+  "title": "Aptos",
+  "slug": "aptos",
+  "public": true,
+  "classIri": "urn:ngm:class:aptos",
+  "domain": "blockchain",
+  "definition": "Aptos is a layer 1 proof-of-stake blockchain that uses the Move programming language and a parallel execution engine for smart contract processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

@@ -63,6 +63,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "can-bus",
+      "label": "CAN Bus"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },
@@ -87,12 +91,20 @@
       "label": "Real Time"
     },
     {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     },
     {
       "slug": "robotics-domain",
       "label": "Robotics Domain"
+    },
+    {
+      "slug": "micro-ros",
+      "label": "micro-ROS"
     }
   ]
 }

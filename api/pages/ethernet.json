@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:3348aa25d7ae89156c155921636ae9a423fde58e059d739d0766b3e36e8679f2",
+  "title": "Ethernet",
+  "slug": "ethernet",
+  "public": true,
+  "classIri": "urn:ngm:class:ethernet",
+  "domain": "networking",
+  "definition": "Ethernet is a family of wired networking technologies, standardised as IEEE 802.3, used to connect devices in local area networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

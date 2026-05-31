@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:a8eed0f61451181d2bd084bb839cf0eb14c1f4c552330b7acfa62bfad0e148d4",
+  "title": "Monitoring",
+  "slug": "monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:monitoring",
+  "domain": "software-engineering",
+  "definition": "The continuous observation of a system's state and behaviour through collection of metrics, logs, and events to detect problems and assess health. It supports operations, reliability, and performance management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "reliability-engineering",
+      "label": "Reliability Engineering"
+    },
+    {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "reliability",
+      "label": "Reliability"
+    }
+  ]
+}

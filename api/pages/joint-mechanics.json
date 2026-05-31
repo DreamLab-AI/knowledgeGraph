@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:joint-mechanics",
+  "title": "Joint Mechanics",
+  "slug": "joint-mechanics",
+  "public": true,
+  "classIri": "urn:ngm:class:joint-mechanics",
+  "domain": "robotics",
+  "definition": "Joint mechanics is the study of the physical behaviour of robotic and mechanical joints, including the forces, torques, friction, compliance and backlash that govern their motion. It models how power is transmitted through bearings, gears and linkages and how non-ideal effects degrade precision. Understanding joint mechanics is essential for accurate dynamic modelling and high-fidelity motion control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robotics Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:friction",
+        "label": "Friction"
+      },
+      {
+        "id": "urn:ngm:class:backlash",
+        "label": "Backlash"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "friction",
+      "label": "Friction"
+    }
+  ]
+}

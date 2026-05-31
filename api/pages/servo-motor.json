@@ -103,6 +103,10 @@
     {
       "slug": "industrial-robot",
       "label": "Industrial Robot"
+    },
+    {
+      "slug": "power-electronics",
+      "label": "Power Electronics"
     }
   ]
 }

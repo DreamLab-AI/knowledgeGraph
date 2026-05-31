@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:security-standards",
+  "title": "Security Standards",
+  "slug": "security-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:security-standards",
+  "domain": "security",
+  "definition": "Security standards are published specifications that define requirements, controls, and best practices for protecting information systems. They span management frameworks such as ISO/IEC 27001, control catalogues such as NIST SP 800-53, and authentication standards. They provide a common basis for designing, assessing, and certifying the security posture of organisations and products.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    }
+  ]
+}

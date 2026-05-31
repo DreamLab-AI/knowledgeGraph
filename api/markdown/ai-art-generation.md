@@ -1,0 +1,4 @@
+- ### Definition
+  - AI Art Generation creates images from prompts using generative models. Tools like [[Kohya, DreamBooth and Similar]] enable and support it by fine-tuning a base [[Generative Model]] to reproduce specific subjects or artistic styles.
+- ### Content
+  - The dominant approach is latent diffusion guided by text encoders, with control extensions for pose, depth, and reference images. Personalization via LoRA and DreamBooth lets users inject custom concepts cheaply, while debates continue over dataset licensing, style mimicry, and watermarking of synthetic media.

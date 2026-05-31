@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:trustworthy-ai-systems",
+  "title": "Trustworthy AI Systems",
+  "slug": "trustworthy-ai-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:trustworthy-ai-systems",
+  "domain": "ai",
+  "definition": "Trustworthy AI systems are artificial-intelligence systems designed and operated to be reliable, safe, transparent, fair, accountable, and respectful of privacy throughout their lifecycle. The concept, codified in frameworks such as the NIST AI Risk Management Framework and the EU's trustworthy-AI guidelines, integrates technical robustness with governance so that stakeholders can justifiably rely on the system's behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-transparency",
+      "label": "Model Transparency"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 public:: true
+alias:: SecurityLayer
 
 # Security Layer
 ```json-ld

@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:scientific-research",
+  "title": "Scientific Research",
+  "slug": "scientific-research",
+  "public": true,
+  "classIri": "urn:ngm:class:scientific-research",
+  "domain": "ai",
+  "definition": "Scientific research is the systematic investigation of phenomena through observation, hypothesis, experiment, and analysis to produce reproducible knowledge. As an application domain for AI, it spans literature review, data analysis, modelling, and experiment automation. Modern AI systems and autonomous agents increasingly support researchers across the discovery, verification, and dissemination stages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    }
+  ]
+}

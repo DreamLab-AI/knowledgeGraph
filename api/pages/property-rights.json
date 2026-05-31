@@ -70,6 +70,10 @@
     {
       "slug": "economics",
       "label": "Economics"
+    },
+    {
+      "slug": "institutional-economics",
+      "label": "Institutional Economics"
     }
   ]
 }

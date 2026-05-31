@@ -1,0 +1,4 @@
+- ### Definition
+  - Local-first software keeps the authoritative data copy on the user's device with optional sync; it relies on [[CRDT]] data structures to merge concurrent edits and draws on [[Distributed Systems]] techniques for replication.
+- ### Content
+  - The model delivers instant local reads and writes, full offline capability, and resilience to server outages, while background sync propagates changes peer-to-peer or through relays. Conflict-free replicated data types provide deterministic merge semantics, eliminating the need for centralised locking or last-write-wins coordination.

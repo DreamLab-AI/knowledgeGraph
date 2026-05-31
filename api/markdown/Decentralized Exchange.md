@@ -1,4 +1,5 @@
 public:: true
+alias:: DecentralizedExchange
 
 # Decentralized Exchange
 ```json-ld
@@ -703,12 +704,12 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:decentralised-finance-primitive",
-      "label": "Decentralised Finance Primitive"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     },
     {
-      "@id": "urn:ngm:class:financial-protocol",
-      "label": "Financial Protocol"
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi And Economics"
     }
   ],
   "relations": {

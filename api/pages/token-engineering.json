@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:069d59e7a26483d5819f799f0dcbdf9954d5222de54afb6b714c0e8e34043cab",
+  "title": "Token Engineering",
+  "slug": "token-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:token-engineering",
+  "domain": "blockchain",
+  "definition": "The discipline of designing token systems and their incentive structures using methods from economics, control theory and systems engineering. It treats a token economy as a system to be specified, simulated and tested before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "tokenomics",
+      "label": "Tokenomics"
+    },
+    {
+      "slug": "https-tokenengineeringcommunity-github-io-website",
+      "label": "https://tokenengineeringcommunity.github.io/website/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:febf6c8896c6192b4ef87e9fa2945dbd027429babdf9fe9b3f2f1c659135e997",
+  "title": "Enterprise Workflow",
+  "slug": "enterprise-workflow",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-workflow",
+  "domain": "general",
+  "definition": "An enterprise workflow is a defined sequence of tasks and approvals that an organisation uses to carry out a business process. Software systems coordinate and automate these workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "https-en-wikipedia-org-wiki-workflow",
+      "label": "https://en.wikipedia.org/wiki/Workflow"
+    },
+    {
+      "slug": "https-www-omg-org-spec-bpmn",
+      "label": "https://www.omg.org/spec/BPMN/"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

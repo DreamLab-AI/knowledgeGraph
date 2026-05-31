@@ -627,8 +627,8 @@ public:: true
       "label": "Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:declarative-specification",
-      "label": "Declarative Specification"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Infra Software Engineering"
     },
     {
       "@id": "urn:ngm:class:documentation-as-code",
@@ -824,7 +824,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:individual:logseq",
+        "@id": "urn:ngm:class:logseq",
         "label": "Logseq"
       }
     ],

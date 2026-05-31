@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:49509427107791eed6039a96410932e838fe09a74fc79f83d804474bd3d113ff",
+  "title": "Centrifuge",
+  "slug": "centrifuge",
+  "public": true,
+  "classIri": "urn:ngm:class:centrifuge",
+  "domain": "blockchain",
+  "definition": "Centrifuge is a decentralised finance protocol that brings real-world assets such as invoices and loans on chain so they can be used as collateral for financing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-tokenisation",
+      "label": "Asset Tokenisation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

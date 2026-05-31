@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:privacy-preserving-computation",
+  "title": "Privacy-Preserving Computation",
+  "slug": "privacy-preserving-computation",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-preserving-computation",
+  "domain": "security",
+  "definition": "Privacy-preserving computation is a family of techniques that allow data to be processed or analysed without exposing the underlying plaintext to the computing party. It includes homomorphic encryption, secure multiparty computation, trusted execution environments, federated learning, and differential privacy. These methods enable collaboration and analytics over sensitive data while maintaining confidentiality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography, Security and Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

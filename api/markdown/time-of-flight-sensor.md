@@ -1,0 +1,4 @@
+- ### Definition
+  - A time-of-flight sensor measures depth by timing reflected light, producing real-time depth maps that drive [[Hand Tracking]] and depth perception in [[Mixed Reality]] devices.
+- ### Content
+  - ToF sensors emit modulated or pulsed infrared light and compute distance from the measured round-trip delay or phase shift across an array of pixels, giving a dense depth image at video rates. Compared with structured-light and stereo approaches, they are compact, work in low light, and require less compute, though they trade off resolution and can struggle with reflective or absorptive surfaces. They are common in mobile depth cameras, headset sensing for hand and environment tracking, and short-range robotic perception.

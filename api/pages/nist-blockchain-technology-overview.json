@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:5d2c31d91587d8d3b47eb81281f046f4377e94fd9d0c597e091863152c1de93f",
+  "title": "NIST Blockchain Technology Overview",
+  "slug": "nist-blockchain-technology-overview",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-blockchain-technology-overview",
+  "domain": "standards",
+  "definition": "A NIST publication providing an overview of blockchain technology, its components and potential uses. It is an explanatory report rather than a normative standard.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    }
+  ]
+}

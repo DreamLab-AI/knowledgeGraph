@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:746da9604d61bb0533e3015cd38db7551c5577e9b582532fd3f06a47093adc92",
+  "title": "Elliptic",
+  "slug": "elliptic",
+  "public": true,
+  "classIri": "urn:ngm:class:elliptic",
+  "domain": "blockchain",
+  "definition": "Elliptic is a company that provides blockchain analytics and compliance tools for tracing cryptocurrency transactions and assessing risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-analytics",
+      "label": "Blockchain Analytics"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "transaction-monitoring",
+      "label": "Transaction Monitoring"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

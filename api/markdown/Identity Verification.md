@@ -755,8 +755,8 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:authentication-method",
-      "label": "Authentication Method"
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
     },
     {
       "@id": "urn:ngm:class:identity-proofing",

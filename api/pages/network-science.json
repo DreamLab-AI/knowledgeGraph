@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:network-science",
+  "title": "Network Science",
+  "slug": "network-science",
+  "public": true,
+  "classIri": "urn:ngm:class:network-science",
+  "domain": "data",
+  "definition": "Network science is the interdisciplinary study of complex systems represented as graphs of nodes and edges, focusing on the structure, dynamics, and function of connections. It develops models and metrics, such as degree distributions, centrality, community structure, and small-world properties, to explain how topology shapes behaviour. It is applied across social, biological, technological, and economic networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

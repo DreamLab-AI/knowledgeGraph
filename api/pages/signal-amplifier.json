@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:signal-amplifier",
+  "title": "Signal Amplifier",
+  "slug": "signal-amplifier",
+  "public": true,
+  "classIri": "urn:ngm:class:signal-amplifier",
+  "domain": "robotics",
+  "definition": "A signal amplifier is an electronic circuit that increases the power, voltage, or current of a weak signal while ideally preserving its waveform. In sensing applications it boosts low-amplitude transducer outputs above the noise floor so they can be digitised, with gain, bandwidth, noise figure, and linearity as key parameters. It is an essential front-end component of sensors and biosignal acquisition systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:infrared-sensor",
+        "label": "Infrared Sensor"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interfaces"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    }
+  ]
+}

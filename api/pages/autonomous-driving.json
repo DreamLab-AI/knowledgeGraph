@@ -81,6 +81,10 @@
     {
       "slug": "model-based-control",
       "label": "Model Based Control"
+    },
+    {
+      "slug": "wayve",
+      "label": "Wayve"
     }
   ]
 }

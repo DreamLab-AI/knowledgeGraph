@@ -1,0 +1,4 @@
+- ### Definition
+  - Automatic prompt optimisation algorithmically discovers and refines effective prompts, automating a core part of [[Prompt Engineering]].
+- ### Content
+  - Approaches range from discrete search over candidate phrasings to continuous soft-prompt tuning and meta-prompting where an LLM proposes improvements to its own instructions. Each candidate is scored on a held-out evaluation set, and the search retains high-performing prompts, yielding measurable gains without manual iteration.

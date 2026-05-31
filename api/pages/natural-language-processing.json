@@ -112,8 +112,16 @@
       "label": "Call Centres"
     },
     {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
     },
     {
       "slug": "compliance-monitoring",
@@ -128,6 +136,14 @@
       "label": "Conversational AI"
     },
     {
+      "slug": "could",
+      "label": "Could"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
       "slug": "customs-trade-facilitation",
       "label": "Customs Trade Facilitation"
     },
@@ -140,8 +156,16 @@
       "label": "Deep Learning"
     },
     {
+      "slug": "dialogue-state-tracking",
+      "label": "Dialogue State Tracking"
+    },
+    {
       "slug": "dialogue-system",
       "label": "Dialogue System"
+    },
+    {
+      "slug": "dialogue-systems",
+      "label": "Dialogue Systems"
     },
     {
       "slug": "digital-society-surveillance",
@@ -174,6 +198,10 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
     },
     {
       "slug": "intelligent-virtual-entity",
@@ -212,6 +240,10 @@
       "label": "Meeting AI Assistant"
     },
     {
+      "slug": "mistral",
+      "label": "Mistral"
+    },
+    {
       "slug": "mixture-of-experts",
       "label": "Mixture of Experts"
     },
@@ -230,6 +262,10 @@
     {
       "slug": "neural-network",
       "label": "Neural Network"
+    },
+    {
+      "slug": "otter-ai",
+      "label": "Otter.ai"
     },
     {
       "slug": "patent",
@@ -296,6 +332,10 @@
       "label": "Social Robotics"
     },
     {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
     },
@@ -330,6 +370,18 @@
     {
       "slug": "translation",
       "label": "Translation"
+    },
+    {
+      "slug": "university-of-sheffield",
+      "label": "University of Sheffield"
+    },
+    {
+      "slug": "vector-store",
+      "label": "Vector Store"
+    },
+    {
+      "slug": "voice-assistant",
+      "label": "Voice Assistant"
     },
     {
       "slug": "fast-ai",

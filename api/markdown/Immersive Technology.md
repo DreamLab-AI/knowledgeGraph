@@ -1,4 +1,5 @@
 public:: true
+alias:: ImmersiveTechnology
 
 # Immersive Technology
 ```json-ld

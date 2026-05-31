@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:57744fb2f2c96e11fc16262b2d70116472df7d1f1011dfdd34b969dfdb18e014",
+  "title": "Multisig",
+  "slug": "multisig",
+  "public": true,
+  "classIri": "urn:ngm:class:multisig",
+  "domain": "blockchain",
+  "definition": "Multisig, or multi-signature, is a scheme requiring more than one cryptographic signature to authorise a transaction or action. It is widely used in cryptocurrency wallets and custody to distribute control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wallet",
+      "label": "Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "custody",
+      "label": "Custody"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

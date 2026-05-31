@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:70e61faf927f499a3b19dcb152c9802b273de5d3999c576062c434e848e0de69",
+  "title": "TELE-252-dao-governance-telecollaboration",
+  "slug": "tele-252-dao-governance-telecollaboration",
+  "public": true,
+  "classIri": "urn:ngm:class:tele-252-dao-governance-telecollaboration",
+  "domain": "metaverse",
+  "definition": "DAO governance for telecollaboration is the use of decentralised autonomous organisation mechanisms, such as token-weighted or membership voting, to coordinate decisions and resource allocation within distributed collaborative communities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "dao",
+      "label": "DAO"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-collaboration",
+      "label": "Blockchain Collaboration"
+    },
+    {
+      "slug": "smart-contract-coordination",
+      "label": "Smart Contract Coordination"
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "label": "Synchronous Collaboration"
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "label": "Telecollaboration Domain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "label": "Telecollaboration and Telepresence Domain"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}
