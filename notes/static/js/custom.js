@@ -13,6 +13,7 @@
   /* ── find top-level blocks ─────────────────────────────── */
   function getSlides() {
     var blocks = [];
+    var matchedSelector = 'fallback';
     var selectors = [
       '.page-blocks-inner > .ls-block',
       '.page > .relative > .ls-block',
@@ -20,7 +21,7 @@
     ];
     for (var i = 0; i < selectors.length; i++) {
       blocks = Array.from(document.querySelectorAll(selectors[i]));
-      if (blocks.length) break;
+      if (blocks.length) { matchedSelector = selectors[i]; break; }
     }
     /* fallback: all ls-blocks whose parent is NOT .block-children */
     if (!blocks.length) {
@@ -28,6 +29,39 @@
         return !b.parentElement.classList.contains('block-children');
       });
     }
+
+    /* If we found only 1-2 top-level blocks and one is a property wrapper,
+       Logseq may have nested all content blocks under the page-property block.
+       Unwrap: use the property block's direct children instead. */
+    if (blocks.length <= 2) {
+      var unwrapped = [];
+      blocks.forEach(function (b) {
+        var bc = b.querySelector(':scope > .block-content, :scope > div > .block-content');
+        var isPropWrap = bc && (bc.querySelector('.page-properties') || bc.querySelector('.block-properties'));
+        if (isPropWrap && !bc.querySelector('h1')) {
+          var children = b.querySelector('.block-children');
+          if (children) {
+            unwrapped = unwrapped.concat(Array.from(children.querySelectorAll(':scope > .ls-block')));
+          }
+        } else {
+          unwrapped.push(b);
+        }
+      });
+      if (unwrapped.length > blocks.length) {
+        console.log('[Pres] Unwrapped property block — found', unwrapped.length, 'children');
+        blocks = unwrapped;
+      }
+    }
+
+    console.log('[Pres] Selector:', matchedSelector, '| Top-level blocks:', blocks.length);
+    blocks.forEach(function (b, idx) {
+      var c = b.querySelector('.block-content');
+      var txt = c ? c.textContent.trim().substring(0, 80) : '(no .block-content)';
+      var hasH1 = c ? !!c.querySelector('h1') : false;
+      var parentCls = b.parentElement ? b.parentElement.className.substring(0, 60) : 'none';
+      console.log('[Pres]  block[' + idx + ']', hasH1 ? 'H1' : '--', JSON.stringify(txt), '| parent:', parentCls);
+    });
+
     /* filter out non-slide blocks */
     return blocks.filter(function (block) {
       var c = block.querySelector('.block-content');
@@ -108,8 +142,7 @@
             setTimeout(doPass, 300);
           } else {
             scrollAll(0);
-            primary.scrollTop = origScroll;
-            setTimeout(callback, 300);
+            setTimeout(callback, 400);
           }
         }
       }
