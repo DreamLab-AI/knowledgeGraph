@@ -365,13 +365,12 @@ public:: true
     {
       "@id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:ngm:class:embodied-ai",
-      "label": "Embodied AI"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:communication-interface",

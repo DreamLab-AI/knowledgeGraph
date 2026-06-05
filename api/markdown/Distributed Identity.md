@@ -509,17 +509,19 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-preserving-technology",
-      "label": "Privacy-Preserving Technology"
-    },
-    {
-      "@id": "urn:ngm:class:decentralised-web",
-      "label": "Decentralised Web"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:credential-schema",

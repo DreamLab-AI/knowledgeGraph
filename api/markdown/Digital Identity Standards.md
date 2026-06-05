@@ -101,13 +101,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standards",
-      "label": "Technical Standards"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:conformance-testing",

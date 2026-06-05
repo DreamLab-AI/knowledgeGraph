@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:rb-0047-feedback-control",
-      "label": "rb 0047 feedback control"
     }
   ],
   "relations": {
@@ -67,6 +63,9 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
       {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
     ]
   },
   "quality": 0.35,

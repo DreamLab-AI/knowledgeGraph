@@ -443,15 +443,14 @@ public:: true
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
       "@id": "urn:ngm:class:hardware-abstraction-layer",
       "label": "Hardware Abstraction Layer"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:command-buffer",

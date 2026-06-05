@@ -60,8 +60,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:trusted-timestamping",
-      "label": "Trusted Timestamping"
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
     }
   ],
   "relations": {

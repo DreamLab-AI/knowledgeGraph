@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:control-algorithm",
-      "label": "ControlAlgorithms"
     }
   ],
   "entityType": "Class",
@@ -40,7 +36,12 @@
         "label": "Adaptive Control"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:feedback-control",

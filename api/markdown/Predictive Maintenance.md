@@ -333,14 +333,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -574,6 +566,12 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-55000",
         "label": "ISO 55000"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Infra Software Engineering"
       }
     ]
   },

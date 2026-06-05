@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:high-availability",
         "label": "High Availability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
       }
     ]
   },

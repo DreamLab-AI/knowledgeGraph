@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:peerto-peer-protocol",
       "label": "Peer-to-Peer Protocol"
-    },
-    {
-      "id": "urn:ngm:class:distributed-system-protocol",
-      "label": "Distributed System Protocol"
     }
   ],
   "entityType": "Class",
@@ -210,7 +206,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-system-protocol",
+        "label": "Distributed System Protocol"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

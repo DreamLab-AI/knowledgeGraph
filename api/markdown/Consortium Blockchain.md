@@ -538,14 +538,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:federated-system",
-      "label": "Federated System"
-    },
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -827,6 +819,12 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       {
         "@id": "urn:ngm:class:linux-foundation-decentralized-trust",
         "label": "Linux Foundation Decentralized Trust"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:federated-system",
+        "label": "Federated System"
       }
     ]
   },

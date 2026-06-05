@@ -162,10 +162,6 @@ alias:: ComputerVision
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:vision-processing",
-      "label": "Vision Processing"
     }
   ],
   "relations": {

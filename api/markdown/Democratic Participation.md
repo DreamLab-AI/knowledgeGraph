@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:digital-governance",
-      "label": "Digital Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:governance-framework",

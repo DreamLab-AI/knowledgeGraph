@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:signature-algorithm",

@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
-    },
-    {
-      "id": "urn:ngm:class:logistics-management",
-      "label": "Logistics Management"
     }
   ],
   "entityType": "Class",
@@ -182,7 +174,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gs1-epcis",

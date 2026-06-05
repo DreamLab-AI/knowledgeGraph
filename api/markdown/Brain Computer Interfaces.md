@@ -542,14 +542,6 @@ alias:: Brain-Computer Interfaces
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:assistive-technology",
-      "label": "Assistive Technology"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -827,6 +819,16 @@ alias:: Brain-Computer Interfaces
       {
         "@id": "urn:ngm:class:unesco-neurotech-recommendation",
         "label": "UNESCO Neurotech Recommendation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
       }
     ]
   },

@@ -449,17 +449,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation And Planning"
-    },
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation And Planning"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:belief-state",

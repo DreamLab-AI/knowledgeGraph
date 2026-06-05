@@ -365,10 +365,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "SC Content And Assets"
-    },
-    {
-      "@id": "urn:ngm:class:simulation",
-      "label": "Simulation"
     }
   ],
   "relations": {
@@ -610,6 +606,12 @@ public:: true
       {
         "@id": "urn:ngm:class:siggraph",
         "label": "SIGGRAPH"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ]
   },

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
-    },
-    {
-      "@id": "urn:ngm:class:technical-architecture",
-      "label": "Technical Architecture"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:unified-metaverse",
         "label": "Unified Metaverse"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-architecture",
+        "label": "Technical Architecture"
       }
     ]
   },

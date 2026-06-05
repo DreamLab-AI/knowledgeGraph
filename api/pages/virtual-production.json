@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:real-time-rendering",
-      "label": "Real Time Rendering"
     }
   ],
   "entityType": "Class",
@@ -43,7 +39,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:game-engine",

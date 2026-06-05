@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:federated-system",
-      "label": "Federated System"
-    },
-    {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -154,7 +146,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-system",
+        "label": "Federated System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:azure-confidential-consortium-framework",

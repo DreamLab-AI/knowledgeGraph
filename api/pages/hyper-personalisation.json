@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:ngm:class:customer-experience-management",
-      "label": "Customer Experience Management"
     }
   ],
   "entityType": "Class",
@@ -146,7 +142,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:customer-experience-management",
+        "label": "Customer Experience Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:embeddings",

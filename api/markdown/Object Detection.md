@@ -62,13 +62,15 @@ alias:: ObjectDetection
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "requires": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}

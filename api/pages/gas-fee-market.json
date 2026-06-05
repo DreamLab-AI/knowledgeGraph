@@ -8,10 +8,6 @@
   "definition": "The Gas Fee Market is the economic mechanism governing blockchain transaction costs, where users bid gas fees to prioritise transaction processing. Governed by EIP-1559 on Ethereum, it separates a burned base fee from an optional priority tip, creating a market-based congestion control system essential for NFT trades, smart contract execution, and virtual asset transfers in spatial computing platforms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
       "id": "urn:ngm:class:blockchain-economics",
       "label": "Blockchain Economics"
     }
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

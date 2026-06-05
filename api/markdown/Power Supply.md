@@ -62,10 +62,6 @@ alias:: PowerSupply
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-component",
-      "label": "Hardware Component"
     }
   ],
   "relations": {
@@ -83,6 +79,12 @@ alias:: PowerSupply
       {
         "@id": "urn:ngm:class:infrastructure",
         "label": "infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
       }
     ]
   },

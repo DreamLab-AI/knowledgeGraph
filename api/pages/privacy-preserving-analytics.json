@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:data-analysis",
-      "label": "Data Analysis"
-    },
-    {
-      "id": "urn:ngm:class:privacy-enhancing-technologies",
-      "label": "Privacy Enhancing Technologies"
     }
   ],
   "entityType": "Class",
@@ -146,7 +138,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gradient-compression",

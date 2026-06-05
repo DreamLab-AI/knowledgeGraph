@@ -650,17 +650,19 @@ alias:: Digital-Signature, DigitalSignature
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:asymmetric-cryptography",
-      "label": "Asymmetric Cryptography"
-    },
-    {
-      "@id": "urn:ngm:class:authentication-mechanism",
-      "label": "Authentication Mechanism"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:key-generation-algorithm",

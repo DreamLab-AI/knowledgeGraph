@@ -430,17 +430,19 @@ alias:: Privacy-Preserving Analytics
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:data-analysis",
-      "label": "Data Analysis"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-enhancing-technologies",
-      "label": "Privacy Enhancing Technologies"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:homomorphic-encryption",

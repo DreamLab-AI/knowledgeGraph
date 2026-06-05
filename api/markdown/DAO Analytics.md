@@ -505,17 +505,19 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-analytics",
-      "label": "Blockchain Analytics"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:boardroom",

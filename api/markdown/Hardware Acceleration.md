@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:computing-infrastructure",
-      "label": "Computing Infrastructure"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-vr-performance",
         "label": "Real-Time VR Performance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
       }
     ]
   },

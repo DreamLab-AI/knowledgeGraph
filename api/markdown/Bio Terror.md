@@ -449,17 +449,19 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:biosecurity",
-      "label": "Biosecurity"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:agroterrorism",

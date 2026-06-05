@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:data-structure",
-      "label": "Data Structure"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:fast-query-response",
         "label": "Fast Query Response"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
       }
     ]
   },

@@ -53,13 +53,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:standards",
-      "label": "Standards"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
     "requires": [
       {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}

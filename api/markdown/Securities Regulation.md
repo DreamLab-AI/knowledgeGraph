@@ -409,10 +409,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
       "label": "BC DeFi And Economics"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
@@ -726,6 +722,12 @@ public:: true
       {
         "@id": "urn:ngm:class:sec",
         "label": "SEC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
       }
     ]
   },

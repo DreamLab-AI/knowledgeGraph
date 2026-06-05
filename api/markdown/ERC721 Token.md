@@ -54,13 +54,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:non-fungible-token-nft",
-      "label": "Non-Fungible Token (NFT)"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
+    ],
     "hasPart": [
       {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}

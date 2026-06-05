@@ -392,15 +392,17 @@ alias:: DataLayer
       "label": "Data Management"
     },
     {
-      "@id": "urn:ngm:class:architectural-layer",
-      "label": "Architectural Layer"
-    },
-    {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Infra Network And Comms"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:architectural-layer",
+        "label": "Architectural Layer"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:cache-layer",

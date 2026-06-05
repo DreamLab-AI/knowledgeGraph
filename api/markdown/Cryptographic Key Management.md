@@ -89,10 +89,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
     }
   ],
   "relations": {
@@ -112,6 +108,12 @@ public:: true
       {
         "@id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ]
   },

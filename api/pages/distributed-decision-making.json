@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:dc-workspace-tools",
       "label": "Workspace Tools"
-    },
-    {
-      "id": "urn:ngm:class:collective-intelligence",
-      "label": "Collective Intelligence"
-    },
-    {
-      "id": "urn:ngm:class:coordination-mechanisms",
-      "label": "Coordination Mechanisms"
     }
   ],
   "entityType": "Class",
@@ -130,7 +122,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:commit-reveal-schemes",

@@ -111,13 +111,15 @@ alias:: TC-0001-telecollaboration-domain, TelecollaborationDomain
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
+      }
+    ],
     "hasPart": [
       {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
       {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},

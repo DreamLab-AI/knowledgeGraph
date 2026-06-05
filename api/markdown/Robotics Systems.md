@@ -105,10 +105,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "relations": {
@@ -130,6 +126,9 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
       {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:technology-domain", "label": "Technology Domain"}
     ]
   },
   "quality": 0.8,

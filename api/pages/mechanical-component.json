@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:kinematic-chain",
       "label": "Kinematic Chain"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -190,7 +186,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Infra Software Engineering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:additive-manufacturing",

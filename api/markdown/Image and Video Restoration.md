@@ -339,10 +339,6 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:image-processing",
-      "label": "Image Processing"
-    },
-    {
       "@id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
@@ -578,6 +574,12 @@ public:: true
       {
         "@id": "urn:ngm:class:pirm-challenge",
         "label": "PIRM Challenge"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
       }
     ]
   },

@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:notification-system",

@@ -325,10 +325,6 @@ public:: true
     {
       "@id": "urn:ngm:class:data-quality",
       "label": "Data Quality"
-    },
-    {
-      "@id": "urn:ngm:class:enterprise-architecture",
-      "label": "Enterprise Architecture"
     }
   ],
   "relations": {
@@ -594,6 +590,12 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c-prov",
         "label": "W3C PROV"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
       }
     ]
   },

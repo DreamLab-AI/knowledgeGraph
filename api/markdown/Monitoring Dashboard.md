@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:data-visualisation",
-      "label": "Data Visualisation"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:operational-intelligence",
         "label": "Operational Intelligence"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
     ]
   },
   "quality": 0.5,

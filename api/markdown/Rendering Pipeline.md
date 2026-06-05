@@ -432,10 +432,6 @@ alias:: RenderingPipeline
       "label": "Display and Rendering"
     },
     {
-      "@id": "urn:ngm:class:gpu-compute",
-      "label": "GPU Compute"
-    },
-    {
       "@id": "urn:ngm:class:rasterization",
       "label": "Rasterisation"
     }
@@ -743,6 +739,12 @@ alias:: RenderingPipeline
       {
         "@id": "urn:ngm:class:w3-c-web-gpu",
         "label": "W3C WebGPU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ]
   },

@@ -469,14 +469,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "@id": "urn:ngm:class:monte-carlo-methods",
-      "label": "Monte Carlo Methods"
     }
   ],
   "relations": {
@@ -750,6 +742,16 @@ public:: true
       {
         "@id": "urn:ngm:class:pbrt-standard",
         "label": "PBRT Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ]
   },

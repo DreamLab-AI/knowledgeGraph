@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability-tool",
-      "label": "Sustainability Tool"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability-tool",
+        "label": "Sustainability Tool"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:activity-data",

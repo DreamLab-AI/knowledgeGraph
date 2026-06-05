@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-transaction",
-      "label": "Blockchain Transaction"
     }
   ],
   "entityType": "Class",
@@ -48,7 +44,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:stablecoin",

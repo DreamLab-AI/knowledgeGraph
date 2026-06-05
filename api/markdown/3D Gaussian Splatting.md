@@ -74,13 +74,15 @@ alias:: TELE-051-3d-gaussian-splatting
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-      "label": "TELE-050-neural-rendering-telepresence"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+        "label": "TELE-050-neural-rendering-telepresence"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:differentiable-rendering",

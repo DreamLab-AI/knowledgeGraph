@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    },
-    {
-      "id": "urn:ngm:class:design-thinking",
-      "label": "Design Thinking"
     }
   ],
   "entityType": "Class",
@@ -178,7 +170,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Infra Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:adobe-creative-cloud",

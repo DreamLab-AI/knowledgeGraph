@@ -62,10 +62,6 @@ alias:: TELE-253-cryptocurrency-remuneration
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:cryptocurrency",
-      "label": "Cryptocurrency"
     }
   ],
   "quality": 0.75,
@@ -97,6 +93,9 @@ alias:: TELE-253-cryptocurrency-remuneration
       {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
       {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"},
       {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
     ]
   }
 }

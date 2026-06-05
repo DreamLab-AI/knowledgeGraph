@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:3-d-asset-standard",
-      "label": "3D Asset Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-platform-3-d-content",

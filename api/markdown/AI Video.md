@@ -477,13 +477,15 @@ public:: true
     {
       "@id": "urn:ngm:class:deep-generative-model",
       "label": "Deep Generative Model"
-    },
-    {
-      "@id": "urn:ngm:class:synthetic-media",
-      "label": "Synthetic Media"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:classifier-free-guidance",

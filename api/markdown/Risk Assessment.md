@@ -355,10 +355,6 @@ public:: true
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:audit",
-      "label": "Audit"
-    },
-    {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"
     }
@@ -578,6 +574,12 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
       }
     ]
   },

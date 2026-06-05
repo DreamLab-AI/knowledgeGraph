@@ -689,17 +689,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:governance-structure",
-      "label": "Governance Structures"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:bvi-limited-company",

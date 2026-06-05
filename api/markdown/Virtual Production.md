@@ -2261,10 +2261,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:real-time-rendering",
-      "label": "Real Time Rendering"
     }
   ],
   "relations": {
@@ -2286,6 +2282,9 @@ public:: true
       {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
       {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"},
       {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ]
   },
   "quality": 0.8,

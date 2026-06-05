@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-      "label": "TELE-050-neural-rendering-telepresence"
     }
   ],
   "entityType": "Class",
@@ -36,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+        "label": "TELE-050-neural-rendering-telepresence"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

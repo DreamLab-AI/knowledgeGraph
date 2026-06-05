@@ -97,13 +97,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:material-definition",

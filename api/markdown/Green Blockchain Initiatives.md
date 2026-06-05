@@ -423,15 +423,14 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:esg",
-      "label": "ESG"
-    },
-    {
       "@id": "urn:ngm:class:sustainable-finance",
       "label": "Sustainable Finance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:esg", "label": "ESG"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:carbon-credits",

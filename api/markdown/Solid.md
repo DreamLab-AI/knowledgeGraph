@@ -341,13 +341,15 @@ public:: true
     {
       "@id": "urn:ngm:class:data-sovereignty",
       "label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:access-control-policy",

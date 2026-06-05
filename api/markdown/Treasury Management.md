@@ -458,14 +458,6 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -771,6 +763,12 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       {
         "@id": "urn:ngm:class:sec-form-8-k",
         "label": "SEC Form 8-K"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ]
   },

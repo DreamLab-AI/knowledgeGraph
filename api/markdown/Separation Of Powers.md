@@ -61,10 +61,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:dao-governance",
-      "label": "DAO Governance"
     }
   ],
   "relations": {
@@ -72,6 +68,12 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralized-control",
         "label": "Decentralized Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
       }
     ]
   },

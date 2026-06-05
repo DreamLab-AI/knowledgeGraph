@@ -12,10 +12,6 @@
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:audio-signal-processing",
-      "label": "Audio Signal Processing"
-    },
-    {
       "id": "urn:ngm:class:creative-ai",
       "label": "Creative AI"
     }
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:clap",

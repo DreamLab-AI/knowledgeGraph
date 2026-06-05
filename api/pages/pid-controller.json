@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "id": "urn:ngm:class:rb-0047-feedback-control",
-      "label": "rb 0047 feedback control"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

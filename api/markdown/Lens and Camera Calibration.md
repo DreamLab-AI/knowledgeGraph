@@ -469,10 +469,6 @@ public:: true
     {
       "@id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
-    },
-    {
-      "@id": "urn:ngm:class:sensor-calibration",
-      "label": "Sensor Calibration"
     }
   ],
   "relations": {
@@ -730,6 +726,12 @@ public:: true
       {
         "@id": "urn:ngm:class:open-cv-documentation",
         "label": "OpenCV Documentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
       }
     ]
   },

@@ -383,10 +383,6 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:audio-signal-processing",
-      "label": "Audio Signal Processing"
-    },
-    {
       "@id": "urn:ngm:class:creative-ai",
       "label": "Creative AI"
     }
@@ -655,6 +651,9 @@ public:: true
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"}
     ]
   },
   "quality": 0.52,

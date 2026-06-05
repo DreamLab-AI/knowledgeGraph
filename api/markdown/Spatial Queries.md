@@ -57,13 +57,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:database-query",
-      "label": "Database Query"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:location-based-search",

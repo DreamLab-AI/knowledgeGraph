@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:blockchain-recording",

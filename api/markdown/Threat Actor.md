@@ -66,10 +66,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:attack-vector",
-      "label": "Attack Vector"
     }
   ],
   "relations": {

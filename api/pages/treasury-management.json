@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -170,7 +162,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:aave",

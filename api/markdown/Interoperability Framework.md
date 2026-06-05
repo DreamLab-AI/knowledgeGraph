@@ -113,10 +113,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse-architecture",
-      "label": "Metaverse Architecture"
     }
   ],
   "relations": {

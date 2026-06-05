@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "BC Governance And Regulation"
-    },
-    {
-      "id": "urn:ngm:class:governance-structure",
-      "label": "Governance Structures"
     }
   ],
   "entityType": "Class",
@@ -170,7 +162,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:legal-wrapper-service-providers",

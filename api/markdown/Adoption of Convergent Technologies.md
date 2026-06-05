@@ -445,17 +445,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:innovation-diffusion",
-      "label": "Innovation Diffusion"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:innovation-diffusion",
+        "label": "Innovation Diffusion"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:biotech-commercialisation",

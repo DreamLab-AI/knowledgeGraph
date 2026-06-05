@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "entityType": "Class",
@@ -55,7 +51,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:actuator",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:digital-human-technology",
-      "label": "Digital Human Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:ai-synthesis",

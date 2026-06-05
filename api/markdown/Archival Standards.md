@@ -89,13 +89,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:preservation-planning",

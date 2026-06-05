@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:perception-system",
-      "label": "Perception System"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-learning",

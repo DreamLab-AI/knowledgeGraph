@@ -325,14 +325,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -546,6 +538,12 @@ public:: true
       {
         "@id": "urn:ngm:class:siggraph",
         "label": "SIGGRAPH"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ]
   },

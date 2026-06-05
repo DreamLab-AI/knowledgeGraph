@@ -65,10 +65,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:temporal-entity",
-      "label": "Temporal Entity"
     }
   ],
   "relations": {
@@ -84,6 +80,12 @@ public:: true
       {
         "@id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:temporal-entity",
+        "label": "Temporal Entity"
       }
     ]
   },

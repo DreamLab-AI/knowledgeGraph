@@ -58,13 +58,12 @@ alias:: Event-Driven Architecture
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:scalable-metaverse-infrastructure",

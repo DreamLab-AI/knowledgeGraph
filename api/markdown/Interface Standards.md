@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
       }
     ]
   },

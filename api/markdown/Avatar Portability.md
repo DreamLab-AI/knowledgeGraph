@@ -101,13 +101,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bc-token-and-asset",
+        "label": "Token and Asset"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:platform-integration",

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:software-testing",
-      "label": "Software Testing"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
     ]
   },
   "quality": 0.35,

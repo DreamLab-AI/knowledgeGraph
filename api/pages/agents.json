@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "id": "urn:ngm:class:intelligent-systems",
-      "label": "Intelligent System"
-    },
-    {
-      "id": "urn:ngm:class:cognitive-architecture",
-      "label": "Cognitive Architecture"
     }
   ],
   "entityType": "Class",
@@ -154,7 +146,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent System"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:agent2-agent-protocol",

@@ -78,10 +78,6 @@ alias:: IoT Sensors
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:internet-of-things",
-      "label": "Internet of Things"
     }
   ],
   "relations": {
@@ -93,6 +89,12 @@ alias:: IoT Sensors
       {
         "@id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ]
   },

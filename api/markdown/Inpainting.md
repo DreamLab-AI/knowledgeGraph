@@ -439,10 +439,6 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:image-editing",
-      "label": "Image Editing"
-    },
-    {
       "@id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
@@ -646,6 +642,12 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
       }
     ]
   },

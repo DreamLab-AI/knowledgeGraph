@@ -49,13 +49,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:domain-model",
-      "label": "Domain Model"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:domain-model", "label": "Domain Model"}
+    ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:reference-architecture", "label": "Reference Architecture"}
     ],

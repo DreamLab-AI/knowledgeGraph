@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:data-layer",
-      "label": "Data Layer"
     }
   ],
   "entityType": "Class",
@@ -90,7 +86,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:collaborative-technology",
-      "label": "Collaborative Technology"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:collaborative-technology",
+        "label": "Collaborative Technology"
       }
     ]
   },

@@ -77,10 +77,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
     }
   ],
   "relations": {
@@ -88,6 +84,12 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ]
   },

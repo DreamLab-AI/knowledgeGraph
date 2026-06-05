@@ -81,10 +81,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:regulatory-technology",
-      "label": "Regulatory Technology"
     }
   ],
   "relations": {
@@ -114,6 +110,12 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
       }
     ]
   },

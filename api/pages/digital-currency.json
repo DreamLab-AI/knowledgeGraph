@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:financial-technology",
-      "label": "Financial Technology"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

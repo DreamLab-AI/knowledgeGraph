@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
       }
     ]
   },

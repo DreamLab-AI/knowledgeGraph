@@ -85,13 +85,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:cybersecurity",
-      "label": "Cybersecurity"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:chain-of-custody",

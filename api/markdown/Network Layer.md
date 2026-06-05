@@ -98,10 +98,6 @@ alias:: NetworkLayer
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
-    },
-    {
-      "@id": "urn:ngm:class:architectural-layer",
-      "label": "ArchitecturalLayer"
     }
   ],
   "relations": {
@@ -144,6 +140,9 @@ alias:: NetworkLayer
         "@id": "urn:ngm:class:network-resilience",
         "label": "Network Resilience"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:architectural-layer", "label": "ArchitecturalLayer"}
     ]
   },
   "quality": 0.35,

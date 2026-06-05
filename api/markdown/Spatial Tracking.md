@@ -57,13 +57,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:motion-tracking",
-      "label": "Motion Tracking"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:immersive-vr",

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:user-query-experience",
         "label": "User Query Experience"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
       }
     ]
   },

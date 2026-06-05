@@ -538,13 +538,12 @@ alias:: FaultTolerance
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:reliability-engineering",
-      "label": "Reliability Engineering"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:checkpointing",

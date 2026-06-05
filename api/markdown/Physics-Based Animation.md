@@ -117,10 +117,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:real-time-rendering",
-      "label": "Real Time Rendering"
     }
   ],
   "relations": {
@@ -179,6 +175,9 @@ public:: true
         "@id": "urn:ngm:class:real-time-rendering-pipeline",
         "label": "Real-Time Rendering Pipeline"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ]
   },
   "quality": 0.35,

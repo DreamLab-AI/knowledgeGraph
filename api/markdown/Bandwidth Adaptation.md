@@ -367,15 +367,17 @@ public:: true
       "label": "Protocol and Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
       "@id": "urn:ngm:class:congestion-control",
       "label": "Congestion Control"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:abr-algorithm",

@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:zero-knowledge-proof",
-      "label": "Zero Knowledge Proof"
     }
   ],
   "quality": 0.5,

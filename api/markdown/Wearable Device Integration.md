@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:system-integration",
-      "label": "System Integration"
     }
   ],
   "relations": {
@@ -74,6 +70,9 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:system-integration", "label": "System Integration"}
     ]
   },
   "quality": 0.5,

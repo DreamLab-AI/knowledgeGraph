@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -45,7 +41,12 @@
         "label": "Inference"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ai-infrastructure",

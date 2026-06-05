@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-access-interface",
-      "label": "Data Access Interface"
     }
   ],
   "quality": 0.75,
@@ -82,6 +78,9 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
       {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
       {"@id": "urn:ngm:class:sparql-examples", "label": "SPARQL EXAMPLES"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"}
     ]
   }
 }

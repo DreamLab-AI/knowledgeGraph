@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:computer-science",
       "label": "Computer Science"
-    },
-    {
-      "id": "urn:ngm:class:privacy-engineering",
-      "label": "Privacy Engineering"
     }
   ],
   "entityType": "Class",
@@ -206,7 +202,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:constant-time-programming",

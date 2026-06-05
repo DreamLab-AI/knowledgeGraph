@@ -349,10 +349,6 @@ public:: true
     {
       "@id": "urn:ngm:class:cyber-physical-systems",
       "label": "Cyber Physical System"
-    },
-    {
-      "@id": "urn:ngm:class:embodied-ai",
-      "label": "Embodied AI"
     }
   ],
   "relations": {
@@ -566,6 +562,12 @@ public:: true
       {
         "@id": "urn:ngm:class:roscon",
         "label": "ROSCon"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
       }
     ]
   },

@@ -8,10 +8,6 @@
   "definition": "Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour. Methods such as LIME and SHAP generate feature-attribution scores scoped to the neighbourhood of a single query point.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
       "id": "urn:ngm:class:model-interpretability",
       "label": "Model Interpretability"
     }
@@ -40,7 +36,12 @@
         "label": "Global Explanation"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sc-content-and-assets",
+        "label": "Content and Assets"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:feature-importance",

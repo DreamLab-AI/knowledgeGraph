@@ -489,14 +489,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -742,6 +734,12 @@ public:: true
       {
         "@id": "urn:ngm:class:un-gge",
         "label": "UN GGE"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ]
   },

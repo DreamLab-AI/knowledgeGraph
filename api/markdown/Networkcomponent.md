@@ -130,10 +130,6 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
     }
   ],
   "relations": {
@@ -158,6 +154,9 @@ public:: true
       {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
       {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
     ]
   },
   "provenance": {

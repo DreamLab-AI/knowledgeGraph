@@ -464,15 +464,17 @@ alias:: EdgeComputing
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    },
-    {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Infra Network And Comms"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:data-aggregation",

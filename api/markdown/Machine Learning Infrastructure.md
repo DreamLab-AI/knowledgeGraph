@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:computing-infrastructure",
-      "label": "Computing Infrastructure"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:scalable-ai-training",
         "label": "Scalable AI Training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
       }
     ]
   },

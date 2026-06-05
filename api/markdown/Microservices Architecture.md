@@ -58,10 +58,6 @@ alias:: MicroservicesArchitecture
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "relations": {
@@ -69,6 +65,12 @@ alias:: MicroservicesArchitecture
       {
         "@id": "urn:ngm:class:scalable-applications",
         "label": "Scalable Applications"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
       }
     ]
   },

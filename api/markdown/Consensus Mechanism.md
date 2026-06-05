@@ -622,14 +622,6 @@ alias:: ConsensusMechanism
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "BC Protocol And Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:coordination-protocol",
-      "label": "Coordination Protocol"
     }
   ],
   "relations": {
@@ -895,6 +887,12 @@ alias:: ConsensusMechanism
       {
         "@id": "urn:ngm:class:nist-fips-204-post-quantum",
         "label": "NIST FIPS 204 Post-Quantum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
       }
     ]
   },

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "id": "urn:ngm:class:security-services",
-      "label": "Security Service"
     }
   ],
   "entityType": "Class",
@@ -48,7 +44,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-services",
+        "label": "Security Services"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

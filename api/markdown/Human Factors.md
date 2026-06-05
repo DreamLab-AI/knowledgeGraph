@@ -149,14 +149,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:ngm:class:interaction-design",
-      "label": "Interaction Design"
-    },
-    {
-      "@id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering"
     }
   ],
   "relations": {
@@ -216,6 +208,16 @@ public:: true
       {
         "@id": "urn:ngm:class:user-acceptance",
         "label": "User Acceptance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
       }
     ]
   },

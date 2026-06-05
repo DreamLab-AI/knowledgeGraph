@@ -145,14 +145,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:carbon-credits",
-      "label": "CarbonCredit"
-    },
-    {
-      "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
     }
   ],
   "relations": {
@@ -208,6 +200,12 @@ public:: true
       {
         "@id": "urn:ngm:class:carbon-accounting",
         "label": "CarbonAccounting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "CarbonCredit"
       }
     ]
   },

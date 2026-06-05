@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:bitcoin-layer-2",
       "label": "Bitcoin Layer 2"
-    },
-    {
-      "id": "urn:ngm:class:chaumian-ecash",
-      "label": "Chaumian Ecash"
     }
   ],
   "entityType": "Class",
@@ -130,7 +126,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:chaumian-ecash",
+        "label": "Chaumian Ecash"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blind-signatures",

@@ -12,10 +12,6 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
-    },
-    {
       "id": "urn:ngm:class:governance-infrastructure",
       "label": "Governance Infrastructure"
     }
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:delegated-voting",

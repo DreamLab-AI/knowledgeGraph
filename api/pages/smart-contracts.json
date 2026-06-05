@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
     }
   ],
   "entityType": "Class",
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",

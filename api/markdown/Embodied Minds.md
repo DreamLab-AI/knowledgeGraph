@@ -477,17 +477,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:philosophy-of-mind",
-      "label": "Philosophy of Mind"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:active-inference",

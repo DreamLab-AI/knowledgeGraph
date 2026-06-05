@@ -50,10 +50,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:control-algorithm",
-      "label": "ControlAlgorithms"
     }
   ],
   "relations": {
@@ -71,6 +67,9 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
       {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}
     ]
   },
   "provenance": {

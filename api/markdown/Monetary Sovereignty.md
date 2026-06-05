@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:economic-governance",
-      "label": "Economic Governance"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:national-financial-control",
         "label": "National Financial Control"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"}
     ]
   },
   "quality": 0.5,

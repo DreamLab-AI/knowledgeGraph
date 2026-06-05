@@ -229,13 +229,15 @@ public:: true
     {
       "@id": "urn:ngm:class:force-control",
       "label": "Force Control"
-    },
-    {
-      "@id": "urn:ngm:class:compliance-control",
-      "label": "Compliance Control"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:admittance-transfer-function",

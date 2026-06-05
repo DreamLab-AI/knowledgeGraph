@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:measurement-methodology",

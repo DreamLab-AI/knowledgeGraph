@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-component",
-      "label": "Hardware Component"
     }
   ],
   "quality": 0.35,
@@ -66,6 +62,12 @@ public:: true
       {
         "@id": "urn:ngm:class:robotics",
         "label": "robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
       }
     ]
   }

@@ -72,10 +72,6 @@ alias:: TELE-052-neural-radiance-fields
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:real-time-rendering-pipeline",
-      "label": "Real-Time Rendering Pipeline"
     }
   ],
   "relations": {

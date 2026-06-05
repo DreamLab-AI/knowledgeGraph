@@ -74,10 +74,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "relations": {
@@ -92,7 +88,8 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
       {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
       {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"},
-      {"@id": "urn:ngm:class:telecollaboration-domain", "label": "Telecollaboration Domain"}
+      {"@id": "urn:ngm:class:telecollaboration-domain", "label": "Telecollaboration Domain"},
+      {"@id": "urn:ngm:class:technology-domain", "label": "Technology Domain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:artificial-intelligence-domain", "label": "Artificial Intelligence Domain"},

@@ -82,13 +82,15 @@ alias:: Analog-to-Digital Converter
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Robo Perception"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:resolution-bits",

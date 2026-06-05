@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:query-processor",
-      "label": "Query Processor"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:semantic-data-retrieval",
         "label": "Semantic Data Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
       }
     ]
   },

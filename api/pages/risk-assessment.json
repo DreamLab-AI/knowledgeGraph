@@ -12,10 +12,6 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:audit",
-      "label": "Audit"
-    },
-    {
       "id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"
     }
@@ -138,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ai-incident-database",

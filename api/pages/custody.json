@@ -8,8 +8,8 @@
   "definition": "The holding and safekeeping of assets and the keys that control them, defining who has the authority to move funds on behalf of an owner.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:custody-infrastructure",
-      "label": "Custody Infrastructure"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",
@@ -31,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -402,14 +402,6 @@ alias:: ColdChainMonitoring
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:logistics-management",
-      "label": "Logistics Management"
     }
   ],
   "relations": {
@@ -727,6 +719,12 @@ alias:: ColdChainMonitoring
       {
         "@id": "urn:ngm:class:who-evm",
         "label": "WHO EVM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
       }
     ]
   },

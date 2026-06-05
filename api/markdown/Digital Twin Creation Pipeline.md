@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:3-d-content-pipeline",
-      "label": "3D Content Pipeline"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-scanning",

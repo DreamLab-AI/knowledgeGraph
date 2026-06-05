@@ -66,15 +66,14 @@ alias:: TELE-203-haptic-feedback-telepresence
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:haptic-feedback",
-      "label": "Haptic Feedback"
     }
   ],
   "quality": 0.75,
   "qualityScore": 0.75,
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
     "partOf": [
       {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
       {"@id": "urn:ngm:class:telecollaboration-and-telepresence", "label": "Telecollaboration and Telepresence"}

@@ -12,10 +12,6 @@
       "label": "Legal and Regulatory"
     },
     {
-      "id": "urn:ngm:class:enterprise-risk-management",
-      "label": "Enterprise Risk Management"
-    },
-    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Infra Security And Identity"
     }
@@ -178,7 +174,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:audit-management-system",

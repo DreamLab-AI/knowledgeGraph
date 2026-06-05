@@ -12,10 +12,6 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:anti-money-laundering",
-      "label": "Anti-Money Laundering"
-    },
-    {
       "id": "urn:ngm:class:counter-terrorist-financing",
       "label": "Counter-Terrorist Financing"
     }
@@ -154,7 +150,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain-address-attribution",

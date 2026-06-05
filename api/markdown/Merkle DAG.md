@@ -24,7 +24,6 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"},
     {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
   ],
   "relations": {
@@ -38,6 +37,9 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
       {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"}
     ]
   },
   "quality": 0.8

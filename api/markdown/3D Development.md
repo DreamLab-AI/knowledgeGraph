@@ -85,13 +85,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:software-development",
-      "label": "Software Development"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-graphics-standard",

@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:healthcare-technology",
-      "label": "Healthcare Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:structured-healthcare-innovation",

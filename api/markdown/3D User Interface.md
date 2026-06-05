@@ -93,17 +93,19 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:interaction-design",
-      "label": "Interaction Design"
-    },
-    {
-      "@id": "urn:ngm:class:user-interface",
-      "label": "User Interface"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:gaze-tracking",

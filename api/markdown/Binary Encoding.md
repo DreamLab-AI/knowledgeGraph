@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-format",
-      "label": "Data Format"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:encoding-rules",

@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:asymmetric-cryptography",
-      "label": "Asymmetric Cryptography"
-    },
-    {
-      "id": "urn:ngm:class:authentication-mechanism",
-      "label": "Authentication Mechanism"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:base58-encoding",

@@ -468,10 +468,6 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:cryptography-security-and-privacy",
-      "label": "Cryptography Security and Privacy"
-    },
-    {
       "@id": "urn:ngm:class:dao",
       "label": "DAO"
     }
@@ -748,6 +744,9 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
         "@id": "urn:ngm:class:open-zeppelin-governor-standard",
         "label": "OpenZeppelin Governor Standard"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
     ]
   },
   "quality": 0.52,

@@ -82,10 +82,6 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
     }
   ],
   "relations": {
@@ -121,6 +117,12 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
       {
         "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
       }
     ]
   },

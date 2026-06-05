@@ -479,10 +479,6 @@ public:: true
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:enterprise-risk-management",
-      "label": "Enterprise Risk Management"
-    },
-    {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Infra Security And Identity"
     }
@@ -790,6 +786,12 @@ public:: true
       {
         "@id": "urn:ngm:class:sec",
         "label": "SEC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
       }
     ]
   },

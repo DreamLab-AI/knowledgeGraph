@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:inclusive-design",
-      "label": "Inclusive Design"
-    },
-    {
-      "id": "urn:ngm:class:universal-design",
-      "label": "Universal Design"
     }
   ],
   "entityType": "Class",
@@ -52,7 +44,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

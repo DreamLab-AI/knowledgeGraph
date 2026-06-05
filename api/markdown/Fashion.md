@@ -323,15 +323,14 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:creative-industries",
-      "label": "Creative Industries"
-    },
-    {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:creative-industries", "label": "Creative Industries"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:ai-styling",

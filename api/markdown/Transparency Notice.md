@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-disclosure",
-      "label": "Privacy Disclosure"
     }
   ],
   "qualityScore": 0.7,

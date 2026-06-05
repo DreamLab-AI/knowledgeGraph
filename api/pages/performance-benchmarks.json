@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:software-testing",
-      "label": "Software Testing"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:ngm:class:monte-carlo-methods",
-      "label": "Monte Carlo Methods"
     }
   ],
   "entityType": "Class",
@@ -174,7 +166,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ai-upscaling",

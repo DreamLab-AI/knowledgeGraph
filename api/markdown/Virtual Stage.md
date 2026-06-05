@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:production-facility",
-      "label": "Production Facility"
     }
   ],
   "relations": {
@@ -76,6 +72,9 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:production-facility", "label": "Production Facility"}
     ]
   },
   "provenance": {

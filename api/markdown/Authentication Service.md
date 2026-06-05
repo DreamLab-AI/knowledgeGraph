@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:security-services",
-      "label": "Security Service"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-services",
+        "label": "Security Services"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:authorisation",

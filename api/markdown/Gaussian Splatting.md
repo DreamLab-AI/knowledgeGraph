@@ -309,13 +309,15 @@ public:: true
     {
       "@id": "urn:ngm:class:3-d-scene-reconstruction",
       "label": "3D Scene Reconstruction"
-    },
-    {
-      "@id": "urn:ngm:class:differentiable-rendering",
-      "label": "Differentiable Rendering"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:adaptive-densification",

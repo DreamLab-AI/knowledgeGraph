@@ -90,10 +90,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:mean-absolute-error",
-      "label": "Mean Absolute Error"
     }
   ],
   "relations": {

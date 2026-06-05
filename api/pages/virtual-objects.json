@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "entityType": "Class",
@@ -45,7 +41,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:nft",

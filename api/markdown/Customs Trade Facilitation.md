@@ -401,14 +401,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:trade-finance",
-      "label": "Trade Finance"
     }
   ],
   "relations": {
@@ -670,6 +662,16 @@ public:: true
       {
         "@id": "urn:ngm:class:wto-trade-facilitation-agreement",
         "label": "WTO Trade Facilitation Agreement"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
       }
     ]
   },

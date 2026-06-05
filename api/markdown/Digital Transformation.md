@@ -82,13 +82,15 @@ alias:: DigitalTransformation
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:organizational-change",
-      "label": "Organizational Change"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:organizational-change",
+        "label": "Organizational Change"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:change-management",

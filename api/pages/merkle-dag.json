@@ -8,10 +8,6 @@
   "definition": "A Merkle Directed Acyclic Graph (DAG) is a data structure combining Merkle tree hash-linking with a generalised directed acyclic graph topology, allowing nodes to have multiple parents and enabling content-addressed, tamper-evident storage of arbitrary graph-shaped data. Unlike a binary Merkle tree, each node's cryptographic hash is derived from all its children, forming a unique, immutable identifier for any subgraph.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:data-structure",
-      "label": "Data Structure"
-    },
-    {
       "id": "urn:ngm:class:content-addressing",
       "label": "Content Addressing"
     }
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",

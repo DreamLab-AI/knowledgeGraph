@@ -573,17 +573,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:ai-infrastructure-providers",

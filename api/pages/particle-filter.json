@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:monte-carlo-methods",
       "label": "Monte Carlo Method"
-    },
-    {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation And Planning"
     }
   ],
   "entityType": "Class",
@@ -138,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:imu",

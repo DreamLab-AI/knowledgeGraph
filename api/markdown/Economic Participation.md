@@ -57,13 +57,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:play-to-earn",

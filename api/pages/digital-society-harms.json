@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:sociotechnical-risk",
       "label": "Sociotechnical Risk"
-    },
-    {
-      "id": "urn:ngm:class:digital-safety",
-      "label": "Digital Safety"
     }
   ],
   "entityType": "Class",
@@ -126,7 +122,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:algorithmic-audit",

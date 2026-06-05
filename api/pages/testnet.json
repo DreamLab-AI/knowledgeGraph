@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
-    },
-    {
-      "id": "urn:ngm:class:testing-infrastructure",
-      "label": "Testing Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -122,7 +118,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:merkle-tree",

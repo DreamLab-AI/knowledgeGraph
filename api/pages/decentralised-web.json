@@ -12,10 +12,6 @@
       "label": "Network and Communication"
     },
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    },
-    {
       "id": "urn:ngm:class:sociotechnical-system",
       "label": "Sociotechnical System"
     }
@@ -182,7 +178,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:bitcoin-lightning-network",

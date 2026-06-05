@@ -469,17 +469,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:organizational-change",
-      "label": "Organisational Change"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance And Ethics"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:organizational-change",
+        "label": "Organisational Change"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:ai-strategy",

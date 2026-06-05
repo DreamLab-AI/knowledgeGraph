@@ -50,13 +50,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:hyperparameter",
-      "label": "Hyperparameter"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
     "partOf": [
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"}

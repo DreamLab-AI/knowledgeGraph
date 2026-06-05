@@ -149,13 +149,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "@id": "urn:ngm:class:intelligent-virtual-entity",
-      "label": "Intelligent Virtual Entity"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:behavior-tree",

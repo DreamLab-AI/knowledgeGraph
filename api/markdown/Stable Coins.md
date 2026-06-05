@@ -406,17 +406,15 @@ alias:: Stablecoins
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:financial-instruments",
-      "label": "Financial Instrument"
-    },
-    {
-      "@id": "urn:ngm:class:payments-infrastructure",
-      "label": "Payments Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:attestation-report",

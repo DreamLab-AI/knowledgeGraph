@@ -698,10 +698,6 @@ alias:: MechanicalComponent
     {
       "@id": "urn:ngm:class:kinematic-chain",
       "label": "Kinematic Chain"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
     }
   ],
   "relations": {
@@ -1003,6 +999,12 @@ alias:: MechanicalComponent
       {
         "@id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Infra Software Engineering"
       }
     ]
   },

@@ -4,16 +4,12 @@
   "slug": "game-theory",
   "public": true,
   "classIri": "urn:ngm:class:game-theory",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Game theory is the mathematical study of strategic interaction among rational agents, providing formal models for analysing decisions when outcomes depend on the choices of multiple actors with potentially conflicting interests. Its core concepts\u2014Nash equilibrium, dominant strategies, cooperative and non-cooperative games, mechanism design, and information economics\u2014are applied across economics, computer science, evolutionary biology, and AI system design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economics",
       "label": "Economics"
-    },
-    {
-      "id": "urn:ngm:class:mechanism-design",
-      "label": "Mechanism Design"
     }
   ],
   "entityType": "Class",
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
     "uses": [],
     "supports": [
       {

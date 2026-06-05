@@ -1257,13 +1257,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset-standards",
-      "label": "Digital Asset Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:claim-topic-registry",

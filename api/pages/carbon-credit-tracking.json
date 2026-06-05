@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:carbon-markets",
-      "label": "Carbon Markets"
-    },
-    {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chainlink-oracles",

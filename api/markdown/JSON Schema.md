@@ -33,10 +33,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:data-format-standard",
-      "label": "Data Format Standard"
     }
   ],
   "relations": {
@@ -50,6 +46,9 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:data-format", "label": "Data Format"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
     ]
   },
   "qualityScore": 0.75,

@@ -12,10 +12,6 @@
       "label": "Interaction Technology"
     },
     {
-      "id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
       "id": "urn:ngm:class:spatial-tracking",
       "label": "Spatial Tracking"
     }
@@ -60,7 +56,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

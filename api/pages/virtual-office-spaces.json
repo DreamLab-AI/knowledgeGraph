@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-workspace-tools",
       "label": "Workspace Tools"
-    },
-    {
-      "id": "urn:ngm:class:virtual-environment",
-      "label": "Virtual Environment"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:virtual-reality",

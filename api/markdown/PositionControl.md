@@ -153,14 +153,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Robo Actuation And Control"
-    },
-    {
-      "@id": "urn:ngm:class:control-algorithm",
-      "label": "ControlAlgorithm"
     }
   ],
   "relations": {
@@ -228,6 +220,12 @@ public:: true
       {
         "@id": "urn:ngm:class:trajectory-tracking",
         "label": "TrajectoryTracking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "ControlAlgorithm"
       }
     ]
   },

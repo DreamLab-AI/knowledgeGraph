@@ -33,10 +33,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "BC Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:decentralised-file-storage",
-      "label": "Decentralised file storage"
     }
   ],
   "relations": {
@@ -50,6 +46,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-file-storage", "label": "Decentralised file storage"}
     ]
   },
   "qualityScore": 0.75,

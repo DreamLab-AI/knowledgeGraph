@@ -454,10 +454,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     {
       "@id": "urn:ngm:class:decentralised-identity",
       "label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-enhancing-technologies",
-      "label": "Privacy-Enhancing Technology"
     }
   ],
   "relations": {
@@ -779,6 +775,12 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
       }
     ]
   },

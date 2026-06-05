@@ -8,10 +8,6 @@
   "definition": "Custody infrastructure refers to the technological, operational, and regulatory systems that enable the secure holding, management, and transfer of digital assets on behalf of third parties, encompassing hardware security modules, multi-signature schemes, key management systems, cold storage vaults, and the compliance workflows that satisfy fiduciary and regulatory obligations. It is the institutional-grade equivalent of a traditional custodian bank for blockchain-native assets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-infrastructure",
-      "label": "Digital Asset Infrastructure"
-    },
-    {
       "id": "urn:ngm:class:custody",
       "label": "Custody"
     }
@@ -26,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hardware-security-module",

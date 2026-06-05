@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:data-quality",
       "label": "Data Quality"
-    },
-    {
-      "id": "urn:ngm:class:enterprise-architecture",
-      "label": "Enterprise Architecture"
     }
   ],
   "entityType": "Class",
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:apache-kafka",

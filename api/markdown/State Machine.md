@@ -341,13 +341,15 @@ public:: true
     {
       "@id": "urn:ngm:class:automata-theory",
       "label": "Automata Theory"
-    },
-    {
-      "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:accepting-state",

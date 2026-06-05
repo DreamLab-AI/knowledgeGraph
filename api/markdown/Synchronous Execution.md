@@ -78,13 +78,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:execution-model",
-      "label": "Execution Model"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:asynchronous-execution", "label": "Asynchronous Execution"},
       {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}

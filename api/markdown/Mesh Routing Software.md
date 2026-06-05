@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-networks",
         "label": "Decentralised Networks"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ]
   },

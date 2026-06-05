@@ -134,13 +134,15 @@ alias:: RB-1018-dijkstra-algorithm
     {
       "@id": "urn:ngm:class:path-planning",
       "label": "RB-1016-path-planning"
-    },
-    {
-      "@id": "urn:ngm:class:graph-search",
-      "label": "Graph Search"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:non-negative-weights",

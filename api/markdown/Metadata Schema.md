@@ -77,10 +77,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:data-standards",
-      "label": "Data Standard"
     }
   ],
   "relations": {
@@ -110,6 +106,12 @@ public:: true
       {
         "@id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standard"
       }
     ]
   },

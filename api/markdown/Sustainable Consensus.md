@@ -397,17 +397,19 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:algorand-pure-proof-of-stake",

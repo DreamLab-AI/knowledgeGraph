@@ -140,15 +140,17 @@ alias:: RB-1015-kalman-filter
       "label": "Navigation and Planning"
     },
     {
-      "@id": "urn:ngm:class:bayes-filter",
-      "label": "Bayes Filter"
-    },
-    {
       "@id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:gaussian-noise-assumption",

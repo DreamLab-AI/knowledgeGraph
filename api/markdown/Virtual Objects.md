@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "relations": {
@@ -74,6 +70,9 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
     ]
   },
   "provenance": {

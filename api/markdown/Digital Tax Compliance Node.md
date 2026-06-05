@@ -129,10 +129,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy-infrastructure",
-      "label": "Virtual Economy Infrastructure"
     }
   ],
   "relations": {

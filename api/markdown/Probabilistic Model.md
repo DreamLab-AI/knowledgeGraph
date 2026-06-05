@@ -353,10 +353,6 @@ public:: true
     {
       "@id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
-    },
-    {
-      "@id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification"
     }
   ],
   "relations": {

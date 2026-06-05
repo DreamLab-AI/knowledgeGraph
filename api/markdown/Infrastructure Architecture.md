@@ -58,10 +58,6 @@ alias:: InfrastructureArchitecture
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:technical-architecture",
-      "label": "Technical Architecture"
     }
   ],
   "relations": {
@@ -69,6 +65,12 @@ alias:: InfrastructureArchitecture
       {
         "@id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-architecture",
+        "label": "Technical Architecture"
       }
     ]
   },

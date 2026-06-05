@@ -62,10 +62,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
     }
   ],
   "quality": 0.5,
@@ -101,6 +97,12 @@ public:: true
       {
         "@id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ]
   }

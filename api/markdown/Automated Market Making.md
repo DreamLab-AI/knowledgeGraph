@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:price-oracle-integration",

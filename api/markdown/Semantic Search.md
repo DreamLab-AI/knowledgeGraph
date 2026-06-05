@@ -311,10 +311,6 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:knowledge-retrieval",
-      "label": "Knowledge Retrieval"
-    },
-    {
       "@id": "urn:ngm:class:search-technology",
       "label": "Search Technology"
     }
@@ -538,6 +534,12 @@ public:: true
       {
         "@id": "urn:ngm:class:trec",
         "label": "TREC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
       }
     ]
   },

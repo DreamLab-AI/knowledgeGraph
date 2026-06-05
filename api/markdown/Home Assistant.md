@@ -473,14 +473,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
     }
   ],
   "relations": {
@@ -838,6 +830,12 @@ public:: true
       {
         "@id": "urn:ngm:class:zigbee-alliance",
         "label": "Zigbee Alliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
       }
     ]
   },

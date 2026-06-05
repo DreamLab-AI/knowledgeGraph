@@ -702,17 +702,19 @@ alias:: BC-0434-blockchain-as-a-service
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
-      "@id": "urn:ngm:class:enterprise-software-platform",
-      "label": "Enterprise Software Platform"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-software-platform",
+        "label": "Enterprise Software Platform"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:blockchain-api-gateway",

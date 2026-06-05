@@ -126,13 +126,15 @@ alias:: RB-1011-cobot-safety-levels
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
-    },
-    {
-      "@id": "urn:ngm:class:safety-standard",
-      "label": "Safety Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:safety-certification",

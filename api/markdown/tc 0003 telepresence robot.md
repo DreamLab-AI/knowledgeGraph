@@ -389,17 +389,12 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:dc-telepresence",
-      "label": "DC Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:mobile-robot",
-      "label": "Mobile Robot"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:camera-system",

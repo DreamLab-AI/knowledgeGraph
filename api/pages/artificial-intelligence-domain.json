@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "entityType": "Class",
@@ -72,6 +68,10 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
       }
     ],
     "uses": [],

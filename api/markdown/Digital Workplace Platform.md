@@ -427,15 +427,17 @@ public:: true
       "label": "Workspace Tools"
     },
     {
-      "@id": "urn:ngm:class:cloud-platform",
-      "label": "Cloud Platform"
-    },
-    {
       "@id": "urn:ngm:class:dc-communication",
       "label": "DC Communication"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:ai-copilot-layer",

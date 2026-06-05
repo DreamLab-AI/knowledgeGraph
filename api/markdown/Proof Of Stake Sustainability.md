@@ -231,10 +231,6 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
-    },
-    {
       "@id": "urn:ngm:class:blockchain-sustainability",
       "label": "Blockchain Sustainability"
     }
@@ -300,6 +296,12 @@ public:: true
       {
         "@id": "urn:ngm:class:sustainable-consensus",
         "label": "Sustainable Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
       }
     ]
   },

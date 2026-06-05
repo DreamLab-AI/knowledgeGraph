@@ -49,13 +49,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:tracking-technology",
-      "label": "Tracking Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:tracking-technology",
+        "label": "Tracking Technology"
+      }
+    ],
     "hasPart": [
       {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
       {"@id": "urn:ngm:class:optical-tracking", "label": "Optical Tracking"}

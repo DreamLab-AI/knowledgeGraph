@@ -525,14 +525,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:data-engineering",
-      "label": "Data Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:graph-database",
-      "label": "Graph Databases"
     }
   ],
   "relations": {
@@ -874,6 +866,16 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c-rdf-standard",
         "label": "W3C RDF Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
       }
     ]
   },

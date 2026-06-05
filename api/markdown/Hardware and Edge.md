@@ -317,17 +317,13 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:neural-processing-unit",
-      "label": "Neural Processing Unit"
-    },
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:apple-neural-engine",

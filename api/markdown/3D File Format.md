@@ -89,13 +89,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-format-standard",
-      "label": "Data Format Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:animation-keyframes",

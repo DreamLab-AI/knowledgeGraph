@@ -533,17 +533,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:cross-scale-mapping",

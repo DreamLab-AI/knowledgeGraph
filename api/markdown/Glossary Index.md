@@ -129,13 +129,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-organization-system",
-      "label": "Knowledge Organization System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-organization-system", "label": "Knowledge Organization System"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:cross-references",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
-    },
-    {
-      "id": "urn:ngm:class:safety-standard",
-      "label": "Safety Standard"
     }
   ],
   "entityType": "Class",
@@ -44,7 +40,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

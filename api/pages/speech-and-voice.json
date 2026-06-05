@@ -12,10 +12,6 @@
       "label": "AI Research Area"
     },
     {
-      "id": "urn:ngm:class:audio-processing",
-      "label": "Audio Processing"
-    },
-    {
       "id": "urn:ngm:class:multimodal-ai",
       "label": "Multimodal AI"
     }
@@ -154,7 +150,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gpu-inference",

@@ -101,13 +101,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standards",
-      "label": "Technical Standards"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:implementation-libraries",

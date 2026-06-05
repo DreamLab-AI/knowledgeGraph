@@ -425,13 +425,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sociotechnical-risk",
       "label": "Sociotechnical Risk"
-    },
-    {
-      "@id": "urn:ngm:class:digital-safety",
-      "label": "Digital Safety"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:child-safety-harms",

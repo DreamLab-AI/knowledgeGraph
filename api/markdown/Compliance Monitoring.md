@@ -610,14 +610,6 @@ alias:: BC-0487-compliance-monitoring
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:automated-compliance",
-      "label": "Automated Compliance"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
@@ -851,6 +843,12 @@ alias:: BC-0487-compliance-monitoring
       {
         "@id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
       }
     ]
   },

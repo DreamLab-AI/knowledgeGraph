@@ -211,10 +211,6 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:financial-infrastructure",
-      "label": "Financial Infrastructure"
-    },
-    {
       "@id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }
@@ -498,6 +494,12 @@ public:: true
       {
         "@id": "urn:ngm:class:stablecoin-regulation",
         "label": "Stablecoin Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
       }
     ]
   },

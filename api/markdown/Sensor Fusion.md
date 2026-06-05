@@ -94,13 +94,15 @@ alias:: SensorFusion
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:perception-system",
-      "label": "Perception System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
     "enables": [
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
       {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}

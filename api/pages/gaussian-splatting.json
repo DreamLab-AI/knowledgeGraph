@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:3-d-scene-reconstruction",
       "label": "3D Scene Reconstruction"
-    },
-    {
-      "id": "urn:ngm:class:differentiable-rendering",
-      "label": "Differentiable Rendering"
     }
   ],
   "entityType": "Class",
@@ -150,7 +146,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:adam-optimiser",

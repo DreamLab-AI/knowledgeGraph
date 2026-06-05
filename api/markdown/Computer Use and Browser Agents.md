@@ -581,14 +581,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:intelligent-systems",
-      "label": "Intelligent System"
-    },
-    {
-      "@id": "urn:ngm:class:cognitive-architecture",
-      "label": "Cognitive Architecture"
     }
   ],
   "relations": {
@@ -870,6 +862,16 @@ public:: true
       {
         "@id": "urn:ngm:class:web-driver-bi-di-w3-c-2024",
         "label": "WebDriver BiDi (W3C 2024)"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent System"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
       }
     ]
   },

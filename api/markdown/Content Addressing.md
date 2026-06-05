@@ -182,10 +182,6 @@ alias:: ContentAddressing
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:data-layer",
-      "label": "Data Layer"
     }
   ],
   "relations": {
@@ -255,6 +251,12 @@ alias:: ContentAddressing
       {
         "@id": "urn:ngm:class:ipfs-content-addressing",
         "label": "IPFS Content Addressing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
       }
     ]
   },

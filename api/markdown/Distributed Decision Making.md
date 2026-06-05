@@ -297,17 +297,19 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-workspace-tools",
       "label": "Workspace Tools"
-    },
-    {
-      "@id": "urn:ngm:class:collective-intelligence",
-      "label": "Collective Intelligence"
-    },
-    {
-      "@id": "urn:ngm:class:coordination-mechanisms",
-      "label": "Coordination Mechanisms"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:appeal-mechanism",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:standards-body",
       "label": "Standards Body"
-    },
-    {
-      "id": "urn:ngm:class:standardization-bodies",
-      "label": "Standardization Bodies"
     }
   ],
   "entityType": "Class",
@@ -48,7 +44,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

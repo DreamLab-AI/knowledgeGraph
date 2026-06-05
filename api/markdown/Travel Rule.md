@@ -372,15 +372,17 @@ alias:: BC-0485-travel-rule
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:anti-money-laundering",
-      "label": "Anti-Money Laundering"
-    },
-    {
       "@id": "urn:ngm:class:counter-terrorist-financing",
       "label": "Counter-Terrorist Financing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:beneficiary-information-requirement",

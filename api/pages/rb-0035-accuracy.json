@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:accuracy",
-      "label": "Accuracy"
     }
   ],
   "entityType": "Class",
@@ -40,7 +36,12 @@
         "label": "rb 0036 resolution"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [

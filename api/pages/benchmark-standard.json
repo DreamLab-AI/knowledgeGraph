@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

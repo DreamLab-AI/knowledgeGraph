@@ -49,10 +49,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:hardware-component",
-      "label": "Hardware Component"
     }
   ],
   "quality": 0.35,
@@ -62,6 +58,12 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ],
     "uses": [
       {
         "@id": "urn:ngm:class:robotics-systems",

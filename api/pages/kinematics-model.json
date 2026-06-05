@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
-    },
-    {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:drake",

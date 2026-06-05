@@ -129,13 +129,15 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:carbon-emissions",

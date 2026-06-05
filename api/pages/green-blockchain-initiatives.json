@@ -12,10 +12,6 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:esg",
-      "label": "ESG"
-    },
-    {
       "id": "urn:ngm:class:sustainable-finance",
       "label": "Sustainable Finance"
     }
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chainlink-oracles",

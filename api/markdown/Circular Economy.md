@@ -342,14 +342,6 @@ alias:: CircularEconomy
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "@id": "urn:ngm:class:economic-model",
-      "label": "Economic Model"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -627,6 +619,16 @@ alias:: CircularEconomy
       {
         "@id": "urn:ngm:class:iso-59004",
         "label": "ISO 59004"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
       }
     ]
   },

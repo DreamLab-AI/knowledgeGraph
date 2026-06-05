@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -138,7 +130,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:agent-based-models",

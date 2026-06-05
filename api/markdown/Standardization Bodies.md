@@ -57,13 +57,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:standards-organization",
-      "label": "Standards Organization"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:technology-interoperability",

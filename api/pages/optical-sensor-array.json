@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:computer-vision-system",
-      "label": "Computer Vision System"
-    },
-    {
-      "id": "urn:ngm:class:imaging-parameters",
-      "label": "Imaging Parameters"
     }
   ],
   "entityType": "Class",

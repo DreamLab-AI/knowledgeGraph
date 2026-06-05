@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross-Chain Communication"
-    },
-    {
-      "id": "urn:ngm:class:interoperability-protocol",
-      "label": "Interoperability Protocol"
     }
   ],
   "entityType": "Class",
@@ -69,7 +65,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "id": "urn:ngm:class:data-security",
-      "label": "Data Security"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

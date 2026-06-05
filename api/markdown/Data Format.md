@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:data-standards",
-      "label": "Data Standards"
     }
   ],
   "relations": {

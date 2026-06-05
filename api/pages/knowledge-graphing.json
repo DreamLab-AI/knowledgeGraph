@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:data-engineering",
-      "label": "Data Engineering"
-    },
-    {
-      "id": "urn:ngm:class:graph-database",
-      "label": "Graph Databases"
     }
   ],
   "entityType": "Class",
@@ -202,7 +194,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:llama-index",

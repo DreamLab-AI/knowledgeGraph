@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "id": "urn:ngm:class:sensor-system",
-      "label": "Sensor System"
     }
   ],
   "entityType": "Class",
@@ -81,7 +77,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

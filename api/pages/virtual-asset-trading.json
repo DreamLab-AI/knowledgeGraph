@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "entityType": "Class",
@@ -44,7 +40,12 @@
     ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:nft",

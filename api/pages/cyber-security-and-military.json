@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -150,7 +142,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:command-and-control-infrastructure",

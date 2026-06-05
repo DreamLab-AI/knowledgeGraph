@@ -69,10 +69,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
     }
   ],
   "relations": {
@@ -93,6 +89,9 @@ public:: true
         "@id": "urn:ngm:class:user-identification",
         "label": "User Identification"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}
     ]
   },
   "quality": 0.5,

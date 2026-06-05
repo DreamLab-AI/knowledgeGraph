@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

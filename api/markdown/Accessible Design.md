@@ -93,17 +93,19 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:inclusive-design",
-      "label": "Inclusive Design"
-    },
-    {
-      "@id": "urn:ngm:class:universal-design",
-      "label": "Universal Design"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:assistive-technology-integration",

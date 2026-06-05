@@ -121,10 +121,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:xr-testing-infrastructure",
-      "label": "XR Testing Infrastructure"
     }
   ],
   "relations": {

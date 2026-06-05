@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:technical-standard",
-      "label": "Technical Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:reference-materials",

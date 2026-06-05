@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:automata-theory",
       "label": "Automata Theory"
-    },
-    {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
     }
   ],
   "entityType": "Class",
@@ -142,7 +138,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:paxos",

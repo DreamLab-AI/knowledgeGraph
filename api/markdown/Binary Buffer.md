@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-structure",
-      "label": "Data Structure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:buffer-management",

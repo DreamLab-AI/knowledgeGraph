@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-processing",
-      "label": "Data Processing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-platform-content",

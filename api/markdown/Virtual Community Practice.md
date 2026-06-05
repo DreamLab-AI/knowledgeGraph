@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:community-governance",
-      "label": "Community Governance"
     }
   ],
   "provenance": {
@@ -96,6 +92,12 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-world",
         "label": "Virtual World"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
       }
     ]
   }

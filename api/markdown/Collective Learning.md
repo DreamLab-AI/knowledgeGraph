@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:educational-methodology",
-      "label": "Educational Methodology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:communication-tools",

@@ -497,17 +497,12 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:actuator",

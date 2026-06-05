@@ -281,13 +281,12 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "DC Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:remote-collaboration",
-      "label": "Remote Collaboration"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:comments",

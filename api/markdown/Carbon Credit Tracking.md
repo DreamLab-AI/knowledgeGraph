@@ -497,14 +497,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:carbon-markets",
-      "label": "Carbon Markets"
-    },
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
     }
   ],
   "relations": {
@@ -750,6 +742,12 @@ public:: true
       {
         "@id": "urn:ngm:class:verra-vcs-standard",
         "label": "Verra VCS Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
       }
     ]
   },

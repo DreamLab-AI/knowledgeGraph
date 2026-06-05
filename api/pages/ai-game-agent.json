@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:ngm:class:intelligent-virtual-entity",
-      "label": "Intelligent Virtual Entity"
     }
   ],
   "entityType": "Class",
@@ -90,7 +86,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

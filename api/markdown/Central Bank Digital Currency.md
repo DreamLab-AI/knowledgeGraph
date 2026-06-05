@@ -82,13 +82,15 @@ alias:: CBDC, CentralBankDigitalCurrency
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:digital-currency",
-      "label": "Digital Currency"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:central-bank-infrastructure",

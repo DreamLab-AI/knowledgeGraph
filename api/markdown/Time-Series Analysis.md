@@ -22,13 +22,15 @@ alias:: Time Series Analysis
   "@type": "Class",
   "label": "Time-Series Analysis",
   "definition": "Time-series analysis is the statistical and computational study of data sequences indexed by time, encompassing methods for decomposition, modelling, forecasting, and anomaly detection of temporal patterns including trend, seasonality, and autocorrelation structures. Foundational techniques include ARIMA, exponential smoothing, spectral analysis, and state-space models, with deep learning approaches such as transformers and N-BEATS increasingly dominant in practice.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"},
-    {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+    {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"}
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}

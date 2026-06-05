@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:data-processing",
-      "label": "Data Processing"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

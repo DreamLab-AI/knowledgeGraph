@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:healthcare-technology",
-      "label": "Healthcare Technology"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

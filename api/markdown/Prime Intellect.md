@@ -397,10 +397,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:federated-learning",
-      "label": "Federated Learning"
     }
   ],
   "relations": {
@@ -670,6 +666,12 @@ public:: true
       {
         "@id": "urn:ngm:class:py-torch-fsdp-api",
         "label": "PyTorch FSDP API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },

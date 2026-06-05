@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "entityType": "Class",

@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:generative-content",
-      "label": "Generative Content"
     }
   ],
   "provenance": {
@@ -100,6 +96,12 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
       }
     ]
   }

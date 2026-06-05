@@ -336,10 +336,6 @@ alias:: BC-0486-regulatory-reporting
       "label": "Legal and Regulatory"
     },
     {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
-    },
-    {
       "@id": "urn:ngm:class:financial-services",
       "label": "Financial Services"
     }
@@ -567,6 +563,12 @@ alias:: BC-0486-regulatory-reporting
       {
         "@id": "urn:ngm:class:sec",
         "label": "SEC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
       }
     ]
   },

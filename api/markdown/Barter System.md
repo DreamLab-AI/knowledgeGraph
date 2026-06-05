@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:exchange-mechanism",
-      "label": "Exchange Mechanism"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:exchange-mechanism",
+        "label": "Exchange Mechanism"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:matching-algorithm",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:digital-human-technology",
-      "label": "Digital Human Technology"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

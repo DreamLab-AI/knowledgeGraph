@@ -361,10 +361,6 @@ public:: true
     {
       "@id": "urn:ngm:class:peerto-peer-protocol",
       "label": "Peer-to-Peer Protocol"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-system-protocol",
-      "label": "Distributed System Protocol"
     }
   ],
   "relations": {
@@ -550,6 +546,12 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-system-protocol",
+        "label": "Distributed System Protocol"
       }
     ]
   },

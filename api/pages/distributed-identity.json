@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:privacy-preserving-technology",
-      "label": "Privacy-Preserving Technology"
-    },
-    {
-      "id": "urn:ngm:class:decentralised-web",
-      "label": "Decentralised Web"
     }
   ],
   "entityType": "Class",
@@ -178,7 +170,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cbor",

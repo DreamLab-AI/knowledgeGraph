@@ -12,10 +12,6 @@
       "label": "Safety and Standards"
     },
     {
-      "id": "urn:ngm:class:security-standards",
-      "label": "Security Standards"
-    },
-    {
       "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
@@ -81,7 +77,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-standards",
+        "label": "Security Standards"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

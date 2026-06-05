@@ -146,14 +146,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:record-keeping-system",
-      "label": "Record-Keeping System"
-    },
-    {
-      "@id": "urn:ngm:class:data-structure",
-      "label": "Data Structure"
     }
   ],
   "relations": {
@@ -168,6 +160,9 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
       {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record-Keeping System"}
     ]
   },
   "provenance": {

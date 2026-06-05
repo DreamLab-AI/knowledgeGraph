@@ -377,14 +377,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:design-thinking",
-      "label": "Design Thinking"
     }
   ],
   "relations": {
@@ -674,6 +666,16 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c-wcag",
         "label": "W3C WCAG"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Infra Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
       }
     ]
   },

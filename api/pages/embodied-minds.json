@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
-    {
-      "id": "urn:ngm:class:philosophy-of-mind",
-      "label": "Philosophy of Mind"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:deep-reinforcement-learning",

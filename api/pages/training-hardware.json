@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:high-performance-computing",
-      "label": "High-Performance Computing"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -173,13 +173,15 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:ngm:class:sensor-system",
-      "label": "Sensor System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:electrocardiogram-sensor",

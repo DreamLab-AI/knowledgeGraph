@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:search-algorithm",
-      "label": "Search Algorithm"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}
     ]
   },
   "quality": 0.35,

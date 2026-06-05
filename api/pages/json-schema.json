@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:data-format-standard",
-      "label": "Data Format Standard"
     }
   ],
   "entityType": "Class",
@@ -40,7 +36,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

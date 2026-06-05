@@ -52,10 +52,6 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
       "@id": "urn:ngm:class:blockchain-economics",
       "label": "Blockchain Economics"
     }
@@ -67,6 +63,9 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:consensus-mechanism",

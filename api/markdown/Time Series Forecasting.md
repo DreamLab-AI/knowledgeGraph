@@ -334,13 +334,15 @@ alias:: Time-Series Forecasting
     {
       "@id": "urn:ngm:class:probabilistic-forecasting",
       "label": "Probabilistic Forecasting"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:covariates",

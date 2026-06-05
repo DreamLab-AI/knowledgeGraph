@@ -69,13 +69,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:healthcare-analytics",
-      "label": "Healthcare Analytics"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ],
     "uses": [
       {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},

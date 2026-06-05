@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:identity-management",
-      "label": "Identity Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:blockchain-anchoring",

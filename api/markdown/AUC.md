@@ -97,10 +97,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:evaluation-metric",
-      "label": "Evaluation Metric"
     }
   ],
   "quality": 0.5,
@@ -110,6 +106,12 @@ public:: true
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
-    },
-    {
-      "id": "urn:ngm:class:architectural-layer",
-      "label": "ArchitecturalLayer"
     }
   ],
   "entityType": "Class",
@@ -64,7 +60,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:architectural-layer",
+        "label": "ArchitecturalLayer"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

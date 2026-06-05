@@ -45,13 +45,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-transaction",
-      "label": "Blockchain Transaction"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "requires": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}

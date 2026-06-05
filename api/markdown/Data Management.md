@@ -53,13 +53,12 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse-technology",
-      "label": "Metaverse Technology"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"}
+    ],
     "supports": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}

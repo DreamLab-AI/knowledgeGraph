@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:encoder",
-      "label": "Encoder"
     }
   ],
   "relations": {
@@ -88,6 +84,9 @@ public:: true
       {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
     ]
   },
   "provenance": {

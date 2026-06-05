@@ -166,10 +166,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "relations": {

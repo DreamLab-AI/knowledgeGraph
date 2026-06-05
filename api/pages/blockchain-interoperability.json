@@ -12,10 +12,6 @@
       "label": "Network Component"
     },
     {
-      "id": "urn:ngm:class:network-interoperability",
-      "label": "Network Interoperability"
-    },
-    {
       "id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross Chain Communication"
     }
@@ -150,7 +146,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-interoperability",
+        "label": "Network Interoperability"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-time-locked-contract",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
     }
   ],
   "entityType": "Class",
@@ -77,7 +73,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -579,15 +579,17 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:austrian-economics",
-      "label": "Austrian Economics"
-    },
-    {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:bitcoin-standard",

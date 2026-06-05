@@ -437,13 +437,15 @@ public:: true
     {
       "@id": "urn:ngm:class:dynamical-systems",
       "label": "Dynamical System"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:filtration",

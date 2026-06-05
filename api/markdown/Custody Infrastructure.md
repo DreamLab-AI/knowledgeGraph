@@ -24,10 +24,12 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"},
     {"@id": "urn:ngm:class:custody", "label": "Custody"}
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
       {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},

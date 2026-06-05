@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:software-infrastructure",
-      "label": "Software Infrastructure"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
     ]
   },
   "quality": 0.35,

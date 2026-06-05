@@ -122,13 +122,15 @@ alias:: NetworkingLayer
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:infrastructure-architecture",
-      "label": "Infrastructure Architecture"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:data-transmission-service",

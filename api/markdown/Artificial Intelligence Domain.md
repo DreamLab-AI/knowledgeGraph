@@ -71,10 +71,6 @@ alias:: AI, AI Domain, ArtificialIntelligenceDomain
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "relations": {
@@ -93,7 +89,8 @@ alias:: AI, AI Domain, ArtificialIntelligenceDomain
     "bridgesTo": [
       {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
       {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:technology-domain", "label": "Technology Domain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},

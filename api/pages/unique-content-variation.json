@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "id": "urn:ngm:class:generative-content",
-      "label": "Generative Content"
     }
   ],
   "entityType": "Class",
@@ -35,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:procedural-generation",

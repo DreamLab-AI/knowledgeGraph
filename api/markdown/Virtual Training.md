@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:workforce-development",
-      "label": "Workforce Development"
     }
   ],
   "relations": {
@@ -76,6 +72,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-factory", "label": "Virtual Factory"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:workforce-development", "label": "Workforce Development"}
     ]
   },
   "provenance": {

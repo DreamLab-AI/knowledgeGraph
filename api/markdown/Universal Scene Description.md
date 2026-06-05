@@ -323,10 +323,6 @@ public:: true
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:asset-pipeline",
-      "label": "Asset Pipeline"
-    },
-    {
       "@id": "urn:ngm:class:3-d-file-format",
       "label": "3D File Format"
     }

@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
       "label": "DeFi and Economics"
-    },
-    {
-      "@id": "urn:ngm:class:financial-services",
-      "label": "Financial Services"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralized-exchange",

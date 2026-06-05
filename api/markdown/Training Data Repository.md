@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:data-management",
-      "label": "Data Management"
     }
   ],
   "relations": {
@@ -74,6 +70,9 @@ public:: true
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
       {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
       {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
     ]
   },
   "provenance": {

@@ -12,10 +12,6 @@
       "label": "Workspace Tools"
     },
     {
-      "id": "urn:ngm:class:cloud-platform",
-      "label": "Cloud Platform"
-    },
-    {
       "id": "urn:ngm:class:dc-communication",
       "label": "DC Communication"
     }
@@ -170,7 +166,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:confluence",

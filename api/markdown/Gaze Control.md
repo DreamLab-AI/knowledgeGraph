@@ -149,13 +149,12 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:eye-movement-controller",

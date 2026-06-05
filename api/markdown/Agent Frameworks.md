@@ -465,13 +465,15 @@ public:: true
     {
       "@id": "urn:ngm:class:llm-orchestration",
       "label": "LLM Orchestration"
-    },
-    {
-      "@id": "urn:ngm:class:workflow-engine",
-      "label": "Workflow Engine"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:agent-runtime",

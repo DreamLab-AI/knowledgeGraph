@@ -34,10 +34,6 @@ alias:: ROS2
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:middleware",
-      "label": "Middleware"
     }
   ],
   "relations": {
@@ -53,6 +49,9 @@ alias:: ROS2
     "relatedTo": [
       {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
       {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
     ]
   },
   "qualityScore": 0.75,

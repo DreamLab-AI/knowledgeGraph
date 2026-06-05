@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:community-governance",
-      "label": "Community Governance"
     }
   ],
   "entityType": "Class",
@@ -40,7 +36,12 @@
         "label": "DAO Governance"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
     "uses": [],
     "supports": [
       {

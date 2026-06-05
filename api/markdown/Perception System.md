@@ -593,10 +593,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:autonomous-system",
-      "label": "Autonomous Systems"
     }
   ],
   "relations": {

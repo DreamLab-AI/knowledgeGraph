@@ -338,14 +338,6 @@ alias:: BC-0319-micropayments
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "BC DeFi And Economics"
-    },
-    {
-      "@id": "urn:ngm:class:payment-system",
-      "label": "Payment Systems"
     }
   ],
   "relations": {
@@ -563,6 +555,16 @@ alias:: BC-0319-micropayments
       {
         "@id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "BC DeFi And Economics"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment Systems"
       }
     ]
   },

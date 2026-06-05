@@ -226,14 +226,6 @@ alias:: TELE-150-webrtc
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
     }
   ],
   "relations": {
@@ -329,6 +321,12 @@ alias:: TELE-150-webrtc
       {
         "@id": "urn:ngm:class:video-conferencing-platform",
         "label": "Video Conferencing Platform"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
       }
     ]
   },

@@ -626,17 +626,15 @@ alias:: BC-0453-ethical-sourcing
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:chain-of-custody",

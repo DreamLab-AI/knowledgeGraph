@@ -459,15 +459,17 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
-    },
-    {
       "@id": "urn:ngm:class:governance",
       "label": "Governance"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:algorithmic-capture",

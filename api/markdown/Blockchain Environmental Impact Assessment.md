@@ -149,14 +149,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:life-cycle-assessment",
-      "label": "LifeCycleAssessment"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -220,6 +212,16 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "RegulatoryCompliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       }
     ]
   },

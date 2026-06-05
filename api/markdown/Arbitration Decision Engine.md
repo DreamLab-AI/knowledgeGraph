@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:automated-dispute-resolution",
-      "label": "Automated Dispute Resolution"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:automated-dispute-resolution",
+        "label": "Automated Dispute Resolution"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:blockchain-integration",

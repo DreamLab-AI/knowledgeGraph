@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
     }
   ],
   "entityType": "Class",
@@ -146,7 +138,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chain-of-thought-reasoning",

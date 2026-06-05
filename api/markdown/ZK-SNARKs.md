@@ -53,13 +53,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:zero-knowledge-proof",
-      "label": "Zero Knowledge Proof"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:asset-tokenization",
-      "label": "Asset Tokenization"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:democratized-investment",
         "label": "Democratized Investment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
       }
     ]
   },

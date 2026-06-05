@@ -133,13 +133,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:attribute-sharing",
-      "label": "Attribute Sharing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:attribute-sharing",
+        "label": "Attribute Sharing"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:attribute-translation",

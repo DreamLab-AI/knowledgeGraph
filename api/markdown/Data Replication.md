@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:storage-systems",

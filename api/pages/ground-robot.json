@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous Systems"
-    },
-    {
-      "id": "urn:ngm:class:embodied-ai",
-      "label": "Embodied AI"
     }
   ],
   "entityType": "Class",
@@ -154,7 +150,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gazebo-simulation",

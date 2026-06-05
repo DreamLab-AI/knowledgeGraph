@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:low-latency-connectivity",
         "label": "Low Latency Connectivity"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
     ]
   },
   "quality": 0.35,

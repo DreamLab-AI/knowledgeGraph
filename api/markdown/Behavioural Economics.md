@@ -23,7 +23,7 @@ public:: true
   "definition": "Behavioural economics is an interdisciplinary field that integrates insights from cognitive psychology and social science into economic modelling, documenting systematic ways in which human decision-making deviates from the predictions of classical rational-choice theory. It explains phenomena such as loss aversion, anchoring, present bias, and herd behaviour that standard utility maximisation models cannot account for.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:austrian-economics", "label": "Austrian Economics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},

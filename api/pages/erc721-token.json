@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "id": "urn:ngm:class:non-fungible-token-nft",
-      "label": "Non-Fungible Token (NFT)"
     }
   ],
   "entityType": "Class",
@@ -78,7 +74,12 @@
         "label": "ERC1155 Token"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [

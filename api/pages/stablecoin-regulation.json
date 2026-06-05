@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:crypto-regulation",
       "label": "Crypto Regulation"
-    },
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -154,7 +150,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reserve-asset",

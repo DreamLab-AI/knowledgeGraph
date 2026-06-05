@@ -461,14 +461,6 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
-    },
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:communication-infrastructure",
-      "label": "Communication Infrastructure"
     }
   ],
   "relations": {
@@ -734,6 +726,16 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c-web-speech-api",
         "label": "W3C WebSpeech API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
       }
     ]
   },

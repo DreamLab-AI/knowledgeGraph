@@ -12,10 +12,6 @@
       "label": "Security and Identity"
     },
     {
-      "id": "urn:ngm:class:network-security",
-      "label": "Network Security"
-    },
-    {
       "id": "urn:ngm:class:applied-mathematics",
       "label": "Applied Mathematics"
     }
@@ -198,7 +194,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hardware-security-module",

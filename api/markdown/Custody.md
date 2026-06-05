@@ -60,11 +60,17 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:custody-infrastructure",
-      "label": "Custody Infrastructure"
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:private-key",

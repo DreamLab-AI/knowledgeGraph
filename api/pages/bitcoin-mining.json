@@ -13,11 +13,7 @@
     },
     {
       "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
-    },
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",
@@ -138,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:double-hashing",

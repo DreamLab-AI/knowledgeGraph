@@ -12,10 +12,6 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:image-editing",
-      "label": "Image Editing"
-    },
-    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
@@ -126,7 +122,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:classifier-free-guidance",

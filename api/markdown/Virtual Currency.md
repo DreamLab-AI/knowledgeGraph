@@ -55,10 +55,6 @@ alias:: VirtualCurrency
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "provenance": {
@@ -97,6 +93,12 @@ alias:: VirtualCurrency
       {
         "@id": "urn:ngm:class:financial-system",
         "label": "Financial System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
       }
     ]
   }

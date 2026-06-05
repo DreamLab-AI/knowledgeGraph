@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "relations": {
@@ -73,6 +69,9 @@ public:: true
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
     ]
   },
   "quality": 0.35,

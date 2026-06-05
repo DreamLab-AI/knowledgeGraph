@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:path-planning",
       "label": "RB-1016-path-planning"
-    },
-    {
-      "id": "urn:ngm:class:graph-search",
-      "label": "Graph Search"
     }
   ],
   "entityType": "Class",
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:graph-representation",

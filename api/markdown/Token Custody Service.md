@@ -117,10 +117,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset-infrastructure",
-      "label": "Digital Asset Infrastructure"
     }
   ],
   "relations": {

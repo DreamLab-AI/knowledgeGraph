@@ -345,10 +345,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "@id": "urn:ngm:class:customer-experience-management",
-      "label": "Customer Experience Management"
     }
   ],
   "relations": {
@@ -590,6 +586,12 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:customer-experience-management",
+        "label": "Customer Experience Management"
       }
     ]
   },

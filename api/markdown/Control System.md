@@ -170,10 +170,6 @@ alias:: Control Systems
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:robotic-system",
-      "label": "Robotic Systems"
     }
   ],
   "relations": {
@@ -229,6 +225,12 @@ alias:: Control Systems
       {
         "@id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
       }
     ]
   },

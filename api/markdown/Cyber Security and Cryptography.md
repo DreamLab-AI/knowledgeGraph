@@ -407,10 +407,6 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:network-security",
-      "label": "Network Security"
-    },
-    {
       "@id": "urn:ngm:class:applied-mathematics",
       "label": "Applied Mathematics"
     }
@@ -718,6 +714,12 @@ public:: true
       {
         "@id": "urn:ngm:class:oasis",
         "label": "OASIS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       }
     ]
   },

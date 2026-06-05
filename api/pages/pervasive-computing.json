@@ -8,8 +8,8 @@
   "definition": "Pervasive computing \u2014 also termed ubiquitous computing \u2014 is a paradigm in which computational capability is embedded throughout the physical environment and integrated seamlessly into everyday objects and infrastructure, such that computation becomes a background utility rather than a discrete user activity. Coined by Mark Weiser at Xerox PARC in 1991, the vision encompasses context-aware, networked devices that sense, process, and communicate without explicit user interaction. It is the conceptual precursor to the Internet of Things and ambient intelligence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ambient-computing",
-      "label": "Ambient Computing"
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
     }
   ],
   "entityType": "Class",

@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "id": "urn:ngm:class:biosecurity",
-      "label": "Biosecurity"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -126,7 +118,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:ai-protein-design",

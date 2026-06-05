@@ -55,10 +55,6 @@ alias:: TransparentDecisionMaking
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "provenance": {
@@ -67,6 +63,12 @@ alias:: TransparentDecisionMaking
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:accountability",

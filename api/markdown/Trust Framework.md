@@ -333,14 +333,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
-    },
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -570,6 +562,12 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
       }
     ]
   },

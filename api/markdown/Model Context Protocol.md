@@ -213,14 +213,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:agent-communication-protocol",
-      "label": "Agent Communication Protocol"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
     }
   ],
   "relations": {
@@ -312,6 +304,16 @@ public:: true
       {
         "@id": "urn:ngm:class:vision-claw-agentic-container",
         "label": "VisionClaw Agentic Container"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Infra Network And Comms"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
       }
     ]
   },

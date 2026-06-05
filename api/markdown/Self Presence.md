@@ -62,10 +62,6 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:presence",
-      "label": "Presence"
     }
   ],
   "relations": {

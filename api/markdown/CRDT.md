@@ -401,17 +401,15 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
-    },
-    {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network And Comms"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:causal-history-graph",

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:legal-framework",
-      "label": "Legal Framework"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-world-governance",
         "label": "Virtual World Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
       }
     ]
   },

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:robotic-system",
-      "label": "Robotic Systems"
     }
   ],
   "entityType": "Class",
@@ -77,7 +73,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

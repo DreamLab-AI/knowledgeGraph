@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:democratic-governance",
-      "label": "Democratic Governance"
     }
   ],
   "relations": {
@@ -69,6 +65,9 @@ public:: true
         "@id": "urn:ngm:class:policy-legitimacy",
         "label": "Policy Legitimacy"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"}
     ]
   },
   "quality": 0.35,

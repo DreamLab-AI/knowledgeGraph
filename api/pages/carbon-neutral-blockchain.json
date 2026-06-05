@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
-    },
-    {
-      "id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "entityType": "Class",
@@ -178,7 +170,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:carbon-offset",

@@ -470,13 +470,15 @@ alias:: Hash-Function, HashFunction
     {
       "@id": "urn:ngm:class:compression-function",
       "label": "Compression Function"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-algorithm",
-      "label": "Cryptographic Algorithm"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:compression-function",

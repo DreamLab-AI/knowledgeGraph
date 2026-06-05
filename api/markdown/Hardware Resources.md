@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:computing-infrastructure",
-      "label": "Computing Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:metaverse-access",

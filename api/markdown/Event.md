@@ -65,13 +65,12 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:temporal-entity",
-      "label": "Temporal Entity"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:temporal-entity", "label": "Temporal Entity"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:complex-event-processing",

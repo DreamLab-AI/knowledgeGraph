@@ -377,14 +377,6 @@ public:: true
     {
       "@id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
-    },
-    {
-      "@id": "urn:ngm:class:ai-agents",
-      "label": "AI Agent"
-    },
-    {
-      "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
     }
   ],
   "relations": {
@@ -618,6 +610,12 @@ public:: true
       {
         "@id": "urn:ngm:class:uk-data-protection-act-2018",
         "label": "UK Data Protection Act 2018"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agent"
       }
     ]
   },

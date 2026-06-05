@@ -348,10 +348,6 @@ alias:: TrainingData
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
-    },
-    {
       "@id": "urn:ngm:class:data-governance",
       "label": "Data Governance"
     }
@@ -587,6 +583,12 @@ alias:: TrainingData
       {
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
       }
     ]
   },

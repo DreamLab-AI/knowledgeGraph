@@ -230,10 +230,6 @@ alias:: PolicyEnforcement
     {
       "@id": "urn:ngm:class:access-control",
       "label": "Access Control"
-    },
-    {
-      "@id": "urn:ngm:class:security-services",
-      "label": "Security Services"
     }
   ],
   "relations": {
@@ -407,6 +403,12 @@ alias:: PolicyEnforcement
       {
         "@id": "urn:ngm:class:gdpr-article-22-compliance",
         "label": "GDPR Article 22 Compliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-services",
+        "label": "Security Services"
       }
     ]
   },

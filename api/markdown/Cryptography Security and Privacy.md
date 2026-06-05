@@ -613,10 +613,6 @@ public:: true
     {
       "@id": "urn:ngm:class:computer-science",
       "label": "Computer Science"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-engineering",
-      "label": "Privacy Engineering"
     }
   ],
   "relations": {
@@ -926,6 +922,12 @@ public:: true
       {
         "@id": "urn:ngm:class:nist",
         "label": "NIST"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
       }
     ]
   },

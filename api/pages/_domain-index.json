@@ -4353,6 +4353,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "monetary-policy-implementation",
+      "title": "Monetary Policy Implementation",
+      "qualityScore": 0.75
+    },
+    {
       "slug": "money",
       "title": "Money",
       "qualityScore": 0.5
@@ -19108,6 +19113,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "game-theory",
+      "title": "Game Theory",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "gartner-prediction",
       "title": "Gartner Prediction",
       "qualityScore": 0.0
@@ -21026,6 +21036,11 @@
       "slug": "time-series-forecasting",
       "title": "Time Series Forecasting",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "time-series-analysis",
+      "title": "Time-Series Analysis",
+      "qualityScore": 0.8
     },
     {
       "slug": "tiny-ml",
@@ -23034,11 +23049,6 @@
       "qualityScore": 0.8
     },
     {
-      "slug": "game-theory",
-      "title": "Game Theory",
-      "qualityScore": 0.8
-    },
-    {
       "slug": "gaussian-process-regression",
       "title": "Gaussian Process Regression",
       "qualityScore": 0.72
@@ -24127,11 +24137,6 @@
       "slug": "textual-inversion",
       "title": "Textual Inversion",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "time-series-analysis",
-      "title": "Time-Series Analysis",
-      "qualityScore": 0.8
     },
     {
       "slug": "tokenizer",
@@ -27644,11 +27649,6 @@
       "slug": "macroeconomics",
       "title": "Macroeconomics",
       "qualityScore": 0.6
-    },
-    {
-      "slug": "monetary-policy-implementation",
-      "title": "Monetary Policy Implementation",
-      "qualityScore": 0.75
     },
     {
       "slug": "paolo-tasca",

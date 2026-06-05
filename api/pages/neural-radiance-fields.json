@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "id": "urn:ngm:class:real-time-rendering-pipeline",
-      "label": "Real-Time Rendering Pipeline"
     }
   ],
   "entityType": "Class",

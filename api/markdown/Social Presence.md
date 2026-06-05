@@ -62,10 +62,6 @@ alias:: SocialPresence
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "@id": "urn:ngm:class:presence",
-      "label": "Presence"
     }
   ],
   "relations": {
@@ -86,6 +82,9 @@ alias:: SocialPresence
       {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
       {"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"},
       {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:presence", "label": "Presence"}
     ]
   },
   "quality": 0.8,

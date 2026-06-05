@@ -85,10 +85,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:data-processing",
-      "label": "Data Processing"
     }
   ],
   "relations": {
@@ -100,6 +96,12 @@ public:: true
       {
         "@id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
       }
     ]
   },

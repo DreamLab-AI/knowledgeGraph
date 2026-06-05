@@ -33,10 +33,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:api-standard",
-      "label": "API Standard"
     }
   ],
   "relations": {
@@ -50,6 +46,9 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
     ]
   },
   "qualityScore": 0.75,

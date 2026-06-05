@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "relations": {
@@ -76,6 +72,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-economy-infrastructure", "label": "Virtual Economy Infrastructure"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
     ]
   },
   "provenance": {

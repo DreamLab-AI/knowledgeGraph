@@ -125,10 +125,6 @@ public:: true
     {
       "@id": "urn:ngm:class:control-system",
       "label": "Control System"
-    },
-    {
-      "@id": "urn:ngm:class:swarm-control",
-      "label": "Swarm Control"
     }
   ],
   "relations": {
@@ -172,6 +168,12 @@ public:: true
       {
         "@id": "urn:ngm:class:global-task-optimisation",
         "label": "Global Task Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:swarm-control",
+        "label": "Swarm Control"
       }
     ]
   },

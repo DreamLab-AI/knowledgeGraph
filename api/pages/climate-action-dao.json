@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:collective-governance",
-      "label": "CollectiveGovernance"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "entityType": "Class",
@@ -85,7 +77,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

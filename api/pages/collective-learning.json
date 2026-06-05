@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:educational-methodology",
-      "label": "Educational Methodology"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -109,10 +109,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
-      "label": "ETSI Metaverse Domain Taxonomy"
     }
   ],
   "relations": {

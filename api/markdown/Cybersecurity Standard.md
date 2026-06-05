@@ -143,10 +143,6 @@ public:: true
       "label": "Safety and Standards"
     },
     {
-      "@id": "urn:ngm:class:security-standards",
-      "label": "Security Standards"
-    },
-    {
       "@id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
@@ -204,6 +200,12 @@ public:: true
       {
         "@id": "urn:ngm:class:secure-teleoperation",
         "label": "Secure Teleoperation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-standards",
+        "label": "Security Standards"
       }
     ]
   },

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:regulatory-technology",
-      "label": "Regulatory Technology"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

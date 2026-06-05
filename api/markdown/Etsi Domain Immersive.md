@@ -50,10 +50,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:etsi",
-      "label": "ETSI"
     }
   ],
   "provenance": {
@@ -62,6 +58,12 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:interoperability-standard",

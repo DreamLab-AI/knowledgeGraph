@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "id": "urn:ngm:class:control-system",
-      "label": "Control System"
-    },
-    {
-      "id": "urn:ngm:class:control-system",
-      "label": "Control System"
     }
   ],
   "entityType": "Class",
@@ -218,7 +210,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:app-daemon",

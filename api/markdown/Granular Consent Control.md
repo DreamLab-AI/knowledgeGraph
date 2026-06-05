@@ -61,13 +61,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:privacy-framework",
-      "label": "Privacy Framework"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:user-data-autonomy",

@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
-    },
-    {
-      "id": "urn:ngm:class:carbon-credits",
-      "label": "CarbonCredit"
-    },
-    {
-      "id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
     }
   ],
   "entityType": "Class",
@@ -81,7 +73,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "CarbonCredit"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

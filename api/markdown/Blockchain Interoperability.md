@@ -528,10 +528,6 @@ alias:: BC-0440-blockchain-interoperability
       "label": "Network Component"
     },
     {
-      "@id": "urn:ngm:class:network-interoperability",
-      "label": "Network Interoperability"
-    },
-    {
       "@id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross Chain Communication"
     }
@@ -811,6 +807,12 @@ alias:: BC-0440-blockchain-interoperability
       {
         "@id": "urn:ngm:class:xcm-format-specification",
         "label": "XCM Format Specification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-interoperability",
+        "label": "Network Interoperability"
       }
     ]
   },

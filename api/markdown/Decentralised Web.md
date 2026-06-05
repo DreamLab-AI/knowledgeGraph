@@ -799,15 +799,17 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    },
-    {
       "@id": "urn:ngm:class:sociotechnical-system",
       "label": "Sociotechnical System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:activity-pub",

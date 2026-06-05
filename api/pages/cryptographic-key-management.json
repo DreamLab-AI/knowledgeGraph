@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
     }
   ],
   "entityType": "Class",
@@ -36,7 +32,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:key-derivation-function",

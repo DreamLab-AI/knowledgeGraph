@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
-    },
-    {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:communication-infrastructure",
-      "label": "Communication Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -166,7 +158,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:average-lagging-metric",

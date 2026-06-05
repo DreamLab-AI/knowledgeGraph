@@ -12,10 +12,6 @@
       "label": "Governance and Regulation"
     },
     {
-      "id": "urn:ngm:class:cryptography-security-and-privacy",
-      "label": "Cryptography Security and Privacy"
-    },
-    {
       "id": "urn:ngm:class:dao",
       "label": "DAO"
     }
@@ -174,7 +170,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-signature",

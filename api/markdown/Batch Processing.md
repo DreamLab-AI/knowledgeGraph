@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "provenance": {
@@ -66,6 +62,12 @@ public:: true
     "inferenceRule": "R1Explicit"
   },
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:batch-normalisation",

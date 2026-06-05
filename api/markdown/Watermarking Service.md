@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:content-authentication",
-      "label": "Content Authentication"
     }
   ],
   "qualityScore": 0.7,

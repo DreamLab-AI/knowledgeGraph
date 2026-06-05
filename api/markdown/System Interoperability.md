@@ -73,13 +73,15 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
-    },
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "SC Standards And Interop"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:enterprise-connectivity",

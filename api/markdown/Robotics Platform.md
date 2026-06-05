@@ -409,10 +409,6 @@ public:: true
     {
       "@id": "urn:ngm:class:embedded-systems",
       "label": "Embedded System"
-    },
-    {
-      "@id": "urn:ngm:class:simulation-environment",
-      "label": "Simulation Environment"
     }
   ],
   "relations": {
@@ -698,6 +694,12 @@ public:: true
       {
         "@id": "urn:ngm:class:vda-5050",
         "label": "VDA 5050"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
       }
     ]
   },

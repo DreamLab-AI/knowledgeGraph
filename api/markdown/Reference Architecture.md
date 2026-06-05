@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:software-architecture",
-      "label": "Software Architecture"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:scalable-systems",
         "label": "Scalable Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
       }
     ]
   },

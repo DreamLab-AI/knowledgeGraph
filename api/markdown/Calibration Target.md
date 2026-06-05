@@ -77,13 +77,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:reference-standard",
-      "label": "Reference Standard"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reference-standard",
+        "label": "Reference Standard"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:flatness-control",

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "id": "urn:ngm:class:knowledge-organization-system",
-      "label": "Knowledge Organization System"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

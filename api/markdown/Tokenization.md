@@ -161,13 +161,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:asset-metadata",

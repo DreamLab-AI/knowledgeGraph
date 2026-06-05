@@ -58,10 +58,6 @@ alias:: SecurityArchitecture
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
     }
   ],
   "relations": {
@@ -69,6 +65,12 @@ alias:: SecurityArchitecture
       {
         "@id": "urn:ngm:class:secure-systems",
         "label": "Secure Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
       }
     ]
   },

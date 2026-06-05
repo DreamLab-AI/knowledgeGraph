@@ -53,14 +53,13 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:accuracy",
-      "label": "Accuracy"
     }
   ],
   "qualityScore": 0.7,
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
+    ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
       {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}

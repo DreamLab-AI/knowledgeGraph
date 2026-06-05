@@ -125,10 +125,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-twin-infrastructure",
-      "label": "Digital Twin Infrastructure"
     }
   ],
   "relations": {

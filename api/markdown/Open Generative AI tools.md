@@ -343,10 +343,6 @@ public:: true
       "label": "AI Infrastructure (Category)"
     },
     {
-      "@id": "urn:ngm:class:ai-ecosystem",
-      "label": "AI Ecosystem"
-    },
-    {
       "@id": "urn:ngm:class:machine-learning-infrastructure",
       "label": "Machine Learning Infrastructure"
     }
@@ -639,6 +635,9 @@ public:: true
         "@id": "urn:ngm:class:safetensors-format",
         "label": "safetensors Format"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-ecosystem", "label": "AI Ecosystem"}
     ]
   },
   "quality": 0.52,

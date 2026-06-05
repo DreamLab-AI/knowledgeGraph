@@ -325,14 +325,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "relations": {
@@ -542,6 +534,12 @@ public:: true
       {
         "@id": "urn:ngm:class:urdf-specification",
         "label": "URDF Specification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
       }
     ]
   },

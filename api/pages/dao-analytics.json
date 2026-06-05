@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-analytics",
-      "label": "Blockchain Analytics"
     }
   ],
   "entityType": "Class",
@@ -218,7 +210,16 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:apache-parquet",

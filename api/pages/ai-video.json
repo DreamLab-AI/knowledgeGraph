@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:deep-generative-model",
       "label": "Deep Generative Model"
-    },
-    {
-      "id": "urn:ngm:class:synthetic-media",
-      "label": "Synthetic Media"
     }
   ],
   "entityType": "Class",
@@ -138,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:3-d-causal-vae",

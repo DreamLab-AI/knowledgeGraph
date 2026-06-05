@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
-    },
-    {
-      "id": "urn:ngm:class:ai-agents",
-      "label": "AI Agent"
-    },
-    {
-      "id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agent"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diarisation-models",

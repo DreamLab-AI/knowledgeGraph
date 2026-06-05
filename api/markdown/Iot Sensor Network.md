@@ -379,10 +379,6 @@ public:: true
       "label": "Network and Communication"
     },
     {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
-    },
-    {
       "@id": "urn:ngm:class:pervasive-computing",
       "label": "Pervasive Computing"
     }
@@ -666,6 +662,12 @@ public:: true
       {
         "@id": "urn:ngm:class:matter-csa",
         "label": "Matter CSA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
       }
     ]
   },

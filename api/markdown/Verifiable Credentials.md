@@ -302,10 +302,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     {
       "@id": "urn:ngm:class:cryptographic-proof",
       "label": "Cryptographic Proof"
-    },
-    {
-      "@id": "urn:ngm:class:w-3-c-standard",
-      "label": "W3C Standard"
     }
   ],
   "relations": {
@@ -325,10 +321,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       {
         "@id": "urn:ngm:class:proof-method",
         "label": "Proof Method"
-      },
-      {
-        "@id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credential"
       },
       {
         "@id": "urn:ngm:class:verifiable-presentation",
@@ -503,6 +495,12 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:w-3-c-standard",
+        "label": "W3C Standard"
       }
     ]
   },

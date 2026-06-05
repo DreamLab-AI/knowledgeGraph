@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "id": "urn:ngm:class:asset-tokenization",
-      "label": "Asset Tokenization"
     }
   ],
   "entityType": "Class",
@@ -31,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "relations": {
@@ -71,6 +67,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
     ]
   },
   "quality": 0.5,

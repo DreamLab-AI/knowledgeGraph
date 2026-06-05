@@ -82,10 +82,6 @@ alias:: Cross-Metaverse Commerce
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-economy",
-      "label": "Virtual Economy"
     }
   ],
   "relations": {
@@ -115,6 +111,12 @@ alias:: Cross-Metaverse Commerce
       {
         "@id": "urn:ngm:class:virtual-market-integration",
         "label": "Virtual Market Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
       }
     ]
   },

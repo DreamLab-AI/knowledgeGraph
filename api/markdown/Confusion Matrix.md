@@ -125,10 +125,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:evaluation-metric",
-      "label": "Evaluation Metric"
     }
   ],
   "relations": {
@@ -150,6 +146,12 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "spatial-computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
       }
     ]
   },

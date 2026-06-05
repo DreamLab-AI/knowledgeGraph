@@ -85,13 +85,15 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:content-authenticity",
-      "label": "Content Authenticity"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-signing",

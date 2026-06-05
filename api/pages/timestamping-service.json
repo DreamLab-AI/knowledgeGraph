@@ -8,8 +8,8 @@
   "definition": "A timestamping service is a system that issues verifiable proof that a piece of data existed at or before a particular time, often using cryptographic methods.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:trusted-timestamping",
-      "label": "Trusted Timestamping"
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
     }
   ],
   "entityType": "Class",

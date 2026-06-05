@@ -460,10 +460,6 @@ alias:: ImitationLearning
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:learning-from-demonstration",
-      "label": "Learning from Demonstration"
-    },
-    {
       "@id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }

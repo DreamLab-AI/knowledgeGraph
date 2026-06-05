@@ -501,17 +501,19 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
-    },
-    {
-      "@id": "urn:ngm:class:intelligent-systems",
-      "label": "Intelligent System"
-    },
-    {
-      "@id": "urn:ngm:class:cognitive-architecture",
-      "label": "Cognitive Architecture"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent System"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:action-executor",

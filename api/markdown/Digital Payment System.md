@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:financial-infrastructure",
-      "label": "Financial Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:payment-gateway",

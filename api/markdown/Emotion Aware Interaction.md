@@ -58,13 +58,15 @@ alias:: Emotion-Aware Interaction
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:emotionally-intelligent-metaverse",

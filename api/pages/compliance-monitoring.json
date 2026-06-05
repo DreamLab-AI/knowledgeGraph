@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
-    },
-    {
-      "id": "urn:ngm:class:automated-compliance",
-      "label": "Automated Compliance"
-    },
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "entityType": "Class",
@@ -142,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:bayesian-risk-models",

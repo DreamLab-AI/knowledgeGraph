@@ -353,10 +353,6 @@ public:: true
     {
       "@id": "urn:ngm:class:monte-carlo-methods",
       "label": "Monte Carlo Method"
-    },
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Robo Navigation And Planning"
     }
   ],
   "relations": {
@@ -583,6 +579,9 @@ public:: true
         "@id": "urn:ngm:class:rss-conference",
         "label": "RSS Conference"
       }
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}
     ]
   },
   "quality": 0.52,

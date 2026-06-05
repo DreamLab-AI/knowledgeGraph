@@ -113,10 +113,6 @@ public:: true
     {
       "@id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross-Chain Communication"
-    },
-    {
-      "@id": "urn:ngm:class:interoperability-protocol",
-      "label": "Interoperability Protocol"
     }
   ],
   "relations": {
@@ -160,6 +156,12 @@ public:: true
       {
         "@id": "urn:ngm:class:inter-chain-value-transfer",
         "label": "Inter-Chain Value Transfer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
       }
     ]
   },

@@ -53,10 +53,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:computer-vision",
-      "label": "Computer Vision"
     }
   ],
   "relations": {
@@ -70,6 +66,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ]
   },
   "quality": 0.7,

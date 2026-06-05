@@ -429,10 +429,6 @@ public:: true
     {
       "@id": "urn:ngm:class:applied-machine-learning",
       "label": "Applied Machine Learning"
-    },
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Infra Data Management"
     }
   ],
   "relations": {
@@ -714,6 +710,12 @@ public:: true
       {
         "@id": "urn:ngm:class:world-customs-organisation",
         "label": "World Customs Organisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Infra Data Management"
       }
     ]
   },

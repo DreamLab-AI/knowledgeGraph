@@ -2767,15 +2767,17 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:dc-communication",
-      "label": "DC Communication"
-    },
-    {
       "@id": "urn:ngm:class:governance-infrastructure",
       "label": "Governance Infrastructure"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:analytics-dashboard",

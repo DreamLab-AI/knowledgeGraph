@@ -290,10 +290,6 @@ alias:: CLI multi agent systems
     {
       "@id": "urn:ngm:class:agentic-workflow",
       "label": "Agentic Workflow"
-    },
-    {
-      "@id": "urn:ngm:class:autonomous-agent",
-      "label": "Autonomous Agents"
     }
   ],
   "relations": {
@@ -523,6 +519,12 @@ alias:: CLI multi agent systems
       {
         "@id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ]
   },

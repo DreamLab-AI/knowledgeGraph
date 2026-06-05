@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
-    },
-    {
-      "@id": "urn:ngm:class:safety-standard",
-      "label": "Safety Standard"
     }
   ],
   "relations": {
@@ -80,7 +76,8 @@ public:: true
       {"@id": "urn:ngm:class:standards-documentation", "label": "Standards Documentation"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"}
+      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"},
+      {"@id": "urn:ngm:class:safety-standard", "label": "Safety Standard"}
     ]
   },
   "provenance": {

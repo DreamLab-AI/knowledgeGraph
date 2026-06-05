@@ -411,10 +411,6 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:behavioural-economics",
-      "label": "Behavioural Economics"
-    },
-    {
       "@id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science"
     }

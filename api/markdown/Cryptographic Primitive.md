@@ -80,10 +80,6 @@ alias:: Cryptographic Primitives, CryptographicPrimitive
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:cryptography",
-      "label": "Cryptography"
     }
   ],
   "relations": {
@@ -111,6 +107,9 @@ alias:: Cryptographic Primitives, CryptographicPrimitive
     ],
     "partOf": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
     ]
   },
   "provenance": {

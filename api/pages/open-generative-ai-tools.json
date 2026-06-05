@@ -12,10 +12,6 @@
       "label": "AI Infrastructure (Category)"
     },
     {
-      "id": "urn:ngm:class:ai-ecosystem",
-      "label": "AI Ecosystem"
-    },
-    {
       "id": "urn:ngm:class:machine-learning-infrastructure",
       "label": "Machine Learning Infrastructure"
     }
@@ -190,7 +186,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cuda",

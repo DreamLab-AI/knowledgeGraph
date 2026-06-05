@@ -14,10 +14,6 @@
     {
       "id": "urn:ngm:class:control-system",
       "label": "Control System"
-    },
-    {
-      "id": "urn:ngm:class:swarm-control",
-      "label": "Swarm Control"
     }
   ],
   "entityType": "Class",
@@ -69,7 +65,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:swarm-control",
+        "label": "Swarm Control"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

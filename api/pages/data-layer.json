@@ -12,10 +12,6 @@
       "label": "Data Management"
     },
     {
-      "id": "urn:ngm:class:architectural-layer",
-      "label": "Architectural Layer"
-    },
-    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Infra Network And Comms"
     }
@@ -174,7 +170,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:architectural-layer",
+        "label": "Architectural Layer"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:bloom-filter",

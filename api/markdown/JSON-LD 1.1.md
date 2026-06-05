@@ -33,10 +33,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:semantic-web-standards",
-      "label": "Semantic Web Standards"
     }
   ],
   "relations": {
@@ -53,6 +49,9 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
       {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
     ]
   },
   "qualityScore": 0.75,

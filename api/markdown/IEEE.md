@@ -25,8 +25,7 @@ alias:: IEEE (Institute of Electrical and Electronics Engineers)
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"},
-    {"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"}
+    {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
   ],
   "relations": {
     "enables": [
@@ -41,6 +40,9 @@ alias:: IEEE (Institute of Electrical and Electronics Engineers)
     "relatedTo": [
       {"@id": "urn:ngm:class:ietf", "label": "IETF"},
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"}
     ]
   },
   "quality": 0.8

@@ -307,15 +307,17 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:audio-processing",
-      "label": "Audio Processing"
-    },
-    {
       "@id": "urn:ngm:class:multimodal-ai",
       "label": "Multimodal AI"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:automatic-speech-recognition",

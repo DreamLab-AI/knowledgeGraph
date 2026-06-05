@@ -12,10 +12,6 @@
       "label": "Protocol and Consensus"
     },
     {
-      "id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
-    },
-    {
       "id": "urn:ngm:class:blockchain-sustainability",
       "label": "Blockchain Sustainability"
     }
@@ -89,7 +85,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

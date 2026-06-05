@@ -365,14 +365,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:text-to-image-generation",
-      "label": "Text-to-Image Generation"
     }
   ],
   "relations": {
@@ -618,6 +610,12 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
       }
     ]
   },

@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
-    },
-    {
-      "id": "urn:ngm:class:haptic-feedback",
-      "label": "Haptic Feedback"
     }
   ],
   "entityType": "Class",
@@ -44,7 +40,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:haptics",

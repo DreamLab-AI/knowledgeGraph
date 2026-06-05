@@ -57,13 +57,12 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:multilingual-metaverse-experience",

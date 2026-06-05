@@ -54,13 +54,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "hasPart": [
       {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
       {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}

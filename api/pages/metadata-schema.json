@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "id": "urn:ngm:class:data-standards",
-      "label": "Data Standard"
     }
   ],
   "entityType": "Class",
@@ -52,7 +48,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standard"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

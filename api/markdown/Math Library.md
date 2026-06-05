@@ -50,10 +50,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:software-library",
-      "label": "Software Library"
     }
   ],
   "relations": {
@@ -72,6 +68,9 @@ public:: true
       {"@id": "urn:ngm:class:noise-function-library", "label": "Noise Function Library"},
       {"@id": "urn:ngm:class:spatial-coordinates", "label": "Spatial Coordinates"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:software-library", "label": "Software Library"}
     ]
   },
   "provenance": {

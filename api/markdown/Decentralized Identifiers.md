@@ -877,14 +877,16 @@ alias:: BC-0457-decentralized-identifiers
     },
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "BC Token And Asset"
-    },
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
+      "label": "Token and Asset"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:did-controller",

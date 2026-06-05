@@ -121,10 +121,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
     }
   ],
   "relations": {

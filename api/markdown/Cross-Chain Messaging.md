@@ -108,12 +108,8 @@ alias:: Cross Chain Messaging, cross-chain-messaging
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:interoperability-protocol",
-      "label": "Interoperability Protocol"
-    },
-    {
       "@id": "urn:ngm:class:bc-network-component",
-      "label": "BC Network Component"
+      "label": "Network Component"
     }
   ],
   "relations": {
@@ -157,6 +153,12 @@ alias:: Cross Chain Messaging, cross-chain-messaging
       {
         "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
       }
     ]
   },

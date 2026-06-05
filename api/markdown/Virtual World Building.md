@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:3-d-design",
-      "label": "3D Design"
     }
   ],
   "relations": {
@@ -76,6 +72,9 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-world-creation", "label": "Virtual World Creation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:3-d-design", "label": "3D Design"}
     ]
   },
   "provenance": {

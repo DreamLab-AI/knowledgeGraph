@@ -137,10 +137,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:regulatory-compliance",
-      "label": "Regulatory Compliance"
     }
   ],
   "relations": {
@@ -174,6 +170,12 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },

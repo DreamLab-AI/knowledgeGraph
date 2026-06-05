@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:cloud-computing",
-      "label": "Cloud Computing"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:enterprise-ai-adoption",
         "label": "Enterprise AI Adoption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ]
   },

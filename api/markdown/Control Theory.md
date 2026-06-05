@@ -505,10 +505,6 @@ public:: true
     {
       "@id": "urn:ngm:class:control-system",
       "label": "Control System"
-    },
-    {
-      "@id": "urn:ngm:class:cybernetics",
-      "label": "Cybernetics"
     }
   ],
   "relations": {

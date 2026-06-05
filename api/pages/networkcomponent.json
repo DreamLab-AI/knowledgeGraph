@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
     }
   ],
   "entityType": "Class",
@@ -48,7 +44,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:communication-protocol",

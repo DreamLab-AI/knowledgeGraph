@@ -545,14 +545,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "relations": {
@@ -878,6 +870,12 @@ public:: true
       {
         "@id": "urn:ngm:class:verra-verified-carbon-standard",
         "label": "Verra Verified Carbon Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
       }
     ]
   },

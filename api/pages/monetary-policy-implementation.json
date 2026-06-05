@@ -4,13 +4,9 @@
   "slug": "monetary-policy-implementation",
   "public": true,
   "classIri": "urn:ngm:class:monetary-policy-implementation",
-  "domain": "economics",
+  "domain": "blockchain",
   "definition": "Monetary Policy Implementation encompasses the operational processes, tools, and institutional mechanisms through which central banks and monetary authorities translate policy decisions\u2014such as interest rate targets or quantitative measures\u2014into observable effects on the financial system. In digital and metaverse economic contexts it extends to the programmatic enforcement of monetary parameters via Central Bank Digital Currencies (CBDCs), smart contracts, and programmable money frameworks. Effective implementation requires coordination between inflation control targets, payment system design, financial stability oversight, and regulatory compliance.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
     {
       "id": "urn:ngm:class:economic-mechanism",
       "label": "Economic Mechanism"
@@ -39,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sc-governance-and-safety",
+        "label": "Governance and Safety"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cbdc-frameworks",

@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:technology-infrastructure",
-      "label": "Technology Infrastructure"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:application-development",
         "label": "Application Development"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
       }
     ]
   },

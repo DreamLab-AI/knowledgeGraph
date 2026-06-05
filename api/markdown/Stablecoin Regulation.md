@@ -357,13 +357,15 @@ public:: true
     {
       "@id": "urn:ngm:class:crypto-regulation",
       "label": "Crypto Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal And Regulatory"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:attestation-regime",

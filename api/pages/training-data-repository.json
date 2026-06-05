@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management"
     }
   ],
   "entityType": "Class",
@@ -61,7 +57,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

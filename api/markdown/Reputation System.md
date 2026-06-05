@@ -313,10 +313,6 @@ public:: true
     {
       "@id": "urn:ngm:class:decentralized-governance",
       "label": "Decentralised Governance"
-    },
-    {
-      "@id": "urn:ngm:class:control-system",
-      "label": "Control System"
     }
   ],
   "relations": {
@@ -506,6 +502,12 @@ public:: true
       {
         "@id": "urn:ngm:class:w3-c-vc-working-group",
         "label": "W3C VC Working Group"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
       }
     ]
   },

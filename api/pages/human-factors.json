@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
-    },
-    {
-      "id": "urn:ngm:class:interaction-design",
-      "label": "Interaction Design"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering"
     }
   ],
   "entityType": "Class",
@@ -85,7 +77,16 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

@@ -339,15 +339,17 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:cryptographic-protocol",
-      "label": "Cryptographic Protocols"
-    },
-    {
       "@id": "urn:ngm:class:token-economy",
       "label": "Token Economy"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:decentralized-exchange",

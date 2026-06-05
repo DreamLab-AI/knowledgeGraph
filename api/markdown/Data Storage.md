@@ -77,10 +77,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:infrastructure-component",
-      "label": "Infrastructure Component"
     }
   ],
   "relations": {
@@ -106,6 +102,12 @@ public:: true
       {
         "@id": "urn:ngm:class:storage-architecture",
         "label": "Storage Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure-component",
+        "label": "Infrastructure Component"
       }
     ]
   },

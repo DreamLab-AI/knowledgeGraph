@@ -637,10 +637,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bitcoin-layer-2",
       "label": "Bitcoin Layer 2"
-    },
-    {
-      "@id": "urn:ngm:class:chaumian-ecash",
-      "label": "Chaumian Ecash"
     }
   ],
   "relations": {
@@ -866,6 +862,12 @@ public:: true
       {
         "@id": "urn:ngm:class:nut-05-melting-tokens",
         "label": "NUT-05 Melting Tokens"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:chaumian-ecash",
+        "label": "Chaumian Ecash"
       }
     ]
   },

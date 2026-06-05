@@ -529,14 +529,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:central-bank-infrastructure",
-      "label": "Central Bank Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security And Identity"
     }
   ],
   "relations": {
@@ -866,6 +858,16 @@ public:: true
       {
         "@id": "urn:ngm:class:imf-cbdc-virtual-handbook",
         "label": "IMF CBDC Virtual Handbook"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-infrastructure",
+        "label": "Central Bank Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
       }
     ]
   },

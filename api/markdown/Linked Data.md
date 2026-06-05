@@ -34,10 +34,6 @@ alias:: LinkedData
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:semantic-web",
-      "label": "Semantic Web"
     }
   ],
   "relations": {
@@ -51,6 +47,9 @@ alias:: LinkedData
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ]
   },
   "qualityScore": 0.75,

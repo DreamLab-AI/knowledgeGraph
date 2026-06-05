@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "entityType": "Class",
@@ -69,7 +65,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

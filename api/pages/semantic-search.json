@@ -12,10 +12,6 @@
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:knowledge-retrieval",
-      "label": "Knowledge Retrieval"
-    },
-    {
       "id": "urn:ngm:class:search-technology",
       "label": "Search Technology"
     }
@@ -138,7 +134,12 @@
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chroma",

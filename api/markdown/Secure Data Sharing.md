@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:data-security",
-      "label": "Data Security"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:confidential-collaboration",
         "label": "Confidential Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
       }
     ]
   },

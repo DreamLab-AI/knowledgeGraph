@@ -10,10 +10,6 @@
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
-    },
-    {
-      "id": "urn:ngm:class:safety-standard",
-      "label": "Safety Standard"
     }
   ],
   "entityType": "Class",
@@ -39,6 +35,10 @@
       {
         "id": "urn:ngm:class:robotics-platform",
         "label": "Robotics Platform"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
       }
     ],
     "uses": [

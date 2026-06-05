@@ -149,14 +149,6 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:collective-governance",
-      "label": "CollectiveGovernance"
-    },
-    {
-      "@id": "urn:ngm:class:governance",
-      "label": "Governance"
     }
   ],
   "relations": {
@@ -216,6 +208,16 @@ public:: true
       {
         "@id": "urn:ngm:class:transparent-governance",
         "label": "TransparentGovernance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
       }
     ]
   },

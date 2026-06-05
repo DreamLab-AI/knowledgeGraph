@@ -81,13 +81,15 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-organization-system",
-      "label": "Knowledge Organization System"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:classification-rules",

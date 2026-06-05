@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:digital-governance",
-      "label": "Digital Governance"
     }
   ],
   "quality": 0.5,
@@ -99,6 +95,12 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
       }
     ]
   }

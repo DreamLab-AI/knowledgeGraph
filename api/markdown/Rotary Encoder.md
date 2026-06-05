@@ -53,13 +53,15 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:encoder",
-      "label": "Encoder"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
     "uses": [
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
       {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}

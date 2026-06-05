@@ -57,10 +57,6 @@ public:: true
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:spatial-mapping-technology",
-      "label": "Spatial Mapping Technology"
     }
   ],
   "relations": {
@@ -68,6 +64,12 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-twin-creation",
         "label": "Digital Twin Creation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-mapping-technology",
+        "label": "Spatial Mapping Technology"
       }
     ]
   },

@@ -93,10 +93,6 @@ public:: true
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:evaluation-metric",
-      "label": "Evaluation Metric"
     }
   ],
   "quality": 0.5,
@@ -110,6 +106,12 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "spatial-computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
       }
     ]
   }

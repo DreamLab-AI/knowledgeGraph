@@ -54,10 +54,6 @@ public:: true
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-system",
-      "label": "Cryptographic System"
     }
   ],
   "quality": 0.35,
@@ -95,6 +91,12 @@ public:: true
       {
         "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-system",
+        "label": "Cryptographic System"
       }
     ]
   }

@@ -80,10 +80,6 @@ alias:: TELE-301-virtual-office-spaces
     {
       "@id": "urn:ngm:class:dc-workspace-tools",
       "label": "Workspace Tools"
-    },
-    {
-      "@id": "urn:ngm:class:virtual-environment",
-      "label": "Virtual Environment"
     }
   ],
   "relations": {
@@ -105,6 +101,9 @@ alias:: TELE-301-virtual-office-spaces
     ],
     "requires": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
     ]
   },
   "provenance": {

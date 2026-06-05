@@ -84,10 +84,6 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
       "@id": "urn:ngm:class:model-interpretability",
       "label": "Model Interpretability"
     }
@@ -105,6 +101,9 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}
     ]
   },
   "provenance": {

@@ -477,17 +477,15 @@ public:: true
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
-    },
-    {
-      "@id": "urn:ngm:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:asic-e-waste",
