@@ -68,7 +68,7 @@ public:: true
       {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}

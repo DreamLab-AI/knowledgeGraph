@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ],
     "uses": [

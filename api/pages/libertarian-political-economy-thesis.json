@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:9e3cc05a9ffba26d69b190865bea6e9f9bebe30c0934c4f9fe69de62366fe5db",
+  "title": "Libertarian Political Economy Thesis",
+  "slug": "libertarian-political-economy-thesis",
+  "public": true,
+  "classIri": "urn:ngm:class:libertarian-political-economy-thesis",
+  "domain": "infrastructure",
+  "definition": "The Libertarian Thesis, as represented here by Hans-Hermann Hoppe's 'Democracy: The God That Failed', argues that democratic governance systematically expands state power and erodes individual liberties relative to private property-based natural order, and that radical decentralisation, covenant communities, and privatisation of public goods offer a more consistent path to a free society.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

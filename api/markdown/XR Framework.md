@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ]
   },
   "quality": 0.35,
@@ -112,7 +112,7 @@ public:: true
 - ### Relationships
   - enables:: [[Augmented Reality]], [[Virtual Reality]], [[Mixed Reality]], [[Immersive Experience]]
   - uses:: [[Extended Reality]], [[Game Engine]]
-  - partOf:: [[Spatial Computing]]
+  - partOf:: [[Spatial Computing Paradigm]]
 
 - ### Content
 

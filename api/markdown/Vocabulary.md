@@ -54,7 +54,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
@@ -111,7 +111,7 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - **Requires**: [[Tokenisation]] (algorithm determines vocabulary membership)
+  - **Requires**: [[Neural Network Text Tokenisation]] (algorithm determines vocabulary membership)
   - **Enables**: [[Natural Language Processing]], [[Inference]] (model token prediction)
   - **Uses**: [[Subword Tokenisation]], [[Byte Pair Encoding]], [[WordPiece]]
   - **Part-of**: [[Transformer]] architecture (embedding and output projection layers)

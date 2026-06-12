@@ -8,7 +8,7 @@
   "definition": "Taxonomy hub for governance, safety, regulation, and privacy concepts within the spatial computing domain, encompassing frameworks for responsible XR and metaverse deployment, data protection, content moderation, risk management, and user safety standards.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing-paradigm",
       "label": "Spatial Computing"
     }
   ],
@@ -42,7 +42,7 @@
         "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:metaverse-and-spatial-risks",
+        "id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
         "label": "Metaverse and Spatial Risks"
       }
     ],

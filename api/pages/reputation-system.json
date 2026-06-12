@@ -148,7 +148,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ethereum-attestation-service",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-attestation-service",
         "label": "Ethereum Attestation Service"
       },
       {
@@ -182,7 +182,7 @@
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:ethereum-attestation-service",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-attestation-service",
         "label": "Ethereum Attestation Service"
       },
       {

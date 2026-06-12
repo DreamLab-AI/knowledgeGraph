@@ -9,7 +9,7 @@
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Artificial Intelligence]]
-  - requires:: [[Context Awareness System]], [[Natural Language Processing]], [[Machine Learning]]
+  - requires:: [[Context Awareness System]], [[Natural Language Processing]], [[Machine Learning Discipline]]
   - enables:: [[Personalized Interaction]], [[Dynamic Content]], [[Adaptive UX]]
 
 - ### Content

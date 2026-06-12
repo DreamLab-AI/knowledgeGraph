@@ -54,7 +54,7 @@
         "label": "Productivity Measurement"
       },
       {
-        "id": "urn:ngm:class:public-goods-theory",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-theory",
         "label": "Public Goods Theory"
       },
       {
@@ -122,7 +122,7 @@
         "label": "Protocol Design"
       },
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -227,7 +227,7 @@
         "label": "Algorithmic Bias and Variance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -308,11 +308,11 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -332,7 +332,7 @@
         "label": "CBDC Frameworks"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {

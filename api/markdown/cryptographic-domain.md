@@ -45,8 +45,8 @@
   - NIST post-quantum cryptography standardization (2016-2024) selected lattice-based (CRYSTALS-Kyber, CRYSTALS-Dilithium), hash-based (SPHINCS+), and code-based alternatives
   - Blockchain research explores quantum-resistant signatures ([[XMSS]], [[LMS]], [[Falcon]]), quantum-secure hash functions, and migration pathways for existing networks
   - Production blockchain systems employ diverse cryptographic schemes optimized for specific security and performance requirements
-  - [[Bitcoin]] uses [[SHA-256]] double hashing for block linking and [[Proof-of-Work]], [[RIPEMD-160]] combined with [[SHA-256]] for address generation, and [[ECDSA]] with secp256k1 curve for transaction signatures providing 128-bit security
-  - [[Ethereum]] transitioned to [[Keccak-256]] (SHA-3) for hashing, [[ECDSA]] with secp256k1 for legacy transactions, and [[BLS signatures]] for [[Ethereum 2.0]] validator consensus enabling signature aggregation and reducing bandwidth
+  - [[Bitcoin Proof-of-Work Protocol]] uses [[SHA-256]] double hashing for block linking and [[Proof-of-Work]], [[RIPEMD-160]] combined with [[SHA-256]] for address generation, and [[ECDSA]] with secp256k1 curve for transaction signatures providing 128-bit security
+  - [[Ethereum Smart Contract Platform]] transitioned to [[Keccak-256]] (SHA-3) for hashing, [[ECDSA]] with secp256k1 for legacy transactions, and [[BLS signatures]] for [[Ethereum 2.0]] validator consensus enabling signature aggregation and reducing bandwidth
   - [[Solana]] employs [[Ed25519]] signatures for faster verification (50k signatures/second), [[SHA-256]] for hashing, and [[Verifiable Delay Functions (VDFs)]] for leader election providing predictable yet manipulation-resistant block production
   - [[Cardano]] uses [[Ed25519]] signatures, [[BLAKE2b]] hashing optimized for 64-bit platforms, and [[KES (Key Evolving Signature)]] schemes providing forward security for stake pool operators
   - Zero-knowledge proof systems have matured from research prototypes to production privacy and scalability infrastructure

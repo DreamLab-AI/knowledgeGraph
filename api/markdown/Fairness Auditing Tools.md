@@ -88,7 +88,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
     ],
     "enables": [

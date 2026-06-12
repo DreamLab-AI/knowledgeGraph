@@ -110,7 +110,7 @@
         "label": "Resilient Video Streaming"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-streaming",
+        "id": "urn:ngm:class:spatial-computing-paradigm-streaming",
         "label": "Spatial Computing Streaming"
       }
     ],
@@ -226,7 +226,7 @@
         "label": "3GPP 5G Standards"
       },
       {
-        "id": "urn:ngm:class:apple-hls-rfc-8216",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-hls-rfc-8216",
         "label": "Apple HLS RFC 8216"
       },
       {

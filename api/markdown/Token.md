@@ -681,7 +681,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -716,7 +716,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1147,9 +1147,9 @@ public:: true
     **Governance & DAOs**:
     - [[DAO]], [[Governance]], [[Proposal]], [[Voting]], [[veTokenomics]]
     **Bitcoin Ecosystem**:
-    - [[Bitcoin]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
+    - [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
     **Platforms**:
-    - [[Ethereum]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
+    - [[Ethereum Smart Contract Platform]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
     **NFT Ecosystem**:
     - [[NFT]], [[NFT Marketplace]], [[Metadata]], [[IPFS]], [[Royalties]]
     **Notable Projects**:

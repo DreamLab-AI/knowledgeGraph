@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Entity]]
   - bridges-to:: [[University College London]], [[University of Oxford]]
-  - enables:: [[Artificial Intelligence]], [[Machine Learning]]
+  - enables:: [[Artificial Intelligence]], [[Machine Learning Discipline]]
 
 - ### Content
   - The Alan Turing Institute is the United Kingdom's national institute for data science and artificial intelligence, established in 2015 and named after Alan Turing. It convenes research across partner universities and applies methods to challenges in health, defence, and the public sector.

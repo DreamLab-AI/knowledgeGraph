@@ -38,7 +38,7 @@
 			- **Validator Selection**: Pre-approved, trusted validators (authorities) with verified identities responsible for block creation and validation.
 			- **Reputation-Based Trust**: Validators stake their reputation rather than [[Cryptocurrency]] tokens, with identities publicly disclosed to ensure accountability.
 			- **Performance Benefits**: Achieves 1,000-10,000+ [[TransactionsPerSecond]] (TPS) with sub-second block times and minimal energy consumption.
-			- **Use Cases**: [[Ethereum]]-compatible networks, test networks, consortium blockchains requiring high throughput and known validators.
+			- **Use Cases**: [[Ethereum Smart Contract Platform]]-compatible networks, test networks, consortium blockchains requiring high throughput and known validators.
 			- **Examples**: [[VeChain]], [[POANetwork]], [[xDai]] chain implementations.
 		- **[[PBFT]] (Practical Byzantine Fault Tolerance)**
 			- **Byzantine Fault Tolerance**: Tolerates up to (n-1)/3 faulty or malicious nodes in a network of n validators, ensuring consensus despite failures.
@@ -53,7 +53,7 @@
 			- **Best for Single-Organization Blockchains**: Ideal when all nodes are controlled by one entity and Byzantine fault tolerance isn't required.
 			- **Implementations**: [[Hyperledger Fabric]] ordering service option, [[Quorum]] RAFT consensus mode.
 		- **Istanbul Byzantine Fault Tolerance (IBFT)**
-			- **Enhanced PBFT Variant**: Optimized for [[Ethereum]]-based private networks with improved performance and simplified implementation.
+			- **Enhanced PBFT Variant**: Optimized for [[Ethereum Smart Contract Platform]]-based private networks with improved performance and simplified implementation.
 			- **Immediate Finality**: Blocks are finalized immediately after consensus, preventing forks and ensuring transaction certainty.
 			- **Used By**: [[Quorum]], [[Hyperledger Besu]], [[Polygon]] (previously), providing enterprise-grade consensus for EVM-compatible chains.
   - ### Major Private Blockchain Platforms (2025)
@@ -72,7 +72,7 @@
 			- **Notable Deployments**: [[SWIFT]] blockchain integration, [[JPMorgan]] Interbank Information Network (IIN), HQLAx securities lending platform.
 			- **Unique Features**: Point-to-point communication, notary services for consensus, legal contract integration, flow framework for complex workflows.
 		- **[[Quorum]] (ConsenSys)**
-			- **Enterprise [[Ethereum]]**: Permissioned version of Ethereum developed by JPMorgan Chase (now maintained by ConsenSys), adding privacy and performance enhancements.
+			- **Enterprise [[Ethereum Smart Contract Platform]]**: Permissioned version of Ethereum developed by JPMorgan Chase (now maintained by ConsenSys), adding privacy and performance enhancements.
 			- **Privacy Mechanisms**: Transaction privacy through private state management (Tessera) and [[ZeroKnowledgeProof]] integration (ZSL - Zerocash Security Layer).
 			- **Consensus Options**: Supports [[RAFT]] (crash fault tolerant) and IBFT (Byzantine fault tolerant) consensus mechanisms for different trust requirements.
 			- **[[EVM]] Compatibility**: Full compatibility with Ethereum [[SmartContract]] tooling, [[Solidity]] language, and [[DApp]] development frameworks.
@@ -83,7 +83,7 @@
 			- **Consensus Flexibility**: IBFT 2.0, [[QBFT]] (Quorum Byzantine Fault Tolerance), [[Clique]] (PoA), and compatibility with public Ethereum [[ProofOfStake]].
 			- **Privacy Features**: Integration with Orion and Tessera for private transactions, [[OnionRouting]]-style privacy, and flexible privacy groups.
 			- **EEA Specification Compliance**: Implements Enterprise Ethereum Alliance standards, ensuring interoperability across enterprise Ethereum deployments.
-			- **Cloud & Container Ready**: Native support for [[Kubernetes]], [[Docker]], cloud platforms (AWS, Azure, GCP), and enterprise monitoring tools.
+			- **Cloud & Container Ready**: Native support for [[Kubernetes]], [[Docker Containerisation Platform]], cloud platforms (AWS, Azure, GCP), and enterprise monitoring tools.
 			- **Use Cases**: Asset tokenization platforms, central bank digital currency (CBDC) pilots, supply chain tracking, [[EnergyTrading]] networks.
   - ### Enterprise Use Cases & Industry Applications
 		- **Supply Chain Management**
@@ -124,7 +124,7 @@
 		  | **Immutability** | Can be modified by governance body | Extremely difficult to alter (requires majority control) |
 		  | **Decentralization** | Low to medium (10-100s validators) | High (1,000s-10,000s of nodes) |
 		  | **Use Cases** | Enterprise, B2B, regulated industries | [[Cryptocurrency]], [[DeFi]], public applications |
-		  | **Examples** | [[Hyperledger Fabric]], [[R3Corda]], [[Quorum]] | [[Bitcoin]], [[Ethereum]], [[Solana]], [[Cardano]] |
+		  | **Examples** | [[Hyperledger Fabric]], [[R3Corda]], [[Quorum]] | [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Solana]], [[Cardano]] |
   - ### Consortium Blockchains
 		- **Definition**: A hybrid governance model where multiple organizations jointly control and operate a private blockchain network, sharing infrastructure costs and governance responsibilities.
 		- **Multi-Organization Control**
@@ -161,7 +161,7 @@
 			- **Data Sovereignty**: Deploy in specific geographic regions to comply with data residency requirements ([[GDPR]], local data protection laws).
 			- **Reversibility Options**: Governance bodies can implement mechanisms to correct errors, comply with court orders, or handle exceptional circumstances.
 		- **Cost Efficiency**
-			- **No Mining Costs**: Eliminates energy-intensive [[ProofOfWork]] mining, reducing operational costs by 99%+ compared to [[Bitcoin]]-style networks.
+			- **No Mining Costs**: Eliminates energy-intensive [[ProofOfWork]] mining, reducing operational costs by 99%+ compared to [[Bitcoin Proof-of-Work Protocol]]-style networks.
 			- **Lower Transaction Fees**: No [[GasFee]] auctions or variable pricing; predictable, minimal transaction costs often fractions of a cent.
 			- **Infrastructure Control**: Organizations control hosting costs, selecting optimal cloud providers or on-premises infrastructure.
 		- **Enterprise Integration**
@@ -191,7 +191,7 @@
 		- **Definition**: Architectural approaches combining private blockchain benefits (performance, privacy, control) with public blockchain advantages (transparency, decentralization, immutability).
 		- **Public Anchoring (Dual-Layer Architecture)**
 			- **Private Operations Layer**: Day-to-day transactions execute on high-performance private blockchain with confidentiality and efficiency.
-			- **Public Verification Layer**: Periodic commitment of private chain state (Merkle roots, state hashes) to public blockchain ([[Bitcoin]], [[Ethereum]]) for tamper-proof verification.
+			- **Public Verification Layer**: Periodic commitment of private chain state (Merkle roots, state hashes) to public blockchain ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]]) for tamper-proof verification.
 			- **Benefits**: Maintains transaction privacy and speed while gaining public blockchain's immutability and auditability.
 			- **Examples**: [[LiquidNetwork]] (Bitcoin sidechain), [[PlasmaChain]] architectures, [[Polygon]] enterprise solutions.
 		- **Selective Transparency**

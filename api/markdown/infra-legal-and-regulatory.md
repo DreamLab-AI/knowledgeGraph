@@ -36,7 +36,7 @@ For AI and blockchain systems, this category covers the governance structures, c
   "domain": "infrastructure",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure-domain",
+      "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
       "label": "Infrastructure Domain"
     }
   ],
@@ -48,7 +48,7 @@ For AI and blockchain systems, this category covers the governance structures, c
       {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:copyright", "label": "copyright"},
+      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "copyright"},
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
     ],
     "relatedTo": [

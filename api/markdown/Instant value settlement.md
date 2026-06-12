@@ -388,11 +388,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bitcoin-as-money",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {

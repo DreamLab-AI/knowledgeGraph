@@ -48,7 +48,7 @@ alias:: MachineLearningModel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-model",
+  "@id": "urn:ngm:class:machine-learning-discipline-model",
   "@type": "Class",
   "label": "Machine Learning Model",
   "definition": "Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.",
@@ -60,7 +60,7 @@ alias:: MachineLearningModel
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

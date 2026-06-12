@@ -91,7 +91,7 @@ alias:: Context-Aware Response
         "label": "Context Awareness System"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -163,7 +163,7 @@ alias:: Context-Aware Response
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -200,7 +200,7 @@ alias:: Context-Aware Response
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Artificial Intelligence]]
-  - requires:: [[Context Awareness System]], [[Natural Language Processing]], [[Machine Learning]]
+  - requires:: [[Context Awareness System]], [[Natural Language Processing]], [[Machine Learning Discipline]]
   - enables:: [[Personalized Interaction]], [[Dynamic Content]], [[Adaptive UX]]
 
 - ### Content

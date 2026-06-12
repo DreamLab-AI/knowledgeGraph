@@ -7,7 +7,7 @@
 
 - ### Relationships
   - uses [[Anomaly Detection]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Supervised Learning]]
   - enables [[Anti-Money Laundering]]
   - enables [[Risk Management]]

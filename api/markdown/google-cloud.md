@@ -7,9 +7,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Cloud Platform]]
-  - bridges-to:: [[Google]]
+  - bridges-to:: [[Google AI Technology Corporation]]
   - requires:: [[Cloud Computing]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Google Cloud provides compute, storage, networking, and data analytics services delivered over the internet on a usage-based model.

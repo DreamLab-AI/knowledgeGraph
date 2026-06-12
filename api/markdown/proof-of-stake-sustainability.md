@@ -16,9 +16,9 @@
 
 - ### Content
 
-  The transition from [[Proof of Work]] to [[Proof of Stake]] represents one of the most consequential sustainability developments in the [[Blockchain]] ecosystem. [[Ethereum]]'s Merge in September 2022 demonstrated that a major public network could reduce its energy consumption by approximately 99.95%, dropping from an estimated 112 TWh per year to roughly 0.01 TWh — equivalent to the energy consumption of approximately 2,100 US households rather than the energy footprint of a medium-sized country.
+  The transition from [[Proof of Work]] to [[Proof of Stake]] represents one of the most consequential sustainability developments in the [[Blockchain]] ecosystem. [[Ethereum Smart Contract Platform]]'s Merge in September 2022 demonstrated that a major public network could reduce its energy consumption by approximately 99.95%, dropping from an estimated 112 TWh per year to roughly 0.01 TWh — equivalent to the energy consumption of approximately 2,100 US households rather than the energy footprint of a medium-sized country.
 
-  This transformation has reshaped the environmental narrative around [[Blockchain]] technology. Where critics previously cited [[Bitcoin]]'s energy consumption as evidence of fundamental unsustainability, the success of [[Proof of Stake]] networks has decoupled the concept of [[Distributed Ledger Technology]] from energy-intensive computation. Networks including [[Ethereum]], [[Polkadot]], [[Cosmos]], [[Cardano]], [[Solana]], and [[Avalanche]] now operate on stake-weighted consensus, collectively securing hundreds of billions in value with a fraction of the energy footprint of [[Proof of Work]] systems.
+  This transformation has reshaped the environmental narrative around [[Blockchain]] technology. Where critics previously cited [[Bitcoin Proof-of-Work Protocol]]'s energy consumption as evidence of fundamental unsustainability, the success of [[Proof of Stake]] networks has decoupled the concept of [[Distributed Ledger Technology]] from energy-intensive computation. Networks including [[Ethereum Smart Contract Platform]], [[Polkadot]], [[Cosmos]], [[Cardano]], [[Solana]], and [[Avalanche]] now operate on stake-weighted consensus, collectively securing hundreds of billions in value with a fraction of the energy footprint of [[Proof of Work]] systems.
 
   #### Key Characteristics
   - **Energy Efficiency**: PoS eliminates competitive [[Mining]] computation, replacing it with stake-weighted [[Validator]] selection that requires minimal computational overhead
@@ -30,9 +30,9 @@
 
   #### Current Landscape (2024-2025)
 
-  By 2025, [[Proof of Stake]] has become the dominant consensus mechanism for new [[Layer 1]] networks and the preferred approach for enterprise [[Blockchain]] deployments. [[Ethereum]]'s post-Merge ecosystem has matured significantly, with over 30 million ETH staked across more than 900,000 validators, representing approximately 25% of the total supply.
+  By 2025, [[Proof of Stake]] has become the dominant consensus mechanism for new [[Layer 1]] networks and the preferred approach for enterprise [[Blockchain]] deployments. [[Ethereum Smart Contract Platform]]'s post-Merge ecosystem has matured significantly, with over 30 million ETH staked across more than 900,000 validators, representing approximately 25% of the total supply.
 
-  The [[Liquid Staking]] derivative market — led by protocols such as Lido (stETH), Rocket Pool (rETH), and Coinbase (cbETH) — has grown to represent over $40 billion in total value locked, enabling stakers to maintain liquidity while participating in consensus. This innovation has improved capital efficiency but raised concerns about centralisation, with Lido at times controlling over 30% of staked [[Ethereum]].
+  The [[Liquid Staking]] derivative market — led by protocols such as Lido (stETH), Rocket Pool (rETH), and Coinbase (cbETH) — has grown to represent over $40 billion in total value locked, enabling stakers to maintain liquidity while participating in consensus. This innovation has improved capital efficiency but raised concerns about centralisation, with Lido at times controlling over 30% of staked [[Ethereum Smart Contract Platform]].
 
   Regulatorily, the European Union's [[EU MiCA Regulation]] explicitly requires environmental sustainability disclosures for [[Consensus Mechanism]]s, creating a direct commercial advantage for [[Proof of Stake]] networks. Several institutional investors now incorporate [[Blockchain]] energy profiles into [[ESG Reporting]] criteria, favouring PoS-based protocols for portfolio inclusion.
 
@@ -43,7 +43,7 @@
   - **Nothing-at-Stake Problem**: Theoretical vulnerability where [[Validator]]s can vote on multiple chain forks without cost, addressed by [[Slashing Conditions]] but not eliminated
   - **Wealth Concentration**: Stake-weighted influence means larger holders have proportionally more power in [[Governance Token]] voting and block production
   - **Economic Sustainability of Rewards**: Long-term [[Validator]] reward rates must balance network security incentives against inflationary pressure on the native token
-  - **Minimal Viable Stake Barriers**: High minimum staking requirements (e.g., 32 ETH for [[Ethereum]]) can exclude smaller participants, though [[Liquid Staking]] and pooling mitigate this
+  - **Minimal Viable Stake Barriers**: High minimum staking requirements (e.g., 32 ETH for [[Ethereum Smart Contract Platform]]) can exclude smaller participants, though [[Liquid Staking]] and pooling mitigate this
 
   #### Standards and References
   - [[Ethereum Foundation]] — The Merge documentation and PoS specification

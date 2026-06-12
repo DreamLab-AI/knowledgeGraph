@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},
       {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
     ],

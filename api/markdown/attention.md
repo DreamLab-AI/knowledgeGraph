@@ -18,7 +18,7 @@
   - supports:: [[Foundation Model]], [[Diffusion Model]], [[Speech Recognition]], [[Protein Structure Prediction]], [[Code Generation]], [[Multimodal Reasoning]]
   - uses:: [[Scaled Dot Product]], [[Multi-Head Attention]], [[Causal Mask]], [[Sliding Window]], [[Rotary Position Embedding]], [[FlashAttention Kernel]], [[KV Cache]]
   - contrasts-with:: [[Recurrent Neural Network]], [[Long Short Term Memory]], [[Gated Recurrent Unit]], [[Convolutional Neural Network]], [[State Space Model]]
-  - related-to:: [[Memory-Augmented Neural Network]], [[Pointer Network]], [[Neural Turing Machine]], [[Graph Neural Network]], [[Mixture of Experts]]
+  - related-to:: [[Memory-Augmented Neural Network]], [[Pointer Network]], [[Neural Turing Machine]], [[Graph Neural Network]], [[Mixture-of-Experts Architecture]]
   - standardized-by:: [[NeurIPS]], [[ICLR]], [[ICML]], [[ACL]], [[CVPR]], [[ONNX Operator Set]], [[OpenAI Triton]]
 
 - ### Content

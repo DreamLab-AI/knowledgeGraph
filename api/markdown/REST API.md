@@ -44,7 +44,7 @@ public:: true
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
       {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
     ]
   },
@@ -65,7 +65,7 @@ public:: true
   - implements [[Web Standard]]
   - implements [[API Standard]]
   - enables [[Microservices Architecture]]
-  - uses [[json]]
+  - uses [[JSON Data Interchange Format]]
   - uses [[Software Architecture]]
 
 - ### Content

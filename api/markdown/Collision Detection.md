@@ -862,15 +862,15 @@ public:: true
         "label": "MuJoCo"
       },
       {
-        "@id": "urn:ngm:class:nvidia-flex",
+        "@id": "urn:ngm:class:nvidia-corporation-flex",
         "label": "NVIDIA Flex"
       },
       {
-        "@id": "urn:ngm:class:nvidia-phys-x",
+        "@id": "urn:ngm:class:nvidia-corporation-phys-x",
         "label": "NVIDIA PhysX"
       },
       {
-        "@id": "urn:ngm:class:nvidia-warp",
+        "@id": "urn:ngm:class:nvidia-corporation-warp",
         "label": "NVIDIA Warp"
       },
       {
@@ -1812,7 +1812,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -1844,7 +1844,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[SimulationLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Spatial Computing]], [[Computational Geometry]], [[Geometric Algorithm]], [[Physics Simulation]], [[Real-Time Algorithm]]
+  - is-subclass-of:: [[Spatial Computing Paradigm]], [[Computational Geometry]], [[Geometric Algorithm]], [[Physics Simulation]], [[Real-Time Algorithm]]
   - has-part:: [[Broad-Phase Detection]], [[Narrow-Phase Detection]], [[Contact Resolution]], [[Bounding Volume Hierarchy]], [[Time of Impact]], [[Contact Manifold]], [[Separating Axis Theorem]], [[Penetration Depth]]
   - requires:: [[Geometric Primitive]], [[Coordinate Frame]], [[Spatial Partitioning]], [[Numerical Robustness]], [[Floating-Point Arithmetic]]
   - enables:: [[Physics Simulation]], [[Motion Planning]], [[Haptic Feedback]], [[Ragdoll Animation]], [[Cloth Simulation]], [[Collision Avoidance]], [[Predictive Maintenance]], [[Quality Assurance]], [[Safety Certification]]

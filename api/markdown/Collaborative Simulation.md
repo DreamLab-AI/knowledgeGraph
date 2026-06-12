@@ -18,13 +18,13 @@ alias:: CollaborativeSimulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-simulation",
+  "@id": "urn:ngm:class:collaborative-systems-modality-simulation",
   "@type": "Class",
   "label": "Collaborative Simulation",
   "definition": "A computational environment in which multiple participants — human or agent — share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
   "domain": "spatial",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-technology", "label": "Collaborative Technology"}],
+  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
@@ -32,10 +32,10 @@ alias:: CollaborativeSimulation
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin-collaboration", "label": "Digital Twin Collaboration"},
-      {"@id": "urn:ngm:class:collaborative-design", "label": "Collaborative Design"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
       {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
     ]
   },

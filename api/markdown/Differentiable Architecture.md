@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
@@ -65,7 +65,7 @@ public:: true
 - ### Relationships
   - uses [[Gradient Descent]]
   - uses [[Neural Network Architecture]]
-  - enables [[Machine Learning]]
+  - enables [[Machine Learning Discipline]]
   - relatedTo [[Hyperparameter]]
   - relatedTo [[Deep Learning]]
   - relatedTo [[Knowledge Distillation]]

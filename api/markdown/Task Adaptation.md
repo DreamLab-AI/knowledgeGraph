@@ -60,12 +60,12 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:task-specific-head", "label": "Task Specific Head"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},

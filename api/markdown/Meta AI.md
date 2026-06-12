@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},

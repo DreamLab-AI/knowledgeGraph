@@ -168,7 +168,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {

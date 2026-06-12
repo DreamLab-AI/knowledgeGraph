@@ -77,7 +77,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ]
@@ -111,7 +111,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:linked:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -148,7 +148,7 @@ public:: true
   - is-subclass-of:: [[Linked Data]]
   - bridges-to:: [[Web Standards]], [[Knowledge Graphs]]
   - requires:: [[Linked Data]], [[RDF]]
-  - enables:: [[Semantic Web]]
+  - enables:: [[Semantic Web Linked Data Standard]]
 
 - ### Content
   - The Linked Data Platform (LDP) is a W3C recommendation that specifies how to use HTTP to create, read, update and delete linked data resources and containers. It defines interaction patterns so that RDF resources can be managed in a consistent, RESTful way.

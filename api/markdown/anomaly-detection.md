@@ -8,7 +8,7 @@
 - ### Relationships
   - enables [[Fraud Detection]]
   - enables [[Cybersecurity]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Pattern Recognition]]
   - relatedTo [[Time Series Forecasting]]
 

@@ -15,12 +15,12 @@
   - requires:: [[Large Language Models]], [[Prompt Engineering]], [[Sandbox Environment]], [[Version Control]], [[Context Window]], [[OpenAI API]]
   - enables:: [[Rapid Prototyping]], [[Full-Stack Application Generation]], [[Automated Software Scaffolding]], [[Non-Engineer Development]], [[AI-Assisted Software Engineering]]
   - implements:: [[ReAct Framework]], [[Tool Use]], [[Chain of Thought]], [[Agentic Loop]], [[Self-Debugging Code Generation]], [[Multi-File Code Generation]]
-  - depends-on:: [[Large Language Models]], [[Anthropic Claude]], [[ChatGPT]], [[Tokenisation]], [[Attention]], [[Transformer Architecture]]
+  - depends-on:: [[Large Language Models]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Neural Network Text Tokenisation]], [[Attention]], [[Transformer Architecture]]
   - supports:: [[Software Development]], [[Web Development]], [[Startup Prototyping]], [[Hackathon Development]], [[No-Code Development]], [[Open Source AI]]
-  - uses:: [[Python]], [[React]], [[GitHub]], [[Docker]], [[TypeScript]], [[Supabase]]
+  - uses:: [[Python]], [[React]], [[GitHub]], [[Docker Containerisation Platform]], [[TypeScript]], [[Supabase]]
   - contrasts-with:: [[GitHub Copilot]], [[Cursor]], [[Aider]], [[Devin]], [[Replit Agent]], [[Cline]], [[Competition in AI]]
-  - related-to:: [[Agent Frameworks]], [[AI Adoption]], [[Competition in AI]], [[Open Source AI]], [[Anthropic Claude]], [[ChatGPT]], [[Cognitive AI]]
-  - standardized-by:: [[OpenAI API]], [[Anthropic Claude]], [[SWE-bench Benchmark]], [[HumanEval]], [[MBPP Benchmark]]
+  - related-to:: [[Agent Frameworks]], [[AI Adoption]], [[Competition in AI]], [[Open Source AI]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Cognitive AI]]
+  - standardized-by:: [[OpenAI API]], [[Constitutional AI Language Model Family]], [[SWE-bench Benchmark]], [[HumanEval]], [[MBPP Benchmark]]
 
 - ### Content
 

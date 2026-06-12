@@ -180,7 +180,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -259,5 +259,5 @@ public:: true
   - Cross-platform interoperability standards
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]]
   - migration-date:: 2026-04-26T00:00:00Z

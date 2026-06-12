@@ -28,7 +28,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
       {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ieee-control-systems-society", "label": "IEEE Control Systems Society"},

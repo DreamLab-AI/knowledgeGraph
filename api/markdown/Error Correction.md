@@ -33,7 +33,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:fault-tolerance-system", "label": "Fault Tolerance System"},
       {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
@@ -48,7 +48,7 @@ public:: true
   - [[Error Correction]] is the engineering and mathematical practice of adding structured redundancy to data — such as [[Reed-Solomon Codes]] — so that a decoder can detect and restore corrupted or lost bits without retransmission, ensuring [[Data Integrity]] and [[Reliability]] across noisy communication channels and storage media.
 
 - ### Relationships
-  - [[Error Correction]] is a specialisation of [[Fault Tolerance]] applied to information representation. [[Reed-Solomon Codes]] are the most widely deployed algebraic ECC family, used in storage (RAID, optical discs) and deep-space communication. It enables [[Fault Tolerance System]] design in [[Distributed Storage]] architectures through erasure coding. [[Quantum Computing]] depends critically on quantum error correction to suppress decoherence below the fault-tolerance threshold. [[Data Compression]] and error correction interact because compressed data is more sensitive to bit errors. [[Cryptographic Hash]] values provide a detection layer complementary to correction codes.
+  - [[Error Correction]] is a specialisation of [[Fault Tolerance]] applied to information representation. [[Reed-Solomon Codes]] are the most widely deployed algebraic ECC family, used in storage (RAID, optical discs) and deep-space communication. It enables [[Fault Tolerance System]] design in [[Distributed Storage]] architectures through erasure coding. [[Quantum Computation Paradigm]] depends critically on quantum error correction to suppress decoherence below the fault-tolerance threshold. [[Data Compression]] and error correction interact because compressed data is more sensitive to bit errors. [[Cryptographic Hash]] values provide a detection layer complementary to correction codes.
 
 - ### Content
   - Error correction theory originates with Claude Shannon's 1948 "A Mathematical Theory of Communication," which proved that reliable communication is possible over a noisy channel at rates up to the channel capacity, and with Richard Hamming's 1950 single-error-correcting codes developed in response to early computer punch-card errors. These foundations spawned decades of coding theory research yielding convolutional codes, BCH codes, Reed-Solomon codes, turbo codes (1993), and low-density parity-check (LDPC) codes that approach Shannon capacity.

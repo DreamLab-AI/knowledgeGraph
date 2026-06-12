@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}
     ],
     "relatedTo": [
@@ -45,7 +45,7 @@ public:: true
 ```
 
 - ### Definition
-  - Climate Tech is the broad sector of innovation dedicated to addressing the climate crisis through technology-driven solutions. It encompasses hardware (solar panels, batteries, electrolysers, direct-air-capture machines), software (grid management, carbon accounting, ESG analytics), and enabling platforms (voluntary [[Carbon Markets]], [[Renewable Energy]] certificates, green finance instruments). [[Machine Learning]] and AI are increasingly embedded in Climate Tech to optimise energy dispatch, improve climate modelling, and automate [[Environmental Monitoring]].
+  - Climate Tech is the broad sector of innovation dedicated to addressing the climate crisis through technology-driven solutions. It encompasses hardware (solar panels, batteries, electrolysers, direct-air-capture machines), software (grid management, carbon accounting, ESG analytics), and enabling platforms (voluntary [[Carbon Markets]], [[Renewable Energy]] certificates, green finance instruments). [[Machine Learning Discipline]] and AI are increasingly embedded in Climate Tech to optimise energy dispatch, improve climate modelling, and automate [[Environmental Monitoring]].
 
 - ### Relationships
   - Climate Tech overlaps significantly with [[Sustainable Finance]] and [[ESG Reporting]], as investors require credible emissions data to make capital allocation decisions aligned with [[Net Zero Targets]]. [[Renewable Energy]] deployment is the largest sub-sector by investment volume, while [[Carbon Credits]] and [[Carbon Markets]] provide financial incentives for emissions reduction and removal projects. Blockchain-based provenance tracking is increasingly used to improve [[Carbon Credits]] integrity and [[Environmental Monitoring]] data quality.
@@ -55,7 +55,7 @@ public:: true
 
   - Technically, Climate Tech spans several distinct innovation layers: generation (photovoltaics, wind, geothermal, nuclear fission and fusion); storage (lithium-ion, flow batteries, gravity, hydrogen); distribution (smart grids, vehicle-to-grid, demand response); industry decarbonisation (green hydrogen, electrification, circular economy); carbon removal (forestation, enhanced weathering, BECCS, DAC); and digital infrastructure (IoT [[Environmental Monitoring]], AI-driven grid optimisation, blockchain-anchored carbon registries). Each sub-sector has distinct technical maturity, capital requirements, and policy dependency profiles.
 
-  - The digital layer of Climate Tech is heavily dependent on AI and [[Machine Learning]] for weather forecasting to improve [[Renewable Energy]] generation predictions, demand forecasting for grid balancing, satellite imagery analysis for deforestation monitoring, and automated [[ESG Reporting]] against frameworks such as TCFD, GRI, and CSRD. Startups including Tomorrow.io, Persefoni, Pachama, and Xpansiv operate at the intersection of data infrastructure and [[Carbon Markets]], using real-time sensor data and remote sensing to improve the verifiability of carbon credits.
+  - The digital layer of Climate Tech is heavily dependent on AI and [[Machine Learning Discipline]] for weather forecasting to improve [[Renewable Energy]] generation predictions, demand forecasting for grid balancing, satellite imagery analysis for deforestation monitoring, and automated [[ESG Reporting]] against frameworks such as TCFD, GRI, and CSRD. Startups including Tomorrow.io, Persefoni, Pachama, and Xpansiv operate at the intersection of data infrastructure and [[Carbon Markets]], using real-time sensor data and remote sensing to improve the verifiability of carbon credits.
 
   - By 2024–2025, global Climate Tech investment exceeded $1.7 trillion annually (BloombergNEF), with solar and EV battery supply chains the dominant categories. The EU's Green Deal Industrial Plan, the US Inflation Reduction Act, and similar national frameworks are driving massive deployment. AI for climate — including foundation models for weather, materials discovery, and grid optimisation — has become a major focus. Key debates centre on additionality and permanence of carbon removal, the data quality of voluntary [[Carbon Markets]], and the pace of permitting reform to unlock grid infrastructure for [[Renewable Energy]] projects.
 

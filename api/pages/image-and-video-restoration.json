@@ -133,7 +133,7 @@
         "label": "Real-ESRGAN"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-inpaint",
+        "id": "urn:ngm:class:stable-diffusion-image-model-inpaint",
         "label": "Stable Diffusion Inpaint"
       },
       {
@@ -257,7 +257,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:video-processing",
+        "id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Processing"
       }
     ]

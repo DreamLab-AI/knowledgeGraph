@@ -11,7 +11,7 @@
   - uses [[Feature Extraction]]
   - enables [[Object Detection]]
   - enables [[Computer Vision]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
 

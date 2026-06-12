@@ -590,7 +590,7 @@ public:: true
         "label": "ARM Cortex"
       },
       {
-        "@id": "urn:ngm:class:google-or-tools",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-or-tools",
         "label": "Google OR-Tools"
       },
       {
@@ -606,7 +606,7 @@ public:: true
         "label": "Kubernetes"
       },
       {
-        "@id": "urn:ngm:class:nvidia-jetson",
+        "@id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
       },
       {
@@ -1183,7 +1183,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1240,7 +1240,7 @@ public:: true
   - requires:: [[Operations Research]], [[Graph Theory]], [[Mixed Integer Programming]], [[Reinforcement Learning]], [[IoT Sensors]], [[Real-Time Data Streams]], [[Geospatial Data]], [[Cloud Computing]]
   - enables:: [[Carbon Footprint Reduction]], [[Just-in-Time Inventory]], [[Autonomous Warehousing]], [[Dynamic Pricing]], [[Predictive Maintenance]], [[Customer Experience]], [[Resilient Supply Chains]], [[Reverse Logistics]]
   - implements:: [[VRPTW Solver]], [[Genetic Algorithm]], [[Simulated Annealing]], [[Transformer Networks]], [[Gradient Boosted Trees]], [[Digital Twin]], [[Reinforcement Learning]], [[Attention Model]], [[Temporal Fusion Transformer]]
-  - depends-on:: [[Graph Theory]], [[Linear Programming]], [[Stochastic Optimization]], [[Machine Learning]], [[Cloud Computing]], [[Edge Computing]], [[IoT Integration]]
+  - depends-on:: [[Graph Theory]], [[Linear Programming]], [[Stochastic Optimization]], [[Machine Learning Discipline]], [[Cloud Computing]], [[Edge Computing]], [[IoT Integration]]
   - supports:: [[E-Commerce Fulfilment]], [[Cold Chain Monitoring]], [[Pharmaceutical Logistics]], [[Retail Supply Chain]], [[Urban Freight]], [[Reverse Logistics]], [[Port Operations]], [[Intermodal Transport]]
   - uses:: [[Google OR-Tools]], [[Gurobi]], [[Hexaly]], [[PyTorch]], [[Apache Kafka]], [[Kubernetes]], [[Digital Twin]], [[NVIDIA Jetson]], [[ARM Cortex]]
   - contrasts-with:: [[Manual Route Planning]], [[Rule-Based Dispatch]], [[Static Inventory Positioning]], [[Paper-Based Freight Management]]

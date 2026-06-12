@@ -3,7 +3,7 @@
   "title": "Bitcoin Technical Overview",
   "slug": "bitcoin-technical-overview",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-technical-overview",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
   "domain": "blockchain",
   "definition": "Bitcoin Technical Overview is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol \u2014 the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whit...",
   "subClassOf": [
@@ -26,7 +26,7 @@
         "label": "BIP Process"
       },
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -257,11 +257,11 @@
         "label": "BIP Process"
       },
       {
-        "id": "urn:ngm:class:bitcoin-core",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "id": "urn:ngm:class:bitcoin-optech",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-optech",
         "label": "Bitcoin Optech"
       },
       {

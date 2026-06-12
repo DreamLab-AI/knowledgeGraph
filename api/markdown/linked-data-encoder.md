@@ -12,7 +12,7 @@
   - requires:: [[JSON-LD 1.1 Standard]], [[W3C Vocabulary]], [[Canonical JSON]], [[URI Canonicaliser]]
   - enables:: [[Linked Data Consumption]], [[Cross-System Querying]], [[Semantic Federation]], [[Knowledge Graph Integration]]
   - implements:: [[JSON-LD 1.1]], [[W3C Linked Data]], [[RDF Semantics]]
-  - bridges-to:: [[Knowledge Graph]] (domain: ngm), [[Semantic Web]] (domain: ngm), [[RDF Store]] (domain: ngm)
+  - bridges-to:: [[Knowledge Graph]] (domain: ngm), [[Semantic Web Linked Data Standard]] (domain: ngm), [[RDF Store]] (domain: ngm)
 
 - ### Content
 

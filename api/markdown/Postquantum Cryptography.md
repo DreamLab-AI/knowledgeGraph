@@ -54,7 +54,7 @@ public:: true
   "relations": {
     "contrastsWith": [
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"}
     ],
     "requires": [
@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public-Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public-Key Infrastructure"},
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "uses": [
@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
       {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"}
@@ -135,7 +135,7 @@ public:: true
   - **Requires** [[Cryptographic Hash Function]] primitives and sound [[Cryptographic Key Management]] for hybrid and hash-based constructions.
   - **Enables** quantum-safe [[Digital Signature]]s, forward-secure [[Public-Key Infrastructure]], and [[Censorship Resistance]] for long-lived data.
   - **Uses** [[Encryption]] and [[Hash Function]] building blocks; **supports** [[Cyber Security and Cryptography]] practice and [[Cybersecurity Standard]] compliance.
-  - **Related to** [[Quantum Computing]], [[Zero-Knowledge Proof]] systems, [[Blockchain Application]]s, and [[Digital Signature Verification]].
+  - **Related to** [[Quantum Computation Paradigm]], [[Zero-Knowledge Proof]] systems, [[Blockchain Application]]s, and [[Digital Signature Verification]].
 
 - ### Content
 

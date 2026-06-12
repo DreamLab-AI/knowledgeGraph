@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:692be20334215e671bdeed4f1c746b0689204f09de9082ba5d5e180ed74eb4cb",
+  "title": "Spatial Computing Paradigm",
+  "slug": "spatial-computing-paradigm",
+  "public": true,
+  "classIri": "urn:ngm:class:spatial-computing-paradigm-paradigm",
+  "domain": "spatial-computing",
+  "definition": "Spatial Computing is the convergence of augmented reality, virtual reality, and mixed reality with physical-world sensing to create persistent spatial layers in which digital content is anchored to real-world locations and objects. Core capabilities include SLAM-based spatial mapping, depth sensing, object recognition, and spatial anchoring. Spatial Computing underpins immersive experiences in manufacturing, healthcare, retail, education, and navigation by enabling seamless interaction between physical and digital spaces.",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

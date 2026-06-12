@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:6b236a4e6ba9bf4bc12a7719c46f70399f0f49ef4d1342e1587b41fd89609e09",
+  "title": "Neural Network Latent Space",
+  "slug": "neural-network-latent-space",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-network-latent-space",
+  "domain": "artificial-intelligence",
+  "definition": "A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

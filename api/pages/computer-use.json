@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:multimodal",
+        "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "multimodal"
       },
       {

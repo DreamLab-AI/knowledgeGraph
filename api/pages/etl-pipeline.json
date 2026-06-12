@@ -33,7 +33,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -55,7 +55,7 @@
         "label": "Data Lake"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {

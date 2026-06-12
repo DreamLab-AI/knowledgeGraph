@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Digital Collaboration Workspace Tools"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"}, {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}]
+    "relatedTo": [{"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}, {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}]
   },
   "quality": 0.72
 }

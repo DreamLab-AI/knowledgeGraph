@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"},

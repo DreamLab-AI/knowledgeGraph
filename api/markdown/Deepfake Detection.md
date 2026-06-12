@@ -30,7 +30,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-authenticity", "label": "Content Authenticity"},
@@ -48,7 +48,7 @@ public:: true
   - [[Deepfake Detection]] encompasses machine learning methodologies designed to identify AI-synthesised media produced by [[Deepfakes]] and related generative systems. Detection approaches analyse spatial, temporal, and frequency-domain artefacts introduced during synthesis—such as blending boundaries, unnatural blinking patterns, and GAN fingerprints—to classify media as authentic or manipulated. The field is closely linked to [[Content Authentication]] and [[Content Authenticity]] frameworks that provide provenance-based alternatives or complements to detector-based approaches.
 
 - ### Relationships
-  - Deepfake detection is a direct countermeasure to [[Deepfakes]] and [[Deepfakes and fraudulent content]], and relies heavily on [[Neural Network]] architectures and [[Machine Learning]] pipelines trained on large-scale forgery datasets. Successful detection enables [[Content Authenticity]] assurance and supports [[Content Authentication]] systems. The field is inherently entangled with [[Generative AI]] progress, as advances in synthesis models continuously challenge the capacity of existing detectors.
+  - Deepfake detection is a direct countermeasure to [[Deepfakes]] and [[Deepfakes and fraudulent content]], and relies heavily on [[Neural Network]] architectures and [[Machine Learning Discipline]] pipelines trained on large-scale forgery datasets. Successful detection enables [[Content Authenticity]] assurance and supports [[Content Authentication]] systems. The field is inherently entangled with [[Generative AI]] progress, as advances in synthesis models continuously challenge the capacity of existing detectors.
 
 - ### Content
   - The field emerged in earnest around 2018, driven by the public release of face-swap tools and growing awareness of disinformation risks. Early detection methods relied on hand-crafted features targeting known GAN artefacts—checkerboard patterns, colour distribution inconsistencies, and eye-blink anomalies. Benchmark datasets such as FaceForensics++ (2019) and the Deepfake Detection Challenge (DFDC, 2020) established shared evaluation standards and spurred rapid model development.

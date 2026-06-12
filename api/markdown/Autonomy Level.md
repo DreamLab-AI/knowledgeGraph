@@ -109,7 +109,7 @@ public:: true
       {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:goal", "label": "Goal"},
@@ -175,7 +175,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -223,7 +223,7 @@ public:: true
   - hasPart:: [[Agent]]
   - requires:: [[Human in the Loop]], [[Safety]]
   - enables:: [[AI Agent System]], [[BDI Model]]
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - relatedTo:: [[Goal]], [[Objective]]
 
 - ### Content
@@ -642,5 +642,5 @@ public:: true
   - bridges-to:: [[AI Agent System]]
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[ISO 21448]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[ISO 21448]]
   - migration-date:: 2026-04-26T00:00:00Z

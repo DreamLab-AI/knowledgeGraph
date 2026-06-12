@@ -12,7 +12,7 @@
   - Enables [[Knowledge Graph]]
   - Enables [[Linked Data]]
   - Related To [[RDF]]
-  - Related To [[Semantic Web]]
+  - Related To [[Semantic Web Linked Data Standard]]
 
 - ### Content
 

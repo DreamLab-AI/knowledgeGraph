@@ -171,7 +171,7 @@ public:: true
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:spatial-web",
+      "@id": "urn:ngm:class:semantic-spatial-web-layer",
       "label": "Spatial Web"
     }
   ],
@@ -264,7 +264,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:spatial-web",
+        "@id": "urn:ngm:class:semantic-spatial-web-layer",
         "label": "Spatial Web"
       }
     ]
@@ -423,7 +423,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Web]]",
+      "raw": "[[Semantic Spatial Web Layer]]",
       "resolved": "urn:visionflow:owl:class:spatial-web",
       "kind": "ResolvedLink"
     },
@@ -464,7 +464,7 @@ public:: true
   - implemented-in-layer:: [[ApplicationLayer]]
 - ### Relationships
   - has-part:: [[Metaverse]], [[Interoperability Protocol]], [[Federated Identity]], [[Cross-Chain Bridge]], [[Portal System]], [[Multi-World Governance]], [[Asset Translation Layer]], [[Universal Inventory]]
-  - is-part-of:: [[Spatial Web]]
+  - is-part-of:: [[Semantic Spatial Web Layer]]
   - requires:: [[Identity Federation]], [[Protocol Translation]], [[Asset Bridging]], [[Distributed Governance]], [[Standard Format Support]], [[Cross-Platform Authentication]]
   - enables:: [[Cross-World Travel]], [[Asset Portability]], [[Multi-Platform Gaming]], [[Federated Social Networks]], [[Cross-Metaverse Commerce]], [[Universal Avatar]]
   - depends-on:: [[Blockchain]], [[Decentralized Identifier]], [[Verifiable Credential]], [[Smart Contract]], [[Interoperability Standard]]

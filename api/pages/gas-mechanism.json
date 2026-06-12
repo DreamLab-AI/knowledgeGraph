@@ -8,7 +8,7 @@
   "definition": "The system in a blockchain such as Ethereum that meters and prices computation, requiring users to pay fees denominated in units of gas for the operations their transactions perform. It limits resource use and prioritises transactions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum",
+      "id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],

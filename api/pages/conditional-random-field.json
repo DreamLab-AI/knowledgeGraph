@@ -23,7 +23,7 @@
         "label": "Probabilistic Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -68,7 +68,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],
@@ -85,7 +85,7 @@
         "label": "Named Entity"
       },
       {
-        "id": "urn:ngm:class:machine-learning-technique",
+        "id": "urn:ngm:class:machine-learning-discipline-technique",
         "label": "Machine Learning Technique"
       }
     ]

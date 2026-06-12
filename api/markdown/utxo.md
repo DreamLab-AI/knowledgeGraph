@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Cardano]]
   - requires:: [[Cryptographic Hash Function]], [[Digital Signature]]
-  - enables:: [[Bitcoin]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - In the UTXO model the global state is the set of all outputs that have been created but not yet spent. A wallet's balance is not stored directly; it is the sum of the unspent outputs that the wallet can unlock. Spending consumes whole outputs as inputs and produces new outputs, with any difference returned as change to the spender.

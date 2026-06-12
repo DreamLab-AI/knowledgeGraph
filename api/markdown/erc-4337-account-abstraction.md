@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
 
 - ### Content
   - An Ethereum standard defining account abstraction using a higher-layer pseudo-transaction object called a UserOperation, without changes to the core protocol. It enables smart contract wallets with custom validation logic.

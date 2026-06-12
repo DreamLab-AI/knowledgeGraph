@@ -55,7 +55,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -63,7 +63,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
       {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},

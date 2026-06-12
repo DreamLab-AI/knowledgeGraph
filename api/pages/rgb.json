@@ -8,7 +8,7 @@
   "definition": "A protocol for issuing and transferring assets and running smart contracts on Bitcoin using client-side validation and single-use seals anchored to the chain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],

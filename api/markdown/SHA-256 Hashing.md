@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
       {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
     ],

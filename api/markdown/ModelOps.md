@@ -63,7 +63,7 @@ alias:: Model Ops
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
     ],
@@ -76,14 +76,14 @@ alias:: Model Ops
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
       {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
     ]
@@ -142,7 +142,7 @@ alias:: Model Ops
   - enables:: [[Responsible AI]], [[Explainability]]
   - uses:: [[Machine Learning Framework]], [[Feature Store]]
   - supports:: [[AI Risk Management]]
-  - relatedTo:: [[Machine Learning]], [[AI Infrastructure]], [[AI Governance Framework]]
+  - relatedTo:: [[Machine Learning Discipline]], [[AI Infrastructure]], [[AI Governance Framework]]
 
 - ### Content
   ModelOps emerged as AI deployments matured from experimental proof-of-concepts to mission-critical production systems. While MLOps focuses on the engineering pipelines that automate model training, evaluation, and deployment, ModelOps adds the organisational and governance layer: who is accountable for model decisions, how are regulatory requirements (GDPR, EU AI Act, sector-specific rules) evidenced, and how are models audited over their operational lifetime? Gartner identified ModelOps as a strategic capability for enterprises seeking to scale beyond isolated AI projects to systematic AI adoption.

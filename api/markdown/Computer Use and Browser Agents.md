@@ -636,7 +636,7 @@ public:: true
         "label": "Display Server"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -848,7 +848,7 @@ public:: true
         "label": "Chrome DevTools Protocol"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-50-2024",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50-2024",
         "label": "EU AI Act Article 50 (2024)"
       },
       {
@@ -1524,7 +1524,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -1591,7 +1591,7 @@ public:: true
   - requires:: [[Foundation Model]], [[Vision Language Model]], [[Function Calling]], [[Inference Compute]], [[Display Server]], [[Browser Engine]], [[Operating System]], [[Tool Definition]], [[Human Oversight]]
   - enables:: [[Autonomous Task Execution]], [[Browser Automation]], [[Computer Use]], [[Agentic Workflow]], [[Web Navigation]], [[Form Filling Automation]], [[Visual Web Research]], [[End-to-End UI Testing]], [[Agentic Internet]]
   - implements:: [[ReAct]], [[Reflexion]], [[Set of Mark Prompting]], [[Screen2Tree Parsing]], [[Visual Grounding]], [[Plan-and-Execute]], [[Chain of Thought]]
-  - depends-on:: [[Transformer Architecture]], [[Multimodal Foundation Model]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], [[Chrome DevTools Protocol]], [[WebDriver BiDi]], [[Playwright]], [[Selenium]]
+  - depends-on:: [[Transformer Architecture]], [[Multimodal Foundation Model]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]], [[Chrome DevTools Protocol]], [[WebDriver BiDi]], [[Playwright]], [[Selenium]]
   - supports:: [[Customer Service Automation]], [[Software Development Automation]], [[Personal Assistance]], [[Enterprise Workflow]], [[Quality Assurance Testing]], [[Web Scraping]], [[Accessibility]], [[Deep Research]]
   - uses:: [[Model Context Protocol]], [[Agent2Agent Protocol]], [[Function Schemas]], [[Vision Language Model]], [[Accessibility Tree]], [[OCR]], [[OpenCV]], [[Screenshot]]
   - contrasts-with:: [[Robotic Process Automation]], [[Browser Plugin]], [[Digital Assistant (Siri/Alexa)]], [[Static Inference Pipeline]], [[Chatbot]], [[Workflow Automation]], [[API-Only Agent]]

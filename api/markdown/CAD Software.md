@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:design-software", "label": "Design Software"}],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:parametric-modeling", "label": "Parametric Modeling"},
+      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
       {"@id": "urn:ngm:class:manufacturing-process", "label": "Manufacturing Process"},
       {"@id": "urn:ngm:class:product-design", "label": "Product Design"}
     ],

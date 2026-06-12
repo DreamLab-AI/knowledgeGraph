@@ -9,7 +9,7 @@
   - enables: [[Avatar Customization]], [[Avatar System]]
   - uses: [[Game Engine]]
   - relatedTo: [[Asset Management]], [[Digital Asset]]
-  - partOf: [[Spatial Computing]]
+  - partOf: [[Spatial Computing Paradigm]]
 
 - ### Content
   # PropertySystem

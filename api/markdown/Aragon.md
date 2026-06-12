@@ -75,7 +75,7 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -114,7 +114,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -160,7 +160,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[DAO Tooling]]
   - bridges-to:: [[DAO]]
-  - requires:: [[Decentralised Autonomous Organisation]], [[Ethereum]], [[Smart Contracts]]
+  - requires:: [[Decentralised Autonomous Organisation]], [[Ethereum Smart Contract Platform]], [[Smart Contracts]]
   - enables:: [[Governance]]
 
 - ### Content

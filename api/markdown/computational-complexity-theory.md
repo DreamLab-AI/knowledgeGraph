@@ -9,7 +9,7 @@
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Information Theory]]
   - requires:: [[Algorithm]], [[Set Theory]]
-  - enables:: [[Quantum Computing]]
+  - enables:: [[Quantum Computation Paradigm]]
 
 - ### Content
   - Computational complexity theory categorises problems by how the resources needed to solve them scale with input size, giving rise to classes such as P, NP, and PSPACE. The relationships between these classes, most famously the open question of whether P equals NP, frame much of theoretical computer science.

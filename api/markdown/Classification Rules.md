@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"}
     ],
     "relatedTo": [
@@ -45,17 +45,17 @@ public:: true
 ```
 
 - ### Definition
-  - Classification Rules are symbolic decision statements of the form "IF <conditions> THEN <class>" that assign entities to categories in a transparent and auditable manner. Used in [[Expert Systems]], [[Machine Learning]], and [[Ontology]] reasoning, they encode domain knowledge as computable logical patterns. Rule bodies may reference attribute thresholds, relational constraints, or [[Knowledge Graph]] membership conditions, making them particularly valuable where regulatory explainability is required.
+  - Classification Rules are symbolic decision statements of the form "IF <conditions> THEN <class>" that assign entities to categories in a transparent and auditable manner. Used in [[Expert Systems]], [[Machine Learning Discipline]], and [[Ontology]] reasoning, they encode domain knowledge as computable logical patterns. Rule bodies may reference attribute thresholds, relational constraints, or [[Knowledge Graph]] membership conditions, making them particularly valuable where regulatory explainability is required.
 
 - ### Relationships
-  - Classification Rules sit at the intersection of [[Expert Systems]] and statistical [[Machine Learning]], providing the interpretable decision layer that black-box models lack. In semantic web settings, rules expressed in SWRL (Semantic Web Rule Language) operate over [[RDF]] data and [[OWL]] class hierarchies using [[Logic Programming]] inference engines. They feed into [[Knowledge Graph]] enrichment pipelines where entities must be typed or classified based on their properties and relationships.
+  - Classification Rules sit at the intersection of [[Expert Systems]] and statistical [[Machine Learning Discipline]], providing the interpretable decision layer that black-box models lack. In semantic web settings, rules expressed in SWRL (Semantic Web Rule Language) operate over [[RDF]] data and [[OWL]] class hierarchies using [[Logic Programming]] inference engines. They feed into [[Knowledge Graph]] enrichment pipelines where entities must be typed or classified based on their properties and relationships.
 
 - ### Content
   - The study of classification rules emerged from early AI and symbolic systems of the 1960s–1980s, formalised through production-rule systems such as OPS5 and the RETE algorithm for efficient rule firing. Quinlan's ID3 and C4.5 algorithms in the 1980s–1990s introduced rule extraction from decision trees, making learned classification rules an integral part of machine learning. RIPPER (Repeated Incremental Pruning to Produce Error Reduction) became a landmark algorithm for directly learning compact, accurate rule sets from data.
 
   - Technically, a classification rule consists of a conjunction of conditions (the antecedent or premise) and a consequent class label. Rule-learning algorithms optimise measures such as coverage, precision, and information gain to select conditions. In [[Ontology]] engineering, classification rules are expressed using description logic axioms or SWRL rules, where reasoners (Pellet, HermiT, ELK) derive class memberships by forward or backward chaining over [[RDF]] triple stores. Rule conflict resolution uses priority orderings, default logic, or defeasible reasoning to handle overlapping or contradictory rules.
 
-  - In enterprise settings, classification rules drive compliance automation, document categorisation, credit risk scoring, and clinical decision support. Rule engines such as Drools (JBoss), IBM ODM, and Red Hat Decision Manager execute thousands of rules per second against streaming event data. The integration of rule systems with [[Machine Learning]] models — known as neurosymbolic AI — allows statistical models to learn the initial classification and rule systems to enforce business constraints, audit trails, and override logic.
+  - In enterprise settings, classification rules drive compliance automation, document categorisation, credit risk scoring, and clinical decision support. Rule engines such as Drools (JBoss), IBM ODM, and Red Hat Decision Manager execute thousands of rules per second against streaming event data. The integration of rule systems with [[Machine Learning Discipline]] models — known as neurosymbolic AI — allows statistical models to learn the initial classification and rule systems to enforce business constraints, audit trails, and override logic.
 
   - As of 2024–2025, classification rules experience renewed interest through regulatory requirements for AI explainability under frameworks such as the EU AI Act, which mandates that high-risk AI systems provide human-understandable decision rationales. Rule extraction from large language models ([[Large Language Models]]) and graph neural networks is an active research area, aiming to distil learned representations into interpretable symbolic rules. Hybrid systems combining [[Knowledge Graph]] reasoning with neural classification are increasingly deployed in biomedical informatics, legal tech, and financial compliance.
 

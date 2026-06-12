@@ -338,7 +338,7 @@ public:: true
         "label": "Weak-to-Strong Generalisation"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -408,7 +408,7 @@ public:: true
         "label": "Weak-to-Strong Generalisation"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -460,7 +460,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -498,7 +498,7 @@ public:: true
         "label": "Seoul AI Summit"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -520,7 +520,7 @@ public:: true
         "label": "UK AISI Evaluation Protocols"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -769,7 +769,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -789,7 +789,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -799,7 +799,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -824,7 +824,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -876,17 +876,17 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[PolicyLayer]], [[EvaluationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[AI Ethics]], [[AI Governance]], [[Human-Computer Interaction]], [[Existential Risk Research]]
-  - has-part:: [[RLHF]], [[Constitutional AI]], [[Mechanistic Interpretability]], [[Scalable Oversight]], [[Red Teaming]], [[Dangerous Capability Evaluations]], [[Sparse Autoencoders]], [[Reward Modelling]], [[Debate]], [[Weak-to-Strong Generalisation]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[AI Ethics]], [[AI Governance]], [[Human-Computer Interaction]], [[Existential Risk Research]]
+  - has-part:: [[RLHF]], [[Constitutional AI Training Methodology]], [[Mechanistic Interpretability]], [[Scalable Oversight]], [[Red Teaming]], [[Dangerous Capability Evaluations]], [[Sparse Autoencoders]], [[Reward Modelling]], [[Debate]], [[Weak-to-Strong Generalisation]]
   - requires:: [[Human Feedback]], [[Reward Model]], [[Evaluation Benchmarks]], [[Interpretability Tools]], [[Governance Frameworks]]
   - enables:: [[Safe AI Deployment]], [[Trustworthy AI Systems]], [[Human Oversight]], [[Responsible Scaling]], [[Catastrophic Risk Reduction]]
-  - implements:: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], [[Debate Protocol]], [[Mechanistic Circuits Analysis]], [[Adversarial Red Teaming]], [[Weak-to-Strong Generalisation]], [[Direct Preference Optimisation]]
+  - implements:: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]], [[Debate Protocol]], [[Mechanistic Circuits Analysis]], [[Adversarial Red Teaming]], [[Weak-to-Strong Generalisation]], [[Direct Preference Optimisation]]
   - depends-on:: [[Reinforcement Learning]], [[Large Language Models]], [[Natural Language Processing]], [[Bayesian Inference]], [[Decision Theory]]
-  - supports:: [[EU AI Act]], [[Bletchley Declaration]], [[Seoul AI Summit]], [[Responsible Scaling Policy]], [[AI Safety Institute]], [[NIST AI RMF]]
+  - supports:: [[EU AI Act Regulatory Instrument]], [[Bletchley Declaration]], [[Seoul AI Summit]], [[Responsible Scaling Policy]], [[AI Safety Institute]], [[NIST AI RMF]]
   - uses:: [[Sparse Autoencoders]], [[Chain of Thought]], [[Activation Patching]], [[Causal Tracing]], [[Human Feedback]], [[Reward Modelling]]
   - contrasts-with:: [[AI Capabilities Research]], [[Uncontrolled Deployment]], [[Opaque Systems]]
-  - related-to:: [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Agents]], [[Anthropic Claude]], [[Artificial General Intelligence]]
-  - standardized-by:: [[EU AI Act]], [[NIST AI RMF]], [[ISO 42001]], [[UK AISI Evaluation Protocols]], [[Bletchley Declaration]]
+  - related-to:: [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Agents]], [[Constitutional AI Language Model Family]], [[Artificial General Intelligence]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]], [[ISO 42001]], [[UK AISI Evaluation Protocols]], [[Bletchley Declaration]]
 
 - ### Content
 

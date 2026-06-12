@@ -202,7 +202,7 @@
         "label": "Lido Finance"
       },
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama"
       },
       {
@@ -228,7 +228,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {

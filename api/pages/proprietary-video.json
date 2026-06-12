@@ -259,7 +259,7 @@
         "label": "Amazon Prime Video"
       },
       {
-        "id": "urn:ngm:class:apple-tv-plus",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-tv-plus",
         "label": "Apple TV Plus"
       },
       {
@@ -341,11 +341,11 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:apple",
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple"
       },
       {
-        "id": "urn:ngm:class:google",
+        "id": "urn:ngm:class:google-ai-technology-corporation",
         "label": "Google"
       }
     ],

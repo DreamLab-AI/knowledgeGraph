@@ -7,7 +7,7 @@
 
 - ### Relationships
   - **uses**: [[Active Learning]], [[Reinforcement Learning from Human Feedback]]
-  - **requires**: [[Human in the Loop]], [[Machine Learning]]
+  - **requires**: [[Human in the Loop]], [[Machine Learning Discipline]]
   - **supports**: [[AI Alignment]], [[Value Alignment]]
   - **relatedTo**: [[Training Data]]
 
@@ -25,7 +25,7 @@
 
   #### Related Concepts
   - [[Artificial Intelligence]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Computer Science]]
   - [[owl:Thing]]
 

@@ -208,7 +208,7 @@ public:: true
         "label": "Extended Reality (XR)"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -337,7 +337,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -376,7 +376,7 @@ public:: true
 - ### Relationships
   - bridges-to:: [[Sensor Input]] (rb)
   - has-part:: [[AR Display Device]], [[Spatial Tracking System]], [[Digital Content Overlay]], [[Environmental Sensor]]
-  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing]]
+  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing Paradigm]]
   - requires:: [[Computer Vision]], [[Real-Time Rendering]], [[Spatial Mapping]], [[Device Camera]]
   - enables:: [[Spatial Anchoring]], [[Object Recognition]], [[Contextual Information Overlay]], [[Interactive Holograms]]
   - depends-on:: [[6DOF Tracking]], [[SLAM]], [[Depth Sensing]], [[Environmental Understanding]]

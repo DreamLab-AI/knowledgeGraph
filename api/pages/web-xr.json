@@ -8,7 +8,7 @@
   "definition": "WebXR is a web standard and API that lets browsers access virtual and augmented reality devices, providing pose tracking, input and rendering hooks for immersive experiences delivered over the web.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing-domain",
+      "id": "urn:ngm:class:spatial-computing-paradigm-domain",
       "label": "Spatial Computing Domain"
     }
   ],

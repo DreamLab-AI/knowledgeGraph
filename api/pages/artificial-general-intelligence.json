@@ -113,7 +113,7 @@
         "label": "Inference-Time Compute"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       },
       {
@@ -121,11 +121,11 @@
         "label": "Scaling Hypothesis"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       }
     ],
@@ -197,11 +197,11 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:open-ai-charter",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-charter",
         "label": "OpenAI Charter"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -212,7 +212,7 @@
         "label": "Existential Risk"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {

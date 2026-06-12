@@ -117,7 +117,7 @@
         "label": "SwiGLU"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

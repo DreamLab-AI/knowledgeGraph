@@ -3,7 +3,7 @@
   "title": "Collaborative Robots",
   "slug": "collaborative-robots",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-robots",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-robots",
   "domain": "robotics",
   "definition": "Collaborative robots, or cobots, are robots designed to work safely alongside humans within a shared workspace.",
   "subClassOf": [

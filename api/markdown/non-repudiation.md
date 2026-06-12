@@ -17,7 +17,7 @@
   - implements:: [[ECDSA]], [[EdDSA]], [[Schnorr Signatures]], [[RSA Signatures]], [[CAdES]], [[XAdES]], [[PAdES]], [[RFC 3161 TSP]], [[OpenTimestamps]]
   - depends-on:: [[Elliptic Curve Cryptography]], [[Cryptographic Hash]], [[Public Key Infrastructure]], [[Certificate Authority]], [[Trusted Third Party]], [[Key Management]]
   - supports:: [[eIDAS Compliance]], [[eSignature Law]], [[GDPR Audit Trail]], [[Blockchain Transaction Integrity]], [[Smart Contract Enforcement]], [[Financial Regulation]]
-  - uses:: [[Blockchain Network]], [[Bitcoin]], [[Ethereum]], [[Distributed Ledger]], [[OCSP]], [[CRL Certificate Revocation]]
+  - uses:: [[Blockchain Network]], [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Distributed Ledger]], [[OCSP]], [[CRL Certificate Revocation]]
   - contrasts-with:: [[Anonymity]], [[Zero Knowledge Proof]], [[Privacy Preserving Blockchain]], [[Pseudonymity]], [[Deniable Authentication]]
   - related-to:: [[Cryptography Security and Privacy]], [[Identity Management System]], [[Self Sovereign Identity]], [[Verifiable Credentials]], [[Digital Identity Wallet]], [[Smart Contract]], [[Access Control System]]
   - standardized-by:: [[ISO IEC 7498-2]], [[ISO IEC 13888]], [[ETSI EN 319 series]], [[FIPS 186-5]], [[RFC 3161]], [[eIDAS Regulation]], [[NIST SP 800-208]]

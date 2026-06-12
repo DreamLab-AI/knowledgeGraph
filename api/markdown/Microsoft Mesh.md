@@ -112,7 +112,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:linked:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -142,7 +142,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse Domain]]
-  - bridges-to:: [[Virtual World]], [[Spatial Computing]]
+  - bridges-to:: [[Virtual World]], [[Spatial Computing Paradigm]]
   - requires:: [[Avatar System]]
   - enables:: [[Mixed Reality]]
 

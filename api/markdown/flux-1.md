@@ -2,7 +2,7 @@
   - Flux.1 is a family of state-of-the-art open-weight text-to-image diffusion transformer models from Black Forest Labs, offering best-in-class prompt adherence, photorealism, and typographic accuracy as of mid-2024.
 
 - ### Relationships
-  - Flux.1 is a direct successor lineage to [[Stable Diffusion]], sharing key researchers. It operates within the [[Latent Diffusion]] paradigm and produces [[Text-to-Image]] outputs. Integration with [[ComfyUI Workflows]] and support for [[LoRA DoRA etc]] fine-tuning make it practically significant to the [[Open-Source AI]] ecosystem. The [[Inpainting]] capability extends its utility beyond simple generation to editing workflows.
+  - Flux.1 is a direct successor lineage to [[Stable Diffusion Image Model]], sharing key researchers. It operates within the [[Latent Diffusion]] paradigm and produces [[Text-to-Image]] outputs. Integration with [[ComfyUI Workflows]] and support for [[LoRA DoRA etc]] fine-tuning make it practically significant to the [[Open-Source AI]] ecosystem. The [[Inpainting]] capability extends its utility beyond simple generation to editing workflows.
 
 - ### Content
   - Flux.1 was released in August 2024 by Black Forest Labs (BFL), a startup founded by Robin Rombach, Andreas Blattmann, and other core researchers behind the original Latent Diffusion paper and Stable Diffusion. The name references magnetic flux — a nod to the flow-matching training objective at the model's core — and represents a deliberate architectural departure from the U-Net backbone used in earlier diffusion models.

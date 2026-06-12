@@ -86,7 +86,7 @@ public:: true
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},

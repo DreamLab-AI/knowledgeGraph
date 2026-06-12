@@ -1,5 +1,5 @@
 - ### Definition
-  - [[OWL]] (Web Ontology Language) is the W3C standard for building machine-readable ontologies on the [[Semantic Web]], grounding class and property definitions in [[Description Logic]] to enable automated reasoning over [[Knowledge Graph|knowledge graphs]] built on [[RDF]] foundations.
+  - [[OWL]] (Web Ontology Language) is the W3C standard for building machine-readable ontologies on the [[Semantic Web Linked Data Standard]], grounding class and property definitions in [[Description Logic]] to enable automated reasoning over [[Knowledge Graph|knowledge graphs]] built on [[RDF]] foundations.
 
 - ### Relationships
   - OWL requires [[RDF]] as its data model and [[Description Logic]] for its formal semantics, enabling [[Knowledge Representation]] with decidable reasoning. It enables [[Knowledge Graph]] construction with rich axiomatics and is queried using [[SPARQL]]. OWL 2 is the current version of the standard, formalised as [[OWL 2 Web Ontology Language]].

@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
@@ -135,7 +135,7 @@ public:: true
   - is-subclass-of:: [[System]]
   - hasPart:: [[Authentication]], [[Identity Verification]]
   - requires:: [[Identity Management]], [[Access Control]]
-  - uses:: [[Machine Learning]], [[Biometric Binding Mechanism]], [[Deep Learning]]
+  - uses:: [[Machine Learning Discipline]], [[Biometric Binding Mechanism]], [[Deep Learning]]
   - enables:: [[Access Control System]], [[Identity Systems]]
   - relatedTo:: [[Identity Management System]], [[Privacy Preserving Technology]], [[Algorithmic Bias]]
 

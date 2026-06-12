@@ -135,7 +135,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -188,7 +188,7 @@ public:: true
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
   - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 
@@ -411,7 +411,7 @@ public:: true
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
   - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 

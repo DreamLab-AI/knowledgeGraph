@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -44,7 +44,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:layoff-tracker-and-threatened-roles",
+        "id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
         "label": "Layoff tracker and threatened roles"
       }
     ],

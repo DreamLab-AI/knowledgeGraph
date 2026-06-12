@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Rollup]], [[zkSync]], [[Arbitrum]]
-  - requires:: [[Ethereum]], [[Proof of Stake]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]]
   - enables:: [[Decentralised Finance Domain]]
 
 - ### Content

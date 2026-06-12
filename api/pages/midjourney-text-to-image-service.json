@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:161e0e9f7e48d90a0fb86e6a376f2e9e47377dfbecb7491de8a736d96e7a8f25",
+  "title": "Midjourney Text-to-Image Service",
+  "slug": "midjourney-text-to-image-service",
+  "public": true,
+  "classIri": "urn:ngm:class:midjourney-text-to-image-service-text-to-image-service",
+  "domain": "midjourney",
+  "definition": "Midjourney is a proprietary generative artificial intelligence service that produces images from natural-language text prompts. It is operated by an independent research lab of the same name and is accessed primarily through a Discord bot interface and, later, a dedicated web application. The system is known for a distinctive aesthetic and for iterating rapidly through successive model versions that improve coherence, resolution and prompt adherence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:concept-art",
+        "label": "Concept Art"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "backlinks": []
+}

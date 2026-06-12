@@ -158,7 +158,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:artificial-superintelligence",
+        "@id": "urn:ngm:class:artificial-superintelligence-theory",
         "label": "artificial superintelligence"
       }
     ],
@@ -343,7 +343,7 @@ public:: true
   - Supports [[Regulatory Compliance]]
   - Related To [[AI Risk]]
   - Related To [[Governance]]
-  - Contrasts With [[artificial superintelligence]]
+  - Contrasts With [[Artificial Superintelligence Theory]]
 
 - ### Content
   - A normative framework establishing standards for responsible [[Artificial Intelligence]] development, deployment, and oversight within [[Digital Systems]]. It encompasses mechanisms for bias mitigation, fairness assessment, transparency requirements, and accountability structures that align AI capabilities with [[Human Values]] and societal interests.

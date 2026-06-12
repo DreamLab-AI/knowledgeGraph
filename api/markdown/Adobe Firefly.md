@@ -36,7 +36,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:adobe-creative-cloud", "label": "Adobe Creative Cloud"},
       {"@id": "urn:ngm:class:content-licensing", "label": "Content Licensing"},
-      {"@id": "urn:ngm:class:watermarks", "label": "Watermarks"}
+      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Watermarks"}
     ]
   },
   "quality": 0.8
@@ -47,7 +47,7 @@ public:: true
   - Adobe Firefly is a suite of generative AI models developed by Adobe and embedded within the [[Adobe Creative Cloud]] platform, providing [[Text-to-Image]] generation, outpainting, inpainting (Generative Fill), text effect generation, and vector artwork recolouring. Unlike competing models trained on web-scraped data of uncertain provenance, Firefly's training corpus is limited to Adobe Stock (licensed), openly licensed works, and public domain imagery, enabling Adobe to offer commercial intellectual property indemnification to Creative Cloud subscribers. The underlying architecture employs [[Diffusion Model]] techniques optimised for high-fidelity photorealistic and illustrative outputs controllable through natural language prompts and style references.
 
 - ### Relationships
-  - Firefly integrates with [[Adobe Creative Cloud]] as a foundational AI layer accessible from Photoshop (Generative Fill/Expand), Illustrator (Generative Recolour, Text to Vector), Adobe Express, and the standalone Firefly web application. Its [[Diffusion Model]] core enables [[Image Generation]] from text descriptions and reference images, while inpainting capabilities power [[Image Editing]] workflows. Outputs are tagged with [[Watermarks]] via Content Credentials (C2PA) provenance metadata, and the model's training on [[Content Licensing]] compliant datasets is central to Adobe's IP safety positioning.
+  - Firefly integrates with [[Adobe Creative Cloud]] as a foundational AI layer accessible from Photoshop (Generative Fill/Expand), Illustrator (Generative Recolour, Text to Vector), Adobe Express, and the standalone Firefly web application. Its [[Diffusion Model]] core enables [[Image Generation]] from text descriptions and reference images, while inpainting capabilities power [[Image Editing]] workflows. Outputs are tagged with [[Digital Content Provenance Marking]] via Content Credentials (C2PA) provenance metadata, and the model's training on [[Content Licensing]] compliant datasets is central to Adobe's IP safety positioning.
 
 - ### Content
   - Adobe Firefly was publicly launched in March 2023 as a beta web application, initially offering text-to-image generation and text-effect creation. The launch came months after the public release of Stable Diffusion and Midjourney, and was explicitly differentiated by its commercial-safety training data strategy—a direct response to legal uncertainty around copyright and AI training data that had created enterprise hesitation about competing tools. Adobe's deep relationships with creative professionals and stock imagery owners gave it a unique position to construct a licensed training corpus.

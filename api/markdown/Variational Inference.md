@@ -45,7 +45,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:latent-space", "label": "latent space"}
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"}
     ]
   },
   "qualityScore": 0.75,
@@ -66,7 +66,7 @@ public:: true
   - enables [[VAE]]
   - enables [[Generative Model]]
   - relatedTo [[Deep Learning]]
-  - relatedTo [[latent space]]
+  - relatedTo [[Neural Network Latent Space]]
 
 - ### Content
   Variational inference (VI) addresses the fundamental challenge that the posterior distribution p(z|x) over latent variables z given data x is almost always analytically intractable for models of practical interest. VI introduces a tractable approximate posterior q(z; φ) from a chosen family—commonly a mean-field Gaussian—and optimises its parameters φ to minimise the KL divergence between q and the true posterior, which is equivalent to maximising the Evidence Lower BOund (ELBO) on the log marginal likelihood.

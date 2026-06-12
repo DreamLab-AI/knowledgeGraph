@@ -27,7 +27,7 @@ alias:: RGB-Protocol
   "subClassOf": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
       {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
@@ -40,7 +40,7 @@ alias:: RGB-Protocol
     "relatedTo": [
       {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
       {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
-      {"@id": "urn:ngm:class:client-side-dco", "label": "Client side DCO"}
+      {"@id": "urn:ngm:class:privacy-preserving-dynamic-creative-optimisation", "label": "Client side DCO"}
     ]
   },
   "quality": 0.8

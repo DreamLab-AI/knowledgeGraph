@@ -30,7 +30,7 @@ public:: true
   "domain": "infrastructure",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure",
+      "@id": "urn:ngm:class:technology-infrastructure-domain",
       "label": "Infrastructure"
     }
   ],

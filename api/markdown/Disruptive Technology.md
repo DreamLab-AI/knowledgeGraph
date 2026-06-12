@@ -130,14 +130,14 @@ public:: true
       {"@id": "urn:ngm:class:disruptive-tech-domain", "label": "Disruptive Tech Domain"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:disruption", "label": "Disruption"},
+      {"@id": "urn:ngm:class:technology-disruption-dynamics", "label": "Disruption"},
       {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
       {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
     ],
@@ -279,7 +279,7 @@ public:: true
 
 - ### Relationships
   - partOf:: [[DisruptiveTechDomain]]
-  - relatedTo:: [[Disruption]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
+  - relatedTo:: [[Technology Disruption Dynamics]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
   - enables:: [[GenerativeAI]], [[MachineLearning]], [[EdgeComputing]], [[InternetOfThings]]
   - contrastsWith:: [[TechnologyStack]] (sustaining technologies)
 - ### Content

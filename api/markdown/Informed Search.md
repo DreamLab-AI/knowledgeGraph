@@ -54,10 +54,10 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
@@ -110,7 +110,7 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - **partOf**: [[Machine Learning]]
+  - **partOf**: [[Machine Learning Discipline]]
   - **uses**: [[Machine Learning Technique]]
   - **enables**: [[Autonomous Navigation]], [[Autonomous System]]
   - **relatedTo**: [[Reinforcement Learning]], [[Active Learning]]

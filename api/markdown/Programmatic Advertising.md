@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:identity-resolution", "label": "Identity Resolution"},
       {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
     ],

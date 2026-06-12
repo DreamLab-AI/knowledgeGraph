@@ -41,13 +41,13 @@ alias:: GestureRecognition
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
     ]
@@ -59,7 +59,7 @@ alias:: GestureRecognition
 - ### Definition
   - Gesture recognition is the computational identification and semantic interpretation of human body movements—primarily hands and arms—as symbolic commands or communicative signals for natural, touchless human-computer interaction in XR, robotics, and accessibility contexts.
 - ### Relationships
-  - Gesture recognition is a subfield of [[Computer Vision]] that integrates tightly with [[Hand Tracking]] and [[Pose Estimation]] pipelines. It relies on [[Deep Learning]] models trained on skeletal or dense point representations derived from [[Sensor Fusion]] of RGB and depth streams, including data from [[Motion Capture]] systems. The capability directly enables [[Spatial Computing]], [[Augmented Reality]], and [[Mixed Reality]] interaction paradigms, and feeds into broader [[Multimodal AI]] systems that combine gesture with speech and [[Eye Tracking]]. It is also a key enabler of [[Accessibility]] for users who cannot use traditional input devices.
+  - Gesture recognition is a subfield of [[Computer Vision]] that integrates tightly with [[Hand Tracking]] and [[Pose Estimation]] pipelines. It relies on [[Deep Learning]] models trained on skeletal or dense point representations derived from [[Sensor Fusion]] of RGB and depth streams, including data from [[Motion Capture]] systems. The capability directly enables [[Spatial Computing Paradigm]], [[Augmented Reality]], and [[Mixed Reality]] interaction paradigms, and feeds into broader [[Multimodal AI]] systems that combine gesture with speech and [[Eye Tracking]]. It is also a key enabler of [[Accessibility]] for users who cannot use traditional input devices.
 - ### Content
   - Gesture recognition emerged as a research domain in the 1980s alongside early computer vision work on sign language recognition and HCI studies at MIT Media Lab. Early systems used glove-based instrumentation with flex sensors and accelerometers to capture hand configuration and motion directly, bypassing the computationally expensive problem of inferring shape from pixels. These wired glove systems established the conceptual vocabulary of gesture as a structured language—discrete static poses, dynamic trajectories, and composite multi-phase movements—that persists in modern system design.
 

@@ -18,7 +18,7 @@
   - supports:: [[Cityscapes Benchmark]], [[COCO Dataset]], [[BDD100K]], [[nuScenes]], [[ADE20K]], [[Medical Segmentation Decathlon]]
   - uses:: [[Cross-Entropy Loss]], [[Dice Loss]], [[IoU Metric]], [[Panoptic Quality Metric]], [[Mean Average Precision]], [[Hungarian Matching]]
   - contrasts-with:: [[Object Detection]], [[Image Classification]], [[Depth Estimation]], [[Optical Flow]]
-  - related-to:: [[Human tracking and SLAM capture]], [[ComfyUI]], [[AI Diagram Tools]], [[Computer Vision]], [[Agents]]
+  - related-to:: [[Human Pose SLAM Capture System]], [[Node-Based Diffusion Pipeline Interface]], [[AI Diagram Tools]], [[Computer Vision]], [[Agents]]
   - standardized-by:: [[COCO Benchmark]], [[Pascal VOC Protocol]], [[Cityscapes Evaluation]], [[Medical Segmentation Decathlon]]
 
 - ### Content

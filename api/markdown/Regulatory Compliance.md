@@ -230,7 +230,7 @@ alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     }
@@ -503,5 +503,5 @@ alias:: BC-0479-regulatory-compliance, RegulatoryCompliance
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[IEEE 7000 Model Process]], [[ISO/IEC 42001]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[IEEE 7000 Model Process]], [[ISO/IEC 42001]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z

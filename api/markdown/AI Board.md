@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
@@ -128,7 +128,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - supports:: [[AI Office]], [[EU AI Act]]
+  - supports:: [[AI Office]], [[EU AI Act Regulatory Instrument]]
   - enables:: [[AI Governance]], [[AI Governance Framework]]
   - relatedTo:: [[AI Risk Management]], [[General Purpose AI Model]]
 

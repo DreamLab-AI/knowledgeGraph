@@ -172,7 +172,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-models",
+        "@id": "urn:ngm:class:machine-learning-discipline-models",
         "label": "Machine Learning Models"
       }
     ],

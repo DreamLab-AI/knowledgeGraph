@@ -146,7 +146,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
@@ -242,7 +242,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -294,7 +294,7 @@ public:: true
 
 
 - ### Definition
-  - A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.
+  - A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing Paradigm]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.
 - ### Semantic Classification
   - owl-class:: spatial-computing:metaversecoreconcepts
   - owl-role:: Concept

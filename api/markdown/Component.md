@@ -61,8 +61,8 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
     ],
     "partOf": [

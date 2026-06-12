@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing-domain", "label": "Spatial Computing Domain"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm-domain", "label": "Spatial Computing Domain"},
       {"@id": "urn:ngm:class:ar-display-device", "label": "AR Display Device"}
     ]
   },

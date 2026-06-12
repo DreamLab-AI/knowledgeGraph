@@ -3,7 +3,7 @@
   "title": "Collaborative Design",
   "slug": "collaborative-design",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-design",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-design",
   "domain": "metaverse",
   "definition": "Collaborative Design is a design methodology in which multiple stakeholders\u2014including designers, engineers, end users, and domain experts\u2014jointly participate in defining, iterating, and validating artefacts or systems. It draws on participatory design traditions to ensure that lived experience and diverse expertise shape outcomes rather than being consulted retrospectively. Digital collaborative design platforms support real-time co-authoring, version management, and synchronous review across distributed teams. The approach is applied in product development, spatial design, software architecture, and policy co-creation.",
   "subClassOf": [
@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:collaborative-whiteboard",
+        "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {
@@ -59,7 +59,7 @@
         "label": "Participatory Policy Making"
       },
       {
-        "id": "urn:ngm:class:collaborative-learning",
+        "id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       }
     ]

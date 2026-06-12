@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
     ],
     "uses": [

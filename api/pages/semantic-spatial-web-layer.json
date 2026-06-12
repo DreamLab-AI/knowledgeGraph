@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:cb6abc1bbdf211b0294e17fc7b5950f479e9cbfbeda69cf2dcc1a31e6edf49f3",
+  "title": "Semantic Spatial Web Layer",
+  "slug": "semantic-spatial-web-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-spatial-web-layer",
+  "domain": "spatial-computing",
+  "definition": "The Spatial Web is a computing paradigm that overlays machine-readable semantic information on physical locations and objects, enabling devices to understand and interact with the real world in context. It combines spatial computing, geospatial data, IoT sensors, and web standards to blur the boundary between physical and digital environments, and is regarded as a foundational layer for persistent augmented reality and metaverse experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

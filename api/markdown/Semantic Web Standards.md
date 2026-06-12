@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:semantic-web-standards",
+  "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
   "@type": "Class",
   "label": "Semantic Web Standards",
   "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",

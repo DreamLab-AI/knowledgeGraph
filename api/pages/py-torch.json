@@ -8,7 +8,7 @@
   "definition": "PyTorch is an open-source deep learning framework developed by Meta AI Research that provides a dynamic computation graph, automatic differentiation via autograd, and tight integration with Python for flexible model development and research. It has become the dominant framework in academic machine learning research and is widely used in production via TorchServe and TorchScript. PyTorch's tensor operations are GPU-accelerated through CUDA, and its ecosystem encompasses libraries such as TorchVision, TorchAudio, and PyTorch Lightning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-framework",
+      "id": "urn:ngm:class:machine-learning-discipline-framework",
       "label": "Machine Learning Framework"
     }
   ],
@@ -51,7 +51,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:python-and-py-torch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "Python and PyTorch"
       },
       {
@@ -85,7 +85,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ]

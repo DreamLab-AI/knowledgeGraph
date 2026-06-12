@@ -44,7 +44,7 @@
   - [[Virtual Economy]]
   - [[Virtual Labor]]
   - [[Digital Ownership]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
   - [[Non-Fungible Token]]
 
   ## Applications

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:bb3b078f249d70a4efa5b90f63b5f35cc856f30d54719fb45b3985f86f651512",
+  "title": "Digital Content Provenance Marking",
+  "slug": "digital-content-provenance-marking",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-content-provenance-marking",
+  "domain": "infrastructure",
+  "definition": "Techniques for embedding imperceptible or visible signals into digital content\u2014such as text, images, audio, or AI-generated outputs\u2014to assert provenance, ownership, or authenticity. AI watermarking approaches include statistical token-distribution biasing (for large language models) and frequency-domain embedding (for images), enabling detection of machine-generated content and supporting intellectual property protection and content provenance verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency-oecd",
+        "label": "Transparency (OECD)"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:7a296227bf6d94fea14b3d170d1cb5478dc7e95ddec94ef0c01cc613c49f7a5a",
+  "title": "Technology Infrastructure Domain",
+  "slug": "technology-infrastructure-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:technology-infrastructure-domain",
+  "domain": "infrastructure",
+  "definition": "Top-level domain category encompassing the foundational computing, networking, storage, and platform systems that underpin all technology domains within the NarrativeGoldmine ontology. Infrastructure provides the substrate on which AI, blockchain, metaverse, and robotics applications operate.",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-infrastructure",
+        "label": "Digital Twin Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "backlinks": []
+}

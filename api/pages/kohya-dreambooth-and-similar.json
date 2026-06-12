@@ -100,7 +100,7 @@
         "label": "Training Dataset"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -110,7 +110,7 @@
         "label": "AI Art Generation"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflow-integration",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflow-integration",
         "label": "ComfyUI Workflow Integration"
       },
       {
@@ -243,7 +243,7 @@
         "label": "InvokeAI"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -280,15 +280,15 @@
         "label": "Generative Image Models"
       },
       {
-        "id": "urn:ngm:class:animate-diff",
+        "id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
@@ -300,11 +300,11 @@
         "label": "IP Adapter"
       },
       {
-        "id": "urn:ngm:class:midjourney",
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

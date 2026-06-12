@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - A Bitcoin Improvement Proposal defining Taproot, an upgrade introducing a new output type using Schnorr signatures and Merkle-branch script commitments. It improves privacy and flexibility of Bitcoin transactions.

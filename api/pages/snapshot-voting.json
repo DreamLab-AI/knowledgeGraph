@@ -80,7 +80,7 @@
         "label": "ENS Name"
       },
       {
-        "id": "urn:ngm:class:ethereum-rpc-node",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-rpc-node",
         "label": "Ethereum RPC Node"
       },
       {

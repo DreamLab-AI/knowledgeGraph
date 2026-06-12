@@ -11,7 +11,7 @@
   - requires [[Reinforcement Learning]]
   - enables [[AI Alignment]]
   - relatedTo [[Direct Preference Optimisation]]
-  - relatedTo [[Constitutional AI]]
+  - relatedTo [[Constitutional AI Training Methodology]]
 
 - ### Content
   RLHF addresses a fundamental limitation of supervised fine-tuning: language models trained on human-written demonstrations inherit the statistical patterns of the training corpus but lack an explicit signal for preferred behaviour in novel or ambiguous situations. The RLHF pipeline consists of three stages: supervised fine-tuning on demonstration data; reward model training on human preference pairs (which of two model outputs is preferred); and RL optimisation of the language model to maximise reward model scores while constraining deviation from the supervised baseline via a KL-divergence penalty.

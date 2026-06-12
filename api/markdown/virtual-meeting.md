@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Telecollaboration]]
-  - uses:: [[Immersive Technology]], [[Collaboration Platform]], [[Spatial Computing]]
+  - uses:: [[Immersive Technology]], [[Collaboration Platform]], [[Spatial Computing Paradigm]]
   - enables:: [[Immersive Workspaces]], [[Telecollaboration and Telepresence]]
   - relatedTo:: [[Social VR]], [[Virtual Event Platform]]
 

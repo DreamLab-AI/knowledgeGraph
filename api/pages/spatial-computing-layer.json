@@ -3,7 +3,7 @@
   "title": "Spatial Computing Layer",
   "slug": "spatial-computing-layer",
   "public": true,
-  "classIri": "urn:ngm:class:spatial-computing-layer",
+  "classIri": "urn:ngm:class:spatial-computing-paradigm-layer",
   "domain": "spatial-computing",
   "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
   "subClassOf": [
@@ -67,7 +67,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:infrastructure-layer",
+        "id": "urn:ngm:class:technology-infrastructure-domain-layer",
         "label": "Infrastructure Layer"
       }
     ],

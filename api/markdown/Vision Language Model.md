@@ -24,7 +24,7 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:multimodal-models", "label": "Multimodal Models"}
+    {"@id": "urn:ngm:class:multimodal-ai-architecture-models", "label": "Multimodal Models"}
   ],
   "relations": {
     "uses": [
@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:visual-grounding", "label": "Visual Grounding"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multimodal-reasoning", "label": "Multimodal Reasoning"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-reasoning", "label": "Multimodal Reasoning"}
     ]
   },
   "quality": 0.85

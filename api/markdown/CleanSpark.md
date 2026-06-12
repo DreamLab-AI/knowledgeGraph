@@ -52,18 +52,18 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin-mining",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ]
@@ -92,7 +92,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -123,7 +123,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Bitcoin Mining]]
   - bridges-to:: [[Mining]]
-  - requires:: [[Bitcoin Mining]], [[Bitcoin]]
+  - requires:: [[Bitcoin Mining]], [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - CleanSpark is a United States company that builds and operates data centres for Bitcoin mining. It acquires and runs large fleets of specialised mining hardware and manages energy procurement, often emphasising access to low-cost and lower-carbon power.

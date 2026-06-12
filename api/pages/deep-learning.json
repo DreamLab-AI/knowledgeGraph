@@ -12,7 +12,7 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -441,8 +441,8 @@
       "label": "Music and Audio"
     },
     {
-      "slug": "nvidia",
-      "label": "NVIDIA"
+      "slug": "nvidia-corporation",
+      "label": "NVIDIA Corporation"
     },
     {
       "slug": "narrow-ai",

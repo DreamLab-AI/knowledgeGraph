@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       }
     ]
@@ -92,7 +92,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -127,7 +127,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
-  - bridges-to:: [[Bitcoin]], [[Store of Value]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Store of Value]]
   - requires:: [[Bitcoin Network]]
 
 - ### Content

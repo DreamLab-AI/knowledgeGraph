@@ -8,7 +8,7 @@
   "definition": "A store of value is any asset that retains purchasing power over time, enabling the owner to defer consumption and retrieve real wealth in the future with minimal loss to inflation, confiscation, or degradation. Classical monetary theory identifies store-of-value function alongside medium-of-exchange and unit-of-account as the three primary functions of money, though assets can serve one function without the others.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-as-money",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
       "label": "Bitcoin as Money"
     }
   ],

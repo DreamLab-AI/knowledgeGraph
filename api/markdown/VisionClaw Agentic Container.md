@@ -364,7 +364,7 @@ public:: true
         "label": "BIP-340 Schnorr Keypair"
       },
       {
-        "@id": "urn:ngm:class:json-ld-context",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
         "label": "JSON-LD Context"
       },
       {
@@ -404,7 +404,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {

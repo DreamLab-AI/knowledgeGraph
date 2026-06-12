@@ -28,7 +28,7 @@
   - supports:: [[Large Language Models]], [[Computer Vision]], [[Speech Recognition]], [[Anomaly Detection]], [[Reinforcement Learning]], [[Agents]]
   - uses:: [[Quantisation Aware Training]], [[Knowledge Distillation]], [[Neural Architecture Search]], [[Model Pruning]], [[Tensor Decomposition]]
   - contrasts-with:: [[Cloud Computing]], [[Data Centre GPU]], [[Centralised Inference]], [[CPU-Only Inference]]
-  - related-to:: [[AI Adoption]], [[Proprietary Large Language Models]], [[Foundation Models]], [[Agent Frameworks]], [[Internet of Things]], [[Autonomous Systems]]
+  - related-to:: [[AI Adoption]], [[Proprietary Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Agent Frameworks]], [[Internet of Things]], [[Autonomous Systems]]
   - standardized-by:: [[MLCommons MLPerf]], [[ONNX Standard]], [[IEEE P2941]], [[Khronos OpenCL]], [[ETSI MEC]]
 
 - ### Content

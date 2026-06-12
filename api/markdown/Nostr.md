@@ -31,9 +31,9 @@ public:: true
       {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},

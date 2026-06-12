@@ -66,7 +66,7 @@
   - **Navigating Complex Web Interfaces**:
 		- [To Unlock AI Spending, Microsoft, OpenAI and Google Prep ‘Agents’ — The Information](https://www.theinformation.com/articles/to-unlock-ai-spending-microsoft-openai-and-google-prep-agents)
   - ## Convergence :
-		- Everything is smoothing out as GenAI scaffolds human work. The interfaces won't need to be learnt any more. [[Social contract and jobs]] may soon be radically different. This is a [[Convergence]] but is also a [[Disruption]].
+		- Everything is smoothing out as GenAI scaffolds human work. The interfaces won't need to be learnt any more. [[Employment Social Contract Under Automation]] may soon be radically different. This is a [[Convergence]] but is also a [[Technology Disruption Dynamics]].
 		- I have been studying Bitcoin technologies for the past 7 years. This novel ecosystem is a non-trivial disruptive force, and is now deeply threaded through my technical research.
 		- ### Liberating Capabilities
 	 - **Enhancing Human Capabilities:** Details how AI has the potential to significantly enhance human intellectual and physical capabilities, leading to new forms of creativity, problem-solving, and productivity.

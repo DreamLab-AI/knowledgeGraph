@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
       {"@id": "urn:ngm:class:schema-definition", "label": "Schema Definition"},
       {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"}
     ],
@@ -45,7 +45,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[GraphQL]] is an [[API Standard]] and runtime in which clients declare exactly what data they need via a typed [[Schema Definition]], receiving a [[json]] response of precisely that shape over [[HTTP Protocol]], eliminating the over-fetching and under-fetching inherent in [[REST API]] endpoints and enabling unified data fetching across [[Microservices Architecture]] backends.
+  - [[GraphQL]] is an [[API Standard]] and runtime in which clients declare exactly what data they need via a typed [[Schema Definition]], receiving a [[JSON Data Interchange Format]] response of precisely that shape over [[HTTP Protocol]], eliminating the over-fetching and under-fetching inherent in [[REST API]] endpoints and enabling unified data fetching across [[Microservices Architecture]] backends.
 
 - ### Relationships
   - [[GraphQL]] is positioned as an alternative and complement to [[REST API]] within the broader [[API Management]] and [[API Integration]] landscape, often fronted by an [[API Gateway]] that handles authentication and rate-limiting before proxying to GraphQL resolvers. It uses [[Schema Definition]] as its type system contract between client and server, serialises responses as [[JSON]] transported over [[HTTP Protocol]], and provides a single endpoint through which clients can traverse arbitrarily complex data graphs. In [[Microservices Architecture]] contexts, GraphQL federation patterns allow a single gateway schema to stitch together multiple downstream service schemas, enabling [[API Integration]] without coupling clients to individual service endpoints.

@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Solidity]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Solidity]]
   - enables:: [[Smart Contract]]
 

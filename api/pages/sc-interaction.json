@@ -8,7 +8,7 @@
   "definition": "Interaction Technology is the spatial-computing taxonomy hub for all modalities through which users perceive and manipulate virtual and mixed-reality environments \u2014 including hand tracking, eye tracking, gaze control, haptics, voice interaction, and VR controllers. It sits alongside Display and Rendering and Platform and Environment as a peer category within spatial computing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing-paradigm",
       "label": "Spatial Computing"
     }
   ],

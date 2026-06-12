@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:seals",
+        "id": "urn:ngm:class:chinese-seal-art-ai-classification-pipeline",
         "label": "Seals"
       },
       {

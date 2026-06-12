@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-halving",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
   "@type": "Class",
   "label": "Bitcoin Halving",
   "definition": "The Bitcoin halving is a protocol-enforced event, occurring approximately every 210,000 blocks (roughly four years), at which the block subsidy paid to miners is cut in half. It implements Bitcoin's disinflationary monetary policy, capping total supply at 21 million coins and progressively reducing new issuance until it reaches zero around the year 2140. Halvings have historically preceded major shifts in mining economics and market price, and they are central to Bitcoin's narrative as a scarce, predictably issued digital asset.",
@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"},
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
     ]
@@ -39,7 +39,7 @@ public:: true
   - The Bitcoin halving is the protocol-scheduled event, every 210,000 blocks, that halves the miner block subsidy, enforcing Bitcoin's fixed disinflationary issuance toward a 21-million-coin cap.
 
 - ### Relationships
-  - Bitcoin Halving is a subclass of [[Mechanism Design]], encoding monetary policy directly into consensus rules. It relates intrinsically to [[Bitcoin]] as the asset whose supply it governs, to [[Proof of Work]] as the issuance mechanism it throttles, and to [[Mining Pool]] economics, which it periodically and sharply reprices.
+  - Bitcoin Halving is a subclass of [[Mechanism Design]], encoding monetary policy directly into consensus rules. It relates intrinsically to [[Bitcoin Proof-of-Work Protocol]] as the asset whose supply it governs, to [[Proof of Work]] as the issuance mechanism it throttles, and to [[Mining Pool]] economics, which it periodically and sharply reprices.
 
 - ### Content
   - The halving is the mechanism by which Bitcoin enforces verifiable scarcity. When the network launched in 2009, each mined block created 50 new bitcoin. The protocol reduces this subsidy by half at fixed block-height intervals: to 25 in 2012, 12.5 in 2016, 6.25 in 2020, and 3.125 in 2024. Because the schedule is fixed in code and enforced by every node, the future supply of bitcoin is known with precision decades in advance — a stark contrast to discretionary central-bank monetary policy.

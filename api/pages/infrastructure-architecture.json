@@ -3,7 +3,7 @@
   "title": "Infrastructure Architecture",
   "slug": "infrastructure-architecture",
   "public": true,
-  "classIri": "urn:ngm:class:infrastructure-architecture",
+  "classIri": "urn:ngm:class:technology-infrastructure-domain-architecture",
   "domain": "infrastructure",
   "definition": "The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.",
   "subClassOf": [

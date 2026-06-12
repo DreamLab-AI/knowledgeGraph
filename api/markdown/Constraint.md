@@ -76,7 +76,7 @@ public:: true
       {"@id": "urn:ngm:class:inference", "label": "Inference"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ],
@@ -141,7 +141,7 @@ A Constraint is a condition, restriction, or rule that limits the set of permiss
 
 ### Relationships
 
-Constraint **requires** an [[Objective]] (to define what is being optimised or satisfied) and a [[Model]] (the representation within which constraints are expressed). It **enables** [[Formal Verification]] (by providing checkable invariants), [[Reasoning]] (constraints guide inference over possible worlds), and [[Safety]] (safety properties are encoded as constraints that must never be violated). Constraints **use** [[Algorithm|Algorithms]] and [[Search Algorithm|Search Algorithms]] to enumerate or prune the solution space, and draw on [[Inference]] to propagate constraint consequences. They **support** [[Machine Learning]] (regularisation terms and output constraints), [[Fairness]] (demographic parity and equal opportunity conditions), and [[Ontology]] (ontological axioms are a form of logical constraint). Constraints are **relatedTo** [[Parameter]], [[Property]], and [[System]]. They **bridgesTo** [[Digital Twin]] (physical constraints are mirrored in simulation), [[Blockchain]] (smart-contract invariants and gas limits are constraints), and [[Smart Contract]] (contract pre- and post-conditions express constraints on permitted state transitions).
+Constraint **requires** an [[Objective]] (to define what is being optimised or satisfied) and a [[Model]] (the representation within which constraints are expressed). It **enables** [[Formal Verification]] (by providing checkable invariants), [[Reasoning]] (constraints guide inference over possible worlds), and [[Safety]] (safety properties are encoded as constraints that must never be violated). Constraints **use** [[Algorithm|Algorithms]] and [[Search Algorithm|Search Algorithms]] to enumerate or prune the solution space, and draw on [[Inference]] to propagate constraint consequences. They **support** [[Machine Learning Discipline]] (regularisation terms and output constraints), [[Fairness]] (demographic parity and equal opportunity conditions), and [[Ontology]] (ontological axioms are a form of logical constraint). Constraints are **relatedTo** [[Parameter]], [[Property]], and [[System]]. They **bridgesTo** [[Digital Twin]] (physical constraints are mirrored in simulation), [[Blockchain]] (smart-contract invariants and gas limits are constraints), and [[Smart Contract]] (contract pre- and post-conditions express constraints on permitted state transitions).
 
 ### Content
 

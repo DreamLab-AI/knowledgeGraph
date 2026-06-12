@@ -605,7 +605,7 @@ alias:: Brain-Computer Interfaces
         "label": "Low-Noise Analog Electronics"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-decoder",
+        "@id": "urn:ngm:class:machine-learning-discipline-decoder",
         "label": "Machine Learning Decoder"
       },
       {
@@ -1446,7 +1446,7 @@ alias:: Brain-Computer Interfaces
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1498,7 +1498,7 @@ alias:: Brain-Computer Interfaces
   - requires:: [[Biocompatible Materials]], [[Low-Noise Analog Electronics]], [[Neurosurgical Procedure]], [[Real-Time Computing]], [[Machine Learning Decoder]], [[Regulatory Approval]], [[Informed Consent]], [[Clinical Trial Infrastructure]]
   - enables:: [[Motor Restoration]], [[Speech Restoration]], [[Sensory Restoration]], [[Closed-Loop Neuromodulation]], [[Communication for Locked-In Patients]], [[Direct Neural Control]], [[Cognitive Augmentation]], [[Neurofeedback Therapy]]
   - implements:: [[Action Potential Recording]], [[Local Field Potential Recording]], [[Electrocorticography]], [[Electroencephalography]], [[Functional Near-Infrared Spectroscopy]], [[Intracortical Microstimulation]], [[Closed-Loop Control]]
-  - depends-on:: [[Neuroscience]], [[Electrophysiology]], [[Computational Neuroscience]], [[Machine Learning]], [[Biocompatible Engineering]], [[Surgical Robotics]], [[Signal Processing]], [[Information Theory]]
+  - depends-on:: [[Neuroscience]], [[Electrophysiology]], [[Computational Neuroscience]], [[Machine Learning Discipline]], [[Biocompatible Engineering]], [[Surgical Robotics]], [[Signal Processing]], [[Information Theory]]
   - supports:: [[Tetraplegia Rehabilitation]], [[ALS Communication]], [[Locked-In Syndrome Communication]], [[Parkinson's Disease Treatment]], [[Refractory Epilepsy Treatment]], [[Treatment-Resistant Depression]], [[Spinal Cord Injury Recovery]], [[Stroke Rehabilitation]]
   - uses:: [[Kalman Filter]], [[Wiener Filter]], [[Linear Discriminant Analysis]], [[Recurrent Neural Network]], [[Transformer Architecture]], [[Mamba State-Space Model]], [[Common Spatial Patterns]], [[Independent Component Analysis]], [[Riemannian Geometry]]
   - contrasts-with:: [[Keyboard]], [[Mouse]], [[Eye Tracking]], [[Voice Recognition]], [[EMG Wristband]], [[Peripheral Nerve Interface]], [[Spinal Cord Stimulator]]

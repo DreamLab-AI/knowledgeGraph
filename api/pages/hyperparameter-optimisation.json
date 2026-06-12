@@ -24,13 +24,13 @@
         "label": "Model Training"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ],
@@ -47,7 +47,7 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],

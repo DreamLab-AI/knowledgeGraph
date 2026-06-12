@@ -10,7 +10,7 @@
   - Requires: [[Digital Ownership]]
   - Uses: [[NFT]]
   - Uses: [[Blockchain]]
-  - Related To: [[copyright]]
+  - Related To: [[Intellectual Property Rights Framework]]
   - Related To: [[Tokenization]]
 
 - ### Content

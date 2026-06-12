@@ -18,13 +18,13 @@
   - is-subclass-of:: [[Sensor]], [[Exteroceptive Sensor]], [[Computer Vision System]], [[Hardware]], [[Robotics]], [[Imaging Parameters]]
   - has-part:: [[Camera]], [[Infrared Camera]], [[Infrared Sensor]], [[Infrared Light Source]], [[Infrared Led Illuminator]], [[Lens and Camera Calibration]], [[Camera Parameters]], [[Imaging Parameters]]
   - requires:: [[Infrared Light Source]], [[Infrared Led Illuminator]], [[FPGA]], [[Edge Computing]], [[Digital Signal Processing]], [[Camera Parameters]], [[Lens and Camera Calibration]]
-  - enables:: [[Computer Vision]], [[Depth Sensing]], [[Eye Tracking]], [[SLAM]], [[Autonomous Navigation]], [[3D LiDAR]], [[2D LiDAR]], [[Depth Estimation]], [[Point Cloud]], [[Hand Tracking]], [[Human tracking and SLAM capture]]
-  - implements:: [[Feature Extraction]], [[Image Classification]], [[Depth Estimation]], [[Point Cloud]], [[Convolutional Neural Network]], [[Human tracking and SLAM capture]], [[Computer Vision Task]]
-  - depends-on:: [[Deep Learning]], [[Machine Learning]], [[Computer Vision]], [[Real-time Processing]], [[Edge Computing Architecture]], [[Embedded AI Frameworks]], [[Digital Signal Processing]]
-  - supports:: [[Autonomous Robot]], [[Autonomous Vehicle]], [[Augmented Reality (AR)]], [[Mixed Reality (MR)]], [[Extended Reality (XR)]], [[Spatial Computing]], [[Medical Imaging AI]], [[Self Driving Car]], [[Robotics]], [[Lidar]], [[AR Technology]], [[AR Frame]]
+  - enables:: [[Computer Vision]], [[Depth Sensing]], [[Eye Tracking]], [[SLAM]], [[Autonomous Navigation]], [[3D LiDAR]], [[2D LiDAR]], [[Depth Estimation]], [[Point Cloud]], [[Hand Tracking]], [[Human Pose SLAM Capture System]]
+  - implements:: [[Feature Extraction]], [[Image Classification]], [[Depth Estimation]], [[Point Cloud]], [[Convolutional Neural Network]], [[Human Pose SLAM Capture System]], [[Computer Vision Task]]
+  - depends-on:: [[Deep Learning]], [[Machine Learning Discipline]], [[Computer Vision]], [[Real-time Processing]], [[Edge Computing Architecture]], [[Embedded AI Frameworks]], [[Digital Signal Processing]]
+  - supports:: [[Autonomous Robot]], [[Autonomous Vehicle]], [[Augmented Reality (AR)]], [[Mixed Reality (MR)]], [[Extended Reality (XR)]], [[Spatial Computing Paradigm]], [[Medical Imaging AI]], [[Self Driving Car]], [[Robotics]], [[Lidar]], [[AR Technology]], [[AR Frame]]
   - uses:: [[FPGA]], [[Edge Computing Architecture]], [[Embedded AI Frameworks]], [[Real-Time Inference at Edge]], [[Digital Signal Processing]], [[AI Hardware]], [[XR Hardware]]
   - contrasts-with:: [[InfraredSensor]], [[Current Sensor]], [[Force Torque Sensor]], [[Io T Sensors]], [[Iot Sensor Network]]
-  - related-to:: [[Lidar]], [[3D LiDAR]], [[2D LiDAR]], [[SLAM]], [[Human tracking and SLAM capture]], [[Neural Radiance Field]], [[Neural Rendering]], [[AR Technology]], [[Display Hardware]], [[AR Frame]], [[Light field]], [[Depth Sensing]], [[Computer Vision System]], [[Spatial Computing]]
+  - related-to:: [[Lidar]], [[3D LiDAR]], [[2D LiDAR]], [[SLAM]], [[Human Pose SLAM Capture System]], [[Neural Radiance Field]], [[Neural Rendering]], [[AR Technology]], [[Display Hardware]], [[AR Frame]], [[Light field]], [[Depth Sensing]], [[Computer Vision System]], [[Spatial Computing Paradigm]]
   - standardized-by:: [[Computer Vision System]], [[Imaging Parameters]], [[AI Hardware]], [[Camera Parameters]]
 
 - ### Content
@@ -168,7 +168,7 @@
 	  ```
 
   - ## About Optical Sensor Arrays
-  - **Optical Sensor Arrays** are the foundational hardware layer of modern [[Computer Vision]], [[Spatial Computing]], and robotic perception.
+  - **Optical Sensor Arrays** are the foundational hardware layer of modern [[Computer Vision]], [[Spatial Computing Paradigm]], and robotic perception.
   - At their core they are two-dimensional (or occasionally one-dimensional) arrangements of individual photodetectors — semiconductor devices converting incident photons into electrical charge via the photoelectric effect — fabricated with precise spatial geometry on a silicon or compound-semiconductor substrate.
   - Unlike single-point photodetectors, arrays simultaneously sample spatial distributions of light intensity (or wavelength, phase, or time-of-flight) across a scene, enabling imaging, depth mapping, spectroscopy, and gaze tracking in a single readout cycle.
   - The photon-to-signal chain begins at the **photodetector pixel**: photons strike the semiconductor depletion region, generating electron-hole pairs via band-gap absorption; accumulated charge is read out by the ROIC (readout integrated circuit).

@@ -638,7 +638,7 @@ public:: true
         "label": "Developmental Robotics"
       },
       {
-        "@id": "urn:ngm:class:foundation-models-for-robotics",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model-for-robotics",
         "label": "Foundation Models for Robotics"
       },
       {

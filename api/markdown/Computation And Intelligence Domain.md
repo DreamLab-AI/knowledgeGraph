@@ -82,7 +82,7 @@ alias:: ComputationAndIntelligenceDomain
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
     "enables": [
@@ -136,7 +136,7 @@ alias:: ComputationAndIntelligenceDomain
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -175,7 +175,7 @@ alias:: ComputationAndIntelligenceDomain
 		- bridges-to:: [[Cognitive Science]]
 		- bridges-to:: [[Philosophy of Mind]]
 		- bridges-to:: [[Theoretical Computer Science]]
-		- foundational-to:: [[Machine Learning]]
+		- foundational-to:: [[Machine Learning Discipline]]
 
   ## Definition
 

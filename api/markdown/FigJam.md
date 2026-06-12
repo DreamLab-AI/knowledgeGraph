@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
       {"@id": "urn:ngm:class:figma", "label": "Figma"}
     ]
   },

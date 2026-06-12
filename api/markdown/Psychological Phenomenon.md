@@ -47,7 +47,7 @@ public:: true
       "label": "Software Engineering"
     },
     {
-      "@id": "urn:ngm:class:humans-avatars-character",
+      "@id": "urn:ngm:class:digital-human-avatar-representation",
       "label": "Humans, Avatars , Character"
     }
   ],

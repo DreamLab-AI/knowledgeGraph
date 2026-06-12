@@ -1482,7 +1482,7 @@ public:: true
   "qualityScore": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:copyright", "label": "copyright"},
+      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "copyright"},
       {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],
@@ -3159,7 +3159,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Apple]]",
+      "raw": "[[Apple Inc Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:apple",
       "kind": "ResolvedLink"
     },
@@ -3174,7 +3174,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Could]]",
+      "raw": "[[Epistemic Modality Marker]]",
       "resolved": "urn:visionflow:owl:class:could",
       "kind": "ResolvedLink"
     },
@@ -3219,12 +3219,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[latent space]]",
+      "raw": "[[Neural Network Latent Space]]",
       "resolved": "urn:visionflow:owl:class:latent-space",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -3323,7 +3323,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - relatedTo: [[copyright]], [[AI Regulation]], [[AI Ethics]]
+  - relatedTo: [[Intellectual Property Rights Framework]], [[AI Regulation]], [[AI Ethics]]
   - supports: [[Compliance Framework]], [[Conformity Assessment]]
 
 - ### Content
@@ -3338,7 +3338,7 @@ public:: true
   - [[Artificial Intelligence]] patents growing 25-30% annually
   - China dominates with **70% of global AI patents**
   - [[United States]] leads in granted AI patents with strategic focus on market-ready innovations
-  - Key areas: [[Machine Learning]], [[Deep Learning]], [[Neural Networks]], [[Natural Language Processing]], [[Computer Vision]]
+  - Key areas: [[Machine Learning Discipline]], [[Deep Learning]], [[Neural Networks]], [[Natural Language Processing]], [[Computer Vision]]
   - Emerging focus: [[Federated Learning]], [[Unsupervised Learning]], [[Reinforcement Learning]] [Updated 2025]
   - Blockchain patent market: **$228M (2020) → $703M (2025)**, CAGR 25.3%
   - [[Blockchain Technology]] broader adoption: $3B (2020) → $39.7B projected (2025)
@@ -3361,7 +3361,7 @@ public:: true
   - [[Huawei Technologies]]: **6,600 patents** filed
   - [[Samsung Electronics]]: **4,640 patents** filed
   - [[Qualcomm]]: **3,848 patents** filed
-  - [[Alphabet/Google]], [[Apple]], [[Microsoft]], [[IBM]], [[Intel]]: Major institutional filers
+  - [[Alphabet/Google]], [[Apple Inc Technology Corporation]], [[Microsoft]], [[IBM]], [[Intel]]: Major institutional filers
   - Asian filers increasingly dominant in PCT filings
   - [[European Patent Office]] (EPO): Critical for EU market protection
   - [[Japan Patent Office]] (JPO): Strategic for Asia-Pacific
@@ -3374,7 +3374,7 @@ public:: true
   - English publications: **58.3% (2010) → 43.4% (2024)** declining trend
   - Patent filing increasingly multilingual and regionally focused
   - There's a prior art paper [Generative Model based Highly Efficient Semantic Communication Approach for Image Transmission | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/document/10096372)
-  - Rework it specifically for autonomous undersea surveys. [[Could]] SCHEDULED: <2024-01-31 Wed>
+  - Rework it specifically for autonomous undersea surveys. [[Epistemic Modality Marker]] SCHEDULED: <2024-01-31 Wed>
   - [[Semantic Communication]] patents gaining prominence in compression technologies
   - [[Image Transmission Patents]] correlating with [[5G Technology]], [[6G Research]]
   - Rework specifically for autonomous undersea surveys with patent protection strategy
@@ -3443,7 +3443,7 @@ public:: true
 	  **Towards Task-Generic Image Compression: A Study of Semantics-Oriented Metrics** (Gao et al., 2023-2024)
 		- Score: 8.5/10
 		- [[Patent Priority]]: Foundational patent filed 2024 [Updated 2025]
-		- Introduces task-generic [[image compression]] using [[end-to-end learning]], focusing on [[semantic compression]] metrics in [[latent space]].
+		- Introduces task-generic [[image compression]] using [[end-to-end learning]], focusing on [[semantic compression]] metrics in [[Neural Network Latent Space]].
 		- Patent Coverage: [[AI Patents]], [[Computer Vision Patents]], [[Semantic Communication Patents]]
 		- [(Gao et al., 2023)](https://consensus.app/papers/towards-taskgeneric-image-compression-study-gao/99b6d01831c955d0bd886c0c47edb06b/?utm_source=chatgpt)
 	  **Hyperspectral Image Compression Using Implicit Neural Representation** (Rezasoltani & Qureshi, 2023-2024)
@@ -3473,7 +3473,7 @@ public:: true
   - **Raw Image Reconstruction with Learned Compact Metadata** (Wang et al., 2023-2024)
 		- Score: 6/10
 		- [[Patent Status]]: [[Design Patent]] filed 2024 [Updated 2025]
-		- Novel framework for [[raw image]] compression with [[learned metadata]] in [[latent space]].
+		- Novel framework for [[raw image]] compression with [[learned metadata]] in [[Neural Network Latent Space]].
 		- Technology Transfer: [[Patent Monetization]], [[Licensing Deal]] potential
 		- [(Wang et al., 2023)](https://consensus.app/papers/image-reconstruction-learned-compact-metadata-wang/f8b86fd89dda589d85f1702466e2d930/?utm_source=chatgpt)
   - **Quantum Approach to Image Data Encoding and Compression** (Majji et al., 2023-2024)

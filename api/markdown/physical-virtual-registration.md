@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Spatial Computing]]
+  - is-subclass-of:: [[Spatial Computing Paradigm]]
   - enables:: [[Accurate AR Overlay]]
 
 - ### Content

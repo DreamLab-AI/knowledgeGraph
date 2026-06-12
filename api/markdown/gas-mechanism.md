@@ -6,8 +6,8 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum]]
-  - bridges-to:: [[Ethereum]]
+  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Ethereum Virtual Machine]]
   - enables:: [[Smart Contract]]
 

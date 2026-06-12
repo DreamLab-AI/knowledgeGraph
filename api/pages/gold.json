@@ -163,7 +163,7 @@
         "label": "Asset Tokenization"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -220,15 +220,15 @@
         "label": "Asset Tokenization"
       },
       {
-        "id": "urn:ngm:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {

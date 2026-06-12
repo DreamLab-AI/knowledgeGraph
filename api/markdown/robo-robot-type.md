@@ -37,7 +37,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
       {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
       {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"},

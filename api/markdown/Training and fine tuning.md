@@ -338,7 +338,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -500,7 +500,7 @@ public:: true
         "label": "Bias in Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -522,31 +522,31 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:class:llama",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:class:llama-3",
+        "@id": "urn:ngm:class:meta-llama-model-family-3",
         "label": "Llama 3"
       },
       {
-        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
         "label": "Mistral and Mixtral"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "Open AI"
       }
     ],
@@ -560,11 +560,11 @@ public:: true
         "label": "Hugging Face"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "Open AI"
       }
     ]
@@ -668,7 +668,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -693,7 +693,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -713,7 +713,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -733,7 +733,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -743,12 +743,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
@@ -808,7 +808,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -823,7 +823,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mistral and Mixtral]]",
+      "raw": "[[Mistral AI Open-Weight Model Family]]",
       "resolved": "urn:visionflow:owl:class:mistral-and-mixtral",
       "kind": "ResolvedLink"
     },
@@ -883,7 +883,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Python and PyTorch]]",
+      "raw": "[[Python PyTorch Deep Learning Stack]]",
       "resolved": "urn:visionflow:owl:class:python-and-py-torch",
       "kind": "ResolvedLink"
     },
@@ -950,7 +950,7 @@ public:: true
 
 
 - ### Definition
-  - **Fine-tuning** is the post-pre-training adaptation of a large neural network — typically a transformer-based [[Foundation Models]] or [[Large Language Models]] — to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated datasets (10 K–1 M examples), contrasting with the trillion-token self-supervised pre-training covered in [[Model Training]]. Fine-tuning subdivides into four principal tracks: (1) **Supervised Fine-Tuning (SFT)**, also termed *instruction tuning*, presents (instruction, response) pairs to the model under a causal language modelling loss applied exclusively over response tokens, transforming a raw next-token predictor into an instruction-following assistant — exemplified by InstructGPT (Ouyang et al. 2022), Alpaca (Stanford 2023), FLAN (Wei et al. 2022), and Llama-3.1-Instruct; (2) **Preference Alignment** via Reinforcement Learning from Human Feedback ([[Reinforcement Learning from Human Feedback]]) using Proximal Policy Optimisation (PPO, Schulman et al. 2017) to maximise a learned scalar [[Reward Model]] while penalising KL-divergence from the SFT reference policy J(θ) = E[R_φ(x,y)] − β·KL(π_θ‖π_ref), or its derivative algorithms Direct Preference Optimisation ([[Direct Preference Optimisation]], DPO, Rafailov et al. 2023, NeurIPS), Kahneman-Tversky Optimisation (KTO, Ethayarajh et al. 2023), and Odds Ratio Preference Optimisation (ORPO, Hong et al. 2024) which each simplify the three-stage PPO pipeline by eliding the explicit reward model; (3) **Parameter-Efficient Fine-Tuning (PEFT)**, canonically [[LoRA DoRA etc]] (LoRA, QLoRA, DoRA — see that page for full treatment), reducing trainable parameters to 0.01–10 % of total weights whilst approaching full fine-tuning accuracy; and (4) **Domain-Specific and Continual Fine-Tuning** adapting general models to medicine, law, code, and science whilst managing catastrophic forgetting via Elastic Weight Consolidation, replay buffers, and staged unfreezing. The 2024–2026 landscape is characterised by widespread PEFT democratisation through the Hugging Face PEFT library (25 M monthly downloads, 500 K+ LoRA adapters on Hub), commercial API fine-tuning from OpenAI (GPT-4o fine-tuning, launched July 2024), Anthropic (partner fine-tuning programme), and Google (Gemini tuning API), and increasingly sophisticated alignment recipes combining SFT → DPO → rejection-sampling iterative refinement (Llama-3, Qwen-2.5, Mistral-Large-2) achieving MMLU 88%+, MATH 75%+, and HumanEval 92%+.
+  - **Fine-tuning** is the post-pre-training adaptation of a large neural network — typically a transformer-based [[Large-Scale Pretrained Foundation Model]] or [[Large Language Models]] — to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated datasets (10 K–1 M examples), contrasting with the trillion-token self-supervised pre-training covered in [[Model Training]]. Fine-tuning subdivides into four principal tracks: (1) **Supervised Fine-Tuning (SFT)**, also termed *instruction tuning*, presents (instruction, response) pairs to the model under a causal language modelling loss applied exclusively over response tokens, transforming a raw next-token predictor into an instruction-following assistant — exemplified by InstructGPT (Ouyang et al. 2022), Alpaca (Stanford 2023), FLAN (Wei et al. 2022), and Llama-3.1-Instruct; (2) **Preference Alignment** via Reinforcement Learning from Human Feedback ([[Reinforcement Learning from Human Feedback]]) using Proximal Policy Optimisation (PPO, Schulman et al. 2017) to maximise a learned scalar [[Reward Model]] while penalising KL-divergence from the SFT reference policy J(θ) = E[R_φ(x,y)] − β·KL(π_θ‖π_ref), or its derivative algorithms Direct Preference Optimisation ([[Direct Preference Optimisation]], DPO, Rafailov et al. 2023, NeurIPS), Kahneman-Tversky Optimisation (KTO, Ethayarajh et al. 2023), and Odds Ratio Preference Optimisation (ORPO, Hong et al. 2024) which each simplify the three-stage PPO pipeline by eliding the explicit reward model; (3) **Parameter-Efficient Fine-Tuning (PEFT)**, canonically [[LoRA DoRA etc]] (LoRA, QLoRA, DoRA — see that page for full treatment), reducing trainable parameters to 0.01–10 % of total weights whilst approaching full fine-tuning accuracy; and (4) **Domain-Specific and Continual Fine-Tuning** adapting general models to medicine, law, code, and science whilst managing catastrophic forgetting via Elastic Weight Consolidation, replay buffers, and staged unfreezing. The 2024–2026 landscape is characterised by widespread PEFT democratisation through the Hugging Face PEFT library (25 M monthly downloads, 500 K+ LoRA adapters on Hub), commercial API fine-tuning from OpenAI (GPT-4o fine-tuning, launched July 2024), Anthropic (partner fine-tuning programme), and Google (Gemini tuning API), and increasingly sophisticated alignment recipes combining SFT → DPO → rejection-sampling iterative refinement (Llama-3, Qwen-2.5, Mistral-Large-2) achieving MMLU 88%+, MATH 75%+, and HumanEval 92%+.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:TrainingAndFineTuning
@@ -960,17 +960,17 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[InfrastructureLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Deep Learning]], [[Transfer Learning]], [[Model Training]], [[Foundation Models]]
-  - has-part:: [[Supervised Fine Tuning]], [[Reinforcement Learning from Human Feedback]], [[Direct Preference Optimisation]], [[Reward Model]], [[LoRA DoRA etc]], [[Parameter-Efficient Fine-Tuning]], [[Instruction Tuning]], [[Constitutional AI]], [[Knowledge Distillation]], [[Safety Fine Tuning]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Deep Learning]], [[Transfer Learning]], [[Model Training]], [[Large-Scale Pretrained Foundation Model]]
+  - has-part:: [[Supervised Fine Tuning]], [[Reinforcement Learning from Human Feedback]], [[Direct Preference Optimisation]], [[Reward Model]], [[LoRA DoRA etc]], [[Parameter-Efficient Fine-Tuning]], [[Instruction Tuning]], [[Constitutional AI Training Methodology]], [[Knowledge Distillation]], [[Safety Fine Tuning]]
   - requires:: [[Pre-trained Model]], [[Training Data]], [[Loss Function]], [[Gradient Descent]], [[Compute Infrastructure]], [[Tokenization]]
   - enables:: [[Large Language Models]], [[Agents]], [[Code Generation]], [[Medical AI]], [[Safety and alignment]], [[Multi Task Learning]], [[Evaluation benchmarks and leaderboards]]
   - implements:: [[Backpropagation]], [[Causal Language Modelling]], [[Proximal Policy Optimisation]], [[Low-Rank Adaptation]], [[Preference Learning]], [[Prefix Tuning]], [[Prompt Tuning]]
-  - depends-on:: [[Transformer Architecture]], [[Attention]], [[Scaling Laws]], [[Reinforcement Learning]], [[Natural Language Processing]], [[Python and PyTorch]]
-  - supports:: [[Anthropic Claude]], [[ChatGPT]], [[LLaMA]], [[Mistral and Mixtral]], [[Gemini]], [[Llama 3]], [[Open AI]]
+  - depends-on:: [[Transformer Architecture]], [[Attention]], [[Scaling Laws]], [[Reinforcement Learning]], [[Natural Language Processing]], [[Python PyTorch Deep Learning Stack]]
+  - supports:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[LLaMA]], [[Mistral AI Open-Weight Model Family]], [[Gemini Multimodal Language Model]], [[Llama 3]], [[Open AI]]
   - uses:: [[LoRA DoRA etc]], [[Mixed Precision Training]], [[Human Feedback]], [[Reward Model]], [[Parameter-Efficient Fine-Tuning]], [[Prompt Engineering]]
   - contrasts-with:: [[Model Training]], [[In-Context Learning]], [[Prompt Engineering]], [[Retrieval Augmented Generation - RAG]], [[Active Learning]]
-  - related-to:: [[AI Alignment]], [[Bias in Large Language Models]], [[Evaluation benchmarks and leaderboards]], [[Safety and alignment]], [[Emergence]], [[Constitutional AI]], [[Knowledge Distillation]]
-  - standardized-by:: [[Hugging Face]], [[EU AI Act]], [[AISI Frontier AI Safety Framework]], [[Open AI]]
+  - related-to:: [[AI Alignment]], [[Bias in Large Language Models]], [[Evaluation benchmarks and leaderboards]], [[Safety and alignment]], [[Emergence]], [[Constitutional AI Training Methodology]], [[Knowledge Distillation]]
+  - standardized-by:: [[Hugging Face]], [[EU AI Act Regulatory Instrument]], [[AISI Frontier AI Safety Framework]], [[Open AI]]
 
 - ### Content
 
@@ -1072,7 +1072,7 @@ public:: true
 
     The distinction from pre-training is both practical and conceptual. Pre-training learns *what the world looks like* via next-token prediction; fine-tuning learns *how the model should behave*, typically via supervised examples of target behaviour or feedback signals expressing human preferences. This division of labour reflects an empirical finding: a sufficiently large pre-trained model already encodes the knowledge required for most downstream tasks; fine-tuning serves primarily to unlock, direct, and align that knowledge rather than to instil new facts.
 
-    Fine-tuning's economic importance is substantial. For an organisation deploying a 70B-parameter [[LLaMA]] or [[Mistral and Mixtral]] model, a full fine-tuning run touching all weights requires ~5.6 TB of GPU memory (bf16 parameters + gradients + Adam states) and thousands of GPU-hours. [[LoRA DoRA etc]] (LoRA, r=16) reduces this to ~140 GB — achievable on four A100-40GB GPUs — while recovering 95–98% of full fine-tuning quality on most benchmarks. QLoRA further compresses the frozen base to 4-bit NF4, enabling a 65B-parameter fine-tune on a single 48 GB GPU.
+    Fine-tuning's economic importance is substantial. For an organisation deploying a 70B-parameter [[LLaMA]] or [[Mistral AI Open-Weight Model Family]] model, a full fine-tuning run touching all weights requires ~5.6 TB of GPU memory (bf16 parameters + gradients + Adam states) and thousands of GPU-hours. [[LoRA DoRA etc]] (LoRA, r=16) reduces this to ~140 GB — achievable on four A100-40GB GPUs — while recovering 95–98% of full fine-tuning quality on most benchmarks. QLoRA further compresses the frozen base to 4-bit NF4, enabling a 65B-parameter fine-tune on a single 48 GB GPU.
 
     The four fine-tuning tracks — SFT, RLHF/DPO/KTO/ORPO alignment, PEFT, and domain/continual adaptation — are typically composed in sequence: a raw base model undergoes SFT to become instruction-following, then one or more alignment rounds to become preference-optimised, with PEFT applied throughout for compute efficiency, and domain adaptation layered on top for specialist deployments.
 
@@ -1128,7 +1128,7 @@ public:: true
 
     ### Constitutional AI
 
-    [[Constitutional AI]] (CAI, Bai et al. 2022, Anthropic) replaces human preference annotation for harmlessness training with a set of explicit ethical principles ("the constitution") from which AI-generated preference data is synthesised:
+    [[Constitutional AI Training Methodology]] (CAI, Bai et al. 2022, Anthropic) replaces human preference annotation for harmlessness training with a set of explicit ethical principles ("the constitution") from which AI-generated preference data is synthesised:
 
     1. **Supervised Constitutional Revision (SCC)**: Sample red-team prompts, generate an initial response, then prompt the model to critique and revise the response against constitution principles. Use revised responses as SFT examples.
     2. **RLAIF**: Train a preference model on (original, revised) response pairs using the model's own constitutional scoring rather than human preference judgements. Apply PPO or DPO using this AI-generated reward signal.

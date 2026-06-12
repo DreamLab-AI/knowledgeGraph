@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Layer 2 Scaling]]
   - bridges-to:: [[Optimistic Rollup]]
-  - requires:: [[Ethereum]], [[Rollup]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Rollup]]
   - enables:: [[DeFi]]
 
 - ### Content

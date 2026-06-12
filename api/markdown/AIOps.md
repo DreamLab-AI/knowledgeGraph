@@ -63,7 +63,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-incident", "label": "AI Incident"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
@@ -137,7 +137,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
   - hasPart:: [[Anomaly Detection]], [[AI Monitoring]], [[AI Incident]]
-  - requires:: [[Machine Learning]], [[Data Pipeline]], [[Natural Language Processing]]
+  - requires:: [[Machine Learning Discipline]], [[Data Pipeline]], [[Natural Language Processing]]
   - enables:: [[Operational Resilience]], [[Platform Engineering]], [[Workflow Automation]]
   - uses:: [[Predictive Analytics]], [[Deep Learning]], [[Event Driven Architecture]]
   - relatedTo:: [[Edge Computing]], [[Artificial Intelligence]], [[Cloud-Native Applications]]

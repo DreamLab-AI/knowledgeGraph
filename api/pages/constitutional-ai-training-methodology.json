@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:62b22f6e15fc73a479f8372fea623058b2d359e3cd4035e7a10f311da71a117f",
+  "title": "Constitutional AI Training Methodology",
+  "slug": "constitutional-ai-training-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:constitutional-ai-training-methodology-training-methodology",
+  "domain": "artificial-intelligence",
+  "definition": "A mod for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": []
+}

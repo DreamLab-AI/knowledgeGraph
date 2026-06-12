@@ -6,9 +6,9 @@
   - owl-role:: Individual
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum]]
+  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
   - bridges-to:: [[Smart Contract]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[Web3]]
 
 - ### Content

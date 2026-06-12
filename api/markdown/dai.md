@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Stablecoin]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[MakerDAO]], [[Smart Contract]]
 
 - ### Content

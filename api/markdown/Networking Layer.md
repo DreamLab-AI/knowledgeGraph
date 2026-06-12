@@ -127,7 +127,7 @@ alias:: NetworkingLayer
   "relations": {
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:infrastructure-architecture",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
         "label": "Infrastructure Architecture"
       }
     ],
@@ -183,7 +183,7 @@ alias:: NetworkingLayer
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:infrastructure-architecture",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
         "label": "Infrastructure Architecture"
       }
     ]

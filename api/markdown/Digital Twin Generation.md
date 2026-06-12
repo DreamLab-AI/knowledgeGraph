@@ -98,7 +98,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -171,7 +171,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -204,7 +204,7 @@ bridges-to:: [[Computer Vision]]
 
 - ### Relationships
   - is-subclass-of:: [[Automated Modeling]]
-  - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning]]
+  - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning Discipline]]
   - enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]
 
 - ### Content

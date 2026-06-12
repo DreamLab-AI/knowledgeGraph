@@ -3,12 +3,12 @@
   "title": "Ethereum Name Service",
   "slug": "ethereum-name-service",
   "public": true,
-  "classIri": "urn:ngm:class:ethereum-name-service",
+  "classIri": "urn:ngm:class:ethereum-smart-contract-platform-name-service",
   "domain": "blockchain",
   "definition": "A decentralised naming system on Ethereum that maps human-readable names to addresses and other resources using smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum",
+      "id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contracts",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
       }
     ],

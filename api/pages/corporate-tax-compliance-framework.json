@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:da96586440f90fbc16be6abd164b8e9627d8a8efca4babfc81d461fcdbe8dbd2",
+  "title": "Corporate Tax Compliance Framework",
+  "slug": "corporate-tax-compliance-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:corporate-tax-compliance-framework",
+  "domain": "infrastructure",
+  "definition": "Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities \u2014 particularly limited companies \u2014 by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:uk-company-financial-filing-obligations",
+        "label": "Accounts"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "accounts",
+      "label": "Accounts"
+    }
+  ],
+  "backlinks": []
+}

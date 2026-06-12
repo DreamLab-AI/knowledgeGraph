@@ -25,13 +25,13 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"}, {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}]
+    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}, {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"}]
   },
   "quality": 0.72
 }
 ```
 
 - ### Definition
-  - The Lindy Effect holds that the longer something non-perishable has survived, the longer it is likely to endure; it is frequently cited as a pillar of the [[Bitcoin Value Proposition]] and the resilience narrative around [[Bitcoin]].
+  - The Lindy Effect holds that the longer something non-perishable has survived, the longer it is likely to endure; it is frequently cited as a pillar of the [[Bitcoin Value Proposition]] and the resilience narrative around [[Bitcoin Proof-of-Work Protocol]].
 - ### Content
   - As a probabilistic heuristic rather than a law, the Lindy Effect applies best to ideas and standards exposed to selection pressure over time. Its rhetorical use in monetary debates frames accumulated uptime, security history, and network persistence as evidence of durability.

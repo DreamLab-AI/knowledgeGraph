@@ -38,7 +38,7 @@ alias:: InclusiveDesign
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"},
-      {"@id": "urn:ngm:class:equity", "label": "Equity"}
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"}
     ]
   },
   "quality": 0.8
@@ -49,7 +49,7 @@ alias:: InclusiveDesign
   - [[Inclusive Design]] is a methodology that treats human diversity — across ability, age, language, and context — as a fundamental input to the design process rather than an edge case, producing [[Accessibility|accessible]] products that benefit all users by solving the hardest usability constraints first and elevating [[User Experience]] across the entire population.
 
 - ### Relationships
-  - Inclusive design operationalises [[Accessibility]] by embedding it in the earliest stages of design rather than retrofitting it, drawing on [[Human Computer Interaction]] research to understand the full range of user capabilities and [[Interaction Design]] principles to produce interfaces that do not demand conformity to a narrow normative user model. It directly enables [[Inclusive Xr Design]] in extended reality platforms, serves [[Inclusive Participation]] goals in digital services, and aligns with [[Equity]] frameworks in public policy. Technical expression occurs through [[Accessibility Standard|accessibility standards]] such as WCAG and EN 301 549, while the philosophy influences [[User Experience]] practice organisation-wide.
+  - Inclusive design operationalises [[Accessibility]] by embedding it in the earliest stages of design rather than retrofitting it, drawing on [[Human Computer Interaction]] research to understand the full range of user capabilities and [[Interaction Design]] principles to produce interfaces that do not demand conformity to a narrow normative user model. It directly enables [[Inclusive Xr Design]] in extended reality platforms, serves [[Inclusive Participation]] goals in digital services, and aligns with [[Digital Technology Access Equity]] frameworks in public policy. Technical expression occurs through [[Accessibility Standard|accessibility standards]] such as WCAG and EN 301 549, while the philosophy influences [[User Experience]] practice organisation-wide.
 
 - ### Content
   - Inclusive design as a named discipline emerged from the disability rights movement and the architectural universal design work of Ronald Mace (North Carolina State University) in the 1970s-1980s, which articulated seven principles for built environments accessible to all people regardless of age or ability. Microsoft's Inclusive Design programme, developed through the 2010s, popularised the concept in digital product design by documenting how designing for people with permanent disabilities (e.g., one-handed use) produces features — voice control, larger touch targets, closed captions — that benefit situationally impaired users (parent holding a child) and circumstantially impaired users (bright sunlight) as well. This "solve for one, extend to many" heuristic became the canonical justification for inclusive design's business case.

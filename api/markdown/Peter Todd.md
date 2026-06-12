@@ -60,14 +60,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin-core",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
       "label": "Bitcoin Core"
     }
   ],
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       }
     ]

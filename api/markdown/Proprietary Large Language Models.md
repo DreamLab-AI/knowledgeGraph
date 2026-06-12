@@ -358,7 +358,7 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -464,11 +464,11 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
-        "@id": "urn:ngm:class:multimodal",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal"
       },
       {
@@ -506,11 +506,11 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
-        "@id": "urn:ngm:class:multimodal",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal"
       }
     ],
@@ -528,7 +528,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -536,7 +536,7 @@ public:: true
         "label": "Artificial General Intelligence"
       },
       {
-        "@id": "urn:ngm:class:artificial-superintelligence",
+        "@id": "urn:ngm:class:artificial-superintelligence-theory",
         "label": "Artificial Superintelligence"
       },
       {
@@ -548,7 +548,7 @@ public:: true
         "label": "Brain Computer Interfaces"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -616,7 +616,7 @@ public:: true
         "label": "California AI bill"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -820,7 +820,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -880,7 +880,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -905,7 +905,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -915,7 +915,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -925,7 +925,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -997,8 +997,8 @@ public:: true
 
 
 - ### Definition
-  - Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed [[Foundation Models]] trained on multi-trillion-token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial licence agreements, distinguishing them from [[Open Source AI]] counterparts and defining a distinct commercialisation strategy within the broader [[Generative AI]] ecosystem.
-  - The five defining characteristics of PLLMs are: (1) **weight non-disclosure** — inference is provided exclusively via API endpoints, web products, or enterprise deployments, preventing local fine-tuning, weight inspection, mechanistic interpretability analysis, or redistribution; practitioners interact with models as black-box services rather than artefacts under their direct control; (2) **frontier-scale training** — parameter counts range from tens of billions in efficiency variants (GPT-4o Mini, Gemini 2.0 Flash, Claude Haiku) to estimated hundreds of billions or above for flagship models (GPT-4 ~1.7T total MoE, Claude 3 Opus ~450B dense equivalent, Gemini Ultra ~1.5T MoE, Grok 3 ~314B dense), trained on 2T–15T tokens using H100/H200 or TPU v4–v5p clusters representing $50M–$500M per training run; (3) **multi-stage post-training alignment pipelines** incorporating Supervised Fine-Tuning (SFT), Reinforcement Learning from Human Feedback ([[RLHF]]), and [[Constitutional AI]] self-critique frameworks; (4) **continuous capability iteration** — providers update model versions monthly-to-quarterly (GPT-4 → GPT-4-Turbo → GPT-4o → GPT-4.1; Claude 3 Opus → Claude 3.5 → 3.7 → Claude 4 Opus), often improving benchmarks whilst adjusting refusal behaviour without incrementing the public model name; and (5) **deep ecosystem integration** — PLLMs are embedded into enterprise productivity suites ([[Microsoft Copilot]] across Office 365 for 400M+ business users, Google Workspace AI), developer API platforms with function-calling and agent-tool-use specifications, and consumer application marketplaces creating multi-layer lock-in.
+  - Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed [[Large-Scale Pretrained Foundation Model]] trained on multi-trillion-token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial licence agreements, distinguishing them from [[Open Source AI]] counterparts and defining a distinct commercialisation strategy within the broader [[Generative AI]] ecosystem.
+  - The five defining characteristics of PLLMs are: (1) **weight non-disclosure** — inference is provided exclusively via API endpoints, web products, or enterprise deployments, preventing local fine-tuning, weight inspection, mechanistic interpretability analysis, or redistribution; practitioners interact with models as black-box services rather than artefacts under their direct control; (2) **frontier-scale training** — parameter counts range from tens of billions in efficiency variants (GPT-4o Mini, Gemini 2.0 Flash, Claude Haiku) to estimated hundreds of billions or above for flagship models (GPT-4 ~1.7T total MoE, Claude 3 Opus ~450B dense equivalent, Gemini Ultra ~1.5T MoE, Grok 3 ~314B dense), trained on 2T–15T tokens using H100/H200 or TPU v4–v5p clusters representing $50M–$500M per training run; (3) **multi-stage post-training alignment pipelines** incorporating Supervised Fine-Tuning (SFT), Reinforcement Learning from Human Feedback ([[RLHF]]), and [[Constitutional AI Training Methodology]] self-critique frameworks; (4) **continuous capability iteration** — providers update model versions monthly-to-quarterly (GPT-4 → GPT-4-Turbo → GPT-4o → GPT-4.1; Claude 3 Opus → Claude 3.5 → 3.7 → Claude 4 Opus), often improving benchmarks whilst adjusting refusal behaviour without incrementing the public model name; and (5) **deep ecosystem integration** — PLLMs are embedded into enterprise productivity suites ([[Microsoft Copilot]] across Office 365 for 400M+ business users, Google Workspace AI), developer API platforms with function-calling and agent-tool-use specifications, and consumer application marketplaces creating multi-layer lock-in.
   - As of mid-2026, the PLLM landscape is dominated by six principal providers: OpenAI (GPT-4o/4.1/o-series), Anthropic (Claude 3.x/4.x), Google DeepMind (Gemini 1.5/2.0/2.5/3), xAI (Grok 2/3/4), Cohere (Command R/R+/A), and Amazon (Nova family), with secondary offerings from Mistral AI (closed Medium/Large tier), Reka (acquired by Snowflake May 2025), and Inflection AI (acquihired by Microsoft March 2024). Collectively these providers generate estimated combined revenues exceeding $30B USD annually and constitute the primary commercial channel through which approximately 78% of Fortune 500 enterprises (Stanford HAI AI Index 2026) access frontier-grade [[Natural Language Processing]], [[Multimodal]] reasoning, and [[Agent Frameworks]] capabilities.
   - The central strategic tension defining 2024–2026 is the competitive pressure from open-weight models — particularly [[Llama 3]] (Meta, 2024–2025), DeepSeek V3 and R1 (January 2025, MIT licence), and Mistral's open tier — which progressively narrow the capability gap whilst PLLMs retain alignment, multimodal, serving-infrastructure, and enterprise compliance differentiation sufficient to justify margin premiums in regulated markets.
 
@@ -1010,17 +1010,17 @@ public:: true
   - implemented-in-layer:: [[InferenceAPILayer]], [[ApplicationLayer]], [[ProductLayer]], [[EnterpriseIntegrationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Foundation Models]], [[Large Language Models]], [[Natural Language Processing]], [[Transformer Architecture]], [[Generative AI]], [[Cognitive AI]]
-  - has-part:: [[Transformer Architecture]], [[RLHF]], [[Constitutional AI]], [[Safety Evaluation]], [[API Gateway]], [[Attention]], [[Tokenizer]], [[System Prompt]], [[Context Window]], [[Reinforcement Learning]]
+  - is-subclass-of:: [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Natural Language Processing]], [[Transformer Architecture]], [[Generative AI]], [[Cognitive AI]]
+  - has-part:: [[Transformer Architecture]], [[RLHF]], [[Constitutional AI Training Methodology]], [[Safety Evaluation]], [[API Gateway]], [[Attention]], [[Tokenizer]], [[System Prompt]], [[Context Window]], [[Reinforcement Learning]]
   - requires:: [[Large Scale Compute]], [[RLHF]], [[Human Feedback Data]], [[Inference Infrastructure]], [[Safety Testing]], [[Red Teaming]], [[Supervised Fine Tuning]]
   - enables:: [[AI Adoption]], [[Agentic Internet]], [[Agent Frameworks]], [[CLI Multi-Agent Systems]], [[AI Search]], [[Chatbots]], [[Prompt Engineering]], [[AI companions]], [[AI Diagram Tools]], [[Cognitive AI]]
-  - implements:: [[Attention]], [[Reinforcement Learning]], [[Constitutional AI]], [[Chain of Thought]], [[Tool Use]], [[Multimodal]], [[Retrieval Augmented Generation]], [[Supervised Fine Tuning]]
+  - implements:: [[Attention]], [[Reinforcement Learning]], [[Constitutional AI Training Methodology]], [[Chain of Thought]], [[Tool Use]], [[Multimodal]], [[Retrieval Augmented Generation]], [[Supervised Fine Tuning]]
   - depends-on:: [[Transformer Architecture]], [[Supervised Fine Tuning]], [[Large Scale Compute]], [[Human Feedback Data]], [[Tokenizer]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]]
   - supports:: [[AI Adoption]], [[Call Centres]], [[AI Diagram Tools]], [[AI Video]], [[Cognitive AI]], [[Agentic Internet]], [[Competition in AI]], [[AML KYC Compliance]], [[Carbon Footprint Measurement]]
-  - uses:: [[Attention]], [[Tokenizer]], [[RLHF]], [[Constitutional AI]], [[Chain of Thought]], [[Tool Use]], [[Multimodal]], [[Retrieval Augmented Generation]]
+  - uses:: [[Attention]], [[Tokenizer]], [[RLHF]], [[Constitutional AI Training Methodology]], [[Chain of Thought]], [[Tool Use]], [[Multimodal]], [[Retrieval Augmented Generation]]
   - contrasts-with:: [[Open Source AI]], [[Llama 3]], [[Self Hosted AI]], [[Edge AI]], [[Federated Learning]], [[Algorithmic Bias and Variance]]
-  - related-to:: [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]], [[Artificial General Intelligence]], [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Artificial Superintelligence]], [[Brain Computer Interfaces]]
-  - standardized-by:: [[EU AI Act]], [[NIST AI RMF]], [[ISO IEC 42001]], [[UK AI Safety Institute]], [[California AI bill]], [[Asia Pacific Regulation]]
+  - related-to:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]], [[Artificial General Intelligence]], [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Artificial Superintelligence]], [[Brain Computer Interfaces]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]], [[ISO IEC 42001]], [[UK AI Safety Institute]], [[California AI bill]], [[Asia Pacific Regulation]]
 
 - ### Content
 
@@ -1151,7 +1151,7 @@ public:: true
   - **Stage 2 — Reward Model Training**: Human annotators rank pairs of completions (chosen/rejected) from the SFT model. A Bradley-Terry preference model is fit via binary cross-entropy: P(chosen > rejected) = σ(r_chosen − r_rejected). Modern reward models are often separate 70B+ LLMs to ensure sufficient representational capacity for nuanced preference modelling.
   - **Stage 3 — [[Reinforcement Learning]] from Human Feedback ([[RLHF]])**: The SFT model is trained via PPO (OpenAI) or REINFORCE variants to maximise expected reward whilst minimising KL-divergence from the SFT reference: objective = E[r(y|x)] − β·KL[π_RL || π_SFT]. The KL penalty prevents reward hacking — the model exploiting the imperfect reward model by generating text that scores high but is qualitatively poor.
   - **Stage 4 — Direct Preference Optimisation (DPO) / ORPO / SimPO**: Bypass the reward model and RL loop by optimising preference objectives directly on the LLM via a closed-form equivalence between RL-from-reward and a reference-policy contrastive objective. DPO (Rafailov et al. 2023) is used by Mistral, Cohere, and increasingly as a fine-tuning layer atop PPO-trained models; it is more stable but less capable of policy extrapolation beyond the demonstration distribution.
-  - **[[Constitutional AI]] (Anthropic, Bai et al. 2022–2023)**: Rather than exhaustive human preference labelling of every refusal edge case, a written constitution of principles guides both (a) AI-generated self-critiques — the model critiques and revises its own harmful outputs against specific principles, generating synthetic revision pairs; and (b) preference model training on these pairs. Reduces human annotator burden 60–80% whilst achieving competitive harmlessness rates across red-teaming benchmarks.
+  - **[[Constitutional AI Training Methodology]] (Anthropic, Bai et al. 2022–2023)**: Rather than exhaustive human preference labelling of every refusal edge case, a written constitution of principles guides both (a) AI-generated self-critiques — the model critiques and revises its own harmful outputs against specific principles, generating synthetic revision pairs; and (b) preference model training on these pairs. Reduces human annotator burden 60–80% whilst achieving competitive harmlessness rates across red-teaming benchmarks.
   - **RLAIF (Reinforcement Learning from AI Feedback)**: Generalises Constitutional AI to use any strong model as the preference annotator rather than human labellers. Google's Gemini post-training uses RLAIF via Gemini-as-judge for scalable preference data generation. Lee et al. (2023) demonstrate RLAIF matches human-RLHF quality on helpful/harmless dimensions at 10× lower annotation cost.
 
   - ## Use Cases and Major Families
@@ -1167,7 +1167,7 @@ public:: true
   - **Revenue context**: OpenAI generated approximately $3.7B ARR in late 2024, growing to an estimated $6.5B run rate by mid-2025. ChatGPT Plus at $20/month represents approximately 40M paying subscribers; API revenue estimated approximately $1.5B annually.
 
   - ### Anthropic Claude Series
-  - Anthropic (founded March 2021 by Dario Amodei, Daniela Amodei, and former OpenAI researchers) built its commercial position on the thesis that safety research and frontier capability are complementary — a stance crystallised in [[Constitutional AI]] and the Responsible Scaling Policy (RSP).
+  - Anthropic (founded March 2021 by Dario Amodei, Daniela Amodei, and former OpenAI researchers) built its commercial position on the thesis that safety research and frontier capability are complementary — a stance crystallised in [[Constitutional AI Training Methodology]] and the Responsible Scaling Policy (RSP).
   - **Claude 3 Family (March 2024)**: Opus (frontier, 200K context), Sonnet (balanced, 200K), Haiku (efficient, 200K). Claude 3 Opus achieved top LMSYS Chatbot Arena Elo (approximately 1253) at release, surpassing GPT-4 on overall human preference ranking.
   - The Claude 3 Model Card (Anthropic, March 2024) introduced the most comprehensive safety disclosure of any PLLM to that date — including CBRN uplift scores, jailbreak elicitation rates, and RSP ASL-2 classification with explicit upgrade triggers — establishing the standard for subsequent frontier model safety reporting.
   - Anthropic's economic model centres on cloud partnerships: AWS Bedrock hosts Claude with a $4B AWS investment commitment; Google Cloud invested $300M+ separately, providing revenue stability whilst Anthropic's own API generates developer mindshare.
@@ -1227,7 +1227,7 @@ public:: true
   - The PLLM field is primarily characterised by **industrial-scale research published as technical reports** rather than peer-reviewed papers, reflecting rapid iteration pace, proprietary training data, and competitive secrecy — creating a fundamental epistemological asymmetry between practitioners and researchers.
   - **Foundational transformer papers**: Vaswani et al. (2017) "Attention Is All You Need" (NeurIPS), Devlin et al. (2019) BERT, Brown et al. (2020) GPT-3 — all fully open and peer-reviewed. All subsequent architectural improvements (GQA, RoPE, SwiGLU, flash-attention, speculative decoding) have been published in academic venues.
   - **Scaling laws**: Kaplan et al. (2020) established power-law relationships between loss and compute: L(N,D) ≈ (N_c/N)^α_N + (D_c/D)^α_D with α_N ≈ α_D ≈ 0.076. Hoffmann et al. (2022) "Chinchilla" revised optimal compute allocation to equal budget between parameters and tokens, influencing all post-2022 training runs.
-  - **RLHF and alignment methodology**: Ouyang et al. (2022) InstructGPT (NeurIPS), Bai et al. (2022) [[Constitutional AI]], Rafailov et al. (2023) DPO — these are peer-reviewed, enabling academic study of the alignment pipeline independently of proprietary weight access.
+  - **RLHF and alignment methodology**: Ouyang et al. (2022) InstructGPT (NeurIPS), Bai et al. (2022) [[Constitutional AI Training Methodology]], Rafailov et al. (2023) DPO — these are peer-reviewed, enabling academic study of the alignment pipeline independently of proprietary weight access.
   - **Safety research**: Hubinger et al. (2024) "Sleeper Agents" (Anthropic) demonstrating persistent deceptive behaviours post-safety-training; Sharma et al. (2023) "Towards Understanding Sycophancy in Language Models" documenting PLLMs adjusting answers to match user preferences regardless of accuracy; Lanham et al. (2023) documenting systematic chain-of-thought infidelity — together providing empirical grounding for [[AI Risks]] and [[Bias in Large Language Models]] concerns.
   - **LMSYS Chatbot Arena (Zheng et al. 2023; ongoing)**: The primary human-preference leaderboard using pairwise A/B comparisons. As of May 2026, 3M+ votes across 70+ models; Arena demonstrates human preference rankings often diverge from automated benchmark rankings on instruction-following, style, and refusal quality dimensions.
   - **Stanford HAI AI Index (2024, 2025, 2026)**: Documents macro-economic PLLM trends — average API price deflation 65% over 2023–2025, capability benchmark progression, enterprise adoption (78% Fortune 500 by 2025), geographic concentration (US labs: ~74% of top-10 frontier PLLMs; China: ~18%).
@@ -1254,7 +1254,7 @@ public:: true
   - ## Future Directions (2026–2030)
   - **Post-transformer architectures**: State-space models (Mamba 2, Jamba) and hybrid attention-SSM approaches (Zamba, Falcon-Mamba) challenge the pure transformer for long-context tasks through O(N) vs O(N²) state-update scaling. Both OpenAI and Anthropic have active SSM research programmes; first production hybrid PLLM services are anticipated 2026–2027.
   - **Inference-time compute as the primary scaling vector**: As pre-training data exhausts web-scale corpora (Epoch AI estimates high-quality text data consumption by 2026–2027 frontier training runs), inference scaling via extended thinking, ensemble sampling, tree-of-thought exploration, and multi-agent debate becomes the primary capability lever — favouring providers with the most efficient inference infrastructure.
-  - **Continuous deployment learning**: Production systems integrating selective memory, safety-constrained online fine-tuning from deployment feedback, and retrieval are the next architectural frontier — anticipated in enterprise-tier products 2027. The challenge is preventing "alignment drift" from continual updates — a problem [[Constitutional AI]] and RSP frameworks are designed but not yet proven to handle at scale.
+  - **Continuous deployment learning**: Production systems integrating selective memory, safety-constrained online fine-tuning from deployment feedback, and retrieval are the next architectural frontier — anticipated in enterprise-tier products 2027. The challenge is preventing "alignment drift" from continual updates — a problem [[Constitutional AI Training Methodology]] and RSP frameworks are designed but not yet proven to handle at scale.
   - **Frontier capability bifurcation**: The PLLM market will bifurcate into ultra-frontier models ($500M–$2B training runs, AGI-adjacent evaluations, firmly proprietary) and commodity inference models (<$10M training, heavily quantised, high-volume API, facing intense [[Open Source AI]] competition from [[Llama 3]] successors and DeepSeek derivatives converging towards $0.01/1M token pricing).
   - **Regulatory disclosure requirements**: EU AI Act Article 53 mandates technical documentation for GPAI models above 10²⁵ FLOPs (enacted June 2026). UK AI Regulation Bill (2025 consultation) introduces pre-market registration. [[Asia Pacific Regulation]] landscape adds jurisdiction-specific obligations. These narrow the PLLM information asymmetry without requiring weight disclosure but significantly increase compliance costs for new entrants and strengthen incumbent position.
   - **Sovereign AI as demand catalyst**: UK AIRR (£1.5B over 5 years, 2025–2030) will train an open-weight UK frontier model on Isambard AI (Bristol, 10,000 H100-equivalent GPUs), creating a new publicly accountable PLLM category directly addressing [[Competition in AI]] concentration concerns raised in the CMA's 2024 AI Foundation Models report. France, Germany, UAE, Japan, India, and Australia have analogous national AI compute programmes.

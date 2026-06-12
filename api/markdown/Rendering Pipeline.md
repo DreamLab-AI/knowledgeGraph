@@ -555,7 +555,7 @@ alias:: RenderingPipeline
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -717,7 +717,7 @@ alias:: RenderingPipeline
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:apple-metal",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-metal",
         "label": "Apple Metal"
       },
       {
@@ -1232,7 +1232,7 @@ alias:: RenderingPipeline
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -1274,7 +1274,7 @@ alias:: RenderingPipeline
   - is-subclass-of:: [[GPU Compute]], [[Parallel Computing]], [[Real-Time Systems]], [[Computer Graphics]], [[Rasterisation]]
   - has-part:: [[Vertex Shader]], [[Tessellation Stage]], [[Geometry Shader]], [[Fragment Shader]], [[Compute Shader]], [[Mesh Shader]], [[Ray Tracing Stage]], [[Rasteriser]], [[Depth Buffer]], [[Render Target]], [[G-Buffer]], [[Visibility Buffer]], [[Acceleration Structure]]
   - requires:: [[GPU Resources]], [[Shader Compilation]], [[Graphics API]], [[Memory Bandwidth]], [[Vertex Buffer]], [[Index Buffer]], [[Texture Sampler]]
-  - enables:: [[Real-Time Rendering]], [[Physically Based Rendering]], [[Ray Tracing]], [[Neural Rendering]], [[Global Illumination]], [[Post-Processing]], [[Spatial Computing]], [[Photorealistic Rendering]], [[Virtual Reality]], [[Augmented Reality]]
+  - enables:: [[Real-Time Rendering]], [[Physically Based Rendering]], [[Ray Tracing]], [[Neural Rendering]], [[Global Illumination]], [[Post-Processing]], [[Spatial Computing Paradigm]], [[Photorealistic Rendering]], [[Virtual Reality]], [[Augmented Reality]]
   - implements:: [[Forward Rendering]], [[Deferred Rendering]], [[Clustered Shading]], [[Visibility Buffer Rendering]], [[Mesh Shader Pipeline]], [[GPU-Driven Rendering]], [[Hybrid Ray Tracing]]
   - depends-on:: [[GPU Architecture]], [[SIMD Processing]], [[Memory Hierarchy]], [[Shader Model]], [[Linear Algebra]], [[BVH Acceleration Structure]]
   - supports:: [[Video Game Development]], [[Virtual Reality]], [[Augmented Reality]], [[Film Visual Effects]], [[Architectural Visualisation]], [[Scientific Visualisation]], [[Medical Imaging]]
@@ -1693,12 +1693,12 @@ alias:: RenderingPipeline
     - **[[WebGPU]] Compute Evolution (2025-2028)**:
       - [[WebGPU]] 2.0 (origin trial 2025-2026): [[Ray Tracing Stage]] extension (BLAS/TLAS build, [[Acceleration Structure]] construction), bindless [[Texture Sampler]] arrays, [[WGSL]] subgroup operations. Enables browser-based [[Video Game Development]] engines approaching native [[Rendering Pipeline]] quality by 2027.
       - Web-based 3D content: 60fps Gaussian splatting in browsers (Google, Luma AI, PolyCam viewers 2025). [[WebGPU]] [[Compute Shader]] [[Neural Rendering]] inference for in-browser NeRF/3DGS visualisation without native install.
-      - [[Spatial Computing]] web XR: WebXR + [[WebGPU]] [[Compute Shader]] pipeline for shared [[Augmented Reality]] spaces (W3C Immersive Web WG 2025-2026 focus). [[Virtual Reality]] browser applications targeting OpenXR-[[WebGPU]] bridge.
+      - [[Spatial Computing Paradigm]] web XR: WebXR + [[WebGPU]] [[Compute Shader]] pipeline for shared [[Augmented Reality]] spaces (W3C Immersive Web WG 2025-2026 focus). [[Virtual Reality]] browser applications targeting OpenXR-[[WebGPU]] bridge.
     - **[[GPU Architecture]] Roadmaps (2026-2028)**:
       - AMD RDNA5 (2026 projected): dedicated ML tensor units for [[FSR]] 5 integrated at ALU level (all shaders gain neural upscaling acceleration), hardware [[Mesh Shader]] Mesh Node [[DirectX 12]] Work Graphs, RDNA5 [[Ray Tracing Stage]] Accelerator with neural BVH traversal cost heuristics.
       - NVIDIA Blackwell follow-on (GB100 successor, 2026-2027): [[DLSS]] 5 (speculative), 5th-generation multi-frame generation with 4+ AI frames, neural [[Ray Tracing Stage]] denoiser integrated in RT Core silicon rather than Tensor Core dispatch.
       - Apple M5/A19 (2026 projected): hardware mesh-node compute for Nanite-equivalent [[Mesh Shader Pipeline]] on [[Metal]] 4, [[Ray Tracing Stage]] tier 2 matching RDNA4 RT quality, [[Neural Rendering]] hardware NPU co-dispatch with [[Metal]] [[Compute Shader]] pipeline.
-      - Convergence target 2028-2030: discrete GPU/iGPU quality gap collapses for [[Video Game Development]] mid-market; [[Spatial Computing]] headsets and mobile SoCs achieve desktop [[Hybrid Ray Tracing]] + [[Neural Rendering]] quality at <20W TDP.
+      - Convergence target 2028-2030: discrete GPU/iGPU quality gap collapses for [[Video Game Development]] mid-market; [[Spatial Computing Paradigm]] headsets and mobile SoCs achieve desktop [[Hybrid Ray Tracing]] + [[Neural Rendering]] quality at <20W TDP.
 
   - ### Research and Literature
     - **Primary Textbooks**

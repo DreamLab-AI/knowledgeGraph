@@ -32,13 +32,13 @@ public:: true
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
       {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
     ]
   },
@@ -47,9 +47,9 @@ public:: true
 ```
 
 - ### Definition
-  - Natural Interaction enables [[Human Computer Interaction]] through innate human modalities—voice, gaze, gesture, and touch—reducing the symbolic translation burden and making [[Spatial Computing]] and [[Embodied AI]] interfaces intuitive for diverse users.
+  - Natural Interaction enables [[Human Computer Interaction]] through innate human modalities—voice, gaze, gesture, and touch—reducing the symbolic translation burden and making [[Spatial Computing Paradigm]] and [[Embodied AI]] interfaces intuitive for diverse users.
 - ### Relationships
-  - Natural interaction systems integrate [[Gesture Recognition]], [[Speech Recognition]], [[Eye Tracking]], and [[Haptic Feedback]] to form multimodal pipelines that recognise intent from diverse sensory streams. [[Hand Tracking]] provides fine-grained dexterous control in XR environments, whilst [[Multimodal AI]] and [[Conversational AI]] systems interpret combined language and gestural cues. Together these capabilities [[enables]] [[Voice Interaction]], [[Spatial Computing]] platforms, and [[Embodied AI]] applications.
+  - Natural interaction systems integrate [[Gesture Recognition]], [[Speech Recognition]], [[Eye Tracking]], and [[Haptic Feedback]] to form multimodal pipelines that recognise intent from diverse sensory streams. [[Hand Tracking]] provides fine-grained dexterous control in XR environments, whilst [[Multimodal AI]] and [[Conversational AI]] systems interpret combined language and gestural cues. Together these capabilities [[enables]] [[Voice Interaction]], [[Spatial Computing Paradigm]] platforms, and [[Embodied AI]] applications.
 - ### Content
   - The concept of natural interaction emerged from critiques of the WIMP (Windows, Icons, Menus, Pointer) paradigm that dominated personal computing from the 1980s. Researchers such as Mark Weiser at Xerox PARC articulated a vision of "ubiquitous computing" in which technology recedes into the environment and interaction happens through everyday behaviours rather than explicit commands. Tangible user interfaces, gesture-based systems, and speech interfaces all trace lineage to this vision.
 

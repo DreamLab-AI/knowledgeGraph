@@ -54,20 +54,20 @@
       "label": "AI Development"
     },
     {
-      "slug": "coding-support",
-      "label": "Coding support"
+      "slug": "ai-assisted-developer-tooling",
+      "label": "AI-Assisted Developer Tooling"
     },
     {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
     {
-      "slug": "llama",
-      "label": "Llama"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
+    },
+    {
+      "slug": "meta-llama-model-family",
+      "label": "Meta Llama Model Family"
     },
     {
       "slug": "motion-planning",

@@ -156,7 +156,7 @@ public:: true
         "label": "Environmental Monitoring"
       },
       {
-        "@id": "urn:ngm:class:infrastructure-inspection",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-inspection",
         "label": "Infrastructure Inspection"
       }
     ],

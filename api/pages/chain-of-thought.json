@@ -59,10 +59,6 @@
       "label": "Agent Frameworks"
     },
     {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
-    },
-    {
       "slug": "agents",
       "label": "Agents"
     },
@@ -77,6 +73,10 @@
     {
       "slug": "machine-translation",
       "label": "Machine Translation"
+    },
+    {
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
     },
     {
       "slug": "pre-training",

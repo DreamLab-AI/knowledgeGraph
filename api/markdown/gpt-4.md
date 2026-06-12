@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Large Language Models]]
   - bridges-to:: [[Multimodal AI]]
-  - requires:: [[Transformer]], [[OpenAI]]
+  - requires:: [[Transformer]], [[OpenAI Research Organisation]]
   - enables:: [[In-Context Learning]]
 
 - ### Content

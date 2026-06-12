@@ -38,7 +38,7 @@
         "label": "Feed-Forward Network"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -90,7 +90,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       },
       {
@@ -240,7 +240,7 @@
         "label": "Claude"
       },
       {
-        "id": "urn:ngm:class:gemini",
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
@@ -248,7 +248,7 @@
         "label": "GPT"
       },
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "LLaMA"
       },
       {
@@ -673,6 +673,10 @@
       "label": "LoRA DoRA etc"
     },
     {
+      "slug": "machine-learning-techniques-survey",
+      "label": "Machine Learning Techniques Survey"
+    },
+    {
       "slug": "model-width",
       "label": "Model Width"
     },
@@ -691,10 +695,6 @@
     {
       "slug": "network-architecture",
       "label": "Network Architecture"
-    },
-    {
-      "slug": "overview-of-machine-learning-techniques",
-      "label": "Overview of Machine Learning Techniques"
     },
     {
       "slug": "proprietary-ai-video",

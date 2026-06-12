@@ -9,7 +9,7 @@
   - belongs-to-domain:: [[ComputationAndIntelligenceDomain]]
   - implemented-in-layer:: [[ApplicationLayer]]
 - ### Relationships
-  - has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning]], [[AI Systems]]
+  - has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning Discipline]], [[AI Systems]]
   - is-part-of:: [[ETSI Metaverse Domain Model]]
   - enables:: [[Data Processing]], [[Intelligence]], [[Predictive Analytics]]
 - ### Content

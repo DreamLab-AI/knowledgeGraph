@@ -13,7 +13,7 @@ bridges-to:: [[Blockchain]]
 - ### Relationships
   - has-part:: [[Land Parcel]], [[Ownership Token]], [[Spatial Coordinates]], [[Property Metadata]], [[Development Rights]]
   - is-part-of:: [[Virtual Economy]], [[Virtual World]]
-  - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing]], [[Digital Wallet]]
+  - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing Paradigm]], [[Digital Wallet]]
   - enables:: [[Virtual Commerce]], [[Property Development]], [[Event Hosting]], [[Advertising Space]], [[Community Building]]
   - depends-on:: [[NFT Standards]], [[Land Registry]], [[Metaverse Platform]]
 

@@ -11,7 +11,7 @@
   - Uses [[Data Annotation]]
   - Uses [[Reinforcement Learning from Human Feedback]]
   - Enables [[Interactive Learning]]
-  - Supports [[Machine Learning]]
+  - Supports [[Machine Learning Discipline]]
   - Related To [[Human in the Loop]]
   - Related To [[Federated Learning]]
 

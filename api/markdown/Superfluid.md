@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ]
@@ -83,7 +83,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:linked:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -119,7 +119,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Entropy]]
-  - requires:: [[Quantum Computing]]
+  - requires:: [[Quantum Computation Paradigm]]
 
 - ### Content
   - Superfluidity was first observed in liquid helium-4 cooled below about 2.17 kelvin, the lambda point, by Pyotr Kapitsa, John Allen, and Don Misener in 1937. Below this temperature a fraction of the liquid enters a state with zero viscosity.

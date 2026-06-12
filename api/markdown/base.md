@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Layer 2 Scaling]]
   - bridges-to:: [[Coinbase]]
-  - requires:: [[Ethereum]], [[Optimism]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Optimism]]
   - enables:: [[DeFi]]
 
 - ### Content

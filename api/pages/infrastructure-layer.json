@@ -3,7 +3,7 @@
   "title": "Infrastructure Layer",
   "slug": "infrastructure-layer",
   "public": true,
-  "classIri": "urn:ngm:class:infrastructure-layer",
+  "classIri": "urn:ngm:class:technology-infrastructure-domain-layer",
   "domain": "infrastructure",
   "definition": "Foundational base layer providing computing, storage, and network capabilities that enable metaverse applications and services to operate at scale.",
   "subClassOf": [
@@ -42,7 +42,7 @@
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-layer",
+        "id": "urn:ngm:class:spatial-computing-paradigm-layer",
         "label": "Spatial Computing Layer"
       },
       {
@@ -91,7 +91,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:infrastructure-domain",
+        "id": "urn:ngm:class:technology-infrastructure-domain-domain",
         "label": "InfrastructureDomain"
       }
     ],

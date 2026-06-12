@@ -69,7 +69,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
@@ -140,7 +140,7 @@ public:: true
 - ### Relationships
   - partOf [[Transformer Architecture]]
   - requires [[Attention Mechanism]]
-  - requires [[Tokenisation]]
+  - requires [[Neural Network Text Tokenisation]]
   - enables [[Large Language Models]]
   - enables [[Retrieval-Augmented Generation]]
   - relatedTo [[Language Modeling]]

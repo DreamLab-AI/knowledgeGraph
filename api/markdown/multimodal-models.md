@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Multimodal AI]]
-  - bridges-to:: [[Foundation Models]]
+  - bridges-to:: [[Large-Scale Pretrained Foundation Model]]
   - requires:: [[Transformer]]
   - enables:: [[Text-to-Image]]
 

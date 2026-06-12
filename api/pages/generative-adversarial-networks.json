@@ -46,7 +46,7 @@
         "label": "Value Function"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {
@@ -657,8 +657,8 @@
       "label": "Imitation Learning"
     },
     {
-      "slug": "overview-of-machine-learning-techniques",
-      "label": "Overview of Machine Learning Techniques"
+      "slug": "machine-learning-techniques-survey",
+      "label": "Machine Learning Techniques Survey"
     },
     {
       "slug": "patent",

@@ -73,12 +73,12 @@
   - requires:: [[Personal Data Collection]], [[Data Brokers]], [[Biometric Databases]], [[Network Interception Infrastructure]], [[AI Classification Systems]], [[Legal Frameworks]], [[Zero-Day Exploits]], [[Cloud Computing]]
   - enables:: [[Behavioural Prediction]], [[Social Control]], [[Targeted Advertising]], [[Law Enforcement Identification]], [[Political Repression]], [[Commercial Profiling]], [[Algorithmic Governance]], [[Population-Level Tracking]]
   - implements:: [[PRISM Programme]], [[XKeyscore]], [[Pegasus Spyware]], [[Clearview AI]], [[NSO Group]], [[Social Credit System]], [[ALPR Networks]], [[Five Eyes Intelligence Sharing]], [[UPSTREAM Collection]], [[TEMPORA]]
-  - depends-on:: [[Internet Infrastructure]], [[Machine Learning]], [[Facial Recognition]], [[Cryptography]], [[Data Brokers]], [[Cloud Computing]], [[Zero-Day Exploits]], [[Computer Vision]], [[Behavioural Analytics]]
+  - depends-on:: [[Internet Infrastructure]], [[Machine Learning Discipline]], [[Facial Recognition]], [[Cryptography]], [[Data Brokers]], [[Cloud Computing]], [[Zero-Day Exploits]], [[Computer Vision]], [[Behavioural Analytics]]
   - supports:: [[State Security Apparatus]], [[Intelligence Agencies]], [[Advertising Technology]], [[Financial Compliance]], [[Immigration Control]], [[Workplace Productivity Management]]
   - uses:: [[AI Surveillance]], [[Computer Vision]], [[Natural Language Processing]], [[Behavioural Analytics]], [[Graph Analytics]], [[Edge Computing]], [[Biometric Classification]], [[Sentiment Analysis]]
   - contrasts-with:: [[Privacy Rights]], [[End-to-End Encryption]], [[Anonymous Communication]], [[GDPR]], [[Fourth Amendment]], [[Human Rights Act 1998]], [[Privacy by Design]], [[Data Minimisation]]
-  - related-to:: [[AI Risks]], [[AI Liability]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]], [[Access Control System]], [[Anthropic Claude]], [[Agent Frameworks]], [[AML KYC Compliance]], [[Cognitive AI]], [[Brain Computer Interfaces]]
-  - standardized-by:: [[GDPR]], [[UK Data Protection Act 2018]], [[EU AI Act]], [[FISA]], [[UK Investigatory Powers Act 2016]], [[UN Special Rapporteur on Privacy]], [[Surveillance Camera Code of Practice]], [[EU Charter of Fundamental Rights]]
+  - related-to:: [[AI Risks]], [[AI Liability]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]], [[Access Control System]], [[Constitutional AI Language Model Family]], [[Agent Frameworks]], [[AML KYC Compliance]], [[Cognitive AI]], [[Brain Computer Interfaces]]
+  - standardized-by:: [[GDPR]], [[UK Data Protection Act 2018]], [[EU AI Act Regulatory Instrument]], [[FISA]], [[UK Investigatory Powers Act 2016]], [[UN Special Rapporteur on Privacy]], [[Surveillance Camera Code of Practice]], [[EU Charter of Fundamental Rights]]
 
 - ### Content
 
@@ -542,7 +542,7 @@
     - key-entities:: Shoshana Zuboff, Edward Snowden, NSO Group, Citizen Lab, Clearview AI, Bridges v SWP, Big Brother Watch, EFF, AccessNow, GDPR, EU AI Act, Investigatory Powers Act 2016, PRISM, XKeyscore, Pegasus, Joy Buolamwini, China Social Credit System, Five Eyes, ALPR, Flock Safety, GCHQ, Metropolitan Police LFR
 
 - ### Provenance
-  - sources:: [[GDPR]], [[UK Data Protection Act 2018]], [[EU AI Act]], [[FISA]], [[UK Investigatory Powers Act]], [[Foreign Intelligence Surveillance Act]], [[Privacy]], [[AI Risks]], [[Bias in Large Language Models]], [[Algorithmic Bias and Variance]], [[Access Control System]], [[Cognitive AI]]
+  - sources:: [[GDPR]], [[UK Data Protection Act 2018]], [[EU AI Act Regulatory Instrument]], [[FISA]], [[UK Investigatory Powers Act]], [[Foreign Intelligence Surveillance Act]], [[Privacy]], [[AI Risks]], [[Bias in Large Language Models]], [[Algorithmic Bias and Variance]], [[Access Control System]], [[Cognitive AI]]
   - primary-theorists:: Shoshana Zuboff (surveillance capitalism), David Lyon (surveillance society), Michel Foucault (panopticon/discipline), Edward Snowden (NSA mass surveillance disclosure), Ron Deibert/Citizen Lab (commercial spyware forensics), Joy Buolamwini (facial recognition bias), Oscar Gandy (panoptic sort/social sorting), Philip Agre (capture architecture), Orin Kerr (mosaic theory/Fourth Amendment)
   - legal-landmarks:: Bridges v South Wales Police [2020] EWCA Civ 1058; Carpenter v United States 585 U.S. 296 (2018); Patel v Meta (Illinois BIPA) N.D. Cal. 2021 ($650M settlement); Big Brother Watch v UK ECHR Application No. 58170/13 (2021); Warren & Brandeis (1890) Harvard Law Review
   - institutional-actors:: NSA, GCHQ, NSO Group, Clearview AI, Flock Safety, Metropolitan Police, South Wales Police, EFF, AccessNow, Big Brother Watch, AI Now Institute, Citizen Lab, Amnesty International, ICO UK, EU PEGA Committee, Pegasus Project consortium (17 media organisations)

@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -42,7 +42,7 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],

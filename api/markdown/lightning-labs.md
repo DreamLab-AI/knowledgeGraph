@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Lightning Network]]
   - bridges-to:: [[Layer 2 Scaling]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Payment Channel]]
 
 - ### Content

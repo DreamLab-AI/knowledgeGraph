@@ -37,7 +37,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:delivery-planning", "label": "Delivery Planning"}
+      {"@id": "urn:ngm:class:technology-programme-delivery-planning", "label": "Delivery Planning"}
     ]
   },
   "quality": 0.8
@@ -45,7 +45,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Fleet Management]] is the coordinated administration and optimisation of mobile asset collections — from vehicles and drones to robots — using [[Real-Time Monitoring]], [[IoT Sensor Network]] telemetry, and AI analytics to maximise utilisation, safety, and regulatory compliance while enabling [[Logistics Optimization]] and [[Delivery Planning]] at scale.
+  - [[Fleet Management]] is the coordinated administration and optimisation of mobile asset collections — from vehicles and drones to robots — using [[Real-Time Monitoring]], [[IoT Sensor Network]] telemetry, and AI analytics to maximise utilisation, safety, and regulatory compliance while enabling [[Logistics Optimization]] and [[Technology Programme Delivery Planning]] at scale.
 
 - ### Relationships
   - [[Fleet Management]] is a specialisation of [[Asset Management]] applied to mobile, geographically distributed assets. It relies on [[IoT Sensor Network]] infrastructure for telemetry, [[Edge Computing]] for local processing near assets, and [[Real-Time Monitoring]] dashboards for operator situational awareness. [[Digital Twin]] representations of individual assets enable predictive maintenance. As [[Autonomous Vehicle]] technology matures, fleet management platforms must extend to supervise AI-driven agents rather than human operators, requiring [[Autonomous Navigation]] coordination and exception handling at scale. [[Logistics Optimization]] algorithms determine optimal routing and task assignment across the fleet.

@@ -2,7 +2,7 @@
   - [[Immersive Computing]] is the disciplinary umbrella spanning [[Extended Reality]] technologies — [[Augmented Reality]], virtual reality, and mixed reality — that envelope users in synthetic or hybrid sensory environments through real-time [[3D Rendering]], spatial tracking, and multi-modal interaction.
 
 - ### Relationships
-  - Immersive Computing is a subclass of [[Extended Reality]] and contains components including [[Augmented Reality]] and [[Immersive Experience]] design. It is architecturally related to [[Spatial Computing]] (the hardware and software layer for three-dimensional interaction) and to [[Immersive Collaboration]] platforms. Its rendering pipelines depend on advanced [[3D Rendering]] engines and display hardware.
+  - Immersive Computing is a subclass of [[Extended Reality]] and contains components including [[Augmented Reality]] and [[Immersive Experience]] design. It is architecturally related to [[Spatial Computing Paradigm]] (the hardware and software layer for three-dimensional interaction) and to [[Immersive Collaboration]] platforms. Its rendering pipelines depend on advanced [[3D Rendering]] engines and display hardware.
 
 - ### Content
   - The intellectual foundations of immersive computing trace to Ivan Sutherland's 1965 vision of the "Ultimate Display" and his 1968 head-mounted display prototype. The 1990s saw the first commercial VR wave (Virtuality arcade machines, NASA research), which failed due to motion sickness and hardware costs. The modern era began with the Oculus Rift Kickstarter (2012), Sony PlayStation VR (2016), and HTC Vive, reigniting consumer and enterprise interest with affordable, tracked six-degrees-of-freedom experiences.

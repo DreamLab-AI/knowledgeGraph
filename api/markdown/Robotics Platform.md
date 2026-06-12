@@ -574,7 +574,7 @@ public:: true
         "label": "Eigen"
       },
       {
-        "@id": "urn:ngm:class:open-ai-gym",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-gym",
         "label": "OpenAI Gym"
       },
       {
@@ -602,7 +602,7 @@ public:: true
         "label": "USD"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       }
     ],
@@ -632,7 +632,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -1102,7 +1102,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1147,7 +1147,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Rust]]",
+      "raw": "[[Rust Systems Programming Language]]",
       "resolved": "urn:visionflow:owl:class:rust",
       "kind": "ResolvedLink"
     },
@@ -1201,9 +1201,9 @@ public:: true
   - implements:: [[ROS 2]], [[MoveIt 2]], [[ros2_control]], [[micro-ROS]], [[URDF]], [[Nav2]], [[Behaviour Tree]], [[SLAM]], [[Reinforcement Learning]], [[Imitation Learning]]
   - depends-on:: [[DDS QoS]], [[POSIX Real-Time]], [[CAN Bus]], [[EtherCAT]], [[CUDA]], [[Omniverse USD]], [[PCL]], [[Eigen]]
   - supports:: [[Industrial Automation]], [[Warehouse Robotics]], [[Surgical Robotics]], [[Agricultural Robotics]], [[Field Robotics]], [[Space Robotics]], [[Assistive Robotics]]
-  - uses:: [[Python]], [[C++]], [[Rust]], [[URDF]], [[SDF]], [[USD]], [[OpenCV]], [[PCL]], [[Eigen]], [[OpenAI Gym]]
+  - uses:: [[Python]], [[C++]], [[Rust Systems Programming Language]], [[URDF]], [[SDF]], [[USD]], [[OpenCV]], [[PCL]], [[Eigen]], [[OpenAI Gym]]
   - contrasts-with:: [[Proprietary Robot Controller]], [[PLC]], [[SCADA]], [[Custom RTOS Firmware]], [[ROS 1]]
-  - related-to:: [[Machine Learning]], [[Computer Vision]], [[Internet of Things]], [[Edge Computing]], [[Digital Manufacturing]], [[5G]], [[Autonomous Vehicles]]
+  - related-to:: [[Machine Learning Discipline]], [[Computer Vision]], [[Internet of Things]], [[Edge Computing]], [[Digital Manufacturing]], [[5G]], [[Autonomous Vehicles]]
   - standardized-by:: [[IEEE 1872]], [[ISO 10218]], [[IEC 61508]], [[ROS REP]], [[OMG DDS Standard]], [[ISO 9283]], [[VDA 5050]]
 
 - ### Content

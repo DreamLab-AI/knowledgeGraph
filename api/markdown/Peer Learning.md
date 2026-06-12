@@ -60,14 +60,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:collaborative-learning",
+      "@id": "urn:ngm:class:collaborative-systems-modality-learning",
       "label": "Collaborative Learning"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:collaborative-learning",
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       }
     ],

@@ -9,7 +9,7 @@
   - **requires**: [[Blockchain Interoperability]], [[Smart Contract]]
   - **uses**: [[Virtual Currency]], [[Digital Asset]]
   - **partOf**: [[Virtual Economy]]
-  - **relatedTo**: [[Tokenisation]], [[Blockchain]]
+  - **relatedTo**: [[Neural Network Text Tokenisation]], [[Blockchain]]
 
 - ### Content
 

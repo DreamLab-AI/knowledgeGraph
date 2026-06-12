@@ -546,7 +546,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -586,7 +586,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     }
@@ -624,7 +624,7 @@ public:: true
 	  The **Chaumian mint** represents a revolutionary cryptographic breakthrough by **David Chaum**, pioneering digital currency enabling transactions without revealing participant identities. This foundational concept, based on **blind signatures**, emerged in the 1980s as the first practical anonymous payment mechanism.
 	  - **Chaum's Breakthrough (1982)**: Published foundational research on blind signatures enabling untraceable payments, decades before Bitcoin emergence; seminal academic contribution.
 	  - **DigiCash Corporation (1989-1998)**: Chaum founded DigiCash to commercialize Chaumian eCash, deploying early digital currency systems in European and North American banks; first commercial deployment.
-	  - **Microsoft Windows Integration Attempt**: Chaumian eCash was nearly integrated into early Microsoft Windows (Windows 95 era), representing critical moment for privacy-first digital payments. [[Update Cycle]]
+	  - **Microsoft Windows Integration Attempt**: Chaumian eCash was nearly integrated into early Microsoft Windows (Windows 95 era), representing critical moment for privacy-first digital payments. [[Knowledge Artefact Update Cycle]]
 	  - **Legacy Impact**: Though DigiCash ultimately failed commercially due to regulatory obstacles and lack of network effects, Chaum's protocols established theoretical and practical foundations for all subsequent privacy-preserving digital currency protocols.
 	  - **Regulatory Challenges**: Post-9/11 regulations on anonymous financial systems discouraged adoption; governments restricted anonymous currency systems.
 	  Chaumian eCash architecture operates on three fundamental pillars:
@@ -661,7 +661,7 @@ public:: true
 	  - **Governance**: Community-driven federation model; stakeholder voting on protocol upgrades and parameter changes.
 	  - [[David Chaum]] -- [[Blind Signatures]] -- [[Digital Cash]] -- [[Chaumian Mint]] -- [[Anonymous Transactions]]
 	  - [[Cryptographic Protocols]] -- [[Zero-Knowledge Proofs]] -- [[Hash Functions]] -- [[Elliptic Curve Cryptography]] -- [[RSA Cryptography]]
-	  - [[Bitcoin]] -- [[Lightning Network]] -- [[Payment Channels]] -- [[Layer 2 Solutions]] -- [[Confidential Transactions]]
+	  - [[Bitcoin Proof-of-Work Protocol]] -- [[Lightning Network]] -- [[Payment Channels]] -- [[Layer 2 Solutions]] -- [[Confidential Transactions]]
 	  - [[Monero]] -- [[Zcash]] -- [[Mimblewimble]] -- [[CoinJoin]] -- [[Tor Network]] -- [[Privacy Networks]] -- [[Privacy Tech]]
 	  - [[L402]] -- [[BOLT]] -- [[Payment Privacy]] -- [[Transaction Confidentiality]] -- [[Anonymity Protocols]] -- [[Financial Privacy]]
 	  - [[Fedimint]] -- [[Cashu]] -- [[Ark Protocol]] -- [[Bitcoin Privacy]] -- [[Scalability Solutions]] -- [[Sidechain Technology]]

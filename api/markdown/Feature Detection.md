@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "enables": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}, {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}],
     "uses": [{"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}],
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
+    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
     "supports": [{"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}]
   },
   "quality": 0.8
@@ -35,10 +35,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Feature Detection]] encompasses two distinct but related practices. In web and software development it means testing at runtime whether a given API or browser capability exists before using it, enabling graceful degradation and progressive enhancement. In [[Computer Vision]] and [[Machine Learning]] it refers to algorithms that identify distinctive structures — corners, blobs, edges, or learned embeddings — within raw sensor data, forming the foundation for [[Object Detection]] and recognition pipelines.
+  - [[Feature Detection]] encompasses two distinct but related practices. In web and software development it means testing at runtime whether a given API or browser capability exists before using it, enabling graceful degradation and progressive enhancement. In [[Computer Vision]] and [[Machine Learning Discipline]] it refers to algorithms that identify distinctive structures — corners, blobs, edges, or learned embeddings — within raw sensor data, forming the foundation for [[Object Detection]] and recognition pipelines.
 
 - ### Relationships
-  - Web-oriented feature detection relies on querying the [[Runtime Environment]] directly, producing boolean results that guide conditional code paths. Computer-vision feature detection feeds into [[Computer Vision System]]s and downstream [[Object Detection]] pipelines. Both interpretations inform [[Machine Learning]] workflows: web detection guides capability-aware model serving, whilst visual detection provides the salient regions on which [[Neural Network]]s are trained and evaluated.
+  - Web-oriented feature detection relies on querying the [[Runtime Environment]] directly, producing boolean results that guide conditional code paths. Computer-vision feature detection feeds into [[Computer Vision System]]s and downstream [[Object Detection]] pipelines. Both interpretations inform [[Machine Learning Discipline]] workflows: web detection guides capability-aware model serving, whilst visual detection provides the salient regions on which [[Neural Network]]s are trained and evaluated.
 
 - ### Content
   - The web development meaning of feature detection was popularised by the Modernizr library (circa 2009), which replaced brittle browser-sniffing patterns with direct API existence checks. The technique aligns with the principle of progressive enhancement: serve a baseline experience to all, then augment for capable environments. Standardised approaches such as CSS `@supports` and JavaScript `typeof` checks formalised the pattern.

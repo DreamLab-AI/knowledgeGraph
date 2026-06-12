@@ -7,7 +7,7 @@
   - **Universal Checkpointing**: DeepSpeed's Universal Checkpointing (UCP) extends DCP semantics to support arbitrary combinations of ZeRO data parallelism, tensor parallelism, pipeline parallelism, and sequence parallelism in a single serialisation, with lossless transformation across parallelism strategies at load time.
   - **Checkpoint averaging**: This technique constructs an ensemble-like parameter set by arithmetically averaging the weight vectors from several recent checkpoints (typically the last 5-20 saved during the final training phase), reducing stochastic noise and improving generalisation by 0.2-1.5 BLEU / 0.1-0.5 accuracy points without any additional training compute. Stochastic Weight Averaging (SWA) formalises this as a cyclical learning rate that revisits high-loss basins before averaging the traversed checkpoints.
   - **EMA weight tracking**: Exponential Moving Average (EMA) maintains a shadow copy of model parameters updated each step as `θ_ema ← α · θ_ema + (1-α) · θ` with decay α typically 0.999-0.9999, producing a smoother weight trajectory that substantially outperforms the raw training weights on evaluation benchmarks. EMA is essentially mandatory in [[Diffusion Models]] pipelines (Stable Diffusion, FLUX, EDM2) where the EMA copy is the inference model and the non-EMA weights are discarded after training. A 2024 paper from Karras et al. introduced post-hoc EMA: by storing periodic snapshots of short-EMA weight states, any longer EMA profile can be reconstructed post-training through a linear mixture, allowing researchers to tune EMA decay after compute is spent.
-  - **Blockchain checkpoints**: In Bitcoin's historical implementation, hardcoded block hashes were compiled into the client binary to accelerate initial synchronisation and prevent denial-of-service attacks; this practice was discontinued after the final checkpoint at block 295,000 in 2014. In [[Ethereum]]'s proof-of-stake beacon chain, a checkpoint is a formal consensus object defined as a (epoch, block_root) pair — validators vote on epoch-boundary checkpoints via Casper FFG, and a checkpoint becomes justified once it receives votes from validators controlling ≥ 2/3 of staked ETH, then finalised when a subsequent checkpoint is justified on top, providing cryptoeconomic finality. Ethereum's weak-subjectivity checkpoint mechanism enables newly syncing nodes to obtain a recent finalised block hash from a trusted endpoint, enabling safe fast-sync without full chain replay.
+  - **Blockchain checkpoints**: In Bitcoin's historical implementation, hardcoded block hashes were compiled into the client binary to accelerate initial synchronisation and prevent denial-of-service attacks; this practice was discontinued after the final checkpoint at block 295,000 in 2014. In [[Ethereum Smart Contract Platform]]'s proof-of-stake beacon chain, a checkpoint is a formal consensus object defined as a (epoch, block_root) pair — validators vote on epoch-boundary checkpoints via Casper FFG, and a checkpoint becomes justified once it receives votes from validators controlling ≥ 2/3 of staked ETH, then finalised when a subsequent checkpoint is justified on top, providing cryptoeconomic finality. Ethereum's weak-subjectivity checkpoint mechanism enables newly syncing nodes to obtain a recent finalised block hash from a trusted endpoint, enabling safe fast-sync without full chain replay.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Checkpoints
@@ -18,13 +18,13 @@
   - domain-correction:: infrastructure → artificial-intelligence (stub had wrong domain; concept is a core ML/AI training artifact with secondary blockchain bridge; corrected 2026-05-17)
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Training]], [[Model Serialisation]], [[Fault Tolerance]], [[Model Versioning]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Training]], [[Model Serialisation]], [[Fault Tolerance]], [[Model Versioning]]
   - has-part:: [[Weight Tensor]], [[Optimiser State]], [[Learning Rate Schedule]], [[RNG State]], [[Step Counter]], [[EMA Shadow Weights]], [[Shard Metadata]], [[Checkpoint Index]]
   - requires:: [[Persistent Storage]], [[Serialisation Format]], [[Training Loop]], [[Checkpoint Frequency Policy]], [[File System]], [[Model Architecture]]
   - enables:: [[Training Resumption]], [[Model Versioning]], [[Transfer Learning]], [[Fine-tuning]], [[Model Serving]], [[Checkpoint Averaging]], [[Distributed Training Recovery]], [[Experiment Reproducibility]]
   - implements:: [[Safetensors]], [[PyTorch]], [[TensorFlow]], [[DeepSpeed]], [[FSDP]], [[Hugging Face Hub]], [[MLflow]], [[Weights and Biases]]
   - depends-on:: [[Distributed Training]], [[File System]], [[Serialisation]], [[Fault Tolerance]], [[Model Registry]], [[Optimiser]]
-  - supports:: [[MLOps]], [[Model Serving]], [[Transfer Learning]], [[Fine-tuning]], [[Diffusion Models]], [[Large Language Models]], [[Foundation Models]], [[Reinforcement Learning]]
+  - supports:: [[MLOps]], [[Model Serving]], [[Transfer Learning]], [[Fine-tuning]], [[Diffusion Models]], [[Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Reinforcement Learning]]
   - uses:: [[Safetensors]], [[Pickle]], [[SavedModel]], [[ONNX]], [[GGUF]], [[ZeRO]], [[FSDP]], [[DVC]]
   - contrasts-with:: [[Streaming Inference]], [[On-the-fly Training]], [[Stateless Execution]], [[Model Distillation]]
   - related-to:: [[Model Registry]], [[Experiment Tracking]], [[Weights and Biases]], [[MLflow]], [[DVC]], [[Hugging Face Hub]], [[ONNX]], [[TorchScript]], [[Quantisation]], [[LoRA]], [[PEFT]]
@@ -262,7 +262,7 @@
   - A 2025 analysis found that EMA with decay 0.2 applied over the last 6 checkpoints effectively restores curriculum learning benefits lost during long training runs, often surpassing traditional warmup-stable-decay methods.
 
   - ### Transfer Learning and Fine-tuning
-  - Pre-trained checkpoints from [[Foundation Models]] (BERT, RoBERTa, LLaMA, Mistral, GPT-2, Gemma, Qwen) published on [[Hugging Face]] Hub enable practitioners to initialise domain-specific models with zero or minimal training data:
+  - Pre-trained checkpoints from [[Large-Scale Pretrained Foundation Model]] (BERT, RoBERTa, LLaMA, Mistral, GPT-2, Gemma, Qwen) published on [[Hugging Face]] Hub enable practitioners to initialise domain-specific models with zero or minimal training data:
     - `AutoModel.from_pretrained("bert-base-uncased")` downloads the `.safetensors` checkpoint, verifies the JSON header, deserialises weights via mmap, and loads them into the appropriate architecture class
     - The Hub's `model.safetensors.index.json` enables lazy loading of only the required parameter shards for architectures where only specific layers are fine-tuned
   - [[Fine-tuning]] techniques including [[LoRA]], QLoRA, and prefix-tuning checkpoint only the delta weights (adapter tensors) rather than the full model, reducing checkpoint size from gigabytes (full model) to megabytes (adapter only). [[PEFT]] library checkpoints save `adapter_config.json` + `adapter_model.safetensors`, typically 10-500 MB for a 7-70B base model.
@@ -549,8 +549,8 @@
   - **TIES-merging**: Checkpoint merging algorithm that resolves sign conflicts between merged parameters by voting before averaging, reducing parameter interference
   - **DARE**: Checkpoint merging via random sparsification of delta weights (zeroing 90-99%) before merging, reducing cross-checkpoint interference
   - **Post-hoc EMA**: Karras et al. 2024 technique for reconstructing any EMA profile post-training via linear mixture of stored short-EMA snapshots
-  - **Weak subjectivity checkpoint**: [[Ethereum]] beacon chain mechanism providing syncing nodes with a recent finalised `(epoch, block_root)` anchor for fast-sync without full chain replay
-  - **Casper FFG**: [[Ethereum]]'s Friendly Finality Gadget overlay protocol that justifies and finalises checkpoint pairs (epoch, block_root) via stake-weighted validator attestations
+  - **Weak subjectivity checkpoint**: [[Ethereum Smart Contract Platform]] beacon chain mechanism providing syncing nodes with a recent finalised `(epoch, block_root)` anchor for fast-sync without full chain replay
+  - **Casper FFG**: [[Ethereum Smart Contract Platform]]'s Friendly Finality Gadget overlay protocol that justifies and finalises checkpoint pairs (epoch, block_root) via stake-weighted validator attestations
 
 - ### Provenance
   - sources::
@@ -577,4 +577,4 @@
   - enrichment-notes:: Domain corrected from infrastructure to artificial-intelligence. Blockchain checkpoint meaning retained as secondary bridge. Stub body (CivitAI/Reddit links) was a Logseq bookmarks dump; entirely replaced with ontology-conformant content. Research conducted via WebSearch May 2026.
   - related-uk-infrastructure:: Hartree Centre (Daresbury), N8 CIR Bede GPU cluster, JASMIN (STFC), Edinburgh ARCHER2 HPE Cray EX
   - related-uk-policy:: NHS AI Lab Model Assurance Framework (2024), UKRI Research Data Management Policy, UK MHRA AIaMD Guidance, UK AI Safety Institute Frontier AI Safety Commitments (2023)
-  - cross-domain-bridges:: [[Blockchain]] checkpoint (consensus finality anchor), [[Federated Learning]] (global aggregate checkpoint), [[Reinforcement Learning]] (policy snapshot), [[Quantum Computing]] (variational circuit parameter snapshot)
+  - cross-domain-bridges:: [[Blockchain]] checkpoint (consensus finality anchor), [[Federated Learning]] (global aggregate checkpoint), [[Reinforcement Learning]] (policy snapshot), [[Quantum Computation Paradigm]] (variational circuit parameter snapshot)

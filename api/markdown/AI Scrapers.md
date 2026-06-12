@@ -384,7 +384,7 @@ public:: true
         "label": "Network Connectivity"
       },
       {
-        "@id": "urn:ngm:class:public-web-content",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-web-content",
         "label": "Public Web Content"
       },
       {
@@ -480,7 +480,7 @@ public:: true
         "label": "Content Licensing"
       },
       {
-        "@id": "urn:ngm:class:copyright-law",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework-law",
         "label": "Copyright Law"
       },
       {
@@ -502,7 +502,7 @@ public:: true
         "label": "Large Language Model Training"
       },
       {
-        "@id": "urn:ngm:class:multimodal-model-training",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-model-training",
         "label": "Multimodal Model Training"
       },
       {
@@ -520,7 +520,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-53",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-53",
         "label": "EU AI Act Article 53"
       },
       {

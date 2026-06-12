@@ -76,7 +76,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure-domain",
+      "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
       "label": "Infrastructure Domain"
     }
   ],
@@ -103,7 +103,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning-domain",
+        "@id": "urn:ngm:class:machine-learning-discipline-domain",
         "label": "Machine Learning Domain"
       },
       {

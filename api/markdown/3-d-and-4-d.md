@@ -8,7 +8,7 @@
 - ### Relationships
   - uses:: [[Generative AI]], [[Diffusion Model]], [[Neural Radiance Field]], [[Deep Learning]]
   - enables:: [[Augmented Reality]], [[3D Asset]], [[Pose Estimation]]
-  - relatedTo:: [[Computer Vision]], [[Machine Learning]]
+  - relatedTo:: [[Computer Vision]], [[Machine Learning Discipline]]
 
 - ### Content
   - # 3D and 4D Content Creation

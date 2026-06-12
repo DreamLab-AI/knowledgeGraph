@@ -241,7 +241,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -519,5 +519,5 @@ public:: true
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[ISO/IEC 42001]], [[OECD AI Principles]], [[IEEE 7000 Model Process]], [[Algorithmic Accountability Principles]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[ISO/IEC 42001]], [[OECD AI Principles]], [[IEEE 7000 Model Process]], [[Algorithmic Accountability Principles]]
   - migration-date:: 2026-04-26T00:00:00Z

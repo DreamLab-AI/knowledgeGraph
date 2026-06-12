@@ -89,7 +89,7 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
     ],
     "partOf": [

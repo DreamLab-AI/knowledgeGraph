@@ -62,7 +62,7 @@ alias:: EconomicLayer
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:metaverse-as-markets",
+        "@id": "urn:ngm:class:virtual-economy-market-framing",
         "label": "Metaverse as Markets"
       }
     ],
@@ -110,7 +110,7 @@ alias:: EconomicLayer
 - ### Relationships
   - Has part [[Governance Token]] as the primary instrument of on-chain economic agency
   - Has part [[Governance Model]] which specifies voting and incentive rules
-  - Enables [[Metaverse as Markets]] by providing the economic infrastructure for virtual economies
+  - Enables [[Virtual Economy Market Framing]] by providing the economic infrastructure for virtual economies
   - Related to [[Governance]] as the broader policy framework within which mechanisms operate
   - Related to [[Governance Framework]] for regulatory and procedural compliance
 

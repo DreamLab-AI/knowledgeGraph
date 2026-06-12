@@ -67,7 +67,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -102,7 +102,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -138,7 +138,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
   - bridges-to:: [[DAO Governance]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
   - enables:: [[SafeSnap]]
 
 - ### Content

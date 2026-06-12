@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:stranded-energy", "label": "Stranded Energy"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"},
       {"@id": "urn:ngm:class:methane-abatement", "label": "Methane Abatement"}
     ],

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:b2730532b813c2e8aed77270e03a2cc4fc72d7729b4d5309e5ee294e981bb834",
+  "title": "Immersive Technology Exhibition Event",
+  "slug": "immersive-technology-exhibition-event",
+  "public": true,
+  "classIri": "urn:ngm:class:immersive-technology-exhibition-event",
+  "domain": "infrastructure",
+  "definition": "An exhibition is a curated public or professional presentation of artefacts, technologies, artworks, or innovations staged in a physical venue, virtual environment, or hybrid setting. In the context of immersive technology and AI, exhibitions serve as deployment contexts for spatial computing experiences, interactive demonstrations, and knowledge communication \u2014 including trade fairs, museum installations, and dedicated industry events such as AIX. They sit at the intersection of event management, immersive experience design, and audience engagement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:event",
+      "label": "Event"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-core-concepts",
+        "label": "metaverse core concepts"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "aix",
+      "label": "AIX"
+    }
+  ],
+  "backlinks": []
+}

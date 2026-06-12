@@ -410,7 +410,7 @@ public:: true
         "label": "Human Evaluation"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -436,7 +436,7 @@ public:: true
         "label": "Voice Interfaces"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -444,7 +444,7 @@ public:: true
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       }
     ],
@@ -704,7 +704,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -719,7 +719,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -744,7 +744,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
@@ -764,7 +764,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -826,11 +826,11 @@ public:: true
   - requires:: [[Natural Language Understanding]], [[Training Data]], [[Knowledge Base]], [[Inference Engine]], [[API Integration]]
   - enables:: [[Customer Service Automation]], [[Voice Interfaces]], [[Virtual Assistants]], [[Task Automation]], [[Knowledge Retrieval]], [[Lead Generation]]
   - implements:: [[Retrieval Augmented Generation]], [[Intent Classification]], [[Slot Filling]], [[Multi-turn Dialogue]], [[Transformer Architecture]], [[Model Context Protocol]]
-  - depends-on:: [[Large Language Models]], [[Natural Language Processing]], [[Machine Learning]], [[Vector Databases]], [[Embedding Models]]
+  - depends-on:: [[Large Language Models]], [[Natural Language Processing]], [[Machine Learning Discipline]], [[Vector Databases]], [[Embedding Models]]
   - supports:: [[Customer Service Automation]], [[Healthcare AI]], [[Education Technology]], [[E-commerce]], [[Enterprise Search]]
-  - uses:: [[BLEU]], [[BERTScore]], [[Human Evaluation]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]]
+  - uses:: [[BLEU]], [[BERTScore]], [[Human Evaluation]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]]
   - contrasts-with:: [[Rule-Based Systems]], [[Expert Systems]], [[Search Engines]], [[Form-Based Interfaces]]
-  - related-to:: [[ChatGPT]], [[Claude]], [[Gemini]], [[Voice Interfaces]], [[Multi-turn Dialogue]], [[Persona]], [[Retrieval Augmented Generation]]
+  - related-to:: [[Instruction-Following Conversational AI System]], [[Claude]], [[Gemini Multimodal Language Model]], [[Voice Interfaces]], [[Multi-turn Dialogue]], [[Persona]], [[Retrieval Augmented Generation]]
   - standardized-by:: [[ISO 30401]], [[W3C Voice Browser Working Group]], [[Model Context Protocol Specification]]
 
 - ### Content
@@ -985,13 +985,13 @@ public:: true
     - Retrieval-based chatbots learnt to select responses from indexed corpora using TF-IDF or dense embeddings, replacing brittle rule lists.
     - Sequence-to-sequence LSTM models (Vinyals & Le 2015) introduced end-to-end trainable generative response generation.
     - Attention mechanisms and the transformer architecture (Vaswani et al. 2017) provided the foundation for all subsequent LLM-based chatbots.
-  - The LLM era catalysed by GPT-3 (2020), [[ChatGPT]] (November 2022), GPT-4 (March 2023), [[Claude]], and [[Gemini]] compressed decades of AI-assistant research into months of public adoption.
+  - The LLM era catalysed by GPT-3 (2020), [[Instruction-Following Conversational AI System]] (November 2022), GPT-4 (March 2023), [[Claude]], and [[Gemini Multimodal Language Model]] compressed decades of AI-assistant research into months of public adoption.
     - ChatGPT gained 1 million users in 5 days, the fastest consumer product adoption in history.
     - ChatGPT reached 400 million weekly active users by February 2025.
     - These systems achieved conversational fluency, factual breadth, and task flexibility that rendered earlier intent-pipeline chatbots comparatively limited for open-domain use cases.
   - By 2024, the chatbot had bifurcated into two dominant phenotypes.
     - **Enterprise task bot**: narrow-domain, deterministic, integrated with CRM/ERP/ticketing systems (Salesforce Einstein, Zendesk AI, ServiceNow Virtual Agent).
-    - **General-purpose LLM assistant**: open-domain, generative, capable of code, analysis, creative work, and multi-step reasoning ([[ChatGPT]], [[Claude]], Copilot, [[Gemini]]).
+    - **General-purpose LLM assistant**: open-domain, generative, capable of code, analysis, creative work, and multi-step reasoning ([[Instruction-Following Conversational AI System]], [[Claude]], Copilot, [[Gemini Multimodal Language Model]]).
   - The **agentic turn** of 2025–2026 extended the chatbot definition from reactive question-answering to proactive goal-directed agency.
     - Chatbots equipped with tool-use capabilities via the [[Model Context Protocol]] (MCP, standardised by Anthropic November 2024) can plan multi-step workflows, call external APIs, browse the web, execute code, and observe results before responding.
     - MCP was donated to the Linux Foundation's Agentic AI Foundation in December 2025, co-founded by Anthropic, OpenAI, and Block.
@@ -1000,7 +1000,7 @@ public:: true
 
   - ## Components and Architecture
   - ### Core NLU–DM–NLG Pipeline
-  - The canonical chatbot architecture organises three processing stages into a pipeline with bidirectional context flows, each stage mapping to a distinct sub-discipline of [[Natural Language Processing]] and [[Machine Learning]]. The pipeline model traces its lineage to the AT&T Bell Labs GENESIS system (1992) and was formalised in the ATIS benchmark corpus work of the early 1990s. Modern LLM-native architectures can collapse all three stages into a single model pass, but the conceptual decomposition remains useful for design, debugging, and governance.
+  - The canonical chatbot architecture organises three processing stages into a pipeline with bidirectional context flows, each stage mapping to a distinct sub-discipline of [[Natural Language Processing]] and [[Machine Learning Discipline]]. The pipeline model traces its lineage to the AT&T Bell Labs GENESIS system (1992) and was formalised in the ATIS benchmark corpus work of the early 1990s. Modern LLM-native architectures can collapse all three stages into a single model pass, but the conceptual decomposition remains useful for design, debugging, and governance.
   - **Natural Language Understanding (NLU)** converts raw text or ASR transcript into a structured intent-entity representation.
     - *Intent recognition* maps utterances to a categorical user goal via supervised classification. Classical: bag-of-words + logistic regression or SVM (60–75% accuracy on real customer utterances). Modern: fine-tuned BERT/RoBERTa encoders (90–95%+ accuracy on intent detection).
     - *Entity extraction / [[Slot Filling]]* identifies specific named slots (e.g., `departure_city`, `travel_date`, `seat_class`) using BIO sequence labelling. BERT-NER achieves F1 ≥ 0.90 on standard benchmarks (SNIPS, ATIS). LLM-based slot extraction via JSON schema prompting removes per-domain training data requirements at higher latency cost.
@@ -1077,9 +1077,9 @@ public:: true
     - Key enterprise vendors: Salesforce Einstein, Zendesk AI, ServiceNow Virtual Agent, Freshdesk Freddy AI, Intercom Fin, LivePerson Conversational Cloud.
   - ### Virtual Personal Assistants
   - General-purpose LLM assistants for productivity, drafting, research, analysis, and code generation.
-    - [[ChatGPT]] (OpenAI): 400 million weekly active users by February 2025; GPT-4o supports text, image, audio, and video.
+    - [[Instruction-Following Conversational AI System]] (OpenAI): 400 million weekly active users by February 2025; GPT-4o supports text, image, audio, and video.
     - [[Claude]] (Anthropic): specialises in coding, long-document analysis, and nuanced writing; Claude 3.7 Sonnet with extended thinking capability.
-    - [[Gemini]] (Google): Gemini 3.1 Pro (released February 2026) handles text, image, audio, video; 1M token context; dedicated agentic tool endpoint.
+    - [[Gemini Multimodal Language Model]] (Google): Gemini 3.1 Pro (released February 2026) handles text, image, audio, video; 1M token context; dedicated agentic tool endpoint.
     - Copilot (Microsoft): deeply integrated into Microsoft 365 productivity suite; enterprise-grade compliance and data residency options.
     - Grok (xAI): real-time X/Twitter data access; conversational search integration.
     - DeepSeek-V3/R1 (DeepSeek): competitive open-weight performance at fraction of frontier model cost; significant enterprise adoption in Asia-Pacific and UK in 2025–2026.
@@ -1145,11 +1145,11 @@ public:: true
   - Alignment and safety for LLM chatbots:
     - RLHF (Christiano et al. 2017; Stiennon et al. 2020): reinforcement learning from human preference feedback; the dominant technique for making LLM chatbots helpful, harmless, and honest.
     - InstructGPT (Ouyang et al. 2022): applied RLHF to GPT-3 to produce instruction-following behaviour; direct precursor to ChatGPT.
-    - [[Constitutional AI]] (Bai et al. 2022, Anthropic): self-critique approach grounded in natural-language principles, reducing dependence on human labellers for harmlessness training and establishing a replicable safety methodology.
+    - [[Constitutional AI Training Methodology]] (Bai et al. 2022, Anthropic): self-critique approach grounded in natural-language principles, reducing dependence on human labellers for harmlessness training and establishing a replicable safety methodology.
   - Evaluation methodology:
     - Liu et al. (2016): demonstrated that BLEU, ROUGE, and METEOR correlate poorly with human judgement in open-domain dialogue — a seminal negative result that redirected evaluation research.
     - [[BERTScore]] (Zhang et al. 2019): contextualised semantic similarity using BERT embeddings; 59% alignment with human judgements versus 47% for BLEU (ACL 2025 ExPerT study).
-    - Chatbot Arena / MT-Bench (Zheng et al. 2023, LMSYS): crowdsourced pairwise preference voting across >1 million human comparisons; Elo-based leaderboard for [[ChatGPT]], [[Claude]], [[Gemini]], DeepSeek, Llama, and others. The most comprehensive empirical chatbot ranking as of 2026.
+    - Chatbot Arena / MT-Bench (Zheng et al. 2023, LMSYS): crowdsourced pairwise preference voting across >1 million human comparisons; Elo-based leaderboard for [[Instruction-Following Conversational AI System]], [[Claude]], [[Gemini Multimodal Language Model]], DeepSeek, Llama, and others. The most comprehensive empirical chatbot ranking as of 2026.
     - G-Eval (Liu et al. 2023): GPT-4 as evaluator rating coherence, fluency, groundedness on 1–5 scales; strong correlation with human preferences; de facto standard for LLM-era dialogue evaluation.
   - Persona consistency research (2025):
     - Chen et al. (2025) arXiv:2511.00222: multi-turn reinforcement learning with PPO quantitatively improves persona stability; LLMs exhibit on average 39% performance degradation in multi-turn settings versus single-turn baselines.
@@ -1269,7 +1269,7 @@ public:: true
     - Becoming the de facto standard for LLM-era dialogue evaluation, replacing BLEU/ROUGE in 2024–2025 academic papers.
   - **Chatbot Arena Elo** (Zheng et al. 2023, LMSYS):
     - Crowdsourced pairwise human preference voting across >1 million comparisons as of 2025.
-    - Elo rating system provides relative rankings across [[ChatGPT]], [[Claude]], [[Gemini]], DeepSeek, Llama, Mistral, and others.
+    - Elo rating system provides relative rankings across [[Instruction-Following Conversational AI System]], [[Claude]], [[Gemini Multimodal Language Model]], DeepSeek, Llama, Mistral, and others.
     - Most comprehensive empirical chatbot ranking as of 2026; updated continuously with new model releases.
   - **Human Evaluation** (gold standard):
     - Annotators recruited via Amazon MTurk, specialist agencies, or internal evaluator panels rate response quality on multiple dimensions.
@@ -1300,7 +1300,7 @@ public:: true
     - 80% of organisations have encountered risky agent behaviours including unauthorised data exposure and improper system access.
     - Building guardrails is characterised as "slow, expensive, and annoying" — safety as friction for companies racing to deploy.
   - **Key guardrail platforms in production as of 2026**:
-    - Anthropic [[Constitutional AI]]: principle-based rather than ad-hoc rule lists; self-critique training reduces need for human-labelled harmlessness data.
+    - Anthropic [[Constitutional AI Training Methodology]]: principle-based rather than ad-hoc rule lists; self-critique training reduces need for human-labelled harmlessness data.
     - AWS Bedrock Guardrails: configurable content filtering, PII detection, grounding validation.
     - Azure AI Content Safety (2025 updates): enterprise-grade moderation API; integrated with Azure OpenAI Service.
     - Patronus AI and GraySwan: specialised LLM safety evaluation and red-teaming platforms.

@@ -127,7 +127,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   },
   "provenance": {
@@ -208,7 +208,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[latent space]]",
+      "raw": "[[Neural Network Latent Space]]",
       "resolved": "urn:visionflow:owl:class:latent-space",
       "kind": "ResolvedLink"
     },
@@ -866,7 +866,7 @@ public:: true
 		- https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
 		- [The majority of traffic from Elon Musk's X may have been fake during the Super Bowl, report suggests | Mashable](https://mashable.com/article/x-twitter-elon-musk-bots-fake-traffic)
   - Russian bots are inflating Instagram influencer follower counts into the tens of millions ([reference](https://www.adweek.com/social-marketing/study-15-million-russian-instagram-influencers-followers-are-bots/)).
-  - 'Background tokens' is a term used on the [[latent space]] podcast to describe pre LLM unpolluted data. This legacy data is the last state of human discourse.
+  - 'Background tokens' is a term used on the [[Neural Network Latent Space]] podcast to describe pre LLM unpolluted data. This legacy data is the last state of human discourse.
   - A fascinating unexpected second order impact of this is that future models may skew more right wing as those sites [welcome the scraping.](https://www.wired.com/story/most-news-sites-block-ai-bots-right-wing-media-welcomes-them/?)
   - [AI and Leviathan: Part III by Samuel Hammond (secondbest.ca)](https://www.secondbest.ca/p/ai-and-leviathan-part-iii)
 

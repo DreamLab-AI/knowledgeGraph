@@ -58,7 +58,7 @@
   - **August 2020**: Massive attack with [[double-spending]] of $5.6 million worth of ETC
   - **2020 Series**: Network experienced three additional attacks in 2020, losing over $5 million total
   - **2024 Attack**: Further [[double-spending]] incidents and [[transaction]] disruptions, causing financial harm and reputational damage
-  **Why Targeted**: Lower [[hash rate]] compared to [[Ethereum]], making it economically feasible to rent sufficient computational power for attacks.
+  **Why Targeted**: Lower [[hash rate]] compared to [[Ethereum Smart Contract Platform]], making it economically feasible to rent sufficient computational power for attacks.
   *Sources: Coinbase Security (2019), BeInCrypto (2024)*
 
   #### Bitcoin Gold (Ongoing Target)
@@ -75,7 +75,7 @@
   #### Cost of Attack [Updated 2025]
 
   **Large Networks (Highly Secure)**:
-  - [[Bitcoin]]: Hash rate exceeds 600 EH/s (exahashes per second)
+  - [[Bitcoin Proof-of-Work Protocol]]: Hash rate exceeds 600 EH/s (exahashes per second)
   - Estimated cost: $20+ billion in hardware, plus ongoing electricity costs exceeding $1 million/day
   - **Practically immune** due to prohibitive costs
   **Smaller Networks (Vulnerable)**:
@@ -99,7 +99,7 @@
   - **[[Proof-of-Stake]] (PoS)**: Replaces [[hash rate]] with token ownership
   - Attack cost shifts from hardware to capital
   - Requires acquiring >50% of token supply (often billions of dollars)
-  - Examples: [[Ethereum]] 2.0, [[Cardano]], [[Polkadot]]
+  - Examples: [[Ethereum Smart Contract Platform]] 2.0, [[Cardano]], [[Polkadot]]
   - **Hybrid Models**: Combine PoW with PoS or other mechanisms
   - [[Decred]]: Hybrid PoW/PoS system
   - Makes attacks significantly more complex and expensive
@@ -128,7 +128,7 @@
 
   #### 5. Economic Barriers
 
-  - **Staking Requirements**: [[Ethereum]] requires staking 32 ETH (~$54,000+) to become validator
+  - **Staking Requirements**: [[Ethereum Smart Contract Platform]] requires staking 32 ETH (~$54,000+) to become validator
   - **Slashing Penalties**: Validators lose stake for malicious behaviour
   - **Bonding Mechanisms**: Economic deterrents for attack attempts
 
@@ -154,7 +154,7 @@
   - Create orphaned blocks
 
   #### Academic Context
-  The academic foundation stems from the [[Bitcoin]] whitepaper by [[Satoshi Nakamoto]] (2008), which assumed the improbability of acquiring majority [[hash rate]]. However, subsequent research has developed sophisticated economic models analysing incentives and feasibility of 51% attacks across various [[cryptocurrencies]].
+  The academic foundation stems from the [[Bitcoin Proof-of-Work Protocol]] whitepaper by [[Satoshi Nakamoto]] (2008), which assumed the improbability of acquiring majority [[hash rate]]. However, subsequent research has developed sophisticated economic models analysing incentives and feasibility of 51% attacks across various [[cryptocurrencies]].
   **Key Research Areas**:
   1. **Economic Game Theory**: Analyzing attacker incentives and rational behaviour
   2. **Selfish Mining**: Related attack strategy where miners withhold blocks

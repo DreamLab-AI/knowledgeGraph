@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:network-standards", "label": "Network Standards"},
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
       {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"}

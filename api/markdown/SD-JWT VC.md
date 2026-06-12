@@ -56,14 +56,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:json-web-token",
+      "@id": "urn:ngm:class:json-data-interchange-format-web-token",
       "label": "JSON Web Token"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {

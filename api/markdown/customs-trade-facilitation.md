@@ -16,7 +16,7 @@
   - implements:: [[WTO Trade Facilitation Agreement]], [[WCO SAFE Framework]], [[EU Union Customs Code]], [[HMRC CDS]], [[UNCITRAL Model Law on Electronic Transferable Records]], [[UN/CEFACT Trade Data Standards]], [[GS1 EPCIS Standards]]
   - depends-on:: [[Hyperledger Fabric]], [[Corda]], [[Public Key Infrastructure]], [[API Gateway]], [[Smart Contracts]], [[GS1 Standards]], [[Zero-Knowledge Proofs]]
   - supports:: [[AML KYC Compliance]], [[Carbon Footprint Measurement]], [[Cold Chain Monitoring]], [[Blockchain Interoperability]], [[Logistics Optimisation]], [[Carbon Credit Tracking]]
-  - uses:: [[Zero-Knowledge Proofs]], [[Cryptographic Hash Functions]], [[Machine Learning]], [[Natural Language Processing]], [[Optical Character Recognition]], [[Decentralised Identifiers]]
+  - uses:: [[Zero-Knowledge Proofs]], [[Cryptographic Hash Functions]], [[Machine Learning Discipline]], [[Natural Language Processing]], [[Optical Character Recognition]], [[Decentralised Identifiers]]
   - contrasts-with:: [[TradeLens]], [[Paper-Based Trade Documentation]], [[Manual Customs Clearance]], [[Centralised Single Window]], [[SWIFT Trade Finance]]
   - related-to:: [[GSBN]], [[Blockchain As A Service]], [[Blockchain Network]], [[API Gateway]], [[Carbon Credit Tracking]], [[Blockchain Interoperability]], [[Cold Chain Monitoring]]
   - standardized-by:: [[WTO Trade Facilitation Agreement]], [[WCO SAFE Framework]], [[EU Union Customs Code]], [[UNCITRAL]], [[UN/CEFACT]], [[GS1 Standards]], [[ISO 28000]], [[ICC Uniform Customs and Practice]]

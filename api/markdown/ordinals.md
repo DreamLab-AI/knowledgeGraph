@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Bitcoin Script]]
   - requires:: [[Taproot]], [[UTXO]]
   - enables:: [[BRC-20]]

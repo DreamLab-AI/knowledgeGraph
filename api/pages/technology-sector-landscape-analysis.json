@@ -1,0 +1,58 @@
+{
+  "id": "urn:visionflow:page:686e4195f3663261deb52dfc2d9e8276d7b6e1141f183961d78518576baf1d9e",
+  "title": "Technology Sector Landscape Analysis",
+  "slug": "technology-sector-landscape-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:technology-sector-landscape-analysis",
+  "domain": "infrastructure",
+  "definition": "A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "landscape",
+      "label": "Landscape"
+    }
+  ],
+  "backlinks": []
+}

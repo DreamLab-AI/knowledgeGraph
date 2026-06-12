@@ -70,7 +70,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -325,7 +325,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -698,6 +698,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },
@@ -708,10 +712,6 @@
     {
       "slug": "security",
       "label": "Security"
-    },
-    {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
     },
     {
       "slug": "training-data",

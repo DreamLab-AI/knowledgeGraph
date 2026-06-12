@@ -80,7 +80,7 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -194,7 +194,7 @@
         "label": "JOSE/COSE"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -786,8 +786,8 @@
   ],
   "backlinks": [
     {
-      "slug": "agentic-alliance",
-      "label": "Agentic Alliance"
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
     },
     {
       "slug": "asset-registry",
@@ -800,6 +800,10 @@
     {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-agent-coordination-initiative",
+      "label": "Decentralised Agent Coordination Initiative"
     },
     {
       "slug": "image-generation",
@@ -816,10 +820,6 @@
     {
       "slug": "security",
       "label": "Security"
-    },
-    {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
     },
     {
       "slug": "suggested-reading-order",

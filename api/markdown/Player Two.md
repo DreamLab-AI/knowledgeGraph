@@ -67,7 +67,7 @@ alias:: PlayerTwo
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:player-two-code", "label": "Player Two code"}
+      {"@id": "urn:ngm:class:player-two-platform-implementation", "label": "Player Two code"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
@@ -111,12 +111,12 @@ alias:: PlayerTwo
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Player Two code]]",
+      "raw": "[[Player Two Platform Implementation]]",
       "resolved": "urn:visionflow:owl:class:player-two-code",
       "kind": "ResolvedLink"
     }
@@ -140,13 +140,13 @@ alias:: PlayerTwo
   - owl-role:: Concept
 
 - ### Relationships
-  - hasPart: [[Player Two code]]
+  - hasPart: [[Player Two Platform Implementation]]
   - uses: [[AI Video]], [[Generative AI]]
   - enables: [[Player Tracking]], [[Identity Management]]
   - dependsOn: [[Decentralised Identity]], [[Cryptography]]
 
 - ### Content
-  - Planning for work on [[Neocadia]] and [[Player Two code]]
+  - Planning for work on [[Neocadia]] and [[Player Two Platform Implementation]]
   - Near term planning
 		- stand up a nostr relay
 		- sync whitelist from publey hex list on the middleware
@@ -162,7 +162,7 @@ alias:: PlayerTwo
 		- Figure out media passing
 		- Integrate token rails
   - decent competition [miku.gg | Generative Visual Novels](https://miku.gg/)
-  - Style transfer workflow for [[ComfyUI]] [Comfy Workflows](https://comfyworkflows.com/workflows/4cd95372-4995-4740-8675-f228d4c24f41) [[AI Video]]
+  - Style transfer workflow for [[Node-Based Diffusion Pipeline Interface]] [Comfy Workflows](https://comfyworkflows.com/workflows/4cd95372-4995-4740-8675-f228d4c24f41) [[AI Video]]
   - [Megumin (KonoSuba)
   - Megumin Arch Wizard Outfit | Stable Diffusion LoRA | Civitai](https://civitai.com/models/9502/megumin-konosuba)
   - # Demo

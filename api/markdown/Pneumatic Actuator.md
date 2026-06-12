@@ -670,7 +670,7 @@ public:: true
         "label": "Agricultural Robotics"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robotics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       },
       {

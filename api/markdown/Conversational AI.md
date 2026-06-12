@@ -82,7 +82,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ]
   },
   "quality": 0.8,

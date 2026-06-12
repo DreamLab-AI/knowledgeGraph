@@ -180,7 +180,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Landscape]]",
+      "raw": "[[Technology Sector Landscape Analysis]]",
       "resolved": "urn:visionflow:owl:class:landscape",
       "kind": "ResolvedLink"
     },
@@ -302,7 +302,7 @@ public:: true
   - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
-		- [[Landscape]] contains some maps of more products.
+		- [[Technology Sector Landscape Analysis]] contains some maps of more products.
   - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income
@@ -380,7 +380,7 @@ public:: true
   - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
-		- [[Landscape]] contains some maps of more products.
+		- [[Technology Sector Landscape Analysis]] contains some maps of more products.
   - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income

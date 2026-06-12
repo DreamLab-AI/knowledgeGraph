@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
     ],
     "uses": [

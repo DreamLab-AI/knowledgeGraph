@@ -27,7 +27,7 @@ alias:: ArchitecturalLayer
   "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:infrastructure-layer", "label": "Infrastructure Layer"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-layer", "label": "Infrastructure Layer"},
       {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
       {"@id": "urn:ngm:class:service-layer", "label": "Service Layer"},
       {"@id": "urn:ngm:class:application-layer", "label": "Application Layer"}

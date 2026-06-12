@@ -20,7 +20,7 @@
 			- **Description:** Circa 2017, introduced self-attention mechanism to capture dependencies between different words in a sequence.
 			- **Explain:** Examines the interdependencies across a wider view of words / tokens
 			- **Paper:** [Attention Is All You Need (arxiv.org)](https://arxiv.org/abs/1706.03762) **(underpinned recent advances)**
-			- Not the only game in town [[State Space and Other Approaches]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
+			- Not the only game in town [[State Space Sequence Models]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
 		- <iframe src="https://bbycroft.net/llm" style="width: 100%; height: 600px"></iframe>
   - Next [[presentation]] slide [[Proprietary Large Language Models]]
 
@@ -33,7 +33,7 @@
 			- **Description:** Circa 2017, introduced self-attention mechanism to capture dependencies between different words in a sequence.
 			- **Explain:** Examines the interdependencies across a wider view of words / tokens
 			- **Paper:** [Attention Is All You Need (arxiv.org)](https://arxiv.org/abs/1706.03762) **(underpinned recent advances)**
-			- Not the only game in town [[State Space and Other Approaches]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
+			- Not the only game in town [[State Space Sequence Models]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
 		- <iframe src="https://bbycroft.net/llm" style="width: 100%; height: 600px"></iframe>
   - Next [[presentation]] slide [[Proprietary Large Language Models]]
 
@@ -57,13 +57,13 @@
 		- [Where have all the websites gone? (fromjason.xyz)](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/)
   - These platforms are very vulnerable and exposed to manipulation, especially as the previous guardrails are removed for profit margins.
   - These technologies are reductionist, which feels like a shortcut, but is actually a simplification across the manifold of American English, and is likely making people intellectually lazy.
-  - Increasingly there will be no other choice, trending toward [[Human vs AI]].
+  - Increasingly there will be no other choice, trending toward [[Human-AI Capability Complementarity]].
 
   - ##### Pitch section
   - Personalised emergent narratives for our visitors. What problem does the
   user, business or industry have that you want to solve?
 
-  [[Visionflow]] : [[Knowhere]]
+  [[Visionflow]] : [[KnoWhere Visitor Attention System]]
   - For today’s digital experience venue managers navigating the
   complexities of providing unique experiences, our AI solution, KnoWhere,
   offers a unique approach which will result in the capability to enhance
@@ -130,13 +130,13 @@
 		- [Where have all the websites gone? (fromjason.xyz)](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/)
   - These platforms are very vulnerable and exposed to manipulation, especially as the previous guardrails are removed for profit margins.
   - These technologies are reductionist, which feels like a shortcut, but is actually a simplification across the manifold of American English, and is likely making people intellectually lazy.
-  - Increasingly there will be no other choice, trending toward [[Human vs AI]].
+  - Increasingly there will be no other choice, trending toward [[Human-AI Capability Complementarity]].
 
   - ##### Pitch section
   - Personalised emergent narratives for our visitors. What problem does the
   user, business or industry have that you want to solve?
 
-  [[Visionflow]] : [[Knowhere]]
+  [[Visionflow]] : [[KnoWhere Visitor Attention System]]
   - For today’s digital experience venue managers navigating the
   complexities of providing unique experiences, our AI solution, KnoWhere,
   offers a unique approach which will result in the capability to enhance
@@ -203,7 +203,7 @@
 		- [Where have all the websites gone? (fromjason.xyz)](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/)
   - These platforms are very vulnerable and exposed to manipulation, especially as the previous guardrails are removed for profit margins.
   - These technologies are reductionist, which feels like a shortcut, but is actually a simplification across the manifold of American English, and is likely making people intellectually lazy.
-  - Increasingly there will be no other choice, trending toward [[Human vs AI]].
+  - Increasingly there will be no other choice, trending toward [[Human-AI Capability Complementarity]].
 
   ## Characteristics
 

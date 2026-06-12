@@ -33,7 +33,7 @@ alias:: HashRate
       {"@id": "urn:ngm:class:mining", "label": "Mining"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
       {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},

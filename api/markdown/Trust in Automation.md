@@ -159,7 +159,7 @@ alias:: RB-1012-trust-in-automation
     ],
     "enables": [
       {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},

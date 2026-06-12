@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ethereum",
+      "@id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
@@ -108,7 +108,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     }
@@ -132,7 +132,7 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum]]
+  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
   - bridges-to:: [[Ethereum Smart Contracts]]
   - requires:: [[Smart Contract]]
   - enables:: [[Multisignature]]

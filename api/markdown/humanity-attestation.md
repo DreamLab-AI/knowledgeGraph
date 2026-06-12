@@ -13,7 +13,7 @@
   - is-part-of:: [[Identity Verification]], [[Authentication System]]
   - requires:: [[Digital Identity]], [[Verification Mechanism]], [[Challenge Protocol]]
   - enables:: [[Bot Prevention]], [[Account Security]], [[Trust Establishment]], [[Fraud Prevention]]
-  - depends-on:: [[Machine Learning]], [[Pattern Recognition]], [[Cryptographic Proof]]
+  - depends-on:: [[Machine Learning Discipline]], [[Pattern Recognition]], [[Cryptographic Proof]]
 
 - ### Content
   Humanity Attestation — content pending enrichment.

@@ -718,10 +718,6 @@
   ],
   "backlinks": [
     {
-      "slug": "calculating-empires",
-      "label": "Calculating Empires"
-    },
-    {
       "slug": "privacy",
       "label": "Privacy"
     },
@@ -732,6 +728,10 @@
     {
       "slug": "style-transfer",
       "label": "Style Transfer"
+    },
+    {
+      "slug": "technology-power-structure-visualisation",
+      "label": "Technology Power Structure Visualisation"
     }
   ]
 }

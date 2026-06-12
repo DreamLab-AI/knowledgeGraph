@@ -23,12 +23,12 @@ public:: true
   "definition": "MLOps (Machine Learning Operations) is the set of practices, tools, and cultural norms that operationalise machine learning models at production scale by applying DevOps principles to the ML lifecycle. It encompasses the end-to-end automation and monitoring of ML pipelines: data ingestion, feature engineering, model training, evaluation, deployment, serving, and continuous retraining in response to data drift. MLOps addresses the unique challenges of ML systems — namely that code, data, and model weights all evolve independently and must be versioned, tested, and governed together.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
       {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "enables": [
@@ -54,7 +54,7 @@ public:: true
   - MLOps applies DevOps principles to the machine learning lifecycle, providing the tooling, automation, and organisational practices needed to reliably build, deploy, monitor, and retrain ML models in production at scale.
 
 - ### Relationships
-  - MLOps is a subclass of [[Machine Learning]] and the operational discipline that governs the [[AI Lifecycle]] from experiment to production. It depends on [[Cloud Computing]] and [[Kubernetes]] for scalable infrastructure, uses [[Data Pipeline]]s for data ingestion and transformation, [[Feature Engineering]] and [[Feature Store]]s for consistent feature access, and [[Data Versioning]] and [[Version Control]] for reproducibility. It enables [[AI Deployment]] and live [[Inference]] serving while relying on [[AI Monitoring]] to detect drift. [[Machine Learning Pipeline]]s encode the end-to-end workflow, and [[Data Governance]] frameworks ensure compliance and data quality throughout.
+  - MLOps is a subclass of [[Machine Learning Discipline]] and the operational discipline that governs the [[AI Lifecycle]] from experiment to production. It depends on [[Cloud Computing]] and [[Kubernetes]] for scalable infrastructure, uses [[Data Pipeline]]s for data ingestion and transformation, [[Feature Engineering]] and [[Feature Store]]s for consistent feature access, and [[Data Versioning]] and [[Version Control]] for reproducibility. It enables [[AI Deployment]] and live [[Inference]] serving while relying on [[AI Monitoring]] to detect drift. [[Machine Learning Pipeline]]s encode the end-to-end workflow, and [[Data Governance]] frameworks ensure compliance and data quality throughout.
 
 - ### Content
   - MLOps emerged as a discipline around 2017–2018 in response to the "last mile" problem of machine learning: organisations found it straightforward to train promising models in notebooks but extremely difficult to deploy, maintain, and improve them reliably in production. The term borrowed from DevOps and Site Reliability Engineering, recognising that ML systems require continuous integration, continuous delivery, and continuous training (CI/CD/CT) rather than the one-shot release cycle typical of traditional software.

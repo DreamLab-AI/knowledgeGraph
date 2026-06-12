@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - partOf:: [[Constitutional AI]]
+  - partOf:: [[Constitutional AI Training Methodology]]
   - requires:: [[Value Alignment]], [[Reinforcement Learning]]
   - enables:: [[AI Safety]], [[AI Alignment]], [[Human Agency and Oversight]]
   - relatedTo:: [[Ai Governance Principle]], [[AI Ethics]], [[AI Regulation]], [[Accountability]], [[Fairness]]

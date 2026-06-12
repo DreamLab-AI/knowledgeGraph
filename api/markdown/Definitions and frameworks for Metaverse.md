@@ -260,7 +260,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Apple]]",
+      "raw": "[[Apple Inc Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:apple",
       "kind": "ResolvedLink"
     },
@@ -285,12 +285,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Vision Pro]]",
+      "raw": "[[Apple Mixed Reality Headset]]",
       "resolved": "urn:visionflow:owl:class:vision-pro",
       "kind": "ResolvedLink"
     }
@@ -323,7 +323,7 @@ public:: true
 - ### Content
   - #Public page
   - automatically published
-  - # Theoretical Framework toward metaverse [[Update Cycle]]
+  - # Theoretical Framework toward metaverse [[Knowledge Artefact Update Cycle]]
 		- It’s very likely that the ‘social first’ metaverse attempts such as [Meta Horizons](https://www.theverge.com/2022/10/6/23391895/meta-facebook-horizon-worlds-vr-social-network-too-buggy-leaked-memo), Sandbox, and Decentraland [represent failures](https://www.coindesk.com/web3/2022/10/07/its-lonely-in-the-metaverse-decentralands-38-daily-active-users-in-a-13b-ecosystem/) to capture audiences. They crashed back down the hype curve as ‘Second Life’ did before them. Games based worlds such as Roblox are fairing far better, with millions of users, but it’s unclear if they have longevity, and they do not fulfil ambitions of an open metaverse.
 		- Worse yet it seems that metaverse is not the most useful way to conduct business. It is evident that there are multiple factors which contribute to successful human-human communication. These factors remain important in telecommunication supported by technology, and are variously supported, unsupported, or modified by particular technologies. Third person large scale metaverse are clearly amongst the worse of the solutions.
 		- Of particular importance is interpersonal gaze.[[Cook1977; @Kleinke1986; @Fagel2010]] Non-verbal cues are also important across multiple modalities of sight, sound,[[Otsuka2005]] and position of interlocutors,[[Kendon1967]] extending to the whole body.[[Kleinke1986; @Nguyen2009]]
@@ -457,7 +457,7 @@ public:: true
 		- In considering the needs of business to business and business to clientsocial VR is it useful to compare software platforms. We have seen thata global connected multiverse is a marketing proposition only, and maybe a decade or more away. Contenders currently look more like one ofthree catagories; games, limited massively multiplayer worlds, ormeeting support software. These will converge.
 		- One of the most intuitive ways to view a metaverse is as a virtual landscape. This is how metaverse was portrayed in the original Neal Stephenson use of the word. ‘Digital twin’ is another much abused industry term which trends toward a 3D representation of real worldspaces and objects. Sometimes these virtual objects are connected to the real by telemetry, allowing industrial monitoring applications. Much is made of such systems in simulation brochures, and on the web, but it’s surprisingly hard to find real world applications of the idea outside of complex large scale systems engineering (aerospace). The costs of maintenance are simply too high. The US army owns the digital twin which could be called [closest to “The Metaverse”](https://www.army.mil/standto/archive/2018/03/26/) (note the intentional capitalisation). Their global simulation environment mirrors real world locations for their training needs. The European space agency is building an Earth digital twin for climate research, as [is Nvidia](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41326/?playlistId=playList-9bb5405e-3e40-4ff3-88db-61cd3a4507e5#:~:text=Earth%2D2%20aims%20to%20improve,learning%20methods%20at%20unprecedented%20scale.),but again it’s unclear what this offers over and above access to direct data feeds, and of course such an ambitious project likely has an ecological cost!
 		- Within industry digital twins are seen as the primary use case for metaverse, with even the world economic forum [subscribing to the hype](https://www.weforum.org/agenda/2023/01/metaverse-biggest-impact-industry-davos2023/).To be clear, there is enormous effort, investment, and potential here, with NVIDIA choosing to bind [their Omniverse](https://www.nvidia.com/en-gb/omniverse/) platform to their substantial hype wave.
-		- ##### Omniverse has become the darling of 2024 and we will investigate it further [[Update Cycle]]
+		- ##### Omniverse has become the darling of 2024 and we will investigate it further [[Knowledge Artefact Update Cycle]]
 			- Key new capabilities announced:
 				- Integration of generative AI like Adobe Firefly to enhance creation workflows (wow!)
 				- Expanded ecosystem connections through OpenUSD (Adobe, [Wonder Dynamics](https://investors.autodesk.com/news-releases/news-release-details/autodesk-acquires-wonder-dynamics-offering-cloud-based-ai), Luma AI, etc)
@@ -585,7 +585,7 @@ public:: true
 		- Gather is an oddball meeting space based around fully customisable 2Drooms with a game feel. It’s really a spatialised twist on videoconferencing but interesting.
   - ##### NEOSVR
 		- [Notable because](https://neos.com/) it’s trying to integrate cryptomarketplaces, but we haven’t tried it yet.
-		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
+		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple Inc Technology Corporation]] [[Apple Mixed Reality Headset]]
 		- Marc Petit, general manager of Epic Games envisages a 2 watt pair ofglasses, connected to a 10 watt phone, connected to a 100 watt computeron the edge. This is a device cascade problem which has not yet beensolved, and is at the edge of achievable thermodynamics and latency.
 		- The closest technology at this time seems to be [Lumus’ waveguideprojectors](https://lumusvision.com/) which are light, bright and highresolution. Peggy Johnson, CEO of Magic Leap, one of the market leaderssaid: it“If I had to guess, I think, maybe, five or so years out, forthe type of fully immersive augmented reality that we do.”
 		- In a [GQprofile](https://www.gq.com/story/tim-cook-global-creativity-awards-cover-2023?mbid=social_twitter)Cook, the Apple CEO talked at length about the challenges andopportunities of AR headsets. He has been emphasizing the importance ofaugmented reality over VR for almost a decade, believing that AR canenhance communication and connection by overlaying digital elements onthe physical world. Cook’s vision aligns with Apple’s rumoured mixedreality headset, which is expected to cost around $3,000 and focus on‘copresence’, which we have discussed at length in this chapter. Apple’sapproach differs from Meta’s metaverse, as Apple aims to integratedigital aspects into the real world rather than create purely digitalspaces. This is an interesting area for our applications of bringingsmall teams together, but the pricing at this time is significantly atodds with our chosen market. Cook, like this book, has highlighted AR’spotential in education and its ability to bring people together in thereal world.

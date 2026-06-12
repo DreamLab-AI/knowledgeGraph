@@ -32,7 +32,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:proof-of-work-energy-consumption", "label": "Proof-of-Work Energy Consumption"},
-      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"},
       {"@id": "urn:ngm:class:cambridge-centre-for-alternative-finance", "label": "Cambridge Centre for Alternative Finance"}
     ]
   },

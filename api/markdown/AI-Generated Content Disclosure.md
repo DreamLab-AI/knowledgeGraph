@@ -250,7 +250,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -317,11 +317,11 @@ public:: true
   - is-part-of:: [[AI Transparency Framework]]
   - requires:: [[Content Authentication]], [[Metadata Standards]], [[Provenance Tracking]]
   - enables:: [[User Awareness]], [[Regulatory Compliance]], [[Trust Building]], [[Informed Consent]]
-  - depends-on:: [[EU AI Act]], [[IEEE 7001]], [[C2PA Standard]]
+  - depends-on:: [[EU AI Act Regulatory Instrument]], [[IEEE 7001]], [[C2PA Standard]]
 
 - ### Content
   AI-Generated Content Disclosure — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[IEEE 7001]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[IEEE 7001]]
   - migration-date:: 2026-04-26T00:00:00Z

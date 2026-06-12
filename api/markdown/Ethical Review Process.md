@@ -149,7 +149,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     }
@@ -185,5 +185,5 @@ public:: true
   Ongoing monitoring obligations extend the review process beyond initial deployment. High-risk systems require periodic re-review when material changes occur—model updates, new use cases, changes in deployment population—and when monitoring reveals performance degradation against fairness or safety criteria. This continuous loop between operational monitoring data and the ethics review process creates an adaptive governance mechanism appropriate to the dynamic nature of deployed AI systems.
 
 - ### Provenance
-  - sources:: [[IEEE P7000]], [[ISO/IEC 42001:2023]], [[EU AI Act]]
+  - sources:: [[IEEE P7000]], [[ISO/IEC 42001:2023]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

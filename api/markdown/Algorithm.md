@@ -63,12 +63,12 @@ public:: true
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"},
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "uses": [

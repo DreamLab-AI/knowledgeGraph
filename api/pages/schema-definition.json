@@ -28,7 +28,7 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -42,7 +42,7 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -72,7 +72,7 @@
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ]

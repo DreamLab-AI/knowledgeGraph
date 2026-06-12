@@ -283,7 +283,7 @@ alias:: RB-1018-dijkstra-algorithm
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -308,7 +308,7 @@ alias:: RB-1018-dijkstra-algorithm
   - belongs-to-domain:: [[Robotics]], [[Path Planning]], [[Graph Theory]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[RB-1016-path-planning]], [[Graph Search]]
   - requires:: [[Non-negative Weights]]
 

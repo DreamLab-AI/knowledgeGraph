@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ],
     "requires": [

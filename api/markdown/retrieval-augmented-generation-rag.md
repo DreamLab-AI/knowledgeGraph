@@ -9,14 +9,14 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[InfrastructureLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Neural Information Retrieval]], [[Generative AI]], [[Knowledge-Intensive NLP]], [[Open Domain Question Answering]], [[Foundation Models]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Neural Information Retrieval]], [[Generative AI]], [[Knowledge-Intensive NLP]], [[Open Domain Question Answering]], [[Large-Scale Pretrained Foundation Model]]
   - has-part:: [[Retriever]], [[Generator]], [[Vector Index]], [[Chunking Strategy]], [[Embedding Model]], [[Reranker]], [[Prompt Template]], [[Document Store]], [[Query Encoder]], [[Passage Encoder]]
   - requires:: [[Large Language Models]], [[Dense Passage Retrieval]], [[Vector Database]], [[Text Embeddings]], [[Corpus Preprocessing]], [[Transformers]], [[Attention]]
   - enables:: [[Factual Grounding]], [[Citation Generation]], [[Knowledge Currency]], [[Hallucination Reduction]], [[Domain Adaptation Without Fine-Tuning]], [[Multi-Hop Reasoning]], [[Verifiable AI Outputs]]
   - implements:: [[BM25]], [[Dense Passage Retrieval]], [[ColBERTv2]], [[Hybrid Search]], [[GraphRAG]], [[Self-RAG]], [[Contextual Retrieval]], [[Agentic RAG]], [[HyDE]], [[RAPTOR]]
   - depends-on:: [[Transformers]], [[Attention]], [[Information Theory]], [[Vector Database]], [[Knowledge Graphing]], [[Approximate Nearest Neighbour Search]]
   - supports:: [[Enterprise Search]], [[Legal AI]], [[Medical AI]], [[Customer Support Automation]], [[Scientific Literature Mining]], [[Code Navigation]], [[Compliance Monitoring]]
-  - uses:: [[LlamaIndex]], [[Agent Frameworks]], [[Foundation Models]], [[Anthropic Claude]], [[ChatGPT]], [[Evaluation benchmarks and leaderboards]], [[Function Calling]], [[Model Control Protocols like MCP]]
+  - uses:: [[LlamaIndex]], [[Agent Frameworks]], [[Large-Scale Pretrained Foundation Model]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Evaluation benchmarks and leaderboards]], [[Function Calling]], [[Model Control Protocols like MCP]]
   - contrasts-with:: [[Fine Tuning]], [[Prompt Engineering]], [[In-Context Learning]], [[Model Training]], [[Parametric Knowledge]]
   - related-to:: [[Agents]], [[Knowledge Graphing]], [[Function Calling]], [[Agentic Internet]], [[Model Control Protocols like MCP]], [[CLI Multi-Agent Systems]], [[Graph Database]], [[Chatbots]], [[AI Search]]
   - standardized-by:: [[BEIR Benchmark]], [[RAGAS Framework]], [[ARES Framework]], [[TREC Deep Learning Track]], [[MTEB Benchmark]]

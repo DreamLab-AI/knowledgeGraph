@@ -62,7 +62,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:virtual-classroom", "label": "Virtual Classroom"},

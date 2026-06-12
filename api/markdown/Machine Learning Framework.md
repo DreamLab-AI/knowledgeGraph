@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-framework",
+  "@id": "urn:ngm:class:machine-learning-discipline-framework",
   "@type": "Class",
   "label": "Machine Learning Framework",
   "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",

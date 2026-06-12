@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-custody",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
   "@type": "Class",
   "label": "Bitcoin Custody",
   "definition": "Bitcoin custody is the practice and infrastructure for securely holding the private keys that control bitcoin, spanning self-custody, collaborative custody, and qualified institutional custodians. Approaches differ in how they distribute key control and recovery, using techniques such as multi-signature, hardware security modules, and multi-party computation to balance security against operational availability. Custody design is foundational to wallets, federations, and regulated products such as exchange-traded funds.",
@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:fedimint", "label": "Fedimint"},
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}
     ]
   },
   "quality": 0.72

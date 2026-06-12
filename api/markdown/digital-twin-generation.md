@@ -10,7 +10,7 @@ bridges-to:: [[Computer Vision]]
 
 - ### Relationships
   - is-subclass-of:: [[Automated Modeling]]
-  - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning]]
+  - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning Discipline]]
   - enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]
 
 - ### Content

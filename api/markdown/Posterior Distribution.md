@@ -23,7 +23,7 @@ public:: true
   "definition": "A posterior distribution is the probability distribution over unknown quantities after observing data, obtained by combining a prior distribution with the likelihood via Bayes' theorem. It represents updated belief and is the central object of Bayesian inference. In recursive estimators such as Bayes and particle filters, the posterior at each step becomes the basis for the next prediction.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"},

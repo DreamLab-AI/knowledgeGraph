@@ -387,7 +387,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-whiteboard",
+  "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
   "@type": "Class",
   "label": "Collaborative Whiteboard",
   "definition": "A Collaborative Whiteboard is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with CRDT-based (Conflict-free Replicated Data Type) or Operational...",
@@ -518,7 +518,7 @@ public:: true
         "label": "Asynchronous Ideation"
       },
       {
-        "@id": "urn:ngm:class:collaborative-design",
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
       {
@@ -614,7 +614,7 @@ public:: true
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {

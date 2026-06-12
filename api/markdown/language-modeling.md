@@ -189,7 +189,7 @@
 			- # [[Metaverse and Telecollaboration]]
 			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
-			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse]]-aeco-demo-pack/) giving global instant models.
+			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
   - {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
   - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
@@ -385,7 +385,7 @@
 			- # [[Metaverse and Telecollaboration]]
 			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
-			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse]]-aeco-demo-pack/) giving global instant models.
+			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
   - {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
   - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
@@ -546,12 +546,12 @@
 
   - ## See Also
   - [[Large Language Models]]
-  - [[Google]]
+  - [[Google AI Technology Corporation]]
 
   - ## See Also
   - [[Large Language Models]]
-  - [[OpenAI]]
-  - [[Google]]
+  - [[OpenAI Research Organisation]]
+  - [[Google AI Technology Corporation]]
 
   - ### Software stack
   - This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
@@ -752,8 +752,8 @@
 
   - ## See Also
   - [[Large Language Models]]
-  - [[OpenAI]]
-  - [[Google]]
+  - [[OpenAI Research Organisation]]
+  - [[Google AI Technology Corporation]]
 
   - ## How it Works
   - AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.

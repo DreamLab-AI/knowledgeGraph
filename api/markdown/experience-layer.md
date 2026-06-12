@@ -13,7 +13,7 @@
   - is-part-of:: [[Compute Layer]], [[User Interface Architecture]]
   - requires:: [[Graphics Pipeline]], [[Input System]], [[Audio System]], [[Haptic Feedback]]
   - enables:: [[Immersive Experience]], [[User Engagement]], [[Presence]], [[Natural Interaction]]
-  - depends-on:: [[Avatar System]], [[Content Delivery]], [[Spatial Computing]], [[Display Technology]]
+  - depends-on:: [[Avatar System]], [[Content Delivery]], [[Spatial Computing Paradigm]], [[Display Technology]]
 
 - ### Content
   Experience Layer — content pending enrichment.

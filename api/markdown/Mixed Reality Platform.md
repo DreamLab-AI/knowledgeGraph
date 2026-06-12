@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
@@ -113,7 +113,7 @@ public:: true
 
 - ### Relationships
   - **uses** [[XR Device]] — depends on head-mounted or handheld XR hardware for display and tracking
-  - **uses** [[Spatial Computing]] — spatial computing principles underpin world-locking and scene understanding
+  - **uses** [[Spatial Computing Paradigm]] — spatial computing principles underpin world-locking and scene understanding
   - **enables** [[Extended Reality]] — provides the platform substrate for XR experiences
   - **enables** [[Immersive Technology]] — supports immersive industrial and collaborative workflows
   - **hasPart** [[Rendering Engine]] — requires a real-time renderer for mixed scene composition

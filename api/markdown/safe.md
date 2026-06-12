@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Multi-Signature Wallet]]
   - bridges-to:: [[Gnosis Safe]], [[Wallet]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Account Abstraction]]
 
 - ### Content

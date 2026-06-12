@@ -11,14 +11,14 @@
 - ### Relationships
   - is-subclass-of:: [[Agent Frameworks]], [[Agentic Internet]], [[API Gateway]], [[CLI Multi-Agent Systems]], [[Agents]]
   - has-part:: [[JSON-RPC]], [[MCP Server]], [[MCP Client]], [[MCP Resources]], [[MCP Tools]], [[MCP Prompts]], [[MCP Sampling]], [[Server-Sent Events]], [[stdio Transport]], [[Tool Schema]]
-  - requires:: [[JSON-RPC]], [[LLM Tool Use]], [[Transport Protocol]], [[JSON Schema]], [[Access Control System]], [[Anthropic Claude]]
+  - requires:: [[JSON-RPC]], [[LLM Tool Use]], [[Transport Protocol]], [[JSON Schema]], [[Access Control System]], [[Constitutional AI Language Model Family]]
   - enables:: [[Agentic Internet]], [[Agent Frameworks]], [[CLI Multi-Agent Systems]], [[AI Search]], [[ComfyUI Client]], [[Chatbots]], [[AI companions]]
   - implements:: [[Tool Use]], [[Function Calling]], [[Remote Procedure Call]], [[Dynamic Tool Discovery]], [[Capability Advertisement]]
   - depends-on:: [[Large Language Models]], [[HTTP]], [[Attention]], [[Agents]], [[AI Adoption]]
   - supports:: [[Claude Desktop]], [[Cursor IDE]], [[GitHub Integration]], [[Filesystem Access]], [[Database Connectivity]], [[Workflow Automation]]
   - uses:: [[JSON Schema]], [[OAuth 2.0]], [[Server-Sent Events]], [[HTTP Streaming]], [[stdio]], [[Process Isolation]]
   - contrasts-with:: [[LangChain Tools]], [[OpenAI Function Calling]], [[Semantic Kernel]], [[AutoGen]], [[SLOP Protocol]], [[REST API]]
-  - related-to:: [[AI Risks]], [[Access Control System]], [[AML KYC Compliance]], [[API Gateway]], [[Agent Frameworks]], [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]]
+  - related-to:: [[AI Risks]], [[Access Control System]], [[AML KYC Compliance]], [[API Gateway]], [[Agent Frameworks]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]]
   - standardized-by:: [[Anthropic]], [[MCP Specification Working Group]], [[JSON-RPC 2.0 Specification]]
 
 - ### Content

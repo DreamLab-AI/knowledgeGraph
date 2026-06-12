@@ -3,7 +3,7 @@
   "title": "Bitcoin Improvement Proposals",
   "slug": "bitcoin-improvement-proposals",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-improvement-proposals",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
   "domain": "blockchain",
   "definition": "Bitcoin Improvement Proposals (BIPs) are the formal design documents through which changes, enhancements, and new features are proposed and ratified for the Bitcoin protocol and its ecosystem. First introduced by Amir Taaki in 2011, modelled on Python's PEP process, BIPs serve as the primary coordination mechanism for a decentralised developer community lacking any central authority. Each BIP progresses through a lifecycle of draft, proposed, final, and superseded states, and must achieve rough consensus among node operators and miners to be activated. BIPs cover protocol rules, informational standards, and process definitions for the broader Bitcoin network.",
   "subClassOf": [
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -47,11 +47,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-core",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {

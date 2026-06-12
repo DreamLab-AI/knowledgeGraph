@@ -734,7 +734,7 @@ public:: true
         "label": "ROS Industrial"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -744,7 +744,7 @@ public:: true
         "label": "Autonomous Mobile Robots"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robot",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robots"
       },
       {
@@ -1326,7 +1326,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1351,7 +1351,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1407,11 +1407,11 @@ public:: true
   - requires:: [[Risk Assessment]], [[Conformity Assessment Body]], [[Harmonised Standard]], [[CE Marking]], [[Technical Documentation]], [[Safety Function]], [[Protective Measure]], [[Declaration of Conformity]]
   - enables:: [[Safe Human-Robot Collaboration]], [[Robot Interoperability]], [[CE Marking]], [[Market Access]], [[Cobot Deployment]], [[Autonomous Mobile Robot Safety]], [[Robot Skill Transfer]], [[IIoT Integration]], [[Digital Product Passport]]
   - implements:: [[ISO TC 299]], [[EU Machinery Regulation]], [[EHSR Framework]], [[OWL Ontology]], [[OPC UA NodeSet]], [[Force Control]], [[Speed and Separation Monitoring]], [[Performance Level Method]], [[Safety Integrity Level]]
-  - depends-on:: [[Machinery Directive]], [[Functional Safety]], [[IEC 61508]], [[IEC 62061]], [[ISO 13849]], [[Product Liability]], [[EU AI Act]], [[NIS2 Directive]], [[Machinery Regulation]]
+  - depends-on:: [[Machinery Directive]], [[Functional Safety]], [[IEC 61508]], [[IEC 62061]], [[ISO 13849]], [[Product Liability]], [[EU AI Act Regulatory Instrument]], [[NIS2 Directive]], [[Machinery Regulation]]
   - supports:: [[Collaborative Robots]], [[Industrial Robots]], [[Autonomous Mobile Robots]], [[Personal Care Robots]], [[Exoskeletons]], [[Surgical Robots]], [[Driverless Industrial Trucks]], [[Modular Robots]], [[Swarm Robotics]]
   - uses:: [[Ontology Engineering]], [[OPC UA]], [[Risk Graph Method]], [[Performance Level]], [[Safety Integrity Level]], [[Force Torque Sensing]], [[Laser Scanner]], [[SLAM Navigation]], [[OWL 2 DL]], [[Time-Sensitive Networking]]
   - contrasts-with:: [[De Facto Standard]], [[Open Source Middleware]], [[Self-Certification]], [[Domain-Specific Framework]], [[ROS Industrial]], [[Voluntary Guideline]]
-  - related-to:: [[ISO 9283]], [[ISO 8373]], [[ISO SAE 21434]], [[IEC 61508]], [[EU AI Act]], [[NIOSH Guidelines]], [[ROS Industrial]], [[IEC 62443]], [[IEC 80601-2-78]], [[ISO 13855]], [[ISO 12100]], [[ISO 13849]]
+  - related-to:: [[ISO 9283]], [[ISO 8373]], [[ISO SAE 21434]], [[IEC 61508]], [[EU AI Act Regulatory Instrument]], [[NIOSH Guidelines]], [[ROS Industrial]], [[IEC 62443]], [[IEC 80601-2-78]], [[ISO 13855]], [[ISO 12100]], [[ISO 13849]]
   - standardized-by:: [[ISO TC 299]], [[IEEE Robotics and Automation Society]], [[RIA]], [[OPC Foundation]], [[BSI]], [[European Commission]], [[ANSI]], [[DIN]]
 
 - ### Content
@@ -1939,7 +1939,7 @@ public:: true
   - worker-model:: claude-sonnet-4-6
   - last-enriched:: 2026-05-17T10:00:00Z
   - related-standards:: [[ISO 10218]], [[ISO TS 15066]], [[ISO 13482]], [[ISO 3691-4]], [[ISO 22166]], [[ISO 25132]], [[IEEE 1872]], [[OPC UA Robotics]], [[EU Machinery Regulation]], [[ISO 12100]], [[ISO 13849]], [[IEC 62061]], [[ISO 9283]], [[ISO 13855]]
-  - related-concepts:: [[Robotics]], [[Collaborative Robots]], [[Autonomous Mobile Robots]], [[Industrial Safety]], [[Functional Safety]], [[Ontology Engineering]], [[Human-Robot Interaction]], [[Machine Learning]], [[EU AI Act]], [[Risk Assessment]], [[Performance Level]], [[Safety Integrity Level]]
+  - related-concepts:: [[Robotics]], [[Collaborative Robots]], [[Autonomous Mobile Robots]], [[Industrial Safety]], [[Functional Safety]], [[Ontology Engineering]], [[Human-Robot Interaction]], [[Machine Learning Discipline]], [[EU AI Act Regulatory Instrument]], [[Risk Assessment]], [[Performance Level]], [[Safety Integrity Level]]
   - key-institutions:: [[BSI]], [[NPL]], [[AMRC]], [[University of Manchester]], [[MTC]], [[BARA]], [[ISO TC 299]], [[IEEE Robotics and Automation Society]], [[RIA]], [[OPC Foundation]], [[NIOSH]]
   - key-standards-tiers:: Tier 1 (ISO 10218 industrial safety), Tier 2 (ISO/TS 15066 collaborative), Tier 3 (ISO 13482 personal care), Tier 4 (ISO 3691-4 driverless trucks), Tier 5 (ISO 22166 modular), Tier 6 (ISO 25132 skill ontology), Tier 7 (IEEE 1872 CORA), Tier 8 (OPC UA Robotics), Tier 9 (EU Machinery Regulation 2023/1230)
   - effective-regulation-date-eu:: 2027-01-14

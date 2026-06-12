@@ -1,5 +1,5 @@
 - ### Definition
-  - Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-descent or equivalent procedures.
+  - Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of [[Machine Learning Discipline]] and [[Large-Scale Pretrained Foundation Model]] to optimise model parameters via gradient-descent or equivalent procedures.
   - The quality, scale, diversity, and legal provenance of training data constitutes the single largest determinant of downstream model capability, safety alignment, and societal impact, making training data curation the most consequential engineering decision in modern [[Artificial Intelligence]].
   - Web-scale corpora now dominate language model training: [[CommonCrawl]] (operating since 2008, petabyte-scale monthly snapshots, backbone of nearly every major LLM) is transformed by specialised derivatives including FineWeb (HuggingFace 2024, 15T token English web corpus outperforming DCLM-Baseline on standard benchmarks per Penedo et al. 2024), FineWeb-Edu (1.3T tokens filtered for educational content via LLM-based classifier scoring using Llama-3-70B with 78% human-judge agreement), Dolma (AI2 Allen Institute, 3T token open-access corpus spanning web, scientific, code, encyclopaedia, books, and social-media domains with full pipeline transparency, Soldaini et al. 2024), RedPajama-V2 (Together AI, 30T token de-duplicated multilingual corpus annotated with 46 quality signals per document), C4 (Google 2020, 750GB Colossal Clean Crawled Corpus used for T5 pre-training), [[RefinedWeb]] (Falcon LLM / TII UAE, 5T tokens filtered solely from CommonCrawl), MAP-Neo (M-A-P Collective 2024, 4.5T token multilingual open-source pre-training corpus), and The Pile (EleutherAI, 825GB heterogeneous 22-dataset corpus including Books3, ArXiv, GitHub, and Wikipedia).
   - Legal and copyright disputes have reshaped the data landscape: the [[NYT v OpenAI]] complaint (December 2023, Southern District of New York) alleges verbatim memorisation of New York Times articles in GPT-4 and ChatGPT; Andersen v Stability AI (Ninth Circuit, 2023-2024) challenges LAION-5B scraped artist images; Getty Images v Stability AI proceeds in both Delaware and the UK High Court; Authors Guild and multiple novelists have filed parallel class actions.
@@ -17,17 +17,17 @@
   - implemented-in-layer:: [[DataLayer]], [[InfrastructureLayer]], [[AlgorithmLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Dataset]], [[Machine Learning]], [[Data Management]], [[Knowledge Representation]], [[Data Governance]]
+  - is-subclass-of:: [[Dataset]], [[Machine Learning Discipline]], [[Data Management]], [[Knowledge Representation]], [[Data Governance]]
   - has-part:: [[Text Corpus]], [[Image Dataset]], [[Code Corpus]], [[Annotation]], [[Labels]], [[Features]], [[Data Splits]], [[Data Cards]], [[Quality Signals]]
   - requires:: [[Data Quality Assurance]], [[Data Deduplication]], [[Annotation Standards]], [[Licensing]], [[Provenance Tracking]], [[Data Governance]], [[Web Scraping]]
-  - enables:: [[Model Training]], [[Transfer Learning]], [[Foundation Models]], [[Fine Tuning]], [[Instruction Tuning]], [[Reinforcement Learning from Human Feedback]], [[Code Generation]]
+  - enables:: [[Model Training]], [[Transfer Learning]], [[Large-Scale Pretrained Foundation Model]], [[Fine Tuning]], [[Instruction Tuning]], [[Reinforcement Learning from Human Feedback]], [[Code Generation]]
   - implements:: [[MinHash]], [[Locality Sensitive Hashing]], [[SemDeDup]], [[Near Duplicate Removal]], [[Quality Filtering]], [[Language Identification]]
-  - depends-on:: [[CommonCrawl]], [[Web Scraping]], [[Natural Language Processing]], [[Data Pipeline]], [[Compute Infrastructure]], [[Tokenisation]]
+  - depends-on:: [[CommonCrawl]], [[Web Scraping]], [[Natural Language Processing]], [[Data Pipeline]], [[Compute Infrastructure]], [[Neural Network Text Tokenisation]]
   - supports:: [[Large Language Models]], [[Diffusion Models]], [[Speech Recognition]], [[Computer Vision]], [[Code Generation]], [[Multimodal AI]]
   - uses:: [[Creative Commons]], [[OpenRAIL]], [[CDLA]], [[Synthetic Data]], [[Active Learning]], [[Differential Privacy]]
   - contrasts-with:: [[Data Poisoning]], [[Distribution Shift]], [[Bias in Large Language Models]], [[Memorisation]], [[Dataset Bias]]
   - related-to:: [[AI Liability]], [[Copyright]], [[Privacy]], [[Evaluation benchmarks and leaderboards]], [[Model Optimisation and Performance]], [[AI Risks]], [[Competition in AI]]
-  - standardized-by:: [[EU AI Act]], [[Creative Commons]], [[CDLA]], [[OpenRAIL]], [[US Copyright Office]], [[UK IPO]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Creative Commons]], [[CDLA]], [[OpenRAIL]], [[US Copyright Office]], [[UK IPO]]
 
 - ### Content
 
@@ -135,8 +135,8 @@
 	  )
 
   - ## About Training Data
-  - **Training Data** is the empirical substrate of all modern [[Machine Learning]] — the curated, licensed, deduplicated, and annotated collection of examples over which a model's parameters are optimised through gradient descent or equivalent procedures.
-  - In the contemporary era of trillion-parameter [[Foundation Models]], training data decisions dominate model capability far more than architecture choices.
+  - **Training Data** is the empirical substrate of all modern [[Machine Learning Discipline]] — the curated, licensed, deduplicated, and annotated collection of examples over which a model's parameters are optimised through gradient descent or equivalent procedures.
+  - In the contemporary era of trillion-parameter [[Large-Scale Pretrained Foundation Model]], training data decisions dominate model capability far more than architecture choices.
   - A model trained on a carefully filtered 15-trillion-token corpus will consistently outperform an equally large model trained on raw, noisy web text, as demonstrated by the FineWeb ablation studies (Penedo et al. 2024).
   - Conversely, training data contaminated by benchmark examples, adversarially poisoned samples, or legally infringing content creates compounding downstream risks spanning model quality, legal liability, and public trust.
   - Training data is not a passive repository: it embeds distributional assumptions about language, vision, and knowledge that the model will internalise as statistical regularities.

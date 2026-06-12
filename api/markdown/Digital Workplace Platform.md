@@ -448,7 +448,7 @@ public:: true
         "label": "Cloud Storage"
       },
       {
-        "@id": "urn:ngm:class:collaborative-document-editing",
+        "@id": "urn:ngm:class:collaborative-systems-modality-document-editing",
         "label": "Collaborative Document Editing"
       },
       {
@@ -468,7 +468,7 @@ public:: true
         "label": "Mobile Client"
       },
       {
-        "@id": "urn:ngm:class:people-analytics-dashboard",
+        "@id": "urn:ngm:class:domain-expert-contact-index-analytics-dashboard",
         "label": "People Analytics Dashboard"
       },
       {
@@ -588,15 +588,15 @@ public:: true
         "label": "Confluence"
       },
       {
-        "@id": "urn:ngm:class:gemini-for-workspace",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model-for-workspace",
         "label": "Gemini for Workspace"
       },
       {
-        "@id": "urn:ngm:class:google-drive",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-drive",
         "label": "Google Drive"
       },
       {
-        "@id": "urn:ngm:class:google-meet",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-meet",
         "label": "Google Meet"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "Talent Retention"
       },
       {
-        "@id": "urn:ngm:class:collaborative-whiteboard",
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {
@@ -1137,7 +1137,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1417,7 +1417,7 @@ public:: true
   - Microsoft Power Automate has reached 1M+ monthly active makers as of 2024, enabling citizen developers to build approval workflows, data synchronisation pipelines, and notification systems without code.
   - The convergence of DWP automation with Robotic Process Automation (UiPath, Automation Anywhere integration with Power Automate Desktop) and AI-powered intelligent document processing (M365 Syntex, Google Document AI, Amazon Textract) is creating "hyperautomation" patterns.
   - In hyperautomation patterns, DWPs orchestrate end-to-end business processes across multiple backend systems without custom integration code — e.g., an invoice arriving in Outlook triggers Syntex extraction of line items, Power Automate comparison against SAP purchase orders, and Teams notification to the approver with one-click approval embedded in the message card.
-  - The **Intelligence Layer** — the AI copilot — is now the primary investment focus for all major DWP vendors. Retrieval-Augmented Generation (RAG) grounds Large Language Model outputs in the organisation's proprietary data corpus (the Microsoft Graph semantic index of an organisation's M365 emails, documents, meetings, chats; Google's Workspace grounding for Gemini; Slack's corpus for Slack AI), with access control inheritance ensuring users only receive AI-generated answers from content they already have permission to access. [[Anthropic Claude]], [[OpenAI GPT-4]], and Google Gemini Pro serve as the underlying foundation models for different platform copilots, with data processing agreements ensuring customer data is not used for foundation model training.
+  - The **Intelligence Layer** — the AI copilot — is now the primary investment focus for all major DWP vendors. Retrieval-Augmented Generation (RAG) grounds Large Language Model outputs in the organisation's proprietary data corpus (the Microsoft Graph semantic index of an organisation's M365 emails, documents, meetings, chats; Google's Workspace grounding for Gemini; Slack's corpus for Slack AI), with access control inheritance ensuring users only receive AI-generated answers from content they already have permission to access. [[Constitutional AI Language Model Family]], [[OpenAI GPT-4]], and Google Gemini Pro serve as the underlying foundation models for different platform copilots, with data processing agreements ensuring customer data is not used for foundation model training.
   - **Integration Architecture**: DWPs expose their functionality through REST APIs, webhook event streams, and platform-native extension frameworks (Microsoft Teams Apps, Google Workspace Add-ons, Slack Apps, Atlassian Forge).
   - The Microsoft Graph API provides a unified REST endpoint for all M365 data and actions; Google's Workspace APIs provide equivalent granular access with per-scope OAuth consent.
   - Enterprise integration platforms (MuleSoft, Boomi, Workato) orchestrate complex bidirectional synchronisation between DWPs and ERP systems (SAP S/4HANA, Oracle Fusion), CRM systems (Salesforce, HubSpot), and HRIS systems (Workday, BambooHR).

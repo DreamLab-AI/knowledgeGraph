@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse Domain]]
-  - bridges-to:: [[Spatial Computing]], [[Mixed Reality]]
+  - bridges-to:: [[Spatial Computing Paradigm]], [[Mixed Reality]]
   - requires:: [[Metaverse]]
   - enables:: [[Virtual World]]
 

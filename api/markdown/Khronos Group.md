@@ -28,7 +28,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
       {"@id": "urn:ngm:class:3-d-graphics-standard", "label": "3D Graphics Standard"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
     ],
     "relatedTo": [
@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ]
   },
   "quality": 0.8
@@ -52,7 +52,7 @@ public:: true
 - ### Definition
   - The Khronos Group is a member-driven consortium that maintains royalty-free open standards for graphics, parallel compute, XR runtimes, and neural network interchange—including OpenGL, Vulkan, OpenCL, OpenXR, and glTF—providing the portable API layer that underpins cross-vendor GPU programming and immersive technology.
 - ### Relationships
-  - Khronos Group is a [[Standardization Bodies]] entity whose specifications directly enable the [[Graphics API]] ecosystem, [[3D Graphics Standard]] adoption, [[Spatial Computing]] runtimes, and [[GPU Compute]] portability. Its work is grounded in [[Open Standard]] governance and produces [[Technical Standard]] outputs that serve as [[Interoperability Standard]] references. Key technology domains supported include [[Mixed Reality]], [[Virtual Reality]], [[Augmented Reality]], and increasingly [[Machine Learning Framework]] portability through NNEF and ONNX collaboration.
+  - Khronos Group is a [[Standardization Bodies]] entity whose specifications directly enable the [[Graphics API]] ecosystem, [[3D Graphics Standard]] adoption, [[Spatial Computing Paradigm]] runtimes, and [[GPU Compute]] portability. Its work is grounded in [[Open Standard]] governance and produces [[Technical Standard]] outputs that serve as [[Interoperability Standard]] references. Key technology domains supported include [[Mixed Reality]], [[Virtual Reality]], [[Augmented Reality]], and increasingly [[Machine Learning Framework]] portability through NNEF and ONNX collaboration.
 - ### Content
   - Khronos was founded in January 2000 by a group of graphics and media companies—including SGI, NVIDIA, Intel, AMD, and ARM—to create an alternative to proprietary graphics APIs and provide royalty-free standards accessible to the entire industry. Its governance model allows any company to join as a member, participate in working groups, and vote on specifications before they are released publicly under open licences.
 

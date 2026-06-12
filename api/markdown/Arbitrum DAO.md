@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
       {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"}
     ]
   },
@@ -44,10 +44,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Arbitrum DAO]] governs the Arbitrum protocol ecosystem—principally the Arbitrum One optimistic rollup network—through a token-weighted [[On-chain Governance]] system built on [[Smart Contract]] infrastructure deployed on [[Ethereum]]. The ARB [[Governance Token]] grants holders proportional voting rights over Arbitrum Improvement Proposals, which can alter core protocol parameters, upgrade smart contracts, and direct disbursements from the DAO's multi-billion-dollar treasury. The governance structure distinguishes between a 12-member Security Council empowered to act in emergencies and the broader token-holder community for routine [[DAO Governance]].
+  - [[Arbitrum DAO]] governs the Arbitrum protocol ecosystem—principally the Arbitrum One optimistic rollup network—through a token-weighted [[On-chain Governance]] system built on [[Smart Contract]] infrastructure deployed on [[Ethereum Smart Contract Platform]]. The ARB [[Governance Token]] grants holders proportional voting rights over Arbitrum Improvement Proposals, which can alter core protocol parameters, upgrade smart contracts, and direct disbursements from the DAO's multi-billion-dollar treasury. The governance structure distinguishes between a 12-member Security Council empowered to act in emergencies and the broader token-holder community for routine [[DAO Governance]].
 
 - ### Relationships
-  - Arbitrum DAO enables [[On-chain Governance]] and [[DAO Governance]] for a major [[Layer 2 Scaling]] network. It uses [[Governance Token]] mechanics for voting power distribution, [[Smart Contract]] infrastructure for proposal execution, and is anchored to the [[Ethereum]] base layer for security. Its voting procedures constitute a form of [[On Chain Voting]] that embodies decentralised decision-making at protocol scale.
+  - Arbitrum DAO enables [[On-chain Governance]] and [[DAO Governance]] for a major [[Layer 2 Scaling]] network. It uses [[Governance Token]] mechanics for voting power distribution, [[Smart Contract]] infrastructure for proposal execution, and is anchored to the [[Ethereum Smart Contract Platform]] base layer for security. Its voting procedures constitute a form of [[On Chain Voting]] that embodies decentralised decision-making at protocol scale.
 
 - ### Content
   - Arbitrum One launched in August 2021 as an optimistic rollup Layer 2 network developed by Offchain Labs, rapidly accumulating the largest total value locked of any Ethereum Layer 2 network. Governance was initially centralised in Offchain Labs; in March 2023, the ARB token airdrop distributed 11.6% of the total supply to early users and DAOs building on Arbitrum, simultaneously transferring governance authority to the Arbitrum DAO. The airdrop was one of the largest in DeFi history by recipient count, reaching approximately 625,000 addresses.

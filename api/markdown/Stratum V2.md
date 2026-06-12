@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"}
     ]
   },
   "quality": 0.8
@@ -44,7 +44,7 @@ public:: true
   - Stratum V2 is the redesigned miner-to-pool protocol for Bitcoin that adds encryption, binary efficiency, and miner-controlled block template construction to decentralise transaction selection.
 
 - ### Relationships
-  - Stratum V2 is a subclass of [[Network Protocol]] and is used by [[Mining Pool]]s to coordinate [[Proof of Work]] hashing. By letting individual miners build their own templates, it enables greater [[Censorship Resistance]] in the [[Bitcoin]] network by dispersing the power to choose which transactions are confirmed.
+  - Stratum V2 is a subclass of [[Network Protocol]] and is used by [[Mining Pool]]s to coordinate [[Proof of Work]] hashing. By letting individual miners build their own templates, it enables greater [[Censorship Resistance]] in the [[Bitcoin Proof-of-Work Protocol]] network by dispersing the power to choose which transactions are confirmed.
 
 - ### Content
   - The original Stratum protocol, while ubiquitous, concentrated significant power in pool operators: the pool constructed the block template, deciding which transactions to include, and miners contributed only raw hashing power against that fixed template. This meant a handful of large pools effectively controlled transaction selection for the entire network, a centralisation pressure at odds with Bitcoin's design goals. Stratum also transmitted data in cleartext, exposing miners to hashrate-stealing man-in-the-middle attacks.

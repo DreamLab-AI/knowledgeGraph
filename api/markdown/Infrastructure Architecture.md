@@ -48,7 +48,7 @@ alias:: InfrastructureArchitecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:infrastructure-architecture",
+  "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
   "@type": "Class",
   "label": "Infrastructure Architecture",
   "definition": "The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.",

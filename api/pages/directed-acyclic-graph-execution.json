@@ -29,11 +29,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-client",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
       }
     ]

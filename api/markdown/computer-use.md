@@ -6,7 +6,7 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[multimodal]]
+  - requires [[Multimodal AI Architecture]]
   - requires [[Tool Use]]
   - enables [[Autonomous Agent]]
   - enables [[Workflow Automation]]

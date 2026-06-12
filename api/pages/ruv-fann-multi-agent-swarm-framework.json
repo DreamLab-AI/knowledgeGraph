@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:018b5355546ca4a0dfc0d49df7d08a368de09744a2a20f6d11d5742b511c44e3",
+  "title": "ruv-FANN Multi-Agent Swarm Framework",
+  "slug": "ruv-fann-multi-agent-swarm-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:ruv-fann-multi-agent-swarm-framework",
+  "domain": "infrastructure",
+  "definition": "RuV Agents refers to the ruv-swarm agent framework developed within the ruv-FANN project, providing a multi-agent orchestration layer for coordinating LLM-backed autonomous agents across tasks such as coding, research, and data processing. The framework integrates with inference APIs and supports rate-limit bypass strategies through unified LLM platform routing. It represents a practical implementation of multi-agent coordination patterns for software engineering and knowledge-work automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

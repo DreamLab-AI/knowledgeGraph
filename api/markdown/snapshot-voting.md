@@ -21,7 +21,7 @@
   - requires:: [[EIP-712 Signature]], [[IPFS]], [[Ethereum RPC Node]], [[Voting Strategy Plugin]], [[ENS Name]], [[Snapshot Hub]], [[ECDSA Cryptography]], [[Keccak-256 Hashing]]
   - enables:: [[Gasless DAO Participation]], [[Token-Weighted Governance]], [[Quadratic Voting]], [[Liquid Democracy Delegation]], [[Cross-Chain Voting Aggregation]], [[On-Chain Execution via SafeSnap]], [[NFT-Gated Governance]], [[Reputation-Weighted Voting]]
   - implements:: [[EIP-712 Typed Structured Data]], [[IPFS Content Addressing]], [[ECDSA Signature Verification]], [[Snapshot Block Mechanism]], [[Strategy Plugin Pattern]], [[Reality.eth Oracle]], [[Zodiac Module Standard]]
-  - depends-on:: [[Ethereum]], [[IPFS]], [[EIP-712]], [[Ethereum Name Service]], [[RPC Infrastructure]], [[BrightID]], [[Gitcoin Passport]], [[Starknet]] (for Snapshot X)
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[IPFS]], [[EIP-712]], [[Ethereum Name Service]], [[RPC Infrastructure]], [[BrightID]], [[Gitcoin Passport]], [[Starknet]] (for Snapshot X)
   - supports:: [[Aave Governance]], [[Uniswap Governance]], [[ENS DAO]], [[ApeCoin DAO]], [[Gitcoin DAO]], [[Arbitrum DAO]], [[Optimism Collective]], [[Lido DAO]], [[MakerDAO]]
   - uses:: [[ECDSA Cryptography]], [[Keccak-256 Hashing]], [[Multicall Contract]], [[Reality.eth]], [[Pinata IPFS Pinning]], [[Gnosis Safe]], [[StarkNet Cairo]]
   - contrasts-with:: [[Tally On-Chain Governance]], [[Compound Governor Bravo]], [[OpenZeppelin Governor]], [[Aragon Governance]], [[Colony Governance]], [[Boardroom]] (aggregator)

@@ -8,7 +8,7 @@
   "definition": "Model Evaluation is the systematic process of measuring the performance, reliability, safety, and fitness-for-purpose of machine learning models against defined metrics, held-out datasets, and behavioural benchmarks. It encompasses quantitative metric computation, qualitative red-teaming, and comparative benchmarking to inform deployment decisions and ongoing monitoring.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

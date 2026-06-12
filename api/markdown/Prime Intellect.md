@@ -490,7 +490,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-model-ownership",
+        "@id": "urn:ngm:class:collaborative-systems-modality-model-ownership",
         "label": "Collaborative Model Ownership"
       },
       {
@@ -570,11 +570,11 @@ public:: true
         "label": "Hugging Face"
       },
       {
-        "@id": "urn:ngm:class:llama-architecture",
+        "@id": "urn:ngm:class:meta-llama-model-family-architecture",
         "label": "Llama Architecture"
       },
       {
-        "@id": "urn:ngm:class:nvidia-h200",
+        "@id": "urn:ngm:class:nvidia-corporation-h200",
         "label": "NVIDIA H200"
       },
       {
@@ -646,7 +646,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture-of-Experts"
       },
       {
@@ -1039,7 +1039,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1114,7 +1114,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -1161,7 +1161,7 @@ public:: true
   - depends-on:: [[PyTorch]], [[NVIDIA H100]], [[InfiniBand Networking]], [[Hivemind Library]], [[vLLM]], [[SLURM]], [[libp2p]], [[FSDP2]], [[Ray Distributed Computing]]
   - supports:: [[Large Language Models]], [[Reasoning Models]], [[Mixture-of-Experts]], [[Metagenomic AI]], [[Reinforcement Learning from Human Feedback]], [[Agentic AI]], [[Pandemic Monitoring]]
   - uses:: [[Llama Architecture]], [[QwQ-32B]], [[GLM-4.5-Air]], [[Hugging Face]], [[Akash Network]], [[Ray Distributed Computing]], [[NVIDIA H200]], [[FineWeb-Edu Dataset]]
-  - contrasts-with:: [[Centralised Training]], [[Cloud Computing]], [[NVIDIA Supercomputer]], [[OpenAI]], [[Anthropic Claude]], [[Proprietary AI]], [[Bittensor]], [[Petals]]
+  - contrasts-with:: [[Centralised Training]], [[Cloud Computing]], [[NVIDIA Supercomputer]], [[OpenAI Research Organisation]], [[Constitutional AI Language Model Family]], [[Proprietary AI]], [[Bittensor]], [[Petals]]
   - related-to:: [[Blockchain Network]], [[Decentralised Science]], [[AI Adoption]], [[Competition in AI]], [[AI Risks]], [[Carbon Footprint Measurement]], [[Carbon Neutral Blockchain]], [[Cognitive AI]], [[Artificial General Intelligence]]
   - standardized-by:: [[Apache 2.0 Open Source Licence]], [[arXiv Preprint Standards]], [[PyTorch FSDP API]]
 

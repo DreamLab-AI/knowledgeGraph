@@ -67,7 +67,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},

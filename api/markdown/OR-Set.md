@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}
     ]
   },
   "quality": 0.72

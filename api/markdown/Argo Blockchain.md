@@ -56,20 +56,20 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin-mining",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ]
@@ -98,7 +98,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -135,7 +135,7 @@ public:: true
   - is-subclass-of:: [[Bitcoin Mining]]
   - bridges-to:: [[Cryptocurrency]], [[Sustainability Domain]]
   - requires:: [[Bitcoin Mining]]
-  - enables:: [[Bitcoin]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Argo Blockchain runs mining facilities housing specialised hardware that competes to validate blocks and earn rewards, with profitability tied to coin price, network difficulty and energy cost. It has emphasised access to lower-carbon electricity.

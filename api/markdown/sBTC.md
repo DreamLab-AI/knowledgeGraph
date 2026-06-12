@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {

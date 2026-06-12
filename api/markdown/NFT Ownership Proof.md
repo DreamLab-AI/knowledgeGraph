@@ -53,7 +53,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}

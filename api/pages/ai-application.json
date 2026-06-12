@@ -42,7 +42,7 @@
         "label": "Fraud Detection"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -58,7 +58,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -79,7 +79,7 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]

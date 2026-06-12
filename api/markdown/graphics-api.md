@@ -12,14 +12,14 @@
   - is-subclass-of:: [[Hardware Interface]], [[Application Programming Interface]], [[Hardware Abstraction Layer]], [[System Software]], [[Rendering Interface]]
   - has-part:: [[Command Buffer]], [[Shader Compiler]], [[Resource Manager]], [[Pipeline State Object]], [[Descriptor Set]], [[Swap Chain]], [[Synchronisation Primitive]], [[Memory Allocator]]
   - requires:: [[GPU Hardware]], [[Device Driver]], [[Operating System]], [[Shader Language]], [[Driver Compiler]]
-  - enables:: [[GPU Programming]], [[Cross-Platform Rendering]], [[Hardware Abstraction]], [[Real-Time Rendering]], [[GPU Compute]], [[Ray Tracing]], [[Mesh Shading]], [[Spatial Computing]]
+  - enables:: [[GPU Programming]], [[Cross-Platform Rendering]], [[Hardware Abstraction]], [[Real-Time Rendering]], [[GPU Compute]], [[Ray Tracing]], [[Mesh Shading]], [[Spatial Computing Paradigm]]
   - implements:: [[Command Submission Pattern]], [[Resource Binding Model]], [[Pipeline Compilation]], [[Frame Presentation Protocol]], [[Multi-Queue Submission]]
   - depends-on:: [[GPU Architecture]], [[Device Driver]], [[Operating System]], [[Shader Compilation Toolchain]], [[Window System Integration]]
   - supports:: [[Game Engines]], [[Professional Visualisation]], [[Scientific Computing]], [[AI Inference]], [[XR Compositing]], [[Web Rendering]], [[CAD Software]], [[Medical Imaging]]
   - uses:: [[SPIR-V]], [[GLSL]], [[HLSL]], [[MSL]], [[WGSL]], [[Vendor Driver]], [[Kernel Mode Driver]]
   - contrasts-with:: [[Software Rasterisation]], [[CPU Rendering]], [[Fixed-Function Pipeline]], [[Game Engine Framework]], [[Higher-Level Renderer]]
   - related-to:: [[GPU Compute API]], [[Shader Language]], [[XR Runtime API]], [[Driver Stack]], [[Window System API]]
-  - standardized-by:: [[Khronos Group]], [[Microsoft]], [[Apple]], [[W3C]], [[GPU for the Web Working Group]]
+  - standardized-by:: [[Khronos Group]], [[Microsoft]], [[Apple Inc Technology Corporation]], [[W3C]], [[GPU for the Web Working Group]]
 
 - ### Content
 

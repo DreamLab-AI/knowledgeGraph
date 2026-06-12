@@ -149,7 +149,7 @@
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -198,7 +198,7 @@
         "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:json-rpc",
+        "id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -218,7 +218,7 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -333,7 +333,7 @@
         "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ]

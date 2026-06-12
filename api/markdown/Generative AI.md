@@ -548,12 +548,12 @@ alias:: GenerativeAI
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Midjourney]]",
+      "raw": "[[Midjourney Text-to-Image Service]]",
       "resolved": "urn:visionflow:owl:class:midjourney",
       "kind": "ResolvedLink"
     },
@@ -568,7 +568,7 @@ alias:: GenerativeAI
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -605,7 +605,7 @@ alias:: GenerativeAI
 
 
 - ### Definition
-  - [[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
+  - [[Generative AI]] encompasses [[Machine Learning Discipline]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GenerativeAI
@@ -615,7 +615,7 @@ alias:: GenerativeAI
   - implemented-in-layer:: [[ComputeLayer]], [[DataLayer]], [[AlgorithmicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Artificial Intelligence]], [[Machine Learning]], [[Deep Learning]]
+  - is-subclass-of:: [[Artificial Intelligence]], [[Machine Learning Discipline]], [[Deep Learning]]
   - has-part:: [[Large Language Models]], [[Diffusion Models]], [[GAN]], [[VAE]], [[Neural Network]], [[Training Data]]
   - requires:: [[Neural Network Training]], [[Large-Scale Datasets]], [[GPU Compute]], [[Model Architecture]]
   - enables:: [[Content Creation]], [[Creative AI]], [[Automated Design]], [[Synthetic Media]], [[AI Art]]
@@ -626,5 +626,5 @@ alias:: GenerativeAI
   Generative AI — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[OpenAI]], [[Stability AI]], [[Midjourney]], [[Anthropic]], [[Google DeepMind]], [[NIST AI Standards]]
+  - sources:: [[OpenAI Research Organisation]], [[Stability AI]], [[Midjourney Text-to-Image Service]], [[Anthropic]], [[Google DeepMind]], [[NIST AI Standards]]
   - migration-date:: 2026-04-26T00:00:00Z

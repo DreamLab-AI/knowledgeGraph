@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Image Generation]]
-  - bridges-to:: [[Stable Diffusion]]
+  - bridges-to:: [[Stable Diffusion Image Model]]
   - requires:: [[Diffusion Model]]
   - enables:: [[Inpainting]]
 

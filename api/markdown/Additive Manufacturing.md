@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"}
     ]
   },
   "quality": 0.8

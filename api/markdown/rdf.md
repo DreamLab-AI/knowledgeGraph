@@ -7,7 +7,7 @@
 
 - ### Relationships
   - implements [[Web Standard]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - enables [[Linked Data]]
   - enables [[Knowledge Graph]]
   - relatedTo [[SPARQL]]

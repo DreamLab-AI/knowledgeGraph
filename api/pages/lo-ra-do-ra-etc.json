@@ -165,7 +165,7 @@
         "label": "Rank Decomposition"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -175,15 +175,15 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -195,7 +195,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -213,7 +213,7 @@
         "label": "Microsoft Research"
       },
       {
-        "id": "urn:ngm:class:nvidia",
+        "id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA"
       }
     ],
@@ -236,7 +236,7 @@
         "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       }
     ]
@@ -525,12 +525,12 @@
   ],
   "backlinks": [
     {
-      "slug": "advice-for-developing-gen-ai",
-      "label": "Advice for developing GenAI"
-    },
-    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
+    },
+    {
+      "slug": "generative-ai-development-methodology",
+      "label": "Generative AI Development Methodology"
     },
     {
       "slug": "model-training",

@@ -55,7 +55,7 @@
         "label": "Content Licensing"
       },
       {
-        "id": "urn:ngm:class:watermarks",
+        "id": "urn:ngm:class:digital-content-provenance-marking",
         "label": "Watermarks"
       }
     ]

@@ -87,7 +87,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
@@ -99,7 +99,7 @@ public:: true
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
     ],
     "relatedTo": [

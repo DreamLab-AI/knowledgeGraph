@@ -237,7 +237,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -780,6 +780,6 @@ public:: true
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[NIST AI Risk Management Framework]], [[ISO/IEC 42001:2023]], [[ISO 19011]], [[ISO/IEC 23894:2023]], [[ISO/IEC 5338:2023]], [[EU AI Act]]
+  - sources:: [[NIST AI Risk Management Framework]], [[ISO/IEC 42001:2023]], [[ISO 19011]], [[ISO/IEC 23894:2023]], [[ISO/IEC 5338:2023]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

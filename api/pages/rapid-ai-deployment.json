@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -39,7 +39,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -57,7 +57,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       },
       {

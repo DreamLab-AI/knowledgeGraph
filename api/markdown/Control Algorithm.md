@@ -537,7 +537,7 @@ alias:: Control-Algorithm, ControlAlgorithm
         "label": "Kinematics"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -933,7 +933,7 @@ alias:: Control-Algorithm, ControlAlgorithm
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1019,7 +1019,7 @@ alias:: Control-Algorithm, ControlAlgorithm
   - supports:: [[Autonomous Vehicles]], [[Aerospace]], [[Surgical Robotics]], [[Power Systems]], [[Chemical Process Control]], [[Soft Robotics]], [[Humanoid Robotics]]
   - uses:: [[Kalman Filter]], [[State Estimation]], [[System Identification]], [[Simulation]], [[Hardware-in-the-Loop Testing]]
   - contrasts-with:: [[Open-Loop Control]], [[Rule-Based Systems]], [[Expert Systems]], [[Bang-Bang Control]]
-  - related-to:: [[Kinematics]], [[Dynamics]], [[Machine Learning]], [[Formal Verification]], [[Control Theory]], [[Safety-Critical Systems]], [[Embedded Systems]]
+  - related-to:: [[Kinematics]], [[Dynamics]], [[Machine Learning Discipline]], [[Formal Verification]], [[Control Theory]], [[Safety-Critical Systems]], [[Embedded Systems]]
   - standardized-by:: [[IEEE Control Systems Society]], [[IFAC]], [[IEC 61511]], [[DO-178C]], [[ISO 26262]]
 
 - ### Content
@@ -1166,7 +1166,7 @@ alias:: Control-Algorithm, ControlAlgorithm
   - The term encompasses a remarkably broad family of methods unified by the feedback principle first formalised by James Clerk Maxwell's 1868 governor stability analysis, now spanning hand-derived analytic controllers, numerical real-time optimisers, and end-to-end neural network policies learned from millions of simulated or real interactions with physical plants.
   - An estimated **90% of industrial feedback loops** worldwide use some form of PID control — a testament to the enduring power of simplicity and interpretability even when more sophisticated alternatives exist for constrained, multi-variable, or uncertain plants.
   - At the research frontier, [[Model Predictive Control]] solves quadratic programmes in under 20 ms on embedded ARM Cortex boards for autonomous vehicle lane-keeping; [[Reinforcement Learning]]-trained locomotion controllers enable humanoid robots to climb boxes and recover from unexpected pushes; [[Adaptive Control]] systems manage continuum soft-bodied robots whose dynamics cannot be written in closed form.
-  - The field is undergoing a **structural shift** as the boundary between control-theoretic design and data-driven [[Machine Learning]] progressively dissolves: physics-informed neural networks are embedded in RL actor networks; Gaussian process surrogates supply uncertainty-aware prediction models inside MPC; formal safety certificates from Control Barrier Functions are composed with learned policies to provide hard constraint guarantees without sacrificing neural network expressiveness.
+  - The field is undergoing a **structural shift** as the boundary between control-theoretic design and data-driven [[Machine Learning Discipline]] progressively dissolves: physics-informed neural networks are embedded in RL actor networks; Gaussian process surrogates supply uncertainty-aware prediction models inside MPC; formal safety certificates from Control Barrier Functions are composed with learned policies to provide hard constraint guarantees without sacrificing neural network expressiveness.
   - The **algorithm selection problem** is non-trivial: optimal choice depends on system linearity or nonlinearity; available computational budget on the embedded target processor; presence of hard state and input constraints; requirement for formal stability or safety proofs recognised by DO-178C or ISO 26262 certification bodies; availability of an explicit plant model; tolerance for offline versus online tuning effort; and the safety cost of exploration during learning.
   - No single algorithm dominates across all these dimensions simultaneously — a robust engineering practice selects a primary algorithm matched to the dominant requirements and layers complementary methods (e.g., CBF safety filter on top of an RL policy, or online adaptive model update inside an MPC prediction) to address residual weaknesses.
   - **Algorithm comparison at a glance**: PID — simplest, 3 parameters, no formal stability proof required, suitable for single-input single-output loops with weak nonlinearity; LQR — optimal for linear systems, requires full state feedback or observer, no constraint handling; MPC — handles constraints explicitly, multi-variable, prediction horizon N·T_s lookahead, computationally intensive (QP per step); H∞ — worst-case robust, requires plant model and uncertainty description, LMI/Riccati synthesis; SMC — robust to matched disturbances, finite-time convergence, chattering risk; Adaptive — online parameter update, Lyapunov-stable, requires persistent excitation; ILC — perfect for repeating tasks, cannot reject non-repeating disturbances; RL — model-free, high sample cost, safety concerns without CBF, best-in-class for complex nonlinear tasks.

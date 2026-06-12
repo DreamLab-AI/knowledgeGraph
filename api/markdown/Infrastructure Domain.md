@@ -104,7 +104,7 @@ alias:: InfrastructureDomain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:infrastructure-domain",
+  "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
   "@type": "Class",
   "label": "Infrastructure Domain",
   "definition": "The Infrastructure Domain is the ontological framework that classifies and relates ICT infrastructure configuration items, resources, and resource groups common across IT service management systems. It encompasses network components, server and compute resources, data centres, storage, databases, cloud services, and security configurations that together underpin network connectivity, communication, and computing services. The domain provides a structured vocabulary for infrastructure-as-code, containerisation, and cloud-native architectures.",
@@ -124,8 +124,8 @@ alias:: InfrastructureDomain
       {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
       {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
       {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"},
-      {"@id": "urn:ngm:class:infrastructure-component", "label": "Infrastructure Component"},
-      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"}
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-component", "label": "Infrastructure Component"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},

@@ -220,7 +220,7 @@ alias:: Auto-ML
       "label": "AI Agent System"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-pipeline",
+      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],

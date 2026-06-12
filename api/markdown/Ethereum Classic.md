@@ -59,7 +59,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-classic",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform-classic",
   "@type": "Class",
   "label": "Ethereum Classic",
   "definition": "A proof-of-work blockchain that continued the original Ethereum chain after the 2016 DAO hard fork, preserving the unaltered transaction history. It maintains the principle that the ledger should not be reversed by social intervention.",
@@ -124,7 +124,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -164,7 +164,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
-  - bridges-to:: [[Ethereum]], [[Ethereum Virtual Machine]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]], [[Ethereum Virtual Machine]]
   - requires:: [[Mining]], [[Smart Contract]]
   - enables:: [[DeFi]]
 

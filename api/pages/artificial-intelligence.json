@@ -30,7 +30,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -396,6 +396,10 @@
       "label": "Artificial Intelligence Domain"
     },
     {
+      "slug": "artificial-superintelligence-theory",
+      "label": "Artificial Superintelligence Theory"
+    },
+    {
       "slug": "attack-vector",
       "label": "Attack Vector"
     },
@@ -430,10 +434,6 @@
     {
       "slug": "bittensor",
       "label": "Bittensor"
-    },
-    {
-      "slug": "calculating-empires",
-      "label": "Calculating Empires"
     },
     {
       "slug": "call-centres",
@@ -556,6 +556,10 @@
       "label": "Emotional Intelligence"
     },
     {
+      "slug": "employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
+    },
+    {
       "slug": "encoder",
       "label": "Encoder"
     },
@@ -600,8 +604,8 @@
       "label": "Goal"
     },
     {
-      "slug": "google",
-      "label": "Google"
+      "slug": "google-ai-technology-corporation",
+      "label": "Google AI Technology Corporation"
     },
     {
       "slug": "human-preference",
@@ -660,8 +664,8 @@
       "label": "Legal Research"
     },
     {
-      "slug": "leopold-aschenbrenner",
-      "label": "leopold-aschenbrenner"
+      "slug": "leopold-aschenbrenner-situational-awareness",
+      "label": "leopold-aschenbrenner-situational-awareness"
     },
     {
       "slug": "lightning-and-similar-l2",
@@ -904,10 +908,6 @@
       "label": "Social Impact"
     },
     {
-      "slug": "social-contract-and-jobs",
-      "label": "Social contract and jobs"
-    },
-    {
       "slug": "soft-prompt-embedding",
       "label": "Soft Prompt Embedding"
     },
@@ -954,6 +954,10 @@
     {
       "slug": "technology-domain",
       "label": "Technology Domain"
+    },
+    {
+      "slug": "technology-power-structure-visualisation",
+      "label": "Technology Power Structure Visualisation"
     },
     {
       "slug": "telecollaboration",
@@ -1022,10 +1026,6 @@
     {
       "slug": "workforce-augmentation",
       "label": "Workforce Augmentation"
-    },
-    {
-      "slug": "artificial-superintelligence",
-      "label": "artificial superintelligence"
     }
   ]
 }

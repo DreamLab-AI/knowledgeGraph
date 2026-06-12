@@ -22,7 +22,7 @@
         "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:json-rpc",
+        "id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {

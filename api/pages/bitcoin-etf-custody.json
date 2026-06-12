@@ -3,7 +3,7 @@
   "title": "Bitcoin ETF Custody",
   "slug": "bitcoin-etf-custody",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-etf-custody",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf-custody",
   "domain": "blockchain",
   "definition": "Bitcoin ETF custody is the institutional safekeeping of the bitcoin backing a spot exchange-traded fund, performed by qualified custodians under regulatory and audit requirements. It typically uses cold storage with multi-signature or multi-party-computation key management, segregation of client assets, insurance, and proof-of-reserves attestation. This custody model bridges traditional regulated finance and on-chain asset control, and is central to the integrity of spot Bitcoin ETFs.",
   "subClassOf": [

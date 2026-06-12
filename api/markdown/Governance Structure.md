@@ -474,7 +474,7 @@ public:: true
         "label": "OECD Guidelines"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -748,7 +748,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -848,7 +848,7 @@ public:: true
   - uses:: [[Voting Systems]], [[Smart Contract]], [[Compliance Dashboard]], [[Compliance Audit Trail]], [[Compliance Verification]]
   - contrasts-with:: [[Anarchic Coordination]], [[Informal Norm]], [[Self-Regulation]]
   - related-to:: [[Tokenomics Governance]], [[DAO Governance for Telecollaboration]], [[DAO Legal Structures]], [[AML KYC Compliance]], [[Data Protection Regulation]]
-  - standardized-by:: [[EU AI Act]], [[Companies Act]], [[OECD Guidelines]], [[ISO Standards]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Companies Act]], [[OECD Guidelines]], [[ISO Standards]]
 
 - ### Content
 

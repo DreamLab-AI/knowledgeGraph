@@ -60,7 +60,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -122,7 +122,7 @@ public:: true
   - Uses [[GPU Compute]]
   - Uses [[Real-time Processing]]
   - Enables [[Digital Twin]]
-  - Enables [[Machine Learning]]
+  - Enables [[Machine Learning Discipline]]
   - Related To [[Rendering Engine]]
 
 - ### Content

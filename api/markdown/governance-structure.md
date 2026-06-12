@@ -32,7 +32,7 @@
   - uses:: [[Voting Systems]], [[Smart Contract]], [[Compliance Dashboard]], [[Compliance Audit Trail]], [[Compliance Verification]]
   - contrasts-with:: [[Anarchic Coordination]], [[Informal Norm]], [[Self-Regulation]]
   - related-to:: [[Tokenomics Governance]], [[DAO Governance for Telecollaboration]], [[DAO Legal Structures]], [[AML KYC Compliance]], [[Data Protection Regulation]]
-  - standardized-by:: [[EU AI Act]], [[Companies Act]], [[OECD Guidelines]], [[ISO Standards]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Companies Act]], [[OECD Guidelines]], [[ISO Standards]]
 
 - ### Content
 

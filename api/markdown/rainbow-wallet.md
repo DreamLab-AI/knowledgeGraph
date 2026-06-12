@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Wallet]]
-  - bridges-to:: [[Wallet]], [[Ethereum]]
+  - bridges-to:: [[Wallet]], [[Ethereum Smart Contract Platform]]
   - requires:: [[Private Key]], [[Self-Custody]]
   - enables:: [[Non-Fungible Token]]
 

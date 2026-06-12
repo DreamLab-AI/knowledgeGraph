@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
 
 - ### Content
   - ERC-2612 adds a permit function to ERC-20 tokens, allowing approvals to be granted through signed messages rather than separate on-chain transactions.

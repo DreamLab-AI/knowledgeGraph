@@ -338,9 +338,9 @@
     **Governance & DAOs**:
     - [[DAO]], [[Governance]], [[Proposal]], [[Voting]], [[veTokenomics]]
     **Bitcoin Ecosystem**:
-    - [[Bitcoin]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
+    - [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
     **Platforms**:
-    - [[Ethereum]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
+    - [[Ethereum Smart Contract Platform]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
     **NFT Ecosystem**:
     - [[NFT]], [[NFT Marketplace]], [[Metadata]], [[IPFS]], [[Royalties]]
     **Notable Projects**:

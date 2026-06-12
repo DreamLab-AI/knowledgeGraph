@@ -668,7 +668,7 @@ public:: true
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -678,7 +678,7 @@ public:: true
         "label": "Audio Classification"
       },
       {
-        "@id": "urn:ngm:class:collaborative-filtering",
+        "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
@@ -698,7 +698,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-training",
+        "@id": "urn:ngm:class:latent-diffusion-model-training",
         "label": "Stable Diffusion Training"
       }
     ],
@@ -1269,12 +1269,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion Training]]",
+      "raw": "[[Latent Diffusion Model Training]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion-training",
       "kind": "ResolvedLink"
     },
@@ -1317,10 +1317,10 @@ public:: true
   - enables:: [[Rapid Prototyping]], [[Transfer Learning Workflows]], [[Democratised Deep Learning]], [[Code-First Education]], [[Production-Ready Defaults]], [[Beginner-Friendly Deep Learning]]
   - implements:: [[1cycle Learning Rate Schedule]], [[Discriminative Learning Rates]], [[Frozen-Unfrozen Fine-Tuning]], [[Mixup Augmentation]], [[Test-Time Augmentation]], [[Label Smoothing]], [[Layered API Design]]
   - depends-on:: [[PyTorch]], [[NumPy]], [[Pandas]], [[Pillow]], [[spaCy]], [[Matplotlib]], [[fastcore]], [[fastprogress]]
-  - supports:: [[Computer Vision]], [[Natural Language Processing]], [[Tabular Learning]], [[Collaborative Filtering]], [[Audio Classification]], [[Medical Imaging]], [[Stable Diffusion Training]]
+  - supports:: [[Computer Vision]], [[Natural Language Processing]], [[Tabular Learning]], [[Collaborative Filtering]], [[Audio Classification]], [[Medical Imaging]], [[Latent Diffusion Model Training]]
   - uses:: [[Convolutional Neural Networks]], [[Transformer Architecture]], [[ResNet]], [[U-Net]], [[Adam Optimiser]], [[ReLU Activation]], [[Cosine Annealing]]
   - contrasts-with:: [[Keras]], [[PyTorch Lightning]], [[Hugging Face Transformers]], [[Raw PyTorch]], [[TensorFlow]], [[MXNet]]
-  - related-to:: [[Hugging Face Accelerate]], [[ULMFiT]], [[BERT]], [[Answer.AI]], [[FastHTML]], [[Claudette]], [[FSDP-QLoRA]], [[Stable Diffusion]]
+  - related-to:: [[Hugging Face Accelerate]], [[ULMFiT]], [[BERT]], [[Answer.AI]], [[FastHTML]], [[Claudette]], [[FSDP-QLoRA]], [[Stable Diffusion Image Model]]
   - standardized-by:: [[ACL]], [[NeurIPS]], [[ICLR]], [[PEP 8]], [[Semantic Versioning]]
 
 - ### Content

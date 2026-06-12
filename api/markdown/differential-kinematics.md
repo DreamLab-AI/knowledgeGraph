@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Robotics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Robot Kinematics]], [[Motion Mathematics]]
   - has-part:: [[Jacobian Matrix]], [[Velocity Transformation]], [[Singularity Condition]]
   - requires:: [[Position Kinematics]], [[Joint Configuration]], [[Velocity Inputs]]

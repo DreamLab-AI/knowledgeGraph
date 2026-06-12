@@ -232,7 +232,7 @@ public:: true
         "label": "DID Resolution"
       },
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {

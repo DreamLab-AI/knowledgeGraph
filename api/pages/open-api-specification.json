@@ -42,7 +42,7 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "json"
       },
       {

@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:tax",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax"
       }
     ]
@@ -87,7 +87,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Tax]]",
+      "raw": "[[Corporate Tax Compliance Framework]]",
       "resolved": "urn:visionflow:linked:tax",
       "kind": "ResolvedLink"
     },
@@ -128,7 +128,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Entity]]
   - bridges-to:: [[Financial Regulation]], [[Cryptocurrency]]
-  - enables:: [[Tax]]
+  - enables:: [[Corporate Tax Compliance Framework]]
 
 - ### Content
   - His Majesty's Revenue and Customs is the United Kingdom's tax authority, responsible for collecting taxes, administering customs, and operating systems such as digital tax reporting. It is a large operator of public-sector data and services.

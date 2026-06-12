@@ -62,7 +62,7 @@ alias:: BC-0214-environmental-sustainability
       {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
     ]
   },
   "quality": 0.7,

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:apple-neural-engine",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-neural-engine",
         "label": "Apple Neural Engine"
       },
       {
@@ -26,7 +26,7 @@
         "label": "ARM Ethos NPU"
       },
       {
-        "id": "urn:ngm:class:google-coral-edge-tpu",
+        "id": "urn:ngm:class:google-ai-technology-corporation-coral-edge-tpu",
         "label": "Google Coral Edge TPU"
       },
       {
@@ -42,7 +42,7 @@
         "label": "Neural Processing Unit"
       },
       {
-        "id": "urn:ngm:class:nvidia-jetson",
+        "id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
       },
       {
@@ -241,7 +241,7 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -526,28 +526,32 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-frontier-capability-survey",
+      "label": "AI Frontier Capability Survey"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
+    },
+    {
+      "slug": "applied-ai-research-portfolio",
+      "label": "Applied AI Research Portfolio"
     },
     {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
-    },
-    {
       "slug": "co-training",
       "label": "Co Training"
     },
     {
-      "slug": "interfaces",
-      "label": "Interfaces"
+      "slug": "human-agent-interaction-surfaces",
+      "label": "Human-Agent Interaction Surfaces"
     },
     {
-      "slug": "leopold-aschenbrenner",
-      "label": "leopold-aschenbrenner"
+      "slug": "leopold-aschenbrenner-situational-awareness",
+      "label": "leopold-aschenbrenner-situational-awareness"
     },
     {
       "slug": "model-performance",
@@ -562,12 +566,16 @@
       "label": "Object Detection and Tracking"
     },
     {
-      "slug": "octave-multi-model-laboratory",
-      "label": "Octave Multi Model Laboratory"
+      "slug": "octave-immersive-research-facility",
+      "label": "Octave Immersive Research Facility"
     },
     {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "proprietary-ai-video",
@@ -578,20 +586,12 @@
       "label": "Proprietary Video"
     },
     {
-      "slug": "recent-projects",
-      "label": "Recent Projects"
-    },
-    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     },
     {
       "slug": "security",
       "label": "Security"
-    },
-    {
-      "slug": "state-of-the-art-in-ai",
-      "label": "State of the art in AI"
     },
     {
       "slug": "task-specific-head",

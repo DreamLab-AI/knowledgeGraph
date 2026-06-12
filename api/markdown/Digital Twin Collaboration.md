@@ -121,7 +121,7 @@ alias:: TELE-300-digital-twin-collaboration
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-simulation",
+        "@id": "urn:ngm:class:collaborative-systems-modality-simulation",
         "label": "CollaborativeSimulation"
       }
     ]

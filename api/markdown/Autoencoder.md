@@ -73,7 +73,7 @@ public:: true
       {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"},
       {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}
     ],
     "relatedTo": [
@@ -146,7 +146,7 @@ public:: true
   - bridges-to:: [[Computer Vision]] (ai)
   - enables [[Anomaly Detection]]
   - enables [[Dimensionality Reduction]]
-  - uses [[latent space]]
+  - uses [[Neural Network Latent Space]]
   - uses [[Unsupervised Learning]]
   - relatedTo [[Variational Autoencoders]]
   - relatedTo [[Generative Adversarial Network]]

@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-rpc-2-0",
+  "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
   "@type": "Class",
   "label": "JSON-RPC 2.0",
   "definition": "JSON-RPC 2.0 is a lightweight, transport-agnostic remote procedure call protocol that encodes method invocations and responses as JSON objects. It defines request, response, notification and batch message structures along with a standard error object, while leaving the transport layer unspecified. Its simplicity has made it the wire format for many blockchain node APIs and AI tool-invocation protocols.",

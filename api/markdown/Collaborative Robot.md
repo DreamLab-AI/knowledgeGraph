@@ -92,7 +92,7 @@ alias:: CollaborativeRobot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-robot",
+  "@id": "urn:ngm:class:collaborative-systems-modality-robot",
   "@type": "Class",
   "label": "Collaborative Robot",
   "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable Human-Robot Collaboration in shared manufacturing and assembly environments.",
@@ -139,7 +139,7 @@ alias:: CollaborativeRobot
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:collaborative-manufacturing-system",
+        "@id": "urn:ngm:class:collaborative-systems-modality-manufacturing-system",
         "label": "Collaborative Manufacturing System"
       }
     ]

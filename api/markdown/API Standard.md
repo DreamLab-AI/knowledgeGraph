@@ -126,7 +126,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:infrastructure",
+        "@id": "urn:ngm:class:technology-infrastructure-domain",
         "label": "infrastructure"
       }
     ]

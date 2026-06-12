@@ -10,7 +10,7 @@
   - enables:: [[Augmented Reality]]
   - uses:: [[Deep Learning]]
   - uses:: [[Pose Estimation]]
-  - partOf:: [[Spatial Computing]]
+  - partOf:: [[Spatial Computing Paradigm]]
 - ### Content
   - SLAM technology enables autonomous systems to simultaneously build spatial maps and determine their position within unknown environments, processing sensor data to estimate pose and construct real-time representations essential for navigation and AR/VR applications.
   - ### Original Content

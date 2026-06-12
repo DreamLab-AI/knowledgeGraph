@@ -12,7 +12,7 @@
   - bridges-to:: [[Computer Vision]] (ai)
   - enables [[Anomaly Detection]]
   - enables [[Dimensionality Reduction]]
-  - uses [[latent space]]
+  - uses [[Neural Network Latent Space]]
   - uses [[Unsupervised Learning]]
   - relatedTo [[Variational Autoencoders]]
   - relatedTo [[Generative Adversarial Network]]

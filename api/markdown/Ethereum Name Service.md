@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-name-service",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform-name-service",
   "@type": "Class",
   "label": "Ethereum Name Service",
   "definition": "A decentralised naming system on Ethereum that maps human-readable names to addresses and other resources using smart contracts.",
@@ -56,14 +56,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ethereum",
+      "@id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum-smart-contracts",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
       }
     ],
@@ -108,7 +108,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     }
@@ -132,7 +132,7 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum]]
+  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
   - bridges-to:: [[Smart Contract]]
   - requires:: [[Ethereum Smart Contracts]]
   - enables:: [[Identity]]

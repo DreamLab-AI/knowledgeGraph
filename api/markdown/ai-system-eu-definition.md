@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - requires:: [[AI Risk Management]], [[Human Oversight]]
   - relatedTo:: [[AI Provider]], [[AI Lifecycle]], [[General Purpose AI Model]]
 
@@ -133,6 +133,6 @@
 		  **Full Application**: 2 August 2026 (most provisions)
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

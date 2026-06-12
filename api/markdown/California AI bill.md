@@ -640,11 +640,11 @@ public:: true
         "label": "Yoshua Bengio"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ],
@@ -1161,12 +1161,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -1176,7 +1176,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     }
@@ -1296,8 +1296,8 @@ public:: true
   - depends-on:: [[California Legislature]], [[Governor of California]], [[California Department of Justice]], [[California Office of Emergency Services]], [[NIST AI Risk Management Framework]], [[ISO IEC 42001]], [[CCPA]]
   - supports:: [[AI Safety]], [[Consumer Protection]], [[Open Source AI]], [[Startup Ecosystem]], [[Federal Preemption Debate]], [[Algorithmic Accountability]]
   - uses:: [[FLOP Threshold]], [[Revenue Threshold]], [[Catastrophic Risk Assessment]], [[Third-Party Safety Audit]], [[ISO IEC 42001]], [[NIST SP 800 Series]], [[C2PA Content Credentials]]
-  - contrasts-with:: [[EU AI Act]], [[Federal AI Policy]], [[NIST AI RMF]], [[Voluntary AI Commitments]], [[Self-Regulation]], [[Risk-Based Regulation]]
-  - related-to:: [[OpenAI]], [[Anthropic]], [[Google DeepMind]], [[Meta AI]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[Scott Wiener]], [[Gavin Newsom]], [[Regulatory Capture]], [[Federal Preemption]], [[California Effect]], [[Machine Unlearning]], [[Scaling Laws]]
+  - contrasts-with:: [[EU AI Act Regulatory Instrument]], [[Federal AI Policy]], [[NIST AI RMF]], [[Voluntary AI Commitments]], [[Self-Regulation]], [[Risk-Based Regulation]]
+  - related-to:: [[OpenAI Research Organisation]], [[Anthropic]], [[Google DeepMind]], [[Meta AI]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[Scott Wiener]], [[Gavin Newsom]], [[Regulatory Capture]], [[Federal Preemption]], [[California Effect]], [[Machine Unlearning]], [[Scaling Laws]]
   - standardized-by:: [[California Legislature]], [[California Attorney General]], [[NIST]], [[ISO IEC JTC 1 SC 42]], [[California Office of Emergency Services]]
 
 - ### Content
@@ -1722,12 +1722,12 @@ public:: true
   - ### Metadata
     - domain-correction:: none (domain was correctly set to `artificial-intelligence`)
     - primary-concepts:: [[SB 1047]], [[SB 53]], [[Frontier Models]], [[AI Safety]], [[AI Regulation]], [[Technology Policy]], [[Liability]], [[Federal Preemption]], [[California Effect]]
-    - secondary-concepts:: [[Algorithmic Accountability]], [[Whistleblower Protection]], [[Training Data Transparency]], [[Kill Switch]], [[Compute Threshold]], [[Open Source AI]], [[Regulatory Capture]], [[EU AI Act]], [[GDPR]], [[NIST AI Risk Management Framework]]
+    - secondary-concepts:: [[Algorithmic Accountability]], [[Whistleblower Protection]], [[Training Data Transparency]], [[Kill Switch]], [[Compute Threshold]], [[Open Source AI]], [[Regulatory Capture]], [[EU AI Act Regulatory Instrument]], [[GDPR]], [[NIST AI Risk Management Framework]]
     - geographic-scope:: California (primary), United States (federal preemption debate), global (California effect)
     - temporal-scope:: 2024–2026 (primary legislative arc); 2026–2030 (future directions)
     - regulatory-status-2026:: SB 53 in force (January 2026); AB 2013 in force (January 2026); AB 1008 in force (January 2025); SB 942/AB 853 effective August 2026; federal preemption challenge ongoing; no federal AI statute enacted
     - key-actors:: [[Scott Wiener]], [[Gavin Newsom]], [[Geoffrey Hinton]], [[Yoshua Bengio]], [[Dario Amodei]], [[Elon Musk]], [[Marc Andreessen]], [[Dan Hendrycks]], [[Yann LeCun]]
-    - key-organisations:: [[California Legislature]], [[California Attorney General]], [[California Office of Emergency Services]], [[OpenAI]], [[Anthropic]], [[Google]], [[Meta AI]], [[AI Alliance]], [[Center for AI Safety]], [[NIST]], [[ISO IEC JTC 1 SC 42]]
+    - key-organisations:: [[California Legislature]], [[California Attorney General]], [[California Office of Emergency Services]], [[OpenAI Research Organisation]], [[Anthropic]], [[Google AI Technology Corporation]], [[Meta AI]], [[AI Alliance]], [[Center for AI Safety]], [[NIST]], [[ISO IEC JTC 1 SC 42]]
 
 - ### Provenance
   - sources::

@@ -242,7 +242,7 @@ public:: true
         "label": "ImmersiveExperience"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "SpatialComputing"
       }
     ]

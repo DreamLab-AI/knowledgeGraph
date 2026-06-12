@@ -80,11 +80,11 @@
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -114,7 +114,7 @@
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -205,7 +205,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ethereum-foundation",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       },
       {
@@ -236,7 +236,7 @@
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {

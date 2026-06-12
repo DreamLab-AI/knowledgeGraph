@@ -11,21 +11,21 @@
   - relatedTo:: Update Cycle, Distributed Identity
 
 - ### Content
-  - I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Technical Director of the [[Octave Multi Model Laboratory]] which followed on from the [[National Industrial Centre for Virtual Environments]].
-  - This website contains cross linked, well annotated, deeply cited knowledge across GenAI, Telepresence, Large Scale Display Systems, Distributed Systems, LLMs, Immersive Collaborative Spaces (metaverse), Politics, Law, Social Change, [[Convergence]], [[Disruption]] , and all the other things I have [studied for decades](https://scholar.google.com/citations?user=Etx-Au4AAAAJ&hl=en).
+  - I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Technical Director of the [[Octave Immersive Research Facility]] which followed on from the [[NICVE Virtual Reality Research Centre]].
+  - This website contains cross linked, well annotated, deeply cited knowledge across GenAI, Telepresence, Large Scale Display Systems, Distributed Systems, LLMs, Immersive Collaborative Spaces (metaverse), Politics, Law, Social Change, [[Convergence]], [[Technology Disruption Dynamics]] , and all the other things I have [studied for decades](https://scholar.google.com/citations?user=Etx-Au4AAAAJ&hl=en).
   - It is increasing in size all the time. If you want upskilling on these things then I can give a physical or remote tour through the subset of knowledge that's right for -your- company or personal research needs. Afterwards, you will get a link to a page on my website which contains the knowledge graph suitable for you to extend and build upon the presentation.
-  - This graph is also the engine behind another new project we're starting; avatar based conversational agents backed by this knowledgebase, under [[Dreamlab]]
+  - This graph is also the engine behind another new project we're starting; avatar based conversational agents backed by this knowledgebase, under [[DreamLab Creative Technology Collective]]
   - # Suggested Order
   - I originally started this [as a book.](https://arxiv.org/abs/2207.09460), so there **is** a natural reading order of sorts. I am still working on making this more of a "flow" so if it looks wrong just skip about. Some of these high level pages are dozens of pages each, and there are hundreds of such pages, with only a few highlighted here.
   - There's possibly around 1000 book equivalent pages overall.
 		- [[Introduction to me]] explains my research at a very high level
-		- [[Semantic Web]]
-		- [[Spatial Web]]
+		- [[Semantic Web Linked Data Standard]]
+		- [[Semantic Spatial Web Layer]]
 		- [[Decentralised Web]]
-		- [[Politics, Law, Privacy]]
+		- [[AI Governance Law and Privacy]]
 		- [[Blockchain]]
-		- [[Ethereum]]
-		- [[Bitcoin]]
+		- [[Ethereum Smart Contract Platform]]
+		- [[Bitcoin Proof-of-Work Protocol]]
 		- [[Lightning and Similar L2]]
 		- [[BTC Layer 3]]
 		- [[RGB]]
@@ -40,17 +40,17 @@
 		- [[Digital Objects]]
 		- [[Metaverse and Telecollaboration]]
 		- [[Definitions and frameworks for Metaverse]]
-		- [[Spatial Computing]]
-		- [[Metaverse and Spatial Risks]]
-		- [[Overview of Machine Learning Techniques]]
+		- [[Spatial Computing Paradigm]]
+		- [[Spatial Embodiment Harm Taxonomy]]
+		- [[Machine Learning Techniques Survey]]
 		- [[Proprietary Large Language Models]]
 		- [[Proprietary Image Generation]]
 		- [[Proprietary Video]]
 		- [[Open Generative AI tools]]
-		- [[State of the art in AI]]
+		- [[AI Frontier Capability Survey]]
 		- [[Adoption of Convergent Technologies]]
-		- [[Soon-Next-Later (AI futurology)]]
-  - This is a very new page and will be subject to a [[Update Cycle]] soon
+		- [[AI Capability Temporal Horizon Framework]]
+  - This is a very new page and will be subject to a [[Knowledge Artefact Update Cycle]] soon
 
   - ## Preamble
   - ### Web things

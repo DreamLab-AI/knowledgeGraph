@@ -32,7 +32,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:social-media", "label": "social media"},
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"},
       {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
     ],
     "relatedTo": [
@@ -49,7 +49,7 @@ public:: true
 - ### Definition
   - Content Creation is the end-to-end process of producing [[Digital Content Creation]] artefacts—from ideation through publication—leveraging [[Creative AI]] and [[Creative Tools]] to serve audiences across digital platforms.
 - ### Relationships
-  - Content Creation is empowered by [[Generative AI]] platforms that can draft copy, generate images, and compose audio at scale, directly supporting the [[Creator Economy]]. Distribution relies heavily on [[social media]] channels that amplify content reach. The [[ETSI Domain: Creative Media]] standards domain provides governance frameworks for professional media production. Outputs increasingly include [[Synthetic Media]] that blurs the boundary between human-authored and machine-generated artefacts, raising questions of provenance. [[Knowledge Management]] systems help teams curate and repurpose existing content assets efficiently.
+  - Content Creation is empowered by [[Generative AI]] platforms that can draft copy, generate images, and compose audio at scale, directly supporting the [[Creator Economy]]. Distribution relies heavily on [[Social Media Platform Infrastructure]] channels that amplify content reach. The [[ETSI Domain: Creative Media]] standards domain provides governance frameworks for professional media production. Outputs increasingly include [[Synthetic Media]] that blurs the boundary between human-authored and machine-generated artefacts, raising questions of provenance. [[Knowledge Management]] systems help teams curate and repurpose existing content assets efficiently.
 - ### Content
   - Content creation encompasses every stage of a production pipeline: research, scripting, asset generation, editing, and scheduled publication. Traditionally these stages demanded specialist skills in copywriting, graphic design, video editing, and sound engineering. AI-assisted tools now allow smaller teams to cover the full pipeline, though strategic direction, brand judgement, and editorial oversight remain distinctively human contributions.
 

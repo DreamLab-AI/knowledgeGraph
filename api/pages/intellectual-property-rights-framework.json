@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:a19b5332b7c86308a2b8dcd6f11a02ff41d2317b613ed43d7f34dcb9ce9a6be7",
+  "title": "Intellectual Property Rights Framework",
+  "slug": "intellectual-property-rights-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:intellectual-property-rights-framework",
+  "domain": "infrastructure",
+  "definition": "A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

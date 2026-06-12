@@ -252,7 +252,7 @@
         "label": "Visual Language Navigation"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {

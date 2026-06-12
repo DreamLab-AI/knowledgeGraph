@@ -106,7 +106,7 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -204,11 +204,11 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-system",
+        "id": "urn:ngm:class:spatial-computing-paradigm-system",
         "label": "Spatial Computing System"
       },
       {
-        "id": "urn:ngm:class:vision-pro",
+        "id": "urn:ngm:class:apple-mixed-reality-headset",
         "label": "Vision Pro"
       }
     ],

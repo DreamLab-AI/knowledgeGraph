@@ -24,8 +24,8 @@
 		- Designed and operated multimillion pound mixed reality labs and visualisation systems at global research university.
 		- Technical authority on telepresence, distributed VR/AR, and novel display topologies.
 		- Machine Learning in Extended Reality:
-		- Currently research and development on [[Hyper personalisation]] for [[Knowhere]] with funding and industrial partners.
-		- Recently integrating AI/ML into virtual production, mobile headsets, and persistent metaverse environments under [[flossverse]] .
+		- Currently research and development on [[Hyper personalisation]] for [[KnoWhere Visitor Attention System]] with funding and industrial partners.
+		- Recently integrating AI/ML into virtual production, mobile headsets, and persistent metaverse environments under [[Open Source Social Immersive Space]] .
 		- Deployed chatbot product with thousands of users.
 		- Expertise across datasets, neural rendering, NLP, and generative media synthesis.
 		- Open and Decentralised Systems: Founder of open source metaverse framework.
@@ -46,9 +46,9 @@
 		- I pivot strategies swiftly to stay attuned to industry changes.
 		- This assertiveness is balanced through clear explanations, aligning the team with our shared vision and objectives, using stripped down OKR.
 		- I believe I have a compelling vision, and this will guide R&D direction within the business constraints.
-  - [[Knowhere]] is Hyper Personal for [[Location Based Experience]]. It tracks human emotion and attention, and presents different sound and vision to individuals in a semi-public space.
+  - [[KnoWhere Visitor Attention System]] is Hyper Personal for [[Venue-Tethered Immersive Experience]]. It tracks human emotion and attention, and presents different sound and vision to individuals in a semi-public space.
 		- We already see AI assisting in creating art, music, and literature, but it will increasingly be capable of original creative thought, potentially leading to a renaissance of human/AI-generated creativity that will reshape our cultural landscape. Another exciting prospect is the development of Diverse AI. Just as human diversity is celebrated, AI will be designed with diverse "personalities" and ways of thinking, leading to a richer and more nuanced interaction between humans and AI. This may especially be felt in neurodiverse communities for instance.
-		- We will very likely soon see the beginnings a bifurcation between highly moderated (ethics & safeguarding based AI) vs slightly less capable but more disruptive open solutions. There will be a strong imperative to ensure the responsible use of AI as its influence grows, and this will be patchy. It will require a focus on developing robust ethical frameworks for AI use, and creating ambient educational environments where learning is responsibly facilitated by AI. Many will work around this, and it remains to be seen what effect this will have. It is useful to prepare for divergent outcomes in developed and highly networked nations vs nations which use slower less capable inferencing on local models like [[Gemini]] Nano and similar.
+		- We will very likely soon see the beginnings a bifurcation between highly moderated (ethics & safeguarding based AI) vs slightly less capable but more disruptive open solutions. There will be a strong imperative to ensure the responsible use of AI as its influence grows, and this will be patchy. It will require a focus on developing robust ethical frameworks for AI use, and creating ambient educational environments where learning is responsibly facilitated by AI. Many will work around this, and it remains to be seen what effect this will have. It is useful to prepare for divergent outcomes in developed and highly networked nations vs nations which use slower less capable inferencing on local models like [[Gemini Multimodal Language Model]] Nano and similar.
 		- In this phase, AI will become more integrated into our biological lives and our everyday environments.  The best can be extracted from both approaches by taking control of more flexible AI, defining risks and guard rails locally, and internalising the knowledge for the task at hand. It is more expensive, but the only path to differentiation. This is a very strong fit for contained destinations.
 		- During and after this we will see the emergence of fully autonomous agent, where AI will become so advanced and reliable that it can operate without human supervision in various sectors, leading to unprecedented levels of productivity and efficiency. Where companies, institutions, governments, and individuals have taken a choice to develop and foster their own AI capabilities, with their own rules, this boundary layer to the wider agent world will have to be very carefully designed.
 		- Another exciting aspect of this phase is the intersection of AI and Mental Health. AI companions will be capable of understanding human emotions and mental states, providing psychological support and therapeutic interventions. They could assist in managing mental health conditions and improving overall well-being. These personal mental health agents are a critical nexus for data privacy, and again, the boundary layer must be exquisitely managed.
@@ -136,7 +136,7 @@
 		- Conversational ideation within shared environments, around 3D objects and music co-creation
 		- Global, scalable, open source client side verified data and end point assurance (think NFT tech but for ideas not cat pictures)
 		- Scaffolding of human creativity and shared storytelling across a diversity of immersive spaces.
-  - My focus: is leveraging technology to reconnect people, value ([[Stable Coins]] and [[Bitcoin]]), and ideas, across geographic, and organisational barriers ([[Metaverse and Telecollaboration]]).
+  - My focus: is leveraging technology to reconnect people, value ([[Stable Coins]] and [[Bitcoin Proof-of-Work Protocol]]), and ideas, across geographic, and organisational barriers ([[Metaverse and Telecollaboration]]).
   - This is significantly accelerated by AI, but there are inequalities of global access.
 		- Focusing on the intersection of digital society with [[Proprietary Large Language Models]] in real-world applications (B2B and B2C spatial [[Mixed Reality]]).
 		- Supporting  equity of access to AI globally, to mitigate consolidation of power and opportunity.
@@ -147,7 +147,7 @@
   - # Publications:
 		- [‪John J O'Hare‬
 		- ‪Google Scholar‬](https://scholar.google.com/citations?user=Etx-Au4AAAAJ&hl=en)
-		- Technical director of multimillion-dollar mixed reality laboratory at the [[National Industrial Centre for Virtual Environments]]
+		- Technical director of multimillion-dollar mixed reality laboratory at the [[NICVE Virtual Reality Research Centre]]
 		- Recognised as a technical authority on telepresence, distributed VR/AR, and novel display topologies. I designed multiple cutting edge systems for
 		- Passionate about leveraging technology to reconnect people and ideas across geographic and organisational barriers.
 		- Visionary researcher in extended reality, spatial computing, and remote collaboration.

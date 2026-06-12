@@ -326,7 +326,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[cypherpunk]]",
+      "raw": "[[Cryptographic Privacy Activist]]",
       "resolved": "urn:visionflow:owl:class:cypherpunk",
       "kind": "ResolvedLink"
     },
@@ -351,7 +351,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Equity]]",
+      "raw": "[[Digital Technology Access Equity]]",
       "resolved": "urn:visionflow:owl:class:equity",
       "kind": "ResolvedLink"
     },
@@ -391,7 +391,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Politics, Law, Privacy]]",
+      "raw": "[[AI Governance Law and Privacy]]",
       "resolved": "urn:visionflow:owl:class:politics-law-privacy",
       "kind": "ResolvedLink"
     },
@@ -401,22 +401,22 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Social contract and jobs]]",
+      "raw": "[[Employment Social Contract Under Automation]]",
       "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Web]]",
+      "raw": "[[Semantic Spatial Web Layer]]",
       "resolved": "urn:visionflow:owl:class:spatial-web",
       "kind": "ResolvedLink"
     },
@@ -426,7 +426,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     },
@@ -545,7 +545,7 @@ public:: true
   - ### Privacy and Surveillance
 		- The use of AI in areas such as facial recognition and data analysis raises concerns about privacy and the potential for increased surveillance.
   - # A Quick History
-  - The 1980s saw the emergence of the [[cypherpunk]] activist movement, as a reaction to the emerging [[Digital Society Surveillance]] state,[[burnham1983rise; @chaum1985security]] a topic which is expanded in [[Digital Society Surveillance]] and [[Global Inequality]] . These early computer scientists in the USA saw the intersectionality between information, computation, economics, and personal freedom.[[lavoie1990prefatory]] Online discussion in the early nineties foresaw the emergence of trans-national digital markets, what would become the WWW.[[salinCosts; @cypherPunkMailList]] The issues of privacy and the exchange of digital value (digital /ecash) were of foremost importance within these discussions and while privacy was within reach thanks to [“public/private keypairs”](https://www.openpgp.org/about/history/), ecash proved to be amore difficult problem.
+  - The 1980s saw the emergence of the [[Cryptographic Privacy Activist]] activist movement, as a reaction to the emerging [[Digital Society Surveillance]] state,[[burnham1983rise; @chaum1985security]] a topic which is expanded in [[Digital Society Surveillance]] and [[Global Inequality]] . These early computer scientists in the USA saw the intersectionality between information, computation, economics, and personal freedom.[[lavoie1990prefatory]] Online discussion in the early nineties foresaw the emergence of trans-national digital markets, what would become the WWW.[[salinCosts; @cypherPunkMailList]] The issues of privacy and the exchange of digital value (digital /ecash) were of foremost importance within these discussions and while privacy was within reach thanks to [“public/private keypairs”](https://www.openpgp.org/about/history/), ecash proved to be amore difficult problem.
   - Adam Back’s 1997 ‘hashcash’[[back2002hashcash]] paved the way for later work by implementing the concept of what would become ‘proof of work.’[[dwork1992pricing; @jakobsson1999proofs]] This was built upon by Dai,[[dai1998b]] Szabo,[[szabo1997formalizing]]Finney,[[callas1998openpgp]] and Nakamoto amongst others. In all it took16 years of collaboration on the mailing lists (and dozens of failed attempts) to attack the problem of trust-minimised, distributed, digital cash. The culmination of these attempts was Bitcoin.[[Nakamoto2008]]
   - This is illustrated by Dan Held.
 		- ![image](./assets/10392f6889e4be99247a0cf832f5628e3b017f5e.jpg){:width 800}
@@ -564,7 +564,7 @@ public:: true
 		- ### Unblinding the Signature
 			- Use the previously generated secret key to unblind the mint's signature. This process converts the blinded signature into a form usable for transactions while maintaining the integrity of the privacy guarantees.
 		- #### User Privacy
-		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[Politics, Law, Privacy]] by avoiding centralized data collection and tracking.
+		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[AI Governance Law and Privacy]] by avoiding centralized data collection and tracking.
 		- [[Hyper personalisation]] and Dynamic Creative Optimisation (DCO)
 		- The system delivers content optimised for the user's language, environment, age, and other demographic factors using AI-powered multi-modal product representations.
 		- DCO techniques dynamically adapt and optimise creative elements in real-time based on user interactions and preferences.
@@ -627,7 +627,7 @@ public:: true
 	  }
 	  ```
 	  ---
-  - # Extended Reality / Mixed Reality / [[Spatial Computing]]
+  - # Extended Reality / Mixed Reality / [[Spatial Computing Paradigm]]
   - XR (VR/AR/MR) will eventually become the primary way we interact with digital information, as it aligns with how our brains naturally process information in 3D space. The merging of the physical and digital worlds is inevitable
   - The metaverse, while currently overhyped, ultimately represents the future of an interconnected network of virtual worlds. As XR technology advances, we will increasingly operate in virtual worlds as naturally as we do in the physical world today
   - The early metaverse will start off as walled gardens controlled by large tech companies. However, it's plausible that more open standards, interoperability, and decentralization will emerge over time, similar to the evolution of the early Internet
@@ -730,7 +730,7 @@ public:: true
 		- Through class action cy pres settlements, Big Tech firms direct funds to DRCSOs that purport to represent class interests, but may actually advance the firms' preferred policy narratives.
 		- Funding from Big Tech raises questions about potential conflicts of interest for DRCSOs and whether they truly represent the public interest as opposed to aligning with industry agendas.
 		- The authors argue Big Tech philanthropy allows economic power to translate into political and cultural capital, enabling the firms to continue profiting from problematic data practices while avoiding meaningful regulation.
-		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Update Cycle]]
+		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Knowledge Artefact Update Cycle]]
 			- The adoption of printing by Europeans in the 15th century led to concerns around access to printed material. The right to read and the right to publish were central subjects in the struggle for freedom of thought for most of the last half millennium. The basic concern was forthe right to read in private and to think, speak, and act based on a free and uncensored will. The primary antagonist for freedom of thought at the beginning of this struggle was the universal Catholic Church, an institution aimed at controlling thought in the European world through weekly surveillance of individuals, censorship of all reading material,and the ability to predict and punish unorthodox thought. In early modern Europe, the tools available for thought control were limited, but they were effective. For hundreds of years, the struggle centred around the book as a mass-manufactured article in Western culture, and whether individuals could print, possess, traffic, read, or teach from books without the permission or control of an entity empowered to punish thought. By the end of the 17th century, censorship of written material in Europe began to break down in waves throughout the European world,and the book became an article of subversive commerce, undermining the control of thought.
 		- Currently, a new phase in human history is beginning as we are building a single extraneous digital nervous system, that will connect every human mind. Within two generations, every single human being will be connected to this network, in which all thoughts, plans, dreams, and actions will flow as nervous impulses. The fate of freedom of thought and human freedom as a whole will depend upon the organization of thisnetwork. Our current generation is the last in which human brains will be formed without contact with this network, and from now on, every human brain will be formed from early life in direct connection to the network, with input from generative AI/ML systems. This possibly results in humanity becoming a super organism of a sort, where each of us is buta neuron in the brain. Unfortunately, this generation has been raised to be consumers of media, which is now consuming us.
 		- Anonymous reading is being determined against. Efforts discussed throughout this graph to ensure privacy, from Zimmerman and the cypherpunks onward, have been met with resistance from government efforts to monitor and control information flow. The outcome of the organization of this network, and the freedom it allows, is currently being decided by this generation.
@@ -1021,7 +1021,7 @@ public:: true
 		  background-color:: red
 		- Public discourse on AI's implications on privacy, employment, and societal norms.
 		  background-color:: green
-  - ## [[Politics, Law, Privacy]]
+  - ## [[AI Governance Law and Privacy]]
 		- 🟢 Half the world goes to the polls this year. More than 50 countries, 4B people.
 		- [How OpenAI is approaching 2024 worldwide elections](https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections)
 		- It's not just deepfakes, but adverts, and influencer material on social media. 100x the number with 1/10th the engagement is still a 10x positive for free.
@@ -1034,12 +1034,12 @@ public:: true
 		- [Kyle Taylor: books, biography](https://www.amazon.co.uk/stores/Kyle-Taylor/author/B09G759JR3?)
 		- He talks about something I have similarly been saying:
 			- In the event of a complete breakdown of trust in digital information channels people will simply choose only to trust their priors.
-			- This is a fracturing of the information space, effectively bubbles of one. [[Death of the Internet]] [[Social contract and jobs]]
+			- This is a fracturing of the information space, effectively bubbles of one. [[Death of the Internet]] [[Employment Social Contract Under Automation]]
   - ### Web things
-		- [[Semantic Web]]
-		- [[Spatial Web]]
+		- [[Semantic Web Linked Data Standard]]
+		- [[Semantic Spatial Web Layer]]
 		- [[Decentralised Web]]
-		- [[Politics, Law, Privacy]]
+		- [[AI Governance Law and Privacy]]
   - ## Key Features
 		- VisionFlow's features emphasize real-time interaction, privacy, and extensibility.
 		- ## Privacy and Data Protection Concerns
@@ -1104,7 +1104,7 @@ public:: true
   - ### Privacy and Surveillance
 		- The use of AI in areas such as facial recognition and data analysis raises concerns about privacy and the potential for increased surveillance.
   - # A Quick History
-  - The 1980s saw the emergence of the [[cypherpunk]] activist movement, as a reaction to the emerging [[Digital Society Surveillance]] state,[[burnham1983rise; @chaum1985security]] a topic which is expanded in [[Digital Society Surveillance]] and [[Global Inequality]] . These early computer scientists in the USA saw the intersectionality between information, computation, economics, and personal freedom.[[lavoie1990prefatory]] Online discussion in the early nineties foresaw the emergence of trans-national digital markets, what would become the WWW.[[salinCosts; @cypherPunkMailList]] The issues of privacy and the exchange of digital value (digital /ecash) were of foremost importance within these discussions and while privacy was within reach thanks to [“public/private keypairs”](https://www.openpgp.org/about/history/), ecash proved to be amore difficult problem.
+  - The 1980s saw the emergence of the [[Cryptographic Privacy Activist]] activist movement, as a reaction to the emerging [[Digital Society Surveillance]] state,[[burnham1983rise; @chaum1985security]] a topic which is expanded in [[Digital Society Surveillance]] and [[Global Inequality]] . These early computer scientists in the USA saw the intersectionality between information, computation, economics, and personal freedom.[[lavoie1990prefatory]] Online discussion in the early nineties foresaw the emergence of trans-national digital markets, what would become the WWW.[[salinCosts; @cypherPunkMailList]] The issues of privacy and the exchange of digital value (digital /ecash) were of foremost importance within these discussions and while privacy was within reach thanks to [“public/private keypairs”](https://www.openpgp.org/about/history/), ecash proved to be amore difficult problem.
   - Adam Back’s 1997 ‘hashcash’[[back2002hashcash]] paved the way for later work by implementing the concept of what would become ‘proof of work.’[[dwork1992pricing; @jakobsson1999proofs]] This was built upon by Dai,[[dai1998b]] Szabo,[[szabo1997formalizing]]Finney,[[callas1998openpgp]] and Nakamoto amongst others. In all it took16 years of collaboration on the mailing lists (and dozens of failed attempts) to attack the problem of trust-minimised, distributed, digital cash. The culmination of these attempts was Bitcoin.[[Nakamoto2008]]
   - This is illustrated by Dan Held.
 		- ![image](./assets/10392f6889e4be99247a0cf832f5628e3b017f5e.jpg){:width 800}
@@ -1123,7 +1123,7 @@ public:: true
 		- ### Unblinding the Signature
 			- Use the previously generated secret key to unblind the mint's signature. This process converts the blinded signature into a form usable for transactions while maintaining the integrity of the privacy guarantees.
 		- #### User Privacy
-		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[Politics, Law, Privacy]] by avoiding centralized data collection and tracking.
+		- The user's knowledge base is kept local to their device, using hashes to retrieve personalised content, which enhances [[AI Governance Law and Privacy]] by avoiding centralized data collection and tracking.
 		- [[Hyper personalisation]] and Dynamic Creative Optimisation (DCO)
 		- The system delivers content optimised for the user's language, environment, age, and other demographic factors using AI-powered multi-modal product representations.
 		- DCO techniques dynamically adapt and optimise creative elements in real-time based on user interactions and preferences.
@@ -1186,7 +1186,7 @@ public:: true
 	  }
 	  ```
 	  ---
-  - # Extended Reality / Mixed Reality / [[Spatial Computing]]
+  - # Extended Reality / Mixed Reality / [[Spatial Computing Paradigm]]
   - XR (VR/AR/MR) will eventually become the primary way we interact with digital information, as it aligns with how our brains naturally process information in 3D space. The merging of the physical and digital worlds is inevitable
   - The metaverse, while currently overhyped, ultimately represents the future of an interconnected network of virtual worlds. As XR technology advances, we will increasingly operate in virtual worlds as naturally as we do in the physical world today
   - The early metaverse will start off as walled gardens controlled by large tech companies. However, it's plausible that more open standards, interoperability, and decentralization will emerge over time, similar to the evolution of the early Internet
@@ -1289,7 +1289,7 @@ public:: true
 		- Through class action cy pres settlements, Big Tech firms direct funds to DRCSOs that purport to represent class interests, but may actually advance the firms' preferred policy narratives.
 		- Funding from Big Tech raises questions about potential conflicts of interest for DRCSOs and whether they truly represent the public interest as opposed to aligning with industry agendas.
 		- The authors argue Big Tech philanthropy allows economic power to translate into political and cultural capital, enabling the firms to continue profiting from problematic data practices while avoiding meaningful regulation.
-		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Update Cycle]]
+		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Knowledge Artefact Update Cycle]]
 			- The adoption of printing by Europeans in the 15th century led to concerns around access to printed material. The right to read and the right to publish were central subjects in the struggle for freedom of thought for most of the last half millennium. The basic concern was forthe right to read in private and to think, speak, and act based on a free and uncensored will. The primary antagonist for freedom of thought at the beginning of this struggle was the universal Catholic Church, an institution aimed at controlling thought in the European world through weekly surveillance of individuals, censorship of all reading material,and the ability to predict and punish unorthodox thought. In early modern Europe, the tools available for thought control were limited, but they were effective. For hundreds of years, the struggle centred around the book as a mass-manufactured article in Western culture, and whether individuals could print, possess, traffic, read, or teach from books without the permission or control of an entity empowered to punish thought. By the end of the 17th century, censorship of written material in Europe began to break down in waves throughout the European world,and the book became an article of subversive commerce, undermining the control of thought.
 		- Currently, a new phase in human history is beginning as we are building a single extraneous digital nervous system, that will connect every human mind. Within two generations, every single human being will be connected to this network, in which all thoughts, plans, dreams, and actions will flow as nervous impulses. The fate of freedom of thought and human freedom as a whole will depend upon the organization of thisnetwork. Our current generation is the last in which human brains will be formed without contact with this network, and from now on, every human brain will be formed from early life in direct connection to the network, with input from generative AI/ML systems. This possibly results in humanity becoming a super organism of a sort, where each of us is buta neuron in the brain. Unfortunately, this generation has been raised to be consumers of media, which is now consuming us.
 		- Anonymous reading is being determined against. Efforts discussed throughout this graph to ensure privacy, from Zimmerman and the cypherpunks onward, have been met with resistance from government efforts to monitor and control information flow. The outcome of the organization of this network, and the freedom it allows, is currently being decided by this generation.
@@ -1578,7 +1578,7 @@ public:: true
   - ## Societal and Ethical Considerations
 		- Addressing AI-related societal and ethical challenges, focusing on transparency, fairness, and accountability.
 		- Public discourse on AI's implications on privacy, employment, and societal norms.
-  - ## [[Politics, Law, Privacy]]
+  - ## [[AI Governance Law and Privacy]]
 		- 🟢 Half the world goes to the polls this year. More than 50 countries, 4B people.
 		- [How OpenAI is approaching 2024 worldwide elections](https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections)
 		- It's not just deepfakes, but adverts, and influencer material on social media. 100x the number with 1/10th the engagement is still a 10x positive for free.
@@ -1591,12 +1591,12 @@ public:: true
 		- [Kyle Taylor: books, biography](https://www.amazon.co.uk/stores/Kyle-Taylor/author/B09G759JR3?)
 		- He talks about something I have similarly been saying:
 			- In the event of a complete breakdown of trust in digital information channels people will simply choose only to trust their priors.
-			- This is a fracturing of the information space, effectively bubbles of one. [[Death of the Internet]] [[Social contract and jobs]]
+			- This is a fracturing of the information space, effectively bubbles of one. [[Death of the Internet]] [[Employment Social Contract Under Automation]]
   - ### Web things
-		- [[Semantic Web]]
-		- [[Spatial Web]]
+		- [[Semantic Web Linked Data Standard]]
+		- [[Semantic Spatial Web Layer]]
 		- [[Decentralised Web]]
-		- [[Politics, Law, Privacy]]
+		- [[AI Governance Law and Privacy]]
   - ## Key Features
 		- VisionFlow's features emphasize real-time interaction, privacy, and extensibility.
   - ### Privacy Risks
@@ -1742,7 +1742,7 @@ public:: true
 		- Through class action cy pres settlements, Big Tech firms direct funds to DRCSOs that purport to represent class interests, but may actually advance the firms' preferred policy narratives.
 		- Funding from Big Tech raises questions about potential conflicts of interest for DRCSOs and whether they truly represent the public interest as opposed to aligning with industry agendas.
 		- The authors argue Big Tech philanthropy allows economic power to translate into political and cultural capital, enabling the firms to continue profiting from problematic data practices while avoiding meaningful regulation.
-		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Update Cycle]]
+		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Knowledge Artefact Update Cycle]]
 			- The adoption of printing by Europeans in the 15th century led to concerns around access to printed material. The right to read and the right to publish were central subjects in the struggle for freedom of thought for most of the last half millennium. The basic concern was forthe right to read in private and to think, speak, and act based on a free and uncensored will. The primary antagonist for freedom of thought at the beginning of this struggle was the universal Catholic Church, an institution aimed at controlling thought in the European world through weekly surveillance of individuals, censorship of all reading material,and the ability to predict and punish unorthodox thought. In early modern Europe, the tools available for thought control were limited, but they were effective. For hundreds of years, the struggle centred around the book as a mass-manufactured article in Western culture, and whether individuals could print, possess, traffic, read, or teach from books without the permission or control of an entity empowered to punish thought. By the end of the 17th century, censorship of written material in Europe began to break down in waves throughout the European world,and the book became an article of subversive commerce, undermining the control of thought.
 		- Currently, a new phase in human history is beginning as we are building a single extraneous digital nervous system, that will connect every human mind. Within two generations, every single human being will be connected to this network, in which all thoughts, plans, dreams, and actions will flow as nervous impulses. The fate of freedom of thought and human freedom as a whole will depend upon the organization of thisnetwork. Our current generation is the last in which human brains will be formed without contact with this network, and from now on, every human brain will be formed from early life in direct connection to the network, with input from generative AI/ML systems. This possibly results in humanity becoming a super organism of a sort, where each of us is buta neuron in the brain. Unfortunately, this generation has been raised to be consumers of media, which is now consuming us.
 		- Anonymous reading is being determined against. Efforts discussed throughout this graph to ensure privacy, from Zimmerman and the cypherpunks onward, have been met with resistance from government efforts to monitor and control information flow. The outcome of the organization of this network, and the freedom it allows, is currently being decided by this generation.
@@ -1858,31 +1858,31 @@ public:: true
 			- The evolving economy offers a chance to address gender disparities by valuing skills traditionally considered feminine.
 			- This shift invites a broader vision for human potential, advocating for a workforce that values emotional intelligence and the heart alongside the intellect.
 			- People who can act within the context of a "bubble of one" with their AI agents will likely prosper, even within the context of employment contracts in larger corporate structures.
-  - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
-  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
-  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
-  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
+  - Microsoft working trends, technical debt through loss to communication systems [[Employment Social Contract Under Automation]]
+  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Employment Social Contract Under Automation]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Employment Social Contract Under Automation]]
+  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Employment Social Contract Under Automation]] [[Digital Technology Access Equity]]
+  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Employment Social Contract Under Automation]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
 		- [The Impact of AI on Job Roles, Workforce, and Employment: What You Need to Know (innopharmaeducation.com)](https://www.innopharmaeducation.com/our-blog/the-impact-of-ai-on-job-roles-workforce-and-employment-what-you-need-to-know)
 		- [The Impact of Artificial Intelligence on Jobs: A Dual Perspective - SSLPost](https://www.sslpost.com/the-impact-of-artificial-intelligence-on-jobs-a-dual-perspective/)
 		- [AI Jobs Barometer | PwC](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html)
   - In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over
-	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Social contract and jobs]]
+	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Employment Social Contract Under Automation]]
 		- That's according to Amazon Web Services' CEO, Matt Garman, who shared his thoughts on the topic during an internal fireside chat held in June, according to a recording of the meeting obtained by Business Insider.
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
 		- "Coding is just kind of like the language that we talk to computers. It's not necessarily the skill in and of itself," the executive said. "The skill in and of itself is like, how do I innovate? How do I go build something that's interesting for my end users to use?"
 		- This means the job of a software developer will change, Garman said.
-  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Social contract and jobs]]
-  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Social contract and jobs]]
-  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Social contract and jobs]]
-  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Social contract and jobs]] [[Politics, Law, Privacy]]
+  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Employment Social Contract Under Automation]]
+  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Employment Social Contract Under Automation]]
+  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Employment Social Contract Under Automation]]
+  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Employment Social Contract Under Automation]] [[AI Governance Law and Privacy]]
   - # Soon, Next, and Later 
 			- Understanding AI and digital technologies for information and service access.
 			- Ensuring privacy and mitigating biases in AI algorithms.
 			- 2-5 years of integration with business processes.
 			- Models start to distribute across cloud and devices to find their correct scale **fit**.
-  - ## [[Politics, Law, Privacy]]
+  - ## [[AI Governance Law and Privacy]]
 		- 🟢 Half the world goes to the polls this year. More than 50 countries, 4B people.
 		- [How OpenAI is approaching 2024 worldwide elections](https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections)
 		- It's not just deepfakes, but adverts, and influencer material on social media. 100x the number with 1/10th the engagement is still a 10x positive for free.
@@ -1901,7 +1901,7 @@ public:: true
 			- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
 			- These companies are **as big** as the UK. Beware tech bros bearing gifts?
   - ### Web things
-		- [[Politics, Law, Privacy]]
+		- [[AI Governance Law and Privacy]]
   - ## Key Features
 		- VisionFlow's features emphasize real-time interaction, privacy, and extensibility.
   - ### Privacy Risks
@@ -1983,13 +1983,13 @@ public:: true
 		- [The Impact of Artificial Intelligence on Jobs: A Dual Perspective - SSLPost](https://www.sslpost.com/the-impact-of-artificial-intelligence-on-jobs-a-dual-perspective/)
 		- [AI Jobs Barometer | PwC](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html)
   - In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over
-	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Social contract and jobs]]
+	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Employment Social Contract Under Automation]]
 		- That's according to Amazon Web Services' CEO, Matt Garman, who shared his thoughts on the topic during an internal fireside chat held in June, according to a recording of the meeting obtained by Business Insider.
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
 		- "Coding is just kind of like the language that we talk to computers. It's not necessarily the skill in and of itself," the executive said. "The skill in and of itself is like, how do I innovate? How do I go build something that's interesting for my end users to use?"
 		- This means the job of a software developer will change, Garman said.
-  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Social contract and jobs]]
-  - ## [[Politics, Law, Privacy]]
+  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Employment Social Contract Under Automation]]
+  - ## [[AI Governance Law and Privacy]]
 		- 🟢 Half the world goes to the polls this year. More than 50 countries, 4B people.
 		- [How OpenAI is approaching 2024 worldwide elections](https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections)
 		- It's not just deepfakes, but adverts, and influencer material on social media. 100x the number with 1/10th the engagement is still a 10x positive for free.
@@ -2036,7 +2036,7 @@ public:: true
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
 		- "Coding is just kind of like the language that we talk to computers. It's not necessarily the skill in and of itself," the executive said. "The skill in and of itself is like, how do I innovate? How do I go build something that's interesting for my end users to use?"
 		- This means the job of a software developer will change, Garman said.
-  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Social contract and jobs]]
+  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Employment Social Contract Under Automation]]
   - ## Key Features
 		- VisionFlow's features emphasize real-time interaction, privacy, and extensibility.
 				- **Nostr Authentication**: Decentralized identity without centralized providers; users control their keys.
@@ -2107,7 +2107,7 @@ public:: true
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
   - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
-  - ## [[Politics, Law, Privacy]]
+  - ## [[AI Governance Law and Privacy]]
   - EU AI act is it'll be near impossible now for small disruptive companies to train foundation models because of the administration overhead. Win for America.
   - Governments can now use real-time biometric surveillance in public spaces in prevention of genuine, present, or foreseeable threats, and searches for people suspected of the most serious crimes, so basically everything.
 		- "Real-time’ remote biometric identification (RBI) in publicly accessible spaces is prohibited for law enforcement, except when: searching for missing persons, abduction victims, and people who have been human trafficked or sexually exploited; preventing substantial and imminent threat to life, or foreseeable terrorist attack; or identifying suspects in serious crimes (e.g., murder, rape, armed robbery, narcotic and illegal weapons trafficking, organised crime, and environmental crime, etc.)."
@@ -2150,7 +2150,7 @@ public:: true
   - **Privacy and Civil Liberties Issues**: The extensive gathering and utilisation of personal data by governmental entities elicit significant privacy alarms. Despite assurances of anonymisation, methods often exist to re-identify individuals, raising consent and privacy violation concerns.
   - **Data Sharing Agreements
 		- Five Eyes Alliance**: International agreements like the Five Eyes (comprising Australia, Canada, New Zealand, the United Kingdom, and the United States) facilitate extensive data sharing for intelligence purposes. This raises the stakes for data privacy, with personal data potentially shared across borders without explicit consent from individuals.
-  - ## Tik Tok tick tock [[Death of the Internet]] [[Digital Society Surveillance]] [[Politics, Law, Privacy]]
+  - ## Tik Tok tick tock [[Death of the Internet]] [[Digital Society Surveillance]] [[AI Governance Law and Privacy]]
   - [TikTok is China's next big weapon in the battle for personal data (axios.com)](https://www.axios.com/2019/07/20/tiktok-china-online-privacy-personal-data)
   - [TikTok: Beneath Its Fun Exterior Lies A Sinister Purpose (forbes.com)](https://www.forbes.com/sites/enriquedans/2020/06/28/tiktok-beneath-its-fun-exterior-lies-a-sinisterpurpose/)
   - [forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/](https://www.forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/)
@@ -2184,7 +2184,7 @@ public:: true
   - As AI increasingly bakes in these data points into ever larger scraped datasets it will be impossible to unwind one's personal history.
   - This too will increasingly be done by AI. We are trending toward AI fighting with AI over your data and the minutiae of your history in ever changing local and global political environments
   - People are concerned about this. There are already apps to semi automate data deletion online. The collapse in [[Trust and Safety]] since the 1970s is clearly documented across governments, media, and big business, but curiously people are trusting both their online social in groups, and machines that act human "enough" far more.  Recently, for unknown reasons they have also started to [[Trust and Safety]] "business" more. logseq://graph/ResearchPapers?block-id=656c9724-f862-4f4e-9a88-75b8b3f1b4e7
-  - ## [[Politics, Law, Privacy]]
+  - ## [[AI Governance Law and Privacy]]
   - EU AI act is it'll be near impossible now for small disruptive companies to train foundation models because of the administration overhead. Win for America.
   - Governments can now use real-time biometric surveillance in public spaces in prevention of genuine, present, or foreseeable threats, and searches for people suspected of the most serious crimes, so basically everything.
 		- "Real-time’ remote biometric identification (RBI) in publicly accessible spaces is prohibited for law enforcement, except when: searching for missing persons, abduction victims, and people who have been human trafficked or sexually exploited; preventing substantial and imminent threat to life, or foreseeable terrorist attack; or identifying suspects in serious crimes (e.g., murder, rape, armed robbery, narcotic and illegal weapons trafficking, organised crime, and environmental crime, etc.)."
@@ -2227,7 +2227,7 @@ public:: true
   - **Privacy and Civil Liberties Issues**: The extensive gathering and utilisation of personal data by governmental entities elicit significant privacy alarms. Despite assurances of anonymisation, methods often exist to re-identify individuals, raising consent and privacy violation concerns.
   - **Data Sharing Agreements
 		- Five Eyes Alliance**: International agreements like the Five Eyes (comprising Australia, Canada, New Zealand, the United Kingdom, and the United States) facilitate extensive data sharing for intelligence purposes. This raises the stakes for data privacy, with personal data potentially shared across borders without explicit consent from individuals.
-  - ## Tik Tok tick tock [[Death of the Internet]] [[Digital Society Surveillance]] [[Politics, Law, Privacy]]
+  - ## Tik Tok tick tock [[Death of the Internet]] [[Digital Society Surveillance]] [[AI Governance Law and Privacy]]
   - [TikTok is China's next big weapon in the battle for personal data (axios.com)](https://www.axios.com/2019/07/20/tiktok-china-online-privacy-personal-data)
   - [TikTok: Beneath Its Fun Exterior Lies A Sinister Purpose (forbes.com)](https://www.forbes.com/sites/enriquedans/2020/06/28/tiktok-beneath-its-fun-exterior-lies-a-sinisterpurpose/)
   - [forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/](https://www.forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/)

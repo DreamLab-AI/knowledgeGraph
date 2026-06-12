@@ -15,13 +15,13 @@
   - is-subclass-of:: [[Probabilistic Model]], [[Bayesian Inference]], [[Numerical Methods]], [[Stochastic Processes]], [[Statistical Computing]]
   - has-part:: [[Markov Chain Monte Carlo]], [[Importance Sampling]], [[Rejection Sampling]], [[Sequential Monte Carlo]], [[Diffusion Models]], [[Autoregressive Sampling]], [[Quasi-Monte Carlo]], [[Nested Sampling]]
   - requires:: [[Probability Distribution]], [[Random Number Generator]], [[Target Density]], [[Proposal Distribution]], [[Convergence Criterion]]
-  - enables:: [[Bayesian Inference]], [[Stable Diffusion]], [[Large Language Models]], [[Uncertainty Quantification]], [[Particle Filter]], [[Foundation Models]]
+  - enables:: [[Bayesian Inference]], [[Stable Diffusion Image Model]], [[Large Language Models]], [[Uncertainty Quantification]], [[Particle Filter]], [[Large-Scale Pretrained Foundation Model]]
   - implements:: [[Metropolis-Hastings Algorithm]], [[Gibbs Sampling]], [[Hamiltonian Monte Carlo]], [[NUTS]], [[DDIM]], [[DPM-Solver]], [[Nucleus Sampling]], [[Speculative Decoding]]
   - depends-on:: [[Information Theory]], [[Measure Theory]], [[Stochastic Processes]], [[Numerical Methods]], [[Ergodic Theory]]
-  - supports:: [[Large Language Models]], [[Diffusion Models]], [[Variational Inference]], [[Particle Filter]], [[ComfyUI]], [[ComfyUI Workflows]]
+  - supports:: [[Large Language Models]], [[Diffusion Models]], [[Variational Inference]], [[Particle Filter]], [[Node-Based Diffusion Pipeline Interface]], [[ComfyUI Workflows]]
   - uses:: [[Markov Chain Monte Carlo]], [[Gradient Information]], [[Entropy]], [[Kullback-Leibler Divergence]], [[Score Function]], [[Noise Schedule]]
   - contrasts-with:: [[Variational Inference]], [[Deterministic Integration]], [[Grid Approximation]], [[Laplace Approximation]]
-  - related-to:: [[Monte Carlo Methods]], [[Transformers]], [[Stable Diffusion]], [[Attention]], [[Reasoning]], [[Foundation Models]], [[Probabilistic Model]], [[ComfyUI]], [[Model Optimisation and Performance]], [[Training Data]], [[Checkpoints]]
+  - related-to:: [[Monte Carlo Methods]], [[Transformers]], [[Stable Diffusion Image Model]], [[Attention]], [[Reasoning]], [[Large-Scale Pretrained Foundation Model]], [[Probabilistic Model]], [[Node-Based Diffusion Pipeline Interface]], [[Model Optimisation and Performance]], [[Training Data]], [[Checkpoints]]
   - standardized-by:: [[Robert-Casella Monte Carlo Statistical Methods]], [[Stan Probabilistic Programming]], [[NumPyro]], [[PyMC]], [[Hugging Face Diffusers]]
 
 - ### Content
@@ -274,7 +274,7 @@
   - **Infer.NET** (Microsoft Research Cambridge): message-passing inference engine for factor graphs; supports exact and approximate inference (EP, VMP, Gibbs sampling) on discrete and continuous models; used for Xbox recommendation systems and clinical trial design.
   - **ArviZ**: Python library for Bayesian inference diagnostics and visualisation; computes R-hat, ESS_bulk, ESS_tail, MCSE, ELPD LOO, PSIS-LOO; the standard interface between Stan/PyMC/NumPyro outputs and post-sampling analysis.
   - **Diffusers (Hugging Face)**: Python library implementing all major diffusion samplers (DDIM, DPM-Solver++, Euler, Heun, PNDM, UniPC, LMS) as interchangeable scheduler objects compatible with Stable Diffusion, DALL-E 3, Stable Diffusion XL, Stable Video Diffusion; 25K+ GitHub stars.
-  - **ComfyUI** ([[ComfyUI]]): node-based diffusion model interface (30M+ users) exposing all major samplers (Euler, Euler_a, Heun, DPM-Solver++, LCM, DDIM) and schedulers (Karras, exponential, cosine, linear) as graph nodes enabling visual composition of sampling pipelines.
+  - **ComfyUI** ([[Node-Based Diffusion Pipeline Interface]]): node-based diffusion model interface (30M+ users) exposing all major samplers (Euler, Euler_a, Heun, DPM-Solver++, LCM, DDIM) and schedulers (Karras, exponential, cosine, linear) as graph nodes enabling visual composition of sampling pipelines.
 
   - ### Stochastic Gradient and Scalable MCMC
   - **Stochastic Gradient Langevin Dynamics (SGLD)** (Welling & Teh 2011): combines SGD noise with Langevin dynamics — θₜ₊₁ = θₜ + (ε/2) ∇_θ log p(θ|x̃) + N(0, ε) where x̃ is a minibatch; converges to the posterior as ε→0 without an accept/reject step; scales to millions of data points.
@@ -358,7 +358,7 @@
     - **Lookahead decoding** (Fu et al. 2024): Jacobi iteration to generate parallel draft tokens without a separate model.
 
   - ### Diffusion Model Sampling Strategies
-  - **Diffusion models** (DDPM, Song et al. score matching, Rombach et al. LDM / [[Stable Diffusion]]) define a forward noising process q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) that gradually adds Gaussian noise over T = 1000 steps.
+  - **Diffusion models** (DDPM, Song et al. score matching, Rombach et al. LDM / [[Stable Diffusion Image Model]]) define a forward noising process q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) that gradually adds Gaussian noise over T = 1000 steps.
   - A neural score network ε_θ(xₜ, t) ≈ -√(1-ᾱₜ) ∇_{xₜ} log p(xₜ) is learned to reverse the process.
   - Sampling = running the reverse process from xT ~ N(0, I) to x₀.
   - The schedule, step count, and ODE/SDE solver together determine both quality and speed; typical 2025 production trade-off is 20-30 NFE (network function evaluations) for high quality, 4-8 NFE for fast preview.
@@ -374,7 +374,7 @@
   - #### DPM-Solver and DPM-Solver++
   - **DPM-Solver** (Lu et al. 2022a, NeurIPS 2022, arXiv:2206.00927) derives fast ODE solvers by expressing the diffusion ODE in the log-SNR domain λ(t) = log(ᾱₜ/(1-ᾱₜ)) and applying exponential integrators.
   - DPM-Solver-2 achieves high-quality samples in 10-20 steps (global truncation error O(h²)); DPM-Solver-3 in 10-15 steps.
-  - **DPM-Solver++** (Lu et al. 2022b, arXiv:2211.01095) adds multistep history terms; **DPM-Solver++(2M)** (M=2 multistep) is the most widely deployed fast sampler in Stable Diffusion WebUI (AUTOMATIC1111), [[ComfyUI]], and InvokeAI.
+  - **DPM-Solver++** (Lu et al. 2022b, arXiv:2211.01095) adds multistep history terms; **DPM-Solver++(2M)** (M=2 multistep) is the most widely deployed fast sampler in Stable Diffusion WebUI (AUTOMATIC1111), [[Node-Based Diffusion Pipeline Interface]], and InvokeAI.
   - Converges in the order-2 sense with global truncation error O(h²) vs DDIM's O(h) (first-order).
 
   - #### Euler, Euler-Ancestral, and Heun Methods
@@ -452,7 +452,7 @@
   - **MCMC software**: Stan (Columbia, ~200K active users, NUTS with adaptation); PyMC v5 (Python, 50K+ stars); NumPyro (JAX, hardware-accelerated NUTS); BlackJAX (DeepMind/INRIA, modular MCMC kernels composable in JAX); flowMC (Glasgow/UCL, normalising flows + MCMC for gravitational wave parameter estimation).
   - **LLM inference frameworks** (llama.cpp, vLLM, TGI, Ollama) expose temperature, top-p, top-k, min-p, and mirostat as first-class parameters.
   - Speculative decoding with EAGLE-2 draft models is now the default serving strategy for Llama-3.1-70B and Mistral-class models, delivering 2.5-3.5× throughput gains.
-  - Diffusion model samplers are fully modularised in [[ComfyUI]] (30M+ users) and InvokeAI, with DPM-Solver++(2M) and Euler-a as defaults.
+  - Diffusion model samplers are fully modularised in [[Node-Based Diffusion Pipeline Interface]] (30M+ users) and InvokeAI, with DPM-Solver++(2M) and Euler-a as defaults.
   - Research in 2025-2026 focuses on **consistency models** (Song et al. 2023) and **flow matching** (Lipman et al. 2022; SD 3.0) framing generation as straight-line ODE trajectories amenable to 1-4 step inference — potentially superseding multi-step diffusion samplers.
   - **Approximate Bayesian Computation** (ABC/likelihood-free inference) is growing for [[Simulation-Based Inference]] in systems biology and particle physics where likelihoods are intractable but forward simulators exist.
   - **Diffusion models for discrete sequences**: discrete DDPM (Austin et al. 2021, D3PM), absorbing diffusion, and masked diffusion models bring sampling-based generation to proteins, molecules, and code, requiring novel discrete ODE/SDE analogues.

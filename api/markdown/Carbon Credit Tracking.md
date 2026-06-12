@@ -642,7 +642,7 @@ public:: true
         "label": "Polygon Network"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -684,7 +684,7 @@ public:: true
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -1310,7 +1310,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1330,7 +1330,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     }
@@ -1371,9 +1371,9 @@ public:: true
   - implements:: [[ICVCM Core Carbon Principles]], [[Verra VCS Methodology]], [[Gold Standard Certification]], [[Paris Agreement Article 6]], [[CORSIA Aviation Offsets]], [[EU Taxonomy Green Finance]]
   - depends-on:: [[Blockchain]], [[Smart Contracts]], [[Oracle Networks]], [[Satellite Remote Sensing]], [[IoT Sensors]], [[Carbon Registries]], [[MRV]]
   - supports:: [[Sustainability]], [[Net Zero Targets]], [[ESG Investing]], [[Corporate Climate Commitments]], [[Biodiversity Credits]], [[Nature-Based Solutions]], [[Climate Tech]]
-  - uses:: [[ERC-20 Tokens]], [[ERC-721 NFTs]], [[Polygon Network]], [[Ethereum]], [[Chainlink Oracles]], [[Hedera Hashgraph]], [[Decentralised Finance]]
+  - uses:: [[ERC-20 Tokens]], [[ERC-721 NFTs]], [[Polygon Network]], [[Ethereum Smart Contract Platform]], [[Chainlink Oracles]], [[Hedera Hashgraph]], [[Decentralised Finance]]
   - contrasts-with:: [[Traditional Carbon Registry]], [[Centralised Carbon Exchange]], [[Offset Broker]], [[REDD+ Paper Certificates]], [[Compliance Cap-and-Trade Registry]]
-  - related-to:: [[Carbon Credits]], [[Tokenisation]], [[NFTs]], [[Environmental Finance]], [[Carbon Neutral Blockchain]], [[Voluntary Carbon Markets]], [[MRV]], [[ESG Investing]], [[Smart Contracts]], [[Green Finance]]
+  - related-to:: [[Carbon Credits]], [[Neural Network Text Tokenisation]], [[NFTs]], [[Environmental Finance]], [[Carbon Neutral Blockchain]], [[Voluntary Carbon Markets]], [[MRV]], [[ESG Investing]], [[Smart Contracts]], [[Green Finance]]
   - standardized-by:: [[Verra VCS Standard]], [[Gold Standard]], [[ICVCM Core Carbon Principles]], [[Paris Agreement Article 6]], [[CORSIA]], [[EU Corporate Sustainability Reporting Directive]]
 
 - ### Content
@@ -1577,7 +1577,7 @@ public:: true
   - Quarterly issuance materially improves cash flow for project developers in the global south and reduces vintage staleness that inflates credit supply with historical reductions long since accounted for.
 
   - ### Smart Contract Lifecycle Engine
-  - [[Smart Contracts]] deployed on [[Ethereum]] mainnet (for highest-value institutional credits), [[Polygon]] (for high-volume lower-cost retail and DeFi integration), Celo (for mobile-first emerging market access), or [[Hedera Hashgraph]] (for enterprise permissioned deployments via Verra's Guardian integration) govern the full credit lifecycle.
+  - [[Smart Contracts]] deployed on [[Ethereum Smart Contract Platform]] mainnet (for highest-value institutional credits), [[Polygon]] (for high-volume lower-cost retail and DeFi integration), Celo (for mobile-first emerging market access), or [[Hedera Hashgraph]] (for enterprise permissioned deployments via Verra's Guardian integration) govern the full credit lifecycle.
   - Issuance contracts mint new tokens conditioned on oracle-attested MRV threshold satisfaction, rejecting minting attempts where monitoring data indicates project underperformance.
   - Transfer contracts enforce ownership changes with embedded fee splits funding permanence buffer pools and registry overhead.
   - Retirement contracts implement irrevocable burns that simultaneously write a public retirement certificate to chain and trigger API calls to the underlying registry to mark the credit as claimed — creating bidirectional provenance between on-chain token and off-chain registry record.
@@ -1607,7 +1607,7 @@ public:: true
   - Satellite-based biomass estimates carry uncertainty ranges of ±15–30% for tropical forest carbon stocks; blockchain records this uncertainty but cannot eliminate it — field validation remains necessary for high-accuracy credit issuance.
   - ### Energy Consumption and Climate Irony
   - Early implementations on proof-of-work Ethereum mainnet faced substantive criticism that per-transaction energy consumption negated a meaningful fraction of the climate benefits of credits being traded.
-  - Migration to proof-of-stake [[Ethereum]] (The Merge, September 2022) reduced energy consumption by ~99.95%; [[Polygon]], Celo, and [[Hedera Hashgraph]] operate with carbon-neutral or net-negative profiles, substantively addressing this concern.
+  - Migration to proof-of-stake [[Ethereum Smart Contract Platform]] (The Merge, September 2022) reduced energy consumption by ~99.95%; [[Polygon]], Celo, and [[Hedera Hashgraph]] operate with carbon-neutral or net-negative profiles, substantively addressing this concern.
   - The "blockchain = high energy" perception narrative persists among non-technical policymakers, creating adoption friction despite the actual energy data.
   - ### Regulatory Uncertainty and Legal Status
   - Questions about the legal status of tokenised credits — whether a BCT token constitutes legal title to the underlying Verra credit, or merely a representation — vary across jurisdictions and have not been definitively resolved in most major legal systems.

@@ -39,7 +39,7 @@ alias:: InteroperabilityProtocol
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
       {"@id": "urn:ngm:class:digital-asset-ecosystem", "label": "Digital Asset Ecosystem"}
     ]
@@ -51,7 +51,7 @@ alias:: InteroperabilityProtocol
 - ### Definition
   - An interoperability protocol is a formally specified agreement on message formats, sequencing, and semantics that allows independently implemented systems to exchange data and invoke services reliably, forming the connective tissue of distributed technological ecosystems.
 - ### Relationships
-  - Interoperability Protocol is a specialisation of [[Network Protocol]] and directly enables [[Interoperability]], [[Cross-Platform Interoperability]], and [[Blockchain Interoperability]]. It is related to [[Interoperability Standard]], [[Interoperability Framework]], [[Communication Protocol]], [[API Standard]], and [[Open Standard]]. Applied contexts include [[Spatial Computing]] environments, [[Cross-Chain Messaging]] between blockchain networks, and the broader [[Digital Asset Ecosystem]].
+  - Interoperability Protocol is a specialisation of [[Network Protocol]] and directly enables [[Interoperability]], [[Cross-Platform Interoperability]], and [[Blockchain Interoperability]]. It is related to [[Interoperability Standard]], [[Interoperability Framework]], [[Communication Protocol]], [[API Standard]], and [[Open Standard]]. Applied contexts include [[Spatial Computing Paradigm]] environments, [[Cross-Chain Messaging]] between blockchain networks, and the broader [[Digital Asset Ecosystem]].
 - ### Content
   - Interoperability protocols emerge wherever heterogeneous systems must cooperate without sharing a common codebase or governance structure. The term encompasses a spectrum from low-level wire protocols (TCP/IP, HTTP) to high-level semantic agreements (OpenAPI schemas, JSON-LD contexts, W3C DID resolution). What distinguishes an interoperability protocol from a proprietary API is the formal, publicly specified nature of its contract—any conformant implementation can participate.
 

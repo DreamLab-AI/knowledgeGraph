@@ -95,7 +95,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:spatial-computing-layer",
+  "@id": "urn:ngm:class:spatial-computing-paradigm-layer",
   "@type": "Class",
   "label": "Spatial Computing Layer",
   "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
@@ -152,7 +152,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:infrastructure-layer",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-layer",
         "label": "Infrastructure Layer"
       }
     ]

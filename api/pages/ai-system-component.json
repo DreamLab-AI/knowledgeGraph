@@ -22,7 +22,7 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -38,7 +38,7 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],

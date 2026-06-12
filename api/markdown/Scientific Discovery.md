@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
     ],
     "relatedTo": [
@@ -64,7 +64,7 @@ public:: true
 - ### Relationships
   - enables [[Drug Discovery]]
   - enables [[Knowledge Graph]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Generative Model]]
   - relatedTo [[Drug Discovery AI]]
 

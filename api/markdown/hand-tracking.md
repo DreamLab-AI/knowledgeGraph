@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[PerceptionLayer]], [[AlgorithmLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Computer Vision]], [[Pose Estimation]], [[Gesture Recognition]], [[Human-Computer Interaction]], [[Spatial Computing]]
+  - is-subclass-of:: [[Computer Vision]], [[Pose Estimation]], [[Gesture Recognition]], [[Human-Computer Interaction]], [[Spatial Computing Paradigm]]
   - has-part:: [[Hand Skeleton Model]], [[Keypoint Detector]], [[Palm Detector]], [[Landmark Regressor]], [[Temporal Filter]], [[Depth Sensor]], [[Kinematic Constraint Model]], [[Confidence Estimator]]
   - requires:: [[Camera Sensor]], [[Depth Sensor]], [[Convolutional Neural Network]], [[Real-Time Processing]], [[Calibration Data]], [[Annotated Hand Dataset]]
   - enables:: [[Gesture Recognition]], [[Pinch Interaction]], [[Air Typing]], [[Sign Language Recognition]], [[Touchless HCI]], [[XR Interaction]], [[Surgical Training Simulation]], [[Robotic Teleoperation]]

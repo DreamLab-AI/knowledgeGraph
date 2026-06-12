@@ -33,7 +33,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},

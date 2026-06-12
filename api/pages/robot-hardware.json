@@ -161,7 +161,7 @@
         "label": "FPGA Acceleration"
       },
       {
-        "id": "urn:ngm:class:nvidia-jetson",
+        "id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
       },
       {
@@ -232,7 +232,7 @@
         "label": "Model Based Control"
       },
       {
-        "id": "urn:ngm:class:nvidia-omniverse",
+        "id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {

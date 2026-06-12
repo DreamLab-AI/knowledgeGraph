@@ -178,7 +178,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -218,7 +218,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Machine Learning]], [[Statistics]]
+  - bridges-to:: [[Machine Learning Discipline]], [[Statistics]]
   - has-part:: [[Entropy]], [[Mutual Information]], [[Channel Capacity]]
   - requires:: [[Probability Theory]]
   - enables:: [[Data Compression]], [[Error Correcting Code]], [[Cryptography]]

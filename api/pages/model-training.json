@@ -46,7 +46,7 @@
         "label": "RLHF"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -122,7 +122,7 @@
         "label": "Code Generation"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -201,7 +201,7 @@
         "label": "Cognitive AI"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -215,11 +215,11 @@
         "label": "Agents"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -227,7 +227,7 @@
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "id": "urn:ngm:class:google-deep-mind",
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
@@ -249,7 +249,7 @@
         "label": "Responsible Scaling Policies"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

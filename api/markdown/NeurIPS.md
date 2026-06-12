@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
@@ -34,7 +34,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
@@ -54,7 +54,7 @@ public:: true
   - NeurIPS is the world's most influential annual academic conference on machine learning and neural computation, where landmark papers in deep learning, reinforcement learning, and probabilistic AI are first presented.
 
 - ### Relationships
-  - NeurIPS is a subclass of [[AI Research Area]] and serves as the primary dissemination venue for advances in [[Machine Learning]], [[Deep Learning]], and [[Neural Network]] architecture. It sits alongside [[ICML]], [[ICLR]], [[CVPR]], and [[ICCV]] as one of the elite ML publication venues, and papers accepted there frequently introduce [[Benchmark Standard]] datasets and evaluation protocols tracked by [[Evaluation benchmarks and leaderboards]]. Large-scale experiments submitted to NeurIPS routinely depend on [[High-Performance Computing]] infrastructure.
+  - NeurIPS is a subclass of [[AI Research Area]] and serves as the primary dissemination venue for advances in [[Machine Learning Discipline]], [[Deep Learning]], and [[Neural Network]] architecture. It sits alongside [[ICML]], [[ICLR]], [[CVPR]], and [[ICCV]] as one of the elite ML publication venues, and papers accepted there frequently introduce [[Benchmark Standard]] datasets and evaluation protocols tracked by [[Evaluation benchmarks and leaderboards]]. Large-scale experiments submitted to NeurIPS routinely depend on [[High-Performance Computing]] infrastructure.
 
 - ### Content
   - The Neural Information Processing Systems conference was first held in Denver in 1987, originally at the intersection of neuroscience and machine learning. Over the following three decades it evolved into the dominant forum for statistical machine learning, and the 2012 AlexNet paper — though submitted to a NeurIPS workshop — catalysed the deep learning revolution that subsequently made the main conference the most competitive venue in AI, with acceptance rates falling below 20 % by the 2020s.

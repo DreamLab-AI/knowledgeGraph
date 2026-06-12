@@ -37,7 +37,7 @@ alias:: Multi Party Computation
       {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
     ]
   },

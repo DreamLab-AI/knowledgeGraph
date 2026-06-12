@@ -146,7 +146,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:linked:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -181,7 +181,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Distributed Systems Domain]]
-  - bridges-to:: [[Semantic Web]], [[Self-Sovereign Identity]]
+  - bridges-to:: [[Semantic Web Linked Data Standard]], [[Self-Sovereign Identity]]
   - requires:: [[Linked Data]], [[RDF]], [[WebID]]
   - enables:: [[Data Sovereignty]], [[Decentralised Identity]]
 

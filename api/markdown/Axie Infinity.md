@@ -97,7 +97,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     }
@@ -122,7 +122,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[NFT]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[NFT]], [[Smart Contract]]
 
 - ### Content

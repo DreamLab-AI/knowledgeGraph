@@ -26,9 +26,9 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:schema-definition", "label": "Schema Definition"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},

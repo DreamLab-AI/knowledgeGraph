@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:attention", "label": "Attention"}, {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}]
+    "relatedTo": [{"@id": "urn:ngm:class:attention", "label": "Attention"}, {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"}]
   },
   "quality": 0.72
 }

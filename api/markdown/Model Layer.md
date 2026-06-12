@@ -120,7 +120,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -155,7 +155,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Machine Learning]], [[Model Registry]]
+  - bridges-to:: [[Machine Learning Discipline]], [[Model Registry]]
   - requires:: [[Algorithm Layer]], [[Training Layer]]
   - enables:: [[Inference Layer]]
 

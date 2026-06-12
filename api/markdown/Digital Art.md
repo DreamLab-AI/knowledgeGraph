@@ -41,7 +41,7 @@ alias:: DigitalArt
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:agentic-metaverse-for-global-creatives", "label": "Agentic Metaverse for Global Creatives"}
+      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Agentic Metaverse for Global Creatives"}
     ]
   },
   "quality": 0.8
@@ -51,7 +51,7 @@ alias:: DigitalArt
 - ### Definition
   - [[Digital Art]] is a broad creative practice encompassing any artwork whose creation or existence is fundamentally mediated by digital computation, including AI-generated imagery via [[Creative AI]], interactive installations, and [[NFT]]-authenticated generative pieces.
 - ### Relationships
-  - [[Digital Art]] extends the [[Creative Media Domain]] and employs [[Creative AI]] and [[Image Generation]] tools alongside professional [[Creative Software]] to produce its artefacts. It is closely associated with the [[NFT]] ecosystem, which provides [[Digital Ownership]] and provenance guarantees, and is documented through [[Digital Art Application]] catalogues. The practice produces [[Digital Asset]] objects and directly supports visions such as the [[Agentic Metaverse for Global Creatives]] where economic participation is built on creative output.
+  - [[Digital Art]] extends the [[Creative Media Domain]] and employs [[Creative AI]] and [[Image Generation]] tools alongside professional [[Creative Software]] to produce its artefacts. It is closely associated with the [[NFT]] ecosystem, which provides [[Digital Ownership]] and provenance guarantees, and is documented through [[Digital Art Application]] catalogues. The practice produces [[Digital Asset]] objects and directly supports visions such as the [[Decentralised Creative Metaverse Framework]] where economic participation is built on creative output.
 - ### Content
   - Digital art has existed since the 1960s—early computer graphics artists such as Vera Molnár and Harold Cohen pioneered algorithmic drawing—but it entered mainstream cultural consciousness through the rise of generative AI tools, NFT markets, and digital art platforms in the 2020s. What distinguishes it from traditional art is both its medium (pixels, vectors, code, or machine-learning latent space) and its distribution modality (screens, interactive environments, blockchain-registered tokens).
 

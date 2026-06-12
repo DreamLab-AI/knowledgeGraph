@@ -60,7 +60,7 @@ alias:: CommunicationTheory
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:collaborative-technology", "label": "Collaborative Technology"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:media-richness-theory", "label": "Media Richness Theory"},

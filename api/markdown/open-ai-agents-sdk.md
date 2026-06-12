@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Agentic Workflow]]
-  - bridges-to:: [[OpenAI]], [[AI Agent]]
+  - bridges-to:: [[OpenAI Research Organisation]], [[AI Agent]]
   - requires:: [[Language Model]], [[Function Calling]]
   - enables:: [[Multi-Agent Coordination]], [[Tool Use]]
 

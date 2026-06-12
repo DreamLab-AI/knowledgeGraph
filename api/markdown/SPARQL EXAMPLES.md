@@ -84,7 +84,7 @@ public:: true
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:semantic-web-standards",
+      "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
       "label": "Semantic Web Standards"
     }
   ],

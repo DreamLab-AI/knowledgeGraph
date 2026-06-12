@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
       {"@id": "urn:ngm:class:collective-learning", "label": "Collective Learning"}
     ]
   },

@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"}
     ],
     "enables": [

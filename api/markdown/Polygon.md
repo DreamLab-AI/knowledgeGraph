@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -109,7 +109,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -165,7 +165,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Rollup]], [[zkSync]], [[Arbitrum]]
-  - requires:: [[Ethereum]], [[Proof of Stake]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]]
   - enables:: [[Decentralised Finance Domain]]
 
 - ### Content

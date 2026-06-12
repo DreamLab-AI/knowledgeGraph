@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:6cc3af3351e85d4e2f1f29c35790c5db96cb5ced8eb9f916fa79a86e34830509",
+  "title": "Cognitive Automation Revolution",
+  "slug": "cognitive-automation-revolution",
+  "public": true,
+  "classIri": "urn:ngm:class:cognitive-automation-revolution",
+  "domain": "artificial-intelligence",
+  "definition": "The Cognitive Revolution describes the transformative societal shift driven by AI systems automating cognitive and knowledge work at scale, drawing analogy to the Industrial Revolution's mechanisation of physical labour. It encompasses the displacement of routine mental tasks\u2014coding, content creation, data analysis\u2014freeing human effort for higher-order creativity and judgement, whilst raising urgent questions about workforce adaptation and economic equity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workforce-augmentation",
+        "label": "Workforce Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

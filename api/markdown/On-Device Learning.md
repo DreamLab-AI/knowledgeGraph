@@ -71,7 +71,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},

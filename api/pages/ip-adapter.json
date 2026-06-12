@@ -30,7 +30,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

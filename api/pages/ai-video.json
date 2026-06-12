@@ -188,7 +188,7 @@
         "label": "Film Pre-visualisation"
       },
       {
-        "id": "urn:ngm:class:social-media-short-form",
+        "id": "urn:ngm:class:social-media-platform-infrastructure-short-form",
         "label": "Social Media Short-form"
       },
       {
@@ -230,7 +230,7 @@
         "label": "VBench"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -265,7 +265,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ]
@@ -706,10 +706,6 @@
       "label": "AI User"
     },
     {
-      "slug": "advice-for-developing-gen-ai",
-      "label": "Advice for developing GenAI"
-    },
-    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
@@ -726,8 +722,16 @@
       "label": "Competition in AI"
     },
     {
+      "slug": "computational-image-relighting-technique",
+      "label": "Computational Image Relighting Technique"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
+    },
+    {
+      "slug": "generative-ai-development-methodology",
+      "label": "Generative AI Development Methodology"
     },
     {
       "slug": "image-generation",
@@ -784,10 +788,6 @@
     {
       "slug": "text-summarisation",
       "label": "Text Summarisation"
-    },
-    {
-      "slug": "relighting",
-      "label": "relighting"
     }
   ]
 }

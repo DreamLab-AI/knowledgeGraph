@@ -150,7 +150,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -318,7 +318,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -349,7 +349,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Automation]]
-  - has-part:: [[Robotic Arm]], [[Sensor System]], [[Motion Control]], [[Computer Vision]], [[Machine Learning]]
+  - has-part:: [[Robotic Arm]], [[Sensor System]], [[Motion Control]], [[Computer Vision]], [[Machine Learning Discipline]]
   - enables:: [[Industrial Automation]], [[Autonomous Manufacturing]], [[Precision Engineering]], [[Warehouse Automation]], [[Humanoid Robotics]]
   - bridges-to:: [[Artificial Intelligence]] (domain: ai), [[Computer Vision]] (domain: ai), [[Digital Twin]] (domain: ngm), [[IoT Sensors]] (domain: iot)
   - requires:: [[Control Systems]], [[Kinematics]], [[Actuators]]

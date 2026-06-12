@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:digital-modeling", "label": "Digital Modeling"}
     ],
     "enables": [
@@ -119,7 +119,7 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - **uses**: [[Spatial Computing]], [[Digital Modeling]]
+  - **uses**: [[Spatial Computing Paradigm]], [[Digital Modeling]]
   - **enables**: [[Virtual Environment]], [[Digital Twin Infrastructure]]
   - **relatedTo**: [[Digital Asset]], [[Immersive Experience]]
 

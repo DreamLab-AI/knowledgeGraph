@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -95,7 +95,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:linked:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -141,7 +141,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Standards Organization]]
   - bridges-to:: [[Graphics API]], [[Distributed Systems]]
-  - enables:: [[Spatial Computing]], [[Augmented Reality]]
+  - enables:: [[Spatial Computing Paradigm]], [[Augmented Reality]]
 
 - ### Content
   - Microsoft develops the Windows operating system, the Azure cloud platform and a broad portfolio of developer tools and productivity applications. It also produces mixed reality hardware and the associated spatial computing software stack.

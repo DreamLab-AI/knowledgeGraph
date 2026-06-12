@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - enables [[Machine Learning]]
+  - enables [[Machine Learning Discipline]]
   - enables [[Computer Vision]]
   - uses [[Data Pipeline]]
   - uses [[Edge Computing]]

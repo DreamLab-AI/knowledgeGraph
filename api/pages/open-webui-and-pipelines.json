@@ -34,11 +34,11 @@
         "label": "Model Control Protocols like MCP"
       },
       {
-        "id": "urn:ngm:class:ollama",
+        "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama"
       },
       {
-        "id": "urn:ngm:class:open-ai-whisper",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
         "label": "Open AI Whisper"
       },
       {
@@ -46,7 +46,7 @@
         "label": "Retrieval Augmented Generation - RAG"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -56,7 +56,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       },
       {
@@ -64,7 +64,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:ollama",
+        "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama"
       }
     ],
@@ -113,7 +113,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -121,15 +121,15 @@
         "label": "Flux.1"
       },
       {
-        "id": "urn:ngm:class:ollama",
+        "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama"
       },
       {
-        "id": "urn:ngm:class:open-ai-whisper",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
         "label": "Open AI Whisper"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -172,7 +172,7 @@
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -180,11 +180,11 @@
         "label": "Hardware and Edge"
       },
       {
-        "id": "urn:ngm:class:llama-3",
+        "id": "urn:ngm:class:meta-llama-model-family-3",
         "label": "Llama 3"
       },
       {
-        "id": "urn:ngm:class:mistral-and-mixtral",
+        "id": "urn:ngm:class:mistral-ai-open-weight-model-family",
         "label": "Mistral and Mixtral"
       }
     ]
@@ -353,16 +353,16 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "local-llm-runtime-platform",
+      "label": "Local LLM Runtime Platform"
+    },
+    {
       "slug": "text-generation",
       "label": "Text Generation"
     },
     {
       "slug": "text-summarisation",
       "label": "Text Summarisation"
-    },
-    {
-      "slug": "ollama",
-      "label": "ollama"
     }
   ]
 }

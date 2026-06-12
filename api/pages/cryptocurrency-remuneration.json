@@ -27,7 +27,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:tax-treatment-crypto",
+        "id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto",
         "label": "Tax Treatment Crypto"
       }
     ],

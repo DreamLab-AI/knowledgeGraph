@@ -3,7 +3,7 @@
   "title": "Public-Key Cryptography",
   "slug": "public-key-cryptography",
   "public": true,
-  "classIri": "urn:ngm:class:public-key-cryptography",
+  "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
   "domain": "blockchain",
   "definition": "An asymmetric cryptographic system using mathematically related key pairs \u2014 a public key for encryption or signature verification and a private key for decryption or signing \u2014 enabling secure communication, digital signatures, and authentication without requiring shared secrets. In blockchain systems it underpins wallet addresses, transaction signing, and identity verification.",
   "subClassOf": [
@@ -26,7 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:public-key",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       },
       {
@@ -80,7 +80,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ]

@@ -482,11 +482,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "@id": "urn:ngm:class:ethereum-improvement-proposals",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-improvement-proposals",
         "label": "Ethereum Improvement Proposals"
       },
       {

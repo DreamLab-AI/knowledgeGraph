@@ -321,7 +321,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -378,7 +378,7 @@ public:: true
 
   The parallel kinematic structure creates a bounded workspace shaped like an inverted pyramid, and unlike serial robots, delta robots exhibit improved stiffness-to-weight ratios and smaller maximum forces in non-principal directions. Inverse kinematics is computationally tractable, though more complex than articulated robots, and control must precisely synchronise all three motor drives to maintain platform alignment. Delta robots excel in [[Food Processing]], [[Electronics Assembly]], and [[Small Parts Handling]] where speed and precision matter more than workspace volume.
 
-  Contemporary delta designs extend [[End-Effector]] capability through passive wrist mechanisms, add vision systems for part location flexibility, and incorporate adaptive control compensating for linkage compliance and friction. Research explores reconfigurable delta robots with adjustable link lengths enabling workspace customisation, soft delta robots using compliant materials for safe human-robot collaboration, and control approaches leveraging [[Machine Learning]] to optimise speed profiles whilst respecting dynamic constraints and collision avoidance requirements.
+  Contemporary delta designs extend [[End-Effector]] capability through passive wrist mechanisms, add vision systems for part location flexibility, and incorporate adaptive control compensating for linkage compliance and friction. Research explores reconfigurable delta robots with adjustable link lengths enabling workspace customisation, soft delta robots using compliant materials for safe human-robot collaboration, and control approaches leveraging [[Machine Learning Discipline]] to optimise speed profiles whilst respecting dynamic constraints and collision avoidance requirements.
 
 - ### Provenance
   - sources:: Chimera Prime Research

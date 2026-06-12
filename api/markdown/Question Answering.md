@@ -79,7 +79,7 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -151,7 +151,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Research Tools]]",
+      "raw": "[[AI-Augmented Research Tooling Suite]]",
       "resolved": "urn:visionflow:owl:class:research-tools",
       "kind": "ResolvedLink"
     }
@@ -244,8 +244,8 @@ public:: true
   - **Avoiding prior knowledge assumptions**
 
    Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #[[🤖]]
-  - [[Research Tools]] [Undermind](https://www.undermind.ai/home/)
-  - [Perplexity](https://www.perplexity.ai/) for [[Research Tools]].
+  - [[AI-Augmented Research Tooling Suite]] [Undermind](https://www.undermind.ai/home/)
+  - [Perplexity](https://www.perplexity.ai/) for [[AI-Augmented Research Tooling Suite]].
   - [Tutorial: Perplexity Basics (youtube.com)](https://www.youtube.com/watch?v=ue4NU-U-hAE)
 
   - ### Large Language Models (LLMs)

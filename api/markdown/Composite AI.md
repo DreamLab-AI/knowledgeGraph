@@ -59,7 +59,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:multimodal", "label": "multimodal"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "multimodal"}
     ]
   },
   "provenance": {

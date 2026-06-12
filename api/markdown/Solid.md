@@ -356,7 +356,7 @@ public:: true
         "label": "Access Control Policy"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -406,7 +406,7 @@ public:: true
         "label": "HTTP"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -438,7 +438,7 @@ public:: true
         "label": "WebID"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -520,7 +520,7 @@ public:: true
         "label": "HTTP REST"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -586,7 +586,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -1020,7 +1020,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -1060,16 +1060,16 @@ public:: true
   - implemented-in-layer:: [[ProtocolLayer]], [[ApplicationLayer]], [[DataLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Decentralized Web]], [[Linked Data]], [[Semantic Web]], [[Web Standards]], [[Data Sovereignty]], [[Privacy by Design]], [[Decentralised Protocol]]
+  - is-subclass-of:: [[Decentralized Web]], [[Linked Data]], [[Semantic Web Linked Data Standard]], [[Web Standards]], [[Data Sovereignty]], [[Privacy by Design]], [[Decentralised Protocol]]
   - has-part:: [[Pod]], [[WebID]], [[Solid-OIDC]], [[Web Access Control]], [[Linked Data Platform]], [[RDF]], [[SPARQL]], [[Turtle]], [[JSON-LD]], [[Access Control Policy]], [[Solid Protocol Specification]], [[WebID Profile]]
   - requires:: [[RDF]], [[HTTP]], [[WebID]], [[Turtle]], [[JSON-LD]], [[SPARQL]], [[OpenID Connect]], [[OAuth 2.0]], [[Public Key Infrastructure]], [[URI]]
   - enables:: [[Data Portability]], [[Data Sovereignty]], [[Consent Management]], [[Interoperability]], [[Privacy by Design]], [[Decentralized Identity]], [[GDPR Compliance]], [[Knowledge Graph]], [[Open Data]]
   - implements:: [[Linked Data Platform]], [[Web Access Control]], [[Access Control Policy]], [[Solid-OIDC]], [[WebID Profile]], [[LDP Container]], [[DPoP Authentication]]
-  - depends-on:: [[W3C Standards]], [[Semantic Web]], [[Public Key Infrastructure]], [[REST Architecture]], [[OAuth 2.0]], [[RDF Data Model]], [[Linked Data Principles]]
+  - depends-on:: [[W3C Standards]], [[Semantic Web Linked Data Standard]], [[Public Key Infrastructure]], [[REST Architecture]], [[OAuth 2.0]], [[RDF Data Model]], [[Linked Data Principles]]
   - supports:: [[GDPR Compliance]], [[Health Data Management]], [[Government Open Data]], [[Personal Data Management]], [[Digital Identity]], [[Smart Data Schemes]], [[NHS Data Strategy]], [[Financial Data Portability]]
   - uses:: [[Turtle]], [[JSON-LD]], [[RDF]], [[SPARQL]], [[N-Triples]], [[HTTP REST]], [[OpenID Connect]], [[WebSockets]], [[DPoP Token]]
   - contrasts-with:: [[Centralised Data Silo]], [[OAuth Data Sharing]], [[ActivityPub]], [[IPFS]], [[Blockchain Storage]], [[Decentralized Identifiers]], [[AT Protocol]]
-  - related-to:: [[Decentralized Identifiers]], [[Verifiable Credentials]], [[GDPR]], [[Open Data]], [[Knowledge Graph]], [[Agent Frameworks]], [[Semantic Web]], [[Linked Data]], [[FOAF]], [[Shape Trees]], [[ShEx]]
+  - related-to:: [[Decentralized Identifiers]], [[Verifiable Credentials]], [[GDPR]], [[Open Data]], [[Knowledge Graph]], [[Agent Frameworks]], [[Semantic Web Linked Data Standard]], [[Linked Data]], [[FOAF]], [[Shape Trees]], [[ShEx]]
   - standardized-by:: [[W3C]], [[W3C Solid Community Group]], [[Linked Web Storage Working Group]], [[Open Data Institute]], [[IETF]]
 
 - ### Content

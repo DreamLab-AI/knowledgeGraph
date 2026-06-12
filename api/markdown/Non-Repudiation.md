@@ -394,7 +394,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -502,7 +502,7 @@ public:: true
         "label": "OCSP"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -894,7 +894,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -944,7 +944,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1044,7 +1044,7 @@ public:: true
   - implements:: [[ECDSA]], [[EdDSA]], [[Schnorr Signatures]], [[RSA Signatures]], [[CAdES]], [[XAdES]], [[PAdES]], [[RFC 3161 TSP]], [[OpenTimestamps]]
   - depends-on:: [[Elliptic Curve Cryptography]], [[Cryptographic Hash]], [[Public Key Infrastructure]], [[Certificate Authority]], [[Trusted Third Party]], [[Key Management]]
   - supports:: [[eIDAS Compliance]], [[eSignature Law]], [[GDPR Audit Trail]], [[Blockchain Transaction Integrity]], [[Smart Contract Enforcement]], [[Financial Regulation]]
-  - uses:: [[Blockchain Network]], [[Bitcoin]], [[Ethereum]], [[Distributed Ledger]], [[OCSP]], [[CRL Certificate Revocation]]
+  - uses:: [[Blockchain Network]], [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Distributed Ledger]], [[OCSP]], [[CRL Certificate Revocation]]
   - contrasts-with:: [[Anonymity]], [[Zero Knowledge Proof]], [[Privacy Preserving Blockchain]], [[Pseudonymity]], [[Deniable Authentication]]
   - related-to:: [[Cryptography Security and Privacy]], [[Identity Management System]], [[Self Sovereign Identity]], [[Verifiable Credentials]], [[Digital Identity Wallet]], [[Smart Contract]], [[Access Control System]]
   - standardized-by:: [[ISO IEC 7498-2]], [[ISO IEC 13888]], [[ETSI EN 319 series]], [[FIPS 186-5]], [[RFC 3161]], [[eIDAS Regulation]], [[NIST SP 800-208]]

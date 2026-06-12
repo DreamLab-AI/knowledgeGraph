@@ -837,7 +837,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -872,7 +872,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1024,7 +1024,7 @@ public:: true
     #### Cryptocurrency
     - **Definition**: Decentralized digital currency using cryptography
     - **Characteristics**: No central authority, blockchain-based, programmable
-    - **Examples**: [[Bitcoin]], Ethereum (ETH), Litecoin (LTC)
+    - **Examples**: [[Bitcoin Proof-of-Work Protocol]], Ethereum (ETH), Litecoin (LTC)
     - **Backing**: Cryptographic security, network consensus, scarcity
     - **Challenges**: Volatility, regulatory uncertainty, energy consumption
     #### Central Bank Digital Currency (CBDC)
@@ -1180,7 +1180,7 @@ public:: true
     - [[FATF]] - Financial Action Task Force on anti-money laundering
   - ### Related Concepts
     - [[Value Transfer]] - Parent concept of economic exchange mechanisms
-    - [[Bitcoin]] - First decentralised cryptocurrency
+    - [[Bitcoin Proof-of-Work Protocol]] - First decentralised cryptocurrency
     - [[Cryptocurrency]] - Digital currencies using cryptography
     - [[Token]] - Blockchain-based asset representations
     - [[Fiat Currency]] - Government-issued legal tender
@@ -1424,7 +1424,7 @@ public:: true
   - Clearly a global, stable, wholly digital bearer asset in a native currency would ostensibly be the ideal integration for money in a metaverse application, but the whole concept seems deeply ‘wrong’, and it is likely that a transition to such a technology would be complex and painful. Either way, it is certainly not ready for consideration now.It’s important that central banks and governments carefully consider these risks before introducing CBDCs, but it’s not clear this is happening. It is conceivable that by working closely with the private sector policy makers could minimize any negative impacts, ensuring that any new regulations are designed in a way that protects the rights andprivacy of individuals, while also promoting financial stability andeconomic growth. Gerard, an incredibly staunch critic of all things crypto [points to woeful adoption and manifestcorruption](https://davidgerard.co.uk/blockchain/2023/02/28/news-blockchain-mep-eva-kaili-corruption-arrest-nigerian-cbdc-rewrite-bbc-blockchain-misadventures/)in the attempts so far. We are not particularly hopeful either.
   - ## Money: Functions and Forms
   - Money is a fundamental component of [[Value Transfer]] systems, serving three critical economic functions: **medium of exchange** (facilitating transactions), **unit of account** (measuring value), and **store of value** (preserving purchasing power over time). In 2025, money has evolved from physical commodities (shells, gold) through government-issued fiat currency to digital forms including cryptocurrencies, stablecoins, and Central Bank Digital Currencies.
-  - In the context of blockchain and disruptive technologies, money encompasses traditional fiat currencies, cryptocurrencies like [[Bitcoin]], central bank digital currencies ([[CBDC]]), stablecoins such as [[USDC]] and [[USDT]], and virtual currencies in metaverse environments, reflecting the convergence of physical, digital, and virtual economic systems.
+  - In the context of blockchain and disruptive technologies, money encompasses traditional fiat currencies, cryptocurrencies like [[Bitcoin Proof-of-Work Protocol]], central bank digital currencies ([[CBDC]]), stablecoins such as [[USDC]] and [[USDT]], and virtual currencies in metaverse environments, reflecting the convergence of physical, digital, and virtual economic systems.
   - ### Three Functions of Money
     #### 1. Medium of Exchange
     - **Purpose**: Facilitates trade by eliminating the need for double coincidence of wants in barter
@@ -1438,7 +1438,7 @@ public:: true
     - **Examples**: USD pricing, [[BTC/USD]] pair trading, [[USDC]] denominated contracts
     #### 3. Store of Value
     - **Purpose**: Preserve purchasing power across time
-    - **2025 Developments**: [[Bitcoin]] strengthens narrative as "digital gold," stablecoins provide alternative store of value
+    - **2025 Developments**: [[Bitcoin Proof-of-Work Protocol]] strengthens narrative as "digital gold," stablecoins provide alternative store of value
     - **Examples**: Savings accounts, gold, Bitcoin holdings, USDC reserves
   - ### Forms of Money [Updated 2025]
     #### Fiat Currency
@@ -1448,7 +1448,7 @@ public:: true
     - **Regulatory Framework**: ISO 4217 standards maintained
     #### Cryptocurrency
     - **Definition**: Decentralized digital currency using cryptography and blockchain technology
-    - **Key Variants**: [[Bitcoin]] (store of value), [[Ethereum]] (smart contract platform), [[Litecoin]]
+    - **Key Variants**: [[Bitcoin Proof-of-Work Protocol]] (store of value), [[Ethereum Smart Contract Platform]] (smart contract platform), [[Litecoin]]
     - **2025 Market Status**: Crypto transactions exceed $600B annually in cross-border payments; merchant adoption growing 82.1% (2024-2026 projection)
     - **Regulatory Challenge**: Varied global approaches, but clearing trend toward framework establishment
     #### Stablecoin [Updated 2025]
@@ -1488,7 +1488,7 @@ public:: true
     - **Cross-Chain Activity**: 52% increase in 2025 via Layer-2 solutions and blockchain bridges
     - **Composability**: [[USDC]] integration with Stripe enables dollar-denominated smart contracts
     #### Programmable Money via Smart Contracts
-    - Tokenized money (USDC on [[Ethereum]], Polygon)
+    - Tokenized money (USDC on [[Ethereum Smart Contract Platform]], Polygon)
     - Conditional transfers with [[smart contracts]]
     - Atomic settlement across [[Layer-2]] networks
     - DeFi composability enabling complex financial products
@@ -1508,8 +1508,8 @@ public:: true
     - Real-time economic data collection capabilities
     - Negative interest rate experiments (theoretical, not yet deployed)
     #### Cryptocurrency Monetary Policy
-    - [[Bitcoin]] halvings provide algorithmic issuance discipline
-    - [[Ethereum]] [[Proof-of-Stake]] yield mechanisms
+    - [[Bitcoin Proof-of-Work Protocol]] halvings provide algorithmic issuance discipline
+    - [[Ethereum Smart Contract Platform]] [[Proof-of-Stake]] yield mechanisms
     - Protocol-governed supply caps
     - Decentralized governance via DAOs
   - ### Global Currency Dynamics
@@ -1525,7 +1525,7 @@ public:: true
     - **Multi-commodity basket**: Proposed by Keynes/Carney framework; likely includes gold, rare metals, potentially Bitcoin hedge
     #### Unbanked and Financial Inclusion
     - Cryptocurrency adoption higher in emerging markets seeking alternatives
-    - [[Bitcoin]] serves as inflation hedge in high-inflation economies (Argentina, Venezuela)
+    - [[Bitcoin Proof-of-Work Protocol]] serves as inflation hedge in high-inflation economies (Argentina, Venezuela)
     - CBDC pilots in India/Nigeria targeting rural financial inclusion
     - Cross-border remittances via crypto reducing intermediary costs
   - ### Challenges and Future Directions
@@ -1547,7 +1547,7 @@ public:: true
     #### Privacy vs Surveillance
     - CBDC surveillance risks acknowledged globally (UK, EU proposals)
     - Stablecoin privacy protections variable
-    - [[Bitcoin]] pseudonymity vs regulatory traceability debate
+    - [[Bitcoin Proof-of-Work Protocol]] pseudonymity vs regulatory traceability debate
     - Data sharing between governments complicates privacy guarantees
   - ### Use Cases and Applications [Updated 2025]
     - **Cross-Border Remittances**: Bitcoin and stablecoins reduce costs 2-3% vs SWIFT; 82.1% merchant adoption growth projected
@@ -1571,8 +1571,8 @@ public:: true
     - [[Project mBridge]] - Multi-central-bank wholesale CBDC platform
   - ### Related Concepts
     - [[Value Transfer]] - Parent concept of economic exchange mechanisms
-    - [[Bitcoin]] - First decentralized cryptocurrency, store of value narrative
-    - [[Ethereum]] - Smart contract platform enabling DeFi
+    - [[Bitcoin Proof-of-Work Protocol]] - First decentralized cryptocurrency, store of value narrative
+    - [[Ethereum Smart Contract Platform]] - Smart contract platform enabling DeFi
     - [[Cryptocurrency]] - Decentralized digital currencies
     - [[Stablecoin]] - USD-pegged digital assets ([[USDC]], [[USDT]])
     - [[CBDC]] - Central bank digital currencies

@@ -3,7 +3,7 @@
   "title": "JSON Serialisation",
   "slug": "json-serialisation",
   "public": true,
-  "classIri": "urn:ngm:class:json-serialisation",
+  "classIri": "urn:ngm:class:json-data-interchange-format-serialisation",
   "domain": "data",
   "definition": "JSON serialisation is the process of encoding in-memory data structures into JavaScript Object Notation text and decoding that text back into structured values. It provides a human-readable, language-independent representation for objects, arrays, numbers, strings and booleans. JSON serialisation is the default interchange format for web APIs, configuration files and message-passing between heterogeneous systems.",
   "subClassOf": [
@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {

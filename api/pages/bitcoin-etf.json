@@ -3,7 +3,7 @@
   "title": "Bitcoin ETF",
   "slug": "bitcoin-etf",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-etf",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
   "domain": "blockchain",
   "definition": "A Bitcoin ETF (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of Bitcoin (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional broke...",
   "subClassOf": [
@@ -30,11 +30,11 @@
         "label": "Authorized Participant"
       },
       {
-        "id": "urn:ngm:class:bitcoin-custody",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
         "label": "Bitcoin Custody"
       },
       {
-        "id": "urn:ngm:class:bitcoin-reference-rate",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-reference-rate",
         "label": "Bitcoin Reference Rate"
       },
       {
@@ -86,7 +86,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-inclusion-in-model-portfolio",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-inclusion-in-model-portfolio",
         "label": "Bitcoin Inclusion in Model Portfolio"
       },
       {
@@ -106,7 +106,7 @@
         "label": "Retirement Account Bitcoin Allocation"
       },
       {
-        "id": "urn:ngm:class:tax-advantaged-bitcoin-exposure",
+        "id": "urn:ngm:class:corporate-tax-compliance-framework-advantaged-bitcoin-exposure",
         "label": "Tax-Advantaged Bitcoin Exposure"
       }
     ],
@@ -165,7 +165,7 @@
         "label": "Fidelity Digital Assets"
       },
       {
-        "id": "urn:ngm:class:gemini-custody",
+        "id": "urn:ngm:class:gemini-multimodal-language-model-custody",
         "label": "Gemini Custody"
       },
       {
@@ -175,7 +175,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-liquidity",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-liquidity",
         "label": "Bitcoin Liquidity"
       },
       {
@@ -236,7 +236,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-options",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-options",
         "label": "Bitcoin Options"
       },
       {

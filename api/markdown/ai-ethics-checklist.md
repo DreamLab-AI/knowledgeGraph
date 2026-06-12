@@ -14,7 +14,7 @@
   - is-part-of:: [[AI Governance Framework]]
   - requires:: [[AI System Documentation]], [[Ethical Guidelines]], [[Assessment Methodology]]
   - enables:: [[Ethical AI Deployment]], [[Compliance Verification]], [[Risk Assessment]], [[Stakeholder Trust]]
-  - depends-on:: [[IEEE 7000 Standard]], [[OECD AI Principles]], [[EU AI Act]]
+  - depends-on:: [[IEEE 7000 Standard]], [[OECD AI Principles]], [[EU AI Act Regulatory Instrument]]
 
 - ### Content
   AI Ethics Checklist — content pending enrichment.

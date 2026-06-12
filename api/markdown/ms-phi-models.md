@@ -14,17 +14,17 @@
   - implemented-in-layer:: [[ModelLayer]], [[InferenceLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Foundation Models]], [[Large Language Models]], [[Proprietary Large Language Models]], [[General Purpose AI Model]], [[Generative AI]], [[Generative Model]]
-  - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture of Experts]], [[Multimodal AI]], [[Adapter Modules]]
+  - is-subclass-of:: [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Proprietary Large Language Models]], [[General Purpose AI Model]], [[Generative AI]], [[Generative Model]]
+  - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture-of-Experts Architecture]], [[Multimodal AI]], [[Adapter Modules]]
   - requires:: [[Pre Training]], [[Continued Pre Training]], [[Curriculum Learning]], [[Model Training]], [[Evaluation benchmarks and leaderboards]], [[Compute Infrastructure]], [[Training and fine tuning]]
   - enables:: [[Edge Computing]], [[On-Device Learning]], [[Microsoft Copilot]], [[Code Generation]], [[Reasoning]], [[Multimodal Understanding]], [[AI Deployment]], [[Edge AI System]], [[Context Aware Computing]]
   - implements:: [[Supervised Fine Tuning]], [[Direct Preference Optimization]], [[Parameter-Efficient Fine-Tuning]], [[QLoRA]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Safety Fine Tuning]], [[Full Fine Tuning]]
   - depends-on:: [[Attention]], [[Transformer]], [[Layer Normalisation]], [[Positional Encoding]], [[Activation Function]], [[Context Window]], [[BERT]], [[Scaled Dot Product Attention]]
   - supports:: [[Edge Computing Architecture]], [[NPU]], [[Inference Hardware]], [[Model Optimisation and Performance]], [[AI-Augmented Software Engineering]], [[Embedded AI Frameworks]], [[Knowledge Distillation for Edge]]
   - uses:: [[Prompt Engineering]], [[Retrieval Augmented Generation - RAG]], [[Function Calling]], [[Model Compression for Edge]], [[Model Pruning for Edge Deployment]], [[Context Engineering]]
-  - contrasts-with:: [[GPT 4]], [[ChatGPT]], [[LLaMA]], [[Llama 3]], [[Gemini]], [[Mistral and Mixtral]], [[Anthropic Claude]], [[GPT 3]]
-  - related-to:: [[AI Safety]], [[Responsible AI]], [[Bias in Large Language Models]], [[AI Alignment]], [[Ethical AI]], [[Algorithmic Bias]], [[Competition in AI]], [[Foundation Models]]
-  - standardized-by:: [[EU AI Act]], [[Responsible AI Principles]], [[AI Model Card]], [[Responsible AI]]
+  - contrasts-with:: [[GPT 4]], [[Instruction-Following Conversational AI System]], [[LLaMA]], [[Llama 3]], [[Gemini Multimodal Language Model]], [[Mistral AI Open-Weight Model Family]], [[Constitutional AI Language Model Family]], [[GPT 3]]
+  - related-to:: [[AI Safety]], [[Responsible AI]], [[Bias in Large Language Models]], [[AI Alignment]], [[Ethical AI]], [[Algorithmic Bias]], [[Competition in AI]], [[Large-Scale Pretrained Foundation Model]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Responsible AI Principles]], [[AI Model Card]], [[Responsible AI]]
 
 - ### Content
 

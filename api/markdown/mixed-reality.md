@@ -10,16 +10,16 @@
   - implemented-in-layer:: [[DeviceLayer]], [[PlatformLayer]], [[ApplicationLayer]], [[PerceptionLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Extended Reality]], [[Spatial Computing]], [[Immersive Computing]], [[Augmented Reality]], [[Human Computer Interaction]], [[Perceptual Computing]]
+  - is-subclass-of:: [[Extended Reality]], [[Spatial Computing Paradigm]], [[Immersive Computing]], [[Augmented Reality]], [[Human Computer Interaction]], [[Perceptual Computing]]
   - has-part:: [[Head-Mounted Display]], [[Spatial Mapping]], [[Scene Understanding]], [[Hand Tracking]], [[Eye Tracking]], [[Spatial Audio]], [[World Anchor]], [[Pass-Through Video]], [[Holographic Rendering]], [[Depth Sensor]], [[IMU]], [[Visual Inertial Odometry]], [[Occlusion Rendering]]
   - requires:: [[Inside-Out Tracking]], [[SLAM]], [[Visual Inertial Odometry]], [[Spatial Mesh]], [[Display Calibration]], [[Latency Budget]], [[Waveguide Optics]], [[Compute SoC]], [[Scene Reconstruction]], [[6DoF Tracking]]
   - enables:: [[Immersive Collaboration]], [[Spatial Data Visualisation]], [[Remote Assistance]], [[Holographic Training]], [[Digital Twin Overlay]], [[Surgical Navigation]], [[Industrial Inspection]], [[Architectural Visualisation]], [[Spatial Audio Experience]], [[Avatar Presence]]
   - implements:: [[Milgram-Kishino Continuum]], [[Reality-Virtuality Continuum]], [[Occlusion Rendering]], [[Semantic Scene Understanding]], [[Spatial Anchor Services]], [[Foveated Rendering]], [[Physics Coherent Holography]]
-  - depends-on:: [[Computer Vision]], [[Inertial Measurement Unit]], [[Real-Time Rendering]], [[Spatial Audio Processing]], [[Machine Learning]], [[Cloud Anchor Infrastructure]], [[SLAM Algorithms]], [[Depth Estimation]]
+  - depends-on:: [[Computer Vision]], [[Inertial Measurement Unit]], [[Real-Time Rendering]], [[Spatial Audio Processing]], [[Machine Learning Discipline]], [[Cloud Anchor Infrastructure]], [[SLAM Algorithms]], [[Depth Estimation]]
   - supports:: [[Microsoft Mesh]], [[visionOS]], [[OpenXR]], [[Horizon Workrooms]], [[WebXR]], [[Unity XRI]], [[Unreal Engine XR]], [[Azure Spatial Anchors]], [[Meta Spatial Anchors]]
   - uses:: [[Micro-OLED Display]], [[LiDAR Scanner]], [[Time-of-Flight Sensor]], [[Silicon Carbide Waveguide]], [[Neural Radiance Field]], [[Transformer Vision Model]], [[Gaussian Splatting]], [[Pancake Lens]], [[Diffractive Waveguide]]
   - contrasts-with:: [[Virtual Reality]], [[Traditional 2D Interface]], [[Flat Screen Computing]], [[Screen-Based Collaboration]], [[Non-Spatial Computing]]
-  - related-to:: [[Metaverse]], [[Digital Twin]], [[Telepresence]], [[Holography]], [[Spatial Web]], [[Ambient Computing]], [[AI Companions]], [[Brain Computer Interfaces]], [[Extended Reality]], [[Volumetric Video]]
+  - related-to:: [[Metaverse]], [[Digital Twin]], [[Telepresence]], [[Holography]], [[Semantic Spatial Web Layer]], [[Ambient Computing]], [[AI Companions]], [[Brain Computer Interfaces]], [[Extended Reality]], [[Volumetric Video]]
   - standardized-by:: [[OpenXR Standard]], [[Khronos Group]], [[IEEE VR]], [[ISO TC 159 Ergonomics]], [[W3C WebXR Device API]], [[USD AOUSD]], [[OpenXR Scene Understanding Extension]]
 
 - ### Content

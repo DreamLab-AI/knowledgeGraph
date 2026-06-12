@@ -16,9 +16,9 @@
   - implements:: [[Prompt Injection]], [[Retrieval-Augmented Generation]], [[Function Calling]], [[Hybrid Search]], [[Conversation Memory]]
   - depends-on:: [[Large Language Models]], [[Vector Database]], [[OpenAPI Specification]], [[JSON Schema]], [[OAuth 2.0]]
   - supports:: [[Customer Support]], [[Legal Research]], [[Code Generation]], [[Education]], [[Healthcare Triage]], [[Knowledge Management]], [[Newsroom Workflows]]
-  - uses:: [[GPT 4]], [[GPT-5]], [[Claude]], [[Gemini]], [[BM25]], [[Embeddings]], [[Chunking]]
-  - contrasts-with:: [[Foundation Models]], [[Fine-Tuned Models]], [[Agents]], [[Rule-Based Chatbots]]
-  - related-to:: [[ChatGPT]], [[Anthropic Claude]], [[Microsoft Copilot]], [[Google Gemini]], [[Agent Frameworks]], [[Prompt Engineering]], [[Plugins]]
+  - uses:: [[GPT 4]], [[GPT-5]], [[Claude]], [[Gemini Multimodal Language Model]], [[BM25]], [[Embeddings]], [[Chunking]]
+  - contrasts-with:: [[Large-Scale Pretrained Foundation Model]], [[Fine-Tuned Models]], [[Agents]], [[Rule-Based Chatbots]]
+  - related-to:: [[Instruction-Following Conversational AI System]], [[Constitutional AI Language Model Family]], [[Microsoft Copilot]], [[Google Gemini]], [[Agent Frameworks]], [[Prompt Engineering]], [[Plugins]]
   - standardized-by:: [[OpenAPI 3.0]], [[JSON Schema]], [[Model Context Protocol]], [[OAuth 2.0]], [[Anthropic Agent Skills Open Standard]]
 
 - ### Content

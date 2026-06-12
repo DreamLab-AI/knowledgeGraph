@@ -2823,7 +2823,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -2883,7 +2883,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -2963,12 +2963,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[latent space]]",
+      "raw": "[[Neural Network Latent Space]]",
       "resolved": "urn:visionflow:owl:class:latent-space",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -2998,17 +2998,17 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA]]",
+      "raw": "[[NVIDIA Corporation]]",
       "resolved": "urn:visionflow:owl:class:nvidia",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:owl:class:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -3134,7 +3134,7 @@ public:: true
   - A variational autoencoder is a type of generative model that combines the concepts of autoencoders and variational inference. This page is a bit maths heavy.
   - An autoencoder is a type of neural network architecture that learns to encode and reconstruct input data, while reducing noise and dimensionality. It consists of an encoder network that maps the input data to a lower-dimensional latent space representation, and a decoder network that reconstructs the original data from this representation.
   - On the other hand, variational inference is a probabilistic approach to approximate complex probability distributions. It aims to approximate an intractable posterior distribution by learning a variational distribution that is easier to evaluate.
-  - A variational autoencoder (VAE) brings together these two concepts by extending the traditional autoencoder framework with probabilistic modeling. Instead of encoding the input data into a deterministic latent vector, a VAE maps the data to a distribution in the [[latent space]] .
+  - A variational autoencoder (VAE) brings together these two concepts by extending the traditional autoencoder framework with probabilistic modeling. Instead of encoding the input data into a deterministic latent vector, a VAE maps the data to a distribution in the [[Neural Network Latent Space]] .
   - At its core, a VAE consists of an encoder network that transforms the input data into two vectors: the mean and the standard deviation of a multivariate Gaussian distribution. These vectors represent the parameters of the variational distribution in the latent space. During the training process, the VAE samples from this distribution to generate a latent vector.
   - The sampled latent vector is then decoded by a decoder network, which reconstructs the original input data. The reconstruction loss in a VAE is typically measured as the similarity between the reconstructed data and the original input data.
   - The key innovation of a VAE lies in the training objective. In addition to the reconstruction loss, a VAE also introduces a regularization term called the Kullback-Leibler (KL) divergence. The KL divergence acts as a regularizer, encouraging the learned variational distribution to approximate a chosen prior distribution in the latent space, often a standard Gaussian.
@@ -3655,7 +3655,7 @@ public:: true
   - Flag anomalous transactions with high reconstruction error
 
   - **Applications in Bitcoin**:
-  - [[Bitcoin]] mixing service detection
+  - [[Bitcoin Proof-of-Work Protocol]] mixing service detection
   - [[Ransomware]] payment tracking
   - Whale wallet monitoring
   - Exchange flow analysis
@@ -3699,7 +3699,7 @@ public:: true
   - Identify outlier contracts with unusual patterns
 
   - **Execution analysis**:
-  - Monitor contract state changes on [[Ethereum]] or [[Binance Smart Chain]]
+  - Monitor contract state changes on [[Ethereum Smart Contract Platform]] or [[Binance Smart Chain]]
   - VAE learns normal execution patterns
   - Detect [[Reentrancy Attack|reentrancy attacks]], [[Flash Loan]] exploits
 
@@ -4020,7 +4020,7 @@ public:: true
 
   - #### Quantum Machine Learning
 
-  - Quantum VAEs ([[QVAE]]) leverage [[Quantum Computing]] for potential speedup and enhanced expressiveness
+  - Quantum VAEs ([[QVAE]]) leverage [[Quantum Computation Paradigm]] for potential speedup and enhanced expressiveness
 
   - **Architecture**:
   - [[Quantum Circuit]] encoder: Parameterized quantum gates map data to quantum state
@@ -4423,12 +4423,12 @@ public:: true
   - **Nouveau VAE** (NVAE) (Vahdat & Kautz, 2020)
   - State-of-the-art hierarchical VAE
   - Competitive with [[GAN|GANs]] on image generation
-  - [[NVIDIA]] research
+  - [[NVIDIA Corporation]] research
 
   - **Very Deep VAEs Generalize Autoregressive Models** (Child, 2021)
   - Scaling VAEs to 40+ layers
   - Achieves competitive density modeling
-  - [[OpenAI]] research
+  - [[OpenAI Research Organisation]] research
 
   - ### Applications Literature
 
@@ -4521,7 +4521,7 @@ public:: true
   - ## Metadata
 
   - **Topic**: [[Variational Autoencoders]]
-  - **Domain**: [[Machine Learning]], [[Deep Learning]], [[Generative Models]]
+  - **Domain**: [[Machine Learning Discipline]], [[Deep Learning]], [[Generative Models]]
   - **Related Concepts**: [[Autoencoder]], [[Variational Inference]], [[Generative Adversarial Networks]], [[Diffusion Models]], [[Latent Space]]
   - **Applications**: [[Image Generation]], [[Anomaly Detection]], [[Drug Discovery]], [[Robotics]], [[Blockchain Analytics]]
   - **Maturity**: Mature (established since 2013, widely deployed)

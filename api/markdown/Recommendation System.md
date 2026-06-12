@@ -24,10 +24,10 @@ alias:: RecommendationSystem
   "definition": "A recommendation system is an information filtering infrastructure that predicts and surfaces items, content, or actions likely to be of interest to a specific user, based on behavioural history, explicit preferences, item features, or combinations thereof. It encompasses collaborative filtering approaches that exploit user-item interaction patterns, content-based methods that match item attributes to user profiles, and hybrid models that combine multiple signals. Modern recommendation systems employ deep learning, graph neural networks, and large language models to capture complex preference patterns at scale. They are commercially critical infrastructure in e-commerce, streaming media, social networks, and digital advertising.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:collaborative-filtering", "label": "Collaborative Filtering"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-filtering", "label": "Collaborative Filtering"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
@@ -40,7 +40,7 @@ alias:: RecommendationSystem
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:social-media", "label": "social media"}
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"}
     ]
   },
   "quality": 0.8

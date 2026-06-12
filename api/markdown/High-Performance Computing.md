@@ -35,7 +35,7 @@ alias:: High Performance Computing
       {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neur-ips", "label": "NeurIPS"},
       {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}

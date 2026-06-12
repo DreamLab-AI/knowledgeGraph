@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Polygon]]
   - has-part:: [[Fraud Proof]], [[Zero Knowledge Proof]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[Optimism]], [[Arbitrum]], [[zkSync]]
 
 - ### Content

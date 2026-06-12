@@ -75,7 +75,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -121,7 +121,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - Uses [[Machine Learning]]
+  - Uses [[Machine Learning Discipline]]
   - Uses [[Embedding Model]]
   - Enables [[Predictive Personalization]]
   - Enables [[Information Retrieval]]

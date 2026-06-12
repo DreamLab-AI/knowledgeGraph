@@ -103,7 +103,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:linked:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -133,7 +133,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Image Generation]]
-  - bridges-to:: [[Stable Diffusion]]
+  - bridges-to:: [[Stable Diffusion Image Model]]
   - requires:: [[Diffusion Model]]
   - enables:: [[Inpainting]]
 

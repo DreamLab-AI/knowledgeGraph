@@ -3,7 +3,7 @@
   - It encompasses real-time ingestion of control evidence, automated rule evaluation against coded policy logic, risk-scored alerting with prioritised analyst queues, structured case management and investigation workflows, regulatory submission pipelines, and immutable audit trail generation — transforming regulatory adherence from a periodic attestation exercise into a continuously maintained operational state.
   - Distinguished from point-in-time auditing by its persistent cadence: evaluation cycles range from sub-second (real-time transaction screening, SIEM event correlation) to hourly (cloud configuration drift detection, access control validation) to daily (ROPA refresh, sanctions list rescreening), with continuous evidence accumulation rather than snapshot evidence capture.
   - Modern implementations span six functional layers: (1) data collection and normalisation — streaming telemetry from cloud APIs, system logs, transaction databases, HR records, and network flows into unified event schemas; (2) rule execution and policy evaluation — applying coded rule sets expressing regulatory logic in executable form, evaluating controls against defined thresholds in milliseconds using declarative policy engines; (3) risk scoring and prioritisation — weighting alert severity by regulatory exposure, customer risk profile, behavioural baseline deviation, and operational context; (4) case management and investigation — structured workflows capturing evidence chains, analyst decisions, regulatory determinations, and SAR/STR filing decisions; (5) regulatory reporting and submission — automated generation of Suspicious Activity Reports, Regulatory Capital returns, DORA incident notifications, EMIR trade reports, and MiFID II transaction reports; (6) audit trail and evidencing — immutable, cryptographically verifiable, timestamped records of all system actions, decisions, and data accesses for regulatory examination and forensic analysis.
-  - The global [[Regulatory Technology]] and compliance automation market was valued at USD 20.3 billion in 2024 and is projected to reach USD 72.4 billion by 2032 at an 18.1% CAGR, with the AI-in-RegTech segment growing at 36.7% CAGR and reaching USD 3.3 billion by 2026. Growth is driven by escalating regulatory complexity across financial services ([[EU AI Act]], DORA, [[MiCA]], AMLD6), data protection ([[GDPR]], UK GDPR), and cybersecurity (NIS2, NIST CSF 2.0) domains.
+  - The global [[Regulatory Technology]] and compliance automation market was valued at USD 20.3 billion in 2024 and is projected to reach USD 72.4 billion by 2032 at an 18.1% CAGR, with the AI-in-RegTech segment growing at 36.7% CAGR and reaching USD 3.3 billion by 2026. Growth is driven by escalating regulatory complexity across financial services ([[EU AI Act Regulatory Instrument]], DORA, [[MiCA]], AMLD6), data protection ([[GDPR]], UK GDPR), and cybersecurity (NIS2, NIST CSF 2.0) domains.
   - The [[Anti Money Laundering]] transaction monitoring sub-market specifically reached USD 19.98 billion in 2025, forecast to double to USD 41.99 billion by 2030 at 16.02% CAGR, as AI-powered systems demonstrably reduce false positives by 90-95% compared to legacy rule-based predecessors — redirecting compliance analyst effort from alert triaging towards high-value investigation and systemic risk identification.
   - Foundational to [[Regulatory Technology]], [[Anti Money Laundering]], [[GDPR]], [[Audit Trail]], [[Risk Management]], [[Data Governance]], [[Security Operations]], [[Policy Enforcement]], [[Financial Regulation]], [[KYC]], [[Fraud Detection]], and [[Governance Risk Compliance]].
 
@@ -21,7 +21,7 @@
   - requires:: [[Data Governance]], [[Policy Enforcement]], [[Identity and Access Management]], [[Security Information and Event Management]], [[KYC]], [[Regulatory Framework]]
   - enables:: [[Anti Money Laundering]], [[Fraud Detection]], [[GDPR]], [[SOC 2 Compliance]], [[ISO 27001 Controls]], [[Financial Regulation]], [[Sanctions Screening]]
   - implements:: [[Policy-as-Code]], [[Continuous Assurance]], [[Explainable AI]], [[Federated Learning]], [[Graph Analytics]], [[Anomaly Detection]]
-  - depends-on:: [[Machine Learning]], [[Stream Processing]], [[Graph Databases]], [[Cryptographic Hashing]], [[Natural Language Processing]], [[Cloud Infrastructure]]
+  - depends-on:: [[Machine Learning Discipline]], [[Stream Processing]], [[Graph Databases]], [[Cryptographic Hashing]], [[Natural Language Processing]], [[Cloud Infrastructure]]
   - supports:: [[Financial Regulation]], [[Security Operations]], [[Data Protection]], [[Operational Resilience]], [[Supply Chain Compliance]], [[Market Abuse Detection]]
   - uses:: [[Large Language Models]], [[Bayesian Risk Models]], [[Knowledge Graphs]], [[Blockchain Analytics]], [[Digital Identity]], [[Homomorphic Encryption]]
   - contrasts-with:: [[Periodic Auditing]], [[Manual Review]], [[Checkbox Compliance]], [[Reactive Incident Response]]
@@ -150,7 +150,7 @@
 
   - It represents a fundamental shift from the traditional audit model — in which compliance is assessed at discrete, planned intervals (annually, quarterly, or per product release) — to a persistent operational state in which evidence of conformance or non-conformance is collected, evaluated, and acted upon in near-real time.
 
-  - This shift has become necessary because the volume, velocity, and complexity of modern regulatory obligations far exceed human capacity for manual tracking. A mid-sized UK financial institution may be simultaneously subject to FCA Consumer Duty requirements, PRA Operational Resilience standards, the UK GDPR, the [[EU AI Act]] (for AI systems serving EU customers), FATF Recommendations on AML/CFT, MiFID II transaction reporting, [[ISO/IEC 27001]] information security controls, and SOC 2 requirements for cloud-hosted services — each with distinct monitoring frequencies, evidence formats, and reporting timelines.
+  - This shift has become necessary because the volume, velocity, and complexity of modern regulatory obligations far exceed human capacity for manual tracking. A mid-sized UK financial institution may be simultaneously subject to FCA Consumer Duty requirements, PRA Operational Resilience standards, the UK GDPR, the [[EU AI Act Regulatory Instrument]] (for AI systems serving EU customers), FATF Recommendations on AML/CFT, MiFID II transaction reporting, [[ISO/IEC 27001]] information security controls, and SOC 2 requirements for cloud-hosted services — each with distinct monitoring frequencies, evidence formats, and reporting timelines.
 
   - The conceptual foundation rests on the **continuous control** model: every regulatory requirement can be expressed as a testable control assertion over observable system states.
     - A GDPR data retention requirement becomes a control that fires whenever a data record exceeds its defined retention period without deletion evidence.
@@ -302,7 +302,7 @@
 
   - ### EU AI Act Post-Market Monitoring
 
-  - The [[EU AI Act]] — in force August 2024, with prohibited practice provisions from February 2025 and GPAI model obligations from August 2025 — introduces a new compliance monitoring obligation: mandatory **post-market monitoring** of deployed high-risk AI systems, now targeting Annex III systems from December 2027 following the Digital Omnibus postponement.
+  - The [[EU AI Act Regulatory Instrument]] — in force August 2024, with prohibited practice provisions from February 2025 and GPAI model obligations from August 2025 — introduces a new compliance monitoring obligation: mandatory **post-market monitoring** of deployed high-risk AI systems, now targeting Annex III systems from December 2027 following the Digital Omnibus postponement.
 
   - Providers of high-risk AI systems must implement monitoring systems that:
     - Track actual AI system performance against the performance metrics established at conformity assessment, using representative production samples
@@ -393,7 +393,7 @@
 
   - ## Academic Context
 
-  - Compliance monitoring as a research discipline sits at the intersection of [[Knowledge Representation]], [[Business Process Management]], [[Machine Learning]], [[Natural Language Processing]], and [[Formal Verification]].
+  - Compliance monitoring as a research discipline sits at the intersection of [[Knowledge Representation]], [[Business Process Management]], [[Machine Learning Discipline]], [[Natural Language Processing]], and [[Formal Verification]].
 
   - **Foundational process compliance work**: van der Aalst, Pesic, and Schonenberg (2009) established declarative process modelling with Linear Temporal Logic (LTL) constraints as the formal machinery for expressing regulatory requirements as temporal assertions over process execution traces — the theoretical underpinning of modern temporal pattern matching in AML systems. Their ConDec language provided the first formal semantics for compliance-relevant process properties.
 

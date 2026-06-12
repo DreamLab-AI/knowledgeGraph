@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
     ],
     "enables": [

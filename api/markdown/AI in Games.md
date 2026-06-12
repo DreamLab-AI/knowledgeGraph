@@ -702,7 +702,7 @@ public:: true
         "label": "Inworld AI"
       },
       {
-        "@id": "urn:ngm:class:nvidia-ace",
+        "@id": "urn:ngm:class:nvidia-corporation-ace",
         "label": "NVIDIA ACE"
       },
       {

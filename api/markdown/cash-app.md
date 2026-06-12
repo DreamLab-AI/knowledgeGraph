@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Payment System]]
-  - bridges-to:: [[Bitcoin]], [[Block]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Block]]
   - requires:: [[Payment System]]
 
 - ### Content

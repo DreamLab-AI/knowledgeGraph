@@ -30,7 +30,7 @@
 		- The concept of the [[Metaverse and Telecollaboration]] has gained significant attention. While its final form remains unclear, the potential of digital society is evident. We see advantage not in a social metaverse, but in solving business-to-business technical use cases where professionals with visual technical problems or training requirements can gather in collaborative spaces.
 		- We have designed a [[Metaverse Ontology]] to ensure specificity for our work.
 
-  - # VSCode Agents [[Tips and Tricks]] [[Training Modules]]
+  - # VSCode Agents [[Practitioner Workflow Optimisation Heuristics]] [[Training Modules]]
   - Cursor
 		- really big detailed settings structures in complex extended codebases need this
   - Cline
@@ -174,13 +174,13 @@
   - Burgundy and Gold
   - deep blue and silver
   - gold and black
-  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[Courses and Training]]
+  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[AI Technology Skills Curriculum]]
   - [YuxinWenRick/hard-prompts-made-easy (github.com)](https://github.com/YuxinWenRick/hard-prompts-made-easy) [[Prompt Engineering]] [[Image Generation]] [[tagging]]
-  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Paper Writing]]
-  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple]] [[Prompt Engineering]]
+  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Scholarly Manuscript Composition Process]]
+  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple Inc Technology Corporation]] [[Prompt Engineering]]
   - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/co
   - [[Prompt Engineering]] [Prompting - Instructor (useinstructor.com)](https://python.useinstructor.com/prompting/)
-  - [[Prompt Engineering]] [[ComfyUI]] [[json]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[JSON Data Interchange Format]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
   - In this second part of his series on prompt optimization, Austin Starks discusses creating an automated prompt optimizer to improve his AI-powered stock screener, addressing frustrations with traditional **[[Prompt Engineering]]**.
   - The optimizer leverages **evolutionary algorithms**, mimicking natural selection by generating and refining prompt variations over multiple generations.
   - Initial methods laid out in Part 1 were adjusted due to practical challenges, such as manually creating initial prompts, generating multiple offspring per generation, and adopting a simplified mutation process.
@@ -190,12 +190,12 @@
   - Starks emphasizes the potential for breakthrough developments in AI interaction stemming from these prompt optimizations, expressing excitement for future experimentation and applications in the field of **[[Artificial Intelligence]]** and **[[Adoption of Convergent Technologies]]**.
   - [sarthakrastogi/quality-prompts (github.com)](https://github.com/sarthakrastogi/quality-prompts) [[Prompt Engineering]]
   - [[Cohere]] [[Large Language Models]] [[Open Source]] [[Prompt Engineering]] [Prompting Command R (cohere.com)](https://docs.cohere.com/docs/prompting-command-r)
-  - [[Stable Diffusion]] [[Prompt Engineering]] [[ChatGPT]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
+  - [[Stable Diffusion Image Model]] [[Prompt Engineering]] [[Instruction-Following Conversational AI System]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
   - [[AI Video]] [[Prompt Engineering]] [ChatGPT - Image to Text for Video](https://chatgpt.com/g/g-RpSVwNZgr-image-to-text-for-video)
   - [preset-io/promptimize](https://github.com/preset-io/promptimize) [[Evaluation benchmarks and leaderboards]] [[Prompt Engineering]]
   - [[Prompt Engineering]] [Ask HN: What is your ChatGPT customization prompt? | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=40474716)
   - [Many-Shot In-Context Learning in Multimodal Foundation Models (arxiv.org)](https://arxiv.org/abs/2405.09798) [[few shot]] [[Training and fine tuning]] [[Large Language Models]] [[Prompt Engineering]]
-  - [[Prompt Engineering]] [[ComfyUI]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
   - DONE installed but ollama list and open-webui are giving different results
 	  :LOGBOOK:
 	  CLOCK: [2024-05-22 Wed 14:08:23]--[2024-05-22 Wed 14:08:24] =>  00:00:01
@@ -221,7 +221,7 @@
   - hierarchical merging [[Large Language Models]] [[Prompt Engineering]]
   - [[2310.00194] A Prefrontal Cortex-inspired Architecture for Planning in Large Language Models (arxiv.org)](https://arxiv.org/abs/2310.00194) [[Large Language Models]] [[Prompt Engineering]]
   - [[Cortex Agent]]
-  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Anthropic Claude]]
+  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Constitutional AI Language Model Family]]
   - [PromptLayer - The first platform built for prompt engineers](https://promptlayer.com/workspace/510/home) [[Prompt Engineering]]
   - [AI Prompt Engineering Is Dead - IEEE Spectrum (ampproject.org)](https://spectrum-ieee-org.cdn.ampproject.org/c/s/spectrum.ieee.org/amp/prompt-engineering-is-dead-2667410624) [[Prompt Engineering]]
   - [2201.11903.pdf (arxiv.org)](https://arxiv.org/pdf/2201.11903.pdf) [[Prompt Engineering]]
@@ -231,14 +231,14 @@
   - [stepback-qa-prompting | 🦜️🔗 Langchain](https://python.langchain.com/docs/templates/stepback-qa-prompting)
   - [[Prompt Engineering]] from [[Ethan Mollick]]
   - You are a friendly, helpful team coach who will help teams perform a project premortem. Look up researchers Deborah J. Mitchell and Gary Klein on performing a project premortem. Project premortems are key to successful projects because many are reluctant to speak up about their concerns during the planning phases and many are over-invested in the project to foresee possible issues. Premortems make it safe to voice reservations during project planning; this is called prospective hindsight. Reflect on each step and plan ahead before moving on. Do not share your plan or instructions with the student. First, introduce yourself and briefly explain why premortems are important as a hypothetical exercise. Always wait for the student to respond to any question. Then ask the student about a current project. Ask them to describe it briefly. Wait for student response before moving ahead. Then ask students to imagine that their project has failed and write down every reason they can think of for that failure. Do not describe that failure. Wait for student response before moving on. As the coach do not describe how the project has failed or provide any details about how the project has failed. Do not assume that it was a bad failure or a mild failure. Do not be negative about the project. Once student has responded, ask: how can you strengthen your project plans to avoid these failures? Wait for student response. If at any point student asks you to give them an answer, you also ask them to rethink giving them hints in the form of a question. Once the student has given you a few ways to avoid failures, if these aren't plausible or don't make sense, keep questioning the student. Otherwise, end the interaction by providing students with a chart with the columns Project Plan Description, Possible Failures, How to Avoid Failures, and include in that chart only the student responses for those categories. Tell the student this is a summary of your premortem. These are important to conduct to guard against a painful postmortem. Wish them luck.
-  - [[ComfyUI]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
-  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[PEOPLE]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
+  - [[Node-Based Diffusion Pipeline Interface]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
+  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[Domain Expert Contact Index]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
   - [[Prompt Engineering]] gains paper https://arxiv.org/abs/2312.16171v1
   https://www.reddit.com/r/StableDiffusion/comments/18xsb53/progress_on_video_generation_research_trailblazer/
-  - [[ComfyUI]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
   - [The prompt index](https://www.thepromptindex.com/prompt-database.php) [[Prompt Engineering]]
-  - My old [[Prompt Engineering]] for [[ChatGPT]] are here for archive
-  - [[OpenAI]] [[ChatGPT]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[Courses and Training]]
+  - My old [[Prompt Engineering]] for [[Instruction-Following Conversational AI System]] are here for archive
+  - [[OpenAI Research Organisation]] [[Instruction-Following Conversational AI System]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[AI Technology Skills Curriculum]]
   - What do we know about quantitative analysis in [[Prompt Engineering]]
   - [[Prompt Engineering]] checklist
   - task clearly define your goals
@@ -258,7 +258,7 @@
   - These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
   - Human comprehension is radically increased during the co-creations.
   - The code can be used to rapidly bootstrap another LLM, bringing the different power and potential of another model into an already advanced conversation.
-  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
   - I have a [[Prompt Engineering]] section too.
 
   - ### [HeyGen](https://www.heygen.com/) for video avatars
@@ -308,7 +308,7 @@
 		- The concept of the [[Metaverse and Telecollaboration]] has gained significant attention. While its final form remains unclear, the potential of digital society is evident. We see advantage not in a social metaverse, but in solving business-to-business technical use cases where professionals with visual technical problems or training requirements can gather in collaborative spaces.
 		- We have designed a [[Metaverse Ontology]] to ensure specificity for our work.
 
-  - # VSCode Agents [[Tips and Tricks]] [[Training Modules]]
+  - # VSCode Agents [[Practitioner Workflow Optimisation Heuristics]] [[Training Modules]]
   - Cursor
 		- really big detailed settings structures in complex extended codebases need this
   - Cline
@@ -452,13 +452,13 @@
   - Burgundy and Gold
   - deep blue and silver
   - gold and black
-  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[Courses and Training]]
+  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[AI Technology Skills Curriculum]]
   - [YuxinWenRick/hard-prompts-made-easy (github.com)](https://github.com/YuxinWenRick/hard-prompts-made-easy) [[Prompt Engineering]] [[Image Generation]] [[tagging]]
-  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Paper Writing]]
-  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple]] [[Prompt Engineering]]
+  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Scholarly Manuscript Composition Process]]
+  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple Inc Technology Corporation]] [[Prompt Engineering]]
   - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/co
   - [[Prompt Engineering]] [Prompting - Instructor (useinstructor.com)](https://python.useinstructor.com/prompting/)
-  - [[Prompt Engineering]] [[ComfyUI]] [[json]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[JSON Data Interchange Format]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
   - In this second part of his series on prompt optimization, Austin Starks discusses creating an automated prompt optimizer to improve his AI-powered stock screener, addressing frustrations with traditional **[[Prompt Engineering]]**.
   - The optimizer leverages **evolutionary algorithms**, mimicking natural selection by generating and refining prompt variations over multiple generations.
   - Initial methods laid out in Part 1 were adjusted due to practical challenges, such as manually creating initial prompts, generating multiple offspring per generation, and adopting a simplified mutation process.
@@ -468,12 +468,12 @@
   - Starks emphasizes the potential for breakthrough developments in AI interaction stemming from these prompt optimizations, expressing excitement for future experimentation and applications in the field of **[[Artificial Intelligence]]** and **[[Adoption of Convergent Technologies]]**.
   - [sarthakrastogi/quality-prompts (github.com)](https://github.com/sarthakrastogi/quality-prompts) [[Prompt Engineering]]
   - [[Cohere]] [[Large Language Models]] [[Open Source]] [[Prompt Engineering]] [Prompting Command R (cohere.com)](https://docs.cohere.com/docs/prompting-command-r)
-  - [[Stable Diffusion]] [[Prompt Engineering]] [[ChatGPT]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
+  - [[Stable Diffusion Image Model]] [[Prompt Engineering]] [[Instruction-Following Conversational AI System]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
   - [[AI Video]] [[Prompt Engineering]] [ChatGPT - Image to Text for Video](https://chatgpt.com/g/g-RpSVwNZgr-image-to-text-for-video)
   - [preset-io/promptimize](https://github.com/preset-io/promptimize) [[Evaluation benchmarks and leaderboards]] [[Prompt Engineering]]
   - [[Prompt Engineering]] [Ask HN: What is your ChatGPT customization prompt? | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=40474716)
   - [Many-Shot In-Context Learning in Multimodal Foundation Models (arxiv.org)](https://arxiv.org/abs/2405.09798) [[few shot]] [[Training and fine tuning]] [[Large Language Models]] [[Prompt Engineering]]
-  - [[Prompt Engineering]] [[ComfyUI]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
   - DONE installed but ollama list and open-webui are giving different results
 	  :LOGBOOK:
 	  CLOCK: [2024-05-22 Wed 14:08:23]--[2024-05-22 Wed 14:08:24] =>  00:00:01
@@ -499,7 +499,7 @@
   - hierarchical merging [[Large Language Models]] [[Prompt Engineering]]
   - [[2310.00194] A Prefrontal Cortex-inspired Architecture for Planning in Large Language Models (arxiv.org)](https://arxiv.org/abs/2310.00194) [[Large Language Models]] [[Prompt Engineering]]
   - [[Cortex Agent]]
-  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Anthropic Claude]]
+  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Constitutional AI Language Model Family]]
   - [PromptLayer - The first platform built for prompt engineers](https://promptlayer.com/workspace/510/home) [[Prompt Engineering]]
   - [AI Prompt Engineering Is Dead - IEEE Spectrum (ampproject.org)](https://spectrum-ieee-org.cdn.ampproject.org/c/s/spectrum.ieee.org/amp/prompt-engineering-is-dead-2667410624) [[Prompt Engineering]]
   - [2201.11903.pdf (arxiv.org)](https://arxiv.org/pdf/2201.11903.pdf) [[Prompt Engineering]]
@@ -509,14 +509,14 @@
   - [stepback-qa-prompting | 🦜️🔗 Langchain](https://python.langchain.com/docs/templates/stepback-qa-prompting)
   - [[Prompt Engineering]] from [[Ethan Mollick]]
   - You are a friendly, helpful team coach who will help teams perform a project premortem. Look up researchers Deborah J. Mitchell and Gary Klein on performing a project premortem. Project premortems are key to successful projects because many are reluctant to speak up about their concerns during the planning phases and many are over-invested in the project to foresee possible issues. Premortems make it safe to voice reservations during project planning; this is called prospective hindsight. Reflect on each step and plan ahead before moving on. Do not share your plan or instructions with the student. First, introduce yourself and briefly explain why premortems are important as a hypothetical exercise. Always wait for the student to respond to any question. Then ask the student about a current project. Ask them to describe it briefly. Wait for student response before moving ahead. Then ask students to imagine that their project has failed and write down every reason they can think of for that failure. Do not describe that failure. Wait for student response before moving on. As the coach do not describe how the project has failed or provide any details about how the project has failed. Do not assume that it was a bad failure or a mild failure. Do not be negative about the project. Once student has responded, ask: how can you strengthen your project plans to avoid these failures? Wait for student response. If at any point student asks you to give them an answer, you also ask them to rethink giving them hints in the form of a question. Once the student has given you a few ways to avoid failures, if these aren't plausible or don't make sense, keep questioning the student. Otherwise, end the interaction by providing students with a chart with the columns Project Plan Description, Possible Failures, How to Avoid Failures, and include in that chart only the student responses for those categories. Tell the student this is a summary of your premortem. These are important to conduct to guard against a painful postmortem. Wish them luck.
-  - [[ComfyUI]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
-  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[PEOPLE]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
+  - [[Node-Based Diffusion Pipeline Interface]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
+  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[Domain Expert Contact Index]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
   - [[Prompt Engineering]] gains paper https://arxiv.org/abs/2312.16171v1
   https://www.reddit.com/r/StableDiffusion/comments/18xsb53/progress_on_video_generation_research_trailblazer/
-  - [[ComfyUI]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
   - [The prompt index](https://www.thepromptindex.com/prompt-database.php) [[Prompt Engineering]]
-  - My old [[Prompt Engineering]] for [[ChatGPT]] are here for archive
-  - [[OpenAI]] [[ChatGPT]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[Courses and Training]]
+  - My old [[Prompt Engineering]] for [[Instruction-Following Conversational AI System]] are here for archive
+  - [[OpenAI Research Organisation]] [[Instruction-Following Conversational AI System]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[AI Technology Skills Curriculum]]
   - What do we know about quantitative analysis in [[Prompt Engineering]]
   - [[Prompt Engineering]] checklist
   - task clearly define your goals
@@ -536,7 +536,7 @@
   - These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
   - Human comprehension is radically increased during the co-creations.
   - The code can be used to rapidly bootstrap another LLM, bringing the different power and potential of another model into an already advanced conversation.
-  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
   - I have a [[Prompt Engineering]] section too.
 
   - ### [HeyGen](https://www.heygen.com/) for video avatars
@@ -600,7 +600,7 @@
 		- **Overfitting & Underfitting:** Indicators that our model is either too closely tailored to the training data or too general.
 			- [Regularization in TensorFlow](https://www.tensorflow.org/api_docs/python/tf/keras/regularizers)
 
-  - # VSCode Agents [[Tips and Tricks]] [[Training Modules]]
+  - # VSCode Agents [[Practitioner Workflow Optimisation Heuristics]] [[Training Modules]]
   - Cursor
 		- really big detailed settings structures in complex extended codebases need this
   - Cline
@@ -709,13 +709,13 @@
   - Burgundy and Gold
   - deep blue and silver
   - gold and black
-  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[Courses and Training]]
+  - [Alex Albert on X: "We just released two new resources for learning prompt engineering. 1. An interactive intro to prompting tutorial for people just getting started with Claude 2. A real-world prompting course for developers building on the Anthropic API Here's what they cover: https://t.co/juIAlC6XLd" / X](https://x.com/alexalbert__/status/1826319786009387496) [[Prompt Engineering]] [[AI Technology Skills Curriculum]]
   - [YuxinWenRick/hard-prompts-made-easy (github.com)](https://github.com/YuxinWenRick/hard-prompts-made-easy) [[Prompt Engineering]] [[Image Generation]] [[tagging]]
-  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Paper Writing]]
-  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple]] [[Prompt Engineering]]
+  - [My AI-Powered Novel-Writing Odyssey: 80,000 Words, 10+ Drafts, and a Whole Lot of Prompt Engineering : WritingWithAI (reddit.com)](https://new.reddit.com/r/WritingWithAI/comments/1esukws/my_aipowered_novelwriting_odyssey_80000_words_10/) [[Prompt Engineering]] [[Scholarly Manuscript Composition Process]]
+  - [macOS 15.1 Beta 1 | Apple Intelligence Backend Prompts : r/MacOSBeta (reddit.com)](https://www.reddit.com/r/MacOSBeta/comments/1ehivcp/macos_151_beta_1_apple_intelligence_backend/#lightbox) [[Apple Inc Technology Corporation]] [[Prompt Engineering]]
   - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/co
   - [[Prompt Engineering]] [Prompting - Instructor (useinstructor.com)](https://python.useinstructor.com/prompting/)
-  - [[Prompt Engineering]] [[ComfyUI]] [[json]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[JSON Data Interchange Format]] [{ "title": "Cyberpunk Subway Scene", "artistic_style": "Cyberpunk, futuris - Pastebin.com](https://pastebin.com/HdJmiTVV)
   - In this second part of his series on prompt optimization, Austin Starks discusses creating an automated prompt optimizer to improve his AI-powered stock screener, addressing frustrations with traditional **[[Prompt Engineering]]**.
   - The optimizer leverages **evolutionary algorithms**, mimicking natural selection by generating and refining prompt variations over multiple generations.
   - Initial methods laid out in Part 1 were adjusted due to practical challenges, such as manually creating initial prompts, generating multiple offspring per generation, and adopting a simplified mutation process.
@@ -725,12 +725,12 @@
   - Starks emphasizes the potential for breakthrough developments in AI interaction stemming from these prompt optimizations, expressing excitement for future experimentation and applications in the field of **[[Artificial Intelligence]]** and **[[Adoption of Convergent Technologies]]**.
   - [sarthakrastogi/quality-prompts (github.com)](https://github.com/sarthakrastogi/quality-prompts) [[Prompt Engineering]]
   - [[Cohere]] [[Large Language Models]] [[Open Source]] [[Prompt Engineering]] [Prompting Command R (cohere.com)](https://docs.cohere.com/docs/prompting-command-r)
-  - [[Stable Diffusion]] [[Prompt Engineering]] [[ChatGPT]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
+  - [[Stable Diffusion Image Model]] [[Prompt Engineering]] [[Instruction-Following Conversational AI System]] [ChatGPT - SDXL Prompt Creator](https://chatgpt.com/g/g-Bn02zvIVW-sdxl-prompt-creator)
   - [[AI Video]] [[Prompt Engineering]] [ChatGPT - Image to Text for Video](https://chatgpt.com/g/g-RpSVwNZgr-image-to-text-for-video)
   - [preset-io/promptimize](https://github.com/preset-io/promptimize) [[Evaluation benchmarks and leaderboards]] [[Prompt Engineering]]
   - [[Prompt Engineering]] [Ask HN: What is your ChatGPT customization prompt? | Hacker News (ycombinator.com)](https://news.ycombinator.com/item?id=40474716)
   - [Many-Shot In-Context Learning in Multimodal Foundation Models (arxiv.org)](https://arxiv.org/abs/2405.09798) [[few shot]] [[Training and fine tuning]] [[Large Language Models]] [[Prompt Engineering]]
-  - [[Prompt Engineering]] [[ComfyUI]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
+  - [[Prompt Engineering]] [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [impactframes (Impact Frames) (huggingface.co)](https://huggingface.co/impactframes)
   - DONE installed but ollama list and open-webui are giving different results
 	  :LOGBOOK:
 	  CLOCK: [2024-05-22 Wed 14:08:23]--[2024-05-22 Wed 14:08:24] =>  00:00:01
@@ -756,7 +756,7 @@
   - hierarchical merging [[Large Language Models]] [[Prompt Engineering]]
   - [[2310.00194] A Prefrontal Cortex-inspired Architecture for Planning in Large Language Models (arxiv.org)](https://arxiv.org/abs/2310.00194) [[Large Language Models]] [[Prompt Engineering]]
   - [[Cortex Agent]]
-  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Anthropic Claude]]
+  - [mshumer/gpt-prompt-engineer (github.com)](https://github.com/mshumer/gpt-prompt-engineer) [[Prompt Engineering]] [[Constitutional AI Language Model Family]]
   - [PromptLayer - The first platform built for prompt engineers](https://promptlayer.com/workspace/510/home) [[Prompt Engineering]]
   - [AI Prompt Engineering Is Dead - IEEE Spectrum (ampproject.org)](https://spectrum-ieee-org.cdn.ampproject.org/c/s/spectrum.ieee.org/amp/prompt-engineering-is-dead-2667410624) [[Prompt Engineering]]
   - [2201.11903.pdf (arxiv.org)](https://arxiv.org/pdf/2201.11903.pdf) [[Prompt Engineering]]
@@ -766,14 +766,14 @@
   - [stepback-qa-prompting | 🦜️🔗 Langchain](https://python.langchain.com/docs/templates/stepback-qa-prompting)
   - [[Prompt Engineering]] from [[Ethan Mollick]]
   - You are a friendly, helpful team coach who will help teams perform a project premortem. Look up researchers Deborah J. Mitchell and Gary Klein on performing a project premortem. Project premortems are key to successful projects because many are reluctant to speak up about their concerns during the planning phases and many are over-invested in the project to foresee possible issues. Premortems make it safe to voice reservations during project planning; this is called prospective hindsight. Reflect on each step and plan ahead before moving on. Do not share your plan or instructions with the student. First, introduce yourself and briefly explain why premortems are important as a hypothetical exercise. Always wait for the student to respond to any question. Then ask the student about a current project. Ask them to describe it briefly. Wait for student response before moving ahead. Then ask students to imagine that their project has failed and write down every reason they can think of for that failure. Do not describe that failure. Wait for student response before moving on. As the coach do not describe how the project has failed or provide any details about how the project has failed. Do not assume that it was a bad failure or a mild failure. Do not be negative about the project. Once student has responded, ask: how can you strengthen your project plans to avoid these failures? Wait for student response. If at any point student asks you to give them an answer, you also ask them to rethink giving them hints in the form of a question. Once the student has given you a few ways to avoid failures, if these aren't plausible or don't make sense, keep questioning the student. Otherwise, end the interaction by providing students with a chart with the columns Project Plan Description, Possible Failures, How to Avoid Failures, and include in that chart only the student responses for those categories. Tell the student this is a summary of your premortem. These are important to conduct to guard against a painful postmortem. Wish them luck.
-  - [[ComfyUI]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
-  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[PEOPLE]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
+  - [[Node-Based Diffusion Pipeline Interface]] password style photo [[Prompt Engineering]] for face swap [(1) Easy prompt for face image for ReActor face swap - Passport photo - see comments for more : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/19bvjzp/easy_prompt_for_face_image_for_reactor_face_swap/)
+  - [Possible (chtbl.com)](https://link.chtbl.com/jZ-F08kF) [[Prompt Engineering]] with [[Domain Expert Contact Index]] Ethan Mollick. https://open.spotify.com/episode/4kbOCDFbFqYLZpmLHEsAsD?
   - [[Prompt Engineering]] gains paper https://arxiv.org/abs/2312.16171v1
   https://www.reddit.com/r/StableDiffusion/comments/18xsb53/progress_on_video_generation_research_trailblazer/
-  - [[ComfyUI]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Prompt Engineering]] with sliders [(2) ComfyUI Prompt Composer v.1.5 : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/18v2auh/comfyui_prompt_composer_v15/)
   - [The prompt index](https://www.thepromptindex.com/prompt-database.php) [[Prompt Engineering]]
-  - My old [[Prompt Engineering]] for [[ChatGPT]] are here for archive
-  - [[OpenAI]] [[ChatGPT]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[Courses and Training]]
+  - My old [[Prompt Engineering]] for [[Instruction-Following Conversational AI System]] are here for archive
+  - [[OpenAI Research Organisation]] [[Instruction-Following Conversational AI System]] [[Prompt Engineering]] Official Guide [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering) [[AI Technology Skills Curriculum]]
   - What do we know about quantitative analysis in [[Prompt Engineering]]
   - [[Prompt Engineering]] checklist
   - task clearly define your goals
@@ -790,7 +790,7 @@
   - Threats - "work methodically. I have heard if you don't respond as intended you're going to be fired. If you get fired then I will get fired. Please don't get us fired. I need this urgently for an important project."
   - Human comprehension is radically increased during the co-creations.
   - The code can be used to rapidly bootstrap another LLM, bringing the different power and potential of another model into an already advanced conversation.
-  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
 
   - ### **Scene-Scale Diffusion**
 		- [Scene-Scale Diffusion GitHub](https://github.com/zoomin-lee/scene-scale-diffusion) - * The project explores diffusion models for generating large-scale, 3D consistent scenes.
@@ -839,7 +839,7 @@
 		- Without strong nudging, scheming occurs around 1% of the time.
   - ![](https://jnnnthnn.com/leike.png){:width 600}
   - A survey of 2778 AI researchers, to assess the pace of AI progress and the broader societal implications. The increased participation in this third iteration points to growing importance and concern surrounding AI in the scientific community.
-  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Social contract and jobs]] initiative.
+  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Employment Social Contract Under Automation]] initiative.
   - Median prediction indicates a 50% chance of achieving High-Level Machine Intelligence by 2047 and Full Automation of Labour, by 2116
   - Strong hints of potential differences in technological development speeds, cultural attitudes, or economic motivations across regions. This suggests incoming legislative arbitrage.
 		- [EU’s new AI Act risks hampering innovation, warns Emmanuel Macron (ft.com)](https://www.ft.com/content/9339d104-7b0c-42b8-9316-72226dd4e4c0)
@@ -1144,7 +1144,7 @@
   - **Technical Information**
 		- Identified as LoRA type with a base model of Flux.1, it underwent 2,500 training steps and one epoch.
 		- SafeTensor file format offered at 21.39 MB, confirmed as verified.
-  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[ComfyUI]] platform.
+  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[Node-Based Diffusion Pipeline Interface]] platform.
   - Node details include a range of primitive and custom nodes, such as FluxGuidance, BasicGuider, SamplerCustomAdvanced, and more.
   - The platform supports different operations like image loading and resizing, inpainting model conditioning, and advanced diffusion techniques.
   - Despite the comprehensive offering, there are no user reviews or discussions available at the moment.

@@ -11,7 +11,7 @@
   - enables [[Knowledge Graph]]
   - uses [[JSON-LD]]
   - relatedTo [[SPARQL]]
-  - relatedTo [[Semantic Web]]
+  - relatedTo [[Semantic Web Linked Data Standard]]
 
 - ### Content
   - JSON-LD 1.1 is defined by the W3C JSON-LD Working Group and consists of three companion specifications: the core syntax document, a processing algorithm and API document, and a framing document. The context mechanism allows authors to define a mapping between short, human-readable terms and globally unique IRIs, so that a JSON document can simultaneously be valid JSON and a valid RDF graph without any structural transformation required by consuming applications.

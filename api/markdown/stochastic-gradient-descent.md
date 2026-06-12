@@ -9,7 +9,7 @@
 - ### Relationships
   - enables [[Deep Learning]]
   - enables [[Neural Network]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - relatedTo [[Reinforcement Learning]]
   - relatedTo [[Transfer Learning]]
 

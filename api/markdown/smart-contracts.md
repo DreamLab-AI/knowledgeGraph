@@ -71,7 +71,7 @@
   - is-subclass-of:: [[Blockchain]]
   - is-subclass-of:: [[Distributed Computing]]
   - related-to:: [[Decentralized Finance (DeFi)]]
-  - related-to:: [[Ethereum]]
+  - related-to:: [[Ethereum Smart Contract Platform]]
   - uses:: [[Cryptographic Hash Function]]
   - uses:: [[Digital Signature]]
   - enables:: [[Decentralized Application]]

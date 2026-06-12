@@ -56,7 +56,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:open-ai-api",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -153,7 +153,7 @@
         "label": "TypeScript"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -193,7 +193,7 @@
         "label": "MBPP Benchmark"
       },
       {
-        "id": "urn:ngm:class:open-ai-api",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -201,7 +201,7 @@
         "label": "SWE-bench Benchmark"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       }
     ],
@@ -220,11 +220,11 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -485,8 +485,8 @@
   ],
   "backlinks": [
     {
-      "slug": "coding-support",
-      "label": "Coding support"
+      "slug": "ai-assisted-developer-tooling",
+      "label": "AI-Assisted Developer Tooling"
     },
     {
       "slug": "cortex-agent",

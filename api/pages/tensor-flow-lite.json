@@ -8,7 +8,7 @@
   "definition": "TensorFlow Lite is a framework from Google for running machine learning models on mobile, embedded, and edge devices with reduced memory and computational requirements.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-framework",
+      "id": "urn:ngm:class:machine-learning-discipline-framework",
       "label": "Machine Learning Framework"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],

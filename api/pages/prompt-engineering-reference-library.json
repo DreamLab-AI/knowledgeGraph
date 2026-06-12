@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6",
+  "title": "Prompt Engineering Reference Library",
+  "slug": "prompt-engineering-reference-library",
+  "public": true,
+  "classIri": "urn:ngm:class:prompt-engineering-reference-library",
+  "domain": "infrastructure",
+  "definition": "A curated collection of high-quality prompts, system instructions, and prompt engineering patterns for directing large language model behaviour across tasks including image generation, code synthesis, transcript processing, and writing style control. Serves as a practitioner reference library for reproducible AI-assisted workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

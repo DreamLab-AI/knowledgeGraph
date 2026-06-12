@@ -72,7 +72,7 @@ alias:: CollaborativeLearning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-learning",
+  "@id": "urn:ngm:class:collaborative-systems-modality-learning",
   "@type": "Class",
   "label": "Collaborative Learning",
   "definition": "An educational approach where learners work toger in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",

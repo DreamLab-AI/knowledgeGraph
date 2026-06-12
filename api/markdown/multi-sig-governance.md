@@ -18,7 +18,7 @@
   - supports:: [[DAO]], [[DeFi Protocol Security]], [[Layer 2 Security Council]], [[Institutional Digital Asset Custody]], [[Regulatory Compliance Custody]], [[Wholesale Payment System]], [[Bitcoin ETF Custody]], [[Lightning Network]]
   - uses:: [[Hardware Wallet]], [[Ledger]], [[Trezor]], [[Safe Wallet]], [[Squads Protocol]], [[Fireblocks MPC]], [[Argent Account]], [[BitGo Wallet]], [[Copper MPC]], [[Gnosis Safe]]
   - contrasts-with:: [[On-Chain Voting]], [[Snapshot Voting]], [[Conviction Voting]], [[Quadratic Voting]], [[Timelock Contract]], [[Single-Key Wallet]], [[DAO]], [[Delegate Democracy]]
-  - related-to:: [[Bitcoin Technical Overview]], [[Ethereum]], [[Smart Contract]], [[Treasury Management]], [[Governance Token]], [[Cryptography Security and Privacy]], [[Digital Signature]], [[Access Control System]], [[Taproot Assets]], [[Lightning Network]], [[Blockchain Network]]
+  - related-to:: [[Bitcoin Technical Overview]], [[Ethereum Smart Contract Platform]], [[Smart Contract]], [[Treasury Management]], [[Governance Token]], [[Cryptography Security and Privacy]], [[Digital Signature]], [[Access Control System]], [[Taproot Assets]], [[Lightning Network]], [[Blockchain Network]]
   - standardized-by:: [[BIP-11]], [[BIP-16]], [[BIP-327]], [[BIP-340]], [[BIP-341]], [[BIP-373]], [[RFC 9591]], [[EIP-1271]], [[EIP-4337]], [[EIP-7702]], [[NIST IR 8214B]]
 
 - ### Content

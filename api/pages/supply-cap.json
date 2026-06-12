@@ -37,11 +37,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       }
     ],

@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:a9e4e5d543880d458d0dbcfb18e6706f67ee6caf80122587049f11dc710d72a1",
+  "title": "Employment Contract Restructuring Analysis",
+  "slug": "employment-contract-restructuring-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:employment-contract-restructuring-analysis",
+  "domain": "infrastructure",
+  "definition": "Role reorg denotes an organisational restructuring process in which employment or contractual arrangements are renegotiated, typically comparing permanent employment contracts with temporary or agency-based assignments across dimensions such as salary, holiday entitlement, pension eligibility, notice periods, and additional benefits. Such analysis underpins workforce planning decisions in academic and research institutions, balancing income stability against contractual flexibility and total compensation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:civil-service-job",
+        "label": "civil service job"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

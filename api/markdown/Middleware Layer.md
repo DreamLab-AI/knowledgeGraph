@@ -46,7 +46,7 @@ alias:: MiddlewareLayer
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:json-rpc", "label": "JSON-RPC"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-rpc", "label": "JSON-RPC"},
       {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
     ],
     "enables": [

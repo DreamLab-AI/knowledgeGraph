@@ -435,7 +435,7 @@ alias:: CLI multi agent systems
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       },
       {
@@ -513,7 +513,7 @@ alias:: CLI multi agent systems
         "label": "Agent2Agent Protocol"
       },
       {
-        "@id": "urn:ngm:class:open-ai-agents-sdk",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-agents-sdk",
         "label": "OpenAI Agents SDK"
       },
       {
@@ -802,7 +802,7 @@ alias:: CLI multi agent systems
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Docker]]",
+      "raw": "[[Docker Containerisation Platform]]",
       "resolved": "urn:visionflow:owl:class:docker",
       "kind": "ResolvedLink"
     },
@@ -876,7 +876,7 @@ alias:: CLI multi agent systems
   - implements:: [[AutoGen]], [[CrewAI]], [[LangGraph]], [[Model Context Protocol]], [[Agent2Agent Protocol]], [[CodeAct]], [[ReAct]]
   - depends-on:: [[Function Calling]], [[Orchestration]], [[Prompt Engineering]], [[Vector Database]], [[Large Language Model]], [[Reinforcement Learning from Human Feedback]]
   - supports:: [[Agentic Workflow]], [[Task Decomposition]], [[Code Execution]], [[Software Engineering Agents]], [[Automated Testing]], [[Human-in-the-Loop Learning]], [[DevSecOps]]
-  - uses:: [[Model Context Protocol]], [[Bash]], [[Python]], [[Docker]], [[Git]], [[Firecracker]], [[OpenTelemetry]]
+  - uses:: [[Model Context Protocol]], [[Bash]], [[Python]], [[Docker Containerisation Platform]], [[Git]], [[Firecracker]], [[OpenTelemetry]]
   - contrasts-with:: [[Chatbot]], [[Single-Agent System]], [[Robotic Process Automation]], [[Traditional CI/CD]], [[Static Analysis]]
   - related-to:: [[AutoGen]], [[CrewAI]], [[LangGraph]], [[Tool Use]], [[Code Execution]], [[Orchestration]], [[LLM Agents]], [[AutoGen]], [[Autonomous Agents]]
   - standardized-by:: [[Model Context Protocol]], [[Agent2Agent Protocol]], [[OpenAI Agents SDK]]

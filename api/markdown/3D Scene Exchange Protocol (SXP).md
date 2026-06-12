@@ -480,7 +480,7 @@ public:: true
         "label": "Asset Portability"
       },
       {
-        "@id": "urn:ngm:class:collaborative-workflows",
+        "@id": "urn:ngm:class:collaborative-systems-modality-workflows",
         "label": "Collaborative Workflows"
       },
       {

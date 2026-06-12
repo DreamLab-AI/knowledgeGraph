@@ -9,7 +9,7 @@
 - ### Relationships
   - is-subclass-of:: Medical AI
   - Uses [[Data Analytics]]
-  - Uses [[Machine Learning]]
+  - Uses [[Machine Learning Discipline]]
   - Enables [[Medical AI]]
   - Enables [[Healthcare Technology]]
   - Related To [[Pathology AI]]
@@ -28,7 +28,7 @@
 		- ### Chaps Vision
 			- Chaps Vision brands itself as a leader in geolocation solutions and automated video surveillance. Their technology is designed to enhance situational awareness through precise geolocation tracking and advanced video analytics. Chaps Vision employs sophisticated AI algorithms to transform ordinary surveillance footage into actionable intelligence. They focus on creating value from data by integrating various data points, such as location, movement patterns, and behavioural analysis, to provide comprehensive monitoring solutions.
 
-  - # Market analysis [[Update Cycle]]
+  - # Market analysis [[Knowledge Artefact Update Cycle]]
 	 - 3 years old
   - The market penetration analysis for VR which rings most true for us isprovided by Thrive Analytics, and ARtillery Intelligence. Their reportis titled “[VR Usage & Consumer Attitudes, WaveVI](https://artilleryiq.com/reports/vr-usage-consumer-attitudes-wave-vi/)”.In the USA (which is the cohort they surveyed) they found that adoptionof VR headsets is slower than predicted (their work is longitudinal),but steady. Some highlight points are:
 

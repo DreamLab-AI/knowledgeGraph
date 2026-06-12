@@ -88,7 +88,7 @@ public:: true
       {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},

@@ -55,7 +55,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -91,7 +91,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -115,7 +115,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - enables:: [[Data-Efficient Learning]]
 
 - ### Content

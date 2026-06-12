@@ -8,7 +8,7 @@
   "definition": "Game AI is the branch of artificial intelligence applied to interactive entertainment, encompassing the design and implementation of non-player character behaviour, opponent strategy, pathfinding, procedural content generation, and narrative decision systems within game engines. It prioritises perceived intelligence, responsiveness, and entertainment value over computational optimality, distinguishing it from classical AI research focused on provably correct or globally optimal solutions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

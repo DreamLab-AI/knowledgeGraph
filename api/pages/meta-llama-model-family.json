@@ -1,0 +1,64 @@
+{
+  "id": "urn:visionflow:page:dfe375ce757af17282bd8167135b3132f362e05a53daa94c6206d0c7391083d8",
+  "title": "Meta Llama Model Family",
+  "slug": "meta-llama-model-family",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-llama-model-family",
+  "domain": "llama",
+  "definition": "Llama is a family of large language models developed by Meta and released, in large part, with open weights for research and commercial use. First introduced in 2023 with LLaMA, followed by Llama 2, Llama 3 and later versions, the models are transformer-based and trained on large text corpora. By releasing model weights under permissive terms, Meta enabled a wide range of independent fine-tuning and deployment, making Llama a common base for open models. The family spans several parameter sizes to suit different compute and latency requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-domain",
+      "label": "Machine Learning Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "touvron-et-al-2023-lla-ma-open-and-efficient-foundation-language-models",
+      "label": "Touvron et al. 2023, LLaMA: Open and Efficient Foundation Language Models"
+    }
+  ],
+  "backlinks": []
+}

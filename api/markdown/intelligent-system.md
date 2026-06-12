@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
   - bridges-to:: [[Robotics]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
   - enables:: [[Robot Perception]]
 
 - ### Content

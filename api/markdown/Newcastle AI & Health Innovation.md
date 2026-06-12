@@ -82,7 +82,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
     ],
     "bridgesTo": [
@@ -146,7 +146,7 @@ public:: true
   - requires:: [[Healthcare Technology]], [[Artificial Intelligence]], [[Healthcare Analytics]]
   - enables:: [[AI Applications]], [[Healthcare Records]], [[Clinical Trials]]
   - relatedTo:: [[North England Innovation Corridor]], [[UK Tech Ecosystem]], [[AI Governance]]
-  - supports:: [[Machine Learning]], [[Predictive Analytics]]
+  - supports:: [[Machine Learning Discipline]], [[Predictive Analytics]]
   - bridgesTo:: [[AI Monitoring]]
 
 - ### Content

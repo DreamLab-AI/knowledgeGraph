@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
@@ -45,7 +45,7 @@ public:: true
 ```
 
 - ### Definition
-  - Content Discovery is the set of algorithms and systems that surface relevant [[Search Engine]] results, recommendations, and curated feeds to users navigating large digital information spaces, underpinned by [[Machine Learning]] and [[Semantic Search]] techniques.
+  - Content Discovery is the set of algorithms and systems that surface relevant [[Search Engine]] results, recommendations, and curated feeds to users navigating large digital information spaces, underpinned by [[Machine Learning Discipline]] and [[Semantic Search]] techniques.
 - ### Relationships
   - Content Discovery builds upon [[Information Retrieval]] foundations but extends them with personalisation via [[Recommendation Systems]] models and natural language understanding via [[Natural Language Processing]]. It powers [[Digital Curation Platform]] experiences and the [[Discovery Layer]] in knowledge management stacks. Unaddressed [[Algorithmic Bias]] in discovery systems can systematically disadvantage certain content producers or viewpoints, creating significant [[Algorithmic Accountability]] concerns.
 - ### Content

@@ -126,7 +126,7 @@ public:: true
         "label": "Assistive Technology Support"
       },
       {
-        "@id": "urn:ngm:class:multimodal-interfaces",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-interfaces",
         "label": "Multimodal Interfaces"
       }
     ],

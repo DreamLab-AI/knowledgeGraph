@@ -6,7 +6,7 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - enables:: [[Real-Time Learning]]
 
 - ### Content

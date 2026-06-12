@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing-domain",
+      "@id": "urn:ngm:class:spatial-computing-paradigm-domain",
       "label": "Spatial Computing Domain"
     }
   ],
@@ -129,7 +129,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:linked:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -159,7 +159,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Spatial Computing Domain]]
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - requires:: [[Web Standard]], [[Graphics API]]
   - enables:: [[Virtual Reality]], [[Augmented Reality]]
 

@@ -427,7 +427,7 @@ public:: true
       "label": "BC Token And Asset"
     },
     {
-      "@id": "urn:ngm:class:bitcoin-protocol",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
       "label": "Bitcoin Protocol"
     }
   ],
@@ -502,7 +502,7 @@ public:: true
         "label": "Atomic Cross-Asset Swaps"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-native-stablecoins",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-native-stablecoins",
         "label": "Bitcoin-Native Stablecoins"
       },
       {
@@ -612,7 +612,7 @@ public:: true
         "label": "X402 Protocol"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {

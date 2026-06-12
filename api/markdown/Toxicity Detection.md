@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},

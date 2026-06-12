@@ -782,7 +782,7 @@ public:: true
         "label": "Registered Agent"
       },
       {
-        "@id": "urn:ngm:class:tax-identification-number",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-identification-number",
         "label": "Tax Identification Number"
       }
     ],
@@ -816,7 +816,7 @@ public:: true
         "label": "Regulatory Engagement"
       },
       {
-        "@id": "urn:ngm:class:tax-treatment-clarity",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-clarity",
         "label": "Tax Treatment Clarity"
       }
     ],
@@ -910,7 +910,7 @@ public:: true
         "label": "Sarcuni v bZx DAO"
       },
       {
-        "@id": "urn:ngm:class:tax-treatment",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment",
         "label": "Tax Treatment"
       },
       {

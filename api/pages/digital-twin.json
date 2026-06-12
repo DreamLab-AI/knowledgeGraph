@@ -60,13 +60,13 @@
         "label": "IoT Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-design",
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
       {
@@ -212,10 +212,6 @@
       "label": "Adversarial Testing"
     },
     {
-      "slug": "agentic-metaverse-for-global-creatives",
-      "label": "Agentic Metaverse for Global Creatives"
-    },
-    {
       "slug": "algorithmic-framework",
       "label": "Algorithmic Framework"
     },
@@ -226,10 +222,6 @@
     {
       "slug": "augmented-reality",
       "label": "Augmented Reality"
-    },
-    {
-      "slug": "banodoco",
-      "label": "Banodoco"
     },
     {
       "slug": "blockchain-entity",
@@ -314,6 +306,10 @@
     {
       "slug": "cyber-physical-systems-domain",
       "label": "Cyber Physical Systems Domain"
+    },
+    {
+      "slug": "decentralised-creative-metaverse-framework",
+      "label": "Decentralised Creative Metaverse Framework"
     },
     {
       "slug": "decision-transparency",
@@ -526,6 +522,10 @@
     {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "open-source-video-diffusion-community-platform",
+      "label": "Open-Source Video Diffusion Community Platform"
     },
     {
       "slug": "predictive-maintenance",

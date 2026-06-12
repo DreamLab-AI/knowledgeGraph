@@ -37,7 +37,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},

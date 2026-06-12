@@ -56,7 +56,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -116,7 +116,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -138,7 +138,7 @@ Behavior Analysis is an AI and machine learning technique concerned with the sys
 
 ### Relationships
 
-Behavior Analysis is a sub-technique of [[AI Technique]] and [[Machine Learning]], inheriting their foundational methods. Its constituent capabilities include [[Anomaly Detection]], [[Pattern Recognition]], [[Behavioral Analytics]], and [[Behavioral Modeling]] as component processes. It requires [[Data Analytics]] infrastructure and [[Supervised Learning]] methodologies for labelled classification tasks. It uses [[Deep Learning]] architectures for complex pattern extraction, [[Reinforcement Learning]] for agent behaviour modelling, and [[Neural Network]] models as its primary computational substrate. Behavior Analysis enables [[Fraud Detection]], [[Predictive Analytics]], and [[Predictive Personalization]] as downstream applications. It is related to [[Behavioral Learning]], [[Cybersecurity]], [[User Experience]] design, [[Knowledge Graph]] construction, and demands [[Explainability]] and [[Interpretability]] for responsible deployment. It supports [[Avatar Behavior]] modelling in virtual environments.
+Behavior Analysis is a sub-technique of [[AI Technique]] and [[Machine Learning Discipline]], inheriting their foundational methods. Its constituent capabilities include [[Anomaly Detection]], [[Pattern Recognition]], [[Behavioral Analytics]], and [[Behavioral Modeling]] as component processes. It requires [[Data Analytics]] infrastructure and [[Supervised Learning]] methodologies for labelled classification tasks. It uses [[Deep Learning]] architectures for complex pattern extraction, [[Reinforcement Learning]] for agent behaviour modelling, and [[Neural Network]] models as its primary computational substrate. Behavior Analysis enables [[Fraud Detection]], [[Predictive Analytics]], and [[Predictive Personalization]] as downstream applications. It is related to [[Behavioral Learning]], [[Cybersecurity]], [[User Experience]] design, [[Knowledge Graph]] construction, and demands [[Explainability]] and [[Interpretability]] for responsible deployment. It supports [[Avatar Behavior]] modelling in virtual environments.
 
 ### Content
 

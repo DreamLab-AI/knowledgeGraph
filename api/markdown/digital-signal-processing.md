@@ -11,7 +11,7 @@ bridges-to:: [[Sensor Input]]
 - ### Relationships
   - is-subclass-of:: [[Signal Processing]]
   - requires:: [[DSP Hardware]], [[Algorithms]], [[Sensors]]
-  - enables:: [[Audio Enhancement]], [[Video Processing]], [[Spatial Audio]]
+  - enables:: [[Audio Enhancement]], [[Computer Vision Video Analysis]], [[Spatial Audio]]
 
 - ### Content
 

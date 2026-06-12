@@ -82,7 +82,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-automation",
+        "id": "urn:ngm:class:collaborative-systems-modality-automation",
         "label": "Collaborative Automation"
       },
       {

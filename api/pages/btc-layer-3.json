@@ -80,7 +80,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -96,7 +96,7 @@
         "label": "Taproot"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -118,7 +118,7 @@
         "label": "Atomic Swaps"
       },
       {
-        "id": "urn:ngm:class:bitcoin-de-fi",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-de-fi",
         "label": "Bitcoin DeFi"
       },
       {
@@ -215,15 +215,15 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-de-fi",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-de-fi",
         "label": "Bitcoin DeFi"
       },
       {
-        "id": "urn:ngm:class:bitcoin-nfts",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-nfts",
         "label": "Bitcoin NFTs"
       },
       {
-        "id": "urn:ngm:class:bitcoin-scalability",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-scalability",
         "label": "Bitcoin Scalability"
       },
       {
@@ -253,7 +253,7 @@
         "label": "BIP-342 Tapscript"
       },
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       },
       {
@@ -268,7 +268,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {
@@ -288,7 +288,7 @@
         "label": "State Channels"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {

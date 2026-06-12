@@ -72,7 +72,7 @@
         "label": "Informed Consent Mechanism"
       },
       {
-        "id": "urn:ngm:class:multimodal-perception",
+        "id": "urn:ngm:class:multimodal-ai-architecture-perception",
         "label": "Multimodal Perception"
       }
     ],
@@ -141,7 +141,7 @@
         "label": "Facial Landmark Detection"
       },
       {
-        "id": "urn:ngm:class:multimodal-fusion",
+        "id": "urn:ngm:class:multimodal-ai-architecture-fusion",
         "label": "Multimodal Fusion"
       },
       {
@@ -185,7 +185,7 @@
         "label": "ISO/IEC 27001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

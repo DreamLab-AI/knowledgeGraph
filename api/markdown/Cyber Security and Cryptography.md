@@ -462,7 +462,7 @@ public:: true
         "label": "Post-Quantum Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -640,7 +640,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -1172,7 +1172,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:owl:class:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -1230,7 +1230,7 @@ public:: true
   - supports:: [[Blockchain]], [[Digital Identity]], [[Financial Services]], [[Critical National Infrastructure]], [[Defence and Intelligence]], [[Healthcare Data Security]], [[CBDCs]], [[Cloud Computing]]
   - uses:: [[Hardware Security Module]], [[Trusted Execution Environment]], [[SIEM]], [[Threat Intelligence Platform]], [[Intrusion Detection System]], [[SOAR]], [[Vulnerability Scanner]]
   - contrasts-with:: [[Obscurity-Based Security]], [[Perimeter Security]], [[Password Authentication]], [[Symmetric-Only Cryptography]], [[Castle-and-Moat Architecture]]
-  - related-to:: [[Artificial Intelligence]], [[Quantum Computing]], [[Regulatory Compliance]], [[GDPR]], [[Supply Chain Security]], [[Digital Forensics]], [[Adversarial Machine Learning]], [[Privacy Enhancing Technologies]]
+  - related-to:: [[Artificial Intelligence]], [[Quantum Computation Paradigm]], [[Regulatory Compliance]], [[GDPR]], [[Supply Chain Security]], [[Digital Forensics]], [[Adversarial Machine Learning]], [[Privacy Enhancing Technologies]]
   - standardized-by:: [[NIST]], [[IETF]], [[ISO/IEC 27001]], [[ETSI]], [[NCSC]], [[ENISA]], [[BSI Germany]], [[OASIS]]
   - bridges-to:: [[Blockchain]] (bc)
 

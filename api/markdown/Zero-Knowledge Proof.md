@@ -101,7 +101,7 @@ alias:: BC-0023-zero-knowledge-proofs, BC-0202-zero-knowledge-proofs, BC-0315-ze
     "relatedTo": [
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ]
   },
   "quality": 0.8,

@@ -8,7 +8,7 @@
   "definition": "A publicly traded company that operates Bitcoin mining facilities in the United States, focusing on the use of low-cost and lower-carbon energy sources.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-mining",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],
@@ -19,11 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],

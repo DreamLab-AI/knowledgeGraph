@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:predictions",
+        "id": "urn:ngm:class:generative-ai-near-term-forecasts",
         "label": "Predictions"
       }
     ],

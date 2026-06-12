@@ -67,7 +67,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},

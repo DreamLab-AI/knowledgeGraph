@@ -92,7 +92,7 @@
         "label": "Steward Network"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -189,7 +189,7 @@
         "label": "ZeroMQ"
       },
       {
-        "id": "urn:ngm:class:rust",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       }
     ],

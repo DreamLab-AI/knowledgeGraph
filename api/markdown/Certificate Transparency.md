@@ -23,7 +23,7 @@ public:: true
   "definition": "Certificate Transparency (CT) is an open framework and internet standard (RFC 6962 and RFC 9162) that creates a publicly auditable, append-only log of all TLS certificates issued by certificate authorities, enabling domain owners, browser vendors, and security researchers to detect misissued or fraudulent certificates rapidly. CT logs use Merkle hash trees to provide cryptographic proofs of inclusion and consistency, guaranteeing that any certificate added to a log cannot be subsequently removed or altered. Major browsers enforce CT by requiring certificates to carry signed certificate timestamps (SCTs) from recognised logs, making unauthorised certificate issuance immediately detectable.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
@@ -36,7 +36,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:tls-1-3", "label": "TLS 1.3"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ]
   },
   "quality": 0.8

@@ -137,7 +137,7 @@
         "label": "Inverse Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:dagger",
+        "id": "urn:ngm:class:dagger-ci-pipeline-engine",
         "label": "DAgger"
       }
     ],
@@ -248,7 +248,7 @@
         "label": "Vision Language Action Models"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ]

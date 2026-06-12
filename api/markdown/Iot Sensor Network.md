@@ -1060,7 +1060,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1134,7 +1134,7 @@ public:: true
   - requires:: [[IEEE 802.15.4]], [[IPv6 Networking]], [[MQTT]], [[CoAP]], [[Time Synchronisation]], [[Power Source]], [[Radio Transceiver]], [[Device Identity]]
   - enables:: [[Smart Cities]], [[Precision Agriculture]], [[Industrial IoT]], [[Smart Buildings]], [[Healthcare Monitoring]], [[Environmental Monitoring]], [[Asset Tracking]], [[Digital Twin]]
   - implements:: [[LoRaWAN]], [[Zigbee]], [[Z-Wave]], [[Thread Protocol]], [[NB-IoT]], [[BLE Mesh]], [[6LoWPAN]], [[Matter Protocol]], [[WirelessHART]]
-  - depends-on:: [[Edge Computing]], [[Cloud Computing]], [[Embedded Systems]], [[Signal Processing]], [[Machine Learning]], [[Cryptography]], [[Public Key Infrastructure]]
+  - depends-on:: [[Edge Computing]], [[Cloud Computing]], [[Embedded Systems]], [[Signal Processing]], [[Machine Learning Discipline]], [[Cryptography]], [[Public Key Infrastructure]]
   - supports:: [[Digital Twin]], [[Predictive Maintenance]], [[Energy Management]], [[Supply Chain Visibility]], [[Building Automation]], [[Smart Grid]], [[Telematics]]
   - uses:: [[TinyML]], [[MQTT]], [[CoAP]], [[CBOR]], [[TLS]], [[X.509 Certificates]], [[OTA Firmware Update]], [[DTLS]]
   - contrasts-with:: [[Wired Sensor Network]], [[Cellular M2M]], [[Traditional SCADA]], [[Centralised Sensing]], [[Fieldbus]]

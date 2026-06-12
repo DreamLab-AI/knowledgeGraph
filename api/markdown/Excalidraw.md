@@ -23,7 +23,7 @@ public:: true
   "definition": "Excalidraw is an open-source, browser-based collaborative whiteboard and diagramming application characterised by its distinctive hand-drawn visual aesthetic, which renders all shapes, lines, and text in a sketchy style designed to encourage low-fidelity ideation rather than polished production diagrams. The tool stores diagrams in a human-readable JSON format and supports real-time multiplayer collaboration, end-to-end encrypted sharing, and an extensive library of reusable shapes, making it widely used for software architecture sketching, workshop facilitation, and technical communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"}],
+  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},

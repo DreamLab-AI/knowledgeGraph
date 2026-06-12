@@ -189,7 +189,7 @@ alias:: TechnologyAdoption
         "label": "Stakeholder Buy-In"
       },
       {
-        "@id": "urn:ngm:class:infrastructure",
+        "@id": "urn:ngm:class:technology-infrastructure-domain",
         "label": "Infrastructure"
       },
       {

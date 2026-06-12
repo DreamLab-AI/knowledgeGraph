@@ -30,7 +30,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
       {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
@@ -50,7 +50,7 @@ public:: true
 - ### Definition
   - [[Climate Modelling]] is the construction of coupled computational representations of Earth's atmosphere, oceans, land surface, and cryosphere to simulate climate dynamics, inform [[Carbon Neutrality Planning]], and evaluate the impact of emissions scenarios quantified through [[Carbon Footprint Measurement]].
 - ### Relationships
-  - Climate Modelling is treated here as a specialised form of [[Digital Twin]] simulation applied to planetary systems. It relies heavily on [[High-Performance Computing]] and [[Time Series Forecasting]] to produce projections, and [[Machine Learning]] is increasingly used to accelerate physics parameterisations. Outputs directly enable [[Carbon Footprint Measurement]], [[SustainabilityReporting]], and [[Carbon Neutrality Planning]], and connect to broader [[Environmental Sustainability]] goals and frameworks such as [[ISO 14064]]. Long-term visions integrate models into [[Digital Twin of Society (DToS)]] architectures.
+  - Climate Modelling is treated here as a specialised form of [[Digital Twin]] simulation applied to planetary systems. It relies heavily on [[High-Performance Computing]] and [[Time Series Forecasting]] to produce projections, and [[Machine Learning Discipline]] is increasingly used to accelerate physics parameterisations. Outputs directly enable [[Carbon Footprint Measurement]], [[SustainabilityReporting]], and [[Carbon Neutrality Planning]], and connect to broader [[Environmental Sustainability]] goals and frameworks such as [[ISO 14064]]. Long-term visions integrate models into [[Digital Twin of Society (DToS)]] architectures.
 - ### Content
   - Climate models have evolved from simple one-dimensional radiation-balance calculations in the 1960s to present-day Earth System Models (ESMs) that couple atmospheric circulation, ocean heat transport, sea-ice dynamics, terrestrial carbon cycles, and atmospheric chemistry. The resolution of leading models has improved from hundreds of kilometres to a few kilometres in regional configurations, enabling representation of extreme weather events critical to adaptation planning.
 

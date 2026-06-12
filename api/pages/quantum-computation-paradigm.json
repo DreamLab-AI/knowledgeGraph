@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:6ce802a318a389ee53b7648eae46617424357dba089d0b039502c65f1b532df1",
+  "title": "Quantum Computation Paradigm",
+  "slug": "quantum-computation-paradigm",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-computation-paradigm",
+  "domain": "infrastructure",
+  "definition": "A paradigm of computation that exploits quantum-mechanical phenomena\u2014superposition, entanglement, and interference\u2014to perform certain calculations exponentially faster than classical computers. Quantum computing holds particular relevance for cryptography, optimisation, simulation of molecular systems, and potentially accelerating machine learning workloads, though near-term devices remain limited by qubit decoherence and error rates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

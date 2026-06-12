@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - bridges-to:: [[Generative Model]]
   - requires:: [[Probability Theory]], [[Statistics]]
   - enables:: [[Diffusion Model]]

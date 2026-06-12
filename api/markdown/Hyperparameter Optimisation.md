@@ -25,10 +25,10 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}, {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}, {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}],
-    "enables": [{"@id": "urn:ngm:class:model-training", "label": "Model Training"}, {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}],
+    "uses": [{"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}, {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}, {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}],
+    "enables": [{"@id": "urn:ngm:class:model-training", "label": "Model Training"}, {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}],
     "relatedTo": [{"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}, {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}],
-    "dependsOn": [{"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}]
+    "dependsOn": [{"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}]
   },
   "quality": 0.8
 }

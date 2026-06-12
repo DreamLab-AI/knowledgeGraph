@@ -889,7 +889,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Sanctions Enforcement"
       },
       {
-        "@id": "urn:ngm:class:tax-evasion-detection",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-evasion-detection",
         "label": "Tax Evasion Detection"
       },
       {
@@ -953,7 +953,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Electronic Identity Verification"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-risk-scoring",
+        "@id": "urn:ngm:class:machine-learning-discipline-risk-scoring",
         "label": "Machine Learning Risk Scoring"
       },
       {

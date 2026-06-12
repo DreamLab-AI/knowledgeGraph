@@ -44,7 +44,7 @@
   - usedIn:: [[Game Development]]
   - usedIn:: [[Virtual Reality]]
   - usedIn:: [[Film Production]]
-  - enabledBy:: [[NVIDIA]]
+  - enabledBy:: [[NVIDIA Corporation]]
 
 - ### Provenance
   - sources::

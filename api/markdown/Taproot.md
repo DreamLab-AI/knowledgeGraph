@@ -23,7 +23,7 @@ public:: true
   "definition": "Taproot is a Bitcoin protocol upgrade activated in November 2021 (BIP 340–342) that introduces Schnorr signatures, Merkelised Abstract Syntax Trees (MAST), and Tapscript, collectively improving transaction privacy by making complex scripts indistinguishable from simple key-path spends, enhancing efficiency through signature aggregation, and expanding smart-contract expressiveness on the Bitcoin network.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}
@@ -33,9 +33,9 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:bitcoin-technical-overview", "label": "Bitcoin Technical Overview"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"}
     ]
   },
   "quality": 0.8

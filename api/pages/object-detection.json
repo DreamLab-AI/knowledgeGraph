@@ -97,6 +97,10 @@
       "label": "Computer Vision Domain"
     },
     {
+      "slug": "computer-vision-video-analysis",
+      "label": "Computer Vision Video Analysis"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },
@@ -143,10 +147,6 @@
     {
       "slug": "sensor-fusion",
       "label": "Sensor Fusion"
-    },
-    {
-      "slug": "video-processing",
-      "label": "Video Processing"
     }
   ]
 }

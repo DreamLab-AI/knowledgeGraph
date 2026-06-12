@@ -54,7 +54,7 @@
 		- **Reverse Engineering:** Researchers have developed techniques to reverse engineer these systems, figuring out what concepts are being represented by specific neurons. This involves creating images that maximize the activation of a particular neuron, allowing researchers to understand what that neuron is "seeing". These images often reveal fascinating patterns and concepts, showing us the AI's internal understanding of the world.
 
   - #### Mixed reality as a metaverse
-		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
+		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple Inc Technology Corporation]] [[Apple Mixed Reality Headset]]
 
 		- ##### Tech for techs sake yielding unexpected outcomes
 			- The whole question of what Bitcoin addresses, whether it’s been properly thought about, what the end goals are, and what the risks are is significant. It’s a computer science and engineering solutions gone completely wild. It’s clearly got benefits and there’s clearly human appetite for this technology, but it’s probably running ahead of the knowledge base around it. This is most exemplified in:
@@ -153,7 +153,7 @@
 		- **Reverse Engineering:** Researchers have developed techniques to reverse engineer these systems, figuring out what concepts are being represented by specific neurons. This involves creating images that maximize the activation of a particular neuron, allowing researchers to understand what that neuron is "seeing". These images often reveal fascinating patterns and concepts, showing us the AI's internal understanding of the world.
 
   - #### Mixed reality as a metaverse
-		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
+		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple Inc Technology Corporation]] [[Apple Mixed Reality Headset]]
 
 		- ##### Tech for techs sake yielding unexpected outcomes
 			- The whole question of what Bitcoin addresses, whether it’s been properly thought about, what the end goals are, and what the risks are is significant. It’s a computer science and engineering solutions gone completely wild. It’s clearly got benefits and there’s clearly human appetite for this technology, but it’s probably running ahead of the knowledge base around it. This is most exemplified in:
@@ -224,7 +224,7 @@
   - **517 programming questions** from Stack Overflow.
 
   - #### Mixed reality as a metaverse
-		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
+		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple Inc Technology Corporation]] [[Apple Mixed Reality Headset]]
 		- The closest technology at this time seems to be [Lumus’ waveguideprojectors](https://lumusvision.com/) which are light, bright and highresolution. Peggy Johnson, CEO of Magic Leap, one of the market leaderssaid: it“If I had to guess, I think, maybe, five or so years out, forthe type of fully immersive augmented reality that we do.”
 		- In a [GQprofile](https://www.gq.com/story/tim-cook-global-creativity-awards-cover-2023?mbid=social_twitter)Cook, the Apple CEO talked at length about the challenges andopportunities of AR headsets. He has been emphasizing the importance ofaugmented reality over VR for almost a decade, believing that AR canenhance communication and connection by overlaying digital elements onthe physical world. Cook’s vision aligns with Apple’s rumoured mixedreality headset, which is expected to cost around $3,000 and focus on‘copresence’, which we have discussed at length in this chapter. Apple’sapproach differs from Meta’s metaverse, as Apple aims to integratedigital aspects into the real world rather than create purely digitalspaces. This is an interesting area for our applications of bringingsmall teams together, but the pricing at this time is significantly atodds with our chosen market. Cook, like this book, has highlighted AR’spotential in education and its ability to bring people together in thereal world.
 
@@ -280,7 +280,7 @@
   - This review (for me) asks the right questions, finally, of "spatial".
 
   - ## See Also
-  - [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+  - [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 
   - ## Apple Vision Pro
   - [This thing is mind-blowing 🤯 This demo is better than Apple's actual ads for the Vision Pro. Apple launched the Vision Pro a few days ago,… | Instagram](https://www.instagram.com/reel/C2-G8WgsLSj/?igsh=am93cXF4OWppa29l)
@@ -289,7 +289,7 @@
   - Is using the Vision Pro so good that I’m willing to mess up my hair every time I put it on?
 
   - ## See Also
-  - [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+  - [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 
   - ##### Tracking Technologies
   - For personalization, tracking viewers’ eyes, face, gestures, etc., is necessary. This can be done with cameras and computer vision algorithms, employing techniques like mesh abstraction for body tracking, facial landmark recognition, gaze estimation, micro expression recognition, and gross gesture detection.

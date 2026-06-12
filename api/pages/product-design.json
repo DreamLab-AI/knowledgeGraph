@@ -658,6 +658,10 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-product-and-risk-framework",
+      "label": "AI Product and Risk Framework"
+    },
+    {
       "slug": "accuracy",
       "label": "Accuracy"
     },
@@ -668,10 +672,6 @@
     {
       "slug": "object-detection-and-tracking",
       "label": "Object Detection and Tracking"
-    },
-    {
-      "slug": "product-and-risk-management",
-      "label": "Product and Risk Management"
     },
     {
       "slug": "text-generation",

@@ -62,7 +62,7 @@ public:: true
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}

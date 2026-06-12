@@ -8,7 +8,7 @@
   "definition": "The RDF data model represents information as triples of subject, predicate and object, forming a directed labelled graph. It is the foundation of the Resource Description Framework used to publish structured data on the web.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:semantic-web",
+      "id": "urn:ngm:class:semantic-web-linked-data-standard",
       "label": "Semantic Web"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

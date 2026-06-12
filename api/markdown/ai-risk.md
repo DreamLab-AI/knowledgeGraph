@@ -295,7 +295,7 @@
   - [[AI Security]]
   - [[AIGovernance]]
   - [[NIST AI RMF]]
-  - [[EU AI Act]]
+  - [[EU AI Act Regulatory Instrument]]
   - [[ISO/IEC 23894]]
   - [[Algorithmic Bias]]
   - [[AI Ethics]]
@@ -304,6 +304,6 @@
   - [[High Risk AI System]]
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[ISO/IEC 23894]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[ISO/IEC 23894]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

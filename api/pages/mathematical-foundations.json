@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -63,7 +63,7 @@
         "label": "Mathematical Hard Problems"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ]

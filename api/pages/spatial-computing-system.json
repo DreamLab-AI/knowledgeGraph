@@ -3,7 +3,7 @@
   "title": "Spatial Computing System",
   "slug": "spatial-computing-system",
   "public": true,
-  "classIri": "urn:ngm:class:spatial-computing-system",
+  "classIri": "urn:ngm:class:spatial-computing-paradigm-system",
   "domain": "spatial-computing",
   "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positionin...",
   "subClassOf": [

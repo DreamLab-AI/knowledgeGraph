@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:robot-hardware", "label": "Robot Hardware"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"}

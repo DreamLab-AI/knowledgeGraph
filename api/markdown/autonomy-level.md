@@ -10,7 +10,7 @@
   - hasPart:: [[Agent]]
   - requires:: [[Human in the Loop]], [[Safety]]
   - enables:: [[AI Agent System]], [[BDI Model]]
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - relatedTo:: [[Goal]], [[Objective]]
 
 - ### Content
@@ -429,5 +429,5 @@
   - bridges-to:: [[AI Agent System]]
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[ISO 21448]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[ISO 21448]]
   - migration-date:: 2026-04-26T00:00:00Z

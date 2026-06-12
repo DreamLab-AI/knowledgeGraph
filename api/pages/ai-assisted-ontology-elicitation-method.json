@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:d9a5011ca5d81296c65c49986569a654fe0e97d754f4d0f8fba76de6922d5d82",
+  "title": "AI-Assisted Ontology Elicitation Method",
+  "slug": "ai-assisted-ontology-elicitation-method",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-assisted-ontology-elicitation-method",
+  "domain": "infrastructure",
+  "definition": "A structured methodology for collaboratively building and refining formal knowledge representations by conducting iterative dialogues with AI systems. In these conversations, AI agents interpret, critique, and extend ontological schemas, producing machine-readable linked-data artefacts such as OWL classes and JSON-LD graphs that document both the resulting ontology and the reasoning process that produced it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-layer-agentic-governance-framework",
+        "label": "Agentic Mycelia"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    }
+  ],
+  "backlinks": []
+}

@@ -80,11 +80,11 @@
         "label": "Permissioned Validator Set"
       },
       {
-        "id": "urn:ngm:class:rust-runtime",
+        "id": "urn:ngm:class:rust-systems-programming-language-runtime",
         "label": "Rust Runtime"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

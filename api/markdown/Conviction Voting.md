@@ -778,7 +778,7 @@ public:: true
         "label": "DAO Treasury Operations"
       },
       {
-        "@id": "urn:ngm:class:public-goods-funding",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {

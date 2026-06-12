@@ -88,7 +88,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -118,7 +118,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Transaction Fee]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Smart Contract]]
 
 - ### Content

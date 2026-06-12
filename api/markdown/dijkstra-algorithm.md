@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Robotics]], [[Path Planning]], [[Graph Theory]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[RB-1016-path-planning]], [[Graph Search]]
   - requires:: [[Non-negative Weights]]
 

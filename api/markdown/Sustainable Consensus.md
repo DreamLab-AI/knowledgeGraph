@@ -582,7 +582,7 @@ public:: true
         "label": "Layer 2 Scaling"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-environmental-issues",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
@@ -1055,7 +1055,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1398,4 +1398,4 @@ public:: true
     - **Quality Score**: 0.52 (Phase 6 target: 0.50+)
     - **Authority Score**: 0.87 (Phase 6 range: 0.86–0.88)
     - **Key Metrics**: ~730 lines, ~10,800 words, 41 OWL axioms, 71 wikilink relationships, 26 provenance references
-    - **Related Concepts**: [[Proof of Work]], [[Proof of Stake]], [[Bitcoin Environmental Issues]], [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Ethereum]], [[Solana]], [[Algorand]], [[Avalanche]], [[Tendermint]], [[DeFi]], [[Blockchain Network]], [[CBDC Frameworks]]
+    - **Related Concepts**: [[Proof of Work]], [[Proof of Stake]], [[Bitcoin Environmental Issues]], [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Ethereum Smart Contract Platform]], [[Solana]], [[Algorand]], [[Avalanche]], [[Tendermint]], [[DeFi]], [[Blockchain Network]], [[CBDC Frameworks]]

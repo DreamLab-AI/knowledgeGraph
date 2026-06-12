@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"}
     ]
   },
   "quality": 0.85

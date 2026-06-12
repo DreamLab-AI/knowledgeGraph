@@ -62,7 +62,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}

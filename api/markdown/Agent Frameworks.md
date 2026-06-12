@@ -624,7 +624,7 @@ public:: true
         "label": "ACP Protocol"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -662,7 +662,7 @@ public:: true
         "label": "Tool Use"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -1234,7 +1234,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1286,7 +1286,7 @@ public:: true
   - uses:: [[MCP Protocol]], [[ACP Protocol]], [[A2A Protocol]], [[OpenAPI]], [[Function Calling]], [[JSON-RPC]], [[Server-Sent Events]]
   - standardized-by:: [[Model Context Protocol]], [[Agent Communication Protocol]], [[Agent-to-Agent Protocol]], [[AGNTCY Collective]]
   - contrasts-with:: [[Classical Workflow Engine]], [[BPMN Orchestration]], [[Robotic Process Automation]], [[Rule-Based Expert System]], [[Deterministic DAG Pipeline]]
-  - related-to:: [[Retrieval-Augmented Generation]], [[Prompt Engineering]], [[Agentic AI]], [[Foundation Models]], [[Tool Use]], [[LLM Evaluation]]
+  - related-to:: [[Retrieval-Augmented Generation]], [[Prompt Engineering]], [[Agentic AI]], [[Large-Scale Pretrained Foundation Model]], [[Tool Use]], [[LLM Evaluation]]
 
 - ### Content
 

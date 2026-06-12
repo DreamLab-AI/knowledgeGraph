@@ -30,7 +30,7 @@
         "label": "Cloud Storage"
       },
       {
-        "id": "urn:ngm:class:collaborative-document-editing",
+        "id": "urn:ngm:class:collaborative-systems-modality-document-editing",
         "label": "Collaborative Document Editing"
       },
       {
@@ -50,7 +50,7 @@
         "label": "Mobile Client"
       },
       {
-        "id": "urn:ngm:class:people-analytics-dashboard",
+        "id": "urn:ngm:class:domain-expert-contact-index-analytics-dashboard",
         "label": "People Analytics Dashboard"
       },
       {
@@ -178,15 +178,15 @@
         "label": "Confluence"
       },
       {
-        "id": "urn:ngm:class:gemini-for-workspace",
+        "id": "urn:ngm:class:gemini-multimodal-language-model-for-workspace",
         "label": "Gemini for Workspace"
       },
       {
-        "id": "urn:ngm:class:google-drive",
+        "id": "urn:ngm:class:google-ai-technology-corporation-drive",
         "label": "Google Drive"
       },
       {
-        "id": "urn:ngm:class:google-meet",
+        "id": "urn:ngm:class:google-ai-technology-corporation-meet",
         "label": "Google Meet"
       },
       {
@@ -240,7 +240,7 @@
         "label": "Talent Retention"
       },
       {
-        "id": "urn:ngm:class:collaborative-whiteboard",
+        "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {

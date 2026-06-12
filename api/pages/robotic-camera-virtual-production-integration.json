@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:7ca35cb5451bcd106c87af3da0670326e1e54a41d32a6ebeef888a3384f6188b",
+  "title": "Robotic Camera Virtual Production Integration",
+  "slug": "robotic-camera-virtual-production-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:robotic-camera-virtual-production-integration",
+  "domain": "robotics",
+  "definition": "The VP Robotics Project (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:virtual-set-design",
+        "label": "Virtual Set Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

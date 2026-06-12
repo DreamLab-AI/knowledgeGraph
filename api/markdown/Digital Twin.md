@@ -181,13 +181,13 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
         "label": "IoT Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-design",
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
       {
@@ -302,7 +302,7 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -358,7 +358,7 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
 - ### Relationships
   - has-part:: [[Virtual Replica]], [[Real-Time Synchronisation]], [[3D Model]], [[IoT Sensor Data]], [[Simulation Engine]], [[Control Interface]]
   - enables:: [[Predictive Maintenance]], [[Process Optimisation]], [[Remote Monitoring]], [[Virtual Commissioning]], [[Collaborative Design]]
-  - requires:: [[Data Aggregation]], [[3D Visualisation]], [[IoT Infrastructure]], [[Machine Learning]]
+  - requires:: [[Data Aggregation]], [[3D Visualisation]], [[IoT Infrastructure]], [[Machine Learning Discipline]]
   - bridges-to:: [[Robotics]] (domain: rb), [[Blockchain]] (domain: bc), [[Artificial Intelligence]] (domain: ai), [[Telecollaboration]] (domain: tc)
 - ### Content
 

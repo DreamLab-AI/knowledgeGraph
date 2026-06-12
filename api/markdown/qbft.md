@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Byzantine Fault Tolerance]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Consensus Algorithm]], [[Byzantine Fault Tolerance]]
   - enables:: [[Distributed Ledger Technology]]
 

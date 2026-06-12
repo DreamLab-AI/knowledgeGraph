@@ -512,7 +512,7 @@ public:: true
         "label": "Localization"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -923,7 +923,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1014,7 +1014,7 @@ public:: true
   - supports:: [[Autonomous Navigation]], [[Autonomous Robot]], [[Autonomous Vehicle]], [[Sensor Fusion]], [[State Estimation]], [[Mobile Robot Platform]], [[Wheeled Robot]]
   - uses:: [[Occupancy Grid]], [[Lidar]], [[Odometry]], [[Gyroscope]], [[IMU]], [[SLAM]], [[Sensor Fusion]]
   - contrasts-with:: [[Kalman Filter]], [[Extended Kalman Filter]], [[Unscented Kalman Filter]], [[Histogram Filter]], [[Gaussian Process]]
-  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning]], [[Deep Learning]], [[Simulation]], [[Localization]], [[Monte Carlo Tree Search]]
+  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning Discipline]], [[Deep Learning]], [[Simulation]], [[Localization]], [[Monte Carlo Tree Search]]
   - standardized-by:: [[IEEE Signal Processing Society]], [[ICRA]], [[IROS]], [[RSS Conference]], [[ROS Navigation Stack]]
 
 - ### Content

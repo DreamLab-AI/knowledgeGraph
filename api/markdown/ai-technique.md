@@ -37,7 +37,7 @@ alias:: AI Technique
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},

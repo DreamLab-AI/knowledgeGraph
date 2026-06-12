@@ -99,7 +99,7 @@ public:: true
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ],
     "uses": [
@@ -205,7 +205,7 @@ public:: true
   - **hasPart** [[Virtual Reality]] — VR is a primary technology domain within immersive experiences
   - **hasPart** [[Augmented Reality]] — AR is a primary technology domain within immersive experiences
   - **hasPart** [[Mixed Reality]] — MR spans the reality–virtuality continuum covered by this domain
-  - **requires** [[Spatial Computing]] — immersive experiences depend on spatial computing infrastructure
+  - **requires** [[Spatial Computing Paradigm]] — immersive experiences depend on spatial computing infrastructure
   - **requires** [[Real-Time Rendering]] — low-latency rendering is essential for presence in immersive systems
   - **uses** [[Computer Vision]] — inside-out tracking and scene understanding rely on computer vision
   - **relatedTo** [[Simulation]] — immersive experience delivery and environmental simulation overlap significantly

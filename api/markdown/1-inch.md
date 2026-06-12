@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Decentralized Exchange]]
   - bridges-to:: [[Uniswap]]
-  - requires:: [[Automated Market Maker]], [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Automated Market Maker]], [[Smart Contract]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Liquidity Pool]]
 
 - ### Content

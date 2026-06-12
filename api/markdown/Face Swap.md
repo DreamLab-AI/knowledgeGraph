@@ -637,7 +637,7 @@ alias:: FaceSwap
         "label": "Identity Disentanglement"
       },
       {
-        "@id": "urn:ngm:class:latent-space-manipulation",
+        "@id": "urn:ngm:class:neural-network-latent-space-manipulation",
         "label": "Latent Space Manipulation"
       },
       {
@@ -761,7 +761,7 @@ alias:: FaceSwap
         "label": "DFDC Benchmark"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
@@ -1367,7 +1367,7 @@ alias:: FaceSwap
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1414,7 +1414,7 @@ alias:: FaceSwap
   - requires:: [[Face Recognition Model]], [[Source Image]], [[Target Image]], [[GPU Compute]], [[ArcFace Embedding]], [[Landmark Detector]]
   - enables:: [[Visual Effects Production]], [[Avatar Generation]], [[Digital Double]], [[De-aging]], [[Anonymisation]], [[Talking Head Synthesis]], [[Synthetic Dataset Generation]], [[Entertainment Content]]
   - implements:: [[Identity Disentanglement]], [[Attribute Preservation]], [[Cross-Attention Conditioning]], [[Latent Space Manipulation]], [[Encoder Decoder Architecture]]
-  - depends-on:: [[Convolutional Neural Networks]], [[Generative Adversarial Networks]], [[Diffusion Model]], [[Stable Diffusion]], [[Autoencoder]], [[Variational Autoencoder]], [[U-Net]], [[Transformer]]
+  - depends-on:: [[Convolutional Neural Networks]], [[Generative Adversarial Networks]], [[Diffusion Model]], [[Stable Diffusion Image Model]], [[Autoencoder]], [[Variational Autoencoder]], [[U-Net]], [[Transformer]]
   - supports:: [[Film VFX]], [[Personalised Avatars]], [[Virtual Production]], [[Privacy Anonymisation]], [[Forensic Reconstruction]], [[Educational Reenactment]]
   - uses:: [[ArcFace]], [[CosFace]], [[StyleGAN2]], [[ControlNet]], [[IP-Adapter]], [[LoRA]], [[GFPGAN]], [[CodeFormer]], [[XSeg]], [[Adaptive Instance Normalisation]]
   - contrasts-with:: [[Face Reenactment]], [[Unconditional Portrait Synthesis]], [[Traditional VFX Rotoscoping]], [[Face Detection]], [[Face Recognition]]

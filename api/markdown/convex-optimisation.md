@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Optimisation]]
   - bridges-to:: [[Numerical Methods]], [[Functional Analysis]]
   - requires:: [[Optimisation]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Convex optimisation concerns problems in which the objective is a convex function and the feasible region is a convex set, so that any local optimum is also a global optimum. This structure allows reliable and efficient solution by methods such as interior-point algorithms, gradient descent and duality-based techniques.

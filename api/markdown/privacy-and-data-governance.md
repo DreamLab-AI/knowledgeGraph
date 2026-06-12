@@ -15,5 +15,5 @@
   Privacy and Data Governance — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[GDPR]], [[EU AI Act]], [[ISO/IEC 27701]], [[EDPB Opinion 28/2024]]
+  - sources:: [[GDPR]], [[EU AI Act Regulatory Instrument]], [[ISO/IEC 27701]], [[EDPB Opinion 28/2024]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -18,7 +18,7 @@
   - supports:: [[Decentralised Social Media]], [[Decentralised Storage]], [[Self-Sovereign Identity]], [[Permanent Archives]], [[Peer-to-Peer Messaging]], [[Tokenised Economics]], [[Open Knowledge Graphs]]
   - uses:: [[Multihash]], [[CID]], [[Schnorr Signatures]], [[Ed25519]], [[QUIC]], [[WebRTC]], [[WebSocket]], [[Bitcoin Lightning Network]]
   - contrasts-with:: [[Web 2.0]], [[Software as a Service]], [[Walled Garden]], [[Centralised Cloud]], [[Federated Network]], [[Blockchain-only Web3]]
-  - related-to:: [[Web3]], [[Semantic Web]], [[Self-Sovereign Identity]], [[Crypto Anarchism]], [[Cypherpunk Movement]], [[Open Source Software]], [[Internet of Agents]], [[Agentic Internet]]
+  - related-to:: [[Web3]], [[Semantic Web Linked Data Standard]], [[Self-Sovereign Identity]], [[Crypto Anarchism]], [[Cypherpunk Movement]], [[Open Source Software]], [[Internet of Agents]], [[Agentic Internet]]
   - standardized-by:: [[W3C]], [[IETF]], [[Protocol Labs]], [[Internet Archive]], [[Bluesky PBC]], [[OpenSats]], [[Trust over IP Foundation]]
 
 - ### Content

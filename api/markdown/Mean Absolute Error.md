@@ -111,7 +111,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:machine-learning-model",
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],

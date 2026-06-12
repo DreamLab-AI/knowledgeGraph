@@ -14,7 +14,7 @@
 - ### Content
   - The software is free and open source here:
   - [DreamLab-AI/VisionFlow: Logseq Spring Thing Immersive & Agentic Knowledge Development Engine](https://github.com/DreamLab-AI/VisionFlow)
-  - More in depth overview [[VisionFlow and Junkie Jarvis]]
+  - More in depth overview [[GPU Knowledge Graph Platform]]
   - # Quick Demo Videos.
   - {{video https://youtu.be/cEqt-OnlBzY}}
   - {{video https://youtu.be/3wMCUgBEjos}}

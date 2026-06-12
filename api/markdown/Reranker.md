@@ -36,7 +36,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}
     ]
   },
   "quality": 0.8

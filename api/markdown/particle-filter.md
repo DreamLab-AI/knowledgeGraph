@@ -18,7 +18,7 @@
   - supports:: [[Autonomous Navigation]], [[Autonomous Robot]], [[Autonomous Vehicle]], [[Sensor Fusion]], [[State Estimation]], [[Mobile Robot Platform]], [[Wheeled Robot]]
   - uses:: [[Occupancy Grid]], [[Lidar]], [[Odometry]], [[Gyroscope]], [[IMU]], [[SLAM]], [[Sensor Fusion]]
   - contrasts-with:: [[Kalman Filter]], [[Extended Kalman Filter]], [[Unscented Kalman Filter]], [[Histogram Filter]], [[Gaussian Process]]
-  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning]], [[Deep Learning]], [[Simulation]], [[Localization]], [[Monte Carlo Tree Search]]
+  - related-to:: [[Hidden State]], [[State Estimation]], [[Machine Learning Discipline]], [[Deep Learning]], [[Simulation]], [[Localization]], [[Monte Carlo Tree Search]]
   - standardized-by:: [[IEEE Signal Processing Society]], [[ICRA]], [[IROS]], [[RSS Conference]], [[ROS Navigation Stack]]
 
 - ### Content

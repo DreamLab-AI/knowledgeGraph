@@ -810,7 +810,7 @@ public:: true
         "label": "Liability Adjudication"
       },
       {
-        "@id": "urn:ngm:class:public-awareness",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-awareness",
         "label": "Public Awareness"
       },
       {
@@ -860,7 +860,7 @@ public:: true
         "label": "US AI Safety Institute"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1494,12 +1494,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1509,7 +1509,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1566,12 +1566,12 @@ public:: true
   - requires:: [[Risk Assessment Methodology]], [[Threat Modelling]], [[Capability Evaluations]], [[Red Teaming]], [[Algorithmic Auditing]], [[Incident Reporting]], [[Stakeholder Consultation]]
   - enables:: [[AI Governance]], [[Responsible Scaling Policies]], [[Pre-deployment Evaluation]], [[AI Liability Frameworks]], [[Algorithmic Impact Assessments]], [[Compute Governance]], [[Frontier Model Regulation]]
   - implements:: [[Risk-Based Regulation]], [[Tiered Capability Thresholds]], [[Defence in Depth]], [[Precautionary Principle]], [[Sociotechnical Analysis]]
-  - depends-on:: [[Machine Learning]], [[Foundation Models]], [[Frontier AI Systems]], [[Compute Infrastructure]], [[Training Data]], [[Deployment Context]]
+  - depends-on:: [[Machine Learning Discipline]], [[Large-Scale Pretrained Foundation Model]], [[Frontier AI Systems]], [[Compute Infrastructure]], [[Training Data]], [[Deployment Context]]
   - supports:: [[AI Safety Research]], [[AI Policy]], [[Standards Development]], [[International Coordination]], [[Public Awareness]], [[Insurance Underwriting]], [[Liability Adjudication]]
   - uses:: [[Benchmarks]], [[Evaluation Frameworks]], [[Risk Registers]], [[Threat Intelligence]], [[Mechanistic Interpretability]], [[Adversarial Robustness Testing]], [[Capability Elicitation]]
   - contrasts-with:: [[AI Benefits]], [[AI Capabilities]], [[Beneficial AI]], [[AI for Good]]
   - related-to:: [[AI Ethics]], [[AI Safety]], [[AI Alignment]], [[AI Governance]], [[Trustworthy AI]], [[Responsible AI]], [[Cybersecurity]], [[Information Security]], [[Privacy Protection]], [[Surveillance Capitalism]]
-  - standardized-by:: [[NIST AI RMF]], [[ISO/IEC 23894]], [[ISO/IEC 42001]], [[OECD AI Principles]], [[EU AI Act]], [[UK AI Safety Institute]], [[US AI Safety Institute]], [[Council of Europe AI Convention]], [[Bletchley Declaration]], [[Seoul Declaration]], [[MIT AI Risk Repository]]
+  - standardized-by:: [[NIST AI RMF]], [[ISO/IEC 23894]], [[ISO/IEC 42001]], [[OECD AI Principles]], [[EU AI Act Regulatory Instrument]], [[UK AI Safety Institute]], [[US AI Safety Institute]], [[Council of Europe AI Convention]], [[Bletchley Declaration]], [[Seoul Declaration]], [[MIT AI Risk Repository]]
 
 - ### Content
 

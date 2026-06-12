@@ -37,7 +37,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"}

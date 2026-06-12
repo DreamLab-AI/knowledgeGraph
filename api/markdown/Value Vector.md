@@ -67,7 +67,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
@@ -121,7 +121,7 @@ public:: true
   - requires:: [[Reward Function]], [[Loss Function]]
   - enables:: [[Value Alignment]], [[Reinforcement Learning]]
   - uses:: [[Optimization Technique]], [[Preference Learning]]
-  - relatedTo:: [[Reward Model]], [[Machine Learning]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]]
+  - relatedTo:: [[Reward Model]], [[Machine Learning Discipline]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]]
   - partOf:: [[AI Research Area]]
 
 - ### Content

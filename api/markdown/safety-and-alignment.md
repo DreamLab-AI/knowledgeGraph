@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[PolicyLayer]], [[EvaluationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[AI Ethics]], [[AI Governance]], [[Human-Computer Interaction]], [[Existential Risk Research]]
-  - has-part:: [[RLHF]], [[Constitutional AI]], [[Mechanistic Interpretability]], [[Scalable Oversight]], [[Red Teaming]], [[Dangerous Capability Evaluations]], [[Sparse Autoencoders]], [[Reward Modelling]], [[Debate]], [[Weak-to-Strong Generalisation]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[AI Ethics]], [[AI Governance]], [[Human-Computer Interaction]], [[Existential Risk Research]]
+  - has-part:: [[RLHF]], [[Constitutional AI Training Methodology]], [[Mechanistic Interpretability]], [[Scalable Oversight]], [[Red Teaming]], [[Dangerous Capability Evaluations]], [[Sparse Autoencoders]], [[Reward Modelling]], [[Debate]], [[Weak-to-Strong Generalisation]]
   - requires:: [[Human Feedback]], [[Reward Model]], [[Evaluation Benchmarks]], [[Interpretability Tools]], [[Governance Frameworks]]
   - enables:: [[Safe AI Deployment]], [[Trustworthy AI Systems]], [[Human Oversight]], [[Responsible Scaling]], [[Catastrophic Risk Reduction]]
-  - implements:: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], [[Debate Protocol]], [[Mechanistic Circuits Analysis]], [[Adversarial Red Teaming]], [[Weak-to-Strong Generalisation]], [[Direct Preference Optimisation]]
+  - implements:: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]], [[Debate Protocol]], [[Mechanistic Circuits Analysis]], [[Adversarial Red Teaming]], [[Weak-to-Strong Generalisation]], [[Direct Preference Optimisation]]
   - depends-on:: [[Reinforcement Learning]], [[Large Language Models]], [[Natural Language Processing]], [[Bayesian Inference]], [[Decision Theory]]
-  - supports:: [[EU AI Act]], [[Bletchley Declaration]], [[Seoul AI Summit]], [[Responsible Scaling Policy]], [[AI Safety Institute]], [[NIST AI RMF]]
+  - supports:: [[EU AI Act Regulatory Instrument]], [[Bletchley Declaration]], [[Seoul AI Summit]], [[Responsible Scaling Policy]], [[AI Safety Institute]], [[NIST AI RMF]]
   - uses:: [[Sparse Autoencoders]], [[Chain of Thought]], [[Activation Patching]], [[Causal Tracing]], [[Human Feedback]], [[Reward Modelling]]
   - contrasts-with:: [[AI Capabilities Research]], [[Uncontrolled Deployment]], [[Opaque Systems]]
-  - related-to:: [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Agents]], [[Anthropic Claude]], [[Artificial General Intelligence]]
-  - standardized-by:: [[EU AI Act]], [[NIST AI RMF]], [[ISO 42001]], [[UK AISI Evaluation Protocols]], [[Bletchley Declaration]]
+  - related-to:: [[Bias in Large Language Models]], [[AI Risks]], [[AI Liability]], [[Competition in AI]], [[Agents]], [[Constitutional AI Language Model Family]], [[Artificial General Intelligence]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]], [[ISO 42001]], [[UK AISI Evaluation Protocols]], [[Bletchley Declaration]]
 
 - ### Content
 

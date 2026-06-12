@@ -264,7 +264,7 @@ public:: true
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
     ]
   },
@@ -412,7 +412,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Apple]]",
+      "raw": "[[Apple Inc Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:apple",
       "kind": "ResolvedLink"
     },
@@ -452,7 +452,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -467,7 +467,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -482,7 +482,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Humans, Avatars , Character]]",
+      "raw": "[[Digital Human Avatar Representation]]",
       "resolved": "urn:visionflow:owl:class:humans-avatars-character",
       "kind": "ResolvedLink"
     },
@@ -492,7 +492,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[latent space]]",
+      "raw": "[[Neural Network Latent Space]]",
       "resolved": "urn:visionflow:owl:class:latent-space",
       "kind": "ResolvedLink"
     },
@@ -512,12 +512,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -527,7 +527,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Some legacy Linked-JSON]]",
+      "raw": "[[Metaverse Entity Schema Archive]]",
       "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
       "kind": "ResolvedLink"
     },
@@ -564,7 +564,7 @@ public:: true
 - ### Relationships
   - relatedTo:: [[AI Provider]], [[AI Operator]], [[Accountability]]
   - requires:: [[Human Oversight]], [[Fairness]], [[Explainability]]
-  - dependsOn:: [[EU AI Act]], [[Responsible AI]]
+  - dependsOn:: [[EU AI Act Regulatory Instrument]], [[Responsible AI]]
 
 - ### Content
   - An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.
@@ -1051,12 +1051,12 @@ public:: true
 		- These hashes are used to pull personalised marketing content from the Nostr network.
 
   - ### Embedding in User-Side Applications
-		- Personalised marketing content is seamlessly embedded into the user's preferred applications, such as Roblox, [[NVIDIA Omniverse]] , and web browsers.
+		- Personalised marketing content is seamlessly embedded into the user's preferred applications, such as Roblox, [[NVIDIA Omniverse Platform]] , and web browsers.
 		  This ensures relevant and engaging marketing content within the context of the user's usual digital experiences.
 
   - ### Cloud-Based Latent Space
-		- Fine-tuned product variations are stored in a cloud-based [[latent space]] , a high-dimensional vector space where each point represents a specific product variation.
-		- This [[latent space]] is organised and indexed for efficient retrieval based on user preferences.
+		- Fine-tuned product variations are stored in a cloud-based [[Neural Network Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
+		- This [[Neural Network Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
 
   - ### Interaction Flow
 		- The user's device, with a Nostr client, accesses the local knowledge base to retrieve relevant product class hashes.
@@ -1816,7 +1816,7 @@ public:: true
 			- {{video https://www.youtube.com/watch?v=VNs1lW8t4hw}}
 
   - ### DALL·E 3
-		- From [[OpenAI]] , integrated with ChatGPT pro, [integrated with Bing](https://www.bing.com/images/create), built into Swiftkey [[android]] keyboard.
+		- From [[OpenAI Research Organisation]] , integrated with ChatGPT pro, [integrated with Bing](https://www.bing.com/images/create), built into Swiftkey [[android]] keyboard.
 			- ![image.png](assets/image_1704230683869_0.png){:height 700, :width 300}
 			- **Cost**: Free on Microsoft’s Bing Image Creator; some free credits. $20 pcm for ChatGPT.
 			- **User Interface**: Simple, via Bing Image Creator. Can iteratively build though ChatGPT interface.
@@ -2358,12 +2358,12 @@ public:: true
 		- These hashes are used to pull personalised marketing content from the Nostr network.
 
   - ### Embedding in User-Side Applications
-		- Personalised marketing content is seamlessly embedded into the user's preferred applications, such as Roblox, [[NVIDIA Omniverse]] , and web browsers.
+		- Personalised marketing content is seamlessly embedded into the user's preferred applications, such as Roblox, [[NVIDIA Omniverse Platform]] , and web browsers.
 		  This ensures relevant and engaging marketing content within the context of the user's usual digital experiences.
 
   - ### Cloud-Based Latent Space
-		- Fine-tuned product variations are stored in a cloud-based [[latent space]] , a high-dimensional vector space where each point represents a specific product variation.
-		- This [[latent space]] is organised and indexed for efficient retrieval based on user preferences.
+		- Fine-tuned product variations are stored in a cloud-based [[Neural Network Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
+		- This [[Neural Network Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
 
   - ### Interaction Flow
 		- The user's device, with a Nostr client, accesses the local knowledge base to retrieve relevant product class hashes.
@@ -3123,7 +3123,7 @@ public:: true
 			- {{video https://www.youtube.com/watch?v=VNs1lW8t4hw}}
 
   - ### DALL·E 3
-		- From [[OpenAI]] , integrated with ChatGPT pro, [integrated with Bing](https://www.bing.com/images/create), built into Swiftkey [[android]] keyboard.
+		- From [[OpenAI Research Organisation]] , integrated with ChatGPT pro, [integrated with Bing](https://www.bing.com/images/create), built into Swiftkey [[android]] keyboard.
 			- ![image.png](assets/image_1704230683869_0.png){:height 700, :width 300}
 			- **Cost**: Free on Microsoft’s Bing Image Creator; some free credits. $20 pcm for ChatGPT.
 			- **User Interface**: Simple, via Bing Image Creator. Can iteratively build though ChatGPT interface.
@@ -3523,7 +3523,7 @@ public:: true
 
   - ### Visualising
 		- http://owlgred.lumii.lv/online_visualization/4qge#
-		- [[Some legacy Linked-JSON]]
+		- [[Metaverse Entity Schema Archive]]
           rdfs:comment "A general actor capable of autonomous or semi-autonomous behavior, including humans and AIs."
           hasSkillProfile SkillProfile
           hasPrivacySetting PrivacySetting
@@ -3984,7 +3984,7 @@ public:: true
 		- #### User Behaviour and Adoption
 			- A critical factor in the success of AI-driven search engines will be user adoption. While AI-enhanced search engines promise more accurate and contextually relevant results, there remains scepticism about whether users will transition from well-known traditional search engines like Google. Improvements in AI capabilities must demonstrate a substantial enhancement in user experience to effectively drive this behavioural shift.
 		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
-  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google]]
+  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - Bots that persuade bots that persuade bots
 		- https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
 		- [The majority of traffic from Elon Musk's X may have been fake during the Super Bowl, report suggests | Mashable](https://mashable.com/article/x-twitter-elon-musk-bots-fake-traffic)
@@ -4183,7 +4183,7 @@ public:: true
   - global shared truth
   - form factor
   - gpu processing
-  - [[Humans, Avatars , Character]]
+  - [[Digital Human Avatar Representation]]
   - [the many challenges of XR hardware](https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus)
   - HCI
   - MoveAI
@@ -4307,7 +4307,7 @@ public:: true
    <https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&amp;pg=>
   - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that could predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
   - Reddit and its partners use cookies and similar technologies to improve the quality of its website, personalize content and advertising, measure advertising effectiveness, and ensure the proper functionality of its platform. By accepting all cookies, users agree to the use of cookies. However, by rejecting non-essential cookies, Reddit may still use certain cookies to ensure the proper functionality of its platform. Reddit's Cookie Notice and Privacy Policy provide more information about its use of cookies. Recently, Meta, Microsoft, and Disney have reversed their bets on the metaverse. Posts related to this topic on r/CryptoCurrency have been removed by moderators. https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/ Exokit, Adrian's opensource mixed reality toolkit for web <https://github.com/exokitxr/exokit>
-  - [[Apple]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
+  - [[Apple Inc Technology Corporation]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple Inc Technology Corporation]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple Inc Technology Corporation]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple Inc Technology Corporation]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
   - These posts include insights on the development of XR technology, possible applications, and innovations in the field. https://www.linkedin.com/posts/reneschulte_visionpro-ar-vr-activity-7072953336156602369-_2pL?utm_source=share&utm_medium=member_android
   - [This text is a brief description of a position paper published by the OMA3 Portaling and Mapping Working Group (PMWG) on the transformative technology of portals in the metaverse. The position paper provides insights into the potential of a universal portal system to reshape digital interaction for consumers, businesses, and platforms. It highlights the development process, strategic approach, and vision of OMA3 in setting new standards for the Web3 universe. The paper invites readers to comment on it by creating an issue or commenting in the Google Doc. It also encourages individuals to join OMA3 and participate in the Portaling and Mapping Working Group if they would like to contribute to the project. The paper is licensed under a Creative Commons Attribution 4.0 International License.](https://github.com/oma3dao/portal-position-paper)
   - [The Open Metaverse Alliance for Web3 (OMA3) has announced the Inter-World Portaling System (IWPS) project, aimed at creating standards for seamless travel between metaverse platforms. OMA3, based in Zug, Switzerland, is a consortium of top metaverse companies in Web3. The IWPS project will allow users to walk through inter-world portals and travel between metaverse platforms such as Alien Worlds, My Neighbor Alice, and Sandbox. OMA3 believes that IWPS has the potential to enhance accessibility and engagement within the digital realm by bridging disparate metaverse environments. They compare IWPS to the development of transportation technology like railroads and highways in the industrial revolution and the introduction of the HTTP standard in the digital realm, both of which facilitated the free flow of goods, services, and information. OMA3 has released a position paper outlining the importance of IWPS and inviting participation and comments from the Web3 metaverse community. They see the development and standardization of IWPS as the next frontier in the evolution of the metaverse, enabling new levels of connectivity, commerce, and shared experiences.](https://venturebeat.com/games/oma3-offers-way-for-users-to-travel-between-blockchain-gaming-worlds-in-the-metaverse/)
@@ -4521,7 +4521,7 @@ public:: true
   - global shared truth
   - form factor
   - gpu processing
-  - [[Humans, Avatars , Character]]
+  - [[Digital Human Avatar Representation]]
   - [the many challenges of XR hardware](https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus)
   - HCI
   - MoveAI
@@ -4645,7 +4645,7 @@ public:: true
    <https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&amp;pg=>
   - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that could predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
   - Reddit and its partners use cookies and similar technologies to improve the quality of its website, personalize content and advertising, measure advertising effectiveness, and ensure the proper functionality of its platform. By accepting all cookies, users agree to the use of cookies. However, by rejecting non-essential cookies, Reddit may still use certain cookies to ensure the proper functionality of its platform. Reddit's Cookie Notice and Privacy Policy provide more information about its use of cookies. Recently, Meta, Microsoft, and Disney have reversed their bets on the metaverse. Posts related to this topic on r/CryptoCurrency have been removed by moderators. https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/ Exokit, Adrian's opensource mixed reality toolkit for web <https://github.com/exokitxr/exokit>
-  - [[Apple]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
+  - [[Apple Inc Technology Corporation]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple Inc Technology Corporation]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple Inc Technology Corporation]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple Inc Technology Corporation]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
   - These posts include insights on the development of XR technology, possible applications, and innovations in the field. https://www.linkedin.com/posts/reneschulte_visionpro-ar-vr-activity-7072953336156602369-_2pL?utm_source=share&utm_medium=member_android
   - [This text is a brief description of a position paper published by the OMA3 Portaling and Mapping Working Group (PMWG) on the transformative technology of portals in the metaverse. The position paper provides insights into the potential of a universal portal system to reshape digital interaction for consumers, businesses, and platforms. It highlights the development process, strategic approach, and vision of OMA3 in setting new standards for the Web3 universe. The paper invites readers to comment on it by creating an issue or commenting in the Google Doc. It also encourages individuals to join OMA3 and participate in the Portaling and Mapping Working Group if they would like to contribute to the project. The paper is licensed under a Creative Commons Attribution 4.0 International License.](https://github.com/oma3dao/portal-position-paper)
   - [The Open Metaverse Alliance for Web3 (OMA3) has announced the Inter-World Portaling System (IWPS) project, aimed at creating standards for seamless travel between metaverse platforms. OMA3, based in Zug, Switzerland, is a consortium of top metaverse companies in Web3. The IWPS project will allow users to walk through inter-world portals and travel between metaverse platforms such as Alien Worlds, My Neighbor Alice, and Sandbox. OMA3 believes that IWPS has the potential to enhance accessibility and engagement within the digital realm by bridging disparate metaverse environments. They compare IWPS to the development of transportation technology like railroads and highways in the industrial revolution and the introduction of the HTTP standard in the digital realm, both of which facilitated the free flow of goods, services, and information. OMA3 has released a position paper outlining the importance of IWPS and inviting participation and comments from the Web3 metaverse community. They see the development and standardization of IWPS as the next frontier in the evolution of the metaverse, enabling new levels of connectivity, commerce, and shared experiences.](https://venturebeat.com/games/oma3-offers-way-for-users-to-travel-between-blockchain-gaming-worlds-in-the-metaverse/)
@@ -5129,6 +5129,6 @@ public:: true
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

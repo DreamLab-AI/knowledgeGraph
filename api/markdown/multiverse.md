@@ -8,7 +8,7 @@
   - implemented-in-layer:: [[ApplicationLayer]]
 - ### Relationships
   - has-part:: [[Metaverse]], [[Interoperability Protocol]], [[Federated Identity]], [[Cross-Chain Bridge]], [[Portal System]], [[Multi-World Governance]], [[Asset Translation Layer]], [[Universal Inventory]]
-  - is-part-of:: [[Spatial Web]]
+  - is-part-of:: [[Semantic Spatial Web Layer]]
   - requires:: [[Identity Federation]], [[Protocol Translation]], [[Asset Bridging]], [[Distributed Governance]], [[Standard Format Support]], [[Cross-Platform Authentication]]
   - enables:: [[Cross-World Travel]], [[Asset Portability]], [[Multi-Platform Gaming]], [[Federated Social Networks]], [[Cross-Metaverse Commerce]], [[Universal Avatar]]
   - depends-on:: [[Blockchain]], [[Decentralized Identifier]], [[Verifiable Credential]], [[Smart Contract]], [[Interoperability Standard]]

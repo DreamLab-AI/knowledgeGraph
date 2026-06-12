@@ -6,9 +6,9 @@
   - owl-role:: Individual
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Layer 2 Scaling]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Lightning Network]]
 
 - ### Content

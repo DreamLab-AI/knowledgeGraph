@@ -46,7 +46,7 @@ public:: true
     ],
     "supports": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ]
   },
   "qualityScore": 0.75,

@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Reality Experience]]
-  - requires:: [[Machine Learning]], [[Real-Time Analytics]], [[User Behavior Tracking]]
+  - requires:: [[Machine Learning Discipline]], [[Real-Time Analytics]], [[User Behavior Tracking]]
   - enables:: [[Personalized Learning]], [[Therapeutic VR]], [[Dynamic Gaming]]
   - bridges-to:: [[Blockchain]] (bc)
 

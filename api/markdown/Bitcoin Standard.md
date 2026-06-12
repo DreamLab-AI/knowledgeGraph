@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-standard",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
   "@type": "Class",
   "label": "Bitcoin Standard",
   "definition": "The Bitcoin Standard is an economic and monetary thesis proposing that Bitcoin's fixed supply cap of 21 million units, its decentralised consensus via Proof of Work, and its censorship-resistant issuance schedule make it a superior store of value and a viable basis for a new international monetary order, analogous to the historical gold standard. Proponents argue that Bitcoin's predictable, algorithmically enforced monetary policy immunises it against political inflation, contrasting with fiat currencies subject to central bank intervention. The thesis draws on Austrian economics, particularly the concept of sound money.",
@@ -37,8 +37,8 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
       {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}
     ],
     "uses": [

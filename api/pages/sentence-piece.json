@@ -12,7 +12,7 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:tokenisation",
+      "id": "urn:ngm:class:neural-network-text-tokenisation",
       "label": "Tokenisation"
     }
   ],
@@ -55,7 +55,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],

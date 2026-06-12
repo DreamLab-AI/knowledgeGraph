@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
@@ -151,7 +151,7 @@ public:: true
 
 - ### Relationships
   - requires:: [[Edge Computing]], [[Edge AI System]], [[Real-time Processing]]
-  - uses:: [[Computer Vision]], [[Object Detection]], [[Sensor Fusion]], [[Machine Learning]]
+  - uses:: [[Computer Vision]], [[Object Detection]], [[Sensor Fusion]], [[Machine Learning Discipline]]
   - enables:: [[Autonomous System]], [[Digital Twin]]
   - relatedTo:: [[Autonomous Robot]], [[Edge AI Accelerator]], [[Edge AI Security]]
   - bridgesTo:: [[Digital Twin Ecosystem]], [[Autonomous Vehicle]]

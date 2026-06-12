@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:0e5bd6082a2c0eb95eb4f82310871438f073ccb623e6dc3c8aab4a31f8f68709",
+  "title": "Artificial Superintelligence Theory",
+  "slug": "artificial-superintelligence-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:artificial-superintelligence-theory-theory",
+  "domain": "artificial-intelligence",
+  "definition": "A hypothetical form of artificial intelligence that surpasses human cognitive performance across all domains, capable of recursive self-improvement leading to an intelligence explosion. Distinguished from artificial general intelligence by the degree of capability surplus; considered an existential risk scenario requiring robust safety and alignment research before any attempt at development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aiethics",
+        "label": "AIEthics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ],
+  "backlinks": []
+}

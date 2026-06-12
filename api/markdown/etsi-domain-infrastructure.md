@@ -38,7 +38,7 @@
 		  - [[Network Infrastructure]]
 		  - [[Networking Layer]]
 		  - [[Physics Engine]]
-		  - [[Spatial Computing]]
+		  - [[Spatial Computing Paradigm]]
 		  - [[Spatial Computing Layer]]
 		  - [[Visualization Layer]]
 

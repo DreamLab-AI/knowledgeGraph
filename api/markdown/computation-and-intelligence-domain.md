@@ -21,7 +21,7 @@
 		- bridges-to:: [[Cognitive Science]]
 		- bridges-to:: [[Philosophy of Mind]]
 		- bridges-to:: [[Theoretical Computer Science]]
-		- foundational-to:: [[Machine Learning]]
+		- foundational-to:: [[Machine Learning Discipline]]
 
   ## Definition
 

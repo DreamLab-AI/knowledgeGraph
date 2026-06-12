@@ -54,7 +54,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
     ],
     "enables": [
@@ -62,11 +62,11 @@ public:: true
       {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
     ],
     "relatedTo": [

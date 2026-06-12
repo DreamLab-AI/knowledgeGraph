@@ -11,14 +11,14 @@
   - implemented-in-layer:: [[SensorLayer]], [[EdgeComputingLayer]], [[AnalyticsLayer]], [[EnterpriseIntegrationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Maintenance Strategy]], [[Condition-Based Maintenance]], [[Asset Health Management]], [[Industrial IoT]], [[Machine Learning]]
+  - is-subclass-of:: [[Maintenance Strategy]], [[Condition-Based Maintenance]], [[Asset Health Management]], [[Industrial IoT]], [[Machine Learning Discipline]]
   - has-part:: [[Remaining Useful Life Estimation]], [[Vibration Analysis]], [[Anomaly Detection]], [[Digital Twin]], [[IIoT Sensors]], [[CMMS Integration]], [[Fault Classification]], [[Health Index]]
   - requires:: [[Sensor Data]], [[Training Data]], [[Signal Processing]], [[Time Series Analysis]], [[Edge Computing]], [[Cloud Computing]], [[Data Pipeline]]
   - enables:: [[Unplanned Downtime Reduction]], [[Maintenance Cost Optimisation]], [[Asset Life Extension]], [[Operational Reliability]], [[Safety Assurance]], [[Carbon Footprint Measurement]]
   - implements:: [[LSTM]], [[Transformer]], [[Autoencoder]], [[FFT]], [[Envelope Analysis]], [[Convolutional Neural Networks]], [[Gradient Boosting]]
-  - depends-on:: [[Industrial Internet of Things]], [[Machine Learning]], [[Signal Processing]], [[Digital Twin]], [[Cloud Computing]], [[Edge Computing]]
+  - depends-on:: [[Industrial Internet of Things]], [[Machine Learning Discipline]], [[Signal Processing]], [[Digital Twin]], [[Cloud Computing]], [[Edge Computing]]
   - supports:: [[Aerospace MRO]], [[Wind Energy]], [[Oil and Gas Operations]], [[Railway Maintenance]], [[Manufacturing Quality Control]], [[Power Generation]]
-  - uses:: [[C-MAPSS Dataset]], [[OPC-UA]], [[MQTT]], [[ISO 10816]], [[IBM Maximo]], [[NVIDIA Omniverse]], [[Siemens Xcelerator]]
+  - uses:: [[C-MAPSS Dataset]], [[OPC-UA]], [[MQTT]], [[ISO 10816]], [[IBM Maximo]], [[NVIDIA Omniverse Platform]], [[Siemens Xcelerator]]
   - contrasts-with:: [[Reactive Maintenance]], [[Preventive Maintenance]], [[Time-Based Maintenance]]
   - related-to:: [[Prognostics and Health Management]], [[Reliability Engineering]], [[Quality Assurance]], [[Risk Assessment]], [[Non-Destructive Evaluation]], [[Robotics]]
   - standardized-by:: [[ISO 10816]], [[ISO 20816]], [[ISO 13374]], [[ISO 13379]], [[ISO 55000]], [[IEC 61499]], [[IEEE 1451]]
@@ -574,5 +574,5 @@
     - Quality confidence: high. Coverage spans all required subdomains: RUL estimation (C-MAPSS, FEMTO-ST benchmarks), signal processing (FFT, envelope, wavelet, cepstral), IIoT sensors (Yokogawa, Augury, SKF, Emerson, Fluke), digital twins (NVIDIA Omniverse, Siemens Xcelerator, Bentley iTwin, PTC), CMMS integration (IBM Maximo, SAP EAM, Infor, ServiceMax), ML methods (LSTM, Transformer, autoencoder, CNN, GBM, PINN, GNN, RL), NDE (UT, AE, thermography, ECT), standards (ISO 20816, 13374, 55001, API 670, IEC 62443), and UK context (Rolls-Royce Derby, AMRC Sheffield, BAE Systems, Network Rail, ORE Catapult, Imperial, Loughborough, Strathclyde, Manchester Dalton).
   - **Cross-domain linkages**:
     - Feeds into: [[Safety Assurance]], [[Risk Assessment]], [[Carbon Footprint Measurement]], [[Circular Economy]]
-    - Draws from: [[Machine Learning]], [[Deep Learning]], [[Industrial Internet of Things]], [[Digital Twin]], [[Edge Computing]], [[Cloud Computing]]
+    - Draws from: [[Machine Learning Discipline]], [[Deep Learning]], [[Industrial Internet of Things]], [[Digital Twin]], [[Edge Computing]], [[Cloud Computing]]
     - Adjacent domains: [[Robotics]] (actuator health), [[Aerospace MRO]] (EHM), [[Reliability Engineering]] (RCM), [[Prognostics and Health Management]] (PHM framework)

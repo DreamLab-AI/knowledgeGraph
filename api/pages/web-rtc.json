@@ -66,7 +66,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-xr",
+        "id": "urn:ngm:class:collaborative-systems-modality-xr",
         "label": "Collaborative XR"
       },
       {

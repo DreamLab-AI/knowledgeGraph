@@ -30,7 +30,7 @@
   - ## Key Subcategories
   - [[Virtual World]] - Persistent 3D environments and world-building systems
   - [[Augmented Reality]] - Overlay technologies and mixed reality systems
-  - [[Spatial Computing]] - 3D interaction, gesture recognition, and spatial interfaces
+  - [[Spatial Computing Paradigm]] - 3D interaction, gesture recognition, and spatial interfaces
   - [[Avatar System]] - Digital identity representation and customisation
   - [[Digital Asset]] - Virtual objects, NFTs, and interoperable items
   - [[Virtual Economy]] - In-world commerce, currencies, and marketplaces

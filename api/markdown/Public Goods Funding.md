@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:public-goods-funding",
+  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
   "@type": "Class",
   "label": "Public Goods Funding",
   "definition": "Public goods funding refers to mechanisms that finance resources which are non-excludable and non-rival — meaning consumption by one party does not diminish availability to others and exclusion is impractical. In decentralised ecosystems, on-chain coordination primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries are used to allocate capital towards open-source software, protocol research, and shared infrastructure. These mechanisms attempt to correct the market failure of under-provision that arises when contributors cannot capture sufficient private value from their public-benefit work.",

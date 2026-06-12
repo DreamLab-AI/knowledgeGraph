@@ -652,5 +652,5 @@
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[CCPA (California Consumer Privacy Act)]], [[EU AI Act]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]], [[ISO (International Organization for Standardization)]]
+  - sources:: [[CCPA (California Consumer Privacy Act)]], [[EU AI Act Regulatory Instrument]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]], [[ISO (International Organization for Standardization)]]
   - migration-date:: 2026-04-26T00:00:00Z

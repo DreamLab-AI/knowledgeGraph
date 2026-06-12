@@ -72,7 +72,7 @@ public:: true
       {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ]
   },

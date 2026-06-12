@@ -10,7 +10,7 @@
 
 - ### Relationships
   - hasPart:: [[IoT Sensor Network]], [[Io T Sensors]], [[Edge AI System]]
-  - requires:: [[Internet of Things]], [[Embedded Systems]], [[MQTT]], [[Machine Learning]]
+  - requires:: [[Internet of Things]], [[Embedded Systems]], [[MQTT]], [[Machine Learning Discipline]]
   - enables:: [[Anomaly Detection]], [[Industrial IoT]], [[Edge AI for Smart Cities]]
   - uses:: [[Embedded AI Frameworks]], [[Edge AI Accelerator]], [[Federated Learning]]
   - relatedTo:: [[Edge-Cloud Collaboration]], [[Latency-Aware Edge AI]]

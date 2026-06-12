@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},

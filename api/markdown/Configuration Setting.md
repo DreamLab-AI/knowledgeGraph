@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
@@ -116,7 +116,7 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - **partOf** [[Spatial Computing]] — configuration settings govern runtime behaviour of spatial computing systems
+  - **partOf** [[Spatial Computing Paradigm]] — configuration settings govern runtime behaviour of spatial computing systems
   - **enables** [[Simulation]] — quality and fidelity settings determine simulation parameters
   - **enables** [[Real-Time Rendering]] — rendering quality settings control the real-time pipeline
   - **relatedTo** [[Privacy]] — privacy preference settings protect user data within XR platforms

@@ -96,7 +96,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -134,7 +134,7 @@
         "label": "Atomic Swaps"
       },
       {
-        "id": "urn:ngm:class:bitcoin-native-de-fi",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-native-de-fi",
         "label": "Bitcoin-Native DeFi"
       },
       {
@@ -251,7 +251,7 @@
         "label": "Asset Interoperability"
       },
       {
-        "id": "urn:ngm:class:bitcoin-layer-3-ecosystem",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-3-ecosystem",
         "label": "Bitcoin Layer 3 Ecosystem"
       },
       {

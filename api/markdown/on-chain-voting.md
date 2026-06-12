@@ -14,7 +14,7 @@
   - requires:: [[Governance Token]], [[Smart Contract]], [[Blockchain Network]], [[Cryptographic Signature]], [[Block Snapshot]], [[ERC20Votes Standard]]
   - enables:: [[Treasury Management]], [[Protocol Upgrades]], [[Parameter Governance]], [[DAO Analytics]], [[Delegate Democracy]], [[Reputation System]], [[Anti-Collusion Voting]], [[Cross-Chain Governance]]
   - implements:: [[Compound Governor]], [[OpenZeppelin Governor]], [[Vote Escrow Model]], [[Conviction Voting]], [[Quadratic Voting]], [[MACI Anti-Collusion]], [[Futarchy]], [[Snapshot Voting]], [[ZK Anonymous Voting]]
-  - depends-on:: [[Ethereum]], [[Smart Contract]], [[Cryptography Security and Privacy]], [[Distributed Identity]], [[Digital Signature]], [[Verifiable Credentials]], [[Zero Knowledge Proofs]], [[IPFS]]
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[Smart Contract]], [[Cryptography Security and Privacy]], [[Distributed Identity]], [[Digital Signature]], [[Verifiable Credentials]], [[Zero Knowledge Proofs]], [[IPFS]]
   - supports:: [[DAO]], [[Decentralised Exchange]], [[Liquidity Provision]], [[Treasury Management]], [[Governance Token]], [[Compliance Monitoring]], [[Privacy Preserving Blockchain]]
   - uses:: [[Zero Knowledge Proofs]], [[Merkle Tree]], [[IPFS]], [[Cryptographic Signature]], [[Prediction Market]], [[ZK-SNARK]], [[Homomorphic Encryption]], [[ERC20Votes Standard]]
   - contrasts-with:: [[Snapshot Voting]], [[Delegate Democracy]], [[Reputation System]], [[Traditional Corporate Governance]], [[Proxy Voting]], [[Centralised Governance]]

@@ -3,7 +3,7 @@
   "title": "Multimodal Understanding",
   "slug": "multimodal-understanding",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-understanding",
+  "classIri": "urn:ngm:class:multimodal-ai-architecture-understanding",
   "domain": "artificial-intelligence",
   "definition": "Multimodal Understanding is an AI research area concerned with systems that jointly process and reason over multiple sensory modalities \u2014 including text, images, audio, video, and structured data \u2014 producing unified semantic representations. It underpins vision-language models, audio-visual reasoning, and multi-sensor scene interpretation.",
   "subClassOf": [
@@ -46,7 +46,7 @@
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {

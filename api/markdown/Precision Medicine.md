@@ -73,7 +73,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -160,7 +160,7 @@ public:: true
   - Uses [[Medical AI]]
   - Uses [[Deep Learning]]
   - Enables [[Drug Discovery AI]]
-  - Requires [[Machine Learning]]
+  - Requires [[Machine Learning Discipline]]
   - Requires [[Privacy Preserving Data Sharing]]
   - Related To [[Federated Learning]]
 

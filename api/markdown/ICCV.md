@@ -44,7 +44,7 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:cvpr", "label": "CVPR"}
@@ -63,7 +63,7 @@ public:: true
 
   - The Marr Prize, named after cognitive scientist David Marr whose computational theory of vision shaped the field, is awarded at each ICCV to the most innovative paper at the conference. Past winners have defined entire research sub-fields: optical flow estimation, human pose estimation, scene flow, and neural radiance field rendering have all received the Marr Prize, marking ICCV as a venue where paradigm-shifting work is especially recognised.
 
-  - ICCV's programme spans recognition, detection, segmentation, tracking, stereo and depth estimation, video understanding, generative vision, medical and satellite imaging, and embodied AI. Workshops and tutorials co-located with the conference have incubated communities around autonomous driving perception, fairness in facial recognition, and vision-language grounding, topics that feed directly into standards work at bodies such as [[NIST]] and regulatory discussions under the [[EU AI Act]].
+  - ICCV's programme spans recognition, detection, segmentation, tracking, stereo and depth estimation, video understanding, generative vision, medical and satellite imaging, and embodied AI. Workshops and tutorials co-located with the conference have incubated communities around autonomous driving perception, fairness in facial recognition, and vision-language grounding, topics that feed directly into standards work at bodies such as [[NIST]] and regulatory discussions under the [[EU AI Act Regulatory Instrument]].
 
   - In recent editions, ICCV has substantially increased its coverage of generative models. [[Diffusion Models]] and neural scene representations (NeRF, [[3D Gaussian Splatting]]) have been dominant themes, alongside papers on large vision-language models that bridge [[Computer Vision]] and [[Natural Language Processing]]. This reflects a broader convergence in AI research that ICCV, CVPR, and [[NeurIPS]] are jointly shaping.
 

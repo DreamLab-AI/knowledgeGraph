@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Optimism]], [[Arbitrum]], [[Polygon]]
-  - requires:: [[Ethereum]], [[Rollup]], [[Zero Knowledge Proof]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Rollup]], [[Zero Knowledge Proof]]
   - enables:: [[Decentralised Finance Domain]]
 
 - ### Content

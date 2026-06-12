@@ -8,7 +8,7 @@
   "definition": "Ark is a layer-two protocol for Bitcoin that uses shared, periodically refreshed off-chain outputs to let users transact cheaply and privately while retaining the ability to settle on the base chain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],

@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:a40cfb060e186c395796e38339bdd9777462968fb72b0a51b3aa8902c8154e2d",
+  "title": "Apple Mixed Reality Headset",
+  "slug": "apple-mixed-reality-headset",
+  "public": true,
+  "classIri": "urn:ngm:class:apple-inc-technology-corporation-mixed-reality-headset",
+  "domain": "metaverse",
+  "definition": "A mixed reality headset developed by Apple, announced in 2023 and released in 2024. It blends digital content with the user's surroundings using high-resolution displays and eye, hand, and voice input.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ],
+  "backlinks": []
+}

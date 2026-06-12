@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:spot-bitcoin-etf", "label": "Spot Bitcoin ETF"}, {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}]
+    "relatedTo": [{"@id": "urn:ngm:class:spot-bitcoin-etf", "label": "Spot Bitcoin ETF"}, {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}]
   },
   "quality": 0.72
 }

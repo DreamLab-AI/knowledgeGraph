@@ -111,7 +111,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

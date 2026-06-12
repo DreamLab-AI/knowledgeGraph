@@ -178,7 +178,7 @@ public:: true
         "label": "Context Pinning"
       },
       {
-        "@id": "urn:ngm:class:json-ld-context",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
         "label": "JSON-LD Context"
       },
       {
@@ -196,7 +196,7 @@ public:: true
         "label": "Canonical JSON"
       },
       {
-        "@id": "urn:ngm:class:json-ld-1-1-standard",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1-standard",
         "label": "JSON-LD 1.1 Standard"
       },
       {
@@ -228,7 +228,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
@@ -400,7 +400,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -440,7 +440,7 @@ public:: true
   - requires:: [[JSON-LD 1.1 Standard]], [[W3C Vocabulary]], [[Canonical JSON]], [[URI Canonicaliser]]
   - enables:: [[Linked Data Consumption]], [[Cross-System Querying]], [[Semantic Federation]], [[Knowledge Graph Integration]]
   - implements:: [[JSON-LD 1.1]], [[W3C Linked Data]], [[RDF Semantics]]
-  - bridges-to:: [[Knowledge Graph]] (domain: ngm), [[Semantic Web]] (domain: ngm), [[RDF Store]] (domain: ngm)
+  - bridges-to:: [[Knowledge Graph]] (domain: ngm), [[Semantic Web Linked Data Standard]] (domain: ngm), [[RDF Store]] (domain: ngm)
 
 - ### Content
 

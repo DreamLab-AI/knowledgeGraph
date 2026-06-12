@@ -12,7 +12,7 @@
   - bridges-to:: [[Sensor Input]]
   - has-part:: [[Environmental Sensing]], [[User State Detection]], [[Situational Inference]], [[Behavioral Adaptation]], [[Context Modeling]]
   - is-part-of:: [[Intelligent Systems]], [[Adaptive Computing]], [[Pervasive Computing]]
-  - requires:: [[Sensor Fusion]], [[Data Processing]], [[Machine Learning]], [[Knowledge Representation]], [[Decision Logic]]
+  - requires:: [[Sensor Fusion]], [[Data Processing]], [[Machine Learning Discipline]], [[Knowledge Representation]], [[Decision Logic]]
   - enables:: [[Personalized Experiences]], [[Adaptive Interfaces]], [[Proactive Services]], [[Ambient Intelligence]], [[Smart Environments]]
   - depends-on:: [[IoT Infrastructure]], [[Edge Computing]], [[Real-Time Analytics]], [[Semantic Reasoning]]
 

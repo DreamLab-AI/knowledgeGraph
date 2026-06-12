@@ -189,7 +189,7 @@ alias:: PlatformLayer
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:infrastructure-architecture",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
         "label": "Infrastructure Architecture"
       }
     ]

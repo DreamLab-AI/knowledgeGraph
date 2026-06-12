@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-technique",
+        "id": "urn:ngm:class:machine-learning-discipline-technique",
         "label": "Machine Learning Technique"
       },
       {
@@ -46,7 +46,7 @@
         "label": "Optimization Algorithm"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],
@@ -55,7 +55,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

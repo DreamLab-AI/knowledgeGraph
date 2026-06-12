@@ -122,7 +122,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -234,11 +234,11 @@ public:: true
 				- Economic Incentive Layer
 
   - ## Layer 3: The Application Layer
-  - [[Bitcoin]]
+  - [[Bitcoin Proof-of-Work Protocol]]
   - [[Lightning and Similar L2]]
 
   - ## Layer 3: The Application Layer
-  - [[Bitcoin]]
+  - [[Bitcoin Proof-of-Work Protocol]]
   - [[Lightning and Similar L2]]
 
   - ##### Alioscopy

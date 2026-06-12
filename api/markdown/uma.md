@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[DeFi]]
   - bridges-to:: [[DeFi]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
 
 - ### Content
   - UMA, short for Universal Market Access, operates an optimistic oracle in which proposed answers are accepted unless disputed within a challenge window. Disputes are resolved by token holder voting, with economic incentives discouraging false reports.

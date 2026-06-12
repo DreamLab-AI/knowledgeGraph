@@ -51,7 +51,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-foundation",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
   "@type": "Class",
   "label": "Ethereum Foundation",
   "definition": "The Ethereum Foundation is a non-profit organisation, registered in Switzerland, that supports the development of the Ethereum protocol and its surrounding research and developer community. It funds core protocol research, client development, security audits and educational initiatives, but does not control the network, which is maintained by a decentralised set of clients, validators and contributors. The Foundation was established around the 2014 to 2015 launch of Ethereum.",
@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -95,7 +95,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -141,7 +141,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Governance Domain]], [[Blockchain Domain]]
-  - enables:: [[Ethereum]], [[Proof of Stake]]
+  - enables:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]]
 
 - ### Content
   - The Foundation coordinates and finances work on Ethereum's reference specifications, multiple independent clients and the research programmes behind major upgrades such as the transition to proof-of-stake. It distributes grants to external teams and runs initiatives covering cryptography, scaling, formal verification and developer tooling.

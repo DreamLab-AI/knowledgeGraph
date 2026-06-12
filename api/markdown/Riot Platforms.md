@@ -64,7 +64,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin-mining",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],

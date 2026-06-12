@@ -470,7 +470,7 @@ public:: true
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "@id": "urn:ngm:class:open-ai-whisper",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
         "label": "OpenAI Whisper"
       }
     ],
@@ -488,11 +488,11 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -544,7 +544,7 @@ public:: true
         "label": "C2PA Content Credentials"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
@@ -831,7 +831,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -846,7 +846,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -944,7 +944,7 @@ public:: true
   - supports:: [[Media Accessibility]], [[Creator Economy]], [[AI Search]], [[AI companions]], [[AI Video]], [[SEO Optimisation]], [[Podcast Distribution]]
   - uses:: [[OpenAI Whisper]], [[ElevenLabs]], [[Descript]], [[NotebookLM]], [[Retrieval-Augmented Generation]], [[Adobe Podcast]], [[Otter.ai]], [[AssemblyAI]]
   - contrasts-with:: [[Human Podcast Production]], [[Traditional Radio Broadcasting]], [[Manual Audio Editing]], [[Studio Recording]]
-  - related-to:: [[AI Video]], [[Speech and Voice]], [[Natural Language Processing]], [[AI Adoption]], [[Generative AI]], [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]]
+  - related-to:: [[AI Video]], [[Speech and Voice]], [[Natural Language Processing]], [[AI Adoption]], [[Generative AI]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]]
   - standardized-by:: [[C2PA Content Credentials]], [[Ofcom Broadcasting Code]], [[FTC Endorsement Guidelines]], [[EU AI Act Article 50]]
 
 - ### Content

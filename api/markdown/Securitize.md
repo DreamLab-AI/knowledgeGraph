@@ -116,7 +116,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:linked:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -146,7 +146,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Asset Tokenisation]]
-  - bridges-to:: [[Tokenisation]]
+  - bridges-to:: [[Neural Network Text Tokenisation]]
   - requires:: [[Blockchain]], [[Securities Regulation]]
   - enables:: [[Security Token]]
 

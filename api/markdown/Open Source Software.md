@@ -34,7 +34,7 @@
     ],
     "uses": [
       {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:license", "label": "license"}
+      {"@id": "urn:ngm:class:intellectual-property-licence-instrument", "label": "license"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
@@ -52,6 +52,6 @@ Open Source Software is software whose source code is publicly available under a
   - enables [[Open-Source AI]]
   - enables [[Collaboration]]
   - uses [[Version Control]]
-  - uses [[license]]
+  - uses [[Intellectual Property Licence Instrument]]
   - relatedTo [[Open Source Framework]]
   - relatedTo [[Software Library]]

@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -116,12 +116,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:linked:foundation-models",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -145,8 +145,8 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
-  - bridges-to:: [[Foundation Models]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
+  - bridges-to:: [[Large-Scale Pretrained Foundation Model]]
   - requires:: [[Transfer Learning]], [[Meta-Learning]]
   - enables:: [[In-Context Learning]]
 

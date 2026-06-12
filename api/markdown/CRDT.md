@@ -628,7 +628,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:collaborative-ides",
+        "@id": "urn:ngm:class:collaborative-systems-modality-ides",
         "label": "Collaborative IDEs"
       },
       {

@@ -58,7 +58,7 @@
         "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:midjourney",
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       },
       {
@@ -110,7 +110,7 @@
         "label": "Marketing Asset Production"
       },
       {
-        "id": "urn:ngm:class:multimodal-editing",
+        "id": "urn:ngm:class:multimodal-ai-architecture-editing",
         "label": "Multimodal Editing"
       },
       {
@@ -162,7 +162,7 @@
         "label": "Adobe Creative Cloud"
       },
       {
-        "id": "urn:ngm:class:chat-gpt-integration",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system-integration",
         "label": "ChatGPT Integration"
       },
       {
@@ -170,7 +170,7 @@
         "label": "Discord API"
       },
       {
-        "id": "urn:ngm:class:gemini-api",
+        "id": "urn:ngm:class:gemini-multimodal-language-model-api",
         "label": "Gemini API"
       },
       {
@@ -212,7 +212,7 @@
         "label": "Medical Illustration"
       },
       {
-        "id": "urn:ngm:class:social-media-content",
+        "id": "urn:ngm:class:social-media-platform-infrastructure-content",
         "label": "Social Media Content"
       }
     ],
@@ -234,7 +234,7 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

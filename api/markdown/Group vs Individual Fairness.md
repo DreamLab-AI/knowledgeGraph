@@ -90,13 +90,13 @@ public:: true
       {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
       {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
       {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:equity", "label": "Equity"}
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ]
   },
@@ -161,7 +161,7 @@ public:: true
   - hasPart:: [[Fairness Metrics]], [[Fairness Constraints]]
   - requires:: [[Fairness Auditing Tools]], [[Bias Detection Methods]]
   - enables:: [[Bias Mitigation Techniques]], [[Algorithmic Accountability]]
-  - relatedTo:: [[Fairness]], [[Fairness (OECD)]], [[Disparate Impact]], [[Algorithmic Bias]], [[Equity]]
+  - relatedTo:: [[Fairness]], [[Fairness (OECD)]], [[Disparate Impact]], [[Algorithmic Bias]], [[Digital Technology Access Equity]]
   - contrastsWith:: [[Fairness Accuracy Tradeoffs]]
   - uses:: [[Machine Learning Model]], [[Explainability]]
 

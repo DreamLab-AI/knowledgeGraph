@@ -8,7 +8,7 @@
   "definition": "A learning paradigm in which a model learns from a stream of tasks or data over time while retaining performance on previously learned tasks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

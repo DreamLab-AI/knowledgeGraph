@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Regulatory Compliance]]
-  - bridges-to:: [[EU AI Act]], [[Privacy]]
+  - bridges-to:: [[EU AI Act Regulatory Instrument]], [[Privacy]]
   - requires:: [[AI Regulation]]
   - enables:: [[Regulatory Compliance]]
 

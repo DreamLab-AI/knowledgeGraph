@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - A Bitcoin Improvement Proposal defining Tapscript, the scripting semantics used within Taproot spends. It specifies the validation rules for scripts committed under the Taproot output type.

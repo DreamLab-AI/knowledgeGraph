@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Robotics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Industrial Robot]], [[Coordinate Robots]]
   - has-part:: [[Azimuth Drive]], [[Radial Actuator]], [[Vertical Actuator]], [[End-Effector Mount]]
   - requires:: [[Rotary Joint]], [[Prismatic Actuators]], [[Base Support]]

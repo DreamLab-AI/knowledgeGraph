@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - **Has-part**: [[Machine Learning]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
+  - **Has-part**: [[Machine Learning Discipline]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
   - **Enables**: [[Natural Language Processing]], [[Computer Vision]], [[Inference]]
   - **Uses**: [[Data Pipeline]] (training data flow), [[Federated Learning]] (privacy-preserving training)
 

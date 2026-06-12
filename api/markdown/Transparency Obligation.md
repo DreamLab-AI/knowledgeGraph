@@ -103,7 +103,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:linked:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -133,7 +133,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Regulatory Compliance]]
-  - bridges-to:: [[EU AI Act]], [[Privacy]]
+  - bridges-to:: [[EU AI Act Regulatory Instrument]], [[Privacy]]
   - requires:: [[AI Regulation]]
   - enables:: [[Regulatory Compliance]]
 

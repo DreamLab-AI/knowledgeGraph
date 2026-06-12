@@ -159,7 +159,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -583,6 +583,6 @@ public:: true
 		     - Stakeholder trust requirements
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[IEEE P7009]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[IEEE P7009]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

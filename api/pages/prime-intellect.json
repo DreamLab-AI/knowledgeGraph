@@ -110,7 +110,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-model-ownership",
+        "id": "urn:ngm:class:collaborative-systems-modality-model-ownership",
         "label": "Collaborative Model Ownership"
       },
       {
@@ -198,11 +198,11 @@
         "label": "Hugging Face"
       },
       {
-        "id": "urn:ngm:class:llama-architecture",
+        "id": "urn:ngm:class:meta-llama-model-family-architecture",
         "label": "Llama Architecture"
       },
       {
-        "id": "urn:ngm:class:nvidia-h200",
+        "id": "urn:ngm:class:nvidia-corporation-h200",
         "label": "NVIDIA H200"
       },
       {
@@ -236,7 +236,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture-of-Experts"
       },
       {

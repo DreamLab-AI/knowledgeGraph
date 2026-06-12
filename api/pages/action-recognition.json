@@ -37,12 +37,12 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "pose-estimation",
-      "label": "Pose Estimation"
+      "slug": "computer-vision-video-analysis",
+      "label": "Computer Vision Video Analysis"
     },
     {
-      "slug": "video-processing",
-      "label": "Video Processing"
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
     }
   ]
 }

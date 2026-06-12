@@ -259,7 +259,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:public-goods-funding",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       }
     ],
@@ -528,7 +528,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     }
@@ -579,7 +579,7 @@ public:: true
 		- **Gitcoin Grants Protocol (Allo)**: Gitcoin evolved from centralised grants platform to [[Allo Protocol]], decentralised infrastructure enabling any community to run quadratic funding rounds. Allo powers grants programmes for [[Arbitrum]], [[Optimism]], [[Polygon]], [[zkSync]], and dozens more, demonstrating protocol-layer approach to grants infrastructure. The protocol handles contribution processing, matching calculation, payout distribution, and fraud detection whilst enabling customisation of parameters, categories, and policies.
   - ### Optimism RetroPGF
 		- **Retroactive Model**: [[Optimism]]'s Retroactive Public Goods Funding (RetroPGF) inverts traditional grants by funding completed work rather than proposed projects, implementing the principle "it's easier to agree on what was useful than what will be useful." The model eliminates risk of funding projects that fail delivery whilst creating incentive for contributors to produce public goods expecting potential retroactive rewards. Three rounds conducted through 2024 demonstrated model viability whilst revealing implementation challenges.
-		- **Round 1 (2021)**: RetroPGF 1 allocated $1 million to 58 projects selected by 24 badge holders (Optimism team members and community representatives) voting on public goods that benefited Optimism and Ethereum. Recipients included [[Ethereum]] core developers, EIP authors, community educators, open-source tool builders, and infrastructure providers. The round validated retroactive funding concept whilst highlighting centralisation concerns in badge holder selection.
+		- **Round 1 (2021)**: RetroPGF 1 allocated $1 million to 58 projects selected by 24 badge holders (Optimism team members and community representatives) voting on public goods that benefited Optimism and Ethereum. Recipients included [[Ethereum Smart Contract Platform]] core developers, EIP authors, community educators, open-source tool builders, and infrastructure providers. The round validated retroactive funding concept whilst highlighting centralisation concerns in badge holder selection.
 		- **Round 2 (2023)**: RetroPGF 2 expanded to $10 million distributed among 195 projects voted on by 69 Citizens (expanded from badge holders). Votes allocated across three categories: Infrastructure, Tooling & Utilities, and Education. Notable recipients included [[EthereumJS]] ($158,000), [[Foundry]] ($142,000), [[WalletConnect]] ($89,000), and dozens of educational initiatives. The round demonstrated scale viability whilst revealing concentration risks (top 10 projects received 25% of funding) and evaluation challenges (assessing diverse contributions comparably).
 		- **Round 3 (2023-2024)**: RetroPGF 3 allocated $30 million across 643 projects voted on by 208 Citizens, representing significant scale expansion. The round introduced improved attestations (contributors creating evidence of impact), impact metrics frameworks (quantitative and qualitative assessment criteria), and refined voting mechanisms. Categories expanded to include OP Stack (core protocol contributions), Collective Governance (governance participation), and Developer Ecosystem (tools and libraries). Individual allocations ranged from $1,000 to $500,000+, with median around $20,000.
 		- **Impact Assessment**: Optimism developed sophisticated impact measurement including usage metrics (users served, value processed, developer adoption), dependency analysis (how many projects build on funded work), counterfactual reasoning (would work exist without funding), and ecosystem multiplier effects. The foundation published detailed analyses showing RetroPGF recipients collectively served tens of millions of users, processed billions in value, and enabled thousands of derivative projects.

@@ -210,7 +210,7 @@ public:: true
         "label": "Cultural Heritage Preservation"
       },
       {
-        "@id": "urn:ngm:class:public-access",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-access",
         "label": "Public Access"
       },
       {

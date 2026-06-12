@@ -71,12 +71,12 @@
       "label": "Chatbots"
     },
     {
-      "slug": "could",
-      "label": "Could"
-    },
-    {
       "slug": "customer-support-automation",
       "label": "Customer Support Automation"
+    },
+    {
+      "slug": "epistemic-modality-marker",
+      "label": "Epistemic Modality Marker"
     },
     {
       "slug": "real-time-translation",

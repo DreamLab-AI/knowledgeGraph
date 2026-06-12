@@ -2,7 +2,7 @@
   - A value function estimates the expected cumulative future reward from a state or state-action pair under a policy, capturing long-term desirability and satisfying the recursive Bellman equation.
 
 - ### Relationships
-  - Value Function is a subclass of [[Reinforcement Learning]] machinery and uses the [[Markov Decision Process]] formalism that defines states, actions, and rewards. It supports [[Optimal Control]], whose cost-to-go is its negated analogue, and relates to [[Machine Learning]] broadly through the function approximators used to represent it.
+  - Value Function is a subclass of [[Reinforcement Learning]] machinery and uses the [[Markov Decision Process]] formalism that defines states, actions, and rewards. It supports [[Optimal Control]], whose cost-to-go is its negated analogue, and relates to [[Machine Learning Discipline]] broadly through the function approximators used to represent it.
 
 - ### Content
   - The value function answers the question an agent must repeatedly confront: not "what reward do I get now?" but "how good is it to be here, given everything that follows?" By summing discounted future rewards in expectation, it converts the sequential, delayed-consequence nature of decision problems into a scalar measure of state desirability, allowing an agent to prefer actions that lead to good situations even when immediate reward is low.

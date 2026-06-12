@@ -65,7 +65,7 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
     ],
@@ -136,7 +136,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
   - relatedTo [[Transfer Learning]]
   - relatedTo [[Contrastive Learning]]
   - enables [[Model Performance]]

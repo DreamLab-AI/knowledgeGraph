@@ -137,7 +137,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:infrastructure-domain",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
         "label": "Infrastructure Domain"
       },
       {

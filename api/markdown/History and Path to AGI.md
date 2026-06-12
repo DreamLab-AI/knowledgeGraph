@@ -444,7 +444,7 @@ public:: true
         "label": "Backpropagation"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -496,7 +496,7 @@ public:: true
         "label": "Artificial General Intelligence"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -518,7 +518,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -815,7 +815,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -835,7 +835,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -865,7 +865,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -890,7 +890,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -956,12 +956,12 @@ public:: true
   - has-part:: [[Symbolic AI]], [[Connectionism]], [[Deep Learning]], [[Reinforcement Learning]], [[Large Language Models]], [[Scaling Laws]], [[RLHF]], [[Transformer Architecture]], [[Expert Systems]], [[AI Winter]]
   - requires:: [[Computational Substrate]], [[Training Data]], [[Mathematical Foundations]], [[Scientific Method]], [[Institutional Funding]]
   - enables:: [[Artificial General Intelligence]], [[Frontier AI Evaluation]], [[AI Safety Research]], [[AI Policy]], [[Autonomous Systems]], [[Scientific Discovery Acceleration]]
-  - implements:: [[Turing Test]], [[Scaling Laws]], [[Backpropagation]], [[Attention Mechanism]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]]
+  - implements:: [[Turing Test]], [[Scaling Laws]], [[Backpropagation]], [[Attention Mechanism]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]]
   - depends-on:: [[Mathematics]], [[Neuroscience]], [[Cognitive Psychology]], [[Computer Science]], [[Statistics]], [[Philosophy of Mind]]
-  - supports:: [[AI Alignment]], [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Drug Discovery]]
+  - supports:: [[AI Alignment]], [[Machine Learning Discipline]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Drug Discovery]]
   - uses:: [[GPU Compute]], [[Transformer Architecture]], [[Neural Networks]], [[Probabilistic Inference]], [[Gradient Descent]]
   - contrasts-with:: [[Narrow AI]], [[Symbolic AI]], [[Rule-Based Systems]], [[Expert Systems]]
-  - related-to:: [[Anthropic Claude]], [[ChatGPT]], [[Competition in AI]], [[AI Risks]], [[Artificial General Intelligence]], [[AI Adoption]], [[Agent Frameworks]]
+  - related-to:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Competition in AI]], [[AI Risks]], [[Artificial General Intelligence]], [[AI Adoption]], [[Agent Frameworks]]
   - standardized-by:: [[NeurIPS]], [[ICML]], [[ICLR]], [[Nature]], [[Science]], [[ACL]], [[AAAI]]
 
 - ### Content

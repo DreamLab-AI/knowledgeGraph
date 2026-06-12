@@ -37,7 +37,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
       {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
       {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
       {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"},

@@ -390,7 +390,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-scene-assembly",
+        "@id": "urn:ngm:class:collaborative-systems-modality-scene-assembly",
         "label": "Collaborative Scene Assembly"
       },
       {
@@ -410,7 +410,7 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -476,7 +476,7 @@ public:: true
         "label": "AOUSD"
       },
       {
-        "@id": "urn:ngm:class:apple-vision-pro",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
         "label": "Apple Vision Pro"
       },
       {
@@ -488,11 +488,11 @@ public:: true
         "label": "Houdini"
       },
       {
-        "@id": "urn:ngm:class:blender",
+        "@id": "urn:ngm:class:blender-3d-creation-suite",
         "label": "Blender"
       },
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {
@@ -859,7 +859,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Blender]]",
+      "raw": "[[Blender 3D Creation Suite]]",
       "resolved": "urn:visionflow:owl:class:blender",
       "kind": "ResolvedLink"
     },
@@ -869,7 +869,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
@@ -894,7 +894,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -934,13 +934,13 @@ public:: true
   - is-subclass-of:: [[3D File Format]], [[Asset Pipeline]], [[Scene Graph]], [[Open Standard]], [[Interoperability]]
   - has-part:: [[Hydra]], [[MaterialX]], [[OpenSubdiv]], [[Composition Arcs]], [[Layer Stack]], [[Variant Sets]], [[UsdSkel]], [[Crate Format]], [[USDZ]]
   - requires:: [[Scene Graph]], [[Asset Pipeline]], [[Renderer]], [[Schema Registry]], [[Layer Resolution]]
-  - enables:: [[Virtual Production]], [[Digital Twins]], [[Spatial Computing]], [[Non-Destructive Editing]], [[Cross-DCC Interoperability]], [[Real-Time Rendering]], [[Collaborative Scene Assembly]]
+  - enables:: [[Virtual Production]], [[Digital Twins]], [[Spatial Computing Paradigm]], [[Non-Destructive Editing]], [[Cross-DCC Interoperability]], [[Real-Time Rendering]], [[Collaborative Scene Assembly]]
   - implements:: [[LIVRPS Composition]], [[Hydra Scene Delegate]], [[MaterialX Shading]], [[OpenSubdiv Refinement]], [[OpenPBR Material Model]], [[Variant Selection]]
   - depends-on:: [[Layer Composition Algorithm]], [[Schema System]], [[Asset Resolution]], [[SdfPath Addressing]], [[OpenColorIO]]
   - supports:: [[Film and Animation Pipeline]], [[Game Development]], [[AR Quick Look]], [[Industrial Simulation]], [[Robotics Simulation]], [[Metaverse Platforms]]
   - uses:: [[Python API]], [[C++ API]], [[Vulkan]], [[OpenGL]], [[GLSL Shaders]], [[OpenVDB]]
   - contrasts-with:: [[glTF]], [[FBX]], [[Alembic]], [[OBJ]], [[COLLADA]]
-  - related-to:: [[NVIDIA Omniverse]], [[Apple Vision Pro]], [[Blender]], [[Houdini]], [[Autodesk Maya]], [[Unreal Engine]], [[AOUSD]]
+  - related-to:: [[NVIDIA Omniverse Platform]], [[Apple Vision Pro]], [[Blender 3D Creation Suite]], [[Houdini]], [[Autodesk Maya]], [[Unreal Engine]], [[AOUSD]]
   - standardized-by:: [[Alliance for OpenUSD]], [[Joint Development Foundation]], [[Linux Foundation]], [[Pixar Animation Studios]]
 
 - ### Content

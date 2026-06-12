@@ -131,7 +131,7 @@ alias:: SoftRobotics
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ],
     "enables": [
@@ -282,7 +282,7 @@ alias:: SoftRobotics
 
 - ### Relationships
   - uses [[Physics Engine]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Simulation]]
   - enables [[Teleoperation]]
   - relatedTo [[Reinforcement Learning]]

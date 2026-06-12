@@ -52,7 +52,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ]

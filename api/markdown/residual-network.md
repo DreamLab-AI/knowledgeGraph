@@ -56,7 +56,7 @@
 		  ```
 
   - ## NeRFs vs Hardware Acceleration
-		- old page, needs [[Update Cycle]]
+		- old page, needs [[Knowledge Artefact Update Cycle]]
 		- [Neural Rendering and Its Hardware Acceleration: A Review (arxiv.org)](https://arxiv.org/html/2402.00028v1)
 		- | Paper                                  | Neural Network Type | Residual Layer | Concatenation Layer | Suitability for Low-end Mobile Hardware |
 		  |----------------------------------------|---------------------|----------------|---------------------|----------------------------------------|

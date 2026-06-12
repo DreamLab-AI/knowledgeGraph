@@ -9,7 +9,7 @@
   - implements [[Linked Data]]
   - implements [[RDF]]
   - enables [[Ontology]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - relatedTo [[JSON Schema]]
   - relatedTo [[SPARQL]]
 

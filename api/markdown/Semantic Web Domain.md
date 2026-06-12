@@ -83,7 +83,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:semantic-web-domain",
+  "@id": "urn:ngm:class:semantic-web-linked-data-standard-domain",
   "@type": "Class",
   "label": "Semantic Web Domain",
   "definition": "The Semantic Web Domain classifies concepts concerning machine-interpretable representations of meaning that allow data to be linked and reasoned over across sources. It covers ontologies, linked data, and the languages and reasoners that operate on them. As a top-level subject axis it provides the formal vocabulary by which knowledge graphs and interoperable data are constructed.",

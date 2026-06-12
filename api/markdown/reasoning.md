@@ -20,7 +20,7 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[ModelLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Artificial General Intelligence]], [[Cognitive AI]], [[Machine Learning]], [[Knowledge Representation]], [[Natural Language Processing]], [[Formal Verification]]
+  - is-subclass-of:: [[Artificial General Intelligence]], [[Cognitive AI]], [[Machine Learning Discipline]], [[Knowledge Representation]], [[Natural Language Processing]], [[Formal Verification]]
   - has-part:: [[Chain-of-Thought Prompting]], [[Self-Consistency]], [[Tree of Thoughts]], [[ReAct]], [[Extended Thinking]], [[Scratchpad Computation]], [[Beam Search]], [[Monte Carlo Tree Search]], [[Process Reward Model]], [[Outcome Reward Model]]
   - requires:: [[Large Language Models]], [[Attention]], [[Transformers]], [[Benchmarks]], [[Formal Verification]], [[Knowledge Graphs]], [[Reinforcement Learning]]
   - enables:: [[Artificial General Intelligence]], [[Agents]], [[Formal Verification]], [[Mathematical Reasoning]], [[Planning]], [[Code Generation]], [[Scientific Discovery]], [[Agent Frameworks]]
@@ -29,7 +29,7 @@
   - supports:: [[Agents]], [[Agent Frameworks]], [[Mathematical Reasoning]], [[Code Generation]], [[Scientific Discovery]], [[Planning]], [[CLI Multi-Agent Systems]], [[Agentic Internet]]
   - uses:: [[Large Language Models]], [[Lean]], [[Knowledge Graphs]], [[Benchmarks]], [[Monte Carlo Tree Search]], [[Beam Search]], [[Reinforcement Learning]]
   - contrasts-with:: [[Bias in Large Language Models]], [[Hallucination]], [[Algorithmic Bias and Variance]], [[Pattern Matching]]
-  - related-to:: [[Anthropic Claude]], [[ChatGPT]], [[Artificial General Intelligence]], [[Cognitive AI]], [[Algorithmic Bias and Variance]], [[Attention]], [[Agents]], [[Agent Frameworks]], [[CLI Multi-Agent Systems]], [[Agentic Internet]], [[Competition in AI]]
+  - related-to:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Artificial General Intelligence]], [[Cognitive AI]], [[Algorithmic Bias and Variance]], [[Attention]], [[Agents]], [[Agent Frameworks]], [[CLI Multi-Agent Systems]], [[Agentic Internet]], [[Competition in AI]]
   - standardized-by:: [[Benchmarks]], [[Formal Verification]], [[ARC-AGI]], [[AIME Benchmark]], [[GPQA Benchmark]]
 
 - ### Content

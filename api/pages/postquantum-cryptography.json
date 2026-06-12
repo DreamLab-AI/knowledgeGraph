@@ -33,7 +33,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public-Key Infrastructure"
       },
       {
@@ -49,7 +49,7 @@
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -82,7 +82,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {

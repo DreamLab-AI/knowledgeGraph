@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
   - relatedTo [[Transfer Learning]]
   - relatedTo [[Contrastive Learning]]
   - enables [[Model Performance]]

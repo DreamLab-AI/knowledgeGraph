@@ -6,8 +6,8 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
-  - bridges-to:: [[Foundation Models]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
+  - bridges-to:: [[Large-Scale Pretrained Foundation Model]]
   - requires:: [[Transfer Learning]], [[Meta-Learning]]
   - enables:: [[In-Context Learning]]
 

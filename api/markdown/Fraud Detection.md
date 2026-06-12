@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
     ],
     "enables": [
@@ -64,7 +64,7 @@ public:: true
 
 - ### Relationships
   - uses [[Anomaly Detection]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Supervised Learning]]
   - enables [[Anti-Money Laundering]]
   - enables [[Risk Management]]

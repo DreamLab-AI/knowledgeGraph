@@ -28,7 +28,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
       {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:network-security", "label": "Network Security"},

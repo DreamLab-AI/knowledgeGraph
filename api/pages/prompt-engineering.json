@@ -96,7 +96,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
@@ -181,15 +181,15 @@
         "label": "DSPy"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -201,7 +201,7 @@
         "label": "Reasoning"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -241,11 +241,11 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:courses-and-training",
+        "id": "urn:ngm:class:ai-technology-skills-curriculum",
         "label": "Courses and Training"
       },
       {
@@ -253,7 +253,7 @@
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "id": "urn:ngm:class:open-ai",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ],
@@ -625,10 +625,6 @@
       "label": "Agent Frameworks"
     },
     {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
-    },
-    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },
@@ -673,12 +669,20 @@
       "label": "LoRA DoRA etc"
     },
     {
+      "slug": "local-llm-runtime-platform",
+      "label": "Local LLM Runtime Platform"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },
     {
       "slug": "machine-translation",
       "label": "Machine Translation"
+    },
+    {
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
     },
     {
       "slug": "open-webui-and-pipelines",
@@ -715,10 +719,6 @@
     {
       "slug": "zero-shot-prompting",
       "label": "Zero-Shot Prompting"
-    },
-    {
-      "slug": "ollama",
-      "label": "ollama"
     }
   ]
 }

@@ -8,7 +8,7 @@
 - ### Relationships
   - enables:: [[Augmented Reality]], [[Virtual Reality]], [[Mixed Reality]], [[Immersive Experience]]
   - uses:: [[Extended Reality]], [[Game Engine]]
-  - partOf:: [[Spatial Computing]]
+  - partOf:: [[Spatial Computing Paradigm]]
 
 - ### Content
 

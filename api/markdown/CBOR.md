@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
       {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffer"},
       {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
     ],
@@ -44,10 +44,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[CBOR]] (Concise Binary Object Representation) is a standardised [[Data Serialization]] format that encodes [[json]]-compatible data models in a compact binary form, making it the preferred wire format for [[Internet of Things]] protocols and [[Embedded Systems]] where every byte matters.
+  - [[CBOR]] (Concise Binary Object Representation) is a standardised [[Data Serialization]] format that encodes [[JSON Data Interchange Format]]-compatible data models in a compact binary form, making it the preferred wire format for [[Internet of Things]] protocols and [[Embedded Systems]] where every byte matters.
 
 - ### Relationships
-  - CBOR is a specialised form of [[Data Serialization]] that occupies a position between [[json]] (human-readable, verbose) and [[Protocol Buffer]] (schema-required, highly optimised). It relies on [[Binary Encoding]] to eliminate textual overhead and aligns with the [[Data Format Standard]] landscape established by IETF. Its compactness directly benefits [[Internet of Things]] deployments on resource-constrained hardware and [[Embedded Systems]], and it serves as the canonical encoding for W3C Verifiable Credentials and ISO mDL (mobile driver's licence) specifications, cementing its role in [[Credential Format Standard]] ecosystems.
+  - CBOR is a specialised form of [[Data Serialization]] that occupies a position between [[JSON Data Interchange Format]] (human-readable, verbose) and [[Protocol Buffer]] (schema-required, highly optimised). It relies on [[Binary Encoding]] to eliminate textual overhead and aligns with the [[Data Format Standard]] landscape established by IETF. Its compactness directly benefits [[Internet of Things]] deployments on resource-constrained hardware and [[Embedded Systems]], and it serves as the canonical encoding for W3C Verifiable Credentials and ISO mDL (mobile driver's licence) specifications, cementing its role in [[Credential Format Standard]] ecosystems.
 
 - ### Content
   - CBOR emerged from the IETF Constrained RESTful Environments (CoRE) working group's recognition that JSON, while excellent for web APIs, was too verbose for constrained devices communicating over lossy, low-bandwidth links such as 802.15.4 radio. Carsten Bormann and Paul Hoffman authored RFC 7049, published in 2013, synthesising lessons from MessagePack, BSON, and ASN.1 BER into a format that prioritises simplicity of both implementation and specification — the CBOR spec is deliberately kept short and unambiguous to enable single-developer implementations on microcontrollers with kilobytes of RAM.

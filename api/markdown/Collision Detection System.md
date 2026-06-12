@@ -34,7 +34,7 @@ public:: true
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-simulation", "label": "Collaborative Simulation"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-simulation", "label": "Collaborative Simulation"},
       {"@id": "urn:ngm:class:cloth-simulation", "label": "Cloth Simulation"}
     ]
   },

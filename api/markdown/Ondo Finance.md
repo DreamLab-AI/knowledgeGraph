@@ -63,7 +63,7 @@ public:: true
         "label": "Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ]
@@ -92,7 +92,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:linked:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -123,7 +123,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Asset Tokenisation]]
   - bridges-to:: [[Institutional Adoption]]
-  - requires:: [[Asset Tokenisation]], [[Tokenisation]]
+  - requires:: [[Asset Tokenisation]], [[Neural Network Text Tokenisation]]
 
 - ### Content
   - Ondo Finance offers tokens that represent shares in funds backed by short-term US government securities, giving on-chain holders exposure to Treasury yields. Its products include tokens aimed at non-US investors and institutions.

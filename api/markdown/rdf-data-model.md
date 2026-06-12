@@ -6,9 +6,9 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Semantic Web]]
+  - is-subclass-of:: [[Semantic Web Linked Data Standard]]
   - bridges-to:: [[SPARQL]], [[Ontology]]
-  - requires:: [[Semantic Web]]
+  - requires:: [[Semantic Web Linked Data Standard]]
   - enables:: [[Knowledge Graph]], [[Linked Data]]
 
 - ### Content

@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:comfy-ui-workflows", "label": "ComfyUI Workflows"}, {"@id": "urn:ngm:class:fooocus", "label": "Fooocus"}]
+    "relatedTo": [{"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}, {"@id": "urn:ngm:class:fooocus", "label": "Fooocus"}]
   },
   "quality": 0.72
 }

@@ -59,7 +59,7 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
       {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}

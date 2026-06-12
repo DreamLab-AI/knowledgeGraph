@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Generative AI]]
   - bridges-to:: [[Image Generation]]
-  - requires:: [[Stable Diffusion]]
+  - requires:: [[Stable Diffusion Image Model]]
   - enables:: [[Text-to-Image]]
 
 - ### Content

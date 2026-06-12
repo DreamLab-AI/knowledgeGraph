@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-network",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
   "@type": "Class",
   "label": "Bitcoin Network",
   "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising nodes, miners, and the communication protocol that propagates transactions and blocks. It operates without a central authority, using the Nakamoto consensus mechanism—proof-of-work—to achieve agreement on a shared transaction ledger. The network enforces monetary policy through its protocol rules, capping total supply and adjusting mining difficulty automatically. It has operated continuously since January 2009, making it the longest-running blockchain network.",
@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
       {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
     ],
@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-technical-overview", "label": "Bitcoin Technical Overview"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },

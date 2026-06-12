@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Token Standard]]
-  - bridges-to:: [[Bitcoin]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]]
   - requires:: [[UTXO]]
   - enables:: [[Fungible Token]]
 

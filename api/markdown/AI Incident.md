@@ -80,7 +80,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
@@ -152,7 +152,7 @@ public:: true
 
 - ### Relationships
   - requires:: [[AI Risk Management]], [[Accountability]]
-  - relatedTo:: [[AI Safety]], [[Bias]], [[EU AI Act]]
+  - relatedTo:: [[AI Safety]], [[Bias]], [[EU AI Act Regulatory Instrument]]
   - enables:: [[Responsible AI]], [[AI Governance]]
 
 - ### Content

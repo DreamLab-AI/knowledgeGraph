@@ -71,7 +71,7 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:vision-processing",
+      "@id": "urn:ngm:class:apple-mixed-reality-headsetcessing",
       "label": "Vision Processing"
     }
   ],

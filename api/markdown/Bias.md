@@ -184,7 +184,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -194,7 +194,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -204,7 +204,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     }
@@ -297,7 +297,7 @@ public:: true
 		- ```With so much changing so quickly, we need to take predictions with a grain of salt, but that doesn’t mean we can’t say anything useful about the coming year in AI. To ground ourselves, we can start with two quotes that should inform any estimates about the future. The first is Amara’s Law “We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.” Social change is slower than technological change. We should not expect to see immediate global effects of AI in a major way, no matter how fast its adoption (and it is remarkably fast), yet we certainly will see it sooner than many people think.```
 			- - from [Signs and Portent by Ethan Mollick
 				- [One Useful Thing](https://www.oneusefulthing.org/p/signs-and-portents)
-		- [[Update Cycle]] reminder to update this page!
+		- [[Knowledge Artefact Update Cycle]] reminder to update this page!
 			- [Roy Amara Oxford Reference](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00018679)
 			- [AI Index Report 2024 – Artificial Intelligence Index (stanford.edu)](https://aiindex.stanford.edu/report/)
 			- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
@@ -363,7 +363,7 @@ public:: true
 		- ```With so much changing so quickly, we need to take predictions with a grain of salt, but that doesn’t mean we can’t say anything useful about the coming year in AI. To ground ourselves, we can start with two quotes that should inform any estimates about the future. The first is Amara’s Law “We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.” Social change is slower than technological change. We should not expect to see immediate global effects of AI in a major way, no matter how fast its adoption (and it is remarkably fast), yet we certainly will see it sooner than many people think.```
 			- - from [Signs and Portent by Ethan Mollick
 				- [One Useful Thing](https://www.oneusefulthing.org/p/signs-and-portents)
-		- [[Update Cycle]] reminder to update this page!
+		- [[Knowledge Artefact Update Cycle]] reminder to update this page!
 			- [Roy Amara Oxford Reference](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00018679)
 			- [AI Index Report 2024 – Artificial Intelligence Index (stanford.edu)](https://aiindex.stanford.edu/report/)
 			- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
@@ -439,7 +439,7 @@ public:: true
   - [[AI Risks]]
   - [[Bias in Large Language Models]]
   - [[Large Language Models]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Deep Learning]]
 
   - ## Bias and Discrimination
@@ -466,7 +466,7 @@ public:: true
   - [[AI Risks]]
   - [[Bias in Large Language Models]]
   - [[Large Language Models]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Deep Learning]]
 
   - ## Bias and Discrimination
@@ -1069,5 +1069,5 @@ public:: true
 		     - Comprehensive taxonomy of bias types
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]], [[ISO (International Organization for Standardization)]], [[NIST (National Institute of Standards and Technology)]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]], [[ISO (International Organization for Standardization)]], [[NIST (National Institute of Standards and Technology)]]
   - migration-date:: 2026-04-26T00:00:00Z

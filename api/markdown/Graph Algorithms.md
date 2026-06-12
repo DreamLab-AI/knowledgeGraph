@@ -62,7 +62,7 @@ public:: true
       {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ]
   },
@@ -112,7 +112,7 @@ public:: true
   - **uses** [[SPARQL]] — SPARQL query patterns encode graph traversal and pattern-matching operations
   - **enables** [[Knowledge Graph Construction]] — graph traversal and clustering support construction pipelines
   - **enables** [[Feature Importance]] — graph-centrality measures are used as ML features
-  - **relatedTo** [[Machine Learning]] — graph neural networks merge graph and ML paradigms
+  - **relatedTo** [[Machine Learning Discipline]] — graph neural networks merge graph and ML paradigms
   - **relatedTo** [[Neural Network]] — graph neural networks apply message-passing on graph topology
 
 - ### Content

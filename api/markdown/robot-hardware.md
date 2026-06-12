@@ -18,7 +18,7 @@
   - supports:: [[Industrial Robot]], [[Ground Robot]], [[Hydraulic Actuator]], [[Mobile Robot Platform]], [[Exoskeleton]], [[Surgical Robot]]
   - uses:: [[NVIDIA Jetson]], [[ARM Cortex-M]], [[STM32 Microcontroller]], [[FPGA Acceleration]], [[Ethernet Switch]]
   - contrasts-with:: [[Simulation Environment]], [[Digital Twin]], [[Software Robot]], [[Virtual Agent]]
-  - related-to:: [[Model Based Control]], [[Predictive Maintenance]], [[Edge Computing]], [[Hardware and Edge]], [[NVIDIA Omniverse]]
+  - related-to:: [[Model Based Control]], [[Predictive Maintenance]], [[Edge Computing]], [[Hardware and Edge]], [[NVIDIA Omniverse Platform]]
   - standardized-by:: [[IEC 61800 Drives Standard]], [[ISO 10218 Robot Safety]], [[ROS 2 REPs]], [[EtherCAT Technology Group]], [[CiA 301 CANopen Standard]]
 
 - ### Content

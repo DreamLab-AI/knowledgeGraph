@@ -75,7 +75,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:watermarks",
+        "@id": "urn:ngm:class:digital-content-provenance-marking",
         "label": "Watermarks"
       },
       {
@@ -139,7 +139,7 @@ public:: true
   - bridges-to:: [[Blockchain]]
   - Requires [[Cryptographic Verification]]
   - Requires [[Digital Signature]]
-  - Uses [[Watermarks]]
+  - Uses [[Digital Content Provenance Marking]]
   - Uses [[Blockchain]]
   - Related To [[Digital Rights Management]]
   - Related To [[Cryptographic Hash Function]]

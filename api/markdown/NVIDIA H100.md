@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nvidia-h-100",
+  "@id": "urn:ngm:class:nvidia-corporation-h-100",
   "@type": "Class",
   "label": "NVIDIA H100",
   "definition": "The NVIDIA H100 is a data-centre GPU based on the Hopper architecture, designed for AI training and inference and high-performance computing. It introduced a Transformer Engine and FP8 support for large model workloads.",
@@ -101,7 +101,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA]]",
+      "raw": "[[NVIDIA Corporation]]",
       "resolved": "urn:visionflow:linked:nvidia",
       "kind": "ResolvedLink"
     },
@@ -131,7 +131,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[GPU]]
-  - bridges-to:: [[NVIDIA]]
+  - bridges-to:: [[NVIDIA Corporation]]
   - enables:: [[GPU Cluster]], [[GPU Computing]]
 
 - ### Content

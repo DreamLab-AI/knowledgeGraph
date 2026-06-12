@@ -8,7 +8,7 @@
   "definition": "The International Conference on Learning Representations (ICLR) is a premier academic venue focused on deep learning and representation learning research, established in 2013 by Yoshua Bengio and Yann LeCun. It is distinctive for its fully open, internet-based peer-review process on the OpenReview platform, where submitted papers, reviews, and author rebuttals are visible to the public. ICLR has become one of the most competitive and influential conferences in the AI research community, publishing foundational work on neural network architectures, training methods, and generalisation theory.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

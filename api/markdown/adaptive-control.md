@@ -4,7 +4,7 @@
 - ### Semantic Classification
   - owl-class:: robotics:AdaptiveControl
   - owl-role:: Method
-  - belongs-to-domain:: [[Robotics]], [[Control Theory]], [[Machine Learning]]
+  - belongs-to-domain:: [[Robotics]], [[Control Theory]], [[Machine Learning Discipline]]
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
@@ -24,7 +24,7 @@
 
   - #### Relationships
   - is-subclass-of:: [[RB-1002-closed-loop-control]]
-  - skos:related:: [[RB-1003-optimal-control]], [[Machine Learning]]
+  - skos:related:: [[RB-1003-optimal-control]], [[Machine Learning Discipline]]
   - uses:: [[System Identification]], [[Parameter Estimation]]
   - enables:: [[Robust Control]], [[Self-Tuning Systems]]
   - applied-in:: [[RB-1011-cobot-safety-levels]], [[Autonomous Systems]]

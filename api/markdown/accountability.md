@@ -638,5 +638,5 @@
 		     - "AI actors should be accountable for the proper functioning of AI systems"
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[ISO/IEC 23894:2023]], [[ISO/IEC 38500:2024]], [[NIST AI RMF]], [[OECD]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[ISO/IEC 23894:2023]], [[ISO/IEC 38500:2024]], [[NIST AI RMF]], [[OECD]]
   - migration-date:: 2026-04-26T00:00:00Z

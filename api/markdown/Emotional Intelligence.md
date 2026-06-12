@@ -68,7 +68,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},
@@ -143,7 +143,7 @@ Emotional Intelligence in AI refers to the capacity of artificial systems to rec
 
 ### Relationships
 
-Emotional Intelligence is a sub-area of [[AI Research Area]] and draws on [[Natural Language Processing]] and [[Machine Learning]] as foundational requirements. Its constituent capabilities include [[Sentiment Analysis]], [[Emotion Aware Interaction]], and the [[Emotional Analytics Engine]] that aggregates and interprets affective signals. It uses [[Deep Learning]] models for pattern recognition in multi-modal data and employs [[Cognitive Architecture]] frameworks to model user mental states. Emotional Intelligence enables [[Empathetic AI]] systems, supports [[Emotional Immersion]] in virtual experiences, and underpins [[Hyper personalisation]] and [[Personalized Virtual Experiences]]. It relates closely to [[Conversational AI]], [[Digital Humans]], [[Human Computer Interaction]], [[Attention Aware Interaction]], [[Social Presence]], and [[Cognitive Science]]. It bridges to [[Digital Human Technology]] and to [[Behavioral Modeling]] in that emotion recognition informs adaptive behaviour generation.
+Emotional Intelligence is a sub-area of [[AI Research Area]] and draws on [[Natural Language Processing]] and [[Machine Learning Discipline]] as foundational requirements. Its constituent capabilities include [[Sentiment Analysis]], [[Emotion Aware Interaction]], and the [[Emotional Analytics Engine]] that aggregates and interprets affective signals. It uses [[Deep Learning]] models for pattern recognition in multi-modal data and employs [[Cognitive Architecture]] frameworks to model user mental states. Emotional Intelligence enables [[Empathetic AI]] systems, supports [[Emotional Immersion]] in virtual experiences, and underpins [[Hyper personalisation]] and [[Personalized Virtual Experiences]]. It relates closely to [[Conversational AI]], [[Digital Humans]], [[Human Computer Interaction]], [[Attention Aware Interaction]], [[Social Presence]], and [[Cognitive Science]]. It bridges to [[Digital Human Technology]] and to [[Behavioral Modeling]] in that emotion recognition informs adaptive behaviour generation.
 
 ### Content
 

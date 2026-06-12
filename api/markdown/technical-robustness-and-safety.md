@@ -13,7 +13,7 @@
   - enables:: [[AI Safety]], [[Responsible AI]], [[Model Robustness]]
   - uses:: [[Red Teaming]], [[Data Poisoning]]
   - supports:: [[AI Regulation]], [[AI Alignment]]
-  - relatedTo:: [[AI Ethics]], [[Machine Learning]]
+  - relatedTo:: [[AI Ethics]], [[Machine Learning Discipline]]
 
 - ### Definition
   Technical Robustness and Safety is a core AI trustworthiness dimension requiring systems to perform reliably under varied and adversarial conditions. It mandates fallback mechanisms for graceful degradation, continuous safety monitoring, and incident response protocols aligned with regulatory frameworks such as the EU AI Act Article 15 and NIST AI RMF.

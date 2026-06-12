@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Display Technology]]
   - bridges-to:: [[Computer Graphics]]
   - requires:: [[Holography]]
-  - enables:: [[Spatial Computing]]
+  - enables:: [[Spatial Computing Paradigm]]
 
 - ### Content
   - Holographic displays differ from stereoscopic or autostereoscopic screens because they reproduce the physical light field rather than presenting two flat offset images. This allows the eye to focus at different depths within the scene, reducing the vergence-accommodation conflict that affects many head-mounted displays.

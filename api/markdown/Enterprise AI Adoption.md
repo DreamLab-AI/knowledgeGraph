@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"}, {"@id": "urn:ngm:class:machine-learning-platform", "label": "Machine Learning Platform"}]
+    "relatedTo": [{"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"}, {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"}]
   },
   "quality": 0.72
 }

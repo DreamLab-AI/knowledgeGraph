@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:eu-ai-act",
+  "title": "EU AI Act Regulatory Instrument",
+  "slug": "eu-ai-act-regulatory-instrument",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-ai-act-regulatory-instrument-regulatory-instrument",
+  "domain": "governance",
+  "definition": "The EU AI Act (Regulation 2024/1689) is the European Union's comprehensive legal framework for artificial intelligence, establishing harmonised rules for the development, deployment, and use of AI systems based on a risk-tiered classification. It prohibits certain AI practices outright, imposes strict conformity obligations on high-risk AI systems, and mandates transparency for limited-risk AI. Enacted in 2024 and progressively entering into force through 2026\u20132027, it is the world's first binding horizontal AI regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:prohibited-ai-practice",
+        "label": "Prohibited AI Practice"
+      },
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

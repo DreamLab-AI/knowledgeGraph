@@ -9,7 +9,7 @@
   - bridges-to:: [[Telecollaboration]]
   - hasPart:: [[Fairness]], [[Explainability]], [[Accountability]], [[Bias]]
   - requires:: [[AI Safety]], [[Governance Framework]]
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - relatedTo:: [[AIEthics]]
 
 - ### Content
@@ -40,5 +40,5 @@
     - ### Design Rationale
 
 - ### Provenance
-  - sources:: [[EU AI Act]]
+  - sources:: [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

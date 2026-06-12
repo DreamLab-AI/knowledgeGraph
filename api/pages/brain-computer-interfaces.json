@@ -76,7 +76,7 @@
         "label": "Low-Noise Analog Electronics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-decoder",
+        "id": "urn:ngm:class:machine-learning-discipline-decoder",
         "label": "Machine Learning Decoder"
       },
       {

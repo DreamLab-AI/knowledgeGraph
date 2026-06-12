@@ -15,10 +15,10 @@
   - enables:: [[Blockchain Immutability]], [[Data Integrity]], [[Proof-of-Work]], [[Digital Signature]], [[Message Authentication Code]], [[Merkle Tree]], [[Content Addressing]], [[Password Storage]], [[Key Derivation]], [[Deduplication]], [[Commitment Scheme]]
   - implements:: [[Pre-Image Resistance]], [[Second Pre-Image Resistance]], [[Collision Resistance]], [[Indistinguishability]], [[Random Oracle Model]]
   - depends-on:: [[Boolean Algebra]], [[Modular Arithmetic]], [[Finite Field Arithmetic]], [[Bitwise Operations]], [[Complexity Theory]], [[Number Theory]]
-  - supports:: [[Bitcoin]], [[Ethereum]], [[Git]], [[IPFS]], [[TLS]], [[Code Signing]], [[Certificate Transparency]], [[Post-Quantum Cryptography]], [[Zero-Knowledge Proofs]]
+  - supports:: [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Git]], [[IPFS]], [[TLS]], [[Code Signing]], [[Certificate Transparency]], [[Post-Quantum Cryptography]], [[Zero-Knowledge Proofs]]
   - uses:: [[Merkle-Damgård Construction]], [[Sponge Construction]], [[HAIFA Construction]], [[Davies-Meyer Construction]], [[Wide-Pipe Construction]]
   - contrasts-with:: [[Encryption]], [[Digital Signature]], [[Message Authentication Code]], [[Error Detection Code]], [[Checksum]]
-  - related-to:: [[Cryptanalysis]], [[Birthday Attack]], [[Length-Extension Attack]], [[Side-Channel Attack]], [[Quantum Computing]], [[Bloom Filter]]
+  - related-to:: [[Cryptanalysis]], [[Birthday Attack]], [[Length-Extension Attack]], [[Side-Channel Attack]], [[Quantum Computation Paradigm]], [[Bloom Filter]]
   - standardized-by:: [[NIST FIPS 180-4]], [[NIST FIPS 202]], [[NIST FIPS 205]], [[IETF RFC 6234]], [[IETF RFC 2104 HMAC]], [[IETF RFC 9106 Argon2]], [[IETF RFC 8439]], [[ISO/IEC 10118-3]]
 
 - ### Content

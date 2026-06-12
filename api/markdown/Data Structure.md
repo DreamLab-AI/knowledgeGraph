@@ -84,7 +84,7 @@ alias:: DataStructure
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   }
 }
@@ -149,7 +149,7 @@ alias:: DataStructure
   - enables [[Graph Neural Network]]
   - uses [[GPU Compute]]
   - uses [[Algorithm]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
 

@@ -456,7 +456,7 @@ public:: true
         "label": "Real-ESRGAN"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-inpaint",
+        "@id": "urn:ngm:class:stable-diffusion-image-model-inpaint",
         "label": "Stable Diffusion Inpaint"
       },
       {
@@ -520,7 +520,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:video-processing",
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Processing"
       }
     ],
@@ -962,7 +962,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Video Processing]]",
+      "raw": "[[Computer Vision Video Analysis]]",
       "resolved": "urn:visionflow:owl:class:video-processing",
       "kind": "ResolvedLink"
     }
@@ -998,7 +998,7 @@ public:: true
   - supports:: [[Film and Television Production]], [[Medical Imaging]], [[Remote Sensing]], [[Cultural Heritage Preservation]], [[Forensic Science]], [[Immersive Media]]
   - uses:: [[PSNR Metric]], [[SSIM Metric]], [[LPIPS Metric]], [[Residual Learning]], [[Attention Mechanism]], [[Vector Quantisation]], [[Contrastive Learning]]
   - contrasts-with:: [[Image Compression]], [[Image Synthesis]], [[3D Reconstruction]], [[Image Segmentation]]
-  - related-to:: [[Generative AI]], [[Generative Adversarial Networks]], [[Diffusion Models]], [[Computational Imaging]], [[Image Enhancement]], [[Video Processing]]
+  - related-to:: [[Generative AI]], [[Generative Adversarial Networks]], [[Diffusion Models]], [[Computational Imaging]], [[Image Enhancement]], [[Computer Vision Video Analysis]]
   - standardized-by:: [[CVPR]], [[ICCV]], [[NeurIPS]], [[ECCV]], [[NTIRE Workshop]], [[PIRM Challenge]]
 
 - ### Content

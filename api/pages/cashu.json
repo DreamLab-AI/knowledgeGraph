@@ -12,7 +12,7 @@
       "label": "Token and Asset"
     },
     {
-      "id": "urn:ngm:class:bitcoin-layer-2",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
       "label": "Bitcoin Layer 2"
     }
   ],
@@ -64,7 +64,7 @@
         "label": "Hash Functions"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {

@@ -23,7 +23,7 @@ public:: true
   "definition": "Data preprocessing is the stage of a machine learning workflow that transforms raw data into a clean, consistent form suitable for modelling. It encompasses cleaning, normalisation, encoding, imputation and feature engineering to remove noise and align scales and types. The quality of preprocessing strongly determines downstream model accuracy and is a prerequisite for reliable training.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},

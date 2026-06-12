@@ -26,7 +26,7 @@
   - uses:: [[Artificial Intelligence]], [[Blockchain Network]], [[Extended Reality]], [[Internet of Things]], [[Synthetic Biology]], [[Agent Frameworks]], [[Agentic Internet]], [[Large Language Models]], [[Generative AI]], [[Computer Vision]]
   - contrasts-with:: [[Siloed Technology Adoption]], [[Sequential Technology Rollout]], [[Legacy Systems Modernisation]], [[Pre-Digital Transformation]], [[Technology Lock-In]], [[AI Adoption]]
   - related-to:: [[AI Risks]], [[AI Adoption]], [[Technology Governance]], [[Digital Sovereignty]], [[Skills Gap]], [[Platform Economy]], [[Fourth Industrial Revolution]], [[Metaverse]], [[Web3]], [[Algorithmic Bias and Variance]], [[Carbon Credit Tracking]], [[Carbon Footprint Measurement]]
-  - standardized-by:: [[ISO/IEC 42001 AI Management]], [[EU AI Act]], [[GDPR]], [[DORA]], [[Matter Standard]], [[OpenXR]], [[HL7 FHIR]], [[UK AI Opportunities Action Plan]], [[IEEE P2510]]
+  - standardized-by:: [[ISO/IEC 42001 AI Management]], [[EU AI Act Regulatory Instrument]], [[GDPR]], [[DORA]], [[Matter Standard]], [[OpenXR]], [[HL7 FHIR]], [[UK AI Opportunities Action Plan]], [[IEEE P2510]]
 
 - ### Content
 

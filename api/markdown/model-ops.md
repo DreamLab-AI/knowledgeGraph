@@ -13,7 +13,7 @@
   - enables:: [[Responsible AI]], [[Explainability]]
   - uses:: [[Machine Learning Framework]], [[Feature Store]]
   - supports:: [[AI Risk Management]]
-  - relatedTo:: [[Machine Learning]], [[AI Infrastructure]], [[AI Governance Framework]]
+  - relatedTo:: [[Machine Learning Discipline]], [[AI Infrastructure]], [[AI Governance Framework]]
 
 - ### Content
   ModelOps emerged as AI deployments matured from experimental proof-of-concepts to mission-critical production systems. While MLOps focuses on the engineering pipelines that automate model training, evaluation, and deployment, ModelOps adds the organisational and governance layer: who is accountable for model decisions, how are regulatory requirements (GDPR, EU AI Act, sector-specific rules) evidenced, and how are models audited over their operational lifetime? Gartner identified ModelOps as a strategic capability for enterprises seeking to scale beyond isolated AI projects to systematic AI adoption.

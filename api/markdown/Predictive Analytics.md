@@ -48,7 +48,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ],
     "uses": [
@@ -96,7 +96,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[Machine Learning]]
+  - requires [[Machine Learning Discipline]]
   - requires [[Feature Engineering]]
   - uses [[Data Pipeline]]
   - uses [[Model Training]]

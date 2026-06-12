@@ -202,7 +202,7 @@
         "label": "UK Online Safety Act"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -213,7 +213,7 @@
         "label": "Adobe Firefly"
       },
       {
-        "id": "urn:ngm:class:apple-intelligence",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-intelligence",
         "label": "Apple Intelligence"
       },
       {
@@ -225,7 +225,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ]

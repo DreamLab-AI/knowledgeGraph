@@ -14,7 +14,7 @@
   - requires:: [[Smart Contracts]], [[Token Economics]], [[Identity Systems]], [[Sybil Resistance]], [[Cryptographic Proofs]], [[Blockchain Network]]
   - enables:: [[DAOs]], [[Protocol Upgrades]], [[Treasury Management]], [[Parameter Adjustment]], [[Community Ownership]], [[Trustless Coordination]], [[Decentralized Finance]]
   - implements:: [[Quadratic Voting]], [[Conviction Voting]], [[Token-Weighted Voting]], [[Holographic Consensus]], [[Futarchy]], [[Liquid Democracy]], [[Optimistic Governance]]
-  - depends-on:: [[Ethereum]], [[Smart Contracts]], [[Token Standards]], [[Cryptographic Signatures]], [[Blockchain Consensus]], [[Mechanism Design]]
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[Smart Contracts]], [[Token Standards]], [[Cryptographic Signatures]], [[Blockchain Consensus]], [[Mechanism Design]]
   - supports:: [[Open Source Governance]], [[Protocol Decentralization]], [[Community Treasury]], [[Gitcoin Grants]], [[Public Goods Funding]], [[DeFi Protocols]]
   - uses:: [[ERC-20 Tokens]], [[Governor Contracts]], [[Snapshot]], [[Tally]], [[Discourse Forums]], [[Multisignature Wallets]], [[Timelocks]]
   - contrasts-with:: [[Centralised Governance]], [[Corporate Board Governance]], [[Benevolent Dictatorship]], [[Delegated Proof of Stake]], [[Off-Chain Governance]]

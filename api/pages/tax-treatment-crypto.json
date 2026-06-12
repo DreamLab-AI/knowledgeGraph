@@ -3,7 +3,7 @@
   "title": "Tax Treatment Crypto",
   "slug": "tax-treatment-crypto",
   "public": true,
-  "classIri": "urn:ngm:class:tax-treatment-crypto",
+  "classIri": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto",
   "domain": "blockchain",
   "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation, income taxation, value-added tax treatment, and reporting obligations under frameworks such as HMRC guidance, IRS Notice 2014-21, and the OECD Crypto-Asset Reporting Framework.",
   "subClassOf": [

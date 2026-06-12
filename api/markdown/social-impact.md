@@ -60,7 +60,7 @@
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Employment Social Contract Under Automation]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
 		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
@@ -163,33 +163,33 @@
 		- [moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf (stanford.edu)](https://vhil.stanford.edu/sites/g/files/sbiybj29011/files/media/file/moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf) -
 
   - # Links for developing
-  - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
-  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
-  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
-  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
+  - Microsoft working trends, technical debt through loss to communication systems [[Employment Social Contract Under Automation]]
+  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Employment Social Contract Under Automation]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Employment Social Contract Under Automation]]
+  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Employment Social Contract Under Automation]] [[Digital Technology Access Equity]]
+  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Employment Social Contract Under Automation]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
 		- [The Impact of AI on Job Roles, Workforce, and Employment: What You Need to Know (innopharmaeducation.com)](https://www.innopharmaeducation.com/our-blog/the-impact-of-ai-on-job-roles-workforce-and-employment-what-you-need-to-know)
 		- [The Impact of Artificial Intelligence on Jobs: A Dual Perspective - SSLPost](https://www.sslpost.com/the-impact-of-artificial-intelligence-on-jobs-a-dual-perspective/)
 		- [AI Jobs Barometer | PwC](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html)
   - In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over
-	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Social contract and jobs]]
+	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Employment Social Contract Under Automation]]
 		- That's according to Amazon Web Services' CEO, Matt Garman, who shared his thoughts on the topic during an internal fireside chat held in June, according to a recording of the meeting obtained by Business Insider.
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
 		- "Coding is just kind of like the language that we talk to computers. It's not necessarily the skill in and of itself," the executive said. "The skill in and of itself is like, how do I innovate? How do I go build something that's interesting for my end users to use?"
 		- This means the job of a software developer will change, Garman said.
 		- "It just means that each of us has to get more in tune with what our customers need and what the actual end thing is that we're going to try to go build, because that's going to be more and more of what the work is as opposed to sitting down and actually writing code," he said.
-  - [OSF Preprints | The Uneven Impact of Generative AI on Entrepreneurial Performance](https://osf.io/preprints/osf/hdjpk) [[Social contract and jobs]]
-  - [Opinion | A.I. and the Silicon Valley Hype Machine - The New York Times (nytimes.com)](https://www.nytimes.com/2024/05/15/opinion/artificial-intelligence-ai-openai-chatgpt-overrated-hype.html) backlash [[Social contract and jobs]] [[Artificial Intelligence]]
-  - [The Scarlett Johansson Incident Makes OpenAI Look Desperate (nymag.com)](https://nymag.com/intelligencer/article/the-scarlet-johansson-incident-makes-open-ai-look-desperate.html) [[Social contract and jobs]] [[OpenAI]]
-  - [AI is already changing management — companies must decide how (ft.com)](https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8) [[Social contract and jobs]]
-  - [So, there's now an AI modelling agency – would you hire Aileen?](https://www.creativebloq.com/news/ai-model-agency) [[Humans, Avatars , Character]] [[Social contract and jobs]]
-  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Social contract and jobs]]
-  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Social contract and jobs]]
-  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Social contract and jobs]]
-  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Social contract and jobs]] [[Politics, Law, Privacy]]
+  - [OSF Preprints | The Uneven Impact of Generative AI on Entrepreneurial Performance](https://osf.io/preprints/osf/hdjpk) [[Employment Social Contract Under Automation]]
+  - [Opinion | A.I. and the Silicon Valley Hype Machine - The New York Times (nytimes.com)](https://www.nytimes.com/2024/05/15/opinion/artificial-intelligence-ai-openai-chatgpt-overrated-hype.html) backlash [[Employment Social Contract Under Automation]] [[Artificial Intelligence]]
+  - [The Scarlett Johansson Incident Makes OpenAI Look Desperate (nymag.com)](https://nymag.com/intelligencer/article/the-scarlet-johansson-incident-makes-open-ai-look-desperate.html) [[Employment Social Contract Under Automation]] [[OpenAI Research Organisation]]
+  - [AI is already changing management — companies must decide how (ft.com)](https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8) [[Employment Social Contract Under Automation]]
+  - [So, there's now an AI modelling agency – would you hire Aileen?](https://www.creativebloq.com/news/ai-model-agency) [[Digital Human Avatar Representation]] [[Employment Social Contract Under Automation]]
+  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Employment Social Contract Under Automation]]
+  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Employment Social Contract Under Automation]]
+  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Employment Social Contract Under Automation]]
+  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Employment Social Contract Under Automation]] [[AI Governance Law and Privacy]]
 
-  - ## [[Social contract and jobs]]
+  - ## [[Employment Social Contract Under Automation]]
 		- {{embed ((659a9229-e9c0-485f-b58a-601b68b7edd0))}}
 
   - ### Economic Disruption
@@ -240,7 +240,7 @@
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Employment Social Contract Under Automation]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
 		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
@@ -343,33 +343,33 @@
 		- [moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf (stanford.edu)](https://vhil.stanford.edu/sites/g/files/sbiybj29011/files/media/file/moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf) -
 
   - # Links for developing
-  - Microsoft working trends, technical debt through loss to communication systems [[Social contract and jobs]]
-  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Social contract and jobs]]
-  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Social contract and jobs]]
-  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Social contract and jobs]] [[Equity]]
-  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Social contract and jobs]]
+  - Microsoft working trends, technical debt through loss to communication systems [[Employment Social Contract Under Automation]]
+  - [AI Can (Mostly) Outperform Human CEOs (hbr.org)](https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos) [[Employment Social Contract Under Automation]]
+  - https://arstechnica.com/information-technology/2024/09/omnipresent-ai-cameras-will-ensure-good-behavior-says-larry-ellison/ [[Trust and Safety]] [[Employment Social Contract Under Automation]]
+  - https://pluralistic.net/2024/09/09/low-wage-100/ [[Money]] [[Employment Social Contract Under Automation]] [[Digital Technology Access Equity]]
+  - [AI May Not Steal Many Jobs After All | TIME](https://time.com/7016801/ai-jobs/) [[Employment Social Contract Under Automation]]
 		- [The impact of artificial intelligence on employment: the role of virtual agglomeration | Humanities and Social Sciences Communications (nature.com)](https://www.nature.com/articles/s41599-024-02647-9)
 		- [The Impact of AI on Job Roles, Workforce, and Employment: What You Need to Know (innopharmaeducation.com)](https://www.innopharmaeducation.com/our-blog/the-impact-of-ai-on-job-roles-workforce-and-employment-what-you-need-to-know)
 		- [The Impact of Artificial Intelligence on Jobs: A Dual Perspective - SSLPost](https://www.sslpost.com/the-impact-of-artificial-intelligence-on-jobs-a-dual-perspective/)
 		- [AI Jobs Barometer | PwC](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html)
   - In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over
-	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Social contract and jobs]]
+	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Employment Social Contract Under Automation]]
 		- That's according to Amazon Web Services' CEO, Matt Garman, who shared his thoughts on the topic during an internal fireside chat held in June, according to a recording of the meeting obtained by Business Insider.
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
 		- "Coding is just kind of like the language that we talk to computers. It's not necessarily the skill in and of itself," the executive said. "The skill in and of itself is like, how do I innovate? How do I go build something that's interesting for my end users to use?"
 		- This means the job of a software developer will change, Garman said.
 		- "It just means that each of us has to get more in tune with what our customers need and what the actual end thing is that we're going to try to go build, because that's going to be more and more of what the work is as opposed to sitting down and actually writing code," he said.
-  - [OSF Preprints | The Uneven Impact of Generative AI on Entrepreneurial Performance](https://osf.io/preprints/osf/hdjpk) [[Social contract and jobs]]
-  - [Opinion | A.I. and the Silicon Valley Hype Machine - The New York Times (nytimes.com)](https://www.nytimes.com/2024/05/15/opinion/artificial-intelligence-ai-openai-chatgpt-overrated-hype.html) backlash [[Social contract and jobs]] [[Artificial Intelligence]]
-  - [The Scarlett Johansson Incident Makes OpenAI Look Desperate (nymag.com)](https://nymag.com/intelligencer/article/the-scarlet-johansson-incident-makes-open-ai-look-desperate.html) [[Social contract and jobs]] [[OpenAI]]
-  - [AI is already changing management — companies must decide how (ft.com)](https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8) [[Social contract and jobs]]
-  - [So, there's now an AI modelling agency – would you hire Aileen?](https://www.creativebloq.com/news/ai-model-agency) [[Humans, Avatars , Character]] [[Social contract and jobs]]
-  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Social contract and jobs]]
-  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Social contract and jobs]]
-  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Social contract and jobs]]
-  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Social contract and jobs]] [[Politics, Law, Privacy]]
+  - [OSF Preprints | The Uneven Impact of Generative AI on Entrepreneurial Performance](https://osf.io/preprints/osf/hdjpk) [[Employment Social Contract Under Automation]]
+  - [Opinion | A.I. and the Silicon Valley Hype Machine - The New York Times (nytimes.com)](https://www.nytimes.com/2024/05/15/opinion/artificial-intelligence-ai-openai-chatgpt-overrated-hype.html) backlash [[Employment Social Contract Under Automation]] [[Artificial Intelligence]]
+  - [The Scarlett Johansson Incident Makes OpenAI Look Desperate (nymag.com)](https://nymag.com/intelligencer/article/the-scarlet-johansson-incident-makes-open-ai-look-desperate.html) [[Employment Social Contract Under Automation]] [[OpenAI Research Organisation]]
+  - [AI is already changing management — companies must decide how (ft.com)](https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8) [[Employment Social Contract Under Automation]]
+  - [So, there's now an AI modelling agency – would you hire Aileen?](https://www.creativebloq.com/news/ai-model-agency) [[Digital Human Avatar Representation]] [[Employment Social Contract Under Automation]]
+  - [Please stop using AI to make Wes Anderson parodies | Stuart Heritage](https://www.theguardian.com/film/2023/may/11/wes-anderson-parodies-ai) [[Employment Social Contract Under Automation]]
+  - [The creepiness of conversational AI has been put on full display](https://bigthink.com/the-present/danger-conversational-ai/%7D%7B%60The) [[Employment Social Contract Under Automation]]
+  - [Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports (forbes.com)](https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/) [[Employment Social Contract Under Automation]]
+  - [AI key to future national security decision making, but brings its own risks | The Alan Turing Institute](https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks) [[Cyber Security and Military]] [[Employment Social Contract Under Automation]] [[AI Governance Law and Privacy]]
 
-  - ## [[Social contract and jobs]]
+  - ## [[Employment Social Contract Under Automation]]
 		- {{embed ((659a9229-e9c0-485f-b58a-601b68b7edd0))}}
 
   - ### Economic Disruption
@@ -405,7 +405,7 @@
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Employment Social Contract Under Automation]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
 		- [Instructors as Innovators: A future-focused approach to new AI learning opportunities, with prompts by Ethan R. Mollick, Lilach Mollick :: SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463) [[Education and AI]] [[Ethan Mollick]] [[Large Language Models]]
@@ -537,7 +537,7 @@
   - ## Changes to information sources
   - Social media platforms, particularly Facebook and Instagram, are undergoing a significant shift by reducing the emphasis on political content. Meta, the parent company of these platforms, has introduced measures to minimize the presence of political content, such as the launch of the Threads app, which aims to de-emphasize news and politics ([The Verge](https://www.theverge.com/2022/10/24/23425082/meta-threads-app-political-news-content-reduction-facebook-instagram)).
   - This move is part of a broader trend where social media giants are altering their algorithms to prioritize personal content over news and politics, potentially impacting public engagement and democracy ([The New York Times](https://www.nytimes.com/2022/10/24/technology/meta-threads-political-content.html)).
-  - Simultaneously, the influence of traditional or [[legacy media]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
+  - Simultaneously, the influence of traditional or [[Traditional Mass Media Institution]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
 		- [Twitch U-turns on 'artistic nudity' policy - BBC News](https://www.bbc.co.uk/news/technology-67747949)
 
   - ## Other links
@@ -545,11 +545,11 @@
   - [W3C SN dystopia](https://www.w3.org/DesignIssues/diagrams/solid/SN-dystopia.svg)
   - [Welcome to Geriatric Social Media (theatlantic.com)](https://newsletters.theatlantic.com/galaxy-brain/63609043b606fe00376a82da/welcome-to-geriatric-social-media/)
   - [Social Media Broke Up With News. So Did Readers. - The Atlantic](https://www.theatlantic.com/technology/archive/2023/11/social-media-news-readership-decline/675890/)
-  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Social contract and jobs]]
+  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Employment Social Contract Under Automation]]
   - [The Toilet Theory of the Internet - The Atlantic](https://www.theatlantic.com/technology/archive/2024/05/google-generative-ai-search-toilet-theory/678411/) [[Death of the Internet]]
   - [[Death of the Internet]] [John Robb: "Networked Tribalism, AI, and Asteroids" | The Great Simplification #110 - YouTube](https://www.youtube.com/watch?v=b2n_Jk37cLE)
 
-  - ## Mental health [[Social contract and jobs]]
+  - ## Mental health [[Employment Social Contract Under Automation]]
   - [Fraudulent studies are undermining the reliability of systematic reviews – a study of the prevalence of problematic images in preclinical studies of depression | bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.13.580196v1) [[Death of the Internet]] [[Deepfakes and fraudulent content]]
 			- Haidt presents evidence from correlational and experimental studies to support his claim that social media use causes mental health issues, while acknowledging the need for more research.
 			- He argues that the benefits of social media are outweighed by its negative impact on child development, as it deprives children of essential real-life experiences, such as play, adventure, and healthy risk-taking.
@@ -563,8 +563,8 @@
   - ## Changes to information sources
   - Social media platforms, particularly Facebook and Instagram, are undergoing a significant shift by reducing the emphasis on political content. Meta, the parent company of these platforms, has introduced measures to minimize the presence of political content, such as the launch of the Threads app, which aims to de-emphasize news and politics ([The Verge](https://www.theverge.com/2022/10/24/23425082/meta-threads-app-political-news-content-reduction-facebook-instagram)).
   - This move is part of a broader trend where social media giants are altering their algorithms to prioritize personal content over news and politics, potentially impacting public engagement and democracy ([The New York Times](https://www.nytimes.com/2022/10/24/technology/meta-threads-political-content.html)).
-  - Simultaneously, the influence of traditional or [[legacy media]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
-		- Note that many are now signing deals with [[OpenAI]] etc
+  - Simultaneously, the influence of traditional or [[Traditional Mass Media Institution]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
+		- Note that many are now signing deals with [[OpenAI Research Organisation]] etc
   - Twitter has also undergone significant changes and is perceived as a mere shadow of its former self. The platform has been criticized for various issues, including the spread of misinformation, harassment, and a decline in user engagement.
 		- [Twitch U-turns on 'artistic nudity' policy - BBC News](https://www.bbc.co.uk/news/technology-67747949)
 
@@ -609,15 +609,15 @@
   - [W3C SN dystopia](https://www.w3.org/DesignIssues/diagrams/solid/SN-dystopia.svg)
   - [Welcome to Geriatric Social Media (theatlantic.com)](https://newsletters.theatlantic.com/galaxy-brain/63609043b606fe00376a82da/welcome-to-geriatric-social-media/)
   - [Social Media Broke Up With News. So Did Readers. - The Atlantic](https://www.theatlantic.com/technology/archive/2023/11/social-media-news-readership-decline/675890/)
-  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Social contract and jobs]]
+  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Employment Social Contract Under Automation]]
   - [The Toilet Theory of the Internet - The Atlantic](https://www.theatlantic.com/technology/archive/2024/05/google-generative-ai-search-toilet-theory/678411/) [[Death of the Internet]]
   - [[Death of the Internet]] [John Robb: "Networked Tribalism, AI, and Asteroids" | The Great Simplification #110 - YouTube](https://www.youtube.com/watch?v=b2n_Jk37cLE)
 
   - ## Changes to information sources
   - Social media platforms, particularly Facebook and Instagram, are undergoing a significant shift by reducing the emphasis on political content. Meta, the parent company of these platforms, has introduced measures to minimize the presence of political content, such as the launch of the Threads app, which aims to de-emphasize news and politics ([The Verge](https://www.theverge.com/2022/10/24/23425082/meta-threads-app-political-news-content-reduction-facebook-instagram)).
   - This move is part of a broader trend where social media giants are altering their algorithms to prioritize personal content over news and politics, potentially impacting public engagement and democracy ([The New York Times](https://www.nytimes.com/2022/10/24/technology/meta-threads-political-content.html)).
-  - Simultaneously, the influence of traditional or [[legacy media]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
-		- Note that many are now signing deals with [[OpenAI]] etc
+  - Simultaneously, the influence of traditional or [[Traditional Mass Media Institution]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
+		- Note that many are now signing deals with [[OpenAI Research Organisation]] etc
   - Twitter has also undergone significant changes and is perceived as a mere shadow of its former self. The platform has been criticized for various issues, including the spread of misinformation, harassment, and a decline in user engagement.
 		- Twitter / X is now likely to join a 'race to the bottom', with [NSFW communities](https://techcrunch.com/2024/03/29/x-confirms-plans-for-nsfw-communities/?) driven by GenAI bots likely taking the platform by storm.
 		- [Twitch U-turns on 'artistic nudity' policy - BBC News](https://www.bbc.co.uk/news/technology-67747949)
@@ -665,15 +665,15 @@
   - [W3C SN dystopia](https://www.w3.org/DesignIssues/diagrams/solid/SN-dystopia.svg)
   - [Welcome to Geriatric Social Media (theatlantic.com)](https://newsletters.theatlantic.com/galaxy-brain/63609043b606fe00376a82da/welcome-to-geriatric-social-media/)
   - [Social Media Broke Up With News. So Did Readers. - The Atlantic](https://www.theatlantic.com/technology/archive/2023/11/social-media-news-readership-decline/675890/)
-  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Social contract and jobs]]
+  - [Technology is the Problem - Shyam Sankar](https://www.shyamsankar.com/p/technology-is-the-problem) [[Death of the Internet]] [[Employment Social Contract Under Automation]]
   - [The Toilet Theory of the Internet - The Atlantic](https://www.theatlantic.com/technology/archive/2024/05/google-generative-ai-search-toilet-theory/678411/) [[Death of the Internet]]
   - [[Death of the Internet]] [John Robb: "Networked Tribalism, AI, and Asteroids" | The Great Simplification #110 - YouTube](https://www.youtube.com/watch?v=b2n_Jk37cLE)
 
   - ## Changes to information sources
   - Social media platforms, particularly Facebook and Instagram, are undergoing a significant shift by reducing the emphasis on political content. Meta, the parent company of these platforms, has introduced measures to minimize the presence of political content, such as the launch of the Threads app, which aims to de-emphasize news and politics ([The Verge](https://www.theverge.com/2022/10/24/23425082/meta-threads-app-political-news-content-reduction-facebook-instagram)).
   - This move is part of a broader trend where social media giants are altering their algorithms to prioritize personal content over news and politics, potentially impacting public engagement and democracy ([The New York Times](https://www.nytimes.com/2022/10/24/technology/meta-threads-political-content.html)).
-  - Simultaneously, the influence of traditional or [[legacy media]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
-		- Note that many are now signing deals with [[OpenAI]] etc
+  - Simultaneously, the influence of traditional or [[Traditional Mass Media Institution]] is experiencing a substantial decline. With the rise of social media and digital platforms, the reach and impact of legacy media have been radically reduced, leading to a transformation in the way information is disseminated and consumed.
+		- Note that many are now signing deals with [[OpenAI Research Organisation]] etc
   - Twitter has also undergone significant changes and is perceived as a mere shadow of its former self. The platform has been criticized for various issues, including the spread of misinformation, harassment, and a decline in user engagement.
 		- Twitter / X is now likely to join a 'race to the bottom', with [NSFW communities](https://techcrunch.com/2024/03/29/x-confirms-plans-for-nsfw-communities/?) driven by GenAI bots likely taking the platform by storm.
 		- [Twitch U-turns on 'artistic nudity' policy - BBC News](https://www.bbc.co.uk/news/technology-67747949)

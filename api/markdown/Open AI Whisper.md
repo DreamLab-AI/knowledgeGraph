@@ -18,7 +18,7 @@ alias:: OpenAI Whisper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:open-ai-whisper",
+  "@id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
   "@type": "Class",
   "label": "Open AI Whisper",
   "definition": "OpenAI Whisper is an open-source automatic speech recognition (ASR) system released by OpenAI in September 2022, trained on approximately 680,000 hours of multilingual and multitask supervised audio data sourced from the internet. It employs a Transformer encoder-decoder architecture that jointly learns transcription, translation, and language identification from weakly supervised training data, achieving near-human accuracy across a broad range of accents, recording conditions, and languages. Whisper is released as open weights in multiple sizes (tiny, base, small, medium, large, and subsequent variants), enabling local deployment without API dependency. Its robustness to background noise, accented speech, and domain-specific vocabulary—combined with zero-shot multilingual performance—has made it the de facto baseline for ASR research and a widely deployed component in transcription pipelines, voice interfaces, and accessibility applications.",
@@ -30,7 +30,7 @@ alias:: OpenAI Whisper
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:open-ai", "label": "OpenAI"}
+      {"@id": "urn:ngm:class:openai-research-organisation-research-organisation", "label": "OpenAI"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-transcription", "label": "Real-time Transcription"},
@@ -46,9 +46,9 @@ alias:: OpenAI Whisper
 ```
 
 - ### Definition
-  - [[Open AI Whisper]] is an open-weights [[Automatic Speech Recognition]] system from [[OpenAI]] trained on 680,000 hours of multilingual audio using a [[Transformer Architecture]] encoder-decoder, achieving robust transcription, translation, and language identification across diverse acoustic conditions with zero-shot multilingual capability.
+  - [[Open AI Whisper]] is an open-weights [[Automatic Speech Recognition]] system from [[OpenAI Research Organisation]] trained on 680,000 hours of multilingual audio using a [[Transformer Architecture]] encoder-decoder, achieving robust transcription, translation, and language identification across diverse acoustic conditions with zero-shot multilingual capability.
 - ### Relationships
-  - [[Open AI Whisper]] builds on [[Transformer Architecture]] encoder-decoder designs pioneered in sequence-to-sequence [[Natural Language Processing]] and applies them directly to audio spectrograms, bypassing the hand-engineered feature extraction pipelines that characterised earlier [[Speech Recognition]] systems. Its open-weights release by [[OpenAI]] enabled rapid integration into [[Real-time Transcription]] and [[Meeting Transcription]] products without API costs or data-sharing requirements. The [[Audio Processing System]] pipeline feeds mel-frequency spectrograms into Whisper's encoder, which produces representations consumed by the autoregressive decoder generating token sequences. The model's breadth of training data spanning [[Speech and Voice]] content from 99 languages makes it the most widely used multilingual ASR baseline.
+  - [[Open AI Whisper]] builds on [[Transformer Architecture]] encoder-decoder designs pioneered in sequence-to-sequence [[Natural Language Processing]] and applies them directly to audio spectrograms, bypassing the hand-engineered feature extraction pipelines that characterised earlier [[Speech Recognition]] systems. Its open-weights release by [[OpenAI Research Organisation]] enabled rapid integration into [[Real-time Transcription]] and [[Meeting Transcription]] products without API costs or data-sharing requirements. The [[Audio Processing System]] pipeline feeds mel-frequency spectrograms into Whisper's encoder, which produces representations consumed by the autoregressive decoder generating token sequences. The model's breadth of training data spanning [[Speech and Voice]] content from 99 languages makes it the most widely used multilingual ASR baseline.
 - ### Content
   - Whisper's development philosophy departed from the ASR field's dominant paradigm of supervised learning on carefully curated, human-labelled datasets. Instead, OpenAI trained Whisper using weakly supervised learning on audio-transcript pairs collected from the internet, accepting that some training data would contain errors in exchange for vastly greater coverage of languages, accents, recording conditions, and domains. This approach mirrors the scaling strategies that proved successful in large language model training, and the resulting model demonstrated that weakly supervised ASR at sufficient scale could match or exceed models trained on cleaner but far smaller datasets.
 

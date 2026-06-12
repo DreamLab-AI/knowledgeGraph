@@ -397,7 +397,7 @@ alias:: Feed-Forward Network
         "label": "SwiGLU"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -764,12 +764,12 @@ alias:: Feed-Forward Network
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
@@ -853,11 +853,11 @@ alias:: Feed-Forward Network
   - implemented-in-layer:: [[AlgorithmLayer]], [[ModelArchitectureLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Neural Network]], [[Machine Learning]], [[Deep Learning]], [[Parametric Model]], [[Differentiable Programming]]
+  - is-subclass-of:: [[Neural Network]], [[Machine Learning Discipline]], [[Deep Learning]], [[Parametric Model]], [[Differentiable Programming]]
   - has-part:: [[Hidden Layer]], [[Activation Function]], [[Weight Matrix]], [[Bias Vector]], [[Input Layer]], [[Output Layer]], [[Backpropagation]], [[Loss Function]]
   - requires:: [[Training Data]], [[Gradient Descent]], [[Automatic Differentiation]], [[Weight Initialisation]], [[Hyperparameter Tuning]]
   - enables:: [[Universal Approximation]], [[Feature Learning]], [[Pattern Recognition]], [[Transfer Learning]], [[Fine-tuning]]
-  - implements:: [[Multi-Layer Perceptron]], [[Position-wise FFN]], [[Mixture of Experts]], [[SwiGLU]], [[Residual Connection]]
+  - implements:: [[Multi-Layer Perceptron]], [[Position-wise FFN]], [[Mixture-of-Experts Architecture]], [[SwiGLU]], [[Residual Connection]]
   - depends-on:: [[Linear Algebra]], [[Calculus]], [[Information Theory]], [[Probability Theory]], [[Optimisation Theory]]
   - supports:: [[Natural Language Processing]], [[Computer Vision]], [[Speech Recognition]], [[Reinforcement Learning]], [[Generative AI]]
   - uses:: [[ReLU]], [[GELU]], [[Attention Mechanism]], [[Layer Normalisation]], [[Dropout]]

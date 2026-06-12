@@ -45,11 +45,11 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},

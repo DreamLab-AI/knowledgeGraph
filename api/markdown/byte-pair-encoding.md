@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - partOf [[Tokenisation]]
+  - partOf [[Neural Network Text Tokenisation]]
   - enables [[Natural Language Processing]]
   - enables [[Text Generation]]
   - uses [[Transformer]]

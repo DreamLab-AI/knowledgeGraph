@@ -8,7 +8,7 @@
   "definition": "A method of securely sharing cryptographic keys using the principles of quantum mechanics, such that any eavesdropping disturbs the transmission and can be detected. It provides key exchange whose security rests on physics rather than computational hardness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computing",
+      "id": "urn:ngm:class:quantum-computation-paradigm",
       "label": "Quantum Computing"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],

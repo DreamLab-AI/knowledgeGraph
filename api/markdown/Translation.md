@@ -396,7 +396,7 @@ public:: true
         "label": "Subword Segmentation"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -448,7 +448,7 @@ public:: true
         "label": "Knowledge Distillation"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -881,7 +881,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
@@ -916,7 +916,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -950,9 +950,9 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Natural Language Processing]], [[Sequence-to-Sequence Learning]], [[Cross-Lingual Transfer]], [[Language Technology]], [[Computational Linguistics]]
   - has-part:: [[Encoder]], [[Decoder]], [[Attention Mechanism]], [[Tokeniser]], [[Language Model]], [[Beam Search]], [[BPE Vocabulary]], [[Parallel Corpus]], [[Quality Estimation]]
-  - requires:: [[Parallel Corpora]], [[Tokenisation]], [[Subword Segmentation]], [[GPU Compute]], [[Bilingual Evaluation Data]], [[Language Pair Coverage]]
+  - requires:: [[Parallel Corpora]], [[Neural Network Text Tokenisation]], [[Subword Segmentation]], [[GPU Compute]], [[Bilingual Evaluation Data]], [[Language Pair Coverage]]
   - enables:: [[Multilingual Communication]], [[Cross-Lingual Information Retrieval]], [[Localisation]], [[Real-Time Interpretation]], [[Low-Resource Language Preservation]], [[Global Content Delivery]]
-  - implements:: [[Transformer Architecture]], [[Beam Search Decoding]], [[Byte Pair Encoding]], [[Mixture of Experts]], [[Contrastive Learning]], [[Back-Translation]], [[Knowledge Distillation]]
+  - implements:: [[Transformer Architecture]], [[Beam Search Decoding]], [[Byte Pair Encoding]], [[Mixture-of-Experts Architecture]], [[Contrastive Learning]], [[Back-Translation]], [[Knowledge Distillation]]
   - depends-on:: [[Attention Mechanism]], [[Neural Networks]], [[Large Language Models]], [[Transfer Learning]], [[Statistical Learning Theory]], [[Linguistic Annotation]]
   - supports:: [[Localisation]], [[Accessibility]], [[Cross-Border Commerce]], [[Diplomatic Communication]], [[Scientific Publishing]], [[Healthcare Communication]]
   - uses:: [[BLEU Score]], [[COMET Metric]], [[Human Post-Editing]], [[Back-Translation]], [[Monolingual Data Augmentation]], [[Adapter Modules]]

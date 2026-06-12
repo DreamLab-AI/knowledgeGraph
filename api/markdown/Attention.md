@@ -474,7 +474,7 @@ public:: true
         "label": "Key"
       },
       {
-        "@id": "urn:ngm:class:queries",
+        "@id": "urn:ngm:class:datalog-knowledge-graph-query-language",
         "label": "Query"
       },
       {
@@ -624,7 +624,7 @@ public:: true
         "label": "Graph Neural Network"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       }
     ],
@@ -634,11 +634,11 @@ public:: true
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
-        "@id": "urn:ngm:class:multimodal-reasoning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
         "label": "Multimodal Reasoning"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "ONNX Operator Set"
       },
       {
-        "@id": "urn:ngm:class:open-ai-triton",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-triton",
         "label": "OpenAI Triton"
       }
     ]
@@ -1174,7 +1174,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
@@ -1245,7 +1245,7 @@ public:: true
   - supports:: [[Foundation Model]], [[Diffusion Model]], [[Speech Recognition]], [[Protein Structure Prediction]], [[Code Generation]], [[Multimodal Reasoning]]
   - uses:: [[Scaled Dot Product]], [[Multi-Head Attention]], [[Causal Mask]], [[Sliding Window]], [[Rotary Position Embedding]], [[FlashAttention Kernel]], [[KV Cache]]
   - contrasts-with:: [[Recurrent Neural Network]], [[Long Short Term Memory]], [[Gated Recurrent Unit]], [[Convolutional Neural Network]], [[State Space Model]]
-  - related-to:: [[Memory-Augmented Neural Network]], [[Pointer Network]], [[Neural Turing Machine]], [[Graph Neural Network]], [[Mixture of Experts]]
+  - related-to:: [[Memory-Augmented Neural Network]], [[Pointer Network]], [[Neural Turing Machine]], [[Graph Neural Network]], [[Mixture-of-Experts Architecture]]
   - standardized-by:: [[NeurIPS]], [[ICLR]], [[ICML]], [[ACL]], [[CVPR]], [[ONNX Operator Set]], [[OpenAI Triton]]
 
 - ### Content

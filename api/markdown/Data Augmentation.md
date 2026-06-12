@@ -23,7 +23,7 @@ public:: true
   "definition": "Data augmentation is a machine learning technique that expands a training dataset by applying label-preserving transformations or synthesising new examples from existing data. Typical methods include geometric and photometric image transforms, noise injection, and generative model sampling such as GAN-produced samples. It improves model generalisation and robustness, mitigating overfitting when labelled data is scarce.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:synthetic-data-generator", "label": "Synthetic Data Generator"},

@@ -722,7 +722,7 @@ public:: true
         "label": "Permissioned Blockchain"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -1424,7 +1424,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -1489,7 +1489,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     }
@@ -1541,7 +1541,7 @@ public:: true
   - implements:: [[Two Tier Distribution Model]], [[Privacy By Design]], [[Tiered Anonymity]], [[Interoperability Protocol]], [[DLT Ledger Design]], [[Centralised Ledger Design]]
   - depends-on:: [[Monetary Policy]], [[Central Bank]], [[Financial Regulation]], [[Digital Infrastructure]], [[Cryptographic Standards]], [[Legal Framework]]
   - supports:: [[Financial Stability]], [[Payment Efficiency]], [[Monetary Sovereignty]], [[Anti Money Laundering]], [[Sanctions Enforcement]], [[Currency Internationalisation]]
-  - uses:: [[DLT]], [[Permissioned Blockchain]], [[Zero Knowledge Proofs]], [[Privacy Enhancing Technologies]], [[API Standards]], [[Tokenisation]]
+  - uses:: [[DLT]], [[Permissioned Blockchain]], [[Zero Knowledge Proofs]], [[Privacy Enhancing Technologies]], [[API Standards]], [[Neural Network Text Tokenisation]]
   - contrasts-with:: [[Stablecoins]], [[Cryptocurrency]], [[Commercial Bank Deposits]], [[Physical Cash]], [[E-Money]], [[FedNow]]
   - related-to:: [[Digital Euro]], [[Digital Yuan]], [[Digital Pound]], [[mBridge]], [[Project Nexus]], [[Financial Inclusion]], [[Monetary Policy]], [[Cross Border Payments]], [[Programmable Money]], [[Privacy]], [[Financial Regulation]]
   - standardized-by:: [[BIS CPMI Standards]], [[IMF CBDC Framework]], [[FSB Cross Border Payments Roadmap]], [[Basel Committee]], [[ECB Digital Euro Regulation]], [[FATF Guidance on Virtual Assets]]
@@ -1699,7 +1699,7 @@ public:: true
 	  ```
 
   - ## About Central Bank Digital Currencies (CBDCs)
-  - **Central Bank Digital Currencies** represent the most significant structural transformation in money and payments since the shift from the gold standard to fiat money in the twentieth century. Unlike paper currency or coinage, a CBDC is issued, recorded and settled on a digital ledger maintained or overseen by the central bank, carrying the full faith, credit, and legal-tender status of the sovereign monetary authority. Unlike commercial-bank deposits — which are private liabilities backed by fractional reserves, central-bank reserves, and deposit insurance — CBDC balances are direct central-bank liabilities, carrying zero credit risk equivalent to physical notes and coins. Unlike [[Cryptocurrency]] such as [[Bitcoin]], CBDCs have a central issuer, are denominated in the national unit of account, and are not algorithmically constrained in supply.
+  - **Central Bank Digital Currencies** represent the most significant structural transformation in money and payments since the shift from the gold standard to fiat money in the twentieth century. Unlike paper currency or coinage, a CBDC is issued, recorded and settled on a digital ledger maintained or overseen by the central bank, carrying the full faith, credit, and legal-tender status of the sovereign monetary authority. Unlike commercial-bank deposits — which are private liabilities backed by fractional reserves, central-bank reserves, and deposit insurance — CBDC balances are direct central-bank liabilities, carrying zero credit risk equivalent to physical notes and coins. Unlike [[Cryptocurrency]] such as [[Bitcoin Proof-of-Work Protocol]], CBDCs have a central issuer, are denominated in the national unit of account, and are not algorithmically constrained in supply.
   - The concept has deep historical roots in academic monetary economics — James Tobin (1987) proposed "deposited currency accounts" at the Federal Reserve accessible to the public — but practical development accelerated dramatically from 2014 onwards as central banks observed: the rising dominance of private digital payment systems ([[Alipay]], [[WeChat Pay]]); the emergence of decentralised cryptocurrencies posing potential monetary sovereignty challenges; declining cash usage in advanced economies (UK cash payments fell from 56% of transactions in 2010 to 14% in 2024); the failure of incumbent correspondent banking infrastructure to deliver fast, cheap, cross-border payments; and Facebook's 2019 [[Libra]] stablecoin proposal, which alarmed central banks globally about private currencies threatening monetary sovereignty. The BIS reported in 2024 that **91% of the 93 central banks surveyed** were exploring a CBDC in some form, reflecting near-universal recognition that sovereign digital money is a policy necessity rather than an option.
   - The **landscape as of 2025-2026** divides into four groups:
     - **(1) Live retail deployments** (limited adoption): Bahamas Sand Dollar (2020), Jamaica JAM-DEX (2022), Nigeria eNaira (2021) — all three have sub-5% active user rates among eligible populations, revealing the gap between supply-side CBDC issuance and genuine payment demand

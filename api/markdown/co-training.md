@@ -11,7 +11,7 @@ bridges-to:: [[Autonomous Robot]]
 - ### Relationships
   - part-of:: [[Semi-Supervised Learning]]
   - related-to:: [[Self Training]], [[Active Learning]]
-  - uses:: [[Machine Learning]], [[Machine Learning Model]]
+  - uses:: [[Machine Learning Discipline]], [[Machine Learning Model]]
   - enables:: [[Generative AI]]
 
 - ### Content
@@ -241,7 +241,7 @@ bridges-to:: [[Autonomous Robot]]
   - # The Trillion-Dollar Cluster and Beyond
   - ![situationalawareness.pdf](assets/situationalawareness_1717941860620_0.pdf)
   - [WEBPAGE LINK](https://situational-awareness.ai/)
-  - This podcast and PDF explores the thesis advanced  Leopold Aschenbrenner, delving into by the trajectory of [[Artificial Intelligence]] and [[Artificial Superintelligence]], within the contexts of [[Hardware and Edge]], [[Energy and Power]], and [[Politics, Law, Privacy]].
+  - This podcast and PDF explores the thesis advanced  Leopold Aschenbrenner, delving into by the trajectory of [[Artificial Intelligence]] and [[Artificial Superintelligence]], within the contexts of [[Hardware and Edge]], [[Energy and Power]], and [[AI Governance Law and Privacy]].
 		- **Compute Requirements Skyrocketing:** The conversation begins with a stark examination of the escalating computational resources necessary for training advanced AI models. They reference GPT-4's estimated $500 million training cluster as a benchmark, projecting a future where trillion-dollar clusters become commonplace by 2030, demanding power equivalent to significant portions of national grids.
 		- **Unlocking the Power of Test-Time Compute:** While training compute garners most attention, the guests emphasise the equally crucial role of "test-time compute." They argue that current AI models, despite their capabilities, operate far below their potential cognitive capacity. Analogous to human "System 2" thinking, they believe training AI to think strategically over millions of tokens, simulating months of cognitive work, will be essential to unlocking breakthroughs. This suggests AI systems that can plan, debug, iterate, and reason far beyond current capabilities.
 
@@ -383,7 +383,7 @@ bridges-to:: [[Autonomous Robot]]
 		- ![2024-10-12 08-54-13.mp4](assets/2024-10-12_08-54-13_1728720039197_0.mp4){:width 100}
   - ![](https://jnnnthnn.com/leike.png){:width 600}
   - A survey of 2778 AI researchers, to assess the pace of AI progress and the broader societal implications. The increased participation in this third iteration points to growing importance and concern surrounding AI in the scientific community.
-  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Social contract and jobs]] initiative.
+  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Employment Social Contract Under Automation]] initiative.
   - Median prediction indicates a 50% chance of achieving High-Level Machine Intelligence by 2047 and Full Automation of Labour, by 2116
   - Strong hints of potential differences in technological development speeds, cultural attitudes, or economic motivations across regions. This suggests incoming legislative arbitrage.
 		- [EU’s new AI Act risks hampering innovation, warns Emmanuel Macron (ft.com)](https://www.ft.com/content/9339d104-7b0c-42b8-9316-72226dd4e4c0)
@@ -415,9 +415,9 @@ bridges-to:: [[Autonomous Robot]]
 			- More data efficient, but becomes less accurate as game progresses and requires longer training than same-sized Transformer
 
 		- ### DONE In-Context Training (think ChatGPT memory)
-			- DOING [[Gemini]] connected to Google Drive and all you data.
+			- DOING [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
 			- DONE Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
-			- DONE Available free with the [[ChatGPT]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
+			- DONE Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
 
   - ### **CLIP-Forge**
 		- [CLIP-Forge GitHub](https://github.com/autodeskailab/clip-forge) - CLIP Forge is a framework to organise, train, and evaluate CLIP (Contrastive Language–Image Pre-training) models, supporting various training strategies.
@@ -638,7 +638,7 @@ bridges-to:: [[Autonomous Robot]]
   - # The Trillion-Dollar Cluster and Beyond
   - ![situationalawareness.pdf](assets/situationalawareness_1717941860620_0.pdf)
   - [WEBPAGE LINK](https://situational-awareness.ai/)
-  - This podcast and PDF explores the thesis advanced  Leopold Aschenbrenner, delving into by the trajectory of [[Artificial Intelligence]] and [[Artificial Superintelligence]], within the contexts of [[Hardware and Edge]], [[Energy and Power]], and [[Politics, Law, Privacy]].
+  - This podcast and PDF explores the thesis advanced  Leopold Aschenbrenner, delving into by the trajectory of [[Artificial Intelligence]] and [[Artificial Superintelligence]], within the contexts of [[Hardware and Edge]], [[Energy and Power]], and [[AI Governance Law and Privacy]].
 		- **Compute Requirements Skyrocketing:** The conversation begins with a stark examination of the escalating computational resources necessary for training advanced AI models. They reference GPT-4's estimated $500 million training cluster as a benchmark, projecting a future where trillion-dollar clusters become commonplace by 2030, demanding power equivalent to significant portions of national grids.
 		- **Unlocking the Power of Test-Time Compute:** While training compute garners most attention, the guests emphasise the equally crucial role of "test-time compute." They argue that current AI models, despite their capabilities, operate far below their potential cognitive capacity. Analogous to human "System 2" thinking, they believe training AI to think strategically over millions of tokens, simulating months of cognitive work, will be essential to unlocking breakthroughs. This suggests AI systems that can plan, debug, iterate, and reason far beyond current capabilities.
 
@@ -780,7 +780,7 @@ bridges-to:: [[Autonomous Robot]]
 		- ![2024-10-12 08-54-13.mp4](assets/2024-10-12_08-54-13_1728720039197_0.mp4){:width 100}
   - ![](https://jnnnthnn.com/leike.png){:width 600}
   - A survey of 2778 AI researchers, to assess the pace of AI progress and the broader societal implications. The increased participation in this third iteration points to growing importance and concern surrounding AI in the scientific community.
-  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Social contract and jobs]] initiative.
+  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Employment Social Contract Under Automation]] initiative.
   - Median prediction indicates a 50% chance of achieving High-Level Machine Intelligence by 2047 and Full Automation of Labour, by 2116
   - Strong hints of potential differences in technological development speeds, cultural attitudes, or economic motivations across regions. This suggests incoming legislative arbitrage.
 		- [EU’s new AI Act risks hampering innovation, warns Emmanuel Macron (ft.com)](https://www.ft.com/content/9339d104-7b0c-42b8-9316-72226dd4e4c0)
@@ -812,9 +812,9 @@ bridges-to:: [[Autonomous Robot]]
 			- More data efficient, but becomes less accurate as game progresses and requires longer training than same-sized Transformer
 
 		- ### DONE In-Context Training (think ChatGPT memory)
-			- DOING [[Gemini]] connected to Google Drive and all you data.
+			- DOING [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
 			- DONE Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
-			- DONE Available free with the [[ChatGPT]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
+			- DONE Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
 
   - ### **CLIP-Forge**
 		- [CLIP-Forge GitHub](https://github.com/autodeskailab/clip-forge) - CLIP Forge is a framework to organise, train, and evaluate CLIP (Contrastive Language–Image Pre-training) models, supporting various training strategies.
@@ -928,9 +928,9 @@ bridges-to:: [[Autonomous Robot]]
 					- 53% want more training and guidance
 
 		- ### DONE In-Context Training (think ChatGPT memory)
-			- DOING [[Gemini]] connected to Google Drive and all you data.
+			- DOING [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
 			- DONE Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
-			- DONE Available free with the [[ChatGPT]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
+			- DONE Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
 
   - ### **Point·E System**
   -   The lighter computational overhead of LION compared to Adam allows for training larger models or training existing models more quickly.
@@ -1040,7 +1040,7 @@ bridges-to:: [[Autonomous Robot]]
 			- [SD model mixer](https://github.com/wkpark/sd-webui-model-mixer)
 			- Textual Inversion character creation [tutorials/consistent_character_embedding/README.md at main · BelieveDiffusion/tutorials (github.com)](https://github.com/BelieveDiffusion/tutorials/blob/main/consistent_character_embedding/README.md)
 			- [%3 e](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22/%3E)
-			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[copyright]]-1849388060)
+			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[Intellectual Property Rights Framework]]-1849388060)
 			- [CompVis/stable-diffusion: A latent text-to-image diffusion model](https://github.com/CompVis/stable-diffusion)
 			- [Consistency in Stable Diffusion Definitive Guide to Having Multiple Faces of the Same Character](https://www.youtube.com/watch?v=Ig1S2guCfKM%22%2F%3E)
 			- [From the StableDiffusion community on Reddit](https://www.reddit.com/r/StableDiffusion/comments/132rcou/30_stable_diffusion_tutorials_automatic1111_web)
@@ -1106,7 +1106,7 @@ bridges-to:: [[Autonomous Robot]]
 
 			  [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Employment Social Contract Under Automation]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
 
@@ -1125,7 +1125,7 @@ bridges-to:: [[Autonomous Robot]]
 		- While AI presents new challenges, it also offers significant opportunities for enhancing education, requiring a balanced approach to its integration. We need to be doing more.
 		- {{embed ((657d1029-63aa-4766-8324-e7d6e5e19001))}}
 		- [[Education and AI]] [(1) Ethan Mollick on X: "New randomized, controlled trial of students using GPT-4 as a tutor in Nigeria. 6 weeks of after-school AI tutoring = 2 years of typical learning gains, outperforming 80% of other educational interventions. And it helped all students, especially girls who were initially behind https://t.co/abE1JMUBEs" / X](https://x.com/emollick/status/1879633485004165375) [[Ethan Mollick]]
-		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Social contract and jobs]] [[Trust and Safety]]
+		- [Teen deepfake pornography victim warns future generation is 'at risk' if AI crime bill fails | Fox News](https://www.foxnews.com/media/teen-deepfake-porn-victim-warns-future-generation-risk-ai-crime-bill-passed-protect-people) [[Deepfakes and fraudulent content]] [[Education and AI]] [[Employment Social Contract Under Automation]] [[Trust and Safety]]
 		- https://hbsp.harvard.edu/inspiring-minds/an-ai-prompting-template-for-teaching-tasks [[Education and AI]]
 		- Michelle Kassorla, Ph.D. on LinkedIn [discussing](https://www.linkedin.com/posts/mkassorla_here-is-a-great-example-of-a-student-using-activity-7208178612556967936-R-YE?) a student's use of [[Generative AI]] in a prospectus paragraph for an assignment. The post includes the student's paragraph, feedback from Dr Kassorla, and a rubric for the assignment. The feedback highlights the need for a clear, specific claim, clear writing, and a connection to the story being analysed. The post also includes comments from other professionals in the field of AI [[Education and AI]].
 

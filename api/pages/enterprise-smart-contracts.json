@@ -88,7 +88,7 @@
         "label": "Permissioned Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -235,7 +235,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {

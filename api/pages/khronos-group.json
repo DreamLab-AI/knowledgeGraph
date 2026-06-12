@@ -28,7 +28,7 @@
         "label": "3D Graphics Standard"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -55,7 +55,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ],

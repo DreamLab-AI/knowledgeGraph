@@ -3,7 +3,7 @@
   "title": "Bitcoin Value Proposition",
   "slug": "bitcoin-value-proposition",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-value-proposition",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
   "domain": "blockchain",
   "definition": "Bitcoin Value Proposition is the aggregate set of economic, monetary, and philosophical arguments that justify holding, using, or building on Bitcoin as a distinct and superior form of money, property, or network infrastructure.",
   "subClassOf": [
@@ -76,11 +76,11 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-miners",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-miners",
         "label": "Bitcoin Miners"
       },
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -217,7 +217,7 @@
         "label": "X402"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
@@ -227,7 +227,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-standard-adoption",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard-adoption",
         "label": "Bitcoin Standard Adoption"
       },
       {
@@ -261,11 +261,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "id": "urn:ngm:class:bitcoin-whitepaper",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-whitepaper",
         "label": "Bitcoin Whitepaper"
       },
       {
@@ -324,7 +324,7 @@
         "label": "Stock to Flow Model"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {

@@ -125,7 +125,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:collaborative-filtering",
+        "id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
@@ -145,7 +145,7 @@
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -178,11 +178,11 @@
         "label": "Attention"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-client",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
@@ -194,13 +194,13 @@
         "label": "Generative Adversarial Networks"
       },
       {
-        "id": "urn:ngm:class:multi-agent-rag-scrapbook",
+        "id": "urn:ngm:class:multi-agent-rag-architecture-compendium",
         "label": "Multi Agent RAG scrapbook"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:agentic-metaverse-for-global-creatives",
+        "id": "urn:ngm:class:decentralised-creative-metaverse-framework",
         "label": "Agentic Metaverse for Global Creatives"
       },
       {
@@ -269,7 +269,7 @@
         "label": "AI Diagram Tools"
       },
       {
-        "id": "urn:ngm:class:animate-diff",
+        "id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
@@ -277,11 +277,11 @@
         "label": "Brain Computer Interfaces"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-client",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       }
     ]

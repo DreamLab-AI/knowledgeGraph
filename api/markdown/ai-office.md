@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - supports:: [[EU AI Act]], [[AI Board]]
+  - supports:: [[EU AI Act Regulatory Instrument]], [[AI Board]]
   - enables:: [[AI Governance]], [[AI Governance Framework]]
   - relatedTo:: [[General Purpose AI Model]], [[AI Risk Management]]
 
@@ -816,6 +816,6 @@
 		  - **Full operation**: 2 August 2027 (all AI Act provisions applicable)
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[IEEE P7009]], [[NIST AI RMF]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[IEEE P7009]], [[NIST AI RMF]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

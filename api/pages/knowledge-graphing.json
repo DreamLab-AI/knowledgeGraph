@@ -206,7 +206,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:llama-index",
+        "id": "urn:ngm:class:meta-llama-model-family-index",
         "label": "LlamaIndex"
       },
       {
@@ -222,7 +222,7 @@
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -276,11 +276,11 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -357,15 +357,15 @@
         "label": "Metaverse Ontology"
       },
       {
-        "id": "urn:ngm:class:multi-agent-rag-scrapbook",
+        "id": "urn:ngm:class:multi-agent-rag-architecture-compendium",
         "label": "Multi Agent RAG scrapbook"
       },
       {
-        "id": "urn:ngm:class:ontology-conversation-with-ais",
+        "id": "urn:ngm:class:ai-assisted-ontology-elicitation-method",
         "label": "Ontology conversation with AIs"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ]
@@ -854,6 +854,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-literacy-training-for-designers",
+      "label": "AI Literacy Training for Designers"
+    },
+    {
       "slug": "data-poisoning",
       "label": "Data Poisoning"
     },
@@ -872,6 +876,10 @@
     {
       "slug": "language-modeling",
       "label": "Language Modeling"
+    },
+    {
+      "slug": "local-llm-runtime-platform",
+      "label": "Local LLM Runtime Platform"
     },
     {
       "slug": "meeting-recording",
@@ -894,16 +902,8 @@
       "label": "Text Generation"
     },
     {
-      "slug": "training-for-design-practitioners",
-      "label": "Training for Design Practitioners"
-    },
-    {
       "slug": "trust-and-safety",
       "label": "Trust and Safety"
-    },
-    {
-      "slug": "ollama",
-      "label": "ollama"
     }
   ]
 }

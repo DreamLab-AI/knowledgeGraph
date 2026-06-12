@@ -70,7 +70,7 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
       {"@id": "urn:ngm:class:ai-board", "label": "AI Board"}
     ],
     "enables": [
@@ -116,7 +116,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -146,7 +146,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - supports:: [[EU AI Act]], [[AI Board]]
+  - supports:: [[EU AI Act Regulatory Instrument]], [[AI Board]]
   - enables:: [[AI Governance]], [[AI Governance Framework]]
   - relatedTo:: [[General Purpose AI Model]], [[AI Risk Management]]
 
@@ -955,6 +955,6 @@ public:: true
 		  - **Full operation**: 2 August 2027 (all AI Act provisions applicable)
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[IEEE P7009]], [[NIST AI RMF]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[IEEE P7009]], [[NIST AI RMF]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

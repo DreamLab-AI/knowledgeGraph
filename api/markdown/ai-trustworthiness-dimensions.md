@@ -17,5 +17,5 @@ Transparency and explainability mandates traceability of training data and model
 Accountability establishes the organisational and legal responsibilities for AI systems, requiring audit trails, redress mechanisms for affected individuals, and documented chains of responsibility. The EU AI Act translates these dimensions into binding requirements for high-risk AI systems, with conformity assessments conducted by notified bodies against harmonised standards developed by CEN/CENELEC and ISO/IEC JTC 1/SC 42.
 
 - ### Provenance
-  - sources:: [[EU HLEG AI]], [[EU Charter of Fundamental Rights]], [[EU AI Act]]
+  - sources:: [[EU HLEG AI]], [[EU Charter of Fundamental Rights]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

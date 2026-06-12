@@ -54,7 +54,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},

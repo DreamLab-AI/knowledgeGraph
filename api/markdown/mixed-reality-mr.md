@@ -10,7 +10,7 @@
 
 - ### Relationships
   - has-part:: [[Spatial Mesh]], [[Physics Simulation Engine]], [[Lighting Estimation]], [[Occlusion Rendering]], [[Depth Camera]]
-  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing]]
+  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing Paradigm]]
   - requires:: [[Real-Time 3D Reconstruction]], [[Environmental Lighting]], [[Object Tracking]], [[Hand Tracking]]
   - enables:: [[Bidirectional Interaction]], [[Virtual-Physical Collision]], [[Realistic Occlusion]], [[Shared Spatial Anchors]]
   - depends-on:: [[SLAM]], [[Depth Sensing]], [[Computer Vision]], [[Physics Engine]]

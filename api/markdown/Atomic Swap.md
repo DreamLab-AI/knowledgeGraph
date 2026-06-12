@@ -177,7 +177,7 @@ alias:: Atomic Swaps, AtomicSwap
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -197,7 +197,7 @@ alias:: Atomic Swaps, AtomicSwap
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -281,8 +281,8 @@ alias:: Atomic Swaps, AtomicSwap
   - Interoperability between blockchain ecosystems
 
   ## Examples
-  - [[Bitcoin]] <-> [[Litecoin]] atomic swaps
-  - [[Ethereum]] <-> [[ERC-20 Token]] swaps
+  - [[Bitcoin Proof-of-Work Protocol]] <-> [[Litecoin]] atomic swaps
+  - [[Ethereum Smart Contract Platform]] <-> [[ERC-20 Token]] swaps
   - [[Lightning Network]] cross-chain swaps
   - [[Polkadot]] parachain swaps
 

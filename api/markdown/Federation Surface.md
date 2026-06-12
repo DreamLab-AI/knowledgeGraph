@@ -190,7 +190,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:json-ld-context",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
         "label": "JSON-LD Context"
       },
       {
@@ -212,7 +212,7 @@ public:: true
         "label": "HTTP Endpoint"
       },
       {
-        "@id": "urn:ngm:class:json-ld-1-1-standard",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1-standard",
         "label": "JSON-LD 1.1 Standard"
       },
       {
@@ -244,7 +244,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {

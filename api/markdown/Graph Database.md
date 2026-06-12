@@ -772,7 +772,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -1506,7 +1506,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -1547,7 +1547,7 @@ public:: true
   - supports:: [[Knowledge Graph]], [[Master Data Management]], [[Metadata Management]], [[Anti-Money Laundering]], [[Drug Discovery]], [[Social Network Analysis]], [[Supply Chain Visibility]], [[Cybersecurity Analytics]]
   - uses:: [[B-Tree]], [[LSM Tree]], [[Adjacency List]], [[Bloom Filter]], [[MVCC]], [[Sharding]], [[Replication]], [[Vector Embedding]]
   - contrasts-with:: [[Relational Database]], [[Document Store]], [[Key-Value Store]], [[Columnar Database]], [[Vector Database]]
-  - related-to:: [[Knowledge Graph]], [[Semantic Web]], [[Linked Data]], [[Ontology]], [[Network Science]], [[Multi-Model Database]]
+  - related-to:: [[Knowledge Graph]], [[Semantic Web Linked Data Standard]], [[Linked Data]], [[Ontology]], [[Network Science]], [[Multi-Model Database]]
   - standardized-by:: [[ISO/IEC 39075:2024 GQL]], [[W3C SPARQL 1.1]], [[W3C RDF 1.1]], [[W3C OWL 2]], [[W3C SHACL]], [[Apache TinkerPop]]
 
 - ### Content

@@ -200,7 +200,7 @@ public:: true
         "label": "Event Schemas"
       },
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
@@ -236,7 +236,7 @@ public:: true
         "label": "ActivityStreams 2.0"
       },
       {
-        "@id": "urn:ngm:class:json-ld-1-1",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {

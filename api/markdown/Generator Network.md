@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"},
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
     ],
@@ -45,10 +45,10 @@ public:: true
 ```
 
 - ### Definition
-  - A [[Generator Network]] is the data-synthesising component of a [[Generative Adversarial Network]] (GAN) that learns to transform random [[latent space]] vectors into realistic data samples through adversarial training against a discriminator, enabling [[Image Generation]], [[Style Transfer]], and [[Synthetic Data Generator|synthetic data production]] across image, video, and audio modalities.
+  - A [[Generator Network]] is the data-synthesising component of a [[Generative Adversarial Network]] (GAN) that learns to transform random [[Neural Network Latent Space]] vectors into realistic data samples through adversarial training against a discriminator, enabling [[Image Generation]], [[Style Transfer]], and [[Synthetic Data Generator|synthetic data production]] across image, video, and audio modalities.
 
 - ### Relationships
-  - The generator network is architecturally paired with a discriminator within the [[Generative Adversarial Network]] framework, receiving gradient updates that encode the discriminator's critique rather than direct pixel-level loss. It maps compact [[latent space]] representations through [[Neural Network Architecture|neural network architectures]] (typically transposed convolutional or transformer decoder networks) to full-resolution data. This generator concept generalises to the decoder half of [[Variational Autoencoders]] and conceptually underpins the [[Deep Generative Model]] family, enabling downstream applications in [[Image Generation]], [[Style Transfer]], and production of [[Synthetic Data Generator|synthetic training data]].
+  - The generator network is architecturally paired with a discriminator within the [[Generative Adversarial Network]] framework, receiving gradient updates that encode the discriminator's critique rather than direct pixel-level loss. It maps compact [[Neural Network Latent Space]] representations through [[Neural Network Architecture|neural network architectures]] (typically transposed convolutional or transformer decoder networks) to full-resolution data. This generator concept generalises to the decoder half of [[Variational Autoencoders]] and conceptually underpins the [[Deep Generative Model]] family, enabling downstream applications in [[Image Generation]], [[Style Transfer]], and production of [[Synthetic Data Generator|synthetic training data]].
 
 - ### Content
   - The generator network concept was formalised by Ian Goodfellow, Yoshua Bengio, and colleagues in the foundational 2014 GAN paper, which introduced the adversarial training procedure as a minimax game between two networks. The generator G maps a latent noise vector z to a data sample G(z), while the discriminator D tries to classify G(z) as fake and real samples as real. Under the minimax objective, the generator learns to produce outputs that the discriminator cannot distinguish from real data, converging — under idealised conditions — to the generator reproducing the true data distribution. This elegant formulation unlocked unprecedented generative quality for images compared to prior VAE-based approaches.

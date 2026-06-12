@@ -94,7 +94,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -185,7 +185,7 @@ public:: true
 - ### Relationships
   - Requires [[Neural Network]]
   - Requires [[Training]]
-  - Uses [[Machine Learning]]
+  - Uses [[Machine Learning Discipline]]
   - Related To [[Natural Language Processing]]
   - Related To [[Artificial Intelligence]]
   - Supports [[AI Technique]]

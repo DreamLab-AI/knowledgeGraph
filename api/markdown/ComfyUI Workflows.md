@@ -463,7 +463,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:comfy-ui-workflows",
+  "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
   "@type": "Class",
   "label": "ComfyUI Workflows",
   "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for Stable Diffusion and broader generative AI inference, implemented within the ComfyUI open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations...",
@@ -494,7 +494,7 @@ public:: true
         "label": "CLIPTextEncode"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui-manager",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
@@ -548,11 +548,11 @@ public:: true
         "label": "Python Runtime"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -626,7 +626,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:comfy-ui-manager",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
@@ -638,7 +638,7 @@ public:: true
         "label": "Hugging Face Hub"
       },
       {
-        "@id": "urn:ngm:class:json-serialisation",
+        "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
       },
       {
@@ -672,7 +672,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
@@ -700,7 +700,7 @@ public:: true
         "label": "IP-Adapter"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -726,7 +726,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
@@ -752,7 +752,7 @@ public:: true
         "label": "Comfy-Org GitHub Organisation"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui-api-specification",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {
@@ -1245,7 +1245,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[AnimateDiff]]",
+      "raw": "[[Temporal Motion Diffusion Adapter]]",
       "resolved": "urn:visionflow:owl:class:animate-diff",
       "kind": "ResolvedLink"
     },
@@ -1255,7 +1255,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -1305,7 +1305,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1327,7 +1327,7 @@ public:: true
 
 
 - ### Definition
-  - ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion]] and broader generative AI inference, implemented within the [[ComfyUI]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations—model loading, conditioning, sampling, decoding, upscaling, face restoration, video frame generation, and more—are represented as typed nodes whose outputs are connected to inputs of downstream nodes via explicit wire edges, the full pipeline serialised as a JSON object mapping node IDs to node definitions and link arrays that together form an executable, reproducible, and shareable specification of an entire [[Image Generation]] or [[Video Generation]] computation. Each workflow JSON encodes `version`, `nodes` (array of typed node objects with `id`, `type`, `inputs`, `outputs`, `pos`, and `size` fields), `links` (array of `[link_id, source_node_id, source_slot, target_node_id, target_slot, type]` tuples), and optional `groups` for visual organisation—making the format both machine-executable by the ComfyUI backend server and human-readable for inspection and modification. The minimal [[Stable Diffusion]] text-to-image workflow requires seven core nodes: a CheckpointLoaderSimple to load a checkpoint (model weights, [[CLIP]] encoder, [[VAE]]), a CLIPTextEncode for positive and negative prompts, an EmptyLatentImage to initialise the latent tensor, a KSampler implementing the [[Diffusion Model]] reverse diffusion loop with configurable sampler (Euler, DPM++, DDIM, UniPC) and scheduler (Karras, exponential, simple), a VAEDecode to convert the latent back to pixel space, and a SaveImage to persist the result. The [[Flux.1]] family (Flux.1-dev, Flux.1-schnell, Flux.1 Kontext) requires an alternative six-node minimum: UnetLoader (loading the diffusion transformer separately), DualCLIPLoader (loading both text encoders t5xxl and clip-l), CLIPTextEncode, EmptyLatentImage, KSampler, and VAEDecode, reflecting [[Flux.1]]'s decoupled architecture. The ecosystem surrounding these minimal workflows has grown to encompass 4+ million users as of April 2026, over 60,000 community-contributed custom nodes indexed in ComfyUI-Manager, 2.5 million shared workflows on community platforms such as OpenArt, Civitai, and ComfyWorkflows.com, and a commercial entity (Comfy Org, Inc.) that raised $30 million at a $500 million valuation in April 2026 led by Craft Ventures, validating ComfyUI workflows as enterprise-grade generative AI infrastructure. Workflow sharing is uniquely facilitated by PNG metadata embedding—ComfyUI optionally bakes the full workflow JSON into the PNG Exif/tEXt chunk so that dragging any workflow-embedded image into the ComfyUI canvas automatically reconstructs the full pipeline, creating a self-describing artefact that distributes both the result and its reproduction method simultaneously. Enterprise deployment through the ComfyUI server API (the `/prompt` POST endpoint accepting workflow JSON, `/history` for retrieval, `/view` for image download, and WebSocket connections for real-time progress events) enables headless batch processing, microservice integration, and cloud-hosted inference on platforms including RunPod Serverless, BentoCloud, Modal, and Comfy Cloud, extending workflows from local creative tools to production ML pipelines serving thousands of concurrent requests with automatic horizontal scaling.
+  - ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion Image Model]] and broader generative AI inference, implemented within the [[Node-Based Diffusion Pipeline Interface]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations—model loading, conditioning, sampling, decoding, upscaling, face restoration, video frame generation, and more—are represented as typed nodes whose outputs are connected to inputs of downstream nodes via explicit wire edges, the full pipeline serialised as a JSON object mapping node IDs to node definitions and link arrays that together form an executable, reproducible, and shareable specification of an entire [[Image Generation]] or [[Video Generation]] computation. Each workflow JSON encodes `version`, `nodes` (array of typed node objects with `id`, `type`, `inputs`, `outputs`, `pos`, and `size` fields), `links` (array of `[link_id, source_node_id, source_slot, target_node_id, target_slot, type]` tuples), and optional `groups` for visual organisation—making the format both machine-executable by the ComfyUI backend server and human-readable for inspection and modification. The minimal [[Stable Diffusion Image Model]] text-to-image workflow requires seven core nodes: a CheckpointLoaderSimple to load a checkpoint (model weights, [[CLIP]] encoder, [[VAE]]), a CLIPTextEncode for positive and negative prompts, an EmptyLatentImage to initialise the latent tensor, a KSampler implementing the [[Diffusion Model]] reverse diffusion loop with configurable sampler (Euler, DPM++, DDIM, UniPC) and scheduler (Karras, exponential, simple), a VAEDecode to convert the latent back to pixel space, and a SaveImage to persist the result. The [[Flux.1]] family (Flux.1-dev, Flux.1-schnell, Flux.1 Kontext) requires an alternative six-node minimum: UnetLoader (loading the diffusion transformer separately), DualCLIPLoader (loading both text encoders t5xxl and clip-l), CLIPTextEncode, EmptyLatentImage, KSampler, and VAEDecode, reflecting [[Flux.1]]'s decoupled architecture. The ecosystem surrounding these minimal workflows has grown to encompass 4+ million users as of April 2026, over 60,000 community-contributed custom nodes indexed in ComfyUI-Manager, 2.5 million shared workflows on community platforms such as OpenArt, Civitai, and ComfyWorkflows.com, and a commercial entity (Comfy Org, Inc.) that raised $30 million at a $500 million valuation in April 2026 led by Craft Ventures, validating ComfyUI workflows as enterprise-grade generative AI infrastructure. Workflow sharing is uniquely facilitated by PNG metadata embedding—ComfyUI optionally bakes the full workflow JSON into the PNG Exif/tEXt chunk so that dragging any workflow-embedded image into the ComfyUI canvas automatically reconstructs the full pipeline, creating a self-describing artefact that distributes both the result and its reproduction method simultaneously. Enterprise deployment through the ComfyUI server API (the `/prompt` POST endpoint accepting workflow JSON, `/history` for retrieval, `/view` for image download, and WebSocket connections for real-time progress events) enables headless batch processing, microservice integration, and cloud-hosted inference on platforms including RunPod Serverless, BentoCloud, Modal, and Comfy Cloud, extending workflows from local creative tools to production ML pipelines serving thousands of concurrent requests with automatic horizontal scaling.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ComfyWorkflows
@@ -1339,14 +1339,14 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Generative AI Pipeline]], [[Node-Based Visual Programming]], [[Workflow Execution Engine]], [[Inference Orchestration System]], [[Diffusion Model Interface]]
   - has-part:: [[Workflow Node]], [[Node Link]], [[Latent Tensor]], [[KSampler]], [[CheckpointLoader]], [[VAEDecode]], [[CLIPTextEncode]], [[ControlNet Node]], [[LoRA Loader]], [[ComfyUI Manager]], [[Workflow JSON Format]]
-  - requires:: [[ComfyUI]], [[Stable Diffusion]], [[GPU Compute]], [[Python Runtime]], [[Model Checkpoint]], [[PyTorch]]
+  - requires:: [[Node-Based Diffusion Pipeline Interface]], [[Stable Diffusion Image Model]], [[GPU Compute]], [[Python Runtime]], [[Model Checkpoint]], [[PyTorch]]
   - enables:: [[Text-to-Image Generation]], [[Image-to-Image Generation]], [[Inpainting]], [[Video Generation]], [[Image Upscaling]], [[Face Restoration]], [[ControlNet Conditioning]], [[LoRA Stacking]], [[Latent Upscaling]], [[Batch Image Processing]], [[Style Transfer]]
   - implements:: [[Directed Acyclic Graph Execution]], [[Diffusion Model Inference]], [[Latent Diffusion Pipeline]], [[Workflow Serialisation]], [[API Server Protocol]]
-  - depends-on:: [[Stable Diffusion]], [[Flux.1]], [[SDXL]], [[Diffusion Model]], [[CLIP]], [[VAE Encoder]], [[Latent Space]]
-  - supports:: [[ControlNet]], [[LoRA]], [[IP-Adapter]], [[AnimateDiff]], [[Wan2.1 Video]], [[ESRGAN Upscaling]], [[GFPGAN Face Restoration]], [[Inpainting]], [[AI Upscaling and Super-Resolution]]
+  - depends-on:: [[Stable Diffusion Image Model]], [[Flux.1]], [[SDXL]], [[Diffusion Model]], [[CLIP]], [[VAE Encoder]], [[Latent Space]]
+  - supports:: [[ControlNet]], [[LoRA]], [[IP-Adapter]], [[Temporal Motion Diffusion Adapter]], [[Wan2.1 Video]], [[ESRGAN Upscaling]], [[GFPGAN Face Restoration]], [[Inpainting]], [[AI Upscaling and Super-Resolution]]
   - uses:: [[JSON Serialisation]], [[WebSocket Protocol]], [[PyTorch]], [[CUDA]], [[REST API]], [[PNG Metadata Embedding]], [[ComfyUI Manager]], [[Hugging Face Hub]]
   - contrasts-with:: [[AUTOMATIC1111 WebUI]], [[InvokeAI]], [[Diffusers Library]], [[Fooocus]], [[Draw Things]]
-  - related-to:: [[Image Generation]], [[Video Generation]], [[Generative AI]], [[Stable Diffusion]], [[AnimateDiff]], [[ControlNet and Similar Spatial Conditioning Systems]], [[Flux.1]], [[SDXL]], [[Inpainting]], [[AI Upscaling and Super-Resolution]], [[IP-Adapter]]
+  - related-to:: [[Image Generation]], [[Video Generation]], [[Generative AI]], [[Stable Diffusion Image Model]], [[Temporal Motion Diffusion Adapter]], [[ControlNet and Similar Spatial Conditioning Systems]], [[Flux.1]], [[SDXL]], [[Inpainting]], [[AI Upscaling and Super-Resolution]], [[IP-Adapter]]
   - standardized-by:: [[Comfy-Org GitHub Organisation]], [[ComfyUI API Specification]], [[OpenArt Workflow Registry]], [[Civitai Workflow Sharing]]
 
 - ### Content
@@ -1483,7 +1483,7 @@ public:: true
 	  ```
 
   - ## About ComfyUI Workflows
-  - **ComfyUI Workflows** are node-based directed acyclic graph (DAG) pipelines that constitute the primary abstraction layer through which users direct [[Stable Diffusion]], [[Flux.1]], [[SDXL]], and other open-weight [[Diffusion Model]] inference. Created in January 2023 by a developer known as comfyanonymous and released under the GPL-3.0 licence on GitHub, [[ComfyUI]] immediately distinguished itself from competing interfaces such as [[AUTOMATIC1111 WebUI]] and [[InvokeAI]] by exposing the internal computation graph explicitly: every operation—checkpoint loading, text encoding, latent sampling, decoding, upscaling, conditioning—appears as a discrete node on an infinite canvas, and data flows between nodes through typed wire connections. Workflows are saved and shared as JSON documents, and the community has elevated this format to a self-describing distribution vehicle by embedding full workflow JSON in the PNG Exif metadata of generated images, so that any output image carries its own recipe.
+  - **ComfyUI Workflows** are node-based directed acyclic graph (DAG) pipelines that constitute the primary abstraction layer through which users direct [[Stable Diffusion Image Model]], [[Flux.1]], [[SDXL]], and other open-weight [[Diffusion Model]] inference. Created in January 2023 by a developer known as comfyanonymous and released under the GPL-3.0 licence on GitHub, [[Node-Based Diffusion Pipeline Interface]] immediately distinguished itself from competing interfaces such as [[AUTOMATIC1111 WebUI]] and [[InvokeAI]] by exposing the internal computation graph explicitly: every operation—checkpoint loading, text encoding, latent sampling, decoding, upscaling, conditioning—appears as a discrete node on an infinite canvas, and data flows between nodes through typed wire connections. Workflows are saved and shared as JSON documents, and the community has elevated this format to a self-describing distribution vehicle by embedding full workflow JSON in the PNG Exif metadata of generated images, so that any output image carries its own recipe.
   - The ComfyUI workflow ecosystem has grown with remarkable speed. Within three years of the first commit the platform exceeded **4 million users** globally, accumulated **over 60,000 community-contributed custom nodes** indexed in [[ComfyUI Manager]], hosted **2.5 million shared workflows** across platforms including OpenArt, Civitai, and ComfyWorkflows.com, and achieved **1.8 million downloads** in 2024 alone (900,000 portable version, 500,000 manager extension users, 600,000 custom node pack downloads). In April 2026, Comfy Org, Inc.—the commercial entity around the open-source project—raised $30 million at a $500 million valuation led by Craft Ventures, with participation from Pace Capital, Chemistry, and TruArrow, firmly establishing ComfyUI workflows as enterprise-grade infrastructure rather than a hobbyist tool.
   - The technical proposition is reproducibility and composability: any workflow that runs on one GPU machine with the same model weights produces identical outputs on any other, because the full pipeline is explicit and deterministic (random seeds included in the JSON). This reproducibility is central to professional adoption—visual effects studios, advertising agencies, game development teams, and fashion brands use ComfyUI workflows to run repeatable batch pipelines rather than one-off prompt experiments.
   - ComfyUI's Python extension model enables any researcher or developer to register new node types by defining a Python class with an `INPUT_TYPES` class method (returning a dict of input names to type strings), a `RETURN_TYPES` tuple, a `FUNCTION` string naming the execution method, and an optional `CATEGORY` for UI organisation. This low-overhead extension mechanism is why the custom node ecosystem exploded: adding a new node requires 50–200 lines of Python, no build system, no compilation, and immediate availability via ComfyUI-Manager install. Community developers have contributed nodes wrapping virtually every notable generative AI development since 2023—IPAdapter, AnimateDiff, Wan video, SDXL, Flux, ControlNet variants, face restoration, depth estimation, optical flow, audio generation, 3D reconstruction, LLM inference, API integrations for cloud models—each available for installation by any user with no more than two clicks in the ComfyUI-Manager GUI.
@@ -1565,7 +1565,7 @@ public:: true
 
 	  #### AnimateDiff and Video Workflows
 
-	  [[AnimateDiff]] (AnimateDiff-Evolved custom node, Kosinkadink/ComfyUI-AnimateDiff-Evolved) adds temporal motion modules to any SD1.5 or SDXL checkpoint, generating short video clips (8–32 frames, typically 16 at 8fps = 2 seconds). The workflow inserts `AnimateDiffLoaderWithContext`, sets the context window size, and uses `AnimateDiffSamplerCustom` in place of the standard KSampler. Context options (standard, view_as_batches, uniform_looped) control the temporal attention window. AnimateDiff works with most SD1.5 LoRAs and ControlNets, enabling style-consistent animated generations. Limitation: AnimateDiff temporal modules are trained specifically for SD1.5 and do not transfer to [[SDXL]] or [[Flux.1]] architectures.
+	  [[Temporal Motion Diffusion Adapter]] (AnimateDiff-Evolved custom node, Kosinkadink/ComfyUI-AnimateDiff-Evolved) adds temporal motion modules to any SD1.5 or SDXL checkpoint, generating short video clips (8–32 frames, typically 16 at 8fps = 2 seconds). The workflow inserts `AnimateDiffLoaderWithContext`, sets the context window size, and uses `AnimateDiffSamplerCustom` in place of the standard KSampler. Context options (standard, view_as_batches, uniform_looped) control the temporal attention window. AnimateDiff works with most SD1.5 LoRAs and ControlNets, enabling style-consistent animated generations. Limitation: AnimateDiff temporal modules are trained specifically for SD1.5 and do not transfer to [[SDXL]] or [[Flux.1]] architectures.
 
 	  #### Wan2.1 Video Workflows
 
@@ -1609,7 +1609,7 @@ public:: true
 
 	  #### Video-to-Video and Style Transfer Pipelines
 
-	  Video processing workflows in ComfyUI process individual frames through an img2img pipeline and reassemble them as video output. The `VHS_VideoCombine` node (VideoHelperSuite, Kosinkadink) handles frame extraction from input video files (MP4, WebM, GIF) and recombination of processed frames into output video. [[ControlNet and Similar Spatial Conditioning Systems]] openpose conditioning applied per-frame ensures pose consistency across the transformed video. [[AnimateDiff]] temporal conditioning additionally smooths inter-frame consistency when applied to sequential batches. This video-to-video pipeline powers style transfer and artistic re-rendering of real footage—a popular workflow for creating stylised animation from live action reference. Wan2.1 I2V (image-to-video) workflows extend this by using the first extracted frame as the conditioning image, generating motion-coherent video continuations that blend the original footage style with generated dynamics.
+	  Video processing workflows in ComfyUI process individual frames through an img2img pipeline and reassemble them as video output. The `VHS_VideoCombine` node (VideoHelperSuite, Kosinkadink) handles frame extraction from input video files (MP4, WebM, GIF) and recombination of processed frames into output video. [[ControlNet and Similar Spatial Conditioning Systems]] openpose conditioning applied per-frame ensures pose consistency across the transformed video. [[Temporal Motion Diffusion Adapter]] temporal conditioning additionally smooths inter-frame consistency when applied to sequential batches. This video-to-video pipeline powers style transfer and artistic re-rendering of real footage—a popular workflow for creating stylised animation from live action reference. Wan2.1 I2V (image-to-video) workflows extend this by using the first extracted frame as the conditioning image, generating motion-coherent video continuations that blend the original footage style with generated dynamics.
 
 	  #### Node Groups, Bypass, and Mute
 
@@ -1669,7 +1669,7 @@ public:: true
 
 	  - **ComfyUI-Manager** (ltdrdata, 2023): package manager for the ecosystem; GUI-based install/update/remove; 2,000+ indexed packages
 	  - **ComfyUI_IPAdapter_plus** (cubiq): [[IP-Adapter]] nodes for image-driven style transfer; 10,000+ GitHub stars; present in 25% of workflows
-	  - **ComfyUI-AnimateDiff-Evolved** (Kosinkadink): [[AnimateDiff]] temporal motion modules for SD1.5; most-used video workflow node
+	  - **ComfyUI-AnimateDiff-Evolved** (Kosinkadink): [[Temporal Motion Diffusion Adapter]] temporal motion modules for SD1.5; most-used video workflow node
 	  - **ComfyUI-Advanced-ControlNet** (Kosinkadink): extended [[ControlNet and Similar Spatial Conditioning Systems]] support with latent keyframes, timestep ranges, and weight types
 	  - **ComfyUI-VideoHelperSuite** (Kosinkadink): video I/O utilities (load, split frames, combine); essential for all video workflows
 	  - **ComfyUI_GGUF** (comfyanonymous): GGUF quantisation loader; enables [[Flux.1]] and SD3 on consumer GPU VRAM (6–12 GB)
@@ -1681,7 +1681,7 @@ public:: true
 
 	  #### Competitive Landscape
 
-	  ComfyUI workflows compete with and complement alternative [[Stable Diffusion]] interfaces:
+	  ComfyUI workflows compete with and complement alternative [[Stable Diffusion Image Model]] interfaces:
 	  - **[[AUTOMATIC1111 WebUI]]**: simpler linear interface, large extension ecosystem, declining relative to ComfyUI among power users
 	  - **[[InvokeAI]]**: canvas-centric image editing focus, stronger built-in tools, smaller community than ComfyUI
 	  - **Fooocus**: simplified [[SDXL]] interface, no node graph, targeting beginners
@@ -1700,7 +1700,7 @@ public:: true
 
 	  **Imperial College London (Department of Computing, Dyson School of Design Engineering)**:
 	  - Research groups working on human-AI collaboration in design use ComfyUI as a testbed for studying how node-based visual programming affects creative agency and reproducibility; publication forthcoming in CHI 2026
-	  - The Institute for Security Science and Technology (ISST) uses ComfyUI workflows to generate synthetic training data for computer vision security models, maintaining [[Stable Diffusion]] pipelines on a dedicated GPU cluster (8× A100 80 GB)
+	  - The Institute for Security Science and Technology (ISST) uses ComfyUI workflows to generate synthetic training data for computer vision security models, maintaining [[Stable Diffusion Image Model]] pipelines on a dedicated GPU cluster (8× A100 80 GB)
 
 	  **University of Edinburgh (School of Informatics)**:
 	  - The ILCC (Institute for Language, Cognition and Computation) uses ComfyUI for generating synthetic datasets for vision-language model training
@@ -1746,7 +1746,7 @@ public:: true
 
 	  #### Workflow Intelligence and Auto-Construction
 
-	  Research into **automatic workflow generation** from natural language specifications—"build me a [[ControlNet and Similar Spatial Conditioning Systems]] pose workflow with [[SDXL]] and [[IP-Adapter]] face lock"—is emerging as an active area. LLM-based workflow constructors (GPT-4o, Claude 3.5 Sonnet, Claude 3 Opus) can generate valid ComfyUI JSON from natural language descriptions, but current models lack full awareness of version compatibility, VRAM constraints, and model availability. Comfy Org's 2026 roadmap includes an AI workflow assistant that suggests and auto-wires common node patterns, detects incompatible node combinations before execution, and proposes VRAM-optimised alternatives based on detected GPU hardware. This capability—LLM-mediated workflow synthesis—represents a convergence of [[AI Agent System]] orchestration with [[ComfyUI]] pipeline construction that could dramatically lower the expertise barrier for complex multi-node workflows.
+	  Research into **automatic workflow generation** from natural language specifications—"build me a [[ControlNet and Similar Spatial Conditioning Systems]] pose workflow with [[SDXL]] and [[IP-Adapter]] face lock"—is emerging as an active area. LLM-based workflow constructors (GPT-4o, Claude 3.5 Sonnet, Claude 3 Opus) can generate valid ComfyUI JSON from natural language descriptions, but current models lack full awareness of version compatibility, VRAM constraints, and model availability. Comfy Org's 2026 roadmap includes an AI workflow assistant that suggests and auto-wires common node patterns, detects incompatible node combinations before execution, and proposes VRAM-optimised alternatives based on detected GPU hardware. This capability—LLM-mediated workflow synthesis—represents a convergence of [[AI Agent System]] orchestration with [[Node-Based Diffusion Pipeline Interface]] pipeline construction that could dramatically lower the expertise barrier for complex multi-node workflows.
 
 	  #### Real-Time and Interactive Workflows
 
@@ -1754,7 +1754,7 @@ public:: true
 
 	  #### Multi-Modal and Agentic Workflows
 
-	  ComfyUI's node architecture is extending beyond image and video to **audio** (AudioCraft, MusicGen nodes from the `ComfyUI-audio` custom node), **3D** (TripoSG, Trellis, Hunyuan3D-2 nodes for mesh generation), **structured data** (LLM API nodes for prompt expansion, image captioning via Florence-2, metadata extraction), and **code** (Python execution nodes for data preprocessing within the workflow). [[AI Agent System]]-style workflows chain LLM reasoning nodes with [[Image Generation]] in feedback loops: the LLM evaluates a generated image against a specification by calling a vision model API, identifies deficiencies, and automatically adjusts KSampler denoise strength, ControlNet weight, or prompt text for the next iteration. This architecture positions [[ComfyUI]] workflows as **multi-modal agentic pipelines** capable of autonomous iterative refinement—a significant expansion beyond the original text-to-image roots. The `ComfyUI-LLaMA` and `ComfyUI-Ollama` custom nodes already implement this pattern for local LLM reasoning, while `ComfyUI-OpenAI` and `ComfyUI-Anthropic` nodes target cloud-hosted reasoning models.
+	  ComfyUI's node architecture is extending beyond image and video to **audio** (AudioCraft, MusicGen nodes from the `ComfyUI-audio` custom node), **3D** (TripoSG, Trellis, Hunyuan3D-2 nodes for mesh generation), **structured data** (LLM API nodes for prompt expansion, image captioning via Florence-2, metadata extraction), and **code** (Python execution nodes for data preprocessing within the workflow). [[AI Agent System]]-style workflows chain LLM reasoning nodes with [[Image Generation]] in feedback loops: the LLM evaluates a generated image against a specification by calling a vision model API, identifies deficiencies, and automatically adjusts KSampler denoise strength, ControlNet weight, or prompt text for the next iteration. This architecture positions [[Node-Based Diffusion Pipeline Interface]] workflows as **multi-modal agentic pipelines** capable of autonomous iterative refinement—a significant expansion beyond the original text-to-image roots. The `ComfyUI-LLaMA` and `ComfyUI-Ollama` custom nodes already implement this pattern for local LLM reasoning, while `ComfyUI-OpenAI` and `ComfyUI-Anthropic` nodes target cloud-hosted reasoning models.
 
 	  #### Cloud-Native and Serverless Scale
 
@@ -1762,7 +1762,7 @@ public:: true
 
 	  #### Standardisation and Interoperability
 
-	  ComfyUI's success has prompted discussion of **workflow portability standards**—JSON formats that could be executed across different inference backends ([[ComfyUI]], [[InvokeAI]], Diffusers, A1111). The ComfyUI workflow JSON schema is the de facto standard, but backend-specific node types (`KSampler`, `VAEDecode`) create implementation lock-in. Emerging initiatives (including informal collaboration with the Hugging Face Diffusers team and the OpenAPI generative media working group) aim to produce a backend-agnostic workflow specification by 2027, with ComfyUI serving as the reference implementation. The C2PA (Coalition for Content Provenance and Authenticity) technical committee has accepted a proposal to define provenance metadata fields for node-based generative workflows, which would allow ComfyUI workflow JSON to be embedded in C2PA manifests alongside content credentials—creating an auditable chain of custody from input assets through each processing node to the final output.
+	  ComfyUI's success has prompted discussion of **workflow portability standards**—JSON formats that could be executed across different inference backends ([[Node-Based Diffusion Pipeline Interface]], [[InvokeAI]], Diffusers, A1111). The ComfyUI workflow JSON schema is the de facto standard, but backend-specific node types (`KSampler`, `VAEDecode`) create implementation lock-in. Emerging initiatives (including informal collaboration with the Hugging Face Diffusers team and the OpenAPI generative media working group) aim to produce a backend-agnostic workflow specification by 2027, with ComfyUI serving as the reference implementation. The C2PA (Coalition for Content Provenance and Authenticity) technical committee has accepted a proposal to define provenance metadata fields for node-based generative workflows, which would allow ComfyUI workflow JSON to be embedded in C2PA manifests alongside content credentials—creating an auditable chain of custody from input assets through each processing node to the final output.
 
 	  #### Quantisation and VRAM Democratisation
 

@@ -29,7 +29,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
     ],
     "relatedTo": [

@@ -9,7 +9,7 @@
 - ### Relationships
   - **Part-of**: [[Virtual World]] (runtime copy of a template), [[Metaverse]] platform layer
   - **Requires**: [[Physics Simulation]] (isolated per-instance), [[Scene Graph]] (entity state management)
-  - **Enables**: [[Virtual Reality]] experiences, [[Spatial Computing]] multi-user scenarios
+  - **Enables**: [[Virtual Reality]] experiences, [[Spatial Computing Paradigm]] multi-user scenarios
   - **Uses**: [[Digital Twin]] patterns for state persistence and crash recovery
 
 - ### Content

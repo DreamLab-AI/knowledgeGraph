@@ -9,7 +9,7 @@
   - supports [[Compliance Framework]]
   - supports [[Data Protection Regulation]]
   - uses [[Smart Contracts]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - relatedTo [[Governance Framework]]
 
 - ### Content

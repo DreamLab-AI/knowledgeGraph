@@ -152,7 +152,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA]]",
+      "raw": "[[NVIDIA Corporation]]",
       "resolved": "urn:visionflow:owl:class:nvidia",
       "kind": "ResolvedLink"
     },
@@ -224,7 +224,7 @@ public:: true
   - usedIn:: [[Game Development]]
   - usedIn:: [[Virtual Reality]]
   - usedIn:: [[Film Production]]
-  - enabledBy:: [[NVIDIA]]
+  - enabledBy:: [[NVIDIA Corporation]]
 
 - ### Provenance
   - sources::

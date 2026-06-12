@@ -15,10 +15,10 @@
   - enables:: [[Language Model Alignment]], [[Instruction Following]], [[Safety Alignment]], [[Harmlessness Tuning]], [[Helpfulness Tuning]], [[Style Transfer Alignment]], [[Multi-Turn Dialogue Alignment]]
   - implements:: [[Bradley-Terry-Luce Choice Model]], [[KL-Constrained Reward Maximisation]], [[Implicit Reward Estimation]], [[Maximum Likelihood Estimation]]
   - depends-on:: [[Reinforcement Learning from Human Feedback]], [[Bradley-Terry Model]], [[Large Language Model]], [[Transformer Architecture]], [[Probability Theory]], [[Information Theory]]
-  - supports:: [[Open-Weight Model Alignment]], [[Constitutional AI]], [[Red-Teaming Mitigation]], [[Preference Distillation]], [[Reward Model Replacement]]
+  - supports:: [[Open-Weight Model Alignment]], [[Constitutional AI Training Methodology]], [[Red-Teaming Mitigation]], [[Preference Distillation]], [[Reward Model Replacement]]
   - uses:: [[Sigmoid Function]], [[Log-Likelihood Ratio]], [[Adam Optimiser]], [[LoRA Adaptation]], [[Mixed Precision Training]], [[Gradient Accumulation]]
   - contrasts-with:: [[PPO]], [[Supervised Fine Tuning]], [[RLAIF]], [[REINFORCE]], [[Best-of-N Sampling]]
-  - related-to:: [[KTO]], [[IPO]], [[SimPO]], [[ORPO]], [[Iterative DPO]], [[Online DPO]], [[RLHF]], [[Constitutional AI]]
+  - related-to:: [[KTO]], [[IPO]], [[SimPO]], [[ORPO]], [[Iterative DPO]], [[Online DPO]], [[RLHF]], [[Constitutional AI Training Methodology]]
   - standardized-by:: [[NeurIPS]], [[ICLR]], [[ICML]], [[Hugging Face TRL]], [[OpenRLHF]], [[Axolotl]], [[AISI Inspect Framework]]
 
 - ### Content

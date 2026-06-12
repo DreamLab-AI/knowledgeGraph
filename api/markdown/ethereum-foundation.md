@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Governance Domain]], [[Blockchain Domain]]
-  - enables:: [[Ethereum]], [[Proof of Stake]]
+  - enables:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]]
 
 - ### Content
   - The Foundation coordinates and finances work on Ethereum's reference specifications, multiple independent clients and the research programmes behind major upgrades such as the transition to proof-of-stake. It distributes grants to external teams and runs initiatives covering cryptography, scaling, formal verification and developer tooling.

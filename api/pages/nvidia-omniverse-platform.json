@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:nvidia-omniverse",
+  "title": "NVIDIA Omniverse Platform",
+  "slug": "nvidia-omniverse-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-corporation-omniverse-platform-platform",
+  "domain": "metaverse",
+  "definition": "NVIDIA Omniverse is a real-time 3D simulation and collaboration platform developed by NVIDIA, built on the OpenUSD (Universal Scene Description) standard and designed for creating physically accurate digital twins, collaborative design workflows, and large-scale simulation environments for AI training. It provides a unified compute and rendering fabric that allows multiple applications and users to work simultaneously on shared 3D scenes with physically based rendering, physics simulation, and ray-traced visualisation. Omniverse is deployed across automotive design, industrial digital twins, film and game production pipelines, and as a synthetic data generation platform for training computer vision and robotics AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-digital-twins",
+        "label": "Cross Platform Digital Twins"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

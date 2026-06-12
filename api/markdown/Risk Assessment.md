@@ -546,7 +546,7 @@ public:: true
         "label": "AI Safety"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -572,7 +572,7 @@ public:: true
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -942,12 +942,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -999,9 +999,9 @@ public:: true
 
 
 - ### Definition
-  - [[Risk Assessment]] is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader [[Risk Management]] programmes aligned to [[ISO 31000]] (2018), [[NIST AI Risk Management Framework|NIST AI RMF 1.0]] (2023), the [[NIST AI RMF Generative AI Profile]] (July 2024), and [[EU AI Act]] Article 9 conformity obligations.
+  - [[Risk Assessment]] is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader [[Risk Management]] programmes aligned to [[ISO 31000]] (2018), [[NIST AI Risk Management Framework|NIST AI RMF 1.0]] (2023), the [[NIST AI RMF Generative AI Profile]] (July 2024), and [[EU AI Act Regulatory Instrument]] Article 9 conformity obligations.
   - In AI and blockchain contexts, risk assessment integrates quantitative probability modelling with qualitative expert judgement across four canonical phases: risk identification (hazard enumeration using [[FMEA|Failure Mode and Effects Analysis]], [[Bow-Tie Analysis]], [[STPA|Systems-Theoretic Process Analysis]], and AI-specific threat taxonomies from [[MITRE ATLAS]] and [[OWASP LLM Top 10]]); risk analysis (likelihood-consequence matrices, attack-tree probabilistic quantification, [[Fault Tree Analysis]], Bayesian network propagation); risk evaluation (threshold comparison against appetite statements, residual risk calculation after controls, tolerability determination per ALARP principle); and risk treatment (mitigation controls, risk transfer, acceptance with monitoring, avoidance).
-  - For large language models and generative AI systems, risk assessment extends to model-level red-teaming (structured adversarial elicitation as practised by [[Anthropic]], [[OpenAI]], and the UK [[AI Safety Institute|AISI]]), [[Model Cards]] documentation (Mitchell et al. 2019), [[AI Incident Database]] retrospective analysis (Partnership on AI), and [[HELM|Stanford CRFM HELM]] benchmark evaluation for capability risk characterisation.
+  - For large language models and generative AI systems, risk assessment extends to model-level red-teaming (structured adversarial elicitation as practised by [[Anthropic]], [[OpenAI Research Organisation]], and the UK [[AI Safety Institute|AISI]]), [[Model Cards]] documentation (Mitchell et al. 2019), [[AI Incident Database]] retrospective analysis (Partnership on AI), and [[HELM|Stanford CRFM HELM]] benchmark evaluation for capability risk characterisation.
   - In blockchain and [[Decentralised Finance|DeFi]] systems, risk assessment must additionally cover [[Smart Contract]] vulnerability surfaces, oracle manipulation risk, liquidity cascade failures, and systemic contagion pathways catalogued in [[FSB|Financial Stability Board]] crypto-asset risk recommendations (2022–2026).
   - NIST AI RMF 1.0 structures risk assessment under four cross-cutting functions: GOVERN (establishing risk culture, policies, and accountability); MAP (contextualise AI risks, identify risk categories); MEASURE (analyse, prioritise, and track AI risks); MANAGE (treat prioritised risks, implement controls). The GenAI Profile (NIST AI 600-1, July 2024) adds 12 unique risk types specific to foundation models: confabulation, data privacy, human-AI configuration, information security, intellectual property, obscene/violent/hateful content, value chain and component integration, CBRN uplift, data poisoning, homogenisation, and harmful bias amplification.
   - EU AI Act Article 9 mandates ex-ante risk management systems for high-risk AI, requiring documented risk identification and analysis covering intended purpose, reasonably foreseeable misuse, and post-market monitoring with feedback loops to update risk assessments as capability or deployment context changes.
@@ -1020,11 +1020,11 @@ public:: true
   - enables:: [[AI Governance]], [[Regulatory Compliance]], [[Operational Resilience]], [[Model Assurance]], [[Incident Response]], [[Quality Assurance]]
   - implements:: [[ISO 31000]], [[NIST AI Risk Management Framework]], [[FMEA]], [[Bow-Tie Analysis]], [[Fault Tree Analysis]], [[OWASP LLM Top 10]], [[MITRE ATLAS]]
   - depends-on:: [[Probability Theory]], [[Information Theory]], [[Systems Engineering]], [[Behavioural Science]], [[Bayesian Inference]]
-  - supports:: [[EU AI Act]], [[AI Safety]], [[DeFi Risk]], [[Financial Stability]], [[Smart Contract Security]], [[Model Cards]]
+  - supports:: [[EU AI Act Regulatory Instrument]], [[AI Safety]], [[DeFi Risk]], [[Financial Stability]], [[Smart Contract Security]], [[Model Cards]]
   - uses:: [[Red Teaming]], [[Scenario Analysis]], [[Monte Carlo Simulation]], [[Attack Trees]], [[AI Incident Database]], [[HELM]]
   - contrasts-with:: [[Algorithmic Bias and Variance]], [[Compliance Monitoring]], [[Penetration Testing]]
   - related-to:: [[AI Risks]], [[AI Liability]], [[Bias in Large Language Models]], [[Oracle Risk]], [[Systemic Risk]], [[Operational Resilience]]
-  - standardized-by:: [[ISO 31000]], [[NIST AI Risk Management Framework]], [[EU AI Act]], [[FSB]], [[Basel III]], [[FCA PS21/3]]
+  - standardized-by:: [[ISO 31000]], [[NIST AI Risk Management Framework]], [[EU AI Act Regulatory Instrument]], [[FSB]], [[Basel III]], [[FCA PS21/3]]
 
 - ### Content
 

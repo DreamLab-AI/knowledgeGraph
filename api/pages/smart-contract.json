@@ -185,7 +185,7 @@
         "label": "Vyper"
       },
       {
-        "id": "urn:ngm:class:rust",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       },
       {
@@ -241,7 +241,7 @@
         "label": "ERC Standards"
       },
       {
-        "id": "urn:ngm:class:ethereum-foundation",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       },
       {
@@ -280,7 +280,7 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {

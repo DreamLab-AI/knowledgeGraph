@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b",
+  "title": "Multimodal AI Architecture",
+  "slug": "multimodal-ai-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-ai-architecture-ai-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities\u2014including text, images, audio, video, and 3D\u2014within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai-architecture-ai",
+      "label": "Multimodal AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "multimodal",
+      "label": "Multimodal"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ],
+  "backlinks": []
+}

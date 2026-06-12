@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]], [[AI Research Area]]
-  - hasPart:: [[Machine Learning]], [[Computer Vision]], [[Natural Language Processing]], [[Deep Learning]], [[AI Governance]]
+  - hasPart:: [[Machine Learning Discipline]], [[Computer Vision]], [[Natural Language Processing]], [[Deep Learning]], [[AI Governance]]
   - enables:: [[Autonomous Agent]], [[AI Agent System]], [[AI Applications]]
   - bridgesTo:: [[Robotics Systems]], [[Metaverse Technology]], [[Telecollaboration]]
   - relatedTo:: [[Reinforcement Learning]], [[AI Governance Framework]], [[Neural Network]]

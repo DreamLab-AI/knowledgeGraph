@@ -381,11 +381,11 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "label": "Bitstring Status List"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
@@ -411,7 +411,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "label": "EdDSA"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

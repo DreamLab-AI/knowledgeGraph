@@ -332,7 +332,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:open-ai-api",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -426,7 +426,7 @@ public:: true
         "label": "TypeScript"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -444,11 +444,11 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -496,7 +496,7 @@ public:: true
         "label": "MBPP Benchmark"
       },
       {
-        "@id": "urn:ngm:class:open-ai-api",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -504,7 +504,7 @@ public:: true
         "label": "SWE-bench Benchmark"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       }
     ]
@@ -763,7 +763,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -778,7 +778,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -808,7 +808,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Docker]]",
+      "raw": "[[Docker Containerisation Platform]]",
       "resolved": "urn:visionflow:owl:class:docker",
       "kind": "ResolvedLink"
     },
@@ -823,7 +823,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -861,12 +861,12 @@ public:: true
   - requires:: [[Large Language Models]], [[Prompt Engineering]], [[Sandbox Environment]], [[Version Control]], [[Context Window]], [[OpenAI API]]
   - enables:: [[Rapid Prototyping]], [[Full-Stack Application Generation]], [[Automated Software Scaffolding]], [[Non-Engineer Development]], [[AI-Assisted Software Engineering]]
   - implements:: [[ReAct Framework]], [[Tool Use]], [[Chain of Thought]], [[Agentic Loop]], [[Self-Debugging Code Generation]], [[Multi-File Code Generation]]
-  - depends-on:: [[Large Language Models]], [[Anthropic Claude]], [[ChatGPT]], [[Tokenisation]], [[Attention]], [[Transformer Architecture]]
+  - depends-on:: [[Large Language Models]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Neural Network Text Tokenisation]], [[Attention]], [[Transformer Architecture]]
   - supports:: [[Software Development]], [[Web Development]], [[Startup Prototyping]], [[Hackathon Development]], [[No-Code Development]], [[Open Source AI]]
-  - uses:: [[Python]], [[React]], [[GitHub]], [[Docker]], [[TypeScript]], [[Supabase]]
+  - uses:: [[Python]], [[React]], [[GitHub]], [[Docker Containerisation Platform]], [[TypeScript]], [[Supabase]]
   - contrasts-with:: [[GitHub Copilot]], [[Cursor]], [[Aider]], [[Devin]], [[Replit Agent]], [[Cline]], [[Competition in AI]]
-  - related-to:: [[Agent Frameworks]], [[AI Adoption]], [[Competition in AI]], [[Open Source AI]], [[Anthropic Claude]], [[ChatGPT]], [[Cognitive AI]]
-  - standardized-by:: [[OpenAI API]], [[Anthropic Claude]], [[SWE-bench Benchmark]], [[HumanEval]], [[MBPP Benchmark]]
+  - related-to:: [[Agent Frameworks]], [[AI Adoption]], [[Competition in AI]], [[Open Source AI]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Cognitive AI]]
+  - standardized-by:: [[OpenAI API]], [[Constitutional AI Language Model Family]], [[SWE-bench Benchmark]], [[HumanEval]], [[MBPP Benchmark]]
 
 - ### Content
 

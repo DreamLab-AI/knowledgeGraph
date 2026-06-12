@@ -365,7 +365,7 @@ alias:: Lightning-Network
         "label": "Timelock"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -481,11 +481,11 @@ alias:: Lightning-Network
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -515,7 +515,7 @@ alias:: Lightning-Network
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-as-money",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
@@ -751,7 +751,7 @@ alias:: Lightning-Network
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -866,7 +866,7 @@ alias:: Lightning-Network
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -918,7 +918,7 @@ alias:: Lightning-Network
 
 
 - ### Definition
-  - The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer. Conceptualised by Joseph Poon and Thaddeus Dryja in drafts circulated from 2015 and formalised in their 2016 white paper "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments," the protocol allows two counterparties to lock funds into a 2-of-2 multisignature on-chain output, exchange an unlimited series of signed off-chain commitment transactions updating their respective balances, and broadcast only a final settlement transaction when the channel closes. Multi-hop routing via [[Hash Time-Locked Contracts]] (HTLCs) chains these bilateral channels into a globe-spanning payment graph capable of processing millions of transactions per second at sub-cent fees, routing trustlessly through intermediary nodes without requiring pre-trust between sender and recipient. The Basis of Lightning Technology ([[BOLT Specifications]]) (BOLT 0–12) defines every layer of the interoperability stack across three major implementations: LND by Lightning Labs, Core Lightning by Blockstream, and Eclair by ACINQ. By early 2025 the public network comprised approximately 16,000 nodes, 52,700 active public channels, and 4,900+ BTC of total public capacity, processing more than 8 million monthly transactions. BOLT12 Offers — the first new BOLT since 2017, officially merged into the specification in 2024 — replaced single-use BOLT11 invoices with reusable, privacy-preserving static payment codes. Taproot Assets v0.6 (June 2025) enabled Tether USDT natively over Lightning, announced in San Salvador on 30 January 2025 by Tether CEO Paolo Ardoino and Lightning Labs CEO Elizabeth Stark, establishing Lightning as the first multi-asset Layer 2 protocol on [[Bitcoin]] mainnet capable of routing dollar-denominated [[Stable Coins]] globally at near-zero cost.
+  - The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin Proof-of-Work Protocol]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer. Conceptualised by Joseph Poon and Thaddeus Dryja in drafts circulated from 2015 and formalised in their 2016 white paper "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments," the protocol allows two counterparties to lock funds into a 2-of-2 multisignature on-chain output, exchange an unlimited series of signed off-chain commitment transactions updating their respective balances, and broadcast only a final settlement transaction when the channel closes. Multi-hop routing via [[Hash Time-Locked Contracts]] (HTLCs) chains these bilateral channels into a globe-spanning payment graph capable of processing millions of transactions per second at sub-cent fees, routing trustlessly through intermediary nodes without requiring pre-trust between sender and recipient. The Basis of Lightning Technology ([[BOLT Specifications]]) (BOLT 0–12) defines every layer of the interoperability stack across three major implementations: LND by Lightning Labs, Core Lightning by Blockstream, and Eclair by ACINQ. By early 2025 the public network comprised approximately 16,000 nodes, 52,700 active public channels, and 4,900+ BTC of total public capacity, processing more than 8 million monthly transactions. BOLT12 Offers — the first new BOLT since 2017, officially merged into the specification in 2024 — replaced single-use BOLT11 invoices with reusable, privacy-preserving static payment codes. Taproot Assets v0.6 (June 2025) enabled Tether USDT natively over Lightning, announced in San Salvador on 30 January 2025 by Tether CEO Paolo Ardoino and Lightning Labs CEO Elizabeth Stark, establishing Lightning as the first multi-asset Layer 2 protocol on [[Bitcoin Proof-of-Work Protocol]] mainnet capable of routing dollar-denominated [[Stable Coins]] globally at near-zero cost.
 
 - ### Semantic Classification
   - owl-class:: blockchain:LightningNetwork
@@ -936,7 +936,7 @@ alias:: Lightning-Network
   - depends-on:: [[Bitcoin Technical Overview]], [[Cryptography Security and Privacy]], [[Distributed Computing]], [[Hash Function]], [[Digital Signature]], [[Schnorr Signatures]]
   - supports:: [[Bitcoin As Money]], [[Bitcoin Value Proposition]], [[CBDCs]], [[Stable Coins]], [[AML KYC Compliance]], [[Micropayments]], [[Financial Infrastructure]], [[Global Inequality]]
   - uses:: [[Multisignature]], [[Timelock]], [[Schnorr Signatures]], [[Taproot Assets]], [[Onion Routing]], [[MuSig2]], [[Sphinx Protocol]]
-  - contrasts-with:: [[Ethereum]], [[Traditional Payment Systems]], [[Blockchain Network]], [[CBDC Frameworks]], [[BTC Layer 3]]
+  - contrasts-with:: [[Ethereum Smart Contract Platform]], [[Traditional Payment Systems]], [[Blockchain Network]], [[CBDC Frameworks]], [[BTC Layer 3]]
   - related-to:: [[Bitcoin Mining]], [[Bitcoin Technical Overview]], [[Cashu]], [[Cryptocurrency]], [[BTC Layer 3]], [[Blockchain Interoperability]], [[Distributed Identity]]
   - standardized-by:: [[BOLT Specifications]], [[Lightning Labs]], [[ACINQ]], [[Blockstream]], [[Spiral]]
 

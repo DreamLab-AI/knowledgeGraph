@@ -8,7 +8,7 @@
   "definition": "Learning is the process by which a system improves its performance on a task through experience or data. In artificial intelligence it refers to algorithms that adjust internal parameters or rules from observations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],

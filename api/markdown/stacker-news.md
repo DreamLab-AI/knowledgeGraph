@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Lightning Network]]
   - bridges-to:: [[community]]
-  - requires:: [[Lightning Network]], [[Bitcoin]]
+  - requires:: [[Lightning Network]], [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[community]]
 
 - ### Content

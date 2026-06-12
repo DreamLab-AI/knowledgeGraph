@@ -96,7 +96,7 @@ public:: true
         "label": "Classification Rules"
       },
       {
-        "@id": "urn:ngm:class:taxonomy-design",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy-design",
         "label": "Taxonomy Design"
       },
       {

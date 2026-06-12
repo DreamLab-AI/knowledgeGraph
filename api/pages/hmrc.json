@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:tax",
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax"
       }
     ],

@@ -85,7 +85,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
       {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"},
@@ -99,7 +99,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:edge-ai-accelerators", "label": "Edge AI Accelerators"},
-      {"@id": "urn:ngm:class:machine-learning-platform", "label": "Machine Learning Platform"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"},
       {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
     ],
     "contrastsWith": [

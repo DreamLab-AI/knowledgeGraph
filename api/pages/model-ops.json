@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -60,7 +60,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       },
       {
@@ -78,7 +78,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

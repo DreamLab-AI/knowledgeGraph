@@ -3,7 +3,7 @@
   "title": "Bitcoin Network",
   "slug": "bitcoin-network",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-network",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
   "domain": "blockchain",
   "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising nodes, miners, and the communication protocol that propagates transactions and blocks. It operates without a central authority, using the Nakamoto consensus mechanism\u2014proof-of-work\u2014to achieve agreement on a shared transaction ledger. The network enforces monetary policy through its protocol rules, capping total supply and adjusting mining difficulty automatically. It has operated continuously since January 2009, making it the longest-running blockchain network.",
   "subClassOf": [
@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
@@ -64,7 +64,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {

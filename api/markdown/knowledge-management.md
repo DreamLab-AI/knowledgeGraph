@@ -9,7 +9,7 @@
   - uses [[Knowledge Graph]]
   - uses [[Knowledge Representation]]
   - enables [[Retrieval-Augmented Generation]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - relatedTo [[Ontology]]
 
 - ### Content

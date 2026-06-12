@@ -3,7 +3,7 @@
   "title": "Semantic Web Standards",
   "slug": "semantic-web-standards",
   "public": true,
-  "classIri": "urn:ngm:class:semantic-web-standards",
+  "classIri": "urn:ngm:class:semantic-web-linked-data-standard-standards",
   "domain": "spatial-computing",
   "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
   "subClassOf": [

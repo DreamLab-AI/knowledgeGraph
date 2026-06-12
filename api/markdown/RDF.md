@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
@@ -64,7 +64,7 @@ public:: true
 
 - ### Relationships
   - implements [[Web Standard]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - enables [[Linked Data]]
   - enables [[Knowledge Graph]]
   - relatedTo [[SPARQL]]

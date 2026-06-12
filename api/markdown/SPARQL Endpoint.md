@@ -65,7 +65,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
@@ -74,7 +74,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
       {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
       {"@id": "urn:ngm:class:sparql-examples", "label": "SPARQL EXAMPLES"}

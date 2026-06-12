@@ -376,7 +376,7 @@ public:: true
         "label": "Digital Society Surveillance"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -496,7 +496,7 @@ public:: true
         "label": "Cross Border Compliance"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -630,7 +630,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -650,7 +650,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -725,7 +725,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -735,7 +735,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -841,13 +841,13 @@ public:: true
   - has-part:: [[Content Moderation]], [[CSAM Detection]], [[Platform Integrity]], [[Policy Enforcement]], [[Hash Matching]], [[Human Review Pipeline]], [[Classifier Model]], [[Incident Response]]
   - requires:: [[AI Risks]], [[Bias in Large Language Models]], [[Data Protection]], [[Privacy Preserving Blockchain]], [[Cryptography Security and Privacy]]
   - enables:: [[Digital Identity Wallet]], [[Agentic Internet]], [[Access Control System]], [[Reputation System]], [[Compliance Monitoring]]
-  - implements:: [[EU AI Act]], [[Digital Society Surveillance]], [[Non-Repudiation]], [[Identity Verification]], [[Risk Assessment]]
-  - depends-on:: [[Foundation Models]], [[Transformers]], [[Evaluation benchmarks and leaderboards]], [[Anthropic Claude]], [[ChatGPT]]
+  - implements:: [[EU AI Act Regulatory Instrument]], [[Digital Society Surveillance]], [[Non-Repudiation]], [[Identity Verification]], [[Risk Assessment]]
+  - depends-on:: [[Large-Scale Pretrained Foundation Model]], [[Transformers]], [[Evaluation benchmarks and leaderboards]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]]
   - supports:: [[AI Adoption]], [[AI Liability]], [[AI Risks]], [[Competition in AI]], [[Global Inequality]]
   - uses:: [[large language models]], [[Deepfakes and fraudulent content]], [[Distributed Identity]], [[Self Sovereign Identity]], [[Knowledge Graphing]]
   - contrasts-with:: [[Decentralised Web]], [[Digital Society Surveillance]], [[Jailbreaking]], [[Death of the Internet]]
   - related-to:: [[AI Scrapers]], [[Jailbreaking]], [[Safety and alignment]], [[Bias in Large Language Models]], [[Deepfakes and fraudulent content]], [[Digital Society Harms]], [[Meta Platforms]], [[California AI bill]], [[AML KYC Compliance]], [[Consumer Protection]]
-  - standardized-by:: [[EU AI Act]], [[Asia Pacific Regulation]], [[California AI bill]], [[Consumer Protection]], [[Cross Border Compliance]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Asia Pacific Regulation]], [[California AI bill]], [[Consumer Protection]], [[Cross Border Compliance]]
 
 - ### Content
 

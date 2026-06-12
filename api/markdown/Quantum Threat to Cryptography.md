@@ -42,7 +42,7 @@ public:: true
         "label": "Post-Quantum Cryptography"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],

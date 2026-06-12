@@ -91,8 +91,8 @@ public:: true
       {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},

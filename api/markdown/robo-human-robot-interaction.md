@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
       {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
       {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},

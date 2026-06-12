@@ -90,7 +90,7 @@ public:: true
         "label": "Governance Process"
       },
       {
-        "@id": "urn:ngm:class:taxonomy-development",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy-development",
         "label": "Taxonomy Development"
       },
       {

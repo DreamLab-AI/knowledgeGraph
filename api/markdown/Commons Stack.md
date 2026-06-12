@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:public-goods-funding",
+      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
       "label": "Public Goods Funding"
     }
   ],

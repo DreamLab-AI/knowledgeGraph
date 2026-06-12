@@ -51,7 +51,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-smart-contracts",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
   "@type": "Class",
   "label": "Ethereum Smart Contracts",
   "definition": "Programs deployed to the Ethereum blockchain that execute deterministically on the Ethereum Virtual Machine and maintain state enforced by network consensus.",
@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -116,7 +116,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -146,7 +146,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Ethereum Virtual Machine]], [[Solidity]]
   - enables:: [[ERC-20]]
 

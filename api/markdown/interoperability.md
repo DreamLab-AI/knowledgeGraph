@@ -11,7 +11,7 @@
   - requires [[Interoperability Standard]]
   - enables [[Cross-Platform Interoperability]]
   - enables [[Blockchain Interoperability]]
-  - relatedTo [[Semantic Web]]
+  - relatedTo [[Semantic Web Linked Data Standard]]
   - relatedTo [[Data Standards]]
 
 - ### Content
@@ -228,7 +228,7 @@
   - Academic foundations trace back to information systems theory, data semantics, and systems engineering, emphasising layered interoperability models (technical, syntactic, semantic, organisational).
   - Key developments include formalising interoperability frameworks and standards that enable cross-domain data exchange, especially in complex sectors like healthcare, defence, and blockchain ecosystems.
   - Blockchain interoperability research focuses on cross-chain communication protocols, [[atomic swaps]], [[hash time-locked contracts]] (HTLCs), and trustless bridge architectures.
-  - Academic work on [[Bitcoin]] interoperability examines [[Lightning Network]] payment channels, [[Liquid Network]] federated sidechains, and [[RGB Protocol]] client-side validation.
+  - Academic work on [[Bitcoin Proof-of-Work Protocol]] interoperability examines [[Lightning Network]] payment channels, [[Liquid Network]] federated sidechains, and [[RGB Protocol]] client-side validation.
 
   ## Current Landscape (2025)
 
@@ -266,20 +266,20 @@
   - Powers [[Stargate Finance]] (unified liquidity pools), [[Aptos Bridge]], [[Bitcoin.com]] wallet integrations.
   - $6B+ in cross-chain volume (Q1 2025), supporting [[EVM]] chains, [[Solana]], [[Aptos]], [[Sui]].
   - **[[Wormhole]]**: Guardian network with 19 validators securing cross-chain messages
-  - Connects [[Ethereum]], [[Solana]], [[BNB Chain]], [[Avalanche]], [[Polygon]], [[Arbitrum]], [[Optimism]].
+  - Connects [[Ethereum Smart Contract Platform]], [[Solana]], [[BNB Chain]], [[Avalanche]], [[Polygon]], [[Arbitrum]], [[Optimism]].
   - Suffered $325M exploit (Feb 2022) but recovered through [[Jump Crypto]] bailout and security upgrades.
   - Powers [[Portal Bridge]], [[Wormhole Connect]] SDK, and NFT cross-chain transfers.
   - **[[Axelar]]**: Decentralized gateway protocol with proof-of-stake validator set
   - General Message Passing (GMP) enables cross-chain smart contract calls.
-  - Integrates with 55+ chains including [[Cosmos]], [[Avalanche]], [[Ethereum]], [[Polkadot]].
+  - Integrates with 55+ chains including [[Cosmos]], [[Avalanche]], [[Ethereum Smart Contract Platform]], [[Polkadot]].
   - Used by [[Squid Router]] for cross-chain swaps and [[Satellite]] bridge interface.
   - **[[Stargate Finance]]**: Unified liquidity protocol built on LayerZero
   - Delta Algorithm ensures instant guaranteed finality for cross-chain swaps.
-  - $400M+ TVL across [[Ethereum]], [[Arbitrum]], [[Optimism]], [[Polygon]], [[BNB Chain]] (2025).
+  - $400M+ TVL across [[Ethereum Smart Contract Platform]], [[Arbitrum]], [[Optimism]], [[Polygon]], [[BNB Chain]] (2025).
   - Native asset transfers (no wrapped tokens) with single-transaction UX.
   - **[[Hop Protocol]]**: Optimistic rollup bridge specializing in [[Layer 2]] transfers
   - Automated Market Maker (AMM) model with liquidity providers earning fees.
-  - Connects [[Ethereum]] mainnet with [[Arbitrum]], [[Optimism]], [[Polygon]], [[Base]], [[Linea]].
+  - Connects [[Ethereum Smart Contract Platform]] mainnet with [[Arbitrum]], [[Optimism]], [[Polygon]], [[Base]], [[Linea]].
   - Bonders provide upfront liquidity for fast transfers, later settled on L1.
 
   ### Blockchain Interoperability Standards
@@ -299,7 +299,7 @@
   ## Bitcoin Interoperability Ecosystem
 
   ### Wrapped Bitcoin Solutions
-  - **[[Wrapped Bitcoin]] ([[WBTC]])**: Largest BTC representation on [[Ethereum]]
+  - **[[Wrapped Bitcoin]] ([[WBTC]])**: Largest BTC representation on [[Ethereum Smart Contract Platform]]
   - $9.8B market cap (Jan 2025), minted 1:1 with BTC held by [[BitGo]] custodian.
   - 50+ merchant signers (e.g., [[Kyber Network]], [[Ren]], [[Loopring]]) participate in governance.
   - [[ERC-20]] standard enables DeFi integration with [[Aave]], [[Compound]], [[Uniswap]], [[Curve Finance]].
@@ -307,12 +307,12 @@
   - **[[tBTC]]**: Decentralized Bitcoin bridge by [[Threshold Network]]
   - Replaces centralized custody with threshold ECDSA signatures (t-of-n multisig).
   - $140M TVL (2025), requires 51% of randomly selected signers for redemptions.
-  - [[Ethereum]] and [[Polygon]] deployments with [[Base]] expansion planned.
+  - [[Ethereum Smart Contract Platform]] and [[Polygon]] deployments with [[Base]] expansion planned.
   - **[[renBTC]]**: Algorithmic cross-chain BTC (deprecated 2025)
   - Previously used [[RenVM]] darknodes for decentralized custody.
   - Shut down after [[Alameda Research]] collapse eliminated development funding.
   - Users migrated to [[WBTC]], [[tBTC]], or native Bitcoin L2 solutions.
-  - **[[Coinbase]] Wrapped BTC (cbBTC)**: Centralized exchange-backed BTC on [[Ethereum]] and [[Base]]
+  - **[[Coinbase]] Wrapped BTC (cbBTC)**: Centralized exchange-backed BTC on [[Ethereum Smart Contract Platform]] and [[Base]]
   - 1:1 reserves with [[Coinbase]] custody, real-time proof-of-reserves via Chainlink.
   - $1.2B minted (2025), targeting institutional DeFi users with regulatory clarity.
 
@@ -323,7 +323,7 @@
   - Cross-chain swaps via submarine swaps (on-chain BTC ↔ Lightning BTC).
   - Integrations: [[Strike]] (USD↔BTC Lightning), [[Cash App]], [[Wallet of Satoshi]].
   - **Lightning-EVM Bridges**: Emerging protocols connecting Lightning to smart contract platforms
-  - [[Portal]] (formerly Sparkswap): Lightning to [[Ethereum]] atomic swaps.
+  - [[Portal]] (formerly Sparkswap): Lightning to [[Ethereum Smart Contract Platform]] atomic swaps.
   - [[RGB]] protocol enables Lightning-based smart contracts with client-side validation.
   - Potential for Lightning-powered DeFi without blockchain congestion.
 
@@ -363,7 +363,7 @@
   - Exploited centralized multisig with insufficient key diversity.
   - Recovery: [[Sky Mavis]] raised $150M, [[Binance]] froze stolen funds.
   - **[[Wormhole]]**: $325M stolen (February 2022)
-  - Attacker exploited signature verification bug to mint 120,000 ETH on [[Ethereum]].
+  - Attacker exploited signature verification bug to mint 120,000 ETH on [[Ethereum Smart Contract Platform]].
   - [[Jump Crypto]] (parent of Jump Trading) provided $325M bailout.
   - Post-mortem: Added 19-guardian network, mandatory security audits.
   - **[[Poly Network]]**: $611M stolen, $610M returned (August 2021)
@@ -393,7 +393,7 @@
   - No single point of failure, threshold signatures require t-of-n consensus.
   - Vulnerabilities: Validator collusion, Sybil attacks on decentralized signer sets.
   - **Light Client Verification**: On-chain verification of source chain state
-  - Examples: [[Rainbow Bridge]] ([[Near]] ↔ [[Ethereum]]), [[Cosmos IBC]].
+  - Examples: [[Rainbow Bridge]] ([[Near]] ↔ [[Ethereum Smart Contract Platform]]), [[Cosmos IBC]].
   - Trustless but expensive (requires submitting block headers on-chain).
   - Best for chains with fast finality and affordable verification costs.
 
@@ -406,7 +406,7 @@
   ## Token Standards & Cross-Chain Interoperability
 
   ### Multi-Chain Token Standards
-  - **[[ERC-20]]** ([[Ethereum]]): Fungible token standard, basis for most DeFi tokens
+  - **[[ERC-20]]** ([[Ethereum Smart Contract Platform]]): Fungible token standard, basis for most DeFi tokens
   - 500,000+ deployed contracts, $150B+ market cap across all ERC-20 tokens.
   - Cross-chain versions: [[BEP-20]] ([[BNB Chain]]), [[SPL Token]] ([[Solana]]), [[FA]] (Aptos).
   - Bridge compatibility requires lock-and-mint or burn-and-release mechanisms.
@@ -414,21 +414,21 @@
   - Cross-chain NFT bridges: [[Wormhole]] NFT Bridge, [[LayerZero]] Omnichain NFT.
   - Challenges: Metadata storage, royalty enforcement, provenance tracking across chains.
   - **[[BEP-20]]** ([[BNB Chain]]): Binance Smart Chain token standard
-  - Compatible with ERC-20 ABI, simplifies [[Ethereum]] ↔ [[BNB Chain]] bridges.
+  - Compatible with ERC-20 ABI, simplifies [[Ethereum Smart Contract Platform]] ↔ [[BNB Chain]] bridges.
   - Powers [[PancakeSwap]], [[Venus Protocol]], [[Binance]]-backed DeFi ecosystem.
   - **[[SPL Token]]** ([[Solana]]): Solana Program Library token standard
   - Sub-second finality, $0.00025 transaction costs enable high-frequency use cases.
-  - [[Wormhole]] bridges connect to [[Ethereum]], [[BNB Chain]], [[Polygon]] ecosystems.
+  - [[Wormhole]] bridges connect to [[Ethereum Smart Contract Platform]], [[BNB Chain]], [[Polygon]] ecosystems.
 
   ### Cross-Chain Token Representations
-  - **Canonical Tokens**: Original asset on native chain (e.g., ETH on [[Ethereum]])
+  - **Canonical Tokens**: Original asset on native chain (e.g., ETH on [[Ethereum Smart Contract Platform]])
   - Highest liquidity, no bridge risk, but limited to single-chain DeFi.
   - **Wrapped Tokens**: 1:1 backed representations on foreign chains (e.g., [[WBTC]], [[WETH]])
   - Enable cross-chain liquidity but introduce custodian/bridge risk.
   - Market fragmentation: Multiple wrapped versions (e.g., renBTC, tBTC, WBTC) split liquidity.
   - **Synthetic Tokens**: Collateral-backed derivatives tracking asset price (e.g., [[Synthetix]] sBTC)
   - No bridge required, but require over-collateralization and oracle dependencies.
-  - Used for [[Bitcoin]] exposure in DeFi without BTC custody.
+  - Used for [[Bitcoin Proof-of-Work Protocol]] exposure in DeFi without BTC custody.
 
   ## Atomic Swaps & Cross-Chain DEXs
 
@@ -459,10 +459,10 @@
   ## 2025 Multi-Chain Ecosystem & Wallets
 
   ### Multi-Chain Wallet Infrastructure
-  - **[[MetaMask]]**: 100M+ users, supports [[Ethereum]] and 1,000+ EVM chains
+  - **[[MetaMask]]**: 100M+ users, supports [[Ethereum Smart Contract Platform]] and 1,000+ EVM chains
   - [[MetaMask Snaps]] enable Bitcoin, Solana, Cosmos integrations via plugins.
   - Built-in bridge aggregator via [[MetaMask Portfolio]] (powered by [[LI.FI]]).
-  - **[[Phantom]]**: Leading [[Solana]] wallet expanding to [[Ethereum]], [[Polygon]], [[Bitcoin]]
+  - **[[Phantom]]**: Leading [[Solana]] wallet expanding to [[Ethereum Smart Contract Platform]], [[Polygon]], [[Bitcoin Proof-of-Work Protocol]]
   - 7M+ active users, supports SPL, ERC-20, native BTC (via Taproot addresses).
   - In-wallet swaps via [[Jupiter Aggregator]] and cross-chain bridges.
   - **[[Rabby Wallet]]**: Multi-chain DeFi wallet with automatic chain switching
@@ -477,7 +477,7 @@
   - Enables gasless transactions, social recovery, session keys.
   - Cross-chain account abstraction via [[Biconomy]], [[Alchemy]], [[ZeroDev]].
   - **[[Particle Network]]**: Universal accounts across all chains
-  - Single address controls assets on [[Ethereum]], [[Polygon]], [[BNB Chain]], [[Arbitrum]].
+  - Single address controls assets on [[Ethereum Smart Contract Platform]], [[Polygon]], [[BNB Chain]], [[Arbitrum]].
   - Chain abstraction hides blockchain complexity from users.
   - **[[Near]] Chain Signatures**: MPC network enabling Near accounts to control BTC, ETH, DOT
   - Decentralized signer network generates signatures for any ECDSA/EdDSA chain.

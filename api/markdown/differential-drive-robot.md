@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Robotics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Wheeled Robot]], [[Nonholonomic Robot]]
   - has-part:: [[Left Drive Motor]], [[Right Drive Motor]], [[Wheel]], [[Caster Wheel]], [[Differential Drive Controller]]
   - requires:: [[Independent Wheel Motors]], [[Odometry Sensors]], [[Motor Drivers]], [[Power Battery]]

@@ -27,7 +27,7 @@ alias:: MathematicalFoundations
   "subClassOf": [{"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"}],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
@@ -35,7 +35,7 @@ alias:: MathematicalFoundations
     "relatedTo": [
       {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
       {"@id": "urn:ngm:class:mathematical-hard-problems", "label": "Mathematical Hard Problems"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
@@ -47,10 +47,10 @@ alias:: MathematicalFoundations
 ```
 
 - ### Definition
-  - [[Mathematical Foundations]] encompasses the axiomatic disciplines — linear algebra, calculus, probability, discrete mathematics, and number theory — that provide the rigorous formal substrate on which [[Machine Learning]], [[Cryptography]], and [[Optimization Algorithm]] systems are constructed.
+  - [[Mathematical Foundations]] encompasses the axiomatic disciplines — linear algebra, calculus, probability, discrete mathematics, and number theory — that provide the rigorous formal substrate on which [[Machine Learning Discipline]], [[Cryptography]], and [[Optimization Algorithm]] systems are constructed.
 
 - ### Relationships
-  - [[Mathematical Foundations]] directly enables [[Cryptography]] through number theory and group theory, and underpins [[Machine Learning]] via linear algebra and probability. [[Gradient Descent]] and [[Optimization Algorithm]] design rely on multivariate calculus and convex analysis. [[Formal Verification]] borrows from logic and set theory, while [[Quantum Computing]] extends classical [[Mathematical Reasoning]] into Hilbert spaces and complex linear algebra. [[Mathematical Hard Problems]] — such as integer factorisation and discrete logarithms — arise from number-theoretic foundations and are central to modern security guarantees.
+  - [[Mathematical Foundations]] directly enables [[Cryptography]] through number theory and group theory, and underpins [[Machine Learning Discipline]] via linear algebra and probability. [[Gradient Descent]] and [[Optimization Algorithm]] design rely on multivariate calculus and convex analysis. [[Formal Verification]] borrows from logic and set theory, while [[Quantum Computation Paradigm]] extends classical [[Mathematical Reasoning]] into Hilbert spaces and complex linear algebra. [[Mathematical Hard Problems]] — such as integer factorisation and discrete logarithms — arise from number-theoretic foundations and are central to modern security guarantees.
 
 - ### Content
   - Mathematical foundations as a unified concept emerged from the late 19th and early 20th century drive to place all of mathematics on rigorous axiomatic ground, driven by figures such as Hilbert, Cantor, Frege, and later Gödel. The crisis prompted by Gödel's incompleteness theorems clarified the limits of formal systems while simultaneously sharpening the tools available. During the mid-20th century the development of digital computing made it urgently practical to understand algorithms in terms of discrete structures, complexity theory, and formal languages, cementing the bond between pure mathematics and computer science.

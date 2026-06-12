@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:f338e7b728ce87f1103a67cc5975907d53adacb52bf062da2503ba27ad8a3291",
+  "title": "Mixture-of-Experts Architecture",
+  "slug": "mixture-of-experts-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:mixture-of-experts-architecture-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
+    }
+  ],
+  "backlinks": []
+}

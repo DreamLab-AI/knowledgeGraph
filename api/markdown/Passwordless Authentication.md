@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"}
     ],
     "relatedTo": [

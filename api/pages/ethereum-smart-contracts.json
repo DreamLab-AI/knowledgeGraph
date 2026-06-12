@@ -3,7 +3,7 @@
   "title": "Ethereum Smart Contracts",
   "slug": "ethereum-smart-contracts",
   "public": true,
-  "classIri": "urn:ngm:class:ethereum-smart-contracts",
+  "classIri": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
   "domain": "blockchain",
   "definition": "Programs deployed to the Ethereum blockchain that execute deterministically on the Ethereum Virtual Machine and maintain state enforced by network consensus.",
   "subClassOf": [
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {

@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Spatial Computing Domain]]
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - requires:: [[Web Standard]], [[Graphics API]]
   - enables:: [[Virtual Reality]], [[Augmented Reality]]
 

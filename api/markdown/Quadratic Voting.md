@@ -467,7 +467,7 @@ public:: true
       "label": "BC Governance And Regulation"
     },
     {
-      "@id": "urn:ngm:class:public-goods-funding",
+      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
       "label": "Public Goods Funding"
     }
   ],
@@ -566,7 +566,7 @@ public:: true
         "label": "Preference Intensity Revelation"
       },
       {
-        "@id": "urn:ngm:class:public-goods-funding",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -626,7 +626,7 @@ public:: true
         "label": "Commit-Reveal Scheme"
       },
       {
-        "@id": "urn:ngm:class:ethereum-mainnet",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-mainnet",
         "label": "Ethereum Mainnet"
       },
       {
@@ -676,7 +676,7 @@ public:: true
         "label": "Optimism"
       },
       {
-        "@id": "urn:ngm:class:public-goods",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods",
         "label": "Public Goods"
       },
       {
@@ -724,7 +724,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-research-forum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-research-forum",
         "label": "Ethereum Research Forum"
       },
       {

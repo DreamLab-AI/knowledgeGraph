@@ -24,7 +24,7 @@ alias:: SelfSupervisedLearning
   "definition": "Self-Supervised Learning (SSL) is a machine learning paradigm in which a model learns rich representations of data by solving pretext tasks whose supervisory signal is derived automatically from the input data itself, requiring no human-provided labels. The model learns to predict masked or hidden portions of an input, to match different views of the same data, or to distinguish positive from negative data pairs, developing features that transfer effectively to downstream supervised tasks with limited labelled data. Self-supervised learning has become the dominant pre-training strategy for large language models, visual foundation models, and multimodal systems, enabling training at scales that would be infeasible with manually annotated datasets.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
@@ -36,7 +36,7 @@ alias:: SelfSupervisedLearning
       {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
+      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
       {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
     ],
     "supports": [
@@ -48,10 +48,10 @@ alias:: SelfSupervisedLearning
 ```
 
 - ### Definition
-  - Self-Supervised Learning is a [[Machine Learning Technique]] that generates supervisory signal directly from unlabelled data through pretext tasks, enabling [[Transformer Architecture]] models to learn transferable representations at scale without human annotation, forming the foundation of modern [[Foundation Models]].
+  - Self-Supervised Learning is a [[Machine Learning Technique]] that generates supervisory signal directly from unlabelled data through pretext tasks, enabling [[Transformer Architecture]] models to learn transferable representations at scale without human annotation, forming the foundation of modern [[Large-Scale Pretrained Foundation Model]].
 
 - ### Relationships
-  - Self-Supervised Learning is closely related to [[Unsupervised Learning]] (from which it evolved) and [[Semi-Supervised Learning]] (with which it is often combined for fine-tuning). [[Contrastive Learning]] is a major sub-family of self-supervised methods, learning representations by attracting embeddings of similar views whilst repelling dissimilar ones. The paradigm is implemented predominantly using [[Transformer Architecture]] models that process masked or augmented inputs. [[Pretrained Model]] artefacts resulting from self-supervised pre-training underpin the [[Foundation Models]] paradigm and are subsequently adapted via [[Parameter-Efficient Fine-Tuning]] to specific tasks. The entire modern [[Deep Learning]] ecosystem for language, vision, and multimodal understanding is built on self-supervised pre-training as the primary learning strategy.
+  - Self-Supervised Learning is closely related to [[Unsupervised Learning]] (from which it evolved) and [[Semi-Supervised Learning]] (with which it is often combined for fine-tuning). [[Contrastive Learning]] is a major sub-family of self-supervised methods, learning representations by attracting embeddings of similar views whilst repelling dissimilar ones. The paradigm is implemented predominantly using [[Transformer Architecture]] models that process masked or augmented inputs. [[Pretrained Model]] artefacts resulting from self-supervised pre-training underpin the [[Large-Scale Pretrained Foundation Model]] paradigm and are subsequently adapted via [[Parameter-Efficient Fine-Tuning]] to specific tasks. The entire modern [[Deep Learning]] ecosystem for language, vision, and multimodal understanding is built on self-supervised pre-training as the primary learning strategy.
 
 - ### Content
   - The conceptual roots of self-supervised learning lie in the observation that raw, unlabelled data already contains rich structural information that a model can learn to predict. Early applications included word2vec (2013), which trained word embeddings by predicting context words from a target word or vice versa. However, the term "self-supervised learning" was popularised by Yann LeCun around 2018 as he advocated for it as the path toward human-level AI, arguing that humans and animals learn primarily through self-supervised interaction with the world rather than labelled instruction.

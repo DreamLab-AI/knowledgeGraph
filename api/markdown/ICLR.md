@@ -23,7 +23,7 @@ public:: true
   "definition": "The International Conference on Learning Representations (ICLR) is a premier academic venue focused on deep learning and representation learning research, established in 2013 by Yoshua Bengio and Yann LeCun. It is distinctive for its fully open, internet-based peer-review process on the OpenReview platform, where submitted papers, reviews, and author rebuttals are visible to the public. ICLR has become one of the most competitive and influential conferences in the AI research community, publishing foundational work on neural network architectures, training methods, and generalisation theory.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:icml", "label": "ICML"},
@@ -53,7 +53,7 @@ public:: true
   - ICLR (International Conference on Learning Representations) is a top-tier machine learning conference noted for its open peer-review system and its focus on foundational research in deep learning, representation learning, and related theoretical topics.
 
 - ### Relationships
-  - ICLR sits within the [[Machine Learning]] research landscape alongside [[ICML]] and [[CVPR]] as one of the three most selective AI venues. Papers accepted at ICLR have introduced landmark [[Transformer]] architectures, [[Attention Mechanism]] variants, [[Transfer Learning]] methods, and [[Generative Model]] frameworks. The conference's open-review format on OpenReview.net has been influential in promoting [[Open-Source AI]] norms. [[Deep Learning]], [[Reinforcement Learning]], and [[Neural Network]] architecture research all feature prominently in the programme. [[AI Safety Research]] has grown as a track since the late 2010s.
+  - ICLR sits within the [[Machine Learning Discipline]] research landscape alongside [[ICML]] and [[CVPR]] as one of the three most selective AI venues. Papers accepted at ICLR have introduced landmark [[Transformer]] architectures, [[Attention Mechanism]] variants, [[Transfer Learning]] methods, and [[Generative Model]] frameworks. The conference's open-review format on OpenReview.net has been influential in promoting [[Open-Source AI]] norms. [[Deep Learning]], [[Reinforcement Learning]], and [[Neural Network]] architecture research all feature prominently in the programme. [[AI Safety Research]] has grown as a track since the late 2010s.
 
 - ### Content
   - ICLR was founded in 2013 by Yoshua Bengio and Yann LeCun with the explicit goal of creating a dedicated venue for representation learning — the study of how machines can automatically discover useful internal representations of raw data. Prior to ICLR, deep learning papers were scattered across NIPS (now NeurIPS), ICML, and domain-specific venues without a single focused home.

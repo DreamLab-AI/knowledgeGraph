@@ -23,7 +23,7 @@
   - enables:: [[AI Data Centres]], [[Bitcoin Mining]], [[Hyperscaler Operations]], [[Net Zero Targets]], [[Electrification]], [[Digital Economy]], [[AI Adoption]], [[Competition in AI]]
   - implements:: [[Power Purchase Agreements]], [[Capacity Markets]], [[Renewable Energy Certificates]], [[Carbon Offsetting]], [[Demand Response]], [[Behind-the-Meter Generation]], [[Small Modular Reactors]]
   - depends-on:: [[Carbon Neutral Blockchain]], [[Circular Economy]], [[Climate Policy]], [[Energy Storage]], [[Transmission Infrastructure]], [[Regulatory Framework]]
-  - supports:: [[Artificial Intelligence]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Agent Frameworks]], [[Agentic Internet]], [[ChatGPT]], [[Anthropic Claude]]
+  - supports:: [[Artificial Intelligence]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Agent Frameworks]], [[Agentic Internet]], [[Instruction-Following Conversational AI System]], [[Constitutional AI Language Model Family]]
   - uses:: [[Small Modular Reactors]], [[Offshore Wind]], [[Solar PV]], [[Pumped Hydro Storage]], [[Battery Energy Storage]], [[Green Hydrogen]], [[Nuclear Energy]]
   - contrasts-with:: [[Carbon Footprint Measurement]], [[Bitcoin Environmental Issues]], [[AI Risks]], [[Carbon Credit Tracking]]
   - related-to:: [[Data Centre]], [[Cloud Computing]], [[Bitcoin Mining]], [[Blockchain Network]], [[Carbon Credit Tracking]], [[AI Adoption]], [[Competition in AI]], [[Cognitive AI]], [[Brain Computer Interfaces]]

@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:inference", "label": "Inference"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
       {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},
       {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
       {"@id": "urn:ngm:class:optimization-technique", "label": "Optimization Technique"}

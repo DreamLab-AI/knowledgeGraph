@@ -165,7 +165,7 @@
         "label": "Wav2Lip"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -209,7 +209,7 @@
         "label": "China Deep Synthesis Provisions"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-article-50",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {

@@ -279,7 +279,7 @@
 
   - ### Future Directions (2026-2030)
 
-    **Spatial Computing Pairing**: [[Apple Vision Pro]] (2024) and successor [[Spatial Computing]] platforms introduce the possibility of pairing in a shared virtual space where both developers see the same virtual workspace overlaid on their physical environments. Early explorations (Oculus Horizon Workrooms-style collaborative coding) suggest that spatial presence may recover some co-location benefits—shared peripheral vision, natural gaze-based attention direction—that purely screen-based remote pairing lacks. By 2028-2030, spatial pair programming may become feasible for teams with access to mature XR headsets.
+    **Spatial Computing Pairing**: [[Apple Vision Pro]] (2024) and successor [[Spatial Computing Paradigm]] platforms introduce the possibility of pairing in a shared virtual space where both developers see the same virtual workspace overlaid on their physical environments. Early explorations (Oculus Horizon Workrooms-style collaborative coding) suggest that spatial presence may recover some co-location benefits—shared peripheral vision, natural gaze-based attention direction—that purely screen-based remote pairing lacks. By 2028-2030, spatial pair programming may become feasible for teams with access to mature XR headsets.
 
     **AI-Mediated Async Pairing**: LLM agents capable of acting as asynchronous navigators—reviewing committed code, generating architectural observations, and posting Socratic questions as pull request comments—may partially bridge the synchrony requirement for teams that cannot pair in real time. This would represent a hybrid between [[Code Review]] and pair programming, with AI maintaining continuity between human participants in different time zones.
 

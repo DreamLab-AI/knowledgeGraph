@@ -75,7 +75,7 @@ alias:: AI, AI Domain, ArtificialIntelligenceDomain
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
@@ -167,7 +167,7 @@ alias:: AI, AI Domain, ArtificialIntelligenceDomain
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]], [[AI Research Area]]
-  - hasPart:: [[Machine Learning]], [[Computer Vision]], [[Natural Language Processing]], [[Deep Learning]], [[AI Governance]]
+  - hasPart:: [[Machine Learning Discipline]], [[Computer Vision]], [[Natural Language Processing]], [[Deep Learning]], [[AI Governance]]
   - enables:: [[Autonomous Agent]], [[AI Agent System]], [[AI Applications]]
   - bridgesTo:: [[Robotics Systems]], [[Metaverse Technology]], [[Telecollaboration]]
   - relatedTo:: [[Reinforcement Learning]], [[AI Governance Framework]], [[Neural Network]]

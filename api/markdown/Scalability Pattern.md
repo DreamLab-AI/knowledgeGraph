@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
       {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"}
     ]
   },

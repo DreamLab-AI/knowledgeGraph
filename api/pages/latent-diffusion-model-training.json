@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:stable-diffusion-training",
+  "title": "Latent Diffusion Model Training",
+  "slug": "latent-diffusion-model-training",
+  "public": true,
+  "classIri": "urn:ngm:class:latent-diffusion-model-training",
+  "domain": "ai",
+  "definition": "Stable Diffusion training is the process of fitting a latent text-to-image diffusion model by teaching a denoising network to reverse a gradual noising process in a compressed latent space, conditioned on text embeddings. Operating in latent rather than pixel space sharply reduces compute and memory, while techniques such as fine-tuning, LoRA, and DreamBooth adapt a base model to new styles or subjects. It underpins much of open-weight generative image and video tooling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fast-ai",
+        "label": "Fast.ai"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

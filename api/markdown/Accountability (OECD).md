@@ -199,7 +199,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -567,5 +567,5 @@ public:: true
   Accountability constitutes OECD's fifth core AI principle, establishing that responsibility for AI systems must be clearly assigned and enforceable. This principle recognises that without clear accountability, other principles lack practical force and stakeholders lack recourse for harms.
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[IEEE 7000]], [[ISO 31000:2018]], [[ISO 37301:2021]], [[ISO 42001]], [[ISO/IEC 27001:2022]], [[ISO/IEC 42001:2023]], [[OECD]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[IEEE 7000]], [[ISO 31000:2018]], [[ISO 37301:2021]], [[ISO 42001]], [[ISO/IEC 27001:2022]], [[ISO/IEC 42001:2023]], [[OECD]]
   - migration-date:: 2026-04-26T00:00:00Z

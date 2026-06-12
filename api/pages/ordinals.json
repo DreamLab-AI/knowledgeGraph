@@ -8,7 +8,7 @@
   "definition": "A scheme for numbering individual satoshis by order of issuance and transfer, allowing arbitrary data to be inscribed onto specific satoshis on the Bitcoin blockchain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],

@@ -375,7 +375,7 @@
   learning, and live linked into Unreal so that changes by stakeholders
   enter the pre-production pipeline in a seamless way.
 
-  - #### visionflow: [[Knowhere]]
+  - #### visionflow: [[KnoWhere Visitor Attention System]]
   - The ultimate goal is to create a seamless, highly personalized visitor experience that evolves and continues before, during, and after a visit to a digital exhibition. This level of personalization is only made possible through the integration of advanced AI technology, biometrics, and a deep inferred understanding of individual preferences and behaviours.
 
   - ## USD View
@@ -424,7 +424,7 @@
   learning, and live linked into Unreal so that changes by stakeholders
   enter the pre-production pipeline in a seamless way.
 
-  - #### visionflow: [[Knowhere]]
+  - #### visionflow: [[KnoWhere Visitor Attention System]]
   - The ultimate goal is to create a seamless, highly personalized visitor experience that evolves and continues before, during, and after a visit to a digital exhibition. This level of personalization is only made possible through the integration of advanced AI technology, biometrics, and a deep inferred understanding of individual preferences and behaviours.
 
   - ## USD View

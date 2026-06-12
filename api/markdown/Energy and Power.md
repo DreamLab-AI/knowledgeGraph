@@ -390,7 +390,7 @@ public:: true
         "label": "Water Cooling"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
@@ -446,7 +446,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
@@ -528,7 +528,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
@@ -566,7 +566,7 @@ public:: true
         "label": "Agentic Internet"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -574,7 +574,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -582,7 +582,7 @@ public:: true
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       }
     ],
@@ -891,7 +891,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -941,7 +941,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -1032,7 +1032,7 @@ public:: true
   - enables:: [[AI Data Centres]], [[Bitcoin Mining]], [[Hyperscaler Operations]], [[Net Zero Targets]], [[Electrification]], [[Digital Economy]], [[AI Adoption]], [[Competition in AI]]
   - implements:: [[Power Purchase Agreements]], [[Capacity Markets]], [[Renewable Energy Certificates]], [[Carbon Offsetting]], [[Demand Response]], [[Behind-the-Meter Generation]], [[Small Modular Reactors]]
   - depends-on:: [[Carbon Neutral Blockchain]], [[Circular Economy]], [[Climate Policy]], [[Energy Storage]], [[Transmission Infrastructure]], [[Regulatory Framework]]
-  - supports:: [[Artificial Intelligence]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Agent Frameworks]], [[Agentic Internet]], [[ChatGPT]], [[Anthropic Claude]]
+  - supports:: [[Artificial Intelligence]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Agent Frameworks]], [[Agentic Internet]], [[Instruction-Following Conversational AI System]], [[Constitutional AI Language Model Family]]
   - uses:: [[Small Modular Reactors]], [[Offshore Wind]], [[Solar PV]], [[Pumped Hydro Storage]], [[Battery Energy Storage]], [[Green Hydrogen]], [[Nuclear Energy]]
   - contrasts-with:: [[Carbon Footprint Measurement]], [[Bitcoin Environmental Issues]], [[AI Risks]], [[Carbon Credit Tracking]]
   - related-to:: [[Data Centre]], [[Cloud Computing]], [[Bitcoin Mining]], [[Blockchain Network]], [[Carbon Credit Tracking]], [[AI Adoption]], [[Competition in AI]], [[Cognitive AI]], [[Brain Computer Interfaces]]

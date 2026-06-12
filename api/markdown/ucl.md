@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[University College London]]
   - bridges-to:: [[University College London]], [[Alan Turing Institute]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - UCL is the widely used short form for University College London. The acronym appears frequently in research output, partnerships, and institutional references.

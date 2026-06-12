@@ -244,7 +244,7 @@ alias:: LLM, Large Language Model
       "label": "Neural Network"
     },
     {
-      "@id": "urn:ngm:class:foundation-models",
+      "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
       "label": "Foundation Models"
     }
   ],
@@ -500,7 +500,7 @@ alias:: LLM, Large Language Model
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -525,7 +525,7 @@ alias:: LLM, Large Language Model
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -617,7 +617,7 @@ alias:: LLM, Large Language Model
 
 
 - ### Definition
-  - [[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.
+  - [[Large Language Models]] (LLMs) are [[Large-Scale Pretrained Foundation Model]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LargeLanguageModel
@@ -627,7 +627,7 @@ alias:: LLM, Large Language Model
   - implemented-in-layer:: [[ComputeLayer]], [[DataLayer]], [[AlgorithmicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Foundation Models]], [[Neural Network]], [[Deep Learning]], [[Machine Learning]]
+  - is-subclass-of:: [[Large-Scale Pretrained Foundation Model]], [[Neural Network]], [[Deep Learning]], [[Machine Learning Discipline]]
   - has-part:: [[Transformer]], [[Attention Mechanism]], [[Tokenization]], [[Embedding]], [[Training Data]], [[Model Parameters]]
   - requires:: [[GPU Compute]], [[Distributed Training]], [[Large-Scale Datasets]], [[Model Optimization]], [[Fine Tuning]]
   - enables:: [[Natural Language Understanding]], [[Text Generation]], [[Code Generation]], [[Translation]], [[Question Answering]], [[Reasoning]]

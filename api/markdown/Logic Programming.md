@@ -85,7 +85,7 @@ public:: true
       {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
     ]

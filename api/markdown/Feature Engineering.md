@@ -74,7 +74,7 @@ alias:: FeatureEngineering
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -154,7 +154,7 @@ alias:: FeatureEngineering
 - ### Relationships
   - is-subclass-of:: [[Data Preprocessing]]
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
-  - Enables: [[Machine Learning]], [[Model Training]]
+  - Enables: [[Machine Learning Discipline]], [[Model Training]]
   - Uses: [[Data Pipeline]]
   - Related To: [[Transfer Learning]], [[Feature Store]]
   - Bridges To: [[Digital Twin]]

@@ -33,7 +33,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},

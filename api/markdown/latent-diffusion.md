@@ -11,7 +11,7 @@
   - enables [[Image Generation]]
   - enables [[Text-to-Image]]
   - relatedTo [[Generative Model]]
-  - relatedTo [[latent space]]
+  - relatedTo [[Neural Network Latent Space]]
 
 - ### Content
   - Latent Diffusion Models emerged from research into efficient generative modelling that could match the quality of pixel-space diffusion models such as DDPM whilst running on consumer-grade hardware. The key insight is that the perceptual information relevant to image quality is largely captured by the low-dimensional latent code produced by a powerful VAE encoder, so diffusion and denoising can operate on this compact representation without losing fidelity.

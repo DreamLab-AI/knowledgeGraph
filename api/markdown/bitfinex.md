@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
   - bridges-to:: [[Tether]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Bitfinex is a trading platform for cryptocurrencies that offers spot trading, margin trading, and related services. It has operated since the early years of cryptocurrency exchanges.

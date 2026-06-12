@@ -91,8 +91,8 @@ public:: true
       {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"}
     ]
   },
   "quality": 0.5,
@@ -144,12 +144,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[PEOPLE]]",
+      "raw": "[[Domain Expert Contact Index]]",
       "resolved": "urn:visionflow:owl:class:people",
       "kind": "ResolvedLink"
     }
@@ -204,7 +204,7 @@ public:: true
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 
   ## Characteristics
 

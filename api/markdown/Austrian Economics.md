@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
       {"@id": "urn:ngm:class:hyperbitcoinization", "label": "Hyperbitcoinization"}
     ],
     "contrastsWith": [
@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
     ]
   },

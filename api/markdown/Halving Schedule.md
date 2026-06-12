@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:bitcoin-technical-overview", "label": "Bitcoin Technical Overview"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"}
     ]
   },
   "quality": 0.72

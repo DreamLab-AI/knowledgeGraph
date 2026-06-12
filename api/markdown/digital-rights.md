@@ -41,5 +41,5 @@ bridges-to:: [[Blockchain]]
   - Metaverse governance frameworks
 
 - ### Provenance
-  - sources:: [[GDPR]], [[Digital Services Act]], [[EU AI Act]], [[eIDAS]]
+  - sources:: [[GDPR]], [[Digital Services Act]], [[EU AI Act Regulatory Instrument]], [[eIDAS]]
   - migration-date:: 2026-04-26T00:00:00Z

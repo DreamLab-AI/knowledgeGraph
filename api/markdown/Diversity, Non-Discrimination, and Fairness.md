@@ -86,7 +86,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:equity", "label": "Equity"},
+      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Equity"},
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
     ],
     "uses": [
@@ -159,7 +159,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     }
@@ -198,5 +198,5 @@ public:: true
   Regulatory enforcement has intensified. The EU AI Act mandates that high-risk system providers conduct data governance ensuring training, validation, and test datasets are representative, accurate, and free from discriminatory patterns, with bias identification documented in the technical file required for conformity assessment. Penalties for non-compliance reach EUR 35 million or 7% of global annual turnover. Sector-specific legislation including New York City Local Law 144 (automated employment-decision tools) and Colorado Senate Bill 21-169 (insurance algorithms) adds jurisdiction-specific obligations, creating a complex compliance matrix for global AI deployments.
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[EU Charter Article 21]], [[ISO/IEC TR 24027]], [[WCAG]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[EU Charter Article 21]], [[ISO/IEC TR 24027]], [[WCAG]]
   - migration-date:: 2026-04-26T00:00:00Z

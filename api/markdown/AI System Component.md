@@ -71,11 +71,11 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},

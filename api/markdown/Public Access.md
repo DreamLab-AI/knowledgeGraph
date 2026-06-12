@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:public-access",
+  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-access",
   "@type": "Class",
   "label": "Public Access",
   "definition": "Public access is a data-governance and infrastructure model in which digital resources, collections, or services are made openly available to the general public without restrictive authentication or paywalls. In cultural-heritage and digital-curation contexts it underpins open repositories, online catalogues, and reading-room digitisation programmes. It balances openness against rights management, preservation constraints, and equitable availability.",

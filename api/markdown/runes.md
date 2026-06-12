@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Bitcoin Ordinals]]
   - requires:: [[Bitcoin Network]]
   - enables:: [[Token]]

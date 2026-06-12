@@ -29,7 +29,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],

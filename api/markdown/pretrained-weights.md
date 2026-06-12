@@ -11,7 +11,7 @@
   - requires:: [[Model Training]], [[Training Data]], [[Deep Learning]]
   - enables:: [[Fine Tuning]], [[Transfer Learning]], [[Large Language Models]]
   - uses:: [[Backpropagation]], [[Gradient Descent]]
-  - relatedTo:: [[Pretrained Model]], [[Machine Learning]], [[Feature Engineering]]
+  - relatedTo:: [[Pretrained Model]], [[Machine Learning Discipline]], [[Feature Engineering]]
 
 - ### Content
   Pretrained weights are the concrete artefact that makes the paradigm of foundation models operationally useful. A foundation model checkpoint—whether a transformer trained on internet-scale text, a vision encoder trained on image-caption pairs, or a multimodal model trained across modalities—stores billions of floating-point parameters representing the statistical regularities learned during pretraining. These weights function as a compressed knowledge store: they do not merely memorise training examples but learn abstractions that generalise to unseen inputs.

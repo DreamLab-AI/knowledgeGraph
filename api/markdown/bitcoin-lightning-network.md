@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Payment Systems Domain]], [[Liquid Network]]
   - has-part:: [[Payment Channel]], [[HTLC]]
-  - requires:: [[Bitcoin]], [[Multisignature]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Multisignature]]
   - enables:: [[Micropayments]], [[Instant Settlement]]
 
 - ### Content

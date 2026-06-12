@@ -326,7 +326,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:apple-neural-engine",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-neural-engine",
         "label": "Apple Neural Engine"
       },
       {
@@ -334,7 +334,7 @@ public:: true
         "label": "ARM Ethos NPU"
       },
       {
-        "@id": "urn:ngm:class:google-coral-edge-tpu",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-coral-edge-tpu",
         "label": "Google Coral Edge TPU"
       },
       {
@@ -350,7 +350,7 @@ public:: true
         "label": "Neural Processing Unit"
       },
       {
-        "@id": "urn:ngm:class:nvidia-jetson",
+        "@id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -869,7 +869,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -945,7 +945,7 @@ public:: true
   - supports:: [[Large Language Models]], [[Computer Vision]], [[Speech Recognition]], [[Anomaly Detection]], [[Reinforcement Learning]], [[Agents]]
   - uses:: [[Quantisation Aware Training]], [[Knowledge Distillation]], [[Neural Architecture Search]], [[Model Pruning]], [[Tensor Decomposition]]
   - contrasts-with:: [[Cloud Computing]], [[Data Centre GPU]], [[Centralised Inference]], [[CPU-Only Inference]]
-  - related-to:: [[AI Adoption]], [[Proprietary Large Language Models]], [[Foundation Models]], [[Agent Frameworks]], [[Internet of Things]], [[Autonomous Systems]]
+  - related-to:: [[AI Adoption]], [[Proprietary Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Agent Frameworks]], [[Internet of Things]], [[Autonomous Systems]]
   - standardized-by:: [[MLCommons MLPerf]], [[ONNX Standard]], [[IEEE P2941]], [[Khronos OpenCL]], [[ETSI MEC]]
 
 - ### Content

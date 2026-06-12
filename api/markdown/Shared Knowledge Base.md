@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-knowledge-discovery",
+        "@id": "urn:ngm:class:collaborative-systems-modality-knowledge-discovery",
         "label": "Collaborative Knowledge Discovery"
       }
     ]

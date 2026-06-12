@@ -109,7 +109,7 @@ alias:: TELE-021-augmented-reality-collaboration
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-design",
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "CollaborativeDesign"
       }
     ]

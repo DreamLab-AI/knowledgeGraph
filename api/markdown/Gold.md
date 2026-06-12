@@ -468,15 +468,15 @@ public:: true
         "label": "Asset Tokenization"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-as-money",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-etf",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-value-proposition",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -502,7 +502,7 @@ public:: true
         "label": "Asset Tokenization"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -838,7 +838,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -936,9 +936,9 @@ public:: true
   - enables:: [[Inflation Hedging]], [[Currency Diversification]], [[Tokenized Commodity]], [[Gold-Backed Stablecoin]], [[Monetary Reserve Diversification]], [[Cross-Border Settlement]]
   - implements:: [[LBMA Responsible Gold Guidance]], [[BIS Basel III HQLA Classification]], [[ICE LBMA Gold Price Benchmark]], [[ISO 4217 XAU Currency Code]], [[COMEX Futures Contract Standard]]
   - depends-on:: [[Precious Metal Refining]], [[Vault Infrastructure]], [[Global Commodity Market]], [[Sovereign Reserve Policy]], [[Mining Production]]
-  - supports:: [[Bitcoin]], [[Stablecoin]], [[CBDCs]], [[Asset Tokenization]], [[Smart Contract]], [[Decentralized Finance (DeFi)]]
+  - supports:: [[Bitcoin Proof-of-Work Protocol]], [[Stablecoin]], [[CBDCs]], [[Asset Tokenization]], [[Smart Contract]], [[Decentralized Finance (DeFi)]]
   - uses:: [[Blockchain]], [[Smart Contract]], [[ERC-20 Token Standard]], [[Stellar Network]], [[Algorand]], [[Distributed Ledger]]
-  - contrasts-with:: [[Bitcoin]], [[Fiat Currency]], [[Silver]], [[Cryptocurrency]], [[Government Bond]]
+  - contrasts-with:: [[Bitcoin Proof-of-Work Protocol]], [[Fiat Currency]], [[Silver]], [[Cryptocurrency]], [[Government Bond]]
   - related-to:: [[Bitcoin Value Proposition]], [[Bitcoin As Money]], [[Bitcoin ETF]], [[Stablecoin]], [[Digital Asset]], [[CBDCs]], [[Asset Tokenization]], [[Decentralized Finance (DeFi)]], [[AML KYC Compliance]]
   - standardized-by:: [[LBMA Good Delivery Rules]], [[BIS Basel III CRE20]], [[ISO 4217]], [[COMEX Contract Specifications]], [[SGE Trading Rules]], [[FATF Precious Metals Guidance]]
 

@@ -8,7 +8,7 @@
 - ### Relationships
   - enables [[Drug Discovery]]
   - enables [[Knowledge Graph]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Generative Model]]
   - relatedTo [[Drug Discovery AI]]
 

@@ -43,7 +43,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-technology",
+  "@id": "urn:ngm:class:collaborative-systems-modality-technology",
   "@type": "Class",
   "label": "Collaborative Technology",
   "definition": "Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.",

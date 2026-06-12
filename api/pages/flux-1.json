@@ -37,7 +37,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -58,7 +58,7 @@
         "label": "LoRA DoRA etc"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       }
     ],

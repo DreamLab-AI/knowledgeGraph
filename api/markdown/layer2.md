@@ -12,7 +12,7 @@
 - ### Content
 
   - ## Layer 2 Definition & Core Architecture
-  - **Layer 2 (L2)** represents a category of [[blockchain]] [[scaling-solutions]] that operate as secondary frameworks built atop [[Layer1]] base chains like [[Ethereum]], [[Bitcoin]], or [[Polygon]], executing transactions off the main chain while leveraging the security and finality of the underlying Layer 1.
+  - **Layer 2 (L2)** represents a category of [[blockchain]] [[scaling-solutions]] that operate as secondary frameworks built atop [[Layer1]] base chains like [[Ethereum Smart Contract Platform]], [[Bitcoin Proof-of-Work Protocol]], or [[Polygon]], executing transactions off the main chain while leveraging the security and finality of the underlying Layer 1.
   - ### Fundamental Architecture Principles
 		- **Off-Chain Execution**: Transactions are processed outside the main chain by [[sequencer|sequencers]] or [[validator|validators]], dramatically reducing computational load on Layer 1
 		- **On-Chain Settlement**: Final state commitments and [[fraud-proofs]] or [[validity-proofs]] are periodically posted to Layer 1 for security anchoring
@@ -20,7 +20,7 @@
 		- **Data Availability**: Transaction data is either posted on-chain ([[rollup|rollups]]) or kept off-chain with commitments ([[Plasma]], [[Validium]])
 		- **Bridge Mechanisms**: [[canonical-bridge|Canonical bridges]] or [[third-party-bridges]] enable asset transfers between Layer 1 and Layer 2
   - ### Why Layer 2 Solutions Are Essential
-		- **Scalability Bottleneck**: [[Ethereum]] processes ~15-30 TPS, [[Bitcoin]] ~7 TPS - insufficient for global-scale adoption
+		- **Scalability Bottleneck**: [[Ethereum Smart Contract Platform]] processes ~15-30 TPS, [[Bitcoin Proof-of-Work Protocol]] ~7 TPS - insufficient for global-scale adoption
 		- **High Transaction Costs**: During network congestion, [[gas-fees]] on Ethereum can exceed $50-200 per transaction
 		- **User Experience**: Slow confirmation times (10-15 minutes for Bitcoin, 12-15 seconds for Ethereum) hinder real-time applications
 		- **Environmental Impact**: Layer 1 [[Proof-of-Work]] and [[Proof-of-Stake]] consume significant energy; L2 amortizes this across thousands of transactions
@@ -118,7 +118,7 @@
   - ### Top Ethereum L2s by TVL (Q1 2025)
 		- **1. [[Arbitrum-One]]**: $3.2B TVL
 			- [[Arbitrum-Nitro]] upgrade delivers 10x performance improvement
-			- [[Stylus]] enables [[Rust]], [[C++]] smart contracts alongside Solidity
+			- [[Stylus]] enables [[Rust Systems Programming Language]], [[C++]] smart contracts alongside Solidity
 			- [[Arbitrum-Orbit]]: Framework for custom L3 chains (gaming, enterprise)
 			- Ecosystem: 400+ dApps including [[GMX]], [[Camelot]], [[Radiant-Capital]]
 		- **2. [[Optimism-Mainnet]]**: $2.1B TVL
@@ -516,7 +516,7 @@
 		- **[[Braavos]]**: Starknet-native wallet with account abstraction
 
   #### Related Concepts
-  - **Core Infrastructure**: [[Layer1]], [[Ethereum]], [[Bitcoin]], [[Consensus-Mechanisms]], [[Blockchain-Trilemma]]
+  - **Core Infrastructure**: [[Layer1]], [[Ethereum Smart Contract Platform]], [[Bitcoin Proof-of-Work Protocol]], [[Consensus-Mechanisms]], [[Blockchain-Trilemma]]
   - **Scaling Technologies**: [[Rollup]], [[StateChannel]], [[Sidechain]], [[Plasma]], [[Validium]], [[Volition]]
   - **Proof Systems**: [[fraud-proofs]], [[validity-proofs]], [[zkSNARK]], [[zkSTARK]], [[PLONK]], [[Groth16]]
   - **Cross-Chain**: [[Bridge]], [[cross-chain-messaging]], [[LayerZero]], [[Chainlink-CCIP]], [[Wormhole]]

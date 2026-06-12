@@ -26,9 +26,9 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin As Money"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
       {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
     ],
     "contrastsWith": [
@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}
     ]
   },
   "quality": 0.8

@@ -112,7 +112,7 @@ public:: true
         "label": "Mixed Reality"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -176,7 +176,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -206,7 +206,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Hardware]]
   - requires:: [[Display Technology]], [[Optical Systems]], [[Graphics Processing]]
-  - enables:: [[Immersive Visualization]], [[Spatial Computing]], [[Mixed Reality]]
+  - enables:: [[Immersive Visualization]], [[Spatial Computing Paradigm]], [[Mixed Reality]]
 
 - ### Content
 

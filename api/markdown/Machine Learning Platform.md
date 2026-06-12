@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-platform",
+  "@id": "urn:ngm:class:machine-learning-discipline-platform",
   "@type": "Class",
   "label": "Machine Learning Platform",
   "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",

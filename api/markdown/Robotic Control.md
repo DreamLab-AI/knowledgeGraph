@@ -40,7 +40,7 @@ alias:: RoboticControl
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"}
     ]
   },

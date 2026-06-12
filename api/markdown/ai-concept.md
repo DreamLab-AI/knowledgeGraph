@@ -7,7 +7,7 @@
 
 - ### Relationships
   - requires:: [[Knowledge Representation]]
-  - enables:: [[Machine Learning]], [[Artificial Intelligence]]
+  - enables:: [[Machine Learning Discipline]], [[Artificial Intelligence]]
   - relatedTo:: [[Neural Network]], [[AI Alignment]], [[Explainability]]
 
 - ### Content
@@ -27,7 +27,7 @@
   - [[Artificial Intelligence]]
   - [[Cognitive Architecture]]
   - [[Knowledge Representation]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
 
   #### References
   - Russell, S. & Norvig, P. (2021). Artificial Intelligence: A Modern Approach (4th ed.). Pearson.

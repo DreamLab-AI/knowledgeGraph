@@ -3,7 +3,7 @@
   "title": "json-ld",
   "slug": "json-ld",
   "public": true,
-  "classIri": "urn:ngm:class:json-ld",
+  "classIri": "urn:ngm:class:json-data-interchange-format-ld",
   "domain": "blockchain",
   "definition": "JSON-LD (JSON for Linking Data) is a W3C Recommendation that defines a lightweight serialisation syntax for expressing Linked Data using the JSON data format. It adds a @context document that maps JSON keys to RDF IRIs, enabling any JSON document to be treated as an RDF graph whilst remaining valid JSON parseable by standard libraries. JSON-LD is a primary serialisation format for Verifiable Credentials, Schema.org structured data markup, and activity streams (ActivityPub), bridging the gap between pragmatic web development and formal semantic web standards.",
   "subClassOf": [
@@ -24,7 +24,7 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -47,7 +47,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {

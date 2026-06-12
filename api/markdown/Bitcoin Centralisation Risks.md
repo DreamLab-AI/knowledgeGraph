@@ -523,7 +523,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-centralisation-risks",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
   "@type": "Class",
   "label": "Bitcoin Centralisation Risks",
   "definition": "Bitcoin Centralisation Risks refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised e...",
@@ -580,11 +580,11 @@ public:: true
         "label": "ASIC"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -692,7 +692,7 @@ public:: true
         "label": "ASIC"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
@@ -732,7 +732,7 @@ public:: true
         "label": "51% Attack"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -1340,7 +1340,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -1360,7 +1360,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1443,8 +1443,8 @@ public:: true
 
 - ### Definition
   - **Bitcoin Centralisation Risks** refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised ecosystem.
-  - [[Bitcoin]] was designed — through Nakamoto's 2008 whitepaper — to operate without any trusted third party, using a distributed [[Proof of Work]] consensus to prevent any single actor from rewriting the ledger or censoring transactions. Yet, across every major subsystem of the Bitcoin stack, observable concentration trends challenge this foundational guarantee.
-  - Centralisation risks in [[Bitcoin]] operate across at least seven distinct attack surfaces, each capable of independently undermining a different aspect of Bitcoin's core security model:
+  - [[Bitcoin Proof-of-Work Protocol]] was designed — through Nakamoto's 2008 whitepaper — to operate without any trusted third party, using a distributed [[Proof of Work]] consensus to prevent any single actor from rewriting the ledger or censoring transactions. Yet, across every major subsystem of the Bitcoin stack, observable concentration trends challenge this foundational guarantee.
+  - Centralisation risks in [[Bitcoin Proof-of-Work Protocol]] operate across at least seven distinct attack surfaces, each capable of independently undermining a different aspect of Bitcoin's core security model:
     - (1) **[[Mining Pool]] hashrate concentration** — a small number of pools collectively control the majority of block-production rights and transaction selection
     - (2) **[[ASIC]] hardware duopoly** — two manufacturers supply approximately 97% of mining hardware, enabling potential firmware-level compromise or supply-chain control
     - (3) **Geographic hashrate concentration** — a single nation or sub-national region hosts the majority of computational power, enabling regulatory coercion
@@ -1455,7 +1455,7 @@ public:: true
   - These seven axes interact and amplify one another. Post-halving mining economics accelerate consolidation: the 2024 halving cut block subsidies from 6.25 BTC to 3.125 BTC, compressing margins sharply.
   - Hashprice fell from $0.12 per TH/s/day in April 2024 to approximately $0.049 by April 2025, forcing smaller miners out of the market and accelerating capital concentration in vertically integrated large-scale operations.
   - Geographic concentration intensified following China's June 2021 mining ban: the United States hosted approximately 37.8% of global hashrate by Q4 2025, with Russia (15.5%) and China (14.1%) as the next-largest blocs — the three nations collectively accounting for 67.5% of global block production, each subject to unified regulatory jurisdiction.
-  - The custodial layer represents a distinct systemic chokepoint. [[Coinbase]] Custody serves as the primary custodian for the majority of US spot [[Bitcoin]] ETF assets. [[BlackRock]]'s IBIT crossed $67.4 billion NAV at year-end 2025, holding approximately 485,000 BTC, initially relying on Coinbase alone before adding [[Anchorage Digital]] as a secondary custodian in April 2025.
+  - The custodial layer represents a distinct systemic chokepoint. [[Coinbase]] Custody serves as the primary custodian for the majority of US spot [[Bitcoin Proof-of-Work Protocol]] ETF assets. [[BlackRock]]'s IBIT crossed $67.4 billion NAV at year-end 2025, holding approximately 485,000 BTC, initially relying on Coinbase alone before adding [[Anchorage Digital]] as a secondary custodian in April 2025.
   - ETFs collectively held approximately 1.2–1.3 million BTC by early 2026, representing over 6% of all Bitcoin. A legal freeze, regulatory action, or technical failure at a single custodian could simultaneously impair liquidity for millions of ETF investors, triggering forced redemptions and cascading price pressure.
   - The [[Lightning Network]] — Bitcoin's primary Layer-2 payment protocol — exhibits pronounced hub-and-spoke topology. Academic research using network centrality metrics (Gini coefficient, [[Nakamoto Coefficient]], Herfindahl-Hirschman Index) finds that 10% of Lightning Network entities control approximately 96.5% of total channel capacity.
   - Nodes operated by entities such as [[ACINQ]], Bitfinex, LNBIG, [[Binance]], and [[Kraken]] function as critical routing hubs. As of October 2025, the Lightning Network comprised approximately 12,632 active nodes and 43,758 payment channels collectively holding ~4,053 BTC.
@@ -1478,11 +1478,11 @@ public:: true
   - requires:: [[Proof of Work]], [[Bitcoin Network]], [[Full Node]], [[Mining Pool]], [[ASIC]], [[Lightning Network]], [[Bitcoin Core]]
   - enables:: [[51% Attack]], [[Transaction Censorship]], [[Sybil Attack]], [[Eclipse Attack]], [[Regulatory Capture]], [[Protocol Capture]], [[Supply Chain Attack]]
   - implements:: [[Nakamoto Coefficient]], [[Hashrate Distribution Analysis]], [[Gini Coefficient Analysis]], [[Herfindahl-Hirschman Index]], [[Network Topology Analysis]]
-  - depends-on:: [[Bitcoin]], [[Proof of Work]], [[Mining]], [[Exchange]], [[Lightning Network]], [[Bitcoin Core]], [[ASIC]]
+  - depends-on:: [[Bitcoin Proof-of-Work Protocol]], [[Proof of Work]], [[Mining]], [[Exchange]], [[Lightning Network]], [[Bitcoin Core]], [[ASIC]]
   - supports:: [[Decentralisation Monitoring]], [[Network Security Analysis]], [[Governance Reform]], [[Stratum V2]], [[Self-Custody]]
   - uses:: [[Hash Power]], [[Mining Pool]], [[Custodial Wallet]], [[Lightning Channel]], [[Open Source Development]], [[Institutional Custody]]
   - contrasts-with:: [[Decentralisation]], [[Permissionlessness]], [[Censorship Resistance]], [[Self-Custody]], [[Trustless System]]
-  - related-to:: [[Bitcoin]], [[Mining]], [[Mining Pool]], [[ASIC]], [[51% Attack]], [[Sybil Attack]], [[Regulatory Risk]], [[Lightning Network]], [[Bitcoin Core]], [[Exchange]], [[Proof of Work]], [[Foundry USA]], [[AntPool]], [[Bitmain]], [[MicroBT]], [[Coinbase]], [[BlackRock]], [[MicroStrategy]], [[Stratum V2]]
+  - related-to:: [[Bitcoin Proof-of-Work Protocol]], [[Mining]], [[Mining Pool]], [[ASIC]], [[51% Attack]], [[Sybil Attack]], [[Regulatory Risk]], [[Lightning Network]], [[Bitcoin Core]], [[Exchange]], [[Proof of Work]], [[Foundry USA]], [[AntPool]], [[Bitmain]], [[MicroBT]], [[Coinbase]], [[BlackRock]], [[MicroStrategy]], [[Stratum V2]]
   - standardized-by:: [[Nakamoto Coefficient]], [[Cambridge Centre for Alternative Finance Mining Reports]], [[FSB Crypto Asset Monitoring Framework]], [[BIS Crypto Risk Assessment Framework]]
 
 - ### Content
@@ -1625,9 +1625,9 @@ public:: true
   - ## About Bitcoin Centralisation Risks
   - **Bitcoin Centralisation Risks** encompasses the seven principal vectors through which Bitcoin's distributed architecture is subject to power concentration: mining pool hashrate dominance, ASIC hardware supply-chain control, geographic hashrate clustering, custodial exchange and ETF concentration, [[Lightning Network]] routing hub centralisation, developer governance centralisation, and institutional coin ownership concentration.
   - Each vector undermines a different aspect of Bitcoin's core security model. Together they represent the primary systemic challenge to Bitcoin's long-term viability as a censorship-resistant monetary network.
-  - Bitcoin's foundational design — as articulated in Satoshi Nakamoto's 2008 whitepaper — treats [[Decentralisation]] as a security property rather than an ideological preference. The distributed nature of [[Bitcoin]]'s [[Proof of Work]] consensus prevents any single actor from rewriting the transaction history, censoring payments, or inflating the supply.
+  - Bitcoin's foundational design — as articulated in Satoshi Nakamoto's 2008 whitepaper — treats [[Decentralisation]] as a security property rather than an ideological preference. The distributed nature of [[Bitcoin Proof-of-Work Protocol]]'s [[Proof of Work]] consensus prevents any single actor from rewriting the transaction history, censoring payments, or inflating the supply.
   - When power concentrates — whether in [[Mining Pool|mining pools]], hardware manufacturers, custodians, or routing nodes — the threat model changes fundamentally: the attack surface shrinks to a small number of identifiable, addressable entities subject to legal coercion, social engineering, or [[Regulatory Capture]].
-  - The post-2020 institutionalisation of [[Bitcoin]] has dramatically accelerated concentration across all seven axes simultaneously. The combination of spot Bitcoin ETF approvals (US, January 2024), corporate treasury adoption ([[MicroStrategy]]/Strategy holding approximately 478,000–490,000 BTC by Q2 2026), sovereign reserve accumulation (US Strategic Bitcoin Reserve established March 2025), and the post-2024-halving profitability squeeze on miners has created a complex and interacting set of centralisation pressures with no historical precedent.
+  - The post-2020 institutionalisation of [[Bitcoin Proof-of-Work Protocol]] has dramatically accelerated concentration across all seven axes simultaneously. The combination of spot Bitcoin ETF approvals (US, January 2024), corporate treasury adoption ([[MicroStrategy]]/Strategy holding approximately 478,000–490,000 BTC by Q2 2026), sovereign reserve accumulation (US Strategic Bitcoin Reserve established March 2025), and the post-2024-halving profitability squeeze on miners has created a complex and interacting set of centralisation pressures with no historical precedent.
   - **Cross-vector interactions amplify risk**: Mining pool concentration and ASIC manufacturer concentration interact — [[Bitmain]]'s historical operation of [[AntPool]] means the same entity once controlled both hardware production and pool operations simultaneously. Geographic concentration amplifies pool censorship risk — if a government controls the jurisdiction housing the dominant pool, legal compulsion can achieve what a cryptographic attack cannot. Custodial concentration amplifies institutional holder concentration — when both ETF custody and exchange custody flow through the same small number of intermediaries, those intermediaries effectively define the accessible Bitcoin market.
   - **Decentralisation as a spectrum, not a binary**: Bitcoin does not transition instantaneously from "fully decentralised" to "compromised." Rather, each concentration trend incrementally shifts the threat model — increasing the probability that a coalition of identifiable actors can censor transactions, delay confirmations, influence protocol evolution, or redirect economic value. The risk is therefore best understood as a continuous variable measured by the [[Nakamoto Coefficient]] across each subsystem, rather than as a threshold binary that is either crossed or not.
   - **Historical context**: Bitcoin began with near-perfect decentralisation — Satoshi Nakamoto mined the genesis block alone on commodity CPU hardware in January 2009. The shift to GPU mining (2010), then FPGA (2011), then purpose-built ASICs (2013) each represented a step-change in hardware specialisation that progressively excluded non-specialist participants. The formation of the first mining pool (Slushpool, 2010) initiated the pooling trend. Each subsequent development — pool growth, geographic concentration, ETF creation, corporate treasury adoption — has added additional centralisation pressure on top of these foundations.
@@ -1646,7 +1646,7 @@ public:: true
     - Remaining pools: approximately 25.1% distributed across smaller operators
   - The top four pools collectively command approximately 73% of global hashrate. The [[Nakamoto Coefficient]] for mining pool hashrate — the minimum number of entities whose combined hashrate exceeds 50% — stands at approximately 2 (Foundry USA alone at 34%; adding AntPool reaches ~49%).
   - This is among the lowest Nakamoto coefficients of any Bitcoin subsystem and represents a level of concentration that would be classified as "highly concentrated" under US Department of Justice antitrust guidelines (HHI > 2,500).
-  - **Post-halving margin compression accelerating consolidation**: The 2024 [[Bitcoin]] halving cut block subsidies from 6.25 BTC to 3.125 BTC. Hashprice fell from approximately $0.12 per TH/s/day in April 2024 to approximately $0.049 by April 2025. Average all-in cost to produce one Bitcoin (including depreciation, financing, and stock-based compensation) reached approximately $137,800 per BTC.
+  - **Post-halving margin compression accelerating consolidation**: The 2024 [[Bitcoin Proof-of-Work Protocol]] halving cut block subsidies from 6.25 BTC to 3.125 BTC. Hashprice fell from approximately $0.12 per TH/s/day in April 2024 to approximately $0.049 by April 2025. Average all-in cost to produce one Bitcoin (including depreciation, financing, and stock-based compensation) reached approximately $137,800 per BTC.
   - Between August and September 2025, approximately 8,000 active miners exited the network. This post-halving consolidation directly increases hashrate concentration as surviving operations are those with institutional-scale balance sheets, lowest electricity costs (Oman and UAE at $0.035–$0.07/kWh, Paraguay hydroelectric at $2.8–$4.6/MWh), or direct access to capital markets.
   - **The F2Pool censorship incident (2023)**: F2Pool's co-founder confirmed that the pool had deliberately omitted transactions from [[OFAC]]-sanctioned addresses, citing his personal "right not to confirm" those transactions. Although F2Pool reversed the policy under community pressure, the episode demonstrated that a pool controlling ~11–12% of hashrate can unilaterally implement [[Transaction Censorship]] — a direct contradiction of Bitcoin's permissionlessness guarantee.
   - **Mitigation: Stratum V2 adoption**: In May 2026, seven major mining pools — [[Foundry USA]], [[AntPool]], [[F2Pool]], SpiderPool, MARA Pool, Block Inc, and DMND — joined the [[Stratum V2]] working group, representing approximately 75% of global hashrate. [[Stratum V2]] delegates transaction selection from pool operators to individual miners within a pool, addressing pool-level censorship of block content without requiring protocol changes. [[Bitcoin Core]] v30 (released October 2025) introduced experimental [[Stratum V2]] support. This is the most significant decentralisation shift in block construction since the original Stratum protocol.
@@ -1688,7 +1688,7 @@ public:: true
   - **Exchange custodial holdings**: Separate from ETFs, major centralised exchanges — [[Coinbase]], [[Binance]], and a small number of others — collectively hold approximately 2.1 million BTC in custodial wallets on behalf of users. These custodians exercise effective informal governance authority during contentious protocol forks: whichever chain they designate as "BTC" becomes the one accessible to millions of users.
 
   - ### Vector 5: Lightning Network Hub Centralisation
-  - The [[Lightning Network]], launched in 2018 and designed to provide [[Bitcoin]] with scalable off-chain payments, has developed a topology reflecting the economic incentives of rational liquidity providers: large, well-capitalised nodes attract more routing volume, earn higher fee revenue, and can offer tighter spreads — creating a rich-get-richer network dynamic that produces hub-and-spoke concentration.
+  - The [[Lightning Network]], launched in 2018 and designed to provide [[Bitcoin Proof-of-Work Protocol]] with scalable off-chain payments, has developed a topology reflecting the economic incentives of rational liquidity providers: large, well-capitalised nodes attract more routing volume, earn higher fee revenue, and can offer tighter spreads — creating a rich-get-richer network dynamic that produces hub-and-spoke concentration.
   - **Empirical concentration data (2025)**: Academic analysis applying Gini coefficient, [[Nakamoto Coefficient]], Herfindahl-Hirschman Index, Theil Index, and Shannon entropy to Lightning Network topology finds that 10% of entities control approximately 96.5% of total channel capacity. Key hub entities include [[ACINQ]] (operator of Phoenix and Éclair wallets), Bitfinex, LNBIG, [[Binance]], [[Kraken]], and Cequals.
   - **Network topology as of October 2025:**
     - Active nodes: approximately 12,632
@@ -1702,7 +1702,7 @@ public:: true
   - **Game-theoretic stability of hub topology**: The *Management Science* (2024) study on Lightning Network routing economics demonstrates that the profit-maximising strategy for a new node is to connect to high-centrality hubs rather than peripheral nodes, producing hub-spoke topology as a stable Nash equilibrium. Individual rational actors collectively produce a centralised network structure without any explicit coordination.
 
   - ### Vector 6: Developer Centralisation and Bitcoin Core Governance
-  - [[Bitcoin Core]] — the reference implementation of the [[Bitcoin]] protocol — is run by approximately 90% of all full nodes as of 2025. Its de facto authority over protocol evolution means changes merged into [[Bitcoin Core]] become the practical definition of Bitcoin consensus rules once adopted by the node network.
+  - [[Bitcoin Core]] — the reference implementation of the [[Bitcoin Proof-of-Work Protocol]] protocol — is run by approximately 90% of all full nodes as of 2025. Its de facto authority over protocol evolution means changes merged into [[Bitcoin Core]] become the practical definition of Bitcoin consensus rules once adopted by the node network.
   - **Maintainer concentration**: Approximately 41 developers actively contribute code to [[Bitcoin Core]], of whom only five hold merge authority — the only individuals authorised to merge improvement proposals into the master branch. This five-maintainer structure represents a single-digit [[Nakamoto Coefficient]] for protocol development. The identities and institutional affiliations of these five maintainers are publicly known, making them potential targets for coercion or legal compulsion.
   - **Developer funding ecosystem**: Core development funding flows through Spiral (Block Inc.'s Bitcoin development arm, funding over 100 open-source projects by December 2025), Brink, OpenSats, Chaincode Labs, the Human Rights Foundation (HRF) Bitcoin Development Fund, and Vinteum. The concentration of funding in a handful of institutional philanthropists means developer priorities may reflect the institutional perspectives of donors rather than the decentralised node and user community.
   - **Governance process**: The Bitcoin Improvement Proposal (BIP) process requires social consensus among developers, miners, node operators, and economic actors. During contentious protocol debates — such as the 2015–2017 block size wars that produced the [[Bitcoin Cash]] hard fork — Bitcoin Core's de facto authority becomes a decisive governance variable. The five-maintainer structure provides a practical veto on protocol evolution.
@@ -1816,11 +1816,11 @@ public:: true
   - The [[F2Pool]] OFAC incident of 2023 provides empirical evidence that this is not merely theoretical: pool operators have already demonstrated willingness and capability to implement selective transaction exclusion in response to regulatory blacklists.
   - The [[Stratum V2]] migration partially mitigates this by delegating transaction selection to individual miners, but pool-level policies can still override individual miner preferences under current [[Stratum V2]] implementations. Full censorship resistance requires both [[Stratum V2]] adoption and sufficient hashrate diversification that no coordinating coalition commands >50%.
   - **Mempool-level censorship**: A further censorship vector exists at the mempool level — nodes can be configured to refuse to relay transactions from specific addresses, effectively making those transactions invisible to most miners even before pool-level censorship applies. If a regulatory mandate required Bitcoin nodes within a jurisdiction to implement address blacklists at the mempool layer, transactions from blacklisted addresses would fail to propagate through the majority of the network.
-  - **Fungibility implications**: Transaction censorship directly erodes [[Bitcoin]]'s fungibility — if some coins are "tainted" by association with sanctioned addresses and cannot be reliably confirmed, those coins trade at a discount to "clean" coins, introducing a two-tiered Bitcoin market inconsistent with the design goal of a uniformly interchangeable digital currency.
+  - **Fungibility implications**: Transaction censorship directly erodes [[Bitcoin Proof-of-Work Protocol]]'s fungibility — if some coins are "tainted" by association with sanctioned addresses and cannot be reliably confirmed, those coins trade at a discount to "clean" coins, introducing a two-tiered Bitcoin market inconsistent with the design goal of a uniformly interchangeable digital currency.
 
   - ### Scenario B: The 51% Attack Vector
   - The canonical [[51% Attack]] requires a single entity or coordinating coalition to control a majority of hashrate. With [[Foundry USA]] at ~34% and [[AntPool]] at ~14%, their combination approaches or exceeds 50% of global hashrate.
-  - This does not imply intent to attack — both are commercially operated entities with strong incentives to maintain [[Bitcoin]]'s integrity. However, it demonstrates that the technical prerequisite for a [[51% Attack]] is within the grasp of a small number of identifiable entities subject to a single regulatory jurisdiction.
+  - This does not imply intent to attack — both are commercially operated entities with strong incentives to maintain [[Bitcoin Proof-of-Work Protocol]]'s integrity. However, it demonstrates that the technical prerequisite for a [[51% Attack]] is within the grasp of a small number of identifiable entities subject to a single regulatory jurisdiction.
   - A state actor with legal jurisdiction over these entities could theoretically compel coordinated hashrate redirection without any market transaction, achieving 51% control through legal compulsion alone. This converts a cryptographic security guarantee into a political one, dependent on the continued cooperation of the US regulatory environment.
   - **What a 51% attack enables**: An entity controlling a majority of hashrate can (a) double-spend their own recent transactions by secretly mining an alternative chain and then releasing it to override the publicly visible chain; (b) prevent specific transactions from ever being confirmed ("transaction censorship" at the mining level); and (c) prevent other miners from mining valid blocks by orphaning their blocks, denying them block reward income. Importantly, a 51% attack cannot create new Bitcoin beyond the protocol limit or spend coins belonging to other users without access to their private keys.
   - **Historical precedent**: Multiple smaller proof-of-work cryptocurrencies (Ethereum Classic, Bitcoin Gold, Vertcoin) have suffered successful 51% attacks, with double-spend losses in the millions of dollars. Bitcoin's much larger hashrate and the resulting cost of attack (estimated at billions of dollars of hardware and electricity for sustained attack) makes spontaneous market-motivated attacks impractical, but legal compulsion bypasses this economic deterrent entirely.
@@ -1839,7 +1839,7 @@ public:: true
 
   - ### Network Science and Centralisation Measurement
   - The academic study of Bitcoin centralisation draws on network science methods adapted for decentralised systems. The **[[Nakamoto Coefficient]]**, introduced by Balaji Srinivasan, operationalises the minimum number of entities whose collusion would break a system's decentralisation guarantee.
-  - For [[Bitcoin]] [[Mining Pool]] hashrate, the Nakamoto coefficient was approximately 2 as of 2025 — [[Foundry USA]] alone approaches 34%; adding [[AntPool]] reaches ~49%. For [[Lightning Network]] routing capacity, the Nakamoto coefficient is similarly low given the 96.5% capacity concentration in the top 10% of nodes.
+  - For [[Bitcoin Proof-of-Work Protocol]] [[Mining Pool]] hashrate, the Nakamoto coefficient was approximately 2 as of 2025 — [[Foundry USA]] alone approaches 34%; adding [[AntPool]] reaches ~49%. For [[Lightning Network]] routing capacity, the Nakamoto coefficient is similarly low given the 96.5% capacity concentration in the top 10% of nodes.
   - For the [[Bitcoin Core]] developer governance layer, the Nakamoto coefficient is 3 — three of the five maintainers would need to agree on any merge, and a coalition of three could block or push through protocol changes. For the ASIC hardware supply chain, the Nakamoto coefficient is 1 — [[Bitmain]] alone at 82% market share constitutes a single-entity majority.
   - Gini coefficient analysis applied to Bitcoin mining pools consistently finds Gini coefficients above 0.90 (near-maximum inequality) for hash power distribution — comparable to the most unequal national income distributions observed empirically. The Herfindahl-Hirschman Index (HHI) for Bitcoin mining well exceeds the 2,500-point threshold that US antitrust authorities use to define "highly concentrated" markets.
   - The HHI for Bitcoin mining pools in May 2026 can be estimated as: (34.2)² + (14.2)² + (11.3)² + (10.5)² + (4.7)² + remaining pools (approximately 25.1% split across smaller operators) ≈ approximately 1,750–2,000 points counting only the top five pools, rising to approximately 2,500+ when including SpiderPool and other significant contributors. This sits in the "highly concentrated" range by the DoJ/FTC 2010 Horizontal Merger Guidelines threshold of 2,500.
@@ -1939,7 +1939,7 @@ public:: true
   - US regulatory evolution suggests expanding the universe of eligible custodians: BNY Mellon, State Street, and other systemically important financial institutions could provide Bitcoin custody at scale with their existing regulatory infrastructure, diluting [[Coinbase]]'s custodial dominance over the medium term.
   - By 2028–2030, two-to-three-custodian arrangements may become industry standard for large Bitcoin ETF structures, reducing (but not eliminating) the systemic chokepoint risk at the custody layer.
   - **Self-custody growth as a countervailing force**: If hardware wallet adoption and Bitcoin native custody tooling continue to improve, a growing fraction of ETF-eligible investors may choose direct Bitcoin self-custody over ETF vehicles, reducing the fraction of total Bitcoin supply held in concentrated custodial arrangements. This trend is likely to be slow — the convenience, regulatory compliance, and tax treatment advantages of ETFs are substantial — but over a 5-10 year horizon could materially reduce custodial concentration.
-  - **Staking and delegation analogies**: The custody concentration problem in Bitcoin parallels the validator concentration problem in proof-of-stake systems such as [[Ethereum]], where a small number of liquid staking protocols (Lido, Coinbase's cbETH) control a large fraction of staked ETH. The academic and regulatory literature on validator concentration in proof-of-stake is directly applicable to understanding the Bitcoin custodial concentration risk and potential regulatory responses.
+  - **Staking and delegation analogies**: The custody concentration problem in Bitcoin parallels the validator concentration problem in proof-of-stake systems such as [[Ethereum Smart Contract Platform]], where a small number of liquid staking protocols (Lido, Coinbase's cbETH) control a large fraction of staked ETH. The academic and regulatory literature on validator concentration in proof-of-stake is directly applicable to understanding the Bitcoin custodial concentration risk and potential regulatory responses.
 
   - ### Lightning Network Structural Evolution
   - Protocol improvements may partially mitigate routing hub concentration. Trampoline routing proposals allow nodes to delegate pathfinding to trusted intermediaries, reducing the global knowledge requirement for routing and potentially enabling a more distributed topology.
@@ -1950,7 +1950,7 @@ public:: true
   - ### Developer Governance Evolution
   - The five-maintainer structure of [[Bitcoin Core]] has been a subject of recurring governance reform proposals: expanding the maintainer set to reduce bottleneck risk; establishing a formal governance committee with stakeholder representation; and adopting more formal BIP specification processes with clear acceptance criteria analogous to IETF RFC processes.
   - Over the 2026–2030 period, the question of whether Bitcoin's Layer-2 protocol governance (Lightning Network specification, Fedimint governance, Ark spec) converges or diverges from Bitcoin Core's conservative culture will significantly influence the overall centralisation risk profile of the Bitcoin ecosystem.
-  - **BitVM and covenant proposals**: Proposals to extend Bitcoin's scripting capabilities (BitVM, OP_CTV, OP_VAULT, and related covenant proposals) represent the most significant pending protocol evolution. If adopted, these changes could enable more expressive smart contracts on [[Bitcoin]], potentially reducing the need for trusted intermediaries in Layer-2 protocols and thereby reducing some forms of centralisation. The governance process by which these proposals are evaluated and adopted (or rejected) will be a major test of Bitcoin Core's five-maintainer governance structure over the 2026–2028 period.
+  - **BitVM and covenant proposals**: Proposals to extend Bitcoin's scripting capabilities (BitVM, OP_CTV, OP_VAULT, and related covenant proposals) represent the most significant pending protocol evolution. If adopted, these changes could enable more expressive smart contracts on [[Bitcoin Proof-of-Work Protocol]], potentially reducing the need for trusted intermediaries in Layer-2 protocols and thereby reducing some forms of centralisation. The governance process by which these proposals are evaluated and adopted (or rejected) will be a major test of Bitcoin Core's five-maintainer governance structure over the 2026–2028 period.
   - **Open-source development funding sustainability**: The long-term sustainability of decentralised Bitcoin Core development depends on continued funding from the ecosystem of institutional philanthropists (Spiral, Brink, OpenSats, Chaincode Labs, HRF). A significant reduction in developer funding — whether from market downturns affecting donor capacity, institutional strategy changes, or regulatory restriction on philanthropic crypto funding — could accelerate concentration of development authority in the few developers who remain funded, further increasing the governance centralisation risk.
 
   - ## Research and Literature

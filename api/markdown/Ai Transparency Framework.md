@@ -179,7 +179,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -239,5 +239,5 @@ public:: true
   - **NIST Trustworthy AI**: Attributes including validity, safety, security, privacy, explainability, and fairness
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[OECD]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[OECD]]
   - migration-date:: 2026-04-26T00:00:00Z

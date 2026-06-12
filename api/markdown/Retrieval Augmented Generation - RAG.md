@@ -530,7 +530,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:llama-index",
+        "@id": "urn:ngm:class:meta-llama-model-family-index",
         "label": "LlamaIndex"
       },
       {
@@ -538,11 +538,11 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -550,7 +550,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -952,7 +952,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -972,7 +972,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -1007,7 +1007,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1104,14 +1104,14 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[InfrastructureLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Neural Information Retrieval]], [[Generative AI]], [[Knowledge-Intensive NLP]], [[Open Domain Question Answering]], [[Foundation Models]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Neural Information Retrieval]], [[Generative AI]], [[Knowledge-Intensive NLP]], [[Open Domain Question Answering]], [[Large-Scale Pretrained Foundation Model]]
   - has-part:: [[Retriever]], [[Generator]], [[Vector Index]], [[Chunking Strategy]], [[Embedding Model]], [[Reranker]], [[Prompt Template]], [[Document Store]], [[Query Encoder]], [[Passage Encoder]]
   - requires:: [[Large Language Models]], [[Dense Passage Retrieval]], [[Vector Database]], [[Text Embeddings]], [[Corpus Preprocessing]], [[Transformers]], [[Attention]]
   - enables:: [[Factual Grounding]], [[Citation Generation]], [[Knowledge Currency]], [[Hallucination Reduction]], [[Domain Adaptation Without Fine-Tuning]], [[Multi-Hop Reasoning]], [[Verifiable AI Outputs]]
   - implements:: [[BM25]], [[Dense Passage Retrieval]], [[ColBERTv2]], [[Hybrid Search]], [[GraphRAG]], [[Self-RAG]], [[Contextual Retrieval]], [[Agentic RAG]], [[HyDE]], [[RAPTOR]]
   - depends-on:: [[Transformers]], [[Attention]], [[Information Theory]], [[Vector Database]], [[Knowledge Graphing]], [[Approximate Nearest Neighbour Search]]
   - supports:: [[Enterprise Search]], [[Legal AI]], [[Medical AI]], [[Customer Support Automation]], [[Scientific Literature Mining]], [[Code Navigation]], [[Compliance Monitoring]]
-  - uses:: [[LlamaIndex]], [[Agent Frameworks]], [[Foundation Models]], [[Anthropic Claude]], [[ChatGPT]], [[Evaluation benchmarks and leaderboards]], [[Function Calling]], [[Model Control Protocols like MCP]]
+  - uses:: [[LlamaIndex]], [[Agent Frameworks]], [[Large-Scale Pretrained Foundation Model]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Evaluation benchmarks and leaderboards]], [[Function Calling]], [[Model Control Protocols like MCP]]
   - contrasts-with:: [[Fine Tuning]], [[Prompt Engineering]], [[In-Context Learning]], [[Model Training]], [[Parametric Knowledge]]
   - related-to:: [[Agents]], [[Knowledge Graphing]], [[Function Calling]], [[Agentic Internet]], [[Model Control Protocols like MCP]], [[CLI Multi-Agent Systems]], [[Graph Database]], [[Chatbots]], [[AI Search]]
   - standardized-by:: [[BEIR Benchmark]], [[RAGAS Framework]], [[ARES Framework]], [[TREC Deep Learning Track]], [[MTEB Benchmark]]

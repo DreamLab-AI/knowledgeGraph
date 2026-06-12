@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
       {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
       {"@id": "urn:ngm:class:software-platform", "label": "Software Platform"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {"@id": "urn:ngm:class:technology-infrastructure-domain", "label": "Infrastructure"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
       {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
       {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},

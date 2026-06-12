@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Knowledge Representation]]
-  - bridges-to:: [[Semantic Web]], [[Graph Database]]
+  - bridges-to:: [[Semantic Web Linked Data Standard]], [[Graph Database]]
   - requires:: [[Knowledge Representation]], [[RDF]]
   - enables:: [[Inference]]
 

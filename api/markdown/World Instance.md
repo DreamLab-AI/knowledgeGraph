@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
@@ -115,7 +115,7 @@ public:: true
 - ### Relationships
   - **Part-of**: [[Virtual World]] (runtime copy of a template), [[Metaverse]] platform layer
   - **Requires**: [[Physics Simulation]] (isolated per-instance), [[Scene Graph]] (entity state management)
-  - **Enables**: [[Virtual Reality]] experiences, [[Spatial Computing]] multi-user scenarios
+  - **Enables**: [[Virtual Reality]] experiences, [[Spatial Computing Paradigm]] multi-user scenarios
   - **Uses**: [[Digital Twin]] patterns for state persistence and crash recovery
 
 - ### Content

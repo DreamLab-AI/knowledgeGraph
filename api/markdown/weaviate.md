@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Vector Database]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - requires:: [[Embeddings]]
   - enables:: [[Semantic Search]], [[Retrieval-Augmented Generation]]
 

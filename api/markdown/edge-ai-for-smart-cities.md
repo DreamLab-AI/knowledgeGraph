@@ -10,7 +10,7 @@
 
 - ### Relationships
   - requires:: [[Edge Computing]], [[Edge AI System]], [[Real-time Processing]]
-  - uses:: [[Computer Vision]], [[Object Detection]], [[Sensor Fusion]], [[Machine Learning]]
+  - uses:: [[Computer Vision]], [[Object Detection]], [[Sensor Fusion]], [[Machine Learning Discipline]]
   - enables:: [[Autonomous System]], [[Digital Twin]]
   - relatedTo:: [[Autonomous Robot]], [[Edge AI Accelerator]], [[Edge AI Security]]
   - bridgesTo:: [[Digital Twin Ecosystem]], [[Autonomous Vehicle]]

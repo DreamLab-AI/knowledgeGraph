@@ -30,7 +30,7 @@ public:: true
       {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
       {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"},

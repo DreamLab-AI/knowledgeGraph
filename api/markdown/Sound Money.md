@@ -27,12 +27,12 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:austrian-economics", "label": "Austrian Economics"},
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
       {"@id": "urn:ngm:class:gold", "label": "Gold"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
       {"@id": "urn:ngm:class:hyperbitcoinization", "label": "Hyperbitcoinization"}
     ],
     "contrastsWith": [

@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:83f3611a5a6e9f1b2c0158dd591f2a5dbb7de68826826ed499a45f4f5c150df2",
+  "title": "Privacy-Preserving Dynamic Creative Optimisation",
+  "slug": "privacy-preserving-dynamic-creative-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-preserving-dynamic-creative-optimisation",
+  "domain": "infrastructure",
+  "definition": "Client-side Dynamic Creative Optimisation (DCO) is an approach where personalised advertising content is generated and matched on the user's device rather than on centralised servers. Using locally maintained preference hashes and decentralised distribution protocols (such as Nostr), the system delivers contextually relevant content without exposing personal identity data to advertisers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "multimodal"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-latent-space",
+        "label": "latent space"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "nostr",
+      "label": "Nostr"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    },
+    {
+      "slug": "multimodal",
+      "label": "Multimodal"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ],
+  "backlinks": []
+}

@@ -30,7 +30,7 @@
   - supports:: [[Media Accessibility]], [[Creator Economy]], [[AI Search]], [[AI companions]], [[AI Video]], [[SEO Optimisation]], [[Podcast Distribution]]
   - uses:: [[OpenAI Whisper]], [[ElevenLabs]], [[Descript]], [[NotebookLM]], [[Retrieval-Augmented Generation]], [[Adobe Podcast]], [[Otter.ai]], [[AssemblyAI]]
   - contrasts-with:: [[Human Podcast Production]], [[Traditional Radio Broadcasting]], [[Manual Audio Editing]], [[Studio Recording]]
-  - related-to:: [[AI Video]], [[Speech and Voice]], [[Natural Language Processing]], [[AI Adoption]], [[Generative AI]], [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]]
+  - related-to:: [[AI Video]], [[Speech and Voice]], [[Natural Language Processing]], [[AI Adoption]], [[Generative AI]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]]
   - standardized-by:: [[C2PA Content Credentials]], [[Ofcom Broadcasting Code]], [[FTC Endorsement Guidelines]], [[EU AI Act Article 50]]
 
 - ### Content

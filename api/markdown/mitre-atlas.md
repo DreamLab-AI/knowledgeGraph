@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Security Framework]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - requires:: [[Adversarial Machine Learning]]
   - enables:: [[AI Safety]]
 

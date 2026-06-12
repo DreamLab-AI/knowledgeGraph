@@ -115,7 +115,7 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
         "label": "Decentralized Finance (DeFi)"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -186,7 +186,7 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -280,7 +280,7 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
   - is-subclass-of:: [[Blockchain]]
   - is-subclass-of:: [[Distributed Computing]]
   - related-to:: [[Decentralized Finance (DeFi)]]
-  - related-to:: [[Ethereum]]
+  - related-to:: [[Ethereum Smart Contract Platform]]
   - uses:: [[Cryptographic Hash Function]]
   - uses:: [[Digital Signature]]
   - enables:: [[Decentralized Application]]

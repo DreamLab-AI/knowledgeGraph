@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
       {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
     ],
     "enables": [
@@ -48,10 +48,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Digital Sovereignty]] is a multi-layered framework through which states, organisations, or individuals assert meaningful autonomous control over digital infrastructure, data flows, algorithms, and standards — balancing participation in global technology networks against strategic independence, [[Data Protection]], and [[Cybersecurity]], as exemplified by the European Union's digital regulatory agenda including the [[EU AI Act]].
+  - [[Digital Sovereignty]] is a multi-layered framework through which states, organisations, or individuals assert meaningful autonomous control over digital infrastructure, data flows, algorithms, and standards — balancing participation in global technology networks against strategic independence, [[Data Protection]], and [[Cybersecurity]], as exemplified by the European Union's digital regulatory agenda including the [[EU AI Act Regulatory Instrument]].
 
 - ### Relationships
-  - Digital Sovereignty is a specialisation of [[Data Sovereignty]] extended to encompass infrastructure, algorithmic, and platform dimensions beyond data alone. It intersects with [[AI Governance]] when nations seek independent capacity to develop and audit AI systems rather than relying on foreign foundation models. [[Data Governance]] frameworks operationalise sovereignty at the organisational level through data classification, access controls, and localisation policies. [[Digital Regulation]] instruments — including the EU's GDPR, Digital Markets Act, and [[EU AI Act]] — are the primary legislative tools for asserting sovereignty over platform behaviour. Digital Sovereignty also enables [[Open-Source AI]] adoption as a hedge against proprietary dependency, and it supports [[Decentralized Governance]] architectures that distribute control, providing a natural contrast with [[Data Privacy]] concerns which focus on individual rights rather than collective autonomy.
+  - Digital Sovereignty is a specialisation of [[Data Sovereignty]] extended to encompass infrastructure, algorithmic, and platform dimensions beyond data alone. It intersects with [[AI Governance]] when nations seek independent capacity to develop and audit AI systems rather than relying on foreign foundation models. [[Data Governance]] frameworks operationalise sovereignty at the organisational level through data classification, access controls, and localisation policies. [[Digital Regulation]] instruments — including the EU's GDPR, Digital Markets Act, and [[EU AI Act Regulatory Instrument]] — are the primary legislative tools for asserting sovereignty over platform behaviour. Digital Sovereignty also enables [[Open-Source AI]] adoption as a hedge against proprietary dependency, and it supports [[Decentralized Governance]] architectures that distribute control, providing a natural contrast with [[Data Privacy]] concerns which focus on individual rights rather than collective autonomy.
 
 - ### Content
   - The term digital sovereignty emerged in European political discourse in the early 2010s, initially as a response to Edward Snowden's 2013 revelations about NSA surveillance programmes that exploited US-domiciled cloud infrastructure. France and Germany led calls for European cloud alternatives (Gaia-X, launched 2019) and data localisation requirements. The concept broadened through the mid-2010s as concerns about platform dependence on US hyperscalers (Amazon Web Services, Microsoft Azure, Google Cloud) grew, and as China's parallel but state-centric model of internet sovereignty (the "Great Firewall" and domestic technology champions) offered a contrasting paradigm demonstrating that technological self-reliance was achievable at scale.

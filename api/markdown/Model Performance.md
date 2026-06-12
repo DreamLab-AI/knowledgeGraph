@@ -211,7 +211,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -236,7 +236,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -363,7 +363,7 @@ public:: true
 		- FLUX.1 [schnell] for rapid local development.
   - These models are designed to excel in prompt adherence, visual quality, and output diversity, making them ideal for various image generation tasks.
   - Video tutorials are available via the YouTube channel CgTopTips, offering guidance on using these models effectively.
-  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[ComfyUI]] platform.
+  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[Node-Based Diffusion Pipeline Interface]] platform.
   - Node details include a range of primitive and custom nodes, such as FluxGuidance, BasicGuider, SamplerCustomAdvanced, and more.
   - The platform supports different operations like image loading and resizing, inpainting model conditioning, and advanced diffusion techniques.
   - Despite the comprehensive offering, there are no user reviews or discussions available at the moment.
@@ -448,7 +448,7 @@ public:: true
 		- **Virtual tissue staining**: AI enables real-time "virtual tissue staining" using intraoperative imaging, significantly faster than traditional biopsy and staining methods, improving surgical precision. ([invalid URL removed])
 		- **"Mind reading" through fMRI decoding**: AI can reconstruct images viewed by a person during an fMRI scan, demonstrating progress in decoding brain activity and reconstructing visual experiences. ([https://www.science.org/doi/10.1126/science.adi1763](https://www.science.org/doi/10.1126/science.adi1763))
 			- [Movie clip reconstructed by an AI reading mice's brains as they watch](https://youtu.be/aMf6Xj9AHXQ) [[Medical AI]]
-		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google]]
+		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google AI Technology Corporation]]
 
   - ### Challenges and Considerations
 		- **Accuracy Trade-offs**: Finding the right balance between model size reduction and accuracy preservation.
@@ -522,7 +522,7 @@ public:: true
 		- FLUX.1 [schnell] for rapid local development.
   - These models are designed to excel in prompt adherence, visual quality, and output diversity, making them ideal for various image generation tasks.
   - Video tutorials are available via the YouTube channel CgTopTips, offering guidance on using these models effectively.
-  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[ComfyUI]] platform.
+  - The page provides links to essential resources like sample images and detailed node configurations, showcasing the underlying architecture of the [[Node-Based Diffusion Pipeline Interface]] platform.
   - Node details include a range of primitive and custom nodes, such as FluxGuidance, BasicGuider, SamplerCustomAdvanced, and more.
   - The platform supports different operations like image loading and resizing, inpainting model conditioning, and advanced diffusion techniques.
   - Despite the comprehensive offering, there are no user reviews or discussions available at the moment.
@@ -607,7 +607,7 @@ public:: true
 		- **Virtual tissue staining**: AI enables real-time "virtual tissue staining" using intraoperative imaging, significantly faster than traditional biopsy and staining methods, improving surgical precision. ([invalid URL removed])
 		- **"Mind reading" through fMRI decoding**: AI can reconstruct images viewed by a person during an fMRI scan, demonstrating progress in decoding brain activity and reconstructing visual experiences. ([https://www.science.org/doi/10.1126/science.adi1763](https://www.science.org/doi/10.1126/science.adi1763))
 			- [Movie clip reconstructed by an AI reading mice's brains as they watch](https://youtu.be/aMf6Xj9AHXQ) [[Medical AI]]
-		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google]]
+		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google AI Technology Corporation]]
 
   - ### Challenges and Considerations
 		- **Accuracy Trade-offs**: Finding the right balance between model size reduction and accuracy preservation.

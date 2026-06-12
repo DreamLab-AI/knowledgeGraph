@@ -24,7 +24,7 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
+    {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
     {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
   ],
   "relations": {
@@ -37,7 +37,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:reasoning-models", "label": "Reasoning Models"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"}
@@ -48,7 +48,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Frontier Models]] are the most capable [[Foundation Models]] at any given moment, trained at unprecedented compute scales, and distinguished by [[Emergent Capabilities]] such as in-context reasoning, tool use, and scientific problem-solving that were absent in prior-generation systems.
+  - [[Frontier Models]] are the most capable [[Large-Scale Pretrained Foundation Model]] at any given moment, trained at unprecedented compute scales, and distinguished by [[Emergent Capabilities]] such as in-context reasoning, tool use, and scientific problem-solving that were absent in prior-generation systems.
 
 - ### Relationships
   - Frontier Models are governed by [[Scaling Laws]] that predict capability gains, require massive [[GPU Cluster]] infrastructure, enable downstream [[Reasoning Models]] and [[Multimodal AI]] systems, and are assessed through structured [[Frontier Model Evaluation]] frameworks.

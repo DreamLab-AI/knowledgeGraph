@@ -77,7 +77,7 @@ alias:: PowerSupply
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:infrastructure",
+        "@id": "urn:ngm:class:technology-infrastructure-domain",
         "label": "infrastructure"
       }
     ],

@@ -234,7 +234,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:bitcoin-bips",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-bips",
         "label": "Bitcoin BIPs"
       },
       {
@@ -242,7 +242,7 @@
         "label": "Cosmos ICS Standards"
       },
       {
-        "id": "urn:ngm:class:ethereum-eips",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-eips",
         "label": "Ethereum EIPs"
       },
       {

@@ -241,7 +241,7 @@ alias:: RB-1003-optimal-control
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -296,7 +296,7 @@ alias:: RB-1003-optimal-control
   - uses:: [[Linear Quadratic Regulator]], [[Model Predictive Control]]
   - enables:: [[RB-1007-trajectory-generation]]
   - applied-in:: [[Autonomous Vehicles]], [[Spacecraft Control]]
-  - skos:related:: [[RB-1004-adaptive-control]], [[Machine Learning]]
+  - skos:related:: [[RB-1004-adaptive-control]], [[Machine Learning Discipline]]
 
   - **Key Concepts**
   - Cost Function (Objective Function)

@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
       {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
     ],

@@ -205,7 +205,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
         "label": "Immersive Technology"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -324,7 +324,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -367,7 +367,7 @@ alias:: Extended Reality Xr, ExtendedRealityXR
 
 - ### Relationships
   - has-part:: [[Virtual Reality (VR)]], [[Augmented Reality (AR)]], [[Mixed Reality (MR)]], [[Reality-Virtuality Continuum]]
-  - is-part-of:: [[Spatial Computing]], [[Immersive Technology]]
+  - is-part-of:: [[Spatial Computing Paradigm]], [[Immersive Technology]]
   - requires:: [[Head-Mounted Display]], [[Spatial Tracking]], [[Real-Time Rendering]], [[Input Device]]
   - enables:: [[Immersive Experiences]], [[Spatial Interaction]], [[Presence]], [[Cross-Reality Transitions]]
   - depends-on:: [[Computer Vision]], [[Graphics Processing]], [[Sensor Fusion]], [[Human-Computer Interaction]]

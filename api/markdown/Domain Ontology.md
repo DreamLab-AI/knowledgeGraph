@@ -645,7 +645,7 @@ alias:: DomainOntology
         "label": "Schema.org"
       },
       {
-        "@id": "urn:ngm:class:taxonomy",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
         "label": "Taxonomy"
       },
       {
@@ -687,7 +687,7 @@ alias:: DomainOntology
         "label": "Regulatory Reporting"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -1280,7 +1280,7 @@ alias:: DomainOntology
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     }
@@ -1340,7 +1340,7 @@ alias:: DomainOntology
   - enables:: [[Semantic Interoperability]], [[Automated Reasoning]], [[Knowledge Reuse]], [[Data Integration]], [[Linked Data Publication]], [[FAIR Data Principles]]
   - implements:: [[Description Logic]], [[OWL 2 Semantics]], [[RDF Schema]], [[SKOS Concept Scheme]], [[Closed-World Negation as Failure]] (optional), [[Open-World Assumption]]
   - depends-on:: [[Description Logic]], [[First-Order Logic]], [[RDF]], [[Model Theory]], [[Set Theory]]
-  - supports:: [[Knowledge Graph]], [[Semantic Web]], [[Linked Open Data]], [[Clinical Decision Support]], [[Scientific Data Sharing]], [[Regulatory Reporting]]
+  - supports:: [[Knowledge Graph]], [[Semantic Web Linked Data Standard]], [[Linked Open Data]], [[Clinical Decision Support]], [[Scientific Data Sharing]], [[Regulatory Reporting]]
   - uses:: [[OWL 2]], [[RDF/RDFS]], [[SPARQL]], [[SHACL]], [[ShEx]], [[Tableaux Reasoning]], [[Protégé]], [[Ontology Design Patterns]]
   - contrasts-with:: [[Relational Schema]], [[Folksonomy]], [[Natural Language Knowledge Base]], [[Property Graph]], [[Document Schema]]
   - related-to:: [[Upper Ontology]], [[Application Ontology]], [[Thesaurus]], [[Taxonomy]], [[Knowledge Graph]], [[Ontology Alignment]], [[Schema.org]], [[Wikidata]]

@@ -47,6 +47,6 @@
 		- Critical infrastructure protection
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

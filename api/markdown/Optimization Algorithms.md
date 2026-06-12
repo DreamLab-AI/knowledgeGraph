@@ -83,7 +83,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
@@ -142,7 +142,7 @@ public:: true
 
 - ### Relationships
   - hasPart: [[Gradient Descent]], [[Backpropagation]]
-  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning]]
+  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning Discipline]]
   - uses: [[Neural Network]]
 
 - ### Content

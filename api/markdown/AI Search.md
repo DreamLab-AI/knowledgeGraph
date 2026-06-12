@@ -604,7 +604,7 @@ public:: true
         "label": "C2PA Content Credentials"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {

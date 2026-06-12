@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:open-ai",
+  "title": "OpenAI Research Organisation",
+  "slug": "openai-research-organisation",
+  "public": true,
+  "classIri": "urn:ngm:class:openai-research-organisation-research-organisation",
+  "domain": "ai",
+  "definition": "OpenAI is an American AI research and deployment company founded in December 2015 with the stated mission of ensuring that artificial general intelligence benefits all of humanity. Originally established as a non-profit, OpenAI restructured as a 'capped-profit' entity in 2019 to attract large-scale investment while retaining its mission-oriented governance. OpenAI is responsible for some of the most influential AI systems and research artefacts of the current era, including the GPT series of large language models, the DALL-E image generation models, the Codex code generation model, and the ChatGPT conversational interface.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Foundation Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

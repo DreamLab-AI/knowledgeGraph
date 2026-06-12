@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},

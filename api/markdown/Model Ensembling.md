@@ -62,12 +62,12 @@ public:: true
       {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"}
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
@@ -97,7 +97,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     }
@@ -124,10 +124,10 @@ public:: true
 - ### Relationships
   - **enables** [[Robustness]] — aggregating diverse models reduces sensitivity to individual model errors
   - **enables** [[Accuracy]] — ensemble predictions consistently outperform single-model baselines
-  - **uses** [[Machine Learning]] — ensembling is a general ML meta-strategy applicable to any learner type
+  - **uses** [[Machine Learning Discipline]] — ensembling is a general ML meta-strategy applicable to any learner type
   - **uses** [[Deep Learning]] — commonly applied to neural network ensembles in production systems
   - **contrastsWith** [[Knowledge Distillation]] — distillation compresses an ensemble into one model; ensembling expands capacity
-  - **contrastsWith** [[Mixture of Experts]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
+  - **contrastsWith** [[Mixture-of-Experts Architecture]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
   - **relatedTo** [[Overfitting]] — diversity among models counteracts overfitting present in individual members
   - **relatedTo** [[Transfer Learning]] — pre-trained base models are frequently the building blocks of ensembles
 
@@ -196,7 +196,7 @@ public:: true
 
   - ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
 		- A plugin for controlling Blender using GPT models.
-  - [[Stable Diffusion]]
+  - [[Stable Diffusion Image Model]]
 
   - ## Emerging Business Models
 

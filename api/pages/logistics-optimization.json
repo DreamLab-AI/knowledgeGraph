@@ -186,7 +186,7 @@
         "label": "ARM Cortex"
       },
       {
-        "id": "urn:ngm:class:google-or-tools",
+        "id": "urn:ngm:class:google-ai-technology-corporation-or-tools",
         "label": "Google OR-Tools"
       },
       {
@@ -202,7 +202,7 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:nvidia-jetson",
+        "id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
       },
       {

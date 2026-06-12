@@ -8,7 +8,7 @@
   "definition": "Hyperbitcoinization is a theoretical macroeconomic scenario, first articulated by Daniel Krawisz in 2014, in which Bitcoin undergoes a self-reinforcing demonetisation of fiat currencies and becomes the dominant global monetary unit. The process is modelled as a currency substitution accelerated by the Cantillon effect: as fiat monetary expansion erodes purchasing power, rational economic actors progressively shift savings and transactional balances into Bitcoin, increasing its adoption and liquidity, which in turn makes it more attractive as a medium of exchange. Unlike hyperinflation, which is an involuntary collapse of a fiat currency, hyperbitcoinization is theorised as a voluntary migration driven by Bitcoin's superior monetary properties \u2014 fixed supply, self-custody, and censorship resistance \u2014 ultimately displacing state-issued money.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-value-proposition",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
       "label": "Bitcoin Value Proposition"
     }
   ],
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-distribution",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
         "label": "Bitcoin Distribution"
       }
     ],
@@ -39,7 +39,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -52,11 +52,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {

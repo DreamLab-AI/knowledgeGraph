@@ -33,7 +33,7 @@
 			- **Examples**:
 				- [[Coinbase]] maintains licences in 49+ US jurisdictions; estimated compliance cost $20-30 million annually
 				- [[Kraken]] operates in 47 states; chose not to pursue BitLicense, blocking New York customers
-				- [[Gemini]] holds BitLicense and 49 state licences; invested $30+ million establishing US regulatory infrastructure
+				- [[Gemini Multimodal Language Model]] holds BitLicense and 49 state licences; invested $30+ million establishing US regulatory infrastructure
 		- #### New York BitLicense
 			- **Structure**: New York's Department of Financial Services ([[NYDFS]]) created the first dedicated cryptocurrency licensing regime in 2015
 			- **Requirements**:
@@ -46,7 +46,7 @@
 				- Approval rate: ~3-5%
 				- Timeline: 18-36 months average processing time; some applications pending 4+ years
 				- Many applicants withdrew, citing costs exceeding $1-2 million and unclear approval standards
-			- **Notable Holders**: [[Coinbase]], [[Gemini]], [[Paxos]], [[Circle]], [[Bitstamp]], [[eToro]], [[Robinhood Crypto]], [[PayPal]]
+			- **Notable Holders**: [[Coinbase]], [[Gemini Multimodal Language Model]], [[Paxos]], [[Circle]], [[Bitstamp]], [[eToro]], [[Robinhood Crypto]], [[PayPal]]
 			- **"BitLicense Exodus"**: High costs and slow approvals led many startups to exclude New York from service areas, creating crypto industry concerns about regulatory overreach
 		- #### United Kingdom - FCA Registration
 			- **Financial Conduct Authority ([[FCA]]) Registration**: Required for crypto asset businesses under Money Laundering Regulations 2017 (amended 2020)
@@ -65,7 +65,7 @@
 					- Inability to demonstrate adequate capitalization
 			- **Timeline**: 12-24 months for approval; FCA introduced "pools" system prioritising complete applications
 			- **Cost**: £500,000-£2 million total including legal, compliance infrastructure, and personnel
-			- **Notable Approvals**: [[Coinbase]], [[Gemini]], [[eToro]], [[Revolut]], [[Blockchain.com]], [[Copper.co]]
+			- **Notable Approvals**: [[Coinbase]], [[Gemini Multimodal Language Model]], [[eToro]], [[Revolut]], [[Blockchain.com]], [[Copper.co]]
 			- **Rejections/Withdrawals**: [[Binance]] (rejected 2021), [[Kraken]] (withdrew 2020, re-applied 2022), [[Luno]] (initially rejected, later approved)
 		- #### Singapore - MAS Licensing
 			- **Monetary Authority of Singapore ([[MAS]]) Payment Services Act**: Covers digital payment token services under 2020 Payment Services Act
@@ -84,7 +84,7 @@
 				- Many applications remain pending 2-3 years
 			- **Timeline**: 12-36 months; MAS emphasises thoroughness over speed
 			- **Cost**: S$2-5 million (~$1.5-3.7M USD) including application, capital, compliance infrastructure, and local presence
-			- **Notable Approvals**: [[Coinbase]], [[Crypto.com]], [[Gemini]], [[Independent Reserve]], [[Coinhako]]
+			- **Notable Approvals**: [[Coinbase]], [[Crypto.com]], [[Gemini Multimodal Language Model]], [[Independent Reserve]], [[Coinhako]]
 			- **Rejections**: MAS rejected several unnamed applicants for inadequate AML controls and governance
 		- #### European Union - MiCA CASP Authorisation
 			- **Markets in Crypto-Assets Regulation ([[BC-0484-markets-in-crypto-assets]])**: Creates harmonized EU-wide licensing effective December 2024

@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -107,7 +107,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -163,7 +163,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[UTXO]], [[Cryptographic Hash Function]]
-  - enables:: [[Bitcoin]], [[Proof of Work]], [[Blockchain Domain]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]], [[Proof of Work]], [[Blockchain Domain]]
 
 - ### Content
   - The whitepaper frames the central challenge of digital cash as preventing double spending without relying on a trusted third party. Its solution is a peer-to-peer network that timestamps transactions by hashing them into an ongoing chain of proof-of-work, forming a record that cannot be changed without redoing the work.

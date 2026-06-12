@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:research-methods", "label": "Research Methods"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
@@ -34,14 +34,14 @@ public:: true
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"},
       {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ]
   },
   "quality": 0.8
@@ -51,7 +51,7 @@ public:: true
 - ### Definition
   - ICML (International Conference on Machine Learning) is the world's leading peer-reviewed venue for machine learning research, publishing foundational results in learning theory, deep learning, and applied ML annually since 1980.
 - ### Relationships
-  - ICML is a subclass of [[Research Methods]] as a primary dissemination mechanism for the field. It is directly related to [[Machine Learning]], [[Deep Learning]], [[Reinforcement Learning]], [[Neural Network]], [[AI Safety Research]], and [[Generative AI]]. ICML enables progress in [[Machine Learning Technique]], [[Benchmark Standard]], [[Transfer Learning]], and [[Federated Learning]] by serving as the venue where these techniques are first rigorously validated and published. It draws upon [[Optimization Algorithm]] and [[Machine Learning Model]] research as its core subject matter.
+  - ICML is a subclass of [[Research Methods]] as a primary dissemination mechanism for the field. It is directly related to [[Machine Learning Discipline]], [[Deep Learning]], [[Reinforcement Learning]], [[Neural Network]], [[AI Safety Research]], and [[Generative AI]]. ICML enables progress in [[Machine Learning Technique]], [[Benchmark Standard]], [[Transfer Learning]], and [[Federated Learning]] by serving as the venue where these techniques are first rigorously validated and published. It draws upon [[Optimization Algorithm]] and [[Machine Learning Model]] research as its core subject matter.
 - ### Content
   - The International Conference on Machine Learning has been held annually since 1980, making it one of the longest-running dedicated venues for machine learning research. Organised by the International Machine Learning Society (IMLS), ICML has evolved from a small workshop format to a conference regularly attracting over 10,000 attendees and receiving upward of 11,000 paper submissions per year (as of 2023–2024). The conference proceedings are published as volumes of the Proceedings of Machine Learning Research (PMLR), a freely accessible open-access archive that has become the canonical citation source for ICML papers.
 

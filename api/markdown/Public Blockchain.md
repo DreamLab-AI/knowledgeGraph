@@ -76,7 +76,7 @@ alias:: PublicBlockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:public-blockchain",
+  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
   "@type": "Class",
   "label": "Public Blockchain",
   "definition": "A permissionless, decentralised distributed ledger network in which any party may participate, validate transactions, and inspect the chain state without requiring authorisation. Public blockchains such as Bitcoin and Ethereum achieve censorship resistance and immutability through global state replication and open consensus mechanisms, at the cost of reduced transaction throughput and higher energy consumption relative to permissioned alternatives.",
@@ -159,7 +159,7 @@ alias:: PublicBlockchain
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -179,7 +179,7 @@ alias:: PublicBlockchain
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -211,7 +211,7 @@ alias:: PublicBlockchain
 
 
 - ### Definition
-  - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin]], [[Ethereum]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sacrificing scalability and energy efficiency compared to private alternatives.
+  - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sacrificing scalability and energy efficiency compared to private alternatives.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PublicBlockchain
@@ -225,7 +225,7 @@ alias:: PublicBlockchain
   - Related to [[Distributed Ledger Technology]], [[Blockchain Governance]]
 
 - ### Content
-  - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority or permission requirements. Public blockchains—[[Bitcoin]], [[Ethereum]], [[Cardano]]—provide [[CensorshipResistance]], [[Immutability]], and [[UserSovereignty]] through global state replication and permissionless consensus whilst sacrificing scalability, privacy, and energy efficiency compared to [[PermissionedBlockchain|permissioned alternatives]]. Tradeoffs enable censorship-resistant financial systems but inhibit enterprise adoption requiring confidentiality and regulatory compliance.
+  - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority or permission requirements. Public blockchains—[[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Cardano]]—provide [[CensorshipResistance]], [[Immutability]], and [[UserSovereignty]] through global state replication and permissionless consensus whilst sacrificing scalability, privacy, and energy efficiency compared to [[PermissionedBlockchain|permissioned alternatives]]. Tradeoffs enable censorship-resistant financial systems but inhibit enterprise adoption requiring confidentiality and regulatory compliance.
   - ### Original Content
 		- ```
   # Public Blockchain

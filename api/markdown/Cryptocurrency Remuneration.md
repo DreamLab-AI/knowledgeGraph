@@ -86,7 +86,7 @@ alias:: TELE-253-cryptocurrency-remuneration
     "requires": [
       {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:tax-treatment-crypto", "label": "Tax Treatment Crypto"}
+      {"@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto", "label": "Tax Treatment Crypto"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},

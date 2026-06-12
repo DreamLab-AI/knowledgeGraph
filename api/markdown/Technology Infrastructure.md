@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:technical-architecture-framework", "label": "Technical Architecture Framework"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ]
   },
   "provenance": {

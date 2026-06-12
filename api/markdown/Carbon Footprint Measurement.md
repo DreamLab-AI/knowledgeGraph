@@ -462,7 +462,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -890,7 +890,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -939,7 +939,7 @@ public:: true
   - implements:: [[Scope 1 Emissions]], [[Scope 2 Emissions]], [[Scope 3 Emissions]], [[Product Carbon Footprint]], [[Market-Based Accounting]], [[Location-Based Accounting]]
   - depends-on:: [[Emission Factors]], [[Activity Data]], [[Supply Chain Transparency]], [[Satellite Data]], [[AI]], [[ERP Systems]]
   - supports:: [[Carbon Credits]], [[Circular Economy]], [[Supply Chain]], [[ESG Investing]], [[Regulatory Technology]], [[Sustainability Reporting]], [[Climate Tech]]
-  - uses:: [[Lifecycle Assessment]], [[AI]], [[Satellite Data]], [[Blockchain]], [[Digital Product Passport]], [[Remote Sensing]], [[Machine Learning]]
+  - uses:: [[Lifecycle Assessment]], [[AI]], [[Satellite Data]], [[Blockchain]], [[Digital Product Passport]], [[Remote Sensing]], [[Machine Learning Discipline]]
   - contrasts-with:: [[Carbon Offsetting]], [[Greenwashing]], [[Voluntary Carbon Markets]]
   - related-to:: [[Sustainability]], [[ESG Investing]], [[Circular Economy]], [[GHG Protocol]], [[Climate Tech]], [[Regulatory Technology]], [[Digital Product Passport]], [[Supply Chain]]
   - standardized-by:: [[GHG Protocol]], [[ISO 14064]], [[ISO 14067]], [[ISO 14040]], [[ESRS E1]], [[Streamlined Energy and Carbon Reporting]], [[TCFD]]
@@ -1170,7 +1170,7 @@ public:: true
   - [[Satellite Data]] integration with corporate accounting currently primarily used to flag anomalies in reported inventory data rather than directly replacing bottom-up calculations; full quantitative integration anticipated as methodology and regulation co-evolve through 2026-2030.
 
   - ### AI-Powered Estimation Layer
-  - [[AI]] and [[Machine Learning]] address the data-completeness problem inherent in Scope 3 measurement, where supplier-specific primary emission data is typically available for fewer than 15% of spend categories.
+  - [[AI]] and [[Machine Learning Discipline]] address the data-completeness problem inherent in Scope 3 measurement, where supplier-specific primary emission data is typically available for fewer than 15% of spend categories.
   - **Spend-based ML models**:
     - Random forest and gradient-boosted regressors (XGBoost, LightGBM) trained on EXIOBASE/USEEIO EIO-LCA databases map supplier NACE/SIC sector codes and spend values to sector-specific emission intensities
     - Uncertainty propagated through Monte Carlo simulation: Scope 3 Category 1 estimates carry ±50-200% relative uncertainty on spend-based inputs vs ±10-30% with supplier-specific PCF data
@@ -1314,7 +1314,7 @@ public:: true
     - EcoVadis supplier sustainability ratings (adopted by 1,000+ companies): Scope 1/2 data collected, PCF data for key categories
     - CDP Supply Chain programme (2024: 28,000+ supplier responses): standardised Scope 1/2/3 questionnaire enabling buyer-side Scope 3 Cat. 1 primary data collection
     - IKEA Supplier Carbon Programme: requires tier-1 suppliers to report Scope 1 and 2 emissions, with 100% renewable electricity pathway commitments
-  - **AI-powered spend analysis**: [[Machine Learning]] maps procurement system spend categories to emission factors in real time, surfacing high-emission categories for targeted decarbonisation investment; continuously updated as supplier PCF data replaces EIO-LCA estimates.
+  - **AI-powered spend analysis**: [[Machine Learning Discipline]] maps procurement system spend categories to emission factors in real time, surfacing high-emission categories for targeted decarbonisation investment; continuously updated as supplier PCF data replaces EIO-LCA estimates.
   - **Scope 3 Cat. 1 data quality ladder** (from lowest to highest reliability):
     - Tier 5 (worst): Spend × industry-average EIO-LCA factor (±150-200% uncertainty)
     - Tier 4: Spend × sector-specific EIO-LCA factor with country adjustment (±80-150%)
@@ -1436,7 +1436,7 @@ public:: true
     - [[AI]]-powered multi-tier supply-chain tracing (using customs, procurement, and financial data) progressively operationalising CBA at enterprise scale
   - **AI system carbon disclosure standardisation**:
     - Green Software Foundation SCI specification, EU AI Act implementing acts, and voluntary industry frameworks converging toward mandatory per-query or per-functional-unit carbon intensity disclosure for commercial [[AI]] services by 2027
-    - [[Machine Learning]] model registries expected to require embodied carbon declarations analogous to DPP product declarations
+    - [[Machine Learning Discipline]] model registries expected to require embodied carbon declarations analogous to DPP product declarations
     - Creating an entirely new [[Regulatory Technology]] surface for the AI sector around carbon intensity of digital infrastructure
     - MLCommons and Green Software Foundation co-developing unified benchmark methodology harmonising MLPerf power measurements with SCI carbon intensity calculations
   - **Interoperability and open data standards**:

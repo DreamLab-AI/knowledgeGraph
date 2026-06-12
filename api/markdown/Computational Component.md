@@ -68,7 +68,7 @@ public:: true
     ],
     "partOf": [
       {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"},

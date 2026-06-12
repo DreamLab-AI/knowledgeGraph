@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "Blockchain DeFi and Economics"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-lightning-network", "label": "Bitcoin Lightning Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network", "label": "Bitcoin Lightning Network"},
       {"@id": "urn:ngm:class:digital-money", "label": "Digital Money"}
     ]
   },

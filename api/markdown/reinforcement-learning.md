@@ -8,7 +8,7 @@
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
-  - partOf:: [[Machine Learning]]
+  - partOf:: [[Machine Learning Discipline]]
   - enables:: [[Autonomous Navigation]]
   - enables:: [[Autonomous Robot]]
   - uses:: [[Deep Learning]]

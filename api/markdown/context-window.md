@@ -9,7 +9,7 @@
 - ### Relationships
   - partOf [[Transformer Architecture]]
   - requires [[Attention Mechanism]]
-  - requires [[Tokenisation]]
+  - requires [[Neural Network Text Tokenisation]]
   - enables [[Large Language Models]]
   - enables [[Retrieval-Augmented Generation]]
   - relatedTo [[Language Modeling]]

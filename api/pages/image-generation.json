@@ -289,6 +289,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-literacy-training-for-designers",
+      "label": "AI Literacy Training for Designers"
+    },
+    {
       "slug": "automatic-1111-web-ui",
       "label": "AUTOMATIC1111 WebUI"
     },
@@ -375,10 +379,6 @@
     {
       "slug": "super-resolution",
       "label": "Super Resolution"
-    },
-    {
-      "slug": "training-for-design-practitioners",
-      "label": "Training for Design Practitioners"
     },
     {
       "slug": "variational-autoencoder",

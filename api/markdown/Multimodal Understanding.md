@@ -39,7 +39,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-understanding",
+  "@id": "urn:ngm:class:multimodal-ai-architecture-understanding",
   "@type": "Class",
   "label": "Multimodal Understanding",
   "definition": "Multimodal Understanding is an AI research area concerned with systems that jointly process and reason over multiple sensory modalities — including text, images, audio, video, and structured data — producing unified semantic representations. It underpins vision-language models, audio-visual reasoning, and multi-sensor scene interpretation.",
@@ -60,7 +60,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "relatedTo": [

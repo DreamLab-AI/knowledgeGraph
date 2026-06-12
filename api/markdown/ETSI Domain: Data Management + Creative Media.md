@@ -146,7 +146,7 @@ public:: true
         "label": "Asset Version Control"
       },
       {
-        "@id": "urn:ngm:class:collaborative-authoring",
+        "@id": "urn:ngm:class:collaborative-systems-modality-authoring",
         "label": "Collaborative Authoring"
       },
       {

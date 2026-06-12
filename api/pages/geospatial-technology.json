@@ -33,7 +33,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:location-based-experience",
+        "id": "urn:ngm:class:venue-tethered-immersive-experience",
         "label": "Location Based Experience"
       }
     ],
@@ -56,7 +56,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]

@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:spatial-computing-system",
+  "@id": "urn:ngm:class:spatial-computing-paradigm-system",
   "@type": "Class",
   "label": "Spatial Computing System",
   "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positionin...",

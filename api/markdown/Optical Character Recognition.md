@@ -108,7 +108,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -133,7 +133,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Computer Vision]]
-  - bridges-to:: [[Deep Learning]], [[Machine Learning]]
+  - bridges-to:: [[Deep Learning]], [[Machine Learning Discipline]]
   - requires:: [[Computer Vision]]
   - enables:: [[Legal Research]]
 

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:foundation-models",
+  "title": "Large-Scale Pretrained Foundation Model",
+  "slug": "large-scale-pretrained-foundation-model",
+  "public": true,
+  "classIri": "urn:ngm:class:large-scale-pretrained-foundation-model",
+  "domain": "ai",
+  "definition": "Foundation models are large-scale neural networks trained on broad, diverse datasets via self-supervised learning that acquire general-purpose representations transferable to a wide range of downstream tasks. They are characterised by massive parameter counts, emergent capabilities not explicitly trained for, and the ability to be fine-tuned or prompted for specialised applications. Prominent examples include GPT-4, BERT, CLIP, and Stable Diffusion, spanning language, vision, and multimodal domains. Their scale and generality make them qualitatively distinct from narrow task-specific models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

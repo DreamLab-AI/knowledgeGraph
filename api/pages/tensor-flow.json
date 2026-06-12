@@ -8,7 +8,7 @@
   "definition": "An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

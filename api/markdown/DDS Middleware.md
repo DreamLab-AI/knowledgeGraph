@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"},
       {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
       {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}
     ],

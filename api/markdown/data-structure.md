@@ -11,7 +11,7 @@
   - enables [[Graph Neural Network]]
   - uses [[GPU Compute]]
   - uses [[Algorithm]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
 

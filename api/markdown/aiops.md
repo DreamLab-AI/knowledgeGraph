@@ -9,7 +9,7 @@
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
   - hasPart:: [[Anomaly Detection]], [[AI Monitoring]], [[AI Incident]]
-  - requires:: [[Machine Learning]], [[Data Pipeline]], [[Natural Language Processing]]
+  - requires:: [[Machine Learning Discipline]], [[Data Pipeline]], [[Natural Language Processing]]
   - enables:: [[Operational Resilience]], [[Platform Engineering]], [[Workflow Automation]]
   - uses:: [[Predictive Analytics]], [[Deep Learning]], [[Event Driven Architecture]]
   - relatedTo:: [[Edge Computing]], [[Artificial Intelligence]], [[Cloud-Native Applications]]

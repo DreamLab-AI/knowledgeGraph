@@ -26,12 +26,12 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"},
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:tls", "label": "TLS"}
     ],
     "relatedTo": [

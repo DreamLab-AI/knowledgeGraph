@@ -78,7 +78,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:machine-learning-framework",
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       },
       {

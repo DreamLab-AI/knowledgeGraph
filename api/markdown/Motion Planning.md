@@ -134,7 +134,7 @@ alias:: MotionPlanning
       "kind": "StubLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -144,7 +144,7 @@ alias:: MotionPlanning
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Delivery Planning]]",
+      "raw": "[[Technology Programme Delivery Planning]]",
       "resolved": "urn:visionflow:owl:class:delivery-planning",
       "kind": "ResolvedLink"
     },
@@ -169,12 +169,12 @@ alias:: MotionPlanning
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[social media]]",
+      "raw": "[[Social Media Platform Infrastructure]]",
       "resolved": "urn:visionflow:owl:class:social-media",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     }
@@ -213,13 +213,13 @@ alias:: MotionPlanning
   - [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
   - https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
   - Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
-		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
+		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
 			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
 			  using the "video/controlgif/animatediff" contolnet from here: https://huggingface.co/crishhh/animatediff_controlnet/blob/main/controlnet_checkpoint.ckpt
 		- {{video https://rave-video.github.io/static/teaser/car-turn_final.mp4}}
 
   - # Introduction and Problem Definition
-  - [[Delivery Planning]]
+  - [[Technology Programme Delivery Planning]]
 
   - #### Gaze
 		- Gaze is broadly agreed to be highly important for mediating flow. Mutual gaze is a rich emotional channel. The research must consider gaze. All of the researchers listed around the Venn have at some point engaged with this topic.
@@ -229,19 +229,19 @@ alias:: MotionPlanning
   - [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
   - https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
   - Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
-		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
+		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
 			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
 			  using the "video/controlgif/animatediff" contolnet from here: https://huggingface.co/crishhh/animatediff_controlnet/blob/main/controlnet_checkpoint.ckpt
 		- {{video https://rave-video.github.io/static/teaser/car-turn_final.mp4}}
 
   - # Introduction and Problem Definition
-  - [[Delivery Planning]]
+  - [[Technology Programme Delivery Planning]]
 
   - #### Gaze
 		- Gaze is broadly agreed to be highly important for mediating flow. Mutual gaze is a rich emotional channel. The research must consider gaze. All of the researchers listed around the Venn have at some point engaged with this topic.
 
   - # Introduction and Problem Definition
-  - [[Delivery Planning]]
+  - [[Technology Programme Delivery Planning]]
 
   - # The bad
   - **Price**: $3,500 is very expensive, especially for a Gen 1 product.
@@ -251,13 +251,13 @@ alias:: MotionPlanning
   - **Field of View**: Feels like looking through binoculars, can feel tunnel-visioned.
 
   - ## Social Media and Marketing
-		- Use [[social media]] planning tools to schedule posts and analyse engagement
+		- Use [[Social Media Platform Infrastructure]] planning tools to schedule posts and analyse engagement
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
 			- Markerless AR viewer on iOS/Android; place your model at 1 : 1 scale on site without coding.
 		- **Desktop VR via Enscape or Twinmotion**
 			- Import via Datasmith into Unreal Engine or FBX/OBJ into Unity for bespoke interactive apps. AI can assist by auto-generating environment assets or textures.
 
-  - ## Tools roundup [[Update Cycle]]
+  - ## Tools roundup [[Knowledge Artefact Update Cycle]]
   - [Motion Array So Easy (youtube.com)](https://www.youtube.com/watch?v=Hd0KYxotzv8)
   - [Suno AI](https://www.suno.ai/) is now integrated into Microsoft [[Microsoft Copilot]] [[Music and Audio]]
 

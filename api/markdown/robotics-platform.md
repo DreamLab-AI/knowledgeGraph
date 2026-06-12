@@ -16,9 +16,9 @@
   - implements:: [[ROS 2]], [[MoveIt 2]], [[ros2_control]], [[micro-ROS]], [[URDF]], [[Nav2]], [[Behaviour Tree]], [[SLAM]], [[Reinforcement Learning]], [[Imitation Learning]]
   - depends-on:: [[DDS QoS]], [[POSIX Real-Time]], [[CAN Bus]], [[EtherCAT]], [[CUDA]], [[Omniverse USD]], [[PCL]], [[Eigen]]
   - supports:: [[Industrial Automation]], [[Warehouse Robotics]], [[Surgical Robotics]], [[Agricultural Robotics]], [[Field Robotics]], [[Space Robotics]], [[Assistive Robotics]]
-  - uses:: [[Python]], [[C++]], [[Rust]], [[URDF]], [[SDF]], [[USD]], [[OpenCV]], [[PCL]], [[Eigen]], [[OpenAI Gym]]
+  - uses:: [[Python]], [[C++]], [[Rust Systems Programming Language]], [[URDF]], [[SDF]], [[USD]], [[OpenCV]], [[PCL]], [[Eigen]], [[OpenAI Gym]]
   - contrasts-with:: [[Proprietary Robot Controller]], [[PLC]], [[SCADA]], [[Custom RTOS Firmware]], [[ROS 1]]
-  - related-to:: [[Machine Learning]], [[Computer Vision]], [[Internet of Things]], [[Edge Computing]], [[Digital Manufacturing]], [[5G]], [[Autonomous Vehicles]]
+  - related-to:: [[Machine Learning Discipline]], [[Computer Vision]], [[Internet of Things]], [[Edge Computing]], [[Digital Manufacturing]], [[5G]], [[Autonomous Vehicles]]
   - standardized-by:: [[IEEE 1872]], [[ISO 10218]], [[IEC 61508]], [[ROS REP]], [[OMG DDS Standard]], [[ISO 9283]], [[VDA 5050]]
 
 - ### Content

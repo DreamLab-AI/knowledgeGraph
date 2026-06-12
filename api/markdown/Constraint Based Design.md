@@ -79,7 +79,7 @@ alias:: Constraint-Based Design
     "uses": [
       {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
       {"@id": "urn:ngm:class:constraint", "label": "Constraint"},
-      {"@id": "urn:ngm:class:parametric-modeling", "label": "Parametric Modeling"},
+      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ],
     "relatedTo": [

@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
 
 - ### Content
   Machine Learning Technique — content pending enrichment.

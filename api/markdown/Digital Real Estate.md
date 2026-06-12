@@ -184,7 +184,7 @@ public:: true
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -330,7 +330,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -391,7 +391,7 @@ bridges-to:: [[Blockchain]]
 - ### Relationships
   - has-part:: [[Land Parcel]], [[Ownership Token]], [[Spatial Coordinates]], [[Property Metadata]], [[Development Rights]]
   - is-part-of:: [[Virtual Economy]], [[Virtual World]]
-  - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing]], [[Digital Wallet]]
+  - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing Paradigm]], [[Digital Wallet]]
   - enables:: [[Virtual Commerce]], [[Property Development]], [[Event Hosting]], [[Advertising Space]], [[Community Building]]
   - depends-on:: [[NFT Standards]], [[Land Registry]], [[Metaverse Platform]]
 

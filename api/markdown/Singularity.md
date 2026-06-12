@@ -316,7 +316,7 @@ public:: true
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -384,7 +384,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -659,7 +659,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -704,12 +704,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -753,14 +753,14 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Artificial General Intelligence]], [[Existential Risk]], [[Futures Studies]], [[Philosophy of Mind]], [[Transhumanism]]
   - has-part:: [[Intelligence Explosion]], [[Recursive Self-Improvement]], [[Takeoff Scenarios]], [[AGI Timelines]], [[Superintelligence]], [[Intelligence Amplification]], [[Mind Uploading]]
-  - requires:: [[Artificial General Intelligence]], [[Recursive Self-Improvement]], [[Compute Infrastructure]], [[Foundation Models]], [[AI Alignment]]
+  - requires:: [[Artificial General Intelligence]], [[Recursive Self-Improvement]], [[Compute Infrastructure]], [[Large-Scale Pretrained Foundation Model]], [[AI Alignment]]
   - enables:: [[Superintelligence]], [[Post-Scarcity Economics]], [[Mind Uploading]], [[Intelligence Amplification]], [[Technological Acceleration]]
   - implements:: [[Intelligence Explosion]], [[Exponential Growth Models]], [[Recursive Self-Improvement]], [[Kurzweil Law of Accelerating Returns]]
-  - depends-on:: [[Foundation Models]], [[Compute Infrastructure]], [[AI Alignment]], [[Reasoning]], [[Agents]]
+  - depends-on:: [[Large-Scale Pretrained Foundation Model]], [[Compute Infrastructure]], [[AI Alignment]], [[Reasoning]], [[Agents]]
   - supports:: [[Safety and Alignment]], [[Existential Risk]], [[AI Governance]], [[Longtermism]], [[AI Policy]]
   - uses:: [[AGI Timelines]], [[Bayesian Forecasting]], [[Metaculus]], [[AI Impacts Surveys]], [[Compute Scaling]]
   - contrasts-with:: [[Stochastic Parrots Critique]], [[AI Winter]], [[Embodied Minds]], [[Narrow AI]], [[AI Risks]]
-  - related-to:: [[History and Path to AGI]], [[Anthropic Claude]], [[Competition in AI]], [[Brain Computer Interfaces]], [[Emergence]]
+  - related-to:: [[History and Path to AGI]], [[Constitutional AI Language Model Family]], [[Competition in AI]], [[Brain Computer Interfaces]], [[Emergence]]
   - standardized-by:: [[Cambridge CSER]], [[Oxford GovAI]], [[Machine Intelligence Research Institute]], [[Future of Humanity Institute]]
 
 - ### Content
@@ -974,7 +974,7 @@ public:: true
 
     **3. Alignment Quality**: The degree to which the first superintelligent system's values and goals correspond to human welfare. Alignment quality determines whether the Singularity is beneficial, neutral, or catastrophic. This is the domain of [[AI Alignment]], [[Safety and Alignment]], and [[RLHF]].
 
-    **4. Governance Structure**: The institutional, legal, and geopolitical context in which the transition occurs. Governance determines who controls the first superintelligent system, what constraints operate on its deployment, and whether diverse actors have input into its values. This is the domain of AI governance frameworks including the [[EU AI Act]], proposed US AI legislation, and international coordination mechanisms.
+    **4. Governance Structure**: The institutional, legal, and geopolitical context in which the transition occurs. Governance determines who controls the first superintelligent system, what constraints operate on its deployment, and whether diverse actors have input into its values. This is the domain of AI governance frameworks including the [[EU AI Act Regulatory Instrument]], proposed US AI legislation, and international coordination mechanisms.
 
     **5. Economic Integration**: The rate at which post-Singularity capabilities diffuse through the economy. Slow economic integration may limit near-term disruption even if a Singularity technically occurs; rapid integration amplifies both benefits and risks.
 
@@ -1244,7 +1244,7 @@ public:: true
 
     **Enabling concepts** (the Singularity depends on these becoming real):
     - [[Artificial General Intelligence]] — the prerequisite capability threshold whose crossing initiates the intelligence explosion
-    - [[Foundation Models]] — the current empirical trajectory toward AGI; transformer-based models as first candidates for AGI precursors
+    - [[Large-Scale Pretrained Foundation Model]] — the current empirical trajectory toward AGI; transformer-based models as first candidates for AGI precursors
     - [[Reasoning]] — the specific cognitive capability most critical for recursive self-improvement; chain-of-thought and inference-time compute as 2024–2026 advances
     - [[Agents]] — the deployment mechanism through which AI capability translates into real-world impact; agentic AI as proto-RSI
     - [[Compute Infrastructure]] — the physical substrate of intelligence growth; datacenter scaling, chip design, energy as binding constraints
@@ -1254,7 +1254,7 @@ public:: true
     - [[Safety and Alignment]] — the field whose urgency is defined by Singularity-adjacent risk assessments
     - [[AI Risks]] — the near-term and long-term harm taxonomy; Singularity as extreme tail of AI risk distribution
     - [[Existential Risk]] — the broader category of civilisation-ending risks; AI is now assessed as largest contributor by many longtermist researchers
-    - [[EU AI Act]] — first binding regulation explicitly targeting transformative AI risks
+    - [[EU AI Act Regulatory Instrument]] — first binding regulation explicitly targeting transformative AI risks
     - [[Competition in AI]] — US-China race dynamics that create structural pressure toward faster, less safe development timelines
 
     **Philosophical and cognitive concepts**:
@@ -1264,7 +1264,7 @@ public:: true
     - [[Cognitive AI]] — the cognitive science foundations of artificial intelligence; modularity of mind arguments relevant to intelligence-explosion assumptions
 
     **Adjacent technology concepts**:
-    - [[Anthropic Claude]] — current leading safety-focused frontier AI system; Claude 4 as of 2026 is near-AGI by some definitions
+    - [[Constitutional AI Language Model Family]] — current leading safety-focused frontier AI system; Claude 4 as of 2026 is near-AGI by some definitions
     - [[History and Path to AGI]] — the empirical chronicle of AI capability development from 1956 to present
     - [[Artificial General Intelligence]] — the specific milestone that most Singularity frameworks identify as the trigger point
 

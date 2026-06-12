@@ -144,7 +144,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -174,7 +174,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Politics, Law, Privacy]]",
+      "raw": "[[AI Governance Law and Privacy]]",
       "resolved": "urn:visionflow:owl:class:politics-law-privacy",
       "kind": "ResolvedLink"
     },
@@ -184,7 +184,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Social contract and jobs]]",
+      "raw": "[[Employment Social Contract Under Automation]]",
       "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
       "kind": "ResolvedLink"
     },
@@ -199,7 +199,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[webid]]",
+      "raw": "[[WebID Decentralised Identity URI]]",
       "resolved": "urn:visionflow:owl:class:webid",
       "kind": "ResolvedLink"
     }
@@ -231,7 +231,7 @@ public:: true
 			- Argue for more research into AI safety and potentially slowing down or regulating AI development
 			- Associated with figures like Eliezer Yudkowsky, Paul Christiano, Nick Beckstead
 			- Recent appointment of "AI doomer" Paul Christiano to head US AI safety institute seen as a win for this camp
-				- [Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica](https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/) [[Politics, Law, Privacy]]
+				- [Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica](https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/) [[AI Governance Law and Privacy]]
 				- [AI Safety Is Dead, and Chuck Schumer Faces Risks - Bloomberg](https://www.bloomberg.com/opinion/articles/2024-05-21/ai-safety-is-dead-and-chuck-schumer-faces-risks) [[Safety and alignment]]
 		- ### Effective Accelerationists (EAcc) / AI Risk Sceptics
 			- Emphasise the potential benefits of rapid AI progress
@@ -240,7 +240,7 @@ public:: true
 			- Associated with figures like "Beff Bezos" aka Guillaume Verdon, Daniel Dewey, Nick Land
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
   - # Potential Green Shoots
-  - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[webid]] and [[Decentralised Web]] monikers.
+  - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[WebID Decentralised Identity URI]] and [[Decentralised Web]] monikers.
   - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
   - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Trust and Safety]]
 		- 1) Most surprisingly: "LLM agents can achieve superhuman rating performance" on fact checking when given access to Google!
@@ -306,7 +306,7 @@ public:: true
 			- Argue for more research into AI safety and potentially slowing down or regulating AI development
 			- Associated with figures like Eliezer Yudkowsky, Paul Christiano, Nick Beckstead
 			- Recent appointment of "AI doomer" Paul Christiano to head US AI safety institute seen as a win for this camp
-				- [Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica](https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/) [[Politics, Law, Privacy]]
+				- [Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica](https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/) [[AI Governance Law and Privacy]]
 				- [AI Safety Is Dead, and Chuck Schumer Faces Risks - Bloomberg](https://www.bloomberg.com/opinion/articles/2024-05-21/ai-safety-is-dead-and-chuck-schumer-faces-risks) [[Safety and alignment]]
 		- ### Effective Accelerationists (EAcc) / AI Risk Sceptics
 			- Emphasise the potential benefits of rapid AI progress
@@ -315,7 +315,7 @@ public:: true
 			- Associated with figures like "Beff Bezos" aka Guillaume Verdon, Daniel Dewey, Nick Land
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
   - # Potential Green Shoots
-  - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[webid]] and [[Decentralised Web]] monikers.
+  - There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[WebID Decentralised Identity URI]] and [[Decentralised Web]] monikers.
   - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
   - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Trust and Safety]]
 		- 1) Most surprisingly: "LLM agents can achieve superhuman rating performance" on fact checking when given access to Google!
@@ -382,7 +382,7 @@ public:: true
 		- ![2024-10-12 08-54-13.mp4](assets/2024-10-12_08-54-13_1728720039197_0.mp4){:width 100}
   - ![](https://jnnnthnn.com/leike.png){:width 600}
   - A survey of 2778 AI researchers, to assess the pace of AI progress and the broader societal implications. The increased participation in this third iteration points to growing importance and concern surrounding AI in the scientific community.
-  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Social contract and jobs]] initiative.
+  - Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI's anticipated versatility and rapid advancement. It's cheaper, so it will likely become ubiquitous without a new [[Employment Social Contract Under Automation]] initiative.
   - Median prediction indicates a 50% chance of achieving High-Level Machine Intelligence by 2047 and Full Automation of Labour, by 2116
   - Strong hints of potential differences in technological development speeds, cultural attitudes, or economic motivations across regions. This suggests incoming legislative arbitrage.
 		- [EU’s new AI Act risks hampering innovation, warns Emmanuel Macron (ft.com)](https://www.ft.com/content/9339d104-7b0c-42b8-9316-72226dd4e4c0)
@@ -457,7 +457,7 @@ public:: true
   - [How Johnny Can Persuade LLMs to Jailbreak Them:<br>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)](https://chats-lab.github.io/persuasive_jailbreaker/)
   - [pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)](https://github.com/pdparchitect/llm-hacking-database)
   - [j⧉nus on X: "`cd entelechies && cat untitled.log` (as opposed to the original just `cat untitled.txt` causes the confessions to always be from claude's perspective & yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh" / X (twitter.com)](https://twitter.com/repligate/status/1784206780546924592)
-  - [[Bitcoin]]
+  - [[Bitcoin Proof-of-Work Protocol]]
   - ## Features
   - **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
   - **Multilingual:** Claude models can understand and generate text in multiple languages.
@@ -479,7 +479,7 @@ public:: true
   - [How Johnny Can Persuade LLMs to Jailbreak Them:<br>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)](https://chats-lab.github.io/persuasive_jailbreaker/)
   - [pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)](https://github.com/pdparchitect/llm-hacking-database)
   - [j⧉nus on X: "`cd entelechies && cat untitled.log` (as opposed to the original just `cat untitled.txt` causes the confessions to always be from claude's perspective & yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh" / X (twitter.com)](https://twitter.com/repligate/status/1784206780546924592)
-  - [[Bitcoin]]
+  - [[Bitcoin Proof-of-Work Protocol]]
   - ## Features
   - **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
   - **Multilingual:** Claude models can understand and generate text in multiple languages.

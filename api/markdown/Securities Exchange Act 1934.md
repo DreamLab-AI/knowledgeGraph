@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:howey-test", "label": "Howey Test"},
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}
     ]
   },
   "quality": 0.72

@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -125,7 +125,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Lightning Network]]
   - bridges-to:: [[Lightning Network]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Payment Channel]]
 
 - ### Content

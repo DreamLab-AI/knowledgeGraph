@@ -178,7 +178,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-decision-making",
+        "@id": "urn:ngm:class:collaborative-systems-modality-decision-making",
         "label": "Collaborative Decision-Making"
       },
       {
@@ -196,7 +196,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:collaborative-ai-platform",
+        "@id": "urn:ngm:class:collaborative-systems-modality-ai-platform",
         "label": "Collaborative AI Platform"
       },
       {
@@ -314,7 +314,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -360,7 +360,7 @@ public:: true
   - is-part-of:: [[Multi-Agent System]], [[Collaborative AI Platform]]
   - requires:: [[Shared Knowledge Base]], [[Communication Protocol]], [[Consensus Mechanism]], [[Data Synchronization]]
   - enables:: [[Emergent Problem-Solving]], [[Collaborative Decision-Making]], [[Swarm Intelligence]], [[Collective Learning]]
-  - depends-on:: [[Distributed Computing]], [[Machine Learning]], [[Network Infrastructure]]
+  - depends-on:: [[Distributed Computing]], [[Machine Learning Discipline]], [[Network Infrastructure]]
   - bridges-to:: [[Autonomous Robot]]
 
 - ### Content

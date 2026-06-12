@@ -29,7 +29,7 @@
       - **Practical Design Focus:** While the domain includes theoretical economic concepts (game-theoretic equilibria, mechanism design principles), it emphasizes practical tokenomics design decisions that blockchain projects must make: supply schedules, distribution mechanisms, fee structures, incentive alignment, and governance mechanisms. This practical focus serves blockchain founders, token designers, and protocol economists creating real systems.
       - **Evolution and Sustainability:** The domain structure accommodates both established token economic models (Bitcoin's fixed supply and halving schedule, Ethereum's gas mechanism) and emerging innovations (novel DeFi primitives, NFT economic models, dynamic token supply mechanisms). As blockchain economic research advances and new token models emerge, the domain can incorporate these innovations while maintaining organizational coherence. Particular attention is paid to long-term sustainability questions: what happens to network security as block rewards decline, how do fee markets evolve with adoption, what token models prove sustainable versus speculative?
   - Token economics represents the intersection of mechanism design, game theory, monetary economics, and distributed systems engineering
-  - Economic security models pioneered by [[Bitcoin]] (Nakamoto 2008) demonstrated that cryptographic security alone insufficient - economic incentives must align participant behavior with network security goals
+  - Economic security models pioneered by [[Bitcoin Proof-of-Work Protocol]] (Nakamoto 2008) demonstrated that cryptographic security alone insufficient - economic incentives must align participant behavior with network security goals
   - Academic foundations draw from [[Mechanism Design]] (Hurwicz, Maskin, Myerson - Nobel Prize 2007), [[Game Theory]] (Nash equilibria, dominant strategies, Byzantine agreement), [[Monetary Economics]] (quantity theory, velocity, inflation dynamics), and [[Auction Theory]] (price discovery, resource allocation)
   - Tokenomics bridges computer science abstractions with economic realities: code defines rules, but economics determines whether participants follow or circumvent them
   - [[Decentralized Finance (DeFi)]] emerged as major research area combining [[Automated Market Makers]], [[Lending Protocols]], [[Stablecoins]], and composable financial primitives
@@ -42,12 +42,12 @@
   - [[Fractionalized NFTs]] bridge fungible and non-fungible tokens, enabling collective ownership of high-value assets
   - NFT economics explores valuation models, [[Metcalfe's Law]] applications to community value, and behavioral economics of digital collectibles
   - Bitcoin-AI cross-references emerging in token economic analysis
-  - [[AI-Driven Market Making]] optimizing [[Automated Market Maker (AMM)]] parameters, rebalancing strategies, and fee structures using [[Machine Learning]]
+  - [[AI-Driven Market Making]] optimizing [[Automated Market Maker (AMM)]] parameters, rebalancing strategies, and fee structures using [[Machine Learning Discipline]]
   - [[Predictive Analytics]] for token valuation, [[DeFi Protocol]] risk assessment, and market manipulation detection
   - [[AI Agent Economies]] where autonomous agents transact using cryptocurrencies, requiring robust token economic designs resistant to algorithm gaming
   - Production token systems demonstrate maturation of economic models while revealing sustainability challenges
-  - [[Bitcoin]] maintains fixed 21 million supply cap with halving schedule (most recent April 2024 reducing block reward to 3.125 BTC), transaction fees increasingly critical for miner revenue as block subsidy declines toward zero by 2140
-  - [[Ethereum]] post-Merge (September 2022) combines [[EIP-1559]] fee burning with [[Proof-of-Stake]] issuance, creating deflationary pressure during high network usage - over 1.5M ETH burned by 2025, offsetting PoS issuance
+  - [[Bitcoin Proof-of-Work Protocol]] maintains fixed 21 million supply cap with halving schedule (most recent April 2024 reducing block reward to 3.125 BTC), transaction fees increasingly critical for miner revenue as block subsidy declines toward zero by 2140
+  - [[Ethereum Smart Contract Platform]] post-Merge (September 2022) combines [[EIP-1559]] fee burning with [[Proof-of-Stake]] issuance, creating deflationary pressure during high network usage - over 1.5M ETH burned by 2025, offsetting PoS issuance
   - [[Solana]] employs inflationary model starting at 8% annual decreasing to 1.5% long-term, balancing validator incentives against currency debasement
   - [[Cardano]] uses [[Reserve Treasury]] model funding protocol development through transaction fees and initial token allocation, creating sustainable funding without perpetual inflation
   - Decentralized Finance protocols manage billions in total value locked (TVL) while navigating regulatory uncertainty

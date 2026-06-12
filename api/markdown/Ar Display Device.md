@@ -112,7 +112,7 @@ public:: true
         "label": "Mixed Reality Interaction"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -176,7 +176,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -203,7 +203,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Display Hardware]]
   - requires:: [[Optical Systems]], [[Pose Tracking]], [[Display Technology]]
-  - enables:: [[Augmented Reality Experiences]], [[Mixed Reality Interaction]], [[Spatial Computing]]
+  - enables:: [[Augmented Reality Experiences]], [[Mixed Reality Interaction]], [[Spatial Computing Paradigm]]
   - bridges-to:: [[Sensor Input]] (rb)
 
 - ### Content

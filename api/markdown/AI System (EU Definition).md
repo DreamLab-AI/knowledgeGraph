@@ -66,7 +66,7 @@ public:: true
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
@@ -107,7 +107,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -137,7 +137,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - requires:: [[AI Risk Management]], [[Human Oversight]]
   - relatedTo:: [[AI Provider]], [[AI Lifecycle]], [[General Purpose AI Model]]
 
@@ -263,6 +263,6 @@ public:: true
 		  **Full Application**: 2 August 2026 (most provisions)
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

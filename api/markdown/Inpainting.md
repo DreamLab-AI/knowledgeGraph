@@ -576,7 +576,7 @@ public:: true
         "label": "Adobe Firefly"
       },
       {
-        "@id": "urn:ngm:class:apple-intelligence",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-intelligence",
         "label": "Apple Intelligence"
       },
       {
@@ -588,7 +588,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -640,7 +640,7 @@ public:: true
         "label": "UK Online Safety Act"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -1125,7 +1125,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1145,7 +1145,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1191,8 +1191,8 @@ public:: true
   - supports:: [[Photo Editing Software]], [[Video Post-Production]], [[Digital Forensics]], [[Cultural Heritage Restoration]], [[Medical Image Reconstruction]]
   - uses:: [[Partial Convolution]], [[Gated Convolution]], [[Fourier Convolution]], [[Cross Attention]], [[Classifier-Free Guidance]], [[ControlNet]]
   - contrasts-with:: [[Text-to-Image Generation]], [[Super Resolution]], [[Image Denoising]], [[Clone Stamp Tool]], [[Outpainting]]
-  - related-to:: [[Stable Diffusion]], [[Adobe Firefly]], [[Apple Intelligence]], [[Generative AI]], [[Deepfakes and fraudulent content]]
-  - standardized-by:: [[CVPR]], [[ICCV]], [[ECCV]], [[SIGGRAPH]], [[C2PA]], [[EU AI Act]], [[UK Online Safety Act]]
+  - related-to:: [[Stable Diffusion Image Model]], [[Adobe Firefly]], [[Apple Intelligence]], [[Generative AI]], [[Deepfakes and fraudulent content]]
+  - standardized-by:: [[CVPR]], [[ICCV]], [[ECCV]], [[SIGGRAPH]], [[C2PA]], [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]]
 
 - ### Content
 

@@ -89,7 +89,7 @@
   - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
-		- [[Landscape]] contains some maps of more products.
+		- [[Technology Sector Landscape Analysis]] contains some maps of more products.
   - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income
@@ -167,7 +167,7 @@
   - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
-		- [[Landscape]] contains some maps of more products.
+		- [[Technology Sector Landscape Analysis]] contains some maps of more products.
   - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income

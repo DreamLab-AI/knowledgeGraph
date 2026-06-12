@@ -27,11 +27,11 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:anthropic-claude", "label": "Anthropic Claude"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Anthropic Claude"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
     ],
@@ -46,9 +46,9 @@ public:: true
 ```
 
 - ### Definition
-  - Claude is [[Anthropic]]'s family of [[Large Language Models]] built with [[Constitutional AI]] and [[RLHF]] training to achieve alignment between capability and human values, widely deployed via API for [[Conversational AI]], [[Agentic Workflow]], and [[Tool Use]] applications.
+  - Claude is [[Anthropic]]'s family of [[Large Language Models]] built with [[Constitutional AI Training Methodology]] and [[RLHF]] training to achieve alignment between capability and human values, widely deployed via API for [[Conversational AI]], [[Agentic Workflow]], and [[Tool Use]] applications.
 - ### Relationships
-  - Claude is the primary commercial product through which [[Anthropic]] advances its mission of responsible AI development. Its [[Constitutional AI]] training methodology distinguishes it from models trained purely on human preference labels, building a set of principles into the fine-tuning process to improve harmlessness without sacrificing helpfulness. [[RLHF]] shapes the conversational style and refusal behaviour. The [[Agentic Workflow]] capabilities—including [[Tool Use]] and [[Function Calling]]—have made Claude a widely used backbone for autonomous AI agent systems. Claude models are evaluated against [[AI Safety]] benchmarks and published with [[AI Model Card]] documentation.
+  - Claude is the primary commercial product through which [[Anthropic]] advances its mission of responsible AI development. Its [[Constitutional AI Training Methodology]] training methodology distinguishes it from models trained purely on human preference labels, building a set of principles into the fine-tuning process to improve harmlessness without sacrificing helpfulness. [[RLHF]] shapes the conversational style and refusal behaviour. The [[Agentic Workflow]] capabilities—including [[Tool Use]] and [[Function Calling]]—have made Claude a widely used backbone for autonomous AI agent systems. Claude models are evaluated against [[AI Safety]] benchmarks and published with [[AI Model Card]] documentation.
 - ### Content
   - Claude was first publicly released by Anthropic in March 2023, following the company's 2021 founding by former OpenAI researchers including Dario Amodei and Daniela Amodei. The name 'Claude' is a deliberate humanisation of the assistant, in contrast to more acronym-based or technical naming conventions. Anthropic positioned Claude explicitly as a safety-focused alternative to GPT-4, with the claim that Constitutional AI—a training technique that uses a set of written principles and AI self-critique to shape model behaviour—produced a model less likely to assist with harmful requests whilst remaining substantively helpful.
 

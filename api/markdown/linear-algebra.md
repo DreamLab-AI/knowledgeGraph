@@ -9,7 +9,7 @@
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Graph Theory]], [[Information Theory]]
   - has-part:: [[Matrix]], [[Eigenvalue]], [[Vector Space]]
-  - enables:: [[Machine Learning]], [[Computer Vision Domain]], [[Principal Component Analysis]]
+  - enables:: [[Machine Learning Discipline]], [[Computer Vision Domain]], [[Principal Component Analysis]]
 
 - ### Content
   - At its core, linear algebra studies linear maps between vector spaces and how they can be represented by matrices once a basis is chosen. Solving a system of linear equations, computing the rank of a matrix and finding a basis for a subspace are recurring tasks that reduce to a small set of standard procedures such as Gaussian elimination.

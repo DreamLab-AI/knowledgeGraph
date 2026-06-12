@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
       {"@id": "urn:ngm:class:software-development", "label": "Software Development"}
     ]
   },

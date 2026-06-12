@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Cross-Chain Bridge]]
   - bridges-to:: [[Cross-Chain Bridge]]
-  - requires:: [[Ethereum]], [[Liquidity Pool]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Liquidity Pool]]
   - enables:: [[Interoperability]]
 
 - ### Content

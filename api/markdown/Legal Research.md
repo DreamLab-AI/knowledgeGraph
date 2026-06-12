@@ -107,7 +107,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -142,7 +142,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Machine Learning]], [[Narrow AI]]
+  - bridges-to:: [[Machine Learning Discipline]], [[Narrow AI]]
   - requires:: [[Optical Character Recognition]]
   - enables:: [[Regulatory Compliance]]
 

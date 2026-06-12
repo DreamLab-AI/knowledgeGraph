@@ -10,7 +10,7 @@
   - requires [[Training Data]]
   - enables [[Fine Tuning]]
   - relatedTo [[Knowledge Distillation]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
   - Domain adaptation addresses the domain shift problem: a model trained on abundant, labelled data from a source distribution (e.g., newswire text) degrades when evaluated on a target distribution (e.g., social media text) because the statistical properties of the input space differ. The severity of shift may be in feature marginals (covariate shift), label conditionals (concept drift), or both.

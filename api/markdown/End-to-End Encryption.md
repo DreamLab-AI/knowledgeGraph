@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:encryption", "label": "Encryption"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
       {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"}
     ],

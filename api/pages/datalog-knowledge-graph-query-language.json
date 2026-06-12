@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:cd95b946e3d59c711a97526389d9db5600a1da5249aa1cd4592e8f86b2fc3f01",
+  "title": "Datalog Knowledge Graph Query Language",
+  "slug": "datalog-knowledge-graph-query-language",
+  "public": true,
+  "classIri": "urn:ngm:class:datalog-knowledge-graph-query-language",
+  "domain": "infrastructure",
+  "definition": "Queries, in the Logseq context, are structured Datalog or advanced query expressions embedded in pages using the `#+BEGIN_QUERY` / `#+END_QUERY` syntax. They dynamically retrieve and display blocks or pages matching specified conditions\u2014such as filtering private pages by the absence of a `#Public` tag\u2014without modifying underlying data. In the broader NarrativeGoldmine ontology, Queries represent the retrieval-layer mechanism that surfaces knowledge from the graph at read time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

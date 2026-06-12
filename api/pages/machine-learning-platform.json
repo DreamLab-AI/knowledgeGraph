@@ -3,7 +3,7 @@
   "title": "Machine Learning Platform",
   "slug": "machine-learning-platform",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-platform",
+  "classIri": "urn:ngm:class:machine-learning-discipline-platform",
   "domain": "artificial-intelligence",
   "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",
   "subClassOf": [

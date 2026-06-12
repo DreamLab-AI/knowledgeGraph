@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:557fa44843510c8a1347f39cc0d676791016c0af649ae68ebfc8990bbedd9c81",
+  "title": "Pyodide Knowledge Graph Node Enumerator",
+  "slug": "pyodide-knowledge-graph-node-enumerator",
+  "public": true,
+  "classIri": "urn:ngm:class:pyodide-knowledge-graph-node-enumerator",
+  "domain": "infrastructure",
+  "definition": "Python to list nodes is a Logseq Pyodide script that iterates over all pages in the knowledge graph, filters those with the `public:: true` metadata property, and returns a comma-separated list of public page names. It demonstrates direct integration of Python scripting with the Logseq Plugin API for programmatic knowledge-graph introspection and inventory generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

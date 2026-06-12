@@ -58,7 +58,7 @@ alias:: StructuralMember
       {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:taxonomic-framework", "label": "Taxonomic Framework"},
+      {"@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework", "label": "Taxonomic Framework"},
       {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}
     ],
     "supports": [

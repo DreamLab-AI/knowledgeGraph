@@ -50,7 +50,7 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -58,7 +58,7 @@
         "label": "Multi-Head Attention"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -118,7 +118,7 @@
         "label": "Microsoft Copilot"
       },
       {
-        "id": "urn:ngm:class:multimodal-understanding",
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
         "label": "Multimodal Understanding"
       },
       {
@@ -229,7 +229,7 @@
         "label": "AI Model Card"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -268,7 +268,7 @@
         "label": "Ethical AI"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {

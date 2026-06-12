@@ -100,7 +100,7 @@ public:: true
         "label": "Dublin Core"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

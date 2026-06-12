@@ -19,7 +19,7 @@
   - [Index — MLGT: The authoritative multi-lingual glossary of terms (metaverse-standards.org)](https://glossary.metaverse-standards.org/)
   - # Rationale
   - # Methodology
-  - This ontology was the product of two days of exploratory interaction with [[Anthropic Claude]], Google [[Gemini]] Advance 1.5, and [[ChatGPT]] 4.
+  - This ontology was the product of two days of exploratory interaction with [[Constitutional AI Language Model Family]], Google [[Gemini Multimodal Language Model]] Advance 1.5, and [[Instruction-Following Conversational AI System]] 4.
   - It was unexpectedly successful, resulting in what seems to be an internally consistent knowledge graph in an [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language) compliant ontology for the design represented throughout this wider [[Logseq]] [[Knowledge Graphing]].
 		- Although the established OWL can richly describe our ontology, it's a little too arcane. Nonetheless the full text can be seen where with the diagram.
 			- OWL based Ontology
@@ -164,7 +164,7 @@
 		- 15. Scaffolded by GenAI: The integration of GenAI (Generative AI) within the metaverse is supported through the `AIAgent` class and its associated properties, such as `hasLearningModel` and `hasTrainingData`. These properties allow for the representation of AI agents with varying levels of autonomy and adaptability, capable of generating content, providing assistance, and engaging in dynamic interactions with human users.
 		- 16. Supports Agentic AI actors: The `AIAgent` class, along with its subclasses and properties, enables the creation of agentic AI actors within the metaverse. The `AgentArchetype` class defines different roles and behaviors for AI agents, while properties like `hasAgentArchetype` and `hasEmotionalState` imbue them with personality and emotional intelligence. The `participatesIn` property allows AI agents to actively engage in metaverse scenes and events alongside human users.
 		- 17. Digital Asset and Ownership: The `DigitalAsset` class represents unique digital goods and assets within the metaverse. It includes properties like `genesis` (Bitcoin transaction ID where the asset was created), `issuance` leveraging [[RGB and Client Side Validation]] ), `type` (specifies the type of asset), `currentOwner` (links to the current owner agent), and `ownershipHistory` (represents the chain of ownership transfers). The `OwnershipTransfer` class represents the transfer of ownership of a `DigitalAsset` between agents, capturing details such as the `from` agent (transferring ownership), `to` agent (receiving ownership), `timestamp`, and `transactionId` (associated Bitcoin/Lightning Network transaction ID).
-		- 18. [[Bitcoin]] and [[Lightning and Similar L2]] Network Integration: The `MetaverseAgent` class includes properties like `bitcoinWallet` (Bitcoin address associated with the agent) and `lightningNode` (public key of the agent's Lightning Network node) to enable Bitcoin and Lightning Network integration. The `VirtualEconomy` class includes properties like `bitcoinNetwork` and `lightningNetwork` to represent the underlying Bitcoin and Lightning Network infrastructure on which the economy operates. Fiat money can run on [[Cashu]].
+		- 18. [[Bitcoin Proof-of-Work Protocol]] and [[Lightning and Similar L2]] Network Integration: The `MetaverseAgent` class includes properties like `bitcoinWallet` (Bitcoin address associated with the agent) and `lightningNode` (public key of the agent's Lightning Network node) to enable Bitcoin and Lightning Network integration. The `VirtualEconomy` class includes properties like `bitcoinNetwork` and `lightningNetwork` to represent the underlying Bitcoin and Lightning Network infrastructure on which the economy operates. Fiat money can run on [[Cashu]].
 		- 19. Nostr Integration: The `NostrEvent` class represents an event published on the Nostr network, with properties like `relayUrl` (URL of the Nostr relay where the event was published), `kind` (type or category of the event), `content` (content of the message or event data), and `tags` (list of associated `NostrTag` instances). The `NostrTag` class represents a tag associated with a `NostrEvent`, providing context and metadata through properties like `type` (type of tag) and `value` (value of the tag).
 		- 20. PKI and Wallets: The `MetaverseEntity` class includes properties like `publicKey` and `privateKey` to support public key infrastructure (PKI) for entity identification and authentication. The `MetaverseAgent` class includes a `wallet` property that links to a `schema:DigitalWallet` instance, representing the agent's digital wallet for managing various assets.
 		- 21. All objects and agents and artifacts are nostr PKI pairs. BIP32 is used to derive the path m/44'/1237'/ (according to the [Nostr entry](https://nostr-nips.com/nip-06) on SLIP44). In this way all objects are globally and hierarchically referenceable.
@@ -263,7 +263,7 @@
 				- **AI Agent Capabilities:** Expand the capabilities property of `AIAgent` to include specific actions and functions related to Bitcoin, RGB, and Nostr, such as "create_digital_asset", "transfer_ownership", "publish_nostr_event", etc.
 				- **Event Logging and Attestation:** Consider adding mechanisms for logging significant events and generating cryptographic attestations, which could be used for dispute resolution or auditing purposes. This would operate on an automated threshold trigger system mediated by LLM, and would wrap the recent interactions between parties in pubkey encrypted data blobs, sending them to both parties alongside a report of the trigger event. This would potentially allow action by the parties in their jurisdictions. The data would then be deleted from the metaverse.
 		- http://owlgred.lumii.lv/online_visualization/4qge#
-		- [[Some legacy Linked-JSON]]
+		- [[Metaverse Entity Schema Archive]]
   - This more specific and expanded metaverse ontology featuring a relay based communication protocol, URIs, blockchain wallets, and NVIDIA omniverse, offers a comprehensive and extensible framework generated with the help of GenAI. It offers a glimpse of the potential for automating ontological descriptions for emergent and novel social, digital, collaborative spaces.
   - By incorporating a wide range of classes, properties, and relationships, the ontology starts to enable formalisation of:
   - Agents: Human users and AI entities, their attributes, skills, and relationships.
@@ -551,8 +551,8 @@
   ```
   - # Mycelium Experiment
   - This idea is developed further here:
-		- [[Agentic Mycelia]]
-		- This is an [[Ontology conversation with AIs]]
+		- [[Multi-Layer Agentic Governance Framework]]
+		- This is an [[AI-Assisted Ontology Elicitation Method]]
 
 - ### Provenance
   - sources::

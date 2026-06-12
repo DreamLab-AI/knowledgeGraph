@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:collective-governance", "label": "Collective Governance"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},

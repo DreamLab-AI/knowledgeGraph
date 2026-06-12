@@ -10,7 +10,7 @@
   - requires [[Autoencoder]]
   - enables [[Latent Diffusion]]
   - enables [[Image Generation]]
-  - relatedTo [[latent space]]
+  - relatedTo [[Neural Network Latent Space]]
   - relatedTo [[Deep Generative Model]]
 
 - ### Content

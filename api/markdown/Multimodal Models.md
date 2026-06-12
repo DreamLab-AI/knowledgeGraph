@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-models",
+  "@id": "urn:ngm:class:multimodal-ai-architecture-models",
   "@type": "Class",
   "label": "Multimodal Models",
   "definition": "Machine learning models that process and relate information from more than one modality, such as text, images, audio or video, within a single model.",
@@ -56,7 +56,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:multimodal-ai",
+      "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
       "label": "Multimodal AI"
     }
   ],
@@ -103,7 +103,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:linked:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -133,7 +133,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Multimodal AI]]
-  - bridges-to:: [[Foundation Models]]
+  - bridges-to:: [[Large-Scale Pretrained Foundation Model]]
   - requires:: [[Transformer]]
   - enables:: [[Text-to-Image]]
 

@@ -90,7 +90,7 @@ alias:: WebDev and Consumer Tooling
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[SHOULD]]",
+      "raw": "[[RFC 2119 SHOULD Normative Keyword]]",
       "resolved": "urn:visionflow:owl:class:should",
       "kind": "ResolvedLink"
     }
@@ -120,7 +120,7 @@ alias:: WebDev and Consumer Tooling
 
 - ### Content
   - [SaaS WebApp with Streamlit & Python: Quick Guide | Level Up Coding (gitconnected.com)](https://levelup.gitconnected.com/build-a-data-science-saas-app-with-just-python-a-streamlit-guide-240e0a56fc86)
-  - [MindStudio (youai.ai)](https://youai.ai/) build deployable AI [[SHOULD]]
+  - [MindStudio (youai.ai)](https://youai.ai/) build deployable AI [[RFC 2119 SHOULD Normative Keyword]]
   - [DevDocs API Documentation](https://devdocs.io/)
   - [Vercel – Vercel](https://vercel.com/vercel-xrsystemsuks-projects)
   - [Dashboard (franken-ui.dev)](https://www.franken-ui.dev/examples/dashboard) classic templates, modern code.

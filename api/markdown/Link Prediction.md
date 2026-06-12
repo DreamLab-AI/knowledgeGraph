@@ -23,7 +23,7 @@ public:: true
   "definition": "Link prediction is the machine-learning task of inferring missing or future edges in a graph from its observed structure and node attributes. Techniques range from similarity heuristics and matrix factorisation to graph neural networks and knowledge-graph embeddings. It underpins recommendation, knowledge-graph completion, and social-network analysis.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}, {"@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics"}]
   },

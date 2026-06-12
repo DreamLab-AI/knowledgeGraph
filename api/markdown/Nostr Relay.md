@@ -32,7 +32,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},

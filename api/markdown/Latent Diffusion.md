@@ -46,7 +46,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:latent-space", "label": "latent space"}
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"}
     ]
   },
   "qualityScore": 0.75,
@@ -68,7 +68,7 @@ public:: true
   - enables [[Image Generation]]
   - enables [[Text-to-Image]]
   - relatedTo [[Generative Model]]
-  - relatedTo [[latent space]]
+  - relatedTo [[Neural Network Latent Space]]
 
 - ### Content
   - Latent Diffusion Models emerged from research into efficient generative modelling that could match the quality of pixel-space diffusion models such as DDPM whilst running on consumer-grade hardware. The key insight is that the perceptual information relevant to image quality is largely captured by the low-dimensional latent code produced by a powerful VAE encoder, so diffusion and denoising can operate on this compact representation without losing fidelity.

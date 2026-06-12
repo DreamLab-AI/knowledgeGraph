@@ -67,7 +67,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-lightning-network",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
   "@type": "Class",
   "label": "Bitcoin Lightning Network",
   "definition": "The Bitcoin Lightning Network is a layer-two payment protocol built on top of Bitcoin that enables fast, low-cost transactions through bidirectional payment channels. Two parties lock funds in a multisignature channel and exchange signed balance updates off-chain, settling the final state on the Bitcoin blockchain only when the channel closes. Payments can be routed across a network of connected channels, allowing transfers between parties that do not share a direct channel.",
@@ -93,7 +93,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -141,7 +141,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -198,7 +198,7 @@ public:: true
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Payment Systems Domain]], [[Liquid Network]]
   - has-part:: [[Payment Channel]], [[HTLC]]
-  - requires:: [[Bitcoin]], [[Multisignature]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Multisignature]]
   - enables:: [[Micropayments]], [[Instant Settlement]]
 
 - ### Content

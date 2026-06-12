@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:chat-gpt",
+  "title": "Instruction-Following Conversational AI System",
+  "slug": "instruction-following-conversational-ai-system",
+  "public": true,
+  "classIri": "urn:ngm:class:instruction-following-conversational-ai-system",
+  "domain": "ai",
+  "definition": "ChatGPT is a large language model-based conversational AI assistant developed by OpenAI, publicly released in November 2022 and built on successive GPT model families. It demonstrated that general-purpose instruction-following dialogue could be deployed at consumer scale, triggering rapid adoption across education, coding, and knowledge-work domains. Its interface popularised prompt-based interaction as the dominant paradigm for human\u2013AI collaboration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
+        "label": "OpenAI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Anthropic Claude"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Anthropic Claude"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

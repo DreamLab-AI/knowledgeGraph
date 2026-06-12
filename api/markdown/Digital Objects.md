@@ -590,7 +590,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bitcoin-ordinals",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals",
         "label": "Bitcoin Ordinals"
       },
       {
@@ -718,7 +718,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-erc-721",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-erc-721",
         "label": "Ethereum ERC-721"
       },
       {

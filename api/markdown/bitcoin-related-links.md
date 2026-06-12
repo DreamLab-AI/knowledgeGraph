@@ -29,10 +29,10 @@
   - [Banking Giant Morgan Stanley Purchases 28,289 Shares of Grayscale Bitcoin Trust](https://blockchain.news/news/banking-giant-morgan-stanley-purchases-28-289-shares-grayscale-bitcoin-trust) - Major financial institutions embracing [[Institutional Bitcoin Investment]]
   - [JPMorgan Launches In-House Bitcoin Fund for Private Bank Clients](https://www.coindesk.com/jpmorgan-launches-in-house-bitcoin-fund-for-wealthy-clients) - [[Traditional Finance]] integration with [[Crypto Assets]]
   - [Asset management giant Fidelity files for a bitcoin ETF](https://www.theblockcrypto.com/linked/99279/fidelity-bitcoin-etf-filing) - [[Spot Bitcoin ETF]] development and [[SEC Regulation]]
-  - [Square buys $170 million worth of bitcoin](https://www.cnbc.com/2021/02/23/square-buys-170-million-worth-of-bitcoin.html) - [[Corporate Treasury]] management with [[Bitcoin]]
+  - [Square buys $170 million worth of bitcoin](https://www.cnbc.com/2021/02/23/square-buys-170-million-worth-of-bitcoin.html) - [[Corporate Treasury]] management with [[Bitcoin Proof-of-Work Protocol]]
   - [MicroStrategy Acquires Additional 19,452 Bitcoins for $1.026 Billion](https://www.microstrategy.com/en/investor-relations/press/microstrategy-acquires-additional-19452-bitcoins-for-1-026-billion_02-24-2021) - [[Corporate Strategy]] - major institutional accumulation
   - [Grayscale Now Owns 3% of All Bitcoin in Circulation, Adding 60,000 BTC Over Past Month](https://u.today/grayscale-now-owns-3-of-all-bitcoin-in-circulation-adding-60-000-btc-over-past-month) - [[Whale Watching]] and [[Fund Management]]
-  - [MassMutual Joins the Bitcoin Club With $100 Million Purchase](https://www.wsj.com/articles/massmutual-joins-the-bitcoin-club-with-100-million-purchase-11607626800?page=1) - [[Insurance Companies]] adopting [[Bitcoin]]
+  - [MassMutual Joins the Bitcoin Club With $100 Million Purchase](https://www.wsj.com/articles/massmutual-joins-the-bitcoin-club-with-100-million-purchase-11607626800?page=1) - [[Insurance Companies]] adopting [[Bitcoin Proof-of-Work Protocol]]
   ---
 
   ## 🔌 Mining & Energy
@@ -47,7 +47,7 @@
   - [Intel To Unveil Bitcoin-mining 'Bonanza Mine' Chip at Upcoming Conference](https://www.tomshardware.com/news/intel-to-unveil-bitcoin-mining-bonanza-mine-asic-at-chip-conference) - [[ASIC Mining]] hardware innovation
   - [Intel is officially in the bitcoin mining business now](https://www.techradar.com/in/news/intel-is-officially-in-the-bitcoin-mining-business-now) - Major tech company entry
   - [Marathon Digital Holdings' Bitcoin Mining Fleet To Reach 23.3 Exahash](https://ir.marathondh.com/news-events/press-releases/detail/1272/marathon-digital-holdings-bitcoin-mining-fleet) - Major mining operation scale
-  - [Bitcoin Miners in Iran Have a New Buyer: the Central Bank - Decrypt](https://decrypt.co/46678/bitcoin-miners-in-iran-have-a-new-buyer-the-central-bank) - [[Geopolitical Finance]] and [[Bitcoin]]
+  - [Bitcoin Miners in Iran Have a New Buyer: the Central Bank - Decrypt](https://decrypt.co/46678/bitcoin-miners-in-iran-have-a-new-buyer-the-central-bank) - [[Geopolitical Finance]] and [[Bitcoin Proof-of-Work Protocol]]
   - [IBC Group to move all Bitcoin mining operations out of China](https://forkast.news/headlines/bitcoin-mining-bc-group-move-all-operations-china) - Mining relocation trends
   - [Oklo and Compass secure a 20-year commercial partnership to launch advanced fission-powered bitcoin mining](https://compassmining.io/education/oklo-compass-fission-mining-partnership) - [[Nuclear Energy]] solutions for [[Bitcoin Mining]]
   - [Petroleum Company Plans to Install 1 Million Bitcoin Miners - Bitcoin Magazine](https://bitcoinmagazine.com/.amp/business/black-rock-plans-to-deploy-one-million-bitcoin-miners) - Energy sector convergence
@@ -131,7 +131,7 @@
 
   ## 👤 Key Figures & Influencers
 
-  - [Jack Dorsey on bitcoin: 'I don't think there is anything more important in my lifetime to work on'](https://www.cnbc.com/amp/2021/06/04/twitter-and-square-ceo-jack-dorsey-focused-on-bitcoin-btc.html) - [[Jack Dorsey]] commitment to [[Bitcoin]]
+  - [Jack Dorsey on bitcoin: 'I don't think there is anything more important in my lifetime to work on'](https://www.cnbc.com/amp/2021/06/04/twitter-and-square-ceo-jack-dorsey-focused-on-bitcoin-btc.html) - [[Jack Dorsey]] commitment to [[Bitcoin Proof-of-Work Protocol]]
   - [Jack Dorsey: Only a Matter of Time Before Twitter Integrates Bitcoin's Lightning Network](https://u.today/jack-dorsey-only-a-matter-of-time-before-twitter-integrates-bitcoins-lightning-network) - [[Lightning Integration]]
   - [Twitter boss Jack Dorsey sets up bitcoin node to support cryptocurrency](https://www.independent.co.uk/life-style/gadgets-and-tech/bitcoin-node-twitter-jack-dorsey-cryptocurrency-b1798204.html) - Node support
   - [A Tesla for a bitcoin: Musk drives up cryptocurrency price with $1.5 billion purchase](https://www.reuters.com/article/us-tesla-crypto-currency/tesla-electrifies-bitcoin-with-1-5-billion-bet-car-payments-pledge-idUSKBN2A81CG) - [[Elon Musk]] corporate adoption
@@ -400,7 +400,7 @@
 
   #### References
   **Core Bitcoin Topics:**
-  - [[Bitcoin]] - Foundation and fundamentals
+  - [[Bitcoin Proof-of-Work Protocol]] - Foundation and fundamentals
   - [[Satoshi Nakamoto]] - Creator and early vision
   - [[Bitcoin Whitepaper]] - Original specification
   - [[Blockchain]] - Underlying technology

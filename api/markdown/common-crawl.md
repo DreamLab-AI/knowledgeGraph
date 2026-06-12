@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Synthetic Data]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - enables:: [[Model Training]], [[GPT]]
 
 - ### Content

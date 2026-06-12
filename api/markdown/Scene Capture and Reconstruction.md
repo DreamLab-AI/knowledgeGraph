@@ -632,7 +632,7 @@ public:: true
         "label": "Human Capture & Recognition"
       },
       {
-        "@id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "@id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       },
       {
@@ -1156,7 +1156,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human tracking and SLAM capture]]",
+      "raw": "[[Human Pose SLAM Capture System]]",
       "resolved": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
       "kind": "ResolvedLink"
     },
@@ -1196,7 +1196,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -1233,7 +1233,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[ModelArchitectureLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Computer Vision]], [[3D Reconstruction]], [[Neural Rendering]], [[Spatial Computing]], [[Photogrammetry]]
+  - is-subclass-of:: [[Computer Vision]], [[3D Reconstruction]], [[Neural Rendering]], [[Spatial Computing Paradigm]], [[Photogrammetry]]
   - has-part:: [[Neural Radiance Field]], [[3D Gaussian Splatting]], [[Structure from Motion]], [[Multi-View Stereo]], [[Signed Distance Function]], [[Volume Rendering]], [[Mesh Extraction]], [[Camera Calibration]], [[Point Cloud]], [[Differentiable Renderer]]
   - requires:: [[Camera Parameters]], [[Multi-View Images]], [[GPU Compute]], [[Differentiable Rendering]], [[Feature Matching]], [[Bundle Adjustment]]
   - enables:: [[Digital Twin]], [[Virtual Production]], [[AR Technology]], [[3D Content Generation]], [[Autonomous Navigation]], [[Cultural Heritage Preservation]], [[Surgical Navigation]], [[3DAsset]]
@@ -1242,7 +1242,7 @@ public:: true
   - supports:: [[Extended Reality (XR)]], [[Augmented Reality]], [[Virtual Reality]], [[3DContentPipeline]], [[Digital Avatar]], [[SLAM]], [[Autonomous Navigation]]
   - uses:: [[COLMAP]], [[NeRFstudio]], [[Instant-NGP], [[3D Gaussian Splatting]], [[Polycam]], [[RealityCapture]], [[Agisoft Metashape]], [[Luma AI]]
   - contrasts-with:: [[Generative AI 3D]], [[Procedural Generation]], [[Manual 3D Modelling]], [[LiDAR-Only Mapping]]
-  - related-to:: [[Computer Vision System]], [[Image Segmentation]], [[Depth Estimation]], [[Human Capture & Recognition]], [[Human tracking and SLAM capture]], [[ETSI Domain Immersive + Reality Capture Crossover]], [[3D File Format]]
+  - related-to:: [[Computer Vision System]], [[Image Segmentation]], [[Depth Estimation]], [[Human Capture & Recognition]], [[Human Pose SLAM Capture System]], [[ETSI Domain Immersive + Reality Capture Crossover]], [[3D File Format]]
   - standardized-by:: [[SIGGRAPH]], [[CVPR]], [[ECCV]], [[ICCV]], [[NeurIPS]], [[ISO 19157 Geospatial Data Quality]]
 
 - ### Content

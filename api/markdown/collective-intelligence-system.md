@@ -13,7 +13,7 @@
   - is-part-of:: [[Multi-Agent System]], [[Collaborative AI Platform]]
   - requires:: [[Shared Knowledge Base]], [[Communication Protocol]], [[Consensus Mechanism]], [[Data Synchronization]]
   - enables:: [[Emergent Problem-Solving]], [[Collaborative Decision-Making]], [[Swarm Intelligence]], [[Collective Learning]]
-  - depends-on:: [[Distributed Computing]], [[Machine Learning]], [[Network Infrastructure]]
+  - depends-on:: [[Distributed Computing]], [[Machine Learning Discipline]], [[Network Infrastructure]]
   - bridges-to:: [[Autonomous Robot]]
 
 - ### Content

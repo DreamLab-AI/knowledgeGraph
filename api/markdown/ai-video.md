@@ -18,8 +18,8 @@
   - supports:: [[Film Pre-visualisation]], [[Advertising]], [[Corporate Training Video]], [[Video Game Cinematic]], [[Social Media Short-form]], [[Video Dubbing]], [[Synthetic Data Generation]], [[Accessibility Captioning]]
   - uses:: [[Convolution]], [[Self Attention]], [[Cross Attention]], [[Adam Optimiser]], [[3D Causal VAE]], [[LoRA Adapter]], [[ControlNet]]
   - contrasts-with:: [[Pika]], [[Sora]], [[Traditional VFX Pipeline]], [[Classical Animation]], [[Motion Capture]], [[Procedural Animation]]
-  - related-to:: [[Generative AI]], [[Diffusion Model]], [[Generative Adversarial Networks]], [[Stable Diffusion]], [[Synthetic Media]], [[Digital Twin]], [[Computer Vision]], [[World Model]]
-  - standardized-by:: [[C2PA]], [[EU AI Act]], [[Online Safety Act 2023]], [[SAG-AFTRA TV-Theatrical Contract]], [[BBC Generative AI Principles]], [[VBench]], [[FVD]]
+  - related-to:: [[Generative AI]], [[Diffusion Model]], [[Generative Adversarial Networks]], [[Stable Diffusion Image Model]], [[Synthetic Media]], [[Digital Twin]], [[Computer Vision]], [[World Model]]
+  - standardized-by:: [[C2PA]], [[EU AI Act Regulatory Instrument]], [[Online Safety Act 2023]], [[SAG-AFTRA TV-Theatrical Contract]], [[BBC Generative AI Principles]], [[VBench]], [[FVD]]
 
 - ### Content
 

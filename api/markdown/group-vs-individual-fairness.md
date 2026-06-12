@@ -5,7 +5,7 @@
   - hasPart:: [[Fairness Metrics]], [[Fairness Constraints]]
   - requires:: [[Fairness Auditing Tools]], [[Bias Detection Methods]]
   - enables:: [[Bias Mitigation Techniques]], [[Algorithmic Accountability]]
-  - relatedTo:: [[Fairness]], [[Fairness (OECD)]], [[Disparate Impact]], [[Algorithmic Bias]], [[Equity]]
+  - relatedTo:: [[Fairness]], [[Fairness (OECD)]], [[Disparate Impact]], [[Algorithmic Bias]], [[Digital Technology Access Equity]]
   - contrastsWith:: [[Fairness Accuracy Tradeoffs]]
   - uses:: [[Machine Learning Model]], [[Explainability]]
 

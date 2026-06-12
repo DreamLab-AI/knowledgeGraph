@@ -1,5 +1,5 @@
 - ### Definition
-  - [[Frontier Models]] are the most capable [[Foundation Models]] at any given moment, trained at unprecedented compute scales, and distinguished by [[Emergent Capabilities]] such as in-context reasoning, tool use, and scientific problem-solving that were absent in prior-generation systems.
+  - [[Frontier Models]] are the most capable [[Large-Scale Pretrained Foundation Model]] at any given moment, trained at unprecedented compute scales, and distinguished by [[Emergent Capabilities]] such as in-context reasoning, tool use, and scientific problem-solving that were absent in prior-generation systems.
 
 - ### Relationships
   - Frontier Models are governed by [[Scaling Laws]] that predict capability gains, require massive [[GPU Cluster]] infrastructure, enable downstream [[Reasoning Models]] and [[Multimodal AI]] systems, and are assessed through structured [[Frontier Model Evaluation]] frameworks.

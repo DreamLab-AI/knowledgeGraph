@@ -3,7 +3,7 @@
   "title": "Bitcoin As Money",
   "slug": "bitcoin-as-money",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-as-money",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
   "domain": "blockchain",
   "definition": "Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin \u2014 the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto \u2014 satisfies the classical three functions of money: medium of exchang...",
   "subClassOf": [
@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {
@@ -60,7 +60,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -76,7 +76,7 @@
         "label": "Price Stability Analysis"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -184,11 +184,11 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-standard",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {
-        "id": "urn:ngm:class:bitcoin-treasury-strategy",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-treasury-strategy",
         "label": "Bitcoin Treasury Strategy"
       },
       {
@@ -269,7 +269,7 @@
         "label": "Sound Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {

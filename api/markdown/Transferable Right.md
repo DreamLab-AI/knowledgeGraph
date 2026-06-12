@@ -91,7 +91,7 @@ public:: true
         "label": "NFT"
       },
       {
-        "@id": "urn:ngm:class:license",
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument",
         "label": "license"
       }
     ]
@@ -139,7 +139,7 @@ public:: true
   - Enables [[Royalty Distribution]]
   - Enables [[Asset Tokenisation]]
   - Related To [[NFT]]
-  - Related To [[license]]
+  - Related To [[Intellectual Property Licence Instrument]]
 
 - ### Content
 

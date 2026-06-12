@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -113,7 +113,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -169,7 +169,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Bitcoin Lightning Network]], [[Digital Asset Domain]]
-  - requires:: [[Bitcoin]], [[Federation]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Federation]]
   - enables:: [[Confidential Transactions]], [[Asset Issuance]]
 
 - ### Content

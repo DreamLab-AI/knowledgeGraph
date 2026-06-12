@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Analytics]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Blockchain Analytics]]
   - enables:: [[Data Visualisation]]
 

@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ]
   },
   "quality": 0.35,
@@ -103,7 +103,7 @@ public:: true
   - enables: [[Avatar Customization]], [[Avatar System]]
   - uses: [[Game Engine]]
   - relatedTo: [[Asset Management]], [[Digital Asset]]
-  - partOf: [[Spatial Computing]]
+  - partOf: [[Spatial Computing Paradigm]]
 
 - ### Content
   # PropertySystem

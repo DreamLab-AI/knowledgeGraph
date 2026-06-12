@@ -8,7 +8,7 @@
   "definition": "Argo Blockchain is a publicly listed cryptocurrency mining company that operates data centres performing the hashing that secures proof-of-work networks, chiefly Bitcoin.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-mining",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],
@@ -19,13 +19,13 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],

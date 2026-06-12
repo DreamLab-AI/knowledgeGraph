@@ -36,7 +36,7 @@
         "label": "Platform Engineering"
       },
       {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
@@ -93,7 +93,7 @@
         "label": "Software Platform"
       },
       {
-        "id": "urn:ngm:class:infrastructure",
+        "id": "urn:ngm:class:technology-infrastructure-domain",
         "label": "Infrastructure"
       }
     ]

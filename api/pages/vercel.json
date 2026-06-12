@@ -55,12 +55,12 @@
   ],
   "backlinks": [
     {
-      "slug": "advice-for-developing-gen-ai",
-      "label": "Advice for developing GenAI"
+      "slug": "ai-assisted-developer-tooling",
+      "label": "AI-Assisted Developer Tooling"
     },
     {
-      "slug": "coding-support",
-      "label": "Coding support"
+      "slug": "generative-ai-development-methodology",
+      "label": "Generative AI Development Methodology"
     },
     {
       "slug": "text-generation",

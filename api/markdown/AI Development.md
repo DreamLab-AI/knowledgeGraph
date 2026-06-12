@@ -264,7 +264,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -289,7 +289,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -309,7 +309,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
@@ -319,7 +319,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -373,7 +373,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse Platform]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -759,7 +759,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse Platform]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -1167,7 +1167,7 @@ public:: true
 		- Meeting summarisation: 24%
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse Platform]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Training and Simulation:
 		- CVEs can facilitate skill development and training in various industries, such as healthcare, military, aviation, and emergency response. Trainees can practice procedures in a virtual environment, with natural language AI providing instructions, explanations, or feedback. Generative AI can now create entire interactive 3D environments on the fly, allowing for the rapid prototyping and deployment of complex, adaptable virtual scenarios. AI-powered avatars and non-player characters (NPCs) are also becoming more lifelike, capable of nuanced and dynamic interactions, which is particularly impactful in areas like virtual training and customer service, where realistic simulations and interactions are paramount.
@@ -1343,7 +1343,7 @@ public:: true
 		- Despite this lead, China's advancements in AI research publications and patent filings indicate a narrowing gap, emphasizing the intensifying global competition in AI development.  ([US ahead in AI innovation, easily surpassing China in Stanford's new ranking](https://apnews.com/article/c8eb9be0253eb39776c3e38d05f1a329?utm_source=chatgpt.com))
 
   - ### Layer 2: Modular Human-Computer Interface:
-		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
+		- The framework proposes the development of collaborative global networks for training, research, biomedical, and creative industries using immersive and accessible environments. Engaging with ideas from diverse cultural backgrounds can enrich the overall user experience. Industry players have noted the risk and failures associated with closed systems like Meta and are embracing the "open Metaverse" narrative to de-risk their interests. To enable a truly open and interoperable Metaverse, it is crucial to develop open-source APIs, SDKs, and data standards that allow different platforms to communicate and exchange information. While the initial focus will be on building around a simpler open-source engine, the framework aims to link across standards such as [Unity](https://unity.com/), [[Unreal Engine]](https://www.unrealengine.com/), and [[NVIDIA Omniverse Platform]](https://www.nvidia.com/en-us/omniverse/) as it develops. This can be accomplished using the federation layer.
 
   - ### Virtual Art & Media Collaboration:
 		- Artists, animators, and multimedia professionals can collaborate in CVEs to create and develop their projects, such as films, animations, or video games. Natural language AI can help in storyboarding, scriptwriting, or character development, while visual generative ML can generate new visuals or adapt existing assets based on user input and style preferences.
@@ -1437,7 +1437,7 @@ public:: true
 	 - **Implications for AI-Driven Growth:** Discusses the implications of diminishing returns for the notion of perpetually increasing returns from AI-augmented research and development.
 
   - ## Image, Video and 3D
-		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+		- [[Stable Diffusion Image Model]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
 		- For brands and private companies this allows private development of digital assets.
 
 		- #### Designers and engineers
@@ -2033,7 +2033,7 @@ public:: true
 		  - [[AI Lifecycle]]
 		  - [[Training Data]]
 		  - [[AI Model]]
-		  - [[Machine Learning]]
+		  - [[Machine Learning Discipline]]
 		  - [[Model Performance]]
 		  - [[AI Deployment]]
 		  - [[Bias]]
@@ -2042,7 +2042,7 @@ public:: true
 
 		  ```
 
-    - uses-technique:: [[AI Model]], [[Machine Learning]]
+    - uses-technique:: [[AI Model]], [[Machine Learning Discipline]]
 
     - measured-by:: [[Model Performance]]
 
@@ -2154,6 +2154,6 @@ public:: true
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[NIST AI Risk Management Framework]], [[ISO/IEC 42001:2023]], [[ISO/IEC 23053]], [[ISO/IEC 5338:2023]], [[ISO/IEC 25059]], [[EU AI Act]]
+  - sources:: [[NIST AI Risk Management Framework]], [[ISO/IEC 42001:2023]], [[ISO/IEC 23053]], [[ISO/IEC 5338:2023]], [[ISO/IEC 25059]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

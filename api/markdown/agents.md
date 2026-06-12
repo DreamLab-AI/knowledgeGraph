@@ -14,7 +14,7 @@
   - requires:: [[Foundation Model]], [[Function Calling]], [[Context Window]], [[Inference Compute]], [[Tool Definition]], [[Human Oversight]]
   - enables:: [[Autonomous Task Execution]], [[Agentic Workflow]], [[Computer Use]], [[Browser Automation]], [[Multi-Agent Orchestration]], [[Deep Research]], [[AI Software Engineering]]
   - implements:: [[ReAct]], [[Reflexion]], [[Tree of Thoughts]], [[Plan-and-Execute]], [[Self-Consistency]], [[BDI Architecture]], [[Subsumption Architecture]], [[Contract Net Protocol]]
-  - depends-on:: [[Transformer Architecture]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], [[Retrieval Augmented Generation]], [[Vector Database]], [[Function Calling API]]
+  - depends-on:: [[Transformer Architecture]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]], [[Retrieval Augmented Generation]], [[Vector Database]], [[Function Calling API]]
   - supports:: [[Customer Service Automation]], [[Software Development Automation]], [[Scientific Research]], [[Personal Assistance]], [[Enterprise Workflow]], [[Drug Discovery]], [[Robotics Control]]
   - uses:: [[Model Context Protocol]], [[Agent2Agent Protocol]], [[FIPA-ACL]], [[Function Schemas]], [[Chain of Thought]], [[Embedding Search]]
   - contrasts-with:: [[Chatbot]], [[Workflow Automation]], [[Digital Assistant (Siri/Alexa)]], [[Static Inference Pipeline]], [[Robotic Process Automation]]

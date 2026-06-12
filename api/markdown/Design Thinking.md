@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:collaborative-design", "label": "Collaborative Design"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
       {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
     ],
     "enables": [

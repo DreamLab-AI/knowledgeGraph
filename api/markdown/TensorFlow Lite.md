@@ -48,14 +48,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning-framework",
+      "@id": "urn:ngm:class:machine-learning-discipline-framework",
       "label": "Machine Learning Framework"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -79,7 +79,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -110,7 +110,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Machine Learning Framework]]
   - bridges-to:: [[Machine Learning Framework]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
 
 - ### Content
   - TensorFlow Lite converts trained TensorFlow models into a compact format and provides an interpreter optimised for resource-constrained hardware. It supports techniques such as quantisation to reduce model size and speed up inference.

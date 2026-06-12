@@ -239,7 +239,7 @@
         "label": "Autonomous Mobile Robots"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robots"
       },
       {
@@ -352,7 +352,7 @@
         "label": "ROS Industrial"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]

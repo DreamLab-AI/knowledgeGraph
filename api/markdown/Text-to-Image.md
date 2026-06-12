@@ -68,7 +68,7 @@ alias:: Text to Image
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],

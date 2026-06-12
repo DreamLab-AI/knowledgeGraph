@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
@@ -63,7 +63,7 @@ public:: true
 
 - ### Relationships
   - supports [[AI Safety Research]]
-  - supports [[Constitutional AI]]
+  - supports [[Constitutional AI Training Methodology]]
   - uses [[Large Language Models]]
   - uses [[RLHF]]
   - relatedTo [[Interpretability]]

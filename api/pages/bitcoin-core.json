@@ -3,7 +3,7 @@
   "title": "Bitcoin Core",
   "slug": "bitcoin-core",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-core",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
   "domain": "blockchain",
   "definition": "Bitcoin Core is the reference implementation of the Bitcoin protocol, providing the canonical software stack that full nodes run to validate transactions, enforce consensus rules, and maintain a complete copy of the blockchain. First released by Satoshi Nakamoto in 2009 and since maintained by an open-source community, it defines the authoritative behaviour of the Bitcoin network through its codebase. Bitcoin Core includes a wallet, a peer-to-peer networking layer, a scripting engine, and the mining interface used to produce new blocks. Consensus-critical changes are introduced through Bitcoin Improvement Proposals, ensuring backward compatibility and broad community review before deployment.",
   "subClassOf": [
@@ -55,15 +55,15 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       },
       {

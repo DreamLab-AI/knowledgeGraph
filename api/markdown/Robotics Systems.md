@@ -112,7 +112,7 @@ public:: true
       {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"},
       {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
       {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
       {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
       {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}

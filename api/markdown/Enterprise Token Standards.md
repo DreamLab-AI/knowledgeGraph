@@ -1542,7 +1542,7 @@ public:: true
         "label": "Capital Markets and Technology Association CMTAT"
       },
       {
-        "@id": "urn:ngm:class:ethereum-improvement-proposal-process",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-improvement-proposal-process",
         "label": "Ethereum Improvement Proposal Process"
       },
       {

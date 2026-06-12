@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:ff7d77d095e18002d5b1f96339f1d4f84078188e736b5448490fc0b2d62c3d37",
+  "title": "Generative AI Near-Term Forecasts",
+  "slug": "generative-ai-near-term-forecasts",
+  "public": true,
+  "classIri": "urn:ngm:class:generative-ai-near-term-forecasts",
+  "domain": "infrastructure",
+  "definition": "A curated set of near-term forecasts for the generative AI video and creative-tool landscape, covering model aggregators, story-level tooling, template ecosystems, real-time trend integration, open-source convergence, inference cost reduction, specialised models, and the social/legal challenges of AI-generated content. These predictions frame strategic planning for platforms operating in the AI creative economy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

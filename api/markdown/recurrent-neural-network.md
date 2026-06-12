@@ -279,7 +279,7 @@
   - **[[NIST AI Risk Management Framework]]**:
   - **Function**: MEASURE (MS-2.7 - Performance metrics for temporal data)
   - **Focus**: Bias in sequential predictions, temporal fairness
-  - **[[EU AI Act]]**:
+  - **[[EU AI Act Regulatory Instrument]]**:
   - Article 15: Accuracy and robustness requirements for sequence processing
   - High-risk classification for NLP systems in critical applications (healthcare, legal, employment)
 
@@ -547,7 +547,7 @@
   - [[ISO/IEC 22989:2022]] - AI terminology
   - [[ISO/IEC 23894:2023]] - AI risk management
   - [[NIST AI Risk Management Framework]]
-  - [[EU AI Act]]
+  - [[EU AI Act Regulatory Instrument]]
   - [[PyTorch]]
   - [[TensorFlow]]
   - [[Keras]]

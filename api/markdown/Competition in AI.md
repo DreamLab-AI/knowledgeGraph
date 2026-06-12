@@ -414,11 +414,11 @@ public:: true
         "label": "Inference Optimisation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -460,11 +460,11 @@ public:: true
         "label": "Mistral AI"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ],
@@ -504,7 +504,7 @@ public:: true
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -783,12 +783,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -798,12 +798,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -845,12 +845,12 @@ public:: true
   - requires:: [[GPU Supply Chain]], [[Training Data]], [[AI Research Talent]], [[Regulatory Frameworks]], [[Capital Markets]], [[Cloud Infrastructure]]
   - enables:: [[AI Sovereignty]], [[Economic Competitiveness]], [[Technological Leadership]], [[National Security Advantage]], [[AI Policy]]
   - implements:: [[Export Controls]], [[Antitrust Oversight]], [[Open Model Licensing]], [[Benchmark Evaluation]], [[Compute Governance]], [[Responsible Scaling Policy]]
-  - depends-on:: [[Semiconductor Industry]], [[Cloud Infrastructure]], [[AI Safety]], [[AI Regulation]], [[Geopolitics]], [[Foundation Models]]
+  - depends-on:: [[Semiconductor Industry]], [[Cloud Infrastructure]], [[AI Safety]], [[AI Regulation]], [[Geopolitics]], [[Large-Scale Pretrained Foundation Model]]
   - supports:: [[AI Adoption]], [[AI Policy]], [[Innovation Ecosystems]], [[National AI Strategies]], [[AI Sovereignty]]
-  - uses:: [[Foundation Models]], [[Reinforcement Learning from Human Feedback]], [[Inference Optimisation]], [[Agentic AI Systems]], [[Mixture of Experts]]
+  - uses:: [[Large-Scale Pretrained Foundation Model]], [[Reinforcement Learning from Human Feedback]], [[Inference Optimisation]], [[Agentic AI Systems]], [[Mixture-of-Experts Architecture]]
   - contrasts-with:: [[AI Cooperation]], [[AI Safety]], [[Open Source AI]], [[AI Regulation]], [[AI Alignment]]
-  - related-to:: [[OpenAI]], [[Anthropic]], [[Google DeepMind]], [[Meta AI]], [[Mistral AI]], [[AI Chips]], [[Frontier Models]], [[AI Investment]], [[Geopolitics]], [[AI Regulation]]
-  - standardized-by:: [[NIST AI Risk Management Framework]], [[EU AI Act]], [[IEEE Standards Association]], [[ISO/IEC JTC 1/SC 42]]
+  - related-to:: [[OpenAI Research Organisation]], [[Anthropic]], [[Google DeepMind]], [[Meta AI]], [[Mistral AI]], [[AI Chips]], [[Frontier Models]], [[AI Investment]], [[Geopolitics]], [[AI Regulation]]
+  - standardized-by:: [[NIST AI Risk Management Framework]], [[EU AI Act Regulatory Instrument]], [[IEEE Standards Association]], [[ISO/IEC JTC 1/SC 42]]
 
 - ### Content
 
@@ -1006,7 +1006,7 @@ public:: true
 
 	  **[[Google DeepMind]] — Position 3 (Elo 1,494)**: Gemini 3.1 Pro (February 2026) with Codex coding integration, 1M-token context, 83% on GDPval. Structural advantages: TPU v5/v6 custom hardware (lower inference costs vs. NVIDIA GPU-dependent competitors), distribution through 3+ billion Search users and 3 billion Android devices, Workspace enterprise penetration.
 
-	  **[[OpenAI]] — Position 4 (Elo 1,481)**: GPT-5.4 as of Q1 2026, following monthly iteration cycle (GPT-5.0 through 5.4). $122B Q1 2026 raise led by Amazon/NVIDIA/SoftBank at $852B valuation — largest private company valuation in history. Competitive pressure from Anthropic capability claims drives the iteration cadence.
+	  **[[OpenAI Research Organisation]] — Position 4 (Elo 1,481)**: GPT-5.4 as of Q1 2026, following monthly iteration cycle (GPT-5.0 through 5.4). $122B Q1 2026 raise led by Amazon/NVIDIA/SoftBank at $852B valuation — largest private company valuation in history. Competitive pressure from Anthropic capability claims drives the iteration cadence.
 
 	  **Alibaba — Position 5 (Elo 1,449)**: Qwen-Max 3.5 combines competitive benchmark performance with enterprise deployment across Southeast Asian and Chinese markets. Open-source strategy (Qwen models freely available for commercial use) generates developer loyalty while Alibaba Cloud monetises at enterprise scale.
 
@@ -1032,10 +1032,10 @@ public:: true
 
 	  AI investment has undergone exponential concentration at the frontier tier while early-stage funding expanded broadly.
 
-	  **2025 Full-Year Investment**: Global corporate AI investment: $581B (Stanford AI Index 2026), more than doubling from $253B in 2024. Global AI venture funding: $211B (up 85% YoY from $114B in 2024). Top 2025 rounds: [[OpenAI]] $40B at $300B post-money (SoftBank lead, Microsoft/Coatue/Altimeter/Thrive); [[Anthropic]] $13B Series F at $183B; xAI $10B+ at $200B.
+	  **2025 Full-Year Investment**: Global corporate AI investment: $581B (Stanford AI Index 2026), more than doubling from $253B in 2024. Global AI venture funding: $211B (up 85% YoY from $114B in 2024). Top 2025 rounds: [[OpenAI Research Organisation]] $40B at $300B post-money (SoftBank lead, Microsoft/Coatue/Altimeter/Thrive); [[Anthropic]] $13B Series F at $183B; xAI $10B+ at $200B.
 
 	  **Q1 2026 Supercycle**: AI venture raises hit $255.5B in Q1 2026 alone — surpassing the 2025 full-year total. Three mega-rounds = 67% of capital:
-    - [[OpenAI]]: $122B led by Amazon/NVIDIA/SoftBank; $852B post-money valuation (largest private company valuation in history)
+    - [[OpenAI Research Organisation]]: $122B led by Amazon/NVIDIA/SoftBank; $852B post-money valuation (largest private company valuation in history)
     - [[Anthropic]]: $30B Series G led by GIC/Coatue; $380B post-money; ~$64B total raised since 2021
     - xAI: $20B Series E (Valor Capital, Qatar Investment Authority, Al Waleed bin Talal); $42.7B total raised since 2023
 
@@ -1070,7 +1070,7 @@ public:: true
     - Meta Superintelligence Labs: nine-figure recruitment offers (approaching $300M total packages) targeting Apple, Google DeepMind, OpenAI, and Anthropic engineers
     - Strategic talent acquisitions: Alexandr Wang (Scale AI CEO, via Meta's $14B Scale AI investment); Windsurf co-founders (via Google's $2.4B licensing agreement into DeepMind)
 
-	  **Lab-to-Lab Poaching Dynamics**: Engineers ~8× more likely to leave [[OpenAI]] for [[Anthropic]] than the reverse (safety-and-culture self-selection from Anthropic's 2021 founding as OpenAI safety-focused breakaway). [[OpenAI]] simultaneously re-recruited researchers from Mira Murati's Thinking Machines Lab (departed <2 years prior). Revolving-door between frontier labs concentrates tacit knowledge about training infrastructure, RLHF pipelines, and scaling techniques within a small Bay Area ecosystem.
+	  **Lab-to-Lab Poaching Dynamics**: Engineers ~8× more likely to leave [[OpenAI Research Organisation]] for [[Anthropic]] than the reverse (safety-and-culture self-selection from Anthropic's 2021 founding as OpenAI safety-focused breakaway). [[OpenAI Research Organisation]] simultaneously re-recruited researchers from Mira Murati's Thinking Machines Lab (departed <2 years prior). Revolving-door between frontier labs concentrates tacit knowledge about training infrastructure, RLHF pipelines, and scaling techniques within a small Bay Area ecosystem.
 
 	  **Geographic Concentration**: Bay Area hosts OpenAI, Anthropic, Google DeepMind US, Meta AI Research, xAI, Scale AI. Secondary clusters: London (UK AISI evaluations team, DeepMind HQ, Wayve, Stability AI), Paris ([[Mistral AI]], Kyutai, Nabla, HuggingFace HQ), Berlin (Aleph Alpha), Tel Aviv (AI21 Labs, Lightricks, D-ID).
 
@@ -1259,7 +1259,7 @@ public:: true
 
 	  The Data War centres on the scarcity of high-quality training corpora and the legal status of web-scraped content.
 
-	  **Key 2023 events**: [[OpenAI]] struck a landmark partnership with Axel Springer (access to news archives for [[Frontier Models]] training); the New York Times filed suit seeking to shut down GPT models entirely for copyright infringement; Apple reportedly offered $50 million for publisher data contracts.
+	  **Key 2023 events**: [[OpenAI Research Organisation]] struck a landmark partnership with Axel Springer (access to news archives for [[Frontier Models]] training); the New York Times filed suit seeking to shut down GPT models entirely for copyright infringement; Apple reportedly offered $50 million for publisher data contracts.
 
 	  **2024–2025 evolution**: The Data War expanded into synthetic data generation, with researchers at [[Google DeepMind]], Anthropic, and independent labs producing evidence that model-generated synthetic data can substitute for scarce human-annotated corpora in specific domains. Debates about model collapse (quality degradation from training on model-generated outputs) and data quality floors intensified at NeurIPS 2024 and ICML 2025.
 
@@ -1285,7 +1285,7 @@ public:: true
 
 	  **2025–2026 frontier**: [[AI Video]] generation emerged as the next multimodality battleground (OpenAI Sora, Google Veo 2, Runway Gen-3, Kling). Real-time voice interaction (GPT-4o voice mode, Gemini Live, ElevenLabs) competed on naturalness and latency. Long-context multimodal understanding (1M-token context with image/video/document inputs) differentiated frontier from mid-tier models.
 
-	  **Competitive logic**: No single provider dominates all modalities, forcing specialisation strategies. [[Google DeepMind]] maintains leads in video generation (Veo) and science (AlphaFold, AlphaChip). [[OpenAI]] leads in creative text and image generation mindshare. Anthropic leads in long-document and code analysis. The multimodality landscape reduces any single modality's differentiation value, intensifying the shift to deployment-infrastructure and agentic-capability competition.
+	  **Competitive logic**: No single provider dominates all modalities, forcing specialisation strategies. [[Google DeepMind]] maintains leads in video generation (Veo) and science (AlphaFold, AlphaChip). [[OpenAI Research Organisation]] leads in creative text and image generation mindshare. Anthropic leads in long-document and code analysis. The multimodality landscape reduces any single modality's differentiation value, intensifying the shift to deployment-infrastructure and agentic-capability competition.
 
   - ### War 4: The RAG/Ops War
 
@@ -1295,7 +1295,7 @@ public:: true
 
 	  **Notable 2023 fundraises**: AssemblyAI $50M ("Stripe for AI models"); Replicate $40M (serving AI engineers); Glean $200M (enterprise AI search); Harvey $80M (legal AI); Midjourney $200M/year revenue.
 
-	  **2025–2026 consolidation**: Much of the RAG/Ops war has been absorbed into frontier model providers' own platform offerings. [[OpenAI]]'s API platform, [[Anthropic]]'s Claude platform, and [[Google DeepMind]]'s Vertex AI each offer integrated orchestration, tool use, fine-tuning, and observability that reduces the standalone LLMOps market. Remaining independent opportunity lies in: enterprise workflow integration (Glean, Notion AI, Salesforce Einstein), domain-specific RAG (legal, medical, financial), and evaluation/red-teaming tooling (Braintrust, Scale AI Evaluations, Anthropic's Constitutional AI evaluation frameworks).
+	  **2025–2026 consolidation**: Much of the RAG/Ops war has been absorbed into frontier model providers' own platform offerings. [[OpenAI Research Organisation]]'s API platform, [[Anthropic]]'s Claude platform, and [[Google DeepMind]]'s Vertex AI each offer integrated orchestration, tool use, fine-tuning, and observability that reduces the standalone LLMOps market. Remaining independent opportunity lies in: enterprise workflow integration (Glean, Notion AI, Salesforce Einstein), domain-specific RAG (legal, medical, financial), and evaluation/red-teaming tooling (Braintrust, Scale AI Evaluations, Anthropic's Constitutional AI evaluation frameworks).
 
   - ## Benchmarking and Measurement in AI Competition
 
@@ -1359,7 +1359,7 @@ public:: true
 
 	  Given narrowing raw capability gaps, frontier AI providers have differentiated along vertical specialisation axes:
 
-	  **Legal AI**: [[OpenAI]], [[Anthropic]], and [[Google DeepMind]] each partner with or compete against Harvey AI ($200M raised, Goldman Sachs and PwC partnerships), Lexis+ AI (LexisNexis), and Thomson Reuters CoCounsel. Long-context comprehension, citation accuracy, jurisdiction-specific fine-tuning, and attorney-client privilege compliance drive vertical differentiation more than general benchmark performance.
+	  **Legal AI**: [[OpenAI Research Organisation]], [[Anthropic]], and [[Google DeepMind]] each partner with or compete against Harvey AI ($200M raised, Goldman Sachs and PwC partnerships), Lexis+ AI (LexisNexis), and Thomson Reuters CoCounsel. Long-context comprehension, citation accuracy, jurisdiction-specific fine-tuning, and attorney-client privilege compliance drive vertical differentiation more than general benchmark performance.
 
 	  **Medical and Clinical AI**: [[Google DeepMind]]'s Med-PaLM 2 and its Gemini for healthcare applications, Microsoft Azure OpenAI Service for Epic EHR integration, and Anthropic's clinical AI partnerships each target the healthcare vertical with privacy-compliance (HIPAA), clinical accuracy, and regulatory clearance as primary competitive dimensions. FDA 510(k) clearance for AI diagnostic support tools creates a compliance moat.
 

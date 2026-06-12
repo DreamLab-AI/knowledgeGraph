@@ -13,13 +13,13 @@
   - has-part:: [[Prompt Injection]], [[Persona Attack]], [[Many-Shot Jailbreaking]], [[Crescendo Attack]], [[ASCII Art Attack]], [[Low-Resource Language Attack]], [[Best-of-N Jailbreaking]], [[Skeleton Key Attack]]
   - requires:: [[Large Language Models]], [[Transformer Architecture]], [[Instruction Tuning]], [[Safety Training]]
   - enables:: [[Harmful Content Generation]], [[Policy Circumvention]], [[Red Teaming]], [[Adversarial Evaluation]]
-  - implements:: [[Constitutional Classifiers]], [[Llama Guard]], [[Guardrails AI]], [[RLHF]], [[Constitutional AI]]
+  - implements:: [[Constitutional Classifiers]], [[Llama Guard]], [[Guardrails AI]], [[RLHF]], [[Constitutional AI Training Methodology]]
   - depends-on:: [[Natural Language Processing]], [[In-Context Learning]], [[Chain-of-Thought Reasoning]], [[Reinforcement Learning from Human Feedback]]
   - supports:: [[AI Red Teaming]], [[AI Governance]], [[Content Moderation]], [[AI Regulation]]
   - uses:: [[Prompt Engineering]], [[Transfer Learning]], [[Ensemble Methods]], [[Classifier Models]]
-  - contrasts-with:: [[AI Alignment]], [[AI Safety]], [[Responsible AI]], [[Constitutional AI]]
-  - related-to:: [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]], [[AI Liability]], [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[CLI Multi-Agent Systems]]
-  - standardized-by:: [[MITRE ATLAS]], [[AISI]], [[NIST AI RMF]], [[EU AI Act]]
+  - contrasts-with:: [[AI Alignment]], [[AI Safety]], [[Responsible AI]], [[Constitutional AI Training Methodology]]
+  - related-to:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]], [[AI Liability]], [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[CLI Multi-Agent Systems]]
+  - standardized-by:: [[MITRE ATLAS]], [[AISI]], [[NIST AI RMF]], [[EU AI Act Regulatory Instrument]]
 
 - ### Content
 
@@ -436,7 +436,7 @@
   - **Authority score**: 0.87 (Sonnet-tier enrichment; comprehensive citation coverage, verified attack dates, quantitative ASR figures cross-referenced against published benchmarks)
   - **Enrichment model**: claude-sonnet-4-6
   - **Enrichment date**: 2026-05-17
-  - **Scope note**: This page covers LLM jailbreaking as an AI safety / adversarial ML concept. Closely related pages in this knowledge graph include [[AI Safety]], [[AI Risks]], [[AI Alignment]], [[Prompt Engineering]], [[Agent Frameworks]], [[Anthropic Claude]], [[ChatGPT]], [[AI Liability]], and [[Bias in Large Language Models]]. The MITRE ATLAS taxonomy (ML-T0019 Prompt Injection, ML-T0020 Jailbreak) provides the authoritative structured reference for LLM attack techniques in enterprise security frameworks.
+  - **Scope note**: This page covers LLM jailbreaking as an AI safety / adversarial ML concept. Closely related pages in this knowledge graph include [[AI Safety]], [[AI Risks]], [[AI Alignment]], [[Prompt Engineering]], [[Agent Frameworks]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Liability]], and [[Bias in Large Language Models]]. The MITRE ATLAS taxonomy (ML-T0019 Prompt Injection, ML-T0020 Jailbreak) provides the authoritative structured reference for LLM attack techniques in enterprise security frameworks.
   - **Key quantitative claims verified against primary sources**:
     - GCG: 88% ASR Llama-2-7B-chat (Zou et al. 2023, Table 1)
     - Many-Shot: 43–61% ASR Claude 2.0 at 256 shots (Anil et al. 2024, Figure 3)

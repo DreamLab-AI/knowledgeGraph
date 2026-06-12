@@ -8,7 +8,7 @@
   "definition": "Recommendation Systems are information filtering systems that predict a user's preference for items\u2014products, content, services\u2014and surface the most relevant items from a large catalogue. They are categorised into collaborative filtering (leveraging the behaviour of similar users), content-based filtering (matching item attributes to user profiles), and hybrid approaches that combine both. Modern large-scale recommendation systems employ deep learning architectures, embedding models, and two-tower neural networks trained on implicit feedback signals such as clicks, watch-time, and purchases. Recommendation systems are among the highest-impact machine learning applications in commercial technology, driving substantial fractions of revenue at platforms such as Netflix, Amazon, YouTube, and Spotify, while also raising significant concerns about filter bubbles, engagement maximisation harms, and algorithmic amplification of misinformation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -38,7 +38,7 @@
         "label": "Graph Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -59,7 +59,7 @@
         "label": "Embedding Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ]

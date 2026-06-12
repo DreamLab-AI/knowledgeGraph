@@ -63,7 +63,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},

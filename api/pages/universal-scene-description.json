@@ -82,7 +82,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-scene-assembly",
+        "id": "urn:ngm:class:collaborative-systems-modality-scene-assembly",
         "label": "Collaborative Scene Assembly"
       },
       {
@@ -102,7 +102,7 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -216,7 +216,7 @@
         "label": "AOUSD"
       },
       {
-        "id": "urn:ngm:class:apple-vision-pro",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
         "label": "Apple Vision Pro"
       },
       {
@@ -228,11 +228,11 @@
         "label": "Houdini"
       },
       {
-        "id": "urn:ngm:class:blender",
+        "id": "urn:ngm:class:blender-3d-creation-suite",
         "label": "Blender"
       },
       {
-        "id": "urn:ngm:class:nvidia-omniverse",
+        "id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {

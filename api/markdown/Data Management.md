@@ -60,7 +60,7 @@ public:: true
       {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ],
     "relatedTo": [
@@ -122,7 +122,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Metaverse Technology]]
   - bridges-to:: [[Blockchain]] (domain: bc) for decentralised data ownership and provenance
-  - supports:: [[Machine Learning]]
+  - supports:: [[Machine Learning Discipline]]
   - supports:: [[AI Infrastructure]]
   - relatedTo:: [[Blockchain]]
   - relatedTo:: [[Distributed System]]

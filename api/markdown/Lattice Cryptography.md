@@ -129,7 +129,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:linked:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -164,7 +164,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Post-Quantum Cryptography]]
-  - bridges-to:: [[Cryptographic Primitive]], [[Quantum Computing]]
+  - bridges-to:: [[Cryptographic Primitive]], [[Quantum Computation Paradigm]]
   - requires:: [[Cryptography]]
   - enables:: [[Encryption]], [[Digital Signature]]
 

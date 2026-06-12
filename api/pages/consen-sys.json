@@ -8,7 +8,7 @@
   "definition": "ConsenSys is a software company that builds Ethereum infrastructure and developer tools, including wallet and node services.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ethereum",
+      "id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],

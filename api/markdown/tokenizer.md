@@ -2,7 +2,7 @@
   - A tokenizer converts raw text into the discrete tokens a language model processes and back again, using subword algorithms to balance vocabulary size against sequence length.
 
 - ### Relationships
-  - Tokenizer is a subclass of [[Tokenization]] and supports the [[Transformer]] architecture by producing the integer sequences it consumes. It enables practical [[Natural Language Processing]] and relates to the broader fields of [[Deep Learning]] and [[Machine Learning]] in which learned and rule-based tokenisation schemes coexist.
+  - Tokenizer is a subclass of [[Tokenization]] and supports the [[Transformer]] architecture by producing the integer sequences it consumes. It enables practical [[Natural Language Processing]] and relates to the broader fields of [[Deep Learning]] and [[Machine Learning Discipline]] in which learned and rule-based tokenisation schemes coexist.
 
 - ### Content
   - The tokenizer sits at the boundary between human text and the numerical world a neural network inhabits. Language models do not operate on characters or words directly; they operate on integer token IDs drawn from a fixed vocabulary. The tokenizer's job is to segment arbitrary input into those tokens deterministically and reversibly, and the choices it embodies ripple through every aspect of the model's behaviour and economics.

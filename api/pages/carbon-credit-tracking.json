@@ -166,7 +166,7 @@
         "label": "Polygon Network"
       },
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -265,7 +265,7 @@
         "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ]

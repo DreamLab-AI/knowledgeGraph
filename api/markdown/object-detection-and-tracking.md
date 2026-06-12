@@ -41,7 +41,7 @@
   - [Motion Inversion for Video Customization (wileewang.github.io)](https://wileewang.github.io/MotionInversion/) [[AI Video]] [[Segmentation and Identification]] [[Product Design]]
   - [Amshaker/MAVOS: Efficient Video Object Segmentation via Modulated Cross-Attention Memory (github.com)](https://github.com/Amshaker/MAVOS) [[Segmentation and Identification]]
   - [[Segmentation and Identification]] [SC VD 103 (youtube.com)](https://www.youtube.com/watch?v=js7AYKkZvFI) simple background removal
-  - Yolo guide [[Segmentation and Identification]] [[Human tracking and SLAM capture]] [Blog – YOLO Unraveled: A Clear Guide (opencv.ai)](https://www.opencv.ai/blog/yolo-unraveled-a-clear-guide?utm_source=reddit&utm_medium=article&utm_campaign=yolo)
+  - Yolo guide [[Segmentation and Identification]] [[Human Pose SLAM Capture System]] [Blog – YOLO Unraveled: A Clear Guide (opencv.ai)](https://www.opencv.ai/blog/yolo-unraveled-a-clear-guide?utm_source=reddit&utm_medium=article&utm_campaign=yolo)
   - Efficient [[Segmentation and Identification]] for [[Hardware and Edge]] [Paper page - TinySAM: Pushing the Envelope for Efficient Segment Anything Model (huggingface.co)](https://huggingface.co/papers/2312.13789)
   - [Incredibly stable depth estimation from adobe](https://github.com/RaymondWang987/NVDS)
   - [Holistic segment unknowns](https://holisticseg.github.io/)
@@ -74,7 +74,7 @@
   - [Motion Inversion for Video Customization (wileewang.github.io)](https://wileewang.github.io/MotionInversion/) [[AI Video]] [[Segmentation and Identification]] [[Product Design]]
   - [Amshaker/MAVOS: Efficient Video Object Segmentation via Modulated Cross-Attention Memory (github.com)](https://github.com/Amshaker/MAVOS) [[Segmentation and Identification]]
   - [[Segmentation and Identification]] [SC VD 103 (youtube.com)](https://www.youtube.com/watch?v=js7AYKkZvFI) simple background removal
-  - Yolo guide [[Segmentation and Identification]] [[Human tracking and SLAM capture]] [Blog – YOLO Unraveled: A Clear Guide (opencv.ai)](https://www.opencv.ai/blog/yolo-unraveled-a-clear-guide?utm_source=reddit&utm_medium=article&utm_campaign=yolo)
+  - Yolo guide [[Segmentation and Identification]] [[Human Pose SLAM Capture System]] [Blog – YOLO Unraveled: A Clear Guide (opencv.ai)](https://www.opencv.ai/blog/yolo-unraveled-a-clear-guide?utm_source=reddit&utm_medium=article&utm_campaign=yolo)
   - Efficient [[Segmentation and Identification]] for [[Hardware and Edge]] [Paper page - TinySAM: Pushing the Envelope for Efficient Segment Anything Model (huggingface.co)](https://huggingface.co/papers/2312.13789)
   - [Incredibly stable depth estimation from adobe](https://github.com/RaymondWang987/NVDS)
   - [Holistic segment unknowns](https://holisticseg.github.io/)

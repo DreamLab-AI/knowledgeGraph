@@ -10,7 +10,7 @@
   - requires:: [[Reward Function]], [[Loss Function]]
   - enables:: [[Value Alignment]], [[Reinforcement Learning]]
   - uses:: [[Optimization Technique]], [[Preference Learning]]
-  - relatedTo:: [[Reward Model]], [[Machine Learning]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]]
+  - relatedTo:: [[Reward Model]], [[Machine Learning Discipline]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]]
   - partOf:: [[AI Research Area]]
 
 - ### Content

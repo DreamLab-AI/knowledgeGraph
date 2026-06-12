@@ -3,7 +3,7 @@
   "title": "Machine Learning Domain",
   "slug": "machine-learning-domain",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-domain",
+  "classIri": "urn:ngm:class:machine-learning-discipline-domain",
   "domain": "machine-learning",
   "definition": "The Machine Learning Domain covers the study of algorithms that improve their performance on a task through exposure to data rather than explicit programming. Its scope spans supervised, unsupervised and reinforcement paradigms, together with the statistical and optimisation theory that underpins them. It sits as a principal sub-area of the Artificial Intelligence Domain and acts as the methodological core on which most contemporary AI capabilities are built. The boundary of the domain excludes purely symbolic reasoning systems, which are classified under the Knowledge Representation Domain.",
   "subClassOf": [
@@ -240,12 +240,12 @@
       "label": "Learning Algorithm"
     },
     {
-      "slug": "llama",
-      "label": "Llama"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meta-llama-model-family",
+      "label": "Meta Llama Model Family"
     },
     {
       "slug": "model-optimisation-and-performance",

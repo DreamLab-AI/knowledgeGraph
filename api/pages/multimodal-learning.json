@@ -3,7 +3,7 @@
   "title": "Multimodal Learning",
   "slug": "multimodal-learning",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-learning",
+  "classIri": "urn:ngm:class:multimodal-ai-architecture-learning",
   "domain": "ai",
   "definition": "Multimodal learning is a sub-field of machine learning concerned with building models that can process, align, and reason over data from two or more sensory modalities \u2014 such as text, images, audio, video, and structured data \u2014 within a unified representation space. Models trained multimodally acquire richer, grounded representations than unimodal counterparts by exploiting cross-modal correlations and complementarity.",
   "subClassOf": [
@@ -39,7 +39,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:multimodal-models",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Models"
       },
       {

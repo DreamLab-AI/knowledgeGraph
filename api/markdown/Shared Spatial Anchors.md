@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-ar-experiences",
+        "@id": "urn:ngm:class:collaborative-systems-modality-ar-experiences",
         "label": "Collaborative AR Experiences"
       }
     ]
@@ -100,7 +100,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -130,7 +130,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Spatial Computing]]
+  - is-subclass-of:: [[Spatial Computing Paradigm]]
   - enables:: [[Collaborative AR Experiences]]
   - bridges-to:: [[Telecollaboration]]
 

@@ -34,7 +34,7 @@
         "label": "Body Model"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -177,7 +177,7 @@
         "label": "Direct Coordinate Regression"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {

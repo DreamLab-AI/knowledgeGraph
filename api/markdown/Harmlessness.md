@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"},
       {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
     "contrastsWith": [
@@ -110,12 +110,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Research Tools]]",
+      "raw": "[[AI-Augmented Research Tooling Suite]]",
       "resolved": "urn:visionflow:owl:class:research-tools",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Sam Hammond]]",
+      "raw": "[[Sam Hammond AI Policy Economist]]",
       "resolved": "urn:visionflow:owl:class:sam-hammond",
       "kind": "ResolvedLink"
     }
@@ -139,7 +139,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
   - **requires**: [[AI Alignment]], [[AI Safety]]
-  - **relatedTo**: [[Constitutional AI]], [[Reinforcement Learning from Human Feedback]]
+  - **relatedTo**: [[Constitutional AI Training Methodology]], [[Reinforcement Learning from Human Feedback]]
   - **contrastsWith**: [[AI Risk]], [[Harmful Bias]]
   - **supports**: [[Trustworthy AI]], [[Value Alignment]]
 - ### Content
@@ -160,20 +160,20 @@ public:: true
 		- **Pain of Paying**: Microtransactions may be psychologically less painful, but frequent pop-ups can reignite that pain.
 		- **Anchoring Effect**: A $0.10 zap might feel trivial under a monthly $5 cap, yet it can seem excessive if repeated indefinitely.
   - ## Less Optimistic
-  - This is taken from [[Sam Hammond]] who I have discovered recently. All his stuff is summarised and linked here.
+  - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - ## Less Optimistic
-  - This is taken from [[Sam Hammond]] who I have discovered recently. All his stuff is summarised and linked here.
+  - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - ## Less Optimistic
-  - This is taken from [[Sam Hammond]] who I have discovered recently. All his stuff is summarised and linked here.
+  - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - ### Summarizing Web Pages with Google Assistant
    Google Assistant can summarize web pages using Generative AI. However, this service is currently only available on Pixel 8 and Pixel 8 Pro devices in English, and it cannot summarize paywalled articles or content less than 200 words. Users can provide feedback on summaries, which helps improve the service. The Assistant Summarize feature filters out sensitive information like pornography, violence, and hate speech. #[[🤖]]
-  - [[Research Tools]] [Undermind](https://www.undermind.ai/home/)
-  - [Perplexity](https://www.perplexity.ai/) for [[Research Tools]].
+  - [[AI-Augmented Research Tooling Suite]] [Undermind](https://www.undermind.ai/home/)
+  - [Perplexity](https://www.perplexity.ai/) for [[AI-Augmented Research Tooling Suite]].
   - [Tutorial: Perplexity Basics (youtube.com)](https://www.youtube.com/watch?v=ue4NU-U-hAE)
   - ## Less Optimistic
-  - This is taken from [[Sam Hammond]] who I have discovered recently. All his stuff is summarised and linked here.
+  - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - ## Less Optimistic
-  - This is taken from [[Sam Hammond]] who I have discovered recently. All his stuff is summarised and linked here.
+  - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   #### Key Characteristics
   - Avoids harmful outputs
 		  - Core alignment objective

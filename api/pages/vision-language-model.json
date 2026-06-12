@@ -8,7 +8,7 @@
   "definition": "A Vision Language Model (VLM) is a multimodal neural architecture that jointly processes visual inputs (images or video) and natural language text, learning shared representations that enable cross-modal tasks such as image captioning, visual question answering, visual grounding, and instruction-following based on image context. VLMs typically pair a visual encoder with a large language model backbone connected by a learned projection mechanism.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:multimodal-models",
+      "id": "urn:ngm:class:multimodal-ai-architecture-models",
       "label": "Multimodal Models"
     }
   ],
@@ -51,7 +51,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:multimodal-reasoning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
         "label": "Multimodal Reasoning"
       }
     ]

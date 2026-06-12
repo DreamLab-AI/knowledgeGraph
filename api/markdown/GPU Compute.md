@@ -46,7 +46,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:tpu", "label": "TPU"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ]
   },
   "qualityScore": 0.75,

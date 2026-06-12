@@ -65,7 +65,7 @@ public:: true
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ]
   },
   "provenance": {

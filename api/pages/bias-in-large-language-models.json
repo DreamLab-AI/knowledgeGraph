@@ -205,7 +205,7 @@
         "label": "AIES"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-article-10",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-10",
         "label": "EU AI Act Article 10"
       },
       {
@@ -260,7 +260,7 @@
         "label": "Bias Mitigation Techniques"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ]

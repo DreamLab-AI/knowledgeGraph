@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5",
+  "title": "Machine Learning Techniques Survey",
+  "slug": "machine-learning-techniques-survey",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-learning-discipline-techniques-survey",
+  "domain": "artificial-intelligence",
+  "definition": "A structured survey of the principal paradigms and architectures in machine learning, spanning supervised methods (SVMs, decision trees, logistic regression), unsupervised clustering (k-means, KNN), and deep learning approaches (neural networks, transformers, diffusion models, GANs). The survey contextualises training paradigms including reinforcement learning from human feedback and direct preference optimisation, and positions large proprietary language models within the broader ML taxonomy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimization-algorithms",
+        "label": "Optimization Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "presentation",
+      "label": "presentation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "state-space-and-other-approaches",
+      "label": "State Space and Other Approaches"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ],
+  "backlinks": []
+}

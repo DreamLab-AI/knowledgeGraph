@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:aiethics", "label": "AIEthics"}
@@ -89,7 +89,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -121,7 +121,7 @@ public:: true
   - bridges-to:: [[Telecollaboration]]
   - hasPart:: [[Fairness]], [[Explainability]], [[Accountability]], [[Bias]]
   - requires:: [[AI Safety]], [[Governance Framework]]
-  - standardizedBy:: [[EU AI Act]]
+  - standardizedBy:: [[EU AI Act Regulatory Instrument]]
   - relatedTo:: [[AIEthics]]
 
 - ### Content
@@ -152,5 +152,5 @@ public:: true
     - ### Design Rationale
 
 - ### Provenance
-  - sources:: [[EU AI Act]]
+  - sources:: [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

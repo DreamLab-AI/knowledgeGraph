@@ -38,7 +38,7 @@
         "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:license",
+        "id": "urn:ngm:class:intellectual-property-licence-instrument",
         "label": "license"
       }
     ],
@@ -63,8 +63,8 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
+      "slug": "blender-3d-creation-suite",
+      "label": "Blender 3D Creation Suite"
     },
     {
       "slug": "decentralised-web",

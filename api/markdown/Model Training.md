@@ -510,7 +510,7 @@ public:: true
         "label": "RLHF"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -586,7 +586,7 @@ public:: true
         "label": "Code Generation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -662,7 +662,7 @@ public:: true
         "label": "Cognitive AI"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -706,11 +706,11 @@ public:: true
         "label": "Agents"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -718,7 +718,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
@@ -740,7 +740,7 @@ public:: true
         "label": "Responsible Scaling Policies"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1104,7 +1104,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1129,7 +1129,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -1164,7 +1164,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -1199,7 +1199,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1209,7 +1209,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1254,7 +1254,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1326,17 +1326,17 @@ public:: true
   - implemented-in-layer:: [[InfrastructureLayer]], [[AlgorithmLayer]], [[DataLayer]], [[AlignmentLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Deep Learning]], [[Optimisation]], [[Foundation Models]], [[Neural Networks]]
-  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimization]], [[KTO]], [[Constitutional AI]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Deep Learning]], [[Optimisation]], [[Large-Scale Pretrained Foundation Model]], [[Neural Networks]]
+  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimization]], [[KTO]], [[Constitutional AI Training Methodology]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
   - requires:: [[Training Data]], [[Compute Infrastructure]], [[GPU Clusters]], [[Distributed Computing]], [[Data Pipeline]], [[Loss Function]], [[Optimiser]], [[Tokeniser]]
-  - enables:: [[Large Language Models]], [[Foundation Models]], [[Emergent Capabilities]], [[Instruction Following]], [[Alignment]], [[Reasoning]], [[Code Generation]]
+  - enables:: [[Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Emergent Capabilities]], [[Instruction Following]], [[Alignment]], [[Reasoning]], [[Code Generation]]
   - implements:: [[Causal Language Modelling]], [[Backpropagation]], [[Stochastic Gradient Descent]], [[AdamW]], [[ZeRO Optimisation]], [[Tensor Parallelism]], [[Pipeline Parallelism]], [[LoRA DoRA etc]]
   - depends-on:: [[Scaling Laws]], [[Information Theory]], [[Numerical Computation]], [[Linear Algebra]], [[Probabilistic Graphical Models]], [[Attention]]
-  - supports:: [[Anthropic Claude]], [[ChatGPT]], [[Grok]], [[Google DeepMind]], [[Agents]], [[Agent Frameworks]], [[Evaluation benchmarks and leaderboards]]
-  - uses:: [[DeepSpeed]], [[Megatron-LM]], [[PyTorch]], [[JAX]], [[Flash Attention]], [[Checkpoints]], [[Foundation Models]], [[Cognitive AI]]
+  - supports:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Grok]], [[Google DeepMind]], [[Agents]], [[Agent Frameworks]], [[Evaluation benchmarks and leaderboards]]
+  - uses:: [[DeepSpeed]], [[Megatron-LM]], [[PyTorch]], [[JAX]], [[Flash Attention]], [[Checkpoints]], [[Large-Scale Pretrained Foundation Model]], [[Cognitive AI]]
   - contrasts-with:: [[Imitation Learning]], [[Reinforcement Learning]], [[Active Learning]], [[Few-Shot Learning]], [[Algorithmic Bias and Variance]]
   - related-to:: [[Bias in Large Language Models]], [[Competition in AI]], [[Hardware and Edge]], [[Compute Infrastructure]], [[Evaluation benchmarks and leaderboards]], [[Artificial General Intelligence]], [[Emergence]]
-  - standardized-by:: [[Chinchilla Scaling Laws]], [[EU AI Act]], [[AISI Frontier AI Safety Framework]], [[Responsible Scaling Policies]]
+  - standardized-by:: [[Chinchilla Scaling Laws]], [[EU AI Act Regulatory Instrument]], [[AISI Frontier AI Safety Framework]], [[Responsible Scaling Policies]]
 
 - ### Content
 

@@ -447,7 +447,7 @@ alias:: CircularEconomy
         "label": "Sustainable Manufacturing"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -511,7 +511,7 @@ alias:: CircularEconomy
         "label": "Hyperledger Fabric"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -549,7 +549,7 @@ alias:: CircularEconomy
         "label": "Product Design"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
@@ -583,7 +583,7 @@ alias:: CircularEconomy
         "label": "Sustainable Development"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -1011,7 +1011,7 @@ alias:: CircularEconomy
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -1046,13 +1046,13 @@ alias:: CircularEconomy
   - is-subclass-of:: [[Sustainability]], [[Economic Model]], [[Resource Management]], [[Industrial Ecology]], [[Systems Thinking]], [[Environmental Policy]]
   - has-part:: [[Cradle-to-Cradle Design]], [[Reverse Logistics]], [[Industrial Symbiosis]], [[Product-as-a-Service]], [[Life Cycle Assessment]], [[Digital Product Passport]], [[Extended Producer Responsibility]], [[Waste Hierarchy]], [[Material Flow Analysis]], [[Deposit Return Scheme]]
   - requires:: [[Supply Chain]], [[Product Design]], [[Waste Management]], [[Material Traceability]], [[Life Cycle Assessment]], [[Regulatory Framework]], [[Stakeholder Collaboration]]
-  - enables:: [[Carbon Credits]], [[ESG Investing]], [[Sustainable Manufacturing]], [[Resource Security]], [[Green Growth]], [[Industrial Symbiosis]], [[Tokenisation]], [[Green Finance]]
+  - enables:: [[Carbon Credits]], [[ESG Investing]], [[Sustainable Manufacturing]], [[Resource Security]], [[Green Growth]], [[Industrial Symbiosis]], [[Neural Network Text Tokenisation]], [[Green Finance]]
   - implements:: [[EU Green Deal]], [[Ellen MacArthur Foundation]], [[Cradle-to-Cradle Design]], [[Extended Producer Responsibility]], [[Digital Product Passport]], [[Ecodesign for Sustainable Products Regulation]]
   - depends-on:: [[Supply Chain]], [[Product Design]], [[Blockchain]], [[Artificial Intelligence]], [[IoT]], [[Digital Twins]], [[Material Science]], [[GS1]]
-  - supports:: [[Climate Change Mitigation]], [[SDGs]], [[ESG Investing]], [[Carbon Credits]], [[Green Finance]], [[Sustainable Development]], [[Tokenisation]]
-  - uses:: [[Blockchain]], [[Artificial Intelligence]], [[Digital Twins]], [[IoT]], [[Life Cycle Assessment]], [[GS1]], [[Tokenisation]], [[Hyperledger Fabric]], [[VeChain]]
+  - supports:: [[Climate Change Mitigation]], [[SDGs]], [[ESG Investing]], [[Carbon Credits]], [[Green Finance]], [[Sustainable Development]], [[Neural Network Text Tokenisation]]
+  - uses:: [[Blockchain]], [[Artificial Intelligence]], [[Digital Twins]], [[IoT]], [[Life Cycle Assessment]], [[GS1]], [[Neural Network Text Tokenisation]], [[Hyperledger Fabric]], [[VeChain]]
   - contrasts-with:: [[Linear Economy]], [[Fast Fashion]], [[Planned Obsolescence]], [[Single-Use Products]], [[Landfill Disposal]]
-  - related-to:: [[Digital Product Passport]], [[Carbon Credits]], [[ESG Investing]], [[Waste Management]], [[Industrial Symbiosis]], [[Product Design]], [[Supply Chain]], [[Tokenisation]], [[Life Cycle Assessment]], [[EU Green Deal]]
+  - related-to:: [[Digital Product Passport]], [[Carbon Credits]], [[ESG Investing]], [[Waste Management]], [[Industrial Symbiosis]], [[Product Design]], [[Supply Chain]], [[Neural Network Text Tokenisation]], [[Life Cycle Assessment]], [[EU Green Deal]]
   - standardized-by:: [[ISO 14040]], [[ISO 14044]], [[ISO 14072]], [[ISO 59004]], [[GS1 Digital Link]], [[EPCIS]], [[EU Battery Regulation]], [[Ecodesign for Sustainable Products Regulation]]
 
 - ### Content
@@ -1279,7 +1279,7 @@ alias:: CircularEconomy
 
 	  #### Secondary Material Markets and Tokenisation
 
-	  Regulatory mandates creating minimum recycled content thresholds—EU Battery Regulation requiring 16% cobalt, 6% lithium by 2031—establish guaranteed regulatory demand for verified secondary materials, creating price signals making battery recycling infrastructure economically rational. [[Tokenisation]] of verified recycled content claims, certified circular material recovery outcomes, and measured carbon savings from product life extension enables liquid secondary markets for circular economy attributes, attracting institutional capital to infrastructure previously requiring patient capital. UK startup Altilium's hydrometallurgical processes for battery black mass recovery (LFP and NMC chemistries) are positioned to supply certified recycled lithium and cobalt into this regulatory market. Second-life battery markets for stationary energy storage—exploiting the 25–30% BMW valuation premium from performance-verified batteries—are projected to reach £20 billion by 2030.
+	  Regulatory mandates creating minimum recycled content thresholds—EU Battery Regulation requiring 16% cobalt, 6% lithium by 2031—establish guaranteed regulatory demand for verified secondary materials, creating price signals making battery recycling infrastructure economically rational. [[Neural Network Text Tokenisation]] of verified recycled content claims, certified circular material recovery outcomes, and measured carbon savings from product life extension enables liquid secondary markets for circular economy attributes, attracting institutional capital to infrastructure previously requiring patient capital. UK startup Altilium's hydrometallurgical processes for battery black mass recovery (LFP and NMC chemistries) are positioned to supply certified recycled lithium and cobalt into this regulatory market. Second-life battery markets for stationary energy storage—exploiting the 25–30% BMW valuation premium from performance-verified batteries—are projected to reach £20 billion by 2030.
 
 	  #### Industrial Symbiosis Value Exchange
 
@@ -1421,7 +1421,7 @@ alias:: CircularEconomy
 
 	  #### Tokenisation and Circular Economy Financialisation
 
-	  [[Tokenisation]] of verified material recovery outcomes, certified circular content percentages, and measured carbon savings from product life extension will create liquid secondary markets for circular economy attributes, enabling institutional capital—pension funds, green bonds, sustainability-linked loans—to flow into circular infrastructure at the speed and scale required for the circular transition. Early experiments in circular economy bonds and material token mechanisms are demonstrating proof-of-concept viability by 2025–2026.
+	  [[Neural Network Text Tokenisation]] of verified material recovery outcomes, certified circular content percentages, and measured carbon savings from product life extension will create liquid secondary markets for circular economy attributes, enabling institutional capital—pension funds, green bonds, sustainability-linked loans—to flow into circular infrastructure at the speed and scale required for the circular transition. Early experiments in circular economy bonds and material token mechanisms are demonstrating proof-of-concept viability by 2025–2026.
 
 	  #### Cross-Border Circular Economy Data Governance
 

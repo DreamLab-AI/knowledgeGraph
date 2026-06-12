@@ -3,12 +3,12 @@
   "title": "JSON-LD Context",
   "slug": "json-ld-context",
   "public": true,
-  "classIri": "urn:ngm:class:json-ld-context",
+  "classIri": "urn:ngm:class:json-data-interchange-format-ld-context",
   "domain": "ai",
   "definition": "A JSON-LD Context is the machine-readable document or inline object that maps the shorthand terms and prefixes used in a JSON-LD document to their fully qualified IRIs in a target vocabulary or ontology. It serves as the bridge between the compact, human-readable JSON representation and the globally unambiguous RDF data model, enabling semantic interoperability across disparate systems. Contexts may be embedded inline within a document, referenced by URL, or composed from multiple context documents. The JSON-LD 1.1 specification extends context capabilities with scoped contexts, type-scoped and property-scoped contexts, and protected terms that resist accidental overriding. Correct context design is foundational to knowledge graph compilation and Linked Data publication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:json-ld",
+      "id": "urn:ngm:class:json-data-interchange-format-ld",
       "label": "JSON-LD"
     }
   ],
@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld-1-1",
+        "id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
@@ -68,7 +68,7 @@
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ]

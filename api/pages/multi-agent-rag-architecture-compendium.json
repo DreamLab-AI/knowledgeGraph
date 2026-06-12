@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:2c328d9baea19ddffd1a18a8791f67f6d8c6f3cb2c3b644268f2cf92d0efc3ea",
+  "title": "Multi-Agent RAG Architecture Compendium",
+  "slug": "multi-agent-rag-architecture-compendium",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-rag-architecture-compendium",
+  "domain": "artificial-intelligence",
+  "definition": "A research and literature collection exploring architectures in which multiple specialised AI agents collaborate through retrieval-augmented generation pipelines, combining knowledge graphs, ontologies, and constrained large language models to model complex social and environmental contexts in immersive environments. Covers formal ontology design, multi-modal data ingestion, and ethical deployment constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "david-tully",
+      "label": "David Tully"
+    },
+    {
+      "slug": "must",
+      "label": "MUST"
+    },
+    {
+      "slug": "people",
+      "label": "PEOPLE"
+    }
+  ],
+  "backlinks": []
+}

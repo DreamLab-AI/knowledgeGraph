@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:e6336d1fa27fe165e95877e60a79fc24575de9ca3b0d1cdaa3b197a0f4d33d78",
+  "title": "NVIDIA Corporation",
+  "slug": "nvidia-corporation",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-corporation-corporation",
+  "domain": "artificial-intelligence",
+  "definition": "NVIDIA is a technology company that designs graphics processing units and computing platforms used for gaming, professional visualisation, data centres, and machine learning workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "backlinks": []
+}

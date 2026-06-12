@@ -21,10 +21,10 @@
 - ### Relationships
   - is-subclass-of:: [[Chaumian Ecash]], [[Bearer Instrument]], [[Bitcoin Layer 2]], [[Privacy Protocol]], [[Digital Cash]]
   - has-part:: [[Blind Signatures]], [[Cashu Mint]], [[Cashu NUT Specifications]], [[Ecash Token]], [[Keyset]], [[Proof]], [[Lightning Invoice]], [[Spent Token Registry]]
-  - requires:: [[Bitcoin]], [[Lightning Network]], [[Blind Signature Scheme]], [[Elliptic Curve Cryptography]], [[Hash Functions]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]], [[Blind Signature Scheme]], [[Elliptic Curve Cryptography]], [[Hash Functions]]
   - enables:: [[Financial Privacy]], [[Anonymous Payments]], [[Offline Transactions]], [[Micropayments]], [[Bearer Token Transfer]], [[Multi-Mint Payments]]
   - implements:: [[Chaumian Blind Signature Scheme]], [[Bearer Token Model]], [[NUT Protocol Specifications]], [[DLEQ Proofs]], [[Pay-To-Pubkey Spending Conditions]]
-  - depends-on:: [[Lightning Network]], [[Bitcoin]], [[Elliptic Curve Cryptography]], [[Secp256k1]], [[OpenSats]]
+  - depends-on:: [[Lightning Network]], [[Bitcoin Proof-of-Work Protocol]], [[Elliptic Curve Cryptography]], [[Secp256k1]], [[OpenSats]]
   - supports:: [[Financial Privacy]], [[Censorship Resistance]], [[Self-Custody]], [[Nostr]], [[Merchant Payments]], [[AI Agent Payments]]
   - uses:: [[Blind Signatures]], [[Lightning Invoices]], [[BOLT11]], [[BOLT12]], [[NFC Payments]], [[QR Codes]], [[WebSockets]]
   - contrasts-with:: [[Fedimint]], [[Monero]], [[Zcash]], [[Lightning Network Privacy]], [[Ark Protocol]], [[On-Chain Bitcoin]]
@@ -569,7 +569,7 @@
   - research-cache:: _enrich/research-cache/Cashu.json
   - naming-note:: Protocol name "Cashu" is stylised consistently as such; alternative project names include "CashuBTC" (GitHub org), "Cashu Protocol", "cashu-ts" (TypeScript library), "cashu-dart" (Dart library), "nutshell" (reference implementation); NUT stands for Notation, Usage, and Terminology; the term "Chaumian ecash" refers to any ecash system implementing David Chaum's 1982 blind signature scheme, of which Cashu and Fedimint are the primary Bitcoin-native implementations as of 2026
   - domain-correction:: None; domain correctly assigned as `blockchain` in original stub; IRI updated from `#Cashu` (using ontology fragment) to `blockchain#Cashu` pattern consistent with microstrategy.md exemplar; `legacy-term-id:: BC-1109` assigned as next available BC-series term after BC-1108 (MicroStrategy)
-  - related-ontology-entries:: [[Blind Signatures]], [[Lightning Network]], [[Bitcoin]], [[Fedimint]], [[Nostr]], [[Privacy]], [[Digital Cash]], [[Ecash]], [[Chaumian Ecash]], [[Bearer Tokens]], [[Cryptographic Protocols]], [[Financial Privacy]], [[Zero Knowledge Proofs]]
+  - related-ontology-entries:: [[Blind Signatures]], [[Lightning Network]], [[Bitcoin Proof-of-Work Protocol]], [[Fedimint]], [[Nostr]], [[Privacy]], [[Digital Cash]], [[Ecash]], [[Chaumian Ecash]], [[Bearer Tokens]], [[Cryptographic Protocols]], [[Financial Privacy]], [[Zero Knowledge Proofs]]
   - migration-date:: 2026-04-26T00:00:00Z
   - enrichment-date:: 2026-05-17T10:00:00Z
   - research-queries-used:: "Cashu ecash protocol NUT specifications 2024 2025 development", "Cashu mint ecosystem Minibits Nutshell CDK 2024 2025", "Cashu vs Fedimint comparison chaumian ecash Bitcoin privacy 2024", "Cashu Nostr integration zap ecash 2024 2025", "Cashu NUT specifications list NUT-00 through NUT-20 2024", "Cashu ecash adoption statistics mints wallets 2025 2026", "Cashu BTCPayServer integration 2025 merchant payments privacy", "Cashu David Chaum blind signatures cryptography ecash history academic", "Cashu calle developer Callebtc protocol history origin 2022", "Cashu UK privacy cryptocurrency research Edinburgh UCL Imperial 2024", "Cashu zero knowledge proofs spending conditions arbitrary 2024 2025", "Cashu multinut payments Lightning privacy tools landscape 2025", "David Chaum blind signatures cryptography ecash history academic"

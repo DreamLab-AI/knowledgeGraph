@@ -105,7 +105,7 @@ public:: true
       {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"}
+      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts"}
     ]
   },
   "provenance": {
@@ -151,12 +151,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[PEOPLE]]",
+      "raw": "[[Domain Expert Contact Index]]",
       "resolved": "urn:visionflow:owl:class:people",
       "kind": "ResolvedLink"
     },
@@ -171,7 +171,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -206,7 +206,7 @@ public:: true
   - **dependsOn** [[Hyperparameter]] — width is selected prior to training and fixed throughout
   - **relatedTo** [[Attention Mechanism]] — attention head dimension is a direct function of d_model width
   - **relatedTo** [[Parameter Count]] — wider models have quadratically more parameters in attention layers
-  - **enables** [[Mixture of Experts]] — MoE decouples apparent parameter count from active width per token
+  - **enables** [[Mixture-of-Experts Architecture]] — MoE decouples apparent parameter count from active width per token
 
 - ### Content
   - The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.
@@ -392,7 +392,7 @@ public:: true
   - ![image.png](assets/image_1706624390895_0.png){:height 493, :width 1219}
   - ![image.png](assets/image_1706626142618_0.png)
 
-  - #### Demo: Running UK Company [[Stable Diffusion]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
+  - #### Demo: Running UK Company [[Stable Diffusion Image Model]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
   - this is a local demo [<]iframe src="http://192.168.0.51:8188" style="width: 100%; height: 600px"></iframe>
   - {{video https://www.youtube.com/watch?v=kN8jdvRQvzA}}
   - {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}
@@ -600,7 +600,7 @@ public:: true
   - ![image.png](assets/image_1706624390895_0.png){:height 493, :width 1219}
   - ![image.png](assets/image_1706626142618_0.png)
 
-  - #### Demo: Running UK Company [[Stable Diffusion]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
+  - #### Demo: Running UK Company [[Stable Diffusion Image Model]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
   - this is a local demo [<]iframe src="http://192.168.0.51:8188" style="width: 100%; height: 600px"></iframe>
   - {{video https://www.youtube.com/watch?v=kN8jdvRQvzA}}
   - {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}
@@ -635,7 +635,7 @@ public:: true
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Simon Graham : Creative Technology Director at Pixel Artworks has promised some hours and a market potential report as a match fund to the project for £3000
 		- Summary of total project costs and funding requested.
 		- Sections to fill:

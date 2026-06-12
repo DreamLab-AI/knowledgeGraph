@@ -59,7 +59,7 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},

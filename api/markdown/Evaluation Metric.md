@@ -43,7 +43,7 @@ public:: true
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ]
   },

@@ -626,11 +626,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "@id": "urn:ngm:class:ethereum-specification",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-specification",
         "label": "Ethereum Specification"
       },
       {

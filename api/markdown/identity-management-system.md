@@ -22,7 +22,7 @@
   - implements:: [[OAuth 2.0]], [[OpenID Connect]], [[SAML 2.0]], [[SCIM 2.0]], [[FIDO2]], [[FAPI 2.0]], [[WebAuthn]], [[LDAP]]
   - depends-on:: [[Cryptographic Protocol]], [[Public Key Infrastructure]], [[Graph Database]], [[API Gateway]], [[Metadata Management]], [[Distributed System]]
   - supports:: [[Zero Trust Architecture]], [[Cloud Computing]], [[Decentralised Identity]], [[Regulatory Compliance]], [[Digital Identity]], [[DevSecOps]]
-  - uses:: [[Machine Learning]], [[Risk Assessment]], [[Audit Trail]], [[Graph Database]], [[Metadata Management]]
+  - uses:: [[Machine Learning Discipline]], [[Risk Assessment]], [[Audit Trail]], [[Graph Database]], [[Metadata Management]]
   - contrasts-with:: [[Decentralised Identity]], [[Self-Sovereign Identity]], [[Perimeter Security]]
   - related-to:: [[Blockchain Network]], [[Verifiable Credentials]], [[Digital Currency]], [[Smart Contracts]], [[Access Control System]]
   - standardized-by:: [[NIST]], [[W3C]], [[OASIS]], [[OpenID Foundation]], [[FIDO Alliance]], [[IETF]]

@@ -37,7 +37,7 @@ alias:: Across-Protocol
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
       {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"}
     ],
     "relatedTo": [
@@ -49,10 +49,10 @@ alias:: Across-Protocol
 ```
 
 - ### Definition
-  - Across Protocol is a [[Cross-Chain Bridge]] designed for the Ethereum ecosystem that exploits optimistic settlement to achieve near-instant token transfers from [[Layer 2 Solutions]] back to [[Ethereum]] mainnet and across rollup networks. Relayers—participants who hold funds in a [[Liquidity Pool]]—instantly credit the destination chain whilst awaiting reimbursement after an optimistic verification window, making the protocol significantly faster than trust-minimised alternatives that wait for full fraud proof resolution.
+  - Across Protocol is a [[Cross-Chain Bridge]] designed for the Ethereum ecosystem that exploits optimistic settlement to achieve near-instant token transfers from [[Layer 2 Solutions]] back to [[Ethereum Smart Contract Platform]] mainnet and across rollup networks. Relayers—participants who hold funds in a [[Liquidity Pool]]—instantly credit the destination chain whilst awaiting reimbursement after an optimistic verification window, making the protocol significantly faster than trust-minimised alternatives that wait for full fraud proof resolution.
 
 - ### Relationships
-  - Across Protocol is a specialisation of the [[Cross-Chain Bridge]] class and depends on [[Ethereum]] as its settlement layer and [[Layer 2 Solutions]] as its primary connected networks. It uses a [[Liquidity Pool]] and [[Liquidity Provider]] relayer network to achieve fast bridging. It enables [[Cross Chain Asset Transfer]] and broader [[Cross-Chain Interoperability]] within the Ethereum ecosystem. It is related to [[Interoperability Protocol]] as a concrete implementation within that broader category.
+  - Across Protocol is a specialisation of the [[Cross-Chain Bridge]] class and depends on [[Ethereum Smart Contract Platform]] as its settlement layer and [[Layer 2 Solutions]] as its primary connected networks. It uses a [[Liquidity Pool]] and [[Liquidity Provider]] relayer network to achieve fast bridging. It enables [[Cross Chain Asset Transfer]] and broader [[Cross-Chain Interoperability]] within the Ethereum ecosystem. It is related to [[Interoperability Protocol]] as a concrete implementation within that broader category.
 
 - ### Content
   - Across Protocol was launched in late 2021 by Risk Labs, the same organisation behind the UMA (Universal Market Access) protocol. The initial design was motivated by a recognised shortcoming in the nascent Layer 2 ecosystem: canonical bridges built into rollup protocols required users to wait seven days during the fraud proof window to withdraw assets from optimistic rollups back to Ethereum mainnet. Across solved this by introducing an intermediary relayer layer, allowing immediate settlement funded by relayers who absorbed the wait risk in exchange for fees.

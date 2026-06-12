@@ -83,7 +83,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -129,7 +129,7 @@ public:: true
   - Uses [[GPU Compute]]
   - Uses [[Rendering Engine]]
   - Enables [[Digital Twin]]
-  - Related To [[Spatial Computing]]
+  - Related To [[Spatial Computing Paradigm]]
 
 - ### Content
 

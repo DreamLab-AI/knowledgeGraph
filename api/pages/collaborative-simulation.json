@@ -3,12 +3,12 @@
   "title": "Collaborative Simulation",
   "slug": "collaborative-simulation",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-simulation",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-simulation",
   "domain": "spatial",
   "definition": "A computational environment in which multiple participants \u2014 human or agent \u2014 share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:collaborative-technology",
+      "id": "urn:ngm:class:collaborative-systems-modality-technology",
       "label": "Collaborative Technology"
     }
   ],
@@ -24,7 +24,7 @@
         "label": "Digital Twin Collaboration"
       },
       {
-        "id": "urn:ngm:class:collaborative-design",
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       }
     ],
@@ -47,7 +47,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:collaborative-learning",
+        "id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       },
       {

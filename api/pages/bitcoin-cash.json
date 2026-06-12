@@ -3,7 +3,7 @@
   "title": "Bitcoin Cash",
   "slug": "bitcoin-cash",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-cash",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-cash",
   "domain": "blockchain",
   "definition": "A cryptocurrency and blockchain created in 2017 as a hard fork of Bitcoin, with a larger block size intended to increase on-chain transaction throughput. It uses the same proof-of-work consensus model as Bitcoin.",
   "subClassOf": [

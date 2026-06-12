@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
   - bridges-to:: [[DAO Governance]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
   - enables:: [[SafeSnap]]
 
 - ### Content

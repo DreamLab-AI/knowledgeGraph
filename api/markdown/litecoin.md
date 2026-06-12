@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
-  - bridges-to:: [[Bitcoin]], [[Bitcoin Lightning Network]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Bitcoin Lightning Network]]
   - requires:: [[Proof of Work]], [[Scrypt]]
   - enables:: [[Digital Payments]]
 

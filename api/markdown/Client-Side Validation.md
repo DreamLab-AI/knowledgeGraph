@@ -32,10 +32,10 @@ alias:: client-side-validation
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"},
       {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"}
     ]

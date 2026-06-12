@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-reasoning",
+  "@id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
   "@type": "Class",
   "label": "Multimodal Reasoning",
   "definition": "Multimodal reasoning is the capability of an AI system to integrate and draw inferences across multiple input modalities such as text, images, audio, and video. It requires aligning representations from heterogeneous sources into a shared semantic space so that conclusions depend jointly on all available signals. This underpins tasks like visual question answering, document understanding, and grounded dialogue where no single modality is sufficient.",

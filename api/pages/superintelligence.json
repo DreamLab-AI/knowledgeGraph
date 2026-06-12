@@ -8,7 +8,7 @@
   "definition": "Superintelligence refers to a hypothetical form of artificial intelligence that surpasses the cognitive performance of any human across virtually all domains of interest, including scientific reasoning, social manipulation, and strategic planning. Nick Bostrom distinguishes speed superintelligence (same algorithms, faster hardware), collective superintelligence (many coordinated AI agents), and quality superintelligence (genuinely superior algorithms), each presenting distinct safety and control challenges.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-superintelligence",
+      "id": "urn:ngm:class:artificial-superintelligence-theory",
       "label": "Artificial Superintelligence"
     }
   ],

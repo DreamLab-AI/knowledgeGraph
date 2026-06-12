@@ -8,7 +8,7 @@
 
 - ### Relationships
   - Uses [[Gradient Descent]], [[Training]]
-  - Requires [[Machine Learning]], [[Deep Learning]]
+  - Requires [[Machine Learning Discipline]], [[Deep Learning]]
   - Enables [[Training and fine tuning]]
   - Related to [[Neural Network]], [[Machine Learning Framework]]
 

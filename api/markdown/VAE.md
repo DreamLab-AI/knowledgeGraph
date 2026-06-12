@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "latent space"},
       {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
     ]
   },
@@ -67,7 +67,7 @@ public:: true
   - requires [[Autoencoder]]
   - enables [[Latent Diffusion]]
   - enables [[Image Generation]]
-  - relatedTo [[latent space]]
+  - relatedTo [[Neural Network Latent Space]]
   - relatedTo [[Deep Generative Model]]
 
 - ### Content

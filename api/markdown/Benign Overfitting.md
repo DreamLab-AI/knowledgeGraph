@@ -23,7 +23,7 @@ public:: true
   "definition": "Benign overfitting is the phenomenon, observed in heavily overparameterised models such as deep neural networks, where a model fits its training data exactly, including noise, yet still generalises well to unseen data. This contradicts the classical bias-variance trade-off, which predicts that interpolating noise should harm generalisation. It is closely associated with the double-descent risk curve and is a central puzzle in modern statistical learning theory.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:algorithmic-bias-and-variance", "label": "Algorithmic Bias and Variance"},

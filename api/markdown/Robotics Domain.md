@@ -116,7 +116,7 @@ alias:: RoboticsDomain
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "relatedTo": [

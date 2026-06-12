@@ -3,7 +3,7 @@
   "title": "Collaborative Technology",
   "slug": "collaborative-technology",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-technology",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-technology",
   "domain": "infrastructure",
   "definition": "Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.",
   "subClassOf": [

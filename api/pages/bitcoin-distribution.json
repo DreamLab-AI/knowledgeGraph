@@ -3,7 +3,7 @@
   "title": "Bitcoin Distribution",
   "slug": "bitcoin-distribution",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-distribution",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
   "domain": "blockchain",
   "definition": "Bitcoin Distribution is the sub-field of Blockchain economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provabl...",
   "subClassOf": [
@@ -12,7 +12,7 @@
       "label": "DeFi and Economics"
     },
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],
@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-halving",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
         "label": "Bitcoin Halving"
       },
       {
@@ -84,11 +84,11 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -98,7 +98,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-scarcity",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-scarcity",
         "label": "Bitcoin Scarcity"
       },
       {
@@ -110,19 +110,19 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-centralisation-risks",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -133,7 +133,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bitcoin-halving",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
         "label": "Bitcoin Halving"
       },
       {
@@ -153,7 +153,7 @@
         "label": "Nakamoto Coefficient"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       }
     ],
@@ -165,7 +165,7 @@
         "label": "BitInfoCharts"
       },
       {
-        "id": "urn:ngm:class:bitcoin-halving",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
         "label": "Bitcoin Halving"
       },
       {
@@ -191,23 +191,23 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-centralisation-risks",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
       },
       {
-        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -225,7 +225,7 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -240,23 +240,23 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-centralisation-risks",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
       },
       {
-        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {

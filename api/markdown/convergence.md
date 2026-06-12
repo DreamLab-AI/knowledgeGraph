@@ -3,11 +3,11 @@
   - First systematically theorised in the 2002 US National Science Foundation / Department of Commerce report "Converging Technologies for Improving Human Performance" (Roco & Bainbridge), the concept formalises an observation implicit in the history of technology since the Industrial Revolution: that breakthrough innovation almost always arises at disciplinary boundaries rather than within established fields.
   - The canonical [[NBIC Convergence]] framework (Nano-Bio-Info-Cogno) identified four mutually reinforcing S&T waves whose intersection was expected to drive capability discontinuities across health, productivity, security, and human cognition over the period 2002–2030; 2026 empirical evidence validates most directional predictions while substantially accelerating timelines.
   - The modern convergence landscape in 2026 organises around seven overlapping convergence vectors, each generating emergent capability clusters:
-    - (1) **AI-Physical Convergence** — fusion of large-scale [[Foundation Models]] with robotics, actuation, and embodied sensors, producing physically-grounded AI agents capable of operating in unstructured real-world environments; [[Physical AI]] market grew from $4.12B (2024) to projected $61.19B by 2034 (31.26% CAGR); Tesla Optimus, Figure AI, Unitree, Agility Robotics represent the commercial vanguard.
+    - (1) **AI-Physical Convergence** — fusion of large-scale [[Large-Scale Pretrained Foundation Model]] with robotics, actuation, and embodied sensors, producing physically-grounded AI agents capable of operating in unstructured real-world environments; [[Physical AI]] market grew from $4.12B (2024) to projected $61.19B by 2034 (31.26% CAGR); Tesla Optimus, Figure AI, Unitree, Agility Robotics represent the commercial vanguard.
     - (2) **AI-Biology Convergence** — deep learning applied to protein folding (AlphaFold 3, 2025), genomics, small-molecule drug design, and synthetic biology circuit optimisation, compressing [[Drug Discovery]] timelines from five years to 12–18 months and reducing screening costs by up to 40%; Isomorphic Labs raised $2.1B in 2026 to scale AI-driven molecular design.
     - (3) **Digital-Physical Convergence** — [[Cyber Physical Systems]], [[Digital Twin]], and [[Internet of Things|IIoT]] create bidirectional real-time coupling between physical assets and computational representations, enabling [[Industry 4.0]] closed-loop adaptive manufacturing; cyber-physical systems security market exceeded $136B in 2025.
     - (4) **Quantum-AI Convergence** — hybrid quantum-classical architectures use quantum processors as selective accelerators; Google demonstrated 13,000× speedup over Frontier supercomputer using 65 qubits (October 2025) for physics simulations; mainstream adoption projected 2026–2030 as fault-tolerant qubit counts stabilise.
-    - (5) **Spatial-Computing Convergence** — Apple Vision Pro, lighter mixed-reality headsets, and persistent AI-anchored digital layers merge physical and digital visual fields, with AI agents reasoning about spatial context in real time; [[Spatial Computing]] transitions from expensive prototype to everyday utility.
+    - (5) **Spatial-Computing Convergence** — Apple Vision Pro, lighter mixed-reality headsets, and persistent AI-anchored digital layers merge physical and digital visual fields, with AI agents reasoning about spatial context in real time; [[Spatial Computing Paradigm]] transitions from expensive prototype to everyday utility.
     - (6) **[[Platform Economy]] Convergence** — AI, cloud, [[Internet of Things|IoT]], [[Edge Computing]], and [[Blockchain]] collapse into unified intelligent-ecosystem stacks; IoT market projected $1.3T by 2026; agentic AI systems manage cross-stack orchestration.
     - (7) **Media Convergence** — subscription, ad-supported, live, and commerce layers fuse into aggregated platforms managed by OS-level AI discovery agents; Netflix bundle adoption jumped 28% in Q4 2025 integrating YouTube Premium and Max into a single $19.99 tier reaching 65% of US streaming households.
   - The theoretical underpinning of convergence research draws on three intellectual traditions:
@@ -33,16 +33,16 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Transformation]], [[Innovation Systems]], [[Sociotechnical Systems]], [[General Purpose Technology]], [[Technology Management]]
-  - has-part:: [[NBIC Convergence]], [[AI and Blockchain]], [[Cyber Physical Systems]], [[Digital Twin]], [[Internet of Things]], [[Edge Computing]], [[Quantum Computing]], [[Spatial Computing]], [[Biocomputing]], [[Platform Economy]]
+  - has-part:: [[NBIC Convergence]], [[AI and Blockchain]], [[Cyber Physical Systems]], [[Digital Twin]], [[Internet of Things]], [[Edge Computing]], [[Quantum Computation Paradigm]], [[Spatial Computing Paradigm]], [[Biocomputing]], [[Platform Economy]]
   - requires:: [[Moore's Law]], [[Open Standards]], [[Interoperability Protocols]], [[Cross-Domain Research Infrastructure]], [[Regulatory Coordination]]
   - enables:: [[Industry 4.0]], [[Technological Singularity]], [[Artificial General Intelligence]], [[Smart Cities]], [[Precision Medicine]], [[Autonomous Systems]], [[Embodied AI]]
   - implements:: [[General Purpose Technology Theory]], [[Schumpeterian Innovation]], [[Systems of Systems Design]], [[Platform Economy]], [[Digital Twin]]
-  - depends-on:: [[Machine Learning]], [[Semiconductor Technology]], [[Cloud Computing]], [[Synthetic Biology]], [[Quantum Mechanics]]
-  - supports:: [[Digital Transformation]], [[AI Adoption]], [[Drug Discovery]], [[Industry 4.0]], [[Spatial Computing]]
-  - uses:: [[Foundation Models]], [[Internet of Things]], [[Edge Computing]], [[Blockchain]], [[Quantum Computing]]
+  - depends-on:: [[Machine Learning Discipline]], [[Semiconductor Technology]], [[Cloud Computing]], [[Synthetic Biology]], [[Quantum Mechanics]]
+  - supports:: [[Digital Transformation]], [[AI Adoption]], [[Drug Discovery]], [[Industry 4.0]], [[Spatial Computing Paradigm]]
+  - uses:: [[Large-Scale Pretrained Foundation Model]], [[Internet of Things]], [[Edge Computing]], [[Blockchain]], [[Quantum Computation Paradigm]]
   - contrasts-with:: [[Technological Singularity]], [[Technology Lock-In]], [[Digital Divide]], [[Silo Innovation]]
   - related-to:: [[Emerging Technologies]], [[Disruptive Innovation]], [[Network Effects]], [[Platform Economy]], [[Moore's Law]], [[NBIC Convergence]]
-  - standardized-by:: [[IEEE Standards Association]], [[ISO/IEC JTC 1]], [[OECD STI Directorate]], [[EU AI Act]], [[NIST AI RMF]]
+  - standardized-by:: [[IEEE Standards Association]], [[ISO/IEC JTC 1]], [[OECD STI Directorate]], [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]]
 
 - ### Content
 
@@ -194,7 +194,7 @@
   - ## About Convergence
   - **Technological Convergence** is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities that none of the converging components could have achieved independently.
   - As a theoretical frame, convergence explains why the most significant capability discontinuities in the history of technology — the steam-textile-railway complex, electrification of manufacturing, [[Digital Transformation|digital communications]], the smartphone revolution — appear at disciplinary intersections rather than within established fields.
-  - In 2026, the concept is indispensable for understanding the simultaneous acceleration occurring across [[Artificial General Intelligence|AGI]] research, [[Biocomputing]], [[Quantum Computing]], [[Cyber Physical Systems]], [[Spatial Computing]], and [[Platform Economy|platform economics]].
+  - In 2026, the concept is indispensable for understanding the simultaneous acceleration occurring across [[Artificial General Intelligence|AGI]] research, [[Biocomputing]], [[Quantum Computation Paradigm]], [[Cyber Physical Systems]], [[Spatial Computing Paradigm]], and [[Platform Economy|platform economics]].
   - Convergence differs from simple technology adoption in four key respects:
     - **Bidirectionality**: each converging domain shapes and accelerates the others. AI accelerates drug discovery, but improved understanding of biological systems (protein folding, organoid intelligence) feeds back into AI architecture design.
     - **Emergent capability clusters**: capabilities that are genuinely surprising even to domain experts arise from the combination, not from extrapolation of any single component trajectory.
@@ -212,10 +212,10 @@
     - Communications infrastructure (5G, 6G, satellite broadband LEO constellations)
   - **Layer 2: Enabling Platforms** — integrated software and hardware stacks mediating between substrates and applications:
     - Cloud hyperscalers (AWS, Azure, Google Cloud) providing scalable compute and data infrastructure
-    - AI training and inference infrastructure ([[Foundation Models]] as universal interface layers)
+    - AI training and inference infrastructure ([[Large-Scale Pretrained Foundation Model]] as universal interface layers)
     - [[Internet of Things|IoT]] platforms connecting billions of endpoints
     - Quantum cloud services (IBM Quantum, Azure Quantum, Amazon Braket)
-    - [[Spatial Computing]] operating systems (visionOS, Android XR, OpenXR standard)
+    - [[Spatial Computing Paradigm]] operating systems (visionOS, Android XR, OpenXR standard)
     - [[Blockchain]] execution environments for trustless multi-party coordination
   - **Layer 3: Convergence Agents** — AI systems, autonomous robots, [[Digital Twin|digital twins]], and multi-agent frameworks that actively drive convergence by integrating signals across layers:
     - Foundation models as universal substrate translators (text, image, protein sequence, code, sensor data, 3D geometry)
@@ -231,7 +231,7 @@
   - ## Core Convergence Vectors (2026 Landscape)
 
   - ### AI-Physical Convergence (Embodied / Physical AI)
-  - The fusion of large-scale [[Foundation Models]] with robotics, actuation, proprioception, and embodied sensors constitutes the most commercially active convergence front of 2025–2026.
+  - The fusion of large-scale [[Large-Scale Pretrained Foundation Model]] with robotics, actuation, proprioception, and embodied sensors constitutes the most commercially active convergence front of 2025–2026.
   - Foundation models trained on internet-scale data are fine-tuned on physical-world demonstrations using imitation learning (behaviour cloning) and reinforcement learning from physical environment feedback, producing robots capable of generalising across manipulation tasks in unstructured environments.
   - The [[Physical AI]] market grew from $4.12 billion in 2024 and is projected to reach $61.19 billion by 2034 at a 31.26% CAGR (TechAhead / Deloitte Tech Trends 2026).
   - Key commercial platforms: Tesla Optimus (limited production 2025), Figure AI, Agility Robotics (Amazon-backed), Unitree, Boston Dynamics (Hyundai).
@@ -275,7 +275,7 @@
   - The security challenge of CPS convergence is itself a convergence problem: IT security, OT (operational technology) security, and physical security frameworks must converge to protect systems where a cyberattack produces physical consequences.
 
   - ### Quantum-AI Convergence
-  - [[Quantum Computing]] and AI are converging along two complementary pathways:
+  - [[Quantum Computation Paradigm]] and AI are converging along two complementary pathways:
     - **AI for quantum**: machine learning accelerates quantum hardware calibration, error mitigation, and circuit optimisation
     - **Quantum for AI**: quantum processors function as selective accelerators within hybrid quantum-classical architectures for specific AI subroutines (quantum sampling, optimisation, linear algebra)
   - Google demonstrated 13,000× speedup over the Frontier supercomputer using just 65 qubits on a random circuit sampling benchmark for physics simulations (October 2025) — a new quantum advantage milestone.
@@ -290,7 +290,7 @@
   - Policy: UK National Quantum Strategy (£2.5 billion, 2023); US National Quantum Initiative Act (2018, reauthorised 2023).
 
   - ### Spatial Computing Convergence
-  - [[Spatial Computing]] represents the convergence of display optics (waveguides, holographic lenses), inside-out positional tracking (computer vision + IMU fusion), AI-driven scene understanding, and persistent digital-physical mapping.
+  - [[Spatial Computing Paradigm]] represents the convergence of display optics (waveguides, holographic lenses), inside-out positional tracking (computer vision + IMU fusion), AI-driven scene understanding, and persistent digital-physical mapping.
   - Apple Vision Pro (February 2024) established the high-end consumer reference design; lighter, more affordable spatial devices entered the market in 2025–2026 from Meta, Samsung, and Chinese manufacturers.
   - AI integration is central: spatial computing without AI reduces to a sophisticated display system; AI with spatial awareness becomes an ambient computing paradigm where digital agents perceive, reason about, and interact with physical space in real time.
   - [[Internet of Things|IoT]] sensor fusion, [[Edge Computing]] inference, and [[Digital Twin]] representations together create the data infrastructure for spatially-anchored AI.
@@ -337,7 +337,7 @@
     - **Domain-specific silicon**: NVIDIA H100/B200 GPUs, Google TPU v5, Apple Neural Engine, Intel Habana Gaudi — purpose-built for AI workloads
     - **Photonic computing**: using photons rather than electrons as information carriers; photonic neural networks (PNNs) achieve ultrafast processing, ultra-low energy, and high bandwidth advantages over CMOS for matrix multiplication (Li et al., Advanced Materials, 2025)
     - **Neuromorphic computing**: physical artificial neurons (Intel Loihi 2, IBM NorthPole, BrainScaleS-2) implementing spiking neural networks with orders-of-magnitude lower energy for inference workloads
-    - **[[Quantum Computing]]**: selective accelerator for exponentially hard problems (factoring, simulation, optimisation)
+    - **[[Quantum Computation Paradigm]]**: selective accelerator for exponentially hard problems (factoring, simulation, optimisation)
   - Nature (2026) published "From Moore to more: the future of silicon chips" documenting convergence of these paradigms into a heterogeneous computing landscape replacing the homogeneous CMOS monoculture.
   - The trajectory: "More-than-Moore" (heterogeneous integration, specialised silicon) → "Beyond Moore" (quantum, neuromorphic, photonic) → hybrid convergence landscape combining all approaches.
 
@@ -372,7 +372,7 @@
     - AI-generated synthetic financial data for stress testing
     - JPMorgan's IndexGPT and Morgan Stanley's AI at Work exemplify convergence deployments within established financial institutions
   - **Extended Reality and Spatial Commerce**:
-    - [[Spatial Computing]] + AI + [[Blockchain]] creates verified digital twin environments for retail (virtual try-on), architecture (design review), education (immersive simulation), and entertainment (persistent virtual worlds)
+    - [[Spatial Computing Paradigm]] + AI + [[Blockchain]] creates verified digital twin environments for retail (virtual try-on), architecture (design review), education (immersive simulation), and entertainment (persistent virtual worlds)
     - AI-generated spatial assets combined with verified provenance credentials (C2PA) define the [[Digital Twin|spatial-digital ownership]] paradigm
 
   - ## Academic Context
@@ -398,7 +398,7 @@
 
   - ## Current Landscape (2026)
   - The dominant empirical fact of the 2026 technology landscape is that AI has become the primary convergence accelerant and integrating mechanism across virtually all technology domains simultaneously — a **meta-convergence dynamic** not anticipated in prior theoretical frameworks which modelled convergence as pairwise or small-N domain interactions.
-  - This meta-convergence is driven by the generalist capability of [[Foundation Models]], which can translate representations across modalities (text, image, protein sequence, code, sensor data, 3D geometry) and thereby serve as universal interface layers between previously incompatible technical domains.
+  - This meta-convergence is driven by the generalist capability of [[Large-Scale Pretrained Foundation Model]], which can translate representations across modalities (text, image, protein sequence, code, sensor data, 3D geometry) and thereby serve as universal interface layers between previously incompatible technical domains.
   - Key 2026 empirical datapoints:
     - Enterprise AI spend reached $37 billion in 2025 with agentic AI the fastest-growing deployment category
     - Physical AI market CAGR 31.26%, with humanoid robot production scaling commercially for the first time
@@ -409,7 +409,7 @@
     - Streaming platform convergence reached 65% US household bundled subscription penetration (Netflix Q4 2025)
   - The OECD STI Outlook 2025 chapter on technology convergence identifies AI-biology, AI-manufacturing, AI-climate, and quantum-AI as the four highest-priority convergence vectors for policy intervention in the 2025–2030 period.
   - **Governance convergence is the critical gap**: regulatory frameworks designed for single-domain industries struggle with convergence products that simultaneously implicate multiple regulatory regimes.
-  - The [[EU AI Act]] (2024) represents the first major attempt to regulate AI-as-convergence-accelerant rather than regulating specific AI applications, establishing risk-based requirements that apply across sectors.
+  - The [[EU AI Act Regulatory Instrument]] (2024) represents the first major attempt to regulate AI-as-convergence-accelerant rather than regulating specific AI applications, establishing risk-based requirements that apply across sectors.
   - UK AI Safety Institute (AISI, est. November 2023, renamed AI Security Institute 2025) tested 30+ frontier models in 2025, including assessment of expert-level cyber capability — a convergence risk combining AI language capability with cybersecurity knowledge in ways that neither domain previously faced alone.
 
   - ## UK Context
@@ -467,7 +467,7 @@
     - FinalSpark's neuroplatform (2024) achieved persistent biological-digital computing
     - Ethical and governance dimensions (moral status of hybrid systems, consent frameworks for neural tissue donors) not yet addressed by existing regulatory structures
   - **Quantum Supremacy for AI (2028–2035)**:
-    - Fault-tolerant [[Quantum Computing]] with 1,000+ logical qubits will enable quantum machine learning subroutines (quantum sampling, quantum PCA, quantum SVM) demonstrating clear advantage over classical AI for specific problem classes
+    - Fault-tolerant [[Quantum Computation Paradigm]] with 1,000+ logical qubits will enable quantum machine learning subroutines (quantum sampling, quantum PCA, quantum SVM) demonstrating clear advantage over classical AI for specific problem classes
     - Most profound impact expected in quantum chemistry, financial optimisation, and combinatorial problems
   - **Convergence Governance and Standards (Ongoing)**:
     - IEEE P7000 series, [[ISO/IEC JTC 1]]/SC 42 (AI), SC 38 (cloud/edge), and emerging quantum information standards must converge into interoperable frameworks
@@ -533,7 +533,7 @@
     - Technology convergence is simultaneously a geoeconomic competition (US, China, EU racing to command convergent stacks) and a coordination imperative (AI safety, biosecurity, and quantum cryptography require international cooperation)
     - US CHIPS and Science Act (2022), EU Chips Act (2023), UK Semiconductor Strategy (2023), and China's Made in China 2025 / Thousand Talents programme represent national convergence capture strategies
     - The US export control regime (BIS Entity List, EAR restrictions on advanced AI chips) creates deliberate divergence in semiconductor convergence — fragmenting the global convergence stack into geopolitical blocs
-    - [[AI and Blockchain|Blockchain-based]] cross-border value transfer and [[Spatial Computing|spatial computing]] platforms create regulatory arbitrage opportunities that challenge national convergence governance
+    - [[AI and Blockchain|Blockchain-based]] cross-border value transfer and [[Spatial Computing Paradigm|spatial computing]] platforms create regulatory arbitrage opportunities that challenge national convergence governance
 
   - ## Metadata
   - domain-correction:: infrastructure -> artificial-intelligence (Convergence is AI-mediated across all active vectors in 2026; original domain reflected legacy stub framing as a technology-venn-diagram note rather than ontological concept treatment)

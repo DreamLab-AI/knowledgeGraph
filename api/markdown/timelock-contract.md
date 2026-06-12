@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Smart Contract]]
   - enables:: [[Hash Time-Locked Contract]]
 

@@ -3,7 +3,7 @@
   "title": "Public Blockchain",
   "slug": "public-blockchain",
   "public": true,
-  "classIri": "urn:ngm:class:public-blockchain",
+  "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
   "domain": "infrastructure",
   "definition": "A permissionless, decentralised distributed ledger network in which any party may participate, validate transactions, and inspect the chain state without requiring authorisation. Public blockchains such as Bitcoin and Ethereum achieve censorship resistance and immutability through global state replication and open consensus mechanisms, at the cost of reduced transaction throughput and higher energy consumption relative to permissioned alternatives.",
   "subClassOf": [

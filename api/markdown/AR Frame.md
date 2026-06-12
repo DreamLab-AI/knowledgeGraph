@@ -656,7 +656,7 @@ public:: true
         "label": "Mixed Reality"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -1270,7 +1270,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -1306,7 +1306,7 @@ public:: true
   - supports:: [[Industrial Inspection]], [[Surgical Navigation]], [[Field Service]], [[Retail Assistance]], [[Accessibility Captioning]], [[Tourism Guidance]], [[AI Assistant]]
   - uses:: [[Waveguide Optics]], [[Birdbath Optics]], [[MicroOLED Display]], [[MicroLED Display]], [[Holographic Waveguide]], [[Snapdragon AR SoC]], [[Bluetooth Low Energy]], [[Wi-Fi 6]]
   - contrasts-with:: [[Virtual Reality Headset]], [[Video Passthrough HMD]], [[Smartphone AR]], [[Projection Mapping System]], [[Holographic Display]]
-  - related-to:: [[Spatial Computing]], [[Metaverse]], [[Digital Twin]], [[Ambient Computing]], [[Wearable AI]], [[Mixed Reality]]
+  - related-to:: [[Spatial Computing Paradigm]], [[Metaverse]], [[Digital Twin]], [[Ambient Computing]], [[Wearable AI]], [[Mixed Reality]]
   - standardized-by:: [[Khronos OpenXR]], [[W3C WebXR]], [[IEEE 802.11]], [[Bluetooth SIG]], [[USB-IF]], [[MPEG-I]], [[Khronos glTF]]
 
 - ### Content

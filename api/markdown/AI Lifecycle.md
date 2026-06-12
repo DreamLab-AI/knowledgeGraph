@@ -226,7 +226,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     }
@@ -257,17 +257,17 @@ public:: true
 - ### Content
   - The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.
 
-  - # Theoretical Framework toward metaverse [[Update Cycle]]
+  - # Theoretical Framework toward metaverse [[Knowledge Artefact Update Cycle]]
 
 				- ### [Beamery found](https://beamery.com/resources/news/the-ai-employment-revolution-over-half-of-job-seekers-in-uk-have-noticed-ai-used-during-recruitment-process)
 					- over half **(51%**) of job seekers in the UK said they had noticed AI being used during the recruitment process, with a further 46% using AI applying for jobs, according to Beamery, the global leader in Talent Lifecycle Management.
 
-  - # Theoretical Framework toward metaverse [[Update Cycle]]
+  - # Theoretical Framework toward metaverse [[Knowledge Artefact Update Cycle]]
 
 				- ### [Beamery found](https://beamery.com/resources/news/the-ai-employment-revolution-over-half-of-job-seekers-in-uk-have-noticed-ai-used-during-recruitment-process)
 					- over half **(51%**) of job seekers in the UK said they had noticed AI being used during the recruitment process, with a further 46% using AI applying for jobs, according to Beamery, the global leader in Talent Lifecycle Management.
 
-  - # Theoretical Framework toward metaverse [[Update Cycle]]
+  - # Theoretical Framework toward metaverse [[Knowledge Artefact Update Cycle]]
 
 				- ### [Beamery found](https://beamery.com/resources/news/the-ai-employment-revolution-over-half-of-job-seekers-in-uk-have-noticed-ai-used-during-recruitment-process)
 					- over half **(51%**) of job seekers in the UK said they had noticed AI being used during the recruitment process, with a further 46% using AI applying for jobs, according to Beamery, the global leader in Talent Lifecycle Management.
@@ -282,10 +282,10 @@ public:: true
 					- over half **(51%**) of job seekers in the UK said they had noticed AI being used during the recruitment process, with a further 46% using AI applying for jobs, according to Beamery, the global leader in Talent Lifecycle Management.
 
   - ## OpenSora
-  - [[Update Cycle]]
+  - [[Knowledge Artefact Update Cycle]]
 
   - ## OpenSora
-  - [[Update Cycle]]
+  - [[Knowledge Artefact Update Cycle]]
 
   ## Context and Significance
 

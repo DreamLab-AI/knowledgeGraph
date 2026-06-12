@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ],
     "enables": [
@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
     ]
   },
@@ -51,7 +51,7 @@ public:: true
   - ActivityPub is a [[Web Standard]] published by the W3C in 2018 that defines the federation protocol underpinning the Fediverse. It uses the ActivityStreams 2.0 vocabulary serialised as [[JSON-LD]] to represent social objects—notes, images, follows, likes—and defines how servers exchange these objects over HTTPS to create a [[Decentralised Web]] of interoperable [[Federated Social Networks]]. Its [[Linked Data]] foundation makes ActivityPub extensible and machine-readable beyond social networking into general content distribution use cases.
 
 - ### Relationships
-  - ActivityPub is a specialisation of [[Distributed Protocol]] and is standardised as a [[Web Standard]] by the W3C. It uses [[JSON-LD]] for its data model and [[Linked Data]] principles for extensibility, connecting it to the [[Semantic Web]] ecosystem. It enables [[Federated Social Networks]] and contributes to the broader [[Decentralised Web]] vision. It is an [[Interoperability Protocol]] in practice, allowing heterogeneous social software—Mastodon, Misskey, PeerTube, Pixelfed—to interoperate.
+  - ActivityPub is a specialisation of [[Distributed Protocol]] and is standardised as a [[Web Standard]] by the W3C. It uses [[JSON-LD]] for its data model and [[Linked Data]] principles for extensibility, connecting it to the [[Semantic Web Linked Data Standard]] ecosystem. It enables [[Federated Social Networks]] and contributes to the broader [[Decentralised Web]] vision. It is an [[Interoperability Protocol]] in practice, allowing heterogeneous social software—Mastodon, Misskey, PeerTube, Pixelfed—to interoperate.
 
 - ### Content
   - ActivityPub evolved from earlier decentralised social networking experiments, most notably OStatus—a protocol stack combining Atom, WebSub, Salmon, and WebFinger used by GNU Social and StatusNet. The Social Web Working Group at the W3C, formed in 2014, produced ActivityPub as a cleaner, JSON-LD-based replacement. Its specification, authored principally by Christine Lemmer Webber and Jessica Tallon, reached Recommendation status in January 2018. The ActivityStreams 2.0 vocabulary, a companion W3C Recommendation, provides the core object and activity types that ActivityPub exchanges.

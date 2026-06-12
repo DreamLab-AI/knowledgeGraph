@@ -636,7 +636,7 @@ public:: true
         "label": "Visual Language Navigation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -1083,7 +1083,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1113,7 +1113,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1230,11 +1230,11 @@ public:: true
   - requires:: [[SLAM]], [[Sensor Fusion]], [[Control Theory]], [[Collision Detection]], [[Occupancy Grid]], [[Robot Operating System]], [[Kinematics]]
   - enables:: [[Autonomous Vehicles]], [[Mobile Robotics]], [[Drone Navigation]], [[Social Robotics]], [[Warehouse Automation]], [[Surgical Robotics]], [[Planetary Exploration]]
   - implements:: [[A Star Algorithm]], [[RRT]], [[RRT Star]], [[PRM]], [[D Star Lite]], [[DWA]], [[TEB Planner]], [[MPPI]], [[MPC]], [[Behaviour Trees]]
-  - depends-on:: [[Computer Vision]], [[Point Cloud Processing]], [[Machine Learning]], [[Reinforcement Learning]], [[Graph Search]], [[Gaussian Processes]]
+  - depends-on:: [[Computer Vision]], [[Point Cloud Processing]], [[Machine Learning Discipline]], [[Reinforcement Learning]], [[Graph Search]], [[Gaussian Processes]]
   - supports:: [[Human Robot Interaction]], [[Multi Agent Systems]], [[Swarm Robotics]], [[Digital Twin]], [[Simulation Environments]]
   - uses:: [[LIDAR]], [[RGB-D Cameras]], [[IMU]], [[GPS]], [[Visual Odometry]], [[Neural Networks]], [[Transformers]]
   - contrasts-with:: [[Teleoperation]], [[Scripted Motion]], [[Open Loop Control]]
-  - related-to:: [[Simultaneous Localisation and Mapping]], [[Object Detection]], [[Scene Understanding]], [[Foundation Models]], [[Visual Language Navigation]]
+  - related-to:: [[Simultaneous Localisation and Mapping]], [[Object Detection]], [[Scene Understanding]], [[Large-Scale Pretrained Foundation Model]], [[Visual Language Navigation]]
   - standardized-by:: [[ROS 2 Nav2]], [[ISO 13482]], [[IEC 62443]], [[IEEE 1872 Ontology for Robotics]]
 
 - ### Content

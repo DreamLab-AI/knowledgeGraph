@@ -206,7 +206,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-design",
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
       {
@@ -362,7 +362,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
@@ -419,5 +419,5 @@ public:: true
   Industrial Metaverse — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[ISO 23247 Digital Twin Framework]], [[OPC UA]], [[NVIDIA Omniverse]], [[Siemens Xcelerator]]
+  - sources:: [[ISO 23247 Digital Twin Framework]], [[OPC UA]], [[NVIDIA Omniverse Platform]], [[Siemens Xcelerator]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -89,7 +89,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -137,7 +137,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -189,7 +189,7 @@ public:: true
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Polygon]]
   - has-part:: [[Fraud Proof]], [[Zero Knowledge Proof]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[Optimism]], [[Arbitrum]], [[zkSync]]
 
 - ### Content

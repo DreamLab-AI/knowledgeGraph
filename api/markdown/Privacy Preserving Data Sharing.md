@@ -67,7 +67,7 @@ alias:: Privacy-Preserving Data Sharing
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-analytics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-analytics",
         "label": "Collaborative Analytics"
       }
     ]

@@ -18,7 +18,7 @@ alias:: CollaborativeDesign
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-design",
+  "@id": "urn:ngm:class:collaborative-systems-modality-design",
   "@type": "Class",
   "label": "Collaborative Design",
   "definition": "Collaborative Design is a design methodology in which multiple stakeholders—including designers, engineers, end users, and domain experts—jointly participate in defining, iterating, and validating artefacts or systems. It draws on participatory design traditions to ensure that lived experience and diverse expertise shape outcomes rather than being consulted retrospectively. Digital collaborative design platforms support real-time co-authoring, version management, and synchronous review across distributed teams. The approach is applied in product development, spatial design, software architecture, and policy co-creation.",
@@ -27,7 +27,7 @@ alias:: CollaborativeDesign
   "subClassOf": [{"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
       {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
     ],
     "enables": [
@@ -38,7 +38,7 @@ alias:: CollaborativeDesign
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:user-research", "label": "User Research"},
       {"@id": "urn:ngm:class:participatory-policy-making", "label": "Participatory Policy Making"},
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"}
     ]
   },
   "quality": 0.8

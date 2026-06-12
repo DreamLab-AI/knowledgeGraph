@@ -37,7 +37,7 @@
   ### Decentralized Oracle Networks (DONs)
 
   - **Decentralized Oracle Networks** distribute trust across multiple independent node operators who collectively fetch, validate, and deliver data to smart contracts.
-  - [[Chainlink]] pioneered the DON model with thousands of independent node operators providing data to [[Ethereum]], [[BNB Chain]], [[Polygon]], [[Avalanche]], and 15+ other chains.
+  - [[Chainlink]] pioneered the DON model with thousands of independent node operators providing data to [[Ethereum Smart Contract Platform]], [[BNB Chain]], [[Polygon]], [[Avalanche]], and 15+ other chains.
   - Architecture components:
 		- **Oracle Nodes**: Independent operators running oracle client software to fetch and submit data.
 		- **Data Aggregation**: Combining responses from multiple sources to create a single trustworthy data point.
@@ -109,8 +109,8 @@
 		- **Node Operators**: 1,000+ independent operators including T-Systems, Deutsche Telekom, Swisscom, and major staking providers.
 		- **Staking v0.2**: [[LINK token]] staking with [[slashing]] for dishonest reporting (launched 2024).
 		- **Off-Chain Reporting (OCR 2.0)**: Reduces gas costs by 90% through off-chain aggregation with on-chain verification.
-  - Integrations: [[Ethereum]], [[Polygon]], [[Avalanche]], [[Arbitrum]], [[Optimism]], [[BNB Chain]], [[Fantom]], [[Solana]] (via Wormhole), [[Cosmos]].
-  - 2025 Developments: Chainlink Economics 2.0 with enhanced [[staking]], [[Build program]] supporting 100+ startups, expansion to [[Bitcoin]] via [[DLCs]].
+  - Integrations: [[Ethereum Smart Contract Platform]], [[Polygon]], [[Avalanche]], [[Arbitrum]], [[Optimism]], [[BNB Chain]], [[Fantom]], [[Solana]] (via Wormhole), [[Cosmos]].
+  - 2025 Developments: Chainlink Economics 2.0 with enhanced [[staking]], [[Build program]] supporting 100+ startups, expansion to [[Bitcoin Proof-of-Work Protocol]] via [[DLCs]].
 
   ### Pyth Network
 
@@ -134,7 +134,7 @@
 		- BandChain blockchain dedicated to oracle operations.
   - Data Coverage: Price feeds, random numbers, sports scores, weather data, and custom API requests.
   - Validators: 100+ active validators securing oracle network with [[BAND token]] staking.
-  - Supported Chains: [[Cosmos Hub]], [[Osmosis]], [[Terra]], [[BNB Chain]], [[Ethereum]], [[Solana]], and 30+ networks.
+  - Supported Chains: [[Cosmos Hub]], [[Osmosis]], [[Terra]], [[BNB Chain]], [[Ethereum Smart Contract Platform]], [[Solana]], and 30+ networks.
   - Performance: 5-second block time, $50M+ TVL secured.
 
   ### API3
@@ -167,7 +167,7 @@
 
   ### Discreet Log Contracts (DLCs)
 
-  - **[[Discreet Log Contracts]]** (DLCs) enable [[Bitcoin]] smart contracts that execute based on oracle-signed data without revealing contract details on-chain.
+  - **[[Discreet Log Contracts]]** (DLCs) enable [[Bitcoin Proof-of-Work Protocol]] smart contracts that execute based on oracle-signed data without revealing contract details on-chain.
   - Invented by Tadge Dryja (MIT DCI) in 2018 as privacy-preserving oracle contracts for Bitcoin.
   - Architecture:
 		- Two parties create contract with possible outcomes (e.g., price above/below threshold).
@@ -175,17 +175,17 @@
 		- Oracle publishes signature for true outcome.
 		- Parties use oracle signature to unlock corresponding Bitcoin [[UTXO]].
   - Privacy: Only participants know contract terms; on-chain transaction appears as standard Bitcoin payment.
-  - Use Cases: [[Bitcoin]] price betting, [[hashrate]] derivatives, [[difficulty]] predictions, [[binary options]].
+  - Use Cases: [[Bitcoin Proof-of-Work Protocol]] price betting, [[hashrate]] derivatives, [[difficulty]] predictions, [[binary options]].
   - Oracle Providers:
 		- [[Suredbits]] Oracle: Bitcoin price feeds, sports scores, exchange data.
 		- [[Crypto Garage]]: Japanese financial market data for DLCs.
 		- [[Atomic Finance]]: Hash rate and difficulty oracles.
-  - Adoption: DLC.Link bridges Bitcoin DLCs to [[Ethereum]] and [[Stacks]] for cross-chain applications.
+  - Adoption: DLC.Link bridges Bitcoin DLCs to [[Ethereum Smart Contract Platform]] and [[Stacks]] for cross-chain applications.
   - Limitations: Requires trusted oracle (working on decentralized oracle solutions), only supports discrete outcomes.
 
   ### RGB Protocol Oracles
 
-  - **[[RGB Protocol]]** enables smart contracts on [[Bitcoin]] and [[Lightning Network]] with oracle integration for external data verification.
+  - **[[RGB Protocol]]** enables smart contracts on [[Bitcoin Proof-of-Work Protocol]] and [[Lightning Network]] with oracle integration for external data verification.
   - Client-side validation model where contract state lives off-chain, validated by participants.
   - Oracle Integration:
 		- RGB contracts can require oracle attestations for state transitions.
@@ -323,7 +323,7 @@
 
   - **Latency**: Oracle updates often lag seconds to minutes behind real-world events.
   - [[Pyth Network]] addresses with <400ms latency but adoption still growing.
-  - **Cost**: High gas fees for frequent oracle updates on [[Ethereum]] (partially solved by [[Layer 2]] rollups).
+  - **Cost**: High gas fees for frequent oracle updates on [[Ethereum Smart Contract Platform]] (partially solved by [[Layer 2]] rollups).
   - **Cross-Chain Fragmentation**: Data silos across blockchains require separate oracle deployments.
   - **Centralization Risks**: Many "decentralized" oracles still rely on limited node operators.
   - **Data Privacy**: Oracles may expose sensitive information on public blockchains.

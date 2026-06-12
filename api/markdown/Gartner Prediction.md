@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:predictions", "label": "Predictions"}
+      {"@id": "urn:ngm:class:generative-ai-near-term-forecasts", "label": "Predictions"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},

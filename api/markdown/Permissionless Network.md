@@ -90,7 +90,7 @@ public:: true
       {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain", "label": "Public Blockchain"},
       {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"}
     ],
     "contrastsWith": [

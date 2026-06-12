@@ -99,7 +99,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-domain",
+  "@id": "urn:ngm:class:machine-learning-discipline-domain",
   "@type": "Class",
   "label": "Machine Learning Domain",
   "definition": "The Machine Learning Domain covers the study of algorithms that improve their performance on a task through exposure to data rather than explicit programming. Its scope spans supervised, unsupervised and reinforcement paradigms, together with the statistical and optimisation theory that underpins them. It sits as a principal sub-area of the Artificial Intelligence Domain and acts as the methodological core on which most contemporary AI capabilities are built. The boundary of the domain excludes purely symbolic reasoning systems, which are classified under the Knowledge Representation Domain.",

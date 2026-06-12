@@ -94,7 +94,7 @@ alias:: ReinforcementLearning
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
@@ -202,7 +202,7 @@ alias:: ReinforcementLearning
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
-  - partOf:: [[Machine Learning]]
+  - partOf:: [[Machine Learning Discipline]]
   - enables:: [[Autonomous Navigation]]
   - enables:: [[Autonomous Robot]]
   - uses:: [[Deep Learning]]

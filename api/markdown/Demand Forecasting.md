@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}],
   "relations": {
     "enables": [{"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}, {"@id": "urn:ngm:class:demand-planning", "label": "Demand Planning"}],
-    "uses": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+    "uses": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
     "relatedTo": [{"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}, {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimisation"}],
     "hasPart": [{"@id": "urn:ngm:class:forecast-horizon", "label": "Forecast Horizon"}]
   },
@@ -38,7 +38,7 @@ public:: true
   - Demand forecasting is a form of [[Predictive Analytics]] that estimates future demand for goods or services by fitting models to historical sales, seasonality, promotional, and external economic signals, with outputs directly informing [[Supply Chain Management]] and [[Demand Planning]] decisions.
 
 - ### Relationships
-  - Demand forecasting enables [[Supply Chain Management]] by providing replenishment signals, supports [[Demand Planning]] as its primary input artefact, uses [[Machine Learning]] algorithms for pattern extraction, relates to the broader [[Supply Chain]] optimisation domain, drives [[Logistics Optimisation]] through improved shipment scheduling, and is structured by [[Forecast Horizon]] (short-, medium-, and long-range windows).
+  - Demand forecasting enables [[Supply Chain Management]] by providing replenishment signals, supports [[Demand Planning]] as its primary input artefact, uses [[Machine Learning Discipline]] algorithms for pattern extraction, relates to the broader [[Supply Chain]] optimisation domain, drives [[Logistics Optimisation]] through improved shipment scheduling, and is structured by [[Forecast Horizon]] (short-, medium-, and long-range windows).
 
 - ### Content
   - Quantitative demand forecasting has been practised since the advent of operations research in the 1950s. Exponential smoothing methods (Holt-Winters, 1957-1960) became the workhorse of inventory systems through the 1970s-80s. The ARIMA family of statistical models (Box-Jenkins methodology, 1970) provided a systematic framework for time-series forecasting. The 1990s-2000s saw the adoption of enterprise planning systems (SAP APO, Oracle Demantra) that embedded these classical methods at scale. The M-Competitions (Makridakis Competitions) from 1982 onward provided standardised benchmarking, and the M5 Competition (2020) demonstrated that LightGBM and neural-network ensembles consistently outperform classical statistical methods.

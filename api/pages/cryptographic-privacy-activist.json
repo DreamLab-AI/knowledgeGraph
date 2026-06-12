@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:7e5b152ccc48870ecf9d26552a06bc34a850179ff429618e08950e1ec70475e0",
+  "title": "Cryptographic Privacy Activist",
+  "slug": "cryptographic-privacy-activist",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-privacy-activist",
+  "domain": "blockchain",
+  "definition": "A cypherpunk is an activist who advocates for the widespread use of strong cryptography and privacy-enhancing technologies as tools for social and political change. Emerging from mailing list culture in the early 1990s, cypherpunks believe that individual privacy can only be guaranteed through cryptographic means rather than through legal or institutional protections. Their ethos\u2014'cypherpunks write code'\u2014produced foundational technologies including public-key cryptography applications, anonymous remailers, digital cash, and the conceptual groundwork for Bitcoin and decentralised systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

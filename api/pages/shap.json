@@ -8,7 +8,7 @@
   "definition": "SHAP, short for SHapley Additive exPlanations, is a method for explaining the output of machine-learning models by attributing each prediction to its input features. It is grounded in Shapley values from cooperative game theory, which fairly distribute a payoff among contributors, treating each feature as a player and the prediction as the payoff. SHAP provides locally accurate, consistent feature attributions and unifies several earlier explanation techniques under a common framework.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-domain",
+      "id": "urn:ngm:class:machine-learning-discipline-domain",
       "label": "Machine Learning Domain"
     }
   ],
@@ -23,7 +23,7 @@
         "label": "Shapley Value"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],

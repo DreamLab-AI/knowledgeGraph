@@ -3,12 +3,12 @@
   "title": "Bitcoin Protocol",
   "slug": "bitcoin-protocol",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-protocol",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
   "domain": "blockchain",
   "definition": "The set of rules governing how Bitcoin transactions are formed, validated, and ordered into blocks by proof-of-work consensus.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],
@@ -29,7 +29,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],

@@ -3,7 +3,7 @@
   "title": "Infrastructure Component",
   "slug": "infrastructure-component",
   "public": true,
-  "classIri": "urn:ngm:class:infrastructure-component",
+  "classIri": "urn:ngm:class:technology-infrastructure-domain-component",
   "domain": "artificial-intelligence",
   "definition": "A discrete, independently deployable unit of technical infrastructure that fulfils a specific function within a larger system, such as a compute node, network layer, storage service, or security module, and that can be composed with other components to deliver end-to-end platform capabilities.",
   "subClassOf": [

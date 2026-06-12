@@ -61,7 +61,7 @@ public:: true
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "enables": [
@@ -124,7 +124,7 @@ public:: true
   - bridges-to:: [[Blockchain]] (domain: bc)
   - hasPart:: [[GPU Compute]]
   - hasPart:: [[Edge Computing]]
-  - supports:: [[Machine Learning]]
+  - supports:: [[Machine Learning Discipline]]
   - supports:: [[Deep Learning]]
   - relatedTo:: [[Cloud Infrastructure]]
 

@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"}
+    {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
   ],
   "relations": {
     "relatedTo": [

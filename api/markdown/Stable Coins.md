@@ -537,7 +537,7 @@ alias:: Stablecoins
         "label": "Tron Network"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -555,7 +555,7 @@ alias:: Stablecoins
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -1069,7 +1069,7 @@ alias:: Stablecoins
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1101,7 +1101,7 @@ alias:: Stablecoins
 
 
 - ### Definition
-  - **Stable Coins** (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset — most commonly the US dollar at 1:1 parity — through one of four primary stabilisation mechanisms: (i) **fiat-collateralised custody**, where off-chain reserves of cash, short-dated US Treasury bills, money-market funds, or other approved high-quality liquid assets held by regulated custodians underwrite each token (USDT, USDC, PYUSD, FDUSD, GUSD, USDP); (ii) **crypto-overcollateralisation**, where smart-contract-enforced vault positions in on-chain assets — primarily [[Ethereum]], wrapped [[Bitcoin Technical Overview|Bitcoin]], and liquid staking tokens — back stablecoin issuance at collateral ratios of typically 150-200%, with automated liquidation bots triggering when ratios fall below minimum thresholds (DAI/USDS from MakerDAO/Sky Protocol, Liquity LUSD, Aave GHO, Curve crvUSD); (iii) **algorithmic or seigniorage-share stabilisation**, where a dual-token arbitrage mechanism attempts to hold the dollar peg without direct collateral backing — a model comprehensively discredited in May 2022 when TerraUSD depegged and approximately $50 billion of combined LUNA+UST market capitalisation was destroyed within 72 hours; and (iv) **tokenised real-world assets** (RWA-backed stablecoins), where stabilising collateral consists of tokenised US Treasury obligations or money-market fund shares held on-chain as attestable, yield-bearing instruments (BlackRock BUIDL — launched March 2024, $500M+ AUM within six weeks — Franklin Templeton BENJI, Ondo Finance USDY and OUSG, Superstate). By May 2026 the aggregate stablecoin market capitalisation exceeded $230 billion, with Tether USDT (~$110B) and Circle USDC (~$45B) collectively accounting for over 68% of total supply. Daily transfer volume regularly surpasses Visa and Mastercard combined in nominal value, with the BIS 2024 Working Paper 1194 estimating genuine non-bot stablecoin transaction volume at approximately $2.3 trillion in 2023. Regulatory treatment diverges across jurisdictions: EU MiCA established an EMT/ART framework enforceable from June 2024; the US enacted the GENIUS Act in 2025; the UK FCA published stablecoin rules in 2024; and Dubai (VARA), Singapore (MAS), and Hong Kong (HKMA) developed competing frameworks.
+  - **Stable Coins** (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset — most commonly the US dollar at 1:1 parity — through one of four primary stabilisation mechanisms: (i) **fiat-collateralised custody**, where off-chain reserves of cash, short-dated US Treasury bills, money-market funds, or other approved high-quality liquid assets held by regulated custodians underwrite each token (USDT, USDC, PYUSD, FDUSD, GUSD, USDP); (ii) **crypto-overcollateralisation**, where smart-contract-enforced vault positions in on-chain assets — primarily [[Ethereum Smart Contract Platform]], wrapped [[Bitcoin Technical Overview|Bitcoin]], and liquid staking tokens — back stablecoin issuance at collateral ratios of typically 150-200%, with automated liquidation bots triggering when ratios fall below minimum thresholds (DAI/USDS from MakerDAO/Sky Protocol, Liquity LUSD, Aave GHO, Curve crvUSD); (iii) **algorithmic or seigniorage-share stabilisation**, where a dual-token arbitrage mechanism attempts to hold the dollar peg without direct collateral backing — a model comprehensively discredited in May 2022 when TerraUSD depegged and approximately $50 billion of combined LUNA+UST market capitalisation was destroyed within 72 hours; and (iv) **tokenised real-world assets** (RWA-backed stablecoins), where stabilising collateral consists of tokenised US Treasury obligations or money-market fund shares held on-chain as attestable, yield-bearing instruments (BlackRock BUIDL — launched March 2024, $500M+ AUM within six weeks — Franklin Templeton BENJI, Ondo Finance USDY and OUSG, Superstate). By May 2026 the aggregate stablecoin market capitalisation exceeded $230 billion, with Tether USDT (~$110B) and Circle USDC (~$45B) collectively accounting for over 68% of total supply. Daily transfer volume regularly surpasses Visa and Mastercard combined in nominal value, with the BIS 2024 Working Paper 1194 estimating genuine non-bot stablecoin transaction volume at approximately $2.3 trillion in 2023. Regulatory treatment diverges across jurisdictions: EU MiCA established an EMT/ART framework enforceable from June 2024; the US enacted the GENIUS Act in 2025; the UK FCA published stablecoin rules in 2024; and Dubai (VARA), Singapore (MAS), and Hong Kong (HKMA) developed competing frameworks.
 
 - ### Semantic Classification
   - owl-class:: blockchain:StableCoins
@@ -1118,7 +1118,7 @@ alias:: Stablecoins
   - implements:: [[Dollar Peg Mechanism]], [[Fractional Reserve Model]], [[Algorithmic Stabilisation]], [[Overcollateralisation]], [[Real-World Asset Tokenisation]]
   - depends-on:: [[Blockchain Network]], [[Custodian]], [[Central Bank Policy]], [[Interest Rate Environment]], [[Price Oracle]], [[Smart Contract Infrastructure]]
   - supports:: [[DeFi]], [[Decentralised Exchange]], [[Cross-Border Remittances]], [[Trade Finance]], [[Metaverse Payments]], [[Emerging Market Finance]]
-  - uses:: [[Ethereum]], [[Tron Network]], [[Solana]], [[Avalanche]], [[Base Network]], [[Multi-Party Computation Custody]]
+  - uses:: [[Ethereum Smart Contract Platform]], [[Tron Network]], [[Solana]], [[Avalanche]], [[Base Network]], [[Multi-Party Computation Custody]]
   - contrasts-with:: [[CBDCs]], [[Bitcoin As Money]], [[Traditional Bank Deposits]], [[Electronic Money]], [[Commercial Bank Money]]
   - related-to:: [[BTC Layer 3]], [[Cashu]], [[Eurodollar]], [[AML KYC Compliance]], [[Blockchain Interoperability]], [[Bitcoin Technical Overview]]
   - standardized-by:: [[MiCA Regulation]], [[GENIUS Act 2025]], [[FCA Stablecoin Rules]], [[FASB ASC 350-60]], [[Basel III Crypto Exposure Rules]]
@@ -1289,7 +1289,7 @@ alias:: Stablecoins
   - When Tether holds $110 billion in US Treasury bills as reserves, it holds approximately 1.5% of total outstanding short-dated US government debt — a position of systemic importance to Treasury market liquidity, recognised in the US Treasury's 2023 report on the crypto ecosystem's implications for financial stability.
   - The interest rate environment materially affects stablecoin economics: at 5%+ Federal Funds Rate, fiat-backed stablecoin issuers capture enormous seigniorage revenue from T-bill holdings without distributing yield to token holders — a structural tension that RWA-backed yield stablecoins (BUIDL, USDY, USDM) challenge by passing yield directly to holders.
   - Reserve quality analysis requires distinguishing: (i) cash and overnight instruments (maximum liquidity, zero credit risk); (ii) short-dated T-bills under 93 days (HQLA Tier 1 under GENIUS Act, minimal market risk); (iii) T-bills and repos 93-270 days (MiCA-compliant, minor duration risk); (iv) money market fund shares (dependent on fund NAV stability); (v) corporate paper, secured loans, and other instruments (credit and liquidity risk, source of historical Tether concern); (vi) real-world asset tokens (on-chain but settlement latency risk under stress).
-  - The [[Blockchain Network|blockchain]] layer introduces settlement finality characteristics absent in traditional payment systems: once confirmed on [[Ethereum]] or [[Tron Network|Tron]], stablecoin transfers are cryptographically final within seconds or minutes, without the T+1/T+2 settlement lags of traditional securities markets or the 1-3 business day international wire timelines — this finality is a primary source of stablecoin's competitive advantage for treasury and payments applications.
+  - The [[Blockchain Network|blockchain]] layer introduces settlement finality characteristics absent in traditional payment systems: once confirmed on [[Ethereum Smart Contract Platform]] or [[Tron Network|Tron]], stablecoin transfers are cryptographically final within seconds or minutes, without the T+1/T+2 settlement lags of traditional securities markets or the 1-3 business day international wire timelines — this finality is a primary source of stablecoin's competitive advantage for treasury and payments applications.
   - Stablecoin market concentration creates systemic risk: if Tether's $110B reserve base were simultaneously redeemed, liquidating ~$84B in T-bills within days would create material Treasury market disruption, a scenario the IMF and BIS have modelled as a potential vector for financial contagion from the crypto sector to traditional fixed-income markets.
 
   - ### Core Economic Framework and Risk Architecture
@@ -1328,7 +1328,7 @@ alias:: Stablecoins
 
   - ### MakerDAO/Sky and DAI/USDS: Decentralised Governance at Production Scale
   - MakerDAO's DAI, launched in December 2017, pioneered the crypto-overcollateralised model and remains the largest decentralised stablecoin, demonstrating trust-minimised stablecoin governance is operationally viable at billion-dollar scale.
-  - The protocol allows users to deposit [[Ethereum]] and other approved collateral types into collateralised debt position (CDP) vaults, minting DAI/USDS against excess collateral with Stability Fee governing borrowing costs.
+  - The protocol allows users to deposit [[Ethereum Smart Contract Platform]] and other approved collateral types into collateralised debt position (CDP) vaults, minting DAI/USDS against excess collateral with Stability Fee governing borrowing costs.
   - The Dai Savings Rate (DSR), which reached 8-15% during peak 2023-2024 US interest rate periods, attracted substantial DeFi yield-seeking capital to the protocol.
   - The "Endgame" restructuring (announced 2022, implemented 2023-2025) rebrands the protocol as Sky, renames DAI to USDS for new issuances, and reorganises governance into specialised SubDAOs (Spark, Morpho, others) handling distinct protocol functions.
   - Sky's collateral composition shifted dramatically toward real-world assets: US Treasuries via Coinbase Custody and institutional custodians constitute approximately 60% of total collateral by 2024, reducing dependence on volatile crypto collateral.
@@ -1375,7 +1375,7 @@ alias:: Stablecoins
   - LayerZero's Omnichain Fungible Token (OFT) standard and Chainlink's Cross-Chain Interoperability Protocol (CCIP) provide analogous canonical bridging for stablecoins adopting their respective messaging standards.
   - These interoperability protocols are becoming the settlement backbone for multi-chain [[DeFi]] and corporate treasury applications requiring stablecoin movement across different blockchain environments.
   - Network distribution of stablecoin supply as of 2025-2026:
-    - [[Ethereum]]: largest DeFi ecosystem, highest security guarantees, highest transaction costs (~$2-20 per transfer), primary venue for institutional DeFi.
+    - [[Ethereum Smart Contract Platform]]: largest DeFi ecosystem, highest security guarantees, highest transaction costs (~$2-20 per transfer), primary venue for institutional DeFi.
     - [[Tron Network|Tron]]: dominant for low-cost emerging market retail transfers, 50%+ of USDT supply by unit count, sub-cent transaction fees.
     - [[Solana]]: high-throughput retail and institutional settlement, sub-cent transaction costs, VISA pilot network, growing institutional USDC adoption.
     - Base (Coinbase's Ethereum L2): growing institutional adoption, regulated on-ramp integration, sub-cent fees with Ethereum security guarantees.
@@ -1423,7 +1423,7 @@ alias:: Stablecoins
     - Oldest major decentralised stablecoin (launched December 2017), operating continuously for 8+ years.
     - Endgame restructuring (2022-2025) migrates to Sky Protocol branding with SubDAO governance model.
     - Approximately 60% RWA collateral by 2024, capturing T-bill yields through the Spark lending subprotocol.
-  - **Liquity LUSD** (zero-interest borrowing against [[Ethereum]] collateral, minimum 110% collateral ratio):
+  - **Liquity LUSD** (zero-interest borrowing against [[Ethereum Smart Contract Platform]] collateral, minimum 110% collateral ratio):
     - Governance-minimised design: immutable smart contracts, no MKR/SKY-style governance votes.
     - Redemption mechanism allows any LUSD holder to redeem against riskiest vaults at face value, creating a hard floor on the peg.
     - Capital efficiency advantage: 110% minimum vs MakerDAO's 150% minimum for Ethereum vaults.
@@ -1441,7 +1441,7 @@ alias:: Stablecoins
 
   - ### Yield-Bearing and RWA-Backed Stablecoins
   - Yield-bearing and RWA-backed stablecoins constitute the fastest-growing segment as of 2024-2026, as US interest rates (Federal Funds Rate 5.25-5.50% through most of 2023-2024) made T-bill yield economics on stablecoin reserves compelling.
-  - **[[BlackRock]] BUIDL** (USD Institutional Digital Liquidity Fund, launched March 2024 with Securitize on [[Ethereum]]):
+  - **[[BlackRock]] BUIDL** (USD Institutional Digital Liquidity Fund, launched March 2024 with Securitize on [[Ethereum Smart Contract Platform]]):
     - Reached $500 million AUM within six weeks — the fastest fund launch in BlackRock history by AUM accumulation speed.
     - Approximately $1.7 billion AUM by early 2025; integrated as USDC liquidity vehicle and MakerDAO/Sky RWA collateral.
     - Accessible only to qualified purchasers; instant settlement within the Ethereum ecosystem rather than T+1 traditional fund settlement.
@@ -1455,7 +1455,7 @@ alias:: Stablecoins
     - Yield-bearing stablecoin for non-US investors through a Bermuda-licensed entity structure.
     - Daily rebases distribute T-bill yield directly to token holders rather than requiring active yield claims.
   - **Ethena Labs USDe** (launched February 2024, $3B+ supply by mid-2024, $6B+ by early 2025):
-    - "Delta-neutral synthetic dollar": backed by staked [[Ethereum]], wBTC, and SOL combined with offsetting short perpetual futures positions.
+    - "Delta-neutral synthetic dollar": backed by staked [[Ethereum Smart Contract Platform]], wBTC, and SOL combined with offsetting short perpetual futures positions.
     - Captures funding rate yield (typically 5-35% annualised) whilst maintaining dollar value through the delta-neutral hedge.
     - sUSDe (staked USDe) distributes funding rate yield to holders; highest sustained stablecoin yield of any major product in 2024.
     - Key risks: dependence on positive funding rates (can turn negative in bear markets); centralised exchange counterparty risk (Binance, Bybit, OKX, Deribit, Bitget); correlated drawdowns across exchange failures and market crashes.
@@ -1476,7 +1476,7 @@ alias:: Stablecoins
   - Stripe's $1.1 billion acquisition of Bridge Financial on 22 October 2024 — the largest acquisition in crypto history at announcement — signalled the definitive entry of [[Payments Infrastructure|payments infrastructure]] providers into stablecoin settlement.
   - Bridge's APIs allow businesses to accept, convert, and distribute stablecoin payments across 70+ countries, enabling near-instant international B2B settlement without correspondent banking intermediaries.
   - Stripe CEO Patrick Collison described stablecoins as "room temperature superconductors for financial services."
-  - VISA's stablecoin settlement pilot — enabling card issuers to receive merchant settlement in USDC on [[Ethereum]] and [[Solana]] — processed $200M+ in settlements by end-2024 across pilot partners in Latin America.
+  - VISA's stablecoin settlement pilot — enabling card issuers to receive merchant settlement in USDC on [[Ethereum Smart Contract Platform]] and [[Solana]] — processed $200M+ in settlements by end-2024 across pilot partners in Latin America.
   - Circle's Cross-Chain Transfer Protocol (CCTP) enables atomic USDC transfers across chains without third-party bridge smart contract risk, becoming the settlement backbone for multi-chain DeFi and corporate treasury applications.
   - Amazon Web Services (AWS) and Shopify integrations for stablecoin checkout represent the normalisation of stablecoin acceptance within mainstream e-commerce infrastructure.
   - JPMorgan's JPM Coin processed $1B+ in daily institutional transfers by 2024, demonstrating that bank-issued stablecoins can serve high-value corporate treasury settlement at scale within existing regulatory frameworks.
@@ -1583,7 +1583,7 @@ alias:: Stablecoins
   - **Programmable compliance** using zero-knowledge proofs for privacy-preserving identity verification (zkKYC) will emerge as the key differentiator for institutional-grade stablecoins seeking regulatory equivalence with traditional payment instruments under FATF Travel Rule obligations.
   - **IMF dollarisation concerns**: The IMF's 2025 working paper identifies dollar-denominated stablecoin dollarisation as a strategic challenge for emerging market central banks, predicting accelerated CBDC launches in Sub-Saharan Africa, Southeast Asia, and Latin America through 2030 as sovereign monetary policy responses.
   - **Quantum computing preparedness**: While post-quantum cryptography migration is not urgent within the 2026-2030 window, stablecoin protocol governance bodies and blockchain networks have begun incorporating post-quantum signature planning (NIST PQC standardised algorithms CRYSTALS-Dilithium, CRYSTALS-Kyber) into long-term technical roadmaps.
-  - **Environmental positioning**: [[Ethereum]] post-Merge (proof-of-stake, September 2022) dramatically reduced the energy footprint of the primary stablecoin settlement network (approximately 99.95% energy reduction), allowing USDC and USDS issuers to make credible sustainability claims that are unavailable to proof-of-work-settled stablecoins.
+  - **Environmental positioning**: [[Ethereum Smart Contract Platform]] post-Merge (proof-of-stake, September 2022) dramatically reduced the energy footprint of the primary stablecoin settlement network (approximately 99.95% energy reduction), allowing USDC and USDS issuers to make credible sustainability claims that are unavailable to proof-of-work-settled stablecoins.
   - **AI-integrated stablecoin applications**: [[Agent Frameworks|AI agent]] payment rails using stablecoins are an emerging 2025-2030 use case — autonomous AI systems (coding agents, data procurement agents, API consumers) require programmable payment capabilities without human bank account management; stablecoin wallets controlled by AI agents through API keys represent the natural payment primitive for the emerging [[Agentic Internet]].
   - **Stablecoin-native credit markets**: On-chain credit intermediation using stablecoins as base money — Morpho Blue, Euler v2, Aave v3, Compound v3 — is expected to grow from approximately $20B in outstanding loans (2025) to potentially $100B+ by 2030, representing the beginnings of an alternative to fractional reserve banking that Jeremy Allaire (Circle CEO) has characterised as the future of credit intermediation for the "long tail of supply and demand."
   - **Privacy-preserving stablecoins**: Zero-knowledge proof technology (Aztec Network, Zcash's Sprout/Sapling, Tornado Cash successors designed for regulatory compliance) enables stablecoin transfers with shielded amounts and counterparties — a capability demanded by institutions requiring transaction confidentiality but prohibited in its pure form by FATF's Travel Rule. Regulatory-compliant privacy preserving stablecoins using selective disclosure ZKPs may emerge as a niche institutional product by 2027-2030.

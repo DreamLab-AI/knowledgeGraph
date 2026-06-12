@@ -105,7 +105,7 @@ alias:: Cross-Platform Digital Twins
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-simulation",
+        "@id": "urn:ngm:class:collaborative-systems-modality-simulation",
         "label": "Collaborative Simulation"
       },
       {

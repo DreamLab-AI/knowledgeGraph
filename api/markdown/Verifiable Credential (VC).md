@@ -172,7 +172,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

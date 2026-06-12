@@ -38,7 +38,7 @@ alias:: Text to Image Generation
     ],
     "enables": [
       {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}
@@ -52,7 +52,7 @@ alias:: Text to Image Generation
   - [[Text-to-Image Generation]] is a [[Generative AI]] paradigm that synthesises photorealistic or stylised images from natural-language prompts by conditioning [[Diffusion Model|diffusion models]] or autoregressive [[Transformer Architecture|transformers]] on text encodings, enabling [[Prompt Engineering]]-driven creative production at a scale and speed impossible with traditional image authoring tools.
 
 - ### Relationships
-  - Text-to-image generation operationalises [[Diffusion Models]] and [[Latent Diffusion]] architectures that denoise random noise into structured visual content conditioned on text embeddings. It is a core application of [[Generative AI]] and extends into [[Multimodal AI]] systems that combine image generation with language understanding. [[Prompt Engineering]] has emerged as the primary user interface paradigm, with prompt syntax, style tokens, and negative prompts shaping output characteristics. The field is divided between [[Proprietary Image Generation]] services and open-weight alternatives such as the [[Stable Diffusion]] model family, each with different accessibility and content-policy trade-offs.
+  - Text-to-image generation operationalises [[Diffusion Models]] and [[Latent Diffusion]] architectures that denoise random noise into structured visual content conditioned on text embeddings. It is a core application of [[Generative AI]] and extends into [[Multimodal AI]] systems that combine image generation with language understanding. [[Prompt Engineering]] has emerged as the primary user interface paradigm, with prompt syntax, style tokens, and negative prompts shaping output characteristics. The field is divided between [[Proprietary Image Generation]] services and open-weight alternatives such as the [[Stable Diffusion Image Model]] model family, each with different accessibility and content-policy trade-offs.
 
 - ### Content
   - The technical lineage of text-to-image generation traces through generative adversarial networks (GANs), variational autoencoders, and autoregressive pixel models of the 2010s, but the paradigm shift came with the application of diffusion models to image synthesis. Jonathan Ho et al.'s 2020 paper on denoising diffusion probabilistic models (DDPMs) demonstrated that iterative noise removal, guided by a learned score function, could produce high-quality images. The subsequent integration of CLIP-based text conditioning by Ramesh et al. (DALL-E, 2021) and Saharia et al. (Imagen, 2022) unlocked language-guided synthesis. The release of Stable Diffusion as open weights in August 2022 catalysed an explosion of community tooling, fine-tuning, and derivative applications.

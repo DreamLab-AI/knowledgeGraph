@@ -79,8 +79,8 @@ public:: true
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-fabric-architecture", "label": "Data Fabric Architecture"},

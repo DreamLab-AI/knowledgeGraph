@@ -5,7 +5,7 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - **Part-of**: [[Subword Tokenisation]] family, [[Tokenisation]] pipeline
+  - **Part-of**: [[Subword Tokenisation]] family, [[Neural Network Text Tokenisation]] pipeline
   - **Enables**: [[Natural Language Processing]] (handles OOV words via subword decomposition)
   - **Contrasts-with**: [[Byte Pair Encoding]] (frequency-based merges), [[SentencePiece]] (language-agnostic)
   - **Uses**: [[Vocabulary]] (fixed token set of ~30k entries for BERT)

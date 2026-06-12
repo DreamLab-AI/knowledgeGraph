@@ -55,7 +55,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nvidia-isaac-sim",
+  "@id": "urn:ngm:class:nvidia-corporation-isaac-sim",
   "@type": "Class",
   "label": "NVIDIA Isaac Sim",
   "definition": "NVIDIA Isaac Sim is a robotics simulation application built on the Omniverse platform for designing, testing, and training robots in virtual environments. It is developed by NVIDIA.",

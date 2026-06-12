@@ -428,7 +428,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:apple-vision-os-hand-input",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-os-hand-input",
         "label": "Apple visionOS Hand Input"
       },
       {
@@ -518,7 +518,7 @@ public:: true
         "label": "Accessibility Technology"
       },
       {
-        "@id": "urn:ngm:class:apple-vision-pro",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
         "label": "Apple Vision Pro"
       },
       {
@@ -906,7 +906,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -943,7 +943,7 @@ public:: true
   - implemented-in-layer:: [[PerceptionLayer]], [[AlgorithmLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Computer Vision]], [[Pose Estimation]], [[Gesture Recognition]], [[Human-Computer Interaction]], [[Spatial Computing]]
+  - is-subclass-of:: [[Computer Vision]], [[Pose Estimation]], [[Gesture Recognition]], [[Human-Computer Interaction]], [[Spatial Computing Paradigm]]
   - has-part:: [[Hand Skeleton Model]], [[Keypoint Detector]], [[Palm Detector]], [[Landmark Regressor]], [[Temporal Filter]], [[Depth Sensor]], [[Kinematic Constraint Model]], [[Confidence Estimator]]
   - requires:: [[Camera Sensor]], [[Depth Sensor]], [[Convolutional Neural Network]], [[Real-Time Processing]], [[Calibration Data]], [[Annotated Hand Dataset]]
   - enables:: [[Gesture Recognition]], [[Pinch Interaction]], [[Air Typing]], [[Sign Language Recognition]], [[Touchless HCI]], [[XR Interaction]], [[Surgical Training Simulation]], [[Robotic Teleoperation]]

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -26,11 +26,11 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:state-of-the-art-in-ai",
+        "id": "urn:ngm:class:ai-frontier-capability-survey",
         "label": "State of the art in AI"
       }
     ],
@@ -55,7 +55,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:update-cycle",
+        "id": "urn:ngm:class:knowledge-artefact-update-cycle",
         "label": "Update Cycle"
       },
       {

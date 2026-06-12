@@ -23,7 +23,7 @@ public:: true
   "definition": "MuZero is a model-based reinforcement learning algorithm from DeepMind that achieves superhuman performance in board games and Atari without being given the rules of the environment. It learns a latent dynamics model predicting reward, value, and policy, then plans with Monte Carlo Tree Search over this learned model. It generalises AlphaZero to domains where the environment dynamics are unknown.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"},

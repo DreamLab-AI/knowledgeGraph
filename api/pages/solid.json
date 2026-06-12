@@ -26,7 +26,7 @@
         "label": "Access Control Policy"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -76,7 +76,7 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -108,7 +108,7 @@
         "label": "WebID"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -198,7 +198,7 @@
         "label": "HTTP REST"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -321,7 +321,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -634,8 +634,8 @@
       "label": "Decentralised Web"
     },
     {
-      "slug": "melvin-carvalho",
-      "label": "Melvin Carvalho"
+      "slug": "melvin-carvalho-decentralised-web-advocate",
+      "label": "Melvin Carvalho Decentralised Web Advocate"
     },
     {
       "slug": "safety",
@@ -646,8 +646,8 @@
       "label": "Semantic Segmentation"
     },
     {
-      "slug": "webid",
-      "label": "webid"
+      "slug": "webid-decentralised-identity-uri",
+      "label": "WebID Decentralised Identity URI"
     }
   ]
 }

@@ -39,7 +39,7 @@ public:: true
       {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"}
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"}
     ]
   },
   "quality": 0.8
@@ -50,7 +50,7 @@ public:: true
   - SDXL is Stability AI's flagship open-weight text-to-image model, building on the [[Latent Diffusion]] paradigm with a substantially larger UNet operating in a compressed latent space decoded by a high-fidelity [[VAE]]. Dual [[CLIP Encoder]] conditioning — using both OpenAI CLIP ViT-L and OpenCLIP ViT-bigG — improves prompt adherence, while [[Classifier-Free Guidance]] remains the primary sampling strategy. The optional refiner stage, a separate diffusion model, processes low-noise timesteps to sharpen fine details.
 
 - ### Relationships
-  - SDXL is a direct successor to [[Stable Diffusion]] v1.x/v2.x with a parameter count roughly ten times larger. It powers downstream techniques including [[LoRA Fine-Tuning]] for personalisation, and its checkpoints are distributed through the [[Hugging Face Diffusers]] library and [[Automatic1111]] interfaces. The [[Diffusion Model]] framework underpins its training and sampling dynamics.
+  - SDXL is a direct successor to [[Stable Diffusion Image Model]] v1.x/v2.x with a parameter count roughly ten times larger. It powers downstream techniques including [[LoRA Fine-Tuning]] for personalisation, and its checkpoints are distributed through the [[Hugging Face Diffusers]] library and [[Automatic1111]] interfaces. The [[Diffusion Model]] framework underpins its training and sampling dynamics.
 
 - ### Content
   - Stability AI published the SDXL 0.9 beta in June 2023 and the 1.0 release in July 2023, alongside a research paper detailing architectural choices. The shift from 512×512 to 1024×1024 native resolution demanded new training recipes including multi-aspect-ratio bucketing and micro-conditioning on original image size and crop coordinates to reduce artefacts at non-square aspect ratios.

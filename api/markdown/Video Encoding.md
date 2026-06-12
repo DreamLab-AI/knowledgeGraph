@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:video-processing", "label": "Video Processing"}
+      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Video Processing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cdn", "label": "CDN"},
@@ -50,7 +50,7 @@ public:: true
   - Video encoding transforms uncompressed video (typically in YCbCr 4:2:0 colour space) into a codec-compliant bitstream through a series of analysis and quantisation stages: scene-cut detection, intra/inter mode decision, motion estimation, transform, quantisation, and entropy coding. Rate control algorithms — constant bitrate (CBR), variable bitrate (VBR), constant rate factor (CRF), or constrained variable bitrate (CVBR) — govern the trade-off between output quality and bitrate across the encoded sequence. Encoding may be performed in software (x264, x265, SVT-AV1, FFmpeg) or hardware ([[Encoder]] ASICs and GPU fixed-function blocks), with software encoders producing superior quality at the cost of much higher CPU/GPU compute, and hardware encoders prioritising throughput and low latency.
 
 - ### Relationships
-  - Video encoding consumes [[Compute Resources]] at scale, driving demand for GPU-accelerated [[Encoder]] pipelines and distributed transcoding. Output bitstreams are ingested by [[CDN]] infrastructure for adaptive streaming delivery and decoded by client [[Decoder]] implementations. [[Bandwidth Adaptation]] schemes (HLS, MPEG-DASH) require multiple renditions encoded at different bitrate-resolution combinations. [[Video Processing]] stages including colour grading, deinterlacing, and subtitling precede encoding in a [[Content Creation Pipeline]].
+  - Video encoding consumes [[Compute Resources]] at scale, driving demand for GPU-accelerated [[Encoder]] pipelines and distributed transcoding. Output bitstreams are ingested by [[CDN]] infrastructure for adaptive streaming delivery and decoded by client [[Decoder]] implementations. [[Bandwidth Adaptation]] schemes (HLS, MPEG-DASH) require multiple renditions encoded at different bitrate-resolution combinations. [[Computer Vision Video Analysis]] stages including colour grading, deinterlacing, and subtitling precede encoding in a [[Content Creation Pipeline]].
 
 - ### Content
   - The industrialisation of video encoding began with DVD authoring in the late 1990s using MPEG-2 encoders, followed by web video encoding for RealMedia and Windows Media Video. The YouTube launch in 2005 and the subsequent explosion of user-generated content drove massive investment in cloud transcoding infrastructure. AWS Elastic Transcoder (2013) and later AWS MediaConvert, Google Transcoder API, and Azure Media Services commercialised on-demand cloud encoding, enabling any-scale video processing without on-premises infrastructure.

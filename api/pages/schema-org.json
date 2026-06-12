@@ -24,7 +24,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -34,7 +34,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

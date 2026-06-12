@@ -33,7 +33,7 @@ alias:: Open API Specification
     ],
     "uses": [
       {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:json", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
     ],
     "relatedTo": [
@@ -46,7 +46,7 @@ alias:: Open API Specification
 ```
 
 - ### Definition
-  - The [[OpenAPI Specification]] is a machine-readable [[API Standard]] for describing [[REST API]]s in [[json]] or YAML, enabling automated [[Documentation Generation]], SDK generation, and contract testing from a single canonical description document.
+  - The [[OpenAPI Specification]] is a machine-readable [[API Standard]] for describing [[REST API]]s in [[JSON Data Interchange Format]] or YAML, enabling automated [[Documentation Generation]], SDK generation, and contract testing from a single canonical description document.
 
 - ### Relationships
   - The OpenAPI Specification formalises the contract between [[REST API]] producers and consumers, driving [[API Integration]] workflows and powering [[Documentation Generation]] toolchains. It is the lingua franca of [[API Management]] platforms and [[API Gateway]] products, which use OAS documents to configure routing, rate limiting, and security policies. Its schema layer directly enables [[Microservices]] ecosystems to validate inter-service communication at build and runtime.

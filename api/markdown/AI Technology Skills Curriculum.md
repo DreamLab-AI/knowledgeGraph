@@ -1,0 +1,182 @@
+public:: true
+
+elevatedFrom:: [[Courses and Training]]
+# AI Technology Skills Curriculum
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:460ddc29975b00ef4b91206b771920aa2abe017f4a9c97551f4cd538dc47b4e3",
+  "@type": "Page",
+  "vc:slug": "ai-technology-skills-curriculum",
+  "title": "AI Technology Skills Curriculum",
+  "vc:public": true,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-space",
+      "vc:label": "latent space"
+    }
+  ],
+  "vc:schemaVersion": 2,
+  "vc:legacyProperties": [
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Courses and Training"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-technology-skills-curriculum",
+  "@type": "Class",
+  "label": "AI Technology Skills Curriculum",
+  "definition": "Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
+      {"@id": "urn:ngm:class:learning-resources", "label": "Learning Resources"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:courses-and-training:776c802a9fc9",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:460ddc29975b00ef4b91206b771920aa2abe017f4a9c97551f4cd538dc47b4e3"
+  },
+  "vc:resolutions": [
+    {
+      "raw": "[[Blockchain]]",
+      "resolved": "urn:visionflow:owl:class:blockchain",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Neural Network Latent Space]]",
+      "resolved": "urn:visionflow:owl:class:latent-space",
+      "kind": "ResolvedLink"
+    }
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:lcr-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
+}
+```
+
+
+- ### Definition
+  - Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:CoursesAndTraining
+  - owl-role:: Concept
+
+- ### Relationships
+  - **enables**: AI Development (trained workforce prerequisite), Software Development Process (practitioner skill pipeline)
+  - **uses**: Learning Management System (delivery platform), Learning Resources (curated content libraries)
+  - **supports**: Education Technology (pedagogical tooling), Machine Learning (primary subject domain)
+  - **relatedTo**: Blockchain (specialist curriculum track)
+
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
+  - #Public page
+  - automatically published
+  - Generative AI Resources:
+  - [Generative AI course](https://www.cloudskillsboost.google/course_templates/536): A course that provides an introduction to generative AI and explores its applications.
+  - [Little book of deep learning](https://fleuret.org/public/lbdl.pdf): A book that covers the basics of deep learning.
+  - [Machine vision youtube series](https://www.youtube.com/playlist?list=PLd3hlSJsX_In7qup928HaHmilugBGctuF): A series of YouTube videos that focus on machine vision.
+  - [Almost any machine learning free book](https://github.com/abhishekkrthakur/approachingalmost): A collection of machine learning books available for free.
+  - [Introduction to Generative AI | Google Cloud Skills Boost](https://www.cloudskillsboost.google/course_templates/536): An introductory course on generative AI provided by Google Cloud Skills Boost.
+  - [CS50's Introduction to Artificial Intelligence with Python | Harvard University](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python/2023-05): A course offered by Harvard University that covers the fundamentals of artificial intelligence using Python.
+  - [Generative AI is a tool in service of humanity (linkedin.com)](https://www.linkedin.com/learning/what-is-generative-ai/generative-ai-is-a-tool-in-service-of-humanity): A LinkedIn Learning course that explores the ethical implications of generative AI.
+  - [Generative AI for Everyone
+		- DeepLearning.AI](https://www.deeplearning.ai/courses/generative-ai-for-everyone/): A course that provides a comprehensive introduction to generative AI.
+  - [Generative AI with Large Language Models | Coursera](https://www.coursera.org/learn/generative-ai-with-llms): A Coursera course that focuses on generative AI using large language models.
+  - Statistics Resources:
+  - [Statistics course](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=1): A YouTube playlist that covers various topics in statistics.
+  - AI and Deep Learning Resources:
+  - https://www.manning.com/books/deep-learning-with-python-second-edition?
+		- https://github.com/fchollet/deep-learning-with-python-notebooks
+  - [EdX AI course](https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/home): A course offered by Harvard University that provides an introduction to AI.
+  - [Python Books](https://mksaad.wordpress.com/2019/04/03/open-source-python-programming-books-licensed-under-creative-commons/): A collection of open-source Python programming books.
+  - [Automate the boring stuff](https://automatetheboringstuff.com/): A book that teaches how to automate tasks using Python.
+  - [ChatGPT Prompt Engineering for Developers
+		- DeepLearning.AI](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/): A short course focused on prompt engineering for developers.
+  - [Introduction to Responsible AI | Google Cloud Skills Boost](https://www.cloudskillsboost.google/course_templates/554): A course that explores the ethical considerations in AI development.
+  - [Data Science: Machine Learning | Harvard University](https://pll.harvard.edu/course/data-science-machine-learning): A course offered by Harvard University that covers machine learning concepts.
+  - [LangChain for LLM Application Development
+		- DeepLearning.AI](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/): A short course that focuses on language chain for LLM application development.
+  - Miscellaneous Resources:
+  - RGB programming with Maxim course [Plan B Network](https://planb.network/courses/rgb)
+  - [Pitching](https://fi.co/insight/how-to-master-the-startup-pitch-watch-these-founder-showcase-winning-pitch-videos): A resource that provides insights on mastering startup pitches.
+  - [Age of BANI from Jamais Cascio](https://ageofbani.com/): A website that explores the concept of BANI (Braided, Asynchronous, Networked, and Indigenous) for understanding the future.
+  - [Furkan SD tutorials](https://github.com/FurkanGozukara/Stable-Diffusion/tree/main/Tutorials): Tutorials by Furkan Gozukara focusing on Stable Diffusion.
+  - touchdesigner community: A community dedicated to TouchDesigner, a visual development platform.
+  - [Torin Blankensmith](https://www.torinblankensmith.com/): Website of Torin Blankensmith, a creative technologist.
+  - [Torin Blankensmith YouTube](https://www.youtube.com/c/torinblankensmith): YouTube channel of Torin Blankensmith, featuring various creative and tech-related content.
+  - [Latent space](https://huggingface.co/learn/nlp-course/chapter0/1?fw=pt): An educational resource that explains the concept of [[Neural Network Latent Space]] in natural language processing.
+  - [Embeddings explainer (MUST READ)](https://simonwillison.net/2023/Oct/23/embeddings/): An article explaining the concept of embeddings in machine learning.
+  - [Ebooks and stuff](https://z-lib.io/): A website where you can find and download ebooks.
+  - [AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/external/view/elearning/17763/foundations-of-prompt-engineering): A course provided by AWS that focuses on the foundations of prompt engineering.
+  - [Put your fingers to work: Chatting as a productivity tool (linkedin.com)](https://www.linkedin.com/learning/streamlining-your-work-with-microsoft-bing-chat/put-your-fingers-to-work-chatting-as-a-productivity-tool): A LinkedIn Learning course on using chat as a productivity tool.
+  - [Microsoft Azure AI Fundamentals: Generative AI
+		- Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/introduction-generative-ai/): A training course on generative AI provided by Microsoft Learn.
+  - [AWS Skill Builder](https://explore.skillbuilder.aws/learn/public/learning_plan/view/1909/generative-ai-learning-plan-for-decision-makers): A learning plan provided by AWS that focuses on generative AI for decision-makers.
+  - [Learn Prompting | Generative AI, Prompt Engineering, & Free Online Courses](https://learnprompting.org/): A website dedicated to learning about prompt engineering and generative AI.
+  - [AI for Beginners (microsoft.github.io)](https://microsoft.github.io/AI-For-Beginners/)
+  - [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering)
+  - [ChatGPT Prompt Engineering for Developers - DeepLearning.AI](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+  - [Why you need to know about artificial intelligence | LinkedIn Learning](https://www.linkedin.com/learning/introduction-to-artificial-intelligence/why-you-need-to-know-about-artificial-intelligence)
+  - [Generative AI is a tool in service of humanity | LinkedIn Learning](https://www.linkedin.com/learning/what-is-generative-ai/generative-ai-is-a-tool-in-service-of-humanity)
+  - [Collections | Microsoft Learn](https://learn.microsoft.com/en-us/collections/20mirj4odnj6o)
+  - [How finding and sharing information online has evolved | LinkedIn Learning](https://www.linkedin.com/learning/generative-ai-the-evolution-of-thoughtful-online-search/how-finding-and-sharing-information-online-has-evolved)
+  - [Streamlining Your Work with Copilot (formerly Bing Chat/Bing Chat Enterprise) | LinkedIn Learning](https://www.linkedin.com/learning/streamlining-your-work-with-microsoft-bing-chat)
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

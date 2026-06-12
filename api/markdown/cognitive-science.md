@@ -8,4 +8,4 @@ Cognitive Science is an interdisciplinary field studying the nature of mind, int
 - **enables** [[Cognitive AI]] — cognitive science provides the theoretical basis for cognitive architectures in AI
 - **relatedTo** [[Cognitive Architecture]] — formalised cognitive science theories instantiated as computational architectures
 - **relatedTo** [[Artificial Intelligence]] — AI draws on and contributes back to cognitive science
-- **supports** [[Machine Learning]] — cognitive learning theories inform ML algorithm design
+- **supports** [[Machine Learning Discipline]] — cognitive learning theories inform ML algorithm design

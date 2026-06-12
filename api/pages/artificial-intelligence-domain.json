@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -317,12 +317,12 @@
       "label": "Loss Function"
     },
     {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
     },
     {
-      "slug": "machine-learning",
-      "label": "Machine Learning"
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
     },
     {
       "slug": "machine-translation",
@@ -393,6 +393,10 @@
       "label": "Natural Language Processing Domain"
     },
     {
+      "slug": "neural-network-text-tokenisation",
+      "label": "Neural Network Text Tokenisation"
+    },
+    {
       "slug": "neuromorphic-chip",
       "label": "Neuromorphic Chip"
     },
@@ -451,10 +455,6 @@
     {
       "slug": "token-embedding",
       "label": "Token Embedding"
-    },
-    {
-      "slug": "tokenisation",
-      "label": "Tokenisation"
     },
     {
       "slug": "transformer-architecture",

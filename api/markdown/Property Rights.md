@@ -81,7 +81,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:copyright",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "copyright"
       },
       {
@@ -131,7 +131,7 @@ public:: true
   - Requires: [[Digital Ownership]]
   - Uses: [[NFT]]
   - Uses: [[Blockchain]]
-  - Related To: [[copyright]]
+  - Related To: [[Intellectual Property Rights Framework]]
   - Related To: [[Tokenization]]
 
 - ### Content

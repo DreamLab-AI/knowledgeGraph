@@ -36,10 +36,10 @@ public:: true
       {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   },
   "quality": 0.8
@@ -47,10 +47,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Bayesian Optimisation]] is a probabilistic, sample-efficient global optimisation strategy that fits a surrogate model (typically a Gaussian process grounded in [[Bayesian Inference]]) to a costly objective function and selects the next query point via an [[Acquisition Function]] that balances exploration and exploitation, making it the method of choice for [[Hyperparameter Tuning]] and [[Neural Architecture Search]] in [[Machine Learning]].
+  - [[Bayesian Optimisation]] is a probabilistic, sample-efficient global optimisation strategy that fits a surrogate model (typically a Gaussian process grounded in [[Bayesian Inference]]) to a costly objective function and selects the next query point via an [[Acquisition Function]] that balances exploration and exploitation, making it the method of choice for [[Hyperparameter Tuning]] and [[Neural Architecture Search]] in [[Machine Learning Discipline]].
 
 - ### Relationships
-  - Bayesian Optimisation sits within the broader class of [[Optimisation]] methods and is distinguished from gradient-based optimisers by its reliance on probabilistic models rather than derivative information. It applies [[Bayesian Inference]] to maintain a posterior belief over the objective, updated after each expensive evaluation. The [[Acquisition Function]] — expected improvement, upper confidence bound, or Thompson sampling — translates this posterior into a sampling decision. The technique directly enables [[Auto-ML]] pipelines and [[Neural Architecture Search]] workflows, and supports [[Machine Learning]] practitioners who need to tune [[Machine Learning Model]] configurations with limited compute budgets.
+  - Bayesian Optimisation sits within the broader class of [[Optimisation]] methods and is distinguished from gradient-based optimisers by its reliance on probabilistic models rather than derivative information. It applies [[Bayesian Inference]] to maintain a posterior belief over the objective, updated after each expensive evaluation. The [[Acquisition Function]] — expected improvement, upper confidence bound, or Thompson sampling — translates this posterior into a sampling decision. The technique directly enables [[Auto-ML]] pipelines and [[Neural Architecture Search]] workflows, and supports [[Machine Learning Discipline]] practitioners who need to tune [[Machine Learning Model]] configurations with limited compute budgets.
 
 - ### Content
   - Bayesian Optimisation has roots in the geostatistics community, where kriging — a Gaussian-process interpolation technique developed by Danie Krige in the 1950s — served as the foundational surrogate model. The method was adapted for global optimisation by Jonas Mockus in the 1970s and formalised in its modern machine-learning form by Brochu, Cora, and de Freitas in their influential 2010 tutorial. Its adoption in machine learning accelerated once researchers recognised that training large neural networks made objective evaluations prohibitively expensive, creating an ideal use case for sample-efficient optimisation.

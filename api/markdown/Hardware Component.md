@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
     ]
   },
@@ -108,7 +108,7 @@ public:: true
   - hasPart [[Sensor]]
   - hasPart [[Display Hardware]]
   - hasPart [[GPU Compute]]
-  - enables [[Spatial Computing]]
+  - enables [[Spatial Computing Paradigm]]
   - enables [[Haptic Feedback]]
 
 - ### Content
@@ -121,7 +121,7 @@ public:: true
   - [[Sensor]]
   - [[Display Hardware]]
   - [[GPU Compute]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
 
 - ### Provenance
   - sources::

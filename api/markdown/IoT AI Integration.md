@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
       {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
@@ -137,7 +137,7 @@ public:: true
 
 - ### Relationships
   - hasPart:: [[IoT Sensor Network]], [[Io T Sensors]], [[Edge AI System]]
-  - requires:: [[Internet of Things]], [[Embedded Systems]], [[MQTT]], [[Machine Learning]]
+  - requires:: [[Internet of Things]], [[Embedded Systems]], [[MQTT]], [[Machine Learning Discipline]]
   - enables:: [[Anomaly Detection]], [[Industrial IoT]], [[Edge AI for Smart Cities]]
   - uses:: [[Embedded AI Frameworks]], [[Edge AI Accelerator]], [[Federated Learning]]
   - relatedTo:: [[Edge-Cloud Collaboration]], [[Latency-Aware Edge AI]]

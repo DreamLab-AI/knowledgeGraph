@@ -8,7 +8,7 @@
 - ### Relationships
   - uses: [[Motion Capture]], [[Avatar System]]
   - enables: [[Avatar Behavior]], [[Player Two]]
-  - dependsOn: [[Spatial Computing]], [[Computer Vision]]
+  - dependsOn: [[Spatial Computing Paradigm]], [[Computer Vision]]
 
 - ### Content
   # PlayerTracking

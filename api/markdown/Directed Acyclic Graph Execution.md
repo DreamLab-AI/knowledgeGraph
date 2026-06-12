@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:comfy-ui-workflows", "label": "ComfyUI Workflows"},
-      {"@id": "urn:ngm:class:comfy-ui-client", "label": "ComfyUI Client"}
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"}
     ]
   },
   "quality": 0.72

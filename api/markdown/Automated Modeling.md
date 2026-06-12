@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},

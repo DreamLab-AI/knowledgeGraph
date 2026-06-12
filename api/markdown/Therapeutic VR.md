@@ -84,7 +84,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:metaverse-and-spatial-risks",
+        "@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
         "label": "Metaverse and Spatial Risks"
       },
       {
@@ -146,7 +146,7 @@ public:: true
   - Uses [[Virtual Reality]], [[Haptic Feedback]]
   - Requires [[Virtual Reality Platform]]
   - Supports [[User Safety]]
-  - Related to [[Metaverse and Spatial Risks]], [[Avatar System]]
+  - Related to [[Spatial Embodiment Harm Taxonomy]], [[Avatar System]]
 
 - ### Content
 

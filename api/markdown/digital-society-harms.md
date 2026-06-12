@@ -19,7 +19,7 @@
   - uses:: [[Algorithmic Audit]], [[Risk Assessment]], [[Impact Assessment]], [[Transparency Reporting]], [[Independent Research]]
   - contrasts-with:: [[Techno-Utopianism]], [[Individual Choice Framing]], [[Market-Only Solutions]], [[Permissionless Innovation]], [[Net-Neutral Platform Doctrine]]
   - related-to:: [[Deepfakes and fraudulent content]], [[Algorithmic Bias]], [[Surveillance Capitalism]], [[Attention Economy]], [[Algorithmic Amplification]], [[Content Moderation]]
-  - standardized-by:: [[Online Safety Act 2023]], [[EU Digital Services Act]], [[EU AI Act]], [[Council of Europe Framework Convention on AI]], [[ICO Age-Appropriate Design Code]]
+  - standardized-by:: [[Online Safety Act 2023]], [[EU Digital Services Act]], [[EU AI Act Regulatory Instrument]], [[Council of Europe Framework Convention on AI]], [[ICO Age-Appropriate Design Code]]
 
 - ### Content
 

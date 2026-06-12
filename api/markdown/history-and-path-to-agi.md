@@ -13,12 +13,12 @@
   - has-part:: [[Symbolic AI]], [[Connectionism]], [[Deep Learning]], [[Reinforcement Learning]], [[Large Language Models]], [[Scaling Laws]], [[RLHF]], [[Transformer Architecture]], [[Expert Systems]], [[AI Winter]]
   - requires:: [[Computational Substrate]], [[Training Data]], [[Mathematical Foundations]], [[Scientific Method]], [[Institutional Funding]]
   - enables:: [[Artificial General Intelligence]], [[Frontier AI Evaluation]], [[AI Safety Research]], [[AI Policy]], [[Autonomous Systems]], [[Scientific Discovery Acceleration]]
-  - implements:: [[Turing Test]], [[Scaling Laws]], [[Backpropagation]], [[Attention Mechanism]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]]
+  - implements:: [[Turing Test]], [[Scaling Laws]], [[Backpropagation]], [[Attention Mechanism]], [[Reinforcement Learning from Human Feedback]], [[Constitutional AI Training Methodology]]
   - depends-on:: [[Mathematics]], [[Neuroscience]], [[Cognitive Psychology]], [[Computer Science]], [[Statistics]], [[Philosophy of Mind]]
-  - supports:: [[AI Alignment]], [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Drug Discovery]]
+  - supports:: [[AI Alignment]], [[Machine Learning Discipline]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Drug Discovery]]
   - uses:: [[GPU Compute]], [[Transformer Architecture]], [[Neural Networks]], [[Probabilistic Inference]], [[Gradient Descent]]
   - contrasts-with:: [[Narrow AI]], [[Symbolic AI]], [[Rule-Based Systems]], [[Expert Systems]]
-  - related-to:: [[Anthropic Claude]], [[ChatGPT]], [[Competition in AI]], [[AI Risks]], [[Artificial General Intelligence]], [[AI Adoption]], [[Agent Frameworks]]
+  - related-to:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Competition in AI]], [[AI Risks]], [[Artificial General Intelligence]], [[AI Adoption]], [[Agent Frameworks]]
   - standardized-by:: [[NeurIPS]], [[ICML]], [[ICLR]], [[Nature]], [[Science]], [[ACL]], [[AAAI]]
 
 - ### Content

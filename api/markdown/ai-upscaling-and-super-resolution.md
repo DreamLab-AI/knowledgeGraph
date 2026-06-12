@@ -10,7 +10,7 @@
   - <!-- No relationships defined -->
 
 - ### Content
-  - CSSR [[ComfyUI]] SOTA  [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
+  - CSSR [[Node-Based Diffusion Pipeline Interface]] SOTA  [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
   - [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)
   - Might have to install from github [kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)](https://github.com/kijai/ComfyUI-CCSR)
   - [kijai/ComfyUI-SUPIR: SUPIR upscaling wrapper for ComfyUI (github.com)](https://github.com/kijai/ComfyUI-SUPIR)
@@ -23,7 +23,7 @@
 
   - ## Overview and History
 
-  - **AI Upscaling** refers to the application of [[Machine Learning]] and [[Deep Learning]] techniques to increase the resolution of images and videos while preserving or enhancing perceptual quality beyond traditional interpolation methods
+  - **AI Upscaling** refers to the application of [[Machine Learning Discipline]] and [[Deep Learning]] techniques to increase the resolution of images and videos while preserving or enhancing perceptual quality beyond traditional interpolation methods
 
   - The field evolved from classical [[Signal Processing]] methods (bicubic interpolation, Lanczos) to [[Neural Network]]-based approaches starting with SRCNN (2014), followed by [[GAN]]-based methods like SRGAN (2017) and ESRGAN (2018), and most recently [[Diffusion Model]]-based super-resolution (2023-2024)
 
@@ -35,7 +35,7 @@
   - 2018: ESRGAN - Enhanced version with improved [[Generator]] architecture
   - 2020: Real-ESRGAN - Practical degradation model for real-world images
   - 2021: SwinIR - [[Transformer]]-based super-resolution architecture
-  - 2023: StableSR - [[Stable Diffusion]]-based upscaling emerges
+  - 2023: StableSR - [[Stable Diffusion Image Model]]-based upscaling emerges
   - 2024: SUPIR and CCSR - Current SOTA using [[Latent Diffusion Model]]
 
   - The transition from [[GAN]]-based to [[Diffusion Model]]-based upscaling [Updated 2025] represents a paradigm shift, with diffusion models providing better texture generation and fewer artifacts at the cost of computational complexity
@@ -99,7 +99,7 @@
   - Enables photorealistic texture synthesis
   - RaGAN (Relativistic GAN) used in ESRGAN improves stability
 
-  - **Diffusion Loss** (for [[Stable Diffusion]] upscaling):
+  - **Diffusion Loss** (for [[Stable Diffusion Image Model]] upscaling):
   - `L_diffusion = E_t[||ε - ε_θ(z_t, t, c)||²]`
   - Predicts noise `ε` at timestep `t`
   - Conditioned on LR image `c` and latent `z_t`
@@ -180,7 +180,7 @@
   - ### Stable Diffusion-Based Upscaling
 
   - **SD Upscale (Ultimate SD Upscale)**:
-  - Uses [[Stable Diffusion]] [[Image-to-Image]] for texture generation
+  - Uses [[Stable Diffusion Image Model]] [[Image-to-Image]] for texture generation
   - Tiled processing for large images (4K, 8K)
   - ControlNet Tile for structure preservation
   - Workflow: LR → [[VAE]] encode → diffusion → decode → HR
@@ -244,7 +244,7 @@
   - **SUPIR Resources**:
   - Paper: "Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild" (Yu et al., 2024)
   - GitHub: [Fanghua-Yu/SUPIR](https://github.com/Fanghua-Yu/SUPIR)
-  - [[ComfyUI]] implementation: [kijai/ComfyUI-SUPIR](https://github.com/kijai/ComfyUI-SUPIR)
+  - [[Node-Based Diffusion Pipeline Interface]] implementation: [kijai/ComfyUI-SUPIR](https://github.com/kijai/ComfyUI-SUPIR)
   - [SUPIR: Best Stable Diffusion Super Resolution Upscaler + full workflow. (youtube.com)](https://www.youtube.com/watch?v=Q9y-7Nwj2ic)
   - [(2) SUPIR v2 nodes from Kijai are available on manager, and they look brilliant! : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/1bh07ke/supir_v2_nodes_from_kijai_are_available_on/)
   - https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78
@@ -266,7 +266,7 @@
   - Tile size: 512×512 typical, overlap 64px
 
   - **CCSR Workflow**:
-  - CSSR [[ComfyUI]] SOTA [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
+  - CSSR [[Node-Based Diffusion Pipeline Interface]] SOTA [workflow for upscale](https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468)
   - [ccsr_creative_upscale.json](../assets/ccsr_creative_upscale_1706648180350_0.json)
   - Might have to install from github [kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)](https://github.com/kijai/ComfyUI-CCSR)
   - Settings: guidance_scale (2.0-4.0), steps (20-30), tile_size (512)
@@ -350,12 +350,12 @@
 
   - ### ComfyUI for AI Upscaling
 
-  - [[ComfyUI]] is a node-based workflow system for [[Stable Diffusion]] and related models, providing powerful upscaling capabilities through custom nodes and integrations
+  - [[Node-Based Diffusion Pipeline Interface]] is a node-based workflow system for [[Stable Diffusion Image Model]] and related models, providing powerful upscaling capabilities through custom nodes and integrations
 
   - **Core ComfyUI Upscaling Nodes**:
   - `UltimateSDUpscale`: Tiled diffusion-based upscaling
   - `ImageScaleBy`: Classical interpolation (bicubic, Lanczos, nearest)
-  - `VAEEncode/VAEDecode`: Latent space processing for [[Stable Diffusion]]
+  - `VAEEncode/VAEDecode`: Latent space processing for [[Stable Diffusion Image Model]]
   - `ControlNetApply`: Structure preservation during upscaling
   - `TilePreprocessor`: Prepares images for tiled processing
 
@@ -444,7 +444,7 @@
 
   - **Multi-model Ensemble**:
   - Pass 1: [[ESRGAN]] 4x for initial upscale (fast, sharp)
-  - Pass 2: [[Stable Diffusion]] with ControlNet Tile for texture
+  - Pass 2: [[Stable Diffusion Image Model]] with ControlNet Tile for texture
   - Pass 3: Detail enhancement with [[CodeFormer]] (faces)
   - Blending: 70% ESRGAN + 30% SD for balanced result
 
@@ -588,7 +588,7 @@
     - Art Blocks: Upscale generative art outputs for gallery exhibitions
 
   - **Blockchain-Based Image Provenance**:
-  - Store original low-res image hash on [[Blockchain]] ([[Bitcoin]], [[Ethereum]])
+  - Store original low-res image hash on [[Blockchain]] ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]])
   - Upscaled versions linked via [[Smart Contract]] to prove derivation
   - [[IPFS]] storage: Low-res (500KB) on-chain, high-res (50MB) IPFS with CID reference
   - Example workflow:
@@ -602,12 +602,12 @@
   - **Decentralized Rendering Networks**:
   - **Render Network (RNDR)**:
     - Distributed GPU rendering for upscaling tasks
-    - Payment: [[RNDR]] token on [[Polygon]] (formerly [[Ethereum]])
+    - Payment: [[RNDR]] token on [[Polygon]] (formerly [[Ethereum Smart Contract Platform]])
     - Workflow: Upload LR image → Allocate RNDR tokens → Network processes → Download HR
     - Cost: ~$0.50-$2.00 per 4K upscale (vs. $0.10 local GPU electricity)
     - Benefits: No local GPU required, scalable for batch jobs
   - **Akash Network**:
-    - Deploy [[ComfyUI]] or [[SUPIR]] on decentralized cloud
+    - Deploy [[Node-Based Diffusion Pipeline Interface]] or [[SUPIR]] on decentralized cloud
     - Pay with [[AKT]] token
     - Cost-effective: 3x cheaper than AWS/Azure for GPU workloads
 
@@ -618,7 +618,7 @@
   - Economic model: Marketplace covers cost, attracts collectors
 
   - **Micropayments for Upscaling**:
-  - [[Lightning Network]] ([[Bitcoin]] Layer 2) for per-image payments
+  - [[Lightning Network]] ([[Bitcoin Proof-of-Work Protocol]] Layer 2) for per-image payments
   - Pricing: 100-1000 satoshis (~$0.03-$0.30) per upscale
   - Use case: Decentralized upscaling APIs
   - Example: User sends LN invoice → API upscales → Returns HR image
@@ -630,7 +630,7 @@
   - Arweave (permanent, paid once): High-res (4K-8K) for archival
   - Filecoin (decentralized): Cold storage for extreme resolutions (16K+)
   - Trade-offs:
-    - [[Ethereum]]: ~$50-$200 to store 1MB on-chain (prohibitive)
+    - [[Ethereum Smart Contract Platform]]: ~$50-$200 to store 1MB on-chain (prohibitive)
     - [[IPFS]]: Free storage, no permanence guarantee
     - [[Arweave]]: $5-$10 per GB one-time payment
 

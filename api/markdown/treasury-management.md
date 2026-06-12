@@ -20,7 +20,7 @@
   - implements:: [[Multi-Signature Custody]], [[Tiered Governance Model]], [[Quadratic Funding]], [[Dollar-Cost Averaging]], [[OTC Token Sale]], [[RWA Integration]], [[Protocol-Owned Liquidity Bonding]], [[Delegated Treasury Management]]
   - depends-on:: [[DAO]], [[Governance Token]], [[Smart Contract]], [[Stablecoin]], [[DeFi Protocol]], [[Safe Multisig]], [[On-Chain Voting]], [[Block Explorer]], [[Price Oracle]]
   - supports:: [[Bitcoin Standard]], [[DeFi Ecosystem]], [[Protocol Sustainability]], [[Ecosystem Grants]], [[Token Holder Value]], [[Financial Transparency]], [[Open Source Development]]
-  - uses:: [[Safe Multisig]], [[Snapshot Voting]], [[Aave]], [[Compound]], [[Pendle Finance]], [[Lido Finance]], [[Coinshift]], [[Llama]], [[Karpatkey]], [[DeepDAO]], [[Tres Finance]], [[Dune Analytics]], [[Nansen]], [[Gitcoin]]
+  - uses:: [[Safe Multisig]], [[Snapshot Voting]], [[Aave]], [[Compound]], [[Pendle Finance]], [[Lido Finance]], [[Coinshift]], [[Meta Llama Model Family]], [[Karpatkey]], [[DeepDAO]], [[Tres Finance]], [[Dune Analytics]], [[Nansen]], [[Gitcoin]]
   - contrasts-with:: [[Traditional Corporate Treasury]], [[Central Bank Reserve Management]], [[Sovereign Wealth Fund]], [[Hedge Fund]], [[Private Equity Fund]], [[Mutual Fund]]
   - related-to:: [[MicroStrategy]], [[MakerDAO]], [[Uniswap]], [[Optimism]], [[ENS]], [[OlympusDAO]], [[Gitcoin]], [[Enzyme Finance]], [[Metaplanet]], [[Arbitrum]], [[Aave]]
   - standardized-by:: [[FASB ASU 2023-08]], [[SEC Form 8-K]], [[MiCA Regulation]], [[GAAP Fair Value Accounting]], [[DAO Legal Frameworks]], [[AICPA Digital Asset Practice Aid 2022]]

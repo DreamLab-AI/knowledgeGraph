@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Financial Services]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - requires:: [[Financial Services]]
   - enables:: [[Anti-Money Laundering]]
 

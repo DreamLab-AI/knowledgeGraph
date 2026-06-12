@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:26a350a4a1d8ce7e689527fde96b7d734669fe70d4b328ada23a669aeb310b24",
+  "title": "Octave Immersive Research Facility",
+  "slug": "octave-immersive-research-facility",
+  "public": true,
+  "classIri": "urn:ngm:class:octave-immersive-research-facility",
+  "domain": "infrastructure",
+  "definition": "A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "national-industrial-centre-for-virtual-environments",
+      "label": "National Industrial Centre for Virtual Environments"
+    },
+    {
+      "slug": "telethrone",
+      "label": "Telethrone"
+    }
+  ],
+  "backlinks": []
+}

@@ -120,7 +120,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:linked:open-ai",
       "kind": "ResolvedLink"
     },
@@ -155,7 +155,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Text-to-Image Generation]]
-  - bridges-to:: [[OpenAI]], [[Generative AI]]
+  - bridges-to:: [[OpenAI Research Organisation]], [[Generative AI]]
   - requires:: [[Diffusion Model]], [[Language Model]]
   - enables:: [[Image Generation]]
 

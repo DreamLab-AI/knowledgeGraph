@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:c9520118c9723e579af605085fb70bafe5027520752544b465da3782c4927e74",
+  "title": "Blender 3D Creation Suite",
+  "slug": "blender-3d-creation-suite",
+  "public": true,
+  "classIri": "urn:ngm:class:blender-3d-creation-suite-3d-creation-suite",
+  "domain": "metaverse",
+  "definition": "Blender is a free and open-source 3D creation suite supporting modelling, animation, rendering, and related workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    }
+  ],
+  "backlinks": []
+}

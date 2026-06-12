@@ -9,7 +9,7 @@
 - ### Relationships
   - is-subclass-of:: [[Display Hardware]]
   - requires:: [[Optical Systems]], [[Pose Tracking]], [[Display Technology]]
-  - enables:: [[Augmented Reality Experiences]], [[Mixed Reality Interaction]], [[Spatial Computing]]
+  - enables:: [[Augmented Reality Experiences]], [[Mixed Reality Interaction]], [[Spatial Computing Paradigm]]
   - bridges-to:: [[Sensor Input]] (rb)
 
 - ### Content

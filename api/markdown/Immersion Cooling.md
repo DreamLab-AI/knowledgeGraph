@@ -25,8 +25,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}],
-    "supports": [{"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"}]
+    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}],
+    "supports": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}]
   },
   "quality": 0.72
 }

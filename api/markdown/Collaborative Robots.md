@@ -55,7 +55,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-robots",
+  "@id": "urn:ngm:class:collaborative-systems-modality-robots",
   "@type": "Class",
   "label": "Collaborative Robots",
   "definition": "Collaborative robots, or cobots, are robots designed to work safely alongside humans within a shared workspace.",

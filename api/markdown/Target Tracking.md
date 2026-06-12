@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:spatial-tracking-system", "label": "Spatial Tracking System"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-tracking-and-slam-capture", "label": "Human tracking and SLAM capture"},
+      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human tracking and SLAM capture"},
       {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
     ]
   },
@@ -45,9 +45,9 @@ public:: true
 ```
 
 - ### Definition
-  - Target Tracking estimates the state of moving objects from noisy sensor sequences, combining [[Object Detection]] with recursive estimation algorithms and [[Sensor Fusion]] to maintain identities over time in applications from aerospace to [[Human tracking and SLAM capture]].
+  - Target Tracking estimates the state of moving objects from noisy sensor sequences, combining [[Object Detection]] with recursive estimation algorithms and [[Sensor Fusion]] to maintain identities over time in applications from aerospace to [[Human Pose SLAM Capture System]].
 - ### Relationships
-  - Target Tracking builds on [[Object Detection]] to associate detections across frames and maintain consistent object identities, using [[Sensor Fusion]] to combine radar, LiDAR, and [[Computer Vision]] inputs for robust state estimation. [[Trajectory Tracking]] methods propagate state predictions between observations, while [[Spatial Tracking System]] infrastructure handles coordinate transformations. The discipline enables [[Human tracking and SLAM capture]] in robotics and spatial computing, and [[Anomaly Detection]] in surveillance by flagging tracks that deviate from expected [[Motion Tracking]] patterns.
+  - Target Tracking builds on [[Object Detection]] to associate detections across frames and maintain consistent object identities, using [[Sensor Fusion]] to combine radar, LiDAR, and [[Computer Vision]] inputs for robust state estimation. [[Trajectory Tracking]] methods propagate state predictions between observations, while [[Spatial Tracking System]] infrastructure handles coordinate transformations. The discipline enables [[Human Pose SLAM Capture System]] in robotics and spatial computing, and [[Anomaly Detection]] in surveillance by flagging tracks that deviate from expected [[Motion Tracking]] patterns.
 - ### Content
   - The foundations of modern target tracking were laid by Rudolf Kálmán, whose 1960 paper introduced the recursive linear state estimator now known as the Kalman filter. The Kalman filter provides the optimal minimum-mean-square-error estimate of a linear dynamical system's state given Gaussian noise, and its extended and unscented variants handle nonlinear systems. Multi-object tracking extends these principles with data association algorithms — including the Hungarian algorithm, Joint Probabilistic Data Association (JPDA), and Multiple Hypothesis Tracking (MHT) — that resolve which detection corresponds to which track.
 

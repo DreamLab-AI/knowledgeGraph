@@ -76,7 +76,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
@@ -145,7 +145,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - uses: [[Logic Programming]], [[Machine Learning]]
+  - uses: [[Logic Programming]], [[Machine Learning Discipline]]
   - enables: [[Deep Learning]], [[AI-Augmented Software Engineering]]
   - relatedTo: [[Symbolic AI]], [[Software Engineering]]
 

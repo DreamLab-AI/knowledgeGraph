@@ -24,7 +24,7 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:artificial-superintelligence", "label": "Artificial Superintelligence"}
+    {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "Artificial Superintelligence"}
   ],
   "relations": {
     "relatedTo": [

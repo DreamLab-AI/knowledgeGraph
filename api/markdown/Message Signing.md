@@ -28,7 +28,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"}
     ],
     "enables": [
@@ -38,7 +38,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ]
   },
   "quality": 0.8

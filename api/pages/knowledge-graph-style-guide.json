@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:ab69c9ecdf8e3bf571d0badcf4ffa2322fbea86f00dc5ec717f38588d1baf6af",
+  "title": "Knowledge Graph Style Guide",
+  "slug": "knowledge-graph-style-guide",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-graph-style-guide",
+  "domain": "infrastructure",
+  "definition": "A Style Guide is a normative document specifying authoring conventions \u2014 voice, tone, markup syntax, citation format, and structural patterns \u2014 for consistent content creation within a knowledge graph or publication system. In the NarrativeGoldmine context it captures Logseq markdown conventions, UK English preferences, and the analytical-conversational register used throughout the graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "block-title",
+      "label": "block title"
+    },
+    {
+      "slug": "reference",
+      "label": "reference"
+    }
+  ],
+  "backlinks": []
+}

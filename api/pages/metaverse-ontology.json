@@ -38,7 +38,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -112,10 +112,6 @@
   ],
   "backlinks": [
     {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
-    },
-    {
       "slug": "definitions-and-frameworks-for-metaverse",
       "label": "Definitions and frameworks for Metaverse"
     },
@@ -138,6 +134,10 @@
     {
       "slug": "machine-translation",
       "label": "Machine Translation"
+    },
+    {
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
     },
     {
       "slug": "pre-training",

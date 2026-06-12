@@ -33,7 +33,7 @@
         "label": "Safetensors"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       }
     ]

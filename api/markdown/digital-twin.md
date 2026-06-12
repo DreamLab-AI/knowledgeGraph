@@ -8,7 +8,7 @@
 - ### Relationships
   - has-part:: [[Virtual Replica]], [[Real-Time Synchronisation]], [[3D Model]], [[IoT Sensor Data]], [[Simulation Engine]], [[Control Interface]]
   - enables:: [[Predictive Maintenance]], [[Process Optimisation]], [[Remote Monitoring]], [[Virtual Commissioning]], [[Collaborative Design]]
-  - requires:: [[Data Aggregation]], [[3D Visualisation]], [[IoT Infrastructure]], [[Machine Learning]]
+  - requires:: [[Data Aggregation]], [[3D Visualisation]], [[IoT Infrastructure]], [[Machine Learning Discipline]]
   - bridges-to:: [[Robotics]] (domain: rb), [[Blockchain]] (domain: bc), [[Artificial Intelligence]] (domain: ai), [[Telecollaboration]] (domain: tc)
 - ### Content
 

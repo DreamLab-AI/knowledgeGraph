@@ -25,13 +25,13 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:midjourney", "label": "Midjourney"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
+    "relatedTo": [{"@id": "urn:ngm:class:midjourney-text-to-image-service", "label": "Midjourney"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
   },
   "quality": 0.72
 }
 ```
 
 - ### Definition
-  - Concept art is visual development that explores design and mood ahead of production, increasingly assisted by tools such as [[Midjourney]] and other [[Proprietary Image Generation]] systems.
+  - Concept art is visual development that explores design and mood ahead of production, increasingly assisted by tools such as [[Midjourney Text-to-Image Service]] and other [[Proprietary Image Generation]] systems.
 - ### Content
   - Traditionally produced by specialist illustrators, concept art establishes silhouette, palette, and atmosphere to guide downstream modelling and art direction. Text-to-image diffusion models accelerate early ideation, though final assets typically require human refinement for consistency and intellectual-property clarity.

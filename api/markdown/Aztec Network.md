@@ -71,7 +71,7 @@ public:: true
         "label": "Aztec Protocol"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -106,7 +106,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -147,7 +147,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Aztec]]
   - bridges-to:: [[Layer 2 Networks]]
-  - requires:: [[Aztec Protocol]], [[Ethereum]]
+  - requires:: [[Aztec Protocol]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Privacy]]
 
 - ### Content

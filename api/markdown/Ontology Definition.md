@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
@@ -155,7 +155,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - uses: [[Knowledge Representation]], [[Semantic Web]]
+  - uses: [[Knowledge Representation]], [[Semantic Web Linked Data Standard]]
   - enables: [[Interoperability]], [[Knowledge Graph]], [[Data Governance]]
   - supports: [[Metaverse Ontology]], [[Identity Management]]
 

@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:player-two-code",
+        "id": "urn:ngm:class:player-two-platform-implementation",
         "label": "Player Two code"
       }
     ],
@@ -85,8 +85,8 @@
   ],
   "backlinks": [
     {
-      "slug": "planning-kanban-currently-broken",
-      "label": "Planning Kanban - currently broken"
+      "slug": "knowledge-graph-kanban-board",
+      "label": "Knowledge Graph Kanban Board"
     },
     {
       "slug": "text-generation",

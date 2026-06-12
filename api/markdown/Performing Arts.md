@@ -60,7 +60,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
@@ -113,7 +113,7 @@ public:: true
   - **uses** [[Virtual Production]] — virtual production pipelines create real-time digital environments for live performance
   - **uses** [[Spatial Audio]] — spatial audio systems reproduce directional sound for immersive audience experiences
   - **enables** [[Immersive Experience]] — performing arts are a primary content type driving immersive experience design
-  - **enables** [[Location Based Experience]] — live performances anchor location-based digital-physical hybrid experiences
+  - **enables** [[Venue-Tethered Immersive Experience]] — live performances anchor location-based digital-physical hybrid experiences
   - **relatedTo** [[Music and Audio]] — music is a core performing art domain
   - **relatedTo** [[Creative Media Domain]] — performing arts sit within the creative media domain
 

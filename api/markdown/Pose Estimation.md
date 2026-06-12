@@ -491,7 +491,7 @@ alias:: PoseEstimation
         "label": "Body Model"
       },
       {
-        "@id": "urn:ngm:class:heatmap-regression",
+        "@id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -631,7 +631,7 @@ alias:: PoseEstimation
         "label": "Direct Coordinate Regression"
       },
       {
-        "@id": "urn:ngm:class:heatmap-regression",
+        "@id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -1264,7 +1264,7 @@ alias:: PoseEstimation
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -1301,7 +1301,7 @@ alias:: PoseEstimation
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[HardwareLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Computer Vision]], [[Perception]], [[Spatial Computing]], [[Human-Computer Interaction]], [[Deep Learning]]
+  - is-subclass-of:: [[Computer Vision]], [[Perception]], [[Spatial Computing Paradigm]], [[Human-Computer Interaction]], [[Deep Learning]]
   - has-part:: [[Keypoint Detection]], [[Skeleton Graph]], [[Body Model]], [[6DoF Estimation]], [[Mesh Recovery]], [[Temporal Smoothing]], [[Heatmap Regression]]
   - requires:: [[Convolutional Neural Networks]], [[Image Features]], [[Camera Calibration]], [[Training Data]], [[Body Prior]], [[Benchmark Dataset]]
   - enables:: [[Motion Capture]], [[Avatar Animation]], [[Robotic Grasping]], [[Sports Analytics]], [[Rehabilitation Monitoring]], [[Augmented Reality]], [[Action Recognition]], [[Gesture Recognition]]

@@ -11,7 +11,7 @@
 - ### Relationships
   - bridges-to:: [[Sensor Input]] (rb)
   - has-part:: [[AR Display Device]], [[Spatial Tracking System]], [[Digital Content Overlay]], [[Environmental Sensor]]
-  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing]]
+  - is-part-of:: [[Extended Reality (XR)]], [[Spatial Computing Paradigm]]
   - requires:: [[Computer Vision]], [[Real-Time Rendering]], [[Spatial Mapping]], [[Device Camera]]
   - enables:: [[Spatial Anchoring]], [[Object Recognition]], [[Contextual Information Overlay]], [[Interactive Holograms]]
   - depends-on:: [[6DOF Tracking]], [[SLAM]], [[Depth Sensing]], [[Environmental Understanding]]

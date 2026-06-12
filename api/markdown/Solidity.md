@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
       {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
     ],
@@ -52,10 +52,10 @@ public:: true
 ```
 
 - ### Definition
-  - Solidity is the primary high-level language for writing [[Smart Contract]]s on [[Ethereum]] and EVM-compatible blockchains, compiling to bytecode that executes in the deterministic, sandboxed environment of the [[Virtual Machine]].
+  - Solidity is the primary high-level language for writing [[Smart Contract]]s on [[Ethereum Smart Contract Platform]] and EVM-compatible blockchains, compiling to bytecode that executes in the deterministic, sandboxed environment of the [[Virtual Machine]].
 
 - ### Relationships
-  - Solidity is a subclass of [[Programming Language]] and is the foundational tool for creating [[Smart Contract]]s on [[Ethereum]] and chains that share the EVM instruction set (Polygon, BNB Chain, Avalanche C-Chain, etc.). It enables the construction of [[Decentralised Finance]] protocols, [[DAO]] governance systems, [[NFT]] collections, and fungible [[Token]] standards including [[ERC-20]] and [[ERC-721]]. The [[Gas]] metering system of the EVM directly shapes Solidity programming patterns, incentivising storage minimisation and loop avoidance. Historical [[Vulnerability]] classes (reentrancy, integer overflow, unchecked external calls) drove both language evolution and the adoption of [[Formal Verification]] tooling.
+  - Solidity is a subclass of [[Programming Language]] and is the foundational tool for creating [[Smart Contract]]s on [[Ethereum Smart Contract Platform]] and chains that share the EVM instruction set (Polygon, BNB Chain, Avalanche C-Chain, etc.). It enables the construction of [[Decentralised Finance]] protocols, [[DAO]] governance systems, [[NFT]] collections, and fungible [[Token]] standards including [[ERC-20]] and [[ERC-721]]. The [[Gas]] metering system of the EVM directly shapes Solidity programming patterns, incentivising storage minimisation and loop avoidance. Historical [[Vulnerability]] classes (reentrancy, integer overflow, unchecked external calls) drove both language evolution and the adoption of [[Formal Verification]] tooling.
 
 - ### Content
   - Solidity was conceived in 2014 by Gavin Wood, Christian Reitwiessner, and others at the Ethereum project as a language whose syntax would feel familiar to JavaScript and C++ developers while mapping cleanly onto the EVM's stack-based execution model. Its first stable release appeared in 2016 and the language has undergone significant evolution since, with version 0.8.x (released 2020) introducing checked arithmetic by default, eliminating a major class of integer overflow bugs that had plagued earlier contracts.

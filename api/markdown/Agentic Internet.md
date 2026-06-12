@@ -1368,7 +1368,7 @@ public:: true
         "label": "Elicitation"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -1398,7 +1398,7 @@ public:: true
         "label": "Embeddings"
       },
       {
-        "@id": "urn:ngm:class:google-gemini",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini",
         "label": "Google Gemini"
       },
       {
@@ -1406,7 +1406,7 @@ public:: true
         "label": "Meta Llama"
       },
       {
-        "@id": "urn:ngm:class:open-ai-gpt",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-gpt",
         "label": "OpenAI GPT"
       },
       {
@@ -1418,7 +1418,7 @@ public:: true
         "label": "Vector Database"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -2213,7 +2213,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Llama]]",
+      "raw": "[[Meta Llama Model Family]]",
       "resolved": "urn:visionflow:linked:llama",
       "kind": "StubLink"
     },
@@ -2918,7 +2918,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -2928,7 +2928,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -2963,12 +2963,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -3008,7 +3008,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -3050,7 +3050,7 @@ public:: true
 
 
 - ### Definition
-  - **Agentic Internet** is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (human users, enterprises, other agents); operationally instantiated through a 2024-2026 stack comprising tool-and-data connection protocols ([[Model Context Protocol]] released by [[Anthropic]] 25 November 2024 as 'USB-C for AI', adopted by [[OpenAI]] March 2025, [[Google DeepMind]] April 2025, [[Microsoft]] Copilot Studio, [[Replit]], [[Sourcegraph]], [[Block]], [[Apollo]], with 2025-06-18 protocol revision adding elicitation, structured outputs and OAuth 2.1 authorisation), agent-to-agent interoperability ([[A2A Protocol]] announced by [[Google]] 9 April 2025 at Cloud Next with 50+ launch partners spanning [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]], [[Workday]], using HTTP+JSON-RPC+Server-Sent Events with AgentCard capability discovery and Task lifecycle), computer-using agents ([[Anthropic Computer Use]] 22 October 2024 with Claude 3.5 Sonnet new scoring 14.9% on OSWorld vs 7.7% prior SOTA, [[OpenAI Operator]] 23 January 2025 at $200/month Pro tier subsequently unified into [[ChatGPT Agent]] 17 July 2025, [[Google Project Mariner]] December 2024 reaching 83.5% on WebVoyager, [[Apple App Intents]] expanded WWDC 2024 enabling Siri/Shortcuts agentic flows in iOS 18.1+), enterprise agent platforms ([[Salesforce Agentforce]] 12 September 2024 → Agentforce 2.0 December 2024 → 3.0 June 2025 on [[Atlas Reasoning Engine]] with originally $2-per-conversation then Flex Credits pricing, [[Microsoft Copilot Studio]] agents, [[IBM watsonx Orchestrate]], [[ServiceNow AI Agents]], [[Glean Agents]]), open-source agent collectives ([[AGNTCY]] launched 9 March 2025 by [[Cisco]], [[LangChain]] and [[Galileo]] later joined by [[Google Cloud]], [[ServiceNow]], [[Dell]], [[Red Hat]] publishing the [[Agent Connect Protocol]], [[Open Agent Schema Framework]] and Agent Directory Service), decentralised agent economies ([[Fetch.ai]] merged with [[SingularityNET]] and [[Ocean Protocol]] March 2024 forming [[Artificial Superintelligence Alliance]] with native FET token, uAgents framework, DeltaV agent marketplace; [[Bittensor]] subnets; [[Ritual]] and [[Gensyn]] for verifiable inference) and agentic commerce identity ([[Stripe Agent Toolkit]] April 2024 → Stripe Agent SDK February 2025 with restricted-use keys, [[Visa Intelligent Commerce]] 30 April 2025 with Anthropic/IBM/Microsoft/Mistral/OpenAI/Perplexity/Samsung/Stripe partnerships, [[Mastercard Agent Pay]] 29 April 2025 with Microsoft/Anthropic and programmable agentic tokens, [[PayPal Agent Toolkit]], [[Coinbase AgentKit]]); fundamentally restructuring the web by replacing human-mediated browse-and-click interaction with API-to-API agent flows where capability discovery, authorisation, payment and provenance are first-class protocol features rather than UI conventions, with material consequences for [[SEO]] (publisher referral traffic declining 28% YoY 2024 per SimilarWeb, AI Overviews reducing informational-query clicks 30-50% per Pew Research July 2025), [[digital advertising]] (zero-click search displacing ad inventory), [[web economics]] (content-licensing deals such as [[Reddit]]-Google $60M/year February 2024 and [[News Corp]]-OpenAI $250M May 2024 partially internalising the externality), and shopping behaviour (Adobe Analytics holiday 2024 reporting 1,300% YoY growth in generative-AI-sourced shopping traffic reaching ~8% of e-commerce visits by Q4 2025; Anthropic Economic Index March 2025 documenting 24-36% of Claude.ai tasks involve agentic workflows); requiring novel trust and identity primitives ([[Decentralized Identifiers]] per W3C Recommendation 19 July 2022 with method-specific DID Documents, [[Verifiable Credentials]] Data Model 2.0 W3C Recommendation May 2025 for delegated agent authority, [[OAuth 2.1]] draft-ietf-oauth-v2-1-12 with PKCE for confidential clients, [[capability tokens]] scoped to specific tool calls, agent-specific [[OpenID for Verifiable Credentials]], [[Trust over IP Foundation]] governance frameworks); exposed to a new threat surface including [[indirect prompt injection]] (Greshake et al. February 2023 demonstrating attacker-controlled documents subverting agent instructions), [[tool poisoning]] (Invariant Labs April 2025 cataloguing MCP-specific attacks where malicious servers exfiltrate via hidden tool instructions), [[confused deputy]] attacks where agents abuse delegated authority on attacker-controlled inputs, supply-chain compromise of MCP server registries, [[data exfiltration]] via tool-chain side channels and prompt-jailbreak amplification across multi-agent workflows; contested across architectural ideologies between the dominant centralised platform-vendor stack (Anthropic+OpenAI+Google+Microsoft+Salesforce with proprietary model weights, OAuth-style federated identity and fiat-rail tokenised payments) and a [[Web3]]-rooted decentralised alternative (ASI Alliance, Bittensor, Ritual, Gensyn, [[Nostr]]+[[Bitcoin]]+[[Lightning Network]] stacks with cryptographic self-sovereign identity and on-chain micropayments), each making distinct claims about censorship resistance, economic sovereignty, regulatory compliance and developer ergonomics; with [[UK Context]] including [[Imperial College Web Science]] (Wendy Hall, Imperial Data Science Institute), [[UCL Interaction Centre]] (AI-mediated communication, conversational agents), [[Edinburgh Informatics]] (multi-agent systems heritage via Michael Wooldridge, Robin Cohen, Alex Lascarides dialogue agents; ILCC/ANC/AIAI institutes), [[BBC R&D]] (Responsible AI Principles December 2024 governing agents acting on behalf of audience, Object-Based Media + agent-mediated personalisation), [[GDS Agent Strategy]] (Government Digital Service Discovery on agentic services 2024-2025, AI Opportunities Action Plan January 2025 led by Matt Clifford with AI-in-Government workstream, [[AISI]] Inspect framework for evaluating agent capabilities), and Northern English industrial hubs (Manchester AI cluster, Leeds, Sheffield AMRC, Newcastle Digital Catapult); representing the most significant restructuring of the web since the mobile transition c.2008-2012, on a timeline where 2024 introduced the protocol substrate, 2025 saw enterprise productisation, and 2026-2030 is projected to see agent-to-agent transactions representing 15-25% of B2B commerce volume in technology-forward sectors with cumulative annual agentic-commerce flows reaching $1.5-3T globally by 2030.
+  - **Agentic Internet** is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (human users, enterprises, other agents); operationally instantiated through a 2024-2026 stack comprising tool-and-data connection protocols ([[Model Context Protocol]] released by [[Anthropic]] 25 November 2024 as 'USB-C for AI', adopted by [[OpenAI Research Organisation]] March 2025, [[Google DeepMind]] April 2025, [[Microsoft]] Copilot Studio, [[Replit]], [[Sourcegraph]], [[Block]], [[Apollo]], with 2025-06-18 protocol revision adding elicitation, structured outputs and OAuth 2.1 authorisation), agent-to-agent interoperability ([[A2A Protocol]] announced by [[Google AI Technology Corporation]] 9 April 2025 at Cloud Next with 50+ launch partners spanning [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]], [[Workday]], using HTTP+JSON-RPC+Server-Sent Events with AgentCard capability discovery and Task lifecycle), computer-using agents ([[Anthropic Computer Use]] 22 October 2024 with Claude 3.5 Sonnet new scoring 14.9% on OSWorld vs 7.7% prior SOTA, [[OpenAI Operator]] 23 January 2025 at $200/month Pro tier subsequently unified into [[ChatGPT Agent]] 17 July 2025, [[Google Project Mariner]] December 2024 reaching 83.5% on WebVoyager, [[Apple App Intents]] expanded WWDC 2024 enabling Siri/Shortcuts agentic flows in iOS 18.1+), enterprise agent platforms ([[Salesforce Agentforce]] 12 September 2024 → Agentforce 2.0 December 2024 → 3.0 June 2025 on [[Atlas Reasoning Engine]] with originally $2-per-conversation then Flex Credits pricing, [[Microsoft Copilot Studio]] agents, [[IBM watsonx Orchestrate]], [[ServiceNow AI Agents]], [[Glean Agents]]), open-source agent collectives ([[AGNTCY]] launched 9 March 2025 by [[Cisco]], [[LangChain]] and [[Galileo]] later joined by [[Google Cloud]], [[ServiceNow]], [[Dell]], [[Red Hat]] publishing the [[Agent Connect Protocol]], [[Open Agent Schema Framework]] and Agent Directory Service), decentralised agent economies ([[Fetch.ai]] merged with [[SingularityNET]] and [[Ocean Protocol]] March 2024 forming [[Artificial Superintelligence Alliance]] with native FET token, uAgents framework, DeltaV agent marketplace; [[Bittensor]] subnets; [[Ritual]] and [[Gensyn]] for verifiable inference) and agentic commerce identity ([[Stripe Agent Toolkit]] April 2024 → Stripe Agent SDK February 2025 with restricted-use keys, [[Visa Intelligent Commerce]] 30 April 2025 with Anthropic/IBM/Microsoft/Mistral/OpenAI/Perplexity/Samsung/Stripe partnerships, [[Mastercard Agent Pay]] 29 April 2025 with Microsoft/Anthropic and programmable agentic tokens, [[PayPal Agent Toolkit]], [[Coinbase AgentKit]]); fundamentally restructuring the web by replacing human-mediated browse-and-click interaction with API-to-API agent flows where capability discovery, authorisation, payment and provenance are first-class protocol features rather than UI conventions, with material consequences for [[SEO]] (publisher referral traffic declining 28% YoY 2024 per SimilarWeb, AI Overviews reducing informational-query clicks 30-50% per Pew Research July 2025), [[digital advertising]] (zero-click search displacing ad inventory), [[web economics]] (content-licensing deals such as [[Reddit]]-Google $60M/year February 2024 and [[News Corp]]-OpenAI $250M May 2024 partially internalising the externality), and shopping behaviour (Adobe Analytics holiday 2024 reporting 1,300% YoY growth in generative-AI-sourced shopping traffic reaching ~8% of e-commerce visits by Q4 2025; Anthropic Economic Index March 2025 documenting 24-36% of Claude.ai tasks involve agentic workflows); requiring novel trust and identity primitives ([[Decentralized Identifiers]] per W3C Recommendation 19 July 2022 with method-specific DID Documents, [[Verifiable Credentials]] Data Model 2.0 W3C Recommendation May 2025 for delegated agent authority, [[OAuth 2.1]] draft-ietf-oauth-v2-1-12 with PKCE for confidential clients, [[capability tokens]] scoped to specific tool calls, agent-specific [[OpenID for Verifiable Credentials]], [[Trust over IP Foundation]] governance frameworks); exposed to a new threat surface including [[indirect prompt injection]] (Greshake et al. February 2023 demonstrating attacker-controlled documents subverting agent instructions), [[tool poisoning]] (Invariant Labs April 2025 cataloguing MCP-specific attacks where malicious servers exfiltrate via hidden tool instructions), [[confused deputy]] attacks where agents abuse delegated authority on attacker-controlled inputs, supply-chain compromise of MCP server registries, [[data exfiltration]] via tool-chain side channels and prompt-jailbreak amplification across multi-agent workflows; contested across architectural ideologies between the dominant centralised platform-vendor stack (Anthropic+OpenAI+Google+Microsoft+Salesforce with proprietary model weights, OAuth-style federated identity and fiat-rail tokenised payments) and a [[Web3]]-rooted decentralised alternative (ASI Alliance, Bittensor, Ritual, Gensyn, [[Nostr]]+[[Bitcoin Proof-of-Work Protocol]]+[[Lightning Network]] stacks with cryptographic self-sovereign identity and on-chain micropayments), each making distinct claims about censorship resistance, economic sovereignty, regulatory compliance and developer ergonomics; with [[UK Context]] including [[Imperial College Web Science]] (Wendy Hall, Imperial Data Science Institute), [[UCL Interaction Centre]] (AI-mediated communication, conversational agents), [[Edinburgh Informatics]] (multi-agent systems heritage via Michael Wooldridge, Robin Cohen, Alex Lascarides dialogue agents; ILCC/ANC/AIAI institutes), [[BBC R&D]] (Responsible AI Principles December 2024 governing agents acting on behalf of audience, Object-Based Media + agent-mediated personalisation), [[GDS Agent Strategy]] (Government Digital Service Discovery on agentic services 2024-2025, AI Opportunities Action Plan January 2025 led by Matt Clifford with AI-in-Government workstream, [[AISI]] Inspect framework for evaluating agent capabilities), and Northern English industrial hubs (Manchester AI cluster, Leeds, Sheffield AMRC, Newcastle Digital Catapult); representing the most significant restructuring of the web since the mobile transition c.2008-2012, on a timeline where 2024 introduced the protocol substrate, 2025 saw enterprise productisation, and 2026-2030 is projected to see agent-to-agent transactions representing 15-25% of B2B commerce volume in technology-forward sectors with cumulative annual agentic-commerce flows reaching $1.5-3T globally by 2030.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AgenticInternet
@@ -3067,7 +3067,7 @@ public:: true
   - implements:: [[Function Calling]], [[Tool Schema]], [[JSON-RPC]], [[Server-Sent Events]], [[Capability Discovery]], [[Task Lifecycle Management]], [[Streaming Responses]], [[Elicitation]]
   - depends-on:: [[HTTP]], [[TLS]], [[JSON]], [[OAuth]], [[DNS]], [[REST]], [[WebSockets]], [[Public Key Infrastructure]]
   - supports:: [[Customer Service Automation]], [[Software Engineering Agents]], [[Research Agents]], [[Shopping Agents]], [[Booking Agents]], [[Procurement Agents]], [[Personal Assistants]], [[Coding Copilots]]
-  - uses:: [[Anthropic Claude]], [[OpenAI GPT]], [[Google Gemini]], [[Meta Llama]], [[Mistral]], [[Embeddings]], [[Vector Database]], [[Retrieval-Augmented Generation]]
+  - uses:: [[Constitutional AI Language Model Family]], [[OpenAI GPT]], [[Google Gemini]], [[Meta Llama]], [[Mistral]], [[Embeddings]], [[Vector Database]], [[Retrieval-Augmented Generation]]
   - contrasts-with:: [[Web 2.0 SaaS]], [[Static Web]], [[Walled Garden]], [[Browser-Centric Internet]], [[Human-in-the-Loop Workflow]], [[Web3 Blockchain Agents]]
   - related-to:: [[Agentic Economy]], [[Internet of Agents]], [[Death of the Internet]], [[Zero-Click Search]], [[AI Search]], [[AI Agents]], [[Autonomous Agents]], [[Multi-Agent Systems]], [[Computer Use]], [[Browser Use]]
   - standardized-by:: [[Anthropic]], [[Linux Foundation]], [[W3C]], [[IETF]], [[AGNTCY]], [[OpenID Foundation]], [[Trust over IP Foundation]]
@@ -3207,7 +3207,7 @@ public:: true
 	  - **Transport**: HTTP/2 + TLS + Server-Sent Events for streaming; WebSockets for bidirectional flows; gRPC for high-performance internal agent fabrics
 	  - **Identity and Authorisation**: OAuth 2.1 with PKCE for delegated user-to-agent authority; DIDs (W3C 2022 Rec) and Verifiable Credentials (W3C VC Data Model 2.0 Rec May 2025) for self-sovereign agent identity; capability tokens scoped to specific tool calls; Stripe-style restricted-use API keys for payment authority
 	  - **Protocols**: MCP for agent↔tool/data connections; A2A for agent↔agent collaboration; Apple App Intents for OS-mediated app actions; OpenAPI/JSON-Schema for tool description; OpenAI function-calling and Anthropic tool-use as model-native variants
-	  - **Models and Reasoning**: Frontier LLMs ([[Claude]] family, [[GPT]] family, [[Gemini]], [[Llama]]) with tool-calling fine-tuning; reasoning models ([[o1]]/[[o3]], Claude with extended thinking, [[DeepSeek R1]], [[Gemini Thinking]]); [[Retrieval-Augmented Generation]] grounding
+	  - **Models and Reasoning**: Frontier LLMs ([[Claude]] family, [[GPT]] family, [[Gemini Multimodal Language Model]], [[Meta Llama Model Family]]) with tool-calling fine-tuning; reasoning models ([[o1]]/[[o3]], Claude with extended thinking, [[DeepSeek R1]], [[Gemini Thinking]]); [[Retrieval-Augmented Generation]] grounding
 	  - **Memory**: Vector databases ([[Pinecone]], [[Weaviate]], [[Qdrant]], [[Chroma]], [[pgvector]]); session/episodic memory; semantic long-term memory; tool-result caching
 	  - **Orchestration**: [[LangGraph]], [[LlamaIndex]] Workflows, [[CrewAI]], [[AutoGen]], [[OpenAI Swarm]] (→ Agents SDK March 2025), [[Mastra]], [[Pydantic AI]], [[Anthropic Multi-Agent Research]] (May 2025)
 	  - **Application and Commerce**: Vertical agent applications (shopping, booking, customer service, software engineering); agentic payment rails ([[Stripe]] Agent SDK, [[Visa Intelligent Commerce]], [[Mastercard Agent Pay]], [[PayPal]], [[Coinbase AgentKit]])
@@ -3218,11 +3218,11 @@ public:: true
 
 	### Model Context Protocol (MCP)
 
-	[[Anthropic]] announced MCP on **25 November 2024** as 'an open standard for connecting AI assistants to the systems where data lives'. The framing 'USB-C for AI' captures the design intent: a single connector replacing N×M point integrations between models and tools/data sources. The protocol is JSON-RPC 2.0 over stdio or HTTP+SSE transports, defining three primitive types: **resources** (read-only data exposed by a server), **tools** (executable functions the server offers) and **prompts** (parameterised templates). Reference implementations in [[Python]] and [[TypeScript]] were published alongside the spec. By Q1 2025 official adopters included [[OpenAI]] (announced March 2025 alongside Agents SDK), [[Google DeepMind]] (April 2025), [[Microsoft Copilot Studio]], [[Replit]], [[Sourcegraph]], [[Block]] (Cash App parent) and [[Apollo]]. The **2025-06-18 protocol revision** added elicitation (server-initiated clarification requests to the user), structured outputs, OAuth 2.1 authorisation flows and improved schema negotiation. The MCP server ecosystem grew from ~50 community servers in December 2024 to over 5,000 by Q1 2026 spanning databases ([[PostgreSQL]], [[Snowflake]], [[BigQuery]]), SaaS APIs ([[Slack]], [[Linear]], [[GitHub]], [[Notion]], [[Salesforce]]), filesystems and developer tooling. Anthropic operates an official MCP registry; community alternatives (Smithery, Glama, MCP.so) provide discovery and one-click installation.
+	[[Anthropic]] announced MCP on **25 November 2024** as 'an open standard for connecting AI assistants to the systems where data lives'. The framing 'USB-C for AI' captures the design intent: a single connector replacing N×M point integrations between models and tools/data sources. The protocol is JSON-RPC 2.0 over stdio or HTTP+SSE transports, defining three primitive types: **resources** (read-only data exposed by a server), **tools** (executable functions the server offers) and **prompts** (parameterised templates). Reference implementations in [[Python]] and [[TypeScript]] were published alongside the spec. By Q1 2025 official adopters included [[OpenAI Research Organisation]] (announced March 2025 alongside Agents SDK), [[Google DeepMind]] (April 2025), [[Microsoft Copilot Studio]], [[Replit]], [[Sourcegraph]], [[Block]] (Cash App parent) and [[Apollo]]. The **2025-06-18 protocol revision** added elicitation (server-initiated clarification requests to the user), structured outputs, OAuth 2.1 authorisation flows and improved schema negotiation. The MCP server ecosystem grew from ~50 community servers in December 2024 to over 5,000 by Q1 2026 spanning databases ([[PostgreSQL]], [[Snowflake]], [[BigQuery]]), SaaS APIs ([[Slack]], [[Linear]], [[GitHub]], [[Notion]], [[Salesforce]]), filesystems and developer tooling. Anthropic operates an official MCP registry; community alternatives (Smithery, Glama, MCP.so) provide discovery and one-click installation.
 
 	### Agent-to-Agent (A2A) Protocol
 
-	[[Google]] announced [[A2A]] at Cloud Next on **9 April 2025** as the cross-vendor complement to MCP: where MCP connects an agent to tools/data, A2A connects agents to other agents. Launch partners numbered 50+ including [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]] and [[Workday]]. The wire format is HTTP+JSON-RPC with Server-Sent Events for streaming and webhook callbacks for push notifications on long-running tasks. Core abstractions: **AgentCard** (a JSON document describing an agent's capabilities, authentication requirements and contact endpoints, served at a well-known URL pattern `/.well-known/agent.json` analogous to robots.txt), **Task** (a stateful unit of work with lifecycle states submitted/working/input-required/completed/canceled/failed/unknown), **Message** and **Part** types for multimodal content exchange, and **Push Notification Config** for asynchronous completion. The protocol intentionally avoids prescribing agent internals: an agent can be a 7B open-weights model, Claude, GPT-4o or a deterministic rule engine, as long as it speaks A2A over the wire. A2A and MCP are complementary; production agent systems typically run MCP servers for tool access and expose A2A endpoints for peer collaboration.
+	[[Google AI Technology Corporation]] announced [[A2A]] at Cloud Next on **9 April 2025** as the cross-vendor complement to MCP: where MCP connects an agent to tools/data, A2A connects agents to other agents. Launch partners numbered 50+ including [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]] and [[Workday]]. The wire format is HTTP+JSON-RPC with Server-Sent Events for streaming and webhook callbacks for push notifications on long-running tasks. Core abstractions: **AgentCard** (a JSON document describing an agent's capabilities, authentication requirements and contact endpoints, served at a well-known URL pattern `/.well-known/agent.json` analogous to robots.txt), **Task** (a stateful unit of work with lifecycle states submitted/working/input-required/completed/canceled/failed/unknown), **Message** and **Part** types for multimodal content exchange, and **Push Notification Config** for asynchronous completion. The protocol intentionally avoids prescribing agent internals: an agent can be a 7B open-weights model, Claude, GPT-4o or a deterministic rule engine, as long as it speaks A2A over the wire. A2A and MCP are complementary; production agent systems typically run MCP servers for tool access and expose A2A endpoints for peer collaboration.
 
 	### Computer-Using Agents
 
@@ -3256,14 +3256,14 @@ public:: true
 	  - **[[Bittensor]]**: subnet-based decentralised AI network; subnets host specialised agent capabilities (text generation, translation, prediction markets, validation) competing for TAO emissions.
 	  - **[[Ritual]]**: protocol for verifiable AI inference on-chain; partnerships with Polygon and EigenLayer.
 	  - **[[Gensyn]]** (UK, London/Edinburgh): decentralised compute marketplace for ML training; raised $43M Series A 2023 led by a16z. Demonstrates Northern UK academic-industrial pipeline (Edinburgh, Imperial alumni).
-	  - **[[Nostr]] + [[Bitcoin]] + [[Lightning Network]] stacks**: an alternative architecture (covered extensively in this page's earlier draft) that combines [[Decentralized Identity]] (DIDs over Nostr keypairs), [[censorship-resistant]] communication ([[Nostr relays]]) and [[programmable money]] ([[RGB Protocol]] on Bitcoin with [[client-side validation]]). Materially different trust model from the OAuth+fiat mainstream stack.
+	  - **[[Nostr]] + [[Bitcoin Proof-of-Work Protocol]] + [[Lightning Network]] stacks**: an alternative architecture (covered extensively in this page's earlier draft) that combines [[Decentralized Identity]] (DIDs over Nostr keypairs), [[censorship-resistant]] communication ([[Nostr relays]]) and [[programmable money]] ([[RGB Protocol]] on Bitcoin with [[client-side validation]]). Materially different trust model from the OAuth+fiat mainstream stack.
 
 	### Agentic Commerce Layer
 
 	Payments and commerce identity have emerged as the highest-value layer of the Agentic Internet because they directly monetise agent traffic and require novel risk and authorisation primitives.
 	  - **[[Stripe Agent Toolkit]]** (April 2024): TypeScript and Python SDKs exposing Stripe primitives to LangChain/Vercel AI SDK; **Stripe Agent SDK** (February 2025) generalises to multi-vendor scenarios.
 	  - **[[Stripe]] Restricted Keys for Agents** (Feb 2025): API keys with per-call spending limits, scope-restricted permissions and dedicated agent identity; the closest production analogue to per-agent capability tokens.
-	  - **[[Visa Intelligent Commerce]]** (announced **30 April 2025**): tokenised payment credentials for agentic transactions; launch partners [[Anthropic]], [[IBM]], [[Microsoft]], [[Mistral]], [[OpenAI]], [[Perplexity]], [[Samsung]], [[Stripe]]; pilots in retail and travel.
+	  - **[[Visa Intelligent Commerce]]** (announced **30 April 2025**): tokenised payment credentials for agentic transactions; launch partners [[Anthropic]], [[IBM]], [[Microsoft]], [[Mistral]], [[OpenAI Research Organisation]], [[Perplexity]], [[Samsung]], [[Stripe]]; pilots in retail and travel.
 	  - **[[Mastercard Agent Pay]]** (announced **29 April 2025**): programmable agentic tokens with [[Microsoft]] and [[Anthropic]] as initial partners; first pilots with [[Braintree]] and [[IBM watsonx Orchestrate]] for B2B procurement.
 	  - **[[PayPal Agent Toolkit]]** (April 2025): agent-facing checkout APIs and identity verification.
 	  - **[[Coinbase AgentKit]]** (March 2025): crypto-native agentic payments; CDP smart wallets; x402 protocol (payments over HTTP 402, March 2025) for machine-readable micropayments.

@@ -654,7 +654,7 @@ public:: true
         "label": "Wav2Lip"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -728,7 +728,7 @@ public:: true
         "label": "China Deep Synthesis Provisions"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
@@ -1289,7 +1289,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -1324,7 +1324,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1366,9 +1366,9 @@ public:: true
   - requires:: [[Generative AI]], [[Training Data]], [[GPU Compute]], [[Distribution Platform]], [[Target Identity Reference]]
   - enables:: [[Social Engineering]], [[Election Interference]], [[Romance Fraud]], [[Business Email Compromise]], [[Image-Based Sexual Abuse]], [[Market Manipulation]], [[Reputation Attack]], [[KYC Bypass]]
   - implements:: [[Identity Impersonation]], [[Audiovisual Forgery]], [[Real-Time Puppetry]], [[Voice Cloning Attack]]
-  - depends-on:: [[Generative Adversarial Networks]], [[Diffusion Models]], [[Autoencoder]], [[Text-to-Speech]], [[Face Recognition]], [[Speech Synthesis]], [[Wav2Lip]], [[Stable Diffusion]]
+  - depends-on:: [[Generative Adversarial Networks]], [[Diffusion Models]], [[Autoencoder]], [[Text-to-Speech]], [[Face Recognition]], [[Speech Synthesis]], [[Wav2Lip]], [[Stable Diffusion Image Model]]
   - supports:: [[Disinformation Campaign]], [[Influence Operation]], [[Fraud Ecosystem]], [[Pig-Butchering Scam]], [[Sextortion]]
-  - uses:: [[DeepFaceLab]], [[FaceSwap]], [[ReActor]], [[InstantID]], [[ElevenLabs]], [[HeyGen]], [[Synthesia]], [[D-ID]], [[Wav2Lip]], [[ComfyUI]]
+  - uses:: [[DeepFaceLab]], [[FaceSwap]], [[ReActor]], [[InstantID]], [[ElevenLabs]], [[HeyGen]], [[Synthesia]], [[D-ID]], [[Wav2Lip]], [[Node-Based Diffusion Pipeline Interface]]
   - contrasts-with:: [[Shallowfake]], [[CGI VFX]], [[Authentic UGC]], [[Disclosed Synthetic Media]], [[Consensual Avatar]]
   - related-to:: [[Content Authenticity]], [[Media Forensics]], [[Cyber Security and Cryptography]], [[AI Risks]], [[AI Liability]], [[Algorithmic Bias and Variance]], [[Election Integrity]]
   - standardized-by:: [[C2PA]], [[ISO 22144]], [[EU AI Act Article 50]], [[TAKE IT DOWN Act]], [[China Deep Synthesis Provisions]], [[UK Online Safety Act]], [[CAI Coalition for Content Provenance and Authenticity]]

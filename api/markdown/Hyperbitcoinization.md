@@ -24,12 +24,12 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"}
+    {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
       {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
     ],
@@ -38,10 +38,10 @@ public:: true
       {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-distribution", "label": "Bitcoin Distribution"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
     ]
   },

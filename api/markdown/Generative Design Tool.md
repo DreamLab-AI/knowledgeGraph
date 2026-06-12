@@ -164,7 +164,7 @@ public:: true
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
@@ -182,7 +182,7 @@ public:: true
         "label": "Constraint-Based Design"
       },
       {
-        "@id": "urn:ngm:class:parametric-modeling",
+        "@id": "urn:ngm:class:parametric-design-methodology-modeling",
         "label": "Parametric Modeling"
       }
     ],

@@ -204,7 +204,7 @@ public:: true
         "label": "Knowledge Representation"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -403,7 +403,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -443,7 +443,7 @@ public:: true
   - bridges-to:: [[Sensor Input]]
   - has-part:: [[Environmental Sensing]], [[User State Detection]], [[Situational Inference]], [[Behavioral Adaptation]], [[Context Modeling]]
   - is-part-of:: [[Intelligent Systems]], [[Adaptive Computing]], [[Pervasive Computing]]
-  - requires:: [[Sensor Fusion]], [[Data Processing]], [[Machine Learning]], [[Knowledge Representation]], [[Decision Logic]]
+  - requires:: [[Sensor Fusion]], [[Data Processing]], [[Machine Learning Discipline]], [[Knowledge Representation]], [[Decision Logic]]
   - enables:: [[Personalized Experiences]], [[Adaptive Interfaces]], [[Proactive Services]], [[Ambient Intelligence]], [[Smart Environments]]
   - depends-on:: [[IoT Infrastructure]], [[Edge Computing]], [[Real-Time Analytics]], [[Semantic Reasoning]]
 

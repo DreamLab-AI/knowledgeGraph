@@ -12,13 +12,13 @@
   - is-subclass-of:: [[Image Based Rendering]], [[Computational Photography]], [[Radiance Field]], [[Volumetric Display]], [[Optical Representation]]
   - has-part:: [[Plenoptic Function]], [[Epipolar Plane Image]], [[Sub-aperture Image]], [[Microlens Array]], [[Light Field Camera]], [[Light Field Display]], [[Hogel]]
   - requires:: [[Camera Calibration]], [[Lens and Camera Calibration]], [[Multi-view Geometry]], [[GPU Compute]], [[Ray Parameterisation]], [[Sampling Theory]]
-  - enables:: [[Novel View Synthesis]], [[Depth Estimation]], [[6-DoF VR]], [[Holographic Display]], [[Refocusing Post-capture]], [[Parallax Rendering]], [[Spatial Computing]]
+  - enables:: [[Novel View Synthesis]], [[Depth Estimation]], [[6-DoF VR]], [[Holographic Display]], [[Refocusing Post-capture]], [[Parallax Rendering]], [[Spatial Computing Paradigm]]
   - implements:: [[4D Parameterisation]], [[Ray-plane Intersection]], [[Fourier Slice Theorem]], [[Epipolar Geometry]], [[Microlens Multiplexing]], [[Neural Radiance Fields]]
   - depends-on:: [[Optics]], [[Fourier Analysis]], [[Computational Geometry]], [[Camera Array]], [[Deep Learning]], [[CUDA]]
   - supports:: [[Virtual Reality]], [[Augmented Reality]], [[Medical Imaging]], [[Industrial Metrology]], [[Museum Digitalisation]], [[Broadcast Production]]
   - uses:: [[Convolutional Neural Networks]], [[Gaussian Splatting]], [[Volume Rendering]], [[Lenticular Lens]], [[Wave Optics]], [[Structured Light]]
   - contrasts-with:: [[Stereo Vision]], [[Monocular Depth Estimation]], [[Traditional Photography]], [[2D Display]], [[Point Cloud]]
-  - related-to:: [[Neural Radiance Fields]], [[Holography]], [[Spatial Computing]], [[Computational Holography]], [[Integral Imaging]], [[Plenoptic Camera]]
+  - related-to:: [[Neural Radiance Fields]], [[Holography]], [[Spatial Computing Paradigm]], [[Computational Holography]], [[Integral Imaging]], [[Plenoptic Camera]]
   - standardized-by:: [[SIGGRAPH]], [[IEEE TVCG]], [[ACM TOG]], [[ICCV]], [[CVPR]]
 
 - ### Content

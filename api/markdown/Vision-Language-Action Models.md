@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},
       {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
     ],
     "relatedTo": [

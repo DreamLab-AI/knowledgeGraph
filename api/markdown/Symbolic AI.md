@@ -71,7 +71,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],

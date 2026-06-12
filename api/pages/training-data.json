@@ -102,7 +102,7 @@
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -196,7 +196,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -226,7 +226,7 @@
         "label": "US Copyright Office"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -245,7 +245,7 @@
         "label": "Competition in AI"
       },
       {
-        "id": "urn:ngm:class:copyright",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Copyright"
       },
       {

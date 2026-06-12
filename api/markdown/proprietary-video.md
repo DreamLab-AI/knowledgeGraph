@@ -19,7 +19,7 @@
   - uses:: [[H.264]], [[HEVC]], [[AV1]], [[VP9]], [[Encryption]], [[ARM TrustZone]], [[Hardware and Edge]], [[Content Delivery Network]], [[fMP4]], [[OFDM]]
   - contrasts-with:: [[AV1]], [[VP9]], [[Open Source AI]], [[WebRTC]], [[Open Standards]], [[Royalty Free Codecs]], [[MPEG-5 EVC Baseline]], [[AVS3]], [[Ogg Vorbis Theora]]
   - related-to:: [[AI Video]], [[Proprietary AI Video]], [[Streaming Services]], [[Digital Cinema]], [[Hardware and Edge]], [[Content Delivery Network]], [[Advertising and Marketing]], [[Regulatory Frameworks]], [[Competition in AI]], [[API Gateway]], [[Blockchain Network]]
-  - standardized-by:: [[MPEG]], [[ITU-T]], [[ISO IEC]], [[ETSI]], [[ATSC]], [[DVB]], [[Blu-ray Disc Association]], [[Apple]], [[Google]], [[Microsoft]], [[Dolby Laboratories]], [[Alliance for Open Media]], [[W3C]]
+  - standardized-by:: [[MPEG]], [[ITU-T]], [[ISO IEC]], [[ETSI]], [[ATSC]], [[DVB]], [[Blu-ray Disc Association]], [[Apple Inc Technology Corporation]], [[Google AI Technology Corporation]], [[Microsoft]], [[Dolby Laboratories]], [[Alliance for Open Media]], [[W3C]]
 
 - ### Content
 

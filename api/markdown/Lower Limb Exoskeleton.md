@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
       {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
       {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}

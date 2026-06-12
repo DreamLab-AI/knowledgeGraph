@@ -2,7 +2,7 @@
   - Wikidata is a free, collaboratively edited, multilingual knowledge base storing structured data as items and property-value statements, serving as a central data hub for Wikipedia and the linked-data web.
 
 - ### Relationships
-  - Wikidata is a subclass of [[Knowledge Graph]] and uses [[RDF]] and [[Linked Data]] conventions to publish its content for machines. It enables the practical [[Semantic Web]] by acting as a shared identifier hub, and relates to [[Ontology]] engineering and [[Semantic Search]], for which it is a major source of structured entities and relations.
+  - Wikidata is a subclass of [[Knowledge Graph]] and uses [[RDF]] and [[Linked Data]] conventions to publish its content for machines. It enables the practical [[Semantic Web Linked Data Standard]] by acting as a shared identifier hub, and relates to [[Ontology]] engineering and [[Semantic Search]], for which it is a major source of structured entities and relations.
 
 - ### Content
   - Launched in 2012, Wikidata addressed a structural weakness of Wikipedia: the same fact — a city's population, a person's birth date — was duplicated across hundreds of language editions and infoboxes, maintained inconsistently and unreadable by machines. Wikidata centralises such facts as structured statements that the language Wikipedias can draw from, so a single edit propagates everywhere and the knowledge becomes queryable rather than locked in prose.

@@ -80,7 +80,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
-      {"@id": "urn:ngm:class:national-industrial-centre-for-virtual-environments", "label": "National Industrial Centre for Virtual Environments"},
+      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "National Industrial Centre for Virtual Environments"},
       {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"}
     ]
   },
@@ -141,7 +141,7 @@ public:: true
   - partOf:: [[UK Tech Ecosystem]]
   - uses:: [[Industrial Robot]], [[Sensor Fusion]], [[Digital Twin]]
   - enables:: [[Industrial IoT]], [[Robotics Application]]
-  - relatedTo:: [[Newcastle AI & Health Innovation]], [[National Industrial Centre for Virtual Environments]], [[Sustainable Technology]]
+  - relatedTo:: [[Newcastle AI & Health Innovation]], [[NICVE Virtual Reality Research Centre]], [[Sustainable Technology]]
 
 - ### Content
 

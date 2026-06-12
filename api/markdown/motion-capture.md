@@ -13,7 +13,7 @@
   - implemented-in-layer:: [[HardwareLayer]], [[AlgorithmLayer]], [[ApplicationLayer]], [[PipelineLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Computer Vision]], [[Animation]], [[Spatial Computing]], [[Biomechanics]], [[Performance Capture]]
+  - is-subclass-of:: [[Computer Vision]], [[Animation]], [[Spatial Computing Paradigm]], [[Biomechanics]], [[Performance Capture]]
   - has-part:: [[Optical Tracking System]], [[IMU Suit]], [[Facial Capture System]], [[Volumetric Capture]], [[Retargeting Solver]], [[Skeletal Animation]], [[Blendshape Rig]]
   - requires:: [[Camera Array]], [[Infrared Lighting]], [[Calibration]], [[Body Rig]], [[3D Reconstruction]], [[Temporal Filtering]]
   - enables:: [[Digital Human]], [[Real-Time Animation]], [[Virtual Production]], [[Games]], [[Film VFX]], [[Sports Analytics]], [[Robotics Training Data]]

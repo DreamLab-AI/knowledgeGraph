@@ -20,5 +20,5 @@
   Algorithmic Transparency Index — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[IEEE 7001-2021]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[IEEE 7001-2021]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z

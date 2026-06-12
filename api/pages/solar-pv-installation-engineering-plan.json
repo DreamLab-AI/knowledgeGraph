@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:cdcf9625d9bc4bcfa7d3742a96bb4f1db89058e4e0271e5bc88d9cba7332ddcb",
+  "title": "Solar PV Installation Engineering Plan",
+  "slug": "solar-pv-installation-engineering-plan",
+  "public": true,
+  "classIri": "urn:ngm:class:solar-pv-installation-engineering-plan",
+  "domain": "infrastructure",
+  "definition": "Solar plans are engineered configurations and optimisation analyses for solar photovoltaic (PV) installations, specifying panel tilt angles, array tiering, MPPT string layout, and economic projections for a given site's latitude and climate. This page documents a three-tier cascading solar panel system designed for Cumbria, England (54.5\u00b0N), where seasonal solar variation is extreme; the optimal configuration (43\u201345\u00b0 tilt, 20% horizontal overlap, 18 panels at 6.3 kW peak) achieves approximately 3,179 kWh/year \u2014 three times the output of a conventional single-layer array in the same 10 m\u00b2 footprint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

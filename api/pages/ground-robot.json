@@ -90,7 +90,7 @@
         "label": "Agricultural Robotics"
       },
       {
-        "id": "urn:ngm:class:infrastructure-inspection",
+        "id": "urn:ngm:class:technology-infrastructure-domain-inspection",
         "label": "Infrastructure Inspection"
       },
       {
@@ -166,7 +166,7 @@
         "label": "MoveIt2"
       },
       {
-        "id": "urn:ngm:class:nvidia-isaac-sim",
+        "id": "urn:ngm:class:nvidia-corporation-isaac-sim",
         "label": "NVIDIA Isaac Sim"
       },
       {

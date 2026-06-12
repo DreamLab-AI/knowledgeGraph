@@ -634,7 +634,7 @@ public:: true
         "label": "Expert Annotation"
       },
       {
-        "@id": "urn:ngm:class:multimodal-models",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Models"
       },
       {

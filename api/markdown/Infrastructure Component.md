@@ -40,7 +40,7 @@ alias:: InfrastructureComponent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:infrastructure-component",
+  "@id": "urn:ngm:class:technology-infrastructure-domain-component",
   "@type": "Class",
   "label": "Infrastructure Component",
   "definition": "A discrete, independently deployable unit of technical infrastructure that fulfils a specific function within a larger system, such as a compute node, network layer, storage service, or security module, and that can be composed with other components to deliver end-to-end platform capabilities.",

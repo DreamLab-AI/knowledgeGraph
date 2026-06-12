@@ -7,7 +7,7 @@
 
 - ### Relationships
   - hasPart: [[Gradient Descent]], [[Backpropagation]]
-  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning]]
+  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning Discipline]]
   - uses: [[Neural Network]]
 
 - ### Content

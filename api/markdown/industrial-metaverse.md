@@ -19,5 +19,5 @@
   Industrial Metaverse — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[ISO 23247 Digital Twin Framework]], [[OPC UA]], [[NVIDIA Omniverse]], [[Siemens Xcelerator]]
+  - sources:: [[ISO 23247 Digital Twin Framework]], [[OPC UA]], [[NVIDIA Omniverse Platform]], [[Siemens Xcelerator]]
   - migration-date:: 2026-04-26T00:00:00Z

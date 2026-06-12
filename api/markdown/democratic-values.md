@@ -13,7 +13,7 @@ bridges-to:: [[Telecollaboration]]
   - **supports** [[Accountability]] — democratic values demand accountability of AI systems and institutions
   - **supports** [[Governance]] — democratic values provide the normative foundation for governance frameworks
   - **contrastsWith** [[Attack Vector]] — disinformation and electoral manipulation are active attack vectors against democracy
-  - **relatedTo** [[EU AI Act]] — the EU AI Act encodes democratic safeguards into binding regulation
+  - **relatedTo** [[EU AI Act Regulatory Instrument]] — the EU AI Act encodes democratic safeguards into binding regulation
   - **relatedTo** [[Democratic Governance]] — democratic values are operationalised through democratic governance structures
   - **relatedTo** [[Privacy]] — civic freedoms depend on privacy from state and corporate surveillance
 
@@ -571,5 +571,5 @@ bridges-to:: [[Telecollaboration]]
   - belongsToDomain:: [[MetaverseDomain]]
 
 - ### Provenance
-  - sources:: [[OECD AI Principles 2024]], [[Council of Europe]], [[UNESCO]], [[EU AI Act]], [[Venice Commission]]
+  - sources:: [[OECD AI Principles 2024]], [[Council of Europe]], [[UNESCO]], [[EU AI Act Regulatory Instrument]], [[Venice Commission]]
   - migration-date:: 2026-04-26T00:00:00Z

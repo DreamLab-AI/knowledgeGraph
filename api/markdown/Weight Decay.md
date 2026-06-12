@@ -52,7 +52,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-technique",
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],

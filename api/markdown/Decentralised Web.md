@@ -894,7 +894,7 @@ public:: true
         "label": "Peer Discovery"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -968,7 +968,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bitcoin-lightning-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
         "label": "Bitcoin Lightning Network"
       },
       {
@@ -1006,7 +1006,7 @@ public:: true
         "label": "Crypto Anarchism"
       },
       {
-        "@id": "urn:ngm:class:cypherpunk-movement",
+        "@id": "urn:ngm:class:cryptographic-privacy-activist-movement",
         "label": "Cypherpunk Movement"
       },
       {
@@ -1026,7 +1026,7 @@ public:: true
         "label": "Self-Sovereign Identity"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -2024,7 +2024,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     },
@@ -2085,7 +2085,7 @@ public:: true
   - supports:: [[Decentralised Social Media]], [[Decentralised Storage]], [[Self-Sovereign Identity]], [[Permanent Archives]], [[Peer-to-Peer Messaging]], [[Tokenised Economics]], [[Open Knowledge Graphs]]
   - uses:: [[Multihash]], [[CID]], [[Schnorr Signatures]], [[Ed25519]], [[QUIC]], [[WebRTC]], [[WebSocket]], [[Bitcoin Lightning Network]]
   - contrasts-with:: [[Web 2.0]], [[Software as a Service]], [[Walled Garden]], [[Centralised Cloud]], [[Federated Network]], [[Blockchain-only Web3]]
-  - related-to:: [[Web3]], [[Semantic Web]], [[Self-Sovereign Identity]], [[Crypto Anarchism]], [[Cypherpunk Movement]], [[Open Source Software]], [[Internet of Agents]], [[Agentic Internet]]
+  - related-to:: [[Web3]], [[Semantic Web Linked Data Standard]], [[Self-Sovereign Identity]], [[Crypto Anarchism]], [[Cypherpunk Movement]], [[Open Source Software]], [[Internet of Agents]], [[Agentic Internet]]
   - standardized-by:: [[W3C]], [[IETF]], [[Protocol Labs]], [[Internet Archive]], [[Bluesky PBC]], [[OpenSats]], [[Trust over IP Foundation]]
 
 - ### Content

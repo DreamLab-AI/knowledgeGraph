@@ -69,7 +69,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-protocol",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
         "label": "Bitcoin Protocol"
       }
     ]

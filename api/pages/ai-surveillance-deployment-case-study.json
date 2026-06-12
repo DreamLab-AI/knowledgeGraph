@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:85bf315228efb901f35d0148cc0d48bab0eae44d1e7e22c3e966540a248c8149",
+  "title": "AI Surveillance Deployment Case Study",
+  "slug": "ai-surveillance-deployment-case-study",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-surveillance-deployment-case-study",
+  "domain": "artificial-intelligence",
+  "definition": "A case study examining the deployment of AI-based surveillance systems at the Paris 2024 Olympic Games, involving real-time video analytics, geolocation tracking, behavioural pattern analysis, and predictive event detection contracted to vendors including Viet, Orange Business, Chaps Vision, and Windex. The deployment required French legislative modifications expanding surveillance powers and raised significant GDPR compliance questions regarding continuous monitoring, data retention, algorithmic bias, and the post-event normalisation of pervasive AI surveillance infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "gdpr-general-data-protection-regulation",
+      "label": "GDPR (General Data Protection Regulation)"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "backlinks": []
+}

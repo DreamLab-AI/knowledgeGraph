@@ -102,10 +102,10 @@ public:: true
       {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"},
       {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
       {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
       {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
     ]
   },
   "provenance": {

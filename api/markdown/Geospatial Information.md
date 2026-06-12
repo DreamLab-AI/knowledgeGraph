@@ -65,7 +65,7 @@ public:: true
         "label": "Geospatial Engine"
       },
       {
-        "@id": "urn:ngm:class:location-based-experience",
+        "@id": "urn:ngm:class:venue-tethered-immersive-experience",
         "label": "Location Based Experience"
       }
     ],
@@ -135,7 +135,7 @@ public:: true
   - Uses [[Lidar]]
   - Uses [[Point Cloud]]
   - Enables [[Geospatial Engine]]
-  - Enables [[Location Based Experience]]
+  - Enables [[Venue-Tethered Immersive Experience]]
   - Related To [[Spatial Data Structure]]
   - Related To [[Geospatial Technology]]
 

@@ -3,7 +3,7 @@
   "title": "ComfyUI Workflows",
   "slug": "comfy-ui-workflows",
   "public": true,
-  "classIri": "urn:ngm:class:comfy-ui-workflows",
+  "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
   "domain": "artificial-intelligence",
   "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for Stable Diffusion and broader generative AI inference, implemented within the ComfyUI open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations...",
   "subClassOf": [
@@ -34,7 +34,7 @@
         "label": "CLIPTextEncode"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-manager",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
@@ -88,11 +88,11 @@
         "label": "Python Runtime"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -169,7 +169,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:comfy-ui-manager",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
@@ -181,7 +181,7 @@
         "label": "Hugging Face Hub"
       },
       {
-        "id": "urn:ngm:class:json-serialisation",
+        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
       },
       {
@@ -223,7 +223,7 @@
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "id": "urn:ngm:class:animate-diff",
+        "id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
@@ -249,7 +249,7 @@
         "label": "Comfy-Org GitHub Organisation"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-api-specification",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {
@@ -272,7 +272,7 @@
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "id": "urn:ngm:class:animate-diff",
+        "id": "urn:ngm:class:temporal-motion-diffusion-adapter",
         "label": "AnimateDiff"
       },
       {
@@ -300,7 +300,7 @@
         "label": "IP-Adapter"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ]

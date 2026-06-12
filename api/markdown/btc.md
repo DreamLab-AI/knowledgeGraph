@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
-  - bridges-to:: [[Bitcoin]], [[Store of Value]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Store of Value]]
   - requires:: [[Bitcoin Network]]
 
 - ### Content

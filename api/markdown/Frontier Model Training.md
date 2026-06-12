@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [{"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}, {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}, {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}],
     "enables": [{"@id": "urn:ngm:class:frontier-models", "label": "Frontier Models"}, {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}],
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}, {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}],
+    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}, {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}],
     "dependsOn": [{"@id": "urn:ngm:class:model-training", "label": "Model Training"}]
   },
   "quality": 0.8

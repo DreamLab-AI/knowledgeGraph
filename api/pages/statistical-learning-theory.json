@@ -8,7 +8,7 @@
   "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:open-ai-api",
+  "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
   "@type": "Class",
   "label": "OpenAI API",
   "definition": "The OpenAI API is a hosted programming interface that gives developers access to OpenAI's models for text generation, reasoning, embeddings, image generation, speech, and tool use over HTTP. Exposing capabilities through endpoints such as chat completions, responses, and embeddings, it abstracts model hosting, scaling, and inference behind a usage-priced REST interface with structured outputs, function calling, and streaming. Its conventions have become a de facto standard widely emulated by other providers and compatible open-source serving stacks.",

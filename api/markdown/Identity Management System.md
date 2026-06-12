@@ -368,7 +368,7 @@ public:: true
         "label": "Cryptographic Protocol"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -454,7 +454,7 @@ public:: true
         "label": "Graph Database"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -830,7 +830,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -910,7 +910,7 @@ public:: true
   - implements:: [[OAuth 2.0]], [[OpenID Connect]], [[SAML 2.0]], [[SCIM 2.0]], [[FIDO2]], [[FAPI 2.0]], [[WebAuthn]], [[LDAP]]
   - depends-on:: [[Cryptographic Protocol]], [[Public Key Infrastructure]], [[Graph Database]], [[API Gateway]], [[Metadata Management]], [[Distributed System]]
   - supports:: [[Zero Trust Architecture]], [[Cloud Computing]], [[Decentralised Identity]], [[Regulatory Compliance]], [[Digital Identity]], [[DevSecOps]]
-  - uses:: [[Machine Learning]], [[Risk Assessment]], [[Audit Trail]], [[Graph Database]], [[Metadata Management]]
+  - uses:: [[Machine Learning Discipline]], [[Risk Assessment]], [[Audit Trail]], [[Graph Database]], [[Metadata Management]]
   - contrasts-with:: [[Decentralised Identity]], [[Self-Sovereign Identity]], [[Perimeter Security]]
   - related-to:: [[Blockchain Network]], [[Verifiable Credentials]], [[Digital Currency]], [[Smart Contracts]], [[Access Control System]]
   - standardized-by:: [[NIST]], [[W3C]], [[OASIS]], [[OpenID Foundation]], [[FIDO Alliance]], [[IETF]]

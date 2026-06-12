@@ -37,7 +37,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:assistive-robotics", "label": "Assistive Robotics"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ]
   },
   "quality": 0.8

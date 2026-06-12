@@ -77,7 +77,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -106,7 +106,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -153,7 +153,7 @@ public:: true
   - is-subclass-of:: [[Supervised Learning]]
   - bridges-to:: [[Deep Learning]]
   - requires:: [[Statistics]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Regression methods fit a function that maps inputs to a numeric target, with the goal of minimising the difference between predicted and observed values. Linear regression is the simplest form, while more flexible methods capture non-linear relationships.

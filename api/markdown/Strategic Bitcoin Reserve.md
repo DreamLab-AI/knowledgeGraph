@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:bitcoin-distribution", "label": "Bitcoin Distribution"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
     ]
   },
   "quality": 0.72

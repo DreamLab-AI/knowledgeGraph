@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Layer 2 Scaling]]
   - bridges-to:: [[Rollup]]
-  - requires:: [[Ethereum]], [[PLONK]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[PLONK]]
   - enables:: [[DeFi]]
 
 - ### Content

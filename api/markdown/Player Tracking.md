@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ]
   },
@@ -100,7 +100,7 @@ public:: true
 - ### Relationships
   - uses: [[Motion Capture]], [[Avatar System]]
   - enables: [[Avatar Behavior]], [[Player Two]]
-  - dependsOn: [[Spatial Computing]], [[Computer Vision]]
+  - dependsOn: [[Spatial Computing Paradigm]], [[Computer Vision]]
 
 - ### Content
   # PlayerTracking

@@ -197,7 +197,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -235,7 +235,7 @@ public:: true
   - related-to:: [[AI Ethics]], [[Blockchain Technology]], [[Digital Rights]], [[Privacy Rights]]
   - parent-concept:: [[Human Centred Values]]
   - operationalised-through:: [[Fundamental Rights Impact Assessment]]
-  - governed-by:: [[EU AI Act]], [[Council of Europe AI Treaty]], [[Universal Declaration of Human Rights]]
+  - governed-by:: [[EU AI Act Regulatory Instrument]], [[Council of Europe AI Treaty]], [[Universal Declaration of Human Rights]]
 
 - ### Content
 
@@ -341,7 +341,7 @@ public:: true
   - [[Digital Rights]]
   - [[Privacy Rights]]
   - [[Algorithmic Accountability]]
-  - [[EU AI Act]]
+  - [[EU AI Act Regulatory Instrument]]
   - [[Blockchain Technology]]
 
   ## References
@@ -359,5 +359,5 @@ public:: true
   *Aligned with UDHR, ICCPR, EU Charter, OECD AI Principles 2024, and Council of Europe AI Treaty*
 
 - ### Provenance
-  - sources:: [[OECD AI Principles 2024]], [[Universal Declaration of Human Rights]], [[EU AI Act]], [[Council of Europe AI Treaty]]
+  - sources:: [[OECD AI Principles 2024]], [[Universal Declaration of Human Rights]], [[EU AI Act Regulatory Instrument]], [[Council of Europe AI Treaty]]
   - migration-date:: 2026-04-26T00:00:00Z

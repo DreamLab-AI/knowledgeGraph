@@ -70,7 +70,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},

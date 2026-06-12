@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
   "@type": "Class",
   "label": "Bitcoin Improvement Proposals",
   "definition": "Bitcoin Improvement Proposals (BIPs) are the formal design documents through which changes, enhancements, and new features are proposed and ratified for the Bitcoin protocol and its ecosystem. First introduced by Amir Taaki in 2011, modelled on Python's PEP process, BIPs serve as the primary coordination mechanism for a decentralised developer community lacking any central authority. Each BIP progresses through a lifecycle of draft, proposed, final, and superseded states, and must achieve rough consensus among node operators and miners to be activated. BIPs cover protocol rules, informational standards, and process definitions for the broader Bitcoin network.",
@@ -26,12 +26,12 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-core", "label": "Bitcoin Core"},
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-technical-overview", "label": "Bitcoin Technical Overview"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"},
       {"@id": "urn:ngm:class:bip-340", "label": "BIP-340"},
       {"@id": "urn:ngm:class:bip-341", "label": "BIP-341"}
     ],

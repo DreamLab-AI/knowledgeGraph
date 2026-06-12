@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Aztec]]
   - bridges-to:: [[Layer 2 Networks]]
-  - requires:: [[Aztec Protocol]], [[Ethereum]]
+  - requires:: [[Aztec Protocol]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Privacy]]
 
 - ### Content

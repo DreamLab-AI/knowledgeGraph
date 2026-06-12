@@ -655,7 +655,7 @@ alias:: SmartContract, smart-contract
         "label": "Vyper"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       },
       {
@@ -689,7 +689,7 @@ alias:: SmartContract, smart-contract
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -753,7 +753,7 @@ alias:: SmartContract, smart-contract
         "label": "ERC Standards"
       },
       {
-        "@id": "urn:ngm:class:ethereum-foundation",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       },
       {
@@ -1265,7 +1265,7 @@ alias:: SmartContract, smart-contract
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1300,7 +1300,7 @@ alias:: SmartContract, smart-contract
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Rust]]",
+      "raw": "[[Rust Systems Programming Language]]",
       "resolved": "urn:visionflow:owl:class:rust",
       "kind": "ResolvedLink"
     },
@@ -1347,7 +1347,7 @@ alias:: SmartContract, smart-contract
 
 
 - ### Definition
-  - A [[Smart Contract]] is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted intermediaries. Execution environments include: the [[Ethereum]] EVM (Solidity/Vyper compiling to 256-bit stack bytecode, gas metering at 30M gas/block); the Move VM on Aptos/Sui (resource-typed modules with linear-type semantics preventing double-spend at the language level, Aptos 160K TPS benchmarks); Cairo on Starknet (STARK-provable algebraic circuits enabling trustless ZK verification, recursive proof aggregation in production since 2023); Rust-based Solana BPF runtime (Berkeley Packet Filter VM with parallel transaction streams, 65K TPS theoretical); Ink! on Polkadot/Substrate (WebAssembly sandbox with XCM cross-parachain messaging); and CosmWasm (deterministic Wasm modules with IBC inter-chain capability). The concept originates with Nick Szabo's 1994/1997 work formalising cryptographically-enforced digital agreements, realised at scale through Vitalik Buterin's 2013 Ethereum whitepaper. Total value locked (TVL) across DeFi smart contract protocols reached approximately $100B-$150B in 2024-2026; cumulative audited exploit losses exceed $8B since 2016 (Penpie $27M September 2024, Radiant Capital $50M October 2024, Euler Finance $197M March 2023, The DAO $60M 2016). This context drives demand for formal verification ([[Certora Prover]], Halmos, Move Prover, K Framework), upgradeable proxy architectures (ERC-1967, UUPS, Diamond/EIP-2535), [[Account Abstraction]] (ERC-4337, finalised 2023), and oracle integration ([[Chainlink]] 1,700+ feeds, Pyth Network 90+ institutional providers). The fundamental tension between code immutability guaranteeing trustlessness and the operational need for upgradeability to patch vulnerabilities defines the discipline's core design challenge.
+  - A [[Smart Contract]] is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted intermediaries. Execution environments include: the [[Ethereum Smart Contract Platform]] EVM (Solidity/Vyper compiling to 256-bit stack bytecode, gas metering at 30M gas/block); the Move VM on Aptos/Sui (resource-typed modules with linear-type semantics preventing double-spend at the language level, Aptos 160K TPS benchmarks); Cairo on Starknet (STARK-provable algebraic circuits enabling trustless ZK verification, recursive proof aggregation in production since 2023); Rust-based Solana BPF runtime (Berkeley Packet Filter VM with parallel transaction streams, 65K TPS theoretical); Ink! on Polkadot/Substrate (WebAssembly sandbox with XCM cross-parachain messaging); and CosmWasm (deterministic Wasm modules with IBC inter-chain capability). The concept originates with Nick Szabo's 1994/1997 work formalising cryptographically-enforced digital agreements, realised at scale through Vitalik Buterin's 2013 Ethereum whitepaper. Total value locked (TVL) across DeFi smart contract protocols reached approximately $100B-$150B in 2024-2026; cumulative audited exploit losses exceed $8B since 2016 (Penpie $27M September 2024, Radiant Capital $50M October 2024, Euler Finance $197M March 2023, The DAO $60M 2016). This context drives demand for formal verification ([[Certora Prover]], Halmos, Move Prover, K Framework), upgradeable proxy architectures (ERC-1967, UUPS, Diamond/EIP-2535), [[Account Abstraction]] (ERC-4337, finalised 2023), and oracle integration ([[Chainlink]] 1,700+ feeds, Pyth Network 90+ institutional providers). The fundamental tension between code immutability guaranteeing trustlessness and the operational need for upgradeability to patch vulnerabilities defines the discipline's core design challenge.
 
 - ### Semantic Classification
   - owl-class:: blockchain:SmartContract
@@ -1364,9 +1364,9 @@ alias:: SmartContract, smart-contract
   - implements:: [[ERC-4337]], [[ERC-20]], [[ERC-721]], [[ERC-1967 Proxy]], [[EIP-2535 Diamond]], [[OpenZeppelin Standards]]
   - depends-on:: [[Formal Verification]], [[Cryptographic Proof]], [[Consensus Algorithm]], [[Merkle Tree]], [[ECDSA Signature]]
   - supports:: [[DeFi]], [[NFT]], [[Supply Chain]], [[Carbon Credit Tracking]], [[Cold Chain Monitoring]], [[Voting Systems]], [[Identity Management]], [[Prediction Markets]], [[Insurance Automation]]
-  - uses:: [[Solidity]], [[Vyper]], [[Move Language]], [[Cairo Language]], [[Rust]], [[WebAssembly]], [[Ink!]]
+  - uses:: [[Solidity]], [[Vyper]], [[Move Language]], [[Cairo Language]], [[Rust Systems Programming Language]], [[WebAssembly]], [[Ink!]]
   - contrasts-with:: [[Traditional Contract]], [[Legal Framework]], [[Trusted Third Party]], [[Centralised Database]], [[Custodial Service]]
-  - related-to:: [[Blockchain Network]], [[Token]], [[Ethereum]], [[Zero Knowledge Proof]], [[Account Abstraction]], [[MEV]], [[Flash Loan]], [[Formal Verification]], [[Agents]], [[Agent Frameworks]]
+  - related-to:: [[Blockchain Network]], [[Token]], [[Ethereum Smart Contract Platform]], [[Zero Knowledge Proof]], [[Account Abstraction]], [[MEV]], [[Flash Loan]], [[Formal Verification]], [[Agents]], [[Agent Frameworks]]
   - standardized-by:: [[ERC Standards]], [[EIP Process]], [[OpenZeppelin]], [[Ethereum Foundation]], [[W3C DID Spec]]
 
 - ### Content

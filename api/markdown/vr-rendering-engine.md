@@ -11,7 +11,7 @@
   - requires:: [[Real-Time Rendering]], [[XR Device]]
   - hasPart:: [[Foveated Rendering]], [[Real-Time Rendering Pipeline]]
   - enables:: [[Virtual Production]], [[Immersive Experience]]
-  - uses:: [[Spatial Computing]]
+  - uses:: [[Spatial Computing Paradigm]]
 
 - ### Content
 

@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[InfrastructureLayer]], [[AlgorithmLayer]], [[DataLayer]], [[AlignmentLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Deep Learning]], [[Optimisation]], [[Foundation Models]], [[Neural Networks]]
-  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimization]], [[KTO]], [[Constitutional AI]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Deep Learning]], [[Optimisation]], [[Large-Scale Pretrained Foundation Model]], [[Neural Networks]]
+  - has-part:: [[Pre-training]], [[Supervised Fine Tuning]], [[RLHF]], [[Direct Preference Optimization]], [[KTO]], [[Constitutional AI Training Methodology]], [[Data Curation]], [[Reward Model]], [[Policy Optimisation]], [[Gradient Checkpointing]], [[Mixed Precision Training]]
   - requires:: [[Training Data]], [[Compute Infrastructure]], [[GPU Clusters]], [[Distributed Computing]], [[Data Pipeline]], [[Loss Function]], [[Optimiser]], [[Tokeniser]]
-  - enables:: [[Large Language Models]], [[Foundation Models]], [[Emergent Capabilities]], [[Instruction Following]], [[Alignment]], [[Reasoning]], [[Code Generation]]
+  - enables:: [[Large Language Models]], [[Large-Scale Pretrained Foundation Model]], [[Emergent Capabilities]], [[Instruction Following]], [[Alignment]], [[Reasoning]], [[Code Generation]]
   - implements:: [[Causal Language Modelling]], [[Backpropagation]], [[Stochastic Gradient Descent]], [[AdamW]], [[ZeRO Optimisation]], [[Tensor Parallelism]], [[Pipeline Parallelism]], [[LoRA DoRA etc]]
   - depends-on:: [[Scaling Laws]], [[Information Theory]], [[Numerical Computation]], [[Linear Algebra]], [[Probabilistic Graphical Models]], [[Attention]]
-  - supports:: [[Anthropic Claude]], [[ChatGPT]], [[Grok]], [[Google DeepMind]], [[Agents]], [[Agent Frameworks]], [[Evaluation benchmarks and leaderboards]]
-  - uses:: [[DeepSpeed]], [[Megatron-LM]], [[PyTorch]], [[JAX]], [[Flash Attention]], [[Checkpoints]], [[Foundation Models]], [[Cognitive AI]]
+  - supports:: [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Grok]], [[Google DeepMind]], [[Agents]], [[Agent Frameworks]], [[Evaluation benchmarks and leaderboards]]
+  - uses:: [[DeepSpeed]], [[Megatron-LM]], [[PyTorch]], [[JAX]], [[Flash Attention]], [[Checkpoints]], [[Large-Scale Pretrained Foundation Model]], [[Cognitive AI]]
   - contrasts-with:: [[Imitation Learning]], [[Reinforcement Learning]], [[Active Learning]], [[Few-Shot Learning]], [[Algorithmic Bias and Variance]]
   - related-to:: [[Bias in Large Language Models]], [[Competition in AI]], [[Hardware and Edge]], [[Compute Infrastructure]], [[Evaluation benchmarks and leaderboards]], [[Artificial General Intelligence]], [[Emergence]]
-  - standardized-by:: [[Chinchilla Scaling Laws]], [[EU AI Act]], [[AISI Frontier AI Safety Framework]], [[Responsible Scaling Policies]]
+  - standardized-by:: [[Chinchilla Scaling Laws]], [[EU AI Act Regulatory Instrument]], [[AISI Frontier AI Safety Framework]], [[Responsible Scaling Policies]]
 
 - ### Content
 

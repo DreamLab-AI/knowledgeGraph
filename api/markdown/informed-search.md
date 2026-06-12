@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - **partOf**: [[Machine Learning]]
+  - **partOf**: [[Machine Learning Discipline]]
   - **uses**: [[Machine Learning Technique]]
   - **enables**: [[Autonomous Navigation]], [[Autonomous System]]
   - **relatedTo**: [[Reinforcement Learning]], [[Active Learning]]

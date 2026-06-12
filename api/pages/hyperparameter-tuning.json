@@ -8,7 +8,7 @@
   "definition": "Hyperparameter tuning is the process of searching for the optimal configuration of parameters that govern the training process of a machine learning model, as distinct from the model parameters learned during training itself. Hyperparameters include learning rate, batch size, network depth, regularisation coefficients, optimiser choice, and architectural choices such as kernel size or number of attention heads. The tuning process employs search strategies\u2014grid search, random search, Bayesian optimisation, or evolutionary algorithms\u2014to identify configurations that maximise model performance on a held-out validation set. Efficient hyperparameter tuning is critical to practical machine learning deployment, as model performance is often highly sensitive to these configuration choices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -42,7 +42,7 @@
         "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],

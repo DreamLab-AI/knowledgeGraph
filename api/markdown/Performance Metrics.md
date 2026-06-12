@@ -48,7 +48,7 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"}
     ],
     "relatedTo": [

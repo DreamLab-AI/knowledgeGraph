@@ -25,7 +25,7 @@
 
   [[Telecollaboration]] encompasses distributed teams working together through digital mediums, spanning both [[Synchronous Collaboration]] (real-time interaction) and [[Asynchronous Collaboration]] (time-shifted contribution). Modern telecollaboration integrates:
 
-  - **[[Spatial Computing]]**: [[AR]]/[[VR]] environments for immersive co-working
+  - **[[Spatial Computing Paradigm]]**: [[AR]]/[[VR]] environments for immersive co-working
   - **[[Persistent Virtual Spaces]]**: Continuous shared environments like [[Meta Horizon Workrooms]]
   - **[[AI-Augmented Collaboration]]**: [[LLM]]-powered meeting assistants, [[Real-Time Translation]]
   - **[[Blockchain-Based Coordination]]**: [[Smart Contract]] milestone tracking, [[DAO]] governance
@@ -81,9 +81,9 @@
   - Price: $499 (128GB), democratizing VR collaboration
 
   **[[Apple Vision Pro]]** (2024-present):
-  - [[Spatial Computing]] paradigm, [[visionOS]] platform
+  - [[Spatial Computing Paradigm]] paradigm, [[visionOS]] platform
   - [[EyeSight]]: External display showing user's eyes for social presence
-  - [[Personas]]: [[Machine Learning]]-generated 3D avatars
+  - [[Personas]]: [[Machine Learning Discipline]]-generated 3D avatars
   - [[SharePlay]]: Multi-user AR/VR experiences
   - Resolution: 23M pixels (3680×3140 per eye)
   - [[M2]]/[[R1]] chips for <12ms motion-to-photon latency
@@ -127,7 +127,7 @@
 
   **[[Nreal Air]]** / [[XREAL Air]]** (2022-present):
   - Consumer AR glasses, [[201-inch Virtual Display]]
-  - [[Spatial Computing]] via [[Nebula]] platform
+  - [[Spatial Computing Paradigm]] via [[Nebula]] platform
   - Price: $379, accessible for remote workers
 
   ### Mixed Reality Platforms
@@ -285,11 +285,11 @@
   - **[[WebGL Gaussian Splat Viewer]]**: Browser-based, [[Three.js]] integration
   - **[[Unreal Engine 5.3+]]**: Native Gaussian Splatting support
 
-  **[[NVIDIA Omniverse]]**:
+  **[[NVIDIA Omniverse Platform]]**:
   - [[USD]]-based platform for collaborative 3D workflows
   - [[RTX Renderer]]: Path-traced photorealism
   - [[Nucleus]]: Collaboration server for asset versioning
-  - Integration: [[Blender]], [[Maya]], [[Revit]], [[AutoCAD]]
+  - Integration: [[Blender 3D Creation Suite]], [[Maya]], [[Revit]], [[AutoCAD]]
 
   ### Cross-Domain Applications
 
@@ -363,7 +363,7 @@
   **[[AI-Enhanced 3D Audio]]**:
   - **[[Source Separation]]**: Isolate speakers in noisy environments ([[Spleeter]], [[Demucs]])
   - **[[Beamforming]]**: Directional microphone arrays focus on active speakers
-  - **[[HRTF Personalization]]**: [[Machine Learning]] predicts individual head-related transfer functions
+  - **[[HRTF Personalization]]**: [[Machine Learning Discipline]] predicts individual head-related transfer functions
   - **[[Ambisonics]]**: Spherical harmonic representation of 3D sound fields
 
   **[[Noise Cancellation]]**:
@@ -627,7 +627,7 @@
   - **[[PYUSD]]** (PayPal): Regulated stablecoin, fiat on/off ramps
   - Benefit: Eliminate currency exchange fees (2-4%) and volatility
 
-  **[[Ethereum]]** Layer 2s:
+  **[[Ethereum Smart Contract Platform]]** Layer 2s:
   - **[[Polygon]]**: Low fees ($0.01/transaction), fast finality (2 seconds)
   - **[[Arbitrum]]**: [[Optimistic Rollup]], EVM-compatible
   - **[[Optimism]]**: [[OP Stack]], powers [[Base]] (Coinbase L2)
@@ -994,7 +994,7 @@
 
   **Definition**: Virtual replica of physical asset, synchronized in real-time via [[IoT Sensors]]
 
-  **[[NVIDIA Omniverse]]**:
+  **[[NVIDIA Omniverse Platform]]**:
   - [[USD]]-based digital twin platform
   - **[[PhysX]]**: Physics simulation for robot motion planning
   - **[[RTX Renderer]]**: Photorealistic visualization
@@ -1129,7 +1129,7 @@
 
   **[[Miro]]** (Visual Collaboration):
   - **Infinite Whiteboard**: Sticky notes, diagrams, wireframes
-  - **[[Templates]]**: 2,000+ pre-built (retrospectives, user story maps)
+  - **[[Reusable Content Template Scaffolds]]**: 2,000+ pre-built (retrospectives, user story maps)
   - **[[Integrations]]**: Jira, Slack, Zoom, Microsoft Teams
   - **[[Smart Meetings]]**: Timer, voting, facilitator controls
   - **[[Miroverse]]**: Community templates
@@ -1513,7 +1513,7 @@
   7. **Robotics & Teleoperation**:
    - Berlin engineer controls [[Boston Dynamics Spot]] robot at NYC construction site
    - [[5G]] connection + [[Haptic Gloves]] to inspect structural integrity remotely
-   - [[Digital Twin]] in [[NVIDIA Omniverse]] mirrors construction progress
+   - [[Digital Twin]] in [[NVIDIA Omniverse Platform]] mirrors construction progress
    - [[Blockchain Audit Log]]: All robot inspections recorded on [[Hyperledger Fabric]]
 
   8. **Asynchronous Workflow**:
@@ -1609,7 +1609,7 @@
 
   ## Related Pages
 
-  [[Virtual Reality]] | [[Augmented Reality]] | [[Mixed Reality]] | [[Extended Reality]] | [[Gaussian Splatting]] | [[NeRF]] | [[Neural Rendering]] | [[Volumetric Video]] | [[WebRTC]] | [[5G]] | [[6G]] | [[Edge Computing]] | [[CDN]] | [[Real-Time]] | [[Bitcoin]] | [[Lightning Network]] | [[Smart Contract]] | [[Stablecoin]] | [[DAO]] | [[Zero-Knowledge Proof]] | [[Decentralized Identity]] | [[Privacy]] | [[Robotics]] | [[Teleoperation]] | [[Haptic Feedback]] | [[Digital Twin]] | [[AI]] | [[Machine Learning]] | [[LLM]] | [[Computer Vision]] | [[Speech Recognition]] | [[Zoom]] | [[Microsoft Teams]] | [[Meta]] | [[Apple Vision Pro]] | [[HoloLens]] | [[Quest]] | [[Spatial Computing]] | [[Metaverse]] | [[Blockchain]] | [[Ethereum]] | [[Polygon]] | [[Arbitrum]] | [[USDC]] | [[Cryptocurrency]] | [[DeFi]] | [[NFT]] | [[Web3]] | [[Telepresence]] | [[Remote Work]] | [[Collaboration]] | [[Video Conferencing]] | [[Immersive Technology]] | [[XR]] | [[VR]] | [[AR]] | [[MR]] | [[NVIDIA Omniverse]] | [[Unreal Engine]] | [[Unity]] | [[3D Rendering]] | [[GPU]] | [[RTX]] | [[Foveated Rendering]] | [[Eye Tracking]] | [[Hand Tracking]] | [[Motion Capture]] | [[Spatial Audio]] | [[Ambisonics]] | [[Binaural Audio]] | [[HRTF]] | [[Latency]] | [[Bandwidth]] | [[Streaming]] | [[QUIC]] | [[HTTP/3]] | [[WebTransport]] | [[Jitter]] | [[Packet Loss]] | [[Adaptive Bitrate]] | [[HLS]] | [[DASH]] | [[CloudFront]] | [[Cloudflare]] | [[Akamai]] | [[AWS Wavelength]] | [[Azure Edge Zones]] | [[Google Distributed Cloud]] | [[Kubernetes]] | [[Docker]] | [[Microservices]] | [[Serverless]] | [[Lambda]] | [[IoT]] | [[Sensor Networks]] | [[PTP]] | [[NTP]] | [[Time Synchronization]] | [[URLLC]] | [[Network Slicing]] | [[mmWave]] | [[Terahertz]] | [[Wireless]] | [[WiFi 6E]] | [[Bluetooth]] | [[UWB]] | [[RFID]] | [[Satellite Internet]] | [[Starlink]] | [[Low Earth Orbit]] | [[Laser Communication]] | [[Quantum Networking]] | [[QKD]] | [[Post-Quantum Cryptography]] | [[Encryption]] | [[TLS]] | [[End-to-End Encryption]] | [[Homomorphic Encryption]] | [[Secure Enclave]] | [[Intel SGX]] | [[AMD SEV]] | [[Confidential Computing]] | [[Trusted Execution Environment]] | [[Smart Legal Contract]] | [[Ricardian Contract]] | [[Kleros]] | [[Aragon]] | [[Governance]] | [[Quadratic Voting]] | [[Token]] | [[Tokenomics]] | [[Staking]] | [[Yield Farming]] | [[Liquidity Pool]] | [[AMM]] | [[DEX]] | [[DApp]] | [[Gas Fee]] | [[EVM]] | [[Solidity]] | [[Vyper]] | [[IPFS]] | [[Filecoin]] | [[Arweave]] | [[Decentralized Storage]] | [[Content Addressing]] | [[CID]] | [[Merkle Tree]] | [[Hash Function]] | [[SHA-256]] | [[Elliptic Curve Cryptography]] | [[ECDSA]] | [[Schnorr Signature]] | [[Taproot]] | [[SegWit]] | [[Layer 2]] | [[Rollup]] | [[Optimistic Rollup]] | [[ZK Rollup]] | [[Plasma]] | [[State Channel]] | [[Sidechain]] | [[Cross-Chain]] | [[Bridge]] | [[Atomic Swap]] | [[Interoperability]] | [[Polkadot]] | [[Cosmos]] | [[Avalanche]] | [[Solana]] | [[Cardano]] | [[Tezos]] | [[Algorand]] | [[Consensus Mechanism]] | [[Proof of Work]] | [[Proof of Stake]] | [[Delegated Proof of Stake]] | [[Byzantine Fault Tolerance]] | [[Nakamoto Consensus]] | [[Finality]] | [[Validator]] | [[Mining]] | [[Halving]] | [[Block Reward]] | [[Transaction Fee]] | [[Mempool]] | [[UTXO]] | [[Account Model]] | [[Nonce]] | [[Gas Limit]] | [[Block Size]] | [[Block Time]] | [[Orphan Block]] | [[Fork]] | [[Hard Fork]] | [[Soft Fork]] | [[51% Attack]] | [[Double Spend]] | [[Sybil Attack]] | [[Eclipse Attack]] | [[MEV]] | [[Front Running]] | [[Sandwich Attack]] | [[Slashing]] | [[Validator Set]] | [[Committee]] | [[Epoch]] | [[Slot]] | [[Beacon Chain]] | [[Shard]] | [[Data Availability]] | [[Erasure Coding]] | [[Reed-Solomon]] | [[KZG Commitment]] | [[Polynomial Commitment]] | [[SNARK]] | [[STARK]] | [[PLONK]] | [[Groth16]] | [[Halo2]] | [[Circom]] | [[ZoKrates]] | [[Noir]] | [[Cairo]] | [[zkVM]] | [[zkEVM]] | [[Prover]] | [[Verifier]] | [[Trusted Setup]] | [[Ceremony]] | [[SRS]] | [[CRS]] | [[Fiat-Shamir]] | [[Random Oracle]] | [[Schwartz-Zippel]] | [[Lagrange]] | [[FFT]] | [[MSM]] | [[Pedersen Commitment]] | [[Range Proof]] | [[Bulletproof]] | [[Inner Product Argument]] | [[Accumulator]] | [[Vector Commitment]] | [[Verkle Tree]] | [[Patricia Trie]] | [[Radix Tree]]
+  [[Virtual Reality]] | [[Augmented Reality]] | [[Mixed Reality]] | [[Extended Reality]] | [[Gaussian Splatting]] | [[NeRF]] | [[Neural Rendering]] | [[Volumetric Video]] | [[WebRTC]] | [[5G]] | [[6G]] | [[Edge Computing]] | [[CDN]] | [[Real-Time]] | [[Bitcoin Proof-of-Work Protocol]] | [[Lightning Network]] | [[Smart Contract]] | [[Stablecoin]] | [[DAO]] | [[Zero-Knowledge Proof]] | [[Decentralized Identity]] | [[Privacy]] | [[Robotics]] | [[Teleoperation]] | [[Haptic Feedback]] | [[Digital Twin]] | [[AI]] | [[Machine Learning Discipline]] | [[LLM]] | [[Computer Vision]] | [[Speech Recognition]] | [[Zoom]] | [[Microsoft Teams]] | [[Meta]] | [[Apple Vision Pro]] | [[HoloLens]] | [[Quest]] | [[Spatial Computing Paradigm]] | [[Metaverse]] | [[Blockchain]] | [[Ethereum Smart Contract Platform]] | [[Polygon]] | [[Arbitrum]] | [[USDC]] | [[Cryptocurrency]] | [[DeFi]] | [[NFT]] | [[Web3]] | [[Telepresence]] | [[Remote Work]] | [[Collaboration]] | [[Video Conferencing]] | [[Immersive Technology]] | [[XR]] | [[VR]] | [[AR]] | [[MR]] | [[NVIDIA Omniverse Platform]] | [[Unreal Engine]] | [[Unity]] | [[3D Rendering]] | [[GPU]] | [[RTX]] | [[Foveated Rendering]] | [[Eye Tracking]] | [[Hand Tracking]] | [[Motion Capture]] | [[Spatial Audio]] | [[Ambisonics]] | [[Binaural Audio]] | [[HRTF]] | [[Latency]] | [[Bandwidth]] | [[Streaming]] | [[QUIC]] | [[HTTP/3]] | [[WebTransport]] | [[Jitter]] | [[Packet Loss]] | [[Adaptive Bitrate]] | [[HLS]] | [[DASH]] | [[CloudFront]] | [[Cloudflare]] | [[Akamai]] | [[AWS Wavelength]] | [[Azure Edge Zones]] | [[Google Distributed Cloud]] | [[Kubernetes]] | [[Docker Containerisation Platform]] | [[Microservices]] | [[Serverless]] | [[Lambda]] | [[IoT]] | [[Sensor Networks]] | [[PTP]] | [[NTP]] | [[Time Synchronization]] | [[URLLC]] | [[Network Slicing]] | [[mmWave]] | [[Terahertz]] | [[Wireless]] | [[WiFi 6E]] | [[Bluetooth]] | [[UWB]] | [[RFID]] | [[Satellite Internet]] | [[Starlink]] | [[Low Earth Orbit]] | [[Laser Communication]] | [[Quantum Networking]] | [[QKD]] | [[Post-Quantum Cryptography]] | [[Encryption]] | [[TLS]] | [[End-to-End Encryption]] | [[Homomorphic Encryption]] | [[Secure Enclave]] | [[Intel SGX]] | [[AMD SEV]] | [[Confidential Computing]] | [[Trusted Execution Environment]] | [[Smart Legal Contract]] | [[Ricardian Contract]] | [[Kleros]] | [[Aragon]] | [[Governance]] | [[Quadratic Voting]] | [[Token]] | [[Tokenomics]] | [[Staking]] | [[Yield Farming]] | [[Liquidity Pool]] | [[AMM]] | [[DEX]] | [[DApp]] | [[Gas Fee]] | [[EVM]] | [[Solidity]] | [[Vyper]] | [[IPFS]] | [[Filecoin]] | [[Arweave]] | [[Decentralized Storage]] | [[Content Addressing]] | [[CID]] | [[Merkle Tree]] | [[Hash Function]] | [[SHA-256]] | [[Elliptic Curve Cryptography]] | [[ECDSA]] | [[Schnorr Signature]] | [[Taproot]] | [[SegWit]] | [[Layer 2]] | [[Rollup]] | [[Optimistic Rollup]] | [[ZK Rollup]] | [[Plasma]] | [[State Channel]] | [[Sidechain]] | [[Cross-Chain]] | [[Bridge]] | [[Atomic Swap]] | [[Interoperability]] | [[Polkadot]] | [[Cosmos]] | [[Avalanche]] | [[Solana]] | [[Cardano]] | [[Tezos]] | [[Algorand]] | [[Consensus Mechanism]] | [[Proof of Work]] | [[Proof of Stake]] | [[Delegated Proof of Stake]] | [[Byzantine Fault Tolerance]] | [[Nakamoto Consensus]] | [[Finality]] | [[Validator]] | [[Mining]] | [[Halving]] | [[Block Reward]] | [[Transaction Fee]] | [[Mempool]] | [[UTXO]] | [[Account Model]] | [[Nonce]] | [[Gas Limit]] | [[Block Size]] | [[Block Time]] | [[Orphan Block]] | [[Fork]] | [[Hard Fork]] | [[Soft Fork]] | [[51% Attack]] | [[Double Spend]] | [[Sybil Attack]] | [[Eclipse Attack]] | [[MEV]] | [[Front Running]] | [[Sandwich Attack]] | [[Slashing]] | [[Validator Set]] | [[Committee]] | [[Epoch]] | [[Slot]] | [[Beacon Chain]] | [[Shard]] | [[Data Availability]] | [[Erasure Coding]] | [[Reed-Solomon]] | [[KZG Commitment]] | [[Polynomial Commitment]] | [[SNARK]] | [[STARK]] | [[PLONK]] | [[Groth16]] | [[Halo2]] | [[Circom]] | [[ZoKrates]] | [[Noir]] | [[Cairo]] | [[zkVM]] | [[zkEVM]] | [[Prover]] | [[Verifier]] | [[Trusted Setup]] | [[Ceremony]] | [[SRS]] | [[CRS]] | [[Fiat-Shamir]] | [[Random Oracle]] | [[Schwartz-Zippel]] | [[Lagrange]] | [[FFT]] | [[MSM]] | [[Pedersen Commitment]] | [[Range Proof]] | [[Bulletproof]] | [[Inner Product Argument]] | [[Accumulator]] | [[Vector Commitment]] | [[Verkle Tree]] | [[Patricia Trie]] | [[Radix Tree]]
 
 - ### Provenance
   - sources::

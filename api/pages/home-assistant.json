@@ -58,7 +58,7 @@
         "label": "Nabu Casa"
       },
       {
-        "id": "urn:ngm:class:ollama-integration",
+        "id": "urn:ngm:class:local-llm-runtime-platform-integration",
         "label": "Ollama Integration"
       },
       {
@@ -116,7 +116,7 @@
         "label": "Zigbee Radio Dongle"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -234,7 +234,7 @@
         "label": "Node-RED"
       },
       {
-        "id": "urn:ngm:class:open-ai-api",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -258,11 +258,11 @@
         "label": "Zigbee2MQTT"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:ollama",
+        "id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama"
       }
     ],

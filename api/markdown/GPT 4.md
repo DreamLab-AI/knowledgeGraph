@@ -71,7 +71,7 @@ public:: true
         "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ],
@@ -106,7 +106,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:linked:open-ai",
       "kind": "ResolvedLink"
     },
@@ -147,7 +147,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Large Language Models]]
   - bridges-to:: [[Multimodal AI]]
-  - requires:: [[Transformer]], [[OpenAI]]
+  - requires:: [[Transformer]], [[OpenAI Research Organisation]]
   - enables:: [[In-Context Learning]]
 
 - ### Content

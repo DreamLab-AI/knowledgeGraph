@@ -6,9 +6,9 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Quantum Computing]]
+  - is-subclass-of:: [[Quantum Computation Paradigm]]
   - bridges-to:: [[Cryptography]]
-  - requires:: [[Quantum Computing]]
+  - requires:: [[Quantum Computation Paradigm]]
   - enables:: [[Post-Quantum Cryptography]]
 
 - ### Content

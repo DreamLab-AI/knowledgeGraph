@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
     ],
     "enables": [
@@ -73,7 +73,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
@@ -83,7 +83,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
       {"@id": "urn:ngm:class:named-entity", "label": "Named Entity"},
-      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}
     ]
   },
   "provenance": {
@@ -140,7 +140,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[AI Technique]]
-  - requires:: [[Probabilistic Model]], [[Machine Learning]], [[Feature Extraction]]
+  - requires:: [[Probabilistic Model]], [[Machine Learning Discipline]], [[Feature Extraction]]
   - enables:: [[Named Entity Recognition]], [[Natural Language Processing]], [[Speech Recognition]]
   - uses:: [[Deep Learning]], [[Machine Learning Model]]
   - contrastsWith:: [[Recurrent Neural Network]], [[Transformer]], [[Convolutional Neural Network]]

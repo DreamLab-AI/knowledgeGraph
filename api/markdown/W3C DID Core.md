@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}

@@ -40,7 +40,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   },
   "quality": 0.8
@@ -50,7 +50,7 @@ public:: true
 - ### Definition
   - [[Network Analysis]] is the application of graph theory and computational methods to characterise the structure and dynamics of systems represented as nodes and edges, enabling [[Knowledge Graph Construction]], community detection, and influence modelling across social, technical, and semantic networks including [[Linked Data]] graphs.
 - ### Relationships
-  - Network Analysis is grounded in [[Knowledge Graph]] methodology and relies on [[Graph Neural Network]] models for learned representations and [[Social Network Graph]] datasets for empirical study. It uses [[Knowledge Representation]] formalisms to encode domain semantics. Key outputs include [[Knowledge Graph Construction]] artefacts and [[Knowledge Graphing]] visualisations. It connects to [[Knowledge Management]] practice, [[Linked Data]] infrastructure, [[Distributed System]] topology analysis, and [[Machine Learning]] pipelines for graph-based prediction tasks.
+  - Network Analysis is grounded in [[Knowledge Graph]] methodology and relies on [[Graph Neural Network]] models for learned representations and [[Social Network Graph]] datasets for empirical study. It uses [[Knowledge Representation]] formalisms to encode domain semantics. Key outputs include [[Knowledge Graph Construction]] artefacts and [[Knowledge Graphing]] visualisations. It connects to [[Knowledge Management]] practice, [[Linked Data]] infrastructure, [[Distributed System]] topology analysis, and [[Machine Learning Discipline]] pipelines for graph-based prediction tasks.
 - ### Content
   - Network analysis emerged from early social network studies in the 1930s and was formalised through Erdős–Rényi random graph theory and Watts–Strogatz small-world models in the 1990s. The field gained mainstream attention with Barabási and Albert's discovery of scale-free networks in 1999, demonstrating that many real-world networks—including the Web, citation networks, and metabolic networks—exhibit power-law degree distributions arising from preferential attachment growth mechanisms.
 

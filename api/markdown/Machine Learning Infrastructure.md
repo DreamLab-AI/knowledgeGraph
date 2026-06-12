@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-infrastructure",
+  "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
   "@type": "Class",
   "label": "Machine Learning Infrastructure",
   "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",

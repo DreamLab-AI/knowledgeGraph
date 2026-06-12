@@ -3,7 +3,7 @@
   "title": "NVIDIA Isaac Sim",
   "slug": "nvidia-isaac-sim",
   "public": true,
-  "classIri": "urn:ngm:class:nvidia-isaac-sim",
+  "classIri": "urn:ngm:class:nvidia-corporation-isaac-sim",
   "domain": "robotics",
   "definition": "NVIDIA Isaac Sim is a robotics simulation application built on the Omniverse platform for designing, testing, and training robots in virtual environments. It is developed by NVIDIA.",
   "subClassOf": [

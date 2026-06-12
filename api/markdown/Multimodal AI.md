@@ -39,7 +39,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-ai",
+  "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
   "@type": "Class",
   "label": "Multimodal AI",
   "definition": "Multimodal AI refers to machine learning systems that process and integrate information from multiple data modalities — including text, images, audio, and video — simultaneously to produce contextually richer outputs than single-modality systems. These architectures employ specialised neural network fusion techniques to replicate the human brain's capacity to synthesise diverse sensory inputs, enabling applications in healthcare diagnostics, human-computer interaction, and cross-modal content generation.",
@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},

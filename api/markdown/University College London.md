@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -91,7 +91,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -132,7 +132,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Entity]]
   - bridges-to:: [[Alan Turing Institute]]
-  - enables:: [[Machine Learning]], [[Artificial Intelligence]]
+  - enables:: [[Machine Learning Discipline]], [[Artificial Intelligence]]
 
 - ### Content
   - University College London is a large multidisciplinary research university in central London. It maintains internationally recognised research in computer science, artificial intelligence, and machine learning, alongside the physical and life sciences.

@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
   - bridges-to:: [[Bitcoin Script]]
-  - requires:: [[Bitcoin]], [[Schnorr Signature]], [[Cryptographic Proof]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Schnorr Signature]], [[Cryptographic Proof]]
   - enables:: [[Atomic Swap]]
 
 - ### Content

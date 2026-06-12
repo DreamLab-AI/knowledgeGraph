@@ -176,7 +176,7 @@ public:: true
         "label": "Stereoscopic Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -309,7 +309,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -363,7 +363,7 @@ public:: true
 - ### Relationships
   - has-part:: [[Head-Mounted Display]], [[VR Controllers]], [[Tracking Sensors]], [[VR Rendering Engine]], [[Spatial Audio System]]
   - is-part-of:: [[Extended Reality (XR)]]
-  - requires:: [[Spatial Computing]], [[6DoF Tracking]], [[Stereoscopic Rendering]], [[Low-Latency Display]]
+  - requires:: [[Spatial Computing Paradigm]], [[6DoF Tracking]], [[Stereoscopic Rendering]], [[Low-Latency Display]]
   - enables:: [[Virtual Presence]], [[Immersive Gaming]], [[Virtual Training]], [[Virtual Tourism]]
   - depends-on:: [[GPU]], [[Real-time Rendering]], [[Motion Tracking]], [[Haptic Feedback]]
 

@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin",
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],
@@ -121,7 +121,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     }
@@ -145,7 +145,7 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Bitcoin Script]]
   - requires:: [[Taproot]], [[UTXO]]
   - enables:: [[BRC-20]]

@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"},
-      {"@id": "urn:ngm:class:comfy-ui-workflows", "label": "ComfyUI Workflows"}
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}
     ]
   },
   "quality": 0.72

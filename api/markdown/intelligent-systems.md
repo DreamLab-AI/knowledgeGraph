@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - requires [[Machine Learning]]
+  - requires [[Machine Learning Discipline]]
   - requires [[Reasoning]]
   - enables [[Artificial Intelligence]]
   - relatedTo [[Knowledge Representation]]

@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
     ]
   },

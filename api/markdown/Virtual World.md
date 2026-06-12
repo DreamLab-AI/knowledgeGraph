@@ -231,7 +231,7 @@ alias:: VirtualWorld
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-work",
+        "@id": "urn:ngm:class:collaborative-systems-modality-work",
         "label": "Collaborative Work"
       },
       {

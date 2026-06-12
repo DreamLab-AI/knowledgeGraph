@@ -71,7 +71,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
@@ -109,7 +109,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -160,7 +160,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
   - bridges-to:: [[Bitcoin Script]]
-  - requires:: [[Bitcoin]], [[Schnorr Signature]], [[Cryptographic Proof]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Schnorr Signature]], [[Cryptographic Proof]]
   - enables:: [[Atomic Swap]]
 
 - ### Content

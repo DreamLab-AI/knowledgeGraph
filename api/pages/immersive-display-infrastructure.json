@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:0dea95a36a9cb630baa2268c55f5aed36aaf1f692c67f0891bcf3c54025f9503",
+  "title": "Immersive Display Infrastructure",
+  "slug": "immersive-display-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:immersive-display-infrastructure",
+  "domain": "infrastructure",
+  "definition": "The hardware and software infrastructure used to install, calibrate, and drive immersive visual displays in XR, digital signage, and spatial computing contexts. This encompasses projection mapping, light-field displays, LED walls, head-mounted display optics, and the rendering pipelines that feed them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:light-field",
+        "label": "Light field"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ],
+  "backlinks": []
+}

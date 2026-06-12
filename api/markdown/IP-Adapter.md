@@ -27,7 +27,7 @@ alias:: IP Adapter
   "subClassOf": [{"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"}],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
@@ -59,7 +59,7 @@ alias:: IP Adapter
 - ### Definition
   - IP-Adapter is a plug-in adapter for pre-trained diffusion models that enables image-conditioned generation by injecting CLIP image embeddings through decoupled cross-attention layers, allowing style and content reference from an image without retraining the base model.
 - ### Relationships
-  - IP-Adapter is an instance of [[Adapter Modules]] and depends on a pre-trained [[Diffusion Model]] such as [[Stable Diffusion]] for its base generation capability. It routes image embeddings through [[Cross Attention]] layers parallel to existing text cross-attention, enabling [[Image Generation]] guided by both text and image signals. It is distributed via [[Hugging Face Diffusers]] and is closely related to [[ControlNet]] as a complementary spatial conditioning approach. Unlike [[Fine Tuning]], IP-Adapter modifies no base model weights. It supports [[Style Transfer]], [[Inpainting]], and [[Image to Image Translation]] use cases within the [[Generative AI]] and [[Computer Vision]] domains.
+  - IP-Adapter is an instance of [[Adapter Modules]] and depends on a pre-trained [[Diffusion Model]] such as [[Stable Diffusion Image Model]] for its base generation capability. It routes image embeddings through [[Cross Attention]] layers parallel to existing text cross-attention, enabling [[Image Generation]] guided by both text and image signals. It is distributed via [[Hugging Face Diffusers]] and is closely related to [[ControlNet]] as a complementary spatial conditioning approach. Unlike [[Fine Tuning]], IP-Adapter modifies no base model weights. It supports [[Style Transfer]], [[Inpainting]], and [[Image to Image Translation]] use cases within the [[Generative AI]] and [[Computer Vision]] domains.
 - ### Content
   - IP-Adapter was introduced by Ye et al. from Tencent AI Lab in a 2023 paper titled "IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models." The central problem it solves is image prompt compatibility: standard diffusion models accept only text prompts, but many practical applications require controlling generation with a reference image—for example, preserving a subject's face, copying an artistic style, or anchoring composition from a sketch or photograph.
 

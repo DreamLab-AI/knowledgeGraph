@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[DeFi]]
-  - bridges-to:: [[Tokenisation]]
+  - bridges-to:: [[Neural Network Text Tokenisation]]
   - requires:: [[Smart Contract]], [[Yield Farming]]
 
 - ### Content

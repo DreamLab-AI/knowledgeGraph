@@ -6,9 +6,9 @@
   - owl-role:: Individual
 
 - ### Relationships
-  - is-subclass-of:: [[Stable Diffusion]]
+  - is-subclass-of:: [[Stable Diffusion Image Model]]
   - bridges-to:: [[Image Generation]]
-  - requires:: [[Stable Diffusion]]
+  - requires:: [[Stable Diffusion Image Model]]
   - enables:: [[Image-to-Image]], [[Inpainting]]
 
 - ### Content

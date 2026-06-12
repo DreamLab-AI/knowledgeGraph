@@ -18,16 +18,16 @@ alias:: Bitcoin-Ordinals
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-ordinals",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals",
   "@type": "Class",
   "label": "Bitcoin Ordinals",
   "definition": "Bitcoin Ordinals is a numbering scheme and inscription protocol that assigns a unique serial number to every individual satoshi on the Bitcoin network based on the order of its mining, enabling arbitrary content — text, images, code — to be embedded directly into Bitcoin transactions via the witness data introduced by SegWit and Taproot. Each inscription is permanently stored on-chain without requiring a separate token contract, making it a native non-fungible artefact within the Bitcoin base layer. The protocol was introduced by Casey Rodarmor in January 2023.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"}],
+  "subClassOf": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
     ],
     "relatedTo": [
@@ -36,7 +36,7 @@ alias:: Bitcoin-Ordinals
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin-core", "label": "Bitcoin Core"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"}
     ]
   },
   "quality": 0.8

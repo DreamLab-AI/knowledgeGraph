@@ -55,7 +55,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -69,7 +69,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
@@ -106,7 +106,7 @@ Behavioral modeling bridges the gap between observed actions and the latent inte
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -131,7 +131,7 @@ Behavioral modeling bridges the gap between observed actions and the latent inte
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
 
 - ### Content
   Behavioral Modeling — content pending enrichment.

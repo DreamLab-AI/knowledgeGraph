@@ -215,7 +215,7 @@
         "label": "Liability Adjudication"
       },
       {
-        "id": "urn:ngm:class:public-awareness",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-awareness",
         "label": "Public Awareness"
       },
       {
@@ -265,7 +265,7 @@
         "label": "US AI Safety Institute"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -849,6 +849,10 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "artificial-superintelligence-theory",
+      "label": "Artificial Superintelligence Theory"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },
@@ -963,10 +967,6 @@
     {
       "slug": "trust-and-safety",
       "label": "Trust and Safety"
-    },
-    {
-      "slug": "artificial-superintelligence",
-      "label": "artificial superintelligence"
     }
   ]
 }

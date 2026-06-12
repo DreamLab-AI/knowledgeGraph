@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Satoshi Nakamoto]]
   - requires:: [[Hashcash]]
   - enables:: [[Bitcoin Protocol]]

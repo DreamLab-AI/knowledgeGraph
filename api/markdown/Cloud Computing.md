@@ -24,7 +24,7 @@ alias:: CloudComputing
   "definition": "Cloud computing is the on-demand delivery of computing resources — including servers, storage, databases, networking, software, analytics, and intelligence — over the internet, enabling scalable access without local hardware ownership. Providers such as AWS, Azure, and Google Cloud expose these resources through service models (IaaS, PaaS, SaaS) with pay-as-you-go pricing. The paradigm underpins modern AI training, inference serving, and distributed application deployment by abstracting physical infrastructure into programmable APIs.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:technology-infrastructure-domain", "label": "Infrastructure"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},

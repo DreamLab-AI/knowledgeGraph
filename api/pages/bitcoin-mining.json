@@ -3,7 +3,7 @@
   "title": "Bitcoin Mining",
   "slug": "bitcoin-mining",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-mining",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
   "domain": "blockchain",
   "definition": "Bitcoin Mining is the proof-of-work Nakamoto consensus process by which the Bitcoin blockchain is extended, secured, and monetised through competitive computation of SHA-256 double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad...",
   "subClassOf": [
@@ -64,7 +64,7 @@
         "label": "ASIC Hardware"
       },
       {
-        "id": "urn:ngm:class:bitcoin-full-node",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-full-node",
         "label": "Bitcoin Full Node"
       },
       {
@@ -86,7 +86,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-issuance",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-issuance",
         "label": "Bitcoin Issuance"
       },
       {
@@ -172,7 +172,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-network-security",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network-security",
         "label": "Bitcoin Network Security"
       },
       {
@@ -206,7 +206,7 @@
         "label": "BIP 91"
       },
       {
-        "id": "urn:ngm:class:bitcoin-core-reference-implementation",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core-reference-implementation",
         "label": "Bitcoin Core Reference Implementation"
       },
       {
@@ -245,7 +245,7 @@
         "label": "Stranded Gas"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {

@@ -24,7 +24,7 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -92,8 +92,8 @@
       "label": "Inpainting"
     },
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney Text-to-Image Service"
     },
     {
       "slug": "proprietary-image-generation",

@@ -24,7 +24,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -32,7 +32,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -42,7 +42,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ],
@@ -51,7 +51,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:python-and-py-torch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "Python and PyTorch"
       }
     ]

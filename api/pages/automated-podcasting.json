@@ -181,7 +181,7 @@
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:open-ai-whisper",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-whisper",
         "label": "OpenAI Whisper"
       }
     ],
@@ -221,7 +221,7 @@
         "label": "C2PA Content Credentials"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-article-50",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
@@ -248,11 +248,11 @@
         "label": "AI Video"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {

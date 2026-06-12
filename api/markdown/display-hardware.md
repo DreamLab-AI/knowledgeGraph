@@ -12,7 +12,7 @@
 - ### Relationships
   - is-subclass-of:: [[Hardware]]
   - requires:: [[Display Technology]], [[Optical Systems]], [[Graphics Processing]]
-  - enables:: [[Immersive Visualization]], [[Spatial Computing]], [[Mixed Reality]]
+  - enables:: [[Immersive Visualization]], [[Spatial Computing Paradigm]], [[Mixed Reality]]
 
 - ### Content
 

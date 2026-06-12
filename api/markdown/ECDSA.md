@@ -84,7 +84,7 @@ public:: true
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
@@ -93,7 +93,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
     ]
   },

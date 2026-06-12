@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[GPU]]
-  - bridges-to:: [[NVIDIA]]
+  - bridges-to:: [[NVIDIA Corporation]]
   - enables:: [[GPU Cluster]], [[GPU Computing]]
 
 - ### Content

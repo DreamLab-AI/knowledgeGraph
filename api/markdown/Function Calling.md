@@ -508,7 +508,7 @@ public:: true
         "label": "Conversation Context"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -578,11 +578,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-rpc-2-0",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
         "label": "JSON-RPC 2.0"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -616,7 +616,7 @@ public:: true
         "label": "Code Interpreter"
       },
       {
-        "@id": "urn:ngm:class:llama-index",
+        "@id": "urn:ngm:class:meta-llama-model-family-index",
         "label": "LlamaIndex"
       },
       {
@@ -664,15 +664,15 @@ public:: true
         "label": "Anthropic Tool Use API"
       },
       {
-        "@id": "urn:ngm:class:google-gemini-function-declarations",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini-function-declarations",
         "label": "Google Gemini Function Declarations"
       },
       {
-        "@id": "urn:ngm:class:json-schema-draft-2020-12",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema-draft-2020-12",
         "label": "JSON Schema Draft 2020-12"
       },
       {
-        "@id": "urn:ngm:class:open-ai-function-calling-api",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-function-calling-api",
         "label": "OpenAI Function Calling API"
       },
       {

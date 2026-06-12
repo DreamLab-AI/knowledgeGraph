@@ -10,7 +10,7 @@
   - Has Part: [[Feature Importance]]
   - Has Part: [[Local Explanation]]
   - Has Part: [[Global Explanation]]
-  - Requires: [[Machine Learning]]
+  - Requires: [[Machine Learning Discipline]]
   - Supports: [[AI Governance]]
   - Supports: [[Fairness]]
   - Related To: [[Interpretable AI]]
@@ -134,7 +134,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
   - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 
@@ -473,7 +473,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
   - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 
@@ -852,7 +852,7 @@
 
 		  ## Related Terms
 
-		  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+		  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
 		  - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
 		  - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 

@@ -441,7 +441,7 @@ public:: true
         "label": "Agricultural Robotics"
       },
       {
-        "@id": "urn:ngm:class:infrastructure-inspection",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-inspection",
         "label": "Infrastructure Inspection"
       },
       {
@@ -509,7 +509,7 @@ public:: true
         "label": "MoveIt2"
       },
       {
-        "@id": "urn:ngm:class:nvidia-isaac-sim",
+        "@id": "urn:ngm:class:nvidia-corporation-isaac-sim",
         "label": "NVIDIA Isaac Sim"
       },
       {
@@ -962,7 +962,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1034,7 +1034,7 @@ public:: true
 
 
 - ### Definition
-  - Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks — including material transport, environmental inspection, search and rescue, precision agriculture, planetary exploration, and armed force support — across indoor, outdoor, and extreme off-road conditions. Ground robots span a capability spectrum from centimetre-scale research platforms to multi-tonne industrial autonomous guided vehicles (AGVs) and military unmanned ground vehicles (UGVs), distinguished from [[Aerial Robot]] (UAV/drone) and [[Marine Robot]] (USV/AUV) classes by their reliance on surface contact for locomotion and their coupling with ground-terrain mechanics including traction, slip, and obstacle negotiation. The field integrates [[Simultaneous Localisation and Mapping]] (SLAM), [[Motion Planning]], [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]] fusion, and increasingly [[Foundation Models]] for natural-language task specification, constituting one of the largest segments of the global robotics market — projected by IDC to exceed USD 46 billion by 2027 across warehouse, agricultural, logistics, defence, and service verticals.
+  - Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks — including material transport, environmental inspection, search and rescue, precision agriculture, planetary exploration, and armed force support — across indoor, outdoor, and extreme off-road conditions. Ground robots span a capability spectrum from centimetre-scale research platforms to multi-tonne industrial autonomous guided vehicles (AGVs) and military unmanned ground vehicles (UGVs), distinguished from [[Aerial Robot]] (UAV/drone) and [[Marine Robot]] (USV/AUV) classes by their reliance on surface contact for locomotion and their coupling with ground-terrain mechanics including traction, slip, and obstacle negotiation. The field integrates [[Simultaneous Localisation and Mapping]] (SLAM), [[Motion Planning]], [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]] fusion, and increasingly [[Large-Scale Pretrained Foundation Model]] for natural-language task specification, constituting one of the largest segments of the global robotics market — projected by IDC to exceed USD 46 billion by 2027 across warehouse, agricultural, logistics, defence, and service verticals.
   - Architecturally, ground robots are characterised by five interdependent subsystems: (1) a locomotion mechanism (wheels, tracks, legs, or compound arrangements), (2) a sensor suite providing egocentric perception (cameras, LiDAR, radar, ultrasonic, tactile), (3) a compute stack executing SLAM, path planning, and task logic, (4) a power system (battery, fuel cell, tethered, or internal combustion), and (5) communication interfaces for teleoperation, fleet management, and cloud reporting. The [[ROS 2]] (Robot Operating System 2) middleware framework, standardised around DDS (Data Distribution Service) publish-subscribe messaging, underpins the majority of research and an increasing share of industrial deployments as of 2025, providing hardware-abstraction, sensor drivers, navigation stack (Nav2), and simulation integration with Gazebo/Isaac Sim. Key performance dimensions include payload capacity (50 g research platforms → 1,500 kg industrial AGVs), maximum speed (0.5 m/s precision AMRs → 10 m/s military UGVs), endurance (30 min battery-electric → 24 h+ diesel UGV), localisation accuracy (2 cm RTK-GNSS → 30 cm standard odometry), and operational domain (structured warehouse → unstructured disaster site).
   - The locomotion taxonomy divides into three principal families. Wheeled robots — including differential-drive, Ackermann-steered, omnidirectional (mecanum/holonomic), and skid-steered configurations — offer the highest energy efficiency on flat terrain (electrical efficiency 85-95% motor-to-wheel) and dominate warehouse AMR deployments (Amazon Sequoia, Locus Robotics Origin, Fetch Robotics Freight). Tracked robots — exemplified by FLIR/Endeavor Robotix PackBot, Boston Dynamics BigDog predecessor, and mining inspection platforms — achieve superior obstacle-crossing and soft-terrain mobility at the cost of increased power consumption (15-25% higher than equivalent wheeled platforms) and turning-circle constraints. Legged robots — quadrupeds (Boston Dynamics Spot, Unitree Go2/B2, ANYbotics ANYmal), hexapods, and bipedal humanoids (Unitree H1/G1, Figure 01, Apptronik Apollo) — deliver unmatched terrain adaptability by dynamically selecting foot placements, crossing rubble, climbing stairs, and recovering from falls, at the expense of mechanical complexity and computational intensity (whole-body control loops at 1 kHz). Hybrid platforms combine locomotion modalities: the Anymal-wheeled prototype mounts wheels on articulated legs for rapid flat-terrain traversal switching to stepping gaits on stairs; DARPA Legged Squad Support System (LS3) used legs with dynamic balance across rock fields. Mars rovers represent a specialised wheeled-legged synthesis — Curiosity and Perseverance use a six-wheel rocker-bogie suspension achieving ±45° rock negotiation without body tipping, executing autonomous hazard avoidance at 150 m/sol traverse rates via the AEGIS AI target-selection system.
 
@@ -1051,7 +1051,7 @@ public:: true
   - requires:: [[SLAM]], [[Motion Planning]], [[Obstacle Avoidance]], [[Localisation]], [[Terrain Interaction Model]], [[Traction Control]], [[Battery Management System]]
   - enables:: [[Warehouse Automation]], [[Autonomous Navigation]], [[Material Transport]], [[Planetary Exploration]], [[Agricultural Robotics]], [[Search and Rescue]], [[Military Operations]], [[Infrastructure Inspection]]
   - implements:: [[ROS 2]], [[Nav2 Navigation Stack]], [[Cartographer SLAM]], [[RTAB-Map]], [[Model Predictive Control]], [[Whole-Body Control]], [[Deep Reinforcement Learning]]
-  - depends-on:: [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]], [[Point Cloud Processing]], [[Occupancy Grid Mapping]], [[Path Planning Algorithms]], [[Foundation Models]]
+  - depends-on:: [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]], [[Point Cloud Processing]], [[Occupancy Grid Mapping]], [[Path Planning Algorithms]], [[Large-Scale Pretrained Foundation Model]]
   - supports:: [[Precision Agriculture]], [[Last-Mile Delivery]], [[Disaster Response]], [[Industrial Inspection]], [[Security Patrol]], [[Scientific Exploration]]
   - uses:: [[ROS 2]], [[Gazebo Simulation]], [[NVIDIA Isaac Sim]], [[SLAM Toolbox]], [[OpenCV]], [[PCL Point Cloud Library]], [[MoveIt2]]
   - contrasts-with:: [[Aerial Robot]], [[Marine Robot]], [[Soft Robot]], [[Fixed Robot Arm]], [[Teleoperated System]]

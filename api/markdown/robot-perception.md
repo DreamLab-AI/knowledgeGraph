@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - requires:: [[Sensors]], [[Sensor Fusion]]
   - enables:: [[SLAM]]
 

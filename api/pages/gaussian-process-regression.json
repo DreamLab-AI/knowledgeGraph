@@ -8,7 +8,7 @@
   "definition": "Gaussian process regression is a non-parametric Bayesian method that models an unknown function as a distribution over functions defined by a mean and a covariance (kernel) function. Given observations, it produces a posterior that yields predictions together with calibrated uncertainty estimates. It is widely used where data is scarce and quantified uncertainty matters, such as Bayesian optimisation and surrogate modelling.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],

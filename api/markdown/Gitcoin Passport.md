@@ -33,7 +33,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:gitcoin", "label": "Gitcoin"},

@@ -8,7 +8,7 @@
   "definition": "Self-Supervised Learning (SSL) is a machine learning paradigm in which a model learns rich representations of data by solving pretext tasks whose supervisory signal is derived automatically from the input data itself, requiring no human-provided labels. The model learns to predict masked or hidden portions of an input, to match different views of the same data, or to distinguish positive from negative data pairs, developing features that transfer effectively to downstream supervised tasks with limited labelled data. Self-supervised learning has become the dominant pre-training strategy for large language models, visual foundation models, and multimodal systems, enabling training at scales that would be infeasible with manually annotated datasets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {

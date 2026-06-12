@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Sidechain]]
   - bridges-to:: [[Ethereum Virtual Machine]]
-  - requires:: [[Sidechain]], [[Bitcoin]]
+  - requires:: [[Sidechain]], [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Smart Contract]]
 
 - ### Content

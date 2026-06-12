@@ -3,7 +3,7 @@
   "title": "Machine Learning Framework",
   "slug": "machine-learning-framework",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-framework",
+  "classIri": "urn:ngm:class:machine-learning-discipline-framework",
   "domain": "artificial-intelligence",
   "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
   "subClassOf": [

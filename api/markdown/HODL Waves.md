@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-distribution", "label": "Bitcoin Distribution"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
     ]
   },
   "quality": 0.72

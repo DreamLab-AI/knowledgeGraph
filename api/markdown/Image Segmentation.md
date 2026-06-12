@@ -428,7 +428,7 @@ public:: true
         "label": "Keypoint Detection"
       },
       {
-        "@id": "urn:ngm:class:multimodal-learning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multi-Modal Learning"
       },
       {
@@ -440,7 +440,7 @@ public:: true
         "label": "3D Reconstruction"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -763,7 +763,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -849,7 +849,7 @@ public:: true
   - supports:: [[Autonomous Driving]], [[Surgical Robotics]], [[Cancer Detection]], [[Background Removal]], [[Remote Sensing]]
   - uses:: [[Mean Intersection over Union]], [[Dice Coefficient]], [[Average Precision]], [[Panoptic Quality]], [[Cross Entropy Loss]]
   - contrasts-with:: [[Object Detection]], [[Image Classification]], [[Image Generation]], [[Depth Estimation]]
-  - related-to:: [[Keypoint Detection]], [[Optical Flow]], [[3D Reconstruction]], [[Multi-Modal Learning]], [[Foundation Models]]
+  - related-to:: [[Keypoint Detection]], [[Optical Flow]], [[3D Reconstruction]], [[Multi-Modal Learning]], [[Large-Scale Pretrained Foundation Model]]
   - standardized-by:: [[PASCAL VOC]], [[COCO Dataset]], [[Cityscapes Dataset]], [[ADE20K]], [[ImageNet]]
 
 - ### Content

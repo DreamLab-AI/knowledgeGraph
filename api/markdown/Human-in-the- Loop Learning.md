@@ -103,7 +103,7 @@ alias:: Human-in-the-Loop Learning
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -165,7 +165,7 @@ alias:: Human-in-the-Loop Learning
   - Uses [[Data Annotation]]
   - Uses [[Reinforcement Learning from Human Feedback]]
   - Enables [[Interactive Learning]]
-  - Supports [[Machine Learning]]
+  - Supports [[Machine Learning Discipline]]
   - Related To [[Human in the Loop]]
   - Related To [[Federated Learning]]
 

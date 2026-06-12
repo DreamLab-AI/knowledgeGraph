@@ -58,7 +58,7 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
     ],
     "uses": [
@@ -119,7 +119,7 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - **enables**: [[Spatial Computing]], [[Immersive Technology]]
+  - **enables**: [[Spatial Computing Paradigm]], [[Immersive Technology]]
   - **uses**: [[Computing Hardware]], [[Computing Infrastructure]]
   - **relatedTo**: [[Disruptive Technology]], [[Digital Infrastructure]]
 

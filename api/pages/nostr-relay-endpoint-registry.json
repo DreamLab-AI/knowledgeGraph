@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:3006ff436222da04129b9a33b51c6f085ea4baea7856de77e5f0358fbe718080",
+  "title": "Nostr Relay Endpoint Registry",
+  "slug": "nostr-relay-endpoint-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:nostr-relay-endpoint-registry",
+  "domain": "blockchain",
+  "definition": "A Nostr relay list is a curated or automatically discovered list of WebSocket relay server endpoints that a Nostr client uses to publish and subscribe to signed events. Because Nostr has no centralised routing, a client's relay list determines its social graph reach: events are broadcast to all listed relays, and the client pulls its feed from the same set. Relay lists are stored as NIP-65 kind:10002 events on the network itself, enabling portable relay preferences that travel with the user's public key across clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

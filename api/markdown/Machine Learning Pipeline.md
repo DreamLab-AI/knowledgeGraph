@@ -51,7 +51,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-pipeline",
+  "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
   "@type": "Class",
   "label": "Machine Learning Pipeline",
   "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, edeployment, and continuous monitoring.",

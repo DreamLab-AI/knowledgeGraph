@@ -74,7 +74,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -154,7 +154,7 @@ public:: true
   - Requires [[Rendering Pipeline]]
   - Requires [[Hardware Abstraction]]
   - Implements [[Open Standard]]
-  - Enables [[Spatial Computing]]
+  - Enables [[Spatial Computing Paradigm]]
   - Enables [[Virtual Reality]]
   - Enables [[Augmented Reality]]
   - Uses [[Optical Tracking]]

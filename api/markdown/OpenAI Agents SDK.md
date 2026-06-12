@@ -59,7 +59,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:open-ai-agents-sdk",
+  "@id": "urn:ngm:class:openai-research-organisation-research-organisation-agents-sdk",
   "@type": "Class",
   "label": "OpenAI Agents SDK",
   "definition": "The OpenAI Agents SDK is a software development kit for building agentic applications on OpenAI models, providing primitives for agents, tools and handoffs. It supports orchestrating one or more agents that call functions and pass control between each other.",
@@ -133,7 +133,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:linked:open-ai",
       "kind": "ResolvedLink"
     },
@@ -168,7 +168,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Agentic Workflow]]
-  - bridges-to:: [[OpenAI]], [[AI Agent]]
+  - bridges-to:: [[OpenAI Research Organisation]], [[AI Agent]]
   - requires:: [[Language Model]], [[Function Calling]]
   - enables:: [[Multi-Agent Coordination]], [[Tool Use]]
 

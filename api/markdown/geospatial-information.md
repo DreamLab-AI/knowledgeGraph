@@ -10,7 +10,7 @@
   - Uses [[Lidar]]
   - Uses [[Point Cloud]]
   - Enables [[Geospatial Engine]]
-  - Enables [[Location Based Experience]]
+  - Enables [[Venue-Tethered Immersive Experience]]
   - Related To [[Spatial Data Structure]]
   - Related To [[Geospatial Technology]]
 

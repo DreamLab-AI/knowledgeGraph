@@ -65,7 +65,7 @@ alias:: multi-task learning
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],

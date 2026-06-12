@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:collaborative-design", "label": "Collaborative Design"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
       {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"},
       {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}
     ],

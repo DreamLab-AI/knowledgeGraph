@@ -8,7 +8,7 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - **enables**: [[Spatial Computing]], [[Immersive Technology]]
+  - **enables**: [[Spatial Computing Paradigm]], [[Immersive Technology]]
   - **uses**: [[Computing Hardware]], [[Computing Infrastructure]]
   - **relatedTo**: [[Disruptive Technology]], [[Digital Infrastructure]]
 

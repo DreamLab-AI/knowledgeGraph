@@ -8,7 +8,7 @@
   "definition": "The ONNX standard defines an open format for representing machine learning models as a computation graph of typed operators, enabling models to move between training and inference frameworks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

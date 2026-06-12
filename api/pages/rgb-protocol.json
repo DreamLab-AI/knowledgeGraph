@@ -38,7 +38,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -67,7 +67,7 @@
         "label": "Taproot Assets"
       },
       {
-        "id": "urn:ngm:class:client-side-dco",
+        "id": "urn:ngm:class:privacy-preserving-dynamic-creative-optimisation",
         "label": "Client side DCO"
       }
     ]

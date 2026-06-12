@@ -26,13 +26,13 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
       {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
@@ -48,7 +48,7 @@ public:: true
   - Schema.org is a community vocabulary expressed in [[JSON-LD]], [[RDF]], and Microdata that provides a [[Controlled Vocabulary]] of types and properties enabling web publishers to mark up semantic content so that [[Search Engine]] systems can construct [[Knowledge Graph]] entries and rich result features.
 
 - ### Relationships
-  - Schema.org uses [[JSON-LD]] as its preferred serialisation format, [[RDF]] as its underlying data model, and draws on [[Controlled Vocabulary]] principles to maintain consistent term definitions. It enables [[Knowledge Graph]] construction by major search engines and contributes to the broader [[Semantic Web]] vision of a machine-readable web. It relates to [[Ontology]] formalisms that provide richer logical constraints, to [[Search Engine]] applications that consume its markup for result enhancement, and to [[Data Annotation]] workflows that use its types to label training datasets for information extraction and entity recognition systems.
+  - Schema.org uses [[JSON-LD]] as its preferred serialisation format, [[RDF]] as its underlying data model, and draws on [[Controlled Vocabulary]] principles to maintain consistent term definitions. It enables [[Knowledge Graph]] construction by major search engines and contributes to the broader [[Semantic Web Linked Data Standard]] vision of a machine-readable web. It relates to [[Ontology]] formalisms that provide richer logical constraints, to [[Search Engine]] applications that consume its markup for result enhancement, and to [[Data Annotation]] workflows that use its types to label training datasets for information extraction and entity recognition systems.
 
 - ### Content
   - Schema.org was created in response to a fragmented landscape of proprietary structured data formats—rich snippets, open graph, microformats—that each search engine interpreted differently. By providing a single, shared vocabulary endorsed by all major search engines, Schema.org created an incentive for web publishers to invest in structured markup, knowing it would be interpreted consistently across platforms. Within a few years of launch it became one of the most widely deployed web standards, appearing in tens of millions of websites.

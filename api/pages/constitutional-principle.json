@@ -55,7 +55,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ],

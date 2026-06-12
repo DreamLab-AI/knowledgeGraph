@@ -71,7 +71,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -100,7 +100,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -141,7 +141,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Entity]]
   - bridges-to:: [[University College London]], [[University of Oxford]]
-  - enables:: [[Artificial Intelligence]], [[Machine Learning]]
+  - enables:: [[Artificial Intelligence]], [[Machine Learning Discipline]]
 
 - ### Content
   - The Alan Turing Institute is the United Kingdom's national institute for data science and artificial intelligence, established in 2015 and named after Alan Turing. It convenes research across partner universities and applies methods to challenges in health, defence, and the public sector.

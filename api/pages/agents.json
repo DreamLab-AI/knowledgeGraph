@@ -56,7 +56,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -726,12 +726,12 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-user",
-      "label": "AI User"
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
     },
     {
-      "slug": "agentic-alliance",
-      "label": "Agentic Alliance"
+      "slug": "ai-user",
+      "label": "AI User"
     },
     {
       "slug": "autonomous-vehicle",
@@ -748,6 +748,10 @@
     {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-agent-coordination-initiative",
+      "label": "Decentralised Agent Coordination Initiative"
     },
     {
       "slug": "digital-asset-risks",
@@ -782,6 +786,10 @@
       "label": "Hardware and Edge"
     },
     {
+      "slug": "human-agent-interaction-surfaces",
+      "label": "Human-Agent Interaction Surfaces"
+    },
+    {
       "slug": "humanoid-robot",
       "label": "Humanoid Robot"
     },
@@ -792,10 +800,6 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
-    },
-    {
-      "slug": "interfaces",
-      "label": "Interfaces"
     },
     {
       "slug": "jailbreaking",
@@ -826,6 +830,10 @@
       "label": "LoRA DoRA etc"
     },
     {
+      "slug": "local-llm-runtime-platform",
+      "label": "Local LLM Runtime Platform"
+    },
+    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
     },
@@ -848,10 +856,6 @@
     {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "project-bro-bots",
-      "label": "Project BroBots"
     },
     {
       "slug": "prompt-engineering",
@@ -890,10 +894,6 @@
       "label": "Smart Contract"
     },
     {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
-    },
-    {
       "slug": "state-machine",
       "label": "State Machine"
     },
@@ -910,6 +910,10 @@
       "label": "Topological Map"
     },
     {
+      "slug": "toxic-content-counter-narrative-system",
+      "label": "Toxic Content Counter-Narrative System"
+    },
+    {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
     },
@@ -920,10 +924,6 @@
     {
       "slug": "trust-framework",
       "label": "Trust Framework"
-    },
-    {
-      "slug": "ollama",
-      "label": "ollama"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

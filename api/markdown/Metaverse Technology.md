@@ -111,7 +111,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
@@ -195,7 +195,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -263,7 +263,7 @@ public:: true
   - ## Key Subcategories
   - [[Virtual World]] - Persistent 3D environments and world-building systems
   - [[Augmented Reality]] - Overlay technologies and mixed reality systems
-  - [[Spatial Computing]] - 3D interaction, gesture recognition, and spatial interfaces
+  - [[Spatial Computing Paradigm]] - 3D interaction, gesture recognition, and spatial interfaces
   - [[Avatar System]] - Digital identity representation and customisation
   - [[Digital Asset]] - Virtual objects, NFTs, and interoperable items
   - [[Virtual Economy]] - In-world commerce, currencies, and marketplaces

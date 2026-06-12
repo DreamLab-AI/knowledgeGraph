@@ -596,7 +596,7 @@ public:: true
         "label": "Inference-Time Compute"
       },
       {
-        "@id": "urn:ngm:class:multimodal-learning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       },
       {
@@ -604,11 +604,11 @@ public:: true
         "label": "Scaling Hypothesis"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       }
     ],
@@ -648,7 +648,7 @@ public:: true
         "label": "Existential Risk"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -708,11 +708,11 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:open-ai-charter",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-charter",
         "label": "OpenAI Charter"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1271,17 +1271,17 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
@@ -1327,13 +1327,13 @@ public:: true
   - has-part:: [[Generalisation Capability]], [[Cross-Domain Transfer]], [[Autonomous Reasoning]], [[Open-Ended Learning]], [[World Model]], [[Tool Use Capability]], [[Long-Horizon Planning]]
   - requires:: [[Large-Scale Compute]], [[Frontier Training Data]], [[Scaling Laws]], [[Reinforcement Learning]], [[Alignment Techniques]], [[Evaluation Infrastructure]]
   - enables:: [[Transformative AI]], [[Economic Automation]], [[Scientific Discovery Acceleration]], [[Autonomous Agents]], [[Recursive Self-Improvement]]
-  - implements:: [[Scaling Hypothesis]], [[Chain-of-Thought Reasoning]], [[Inference-Time Compute]], [[Mixture of Experts]], [[Multimodal Learning]], [[Constitutional AI]]
+  - implements:: [[Scaling Hypothesis]], [[Chain-of-Thought Reasoning]], [[Inference-Time Compute]], [[Mixture-of-Experts Architecture]], [[Multimodal Learning]], [[Constitutional AI Training Methodology]]
   - depends-on:: [[Transformer Architecture]], [[Compute Trends]], [[Bitter Lesson]], [[Pretraining]], [[RLHF]], [[Benchmarks]]
   - supports:: [[AI Safety Research]], [[Alignment Research]], [[AI Policy]], [[Existential Risk Studies]], [[AI Governance]]
   - uses:: [[ARC-AGI]], [[MMLU]], [[GPQA]], [[FrontierMath]], [[SWE-bench]], [[Humanity's Last Exam]], [[METR Evaluations]]
   - contrasts-with:: [[Narrow AI]], [[Weak AI]], [[Domain-Specific AI]], [[Symbolic AI]], [[Expert System]]
   - related-to:: [[Superintelligence]], [[Transformative AI]], [[Frontier AI]], [[Foundation Model]], [[Recursive Self-Improvement]], [[AI Alignment]], [[Existential Risk]]
-  - standardized-by:: [[OpenAI Charter]], [[DeepMind Levels of AGI Framework]], [[NIST AI RMF]], [[ISO IEC 42001]], [[EU AI Act]]
+  - standardized-by:: [[OpenAI Charter]], [[DeepMind Levels of AGI Framework]], [[NIST AI RMF]], [[ISO IEC 42001]], [[EU AI Act Regulatory Instrument]]
 
 - ### Content
 

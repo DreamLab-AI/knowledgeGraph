@@ -30,7 +30,7 @@ public:: true
   "domain": "infrastructure",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure",
+      "@id": "urn:ngm:class:technology-infrastructure-domain",
       "label": "Infrastructure"
     }
   ],
@@ -47,7 +47,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
     ],
     "uses": [

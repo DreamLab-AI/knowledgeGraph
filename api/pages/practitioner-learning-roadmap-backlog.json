@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:1ff6a8d0b338c665b522d00fba65e7d604d02402937852192bcab61c8fe8b50b",
+  "title": "Practitioner Learning Roadmap Backlog",
+  "slug": "practitioner-learning-roadmap-backlog",
+  "public": true,
+  "classIri": "urn:ngm:class:practitioner-learning-roadmap-backlog",
+  "domain": "infrastructure",
+  "definition": "A Revision List is a curated, task-tracked syllabus of technologies, frameworks, and concepts that a practitioner aims to learn or revisit, typically structured as a prioritised backlog with completion states. In a data science and AI context, such a list spans programming languages, ML frameworks, cloud platforms, DevOps tooling, and conceptual foundations such as deep learning, NLP, and reinforcement learning. It functions as a personal knowledge-gap audit and learning roadmap.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python and PyTorch"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

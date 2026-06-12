@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:key-management", "label": "Key Management"}

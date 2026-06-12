@@ -7,7 +7,7 @@
 
 - ### Relationships
   - supports [[AI Safety Research]]
-  - supports [[Constitutional AI]]
+  - supports [[Constitutional AI Training Methodology]]
   - uses [[Large Language Models]]
   - uses [[RLHF]]
   - relatedTo [[Interpretability]]

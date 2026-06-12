@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Simulation]]
-  - enables:: [[Material System]], [[Quantum Computing]]
+  - enables:: [[Material System]], [[Quantum Computation Paradigm]]
 
 - ### Content
   - Material science investigates how the composition and microstructure of a material determine its mechanical, electrical, thermal, and optical properties. It spans metals, ceramics, polymers, semiconductors, and composite materials.

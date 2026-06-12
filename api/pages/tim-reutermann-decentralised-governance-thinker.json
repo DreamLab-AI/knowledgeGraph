@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:89bdc6e0521593e355ed99a1e75b36122353aaf541987ffef19fa070b48ba8dc",
+  "title": "Tim Reutermann Decentralised Governance Thinker",
+  "slug": "tim-reutermann-decentralised-governance-thinker",
+  "public": true,
+  "classIri": "urn:ngm:class:tim-reutermann-decentralised-governance-thinker-decentralised-governance-thinker",
+  "domain": "infrastructure",
+  "definition": "Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-privacy-activist",
+        "label": "cypherpunk"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

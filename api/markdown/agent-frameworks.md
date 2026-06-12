@@ -19,7 +19,7 @@
   - uses:: [[MCP Protocol]], [[ACP Protocol]], [[A2A Protocol]], [[OpenAPI]], [[Function Calling]], [[JSON-RPC]], [[Server-Sent Events]]
   - standardized-by:: [[Model Context Protocol]], [[Agent Communication Protocol]], [[Agent-to-Agent Protocol]], [[AGNTCY Collective]]
   - contrasts-with:: [[Classical Workflow Engine]], [[BPMN Orchestration]], [[Robotic Process Automation]], [[Rule-Based Expert System]], [[Deterministic DAG Pipeline]]
-  - related-to:: [[Retrieval-Augmented Generation]], [[Prompt Engineering]], [[Agentic AI]], [[Foundation Models]], [[Tool Use]], [[LLM Evaluation]]
+  - related-to:: [[Retrieval-Augmented Generation]], [[Prompt Engineering]], [[Agentic AI]], [[Large-Scale Pretrained Foundation Model]], [[Tool Use]], [[LLM Evaluation]]
 
 - ### Content
 

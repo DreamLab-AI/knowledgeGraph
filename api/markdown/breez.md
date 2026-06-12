@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Lightning Network]]
   - bridges-to:: [[Self-Custody]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
   - enables:: [[Payment Channel]]
 
 - ### Content

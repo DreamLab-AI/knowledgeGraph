@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Robotics]], [[Kinematics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Kinematics]]
   - requires:: [[Joint Parameters]]
   - enables:: [[Robot Simulation]], [[Motion Visualization]]

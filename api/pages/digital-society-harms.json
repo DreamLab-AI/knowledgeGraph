@@ -190,7 +190,7 @@
         "label": "Online Safety Act 2023"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -602,8 +602,8 @@
   ],
   "backlinks": [
     {
-      "slug": "project-bro-bots",
-      "label": "Project BroBots"
+      "slug": "toxic-content-counter-narrative-system",
+      "label": "Toxic Content Counter-Narrative System"
     },
     {
       "slug": "trust-and-safety",

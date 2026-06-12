@@ -248,24 +248,20 @@
       "label": "AI System Component"
     },
     {
+      "slug": "ai-technology-skills-curriculum",
+      "label": "AI Technology Skills Curriculum"
+    },
+    {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },
     {
-      "slug": "api-setup",
-      "label": "api-setup"
-    },
-    {
-      "slug": "api-tests-status",
-      "label": "api-tests-status"
+      "slug": "api-integration-health-dashboard",
+      "label": "api-integration-health-dashboard"
     },
     {
       "slug": "accountability",
       "label": "Accountability"
-    },
-    {
-      "slug": "accounts",
-      "label": "Accounts"
     },
     {
       "slug": "adaptive-virtual-experience",
@@ -278,14 +274,6 @@
     {
       "slug": "agent",
       "label": "Agent"
-    },
-    {
-      "slug": "agentic-alliance",
-      "label": "Agentic Alliance"
-    },
-    {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
     },
     {
       "slug": "ai-origin-declaration",
@@ -524,6 +512,10 @@
       "label": "Clarity"
     },
     {
+      "slug": "cloud-api-provisioning-process",
+      "label": "cloud-api-provisioning-process"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -588,8 +580,8 @@
       "label": "Consensus Protocol"
     },
     {
-      "slug": "conspiracies",
-      "label": "Conspiracies"
+      "slug": "conspiratorial-thinking-in-technology-communities",
+      "label": "Conspiratorial Thinking in Technology Communities"
     },
     {
       "slug": "constitutional-principle",
@@ -598,10 +590,6 @@
     {
       "slug": "constraint",
       "label": "Constraint"
-    },
-    {
-      "slug": "consumer-tools-for-smes",
-      "label": "Consumer Tools for SMEs"
     },
     {
       "slug": "content-authentication",
@@ -628,16 +616,16 @@
       "label": "Convergence"
     },
     {
-      "slug": "courses-and-training",
-      "label": "Courses and Training"
-    },
-    {
       "slug": "creator-economy",
       "label": "Creator Economy"
     },
     {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "credential-gated-presentation-system",
+      "label": "credential-gated-presentation-system"
     },
     {
       "slug": "cross-domain-bridge",
@@ -656,12 +644,12 @@
       "label": "Cross-Platform Interoperability"
     },
     {
-      "slug": "crypto-legal-from-digi-soc",
-      "label": "Crypto Legal from DigiSoc"
-    },
-    {
       "slug": "crypto-token",
       "label": "Crypto Token"
+    },
+    {
+      "slug": "cryptoasset-regulatory-framework",
+      "label": "Cryptoasset Regulatory Framework"
     },
     {
       "slug": "cryptocurrency-storage",
@@ -740,8 +728,8 @@
       "label": "DAO Governance"
     },
     {
-      "slug": "dagger",
-      "label": "Dagger"
+      "slug": "dagger-ci-pipeline-engine",
+      "label": "Dagger CI Pipeline Engine"
     },
     {
       "slug": "data-access-interface",
@@ -836,6 +824,10 @@
       "label": "De Fi Services"
     },
     {
+      "slug": "decentralised-agent-coordination-initiative",
+      "label": "Decentralised Agent Coordination Initiative"
+    },
+    {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
     },
@@ -860,20 +852,12 @@
       "label": "Decision Transparency"
     },
     {
-      "slug": "deep-decks",
-      "label": "deep-decks"
-    },
-    {
       "slug": "definitions-and-frameworks-for-metaverse",
       "label": "Definitions and frameworks for Metaverse"
     },
     {
       "slug": "delegated-proof-of-stake",
       "label": "Delegated Proof of Stake"
-    },
-    {
-      "slug": "delivery-planning",
-      "label": "Delivery Planning"
     },
     {
       "slug": "democratic-governance",
@@ -1098,10 +1082,6 @@
     {
       "slug": "dispute-resolution-mechanism",
       "label": "Dispute Resolution Mechanism"
-    },
-    {
-      "slug": "disruption",
-      "label": "Disruption"
     },
     {
       "slug": "disruptive-tech-domain",
@@ -1436,8 +1416,8 @@
       "label": "Layer2"
     },
     {
-      "slug": "leopold-aschenbrenner",
-      "label": "leopold-aschenbrenner"
+      "slug": "leopold-aschenbrenner-situational-awareness",
+      "label": "leopold-aschenbrenner-situational-awareness"
     },
     {
       "slug": "light-client",
@@ -1486,6 +1466,10 @@
     {
       "slug": "money",
       "label": "Money"
+    },
+    {
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
     },
     {
       "slug": "multiverse",
@@ -1648,6 +1632,10 @@
       "label": "Royalty Distribution"
     },
     {
+      "slug": "sme-ai-productivity-toolkit",
+      "label": "SME AI Productivity Toolkit"
+    },
+    {
       "slug": "stark",
       "label": "STARK"
     },
@@ -1744,6 +1732,14 @@
       "label": "Symmetric Encryption"
     },
     {
+      "slug": "technology-disruption-dynamics",
+      "label": "Technology Disruption Dynamics"
+    },
+    {
+      "slug": "technology-programme-delivery-planning",
+      "label": "Technology Programme Delivery Planning"
+    },
+    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     },
@@ -1786,6 +1782,10 @@
     {
       "slug": "trustless-coordination",
       "label": "Trustless Coordination"
+    },
+    {
+      "slug": "uk-company-financial-filing-obligations",
+      "label": "UK Company Financial Filing Obligations"
     },
     {
       "slug": "us-regulatory-framework",

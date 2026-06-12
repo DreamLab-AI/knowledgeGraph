@@ -133,7 +133,7 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -179,7 +179,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -236,7 +236,7 @@
         "label": "AI Risks"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -244,7 +244,7 @@
         "label": "Artificial General Intelligence"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {

@@ -74,6 +74,10 @@
   ],
   "backlinks": [
     {
+      "slug": "apple-mixed-reality-headset",
+      "label": "Apple Mixed Reality Headset"
+    },
+    {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
     },
@@ -216,10 +220,6 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "wearable-ai",

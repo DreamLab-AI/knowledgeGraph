@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cbeci", "label": "CBECI"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}
     ]
   },
   "quality": 0.72

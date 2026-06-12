@@ -478,7 +478,7 @@ public:: true
         "label": "ISO/IEC 27001"
       },
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {

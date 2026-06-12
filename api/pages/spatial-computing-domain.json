@@ -3,7 +3,7 @@
   "title": "Spatial Computing Domain",
   "slug": "spatial-computing-domain",
   "public": true,
-  "classIri": "urn:ngm:class:spatial-computing-domain",
+  "classIri": "urn:ngm:class:spatial-computing-paradigm-domain",
   "domain": "spatial-computing",
   "definition": "The Spatial Computing Domain classifies concepts concerning computation that perceives, represents and acts within three-dimensional physical or virtual space. It covers tracking, mapping, registration and the rendering of content aligned to the environment. As a sub-domain of the Metaverse Domain it provides the spatial substrate on which augmented and virtual experiences are constructed.",
   "subClassOf": [

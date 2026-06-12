@@ -24,7 +24,7 @@ public:: true
   "domain": "blockchain",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin as Money"}
+    {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin as Money"}
   ],
   "relations": {
     "relatedTo": [

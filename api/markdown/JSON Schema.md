@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-schema",
+  "@id": "urn:ngm:class:json-data-interchange-format-schema",
   "@type": "Class",
   "label": "JSON Schema",
   "definition": "JSON Schema is an IETF-standardised declarative vocabulary for annotating and validating the structure, data types, required fields, and value constraints of JSON documents. It enables machine-readable contracts between API producers and consumers by expressing rules such as property types, enumerated values, pattern matching, minimum/maximum boundaries, and composition via allOf, anyOf, and oneOf combiners. JSON Schema is widely used in REST API description languages, configuration file validation, and as the basis for verifiable credential schemas in decentralised identity systems.",
@@ -37,14 +37,14 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json", "label": "json"}
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
       {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:data-format", "label": "Data Format"}
     ],
     "bridgesTo": [
@@ -65,7 +65,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[json]]
+  - requires [[JSON Data Interchange Format]]
   - enables [[REST API]]
   - enables [[Credential Schema]]
   - relatedTo [[JSON-LD]]

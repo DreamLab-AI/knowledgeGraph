@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Deep Learning Framework]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - enables:: [[Deep Learning]]
 
 - ### Content

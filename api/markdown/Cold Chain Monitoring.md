@@ -595,7 +595,7 @@ alias:: ColdChainMonitoring
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -1167,7 +1167,7 @@ alias:: ColdChainMonitoring
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1220,9 +1220,9 @@ alias:: ColdChainMonitoring
   - requires:: [[Internet of Things]], [[Sensor Networks]], [[Blockchain]], [[Cloud Computing]], [[GS1 Standards]], [[Calibration Standards]], [[Network Connectivity]], [[Refrigeration Technology]]
   - enables:: [[Food Safety]], [[Pharmaceutical Supply Chain]], [[Traceability]], [[Compliance Evidence]], [[Excursion Detection]], [[Predictive Maintenance]], [[Regulatory Reporting]], [[Automated Lot Release]], [[Sustainability Reporting]]
   - implements:: [[Good Distribution Practice]], [[FSMA 204]], [[DSCSA Compliance]], [[GS1 EPCIS]], [[ISO 22000]], [[GDP Chapter 9]], [[WHO EVM]], [[IATA Temperature Control Regulations]]
-  - depends-on:: [[Logistics]], [[Refrigeration Technology]], [[Data Analytics]], [[Machine Learning]], [[Cryptography]], [[Edge Computing]], [[Cloud Infrastructure]]
+  - depends-on:: [[Logistics]], [[Refrigeration Technology]], [[Data Analytics]], [[Machine Learning Discipline]], [[Cryptography]], [[Edge Computing]], [[Cloud Infrastructure]]
   - supports:: [[Pharmaceutical Supply Chain]], [[Food Safety]], [[Vaccine Distribution]], [[Biologics Logistics]], [[Chemical Logistics]], [[Sustainability Reporting]], [[Insurance Claims Processing]]
-  - uses:: [[Blockchain]], [[RFID]], [[NB-IoT]], [[LoRaWAN]], [[Digital Twin]], [[Smart Contracts]], [[Machine Learning]], [[GS1 EPCIS]], [[Zero-Knowledge Proofs]], [[Satellite Connectivity]]
+  - uses:: [[Blockchain]], [[RFID]], [[NB-IoT]], [[LoRaWAN]], [[Digital Twin]], [[Smart Contracts]], [[Machine Learning Discipline]], [[GS1 EPCIS]], [[Zero-Knowledge Proofs]], [[Satellite Connectivity]]
   - contrasts-with:: [[Manual Temperature Logging]], [[Paper-Based Documentation]], [[Point-in-Time Monitoring]], [[Centralised Data Silos]], [[Periodic Checkpoint Monitoring]]
   - related-to:: [[Supply Chain]], [[Internet of Things]], [[Blockchain]], [[Food Safety]], [[Pharmaceutical Supply Chain]], [[Digital Twin]], [[Asset Registry]], [[Smart Contracts]], [[Logistics]], [[Traceability]], [[Sensor Networks]], [[RFID]]
   - standardized-by:: [[GS1]], [[ISO 22000]], [[WHO EVM]], [[IATA Temperature Control Regulations]], [[EU GDP Guidelines]], [[FDA DSCSA]], [[MHRA GDP Chapter 9]], [[Codex Alimentarius]], [[UK Food Standards Agency]]

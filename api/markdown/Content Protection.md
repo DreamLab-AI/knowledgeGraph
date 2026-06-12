@@ -91,7 +91,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:copyright",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "copyright"
       }
     ]
@@ -144,7 +144,7 @@ public:: true
   - Uses [[Access Control]]
   - Requires [[Digital Rights]]
   - Enables [[Digital Ownership]]
-  - Related To [[copyright]]
+  - Related To [[Intellectual Property Rights Framework]]
 
 - ### Content
 

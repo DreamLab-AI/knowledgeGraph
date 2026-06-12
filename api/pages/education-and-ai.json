@@ -165,7 +165,7 @@
         "label": "Claude"
       },
       {
-        "id": "urn:ngm:class:gemini",
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
@@ -173,7 +173,7 @@
         "label": "GPT 4"
       },
       {
-        "id": "urn:ngm:class:perplexity",
+        "id": "urn:ngm:class:perplexity-ai-search-platform",
         "label": "Perplexity"
       }
     ],
@@ -229,7 +229,7 @@
         "label": "DfE Generative AI Guidance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-annex-iii",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-annex-iii",
         "label": "EU AI Act Annex III"
       },
       {
@@ -773,6 +773,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
+    },
+    {
+      "slug": "ai-frontier-capability-survey",
+      "label": "AI Frontier Capability Survey"
+    },
+    {
+      "slug": "ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
     },
@@ -785,16 +797,16 @@
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "calculating-empires",
-      "label": "Calculating Empires"
-    },
-    {
       "slug": "co-training",
       "label": "Co Training"
     },
     {
-      "slug": "equity",
-      "label": "Equity"
+      "slug": "digital-technology-access-equity",
+      "label": "Digital Technology Access Equity"
+    },
+    {
+      "slug": "domain-expert-contact-index",
+      "label": "Domain Expert Contact Index"
     },
     {
       "slug": "ethical-ai",
@@ -813,14 +825,6 @@
       "label": "Open Webui and Pipelines"
     },
     {
-      "slug": "people",
-      "label": "PEOPLE"
-    },
-    {
-      "slug": "politics-law-privacy",
-      "label": "Politics, Law, Privacy"
-    },
-    {
       "slug": "privacy",
       "label": "Privacy"
     },
@@ -837,16 +841,12 @@
       "label": "Social Impact"
     },
     {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
-    },
-    {
-      "slug": "state-of-the-art-in-ai",
-      "label": "State of the art in AI"
-    },
-    {
       "slug": "style-transfer",
       "label": "Style Transfer"
+    },
+    {
+      "slug": "technology-power-structure-visualisation",
+      "label": "Technology Power Structure Visualisation"
     },
     {
       "slug": "text-summarisation",

@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Computer Vision]]
-  - bridges-to:: [[Deep Learning]], [[Machine Learning]]
+  - bridges-to:: [[Deep Learning]], [[Machine Learning Discipline]]
   - requires:: [[Computer Vision]]
   - enables:: [[Legal Research]]
 

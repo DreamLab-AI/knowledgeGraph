@@ -153,11 +153,11 @@
         "label": "Inference Optimisation"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -201,7 +201,7 @@
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -240,11 +240,11 @@
         "label": "Mistral AI"
       },
       {
-        "id": "urn:ngm:class:google-deep-mind",
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "id": "urn:ngm:class:open-ai",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ]

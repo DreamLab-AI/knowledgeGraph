@@ -253,7 +253,7 @@ alias:: ArtificialIntelligence
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -447,7 +447,7 @@ alias:: ArtificialIntelligence
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -487,7 +487,7 @@ alias:: ArtificialIntelligence
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -512,12 +512,12 @@ alias:: ArtificialIntelligence
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Leopold Aschenbrenner]]",
+      "raw": "[[Leopold Aschenbrenner Situational Awareness]]",
       "resolved": "urn:visionflow:owl:class:leopold-aschenbrenner",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -557,7 +557,7 @@ alias:: ArtificialIntelligence
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -592,7 +592,7 @@ alias:: ArtificialIntelligence
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - has-part:: [[Machine Learning]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Reinforcement Learning]], [[Generative AI]]
+  - has-part:: [[Machine Learning Discipline]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Reinforcement Learning]], [[Generative AI]]
   - enables:: [[Autonomous Systems]], [[Predictive Analytics]], [[Intelligent Automation]], [[Personalisation]], [[Decision Support]]
   - bridges-to:: [[Robotics]] (domain: rb), [[Blockchain]] (domain: bc), [[Digital Twin]] (domain: ngm), [[Telecollaboration]] (domain: tc)
   - requires:: [[Neural Networks]], [[Training Data]], [[Computational Infrastructure]]
@@ -663,7 +663,7 @@ alias:: ArtificialIntelligence
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- The carbon footprint of GenAI models is exacerbated by their [energy-intensive nature](https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/) and the need for frequent hardware replacements, which contribute to electronic waste.
 			- [The new AI Google search is incredibly wasteful](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
@@ -819,7 +819,7 @@ alias:: ArtificialIntelligence
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- The carbon footprint of GenAI models is exacerbated by their [energy-intensive nature](https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/) and the need for frequent hardware replacements, which contribute to electronic waste.
 			- [The new AI Google search is incredibly wasteful](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
@@ -972,7 +972,7 @@ alias:: ArtificialIntelligence
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- The carbon footprint of GenAI models is exacerbated by their [energy-intensive nature](https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/) and the need for frequent hardware replacements, which contribute to electronic waste.
 			- [The new AI Google search is incredibly wasteful](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
@@ -1082,7 +1082,7 @@ alias:: ArtificialIntelligence
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) projects that data centers' electricity consumption will double by 2026, equivalent to Japan's current total consumption. These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- **Cost and Accessibility Barriers**:
 				- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
@@ -1168,7 +1168,7 @@ alias:: ArtificialIntelligence
   - ## See Also
   - [[Large Language Models]]
   - [[Artificial Intelligence]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Deep Learning]]
 
   - ## Zuckerberg’s New Goal: Creating Artificial General Intelligence
@@ -1193,8 +1193,8 @@ alias:: ArtificialIntelligence
 
   - ## See Also
   - [[AI Video]] is a broad category encompassing techniques for generating, editing, and manipulating video content using [[artificial intelligence]] and [[deep learning]] methods
-  - [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
-  - [[ComfyUI]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
+  - [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+  - [[Node-Based Diffusion Pipeline Interface]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
 
   - ## See Also
   - [[Artificial Intelligence]]
@@ -1223,7 +1223,7 @@ alias:: ArtificialIntelligence
   - ## See Also
   - [[Large Language Models]]
   - [[Artificial Intelligence]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Deep Learning]]
 
   - ## Zuckerberg’s New Goal: Creating Artificial General Intelligence
@@ -1248,8 +1248,8 @@ alias:: ArtificialIntelligence
 
   - ## See Also
   - [[AI Video]] is a broad category encompassing techniques for generating, editing, and manipulating video content using [[artificial intelligence]] and [[deep learning]] methods
-  - [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
-  - [[ComfyUI]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
+  - [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+  - [[Node-Based Diffusion Pipeline Interface]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
 
   ### Alternative Definitions
   1. **NIST AI RMF 1.0**: Research and development of mechanisms and applications of systems that perceive, reason, learn, and act. A discipline encompassing computer science, cognitive science, mathematics, and engineering focused on creating intelligent machines. - Authority Score: 0.92
@@ -1711,5 +1711,5 @@ alias:: ArtificialIntelligence
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[ISO/IEC 22989:2022]], [[ISO/IEC 23053:2022]], [[ISO/IEC 23894:2023]], [[ISO/IEC 42001:2023]], [[NIST AI RMF]], [[OECD]], [[oecd]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[ISO/IEC 22989:2022]], [[ISO/IEC 23053:2022]], [[ISO/IEC 23894:2023]], [[ISO/IEC 42001:2023]], [[NIST AI RMF]], [[OECD]], [[oecd]]
   - migration-date:: 2026-04-26T00:00:00Z

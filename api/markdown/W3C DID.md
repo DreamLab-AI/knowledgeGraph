@@ -33,7 +33,7 @@ public:: true
       {"@id": "urn:ngm:class:w3-c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
       {"@id": "urn:ngm:class:trust-over-ip-stack", "label": "Trust over IP Stack"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralised-trust", "label": "Decentralised Trust"},

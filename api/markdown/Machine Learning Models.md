@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-models",
+  "@id": "urn:ngm:class:machine-learning-discipline-models",
   "@type": "Class",
   "label": "Machine Learning Models",
   "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
@@ -59,7 +59,7 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -79,7 +79,7 @@ public:: true
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:machine-learning-model",
+      "@id": "urn:ngm:class:machine-learning-discipline-model",
       "label": "Machine Learning Model"
     }
   ]

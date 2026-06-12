@@ -346,7 +346,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -412,7 +412,7 @@ public:: true
 		  - [[Network Infrastructure]]
 		  - [[Networking Layer]]
 		  - [[Physics Engine]]
-		  - [[Spatial Computing]]
+		  - [[Spatial Computing Paradigm]]
 		  - [[Spatial Computing Layer]]
 		  - [[Visualization Layer]]
 

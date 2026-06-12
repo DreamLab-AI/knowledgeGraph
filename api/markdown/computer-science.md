@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - enables:: [[Software Engineering]]
 
 - ### Content

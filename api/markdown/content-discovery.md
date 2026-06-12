@@ -1,5 +1,5 @@
 - ### Definition
-  - Content Discovery is the set of algorithms and systems that surface relevant [[Search Engine]] results, recommendations, and curated feeds to users navigating large digital information spaces, underpinned by [[Machine Learning]] and [[Semantic Search]] techniques.
+  - Content Discovery is the set of algorithms and systems that surface relevant [[Search Engine]] results, recommendations, and curated feeds to users navigating large digital information spaces, underpinned by [[Machine Learning Discipline]] and [[Semantic Search]] techniques.
 - ### Relationships
   - Content Discovery builds upon [[Information Retrieval]] foundations but extends them with personalisation via [[Recommendation Systems]] models and natural language understanding via [[Natural Language Processing]]. It powers [[Digital Curation Platform]] experiences and the [[Discovery Layer]] in knowledge management stacks. Unaddressed [[Algorithmic Bias]] in discovery systems can systematically disadvantage certain content producers or viewpoints, creating significant [[Algorithmic Accountability]] concerns.
 - ### Content

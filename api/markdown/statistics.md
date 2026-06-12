@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Probability Theory]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - requires:: [[Probability Theory]]
   - enables:: [[Statistical Learning Theory]], [[Bayesian Inference]]
 

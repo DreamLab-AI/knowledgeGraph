@@ -99,7 +99,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA]]",
+      "raw": "[[NVIDIA Corporation]]",
       "resolved": "urn:visionflow:linked:nvidia",
       "kind": "ResolvedLink"
     }
@@ -124,7 +124,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Simulation]]
-  - bridges-to:: [[NVIDIA]]
+  - bridges-to:: [[NVIDIA Corporation]]
   - requires:: [[Simulation]]
   - enables:: [[Metaverse]]
 

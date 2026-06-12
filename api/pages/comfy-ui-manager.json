@@ -3,7 +3,7 @@
   "title": "comfyui manager",
   "slug": "comfy-ui-manager",
   "public": true,
-  "classIri": "urn:ngm:class:comfy-ui-manager",
+  "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
   "domain": "artificial-intelligence",
   "definition": "ComfyUI Manager is a community-developed extension for the ComfyUI node-based image and video generation interface that provides an integrated package management system for discovering, installing, updating, and disabling custom nodes and their dependencies. It maintains a curated registry of available custom node repositories and model assets, resolving dependency conflicts and enabling reproducible workflow sharing by exporting workflow snapshots that include all required node specifications. It is a critical infrastructure component in the ComfyUI ecosystem, significantly lowering the barrier to extending ComfyUI with community-developed ControlNet preprocessors, upscalers, and specialised samplers.",
   "subClassOf": [

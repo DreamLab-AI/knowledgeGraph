@@ -228,7 +228,7 @@
         "label": "National Competitiveness"
       },
       {
-        "id": "urn:ngm:class:public-sector-modernisation",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-sector-modernisation",
         "label": "Public Sector Modernisation"
       },
       {
@@ -266,7 +266,7 @@
         "label": "UK AI Opportunities Action Plan"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[AI Technique]]
-  - requires:: [[Probabilistic Model]], [[Machine Learning]], [[Feature Extraction]]
+  - requires:: [[Probabilistic Model]], [[Machine Learning Discipline]], [[Feature Extraction]]
   - enables:: [[Named Entity Recognition]], [[Natural Language Processing]], [[Speech Recognition]]
   - uses:: [[Deep Learning]], [[Machine Learning Model]]
   - contrastsWith:: [[Recurrent Neural Network]], [[Transformer]], [[Convolutional Neural Network]]

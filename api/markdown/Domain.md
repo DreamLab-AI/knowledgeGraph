@@ -67,10 +67,10 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
@@ -128,7 +128,7 @@ public:: true
   - owl-role:: Concept
 - ### Relationships
   - **relatedTo**: [[Domain Ontology]], [[Ontology]]
-  - **enables**: [[Knowledge Graph]], [[Semantic Web]]
+  - **enables**: [[Knowledge Graph]], [[Semantic Web Linked Data Standard]]
   - **uses**: [[Semantic Web Standards]]
   - **hasPart**: [[Metaverse Domain]], [[Blockchain Domain]]
   - bridges-to:: [[Blockchain]] (bc)

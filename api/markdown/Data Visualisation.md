@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}

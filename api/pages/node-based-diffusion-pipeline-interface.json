@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:comfy-ui",
+  "title": "Node-Based Diffusion Pipeline Interface",
+  "slug": "node-based-diffusion-pipeline-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+  "domain": "ai",
+  "definition": "ComfyUI is an open-source, node-based graphical interface for constructing and executing Stable Diffusion image-generation pipelines. It exposes the underlying diffusion inference graph as a visual workflow of interconnected nodes, enabling non-destructive, reproducible experimentation. The tool has become a de-facto community standard for advanced image and video synthesis workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-framework",
+      "label": "AI Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:node-based-editor",
+        "label": "Node Based Editor"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -28,17 +28,17 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
@@ -53,7 +53,7 @@ public:: true
   - A Schema Definition is a formal specification that declares the structural contract for a data artefact — its field names, data types, cardinality constraints, and relational axioms — enabling automated validation, code generation, and [[Linked Data]] interoperability, and forming the foundational layer of [[Knowledge Graph]] construction and [[Ontology]] design.
 
 - ### Relationships
-  - Schema Definition is a specialisation of [[Data Format Standard]] and the architectural foundation for both operational data exchange and semantic knowledge representation. In operational systems, JSON Schema and OpenAPI schema objects govern REST API payloads, whilst Protocol Buffers/Avro schemas govern streaming and RPC message shapes. In semantic-web contexts, [[RDF]] class and property declarations form the schema layer, enriched by [[OWL Class Hierarchy]] axioms for reasoning and SHACL shapes for validation. [[JSON-LD]] connects JSON Schema to RDF by providing `@context` mappings. [[SPARQL]] query endpoints rely on schema knowledge to optimise query plans. Schema Definitions collectively make [[Linked Data]] and [[Semantic Web]] infrastructure interoperable across organisations.
+  - Schema Definition is a specialisation of [[Data Format Standard]] and the architectural foundation for both operational data exchange and semantic knowledge representation. In operational systems, JSON Schema and OpenAPI schema objects govern REST API payloads, whilst Protocol Buffers/Avro schemas govern streaming and RPC message shapes. In semantic-web contexts, [[RDF]] class and property declarations form the schema layer, enriched by [[OWL Class Hierarchy]] axioms for reasoning and SHACL shapes for validation. [[JSON-LD]] connects JSON Schema to RDF by providing `@context` mappings. [[SPARQL]] query endpoints rely on schema knowledge to optimise query plans. Schema Definitions collectively make [[Linked Data]] and [[Semantic Web Linked Data Standard]] infrastructure interoperable across organisations.
 
 - ### Content
   - Schema languages occupy a spectrum from structural (JSON Schema, XSD) to semantic (OWL, RDFS) to constraint-based (SHACL, ShEx). Structural schemas specify the shape and type of data — which fields exist, whether they are optional, what their primitive types are — and generate validation errors for conformance failures. Semantic schemas (ontologies) additionally define class hierarchies, property domains and ranges, and logical axioms (transitivity, symmetry, functional constraints) that enable automated inference: if A is a subclass of B and C is an instance of A, a reasoner can infer C is also an instance of B.

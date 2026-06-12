@@ -8,7 +8,7 @@
   "definition": "An index published by the University of Cambridge that estimates the electricity consumption of the Bitcoin network from mining hardware efficiency and network hashrate. It provides a transparent methodology and range of estimates rather than a single fixed figure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-mining",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
       "label": "Bitcoin Mining"
     }
   ],

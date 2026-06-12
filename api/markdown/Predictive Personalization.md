@@ -53,9 +53,9 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},

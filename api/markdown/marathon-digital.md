@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Bitcoin Mining]]
   - bridges-to:: [[Cryptocurrency]], [[Sustainability Domain]]
   - requires:: [[Bitcoin Mining]]
-  - enables:: [[Bitcoin]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Marathon Digital runs fleets of application-specific mining hardware to perform the hashing that secures the Bitcoin network, earning newly issued coins and transaction fees. Its economics turn on hardware efficiency and electricity cost.

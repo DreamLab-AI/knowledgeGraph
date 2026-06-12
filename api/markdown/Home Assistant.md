@@ -518,7 +518,7 @@ public:: true
         "label": "Nabu Casa"
       },
       {
-        "@id": "urn:ngm:class:ollama-integration",
+        "@id": "urn:ngm:class:local-llm-runtime-platform-integration",
         "label": "Ollama Integration"
       },
       {
@@ -576,7 +576,7 @@ public:: true
         "label": "Zigbee Radio Dongle"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -686,7 +686,7 @@ public:: true
         "label": "Node-RED"
       },
       {
-        "@id": "urn:ngm:class:open-ai-api",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -710,11 +710,11 @@ public:: true
         "label": "Zigbee2MQTT"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:ollama",
+        "@id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama"
       }
     ],
@@ -1353,7 +1353,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1368,7 +1368,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Docker]]",
+      "raw": "[[Docker Containerisation Platform]]",
       "resolved": "urn:visionflow:owl:class:docker",
       "kind": "ResolvedLink"
     },
@@ -1405,7 +1405,7 @@ public:: true
 
 
 - ### Definition
-  - Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Protocol]], [[Thread Protocol]], [[Bluetooth LE]], [[Wi-Fi]], and EnOcean — operating without mandatory cloud dependency, governed since April 2024 by the [[Open Home Foundation]] (OHF), a Swiss non-profit that owns the source code and brand to ensure perpetual open-source status. Created by Paulus Schoutsen in September 2013 and first publicly released on GitHub in November 2013, Home Assistant has grown from a single-developer weekend project into the most contributor-active open-source project on GitHub (21,000+ unique contributors in 2024) with over 2 million active installations as of April 2025, supported by 56 full-time staff spanning core platform, [[ESPHome]] firmware, [[Z-Wave JS]], Zigpy, [[Matter Server]], voice technology, mobile apps, and infrastructure. The platform's core value proposition rests on three principles enshrined in the Open Home Foundation charter: Privacy (data processed locally, not harvested), Choice (no vendor lock-in, 3,400+ integrations across 1,700+ device brands), and Sustainability (no cloud shut-down risk, no forced obsolescence). Commercial sustainability is provided by [[Nabu Casa]], Inc. — the for-profit entity founded September 2018 — which sells the optional Home Assistant Cloud subscription (remote access, Alexa/Google Assistant bridging, webhooks; approximately $6.50/month) and hardware products including the Home Assistant Green ($139 EUR), Home Assistant Yellow (Raspberry Pi Compute Module 4 carrier board with Zigbee/Thread radio), Home Assistant Voice Preview Edition (standalone voice satellite), and Home Assistant Connect ZBT-1/ZBT-2 (USB Zigbee+Thread dongles). The [[Assist Voice Pipeline]], developed intensively during Year of the Voice 2023 (Chapters 1–5) and extended through 2024–2026 (Chapters 6–11+), provides fully local speech-to-text via [[Whisper]] (faster-whisper), local text-to-speech via [[Piper TTS]] (30+ languages, neural TTS), and on-device wake-word detection via openWakeWord/microWakeWord ("Okay Nabu", "Hey Jarvis", "Hey Mycroft"), all orchestrated by the [[Wyoming Protocol]]. From Home Assistant 2024.4, native [[Ollama]] integration allows local large language models (LLaMA 3, Mistral, Phi-3, custom home-llm fine-tunes) to serve as conversation agents controlling devices via the Assist API; the Anthropic integration (2024.9) adds [[Anthropic Claude]] 3.5 Sonnet/Claude 3.7 Sonnet with extended-thinking budgets; OpenRouter (2025.8) provides access to 400+ cloud models through a single API key. The AI Task building-block integration (2025.8) standardises how automation and dashboard components call LLMs for text generation, summarisation, image classification, and automation suggestion. [[Energy Dashboard]] features introduced in 2021.8 and substantially expanded through 2025.12 provide real-time power flow dashboards, grid import/export tracking, solar generation, battery state-of-charge, and gas/water meters. The [[HACS]] (Home Assistant Community Store), donated to OHF in 2025, provides a curated repository of 4,000+ community integrations, frontend cards, and themes installable in two clicks. The [[Lovelace Dashboard]] system uses YAML-configured card layouts with Material Design styling, supplemented by hundreds of custom HACS cards enabling pixel-perfect bespoke interfaces. Against closed competitors — [[Amazon Alexa]], [[Google Home]], [[Apple HomeKit]], [[Samsung SmartThings]] — Home Assistant distinguishes itself by local-first processing (millisecond-latency automations), full data sovereignty, no mandatory subscription tier, and an integration depth that vendor ecosystems cannot match.
+  - Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Protocol]], [[Thread Protocol]], [[Bluetooth LE]], [[Wi-Fi]], and EnOcean — operating without mandatory cloud dependency, governed since April 2024 by the [[Open Home Foundation]] (OHF), a Swiss non-profit that owns the source code and brand to ensure perpetual open-source status. Created by Paulus Schoutsen in September 2013 and first publicly released on GitHub in November 2013, Home Assistant has grown from a single-developer weekend project into the most contributor-active open-source project on GitHub (21,000+ unique contributors in 2024) with over 2 million active installations as of April 2025, supported by 56 full-time staff spanning core platform, [[ESPHome]] firmware, [[Z-Wave JS]], Zigpy, [[Matter Server]], voice technology, mobile apps, and infrastructure. The platform's core value proposition rests on three principles enshrined in the Open Home Foundation charter: Privacy (data processed locally, not harvested), Choice (no vendor lock-in, 3,400+ integrations across 1,700+ device brands), and Sustainability (no cloud shut-down risk, no forced obsolescence). Commercial sustainability is provided by [[Nabu Casa]], Inc. — the for-profit entity founded September 2018 — which sells the optional Home Assistant Cloud subscription (remote access, Alexa/Google Assistant bridging, webhooks; approximately $6.50/month) and hardware products including the Home Assistant Green ($139 EUR), Home Assistant Yellow (Raspberry Pi Compute Module 4 carrier board with Zigbee/Thread radio), Home Assistant Voice Preview Edition (standalone voice satellite), and Home Assistant Connect ZBT-1/ZBT-2 (USB Zigbee+Thread dongles). The [[Assist Voice Pipeline]], developed intensively during Year of the Voice 2023 (Chapters 1–5) and extended through 2024–2026 (Chapters 6–11+), provides fully local speech-to-text via [[Whisper]] (faster-whisper), local text-to-speech via [[Piper TTS]] (30+ languages, neural TTS), and on-device wake-word detection via openWakeWord/microWakeWord ("Okay Nabu", "Hey Jarvis", "Hey Mycroft"), all orchestrated by the [[Wyoming Protocol]]. From Home Assistant 2024.4, native [[Ollama]] integration allows local large language models (LLaMA 3, Mistral, Phi-3, custom home-llm fine-tunes) to serve as conversation agents controlling devices via the Assist API; the Anthropic integration (2024.9) adds [[Constitutional AI Language Model Family]] 3.5 Sonnet/Claude 3.7 Sonnet with extended-thinking budgets; OpenRouter (2025.8) provides access to 400+ cloud models through a single API key. The AI Task building-block integration (2025.8) standardises how automation and dashboard components call LLMs for text generation, summarisation, image classification, and automation suggestion. [[Energy Dashboard]] features introduced in 2021.8 and substantially expanded through 2025.12 provide real-time power flow dashboards, grid import/export tracking, solar generation, battery state-of-charge, and gas/water meters. The [[HACS]] (Home Assistant Community Store), donated to OHF in 2025, provides a curated repository of 4,000+ community integrations, frontend cards, and themes installable in two clicks. The [[Lovelace Dashboard]] system uses YAML-configured card layouts with Material Design styling, supplemented by hundreds of custom HACS cards enabling pixel-perfect bespoke interfaces. Against closed competitors — [[Amazon Alexa]], [[Google Home]], [[Apple HomeKit]], [[Samsung SmartThings]] — Home Assistant distinguishes itself by local-first processing (millisecond-latency automations), full data sovereignty, no mandatory subscription tier, and an integration depth that vendor ecosystems cannot match.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:HomeAssistant
@@ -1417,12 +1417,12 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Smart Home]], [[IoT Platform]], [[Edge Computing]], [[Home Automation]], [[Open Source Software]]
   - has-part:: [[ESPHome]], [[Z-Wave JS]], [[Zigbee Home Automation]], [[Wyoming Protocol]], [[Lovelace Dashboard]], [[HACS]], [[Assist Voice Pipeline]], [[Energy Dashboard]], [[Home Assistant Cloud]], [[Matter Server]], [[Nabu Casa]], [[Open Home Foundation]], [[AI Task Integration]], [[Ollama Integration]], [[Automation Engine]], [[Zigbee2MQTT]], [[Z-Wave JS UI]]
-  - requires:: [[MQTT Broker]], [[Zigbee Radio Dongle]], [[Python Runtime]], [[Docker]], [[Raspberry Pi]], [[Local Network Infrastructure]], [[Wake Word Engine]], [[SQLite]]
+  - requires:: [[MQTT Broker]], [[Zigbee Radio Dongle]], [[Python Runtime]], [[Docker Containerisation Platform]], [[Raspberry Pi]], [[Local Network Infrastructure]], [[Wake Word Engine]], [[SQLite]]
   - enables:: [[Local Voice Control]], [[Energy Management]], [[Device Interoperability]], [[Smart Home Automation]], [[Privacy-Preserving IoT]], [[Multi-Protocol Integration]], [[LLM-Controlled Devices]], [[Matter Commissioning]], [[Smart Grid Integration]], [[Demand Side Response]]
   - implements:: [[Matter Protocol]], [[Thread Protocol]], [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Wyoming Protocol]], [[OAuth 2.0]], [[MQTT]], [[REST API]], [[WebSocket API]], [[Bluetooth LE]], [[CoAP]]
-  - depends-on:: [[Python]], [[TypeScript]], [[SQLite]], [[PostgreSQL]], [[Redis]], [[Docker]], [[HAOS Linux]], [[Supervisor API]], [[Buildroot]]
+  - depends-on:: [[Python]], [[TypeScript]], [[SQLite]], [[PostgreSQL]], [[Redis]], [[Docker Containerisation Platform]], [[HAOS Linux]], [[Supervisor API]], [[Buildroot]]
   - supports:: [[Raspberry Pi]], [[Home Assistant Green]], [[Home Assistant Yellow]], [[x86-64 Linux]], [[ARM64 Linux]], [[Proxmox]], [[QEMU/KVM]], [[Home Assistant Voice Preview Edition]], [[Orange Pi]], [[Odroid-N2]]
-  - uses:: [[Whisper STT]], [[Piper TTS]], [[openWakeWord]], [[microWakeWord]], [[Ollama]], [[OpenAI API]], [[Anthropic Claude]], [[Zigbee2MQTT]], [[Z-Wave JS UI]], [[Node-RED]], [[AppDaemon]], [[Frigate NVR]]
+  - uses:: [[Whisper STT]], [[Piper TTS]], [[openWakeWord]], [[microWakeWord]], [[Ollama]], [[OpenAI API]], [[Constitutional AI Language Model Family]], [[Zigbee2MQTT]], [[Z-Wave JS UI]], [[Node-RED]], [[AppDaemon]], [[Frigate NVR]]
   - contrasts-with:: [[Amazon Alexa]], [[Google Home]], [[Apple HomeKit]], [[Samsung SmartThings]], [[Hubitat]], [[openHAB]], [[Domoticz]], [[FHEM]]
   - related-to:: [[Internet of Things]], [[Edge AI]], [[Smart Grid]], [[Building Automation]], [[Voice Assistant]], [[Large Language Models]], [[Local AI]], [[Digital Twin]], [[NILM]], [[Demand Side Response]]
   - standardized-by:: [[Open Home Foundation]], [[CSA Matter Specification]], [[Thread Group]], [[Zigbee Alliance]], [[Z-Wave Alliance]], [[Wi-Fi Alliance]], [[IETF CoAP Working Group]]

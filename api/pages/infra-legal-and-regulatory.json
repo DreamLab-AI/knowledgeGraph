@@ -8,7 +8,7 @@
   "definition": "Taxonomy hub for legal and regulatory concepts within the infrastructure domain, covering compliance frameworks, data protection law, intellectual property, AI regulation, and governance structures that constrain and guide technology deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure-domain",
+      "id": "urn:ngm:class:technology-infrastructure-domain-domain",
       "label": "Infrastructure Domain"
     }
   ],
@@ -42,7 +42,7 @@
         "label": "GDPR Compliance"
       },
       {
-        "id": "urn:ngm:class:copyright",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "copyright"
       },
       {

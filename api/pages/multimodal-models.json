@@ -3,12 +3,12 @@
   "title": "Multimodal Models",
   "slug": "multimodal-models",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-models",
+  "classIri": "urn:ngm:class:multimodal-ai-architecture-models",
   "domain": "machine-learning",
   "definition": "Machine learning models that process and relate information from more than one modality, such as text, images, audio or video, within a single model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:multimodal-ai",
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
       "label": "Multimodal AI"
     }
   ],

@@ -70,7 +70,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -132,7 +132,7 @@ public:: true
   - Uses [[Natural Language Processing]]
   - Enables [[Information Retrieval]]
   - Enables [[Enterprise Search]]
-  - Depends on [[Machine Learning]]
+  - Depends on [[Machine Learning Discipline]]
   - Bridges to [[Knowledge Graph]]
 
 - ### Content

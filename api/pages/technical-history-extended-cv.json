@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:knowhere",
+        "id": "urn:ngm:class:knowhere-visitor-attention-system",
         "label": "Knowhere"
       },
       {
-        "id": "urn:ngm:class:dreamlab",
+        "id": "urn:ngm:class:dreamlab-creative-technology-collective",
         "label": "Dreamlab"
       }
     ],
@@ -37,7 +37,7 @@
         "label": "Trust and Safety"
       },
       {
-        "id": "urn:ngm:class:location-based-experience",
+        "id": "urn:ngm:class:venue-tethered-immersive-experience",
         "label": "Location Based Experience"
       }
     ],
@@ -56,7 +56,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:national-industrial-centre-for-virtual-environments",
+        "id": "urn:ngm:class:nicve-virtual-reality-research-centre",
         "label": "National Industrial Centre for Virtual Environments"
       },
       {

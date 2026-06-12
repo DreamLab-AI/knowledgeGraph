@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-robotics",
+  "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
   "@type": "Class",
   "label": "Collaborative Robotics",
   "definition": "Collaborative Robotics is the engineering discipline concerned with designing, deploying, and operating robotic systems — particularly collaborative robots (cobots) — that share workspace and tasks with human workers without requiring physical barriers, relying instead on force-torque sensing, speed-and-separation monitoring, and power-and-force limiting to maintain safety under ISO 10218 and ISO/TS 15066. Unlike traditional industrial robots that operate in guarded cages, cobots are designed with compliant joints, rounded profiles, and real-time collision-detection to enable direct physical cooperation with humans on assembly, inspection, and logistics tasks. The discipline integrates mechanical design, control theory, human-robot interaction research, and regulatory compliance.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}],
+  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},

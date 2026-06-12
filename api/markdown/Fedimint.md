@@ -29,14 +29,14 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:chaumian-ecash", "label": "Chaumian Ecash"},
-      {"@id": "urn:ngm:class:bitcoin-lightning-network", "label": "Bitcoin Lightning Network"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network", "label": "Bitcoin Lightning Network"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:federated-system", "label": "Federated System"},
-      {"@id": "urn:ngm:class:bitcoin-layer-2", "label": "Bitcoin Layer 2"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2", "label": "Bitcoin Layer 2"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin-custody", "label": "Bitcoin Custody"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody", "label": "Bitcoin Custody"}
     ]
   },
   "quality": 0.85

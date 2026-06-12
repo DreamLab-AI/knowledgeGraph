@@ -66,7 +66,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"},

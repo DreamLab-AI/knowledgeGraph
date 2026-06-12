@@ -92,7 +92,7 @@
         "label": "X.509 Identity"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -197,7 +197,7 @@
         "label": "SQL Server"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -292,7 +292,7 @@
         "label": "CBDCs"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ]

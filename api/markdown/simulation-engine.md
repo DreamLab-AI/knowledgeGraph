@@ -10,7 +10,7 @@
   - Uses [[GPU Compute]]
   - Uses [[Real-time Processing]]
   - Enables [[Digital Twin]]
-  - Enables [[Machine Learning]]
+  - Enables [[Machine Learning Discipline]]
   - Related To [[Rendering Engine]]
 
 - ### Content

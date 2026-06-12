@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:location-based-experience",
+        "id": "urn:ngm:class:venue-tethered-immersive-experience",
         "label": "Location Based Experience"
       }
     ],

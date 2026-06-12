@@ -156,7 +156,7 @@ public:: true
         "label": "Eye Tracking"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -283,7 +283,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -316,7 +316,7 @@ public:: true
 
 - ### Relationships
   - has-part:: [[Cognitive State Monitor]], [[Attention Tracker]], [[Workload Analyzer]], [[Adaptive UI Controller]]
-  - requires:: [[Brain-Computer Interface]], [[Eye Tracking]], [[Cognitive Model]], [[Machine Learning]]
+  - requires:: [[Brain-Computer Interface]], [[Eye Tracking]], [[Cognitive Model]], [[Machine Learning Discipline]]
   - enables:: [[Adaptive Information Display]], [[Cognitive Load Management]], [[Attention-Aware Interaction]], [[Personalized UX]]
   - depends-on:: [[Neurofeedback System]], [[Biometric Sensors]], [[Real-time Analytics]]
   - bridges-to:: [[Sensor Input]]

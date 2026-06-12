@@ -3,7 +3,7 @@
   "title": "Parametric Modeling",
   "slug": "parametric-modeling",
   "public": true,
-  "classIri": "urn:ngm:class:parametric-modeling",
+  "classIri": "urn:ngm:class:parametric-design-methodology-modeling",
   "domain": "spatial-computing",
   "definition": "A CAD design modology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.",
   "subClassOf": [

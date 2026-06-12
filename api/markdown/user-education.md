@@ -9,7 +9,7 @@
   - Enables: [[Education Metaverse]]
   - Uses: [[Education Technology]]
   - Uses: [[Immersive Experience]]
-  - Related To: [[Courses and Training]]
+  - Related To: [[AI Technology Skills Curriculum]]
   - Related To: [[Education and AI]]
   - Related To: [[Virtual Experience]]
 

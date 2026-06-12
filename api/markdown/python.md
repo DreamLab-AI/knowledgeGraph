@@ -6,11 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - enables [[Machine Learning]]
+  - enables [[Machine Learning Discipline]]
   - enables [[Deep Learning]]
   - enables [[Machine Learning Pipeline]]
   - uses [[Machine Learning Framework]]
-  - relatedTo [[Python and PyTorch]]
+  - relatedTo [[Python PyTorch Deep Learning Stack]]
 
 - ### Content
   - Python was created by Guido van Rossum and first released in 1991. Its Global Interpreter Lock (GIL) limits true multi-threaded CPU parallelism within a single process, but this constraint is largely irrelevant for ML workloads where the compute-intensive operations are delegated to C/C++/CUDA extensions (NumPy, PyTorch, XLA) that release the GIL. CPython, the reference implementation, is complemented by PyPy (a JIT-compiled alternative), MicroPython (for embedded systems), and Cython (a compiled Python superset).

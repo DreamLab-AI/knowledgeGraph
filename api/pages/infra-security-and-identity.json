@@ -8,7 +8,7 @@
   "definition": "A taxonomy hub encompassing the cryptographic primitives, authentication mechanisms, access control systems, and identity management frameworks that protect infrastructure components and verify principals. This category includes digital signatures, certificate authorities, encryption protocols, zero-trust architectures, and decentralised identity systems that collectively secure networked systems and digital interactions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
+      "id": "urn:ngm:class:technology-infrastructure-domain",
       "label": "Infrastructure"
     }
   ],
@@ -75,7 +75,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

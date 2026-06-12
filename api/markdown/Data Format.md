@@ -64,7 +64,7 @@ public:: true
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ]
   },

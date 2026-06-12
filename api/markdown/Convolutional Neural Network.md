@@ -150,7 +150,7 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     }
@@ -654,6 +654,6 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[ISO/IEC 22989:2022]], [[NIST AI 100-3]], [[ISO/IEC 23053:2022]], [[ISO/IEC 23894:2023]], [[NIST AI RMF]], [[EU AI Act]], [[OECD AI Principles]]
+  - sources:: [[ISO/IEC 22989:2022]], [[NIST AI 100-3]], [[ISO/IEC 23053:2022]], [[ISO/IEC 23894:2023]], [[NIST AI RMF]], [[EU AI Act Regulatory Instrument]], [[OECD AI Principles]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T14:15:00Z

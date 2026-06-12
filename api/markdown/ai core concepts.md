@@ -158,7 +158,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
@@ -347,7 +347,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - **Has-part**: [[Machine Learning]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
+  - **Has-part**: [[Machine Learning Discipline]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
   - **Enables**: [[Natural Language Processing]], [[Computer Vision]], [[Inference]]
   - **Uses**: [[Data Pipeline]] (training data flow), [[Federated Learning]] (privacy-preserving training)
 

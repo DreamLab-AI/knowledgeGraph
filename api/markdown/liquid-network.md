@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Bitcoin Lightning Network]], [[Digital Asset Domain]]
-  - requires:: [[Bitcoin]], [[Federation]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Federation]]
   - enables:: [[Confidential Transactions]], [[Asset Issuance]]
 
 - ### Content

@@ -67,7 +67,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -96,7 +96,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -132,7 +132,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Entity]]
   - bridges-to:: [[Alan Turing Institute]]
-  - enables:: [[Artificial Intelligence]], [[Machine Learning]]
+  - enables:: [[Artificial Intelligence]], [[Machine Learning Discipline]]
 
 - ### Content
   - The University of Oxford is a collegiate research university in England with a long history and broad disciplinary coverage. It maintains internationally leading research in computer science, machine learning, and the mathematical sciences.

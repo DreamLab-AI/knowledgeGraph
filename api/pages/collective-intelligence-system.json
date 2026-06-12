@@ -58,7 +58,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-decision-making",
+        "id": "urn:ngm:class:collaborative-systems-modality-decision-making",
         "label": "Collaborative Decision-Making"
       },
       {
@@ -83,7 +83,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:collaborative-ai-platform",
+        "id": "urn:ngm:class:collaborative-systems-modality-ai-platform",
         "label": "Collaborative AI Platform"
       },
       {

@@ -23,7 +23,7 @@ public:: true
   "definition": "Embeddings are dense, low-dimensional vector representations of discrete objects—words, sentences, images, code, graphs, or arbitrary entities—learned by neural networks such that geometric relationships in the vector space correspond to semantic or functional relationships between the original objects. The core property is that semantically similar inputs map to nearby vectors, enabling tasks like similarity search, clustering, and retrieval to be performed as efficient geometric operations. Embeddings are the foundational representation layer of modern deep learning, underpinning language models, recommendation systems, search engines, and retrieval-augmented generation pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},

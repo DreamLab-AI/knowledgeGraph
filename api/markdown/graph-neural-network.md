@@ -12,7 +12,7 @@
   - enables [[Retrieval-Augmented Generation]]
   - enables [[Anomaly Detection]]
   - relatedTo [[Transformer]]
-  - relatedTo [[Semantic Web]]
+  - relatedTo [[Semantic Web Linked Data Standard]]
 
 - ### Content
   - ### Primary Definition
@@ -66,12 +66,12 @@
   - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
   - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
   - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-  - [[ChatGPT]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
+  - [[Instruction-Following Conversational AI System]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
   - [CLI tool](https://www.reddit.com/r/ChatGPTCoding/comments/183qetc/made_a_small_cli_tool_to_create_openai_assistants/) to deploy a [[GPT]] model from a directory of data [[Knowledge Graphing]]
   - [VECTORDB](http://vectordb.com) open source [[Knowledge Graphing]] database
   - https://nux.ai/guides/chaining-rag-systems [[Knowledge Graphing]]
   - Instant RAG from directory agent builder for openai [openai instant assistant](https://github.com/davidgonmar/openai_instant_assistant)
-  - [[Training and fine tuning]] tiny 1500 line trainer for 8b [[Llama]] [rombodawg/test_dataset_Codellama-3-8B · Hugging Face](https://huggingface.co/rombodawg/test_dataset_Codellama-3-8B)
+  - [[Training and fine tuning]] tiny 1500 line trainer for 8b [[Meta Llama Model Family]] [rombodawg/test_dataset_Codellama-3-8B · Hugging Face](https://huggingface.co/rombodawg/test_dataset_Codellama-3-8B)
   - [[Large Language Models]] memory calculator [LLM RAM Calculator by Ray Fernando](https://llm-calc.rayfernando.ai/)
   - [[Evaluation benchmarks and leaderboards]] [Ayumi LLM Evaluation (m8geil.de)](https://ayumi.m8geil.de/)
   - [VRAM Calculator (asmirnov.xyz)](https://vram.asmirnov.xyz/)
@@ -89,15 +89,15 @@
 		- which can then go into connected papers
 		- [https://www.connectedpapers.com/](https://www.connectedpapers.com/)
 		  [https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph)
-		- Which immediately reveals a connection to the [[Semantic Web]] , [[Ontology conversation with AIs]] , and OWL, which I am already using.
+		- Which immediately reveals a connection to the [[Semantic Web Linked Data Standard]] , [[AI-Assisted Ontology Elicitation Method]] , and OWL, which I am already using.
 		- ![KNOWLEDGE EXTRACTION.pdf](assets/KNOWLEDGE_EXTRACTION_1721153960585_0.pdf) [[Knowledge Graphing]]
   - [Music Galaxy (spotifytrack.net)](https://galaxy.spotifytrack.net/) [[Music and Audio]] [[Knowledge Graphing]]
-  - [[Knowledge Graphing]] [[Metaverse Ontology]] [[Agentic Mycelia]] [[Agentic Metaverse for Global Creatives]] [[PEOPLE]] [[Tom Smoker]] [[Multi Agent RAG scrapbook]]
-  - [A New Way to Store Knowledge (breckyunits.com)](https://breckyunits.com/scrollsets.html) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Decentralised Web]] [[Could]]
+  - [[Knowledge Graphing]] [[Metaverse Ontology]] [[Multi-Layer Agentic Governance Framework]] [[Decentralised Creative Metaverse Framework]] [[Domain Expert Contact Index]] [[Tom Smoker]] [[Multi-Agent RAG Architecture Compendium]]
+  - [A New Way to Store Knowledge (breckyunits.com)](https://breckyunits.com/scrollsets.html) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Decentralised Web]] [[Epistemic Modality Marker]]
   - [[Knowledge Graphing]] [GraphRAG: Unlocking LLM discovery on narrative private data - Microsoft Research](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/) [[Knowledge Graphing]]
   - [topoteretes/cognee: Deterministic LLMs Outputs for AI Applications and AI Agents (github.com)](https://github.com/topoteretes/cognee) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Large Language Models]] also similar [Microsoft Graph RAG paper](https://arxiv.org/pdf/2404.16130) looks like this could work for
   - Day planner with voice input [intellisay](https://www.intellisay.xyz/) [[Knowledge Graphing]]
-  - the [[GPTs and Custom Assistants]] API from [[OpenAI]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[SHOULD]]
+  - the [[GPTs and Custom Assistants]] API from [[OpenAI Research Organisation]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[RFC 2119 SHOULD Normative Keyword]]
   - https://github.com/yoheinakajima/MindGraph [[Knowledge Graphing]] [[Agents]]
 		- {{twitter https://twitter.com/yoheinakajima/status/1769019899245158648}}
   - [Introducing Elicit Notebooks! (youtube.com)](https://www.youtube.com/watch?v=DmK-cLdbkvQ) [[Knowledge Graphing]]
@@ -106,13 +106,13 @@
   - [🦜🕸️LangGraph | 🦜️🔗 Langchain](https://python.langchain.com/docs/langgraph) [[Knowledge Graphing]]
   - Sync [[Notion]] with [[Logseq]] for better [[Knowledge Graphing]] [b-yp/logseq-notion-sync: Sync Logseq content to Notion (github.com)](https://github.com/b-yp/logseq-notion-sync)
   - [[Knowledge Graphing]] meets [[Large Language Models]]
-		- [[2401.16960] Two Heads Are Better Than One: Integrating Knowledge from Knowledge Graphs and Large Language Models for Entity Alignment (arxiv.org)](https://arxiv.org/abs/2401.16960) [[Knowledge Graphing]] [[Could]]
+		- [[2401.16960] Two Heads Are Better Than One: Integrating Knowledge from Knowledge Graphs and Large Language Models for Entity Alignment (arxiv.org)](https://arxiv.org/abs/2401.16960) [[Knowledge Graphing]] [[Epistemic Modality Marker]]
 		- [Answering Questions with Knowledge Graph Embeddings - VectorHub (superlinked.com)](https://hub.superlinked.com/answering-questions-with-knowledge-graph-embeddings)
   - [Gephi - The Open Graph Viz Platform](https://gephi.org/) [[Knowledge Graphing]]
   - [terraphim/terraphim-ai: This is monorepo for Terraphim AI assistant, no submodules anymore (github.com)](https://github.com/terraphim/terraphim-ai) Private knowledge graph AI search which might support [[Knowledge Graphing]]
 		- [AtomicData.dev (github.com)](https://github.com/atomicdata-dev)
   - Add a tagging system to [[Knowledge Graphing]]
-		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Projects]], #🌲evergreen
+		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Active Research Projects Registry]], #🌲evergreen
 		- **Action Tags**: #🌹NeedsImprovement, #🍂SunsetSoon
 		- **Context Tags**: #PEOPLE, #📖read/learn
   - [[Diagrams as Code]] page added for the new plugin for [[Knowledge Graphing]]
@@ -130,12 +130,12 @@
   - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
   - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
   - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-  - [[ChatGPT]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
+  - [[Instruction-Following Conversational AI System]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
   - [CLI tool](https://www.reddit.com/r/ChatGPTCoding/comments/183qetc/made_a_small_cli_tool_to_create_openai_assistants/) to deploy a [[GPT]] model from a directory of data [[Knowledge Graphing]]
   - [VECTORDB](http://vectordb.com) open source [[Knowledge Graphing]] database
   - https://nux.ai/guides/chaining-rag-systems [[Knowledge Graphing]]
   - Instant RAG from directory agent builder for openai [openai instant assistant](https://github.com/davidgonmar/openai_instant_assistant)
-  - [[Training and fine tuning]] tiny 1500 line trainer for 8b [[Llama]] [rombodawg/test_dataset_Codellama-3-8B · Hugging Face](https://huggingface.co/rombodawg/test_dataset_Codellama-3-8B)
+  - [[Training and fine tuning]] tiny 1500 line trainer for 8b [[Meta Llama Model Family]] [rombodawg/test_dataset_Codellama-3-8B · Hugging Face](https://huggingface.co/rombodawg/test_dataset_Codellama-3-8B)
   - [[Large Language Models]] memory calculator [LLM RAM Calculator by Ray Fernando](https://llm-calc.rayfernando.ai/)
   - [[Evaluation benchmarks and leaderboards]] [Ayumi LLM Evaluation (m8geil.de)](https://ayumi.m8geil.de/)
   - [VRAM Calculator (asmirnov.xyz)](https://vram.asmirnov.xyz/)
@@ -153,15 +153,15 @@
 		- which can then go into connected papers
 		- [https://www.connectedpapers.com/](https://www.connectedpapers.com/)
 		  [https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph)
-		- Which immediately reveals a connection to the [[Semantic Web]] , [[Ontology conversation with AIs]] , and OWL, which I am already using.
+		- Which immediately reveals a connection to the [[Semantic Web Linked Data Standard]] , [[AI-Assisted Ontology Elicitation Method]] , and OWL, which I am already using.
 		- ![KNOWLEDGE EXTRACTION.pdf](assets/KNOWLEDGE_EXTRACTION_1721153960585_0.pdf) [[Knowledge Graphing]]
   - [Music Galaxy (spotifytrack.net)](https://galaxy.spotifytrack.net/) [[Music and Audio]] [[Knowledge Graphing]]
-  - [[Knowledge Graphing]] [[Metaverse Ontology]] [[Agentic Mycelia]] [[Agentic Metaverse for Global Creatives]] [[PEOPLE]] [[Tom Smoker]] [[Multi Agent RAG scrapbook]]
-  - [A New Way to Store Knowledge (breckyunits.com)](https://breckyunits.com/scrollsets.html) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Decentralised Web]] [[Could]]
+  - [[Knowledge Graphing]] [[Metaverse Ontology]] [[Multi-Layer Agentic Governance Framework]] [[Decentralised Creative Metaverse Framework]] [[Domain Expert Contact Index]] [[Tom Smoker]] [[Multi-Agent RAG Architecture Compendium]]
+  - [A New Way to Store Knowledge (breckyunits.com)](https://breckyunits.com/scrollsets.html) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Decentralised Web]] [[Epistemic Modality Marker]]
   - [[Knowledge Graphing]] [GraphRAG: Unlocking LLM discovery on narrative private data - Microsoft Research](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/) [[Knowledge Graphing]]
   - [topoteretes/cognee: Deterministic LLMs Outputs for AI Applications and AI Agents (github.com)](https://github.com/topoteretes/cognee) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Large Language Models]] also similar [Microsoft Graph RAG paper](https://arxiv.org/pdf/2404.16130) looks like this could work for
   - Day planner with voice input [intellisay](https://www.intellisay.xyz/) [[Knowledge Graphing]]
-  - the [[GPTs and Custom Assistants]] API from [[OpenAI]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[SHOULD]]
+  - the [[GPTs and Custom Assistants]] API from [[OpenAI Research Organisation]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[RFC 2119 SHOULD Normative Keyword]]
   - https://github.com/yoheinakajima/MindGraph [[Knowledge Graphing]] [[Agents]]
 		- {{twitter https://twitter.com/yoheinakajima/status/1769019899245158648}}
   - [Introducing Elicit Notebooks! (youtube.com)](https://www.youtube.com/watch?v=DmK-cLdbkvQ) [[Knowledge Graphing]]
@@ -170,13 +170,13 @@
   - [🦜🕸️LangGraph | 🦜️🔗 Langchain](https://python.langchain.com/docs/langgraph) [[Knowledge Graphing]]
   - Sync [[Notion]] with [[Logseq]] for better [[Knowledge Graphing]] [b-yp/logseq-notion-sync: Sync Logseq content to Notion (github.com)](https://github.com/b-yp/logseq-notion-sync)
   - [[Knowledge Graphing]] meets [[Large Language Models]]
-		- [[2401.16960] Two Heads Are Better Than One: Integrating Knowledge from Knowledge Graphs and Large Language Models for Entity Alignment (arxiv.org)](https://arxiv.org/abs/2401.16960) [[Knowledge Graphing]] [[Could]]
+		- [[2401.16960] Two Heads Are Better Than One: Integrating Knowledge from Knowledge Graphs and Large Language Models for Entity Alignment (arxiv.org)](https://arxiv.org/abs/2401.16960) [[Knowledge Graphing]] [[Epistemic Modality Marker]]
 		- [Answering Questions with Knowledge Graph Embeddings - VectorHub (superlinked.com)](https://hub.superlinked.com/answering-questions-with-knowledge-graph-embeddings)
   - [Gephi - The Open Graph Viz Platform](https://gephi.org/) [[Knowledge Graphing]]
   - [terraphim/terraphim-ai: This is monorepo for Terraphim AI assistant, no submodules anymore (github.com)](https://github.com/terraphim/terraphim-ai) Private knowledge graph AI search which might support [[Knowledge Graphing]]
 		- [AtomicData.dev (github.com)](https://github.com/atomicdata-dev)
   - Add a tagging system to [[Knowledge Graphing]]
-		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Projects]], #🌲evergreen
+		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Active Research Projects Registry]], #🌲evergreen
 		- **Action Tags**: #🌹NeedsImprovement, #🍂SunsetSoon
 		- **Context Tags**: #PEOPLE, #📖read/learn
   - [[Diagrams as Code]] page added for the new plugin for [[Knowledge Graphing]]

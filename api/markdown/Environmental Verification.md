@@ -90,7 +90,7 @@ public:: true
         "label": "XR Runtime Environment"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -137,7 +137,7 @@ public:: true
   - Depends On [[Environmental Registry]]
   - Depends On [[Verification Standard]]
   - Supports [[XR Runtime Environment]]
-  - Supports [[Spatial Computing]]
+  - Supports [[Spatial Computing Paradigm]]
   - Related To [[Calibration Tools]]
 
 - ### Content

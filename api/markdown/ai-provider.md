@@ -8,7 +8,7 @@
 
 - ### Relationships
   - requires:: [[AI Lifecycle]], [[AI Impact Assessment]]
-  - implements:: [[EU AI Act]], [[AI Governance Framework]]
+  - implements:: [[EU AI Act Regulatory Instrument]], [[AI Governance Framework]]
   - relatedTo:: [[AI Operator]], [[AI User]], [[Accountability]], [[Risk Management]]
 
 - ### Content
@@ -376,6 +376,6 @@
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

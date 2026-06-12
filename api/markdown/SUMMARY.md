@@ -85,7 +85,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
       {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}

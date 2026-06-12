@@ -63,7 +63,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ]
@@ -92,7 +92,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -123,7 +123,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[DeFi]]
   - bridges-to:: [[DeFi]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
 
 - ### Content
   - UMA, short for Universal Market Access, operates an optimistic oracle in which proposed answers are accepted unless disputed within a challenge window. Disputes are resolved by token holder voting, with economic incentives discouraging false reports.

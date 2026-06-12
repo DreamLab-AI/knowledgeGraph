@@ -236,5 +236,5 @@ bridges-to:: [[Autonomous Robot]]
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
 - ### Provenance
-  - sources:: [[EU AI Act]]
+  - sources:: [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

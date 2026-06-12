@@ -99,8 +99,8 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney Text-to-Image Service"
     },
     {
       "slug": "proprietary-image-generation",

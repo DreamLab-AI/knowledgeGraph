@@ -410,7 +410,7 @@ public:: true
         "label": "Knowledge Distillation"
       },
       {
-        "@id": "urn:ngm:class:mixture-of-experts",
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -418,7 +418,7 @@ public:: true
         "label": "Multi-Head Attention"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -478,7 +478,7 @@ public:: true
         "label": "Microsoft Copilot"
       },
       {
-        "@id": "urn:ngm:class:multimodal-understanding",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-understanding",
         "label": "Multimodal Understanding"
       },
       {
@@ -576,7 +576,7 @@ public:: true
         "label": "Ethical AI"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -620,7 +620,7 @@ public:: true
         "label": "AI Model Card"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -717,7 +717,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -752,7 +752,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -827,7 +827,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -842,7 +842,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -857,7 +857,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
@@ -932,12 +932,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mistral and Mixtral]]",
+      "raw": "[[Mistral AI Open-Weight Model Family]]",
       "resolved": "urn:visionflow:owl:class:mistral-and-mixtral",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Mixture of Experts]]",
+      "raw": "[[Mixture-of-Experts Architecture]]",
       "resolved": "urn:visionflow:owl:class:mixture-of-experts",
       "kind": "ResolvedLink"
     },
@@ -1089,17 +1089,17 @@ public:: true
   - implemented-in-layer:: [[ModelLayer]], [[InferenceLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Foundation Models]], [[Large Language Models]], [[Proprietary Large Language Models]], [[General Purpose AI Model]], [[Generative AI]], [[Generative Model]]
-  - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture of Experts]], [[Multimodal AI]], [[Adapter Modules]]
+  - is-subclass-of:: [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Proprietary Large Language Models]], [[General Purpose AI Model]], [[Generative AI]], [[Generative Model]]
+  - has-part:: [[Attention Mechanism]], [[Attention Head]], [[Multi-Head Attention]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Fine Tuning]], [[Mixture-of-Experts Architecture]], [[Multimodal AI]], [[Adapter Modules]]
   - requires:: [[Pre Training]], [[Continued Pre Training]], [[Curriculum Learning]], [[Model Training]], [[Evaluation benchmarks and leaderboards]], [[Compute Infrastructure]], [[Training and fine tuning]]
   - enables:: [[Edge Computing]], [[On-Device Learning]], [[Microsoft Copilot]], [[Code Generation]], [[Reasoning]], [[Multimodal Understanding]], [[AI Deployment]], [[Edge AI System]], [[Context Aware Computing]]
   - implements:: [[Supervised Fine Tuning]], [[Direct Preference Optimization]], [[Parameter-Efficient Fine-Tuning]], [[QLoRA]], [[Knowledge Distillation]], [[Instruction Tuning]], [[Safety Fine Tuning]], [[Full Fine Tuning]]
   - depends-on:: [[Attention]], [[Transformer]], [[Layer Normalisation]], [[Positional Encoding]], [[Activation Function]], [[Context Window]], [[BERT]], [[Scaled Dot Product Attention]]
   - supports:: [[Edge Computing Architecture]], [[NPU]], [[Inference Hardware]], [[Model Optimisation and Performance]], [[AI-Augmented Software Engineering]], [[Embedded AI Frameworks]], [[Knowledge Distillation for Edge]]
   - uses:: [[Prompt Engineering]], [[Retrieval Augmented Generation - RAG]], [[Function Calling]], [[Model Compression for Edge]], [[Model Pruning for Edge Deployment]], [[Context Engineering]]
-  - contrasts-with:: [[GPT 4]], [[ChatGPT]], [[LLaMA]], [[Llama 3]], [[Gemini]], [[Mistral and Mixtral]], [[Anthropic Claude]], [[GPT 3]]
-  - related-to:: [[AI Safety]], [[Responsible AI]], [[Bias in Large Language Models]], [[AI Alignment]], [[Ethical AI]], [[Algorithmic Bias]], [[Competition in AI]], [[Foundation Models]]
-  - standardized-by:: [[EU AI Act]], [[Responsible AI Principles]], [[AI Model Card]], [[Responsible AI]]
+  - contrasts-with:: [[GPT 4]], [[Instruction-Following Conversational AI System]], [[LLaMA]], [[Llama 3]], [[Gemini Multimodal Language Model]], [[Mistral AI Open-Weight Model Family]], [[Constitutional AI Language Model Family]], [[GPT 3]]
+  - related-to:: [[AI Safety]], [[Responsible AI]], [[Bias in Large Language Models]], [[AI Alignment]], [[Ethical AI]], [[Algorithmic Bias]], [[Competition in AI]], [[Large-Scale Pretrained Foundation Model]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[Responsible AI Principles]], [[AI Model Card]], [[Responsible AI]]
 
 - ### Content
 

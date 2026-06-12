@@ -23,7 +23,7 @@ public:: true
   "definition": "Frontier AI refers to the most capable and computationally intensive artificial intelligence systems at the leading edge of current technical progress, typically characterised by unprecedentedly large training compute budgets, novel emergent capabilities, and performance that approaches or exceeds human expert level across diverse cognitive tasks. These systems, predominantly large language models and multimodal foundation models, exhibit qualitatively new behaviours not present in smaller predecessors, including in-context learning, chain-of-thought reasoning, and cross-domain generalisation. Their development is concentrated among a small number of resource-rich organisations and raises distinct safety, governance, and geopolitical considerations absent from earlier AI generations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}],
+  "subClassOf": [{"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
@@ -49,7 +49,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Frontier AI]] denotes the most capable [[Large Language Models]] and multimodal [[Foundation Models]] at the cutting edge of training compute and emergent capability, distinguished by in-context learning, broad generalisation, and the novel safety and governance challenges they introduce on the [[History and Path to AGI]] trajectory.
+  - [[Frontier AI]] denotes the most capable [[Large Language Models]] and multimodal [[Large-Scale Pretrained Foundation Model]] at the cutting edge of training compute and emergent capability, distinguished by in-context learning, broad generalisation, and the novel safety and governance challenges they introduce on the [[History and Path to AGI]] trajectory.
 - ### Relationships
   - Frontier AI is the principal subject of [[AI Safety]] research and [[AI Governance]] frameworks, because its emergent capabilities and opacity create risk profiles qualitatively distinct from prior AI systems. The [[Frontier Model Forum]], established by major labs, coordinates voluntary safety commitments at this capability tier. [[Red Teaming]] and systematic [[Model Evaluation Results]] are the primary mechanisms for characterising dangerous capabilities before deployment. [[Transformers]] architectures underpin virtually all current frontier systems, and [[Generative AI]] applications are the primary commercial driver of frontier model investment.
 - ### Content

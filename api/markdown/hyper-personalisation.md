@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[ApplicationLayer]], [[DataLayer]], [[InferenceLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Recommender Systems]], [[Predictive Personalization]], [[Behavioural AI]], [[Customer Experience Management]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Recommender Systems]], [[Predictive Personalization]], [[Behavioural AI]], [[Customer Experience Management]]
   - has-part:: [[Collaborative Filtering]], [[Content-Based Filtering]], [[Hybrid Recommender]], [[Customer Data Platform]], [[Identity Graph]], [[Real-Time Inference Engine]], [[A/B Testing Framework]], [[Acquisition Function]], [[Dynamic Pricing Engine]], [[Programmatic Advertising]]
   - requires:: [[User Behaviour Data]], [[Identity Resolution]], [[Real-Time Data Pipeline]], [[Feature Store]], [[Embedding Model]], [[Consent Management Platform]]
   - enables:: [[Dynamic Pricing]], [[Personalised Content Delivery]], [[Programmatic Advertising]], [[Conversational AI]], [[Customer Lifetime Value Optimisation]], [[Next Best Action]]
   - implements:: [[Matrix Factorisation]], [[Neural Collaborative Filtering]], [[Transformer Sequential Recommendation]], [[Reinforcement Learning from Human Feedback]], [[Contextual Bandits]], [[Graph Neural Networks]]
-  - depends-on:: [[Foundation Models]], [[Large Language Models]], [[Vector Databases]], [[Feature Engineering]], [[Privacy-Preserving ML]], [[GDPR Compliance]]
+  - depends-on:: [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Vector Databases]], [[Feature Engineering]], [[Privacy-Preserving ML]], [[GDPR Compliance]]
   - supports:: [[Digital Marketing]], [[E-Commerce]], [[Media Streaming]], [[Retail AI]], [[Financial Services Personalisation]], [[Healthcare Personalisation]]
   - uses:: [[Embeddings]], [[Attention Mechanism]], [[Contrastive Learning]], [[Multi-Armed Bandit]], [[Federated Learning]], [[Differential Privacy]]
   - contrasts-with:: [[Segment-Based Marketing]], [[Rules-Based Personalisation]], [[Batch Recommendation]], [[Generic Content Delivery]]
-  - related-to:: [[AI Adoption]], [[AI Risks]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]], [[EU AI Act]], [[Deepfakes and fraudulent content]], [[Data Layer]], [[Foundation Models]], [[Agents]], [[Chatbots]], [[Digital Society Surveillance]]
-  - standardized-by:: [[EU AI Act]], [[GDPR]], [[UK Data (Use and Access) Act 2025]], [[ICO AI Guidance]], [[IAB OpenRTB Protocol]]
+  - related-to:: [[AI Adoption]], [[AI Risks]], [[Algorithmic Bias and Variance]], [[Bias in Large Language Models]], [[EU AI Act Regulatory Instrument]], [[Deepfakes and fraudulent content]], [[Data Layer]], [[Large-Scale Pretrained Foundation Model]], [[Agents]], [[Chatbots]], [[Digital Society Surveillance]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[UK Data (Use and Access) Act 2025]], [[ICO AI Guidance]], [[IAB OpenRTB Protocol]]
 
 - ### Content
 

@@ -71,7 +71,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -109,7 +109,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -160,7 +160,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Metaverse Platform]]
   - bridges-to:: [[Digital Asset]]
-  - requires:: [[Ethereum]], [[Smart Contract]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Smart Contract]]
   - enables:: [[Asset Tokenization]], [[Blockchain Gaming]]
 
 - ### Content

@@ -81,7 +81,7 @@ alias:: TechnologyDomain
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
       {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
       {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {"@id": "urn:ngm:class:technology-infrastructure-domain", "label": "Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},

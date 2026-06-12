@@ -78,7 +78,7 @@ public:: true
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ]
   },
   "provenance": {

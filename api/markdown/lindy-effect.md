@@ -1,4 +1,4 @@
 - ### Definition
-  - The Lindy Effect holds that the longer something non-perishable has survived, the longer it is likely to endure; it is frequently cited as a pillar of the [[Bitcoin Value Proposition]] and the resilience narrative around [[Bitcoin]].
+  - The Lindy Effect holds that the longer something non-perishable has survived, the longer it is likely to endure; it is frequently cited as a pillar of the [[Bitcoin Value Proposition]] and the resilience narrative around [[Bitcoin Proof-of-Work Protocol]].
 - ### Content
   - As a probabilistic heuristic rather than a law, the Lindy Effect applies best to ideas and standards exposed to selection pressure over time. Its rhetorical use in monetary debates frames accumulated uptime, security history, and network persistence as evidence of durability.

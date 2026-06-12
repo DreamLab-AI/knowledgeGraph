@@ -48,7 +48,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {

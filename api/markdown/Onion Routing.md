@@ -32,7 +32,7 @@ alias:: OnionRouting, onion-routing
     ],
     "uses": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}

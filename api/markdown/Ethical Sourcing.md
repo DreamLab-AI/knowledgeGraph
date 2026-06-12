@@ -791,7 +791,7 @@ alias:: BC-0453-ethical-sourcing
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:apple-supplier-responsibility",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-supplier-responsibility",
         "label": "Apple Supplier Responsibility"
       },
       {

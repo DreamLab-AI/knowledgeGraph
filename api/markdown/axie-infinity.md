@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[NFT]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[NFT]], [[Smart Contract]]
 
 - ### Content

@@ -115,7 +115,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ],

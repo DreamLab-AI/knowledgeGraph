@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Financial Infrastructure Domain]]
-  - bridges-to:: [[Bitcoin]], [[Cryptocurrency]], [[Bitcoin Environmental Issues]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Cryptocurrency]], [[Bitcoin Environmental Issues]]
 
 - ### Content
   - The Cambridge Centre for Alternative Finance conducts empirical research into financial channels and instruments that sit outside traditional banking, including peer-to-peer lending, crowdfunding, and cryptoassets. Its outputs combine survey data, market mapping, and indices used by regulators, industry, and academics.

@@ -57,7 +57,7 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "uses": [
@@ -116,7 +116,7 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - enables [[Machine Learning]]
+  - enables [[Machine Learning Discipline]]
   - enables [[Computer Vision]]
   - uses [[Data Pipeline]]
   - uses [[Edge Computing]]

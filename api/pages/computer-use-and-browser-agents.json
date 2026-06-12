@@ -68,7 +68,7 @@
         "label": "Display Server"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -254,7 +254,7 @@
         "label": "Chrome DevTools Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-article-50-2024",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50-2024",
         "label": "EU AI Act Article 50 (2024)"
       },
       {

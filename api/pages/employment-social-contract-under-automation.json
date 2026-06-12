@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:448447430db1db8ddc01fd19f88cda47c8e95d484e8457db86ebebda2cc626a6",
+  "title": "Employment Social Contract Under Automation",
+  "slug": "employment-social-contract-under-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:employment-social-contract-under-automation",
+  "domain": "governance",
+  "definition": "The set of expectations and obligations between workers, employers and the state concerning employment, income security and welfare, considered in the context of automation and artificial intelligence reshaping the labour market.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-domain",
+      "label": "Governance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    }
+  ],
+  "backlinks": []
+}

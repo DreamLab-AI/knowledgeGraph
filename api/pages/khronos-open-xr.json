@@ -8,7 +8,7 @@
   "definition": "Khronos OpenXR is an open, royalty-free standard that defines a common application interface for virtual and augmented reality devices, decoupling XR applications from specific runtimes and hardware.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing-domain",
+      "id": "urn:ngm:class:spatial-computing-paradigm-domain",
       "label": "Spatial Computing Domain"
     }
   ],

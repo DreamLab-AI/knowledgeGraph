@@ -237,7 +237,7 @@ alias:: RB-1005-forward-kinematics
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -262,7 +262,7 @@ alias:: RB-1005-forward-kinematics
   - belongs-to-domain:: [[Robotics]], [[Kinematics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Kinematics]]
   - requires:: [[Joint Parameters]]
   - enables:: [[Robot Simulation]], [[Motion Visualization]]

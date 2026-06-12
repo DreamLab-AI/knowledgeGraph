@@ -99,7 +99,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -124,7 +124,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Spatial Computing]]
+  - is-subclass-of:: [[Spatial Computing Paradigm]]
   - **requires**: [[Sensor Fusion]], [[SLAM]] — pose estimation fuses IMU, optical, and depth sensors; SLAM provides environment-relative localisation
   - **enables**: [[Augmented Reality]], [[Motion Capture]] — precise pose data is prerequisite for AR object anchoring and motion capture playback
   - **uses**: [[Computer Vision]] — markerless pose estimation algorithms rely on computer vision techniques (feature matching, depth estimation)

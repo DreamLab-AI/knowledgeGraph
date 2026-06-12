@@ -27,5 +27,5 @@
   - **NIST Trustworthy AI**: Attributes including validity, safety, security, privacy, explainability, and fairness
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[OECD]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[OECD]]
   - migration-date:: 2026-04-26T00:00:00Z

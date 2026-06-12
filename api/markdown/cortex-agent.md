@@ -9,14 +9,14 @@
   - implemented-in-layer:: [[OrchestrationLayer]], [[ApplicationLayer]], [[InferenceLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[Foundation Models]], [[Cognitive AI]]
+  - is-subclass-of:: [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[Large-Scale Pretrained Foundation Model]], [[Cognitive AI]]
   - has-part:: [[Function Calling]], [[Feedback Loop]], [[Context Engineering]], [[Evaluation benchmarks and leaderboards]], [[Graph Database]]
-  - requires:: [[Foundation Models]], [[API Gateway]], [[Data Layer]], [[Distributed Computing]], [[Fault Tolerance]]
+  - requires:: [[Large-Scale Pretrained Foundation Model]], [[API Gateway]], [[Data Layer]], [[Distributed Computing]], [[Fault Tolerance]]
   - enables:: [[CLI Multi-Agent Systems]], [[Computer Use and Browser Agents]], [[GPTs and Custom Assistants]], [[Chatbots]], [[Call Centres]]
   - implements:: [[Function Calling]], [[Context Engineering]], [[Retrieval Augmented Generation]], [[Attention]], [[Feedback Loop]]
   - depends-on:: [[Cloud Computing]], [[Distributed Computing]], [[Data Layer]], [[Cryptography Security and Privacy]], [[Distributed Identity]]
   - supports:: [[AML KYC Compliance]], [[Compliance Monitoring]], [[ESG Reporting]], [[Identity Verification]], [[Compliance Control]]
-  - uses:: [[Anthropic Claude]], [[Foundation Models]], [[Attention]], [[Emergence]], [[Evaluation benchmarks and leaderboards]]
+  - uses:: [[Constitutional AI Language Model Family]], [[Large-Scale Pretrained Foundation Model]], [[Attention]], [[Emergence]], [[Evaluation benchmarks and leaderboards]]
   - contrasts-with:: [[Computer Use and Browser Agents]], [[CLI Multi-Agent Systems]], [[GPT Engineer]], [[fast.ai]]
   - related-to:: [[Cognitive AI]], [[Brain Computer Interfaces]], [[Embodied Minds]], [[Context Engineering]], [[Convergence]]
   - standardized-by:: [[API Gateway]], [[Function Calling]], [[Domain Ontology]]

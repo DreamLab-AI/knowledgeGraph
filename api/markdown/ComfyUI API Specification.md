@@ -17,24 +17,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:comfy-ui-api-specification",
+  "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
   "@type": "Class",
   "label": "ComfyUI API Specification",
   "definition": "The programmatic interface specification for ComfyUI, a node-based generative AI workflow engine, defining JSON-serialised graph representations (prompt API), WebSocket-based progress streaming, queue management endpoints, and model loading conventions that allow headless or remote execution of image and video generation pipelines.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:comfy-ui-workflows", "label": "ComfyUI Workflows"}],
+  "subClassOf": [{"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:comfy-ui-client", "label": "ComfyUI Client"}
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"},
-      {"@id": "urn:ngm:class:comfy-ui-for-fashion-and-brands", "label": "ComfyUI for Fashion and Brands"}
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands", "label": "ComfyUI for Fashion and Brands"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:comfy-ui-manager", "label": "ComfyUI Manager"},
+      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager", "label": "ComfyUI Manager"},
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
     ]
   },

@@ -101,12 +101,12 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[PEOPLE]]",
+      "raw": "[[Domain Expert Contact Index]]",
       "resolved": "urn:visionflow:owl:class:people",
       "kind": "ResolvedLink"
     },
@@ -185,7 +185,7 @@ public:: true
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Sections to fill:
 		- Source of funding
 		- Amount
@@ -199,7 +199,7 @@ public:: true
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Sections to fill:
 		- Breakdown of labour costs and overhead allocations.
 		- Sections to fill:

@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - requires:: [[Data Collection]], [[Pattern Recognition]], [[Machine Learning Models]]
   - enables:: [[Personalization]], [[Predictive Analytics]], [[User Experience Optimization]]
 

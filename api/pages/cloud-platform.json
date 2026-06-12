@@ -26,7 +26,7 @@
         "label": "Platform Layer"
       },
       {
-        "id": "urn:ngm:class:infrastructure-component",
+        "id": "urn:ngm:class:technology-infrastructure-domain-component",
         "label": "Infrastructure Component"
       },
       {
@@ -45,11 +45,11 @@
         "label": "Cloud-Native Applications"
       },
       {
-        "id": "urn:ngm:class:machine-learning-platform",
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
         "label": "Machine Learning Platform"
       },
       {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       },
       {
@@ -76,7 +76,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:infrastructure-architecture",
+        "id": "urn:ngm:class:technology-infrastructure-domain-architecture",
         "label": "Infrastructure Architecture"
       },
       {

@@ -248,7 +248,7 @@
 	  - **Treasury contract**: Multi-asset treasury (often a Gnosis Safe or DAO-owned smart contract) controlled exclusively by Timelock-executed proposals.
 	  - **Vesting contracts**: For team / investor allocations — `VestingWallet`, [[Sablier]] streaming, [[Hedgey Finance]] non-revocable vesting, or [[Llama Pay]] streaming for delegate compensation.
 	  - **Distributor contracts**: Merkle airdrop distributors (used by Uniswap, ENS, Arbitrum, Optimism) verify claim proofs against a Merkle root committed at distribution time.
-	  - **Off-chain infrastructure**: [[Snapshot]] for gasless signalling, [[Tally]] / [[Boardroom]] / [[Karma]] for delegate analytics, [[Llama]] / [[Steakhouse Financial]] / [[Gauntlet]] for treasury management consultancy, [[Karpatkey]] for treasury yield-management.
+	  - **Off-chain infrastructure**: [[Snapshot]] for gasless signalling, [[Tally]] / [[Boardroom]] / [[Karma]] for delegate analytics, [[Meta Llama Model Family]] / [[Steakhouse Financial]] / [[Gauntlet]] for treasury management consultancy, [[Karpatkey]] for treasury yield-management.
 
   - ### Use Cases / Major Families
 
@@ -331,7 +331,7 @@
 
 	  Empirical incidents have shaped governance-token design more than any theoretical paper.
 
-	  **The DAO Hack (June 2016, $50M ETH)**: Not a governance-token attack per se but a recursive-call vulnerability in The DAO's withdraw mechanism. Triggered the [[Ethereum]] hard fork separating ETH from ETC and the foundational lesson that governance tokens require not only voting mechanism integrity but underlying smart-contract security audited to the same standard as treasury custody.
+	  **The DAO Hack (June 2016, $50M ETH)**: Not a governance-token attack per se but a recursive-call vulnerability in The DAO's withdraw mechanism. Triggered the [[Ethereum Smart Contract Platform]] hard fork separating ETH from ETC and the foundational lesson that governance tokens require not only voting mechanism integrity but underlying smart-contract security audited to the same standard as treasury custody.
 
 	  **Beanstalk Farms (April 2022, $182M)**: Attacker flash-loaned BEAN/Stalk/Seeds, used the flash-loaned governance tokens to pass an emergency proposal authorising treasury transfer to the attacker's address, executed in the same transaction, repaid the flash loan, and exited with $182M. Beanstalk's governance lacked `ERC20Votes` snapshot mechanism, allowing single-transaction borrow-vote-drain. Aftermath: all subsequent Governor-based protocols adopted `ERC20Votes` with explicit snapshot blocks; emergency proposals (Beanstalk's "Curve LP" emergency category) require longer timelocks even when borrowed-vote attacks are blocked.
 
@@ -508,7 +508,7 @@
 
 	  Governance tokens collectively administer significant DAO treasuries — Uniswap ~$3B in UNI + USDC + ETH, Optimism ~$2B, Arbitrum ~$3B, ENS ~$700M, Aave ~$500M, Compound ~$450M, MakerDAO Spark + protocol surplus ~$200M, Curve ~$100M, Lido ~$150M. Treasury management has matured into a distinct sub-discipline:
 
-	  - **Diversification**: Many DAOs hold 70-95% of treasury in their own governance token (which is then a treasury-managed asset, creating circular value-capture). Active diversification programs ([[Karpatkey]] for Gnosis, ENS, GnosisDAO; [[Steakhouse Financial]] for MakerDAO Endgame Real-World Asset RWA programme; [[Llama]] for Aave / Uniswap) have systematically reduced governance-token concentration in favour of stables (USDC, USDT, DAI), ETH, BTC, and yield-bearing positions.
+	  - **Diversification**: Many DAOs hold 70-95% of treasury in their own governance token (which is then a treasury-managed asset, creating circular value-capture). Active diversification programs ([[Karpatkey]] for Gnosis, ENS, GnosisDAO; [[Steakhouse Financial]] for MakerDAO Endgame Real-World Asset RWA programme; [[Meta Llama Model Family]] for Aave / Uniswap) have systematically reduced governance-token concentration in favour of stables (USDC, USDT, DAI), ETH, BTC, and yield-bearing positions.
 	  - **Yield generation**: Treasuries deploy stables into [[Aave]], [[Compound]], [[Maple Finance]], [[Centrifuge]] real-world asset pools, [[MakerDAO]] D3M direct deposit module, and Curve LP positions. Maker's Spark Protocol + MakerDAO RWA programme deployed ~$1.2B-2B into US Treasury bonds via [[Monetalis]] arrangement 2023-2024.
 	  - **Real-world asset (RWA) integration**: Tokenised T-bills ([[Ondo Finance]] OUSG, [[Maple Finance]] USDC pools, [[Centrifuge]] securitised credit) increasingly appear on DAO balance sheets seeking risk-free yield without crypto-native volatility.
 	  - **Operational expenditure**: Most major DAOs spend $5M-$50M annually on protocol development, security audits, grants programmes, delegate compensation, and ecosystem incentives. The Uniswap Foundation, Optimism Foundation, Arbitrum Foundation, ENS DAO Service Provider Programme, and Maker Endgame SubDAOs operate budgets in the tens of millions USD annually.

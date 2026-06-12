@@ -38,7 +38,7 @@ alias:: payment-channel
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:settlement", "label": "Settlement"},
-      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol", "label": "Bitcoin Protocol"}
     ]
   },
   "quality": 0.8

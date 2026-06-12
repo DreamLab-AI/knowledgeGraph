@@ -15,5 +15,5 @@
   Trustworthy AI Framework — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[EU HLEG AI]], [[EU AI Act]], [[ISO/IEC 42001:2023]]
+  - sources:: [[EU HLEG AI]], [[EU AI Act Regulatory Instrument]], [[ISO/IEC 42001:2023]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -708,7 +708,7 @@ public:: true
         "label": "National Competitiveness"
       },
       {
-        "@id": "urn:ngm:class:public-sector-modernisation",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-sector-modernisation",
         "label": "Public Sector Modernisation"
       },
       {
@@ -746,7 +746,7 @@ public:: true
         "label": "UK AI Opportunities Action Plan"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -1224,7 +1224,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1313,7 +1313,7 @@ public:: true
   - uses:: [[Artificial Intelligence]], [[Blockchain Network]], [[Extended Reality]], [[Internet of Things]], [[Synthetic Biology]], [[Agent Frameworks]], [[Agentic Internet]], [[Large Language Models]], [[Generative AI]], [[Computer Vision]]
   - contrasts-with:: [[Siloed Technology Adoption]], [[Sequential Technology Rollout]], [[Legacy Systems Modernisation]], [[Pre-Digital Transformation]], [[Technology Lock-In]], [[AI Adoption]]
   - related-to:: [[AI Risks]], [[AI Adoption]], [[Technology Governance]], [[Digital Sovereignty]], [[Skills Gap]], [[Platform Economy]], [[Fourth Industrial Revolution]], [[Metaverse]], [[Web3]], [[Algorithmic Bias and Variance]], [[Carbon Credit Tracking]], [[Carbon Footprint Measurement]]
-  - standardized-by:: [[ISO/IEC 42001 AI Management]], [[EU AI Act]], [[GDPR]], [[DORA]], [[Matter Standard]], [[OpenXR]], [[HL7 FHIR]], [[UK AI Opportunities Action Plan]], [[IEEE P2510]]
+  - standardized-by:: [[ISO/IEC 42001 AI Management]], [[EU AI Act Regulatory Instrument]], [[GDPR]], [[DORA]], [[Matter Standard]], [[OpenXR]], [[HL7 FHIR]], [[UK AI Opportunities Action Plan]], [[IEEE P2510]]
 
 - ### Content
 

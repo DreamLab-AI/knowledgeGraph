@@ -52,14 +52,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ethereum",
+      "@id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -123,9 +123,9 @@ public:: true
   - owl-role:: Individual
 
 - ### Relationships
-  - is-subclass-of:: [[Ethereum]]
+  - is-subclass-of:: [[Ethereum Smart Contract Platform]]
   - bridges-to:: [[Smart Contract]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[Web3]]
 
 - ### Content

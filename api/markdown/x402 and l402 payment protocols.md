@@ -4089,7 +4089,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -4124,7 +4124,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[cypherpunk]]",
+      "raw": "[[Cryptographic Privacy Activist]]",
       "resolved": "urn:visionflow:owl:class:cypherpunk",
       "kind": "ResolvedLink"
     },
@@ -4144,7 +4144,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -4164,12 +4164,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[infrastructure]]",
+      "raw": "[[Technology Infrastructure Domain]]",
       "resolved": "urn:visionflow:owl:class:infrastructure",
       "kind": "ResolvedLink"
     },
@@ -4204,7 +4204,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -4348,7 +4348,7 @@ public:: true
   **Key Innovation**: These protocols transform the [[web]] from a [[free-or-subscription]] model to a true [[micropayment]]-enabled [[metered-access]] economy where [[AI agents]], [[robots]], [[IoT devices]], and traditional applications can autonomously pay for [[computational resources]], [[data]], and [[services]].
 
   The emergence of these protocols in 2023-2025 reflects the convergence of three technological trends:
-  1. **[[Lightning Network]] maturity** - Enabling instant, low-fee [[Bitcoin]] payments
+  1. **[[Lightning Network]] maturity** - Enabling instant, low-fee [[Bitcoin Proof-of-Work Protocol]] payments
   2. **[[AI agent]] proliferation** - [[LLM]]-powered systems needing autonomous payment capabilities
   3. **[[API economy]] expansion** - Growing demand for granular, [[usage-based]] [[monetization]]
 
@@ -4465,7 +4465,7 @@ public:: true
   **Server-Side Components**:
   - **[[Aperture]]**: [[Lightning Labs]]' reference [[L402 reverse proxy]]
   - **[[LND]]**: [[Lightning Network Daemon]] for payment processing
-  - **[[btcd]]** or [[bitcoind]]: [[Bitcoin]] [[full node]]
+  - **[[btcd]]** or [[bitcoind]]: [[Bitcoin Proof-of-Work Protocol]] [[full node]]
   - **Custom middleware**: [[Go]], [[Node.js]], [[Python]] libraries
 
   **Client Libraries**:
@@ -4555,17 +4555,17 @@ public:: true
 
   ### Overview and Strategic Context
 
-  In **December 2024**, [[Google Cloud]] announced [[AP2]] (Agents-to-Payments), branded as [[X402 protocol]], marking the first major [[enterprise]] adoption of [[HTTP 402]]-based payment protocols. This represents [[Google]]'s strategic pivot toward [[AI agent]] economies and [[autonomous systems]].
+  In **December 2024**, [[Google Cloud]] announced [[AP2]] (Agents-to-Payments), branded as [[X402 protocol]], marking the first major [[enterprise]] adoption of [[HTTP 402]]-based payment protocols. This represents [[Google AI Technology Corporation]]'s strategic pivot toward [[AI agent]] economies and [[autonomous systems]].
 
-  **Critical Insight**: Google enabling [[cryptocurrency]] payments on the [[Coinbase]] protocol layer signals mainstream [[institutional]] acceptance of [[blockchain-based]] [[micropayments]]. This is not a [[sidechain]] or [[testnet]]—it's production [[infrastructure]] integrated with [[Google Cloud Platform]] (GCP).
+  **Critical Insight**: Google enabling [[cryptocurrency]] payments on the [[Coinbase]] protocol layer signals mainstream [[institutional]] acceptance of [[blockchain-based]] [[micropayments]]. This is not a [[sidechain]] or [[testnet]]—it's production [[Technology Infrastructure Domain]] integrated with [[Google Cloud Platform]] (GCP).
 
   ### Technical Architecture
 
   [[X402]] diverges from [[L402]]'s [[Bitcoin-only]] approach by supporting **multiple [[payment rails]]**:
 
   **Supported Cryptocurrencies**:
-  - [[Bitcoin]] ([[BTC]])
-  - [[Ethereum]] ([[ETH]])
+  - [[Bitcoin Proof-of-Work Protocol]] ([[BTC]])
+  - [[Ethereum Smart Contract Platform]] ([[ETH]])
   - [[USD Coin]] ([[USDC]])
   - [[Solana]] ([[SOL]])
   - [[Polygon]] ([[MATIC]])
@@ -4723,7 +4723,7 @@ public:: true
   **[[Coinbase Commerce]]** provides [[enterprise-grade]] payment infrastructure:
 
   **Features**:
-  - [[Multi-chain]] support ([[Ethereum]], [[Polygon]], [[Base]], [[Bitcoin]])
+  - [[Multi-chain]] support ([[Ethereum Smart Contract Platform]], [[Polygon]], [[Base]], [[Bitcoin Proof-of-Work Protocol]])
   - [[Instant settlement]] for [[stablecoins]] ([[USDC]], [[USDT]])
   - [[Fiat]] conversion options
   - [[Compliance]] and [[KYC]] for regulated entities
@@ -4825,8 +4825,8 @@ public:: true
   **AP2 Protocol Goals**:
   1. **Monetize [[AI infrastructure]]**: [[GCP]] charges [[per-token]], [[per-request]]
   2. **Enable [[agent economy]]**: [[Autonomous systems]] transacting without [[human]] intervention
-  3. **Compete with [[OpenAI]]**: Differentiate through [[native payments]]
-  4. **[[Blockchain]] integration**: Position [[Google]] in [[Web3]] ecosystem
+  3. **Compete with [[OpenAI Research Organisation]]**: Differentiate through [[native payments]]
+  4. **[[Blockchain]] integration**: Position [[Google AI Technology Corporation]] in [[Web3]] ecosystem
 
   **Announced Use Cases**:
   - [[Google Cloud AI]] services with [[usage-based billing]]
@@ -4896,7 +4896,7 @@ public:: true
   ### AI and GenAI Integration
 
   **[[Large Language Model]] Monetization**:
-  - [[OpenAI]], [[Anthropic]], [[Google]] charging [[per-token]]
+  - [[OpenAI Research Organisation]], [[Anthropic]], [[Google AI Technology Corporation]] charging [[per-token]]
   - [[AI agents]] paying for [[API calls]] autonomously
   - [[Fine-tuning]] services with [[usage-based pricing]]
   - [[Embedding]] generation [[micropayments]]
@@ -4972,7 +4972,7 @@ public:: true
   - **[[Multi-chain]]** pragmatism
   - **[[Enterprise]]** adoption focus
   - **[[Compliance]]** compatibility
-  - **[[Ecosystem integration]]** ([[Google]], [[Coinbase]])
+  - **[[Ecosystem integration]]** ([[Google AI Technology Corporation]], [[Coinbase]])
   - **[[Developer experience]]** priority
 
   ### Technical Trade-offs
@@ -5016,7 +5016,7 @@ public:: true
   - [[Enterprise]] [[compliance]] needed
   - [[AI agent]] integration via [[MCP]]
   - [[Fiat]] [[on-ramp]]/[[off-ramp]] important
-  - [[Google Cloud]] [[infrastructure]] used
+  - [[Google Cloud]] [[Technology Infrastructure Domain]] used
 
   ## Implementation Patterns
 
@@ -5200,7 +5200,7 @@ public:: true
   2. **[[Coinbase]]** - Payment processing
   3. **[[Vercel]]** - Edge function payments
   4. **[[Anthropic]]** - Claude AI MCP integration
-  5. **[[OpenAI]]** - GPT-4 API (pilot program)
+  5. **[[OpenAI Research Organisation]]** - GPT-4 API (pilot program)
   6. **[[Stripe]]** - Crypto payment rails
 
   ### Regulatory Landscape
@@ -5293,7 +5293,7 @@ public:: true
 
   ## Original Reference Materials
 
-  **Critical Context**: This represents [[Google]] enabling [[cryptocurrency]] payments on the [[Coinbase]] protocol layer—a landmark moment for [[institutional]] [[blockchain]] adoption. The following resources document the emergence of these protocols:
+  **Critical Context**: This represents [[Google AI Technology Corporation]] enabling [[cryptocurrency]] payments on the [[Coinbase]] protocol layer—a landmark moment for [[institutional]] [[blockchain]] adoption. The following resources document the emergence of these protocols:
 
   **Google Cloud AP2 Protocol Announcement**:
   https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol
@@ -5314,9 +5314,9 @@ public:: true
   https://arxiv.org/abs/2507.19550v1
   *(Likely covering theoretical foundations of [[agent-to-agent]] [[payment protocols]])*
 
-  **User Insight**: "I am working with [[L402]] which is more elegant for [[Bitcoin]], but just so you know, the thing I have been saying for years, is now a [[Google]] thing, officially."
+  **User Insight**: "I am working with [[L402]] which is more elegant for [[Bitcoin Proof-of-Work Protocol]], but just so you know, the thing I have been saying for years, is now a [[Google AI Technology Corporation]] thing, officially."
 
-  This observation captures the paradigm shift: What was once a [[fringe]] [[cypherpunk]] idea ([[HTTP 402]] [[micropayments]]) has been validated by [[Big Tech]], signaling the maturation of [[cryptocurrency]]-based [[API]] [[monetization]].
+  This observation captures the paradigm shift: What was once a [[fringe]] [[Cryptographic Privacy Activist]] idea ([[HTTP 402]] [[micropayments]]) has been validated by [[Big Tech]], signaling the maturation of [[cryptocurrency]]-based [[API]] [[monetization]].
 
   ## Conclusion: The Payment Protocol Inflection Point
 
@@ -5330,7 +5330,7 @@ public:: true
 
   3. **[[Economic Unlock]]**: [[AI agents]], [[robots]], and [[IoT]] devices can now participate in [[markets]] without [[human]] [[custodians]]
 
-  4. **[[Institutional Validation]]**: [[Google]]'s [[X402]] adoption signals [[mainstream]] acceptance of [[cryptocurrency]] [[payment rails]]
+  4. **[[Institutional Validation]]**: [[Google AI Technology Corporation]]'s [[X402]] adoption signals [[mainstream]] acceptance of [[cryptocurrency]] [[payment rails]]
 
   5. **[[Developer Opportunity]]**: The [[API economy]] is transitioning from [[rate-limited]] [[free tiers]] to [[granular]] [[usage-based]] [[monetization]]
 

@@ -12,7 +12,7 @@
       "label": "AI Research Area"
     },
     {
-      "id": "urn:ngm:class:multimodal-ai",
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
       "label": "Multimodal AI"
     }
   ],
@@ -237,7 +237,7 @@
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {

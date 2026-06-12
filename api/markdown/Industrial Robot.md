@@ -366,7 +366,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-automation",
+        "@id": "urn:ngm:class:collaborative-systems-modality-automation",
         "label": "Collaborative Automation"
       },
       {
@@ -786,7 +786,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -858,7 +858,7 @@ public:: true
   - requires:: [[Motion Planning]], [[Robot Operating System]], [[Industrial Network]], [[Safety Standards]], [[Calibration System]]
   - enables:: [[Flexible Manufacturing]], [[High Speed Assembly]], [[Collaborative Automation]], [[Mass Customisation]], [[Quality Inspection]]
   - implements:: [[Forward Kinematics]], [[Inverse Kinematics]], [[Trajectory Planning]], [[Force Control]], [[Computer Vision]]
-  - depends-on:: [[Servo Motor]], [[Embedded Systems]], [[Real Time Operating System]], [[Digital Twin]], [[Machine Learning]]
+  - depends-on:: [[Servo Motor]], [[Embedded Systems]], [[Real Time Operating System]], [[Digital Twin]], [[Machine Learning Discipline]]
   - supports:: [[Automotive Manufacturing]], [[Electronics Assembly]], [[Food Processing Automation]], [[Pharmaceutical Manufacturing]], [[Logistics Automation]]
   - uses:: [[OPC UA]], [[MQTT Protocol]], [[ROS Industrial]], [[EtherCAT]], [[PROFINET]]
   - contrasts-with:: [[Collaborative Robot]], [[Autonomous Mobile Robot]], [[Fixed Automation]], [[Manual Assembly]]

@@ -70,7 +70,7 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ],
@@ -79,7 +79,7 @@ public:: true
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
     ]
   },
@@ -146,7 +146,7 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - enables:: [[Machine Learning]], [[Deep Learning]], [[Generative AI]]
+  - enables:: [[Machine Learning Discipline]], [[Deep Learning]], [[Generative AI]]
   - uses:: [[AutoML]], [[Data Pipeline]]
   - supports:: [[Machine Learning Infrastructure]], [[AI Lifecycle]]
 

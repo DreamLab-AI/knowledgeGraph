@@ -346,7 +346,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -376,7 +376,7 @@ public:: true
   - belongs-to-domain:: [[Robotics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Robot Kinematics]], [[Motion Mathematics]]
   - has-part:: [[Jacobian Matrix]], [[Velocity Transformation]], [[Singularity Condition]]
   - requires:: [[Position Kinematics]], [[Joint Configuration]], [[Velocity Inputs]]

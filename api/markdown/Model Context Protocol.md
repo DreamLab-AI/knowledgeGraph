@@ -248,7 +248,7 @@ public:: true
         "label": "HTTP Protocol"
       },
       {
-        "@id": "urn:ngm:class:json-rpc-2-0",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
         "label": "JSON-RPC 2.0"
       },
       {
@@ -284,7 +284,7 @@ public:: true
         "label": "Anthropic MCP Specification v0.1"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {

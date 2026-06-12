@@ -64,7 +64,7 @@ public:: true
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},

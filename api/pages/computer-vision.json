@@ -428,6 +428,10 @@
       "label": "Computer Vision Task"
     },
     {
+      "slug": "computer-vision-video-analysis",
+      "label": "Computer Vision Video Analysis"
+    },
+    {
       "slug": "computing-platform",
       "label": "Computing Platform"
     },
@@ -444,8 +448,8 @@
       "label": "Confusion Matrix"
     },
     {
-      "slug": "constitutional-ai",
-      "label": "Constitutional AI"
+      "slug": "constitutional-ai-training-methodology",
+      "label": "Constitutional AI Training Methodology"
     },
     {
       "slug": "content-delivery-network-cdn",
@@ -1022,10 +1026,6 @@
     {
       "slug": "transformers",
       "label": "Transformers"
-    },
-    {
-      "slug": "video-processing",
-      "label": "Video Processing"
     },
     {
       "slug": "virtual-production",

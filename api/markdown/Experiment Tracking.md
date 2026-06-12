@@ -55,7 +55,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:experiment-tracking",
+  "@id": "urn:ngm:class:empirical-experimental-design-tracking",
   "@type": "Class",
   "label": "Experiment Tracking",
   "definition": "Experiment tracking is the practice of recording the configuration, code, data, and results of machine learning experiments so they can be compared and reproduced. It is a part of MLOps.",
@@ -77,7 +77,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -106,7 +106,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -153,7 +153,7 @@ public:: true
   - is-subclass-of:: [[MLOps]]
   - bridges-to:: [[Open Source]]
   - requires:: [[Model Training]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Experiment tracking systems log the parameters, metrics, model versions, and artefacts produced during training runs. This record allows teams to compare runs, understand which changes improved results, and reproduce earlier work.

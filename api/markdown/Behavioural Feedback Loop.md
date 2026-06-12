@@ -278,7 +278,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -318,7 +318,7 @@ public:: true
   - has-part:: [[Action Detection]], [[Environment Response]], [[Behavior Analysis]], [[Adaptive Reinforcement]]
   - requires:: [[User Tracking]], [[AI Model]], [[Real-time Processing]], [[State Management]]
   - enables:: [[Adaptive Experience]], [[Personalized Interaction]], [[Behavioral Learning]], [[Dynamic Adjustment]]
-  - depends-on:: [[Machine Learning]], [[Affective Computing]], [[User Modeling]]
+  - depends-on:: [[Machine Learning Discipline]], [[Affective Computing]], [[User Modeling]]
 
 - ### Content
   Behavioural Feedback Loop — content pending enrichment.

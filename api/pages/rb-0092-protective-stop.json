@@ -33,7 +33,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-operation",
+        "id": "urn:ngm:class:collaborative-systems-modality-operation",
         "label": "Collaborative Operation"
       },
       {
@@ -60,7 +60,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       },
       {

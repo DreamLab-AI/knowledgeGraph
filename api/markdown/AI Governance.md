@@ -122,7 +122,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -200,6 +200,6 @@ public:: true
   - Cath, C. et al. (2018). Governing artificial intelligence: ethical, legal and technical opportunities and challenges. Philosophical Transactions of the Royal Society A.
 
 - ### Provenance
-  - sources:: [[GDPR]], [[EU AI Act]]
+  - sources:: [[GDPR]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

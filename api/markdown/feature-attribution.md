@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Explainable AI]]
   - bridges-to:: [[SHAP]], [[Feature Importance]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
   - enables:: [[Interpretability]]
 
 - ### Content

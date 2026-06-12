@@ -98,7 +98,7 @@
         "label": "Depth Estimation"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -233,7 +233,7 @@
         "label": "Neural Radiance Fields"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]
@@ -522,8 +522,8 @@
   ],
   "backlinks": [
     {
-      "slug": "installation-and-display-tech",
-      "label": "Installation and display tech"
+      "slug": "immersive-display-infrastructure",
+      "label": "Immersive Display Infrastructure"
     },
     {
       "slug": "optical-sensor-array",

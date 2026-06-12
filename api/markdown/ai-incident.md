@@ -8,7 +8,7 @@
 
 - ### Relationships
   - requires:: [[AI Risk Management]], [[Accountability]]
-  - relatedTo:: [[AI Safety]], [[Bias]], [[EU AI Act]]
+  - relatedTo:: [[AI Safety]], [[Bias]], [[EU AI Act Regulatory Instrument]]
   - enables:: [[Responsible AI]], [[AI Governance]]
 
 - ### Content

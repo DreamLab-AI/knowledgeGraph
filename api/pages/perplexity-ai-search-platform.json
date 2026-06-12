@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:58f79508e988421186a0ec3806c21caa8a3c7369077245fb7a6467cffec7d712",
+  "title": "Perplexity AI Search Platform",
+  "slug": "perplexity-ai-search-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:perplexity-ai-search-platform-ai-search-platform",
+  "domain": "infrastructure",
+  "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technology-infrastructure-domain",
+        "label": "infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Linked Data]]
   - bridges-to:: [[Web Standards]], [[Knowledge Graphs]]
   - requires:: [[Linked Data]], [[RDF]]
-  - enables:: [[Semantic Web]]
+  - enables:: [[Semantic Web Linked Data Standard]]
 
 - ### Content
   - The Linked Data Platform (LDP) is a W3C recommendation that specifies how to use HTTP to create, read, update and delete linked data resources and containers. It defines interaction patterns so that RDF resources can be managed in a consistent, RESTful way.

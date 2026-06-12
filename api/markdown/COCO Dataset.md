@@ -37,7 +37,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
       {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ]
   },
   "quality": 0.8

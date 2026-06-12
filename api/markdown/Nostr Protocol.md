@@ -264,7 +264,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:json-serialisation",
+        "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
       },
       {
@@ -322,7 +322,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:bitcoin-ecosystem",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ecosystem",
         "label": "Bitcoin Ecosystem"
       },
       {

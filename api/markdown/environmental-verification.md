@@ -11,7 +11,7 @@
   - Depends On [[Environmental Registry]]
   - Depends On [[Verification Standard]]
   - Supports [[XR Runtime Environment]]
-  - Supports [[Spatial Computing]]
+  - Supports [[Spatial Computing Paradigm]]
   - Related To [[Calibration Tools]]
 
 - ### Content

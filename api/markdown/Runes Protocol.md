@@ -103,7 +103,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -133,7 +133,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Token Standard]]
-  - bridges-to:: [[Bitcoin]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]]
   - requires:: [[UTXO]]
   - enables:: [[Fungible Token]]
 

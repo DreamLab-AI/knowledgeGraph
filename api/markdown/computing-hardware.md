@@ -7,7 +7,7 @@
 
 - ### Relationships
   - bridges-to:: [[Sensor Input]]
-  - enables:: [[Spatial Computing]], [[XR Hardware]]
+  - enables:: [[Spatial Computing Paradigm]], [[XR Hardware]]
   - has-part:: [[GPU Compute]], [[Hardware Acceleration]]
   - supports:: [[Hardware and Edge]], [[Mixed Reality]]
 

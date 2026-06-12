@@ -26,11 +26,11 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
       {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-core", "label": "Bitcoin Core"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bip-327", "label": "BIP-327"},

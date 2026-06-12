@@ -118,7 +118,7 @@ public:: true
         "label": "Data Storage"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -217,7 +217,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -249,7 +249,7 @@ public:: true
   - belongs-to-domain:: [[ComputationAndIntelligenceDomain]]
   - implemented-in-layer:: [[ApplicationLayer]]
 - ### Relationships
-  - has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning]], [[AI Systems]]
+  - has-part:: [[Data Storage]], [[Data Analytics]], [[Machine Learning Discipline]], [[AI Systems]]
   - is-part-of:: [[ETSI Metaverse Domain Model]]
   - enables:: [[Data Processing]], [[Intelligence]], [[Predictive Analytics]]
 - ### Content

@@ -7,9 +7,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Google]]
+  - bridges-to:: [[Google AI Technology Corporation]]
   - requires:: [[Reinforcement Learning]], [[Deep Learning]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - DeepMind conducts research across reinforcement learning, deep learning, and their applications to scientific problems. It produced game-playing systems that reached high levels of performance and the AlphaFold system for predicting protein structures.

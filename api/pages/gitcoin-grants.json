@@ -8,7 +8,7 @@
   "definition": "Gitcoin Grants is a decentralised crowdfunding programme for open-source and public goods projects in the Web3 ecosystem, which implements quadratic funding as its core matching mechanism to amplify contributions from a broad community of small donors relative to a smaller number of large funders. In quadratic funding, the matching pool allocation for each project is proportional to the square of the sum of the square roots of individual contributions, incentivising broad participation over concentrated giving and making grant outcomes resistant to plutocratic capture. Gitcoin Grants operates in periodic rounds with a central matching pool funded by protocols, DAOs, and foundations, and uses Gitcoin Passport as a Sybil resistance layer to prevent fake identity manipulation of the quadratic formula.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-goods-funding",
+      "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
       "label": "Public Goods Funding"
     }
   ],

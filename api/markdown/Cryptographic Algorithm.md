@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "enables": [{"@id": "urn:ngm:class:encryption", "label": "Encryption"}, {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}],
     "supports": [{"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}],
-    "relatedTo": [{"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}],
+    "relatedTo": [{"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}],
     "requires": [{"@id": "urn:ngm:class:key-management", "label": "Key Management"}]
   },
   "quality": 0.8

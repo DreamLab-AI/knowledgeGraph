@@ -8,7 +8,7 @@
   "definition": "Generative Design is a computational design methodology in which algorithms autonomously explore a defined design space\u2014bounded by performance constraints, manufacturing requirements, and material properties\u2014to generate and evaluate large numbers of design candidates, surfacing options that meet objectives a human designer specifies but did not hand-craft. Implemented through topology optimisation, evolutionary algorithms, and increasingly through deep generative models, it produces geometrically complex structures\u2014often resembling organic forms\u2014that achieve material efficiency or performance targets unattainable through conventional manual design. The output is typically a ranked set of design alternatives that engineers evaluate and refine.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:parametric-modeling",
+      "id": "urn:ngm:class:parametric-design-methodology-modeling",
       "label": "Parametric Modeling"
     }
   ],
@@ -55,7 +55,7 @@
         "label": "Generative Design Tool"
       },
       {
-        "id": "urn:ngm:class:parametric",
+        "id": "urn:ngm:class:parametric-design-methodology",
         "label": "Parametric"
       },
       {

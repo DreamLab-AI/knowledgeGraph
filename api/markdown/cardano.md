@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Proof of Stake]], [[UTXO]]
   - enables:: [[Smart Contract]]
 

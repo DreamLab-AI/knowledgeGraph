@@ -26,5 +26,5 @@
   The EU AI Act Article 29 (codes of conduct) and Article 9 (risk management system) implicitly require stakeholder input for high-risk AI systems. The OECD AI Principle 2.3 calls for stakeholder engagement throughout the AI lifecycle. ISO/IEC 42001 (AI management systems) and ISO 26000 (social responsibility guidance) provide operational frameworks. Engagement outputs feed directly into AI Impact Assessment documentation, bias audits, and ongoing monitoring plans.
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[OECD AI Principles]], [[ISO 26000]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[OECD AI Principles]], [[ISO 26000]]
   - migration-date:: 2026-04-26T00:00:00Z

@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:mlops", "label": "MLOps"}

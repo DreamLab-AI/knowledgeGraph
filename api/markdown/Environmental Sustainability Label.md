@@ -148,7 +148,7 @@ public:: true
         "label": "Energy Monitoring System"
       },
       {
-        "@id": "urn:ngm:class:infrastructure-metrics",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-metrics",
         "label": "Infrastructure Metrics"
       },
       {

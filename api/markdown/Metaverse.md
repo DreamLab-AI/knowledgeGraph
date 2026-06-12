@@ -230,7 +230,7 @@ public:: true
         "label": "Persistent State"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -483,7 +483,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -533,7 +533,7 @@ public:: true
   - belongs-to-domain:: [[InfrastructureDomain]], [[VirtualSocietyDomain]]
   - implemented-in-layer:: [[ApplicationLayer]]
 - ### Relationships
-  - has-part:: [[Virtual World]], [[Avatar]], [[Digital Asset]], [[Spatial Computing]], [[Virtual Economy]], [[Social System]], [[Interoperability Protocol]], [[Persistent State]], [[Synchronous Interaction]], [[User Identity System]]
+  - has-part:: [[Virtual World]], [[Avatar]], [[Digital Asset]], [[Spatial Computing Paradigm]], [[Virtual Economy]], [[Social System]], [[Interoperability Protocol]], [[Persistent State]], [[Synchronous Interaction]], [[User Identity System]]
   - is-part-of:: [[Multiverse]]
   - requires:: [[3D Rendering]], [[Network Infrastructure]], [[Distributed Computing]], [[Identity Management]], [[Asset Management]], [[Blockchain]], [[Real-time Synchronization]]
   - enables:: [[Social VR]], [[Virtual Commerce]], [[Immersive Entertainment]], [[Virtual Collaboration]], [[Digital Ownership]], [[Creator Economy]], [[Cross-World Portability]]

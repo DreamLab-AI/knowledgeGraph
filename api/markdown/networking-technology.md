@@ -12,7 +12,7 @@
   - **hasPart** [[Open Standard]] — open standards (WebRTC, QUIC, WebSocket) define the interoperable networking layer
   - **uses** [[Distributed System]] — networking technology is the communication substrate of distributed systems
   - **supports** [[Edge Computing]] — edge nodes reduce latency for time-sensitive networked applications
-  - **supports** [[Spatial Computing]] — spatial computing platforms depend on networking technology for multi-user presence
+  - **supports** [[Spatial Computing Paradigm]] — spatial computing platforms depend on networking technology for multi-user presence
 
 - ### Content
   # NetworkingTechnology

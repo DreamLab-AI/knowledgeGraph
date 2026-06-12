@@ -40,7 +40,7 @@
         "label": "Federated Edge Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
@@ -90,7 +90,7 @@
         "label": "Edge AI Accelerators"
       },
       {
-        "id": "urn:ngm:class:machine-learning-platform",
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
         "label": "Machine Learning Platform"
       },
       {

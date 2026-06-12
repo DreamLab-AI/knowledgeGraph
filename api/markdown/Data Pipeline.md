@@ -192,7 +192,7 @@ alias:: DataPipeline
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -410,7 +410,7 @@ alias:: DataPipeline
 
 - ### Relationships
   - Has Part: [[Feature Engineering]], [[Quality Assurance]]
-  - Enables: [[Machine Learning]], [[Deep Learning]]
+  - Enables: [[Machine Learning Discipline]], [[Deep Learning]]
   - Uses: [[ETL Pipeline]], [[Distributed System]]
   - Related To: [[Blockchain]], [[Monitoring Dashboard]]
 

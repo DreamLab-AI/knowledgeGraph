@@ -11,7 +11,7 @@
   - Requires [[Rendering Pipeline]]
   - Requires [[Hardware Abstraction]]
   - Implements [[Open Standard]]
-  - Enables [[Spatial Computing]]
+  - Enables [[Spatial Computing Paradigm]]
   - Enables [[Virtual Reality]]
   - Enables [[Augmented Reality]]
   - Uses [[Optical Tracking]]

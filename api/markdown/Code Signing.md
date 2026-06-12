@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
     ],
     "enables": [

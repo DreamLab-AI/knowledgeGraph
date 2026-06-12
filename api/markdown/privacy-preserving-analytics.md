@@ -17,7 +17,7 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[InfrastructureLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Data Analysis]], [[Privacy Enhancing Technologies]], [[Machine Learning]], [[Statistical Computing]], [[Information Security]]
+  - is-subclass-of:: [[Data Analysis]], [[Privacy Enhancing Technologies]], [[Machine Learning Discipline]], [[Statistical Computing]], [[Information Security]]
   - has-part:: [[Differential Privacy]], [[Federated Learning]], [[Secure Multi-Party Computation]], [[Homomorphic Encryption]], [[Synthetic Data]], [[k-Anonymity]], [[l-Diversity]], [[t-Closeness]], [[Privacy Budget]], [[Noise Mechanism]]
   - requires:: [[Cryptographic Primitives]], [[Trusted Execution Environment]], [[Noise Calibration]], [[Sensitivity Analysis]], [[Data Governance Framework]]
   - enables:: [[GDPR Compliance]], [[Privacy-by-Design]], [[Cross-Institutional Data Collaboration]], [[AI Model Training on Sensitive Data]], [[Regulatory Safe Harbour]]

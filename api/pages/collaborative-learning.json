@@ -3,7 +3,7 @@
   "title": "Collaborative Learning",
   "slug": "collaborative-learning",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-learning",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-learning",
   "domain": "spatial-computing",
   "definition": "An educational approach where learners work toger in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
   "subClassOf": [

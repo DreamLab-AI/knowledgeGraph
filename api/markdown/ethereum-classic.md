@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
-  - bridges-to:: [[Ethereum]], [[Ethereum Virtual Machine]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]], [[Ethereum Virtual Machine]]
   - requires:: [[Mining]], [[Smart Contract]]
   - enables:: [[DeFi]]
 

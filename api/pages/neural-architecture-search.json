@@ -42,7 +42,7 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ],
@@ -59,7 +59,7 @@
         "label": "Neural Network Architecture"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ]

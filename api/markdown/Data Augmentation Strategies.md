@@ -72,7 +72,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -107,7 +107,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],

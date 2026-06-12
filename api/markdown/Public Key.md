@@ -63,7 +63,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:public-key",
+  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
   "@type": "Class",
   "label": "Public Key",
   "definition": "The publicly shareable component of an asymmetric key pair, derived from the private key via elliptic curve or RSA mathematics, used in blockchain systems to derive wallet addresses, verify digital signatures, and enable encrypted communication without transmitting secret material.",
@@ -92,7 +92,7 @@ public:: true
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
       {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
     ],
     "enables": [

@@ -20,7 +20,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
   - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 
@@ -243,7 +243,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
   - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 

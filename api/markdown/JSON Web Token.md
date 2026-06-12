@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-web-token",
+  "@id": "urn:ngm:class:json-data-interchange-format-web-token",
   "@type": "Class",
   "label": "JSON Web Token",
   "definition": "A JSON Web Token (JWT) is a compact, URL-safe representation of claims transmitted between parties, defined by IETF RFC 7519. A JWT consists of three Base64URL-encoded parts — header, payload, and signature — concatenated with periods. The header specifies the token type and signing algorithm; the payload carries claims (assertions about a subject such as user identity, roles, and expiry time); and the signature is computed using either a symmetric shared secret (HMAC) or an asymmetric key pair (RSA, ECDSA), allowing the receiving party to verify token integrity without a round-trip to an authorisation server. JWTs are the dominant stateless session mechanism in REST API and OAuth 2.0 / OpenID Connect identity architectures.",
@@ -27,7 +27,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:ietf", "label": "IETF"}
     ],
     "enables": [

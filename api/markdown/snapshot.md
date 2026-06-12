@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Decentralised Finance Domain]]
   - bridges-to:: [[Gnosis Safe]], [[Governance Domain]]
-  - requires:: [[IPFS]], [[Ethereum]]
+  - requires:: [[IPFS]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Decentralised Autonomous Organisation]]
 
 - ### Content

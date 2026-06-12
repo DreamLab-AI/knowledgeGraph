@@ -3,12 +3,12 @@
   "title": "Collaborative Filtering",
   "slug": "collaborative-filtering",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-filtering",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-filtering",
   "domain": "ai",
   "definition": "Collaborative filtering is a machine learning technique for building recommendation systems that generates predictions about user preferences by aggregating the behaviour or ratings of many users, without requiring explicit knowledge of item content. Memory-based approaches compute similarity between users (user-based) or items (item-based) using rating vectors; model-based approaches such as matrix factorisation decompose the user-item interaction matrix into latent factor spaces. The method operates on the assumption that users who agreed in the past will agree in the future, and is the foundational algorithm behind recommendation engines at Netflix, Spotify, and Amazon.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],
@@ -38,7 +38,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {

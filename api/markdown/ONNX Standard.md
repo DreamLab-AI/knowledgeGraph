@@ -60,7 +60,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -117,7 +117,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -141,7 +141,7 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - bridges-to:: [[Neural Rendering]], [[Open Standards]]
   - requires:: [[ONNX]]
   - enables:: [[Deep Learning]]

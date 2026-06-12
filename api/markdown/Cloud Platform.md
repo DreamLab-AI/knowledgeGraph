@@ -28,18 +28,18 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
       {"@id": "urn:ngm:class:platform-layer", "label": "Platform Layer"},
-      {"@id": "urn:ngm:class:infrastructure-component", "label": "Infrastructure Component"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-component", "label": "Infrastructure Component"},
       {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:machine-learning-platform", "label": "Machine Learning Platform"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
       {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
       {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}

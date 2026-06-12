@@ -77,7 +77,7 @@ public:: true
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },
@@ -146,7 +146,7 @@ public:: true
   - **requires**: [[Blockchain Interoperability]], [[Smart Contract]]
   - **uses**: [[Virtual Currency]], [[Digital Asset]]
   - **partOf**: [[Virtual Economy]]
-  - **relatedTo**: [[Tokenisation]], [[Blockchain]]
+  - **relatedTo**: [[Neural Network Text Tokenisation]], [[Blockchain]]
 
 - ### Content
 

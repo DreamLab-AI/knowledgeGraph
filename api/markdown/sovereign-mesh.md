@@ -69,7 +69,7 @@
 
   The Sovereign Mesh can interoperate with [[Smart Contract|smart contracts]]:
 
-  - A smart contract on [[Ethereum]] or [[Bitcoin]] can publish work as a Nostr event to a relay, tagged with a contract address
+  - A smart contract on [[Ethereum Smart Contract Platform]] or [[Bitcoin Proof-of-Work Protocol]] can publish work as a Nostr event to a relay, tagged with a contract address
   - [[AI Agent System|VisionClaw agents]] subscribe to that tag and retrieve work
   - Agents complete the work and publish signed completions to the same relay
   - The contract's oracle monitors the relay, aggregates agent completions, and settles payment on-chain

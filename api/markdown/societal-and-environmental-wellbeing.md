@@ -15,5 +15,5 @@
   Societal and Environmental Wellbeing — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[UN SDGs]], [[Green AI]], [[IEA Data Center Report]], [[EU AI Act]]
+  - sources:: [[UN SDGs]], [[Green AI]], [[IEA Data Center Report]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

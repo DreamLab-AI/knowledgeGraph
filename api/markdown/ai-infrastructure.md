@@ -11,7 +11,7 @@
   - bridges-to:: [[Blockchain]] (domain: bc)
   - hasPart:: [[GPU Compute]]
   - hasPart:: [[Edge Computing]]
-  - supports:: [[Machine Learning]]
+  - supports:: [[Machine Learning Discipline]]
   - supports:: [[Deep Learning]]
   - relatedTo:: [[Cloud Infrastructure]]
 

@@ -418,11 +418,11 @@ public:: true
         "label": "Liquidity Provider"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       },
       {
@@ -518,7 +518,7 @@ public:: true
         "label": "Asset Registry"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -544,7 +544,7 @@ public:: true
         "label": "Asset Registry"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-as-money",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
@@ -921,7 +921,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -983,7 +983,7 @@ public:: true
 
 
 - ### Definition
-  - Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally [[Ethereum]] but increasingly on [[Layer 2 Networks]] (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional financial services (lending, borrowing, trading, derivatives, insurance, asset management) through [[Smart Contracts]] and cryptographic protocols rather than licensed intermediaries such as banks, brokers, or clearinghouses. DeFi's foundational design principle is composability: each protocol exposes a standardised on-chain interface (ABI), enabling downstream protocols to atomically compose operations in a single transaction—a property called "money legos" that allows, for example, a flash loan from Aave to collateralise a position on Compound, execute an arbitrage on Uniswap, repay the loan, and return profit, all within one Ethereum block (~12 seconds). The ecosystem encompasses six core primitive categories: (1) Decentralised Exchanges (DEX) executing automated market-maker (AMM) pricing without order books; (2) lending and borrowing protocols issuing overcollateralised on-chain credit; (3) stablecoins—both fiat-backed (USDC, USDT) and decentralised algorithmic (DAI/USDS, FRAX) designs—providing stable-denomination settlement; (4) yield aggregators and liquidity mining distributing protocol governance tokens to incentivise liquidity provision; (5) derivatives and structured products (perpetual futures, options, interest rate swaps) replicating capital-markets instruments on-chain; and (6) Real World Asset (RWA) tokenisation bridging off-chain cash-flows (US Treasury bills, trade receivables, private credit) into DeFi composability. Total Value Locked (TVL)—the aggregate collateral deposited in DeFi protocols—peaked near $180 billion in November 2021, contracted to ~$40 billion after the Terra/LUNA collapse of May 2022 and the FTX contagion of November 2022, and recovered to $50–100 billion through 2024 with institutional participation reshaping growth dynamics. The DAO Hack of June 2016 (draining 3.6 million ETH through a reentrancy vulnerability) established DeFi's earliest security precedent, subsequently addressed through Checks-Effects-Interactions patterns, formal verification, and protocol auditing as an industry norm. Maximal Extractable Value (MEV)—the profit validators or block producers can extract by reordering, inserting, or censoring transactions within a block—emerged as the dominant economic externality in DeFi, generating $675 million in extracted value on Ethereum alone in 2023 (Flashbots data) and driving protocol-level mitigations including MEV-boost, commit-reveal schemes, and intent-based architectures. The 2024–2026 period is characterised by institutional DeFi adoption, EU MiCA regulation operationalisation (June 2023 enacted, fully operative July 2026), RWA TVL growing to $10+ billion (Ondo Finance, Maple Finance, Centrifuge, BlackRock BUIDL fund), and cross-chain liquidity unification through intent-based bridging protocols, representing a structural maturation from speculative DeFi Summer (2020) experimentation toward regulated, institutionally-integrated financial infrastructure. The intellectual lineage of DeFi traces to Satoshi Nakamoto's 2008 Bitcoin whitepaper establishing peer-to-peer electronic cash without intermediaries, but DeFi's programmable foundation depends on Vitalik Buterin's Ethereum design (2014 whitepaper, 2015 mainnet launch): a Turing-complete blockchain enabling arbitrary smart contract logic. The first recognisable DeFi primitive was the MakerDAO Collateralized Debt Position (CDP) launching December 2017—locking ETH as collateral to mint DAI, a USD-pegged stablecoin backed algorithmically rather than by fiat reserves. Compound v1 (September 2018) introduced algorithmic interest rates adjusting in real time to supply/demand across lending pools. Uniswap v1 (November 2018) introduced the constant-product AMM (x·y=k invariant), eliminating order books and enabling permissionless liquidity provision. These three protocols—MakerDAO, Compound, Uniswap—constitute DeFi's foundational primitive stack, upon which more than 2,000 derivative protocols were subsequently constructed through composable smart contract interfaces, producing an ecosystem processing $3–5 trillion in annual DEX volume, maintaining $50–100 billion in locked collateral, and offering yield products to 4–8 million monthly active on-chain addresses globally as of 2024.
+  - Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally [[Ethereum Smart Contract Platform]] but increasingly on [[Layer 2 Networks]] (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional financial services (lending, borrowing, trading, derivatives, insurance, asset management) through [[Smart Contracts]] and cryptographic protocols rather than licensed intermediaries such as banks, brokers, or clearinghouses. DeFi's foundational design principle is composability: each protocol exposes a standardised on-chain interface (ABI), enabling downstream protocols to atomically compose operations in a single transaction—a property called "money legos" that allows, for example, a flash loan from Aave to collateralise a position on Compound, execute an arbitrage on Uniswap, repay the loan, and return profit, all within one Ethereum block (~12 seconds). The ecosystem encompasses six core primitive categories: (1) Decentralised Exchanges (DEX) executing automated market-maker (AMM) pricing without order books; (2) lending and borrowing protocols issuing overcollateralised on-chain credit; (3) stablecoins—both fiat-backed (USDC, USDT) and decentralised algorithmic (DAI/USDS, FRAX) designs—providing stable-denomination settlement; (4) yield aggregators and liquidity mining distributing protocol governance tokens to incentivise liquidity provision; (5) derivatives and structured products (perpetual futures, options, interest rate swaps) replicating capital-markets instruments on-chain; and (6) Real World Asset (RWA) tokenisation bridging off-chain cash-flows (US Treasury bills, trade receivables, private credit) into DeFi composability. Total Value Locked (TVL)—the aggregate collateral deposited in DeFi protocols—peaked near $180 billion in November 2021, contracted to ~$40 billion after the Terra/LUNA collapse of May 2022 and the FTX contagion of November 2022, and recovered to $50–100 billion through 2024 with institutional participation reshaping growth dynamics. The DAO Hack of June 2016 (draining 3.6 million ETH through a reentrancy vulnerability) established DeFi's earliest security precedent, subsequently addressed through Checks-Effects-Interactions patterns, formal verification, and protocol auditing as an industry norm. Maximal Extractable Value (MEV)—the profit validators or block producers can extract by reordering, inserting, or censoring transactions within a block—emerged as the dominant economic externality in DeFi, generating $675 million in extracted value on Ethereum alone in 2023 (Flashbots data) and driving protocol-level mitigations including MEV-boost, commit-reveal schemes, and intent-based architectures. The 2024–2026 period is characterised by institutional DeFi adoption, EU MiCA regulation operationalisation (June 2023 enacted, fully operative July 2026), RWA TVL growing to $10+ billion (Ondo Finance, Maple Finance, Centrifuge, BlackRock BUIDL fund), and cross-chain liquidity unification through intent-based bridging protocols, representing a structural maturation from speculative DeFi Summer (2020) experimentation toward regulated, institutionally-integrated financial infrastructure. The intellectual lineage of DeFi traces to Satoshi Nakamoto's 2008 Bitcoin whitepaper establishing peer-to-peer electronic cash without intermediaries, but DeFi's programmable foundation depends on Vitalik Buterin's Ethereum design (2014 whitepaper, 2015 mainnet launch): a Turing-complete blockchain enabling arbitrary smart contract logic. The first recognisable DeFi primitive was the MakerDAO Collateralized Debt Position (CDP) launching December 2017—locking ETH as collateral to mint DAI, a USD-pegged stablecoin backed algorithmically rather than by fiat reserves. Compound v1 (September 2018) introduced algorithmic interest rates adjusting in real time to supply/demand across lending pools. Uniswap v1 (November 2018) introduced the constant-product AMM (x·y=k invariant), eliminating order books and enabling permissionless liquidity provision. These three protocols—MakerDAO, Compound, Uniswap—constitute DeFi's foundational primitive stack, upon which more than 2,000 derivative protocols were subsequently constructed through composable smart contract interfaces, producing an ecosystem processing $3–5 trillion in annual DEX volume, maintaining $50–100 billion in locked collateral, and offering yield products to 4–8 million monthly active on-chain addresses globally as of 2024.
 
 - ### Semantic Classification
   - owl-class:: blockchain:DecentralizedFinance
@@ -995,10 +995,10 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Blockchain]], [[Financial Technology]], [[Smart Contracts]], [[Cryptographic Protocols]], [[Token Economy]]
   - has-part:: [[Decentralised Exchange]], [[Lending Protocol]], [[Stablecoin]], [[Yield Farming]], [[Liquidity Mining]], [[Flash Loans]], [[Automated Market Maker]], [[Governance Token]], [[Liquidity Pool]], [[Oracle]], [[MEV]], [[RWA Tokenisation]]
-  - requires:: [[Smart Contracts]], [[Ethereum]], [[Public Blockchain]], [[Cryptographic Oracle]], [[Liquidity Provider]], [[Collateral]], [[Gas Fees]]
+  - requires:: [[Smart Contracts]], [[Ethereum Smart Contract Platform]], [[Public Blockchain]], [[Cryptographic Oracle]], [[Liquidity Provider]], [[Collateral]], [[Gas Fees]]
   - enables:: [[Permissionless Lending]], [[Atomic Composability]], [[Yield Optimisation]], [[Trustless Trading]], [[On-Chain Governance]], [[Tokenised Real World Assets]], [[Programmable Money]]
   - implements:: [[Automated Market Maker]], [[Overcollateralised Lending]], [[Algorithmic Stablecoin]], [[Concentrated Liquidity]], [[Flash Loan Arbitrage]], [[Liquidity Mining Incentives]]
-  - depends-on:: [[Ethereum]], [[Layer 2 Networks]], [[Blockchain Oracle]], [[Cryptographic Proofs]], [[Token Standards (ERC-20)]], [[Gas Fee Mechanisms]]
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[Layer 2 Networks]], [[Blockchain Oracle]], [[Cryptographic Proofs]], [[Token Standards (ERC-20)]], [[Gas Fee Mechanisms]]
   - supports:: [[Bitcoin As Money]], [[CBDCs]], [[Asset Registry]], [[Carbon Credit Tracking]], [[Blockchain Interoperability]], [[Blockchain As A Service]]
   - uses:: [[Solidity]], [[Zero Knowledge Proofs]], [[Merkle Trees]], [[EVM]], [[Chainlink]], [[IPFS]]
   - contrasts-with:: [[Traditional Finance]], [[CeFi]], [[Central Bank]], [[Commercial Banking]], [[AML KYC Compliance]]

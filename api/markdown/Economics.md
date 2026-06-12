@@ -450,7 +450,7 @@ public:: true
         "label": "Productivity Measurement"
       },
       {
-        "@id": "urn:ngm:class:public-goods-theory",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-theory",
         "label": "Public Goods Theory"
       },
       {
@@ -518,7 +518,7 @@ public:: true
         "label": "Protocol Design"
       },
       {
-        "@id": "urn:ngm:class:public-goods-funding",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -620,11 +620,11 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-environmental-issues",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-value-proposition",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -644,7 +644,7 @@ public:: true
         "label": "CBDC Frameworks"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -670,7 +670,7 @@ public:: true
         "label": "Algorithmic Bias and Variance"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-value-proposition",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -1147,7 +1147,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -1182,7 +1182,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1219,7 +1219,7 @@ public:: true
 
 
 - ### Definition
-  - Economics, as applied to the digital and AI-driven era, is the systematic study of how scarce resources are allocated through markets, institutions, and mechanisms when the primary inputs and outputs are information goods, algorithmic capabilities, autonomous agents, and cryptographic assets. It encompasses the microeconomics and macroeconomics of artificial intelligence adoption — including productivity measurement, labour market disruption, mechanism design for decentralised systems, and the governance of public goods — as well as the specific economics of blockchain networks (tokenomics, on-chain incentive structures, Coase-theoretic transaction-cost analysis of DAOs), the principal-agent theory of autonomous AI agents, and the macroeconomic forecasting of AI's contribution to GDP and total-factor productivity. Core theoretical lineages include Acemoglu and Restrepo's task-based automation framework establishing that automation raises productivity but simultaneously displaces workers — with net welfare effects contingent on whether new task creation outpaces displacement — Brynjolfsson's productivity-J-curve explaining why general-purpose technologies initially depress measured output before structural reorganisation unlocks gains, Tirole and Hart's mechanism design / incomplete contracts tradition applied to smart-contract governance, Weyl's quadratic funding providing near-optimal public-goods financing in decentralised ecosystems, and Coase's transaction-cost theory reinterpreted for on-chain coordination. Economics of AI and digital assets is a top-level ontological domain that cross-cuts [[Machine Learning]], [[Blockchain Network]], [[Agents]], [[Agent Frameworks]], [[Governance]], [[Regulation]], and [[Digital Asset]] domains, situating all technology choices within a framework of incentives, market structure, distributional effects, and welfare.
+  - Economics, as applied to the digital and AI-driven era, is the systematic study of how scarce resources are allocated through markets, institutions, and mechanisms when the primary inputs and outputs are information goods, algorithmic capabilities, autonomous agents, and cryptographic assets. It encompasses the microeconomics and macroeconomics of artificial intelligence adoption — including productivity measurement, labour market disruption, mechanism design for decentralised systems, and the governance of public goods — as well as the specific economics of blockchain networks (tokenomics, on-chain incentive structures, Coase-theoretic transaction-cost analysis of DAOs), the principal-agent theory of autonomous AI agents, and the macroeconomic forecasting of AI's contribution to GDP and total-factor productivity. Core theoretical lineages include Acemoglu and Restrepo's task-based automation framework establishing that automation raises productivity but simultaneously displaces workers — with net welfare effects contingent on whether new task creation outpaces displacement — Brynjolfsson's productivity-J-curve explaining why general-purpose technologies initially depress measured output before structural reorganisation unlocks gains, Tirole and Hart's mechanism design / incomplete contracts tradition applied to smart-contract governance, Weyl's quadratic funding providing near-optimal public-goods financing in decentralised ecosystems, and Coase's transaction-cost theory reinterpreted for on-chain coordination. Economics of AI and digital assets is a top-level ontological domain that cross-cuts [[Machine Learning Discipline]], [[Blockchain Network]], [[Agents]], [[Agent Frameworks]], [[Governance]], [[Regulation]], and [[Digital Asset]] domains, situating all technology choices within a framework of incentives, market structure, distributional effects, and welfare.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Economics
@@ -1238,7 +1238,7 @@ public:: true
   - supports:: [[AI Adoption]], [[Blockchain Network]], [[Agent Frameworks]], [[Digital Asset]], [[Regulation]], [[Governance]], [[Competition in AI]], [[CBDCs]], [[Bitcoin Value Proposition]], [[Cashu]], [[Algorithmic Bias and Variance]]
   - uses:: [[Econometrics]], [[General Equilibrium Models]], [[Agent-Based Models]], [[Empirical IO]], [[Causal Inference]], [[Network Analysis]], [[Complexity Modelling]]
   - contrasts-with:: [[Pure Computer Science]], [[Pure Engineering]], [[Technical Standards]], [[Legal Reasoning]]
-  - related-to:: [[AI Risks]], [[AI Liability]], [[AML KYC Compliance]], [[Carbon Credit Tracking]], [[CBDC Frameworks]], [[Bitcoin Value Proposition]], [[Bitcoin Environmental Issues]], [[Carbon Footprint Measurement]], [[Call Centres]], [[ChatGPT]], [[Agents]], [[CLI Multi-Agent Systems]]
+  - related-to:: [[AI Risks]], [[AI Liability]], [[AML KYC Compliance]], [[Carbon Credit Tracking]], [[CBDC Frameworks]], [[Bitcoin Value Proposition]], [[Bitcoin Environmental Issues]], [[Carbon Footprint Measurement]], [[Call Centres]], [[Instruction-Following Conversational AI System]], [[Agents]], [[CLI Multi-Agent Systems]]
   - standardized-by:: [[OECD]], [[IMF]], [[World Bank]], [[BIS]], [[UK HM Treasury]], [[UK Competition and Markets Authority]], [[Bank of England]], [[Financial Conduct Authority]]
 
 - ### Content

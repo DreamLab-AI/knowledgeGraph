@@ -504,7 +504,7 @@ public:: true
         "label": "Social Presence Theory"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -895,7 +895,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -920,7 +920,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -970,11 +970,11 @@ public:: true
   - requires:: [[Client Activity Tracking]], [[Distributed State Synchronisation]], [[Privacy Controls]], [[Authentication]], [[Websocket]], [[Push Notification]]
   - enables:: [[Interruptibility Awareness]], [[Meeting Avoidance]], [[Deep Work Protection]], [[Notification Routing]], [[Communication Orchestration]], [[Telepresence]], [[Ambient Display]]
   - implements:: [[XMPP]], [[Microsoft Graph API]], [[Webhook]], [[Publish-Subscribe Pattern]], [[State Machine]], [[Polling]], [[Server-Sent Events]]
-  - depends-on:: [[Identity Management]], [[Calendar API]], [[Network Latency]], [[Device Sensors]], [[Machine Learning]], [[Privacy Regulation]]
+  - depends-on:: [[Identity Management]], [[Calendar API]], [[Network Latency]], [[Device Sensors]], [[Machine Learning Discipline]], [[Privacy Regulation]]
   - supports:: [[Digital Workplace Platform]], [[Meeting AI Assistant]], [[Breakout Room]], [[Remote Work Infrastructure]], [[Virtual Office]], [[Team Communication]]
   - uses:: [[Activity Inference]], [[AI Prediction]], [[Calendar Data]], [[Microphone State]], [[Keyboard Activity]], [[Focus Mode]]
   - contrasts-with:: [[Bossware]], [[Surveillance Capitalism]], [[Performative Presence]], [[Always-On Culture]], [[Activity Monitoring]]
-  - related-to:: [[Social Presence Theory]], [[Ambient Awareness]], [[Telepresence]], [[Avatar]], [[Spatial Computing]], [[Work-Life Balance]]
+  - related-to:: [[Social Presence Theory]], [[Ambient Awareness]], [[Telepresence]], [[Avatar]], [[Spatial Computing Paradigm]], [[Work-Life Balance]]
   - standardized-by:: [[XMPP RFC 6120]], [[XMPP RFC 6121]], [[RFC 3921]], [[Microsoft Graph Presence API]], [[OpenID Connect]]
 
 - ### Content

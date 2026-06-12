@@ -693,10 +693,6 @@
   ],
   "backlinks": [
     {
-      "slug": "agentic-alliance",
-      "label": "Agentic Alliance"
-    },
-    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },
@@ -723,6 +719,10 @@
     {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
+    },
+    {
+      "slug": "decentralised-agent-coordination-initiative",
+      "label": "Decentralised Agent Coordination Initiative"
     },
     {
       "slug": "edge-computing-layer",

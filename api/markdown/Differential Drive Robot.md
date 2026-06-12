@@ -407,7 +407,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -442,7 +442,7 @@ public:: true
   - belongs-to-domain:: [[Robotics]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Wheeled Robot]], [[Nonholonomic Robot]]
   - has-part:: [[Left Drive Motor]], [[Right Drive Motor]], [[Wheel]], [[Caster Wheel]], [[Differential Drive Controller]]
   - requires:: [[Independent Wheel Motors]], [[Odometry Sensors]], [[Motor Drivers]], [[Power Battery]]

@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:model-depth", "label": "Model Depth"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},

@@ -576,7 +576,7 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:class:copyright",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Copyright"
       },
       {
@@ -648,7 +648,7 @@ public:: true
         "label": "SynthID Audio"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -1030,12 +1030,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1080,7 +1080,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -1117,17 +1117,17 @@ public:: true
   - implemented-in-layer:: [[ModelLayer]], [[ApplicationLayer]], [[PlatformLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Generative AI]], [[Foundation Models]], [[Creative AI]], [[Audio Signal Processing]], [[Deep Learning]], [[Multimodal AI]]
+  - is-subclass-of:: [[Generative AI]], [[Large-Scale Pretrained Foundation Model]], [[Creative AI]], [[Audio Signal Processing]], [[Deep Learning]], [[Multimodal AI]]
   - has-part:: [[Text-to-Music Synthesis]], [[Melodic Generation]], [[Lyric Generation]], [[Audio Diffusion]], [[Music Language Model]], [[Stem Separation]], [[Audio Watermarking]], [[Vocal Synthesis]], [[CLAP Embeddings]], [[Neural Audio Codec]]
   - requires:: [[Training Data]], [[Neural Audio Codec]], [[Diffusion Model]], [[Transformers]], [[Attention]], [[CLAP Audio Embeddings]], [[GPU Compute]], [[Large-Scale Audio Datasets]]
   - enables:: [[AI Music Production]], [[Royalty-Free Music Generation]], [[Personalised Soundtracks]], [[Film Scoring Automation]], [[Podcast Music Generation]], [[Game Audio Procedural Generation]], [[Adaptive Music]], [[AI Mastering]]
   - implements:: [[Latent Diffusion]], [[Transformers]], [[Contrastive Language Audio Pre-training]], [[Autoregressive Decoding]], [[Flow Matching]], [[Classifier-Free Guidance]], [[Residual Vector Quantisation]], [[Variational Autoencoder]]
-  - depends-on:: [[Foundation Models]], [[Model Training]], [[Compute Infrastructure]], [[Audio Signal Processing]], [[Attention]], [[Tokenisation]]
+  - depends-on:: [[Large-Scale Pretrained Foundation Model]], [[Model Training]], [[Compute Infrastructure]], [[Audio Signal Processing]], [[Attention]], [[Neural Network Text Tokenisation]]
   - supports:: [[Music Production]], [[Content Creation]], [[Advertising]], [[Film and Television]], [[Video Games]], [[Podcast Production]], [[Education and AI]]
   - uses:: [[EnCodec]], [[DAC Codec]], [[SoundStream]], [[MIDI]], [[Spectrogram Diffusion]], [[T5 Text Encoder]], [[CLAP]], [[MuLan]]
   - contrasts-with:: [[Traditional Music Composition]], [[Digital Audio Workstation]], [[Sample Libraries]], [[Human Performance Capture]], [[MIDI Sequencing]]
   - related-to:: [[AI Video]], [[Speech and Voice]], [[Deepfakes and fraudulent content]], [[Copyright]], [[Training Data]], [[Safety and alignment]], [[AI Liability]], [[Proprietary Large Language Models]]
-  - standardized-by:: [[RIAA Copyright Framework]], [[EU AI Act]], [[AudioSeal Watermarking]], [[SynthID Audio]], [[C2PA Audio Standard]]
+  - standardized-by:: [[RIAA Copyright Framework]], [[EU AI Act Regulatory Instrument]], [[AudioSeal Watermarking]], [[SynthID Audio]], [[C2PA Audio Standard]]
 
 - ### Content
 
@@ -1270,7 +1270,7 @@ public:: true
 
   - **Music and Audio AI** is a rapidly maturing subdomain of generative artificial intelligence that has undergone explosive commercial and research growth between 2023 and 2026. Unlike image or text generation, AI music synthesis must simultaneously model multiple interlocking dimensions — harmonic structure, rhythmic patterns, timbral texture, stereo spatialisation, vocal melody, lyrical coherence with prosodic metre, sectional song architecture (verse, chorus, bridge, outro), and dynamic range — across time spans of seconds to minutes. This multi-dimensional temporal coordination makes music generation one of the architecturally most demanding generative modalities, requiring systems that combine long-range sequential coherence (characteristic of language models) with high-frequency signal fidelity (characteristic of diffusion models). The result has been an architectural landscape of considerable diversity: autoregressive token models, continuous latent diffusion, hierarchical multi-stage pipelines, and hybrid transformer-diffusion architectures, each trading off generation speed, audio quality, structural coherence, and controllability in different ways.
   - The field has transitioned from academic research curiosity to mainstream consumer product in under three years. Platforms such as [[Suno]] and Udio accumulated tens of millions of registered users and hundreds of millions of generated songs within months of their commercial launches. This democratisation — enabling anyone with a text prompt to produce a radio-quality multi-instrument song in seconds — has simultaneously catalysed unprecedented legal confrontation with the incumbent music industry. The Recording Industry Association of America's June 2024 copyright lawsuits against Suno and Udio established AI music as the first generative AI creative domain where major industry organisations pursued direct infringement litigation against AI platform developers, rather than pursuing the defensive posture adopted in text and image AI disputes.
-  - The domain sits at the intersection of multiple ontological lineages: [[Generative AI]] for architecture and training methodology, [[Foundation Models]] for the scale and general-purpose conditioning capabilities that underpin modern music AI, [[Copyright]] and [[AI Liability]] for the legal and policy framework governing training-data rights and output commercialisation, professional audio production for the tooling and workflow integration layer, and music theory for the harmonic, rhythmic, and structural principles that AI systems must implicitly or explicitly encode. Its development reflects broader trends in [[AI Adoption]] — rapid capability growth outpacing regulatory and legal frameworks — but with music-industry-specific dynamics around mechanical rights, synchronisation rights, master rights, and artist identity that differ substantially from text or image domains.
+  - The domain sits at the intersection of multiple ontological lineages: [[Generative AI]] for architecture and training methodology, [[Large-Scale Pretrained Foundation Model]] for the scale and general-purpose conditioning capabilities that underpin modern music AI, [[Copyright]] and [[AI Liability]] for the legal and policy framework governing training-data rights and output commercialisation, professional audio production for the tooling and workflow integration layer, and music theory for the harmonic, rhythmic, and structural principles that AI systems must implicitly or explicitly encode. Its development reflects broader trends in [[AI Adoption]] — rapid capability growth outpacing regulatory and legal frameworks — but with music-industry-specific dynamics around mechanical rights, synchronisation rights, master rights, and artist identity that differ substantially from text or image domains.
   - The tension between openness and commercial appropriation is particularly acute: Meta's open-weight MusicGen (available on Hugging Face at facebook/musicgen-melody, 1.5B and 3.3B parameter variants) enables local deployment of high-quality music generation without commercial licensing constraints, while simultaneously enabling downstream uses — including fine-tuning on copyrighted music libraries — that raise the same training-data infringement questions as proprietary systems. Stability AI's Stable Audio Open (trained exclusively on royalty-cleared audio from Free Music Archive and freesound.org) represents the industry's first major attempt to construct an open model explicitly designed to sidestep the copyright risk that has enveloped Suno and Udio.
 
   - ## Core Generative Architectures and Systems
@@ -1413,7 +1413,7 @@ public:: true
   - Mechanical Licensing Collective (MLC): Exploring AI training licence frameworks. Harry Fox Agency expanding mechanical licensing infrastructure for AI training rights.
 
   - ### European Union
-  - [[EU AI Act]] (effective 2024-2026 phased): AI music generation systems classified as General Purpose AI systems (GPAI) subject to transparency requirements. Article 52 requires labelling of AI-generated audio content (deepfake audio provision). Article 53 requires GPAI providers to document and publish training data policy including copyright compliance summary. Foundation Model provisions apply to systems above compute thresholds.
+  - [[EU AI Act Regulatory Instrument]] (effective 2024-2026 phased): AI music generation systems classified as General Purpose AI systems (GPAI) subject to transparency requirements. Article 52 requires labelling of AI-generated audio content (deepfake audio provision). Article 53 requires GPAI providers to document and publish training data policy including copyright compliance summary. Foundation Model provisions apply to systems above compute thresholds.
   - DSM Directive Article 4 (Text and Data Mining): EU member states permit TDM for research purposes with opt-out mechanism for rights holders. Commercial AI training TDM is legally contested; AI companies argue Article 4 TDM exception covers training. Rights holders argue commercial training is not covered. German and French courts considering national implementations.
   - Collective Rights Management Organisations (CMOs): SACEM (France), PRS (UK), GEMA (Germany) actively developing AI licensing frameworks for training data and AI-generated performance royalties. SACEM became the first CMO to register an AI composer (AIVA) as a member under human author oversight (2017), establishing a precedent.
 
@@ -1427,7 +1427,7 @@ public:: true
 
   - ### Primary Concept Neighbours in Knowledge Graph
   - [[Generative AI]] — parent domain; AI music is a subdomain of generative AI
-  - [[Foundation Models]] — large-scale pre-trained audio-language models underpin all modern AI music systems
+  - [[Large-Scale Pretrained Foundation Model]] — large-scale pre-trained audio-language models underpin all modern AI music systems
   - [[Training Data]] — training data composition and copyright status is the central commercial risk factor
   - [[Copyright]] — RIAA litigation; training data rights; output commercial rights framework
   - [[AI Liability]] — downstream liability for AI-generated music infringing training data copyrights
@@ -1435,7 +1435,7 @@ public:: true
   - [[AI Video]] — converging with AI music in joint audio-visual generation pipelines
   - [[Deepfakes and fraudulent content]] — voice cloning for music intersects with deepfake audio concerns
   - [[Safety and alignment]] — memorisation of training data in generative audio models; artist consent frameworks
-  - [[EU AI Act]] — GPAI transparency and copyright documentation requirements applicable to AI music platforms
+  - [[EU AI Act Regulatory Instrument]] — GPAI transparency and copyright documentation requirements applicable to AI music platforms
   - [[Compute Infrastructure]] — GPU compute requirements for training (thousands of A100s) and inference (1-4 RTX 4090 for local MusicGen)
   - [[Proprietary Large Language Models]] — LLM components within AI music pipelines (lyric generation, text conditioning)
   - [[Education and AI]] — AI music tools in music education; democratisation of music composition learning

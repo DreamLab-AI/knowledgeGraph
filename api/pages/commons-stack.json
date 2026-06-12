@@ -8,7 +8,7 @@
   "definition": "Commons Stack is an initiative providing tools and economic models for funding and governing public goods through token-based communities. It draws on mechanisms such as bonding curves and continuous funding.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:public-goods-funding",
+      "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
       "label": "Public Goods Funding"
     }
   ],

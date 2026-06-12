@@ -185,7 +185,7 @@ alias:: VoiceInteraction
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:multimodal-interaction",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-interaction",
         "label": "Multimodal Interaction"
       }
     ]

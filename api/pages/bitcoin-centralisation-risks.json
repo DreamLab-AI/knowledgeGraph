@@ -3,7 +3,7 @@
   "title": "Bitcoin Centralisation Risks",
   "slug": "bitcoin-centralisation-risks",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-centralisation-risks",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-centralisation-risks",
   "domain": "blockchain",
   "definition": "Bitcoin Centralisation Risks refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised e...",
   "subClassOf": [
@@ -60,11 +60,11 @@
         "label": "ASIC"
       },
       {
-        "id": "urn:ngm:class:bitcoin-core",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
@@ -216,7 +216,7 @@
         "label": "ASIC"
       },
       {
-        "id": "urn:ngm:class:bitcoin-core",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
@@ -256,7 +256,7 @@
         "label": "51% Attack"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {

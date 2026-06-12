@@ -299,7 +299,7 @@ alias:: PolicyEnforcement
         "label": "Data Protection Regulation"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -397,7 +397,7 @@ alias:: PolicyEnforcement
         "label": "Data Protection Regulation"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -601,7 +601,7 @@ alias:: PolicyEnforcement
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -681,14 +681,14 @@ alias:: PolicyEnforcement
   - is-subclass-of:: [[Access Control]], [[Compliance Framework]], [[Governance]], [[Security Services]]
   - has-part:: [[Access Control System]], [[Audit Trail]], [[Compliance Monitoring]], [[Compliance Verification]], [[Identity Management]]
   - requires:: [[Authentication Service]], [[Authentication Standards]], [[Identity Management System]], [[Compliance Control]]
-  - enables:: [[Compliance Framework]], [[Compliance Audit Trail]], [[AI Governance]], [[AI Governance Framework]], [[Data Protection Regulation]], [[GDPR Article 22 Compliance]], [[EU AI Act]], [[AI Trust Risk and Security Management]]
+  - enables:: [[Compliance Framework]], [[Compliance Audit Trail]], [[AI Governance]], [[AI Governance Framework]], [[Data Protection Regulation]], [[GDPR Article 22 Compliance]], [[EU AI Act Regulatory Instrument]], [[AI Trust Risk and Security Management]]
   - implements:: [[Access Control System]], [[Compliance Standards]], [[Digital Identity Management]], [[Cryptographic Security]]
   - depends-on:: [[Authentication Service]], [[Identity Management]], [[Cloud Infrastructure]], [[Cloud-Native Applications]], [[Service Oriented Architecture]]
   - supports:: [[AI Governance Framework]], [[AI Risk Register]], [[AI Trustworthiness]], [[Compliance Dashboard]], [[Compliance Control]], [[Cross Border Compliance]]
   - uses:: [[Audit Trail]], [[Compliance Monitoring]], [[Digital Regulation]], [[Digital Services Act]]
   - contrasts-with:: [[Community Governance Model]], [[DAO Governance]], [[Self-Sovereign Identity]]
   - related-to:: [[Cryptography Security and Privacy]], [[AML KYC Compliance]], [[Blockchain Compliance]], [[Blockchain Governance]]
-  - standardized-by:: [[Compliance Standards]], [[GDPR Article 22 Compliance]], [[EU AI Act]], [[Data Protection Regulation]]
+  - standardized-by:: [[Compliance Standards]], [[GDPR Article 22 Compliance]], [[EU AI Act Regulatory Instrument]], [[Data Protection Regulation]]
 
 - ### Content
 

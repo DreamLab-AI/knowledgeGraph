@@ -127,7 +127,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -165,5 +165,5 @@ public:: true
   AI Documentation Standards — content pending enrichment.
 
 - ### Provenance
-  - sources:: [[Model Cards (Mitchell et al.)]], [[Datasheets (Gebru et al.)]], [[EU AI Act]], [[ISO/IEC 23053]]
+  - sources:: [[Model Cards (Mitchell et al.)]], [[Datasheets (Gebru et al.)]], [[EU AI Act Regulatory Instrument]], [[ISO/IEC 23053]]
   - migration-date:: 2026-04-26T00:00:00Z

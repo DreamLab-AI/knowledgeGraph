@@ -1171,7 +1171,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -1471,7 +1471,7 @@ public:: true
 		- [[Web 4.0]]
 		- [[Virtual worlds]]
 		- [[Digital Twin]]
-		- [[Spatial Computing]]
+		- [[Spatial Computing Paradigm]]
   - **Standards Organizations**:
 		- [[ETSI]]
 		- [[Metaverse Standards Forum (MSF)]]

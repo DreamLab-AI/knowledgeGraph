@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Metaverse Platform]]
   - bridges-to:: [[Decentralized Autonomous Organization]]
-  - requires:: [[Ethereum]], [[Smart Contract]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Smart Contract]]
   - enables:: [[Asset Tokenization]], [[Social VR]]
 
 - ### Content

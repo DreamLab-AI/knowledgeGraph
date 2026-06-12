@@ -3,7 +3,7 @@
   "title": "Collaborative Whiteboard",
   "slug": "collaborative-whiteboard",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-whiteboard",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-whiteboard",
   "domain": "distributed-collaboration",
   "definition": "A Collaborative Whiteboard is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with CRDT-based (Conflict-free Replicated Data Type) or Operational...",
   "subClassOf": [
@@ -134,7 +134,7 @@
         "label": "Asynchronous Ideation"
       },
       {
-        "id": "urn:ngm:class:collaborative-design",
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
       {
@@ -233,7 +233,7 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {

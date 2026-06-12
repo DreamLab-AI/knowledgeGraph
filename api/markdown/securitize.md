@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Asset Tokenisation]]
-  - bridges-to:: [[Tokenisation]]
+  - bridges-to:: [[Neural Network Text Tokenisation]]
   - requires:: [[Blockchain]], [[Securities Regulation]]
   - enables:: [[Security Token]]
 

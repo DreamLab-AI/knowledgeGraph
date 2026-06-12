@@ -84,7 +84,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning-domain",
+      "@id": "urn:ngm:class:machine-learning-discipline-domain",
       "label": "Machine Learning Domain"
     }
   ],
@@ -113,7 +113,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning-domain",
+        "@id": "urn:ngm:class:machine-learning-discipline-domain",
         "label": "Machine Learning Domain"
       },
       {

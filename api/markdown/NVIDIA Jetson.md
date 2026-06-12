@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nvidia-jetson",
+  "@id": "urn:ngm:class:nvidia-corporation-jetson",
   "@type": "Class",
   "label": "NVIDIA Jetson",
   "definition": "NVIDIA Jetson is a family of system-on-module (SoM) and developer kit edge computing platforms that combine NVIDIA GPU cores with ARM-based CPU clusters, purpose-built for deploying deep learning inference, computer vision, and robotics workloads at the edge with constrained power budgets. Modules in the Jetson family — including Nano, TX2, Xavier, and Orin — span from entry-level embedded devices to high-performance autonomous machine platforms, all running NVIDIA's JetPack SDK which provides CUDA, cuDNN, TensorRT, and ROS integration.",

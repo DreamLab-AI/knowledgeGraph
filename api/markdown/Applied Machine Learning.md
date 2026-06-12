@@ -23,7 +23,7 @@ public:: true
   "definition": "Applied Machine Learning is the practice of using machine-learning methods to solve concrete real-world problems, emphasizing data preparation, feature engineering, model selection, validation, and deployment over novel algorithm research. It bridges theory and production by adapting established models to domain constraints such as latency, cost, and reliability. Disciplined evaluation through techniques like cross-validation is central to its workflow.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},

@@ -8,7 +8,7 @@
   "definition": "A monitoring system is an integrated platform that continuously collects, aggregates, and evaluates signals from target environments \u2014 including software services, physical infrastructure, AI models, or financial markets \u2014 to detect anomalies, assess health, and trigger alerts or automated responses. It encompasses data-collection agents, time-series storage, visualisation dashboards, and alerting pipelines. Monitoring systems form a foundational layer of operational reliability for modern distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
+      "id": "urn:ngm:class:technology-infrastructure-domain",
       "label": "Infrastructure"
     }
   ],

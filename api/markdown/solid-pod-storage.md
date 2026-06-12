@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Distributed Systems Domain]]
-  - bridges-to:: [[Semantic Web]], [[Self-Sovereign Identity]]
+  - bridges-to:: [[Semantic Web Linked Data Standard]], [[Self-Sovereign Identity]]
   - requires:: [[Linked Data]], [[RDF]], [[WebID]]
   - enables:: [[Data Sovereignty]], [[Decentralised Identity]]
 

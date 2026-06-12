@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ]
   },

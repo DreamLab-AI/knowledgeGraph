@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Bitcoin]]
+  - is-subclass-of:: [[Bitcoin Proof-of-Work Protocol]]
   - bridges-to:: [[Block Reward]]
   - requires:: [[Consensus Protocol]], [[UTXO]]
   - enables:: [[Bitcoin Script]]

@@ -204,7 +204,7 @@ public:: true
         "label": "Knowledge Representation System"
       },
       {
-        "@id": "urn:ngm:class:semantic-web-infrastructure",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-infrastructure",
         "label": "Semantic Web Infrastructure"
       }
     ]

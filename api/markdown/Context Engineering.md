@@ -578,7 +578,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -664,7 +664,7 @@ public:: true
         "label": "LangGraph State Schema"
       },
       {
-        "@id": "urn:ngm:class:open-ai-instruction-hierarchy-spec",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation-instruction-hierarchy-spec",
         "label": "OpenAI Instruction Hierarchy Spec"
       },
       {

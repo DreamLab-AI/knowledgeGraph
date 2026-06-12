@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[AI Research Area]]
-  - requires:: [[Quantum Computing]]
+  - requires:: [[Quantum Computation Paradigm]]
 
 - ### Content
 

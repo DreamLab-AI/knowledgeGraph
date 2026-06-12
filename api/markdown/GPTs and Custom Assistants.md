@@ -480,7 +480,7 @@ public:: true
         "label": "Embedding Model"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -562,7 +562,7 @@ public:: true
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
@@ -572,7 +572,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:google-gemini",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini",
         "label": "Google Gemini"
       },
       {
@@ -584,11 +584,11 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -636,7 +636,7 @@ public:: true
         "label": "Anthropic Agent Skills Open Standard"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -1072,7 +1072,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1082,7 +1082,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -1102,7 +1102,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1112,7 +1112,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
@@ -1176,9 +1176,9 @@ public:: true
   - implements:: [[Prompt Injection]], [[Retrieval-Augmented Generation]], [[Function Calling]], [[Hybrid Search]], [[Conversation Memory]]
   - depends-on:: [[Large Language Models]], [[Vector Database]], [[OpenAPI Specification]], [[JSON Schema]], [[OAuth 2.0]]
   - supports:: [[Customer Support]], [[Legal Research]], [[Code Generation]], [[Education]], [[Healthcare Triage]], [[Knowledge Management]], [[Newsroom Workflows]]
-  - uses:: [[GPT 4]], [[GPT-5]], [[Claude]], [[Gemini]], [[BM25]], [[Embeddings]], [[Chunking]]
-  - contrasts-with:: [[Foundation Models]], [[Fine-Tuned Models]], [[Agents]], [[Rule-Based Chatbots]]
-  - related-to:: [[ChatGPT]], [[Anthropic Claude]], [[Microsoft Copilot]], [[Google Gemini]], [[Agent Frameworks]], [[Prompt Engineering]], [[Plugins]]
+  - uses:: [[GPT 4]], [[GPT-5]], [[Claude]], [[Gemini Multimodal Language Model]], [[BM25]], [[Embeddings]], [[Chunking]]
+  - contrasts-with:: [[Large-Scale Pretrained Foundation Model]], [[Fine-Tuned Models]], [[Agents]], [[Rule-Based Chatbots]]
+  - related-to:: [[Instruction-Following Conversational AI System]], [[Constitutional AI Language Model Family]], [[Microsoft Copilot]], [[Google Gemini]], [[Agent Frameworks]], [[Prompt Engineering]], [[Plugins]]
   - standardized-by:: [[OpenAPI 3.0]], [[JSON Schema]], [[Model Context Protocol]], [[OAuth 2.0]], [[Anthropic Agent Skills Open Standard]]
 
 - ### Content

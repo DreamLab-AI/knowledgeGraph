@@ -9,7 +9,7 @@
   - implements [[Web Standard]]
   - implements [[API Standard]]
   - enables [[Microservices Architecture]]
-  - uses [[json]]
+  - uses [[JSON Data Interchange Format]]
   - uses [[Software Architecture]]
 
 - ### Content

@@ -64,7 +64,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ],
     "enables": [
@@ -120,7 +120,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Semantic Web]]",
+      "raw": "[[Semantic Web Linked Data Standard]]",
       "resolved": "urn:visionflow:owl:class:semantic-web",
       "kind": "ResolvedLink"
     }
@@ -146,7 +146,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - uses [[Knowledge Graph]]
-  - uses [[Semantic Web]]
+  - uses [[Semantic Web Linked Data Standard]]
   - uses [[Ontology]]
   - enables [[Bayesian Inference]]
   - enables [[Question Answering]]
@@ -168,7 +168,7 @@ public:: true
   #### Related Concepts
   - [[Knowledge Graph]]
   - [[Ontology]]
-  - [[Semantic Web]]
+  - [[Semantic Web Linked Data Standard]]
   - [[Reasoning Systems]]
 
   #### References

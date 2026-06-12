@@ -52,7 +52,7 @@ public:: true
       "label": "Governance and Safety"
     },
     {
-      "@id": "urn:ngm:class:metaverse-and-spatial-risks",
+      "@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
       "label": "Metaverse and Spatial Risks"
     }
   ],

@@ -8,7 +8,7 @@
   "definition": "Peer learning refers to settings where multiple agents improve by exchanging information or imitating each other rather than relying on a central teacher. In multi-agent systems it covers cooperative protocols for sharing experience.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:collaborative-learning",
+      "id": "urn:ngm:class:collaborative-systems-modality-learning",
       "label": "Collaborative Learning"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:collaborative-learning",
+        "id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       }
     ],

@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ]
@@ -91,7 +91,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -137,7 +137,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
   - bridges-to:: [[Tether]]
-  - requires:: [[Bitcoin]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Bitfinex is a trading platform for cryptocurrencies that offers spot trading, margin trading, and related services. It has operated since the early years of cryptocurrency exchanges.

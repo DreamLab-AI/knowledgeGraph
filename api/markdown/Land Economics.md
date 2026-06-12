@@ -124,7 +124,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -196,7 +196,7 @@ public:: true
   - [[Virtual Economy]]
   - [[Virtual Labor]]
   - [[Digital Ownership]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
   - [[Non-Fungible Token]]
 
   ## Applications

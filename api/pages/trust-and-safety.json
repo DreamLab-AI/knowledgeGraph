@@ -109,7 +109,7 @@
         "label": "Digital Society Surveillance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -189,7 +189,7 @@
         "label": "Cross Border Compliance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -477,16 +477,20 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-frontier-capability-survey",
+      "label": "AI Frontier Capability Survey"
+    },
+    {
+      "slug": "ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    },
+    {
       "slug": "co-training",
       "label": "Co Training"
     },
     {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
-    },
-    {
-      "slug": "politics-law-privacy",
-      "label": "Politics, Law, Privacy"
     },
     {
       "slug": "privacy",
@@ -501,16 +505,12 @@
       "label": "Social Impact"
     },
     {
-      "slug": "state-of-the-art-in-ai",
-      "label": "State of the art in AI"
-    },
-    {
       "slug": "technical-history-extended-cv",
       "label": "Technical History (extended CV)"
     },
     {
-      "slug": "infrastructure",
-      "label": "infrastructure"
+      "slug": "technology-infrastructure-domain",
+      "label": "Technology Infrastructure Domain"
     }
   ]
 }

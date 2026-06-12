@@ -282,7 +282,7 @@ public:: true
         "label": "Hand Tracking"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -506,7 +506,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -555,7 +555,7 @@ public:: true
   - has-part:: [[OpenXR Session]], [[OpenXR Action System]], [[OpenXR Space]], [[OpenXR Swapchain]], [[OpenXR Extension]], [[OpenXR Loader]]
   - is-part-of:: [[XR Technology Stack]], [[Metaverse Infrastructure]]
   - requires:: [[XR Runtime]], [[XR Hardware Device]], [[Vulkan API]], [[OpenGL ES]]
-  - enables:: [[Hardware-Agnostic XR Development]], [[Spatial Computing]], [[Hand Tracking]], [[Eye Tracking]], [[Passthrough AR]]
+  - enables:: [[Hardware-Agnostic XR Development]], [[Spatial Computing Paradigm]], [[Hand Tracking]], [[Eye Tracking]], [[Passthrough AR]]
   - implements:: [[Khronos OpenXR 1.0 Specification]], [[OpenXR Extension Registry]]
   - bridges-to:: [[WebAssembly]] (domain: ngm), [[Robot Operating System]] (domain: rb), [[WebRTC]] (domain: tc), [[Gazebo Simulator]] (domain: rb)
   - depends-on:: [[Vulkan Graphics API]], [[OpenGL ES]], [[Android Platform]], [[Windows Mixed Reality Runtime]]

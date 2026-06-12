@@ -47,7 +47,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "latent space"
       },
       {

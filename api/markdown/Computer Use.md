@@ -37,7 +37,7 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:multimodal", "label": "multimodal"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "multimodal"},
       {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
     ],
     "enables": [
@@ -62,7 +62,7 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[multimodal]]
+  - requires [[Multimodal AI Architecture]]
   - requires [[Tool Use]]
   - enables [[Autonomous Agent]]
   - enables [[Workflow Automation]]

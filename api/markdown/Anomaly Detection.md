@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
     ],
     "relatedTo": [
@@ -64,7 +64,7 @@ public:: true
 - ### Relationships
   - enables [[Fraud Detection]]
   - enables [[Cybersecurity]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Pattern Recognition]]
   - relatedTo [[Time Series Forecasting]]
 

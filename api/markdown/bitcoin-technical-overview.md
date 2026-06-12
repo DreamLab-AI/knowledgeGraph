@@ -17,7 +17,7 @@
   - depends-on:: [[Cryptographic Hash]], [[Elliptic Curve Cryptography]], [[Game Theory]], [[Distributed Systems]], [[Network Theory]], [[Public Key Infrastructure]]
   - supports:: [[Lightning Network]], [[RGB Protocol]], [[Ordinals]], [[Taproot]], [[Segwit]], [[Multisignature]], [[Time-locked Contracts]], [[Payment Channels]]
   - uses:: [[SHA-256]], [[RIPEMD-160]], [[secp256k1]], [[ECDSA]], [[Schnorr Signatures]], [[Merkle Tree]], [[Bloom Filters]], [[Compact Block Relay]]
-  - contrasts-with:: [[Ethereum]], [[Proof of Stake]], [[Account Model]], [[Permissioned Blockchain]], [[Central Bank Digital Currency]]
+  - contrasts-with:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]], [[Account Model]], [[Permissioned Blockchain]], [[Central Bank Digital Currency]]
   - related-to:: [[Blockchain]], [[Cryptocurrency]], [[Decentralisation]], [[Digital Gold]], [[Monetary Policy]], [[Cryptography]], [[Open Source Software]]
   - standardized-by:: [[BIP Process]], [[Bitcoin Core]], [[BOLT Specification]], [[BIP-340]], [[BIP-341]], [[BIP-342]], [[Bitcoin Optech]]
 
@@ -200,7 +200,7 @@
 
   - ### UTXO Model and Transaction Architecture
 
-	  [[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
+	  [[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum Smart Contract Platform]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
 
 	  #### UTXO Structure
 

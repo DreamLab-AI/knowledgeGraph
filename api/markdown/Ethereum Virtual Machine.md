@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum-virtual-machine",
+  "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
   "@type": "Class",
   "label": "Ethereum Virtual Machine",
   "definition": "The deterministic stack-based virtual machine that executes Ethereum smart contract bytecode and updates the shared world state.",
@@ -69,7 +69,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ethereum-smart-contracts",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
       }
     ]

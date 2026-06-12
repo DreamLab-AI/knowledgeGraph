@@ -75,7 +75,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:spatial-computing-domain",
+  "@id": "urn:ngm:class:spatial-computing-paradigm-domain",
   "@type": "Class",
   "label": "Spatial Computing Domain",
   "definition": "The Spatial Computing Domain classifies concepts concerning computation that perceives, represents and acts within three-dimensional physical or virtual space. It covers tracking, mapping, registration and the rendering of content aligned to the environment. As a sub-domain of the Metaverse Domain it provides the spatial substrate on which augmented and virtual experiences are constructed.",

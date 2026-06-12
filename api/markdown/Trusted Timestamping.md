@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ]
   },
   "quality": 0.8

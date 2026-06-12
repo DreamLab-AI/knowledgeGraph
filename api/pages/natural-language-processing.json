@@ -136,10 +136,6 @@
       "label": "Conversational AI"
     },
     {
-      "slug": "could",
-      "label": "Could"
-    },
-    {
       "slug": "customer-support-automation",
       "label": "Customer Support Automation"
     },
@@ -174,6 +170,10 @@
     {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
+    },
+    {
+      "slug": "epistemic-modality-marker",
+      "label": "Epistemic Modality Marker"
     },
     {
       "slug": "feed-forward-network",
@@ -244,8 +244,8 @@
       "label": "Mistral"
     },
     {
-      "slug": "mixture-of-experts",
-      "label": "Mixture of Experts"
+      "slug": "mixture-of-experts-architecture",
+      "label": "Mixture-of-Experts Architecture"
     },
     {
       "slug": "model-parameters",

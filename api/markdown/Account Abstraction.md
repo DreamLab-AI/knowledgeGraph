@@ -253,7 +253,7 @@ alias:: account-abstraction
         "label": "Signature Verification"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -510,7 +510,7 @@ alias:: account-abstraction
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -548,7 +548,7 @@ alias:: account-abstraction
 
 - ### Relationships
   - has-part:: [[UserOperation]], [[EntryPoint Contract]], [[Bundler]], [[Paymaster Contract]], [[Account Factory]], [[Signature Aggregator]]
-  - requires:: [[Smart Contract]], [[EVM]], [[Ethereum]], [[Signature Verification]], [[Gas Abstraction]]
+  - requires:: [[Smart Contract]], [[EVM]], [[Ethereum Smart Contract Platform]], [[Signature Verification]], [[Gas Abstraction]]
   - enables:: [[Social Recovery]], [[Gasless Transactions]], [[Batch Operations]], [[Session Keys]], [[Programmable Validation]], [[Account Recovery]]
   - implements:: [[ERC-4337]], [[Account Model]], [[UserOperation Mempool]], [[Gas Sponsorship]]
   - depends-on:: [[ERC-4337]], [[Bundler Network]], [[Paymaster Infrastructure]], [[EntryPoint Singleton]]

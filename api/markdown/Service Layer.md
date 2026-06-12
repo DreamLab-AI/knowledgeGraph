@@ -120,7 +120,7 @@ alias:: ServiceLayer
       "label": "Platform and Environment"
     },
     {
-      "@id": "urn:ngm:class:spatial-computing-layer",
+      "@id": "urn:ngm:class:spatial-computing-paradigm-layer",
       "label": "Spatial Computing Layer"
     }
   ],

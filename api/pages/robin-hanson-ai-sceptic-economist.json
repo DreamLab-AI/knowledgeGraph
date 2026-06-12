@@ -1,0 +1,58 @@
+{
+  "id": "urn:visionflow:page:ac563f01887867c292c6a942e50c297702a6e2783e40ac9c1190974c4b81bf13",
+  "title": "Robin Hanson AI Sceptic Economist",
+  "slug": "robin-hanson-ai-sceptic-economist",
+  "public": true,
+  "classIri": "urn:ngm:class:robin-hanson-ai-sceptic-economist-ai-sceptic-economist",
+  "domain": "infrastructure",
+  "definition": "Robin Hanson is an economist, futurist, and author (George Mason University) known for contrarian analysis of AI progress timelines, the economics of prediction markets, and his book Age of Em which models a future dominated by brain emulations. He maintains a measured scepticism about near-term AGI, arguing that inertia, demographic decline, and adoption barriers make transformative AI further off than mainstream discourse suggests. His blog Overcoming Bias applies economic and evolutionary reasoning to cognition, signalling, and technology adoption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "lead-poisoning-hypothesis",
+      "label": "Lead Poisoning Hypothesis"
+    }
+  ],
+  "backlinks": []
+}

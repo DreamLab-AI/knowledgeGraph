@@ -18,7 +18,7 @@
   - supports:: [[Generative AI]], [[Quantitative Finance]], [[Bayesian Inference]], [[Robotics State Estimation]], [[Epidemiology Modelling]], [[Climate Modelling]]
   - uses:: [[Wiener Process]], [[Itô Integral]], [[Stochastic Gradient Descent]], [[Monte Carlo Methods]], [[Kernel Methods]], [[Variational Inference]]
   - contrasts-with:: [[Deterministic Dynamical System]], [[Ordinary Differential Equation]], [[Frequentist Statistics]], [[Autoregressive Model]]
-  - related-to:: [[Machine Learning]], [[Statistical Physics]], [[Diffusion Models]], [[Deep Learning]], [[Control Theory]], [[Information Theory]]
+  - related-to:: [[Machine Learning Discipline]], [[Statistical Physics]], [[Diffusion Models]], [[Deep Learning]], [[Control Theory]], [[Information Theory]]
   - standardized-by:: [[Annals of Probability]], [[Stochastic Processes and their Applications]], [[Journal of the Royal Statistical Society]], [[Probability Theory and Related Fields]]
 
 - ### Content

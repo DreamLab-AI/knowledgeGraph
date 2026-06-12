@@ -176,6 +176,10 @@
       "label": "Distributed Identity"
     },
     {
+      "slug": "employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
+    },
+    {
       "slug": "ethereum-foundation",
       "label": "Ethereum Foundation"
     },
@@ -222,10 +226,6 @@
     {
       "slug": "snapshot",
       "label": "Snapshot"
-    },
-    {
-      "slug": "social-contract-and-jobs",
-      "label": "Social contract and jobs"
     },
     {
       "slug": "treasury-management",

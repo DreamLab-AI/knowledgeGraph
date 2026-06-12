@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
       {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
       {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
     ],
     "uses": [

@@ -190,7 +190,7 @@
         "label": "Eigen"
       },
       {
-        "id": "urn:ngm:class:open-ai-gym",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation-gym",
         "label": "OpenAI Gym"
       },
       {
@@ -218,7 +218,7 @@
         "label": "USD"
       },
       {
-        "id": "urn:ngm:class:rust",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       }
     ],
@@ -309,7 +309,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]

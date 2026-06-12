@@ -92,7 +92,7 @@ public:: true
         "label": "RDF"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -151,7 +151,7 @@ public:: true
   - Enables [[Knowledge Graph]]
   - Enables [[Linked Data]]
   - Related To [[RDF]]
-  - Related To [[Semantic Web]]
+  - Related To [[Semantic Web Linked Data Standard]]
 
 - ### Content
 

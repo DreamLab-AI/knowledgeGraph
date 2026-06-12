@@ -99,7 +99,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     }
@@ -124,7 +124,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Decentralised Identity]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Decentralised Identity]]
   - enables:: [[Web3]]
 

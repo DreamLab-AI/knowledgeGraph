@@ -184,7 +184,7 @@ public:: true
         "label": "AR Scene Graph"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-system",
+        "@id": "urn:ngm:class:spatial-computing-paradigm-system",
         "label": "Spatial Computing System"
       }
     ]

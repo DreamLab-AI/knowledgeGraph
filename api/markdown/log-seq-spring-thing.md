@@ -7,7 +7,7 @@
 
 - ### Relationships
   - uses:: [[Knowledge Graph]], [[Ontology]]
-  - relatedTo:: [[Knowledge Management]], [[Semantic Web]], [[Linked Data]]
+  - relatedTo:: [[Knowledge Management]], [[Semantic Web Linked Data Standard]], [[Linked Data]]
 
 - ### Content
   - [(4) AI Project Hacking | LinkedIn](https://www.linkedin.com/pulse/ai-project-hacking-dreamlabinstitute-6u5ue/?trackingId=H%2FB9cbMIRf2u%2FJuM8BAYkg%3D%3D)

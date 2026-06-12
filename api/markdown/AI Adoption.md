@@ -616,7 +616,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -668,7 +668,7 @@ public:: true
         "label": "National Competitiveness"
       },
       {
-        "@id": "urn:ngm:class:public-service-modernisation",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-service-modernisation",
         "label": "Public Service Modernisation"
       },
       {
@@ -702,7 +702,7 @@ public:: true
         "label": "US AI Action Plan 2025"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1216,7 +1216,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1236,7 +1236,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1285,10 +1285,10 @@ public:: true
   - implements:: [[Diffusion of Innovations Theory]], [[Technology Acceptance Model]], [[TOE Framework]], [[Organisational Learning]], [[Stage-Gate Adoption Process]]
   - depends-on:: [[Foundation Model Availability]], [[Cloud Computing]], [[Data Quality]], [[Regulatory Clarity]], [[Investor Capital]], [[Skilled Workforce]]
   - supports:: [[Economic Growth]], [[National Competitiveness]], [[Sectoral Productivity]], [[Workforce Transformation]], [[Public Service Modernisation]]
-  - uses:: [[Generative AI]], [[Machine Learning]], [[Large Language Models]], [[Agentic AI]], [[Computer Vision]], [[Natural Language Processing]], [[Predictive Analytics]], [[Copilot Systems]]
+  - uses:: [[Generative AI]], [[Machine Learning Discipline]], [[Large Language Models]], [[Agentic AI]], [[Computer Vision]], [[Natural Language Processing]], [[Predictive Analytics]], [[Copilot Systems]]
   - contrasts-with:: [[AI Rejection]], [[Manual Operation]], [[Pre-AI Digital Transformation]], [[Outsourcing Strategy]], [[Build-Internally-Only Posture]]
   - related-to:: [[Generative AI Boom]], [[AI Productivity Paradox]], [[AI Talent War]], [[AI Investment Cycle]], [[Foundation Model Race]], [[AI Regulation]], [[AI Safety]]
-  - standardized-by:: [[ISO/IEC 42001 AI Management System]], [[NIST AI Risk Management Framework]], [[EU AI Act]], [[UK AI Opportunities Action Plan]], [[US AI Action Plan 2025]], [[OECD AI Principles]]
+  - standardized-by:: [[ISO/IEC 42001 AI Management System]], [[NIST AI Risk Management Framework]], [[EU AI Act Regulatory Instrument]], [[UK AI Opportunities Action Plan]], [[US AI Action Plan 2025]], [[OECD AI Principles]]
 
 - ### Content
 

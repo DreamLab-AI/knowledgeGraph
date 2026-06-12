@@ -88,7 +88,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -118,7 +118,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Machine Learning]]
+  - bridges-to:: [[Machine Learning Discipline]]
   - enables:: [[Software Engineering]]
 
 - ### Content

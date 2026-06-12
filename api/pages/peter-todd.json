@@ -8,7 +8,7 @@
   "definition": "Peter Todd is a Bitcoin developer and applied cryptography consultant known for contributions to the Bitcoin protocol and related projects. He has worked on consensus and transaction issues.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-core",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
       "label": "Bitcoin Core"
     }
   ],
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       }
     ],

@@ -728,7 +728,7 @@ public:: true
         "label": "UK Online Safety Act"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1287,7 +1287,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1334,7 +1334,7 @@ public:: true
   - uses:: [[RLHF]], [[Direct Preference Optimisation]], [[Embedding Search]], [[Speech Synthesis]], [[Live2D Animation]], [[Diffusion Image Generation]], [[Safety Classifiers]]
   - contrasts-with:: [[AI Assistant]], [[Therapy Chatbot]], [[General-Purpose Chatbot]], [[Voice Assistant]], [[Customer Service Bot]], [[Search-Augmented Chatbot]]
   - related-to:: [[Generative AI]], [[Parasocial Interaction]], [[Loneliness Epidemic]], [[Affective Computing]], [[Human-AI Interaction]], [[Artificial Intimacy]], [[Synthetic Media]]
-  - standardized-by:: [[EU AI Act]], [[UK Online Safety Act]], [[GDPR]], [[FTC AI Enforcement]], [[Ofcom Guidance]], [[C2PA]]
+  - standardized-by:: [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]], [[GDPR]], [[FTC AI Enforcement]], [[Ofcom Guidance]], [[C2PA]]
 
 - ### Content
 

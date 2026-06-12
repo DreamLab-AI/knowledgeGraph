@@ -35,7 +35,7 @@ public:: true
       {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:multisignature-wallets", "label": "Multisignature Wallets"},
       {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}

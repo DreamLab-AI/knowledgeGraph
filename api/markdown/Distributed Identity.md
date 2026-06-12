@@ -586,7 +586,7 @@ public:: true
         "label": "Hash Function"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -688,7 +688,7 @@ public:: true
         "label": "JOSE/COSE"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

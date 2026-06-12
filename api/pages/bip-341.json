@@ -8,7 +8,7 @@
   "definition": "BIP-341 is the Bitcoin Improvement Proposal that defines the Taproot upgrade, introducing Pay-to-Taproot (P2TR) as a new output type that merges script and key-path spending under a unified commitment scheme. It combines Schnorr signatures with Merklised Abstract Syntax Trees (MAST) to allow complex spending conditions to be committed on-chain while only revealing the executed branch at spend time. The proposal activated on the Bitcoin mainnet in November 2021 at block height 709,632. BIP-341 is accompanied by BIP-340 (Schnorr signatures) and BIP-342 (Tapscript), forming the complete Taproot bundle. The upgrade significantly improves privacy, fungibility, and script expressiveness for Bitcoin.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-improvement-proposals",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
       "label": "Bitcoin Improvement Proposals"
     }
   ],
@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {

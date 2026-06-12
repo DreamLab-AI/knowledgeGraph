@@ -45,7 +45,7 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:video-processing",
+        "id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Processing"
       }
     ],

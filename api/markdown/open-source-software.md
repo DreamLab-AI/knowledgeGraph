@@ -6,6 +6,6 @@ Open Source Software is software whose source code is publicly available under a
   - enables [[Open-Source AI]]
   - enables [[Collaboration]]
   - uses [[Version Control]]
-  - uses [[license]]
+  - uses [[Intellectual Property Licence Instrument]]
   - relatedTo [[Open Source Framework]]
   - relatedTo [[Software Library]]

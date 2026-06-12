@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Asset Tokenisation]]
   - bridges-to:: [[Institutional Adoption]]
-  - requires:: [[Asset Tokenisation]], [[Tokenisation]]
+  - requires:: [[Asset Tokenisation]], [[Neural Network Text Tokenisation]]
 
 - ### Content
   - BUIDL, the BlackRock USD Institutional Digital Liquidity Fund, launched in 2024 in partnership with Securitize. Each token represents a share in a fund holding short-term US government securities, with yield distributed to holders.

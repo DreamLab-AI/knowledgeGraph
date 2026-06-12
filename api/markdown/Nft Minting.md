@@ -566,7 +566,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-ordinals",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals",
         "label": "Bitcoin Ordinals"
       },
       {
@@ -934,7 +934,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -974,7 +974,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1029,7 +1029,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     }
@@ -1048,14 +1048,14 @@ public:: true
 - ### Definition
   - **NFT Minting** is the on-chain or deferred off-chain process by which a unique, indivisible, and cryptographically authenticated digital token—a non-fungible token—is created and permanently recorded on a distributed ledger, establishing irrevocable provenance, ownership, and transferability for a linked digital or physical asset through the invocation of a [[Smart Contract]] function that assigns a unique token identifier, records ownership in contract storage, emits a standardised Transfer event from the zero address, and optionally anchors a content-addressed metadata URI to an immutable storage layer such as [[IPFS]] or [[Arweave]].
   - The minting process realises the conceptual distinction between fungibility—where any unit is interchangeable with any other, as with Ether or [[ERC-20 Token]]s—and non-fungibility, where each token carries a globally unique `tokenId` that no other token in any contract on any chain can replicate, enabling the representation of ownership stakes in artwork, collectibles, in-game items, music rights, real-world assets, event tickets, identity credentials, and domain names as programmable, composable, and tradeable on-chain objects.
-  - The canonical implementation standard on [[Ethereum]] is **ERC-721** (Ethereum Request for Comment 721, Dieter Shirley et al., EIP-721 finalised January 2018), which defines the minimum interface `ownerOf(tokenId)`, `transferFrom(from, to, tokenId)`, `approve(to, tokenId)`, `safeTransferFrom`, and the metadata extension `tokenURI(tokenId)` returning a JSON document containing `name`, `description`, and `image` fields; the complementary **ERC-1155** multi-token standard (Enjin team, EIP-1155 June 2019) extends this to support simultaneous management of fungible, semi-fungible, and non-fungible tokens within a single contract, enabling gas-efficient batch minting of `[tokenId, amount, data]` tuples through the `mintBatch` function and saving 40–90% gas versus equivalent ERC-721 batch operations.
+  - The canonical implementation standard on [[Ethereum Smart Contract Platform]] is **ERC-721** (Ethereum Request for Comment 721, Dieter Shirley et al., EIP-721 finalised January 2018), which defines the minimum interface `ownerOf(tokenId)`, `transferFrom(from, to, tokenId)`, `approve(to, tokenId)`, `safeTransferFrom`, and the metadata extension `tokenURI(tokenId)` returning a JSON document containing `name`, `description`, and `image` fields; the complementary **ERC-1155** multi-token standard (Enjin team, EIP-1155 June 2019) extends this to support simultaneous management of fungible, semi-fungible, and non-fungible tokens within a single contract, enabling gas-efficient batch minting of `[tokenId, amount, data]` tuples through the `mintBatch` function and saving 40–90% gas versus equivalent ERC-721 batch operations.
   - The core technical mechanism involves a call to a contract method—conventionally named `mint(address to, uint256 tokenId)` or `safeMint(address to, uint256 tokenId)`—which: (i) validates the caller's authorisation through access-control modifiers such as `onlyOwner` or `onlyRole(MINTER_ROLE)` in OpenZeppelin AccessControl; (ii) increments a sequential `_tokenIdCounter` or uses a caller-supplied tokenId; (iii) writes the owner mapping `_owners[tokenId] = to`; (iv) increments `_balances[to]`; (v) emits `Transfer(address(0), to, tokenId)`, the canonical signal that a new token has entered circulation; and (vi) optionally calls `_setTokenURI(tokenId, uri)` binding the on-chain record to a metadata document.
-  - Gas costs for a standard ERC-721 mint on [[Ethereum]] mainnet ranged from approximately 50,000–120,000 gas during 2020–2021 periods of moderate network activity (translating to $5–$300 at ETH prices of $500–$4,000 and gas prices of 30–300 Gwei); the [[EIP-1559]] base-fee-plus-tip mechanism introduced August 2021 improved cost predictability while peak 2021 demand pushed effective mint costs to $50–$500+; Layer 2 deployment on [[Polygon]] PoS reduced costs to $0.001–$0.05 per mint, while [[Arbitrum]], Optimism, and [[Base]] (Coinbase L2, launched August 2023) reduced costs to $0.01–$0.10.
+  - Gas costs for a standard ERC-721 mint on [[Ethereum Smart Contract Platform]] mainnet ranged from approximately 50,000–120,000 gas during 2020–2021 periods of moderate network activity (translating to $5–$300 at ETH prices of $500–$4,000 and gas prices of 30–300 Gwei); the [[EIP-1559]] base-fee-plus-tip mechanism introduced August 2021 improved cost predictability while peak 2021 demand pushed effective mint costs to $50–$500+; Layer 2 deployment on [[Polygon]] PoS reduced costs to $0.001–$0.05 per mint, while [[Arbitrum]], Optimism, and [[Base]] (Coinbase L2, launched August 2023) reduced costs to $0.01–$0.10.
   - **Lazy minting**—pioneered by Rarible and adopted by OpenSea's Seaport protocol—defers on-chain state writes until the token's first sale, storing the creator's EIP-712 signature over a typed voucher off-chain so no blockchain transaction occurs at creation time; the buyer's purchase transaction simultaneously mints and transfers the token, shifting gas burden to the buyer and enabling zero-upfront-cost minting for millions of prospective creators.
   - **Metadata storage** is architecturally critical: a tokenURI pointing to a centralised HTTP server introduces single-point-of-failure risk; best practice in 2024–2026 is [[IPFS]] content-addressed storage (where the CID is a SHA-256-derived multihash, making URI-to-content binding cryptographically verifiable), Arweave endowment-funded permanent storage, or fully on-chain storage embedding base64-encoded SVG or JSON directly in contract storage (used by Autoglyphs, Art Blocks, Loot, Nouns DAO).
   - **Creator royalties**: [[EIP-2981]] (finalised 2022) standardises a `royaltyInfo(tokenId, salePrice)` function enabling marketplaces to honour creator-specified resale royalties (typically 5–10%); however, Blur marketplace's October 2022 launch triggered an industry crisis by making royalties optional and capturing 50–60% of Ethereum NFT trading volume by Q1 2023, while ERC-721C (LimitBreak, August 2023) introduced protocol-level enforcement through transfer hooks.
-  - The 2021–2024 NFT market cycle reached ~$25 billion in total trading volume in 2021 (DappRadar), dominated by [[Ethereum]] collections including CryptoPunks (Larva Labs 2017), Bored Ape Yacht Club (Yuga Labs April 2021, floor price peaked ~150 ETH / $430,000 April 2022), Art Blocks generative art (launched November 2020), and NBA Top Shot (Flow blockchain, Dapper Labs, $230M+ H1 2021); the market contracted sharply in 2022–2023 with OpenSea monthly volume falling from $3.5B (January 2022) to $70M (December 2023) before stabilising at a utility-driven baseline.
-  - **Bitcoin Ordinals** (Casey Rodarmor's `ord` protocol, January 2023) extended NFT minting to [[Bitcoin]] by inscribing arbitrary content into individual satoshis using the SegWit witness data field, reaching 50M+ inscriptions by May 2024; **Soulbound Tokens (SBTs)** (Buterin/Weyl/Ohlhaver 2022, EIP-5192) introduced non-transferable identity credentials; **AI-generated NFT art** proliferated from 2022–2026; and **Real World Asset (RWA) tokenisation** drove total on-chain RWA value toward $50B by early 2026 (BlackRock BUIDL fund on Ethereum, Centrifuge private credit, RealT real estate).
+  - The 2021–2024 NFT market cycle reached ~$25 billion in total trading volume in 2021 (DappRadar), dominated by [[Ethereum Smart Contract Platform]] collections including CryptoPunks (Larva Labs 2017), Bored Ape Yacht Club (Yuga Labs April 2021, floor price peaked ~150 ETH / $430,000 April 2022), Art Blocks generative art (launched November 2020), and NBA Top Shot (Flow blockchain, Dapper Labs, $230M+ H1 2021); the market contracted sharply in 2022–2023 with OpenSea monthly volume falling from $3.5B (January 2022) to $70M (December 2023) before stabilising at a utility-driven baseline.
+  - **Bitcoin Ordinals** (Casey Rodarmor's `ord` protocol, January 2023) extended NFT minting to [[Bitcoin Proof-of-Work Protocol]] by inscribing arbitrary content into individual satoshis using the SegWit witness data field, reaching 50M+ inscriptions by May 2024; **Soulbound Tokens (SBTs)** (Buterin/Weyl/Ohlhaver 2022, EIP-5192) introduced non-transferable identity credentials; **AI-generated NFT art** proliferated from 2022–2026; and **Real World Asset (RWA) tokenisation** drove total on-chain RWA value toward $50B by early 2026 (BlackRock BUIDL fund on Ethereum, Centrifuge private credit, RealT real estate).
 
 - ### Semantic Classification
   - owl-class:: blockchain:NftMinting
@@ -1065,12 +1065,12 @@ public:: true
   - implemented-in-layer:: [[SmartContractLayer]], [[TokenStandardLayer]], [[MetadataLayer]], [[StorageLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Process]], [[Smart Contract Operation]], [[Digital Asset Creation]], [[Tokenisation]], [[Provenance Recording]]
+  - is-subclass-of:: [[Blockchain Process]], [[Smart Contract Operation]], [[Digital Asset Creation]], [[Neural Network Text Tokenisation]], [[Provenance Recording]]
   - has-part:: [[ERC-721 Standard]], [[ERC-1155 Standard]], [[Token Metadata]], [[IPFS]], [[Arweave]], [[Creator Royalty]], [[Token URI]], [[Smart Contract]], [[Mint Function]], [[Transfer Event]]
   - requires:: [[Smart Contract]], [[Blockchain Network]], [[Gas Fee]], [[Wallet Address]], [[Token Standard]], [[Metadata Schema]], [[Content Addressing]]
   - enables:: [[Digital Ownership]], [[Provenance Tracking]], [[Creator Economy]], [[NFT Marketplace]], [[Real World Asset Tokenisation]], [[Soulbound Token]], [[On-Chain Identity]], [[Gaming Asset Ownership]]
   - implements:: [[ERC-721 Standard]], [[ERC-1155 Standard]], [[EIP-2981 Royalty Standard]], [[EIP-5192 Locking Standard]], [[EIP-712 Typed Signing]], [[Lazy Minting]], [[Batch Minting]]
-  - depends-on:: [[Ethereum]], [[Smart Contracts]], [[IPFS]], [[Gas Mechanism]], [[EIP-1559]], [[Cryptographic Hash Function]], [[Content Addressing]]
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[Smart Contracts]], [[IPFS]], [[Gas Mechanism]], [[EIP-1559]], [[Cryptographic Hash Function]], [[Content Addressing]]
   - supports:: [[Digital Art Market]], [[Gaming NFTs]], [[Music NFTs]], [[Real World Asset Tokenisation]], [[Decentralised Identity]], [[Brand Loyalty NFTs]], [[Bitcoin Ordinals]]
   - uses:: [[Solidity]], [[OpenZeppelin Contracts]], [[IPFS]], [[Arweave]], [[EIP-712 Signatures]], [[Merkle Tree]], [[Content Identifier]]
   - contrasts-with:: [[ERC-20 Token]], [[Fungible Token]], [[Centralised Database]], [[Traditional Copyright Registration]], [[Custodial Digital Asset]]
@@ -1232,7 +1232,7 @@ public:: true
 
 	  **Phase 2 — Transaction submission**: The minter's wallet broadcasts a `mint()` call signed with the wallet's private key, including sufficient ETH to cover gas. EIP-1559 fee estimation determines `maxFeePerGas` (base fee cap) and `maxPriorityFeePerGas` (validator tip); if `maxFeePerGas` falls below the network's base fee, the transaction remains pending in the mempool until network conditions change.
 
-	  **Phase 3 — EVM execution**: Validators include the transaction in a block; the [[Ethereum]] Virtual Machine executes the mint function, writes storage slots (`_owners[tokenId]` and `_balances[to]`), and emits the Transfer event `(address(0), to, tokenId)`. The gas consumed is debited from the sender's balance; the base fee is burned per EIP-1559; the priority fee goes to the validator.
+	  **Phase 3 — EVM execution**: Validators include the transaction in a block; the [[Ethereum Smart Contract Platform]] Virtual Machine executes the mint function, writes storage slots (`_owners[tokenId]` and `_balances[to]`), and emits the Transfer event `(address(0), to, tokenId)`. The gas consumed is debited from the sender's balance; the base fee is burned per EIP-1559; the priority fee goes to the validator.
 
 	  **Phase 4 — Finality**: After sufficient block confirmations (12+ blocks / ~144 seconds for Ethereum mainnet probabilistic finality, 1–2 blocks / ~2 seconds for [[Polygon]] PoS, near-instant for Base/Arbitrum via optimistic rollup with 7-day challenge window for finality), the token is considered safely minted and ownership is established.
 
@@ -1611,10 +1611,10 @@ public:: true
   - **Worker model**: claude-sonnet-4-6
   - **Quality notes**: Full Phase 6 production-ready enrichment. Definition section (9 bullets, ~1,500 words) covers ERC-721/1155 standards, gas mechanics, lazy minting, metadata storage, royalty enforcement crisis, 2021–2024 market cycle, Ordinals, SBTs, AI NFTs, and RWA tokenisation. All 5 required ### sections present. All required Content subsections present. 44 OWL axioms across 7 families (Compositional 9, Dependency 10, Capability 10, Implementation 10, Reduction 5, Association 5). 75+ wikilink relationships across 11 relationship types in Relationships section. 30 academic/industry/specification references in Research & Literature. UK Context covers Imperial CCRaE, Edinburgh BTL, UCL CBT, Cambridge CCAF, Oxford OII, Newcastle, Manchester, Leeds, Scotland, Wales, Northern Ireland, FCA PS23/6, UKIPO AI consultation, DCMS cultural heritage review, northern industrial applications, and UK legal/professional services sector.
   - **Scope notes**: Page covers NFT minting as a technical and economic process; related pages for deeper treatment include [[NFT Marketplace]] (secondary market mechanics), [[Smart Contracts]] (EVM execution), [[IPFS]] (decentralised storage), [[ERC-721 Standard]] (token interface specification), [[Real World Asset Tokenisation]] (RWA on-chain bridge), [[Soulbound Token]] (non-transferable credential NFTs), [[Bitcoin Ordinals]] (Bitcoin-native inscription protocol), [[Creator Economy]] (cultural economy of NFTs), [[DeFi]] (financial applications of tokenised assets).
-  - **Cross-references**: [[Blockchain Network]], [[Ethereum]], [[Polygon]], [[Solidity]], [[Digital Art]], [[Gaming Assets]], [[Music NFTs]], [[Decentralised Identity]], [[Cryptographic Hash Function]], [[Arweave]], [[Merkle Tree]]
+  - **Cross-references**: [[Blockchain Network]], [[Ethereum Smart Contract Platform]], [[Polygon]], [[Solidity]], [[Digital Art]], [[Gaming Assets]], [[Music NFTs]], [[Decentralised Identity]], [[Cryptographic Hash Function]], [[Arweave]], [[Merkle Tree]]
   - **Token standard evolution summary**: ERC-721 (2018, core uniqueness) → ERC-1155 (2019, multi-token) → ERC-721A (2021, batch gas optimisation) → ERC-4907 (2022, rental) → ERC-721C (2023, royalty enforcement) → ERC-6551 (2023, token-bound accounts) → ERC-7495 (2025, portable cross-chain NFTs) — each standard extension addressing a specific limitation revealed by production deployment at scale.
   - **Market evolution summary**: CryptoPunks/CryptoKitties 2017 (proof of concept) → DeFi summer 2020 / Art Blocks / NBA Top Shot 2020–2021 (cultural adoption) → $25B peak volume 2021 (speculative mania) → Royalty wars / Bear market 2022–2023 (correction and consolidation) → Utility NFTs / RWA / Reddit Avatars / Ordinals 2023–2024 (stabilisation and diversification) → Institutional RWA / AI-generated / Dynamic NFTs 2025–2026 (maturation and mainstream integration).
-  - **Ontological note**: NFT Minting as a class subsumes both the technical act (smart contract invocation, on-chain state transition) and the economic/legal act (provenance record creation, rights-bundle instantiation); the class boundary with [[Digital Asset Creation]] is defined by the presence of a blockchain-anchored unique token; the class boundary with [[Tokenisation]] is that NFT Minting specifically creates non-fungible instances, whereas Tokenisation covers both fungible and non-fungible token creation.
+  - **Ontological note**: NFT Minting as a class subsumes both the technical act (smart contract invocation, on-chain state transition) and the economic/legal act (provenance record creation, rights-bundle instantiation); the class boundary with [[Digital Asset Creation]] is defined by the presence of a blockchain-anchored unique token; the class boundary with [[Neural Network Text Tokenisation]] is that NFT Minting specifically creates non-fungible instances, whereas Tokenisation covers both fungible and non-fungible token creation.
 
 - ### Provenance
   - enrichment-notes:: Full Phase 6 enrichment covering token standards (ERC-721, ERC-1155, ERC-721A, ERC-721C, ERC-4907, ERC-6551), minting lifecycle, metadata architecture (IPFS, Arweave, on-chain), gas optimisation and L2 deployment, lazy minting, creator royalties and enforcement crisis, 2021–2024 market cycle, Bitcoin Ordinals, Soulbound Tokens, AI-generated NFTs, Real World Asset tokenisation, platform ecosystem (OpenSea, Blur, Magic Eden, Manifold, Zora), IP and copyright law, UK academic and industry context, risk taxonomy, and 2026–2030 future directions

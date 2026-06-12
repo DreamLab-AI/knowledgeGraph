@@ -13,13 +13,13 @@
   - has-part:: [[Generalisation Capability]], [[Cross-Domain Transfer]], [[Autonomous Reasoning]], [[Open-Ended Learning]], [[World Model]], [[Tool Use Capability]], [[Long-Horizon Planning]]
   - requires:: [[Large-Scale Compute]], [[Frontier Training Data]], [[Scaling Laws]], [[Reinforcement Learning]], [[Alignment Techniques]], [[Evaluation Infrastructure]]
   - enables:: [[Transformative AI]], [[Economic Automation]], [[Scientific Discovery Acceleration]], [[Autonomous Agents]], [[Recursive Self-Improvement]]
-  - implements:: [[Scaling Hypothesis]], [[Chain-of-Thought Reasoning]], [[Inference-Time Compute]], [[Mixture of Experts]], [[Multimodal Learning]], [[Constitutional AI]]
+  - implements:: [[Scaling Hypothesis]], [[Chain-of-Thought Reasoning]], [[Inference-Time Compute]], [[Mixture-of-Experts Architecture]], [[Multimodal Learning]], [[Constitutional AI Training Methodology]]
   - depends-on:: [[Transformer Architecture]], [[Compute Trends]], [[Bitter Lesson]], [[Pretraining]], [[RLHF]], [[Benchmarks]]
   - supports:: [[AI Safety Research]], [[Alignment Research]], [[AI Policy]], [[Existential Risk Studies]], [[AI Governance]]
   - uses:: [[ARC-AGI]], [[MMLU]], [[GPQA]], [[FrontierMath]], [[SWE-bench]], [[Humanity's Last Exam]], [[METR Evaluations]]
   - contrasts-with:: [[Narrow AI]], [[Weak AI]], [[Domain-Specific AI]], [[Symbolic AI]], [[Expert System]]
   - related-to:: [[Superintelligence]], [[Transformative AI]], [[Frontier AI]], [[Foundation Model]], [[Recursive Self-Improvement]], [[AI Alignment]], [[Existential Risk]]
-  - standardized-by:: [[OpenAI Charter]], [[DeepMind Levels of AGI Framework]], [[NIST AI RMF]], [[ISO IEC 42001]], [[EU AI Act]]
+  - standardized-by:: [[OpenAI Charter]], [[DeepMind Levels of AGI Framework]], [[NIST AI RMF]], [[ISO IEC 42001]], [[EU AI Act Regulatory Instrument]]
 
 - ### Content
 

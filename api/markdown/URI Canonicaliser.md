@@ -192,7 +192,7 @@ public:: true
         "label": "BIP-340 Pubkey"
       },
       {
-        "@id": "urn:ngm:class:json-stringification",
+        "@id": "urn:ngm:class:json-data-interchange-format-stringification",
         "label": "JSON Stringification"
       },
       {

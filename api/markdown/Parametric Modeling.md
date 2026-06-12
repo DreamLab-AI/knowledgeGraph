@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:parametric-modeling",
+  "@id": "urn:ngm:class:parametric-design-methodology-modeling",
   "@type": "Class",
   "label": "Parametric Modeling",
   "definition": "A CAD design modology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.",

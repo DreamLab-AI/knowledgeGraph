@@ -51,7 +51,7 @@ public:: true
       "label": "Human-Robot Interaction"
     },
     {
-      "@id": "urn:ngm:class:collaborative-operation",
+      "@id": "urn:ngm:class:collaborative-systems-modality-operation",
       "label": "Collaborative Operation"
     }
   ],

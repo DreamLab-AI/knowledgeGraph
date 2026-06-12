@@ -67,7 +67,7 @@ public:: true
         "label": "GPU"
       },
       {
-        "@id": "urn:ngm:class:nvidia-h-100",
+        "@id": "urn:ngm:class:nvidia-corporation-h-100",
         "label": "NVIDIA H100"
       }
     ],

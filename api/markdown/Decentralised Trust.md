@@ -38,7 +38,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },

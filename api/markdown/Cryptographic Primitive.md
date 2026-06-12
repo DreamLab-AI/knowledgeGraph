@@ -94,7 +94,7 @@ alias:: Cryptographic Primitives, CryptographicPrimitive
     "enables": [
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
     ],
     "relatedTo": [

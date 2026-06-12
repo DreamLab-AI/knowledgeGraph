@@ -3,7 +3,7 @@
   "title": "ComfyUI Client",
   "slug": "comfy-ui-client",
   "public": true,
-  "classIri": "urn:ngm:class:comfy-ui-client",
+  "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
   "domain": "artificial-intelligence",
   "definition": "ComfyUI Client refers collectively to the suite of client-side interfaces, API layers, and software components that communicate with a running ComfyUI server\u2014the open-source, node-based diffusion model inference engine created by comfyanonymous (GitHub user) and released in January 2023\u2014enabling ...",
   "subClassOf": [
@@ -26,11 +26,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:comfy-ui-desktop-app",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-desktop-app",
         "label": "ComfyUI Desktop App"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-manager",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
@@ -96,7 +96,7 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -114,7 +114,7 @@
         "label": "Custom Node Development"
       },
       {
-        "id": "urn:ngm:class:latent-space-exploration",
+        "id": "urn:ngm:class:neural-network-latent-space-exploration",
         "label": "Latent Space Exploration"
       },
       {
@@ -149,7 +149,7 @@
         "label": "Directed Acyclic Graph Execution"
       },
       {
-        "id": "urn:ngm:class:json-workflow-serialisation",
+        "id": "urn:ngm:class:json-data-interchange-format-workflow-serialisation",
         "label": "JSON Workflow Serialisation"
       },
       {
@@ -209,7 +209,7 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       }
     ],
@@ -231,7 +231,7 @@
         "label": "Video Diffusion"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
@@ -257,11 +257,11 @@
         "label": "Comfy-Org"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-api-specification",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-node-registry",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-node-registry",
         "label": "ComfyUI Node Registry"
       },
       {
@@ -296,7 +296,7 @@
         "label": "SDXL"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-workflows",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
       {
@@ -316,7 +316,7 @@
         "label": "LoRA"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ]

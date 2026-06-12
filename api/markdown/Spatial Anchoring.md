@@ -96,7 +96,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -121,7 +121,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Spatial Computing]]
+  - is-subclass-of:: [[Spatial Computing Paradigm]]
   - enables:: [[Location Based AR]]
 
 - ### Content

@@ -29,7 +29,7 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
       {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
     ],
     "contrastsWith": [
@@ -44,10 +44,10 @@ public:: true
 ```
 
 - ### Definition
-  - The [[ERC-721 Standard]] is an [[Ethereum]] Improvement Proposal formalising the interface for non-fungible tokens ([[NFT]]) on EVM-compatible chains, granting each token a unique `uint256` tokenId and providing `transferFrom`, `approve`, and `safeTransferFrom` functions for secure ownership transfer with optional receiver callbacks.
+  - The [[ERC-721 Standard]] is an [[Ethereum Smart Contract Platform]] Improvement Proposal formalising the interface for non-fungible tokens ([[NFT]]) on EVM-compatible chains, granting each token a unique `uint256` tokenId and providing `transferFrom`, `approve`, and `safeTransferFrom` functions for secure ownership transfer with optional receiver callbacks.
 
 - ### Relationships
-  - ERC-721 contrasts with the fungible [[ERC-20 Standard]] and was extended by the multi-token [[ERC-1155]] standard; token metadata is commonly persisted via [[IPFS]] to ensure content-addressed permanence, and the tokens themselves are issued and traded within the broader [[NFT]] economy on [[Ethereum]] and compatible chains.
+  - ERC-721 contrasts with the fungible [[ERC-20 Standard]] and was extended by the multi-token [[ERC-1155]] standard; token metadata is commonly persisted via [[IPFS]] to ensure content-addressed permanence, and the tokens themselves are issued and traded within the broader [[NFT]] economy on [[Ethereum Smart Contract Platform]] and compatible chains.
 
 - ### Content
   - ERC-721 was authored principally by William Entriken, Dieter Shirley, Jacob Evans, and Nastassia Sachs, with the proposal (EIP-721) published in January 2018 and finalised in June 2018. It was motivated by the viral success of CryptoKitties (November 2017), which demonstrated both the demand for unique digital assets on Ethereum and the lack of a standardised interface for them. Before ERC-721, each NFT project implemented bespoke ownership logic, making marketplace aggregation impossible.

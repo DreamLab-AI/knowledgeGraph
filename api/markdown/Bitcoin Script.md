@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-script",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
   "@type": "Class",
   "label": "Bitcoin Script",
   "definition": "Bitcoin Script is the non-Turing-complete, stack-based scripting language embedded in every Bitcoin transaction that defines the conditions under which output funds may be spent. It consists of a constrained set of opcodes operating on a last-in-first-out stack, deliberately designed without loops or recursion to ensure termination and predictable resource consumption. Script programs (scriptPubKey and scriptSig pairs) encode spending conditions such as digital signature verification, multisignature requirements, hash pre-image revelation, and time locks.",
@@ -31,11 +31,11 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-ordinals", "label": "Bitcoin Ordinals"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals", "label": "Bitcoin Ordinals"},
       {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
       {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"}
     ],
-    "partOf": [{"@id": "urn:ngm:class:bitcoin-core", "label": "Bitcoin Core"}]
+    "partOf": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"}]
   },
   "quality": 0.8
 }

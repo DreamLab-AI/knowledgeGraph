@@ -9,10 +9,10 @@
 - ### Relationships
   - **enables** [[Robustness]] — aggregating diverse models reduces sensitivity to individual model errors
   - **enables** [[Accuracy]] — ensemble predictions consistently outperform single-model baselines
-  - **uses** [[Machine Learning]] — ensembling is a general ML meta-strategy applicable to any learner type
+  - **uses** [[Machine Learning Discipline]] — ensembling is a general ML meta-strategy applicable to any learner type
   - **uses** [[Deep Learning]] — commonly applied to neural network ensembles in production systems
   - **contrastsWith** [[Knowledge Distillation]] — distillation compresses an ensemble into one model; ensembling expands capacity
-  - **contrastsWith** [[Mixture of Experts]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
+  - **contrastsWith** [[Mixture-of-Experts Architecture]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
   - **relatedTo** [[Overfitting]] — diversity among models counteracts overfitting present in individual members
   - **relatedTo** [[Transfer Learning]] — pre-trained base models are frequently the building blocks of ensembles
 
@@ -81,7 +81,7 @@
 
   - ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
 		- A plugin for controlling Blender using GPT models.
-  - [[Stable Diffusion]]
+  - [[Stable Diffusion Image Model]]
 
   - ## Emerging Business Models
 

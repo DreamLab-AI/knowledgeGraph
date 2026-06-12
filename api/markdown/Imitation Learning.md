@@ -581,7 +581,7 @@ alias:: ImitationLearning
         "label": "Inverse Reinforcement Learning"
       },
       {
-        "@id": "urn:ngm:class:dagger",
+        "@id": "urn:ngm:class:dagger-ci-pipeline-engine",
         "label": "DAgger"
       }
     ],
@@ -637,7 +637,7 @@ alias:: ImitationLearning
         "label": "Vision Language Action Models"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -1178,7 +1178,7 @@ alias:: ImitationLearning
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1193,7 +1193,7 @@ alias:: ImitationLearning
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1250,7 +1250,7 @@ alias:: ImitationLearning
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[ControlLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Sequential Decision Making]], [[Policy Learning]], [[Supervised Learning]], [[Learning from Demonstration]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Sequential Decision Making]], [[Policy Learning]], [[Supervised Learning]], [[Learning from Demonstration]]
   - has-part:: [[Expert Demonstration]], [[Demonstration Dataset]], [[Policy Network]], [[Teleoperation Interface]], [[Action Decoder]], [[Observation Encoder]], [[Discriminator]]
   - requires:: [[Expert Trajectories]], [[State Action Pairs]], [[Function Approximator]], [[Loss Function]], [[Demonstrator]], [[Action Space]], [[Observation Space]]
   - enables:: [[Generalist Robot Policies]], [[Skill Transfer]], [[Reward-Free Learning]], [[Rapid Task Specification]], [[Cross-Embodiment Transfer]], [[Sample-Efficient Robotics]]
@@ -1259,7 +1259,7 @@ alias:: ImitationLearning
   - supports:: [[Robot Manipulation]], [[Autonomous Driving]], [[Surgical Robotics]], [[Humanoid Control]], [[Drone Acrobatics]], [[Dexterous Manipulation]]
   - uses:: [[Neural Networks]], [[Transformer Policies]], [[Diffusion Models]], [[Vision Language Models]], [[Inverse Dynamics Model]], [[Teleoperation]]
   - contrasts-with:: [[Reinforcement Learning]], [[Classical Control]], [[Supervised Learning]], [[Model Predictive Control]], [[Optimal Control]]
-  - related-to:: [[Offline Reinforcement Learning]], [[Foundation Models]], [[Vision Language Action Models]], [[Self-Supervised Learning]], [[Apprenticeship Learning]], [[Meta-Learning]], [[Sim-to-Real Transfer]]
+  - related-to:: [[Offline Reinforcement Learning]], [[Large-Scale Pretrained Foundation Model]], [[Vision Language Action Models]], [[Self-Supervised Learning]], [[Apprenticeship Learning]], [[Meta-Learning]], [[Sim-to-Real Transfer]]
   - standardized-by:: [[Open X-Embodiment]], [[DROID Dataset]], [[Robomimic Benchmark]], [[RLBench]], [[CALVIN]], [[LIBERO]]
 
 - ### Content

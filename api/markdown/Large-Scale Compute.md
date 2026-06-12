@@ -34,7 +34,7 @@ alias:: Large Scale Compute
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
       {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},

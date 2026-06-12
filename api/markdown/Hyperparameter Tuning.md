@@ -23,7 +23,7 @@ public:: true
   "definition": "Hyperparameter tuning is the process of searching for the optimal configuration of parameters that govern the training process of a machine learning model, as distinct from the model parameters learned during training itself. Hyperparameters include learning rate, batch size, network depth, regularisation coefficients, optimiser choice, and architectural choices such as kernel size or number of attention heads. The tuning process employs search strategies—grid search, random search, Bayesian optimisation, or evolutionary algorithms—to identify configurations that maximise model performance on a held-out validation set. Efficient hyperparameter tuning is critical to practical machine learning deployment, as model performance is often highly sensitive to these configuration choices.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
@@ -33,10 +33,10 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "supports": [
@@ -48,7 +48,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Hyperparameter Tuning]] is the disciplined search over the configuration space that controls [[Machine Learning]] model training—learning rates, regularisation, and architectural choices—using methods from [[Bayesian Inference]] and grid or random search to maximise validation performance without [[Overfitting]].
+  - [[Hyperparameter Tuning]] is the disciplined search over the configuration space that controls [[Machine Learning Discipline]] model training—learning rates, regularisation, and architectural choices—using methods from [[Bayesian Inference]] and grid or random search to maximise validation performance without [[Overfitting]].
 - ### Relationships
   - Hyperparameter tuning sits within the broader [[Machine Learning Pipeline]] and directly determines the quality of the final [[Machine Learning Model]]. It automates decisions that previously required expert intuition, and [[AutoML]] systems subsume hyperparameter tuning as one of their core sub-problems. [[Bayesian Inference]]-based optimisation frameworks (such as Optuna and Hyperopt) model the performance surface to guide search efficiently. Avoiding [[Overfitting]] is a primary constraint—validation loss rather than training loss drives the tuning objective. [[Deep Learning]] architectures have dramatically expanded the hyperparameter space, making efficient search methods essential, and [[Model Evaluation Results]] are the ground truth signal that guides each iteration.
 - ### Content

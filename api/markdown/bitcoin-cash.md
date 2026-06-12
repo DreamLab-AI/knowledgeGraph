@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Cryptocurrency]]
-  - bridges-to:: [[Bitcoin]], [[Bitcoin Network]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Bitcoin Network]]
   - requires:: [[Mining]], [[Hash Function]]
   - enables:: [[Payment Channel]]
 

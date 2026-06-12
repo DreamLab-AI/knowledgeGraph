@@ -43,16 +43,16 @@ alias:: AI Application
       {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
       {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
       {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ]
   },

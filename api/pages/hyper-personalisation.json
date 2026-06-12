@@ -30,7 +30,7 @@
         "label": "Acquisition Function"
       },
       {
-        "id": "urn:ngm:class:collaborative-filtering",
+        "id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
@@ -218,7 +218,7 @@
         "label": "UK Data (Use and Access) Act 2025"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -261,11 +261,11 @@
         "label": "Digital Society Surveillance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ]
@@ -574,12 +574,12 @@
       "label": "AI User"
     },
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
-    },
-    {
       "slug": "knowledge-distillation",
       "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "privacy",

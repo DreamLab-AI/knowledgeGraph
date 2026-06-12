@@ -2,7 +2,7 @@
   - WebID is a decentralised identity mechanism that identifies a person or agent by an HTTP URI dereferencing to a machine-readable RDF profile, enabling authentication and identity without a central provider.
 
 - ### Relationships
-  - WebID is a subclass of [[Decentralized Identity]] and uses [[RDF]] and [[Linked Data]] to express its profile documents. It enables [[Federated Identity]] across cooperating services and relates to [[Self-Sovereign Identity]] goals and the [[Semantic Web]] infrastructure on which it is built.
+  - WebID is a subclass of [[Decentralized Identity]] and uses [[RDF]] and [[Linked Data]] to express its profile documents. It enables [[Federated Identity]] across cooperating services and relates to [[Self-Sovereign Identity]] goals and the [[Semantic Web Linked Data Standard]] infrastructure on which it is built.
 
 - ### Content
   - WebID applies the foundational idea of the web — that things are named by URIs — to identity itself. A person's WebID is simply an HTTP(S) URI, and dereferencing it returns a profile document, written in RDF, that describes who they are, what keys or accounts they control, and links to their data and relationships. Identity thus becomes a first-class, linkable resource on the web rather than an account locked inside a particular provider's database.

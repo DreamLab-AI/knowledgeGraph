@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
   - bridges-to:: [[Snapshot]], [[Decentralised Autonomous Organisation]]
-  - requires:: [[Smart Contract]], [[Ethereum]]
+  - requires:: [[Smart Contract]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Multisignature Wallet]], [[Treasury Management]]
 
 - ### Content

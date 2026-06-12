@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Machine Learning Framework]]
   - bridges-to:: [[Machine Learning Framework]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
 
 - ### Content
   - TensorFlow Lite converts trained TensorFlow models into a compact format and provides an interpreter optimised for resource-constrained hardware. It supports techniques such as quantisation to reduce model size and speed up inference.

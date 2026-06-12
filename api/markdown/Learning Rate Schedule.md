@@ -60,7 +60,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -90,7 +90,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-framework",
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ]
@@ -134,7 +134,7 @@ public:: true
 
 - ### Relationships
   - Uses [[Gradient Descent]], [[Training]]
-  - Requires [[Machine Learning]], [[Deep Learning]]
+  - Requires [[Machine Learning Discipline]], [[Deep Learning]]
   - Enables [[Training and fine tuning]]
   - Related to [[Neural Network]], [[Machine Learning Framework]]
 

@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:metaverse-classification", "label": "Metaverse Classification"},

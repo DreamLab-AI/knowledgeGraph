@@ -9,7 +9,7 @@
 - ### Relationships
   - is-subclass-of:: [[Computing Platform]]
   - **Has-part**: [[XR Headset]], [[Wearable Device Integration]]
-  - **Enables**: [[Augmented Reality]], [[Spatial Computing]]
+  - **Enables**: [[Augmented Reality]], [[Spatial Computing Paradigm]]
   - **Uses**: [[Sensor Fusion]] (biometric and positional data)
   - **Part-of**: [[Metaverse]] ecosystem
 

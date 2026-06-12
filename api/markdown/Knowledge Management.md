@@ -58,7 +58,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
@@ -110,7 +110,7 @@ public:: true
   - uses [[Knowledge Graph]]
   - uses [[Knowledge Representation]]
   - enables [[Retrieval-Augmented Generation]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - relatedTo [[Ontology]]
 
 - ### Content

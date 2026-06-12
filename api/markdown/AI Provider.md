@@ -114,7 +114,7 @@ public:: true
       {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
     ],
     "relatedTo": [
@@ -203,7 +203,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -239,7 +239,7 @@ public:: true
 
 - ### Relationships
   - requires:: [[AI Lifecycle]], [[AI Impact Assessment]]
-  - implements:: [[EU AI Act]], [[AI Governance Framework]]
+  - implements:: [[EU AI Act Regulatory Instrument]], [[AI Governance Framework]]
   - relatedTo:: [[AI Operator]], [[AI User]], [[Accountability]], [[Risk Management]]
 
 - ### Content
@@ -607,6 +607,6 @@ public:: true
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR]], [[NIST AI Risk Management Framework]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR]], [[NIST AI Risk Management Framework]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

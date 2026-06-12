@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:c3a572eee306fd6cf890ca9efafbaa02734fc22acc2e58f487060a41e3e65030",
+  "title": "Semantic Web Linked Data Standard",
+  "slug": "semantic-web-linked-data-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard",
+  "domain": "artificial-intelligence",
+  "definition": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "backlinks": []
+}

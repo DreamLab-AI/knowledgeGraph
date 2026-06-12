@@ -55,8 +55,8 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
     ],
     "enables": [
@@ -116,7 +116,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[AI Research Area]]
-  - requires:: [[Quantum Computing]]
+  - requires:: [[Quantum Computation Paradigm]]
 
 - ### Content
 

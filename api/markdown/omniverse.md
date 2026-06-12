@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Simulation]]
-  - bridges-to:: [[NVIDIA]]
+  - bridges-to:: [[NVIDIA Corporation]]
   - requires:: [[Simulation]]
   - enables:: [[Metaverse]]
 

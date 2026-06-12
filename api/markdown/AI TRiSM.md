@@ -108,7 +108,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -178,6 +178,6 @@ public:: true
   - North England innovation (where relevant)
 
 - ### Provenance
-  - sources:: [[EU AI Act]]
+  - sources:: [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

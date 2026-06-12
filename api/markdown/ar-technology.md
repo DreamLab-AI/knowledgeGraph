@@ -32,7 +32,7 @@
   - **Web AR**: Browser-based experiences accessible without app installation
 
   #### Related Concepts
-  - [[AR Frame]], [[AR Registration]], [[Computer Vision]], [[Extended Reality]], [[3D Rendering Engine]], [[Spatial Computing]]
+  - [[AR Frame]], [[AR Registration]], [[Computer Vision]], [[Extended Reality]], [[3D Rendering Engine]], [[Spatial Computing Paradigm]]
 
 - ### Provenance
   - sources::

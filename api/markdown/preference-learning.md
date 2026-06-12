@@ -10,7 +10,7 @@
   - Enables [[Reinforcement Learning from Human Feedback]]
   - Enables [[Reward Model]]
   - Uses [[Reinforcement Learning]]
-  - Uses [[Machine Learning]]
+  - Uses [[Machine Learning Discipline]]
   - Supports [[AI Safety]]
   - Related To [[Training]]
 

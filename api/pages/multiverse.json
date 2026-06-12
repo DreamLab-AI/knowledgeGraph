@@ -12,7 +12,7 @@
       "label": "Platform and Environment"
     },
     {
-      "id": "urn:ngm:class:spatial-web",
+      "id": "urn:ngm:class:semantic-spatial-web-layer",
       "label": "Spatial Web"
     }
   ],
@@ -115,7 +115,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:spatial-web",
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
         "label": "Spatial Web"
       }
     ],

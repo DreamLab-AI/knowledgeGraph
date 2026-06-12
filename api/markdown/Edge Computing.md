@@ -535,7 +535,7 @@ alias:: EdgeComputing
         "label": "Hardware Acceleration"
       },
       {
-        "@id": "urn:ngm:class:infrastructure-layer",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-layer",
         "label": "Infrastructure Layer"
       },
       {

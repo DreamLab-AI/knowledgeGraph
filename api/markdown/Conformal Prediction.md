@@ -23,7 +23,7 @@ public:: true
   "definition": "Conformal prediction is a distribution-free framework for quantifying predictive uncertainty by producing prediction sets that contain the true outcome with a user-specified probability. Using a held-out calibration set and a nonconformity score, it provides finite-sample, model-agnostic coverage guarantees under the exchangeability assumption. It wraps around any underlying point predictor to deliver statistically valid confidence regions.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}]
   },

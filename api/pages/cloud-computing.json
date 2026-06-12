@@ -8,7 +8,7 @@
   "definition": "Cloud computing is the on-demand delivery of computing resources \u2014 including servers, storage, databases, networking, software, analytics, and intelligence \u2014 over the internet, enabling scalable access without local hardware ownership. Providers such as AWS, Azure, and Google Cloud expose these resources through service models (IaaS, PaaS, SaaS) with pay-as-you-go pricing. The paradigm underpins modern AI training, inference serving, and distributed application deployment by abstracting physical infrastructure into programmable APIs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
+      "id": "urn:ngm:class:technology-infrastructure-domain",
       "label": "Infrastructure"
     }
   ],
@@ -147,12 +147,12 @@
       "label": "Fault Tolerance"
     },
     {
-      "slug": "google-cloud",
-      "label": "Google Cloud"
+      "slug": "google-ai-technology-corporation",
+      "label": "Google AI Technology Corporation"
     },
     {
-      "slug": "google",
-      "label": "Google"
+      "slug": "google-cloud",
+      "label": "Google Cloud"
     },
     {
       "slug": "hardware-and-edge",

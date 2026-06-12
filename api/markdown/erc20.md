@@ -8,12 +8,12 @@
 
 - ### Relationships
   - **implements**: [[Token Standard]], [[Smart Contract]]
-  - **uses**: [[Ethereum]], [[Blockchain]]
+  - **uses**: [[Ethereum Smart Contract Platform]], [[Blockchain]]
   - **enables**: [[Decentralised Finance]], [[Fungible Token]]
   - **contrastsWith**: [[ERC721]]
 
 - ### Content
-  - An [[Ethereum]] [[Smart Contract]] interface standard specifying required functions, events, and behaviours for implementing fungible tokens on [[EVM]]-compatible blockchains. ERC-20 enables interoperable [[Token Transfer]], [[Balance Tracking]], and [[Smart Contract]] interaction, forming the foundation of decentralised finance and governance token ecosystems.
+  - An [[Ethereum Smart Contract Platform]] [[Smart Contract]] interface standard specifying required functions, events, and behaviours for implementing fungible tokens on [[EVM]]-compatible blockchains. ERC-20 enables interoperable [[Token Transfer]], [[Balance Tracking]], and [[Smart Contract]] interaction, forming the foundation of decentralised finance and governance token ecosystems.
   - ### Original Content
 		- ```
   # ERC-20

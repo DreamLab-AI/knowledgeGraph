@@ -410,7 +410,7 @@ public:: true
         "label": "API Gateway"
       },
       {
-        "@id": "urn:ngm:class:midjourney",
+        "@id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       },
       {
@@ -462,7 +462,7 @@ public:: true
         "label": "Marketing Asset Production"
       },
       {
-        "@id": "urn:ngm:class:multimodal-editing",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-editing",
         "label": "Multimodal Editing"
       },
       {
@@ -506,7 +506,7 @@ public:: true
         "label": "Adobe Creative Cloud"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt-integration",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system-integration",
         "label": "ChatGPT Integration"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Discord API"
       },
       {
-        "@id": "urn:ngm:class:gemini-api",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model-api",
         "label": "Gemini API"
       },
       {
@@ -586,7 +586,7 @@ public:: true
         "label": "Medical Illustration"
       },
       {
-        "@id": "urn:ngm:class:social-media-content",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure-content",
         "label": "Social Media Content"
       }
     ],
@@ -608,7 +608,7 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -968,7 +968,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -988,7 +988,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1008,7 +1008,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Midjourney]]",
+      "raw": "[[Midjourney Text-to-Image Service]]",
       "resolved": "urn:visionflow:owl:class:midjourney",
       "kind": "ResolvedLink"
     },
@@ -1028,7 +1028,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1061,16 +1061,16 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Generative AI]], [[Text-to-Image Generation]], [[Diffusion Model]], [[Multimodal AI]], [[Commercial AI Systems]]
-  - has-part:: [[Midjourney]], [[DALL-E 3]], [[Adobe Firefly]], [[Imagen 3]], [[Ideogram]], [[Recraft V3]], [[Krea AI]], [[GPT-4o]], [[Prompt Engineering]], [[Style Reference System]], [[Safety Filter]], [[API Gateway]]
+  - has-part:: [[Midjourney Text-to-Image Service]], [[DALL-E 3]], [[Adobe Firefly]], [[Imagen 3]], [[Ideogram]], [[Recraft V3]], [[Krea AI]], [[GPT-4o]], [[Prompt Engineering]], [[Style Reference System]], [[Safety Filter]], [[API Gateway]]
   - requires:: [[Large Scale Compute]], [[Proprietary Training Dataset]], [[Text Encoder], [[Latent Diffusion Architecture]], [[RLHF]], [[Human Feedback Pipeline]], [[Content Moderation]]
   - enables:: [[Creative Content Generation]], [[Marketing Asset Production]], [[Concept Art]], [[Photorealistic Synthesis]], [[Typography in Images]], [[Multimodal Editing]], [[Brand Asset Generation]]
   - implements:: [[Latent Diffusion], [[Rectified Flow]], [[Classifier-Free Guidance]], [[CLIP Text Conditioning]], [[SynthID Watermarking]], [[Autoregressive Image Decoding]], [[ControlNet]]
-  - depends-on:: [[Transformer Architecture]], [[Attention]], [[CLIP], [[GPU Compute]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]], [[Stable Diffusion]]
+  - depends-on:: [[Transformer Architecture]], [[Attention]], [[CLIP], [[GPU Compute]], [[Deep Learning]], [[Reinforcement Learning from Human Feedback]], [[Stable Diffusion Image Model]]
   - supports:: [[Advertising Production]], [[Game Asset Generation]], [[Film Pre-Production]], [[Fashion Design]], [[Medical Illustration]], [[Educational Content]], [[Social Media Content]]
   - uses:: [[Discord API]], [[REST API]], [[Web Interface]], [[Photoshop Integration]], [[ChatGPT Integration]], [[Gemini API]], [[Adobe Creative Cloud]]
-  - contrasts-with:: [[Stable Diffusion]], [[FLUX.1]], [[Open Source AI]], [[Generative Adversarial Networks]], [[Stable Diffusion 3.5]], [[ComfyUI]]
+  - contrasts-with:: [[Stable Diffusion Image Model]], [[FLUX.1]], [[Open Source AI]], [[Generative Adversarial Networks]], [[Stable Diffusion 3.5]], [[Node-Based Diffusion Pipeline Interface]]
   - related-to:: [[Generative AI]], [[AI Video]], [[AI companions]], [[Prompt Engineering]], [[Synthetic Media]], [[Digital Art]], [[Creative AI]]
-  - standardized-by:: [[ISO/IEC JTC1 SC42]], [[EU AI Act]], [[NIST AI RMF]], [[C2PA Content Provenance Standards]], [[Adobe Content Authenticity Initiative]]
+  - standardized-by:: [[ISO/IEC JTC1 SC42]], [[EU AI Act Regulatory Instrument]], [[NIST AI RMF]], [[C2PA Content Provenance Standards]], [[Adobe Content Authenticity Initiative]]
 
 - ### Content
 

@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - uses:: [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]]
+  - uses:: [[Machine Learning Discipline]], [[Natural Language Processing]], [[Computer Vision]]
   - enables:: [[Autonomous Robot]], [[Autonomous System]]
   - requires:: [[AI Governance]], [[AI Risk Management]]
 

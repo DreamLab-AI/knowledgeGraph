@@ -10,7 +10,7 @@
 
 - ### Relationships
   - has-part:: [[Cognitive State Monitor]], [[Attention Tracker]], [[Workload Analyzer]], [[Adaptive UI Controller]]
-  - requires:: [[Brain-Computer Interface]], [[Eye Tracking]], [[Cognitive Model]], [[Machine Learning]]
+  - requires:: [[Brain-Computer Interface]], [[Eye Tracking]], [[Cognitive Model]], [[Machine Learning Discipline]]
   - enables:: [[Adaptive Information Display]], [[Cognitive Load Management]], [[Attention-Aware Interaction]], [[Personalized UX]]
   - depends-on:: [[Neurofeedback System]], [[Biometric Sensors]], [[Real-time Analytics]]
   - bridges-to:: [[Sensor Input]]

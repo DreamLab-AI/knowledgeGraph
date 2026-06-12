@@ -3,7 +3,7 @@
   "title": "Multimodal Reasoning",
   "slug": "multimodal-reasoning",
   "public": true,
-  "classIri": "urn:ngm:class:multimodal-reasoning",
+  "classIri": "urn:ngm:class:multimodal-ai-architecture-reasoning",
   "domain": "ai",
   "definition": "Multimodal reasoning is the capability of an AI system to integrate and draw inferences across multiple input modalities such as text, images, audio, and video. It requires aligning representations from heterogeneous sources into a shared semantic space so that conclusions depend jointly on all available signals. This underpins tasks like visual question answering, document understanding, and grounded dialogue where no single modality is sufficient.",
   "subClassOf": [

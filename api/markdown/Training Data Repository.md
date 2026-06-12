@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ],
     "requires": [

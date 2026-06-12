@@ -131,7 +131,7 @@
   - ## Google search is broken. Google lied.
   - [An Anonymous Source Shared Thousands of Leaked Google Search API Documents with Me; Everyone in SEO Should See Them](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/)
 		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
-  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google]]
+  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - [What Do Google’s AI Answers Cost the Environment? | Scientific American](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
 
   - ## **May 2024**
@@ -206,7 +206,7 @@
   - ## Google search is broken. Google lied.
   - [An Anonymous Source Shared Thousands of Leaked Google Search API Documents with Me; Everyone in SEO Should See Them](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/)
 		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
-  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google]]
+  - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - [What Do Google’s AI Answers Cost the Environment? | Scientific American](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
 
   #### Key Characteristics

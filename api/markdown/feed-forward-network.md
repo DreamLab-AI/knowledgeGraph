@@ -21,11 +21,11 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[ModelArchitectureLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Neural Network]], [[Machine Learning]], [[Deep Learning]], [[Parametric Model]], [[Differentiable Programming]]
+  - is-subclass-of:: [[Neural Network]], [[Machine Learning Discipline]], [[Deep Learning]], [[Parametric Model]], [[Differentiable Programming]]
   - has-part:: [[Hidden Layer]], [[Activation Function]], [[Weight Matrix]], [[Bias Vector]], [[Input Layer]], [[Output Layer]], [[Backpropagation]], [[Loss Function]]
   - requires:: [[Training Data]], [[Gradient Descent]], [[Automatic Differentiation]], [[Weight Initialisation]], [[Hyperparameter Tuning]]
   - enables:: [[Universal Approximation]], [[Feature Learning]], [[Pattern Recognition]], [[Transfer Learning]], [[Fine-tuning]]
-  - implements:: [[Multi-Layer Perceptron]], [[Position-wise FFN]], [[Mixture of Experts]], [[SwiGLU]], [[Residual Connection]]
+  - implements:: [[Multi-Layer Perceptron]], [[Position-wise FFN]], [[Mixture-of-Experts Architecture]], [[SwiGLU]], [[Residual Connection]]
   - depends-on:: [[Linear Algebra]], [[Calculus]], [[Information Theory]], [[Probability Theory]], [[Optimisation Theory]]
   - supports:: [[Natural Language Processing]], [[Computer Vision]], [[Speech Recognition]], [[Reinforcement Learning]], [[Generative AI]]
   - uses:: [[ReLU]], [[GELU]], [[Attention Mechanism]], [[Layer Normalisation]], [[Dropout]]

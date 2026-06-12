@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:d612f8a37ba73170578641297f0f66d77c3d08102142a2068c5b42fd9d8fd548",
+  "title": "Sam Hammond AI Policy Economist",
+  "slug": "sam-hammond-ai-policy-economist",
+  "public": true,
+  "classIri": "urn:ngm:class:sam-hammond-ai-policy-economist-ai-policy-economist",
+  "domain": "artificial-intelligence",
+  "definition": "Sam Hammond is a senior economist and policy analyst specialising in the intersection of transformative technology and governance, known for work at the Foundation for American Innovation. His analysis explores AI-driven economic disruption, techno-feudalism, the co-evolution of state institutions with autonomous systems, and the geopolitical implications of superintelligence, offering a libertarian-leaning but empirically grounded perspective on long-horizon AI futures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
+        "label": "Soon-Next-Later (AI futurology)"
+      },
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    }
+  ],
+  "backlinks": []
+}

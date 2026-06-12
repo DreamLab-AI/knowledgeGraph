@@ -17,7 +17,7 @@
   - depends-on:: [[Mermaid.js]], [[PlantUML]], [[Graphviz]], [[D2 Diagram Language]], [[Eclipse Layout Kernel]], [[GPT 4]], [[Claude 3.5]], [[Diffusion Model]]
   - supports:: [[Software Architecture Documentation]], [[Technical Writing]], [[Product Management]], [[System Design Interview Prep]], [[Knowledge Graph Construction]], [[Diagram-Driven Development]]
   - uses:: [[Markdown]], [[SVG Rendering]], [[Tree Sitter Parsing]], [[Force-Directed Layout]], [[Prompt Engineering]], [[Few-Shot Prompting]]
-  - contrasts-with:: [[Hand-Drawn Whiteboard]], [[Visio]], [[OmniGraffle]], [[Generative Image Model]], [[Midjourney]], [[Static Diagram File]]
+  - contrasts-with:: [[Hand-Drawn Whiteboard]], [[Visio]], [[OmniGraffle]], [[Generative Image Model]], [[Midjourney Text-to-Image Service]], [[Static Diagram File]]
   - related-to:: [[C4 Model]], [[Structurizr DSL]], [[Excalidraw]], [[Eraser DiagramGPT]], [[Whimsical AI]], [[Lucidchart AI]], [[Miro AI]], [[Napkin AI]], [[Mermaid Chart]], [[Claude Artifacts]]
   - standardized-by:: [[Mermaid Specification]], [[PlantUML Standard]], [[OMG UML 2.5]], [[C4 Model Convention]], [[Structurizr DSL Specification]]
 

@@ -8,7 +8,7 @@
   "definition": "Taxonomy hub covering the software runtimes, hardware platforms, operating systems, and execution environments that host spatial computing applications. This category encompasses the infrastructure layer on which XR experiences are built and deployed, spanning cloud, edge, and on-device compute contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing-paradigm",
       "label": "Spatial Computing"
     }
   ],
@@ -42,7 +42,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-layer",
+        "id": "urn:ngm:class:spatial-computing-paradigm-layer",
         "label": "Spatial Computing Layer"
       },
       {
@@ -57,7 +57,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:spatial-computing-system",
+        "id": "urn:ngm:class:spatial-computing-paradigm-system",
         "label": "Spatial Computing System"
       },
       {

@@ -16,7 +16,7 @@
       "label": "Neural Network"
     },
     {
-      "id": "urn:ngm:class:foundation-models",
+      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
       "label": "Foundation Models"
     }
   ],
@@ -333,6 +333,10 @@
       "label": "AI Agent"
     },
     {
+      "slug": "ai-benchmark-epistemological-critique",
+      "label": "AI Benchmark Epistemological Critique"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -355,10 +359,6 @@
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
-    },
-    {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
     },
     {
       "slug": "artificial-intelligence",
@@ -433,6 +433,10 @@
       "label": "Death of the Internet"
     },
     {
+      "slug": "domain-expert-contact-index",
+      "label": "Domain Expert Contact Index"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     },
@@ -481,16 +485,16 @@
       "label": "Home Assistant"
     },
     {
+      "slug": "human-agent-interaction-surfaces",
+      "label": "Human-Agent Interaction Surfaces"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
     {
       "slug": "image-generation",
       "label": "Image Generation"
-    },
-    {
-      "slug": "interfaces",
-      "label": "Interfaces"
     },
     {
       "slug": "jailbreaking",
@@ -523,10 +527,6 @@
     {
       "slug": "language-modeling",
       "label": "Language Modeling"
-    },
-    {
-      "slug": "lies-damn-lies-and-statistics",
-      "label": "Lies Damn Lies and Statistics"
     },
     {
       "slug": "lo-ra-do-ra-etc",
@@ -565,6 +565,14 @@
       "label": "Model Training"
     },
     {
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
+    },
+    {
+      "slug": "multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture"
+    },
+    {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
     },
@@ -575,10 +583,6 @@
     {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
-    },
-    {
-      "slug": "people",
-      "label": "PEOPLE"
     },
     {
       "slug": "pre-training",
@@ -601,8 +605,8 @@
       "label": "Proprietary Large Language Models"
     },
     {
-      "slug": "python-and-py-torch",
-      "label": "Python and PyTorch"
+      "slug": "python-pytorch-deep-learning-stack",
+      "label": "Python PyTorch Deep Learning Stack"
     },
     {
       "slug": "reasoning",
@@ -683,10 +687,6 @@
     {
       "slug": "zero-shot-prompting",
       "label": "Zero-Shot Prompting"
-    },
-    {
-      "slug": "multimodal",
-      "label": "multimodal"
     },
     {
       "slug": "v-llm",

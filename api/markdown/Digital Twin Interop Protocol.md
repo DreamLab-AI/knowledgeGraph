@@ -206,7 +206,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "spatial-computing"
       }
     ],

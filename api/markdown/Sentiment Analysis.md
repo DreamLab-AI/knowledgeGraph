@@ -113,7 +113,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Landscape]]",
+      "raw": "[[Technology Sector Landscape Analysis]]",
       "resolved": "urn:visionflow:owl:class:landscape",
       "kind": "ResolvedLink"
     },
@@ -280,12 +280,12 @@ public:: true
 				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## AI landscape
-  - a16z market analysis [[Landscape]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
-  - Cowboy ventures [[Landscape]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
+  - a16z market analysis [[Technology Sector Landscape Analysis]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
+  - Cowboy ventures [[Technology Sector Landscape Analysis]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
 
   - ## AI landscape
-  - a16z market analysis [[Landscape]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
-  - Cowboy ventures [[Landscape]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
+  - a16z market analysis [[Technology Sector Landscape Analysis]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
+  - Cowboy ventures [[Technology Sector Landscape Analysis]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
 
   - ## **Companies Offering AI Solutions for Call Centers**
 
@@ -318,8 +318,8 @@ public:: true
   | Zoho Desk | AI Assistant | Offers Zia, a contextual AI assistant that improves customer interactions and streamlines support processes. |
 
   - ## AI landscape
-  - a16z market analysis [[Landscape]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
-  - Cowboy ventures [[Landscape]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
+  - a16z market analysis [[Technology Sector Landscape Analysis]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)
+  - Cowboy ventures [[Technology Sector Landscape Analysis]] [AI stack overview](https://medium.com/cowboy-ventures/the-new-infra-stack-for-generative-ai-9db8f294dc3f)
 
   - ## **Companies Offering AI Solutions for Call Centers**
 

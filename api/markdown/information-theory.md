@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Machine Learning]], [[Statistics]]
+  - bridges-to:: [[Machine Learning Discipline]], [[Statistics]]
   - has-part:: [[Entropy]], [[Mutual Information]], [[Channel Capacity]]
   - requires:: [[Probability Theory]]
   - enables:: [[Data Compression]], [[Error Correcting Code]], [[Cryptography]]

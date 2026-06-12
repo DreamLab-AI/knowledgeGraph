@@ -533,7 +533,7 @@ alias:: BC-0485-travel-rule
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

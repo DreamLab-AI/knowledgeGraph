@@ -88,7 +88,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   }
 }

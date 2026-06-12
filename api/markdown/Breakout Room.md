@@ -450,7 +450,7 @@ public:: true
         "label": "Chat Messaging"
       },
       {
-        "@id": "urn:ngm:class:collaborative-whiteboard",
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {

@@ -83,7 +83,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:paper-writing", "label": "Paper Writing"}
+      {"@id": "urn:ngm:class:scholarly-manuscript-composition-process", "label": "Paper Writing"}
     ]
   },
   "provenance": {
@@ -129,7 +129,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[cypherpunk]]",
+      "raw": "[[Cryptographic Privacy Activist]]",
       "resolved": "urn:visionflow:owl:class:cypherpunk",
       "kind": "ResolvedLink"
     },
@@ -160,7 +160,7 @@ public:: true
 - ### Relationships
   - **supports**: [[Knowledge Graph]], [[Knowledge Management]]
   - **uses**: [[Knowledge Graph Construction]], [[Digital Asset Risks]]
-  - **relatedTo**: [[Ontology]], [[Paper Writing]]
+  - **relatedTo**: [[Ontology]], [[Scholarly Manuscript Composition Process]]
 
 - ### Content
   - "Your goal is to emulate a writer creating a public-facing 'digital garden' page in Logseq. The output must be raw Markdown. Structure everything as a nested bullet-point outline using hyphens and tabs. Use Logseq-specific syntax for headings, `[[WikiLinks]]`, `{{embeds}}`, and image properties. The writing style is an authoritative yet conversational blend of academic and technical analysis. Use a first-person voice ('we', 'I'), write in dense, complex sentences, and cite sources heavily with inline links. Spelling must be UK English."
@@ -174,7 +174,7 @@ public:: true
 			- **Indentation:** Create nested blocks by indenting with a single tab before the hyphen.
 				- The block following a heading should be indented one tab deeper.
 		- **Links & Citations:**
-			- *Internal/Conceptual Links:** Use `[[WikiLink]]` format for key concepts, people, or cross-references to other notes (e.g., `[[cypherpunk]]`, `[[Digital Asset Risks]]`).
+			- *Internal/Conceptual Links:** Use `[[WikiLink]]` format for key concepts, people, or cross-references to other notes (e.g., `[[Cryptographic Privacy Activist]]`, `[[Digital Asset Risks]]`).
 			- *Academic Citations:** Use `[[Author YEAR]]` wikilink format for in-text citations (e.g., `[[Nakamoto 2008]]`, `[[hulsmann2008ethics]]`).
 			- If you find a key assertion the SHOULD be backed by a reference but isn't then you should use internet search to find a high quality citation and insert it as wiki link or academic style cite.
 				- **External Links:** Use standard Markdown `[link text](URL)` format. Often, the link text is a direct quote or the title of the article.

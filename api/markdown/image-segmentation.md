@@ -23,7 +23,7 @@
   - supports:: [[Autonomous Driving]], [[Surgical Robotics]], [[Cancer Detection]], [[Background Removal]], [[Remote Sensing]]
   - uses:: [[Mean Intersection over Union]], [[Dice Coefficient]], [[Average Precision]], [[Panoptic Quality]], [[Cross Entropy Loss]]
   - contrasts-with:: [[Object Detection]], [[Image Classification]], [[Image Generation]], [[Depth Estimation]]
-  - related-to:: [[Keypoint Detection]], [[Optical Flow]], [[3D Reconstruction]], [[Multi-Modal Learning]], [[Foundation Models]]
+  - related-to:: [[Keypoint Detection]], [[Optical Flow]], [[3D Reconstruction]], [[Multi-Modal Learning]], [[Large-Scale Pretrained Foundation Model]]
   - standardized-by:: [[PASCAL VOC]], [[COCO Dataset]], [[Cityscapes Dataset]], [[ADE20K]], [[ImageNet]]
 
 - ### Content

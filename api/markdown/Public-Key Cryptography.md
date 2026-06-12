@@ -64,7 +64,7 @@ alias:: Public Key Cryptography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:public-key-cryptography",
+  "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
   "@type": "Class",
   "label": "Public-Key Cryptography",
   "definition": "An asymmetric cryptographic system using mathematically related key pairs — a public key for encryption or signature verification and a private key for decryption or signing — enabling secure communication, digital signatures, and authentication without requiring shared secrets. In blockchain systems it underpins wallet addresses, transaction signing, and identity verification.",
@@ -86,7 +86,7 @@ alias:: Public Key Cryptography
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"},
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
       {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"}
@@ -102,7 +102,7 @@ alias:: Public Key Cryptography
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ]
   },
   "quality": 0.8,

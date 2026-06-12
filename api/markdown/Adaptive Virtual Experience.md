@@ -98,7 +98,7 @@ public:: true
         "label": "User Behavior Tracking"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -166,7 +166,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -202,7 +202,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Reality Experience]]
-  - requires:: [[Machine Learning]], [[Real-Time Analytics]], [[User Behavior Tracking]]
+  - requires:: [[Machine Learning Discipline]], [[Real-Time Analytics]], [[User Behavior Tracking]]
   - enables:: [[Personalized Learning]], [[Therapeutic VR]], [[Dynamic Gaming]]
   - bridges-to:: [[Blockchain]] (bc)
 

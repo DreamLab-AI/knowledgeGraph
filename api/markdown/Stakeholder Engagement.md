@@ -32,7 +32,7 @@ public:: true
       {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-design", "label": "Collaborative Design"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
       {"@id": "urn:ngm:class:change-management", "label": "Change Management"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
     ],

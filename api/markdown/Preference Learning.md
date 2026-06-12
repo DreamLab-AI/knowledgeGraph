@@ -79,7 +79,7 @@ public:: true
         "label": "Reinforcement Learning"
       },
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -142,7 +142,7 @@ public:: true
   - Enables [[Reinforcement Learning from Human Feedback]]
   - Enables [[Reward Model]]
   - Uses [[Reinforcement Learning]]
-  - Uses [[Machine Learning]]
+  - Uses [[Machine Learning Discipline]]
   - Supports [[AI Safety]]
   - Related To [[Training]]
 

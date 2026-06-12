@@ -1,5 +1,5 @@
 - ### Definition
-  - An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.
+  - An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning Discipline|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIAgentSystem
@@ -13,7 +13,7 @@
   - requires:: [[Sensor Input]], [[Environment Model]], [[Reward Function]], [[Action Space]], [[API Access]], [[Authentication System]], [[Resource Budget]]
   - enables:: [[Autonomous Operation]], [[Adaptive Behavior]], [[Goal Achievement]], [[Multi-Agent Coordination]], [[Browser Automation]], [[File System Access]], [[Database Interaction]], [[Code Generation]]
   - implements:: [[Reinforcement Learning]], [[Planning Algorithm]], [[Decision Making]], [[Autonomous Behavior]], [[Active Learning]], [[Meta-Learning]], [[Transfer Learning]], [[Imitation Learning]]
-  - bridges-to:: [[Intelligent Virtual Entity]] (domain: metaverse), [[Autonomous Robot]] (domain: robotics), [[Smart Contract]] (domain: blockchain - for autonomous economic agents), [[Intelligent Virtual Entity]] (domain: [[Metaverse]]), [[Autonomous Robot]] (domain: [[Robotics]]), [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]]), [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]]), [[DeFi Agent]] (domain: [[Decentralized Finance (DeFi)]] - for [[Protocol Interaction]]), [[Lightning Network Node]] (domain: [[Bitcoin]] - for [[Payment Channel Management]])
+  - bridges-to:: [[Intelligent Virtual Entity]] (domain: metaverse), [[Autonomous Robot]] (domain: robotics), [[Smart Contract]] (domain: blockchain - for autonomous economic agents), [[Intelligent Virtual Entity]] (domain: [[Metaverse]]), [[Autonomous Robot]] (domain: [[Robotics]]), [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]]), [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]]), [[DeFi Agent]] (domain: [[Decentralized Finance (DeFi)]] - for [[Protocol Interaction]]), [[Lightning Network Node]] (domain: [[Bitcoin Proof-of-Work Protocol]] - for [[Payment Channel Management]])
 
 - ### Content
 
@@ -82,7 +82,7 @@
   - AI agents are characterised by their **autonomy** (operating without direct control), **reactivity** (responding to environmental changes), **pro-activeness** (taking initiative to achieve goals), and **social ability** (interacting with other agents or humans). They are foundational to applications ranging from game-playing AI to autonomous vehicles, virtual assistants, and robotic systems.
 
   - An **AI Agent System** is an autonomous software entity that exhibits goal-directed behaviour through continuous [[Perception-Action Cycle|perception-action cycles]]. Unlike passive [[AI Model|AI models]] that simply process inputs and produce outputs, AI agents actively interact with their [[Environment]], learn from experiences, and adapt their strategies to achieve specified objectives. They represent a fundamental architecture for building [[Intelligent System|intelligent systems]] capable of operating with minimal [[Human Intervention]].
-  - AI agents are characterised by their **autonomy** (operating without direct control), **reactivity** (responding to [[Environmental Change|environmental changes]]), **pro-activeness** (taking initiative to achieve goals), and **social ability** (interacting with other agents or humans). They are foundational to applications ranging from [[Game AI|game-playing AI]] to [[Autonomous Vehicle|autonomous vehicles]], [[Virtual Assistant|virtual assistants]], [[Robotic System|robotic systems]], [[Trading System|trading systems]], and [[Blockchain Agent|blockchain agents]] managing [[Bitcoin]] transactions and [[Lightning Network]] operations.
+  - AI agents are characterised by their **autonomy** (operating without direct control), **reactivity** (responding to [[Environmental Change|environmental changes]]), **pro-activeness** (taking initiative to achieve goals), and **social ability** (interacting with other agents or humans). They are foundational to applications ranging from [[Game AI|game-playing AI]] to [[Autonomous Vehicle|autonomous vehicles]], [[Virtual Assistant|virtual assistants]], [[Robotic System|robotic systems]], [[Trading System|trading systems]], and [[Blockchain Agent|blockchain agents]] managing [[Bitcoin Proof-of-Work Protocol]] transactions and [[Lightning Network]] operations.
   - ### Key Characteristics
     - **Autonomy**: Operates independently without constant human direction
     - **Perception**: Gathers information from environment through sensors or data streams
@@ -260,7 +260,7 @@
 
     Perhaps more significantly, Anthropic's **Model Context Protocol (MCP)** emerged as a critical infrastructure contribution—a standardised framework enabling AI agents to interact with tools, external data, and even other agents to accomplish complex tasks with minimal human intervention. MCP represented Anthropic's bet on interoperability as the foundation for scalable agentic systems, in contrast to proprietary vertical integration approaches.
 
-  [[OpenAI]] launched **Operator** (https://openai.com/index/introducing-operator/) in early 2025, initially as a [[Research Preview]] and [[Developer Tool]] focused on automating routine [[Digital Task Automation|digital tasks]]. Operator represents a [[Research Agent]] that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating [[Browser Workflow|browser workflows]] with human-level precision. This capability extended beyond simple [[API Integration|API interactions]] to genuine [[Interface Manipulation]], marking a qualitative leap in [[Agent Autonomy]]. OpenAI continued pushing boundaries with models like [[GPT-4.5]] and specialised [[Reasoning Model|reasoning models]] ([[o3-mini]]), alongside launching agents like Operator and [[Deep Research]], announcing the ambitious [[A-SWE]] project ([[Automated Software Engineering]]), and releasing developer tools via the **Agents SDK** (https://platform.openai.com/docs/agents)—the production successor to their earlier "[[Swarm Framework]]". These developments have implications for [[Bitcoin]] development automation and [[Smart Contract Auditing]].
+  [[OpenAI Research Organisation]] launched **Operator** (https://openai.com/index/introducing-operator/) in early 2025, initially as a [[Research Preview]] and [[Developer Tool]] focused on automating routine [[Digital Task Automation|digital tasks]]. Operator represents a [[Research Agent]] that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating [[Browser Workflow|browser workflows]] with human-level precision. This capability extended beyond simple [[API Integration|API interactions]] to genuine [[Interface Manipulation]], marking a qualitative leap in [[Agent Autonomy]]. OpenAI continued pushing boundaries with models like [[GPT-4.5]] and specialised [[Reasoning Model|reasoning models]] ([[o3-mini]]), alongside launching agents like Operator and [[Deep Research]], announcing the ambitious [[A-SWE]] project ([[Automated Software Engineering]]), and releasing developer tools via the **Agents SDK** (https://platform.openai.com/docs/agents)—the production successor to their earlier "[[Swarm Framework]]". These developments have implications for [[Bitcoin Proof-of-Work Protocol]] development automation and [[Smart Contract Auditing]].
 
     #### Anthropic's Computer Use and Model Context Protocol
     [[Anthropic]] introduced **Computer Use** (https://www.anthropic.com/news/3-5-models-and-computer-use) for [[Claude 3.5 Sonnet]] in October 2024, explicitly as a [[Beta Capability]] requiring appropriate software setup to emulate human cursor and keyboard interactions. This transparency about [[Error Profile|error profiles]] and the need for careful mediation reflected Anthropic's characteristic caution around deploying powerful autonomous capabilities. The **Harmony** feature allowed agents to read, analyse, and modify files directly within users' local directories, opening possibilities for automating wider ranges of digital tasks whilst maintaining appropriate [[Safety Guardrail|guardrails]].
@@ -317,7 +317,7 @@
     - [[Reinforcement Learning: An Introduction (Sutton & Barto)]] - RL foundations
     - [[Multi-Agent Systems (Wooldridge)]] - Multi-agent theory and practice
 
-  - **Automated Trading**: Agents executing [[Bitcoin]] and [[Cryptocurrency]] trades based on [[Market Condition|market conditions]]
+  - **Automated Trading**: Agents executing [[Bitcoin Proof-of-Work Protocol]] and [[Cryptocurrency]] trades based on [[Market Condition|market conditions]]
     - **Decentralised Autonomous Organisations**: Agent-mediated [[DAO Governance]]
     - **Smart Contract Oracles**: Agents providing [[External Data]] to [[Blockchain]]
     - **Lightning Network Management**: Agents optimizing [[Payment Channel|payment channels]] and [[Routing Strategy|routing]]
@@ -325,11 +325,11 @@
     - **DeFi Protocol Interaction**: Agents executing [[Liquidity Provision]], [[Yield Farming]], and [[Arbitrage]]
     - **On-Chain Analytics**: Agents performing [[Transaction Analysis]] and [[Address Clustering]]
     - **Bitcoin Mining Optimization**: Agents managing [[Hash Rate]] allocation and [[Pool Selection]]
-    - **See**: [[Smart Contract]], [[Decentralised Finance]], [[Bitcoin]], [[Lightning Network]], [[Automated Market Maker]], [[Blockchain Oracle]]
+    - **See**: [[Smart Contract]], [[Decentralised Finance]], [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]], [[Automated Market Maker]], [[Blockchain Oracle]]
   - ### Use Cases
     - **Game Playing**: [[AlphaGo]], [[Chess Engine|Chess engines]], [[Poker Bot|Poker bots]], [[StarCraft AI]]
     - **Autonomous Vehicles**: [[Self Driving Car|Self-driving cars]] and [[Autonomous Drone|drones]]
-    - **Virtual Assistants**: [[Siri]], [[Alexa]], [[Google Assistant]], [[ChatGPT]], [[Claude]]
+    - **Virtual Assistants**: [[Siri]], [[Alexa]], [[Google Assistant]], [[Instruction-Following Conversational AI System]], [[Claude]]
     - **Robotic Process Automation**: [[Software Agent|Software agents]] automating [[Business Workflow|business workflows]]
     - **Trading Systems**: [[Algorithmic Trading]] in [[Financial Market|financial markets]], [[Bitcoin Trading Bot|Bitcoin trading]], [[High-Frequency Trading]]
     - **Recommendation Engines**: [[Personalized Recommendation|Personalized content curation agents]]
@@ -359,7 +359,7 @@
 
   - [[Intelligent Virtual Entity]] - AI agents in [[Metaverse]] contexts
     - [[Autonomous Robot]] - Physical embodiment of AI agents
-    - [[Machine Learning]] - Foundational AI technique
+    - [[Machine Learning Discipline]] - Foundational AI technique
     - [[Planning Algorithm]] - Decision-making component
     - [[Perception System]] - Environmental sensing
   - [[Natural Language Processing]] - For conversational agents
@@ -378,8 +378,8 @@
     - [[File System Access]] - Agent data management
     - [[Database Interaction]] - Agent persistent storage
     - [[Blockchain Integration]] - Agent [[Cryptocurrency]] operations
-    - [[Lightning Network Agent]] - [[Bitcoin]] payment automation
-    - [[Smart Contract Agent]] - [[Ethereum]] and [[DeFi]] interaction
+    - [[Lightning Network Agent]] - [[Bitcoin Proof-of-Work Protocol]] payment automation
+    - [[Smart Contract Agent]] - [[Ethereum Smart Contract Platform]] and [[DeFi]] interaction
     - [[DAO Agent]] - [[Decentralized Governance]] participation
     - [[Oracle Agent]] - [[External Data]] provision to [[Blockchain]]
     - [[Trading Bot]] - [[Market Making]] and [[Arbitrage]]

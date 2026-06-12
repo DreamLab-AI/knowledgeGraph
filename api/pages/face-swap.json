@@ -133,7 +133,7 @@
         "label": "Identity Disentanglement"
       },
       {
-        "id": "urn:ngm:class:latent-space-manipulation",
+        "id": "urn:ngm:class:neural-network-latent-space-manipulation",
         "label": "Latent Space Manipulation"
       },
       {
@@ -229,7 +229,7 @@
         "label": "DFDC Benchmark"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-article-50",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
@@ -765,8 +765,8 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "knowhere",
-      "label": "Knowhere"
+      "slug": "knowhere-visitor-attention-system",
+      "label": "KnoWhere Visitor Attention System"
     },
     {
       "slug": "model-width",

@@ -27,7 +27,7 @@
   - uses:: [[Linear Quadratic Regulator]], [[Model Predictive Control]]
   - enables:: [[RB-1007-trajectory-generation]]
   - applied-in:: [[Autonomous Vehicles]], [[Spacecraft Control]]
-  - skos:related:: [[RB-1004-adaptive-control]], [[Machine Learning]]
+  - skos:related:: [[RB-1004-adaptive-control]], [[Machine Learning Discipline]]
 
   - **Key Concepts**
   - Cost Function (Objective Function)

@@ -377,11 +377,11 @@ alias:: BC-0319-micropayments
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -481,19 +481,19 @@ alias:: BC-0319-micropayments
         "label": "AI Search"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-as-money",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-etf",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-value-proposition",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
@@ -523,7 +523,7 @@ alias:: BC-0319-micropayments
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -827,12 +827,12 @@ alias:: BC-0319-micropayments
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -897,7 +897,7 @@ alias:: BC-0319-micropayments
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -942,7 +942,7 @@ alias:: BC-0319-micropayments
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -964,7 +964,7 @@ alias:: BC-0319-micropayments
 
 
 - ### Definition
-  - Micropayments are electronic payment transactions with values typically below USD $5 — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the combined burden of technical transaction costs (interchange fees, card network minimums, batch settlement latency) and psychological transaction costs (Nick Szabo's 1999 formalisation of "mental transaction costs" — the cognitive burden of evaluating whether an expenditure is worth authorising, which Szabo demonstrated sets the practical lower bound on price granularity independent of technical efficiency). The concept predates the commercial internet: David Chaum's 1982 blind-signature ecash patent established the cryptographic basis for privacy-preserving bearer payment; Ronald Rivest and Adi Shamir's 1996 PayWord and MicroMint schemes proposed hash-chain and coin-batch micro-schemes for web content; Jakob Nielsen's 1998 NNGroup essay argued for micropayments as the antidote to advertising-subsidised journalism. What changed between 1998 and 2024 was not demand — demand for sub-dollar digital payments was always latent — but the availability of infrastructure that could serve it without either destroying privacy, imposing prohibitive fees, or requiring trust in a single custodian. Contemporary micropayment infrastructure has achieved decisive advances across three interlocking dimensions since 2023: (1) the [[Bitcoin]] [[Lightning and Similar L2]] (BOLT specification suite; Poon and Dryja 2016 white paper) scales to sub-cent settlement via bidirectional [[Payment Channel]] networks with Sphinx onion-routed privacy, reaching over 100 million estimated wallet users and 5,358 BTC ($509M) public channel capacity as of January 2025, enabling 1-satoshi tips (~$0.0003) at routing fees of 1–10 satoshis regardless of payment size; (2) Chaumian ecash mints — [[Cashu]] (NUT-00 through NUT-17 specification suite; Calle 2023) and [[Fedimint]] (federated Chaumian mint with threshold cryptography, 2022–2025) — implement Chaum's 1982 blind-signature protocol over Lightning, providing bearer-token payment with cryptographic unlinkability between mint issuance and redemption so that payment flows are as private as physical cash; (3) the revival of the long-dormant HTTP 402 Payment Required status code via the L402 protocol (Lightning Labs, formerly LSAT — Lightning Service Authentication Token) which fuses [[Lightning and Similar L2]] invoices with Macaroon capability tokens so that payment IS authentication — eliminating accounts, logins, and API keys for metered AI and data services — and its EVM-chain counterpart X402 (Coinbase and Cloudflare, September 2025) settling in USDC on Base and Arbitrum with reported capacity for one billion HTTP 402 responses per day. Complementary infrastructure includes the ACINQ Phoenix wallet (self-custodial spliced-channel Lightning for mobile, v2 2024 implementing channel splicing to eliminate liquidity lock-in), Strike and Bitnob enabling Lightning in Africa and Latin America for sub-1% remittance corridors that undercut Western Union's 6–8% fees, [[Nostr protocol]] Zaps (NIP-57, 2023) as the dominant voluntary creator-tipping primitive generating 3.6 million zaps per six months across Damus, Amethyst, Primal, and Snort clients, the Sablier v2 and Superfluid streaming-payment protocols on Ethereum (per-second ERC-20 salary and subscription flows at sub-cent cost on Base L2), and Visa Direct and Stripe micro-pricing as incumbent rails competing at the fiat edge of the micropayment market. [[Agents]] autonomous spending represents the structurally new demand vector for 2024–2026: [[OpenAI]], Google, [[Anthropic Claude]], Visa, and Coinbase each released agentic payment frameworks recognising that existing financial infrastructure was designed for humans, not autonomous bots executing thousands of API calls per hour at $0.001–$0.10 per request; agentic spending is projected to reach $250 billion in disrupted payment flows by 2030 within a $155 billion agentic AI market. The Bank for International Settlements Project Agorá (2024–2026) provides the central-bank counterpoint, exploring tokenised commercial-bank money on unified ledgers to achieve Szabo-scale granularity within regulatory perimeters, with the Bank of England as a founding participant — directly relevant to UK micropayment infrastructure strategy. UK research leadership is centred at Imperial College London's Centre for Cryptocurrency Research and Engineering (IC3RE, Professor William Knottenbelt), the Cambridge Centre for Alternative Finance (CCAF, producer of the Global Cryptoasset Benchmarking Study and Cambridge Bitcoin Electricity Consumption Index), and Northern England FinTech hubs in Manchester (home to Ding, Bink, and the Greater Manchester EV-charging Lightning pilot) and Leeds (Moneyhub, West Yorkshire FinTech Growth Plan 2024).
+  - Micropayments are electronic payment transactions with values typically below USD $5 — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the combined burden of technical transaction costs (interchange fees, card network minimums, batch settlement latency) and psychological transaction costs (Nick Szabo's 1999 formalisation of "mental transaction costs" — the cognitive burden of evaluating whether an expenditure is worth authorising, which Szabo demonstrated sets the practical lower bound on price granularity independent of technical efficiency). The concept predates the commercial internet: David Chaum's 1982 blind-signature ecash patent established the cryptographic basis for privacy-preserving bearer payment; Ronald Rivest and Adi Shamir's 1996 PayWord and MicroMint schemes proposed hash-chain and coin-batch micro-schemes for web content; Jakob Nielsen's 1998 NNGroup essay argued for micropayments as the antidote to advertising-subsidised journalism. What changed between 1998 and 2024 was not demand — demand for sub-dollar digital payments was always latent — but the availability of infrastructure that could serve it without either destroying privacy, imposing prohibitive fees, or requiring trust in a single custodian. Contemporary micropayment infrastructure has achieved decisive advances across three interlocking dimensions since 2023: (1) the [[Bitcoin Proof-of-Work Protocol]] [[Lightning and Similar L2]] (BOLT specification suite; Poon and Dryja 2016 white paper) scales to sub-cent settlement via bidirectional [[Payment Channel]] networks with Sphinx onion-routed privacy, reaching over 100 million estimated wallet users and 5,358 BTC ($509M) public channel capacity as of January 2025, enabling 1-satoshi tips (~$0.0003) at routing fees of 1–10 satoshis regardless of payment size; (2) Chaumian ecash mints — [[Cashu]] (NUT-00 through NUT-17 specification suite; Calle 2023) and [[Fedimint]] (federated Chaumian mint with threshold cryptography, 2022–2025) — implement Chaum's 1982 blind-signature protocol over Lightning, providing bearer-token payment with cryptographic unlinkability between mint issuance and redemption so that payment flows are as private as physical cash; (3) the revival of the long-dormant HTTP 402 Payment Required status code via the L402 protocol (Lightning Labs, formerly LSAT — Lightning Service Authentication Token) which fuses [[Lightning and Similar L2]] invoices with Macaroon capability tokens so that payment IS authentication — eliminating accounts, logins, and API keys for metered AI and data services — and its EVM-chain counterpart X402 (Coinbase and Cloudflare, September 2025) settling in USDC on Base and Arbitrum with reported capacity for one billion HTTP 402 responses per day. Complementary infrastructure includes the ACINQ Phoenix wallet (self-custodial spliced-channel Lightning for mobile, v2 2024 implementing channel splicing to eliminate liquidity lock-in), Strike and Bitnob enabling Lightning in Africa and Latin America for sub-1% remittance corridors that undercut Western Union's 6–8% fees, [[Nostr protocol]] Zaps (NIP-57, 2023) as the dominant voluntary creator-tipping primitive generating 3.6 million zaps per six months across Damus, Amethyst, Primal, and Snort clients, the Sablier v2 and Superfluid streaming-payment protocols on Ethereum (per-second ERC-20 salary and subscription flows at sub-cent cost on Base L2), and Visa Direct and Stripe micro-pricing as incumbent rails competing at the fiat edge of the micropayment market. [[Agents]] autonomous spending represents the structurally new demand vector for 2024–2026: [[OpenAI Research Organisation]], Google, [[Constitutional AI Language Model Family]], Visa, and Coinbase each released agentic payment frameworks recognising that existing financial infrastructure was designed for humans, not autonomous bots executing thousands of API calls per hour at $0.001–$0.10 per request; agentic spending is projected to reach $250 billion in disrupted payment flows by 2030 within a $155 billion agentic AI market. The Bank for International Settlements Project Agorá (2024–2026) provides the central-bank counterpoint, exploring tokenised commercial-bank money on unified ledgers to achieve Szabo-scale granularity within regulatory perimeters, with the Bank of England as a founding participant — directly relevant to UK micropayment infrastructure strategy. UK research leadership is centred at Imperial College London's Centre for Cryptocurrency Research and Engineering (IC3RE, Professor William Knottenbelt), the Cambridge Centre for Alternative Finance (CCAF, producer of the Global Cryptoasset Benchmarking Study and Cambridge Bitcoin Electricity Consumption Index), and Northern England FinTech hubs in Manchester (home to Ding, Bink, and the Greater Manchester EV-charging Lightning pilot) and Leeds (Moneyhub, West Yorkshire FinTech Growth Plan 2024).
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Micropayments
@@ -974,16 +974,16 @@ alias:: BC-0319-micropayments
   - implemented-in-layer:: [[Lightning and Similar L2]], [[BTC Layer 3]], [[Blockchain Interoperability]]
 
 - ### Relationships
-  - is-subclass-of:: [[Payment Systems]], [[Digital Finance]], [[Bitcoin]], [[Blockchain Network]], [[Lightning and Similar L2]], [[Money]]
+  - is-subclass-of:: [[Payment Systems]], [[Digital Finance]], [[Bitcoin Proof-of-Work Protocol]], [[Blockchain Network]], [[Lightning and Similar L2]], [[Money]]
   - has-part:: [[Lightning and Similar L2]], [[Cashu]], [[Fedimint]], [[Nostr protocol]], [[Nostr Zaps]], [[Payment Channel]], [[Ecash]], [[Stacker News]]
-  - requires:: [[Bitcoin]], [[Cryptography]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Smart Contracts]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Cryptography]], [[Bitcoin Technical Overview]], [[Blockchain Network]], [[Smart Contracts]]
   - enables:: [[Agents]], [[Agentic Internet]], [[Creator Economy]], [[Financial Inclusion]], [[IoT]], [[CLI Multi-Agent Systems]]
   - implements:: [[Lightning and Similar L2]], [[Nostr protocol]], [[BTC Layer 3]], [[Cashu]], [[Fedimint]], [[Blockchain As A Service]]
   - depends-on:: [[Bitcoin Technical Overview]], [[Cryptography]], [[Bitcoin Value Proposition]], [[Blockchain Network]], [[Zero Knowledge Proofs]]
-  - supports:: [[Agents]], [[Nostr protocol]], [[Stacker News]], [[AI Adoption]], [[Competition in AI]], [[Anthropic Claude]]
+  - supports:: [[Agents]], [[Nostr protocol]], [[Stacker News]], [[AI Adoption]], [[Competition in AI]], [[Constitutional AI Language Model Family]]
   - uses:: [[Lightning and Similar L2]], [[Cashu]], [[Zero Knowledge Proofs]], [[Nostr protocol]], [[CBDCs]], [[CBDC Frameworks]]
   - contrasts-with:: [[Subscription Models]], [[Advertising Revenue]], [[Traditional Banking]], [[AML KYC Compliance]], [[CBDCs]]
-  - related-to:: [[Bitcoin Value Proposition]], [[BTC Layer 3]], [[Blockchain Interoperability]], [[Money]], [[Bitcoin As Money]], [[Bitcoin ETF]], [[AI Search]], [[Anthropic Claude]]
+  - related-to:: [[Bitcoin Value Proposition]], [[BTC Layer 3]], [[Blockchain Interoperability]], [[Money]], [[Bitcoin As Money]], [[Bitcoin ETF]], [[AI Search]], [[Constitutional AI Language Model Family]]
   - standardized-by:: [[Lightning and Similar L2]], [[Nostr protocol]], [[CBDC Frameworks]], [[AML KYC Compliance]], [[Blockchain Interoperability]]
 
 - ### Content
@@ -1101,7 +1101,7 @@ alias:: BC-0319-micropayments
   - The relationship to [[CBDCs]] is important: [[CBDC Frameworks]] represent the central-bank ambition to provide programmable micropayment rails within regulatory perimeters, directly competing with the permissionless [[Lightning and Similar L2]] and [[Cashu]] ecash stack for retail micropayment markets. BIS Project Agorá is the highest-profile intersection of these worlds.
 
   - ## Components and Architecture
-  - **Bitcoin Lightning Network** (BOLT 1–12 specification suite; Poon–Dryja white paper 2016): A peer-to-peer network of bidirectional payment channels anchored to the [[Bitcoin]] base layer via 2-of-2 multisig UTXOs. Parties fund a channel on-chain once, then exchange signed commitment transactions off-chain at arbitrary frequency and near-zero cost.
+  - **Bitcoin Lightning Network** (BOLT 1–12 specification suite; Poon–Dryja white paper 2016): A peer-to-peer network of bidirectional payment channels anchored to the [[Bitcoin Proof-of-Work Protocol]] base layer via 2-of-2 multisig UTXOs. Parties fund a channel on-chain once, then exchange signed commitment transactions off-chain at arbitrary frequency and near-zero cost.
   - Lightning Network protocol properties:
     - Routing fees: typically 1–10 satoshis (fractions of a cent) per hop regardless of payment size, compared to Visa's minimum 10–15 cents per transaction — a structural 10–150x cost advantage for sub-dollar payments.
     - Hash Time-Locked Contracts (HTLCs) chain channels into multi-hop paths; Sphinx onion routing (wrapped in BOLT 4) conceals intermediate node identities from each other, providing meaningful payment privacy without full anonymity.
@@ -1165,7 +1165,7 @@ alias:: BC-0319-micropayments
     - The BIS has published quarterly working papers (2024) benchmarking Agorá's settlement times and costs against Lightning Network and stablecoin alternatives.
 
   - ## Use Cases and Major Families
-  - **AI API Metering and L402 Authentication**: The dominant near-term micropayment use case by volume. [[Anthropic Claude]] charges $3–$15 per million tokens; [[ChatGPT]] (OpenAI GPT-4o) charges $5–$20 per million; infrastructure providers charge $0.20–$2 per million. Each model inference call is a micropayment opportunity.
+  - **AI API Metering and L402 Authentication**: The dominant near-term micropayment use case by volume. [[Constitutional AI Language Model Family]] charges $3–$15 per million tokens; [[Instruction-Following Conversational AI System]] (OpenAI GPT-4o) charges $5–$20 per million; infrastructure providers charge $0.20–$2 per million. Each model inference call is a micropayment opportunity.
     - L402 enables pay-per-inference without subscription lock-in: the payment preimage is cryptographic proof of service delivery, eliminating chargebacks.
     - [[Agents]] can self-fund their own compute budget from embedded agent wallets without human checkout intervention.
     - The Dappier platform (content API + L402) reported sub-$0.01 per-article revenue flows to publishers in 2024–2025, demonstrating viable micropayment economics for content distinct from advertising.
@@ -1187,7 +1187,7 @@ alias:: BC-0319-micropayments
   - **Agentic Payments (Autonomous AI Spending)**: [[Agents]] equipped with embedded wallets that execute micropayments without human checkout — the paradigm shift from autopay (human pre-authorises a specific recurring payment) to agentic pay (agent decides if, when, and how to pay within policy constraints).
     - [[Agents]] frameworks including LangChain, AutoGPT, CrewAI, and OpenAI Assistants API are being extended with payment primitives (Coinbase AgentKit, BitcoinConnect, OpenAI Payments API beta Q2 2025).
     - Spending permission primitives include: hard limits per transaction, daily caps, vendor allowlists, spending justification audit trails, and natural-language budget rules ("Use entertainment wallet for streaming, max $50/month; require authorisation if exceeded").
-    - The [[Anthropic Claude]] Model Spec (2024) explicitly addresses agent spending: agents should prefer reversible actions, maintain spending transparency, and seek human oversight for irreversible financial decisions above defined thresholds.
+    - The [[Constitutional AI Language Model Family]] Model Spec (2024) explicitly addresses agent spending: agents should prefer reversible actions, maintain spending transparency, and seek human oversight for irreversible financial decisions above defined thresholds.
     - Market projections: Andreessen Horowitz (2025) projects $155 billion agentic AI market by 2030 with $250 billion in payment flows disrupted by autonomous agent transactions.
   - **Streaming Media Pay-Per-Second**: Per-second billing for podcasts (Podcasting 2.0, Fountain), live streaming (Zap.stream), and music (Wavlake) via [[Lightning and Similar L2]] V4V streaming represents a psychologically superior model: the granularity happens in the background, reported as an aggregate at session end — mimicking subscription UX while enabling creator-level revenue attribution.
     - This directly addresses Szabo's mental transaction cost concern: streaming is the use case where sub-cent precision is achieved without per-decision cognitive overhead.
@@ -1246,7 +1246,7 @@ alias:: BC-0319-micropayments
   - Nick Szabo's mental transaction cost thesis remains the most important theoretical contribution to micropayment economics. The core claim — that cognitive evaluation overhead sets the practical price floor independent of technical cost — has three implications for system design that remain underappreciated in engineering-focused micropayment discourse.
   - **Implication 1 — The evaluation threshold is not fixed**: Szabo noted that consumer expertise, context familiarity, and stakes sensitivity all shift the evaluation threshold. A sophisticated developer evaluating an API call at $0.001 bears lower cognitive cost than a casual consumer evaluating a $0.10 news article — because the developer has stable priors about API value. This explains why B2B micropayments (AI APIs, developer tools) succeeded before B2C micropayments (journalism, social media): developers are expert buyers who have pre-computed value.
   - **Implication 2 — Automation shifts but does not eliminate the threshold**: [[Agents]] that automate micropayment decisions reduce per-transaction cognitive cost to near-zero — but shift the cognitive burden to a single policy-setting event ("configure your agent's spending rules"). The policy-setting interaction must be well-designed to avoid the cognitive load simply relocating from per-transaction to per-policy evaluation.
-  - **Implication 3 — Trust mediates delegation**: Users will delegate micropayment decisions to agents only if they trust the agent's value alignment and have legible oversight mechanisms. The [[Anthropic Claude]] Model Spec (2024) explicitly addresses this: agents should prefer minimal footprint, reversible actions, and transparent audit trails — all of which reduce the trust cost of delegation.
+  - **Implication 3 — Trust mediates delegation**: Users will delegate micropayment decisions to agents only if they trust the agent's value alignment and have legible oversight mechanisms. The [[Constitutional AI Language Model Family]] Model Spec (2024) explicitly addresses this: agents should prefer minimal footprint, reversible actions, and transparent audit trails — all of which reduce the trust cost of delegation.
   - Richard Thaler's (1985) mental accounting framework extends Szabo's analysis: users categorise money into mental "buckets" (entertainment, utilities, savings) and evaluate micropayments against bucket-specific reference prices rather than absolute values. A $0.10 tip on a $0.03 article feels generous relative to the content price; a $0.10 API call feels negligible relative to the developer's hourly rate. This context-dependence of perceived micropayment value explains why voluntary tipping (Nostr Zaps) succeeds psychologically where mandatory micro-paywalls fail.
   - Kahneman and Tversky's (1979) loss aversion predicts that users will systematically over-weight small losses relative to equivalent gains — making micropayment fee salience design critical. Wallet UX that displays accumulated fees as a single daily total (rather than per-transaction alerts) reduces loss aversion activation, as shown in the aggregation literature (Kahneman, Knetsch, and Thaler 1991).
   - The "pain of paying" phenomenon (Prelec and Loewenstein 1998) — the psychological discomfort of parting with money at the moment of purchase — is ameliorated by time decoupling (credit cards, preloaded wallets, streaming payments) and anonymisation (cash, ecash). Both [[Cashu]] ecash and [[Lightning and Similar L2]] streaming payments reduce pain-of-paying by decoupling payment moment from consumption moment: the user tops up a [[Cashu]] wallet once, then spends without salient per-transaction friction.
@@ -1258,7 +1258,7 @@ alias:: BC-0319-micropayments
   - **Pay-Per-API-Call (AI-Native Pricing)**: The dominant model for B2B micropayments in 2024–2026. OpenAI, Anthropic, Together AI, Fireworks, and Groq all price on per-million-token input/output basis, creating micropayment-scale charges per inference call. L402 is the natural authentication layer: the developer's [[Agents]] pays $0.001–$0.01 per request without subscription friction.
     - Developer cognitive load: low — developers have stable priors about API value and can embed spending in application logic without per-decision overhead.
     - Agent automation readiness: high — API consumption is precisely the use case where autonomous spending within a daily cap is both safe and efficient.
-    - Example pricing (May 2026): [[Anthropic Claude]] Sonnet 4.6 at $3/1M input and $15/1M output; GPT-4o mini at $0.15/1M input and $0.60/1M output; Llama 3 70B on Together AI at $0.88/1M combined.
+    - Example pricing (May 2026): [[Constitutional AI Language Model Family]] Sonnet 4.6 at $3/1M input and $15/1M output; GPT-4o mini at $0.15/1M input and $0.60/1M output; Llama 3 70B on Together AI at $0.88/1M combined.
     - Price compression trajectory: OpenAI implemented 80%+ price cuts on flagship models 2024–2025; commodity inference is approaching $0.10/1M tokens on open-source models, making per-call micropayment economics viable even for high-volume consumer applications.
   - **Freemium with Micropayment Overage**: Include X free API calls or content pieces per month, then charge micropayments for overage. Reduces decision fatigue for light users while monetising heavy users without subscription lock-in.
     - Implementation: preloaded [[Cashu]] wallet funded at subscription signup; API gateway checks wallet balance before serving request; monthly top-up automates refunding.

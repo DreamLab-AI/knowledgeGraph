@@ -12,7 +12,7 @@
   - Enables [[Royalty Distribution]]
   - Enables [[Asset Tokenisation]]
   - Related To [[NFT]]
-  - Related To [[license]]
+  - Related To [[Intellectual Property Licence Instrument]]
 
 - ### Content
 

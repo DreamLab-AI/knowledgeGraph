@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},

@@ -58,11 +58,11 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -157,11 +157,11 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],
@@ -183,7 +183,7 @@
         "label": "Digital Transformation"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -205,7 +205,7 @@
         "label": "OECD STI Directorate"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -541,12 +541,12 @@
       "label": "Cryptographic Protocol"
     },
     {
-      "slug": "human-in-the-loop",
-      "label": "Human in the Loop"
+      "slug": "digital-society-monetary-theory-node",
+      "label": "Digital Society Monetary Theory Node"
     },
     {
-      "slug": "money-from-digi-soc",
-      "label": "Money from DigiSoc"
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
     },
     {
       "slug": "suggested-reading-order",

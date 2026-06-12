@@ -2,7 +2,7 @@
   - ERC20Votes extends the ERC-20 token standard with checkpointed historical balances and vote delegation, letting governance contracts query an account's voting power at a past block to enable secure on-chain voting.
 
 - ### Relationships
-  - ERC20Votes Standard is a subclass of the [[ERC-20 Standard]] and uses [[Smart Contract]] logic to checkpoint balances. It enables [[DAO]] governance by providing manipulation-resistant voting power, and relates to [[ERC-20 Votes]] tokens and the [[Ethereum]] ecosystem in which the pattern is standardised.
+  - ERC20Votes Standard is a subclass of the [[ERC-20 Standard]] and uses [[Smart Contract]] logic to checkpoint balances. It enables [[DAO]] governance by providing manipulation-resistant voting power, and relates to [[ERC-20 Votes]] tokens and the [[Ethereum Smart Contract Platform]] ecosystem in which the pattern is standardised.
 
 - ### Content
   - On-chain governance needs a trustworthy measure of voting power, and the naive approach — counting an account's current token balance at vote time — is dangerously exploitable. An attacker could borrow a large balance via a flash loan, cast a vote, and repay within the same transaction, or transfer the same tokens between accounts to vote multiple times. ERC20Votes closes these vectors by anchoring voting power to historical state rather than the live balance.

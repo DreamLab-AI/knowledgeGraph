@@ -8,7 +8,7 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - **uses**: [[Spatial Computing]], [[Digital Modeling]]
+  - **uses**: [[Spatial Computing Paradigm]], [[Digital Modeling]]
   - **enables**: [[Virtual Environment]], [[Digital Twin Infrastructure]]
   - **relatedTo**: [[Digital Asset]], [[Immersive Experience]]
 

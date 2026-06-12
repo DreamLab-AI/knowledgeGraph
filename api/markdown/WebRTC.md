@@ -279,7 +279,7 @@ alias:: TELE-150-webrtc
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-xr",
+        "@id": "urn:ngm:class:collaborative-systems-modality-xr",
         "label": "Collaborative XR"
       },
       {

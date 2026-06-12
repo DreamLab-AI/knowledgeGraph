@@ -658,7 +658,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -680,7 +680,7 @@ public:: true
         "label": "Film Pre-visualisation"
       },
       {
-        "@id": "urn:ngm:class:social-media-short-form",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure-short-form",
         "label": "Social Media Short-form"
       },
       {
@@ -722,7 +722,7 @@ public:: true
         "label": "VBench"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1226,7 +1226,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1266,7 +1266,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -1312,8 +1312,8 @@ public:: true
   - supports:: [[Film Pre-visualisation]], [[Advertising]], [[Corporate Training Video]], [[Video Game Cinematic]], [[Social Media Short-form]], [[Video Dubbing]], [[Synthetic Data Generation]], [[Accessibility Captioning]]
   - uses:: [[Convolution]], [[Self Attention]], [[Cross Attention]], [[Adam Optimiser]], [[3D Causal VAE]], [[LoRA Adapter]], [[ControlNet]]
   - contrasts-with:: [[Pika]], [[Sora]], [[Traditional VFX Pipeline]], [[Classical Animation]], [[Motion Capture]], [[Procedural Animation]]
-  - related-to:: [[Generative AI]], [[Diffusion Model]], [[Generative Adversarial Networks]], [[Stable Diffusion]], [[Synthetic Media]], [[Digital Twin]], [[Computer Vision]], [[World Model]]
-  - standardized-by:: [[C2PA]], [[EU AI Act]], [[Online Safety Act 2023]], [[SAG-AFTRA TV-Theatrical Contract]], [[BBC Generative AI Principles]], [[VBench]], [[FVD]]
+  - related-to:: [[Generative AI]], [[Diffusion Model]], [[Generative Adversarial Networks]], [[Stable Diffusion Image Model]], [[Synthetic Media]], [[Digital Twin]], [[Computer Vision]], [[World Model]]
+  - standardized-by:: [[C2PA]], [[EU AI Act Regulatory Instrument]], [[Online Safety Act 2023]], [[SAG-AFTRA TV-Theatrical Contract]], [[BBC Generative AI Principles]], [[VBench]], [[FVD]]
 
 - ### Content
 

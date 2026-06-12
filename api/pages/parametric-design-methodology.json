@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:373ee02de64ace0d2596b5e0ad353da78b3dc743f3e8ffa061927a3915159b06",
+  "title": "Parametric Design Methodology",
+  "slug": "parametric-design-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:parametric-design-methodology-design-methodology",
+  "domain": "infrastructure",
+  "definition": "A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parametric-design-methodology-design-methodology-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing-paradigm",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "landvault-create",
+      "label": "Landvault Create"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    }
+  ],
+  "backlinks": []
+}

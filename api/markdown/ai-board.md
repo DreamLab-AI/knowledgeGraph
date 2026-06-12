@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - supports:: [[AI Office]], [[EU AI Act]]
+  - supports:: [[AI Office]], [[EU AI Act Regulatory Instrument]]
   - enables:: [[AI Governance]], [[AI Governance Framework]]
   - relatedTo:: [[AI Risk Management]], [[General Purpose AI Model]]
 

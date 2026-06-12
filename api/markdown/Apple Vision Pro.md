@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:apple-vision-pro",
+  "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
   "@type": "Class",
   "label": "Apple Vision Pro",
   "definition": "Apple Vision Pro is a spatial computing head-mounted display developed by Apple, announced in June 2023 and released in the United States in February 2024, running the visionOS operating system. It combines ultra-high-resolution micro-OLED displays, a custom R1 chip for sensor processing, and an M2 chip for compute, enabling a fully immersive or passthrough-composited mixed reality experience. The device employs eye-tracking, hand-tracking, and voice input as its primary interaction modalities, replacing the traditional touchscreen paradigm with gaze-and-pinch gesture control.",
@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"}],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
     ],
@@ -45,10 +45,10 @@ public:: true
 ```
 
 - ### Definition
-  - [[Apple Vision Pro]] is Apple's first [[Head-Mounted Display]] product, designed as a general-purpose [[Spatial Computing]] platform rather than a narrowly scoped VR or AR device. Running visionOS, it renders virtual and real content in a unified spatial environment, blending passthrough video from outward-facing cameras with rendered 3D interfaces. The device's [[Eye Tracking]] and [[Hand Tracking]] systems enable hands-free, no-controller interaction, while personalised [[Spatial Audio]] anchors sound to virtual positions in the user's environment.
+  - [[Apple Vision Pro]] is Apple's first [[Head-Mounted Display]] product, designed as a general-purpose [[Spatial Computing Paradigm]] platform rather than a narrowly scoped VR or AR device. Running visionOS, it renders virtual and real content in a unified spatial environment, blending passthrough video from outward-facing cameras with rendered 3D interfaces. The device's [[Eye Tracking]] and [[Hand Tracking]] systems enable hands-free, no-controller interaction, while personalised [[Spatial Audio]] anchors sound to virtual positions in the user's environment.
 
 - ### Relationships
-  - Apple Vision Pro enables [[Spatial Computing]], [[Mixed Reality]], and [[Immersive Experience]] scenarios by providing a high-fidelity display and input platform. It depends upon [[Eye Tracking]] and [[Hand Tracking]] for its novel interaction model, and integrates [[Spatial Audio]] for acoustic immersion. It sits within the broader [[Extended Reality]] landscape and advances [[Display Technology]] through its micro-OLED panel implementation.
+  - Apple Vision Pro enables [[Spatial Computing Paradigm]], [[Mixed Reality]], and [[Immersive Experience]] scenarios by providing a high-fidelity display and input platform. It depends upon [[Eye Tracking]] and [[Hand Tracking]] for its novel interaction model, and integrates [[Spatial Audio]] for acoustic immersion. It sits within the broader [[Extended Reality]] landscape and advances [[Display Technology]] through its micro-OLED panel implementation.
 
 - ### Content
   - Apple announced the Vision Pro at its Worldwide Developers Conference in June 2023, positioning it explicitly as a "spatial computer" rather than a headset. The announcement followed years of reported AR/VR development at Apple, with the company's optics and sensor acquisitions dating back to at least 2013. The USD 3,499 launch price and February 2024 US-only release positioned it as a developer and early-adopter device rather than a mainstream consumer product.

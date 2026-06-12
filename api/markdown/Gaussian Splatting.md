@@ -404,7 +404,7 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing",
+        "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -536,11 +536,11 @@ public:: true
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-system",
+        "@id": "urn:ngm:class:spatial-computing-paradigm-system",
         "label": "Spatial Computing System"
       },
       {
-        "@id": "urn:ngm:class:vision-pro",
+        "@id": "urn:ngm:class:apple-mixed-reality-headset",
         "label": "Vision Pro"
       }
     ],
@@ -763,7 +763,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Apple]]",
+      "raw": "[[Apple Inc Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:apple",
       "kind": "ResolvedLink"
     },
@@ -878,7 +878,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     },
@@ -893,7 +893,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Vision Pro]]",
+      "raw": "[[Apple Mixed Reality Headset]]",
       "resolved": "urn:visionflow:owl:class:vision-pro",
       "kind": "ResolvedLink"
     },
@@ -921,17 +921,17 @@ public:: true
   - owl-class:: spatial-computing:GaussianSplatting
   - owl-role:: SceneRepresentationTechnique
   - owl-inferred:: sc:NovelViewSynthesis, sc:NeuralRendering, sc:ExplicitSceneRepresentation, sc:DifferentiableRendering
-  - belongs-to-domain:: [[Spatial Computing]], [[Computer Vision]], [[Neural Rendering]], [[Real-Time Rendering]]
+  - belongs-to-domain:: [[Spatial Computing Paradigm]], [[Computer Vision]], [[Neural Rendering]], [[Real-Time Rendering]]
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[InfrastructureLayer]]
 
 - ### Relationships
   - is-subclass-of:: [[Neural Rendering]], [[Novel View Synthesis]], [[3D Scene Reconstruction]], [[Differentiable Rendering]], [[Computer Vision]]
   - has-part:: [[Gaussian Primitive]], [[Spherical Harmonics]], [[Differentiable Rasterizer]], [[Adaptive Densification]], [[SfM Point Cloud]], [[Depth Sorting]], [[Alpha Compositing]], [[Tile-Based Renderer]]
   - requires:: [[Structure from Motion]], [[Multi-View Photography]], [[GPU Compute]], [[Camera Calibration]], [[COLMAP]], [[Adam Optimiser]], [[SSIM Loss]]
-  - enables:: [[Real-Time Rendering]], [[Novel View Synthesis]], [[Augmented Reality (AR)]], [[Virtual Reality]], [[Digital Twin]], [[Volumetric Capture]], [[Photorealistic Rendering]], [[Spatial Computing]]
+  - enables:: [[Real-Time Rendering]], [[Novel View Synthesis]], [[Augmented Reality (AR)]], [[Virtual Reality]], [[Digital Twin]], [[Volumetric Capture]], [[Photorealistic Rendering]], [[Spatial Computing Paradigm]]
   - implements:: [[Differentiable Rendering]], [[EWA Splatting]], [[Alpha Blending]], [[Tile Rasterisation]], [[Spherical Harmonics]], [[Covariance Decomposition]]
   - depends-on:: [[Computer Vision]], [[Point Cloud]], [[Deep Learning]], [[Rasterization]], [[Linear Algebra]], [[Gaussian Distribution]]
-  - supports:: [[AR Technology]], [[Vision Pro]], [[Spatial Computing System]], [[3D Reconstruction]], [[Photogrammetry]], [[Robotics]], [[Avatar Creation]], [[3D Content Generation]]
+  - supports:: [[AR Technology]], [[Apple Mixed Reality Headset]], [[Spatial Computing System]], [[3D Reconstruction]], [[Photogrammetry]], [[Robotics]], [[Avatar Creation]], [[3D Content Generation]]
   - uses:: [[GPU Compute]], [[Spherical Harmonics]], [[COLMAP]], [[Adam Optimiser]], [[CUDA]], [[Structure from Motion]]
   - contrasts-with:: [[Neural Radiance Field]], [[Neural Radiance Fields]], [[Ray Tracing]], [[Physically Based Rendering]], [[Mesh-Based Rendering]], [[Voxel Grid Representation]]
   - related-to:: [[3D Gaussian Splatting]], [[3D Reconstruction]], [[3D Rendering Engine]], [[Photogrammetry]], [[Point Cloud]], [[Neural Rendering]], [[Volumetric Capture]], [[3D Modeling]], [[SLAM]], [[AR Frame]]
@@ -1132,7 +1132,7 @@ public:: true
 
   ### Augmented and Virtual Reality Content
 
-  **[[Apple]] [[Vision Pro]]**: Apple's visionOS content ecosystem, established 2024–2026, supports Gaussian Splat assets through Reality Composer Pro. Apple adopted 3DGS as a preferred photogrammetric capture format for immersive spatial experiences, recommending it over photogrammetry meshes for organic scenes (furniture, plants, food items). visionOS Scene Understanding integrates depth sensing with Gaussian geometry for occlusion handling. Developer frameworks include RealityKit 3.0 Gaussian rendering support (visionOS 2.0+, WWDC 2025).
+  **[[Apple Inc Technology Corporation]] [[Apple Mixed Reality Headset]]**: Apple's visionOS content ecosystem, established 2024–2026, supports Gaussian Splat assets through Reality Composer Pro. Apple adopted 3DGS as a preferred photogrammetric capture format for immersive spatial experiences, recommending it over photogrammetry meshes for organic scenes (furniture, plants, food items). visionOS Scene Understanding integrates depth sensing with Gaussian geometry for occlusion handling. Developer frameworks include RealityKit 3.0 Gaussian rendering support (visionOS 2.0+, WWDC 2025).
 
   **[[Meta]] Quest 3 and Horizon OS**: Meta integrated Gaussian Splatting into the Horizon Worlds creation toolkit (2024) and Meta Presence Platform for mixed-reality passthrough enhancement. Meta Research published several 3DGS variant papers including Splatter Image (2024) and MegaGaussians (2025) for large-scale outdoor scene capture from aerial imagery.
 

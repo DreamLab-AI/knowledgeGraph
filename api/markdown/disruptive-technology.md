@@ -8,7 +8,7 @@
 
 - ### Relationships
   - partOf:: [[DisruptiveTechDomain]]
-  - relatedTo:: [[Disruption]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
+  - relatedTo:: [[Technology Disruption Dynamics]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
   - enables:: [[GenerativeAI]], [[MachineLearning]], [[EdgeComputing]], [[InternetOfThings]]
   - contrastsWith:: [[TechnologyStack]] (sustaining technologies)
 - ### Content

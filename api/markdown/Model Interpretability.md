@@ -119,7 +119,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -198,7 +198,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -231,7 +231,7 @@ public:: true
   - Has Part: [[Feature Importance]]
   - Has Part: [[Local Explanation]]
   - Has Part: [[Global Explanation]]
-  - Requires: [[Machine Learning]]
+  - Requires: [[Machine Learning Discipline]]
   - Supports: [[AI Governance]]
   - Supports: [[Fairness]]
   - Related To: [[Interpretable AI]]
@@ -355,7 +355,7 @@ public:: true
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
   - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 
@@ -694,7 +694,7 @@ public:: true
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
   - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
   - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 
@@ -1073,7 +1073,7 @@ public:: true
 
 		  ## Related Terms
 
-		  - **Broader**: [[Explainable AI]], [[Machine Learning]]
+		  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
 		  - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
 		  - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 

@@ -13,7 +13,7 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[InfrastructureLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Audio Processing]], [[Machine Learning]], [[Multimodal AI]], [[Conversational AI]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Audio Processing]], [[Machine Learning Discipline]], [[Multimodal AI]], [[Conversational AI]]
   - has-part:: [[Text-to-Speech]], [[Automatic Speech Recognition]], [[Voice Cloning]], [[Voice Conversion]], [[Speaker Verification]], [[Voice Agents]], [[Speech Enhancement]], [[Prosody Modelling]], [[Neural Vocoder]]
   - requires:: [[Audio Data]], [[Language Models]], [[Neural Networks]], [[Streaming Infrastructure]], [[Low-Latency Computing]], [[Speech Corpus]]
   - enables:: [[Voice Assistants]], [[Accessibility]], [[Call Centres]], [[Podcast Production]], [[Real-Time Translation]], [[Voice Security]], [[Conversational AI]], [[Human Computer Interaction]]

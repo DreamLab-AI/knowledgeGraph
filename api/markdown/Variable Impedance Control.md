@@ -68,7 +68,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:safety", "label": "Safety"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},

@@ -549,7 +549,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -611,7 +611,7 @@ public:: true
 
 
 - ### Definition
-  - A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[Ethical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]]. In 2025, model cards are required by [[EU AI Act]] for high-risk systems and recommended by [[OECD]] for all AI applications, including [[Bitcoin Trading Bot|trading systems]], [[Blockchain Analytics]], and [[Smart Contract Auditing]].
+  - A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[Ethical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]]. In 2025, model cards are required by [[EU AI Act Regulatory Instrument]] for high-risk systems and recommended by [[OECD]] for all AI applications, including [[Bitcoin Trading Bot|trading systems]], [[Blockchain Analytics]], and [[Smart Contract Auditing]].
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIModelCard

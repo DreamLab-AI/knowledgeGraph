@@ -208,7 +208,7 @@ public:: true
         "label": "Classification Rules"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-optional",
+        "@id": "urn:ngm:class:machine-learning-discipline-optional",
         "label": "Machine Learning (optional)"
       },
       {

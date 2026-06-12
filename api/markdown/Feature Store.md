@@ -73,7 +73,7 @@ public:: true
       "label": "AI Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-pipeline",
+      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
@@ -89,7 +89,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},

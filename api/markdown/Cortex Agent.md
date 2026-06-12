@@ -368,7 +368,7 @@ public:: true
         "label": "Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -418,7 +418,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -434,7 +434,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -691,7 +691,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -826,7 +826,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -878,14 +878,14 @@ public:: true
   - implemented-in-layer:: [[OrchestrationLayer]], [[ApplicationLayer]], [[InferenceLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[Foundation Models]], [[Cognitive AI]]
+  - is-subclass-of:: [[Agent Frameworks]], [[Agents]], [[Agentic Internet]], [[Large-Scale Pretrained Foundation Model]], [[Cognitive AI]]
   - has-part:: [[Function Calling]], [[Feedback Loop]], [[Context Engineering]], [[Evaluation benchmarks and leaderboards]], [[Graph Database]]
-  - requires:: [[Foundation Models]], [[API Gateway]], [[Data Layer]], [[Distributed Computing]], [[Fault Tolerance]]
+  - requires:: [[Large-Scale Pretrained Foundation Model]], [[API Gateway]], [[Data Layer]], [[Distributed Computing]], [[Fault Tolerance]]
   - enables:: [[CLI Multi-Agent Systems]], [[Computer Use and Browser Agents]], [[GPTs and Custom Assistants]], [[Chatbots]], [[Call Centres]]
   - implements:: [[Function Calling]], [[Context Engineering]], [[Retrieval Augmented Generation]], [[Attention]], [[Feedback Loop]]
   - depends-on:: [[Cloud Computing]], [[Distributed Computing]], [[Data Layer]], [[Cryptography Security and Privacy]], [[Distributed Identity]]
   - supports:: [[AML KYC Compliance]], [[Compliance Monitoring]], [[ESG Reporting]], [[Identity Verification]], [[Compliance Control]]
-  - uses:: [[Anthropic Claude]], [[Foundation Models]], [[Attention]], [[Emergence]], [[Evaluation benchmarks and leaderboards]]
+  - uses:: [[Constitutional AI Language Model Family]], [[Large-Scale Pretrained Foundation Model]], [[Attention]], [[Emergence]], [[Evaluation benchmarks and leaderboards]]
   - contrasts-with:: [[Computer Use and Browser Agents]], [[CLI Multi-Agent Systems]], [[GPT Engineer]], [[fast.ai]]
   - related-to:: [[Cognitive AI]], [[Brain Computer Interfaces]], [[Embodied Minds]], [[Context Engineering]], [[Convergence]]
   - standardized-by:: [[API Gateway]], [[Function Calling]], [[Domain Ontology]]

@@ -52,7 +52,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:tokenisation",
+      "@id": "urn:ngm:class:neural-network-text-tokenisation",
       "label": "Tokenisation"
     }
   ],
@@ -69,7 +69,7 @@ public:: true
       {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Tokenisation"}
     ]
   },
   "quality": 0.7,

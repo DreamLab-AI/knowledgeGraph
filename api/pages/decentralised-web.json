@@ -104,7 +104,7 @@
         "label": "Peer Discovery"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -186,7 +186,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
         "label": "Bitcoin Lightning Network"
       },
       {
@@ -285,7 +285,7 @@
         "label": "Crypto Anarchism"
       },
       {
-        "id": "urn:ngm:class:cypherpunk-movement",
+        "id": "urn:ngm:class:cryptographic-privacy-activist-movement",
         "label": "Cypherpunk Movement"
       },
       {
@@ -305,7 +305,7 @@
         "label": "Self-Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -1070,10 +1070,6 @@
   ],
   "backlinks": [
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
-    },
-    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },
@@ -1104,6 +1100,10 @@
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "privacy",

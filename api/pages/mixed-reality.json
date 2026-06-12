@@ -336,7 +336,7 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:spatial-web",
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
         "label": "Spatial Web"
       },
       {
@@ -749,6 +749,10 @@
       "label": "AR Frame"
     },
     {
+      "slug": "apple-mixed-reality-headset",
+      "label": "Apple Mixed Reality Headset"
+    },
+    {
       "slug": "augmented-reality-collaboration",
       "label": "Augmented Reality Collaboration"
     },
@@ -791,10 +795,6 @@
     {
       "slug": "vircadia",
       "label": "Vircadia"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "park-2022-metaverse",

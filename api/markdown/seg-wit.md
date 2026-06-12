@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Bitcoin Protocol]]
-  - bridges-to:: [[Bitcoin]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]]
   - requires:: [[Bitcoin Script]]
   - enables:: [[Lightning Network]], [[Taproot]]
 

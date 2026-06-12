@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:00b9271e1108bc6fbe5199c2eaf417d5ba5e12e01753c06882794e1f8b896557",
+  "title": "Node-Graph Visual Programming Interface",
+  "slug": "node-graph-visual-programming-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:node-graph-visual-programming-interface",
+  "domain": "infrastructure",
+  "definition": "A paradigm of graphical programming in which computational logic is authored by connecting discrete functional nodes via edges rather than writing textual code. Node-based interfaces lower the barrier to complex workflow construction, making them prevalent in AI pipeline tools (e.g., ComfyUI, Flowise), creative software (shader editors, compositing), and knowledge-graph visualisation environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-interface-architecture",
+        "label": "User Interface Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

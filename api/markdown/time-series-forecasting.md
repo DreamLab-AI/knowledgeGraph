@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]], [[FoundationModelLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Statistical Modelling]], [[Predictive Analytics]], [[Sequential Data Processing]], [[Probabilistic Forecasting]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Statistical Modelling]], [[Predictive Analytics]], [[Sequential Data Processing]], [[Probabilistic Forecasting]]
   - has-part:: [[Point Forecast]], [[Interval Forecast]], [[Probabilistic Forecast]], [[Forecast Horizon]], [[Lookback Window]], [[Covariates]], [[Reconciliation Step]], [[Evaluation Metric]]
   - requires:: [[Historical Time Series Data]], [[Stationarity Analysis]], [[Cross-Validation Strategy]], [[Forecast Evaluation Protocol]], [[Compute Infrastructure]]
   - enables:: [[Demand Planning]], [[Risk Quantification]], [[Anomaly Detection]], [[Capacity Planning]], [[Automated Reporting]], [[Decision Support]], [[Scenario Analysis]]

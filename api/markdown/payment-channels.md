@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Payment Channel]]
   - bridges-to:: [[Lightning Network]]
-  - requires:: [[Bitcoin]], [[Smart Contract]]
+  - requires:: [[Bitcoin Proof-of-Work Protocol]], [[Smart Contract]]
   - enables:: [[Lightning Network]]
 
 - ### Content

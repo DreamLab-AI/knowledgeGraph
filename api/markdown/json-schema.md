@@ -6,7 +6,7 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[json]]
+  - requires [[JSON Data Interchange Format]]
   - enables [[REST API]]
   - enables [[Credential Schema]]
   - relatedTo [[JSON-LD]]

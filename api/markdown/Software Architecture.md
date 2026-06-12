@@ -66,7 +66,7 @@ public:: true
       {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ]
   },

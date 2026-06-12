@@ -600,7 +600,7 @@ public:: true
         "label": "Recommendation Systems"
       },
       {
-        "@id": "urn:ngm:class:social-media-algorithms",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure-algorithms",
         "label": "Social Media Algorithms"
       },
       {
@@ -650,15 +650,15 @@ public:: true
         "label": "Global Inequality"
       },
       {
-        "@id": "urn:ngm:class:human-vs-ai",
+        "@id": "urn:ngm:class:human-ai-capability-complementarity",
         "label": "Human vs AI"
       },
       {
-        "@id": "urn:ngm:class:latent-space",
+        "@id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {
-        "@id": "urn:ngm:class:legacy-media",
+        "@id": "urn:ngm:class:traditional-mass-media-institution",
         "label": "Legacy Media"
       },
       {
@@ -726,7 +726,7 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]
@@ -1200,12 +1200,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1220,7 +1220,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Human vs AI]]",
+      "raw": "[[Human-AI Capability Complementarity]]",
       "resolved": "urn:visionflow:owl:class:human-vs-ai",
       "kind": "ResolvedLink"
     },
@@ -1245,7 +1245,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Social contract and jobs]]",
+      "raw": "[[Employment Social Contract Under Automation]]",
       "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
       "kind": "ResolvedLink"
     },
@@ -1281,7 +1281,7 @@ public:: true
   - The cluster synthesises four interlocking phenomena operating on different timescales and through different causal mechanisms, yet mutually reinforcing in their combined effect on [[Information Integrity]] and [[Digital Society Surveillance]]:
     - **(1) The Dead Internet Theory** — originally a 2021 fringe hypothesis posted anonymously on Agora Road forum, now substantially corroborated empirically, proposing that the majority of online activity is driven by bots, automated content systems, algorithmic feeds, and state and corporate manipulation rather than genuine human-to-human interaction. The theory predicts that organic, serendipitous human discourse has been displaced by choreographed, commercially or politically motivated automated activity that mimics the appearance of human engagement whilst serving radically different incentive structures. By 2024, empirical measurement had validated the core claim: Imperva's Bad Bot Report 2024 recorded 49.6% of all internet traffic as non-human, with malicious bots at 32% — the highest proportion since tracking began in 2013.
     - **(2) Enshittification** — Cory Doctorow's 2023 coinage describing the three-stage lifecycle of [[Platform Decay]] in which digital platforms first subsidise users to attract them and build network effects, then abuse users to extract value for business customers once lock-in is achieved, then abuse business customers to maximise shareholder returns until the platform collapses or is disrupted. The mechanism is driven by the [[Advertising Economics]] of surveillance capitalism: engagement maximisation as the primary optimisation target systematically trades epistemic quality for behavioural manipulation at every stage of the lifecycle. Doctorow traces enshittification across [[Social Media]], search, e-commerce, and content distribution platforms, identifying the common structural driver as monopoly capture enabled by network effects and switching costs.
-    - **(3) Habsburg AI Model Collapse** — the phenomenon documented by Shumailov et al. in *Nature* 2024 ("The Curse of Recursion") whereby successive generations of [[Large Language Models]] trained on AI-generated outputs rather than authentic human text undergo irreversible statistical degeneration: tail distributions disappear first, followed by modal collapse (outputs clustering toward a narrower distribution), followed by catastrophic degradation of outputs that require diversity or rare knowledge. The Habsburg analogy refers to the Habsburg dynasty's inbreeding-induced accumulation of deleterious traits culminating in the severe disabilities of Charles II of Spain — just as genetic diversity is required for population fitness, authentic linguistic and epistemic diversity in training data is required for [[Foundation Models]] quality, and systematic bias toward a narrower distribution produces progressive collapse.
+    - **(3) Habsburg AI Model Collapse** — the phenomenon documented by Shumailov et al. in *Nature* 2024 ("The Curse of Recursion") whereby successive generations of [[Large Language Models]] trained on AI-generated outputs rather than authentic human text undergo irreversible statistical degeneration: tail distributions disappear first, followed by modal collapse (outputs clustering toward a narrower distribution), followed by catastrophic degradation of outputs that require diversity or rare knowledge. The Habsburg analogy refers to the Habsburg dynasty's inbreeding-induced accumulation of deleterious traits culminating in the severe disabilities of Charles II of Spain — just as genetic diversity is required for population fitness, authentic linguistic and epistemic diversity in training data is required for [[Large-Scale Pretrained Foundation Model]] quality, and systematic bias toward a narrower distribution produces progressive collapse.
     - **(4) Synthetic Content Saturation** — the measurable replacement of human-authored web content by AI-generated slop at a rate that threatens the epistemic integrity of the corpus on which future [[AI Training Data]], human researchers, and democratic discourse alike depend. NewsGuard's AI-generated news tracker identified 1,265+ AI news and information websites with minimal human oversight by May 2024, up from 49 in April 2023 — a 25-fold increase in 13 months. Originality.ai's corpus sampling found AI-content markers in 52–68% of newly published content across low-authority domains. The Guardian's May 2024 investigation "Spam, Junk, Slop: The Latest Wave of AI Behind the Zombie Internet" documented the industrial economics: at $0.003–$0.01 per AI-generated article, operators can publish 10,000+ articles per day for $30–$100, with programmatic advertising covering costs if even 0.01% of articles achieve search ranking.
   - The theoretical architecture linking these phenomena draws on multiple intellectual traditions:
     - **Information theory**: Shannon's channel capacity as a metaphor for signal-to-noise degradation; the concept of [[Background Tokens]] (finite pre-AI authentic human discourse corpus) as a non-renewable epistemic resource.
@@ -1310,8 +1310,8 @@ public:: true
   - supports:: [[Decentralised Web]], [[Solid]], [[Digital Identity]], [[Blockchain Attestation]], [[Open Source AI]], [[Federated Social Networks]], [[ActivityPub]]
   - uses:: [[Large Language Models]], [[Deepfakes and fraudulent content]], [[AI Scrapers]], [[Agents]], [[Social Media Algorithms]], [[Programmatic Advertising]], [[Recommendation Systems]]
   - contrasts-with:: [[Open Web]], [[Human-Authored Content]], [[Authentic Internet]], [[Federated Social Networks]], [[Solid]], [[IndieWeb Movement]]
-  - related-to:: [[AI Risks]], [[Bias in Large Language Models]], [[Global Inequality]], [[Trust and Safety]], [[Legacy Media]], [[Human vs AI]], [[Latent Space]], [[Competition in AI]], [[AI Search]], [[Agentic Internet]], [[Agents]]
-  - standardized-by:: [[W3C]], [[C2PA]], [[IETF]], [[Ofcom]], [[EU AI Act]], [[UK Online Safety Act]], [[DSA]], [[GDPR]]
+  - related-to:: [[AI Risks]], [[Bias in Large Language Models]], [[Global Inequality]], [[Trust and Safety]], [[Legacy Media]], [[Human-AI Capability Complementarity]], [[Latent Space]], [[Competition in AI]], [[AI Search]], [[Agentic Internet]], [[Agents]]
+  - standardized-by:: [[W3C]], [[C2PA]], [[IETF]], [[Ofcom]], [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]], [[DSA]], [[GDPR]]
 
 - ### Content
 
@@ -1498,9 +1498,9 @@ public:: true
   - The mechanism is information-theoretic. Each generation of AI-generated training data introduces a systematic bias toward the modal distribution of the previous model, because AI models sample from their own learned distribution rather than drawing from the original human-authored corpus. The noise compounds geometrically: if the original model has 5% error rate on rare linguistic patterns, generation-2 training data has 5% + systematic_bias errors, generation-3 data has those errors plus new biases introduced by generation-2's already-degraded distribution. The researchers observed measurable degradation within 3–5 training generations, with catastrophic failure modes appearing by generation 8–10.
   - The degeneration proceeds in three stages mapped to information-theoretic failure modes:
     - **Tail loss (generations 3–5)**: Low-frequency but important linguistic patterns — rare vocabulary, minority languages, specialised technical terminology, dialectal variation — disappear from model outputs as they are not represented in the modal synthetic training data. The model begins to produce homogeneous outputs that reflect the average of previous model outputs rather than the diversity of human expression.
-    - **Modal collapse (generations 5–8)**: Outputs cluster toward a narrow distribution. The model produces fewer distinct phrasings, perspectives, and framings. Diversity metrics (type-token ratios, perplexity scores on held-out human text, entropy of output distributions) decline measurably. [[Foundation Models]] trained on collapsed data produce less useful responses for tasks requiring creative, diverse, or specialised outputs.
+    - **Modal collapse (generations 5–8)**: Outputs cluster toward a narrow distribution. The model produces fewer distinct phrasings, perspectives, and framings. Diversity metrics (type-token ratios, perplexity scores on held-out human text, entropy of output distributions) decline measurably. [[Large-Scale Pretrained Foundation Model]] trained on collapsed data produce less useful responses for tasks requiring creative, diverse, or specialised outputs.
     - **Catastrophic degradation (generations 8–10+)**: The model produces incoherent or repeatedly similar outputs for queries that require diversity or rare knowledge. In Shumailov et al.'s image generation experiments, later-generation models produced outputs that were visually degraded and clustered. In text generation experiments, models began producing repetitive, low-coherence outputs for complex queries.
-  - The Habsburg analogy is precise. The Habsburg dynasty's practice of royal inbreeding — marrying within a narrow gene pool of related European royal families to preserve lineage purity — produced progressive accumulation of deleterious recessive traits across generations. Charles II of Spain, the last Habsburg monarch (1661–1700), suffered severe physical and cognitive disabilities including an enlarged jaw, tongue, and head, inability to chew food, and early cognitive decline — the endpoint of generations of inbreeding. Just as genetic diversity is required for population fitness, epistemic and linguistic diversity in training data is required for [[Foundation Models]] quality, and systematic restriction to a narrow distribution produces analogous degeneration.
+  - The Habsburg analogy is precise. The Habsburg dynasty's practice of royal inbreeding — marrying within a narrow gene pool of related European royal families to preserve lineage purity — produced progressive accumulation of deleterious recessive traits across generations. Charles II of Spain, the last Habsburg monarch (1661–1700), suffered severe physical and cognitive disabilities including an enlarged jaw, tongue, and head, inability to chew food, and early cognitive decline — the endpoint of generations of inbreeding. Just as genetic diversity is required for population fitness, epistemic and linguistic diversity in training data is required for [[Large-Scale Pretrained Foundation Model]] quality, and systematic restriction to a narrow distribution produces analogous degeneration.
   - The policy implication is that **preservation of the Background Tokens corpus** — pre-AI authentic human discourse — is a strategic imperative for maintaining AI system quality. The Data Provenance Initiative (Epoch AI, 2024) estimated that uncontaminated human-authored text now constitutes less than 40% of the publicly indexable web by token count, declining at 8–12 percentage points per year. C2PA provenance signing, training data watermarking, and the Internet Archive's preservation efforts represent the primary mechanisms for maintaining access to authentic training corpora as the open web degrades.
 
   - ## Synthetic Content Saturation and the Background Tokens Problem
@@ -1508,7 +1508,7 @@ public:: true
   - Prior to 2022, the Common Crawl corpus was estimated to be approximately 85% authentic human-authored content. By 2024, the Data Provenance Initiative estimated that uncontaminated human-authored text constituted approximately 40% of the public web by token count. The industrial economics of AI content generation drive this decline: at $0.003–$0.01 per AI-generated article, operators can publish 10,000+ articles per day for $30–$100. An estimated 1,265+ dedicated AI news sites (NewsGuard, May 2024) publish at this cadence, alongside individual operators using [[ComfyUI Workflows]] and API pipelines for long-tail content targeting.
   - The [[AI Search]] interaction is structurally perverse. Google's AI Overviews (launched May 2024) reduce traffic to source websites by answering queries directly in the search results page, destroying the advertising economics that previously incentivised high-quality content creation. Simultaneously, AI content farms can flood the search index with topically relevant but low-quality content at a cost structure that legitimate publishers cannot match. The result is a market failure in content quality: the advertising economics that historically rewarded high-quality content are disrupted by AI-generated volume competition, while the AI systems that replace search are themselves degraded by training on the polluted content corpus they helped create.
   - The right-wing media asymmetry identified in WIRED (2023) represents a further distributional distortion. While mainstream and left-leaning news sites increasingly blocked AI training scrapers via robots.txt, right-wing media outlets disproportionately welcomed scraping. As noted on the Latent Space podcast's discussion of [[Bias in Large Language Models]], this differential willingness to permit training data collection creates systematic political skew in future model training distributions — not through intentional design but through the differential economics of content licensing and political stance toward AI regulation.
-  - A secondary effect documented in academic research is the contamination of peer-reviewed scientific literature by AI-generated content. A BioRxiv preprint from February 2024 documented widespread fraudulent images in systematic reviews of preclinical depression research, evidencing that AI-assisted fraud has penetrated even the most rigorously gatekept information ecosystem. The [[Deepfakes and fraudulent content]] problem thus extends from consumer web content to scientific publishing, with potential consequences for [[Foundation Models]] trained on scientific corpora.
+  - A secondary effect documented in academic research is the contamination of peer-reviewed scientific literature by AI-generated content. A BioRxiv preprint from February 2024 documented widespread fraudulent images in systematic reviews of preclinical depression research, evidencing that AI-assisted fraud has penetrated even the most rigorously gatekept information ecosystem. The [[Deepfakes and fraudulent content]] problem thus extends from consumer web content to scientific publishing, with potential consequences for [[Large-Scale Pretrained Foundation Model]] trained on scientific corpora.
 
   - ## Bot Traffic and the Dead Internet in Practice
   - The quantitative evidence for bot dominance is now extensive and multi-sourced. Imperva's Bad Bot Report 2024 found that 49.6% of all internet traffic was non-human in 2024, with the following breakdown:
@@ -1522,7 +1522,7 @@ public:: true
     - **Academic publishing**: The BioRxiv preprint (February 2024) on fraudulent images in preclinical depression systematic reviews; the "DDoS attack of academic bullshit" characterisation of AI-generated academic content flooding preprint servers and low-quality journals.
     - **Social media authenticity**: Russian bot inflation of Instagram influencer follower counts into the tens of millions (documented in Adweek, 2022); the X/Twitter Super Bowl 2024 traffic analysis suggesting majority fake engagement during the most-watched event in US television history; the ancient spam account phenomenon on X in 2024 where a bot posted an AI-generated image description without an image and attracted hundreds of admiring bot replies generating fictional human responses to a non-existent image — a closed loop of AI generating content for AI to consume with no human participation.
     - **Dating and relationship formation**: [[AI companions]] applications mediate a growing proportion of romantic interactions; RIZZ and similar AI dating coach applications assist in composing messages on dating platforms; the prospect of AI-to-AI interaction across dating layers — bots persuading bots that persuade bots — represents an endpoint of the Dead Internet Theory dynamic in the most intimate domain of human social life.
-  - Jailbroken [[Foundation Models]] can already solve CAPTCHA human-verification challenges, and open-source vision models are within 12–18 months of CAPTCHA-solving capability at sub-$0.001/challenge costs, potentially triggering a discontinuous expansion of automated web activity that would further accelerate the Dead Internet dynamics.
+  - Jailbroken [[Large-Scale Pretrained Foundation Model]] can already solve CAPTCHA human-verification challenges, and open-source vision models are within 12–18 months of CAPTCHA-solving capability at sub-$0.001/challenge costs, potentially triggering a discontinuous expansion of automated web activity that would further accelerate the Dead Internet dynamics.
 
   - ## The Dark Forest Theory and Digital Retreat
   - Yancey Strickler's "Dark Forest Theory of the Internet" (Medium, 2019) and Maggie Appleton's "The Expanding Dark Forest and Generative AI" (maggieappleton.com, 2023) provide the metaphorical framework for the human response to synthetic content saturation and bot dominance.
@@ -1561,7 +1561,7 @@ public:: true
     - CAPTCHA-solving services using human micro-workers or AI vision models (costs falling from $1/1,000 CAPTCHAs in 2020 to $0.10–$0.30/1,000 in 2024).
     - Headless browser automation frameworks (Playwright, Puppeteer, Selenium) enabling human-like browsing patterns.
     - LLM-powered conversational bots capable of passing Turing tests in limited contexts.
-  - **Content Synthesis Infrastructure** encompasses the AI content pipeline, connecting to [[Large Language Models]], [[ComfyUI Workflows]], and [[Foundation Models]]:
+  - **Content Synthesis Infrastructure** encompasses the AI content pipeline, connecting to [[Large Language Models]], [[ComfyUI Workflows]], and [[Large-Scale Pretrained Foundation Model]]:
     - LLM API access with sub-$0.01/1,000 token costs making mass content generation economically viable.
     - Automated SEO optimisation layers targeting long-tail keyword combinations.
     - Programmatic advertising integration via Google AdSense and RTB networks.
@@ -1581,7 +1581,7 @@ public:: true
     - Adobe Content Credentials (C2PA implementation in Photoshop, Firefly, Premiere).
     - Blockchain-anchored attestation services for content timestamping and provenance.
     - News agency C2PA adoption consortium (AP, Reuters, AFP joint implementation).
-  - **Regulatory Architecture** encompasses governance responses, connecting to [[Ofcom]], [[EU AI Act]], [[UK Online Safety Act]], and [[Consumer Protection]]:
+  - **Regulatory Architecture** encompasses governance responses, connecting to [[Ofcom]], [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]], and [[Consumer Protection]]:
     - Ofcom's Online Safety Act 2023 implementation framework (Category 1 transparency reports, age assurance, recommender system transparency).
     - EU AI Act Article 50 synthetic content transparency requirements (effective August 2026).
     - DSA Article 34 risk assessment requirements for very large online platforms (effective February 2024).
@@ -1609,7 +1609,7 @@ public:: true
     - Training data provenance tracking (C2PA integration with training pipelines; Data Provenance Initiative consortium methodology).
     - Synthetic data detection and filtering (watermarking schemes, linguistic pattern analysis, retrieval-augmented filtering).
     - Human feedback amplification (maintaining annotation team scale proportional to synthetic content volume in training corpora).
-    - Diversity-preserving training objectives (techniques to prevent modal collapse by explicitly penalising distribution narrowing during fine-tuning of [[Foundation Models]]).
+    - Diversity-preserving training objectives (techniques to prevent modal collapse by explicitly penalising distribution narrowing during fine-tuning of [[Large-Scale Pretrained Foundation Model]]).
     - Constitutional AI approaches — training on human value judgements about output quality rather than purely behavioural imitation.
   - **Content Provenance and Authentication**: Technical implementation of provenance defence:
     - [[C2PA Standard]] implementation in Adobe Creative Cloud applications (Photoshop, Premiere, Firefly) with mandatory signing for AI-generated content.
@@ -1645,7 +1645,7 @@ public:: true
   - **Political Economy**:
     - Wu's *The Attention Merchants* (2016) — historical analysis of the commodification of human attention from print advertising through social media.
     - Zuboff's surveillance capitalism framework connecting platform incentives to the structural degradation of epistemic quality.
-    - Haidt's *The Anxious Generation* (2024) — the most widely-read synthesis of engagement-maximisation effects on adolescent mental health and [[Social contract and jobs]].
+    - Haidt's *The Anxious Generation* (2024) — the most widely-read synthesis of engagement-maximisation effects on adolescent mental health and [[Employment Social Contract Under Automation]].
     - Stratechery analyses of platform economics and the advertising original sin (Thompson 2025).
   - **Political Science and Democracy Studies**:
     - Europol 2023 warning on AI-generated influence operations targeting European democratic processes.
@@ -1694,7 +1694,7 @@ public:: true
   - **Model Collapse Mitigation**:
     - Training data watermarking at generation stage — enabling filtering of AI-generated content from future training corpora (Google SynthID, Meta Stable Signature).
     - Human feedback amplification — maintaining annotation team scale proportional to synthetic content volume.
-    - Retrieval-augmented generation — grounding [[Foundation Models]] outputs in retrieved authentic documents rather than purely parametric knowledge.
+    - Retrieval-augmented generation — grounding [[Large-Scale Pretrained Foundation Model]] outputs in retrieved authentic documents rather than purely parametric knowledge.
     - Diversity-preserving training objectives — explicitly penalising distribution narrowing during fine-tuning to maintain tail distribution coverage.
     - Shumailov et al. finding: even 10-20% authentic human data significantly mitigates collapse dynamics, making Background Tokens preservation tractable if acted on before the window closes.
   - **Decentralised Web Renaissance**:
@@ -1740,8 +1740,8 @@ public:: true
   - The Death of the Internet cluster has rich structured relationships to adjacent concepts in the ontology that deserve explicit mapping:
   - **Relationship to [[Agents]] and [[Agentic Internet]]**: The agent-mediated internet represents the endpoint state of the Dead Internet Theory dynamic — not bots mimicking human activity but autonomous AI agents conducting legitimate commercial and informational transactions on behalf of human principals. As [[Agents]] become primary web clients, the proportion of authentic human-originated internet activity asymptotically approaches zero. The [[Agentic Internet]] page covers the infrastructure and protocol dimensions; this page covers the epistemic and ethical consequences.
   - **Relationship to [[AI Scrapers]]**: AI training data scrapers (GPTBot, ClaudeBot, CCBot, Common Crawl) are simultaneously a symptom and a cause of the Death of the Internet dynamic. They are a symptom in that their proliferation reflects the scale of AI training data demand; they are a cause in that their harvesting of the authentic web corpus accelerates its depletion. The [[AI Scrapers]] page covers the technical and legal dimensions of scraping; this page covers the systemic epistemic consequences.
-  - **Relationship to [[Large Language Models]] and [[Foundation Models]]**: The Habsburg AI collapse dynamic directly threatens the quality trajectory of [[Large Language Models]] and [[Foundation Models]]. As the training corpus degrades, model quality degrades in a manner that is self-reinforcing but potentially detectable through diversity metrics. The [[Foundation Models]] page covers technical architecture; this page covers the training data provenance dimension.
-  - **Relationship to [[Bias in Large Language Models]]**: The right-wing media scraping asymmetry and the differential rate of authentic content depletion across languages and cultural contexts both introduce systematic biases into [[Foundation Models]] training distributions. The [[Bias in Large Language Models]] page covers detection and mitigation; this page covers one of the upstream generative causes.
+  - **Relationship to [[Large Language Models]] and [[Large-Scale Pretrained Foundation Model]]**: The Habsburg AI collapse dynamic directly threatens the quality trajectory of [[Large Language Models]] and [[Large-Scale Pretrained Foundation Model]]. As the training corpus degrades, model quality degrades in a manner that is self-reinforcing but potentially detectable through diversity metrics. The [[Large-Scale Pretrained Foundation Model]] page covers technical architecture; this page covers the training data provenance dimension.
+  - **Relationship to [[Bias in Large Language Models]]**: The right-wing media scraping asymmetry and the differential rate of authentic content depletion across languages and cultural contexts both introduce systematic biases into [[Large-Scale Pretrained Foundation Model]] training distributions. The [[Bias in Large Language Models]] page covers detection and mitigation; this page covers one of the upstream generative causes.
   - **Relationship to [[AI companions]]**: The extension of AI-mediated interaction to intimate relationship contexts — dating platform assistance, companion AI applications — represents the most intimate expression of the Dead Internet dynamic. [[AI companions]] covers the product and safety dimensions; this page contextualises them within the broader synthetic content saturation problem.
   - **Relationship to [[Digital Society Surveillance]]**: The bot infrastructure underpinning the Dead Internet Theory serves not only commercial but surveillance and political manipulation purposes. Coordinated inauthentic behaviour by state actors (documented in Europol, Stanford Internet Observatory, and Atlantic Council Digital Forensic Research Lab reports) uses the same technical stack as commercial bot operations. [[Digital Society Surveillance]] covers the political surveillance dimension; this page covers the information integrity consequences.
   - **Relationship to [[Decentralised Web]] and [[Solid]]**: These represent the technical architecture of the primary structural alternative to the centralised, enshittifying platform internet. [[Decentralised Web]] and [[Solid]] cover the protocol and implementation dimensions; this page provides the epistemic and political-economic motivation for their adoption.
@@ -1789,7 +1789,7 @@ public:: true
     - The revival of personal websites, link blogs, and [[Solid]] data pods among technically sophisticated users represents a qualitative shift in how authentically internet-native people relate to the web.
   - **AI as Epistemic Defence**:
     - LLM agents given access to verified search can achieve superhuman rating performance on fact-checking tasks (arXiv:2403.18802, 2024), running at 20x lower cost than human fact-checkers.
-    - Larger, more capable [[Foundation Models]] are systematically more factual than smaller models, suggesting that the quality trajectory of AI systems (if fed clean training data) is toward better epistemic performance.
+    - Larger, more capable [[Large-Scale Pretrained Foundation Model]] are systematically more factual than smaller models, suggesting that the quality trajectory of AI systems (if fed clean training data) is toward better epistemic performance.
     - AI-powered disinformation detection tools (NewsGuard's AI content tracker, Originality.ai's classifier, Google's SynthID watermarking) provide scalable mechanisms for identifying synthetic content in ways that human-only review cannot match.
     - The framework of "signed, attested, timestamped content" (Nic Carter, 2024) as the post-AI epistemic standard — where unsigned content defaults to unreliable and only cryptographically attested content carries epistemic weight — represents a coherent architectural path to a post-enshittification information environment.
   - **Regulatory Momentum**:
@@ -1806,10 +1806,10 @@ public:: true
   - ## Metadata
   - **Domain correction applied**: `infrastructure` → `ethics-society`. The stub assigned `infrastructure` as domain, reflecting the Logseq ontology's use of that domain for web infrastructure concepts. Death of the Internet is an ethics-society concept — it analyses the social, political-economic, and epistemic consequences of platform decay and synthetic content saturation, not the technical infrastructure of the internet. IRI updated from `infrastructure#DeathOfTheInternet` to `ethics-society#DeathOfTheInternet`. URI updated from `urn:visionclaw:concept:infrastructure:death-of-the-internet` to `urn:visionclaw:concept:ethics-society:death-of-the-internet`. Legacy term ID `ES-1041` assigned.
   - **Scope boundary**: This page covers the Death of the Internet as a conceptual cluster in media theory, political economy, and AI governance. The AI infrastructure aspects (model training pipelines, energy consumption of data centres) are covered in depth on [[Carbon Footprint Measurement]], [[Bitcoin Environmental Issues]], and [[Compute Infrastructure]]. The social media manipulation aspects are covered on [[Digital Society Surveillance]] and [[Deepfakes and fraudulent content]]. AI training data provenance is covered on [[AI Scrapers]]. This page focuses on the systemic internet-level dynamics and the authentic content/provenance defence layer.
-  - **Key related pages**: [[AI Scrapers]], [[Agents]], [[Agentic Internet]], [[Decentralised Web]], [[Solid]], [[Trust and Safety]], [[AI Risks]], [[Global Inequality]], [[Legacy Media]], [[Deepfakes and fraudulent content]], [[Human vs AI]], [[Latent Space]], [[Competition in AI]], [[AI Search]], [[Foundation Models]], [[Large Language Models]], [[Bias in Large Language Models]], [[AI companions]], [[Digital Society Surveillance]]
+  - **Key related pages**: [[AI Scrapers]], [[Agents]], [[Agentic Internet]], [[Decentralised Web]], [[Solid]], [[Trust and Safety]], [[AI Risks]], [[Global Inequality]], [[Legacy Media]], [[Deepfakes and fraudulent content]], [[Human-AI Capability Complementarity]], [[Latent Space]], [[Competition in AI]], [[AI Search]], [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Bias in Large Language Models]], [[AI companions]], [[Digital Society Surveillance]]
 
 - ### Provenance
-  - sources:: [[C2PA]], [[W3C]], [[Ofcom]], [[EU AI Act]], [[UK Online Safety Act]], [[Imperva Bad Bot Report 2024]], [[NewsGuard AI Tracker 2024]], [[Shumailov et al. Nature 2024]], [[Data Provenance Initiative 2024]]
+  - sources:: [[C2PA]], [[W3C]], [[Ofcom]], [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]], [[Imperva Bad Bot Report 2024]], [[NewsGuard AI Tracker 2024]], [[Shumailov et al. Nature 2024]], [[Data Provenance Initiative 2024]]
   - key-references::
     - Shumailov et al. "The Curse of Recursion" *Nature* 2024 (model collapse / Habsburg AI)
     - Doctorow "Enshittification" Pluralistic 2023 (platform decay lifecycle)
@@ -1856,7 +1856,7 @@ public:: true
     - Europol warning on AI in online content (2023)
     - W3C SN-dystopia diagram (Berners-Lee on social network dystopia trajectories)
     - Shyam Sankar "Technology is the Problem" (technology-as-root-cause framing)
-  - related-ontology-pages:: [[AI Risks]], [[AI Search]], [[AI Scrapers]], [[Agents]], [[Agentic Internet]], [[Decentralised Web]], [[Solid]], [[Legacy Media]], [[Digital Society Surveillance]], [[Deepfakes and fraudulent content]], [[Human vs AI]], [[Latent Space]], [[Foundation Models]], [[Large Language Models]], [[Bias in Large Language Models]], [[AI companions]], [[Global Inequality]], [[Trust and Safety]], [[Competition in AI]], [[Surveillance Capitalism]], [[Carbon Footprint Measurement]]
+  - related-ontology-pages:: [[AI Risks]], [[AI Search]], [[AI Scrapers]], [[Agents]], [[Agentic Internet]], [[Decentralised Web]], [[Solid]], [[Legacy Media]], [[Digital Society Surveillance]], [[Deepfakes and fraudulent content]], [[Human-AI Capability Complementarity]], [[Latent Space]], [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Bias in Large Language Models]], [[AI companions]], [[Global Inequality]], [[Trust and Safety]], [[Competition in AI]], [[Surveillance Capitalism]], [[Carbon Footprint Measurement]]
   - migration-date:: 2026-05-17T10:00:00Z
   - enriched-by:: claude-sonnet-4-6
   - domain-correction:: infrastructure -> ethics-society

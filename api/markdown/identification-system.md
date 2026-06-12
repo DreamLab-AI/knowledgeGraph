@@ -10,7 +10,7 @@
   - is-subclass-of:: [[System]]
   - hasPart:: [[Authentication]], [[Identity Verification]]
   - requires:: [[Identity Management]], [[Access Control]]
-  - uses:: [[Machine Learning]], [[Biometric Binding Mechanism]], [[Deep Learning]]
+  - uses:: [[Machine Learning Discipline]], [[Biometric Binding Mechanism]], [[Deep Learning]]
   - enables:: [[Access Control System]], [[Identity Systems]]
   - relatedTo:: [[Identity Management System]], [[Privacy Preserving Technology]], [[Algorithmic Bias]]
 

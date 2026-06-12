@@ -24,7 +24,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -56,7 +56,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:disruption",
+        "id": "urn:ngm:class:technology-disruption-dynamics",
         "label": "Disruption"
       },
       {

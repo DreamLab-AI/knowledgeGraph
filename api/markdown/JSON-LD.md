@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-ld",
+  "@id": "urn:ngm:class:json-data-interchange-format-ld",
   "@type": "Class",
   "label": "JSON-LD",
   "definition": "JSON-LD (JSON for Linking Data) is a W3C Recommendation that defines a lightweight serialisation syntax for expressing Linked Data using the JSON data format. It adds a @context document that maps JSON keys to RDF IRIs, enabling any JSON document to be treated as an RDF graph whilst remaining valid JSON parseable by standard libraries. JSON-LD is a primary serialisation format for Verifiable Credentials, Schema.org structured data markup, and activity streams (ActivityPub), bridging the gap between pragmatic web development and formal semantic web standards.",
@@ -42,10 +42,10 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
     ]
   },
@@ -66,7 +66,7 @@ public:: true
   - implements [[Linked Data]]
   - implements [[RDF]]
   - enables [[Ontology]]
-  - enables [[Semantic Web]]
+  - enables [[Semantic Web Linked Data Standard]]
   - relatedTo [[JSON Schema]]
   - relatedTo [[SPARQL]]
 

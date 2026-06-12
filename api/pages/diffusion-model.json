@@ -123,8 +123,8 @@
       "label": "Inpainting"
     },
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney Text-to-Image Service"
     },
     {
       "slug": "music-and-audio",

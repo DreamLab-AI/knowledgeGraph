@@ -937,7 +937,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1335,7 +1335,7 @@ public:: true
   - Systems enriching topological nodes with object-level semantics — room categories, furniture inventories, functional zones — enabling [[Semantic Navigation]] from natural language goals.
   - **3D Scene Graphs** (Armeni et al., ICCV 2019): Layer panoptic segmentation onto topological structure, producing hierarchical representations spanning objects → regions → rooms → buildings → places. Scene graph nodes carry category labels, bounding boxes, and relationship predicates (on, near, connected-to).
   - **Hydra** (Hughes et al., MIT, RSS 2022): Achieves real-time 3D scene graph construction from streaming RGB-D input at 3 Hz on a Jetson AGX Xavier (15 W). Builds a topological graph of semantically-labelled rooms connected by doorways, with object-level nodes within each room accessible for query and planning.
-  - **ConceptGraphs** (Gu et al., 2023): Uses open-vocabulary [[Foundation Models]] (CLIP, SAM, GPT-4V) to populate scene graph nodes with natural language object descriptions, enabling zero-shot semantic navigation from free-form language goals without category-closed object detectors.
+  - **ConceptGraphs** (Gu et al., 2023): Uses open-vocabulary [[Large-Scale Pretrained Foundation Model]] (CLIP, SAM, GPT-4V) to populate scene graph nodes with natural language object descriptions, enabling zero-shot semantic navigation from free-form language goals without category-closed object detectors.
   - Semantic topological maps support LLM-based spatial reasoning: given a scene graph, a language model can answer "which rooms contain charging stations?", "how many exits are on the third floor?", or plan multi-step tasks ("fetch the red mug from the kitchen and bring it to the meeting room with the projector").
   - The convergence of semantic topological maps with [[Large Language Models]] and [[Agents|agentic AI]] represents the frontier of robot spatial intelligence as of 2026.
   - ### Neural Topological Navigation (2019–present)

@@ -49,7 +49,7 @@ alias:: NetworkInfrastructure
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
     ],
     "hasPart": [
@@ -98,7 +98,7 @@ alias:: NetworkInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - supports:: [[Spatial Computing]]
+  - supports:: [[Spatial Computing Paradigm]]
   - supports:: [[AI Infrastructure]]
   - hasPart:: [[Network Component]]
   - hasPart:: [[Edge Computing]]

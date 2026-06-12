@@ -17,7 +17,7 @@
   - depends-on:: [[Stable Diffusion XL]], [[Latent Diffusion Model]], [[Variational Autoencoder]], [[U-Net]], [[CLIP Text Encoder]], [[ControlNet]]
   - supports:: [[Creative Tools]], [[Indie Game Asset Creation]], [[Concept Art Workflows]], [[Local Privacy Workflows]], [[Educational AI Demonstrations]]
   - uses:: [[DPM Plus Plus 2M Karras Sampler]], [[LCM Sampler]], [[Lightning Sampler]], [[SDXL VAE FP16 Fix]], [[GPT-2 Prompt Expansion]], [[CLIP Skip]]
-  - contrasts-with:: [[ComfyUI]], [[AUTOMATIC1111 WebUI]], [[InvokeAI]], [[SwarmUI]], [[Forge WebUI]], [[Midjourney]], [[DALL-E 3]], [[Adobe Firefly]]
+  - contrasts-with:: [[Node-Based Diffusion Pipeline Interface]], [[AUTOMATIC1111 WebUI]], [[InvokeAI]], [[SwarmUI]], [[Forge WebUI]], [[Midjourney Text-to-Image Service]], [[DALL-E 3]], [[Adobe Firefly]]
   - related-to:: [[ControlNet]], [[IC-Light]], [[Paints-Undo]], [[FramePack]], [[RuinedFooocus]], [[Fooocus-MRE]], [[SimpleSDXL2]], [[Stability AI]], [[Hugging Face Diffusers]]
   - standardized-by:: [[Hugging Face Model Hub]], [[CreativeML Open RAIL-M Licence]], [[GPLv3 Licence]], [[Gradio Specification]]
 

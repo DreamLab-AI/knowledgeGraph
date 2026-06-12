@@ -26,8 +26,8 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin as Money"},
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin as Money"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
     ]
   },
   "quality": 0.72

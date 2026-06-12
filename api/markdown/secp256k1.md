@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ]
   },
   "qualityScore": 0.75,

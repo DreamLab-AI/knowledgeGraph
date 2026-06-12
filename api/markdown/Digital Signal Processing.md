@@ -112,7 +112,7 @@ public:: true
         "label": "Spatial Audio"
       },
       {
-        "@id": "urn:ngm:class:video-processing",
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Processing"
       }
     ]
@@ -176,7 +176,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Video Processing]]",
+      "raw": "[[Computer Vision Video Analysis]]",
       "resolved": "urn:visionflow:owl:class:video-processing",
       "kind": "ResolvedLink"
     }
@@ -205,7 +205,7 @@ bridges-to:: [[Sensor Input]]
 - ### Relationships
   - is-subclass-of:: [[Signal Processing]]
   - requires:: [[DSP Hardware]], [[Algorithms]], [[Sensors]]
-  - enables:: [[Audio Enhancement]], [[Video Processing]], [[Spatial Audio]]
+  - enables:: [[Audio Enhancement]], [[Computer Vision Video Analysis]], [[Spatial Audio]]
 
 - ### Content
 

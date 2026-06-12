@@ -8,7 +8,7 @@
 - ### Relationships
   - uses: [[Real-Time Rendering]], [[Augmented Reality]]
   - enables: [[Immersive Experience]], [[Immersive Entertainment]]
-  - relatedTo: [[Spatial Computing]], [[AR Technology]]
+  - relatedTo: [[Spatial Computing Paradigm]], [[AR Technology]]
 
 - ### Content
   # ProjectionMapping

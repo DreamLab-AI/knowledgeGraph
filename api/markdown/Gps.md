@@ -213,7 +213,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -238,7 +238,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Spatial Computing]]
+  - bridges-to:: [[Spatial Computing Paradigm]]
   - is-subclass-of:: [[Robotics]], [[Navigation System]]
   - is-part-of:: [[Global Localisation]], [[Mission Planning]]
   - requires:: [[Antenna Array]], [[Signal Processing]], [[Map Integration]]

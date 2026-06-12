@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"}
     ]
   },
   "quality": 0.8

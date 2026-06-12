@@ -74,7 +74,7 @@ public:: true
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ]
   },
   "provenance": {
@@ -129,7 +129,7 @@ public:: true
   - requires:: [[Real-Time Rendering]], [[XR Device]]
   - hasPart:: [[Foveated Rendering]], [[Real-Time Rendering Pipeline]]
   - enables:: [[Virtual Production]], [[Immersive Experience]]
-  - uses:: [[Spatial Computing]]
+  - uses:: [[Spatial Computing Paradigm]]
 
 - ### Content
 

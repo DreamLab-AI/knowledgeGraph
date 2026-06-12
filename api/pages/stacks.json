@@ -8,7 +8,7 @@
   "definition": "A Bitcoin Layer that enables smart contracts and applications whose state is anchored to the Bitcoin blockchain through its proof-of-transfer consensus.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
       "label": "Bitcoin"
     }
   ],
@@ -23,7 +23,7 @@
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ],

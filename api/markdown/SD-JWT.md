@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-web-token", "label": "JSON Web Token"},
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
     ],

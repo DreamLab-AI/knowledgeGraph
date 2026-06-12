@@ -275,4 +275,4 @@
     - **Quality Score**: 0.52 (Phase 6 target: 0.50+)
     - **Authority Score**: 0.87 (Phase 6 range: 0.86–0.88)
     - **Key Metrics**: ~730 lines, ~10,800 words, 41 OWL axioms, 71 wikilink relationships, 26 provenance references
-    - **Related Concepts**: [[Proof of Work]], [[Proof of Stake]], [[Bitcoin Environmental Issues]], [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Ethereum]], [[Solana]], [[Algorand]], [[Avalanche]], [[Tendermint]], [[DeFi]], [[Blockchain Network]], [[CBDC Frameworks]]
+    - **Related Concepts**: [[Proof of Work]], [[Proof of Stake]], [[Bitcoin Environmental Issues]], [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Ethereum Smart Contract Platform]], [[Solana]], [[Algorand]], [[Avalanche]], [[Tendermint]], [[DeFi]], [[Blockchain Network]], [[CBDC Frameworks]]

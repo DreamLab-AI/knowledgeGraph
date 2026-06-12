@@ -87,7 +87,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:semantic-web-infrastructure",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-infrastructure",
         "label": "Semantic Web Infrastructure"
       },
       {
@@ -289,8 +289,8 @@
       "label": "Semantic Web Domain"
     },
     {
-      "slug": "semantic-web",
-      "label": "Semantic Web"
+      "slug": "semantic-web-linked-data-standard",
+      "label": "Semantic Web Linked Data Standard"
     },
     {
       "slug": "solid",

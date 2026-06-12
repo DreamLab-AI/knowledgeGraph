@@ -1,0 +1,57 @@
+public:: true
+
+elevatedFrom:: [[Apple]]
+# Apple Inc Technology Corporation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:apple",
+  "@type": "Page",
+  "vc:slug": "apple-inc-technology-corporation",
+  "title": "Apple Inc Technology Corporation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:apple-inc-technology-corporation-inc-technology-corporation",
+  "@type": "Class",
+  "label": "Apple Inc Technology Corporation",
+  "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services, with flagship product lines including the iPhone, iPad, Mac, Apple Watch, and the Apple Vision Pro spatial computing headset. Apple is distinguished by its vertically integrated hardware-software model, proprietary silicon (the Apple Silicon series based on ARM architecture), and the iOS and macOS operating system ecosystems. With a market capitalisation regularly exceeding two trillion US dollars, Apple is among the most valuable publicly traded companies in the world.",
+  "domain": "spatial",
+  "maturity": "mature",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:hardware", "label": "Hardware"}
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:apple-inc-technology-corporation-inc-technology-corporation-vision-pro", "label": "Apple Vision Pro"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Apple Inc Technology Corporation]] Inc. is one of the world's largest technology companies, known for the tight integration of its [[Hardware]] and software ecosystems. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, the company transformed the personal computing, music distribution, smartphone, and tablet industries in successive waves. Its 2023 introduction of the [[Apple Vision Pro]] spatial computing platform marks its entry into the [[Augmented Reality]] and mixed reality market with a proprietary visionOS operating system.
+
+- ### Relationships
+  - As a major hardware manufacturer, [[Apple Inc Technology Corporation]] enables the [[Apple Vision Pro]] platform and broader [[Augmented Reality]] use cases through its proprietary silicon and sensor integration. Its M-series and R-series chips provide [[Hardware Acceleration]] that underpins real-time [[Spatial AI]] inference on-device. Apple's ecosystem strategy means its hardware, operating systems, and developer tools are deeply co-designed, giving it unusual leverage in setting platform standards.
+
+- ### Content
+  - Apple was founded in 1976 in the garage of Steve Jobs' parents and released the Apple I, a kit computer for hobbyists. The Apple II (1977) was one of the first mass-market personal computers, and the Macintosh (1984) popularised the graphical user interface for mainstream audiences. After Jobs' departure and return in 1997, Apple launched the iMac, iPod, iTunes, and ultimately the iPhone (2007), which reshaped the telecommunications and application-software industries globally.
+
+  - Apple's technical strategy is built on vertical integration of silicon, software, and services. The transition from Intel x86 processors to Apple Silicon (M1, M2, M3, M4 series) beginning in 2020 brought dramatic performance-per-watt improvements by co-designing CPU, GPU, Neural Engine, and memory on a single SoC. The A-series chips in iOS devices follow the same philosophy. The company's secure enclave architecture and on-device machine learning capabilities reflect a design priority on privacy-preserving computation.
+
+  - The developer ecosystem around Apple's platforms encompasses roughly 34 million registered developers building for iOS, macOS, watchOS, tvOS, and visionOS. The App Store, launched in 2008, has generated over $1 trillion in cumulative developer billings and has been the subject of significant regulatory scrutiny in the European Union (Digital Markets Act), the United States, and numerous other jurisdictions regarding its monopolistic commission structure and app review policies.
+
+  - In 2024-2025, Apple is integrating its Apple Intelligence generative AI capabilities across its operating systems, combining on-device inference with privacy-preserving cloud compute (Private Cloud Compute). Its visionOS 2 release has expanded the [[Apple Vision Pro]] platform's enterprise and developer features. Apple remains a pivotal player in the spatial computing, AI hardware, and consumer wearables markets, with its silicon roadmap and health-sensing ambitions shaping industry expectations for the next hardware cycle.

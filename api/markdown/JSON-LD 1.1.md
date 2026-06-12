@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-ld-1-1",
+  "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
   "@type": "Class",
   "label": "JSON-LD 1.1",
   "definition": "JSON-LD 1.1 is a W3C Recommendation that extends JSON-LD 1.0 with features including scoped contexts, type-scoped contexts, and propagation control, enabling richer mapping of JSON document terms to IRIs within RDF-based knowledge systems. It provides a framing algorithm for reshaping a flat graph into a tree, and supports compaction and expansion algorithms that allow any conformant document to be normalised to a canonical form. JSON-LD 1.1 underpins interoperable semantic data exchange on the Web and is the serialisation format used by the Verifiable Credentials and Activity Streams standards.",
@@ -44,14 +44,14 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ]
   },
   "qualityScore": 0.75,
@@ -73,7 +73,7 @@ public:: true
   - enables [[Knowledge Graph]]
   - uses [[JSON-LD]]
   - relatedTo [[SPARQL]]
-  - relatedTo [[Semantic Web]]
+  - relatedTo [[Semantic Web Linked Data Standard]]
 
 - ### Content
   - JSON-LD 1.1 is defined by the W3C JSON-LD Working Group and consists of three companion specifications: the core syntax document, a processing algorithm and API document, and a framing document. The context mechanism allows authors to define a mapping between short, human-readable terms and globally unique IRIs, so that a JSON document can simultaneously be valid JSON and a valid RDF graph without any structural transformation required by consuming applications.

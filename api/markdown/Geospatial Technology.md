@@ -59,14 +59,14 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Location Based Experience"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:geospatial-engine", "label": "Geospatial Engine"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ]
   },
   "provenance": {
@@ -114,10 +114,10 @@ public:: true
   - **hasPart** [[Gps]] — GPS is a primary geospatial positioning technology
   - **hasPart** [[Geospatial Information]] — geospatial technology acquires and processes geospatial information
   - **enables** [[Digital Twin]] — georeferenced spatial data underpins urban and infrastructure digital twins
-  - **enables** [[Location Based Experience]] — precise positioning enables location-anchored XR experiences
+  - **enables** [[Venue-Tethered Immersive Experience]] — precise positioning enables location-anchored XR experiences
   - **uses** [[Lidar]] — LiDAR provides high-accuracy 3D geospatial point cloud data
   - **uses** [[Geospatial Engine]] — geospatial engines process and render spatial data at scale
-  - **relatedTo** [[Spatial Computing]] — geospatial technology is a foundational layer of spatial computing platforms
+  - **relatedTo** [[Spatial Computing Paradigm]] — geospatial technology is a foundational layer of spatial computing platforms
 
 - ### Content
 

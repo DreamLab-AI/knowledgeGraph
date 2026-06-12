@@ -24,7 +24,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-rpc",
+  "@id": "urn:ngm:class:json-data-interchange-format-rpc",
   "@type": "Class",
   "label": "JSON-RPC",
   "definition": "JSON-RPC is a lightweight, stateless, transport-agnostic remote procedure call protocol that encodes method invocations and their results as JSON objects, defined by the JSON-RPC 2.0 specification. A request object carries a method name, an optional params field, and an id for correlation; the response carries either a result or an error object. It is the canonical API protocol for Ethereum and EVM-compatible nodes (via eth_ and net_ namespaces), and serves as the wire format underlying the Language Server Protocol and the Model Context Protocol used in AI tool-calling infrastructure.",

@@ -162,7 +162,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -184,7 +184,7 @@
         "label": "National Competitiveness"
       },
       {
-        "id": "urn:ngm:class:public-service-modernisation",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-service-modernisation",
         "label": "Public Service Modernisation"
       },
       {
@@ -218,7 +218,7 @@
         "label": "US AI Action Plan 2025"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -710,6 +710,10 @@
       "label": "Economics"
     },
     {
+      "slug": "employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
     },
@@ -776,10 +780,6 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "social-contract-and-jobs",
-      "label": "Social contract and jobs"
     },
     {
       "slug": "trust-and-safety",

@@ -72,7 +72,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:machine-learning-domain",
+      "@id": "urn:ngm:class:machine-learning-discipline-domain",
       "label": "Machine Learning Domain"
     }
   ],
@@ -83,7 +83,7 @@ public:: true
         "label": "Shapley Value"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-model",
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],

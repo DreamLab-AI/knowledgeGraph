@@ -56,14 +56,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:stable-diffusion",
+      "@id": "urn:ngm:class:stable-diffusion-image-model",
       "label": "Stable Diffusion"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -97,7 +97,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:linked:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -136,9 +136,9 @@ public:: true
   - owl-role:: Individual
 
 - ### Relationships
-  - is-subclass-of:: [[Stable Diffusion]]
+  - is-subclass-of:: [[Stable Diffusion Image Model]]
   - bridges-to:: [[Image Generation]]
-  - requires:: [[Stable Diffusion]]
+  - requires:: [[Stable Diffusion Image Model]]
   - enables:: [[Image-to-Image]], [[Inpainting]]
 
 - ### Content

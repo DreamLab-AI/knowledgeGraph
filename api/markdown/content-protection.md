@@ -12,7 +12,7 @@
   - Uses [[Access Control]]
   - Requires [[Digital Rights]]
   - Enables [[Digital Ownership]]
-  - Related To [[copyright]]
+  - Related To [[Intellectual Property Rights Framework]]
 
 - ### Content
 

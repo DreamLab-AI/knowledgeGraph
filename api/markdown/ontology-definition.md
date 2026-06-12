@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - uses: [[Knowledge Representation]], [[Semantic Web]]
+  - uses: [[Knowledge Representation]], [[Semantic Web Linked Data Standard]]
   - enables: [[Interoperability]], [[Knowledge Graph]], [[Data Governance]]
   - supports: [[Metaverse Ontology]], [[Identity Management]]
 

@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Autonomous Driving]]
   - bridges-to:: [[Deep Learning]]
-  - requires:: [[Machine Learning]], [[Computer Vision]]
+  - requires:: [[Machine Learning Discipline]], [[Computer Vision]]
   - enables:: [[Autonomous Vehicle]]
 
 - ### Content

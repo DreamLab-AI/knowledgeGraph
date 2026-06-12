@@ -101,7 +101,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -131,7 +131,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Wallet]]
-  - bridges-to:: [[Ethereum]], [[Wallet]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]], [[Wallet]]
   - requires:: [[Account Abstraction]], [[Smart Contracts]]
 
 - ### Content

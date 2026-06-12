@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:e290e390563b21eabf249899973e3b1d556794ed8a6f299e3e3b1ef0dfe75e80",
+  "title": "Kelly Drecourt EdTech Practitioner",
+  "slug": "kelly-drecourt-edtech-practitioner",
+  "public": true,
+  "classIri": "urn:ngm:class:kelly-drecourt-edtech-practitioner-edtech-practitioner",
+  "domain": "infrastructure",
+  "definition": "Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

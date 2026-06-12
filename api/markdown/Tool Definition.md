@@ -28,7 +28,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
       {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},

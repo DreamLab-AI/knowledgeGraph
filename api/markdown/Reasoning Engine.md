@@ -34,7 +34,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ]
   },
   "quality": 0.8
@@ -45,7 +45,7 @@ public:: true
   - A reasoning engine derives new conclusions from existing knowledge by applying inference rules, search, or learned heuristics, serving as the deductive core of expert systems, planners, and agentic AI.
 
 - ### Relationships
-  - Reasoning Engine is a subclass of [[Reasoning]] and enables structured inference patterns such as [[Chain of Thought]] and [[Multi-Step Reasoning]]. It uses a [[Knowledge Graph]] as a structured substrate for facts and relations, and relates to [[LLM Agents]] that invoke it as a tool and to [[Semantic Web]] technologies that supply machine-readable axioms.
+  - Reasoning Engine is a subclass of [[Reasoning]] and enables structured inference patterns such as [[Chain of Thought]] and [[Multi-Step Reasoning]]. It uses a [[Knowledge Graph]] as a structured substrate for facts and relations, and relates to [[LLM Agents]] that invoke it as a tool and to [[Semantic Web Linked Data Standard]] technologies that supply machine-readable axioms.
 
 - ### Content
   - The classical reasoning engine grew out of the expert-systems era, where production-rule interpreters such as those in OPS5 and CLIPS applied if-then rules to a working memory of facts, repeatedly firing matched rules until no further conclusions could be drawn. Description-logic reasoners (Pellet, HermiT, FaCT++) later formalised inference over ontologies, computing class subsumption, consistency, and instance classification with provable soundness and completeness.

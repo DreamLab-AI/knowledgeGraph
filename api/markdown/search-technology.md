@@ -10,7 +10,7 @@
   - Uses [[Natural Language Processing]]
   - Enables [[Information Retrieval]]
   - Enables [[Enterprise Search]]
-  - Depends on [[Machine Learning]]
+  - Depends on [[Machine Learning Discipline]]
   - Bridges to [[Knowledge Graph]]
 
 - ### Content

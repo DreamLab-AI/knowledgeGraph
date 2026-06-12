@@ -23,13 +23,13 @@ public:: true
   "definition": "Recommendation Systems are information filtering systems that predict a user's preference for items—products, content, services—and surface the most relevant items from a large catalogue. They are categorised into collaborative filtering (leveraging the behaviour of similar users), content-based filtering (matching item attributes to user profiles), and hybrid approaches that combine both. Modern large-scale recommendation systems employ deep learning architectures, embedding models, and two-tower neural networks trained on implicit feedback signals such as clicks, watch-time, and purchases. Recommendation systems are among the highest-impact machine learning applications in commercial technology, driving substantial fractions of revenue at platforms such as Netflix, Amazon, YouTube, and Spotify, while also raising significant concerns about filter bubbles, engagement maximisation harms, and algorithmic amplification of misinformation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
@@ -37,7 +37,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ]
   },
   "quality": 0.8
@@ -45,7 +45,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Recommendation Systems]] are [[Machine Learning]] systems that predict user preferences to surface relevant items from large catalogues, using collaborative filtering, content-based filtering, and hybrid [[Deep Learning]] architectures trained on implicit feedback to power [[Hyper personalisation]] across digital platforms.
+  - [[Recommendation Systems]] are [[Machine Learning Discipline]] systems that predict user preferences to surface relevant items from large catalogues, using collaborative filtering, content-based filtering, and hybrid [[Deep Learning]] architectures trained on implicit feedback to power [[Hyper personalisation]] across digital platforms.
 - ### Relationships
   - [[Recommendation Systems]] depend on [[Embedding Model]] representations to capture latent relationships between users and items in shared vector spaces, enabling efficient nearest-neighbour retrieval at scale. [[Recommendation Engine]] infrastructure translates offline-trained models into online serving pipelines, while [[Machine Learning Pipeline]] tooling manages feature engineering, training, evaluation, and deployment. [[Deep Learning]] architectures—particularly [[Graph Neural Network]] models that capture social and item-graph structure—have displaced earlier matrix factorisation methods. The systems enable [[Predictive Personalization]] and [[Hyper personalisation]] experiences but raise governance concerns about engagement maximisation that drives harmful content amplification.
 - ### Content

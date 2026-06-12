@@ -75,7 +75,7 @@ public:: true
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ],
@@ -110,7 +110,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -156,7 +156,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Decentralised Finance Domain]]
   - bridges-to:: [[Gnosis Safe]], [[Governance Domain]]
-  - requires:: [[IPFS]], [[Ethereum]]
+  - requires:: [[IPFS]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Decentralised Autonomous Organisation]]
 
 - ### Content

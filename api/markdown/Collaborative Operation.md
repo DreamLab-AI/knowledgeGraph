@@ -91,7 +91,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-operation",
+  "@id": "urn:ngm:class:collaborative-systems-modality-operation",
   "@type": "Class",
   "label": "Collaborative Operation",
   "definition": "Collaborative Operation - Coordinated execution of tasks between Human Operators and Robotic Systems within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",

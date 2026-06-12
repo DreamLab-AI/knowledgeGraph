@@ -108,7 +108,7 @@ alias:: InfrastructureLayer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:infrastructure-layer",
+  "@id": "urn:ngm:class:technology-infrastructure-domain-layer",
   "@type": "Class",
   "label": "Infrastructure Layer",
   "definition": "Foundational base layer providing computing, storage, and network capabilities that enable metaverse applications and services to operate at scale.",
@@ -147,7 +147,7 @@ alias:: InfrastructureLayer
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-layer",
+        "@id": "urn:ngm:class:spatial-computing-paradigm-layer",
         "label": "Spatial Computing Layer"
       },
       {
@@ -189,7 +189,7 @@ alias:: InfrastructureLayer
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:infrastructure-domain",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
         "label": "InfrastructureDomain"
       }
     ]

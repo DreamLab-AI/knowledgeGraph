@@ -204,7 +204,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:json-ld-context",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
         "label": "JSON-LD Context"
       },
       {

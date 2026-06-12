@@ -29,7 +29,7 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},

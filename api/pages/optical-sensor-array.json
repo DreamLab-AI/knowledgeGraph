@@ -114,7 +114,7 @@
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       },
       {
@@ -145,7 +145,7 @@
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       },
       {
@@ -235,7 +235,7 @@
         "label": "Self Driving Car"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -288,7 +288,7 @@
         "label": "Display Hardware"
       },
       {
-        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       },
       {
@@ -312,7 +312,7 @@
         "label": "SLAM"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]

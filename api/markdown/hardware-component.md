@@ -9,7 +9,7 @@
   - hasPart [[Sensor]]
   - hasPart [[Display Hardware]]
   - hasPart [[GPU Compute]]
-  - enables [[Spatial Computing]]
+  - enables [[Spatial Computing Paradigm]]
   - enables [[Haptic Feedback]]
 
 - ### Content
@@ -22,7 +22,7 @@
   - [[Sensor]]
   - [[Display Hardware]]
   - [[GPU Compute]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
 
 - ### Provenance
   - sources::

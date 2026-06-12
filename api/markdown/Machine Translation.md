@@ -161,7 +161,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -176,12 +176,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Gemini]]",
+      "raw": "[[Gemini Multimodal Language Model]]",
       "resolved": "urn:visionflow:owl:class:gemini",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -448,7 +448,7 @@ public:: true
 
   - ### Methodology
   - In this experiment I used a combination of Claude 3 Opus, ChatGPT4, and Google Gemini Advanced 1.5.
-  - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
+  - [[Google AI Technology Corporation]] [[Gemini Multimodal Language Model]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
 		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
@@ -495,7 +495,7 @@ public:: true
 		      Try to identify shortfalls, extensions, expansions, important additional features, and justifications. 
 		      Work methodically and step by step explaining the rationale, then make the diagram code.
 		  ```
-  - This was the final prompt to [[Anthropic Claude]] 3 Opus, which merged in the previously developed [[Metaverse Ontology]] was lightly shaped into the output below.
+  - This was the final prompt to [[Constitutional AI Language Model Family]] 3 Opus, which merged in the previously developed [[Metaverse Ontology]] was lightly shaped into the output below.
 		- ```text
 		  this is the Linked-JSON ontology we made for the instance that is now called Omniverse digital twin. 
 		  Use the detail therein to expand the leaf with this example, but in our new diagrammatic notation. 
@@ -516,7 +516,7 @@ public:: true
 
   - ### Methodology
   - In this experiment I used a combination of Claude 3 Opus, ChatGPT4, and Google Gemini Advanced 1.5.
-  - [[Google]] [[Gemini]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
+  - [[Google AI Technology Corporation]] [[Gemini Multimodal Language Model]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
   - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
   - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
 		- I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
@@ -563,7 +563,7 @@ public:: true
 		      Try to identify shortfalls, extensions, expansions, important additional features, and justifications. 
 		      Work methodically and step by step explaining the rationale, then make the diagram code.
 		  ```
-  - This was the final prompt to [[Anthropic Claude]] 3 Opus, which merged in the previously developed [[Metaverse Ontology]] was lightly shaped into the output below.
+  - This was the final prompt to [[Constitutional AI Language Model Family]] 3 Opus, which merged in the previously developed [[Metaverse Ontology]] was lightly shaped into the output below.
 		- ```text
 		  this is the Linked-JSON ontology we made for the instance that is now called Omniverse digital twin. 
 		  Use the detail therein to expand the leaf with this example, but in our new diagrammatic notation. 

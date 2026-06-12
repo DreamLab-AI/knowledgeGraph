@@ -154,7 +154,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:multimodal-feedback",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-feedback",
         "label": "Multimodal Feedback"
       },
       {

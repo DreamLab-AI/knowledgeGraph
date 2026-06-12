@@ -29,7 +29,7 @@ alias:: W3C (World Wide Web Consortium)
     "relatedTo": [
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
       {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:ietf", "label": "IETF"}
     ],
@@ -47,8 +47,8 @@ alias:: W3C (World Wide Web Consortium)
     ],
     "uses": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
@@ -63,7 +63,7 @@ alias:: W3C (World Wide Web Consortium)
 - ### Definition
   - The World Wide Web Consortium (W3C) is the principal international standards body for the web, producing royalty-free, consensus-based specifications that underpin HTML, CSS, the semantic web, and decentralised identity infrastructure used globally.
 - ### Relationships
-  - W3C operates as the authoritative [[Standards Body]] for the web, publishing specifications adopted by all major browsers and platforms. Its working groups include the [[Decentralized Identity (DID)]] and [[Verifiable Credentials]] groups that define foundational identity infrastructure. W3C coordinates with [[IETF]] on protocol matters and produces the [[W3C DID Core]] specification alongside the [[Verifiable Credential Standard]]. Its outputs rely heavily on [[RDF]], [[JSON-LD]], and the broader [[Semantic Web]] stack, all governed under an [[Open Standard]] model.
+  - W3C operates as the authoritative [[Standards Body]] for the web, publishing specifications adopted by all major browsers and platforms. Its working groups include the [[Decentralized Identity (DID)]] and [[Verifiable Credentials]] groups that define foundational identity infrastructure. W3C coordinates with [[IETF]] on protocol matters and produces the [[W3C DID Core]] specification alongside the [[Verifiable Credential Standard]]. Its outputs rely heavily on [[RDF]], [[JSON-LD]], and the broader [[Semantic Web Linked Data Standard]] stack, all governed under an [[Open Standard]] model.
 - ### Content
   - W3C was established in 1994 at MIT by Tim Berners-Lee with the explicit goal of realising the full potential of the web through open, vendor-neutral standardisation. Unlike ISO or IEEE, W3C operates on a membership model with over 400 organisations, balancing commercial interests against the public good through a structured process of Working Drafts, Candidate Recommendations, and Proposed Recommendations before a specification achieves W3C Recommendation status.
 

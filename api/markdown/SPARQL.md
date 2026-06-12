@@ -46,7 +46,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"},
       {"@id": "urn:ngm:class:sparql-endpoint", "label": "SPARQL Endpoint"}
     ]
   },

@@ -121,7 +121,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:apple-vision-os-hand-input",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-vision-os-hand-input",
         "label": "Apple visionOS Hand Input"
       },
       {
@@ -179,7 +179,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:apple-vision-pro",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
         "label": "Apple Vision Pro"
       },
       {

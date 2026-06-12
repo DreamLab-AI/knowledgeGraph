@@ -25,7 +25,7 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:imf", "label": "IMF"}, {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin as Money"}]
+    "relatedTo": [{"@id": "urn:ngm:class:imf", "label": "IMF"}, {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin as Money"}]
   },
   "quality": 0.72
 }

@@ -440,7 +440,7 @@ public:: true
         "label": "Cryptographic Key Management"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -522,7 +522,7 @@ public:: true
         "label": "Hardware Security Module"
       },
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {

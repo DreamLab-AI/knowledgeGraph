@@ -94,7 +94,7 @@ public:: true
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:license-management",
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument-management",
         "label": "License Management"
       },
       {

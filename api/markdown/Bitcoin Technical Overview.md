@@ -515,7 +515,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-technical-overview",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
   "@type": "Class",
   "label": "Bitcoin Technical Overview",
   "definition": "Bitcoin Technical Overview is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol — the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whit...",
@@ -538,7 +538,7 @@ public:: true
         "label": "BIP Process"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -796,11 +796,11 @@ public:: true
         "label": "BIP Process"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-optech",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-optech",
         "label": "Bitcoin Optech"
       },
       {
@@ -1333,7 +1333,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1458,7 +1458,7 @@ public:: true
   - depends-on:: [[Cryptographic Hash]], [[Elliptic Curve Cryptography]], [[Game Theory]], [[Distributed Systems]], [[Network Theory]], [[Public Key Infrastructure]]
   - supports:: [[Lightning Network]], [[RGB Protocol]], [[Ordinals]], [[Taproot]], [[Segwit]], [[Multisignature]], [[Time-locked Contracts]], [[Payment Channels]]
   - uses:: [[SHA-256]], [[RIPEMD-160]], [[secp256k1]], [[ECDSA]], [[Schnorr Signatures]], [[Merkle Tree]], [[Bloom Filters]], [[Compact Block Relay]]
-  - contrasts-with:: [[Ethereum]], [[Proof of Stake]], [[Account Model]], [[Permissioned Blockchain]], [[Central Bank Digital Currency]]
+  - contrasts-with:: [[Ethereum Smart Contract Platform]], [[Proof of Stake]], [[Account Model]], [[Permissioned Blockchain]], [[Central Bank Digital Currency]]
   - related-to:: [[Blockchain]], [[Cryptocurrency]], [[Decentralisation]], [[Digital Gold]], [[Monetary Policy]], [[Cryptography]], [[Open Source Software]]
   - standardized-by:: [[BIP Process]], [[Bitcoin Core]], [[BOLT Specification]], [[BIP-340]], [[BIP-341]], [[BIP-342]], [[Bitcoin Optech]]
 
@@ -1641,7 +1641,7 @@ public:: true
 
   - ### UTXO Model and Transaction Architecture
 
-	  [[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
+	  [[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum Smart Contract Platform]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
 
 	  #### UTXO Structure
 

@@ -103,7 +103,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
@@ -206,7 +206,7 @@ public:: true
   - **enables** [[Model Interpretability]] — feature importance scores explain which inputs drive predictions
   - **enables** [[Global Explanation]] — aggregated feature importance provides global model explanations
   - **uses** [[Dimensionality Reduction]] — feature importance informs which dimensions to retain or remove
-  - **uses** [[Machine Learning]] — importance scores are computed from trained machine learning models
+  - **uses** [[Machine Learning Discipline]] — importance scores are computed from trained machine learning models
   - **supports** [[AI Governance]] — feature importance evidence supports governance audits and fairness assessments
   - **supports** [[Transparency]] — publishing feature importance increases AI system transparency
 

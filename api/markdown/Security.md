@@ -152,7 +152,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -192,7 +192,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Politics, Law, Privacy]]",
+      "raw": "[[AI Governance Law and Privacy]]",
       "resolved": "urn:visionflow:owl:class:politics-law-privacy",
       "kind": "ResolvedLink"
     },
@@ -346,7 +346,7 @@ public:: true
 		- Writing and gestures supported
 		- Mac support
   - #### THe TrUTh iS OuT ThERe
-		- This was [[Anthropic Claude]] responding to a research formatted query about 'conspiracy theories' found online.
+		- This was [[Constitutional AI Language Model Family]] responding to a research formatted query about 'conspiracy theories' found online.
 		- ![image.png](assets/image_1719001668969_0.png){:width 600}
 		- "Open source response"
 			- CIA/MI5 Hacking Smart Devices
@@ -384,7 +384,7 @@ public:: true
 		- **Symbolic Value:** Gold has been revered throughout history, symbolizing wealth, purity, and status across cultures.
 		- **Financial Instrument:** Often viewed as a hedge against inflation and currency devaluation, gold is a staple in diversified investment portfolios.
   - ## [[Cyber Security and Cryptography]] and Fraud Prevention
-		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
+		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  << this feels like it will be warfare
 		  background-color:: red
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
@@ -516,7 +516,7 @@ public:: true
 		- Writing and gestures supported
 		- Mac support
   - #### THe TrUTh iS OuT ThERe
-		- This was [[Anthropic Claude]] responding to a research formatted query about 'conspiracy theories' found online.
+		- This was [[Constitutional AI Language Model Family]] responding to a research formatted query about 'conspiracy theories' found online.
 		- ![image.png](assets/image_1719001668969_0.png){:width 600}
 		- "Open source response"
 			- CIA/MI5 Hacking Smart Devices
@@ -554,7 +554,7 @@ public:: true
 		- **Symbolic Value:** Gold has been revered throughout history, symbolizing wealth, purity, and status across cultures.
 		- **Financial Instrument:** Often viewed as a hedge against inflation and currency devaluation, gold is a staple in diversified investment portfolios.
   - ## [[Cyber Security and Cryptography]] and Fraud Prevention
-		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
+		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
 			- [Tether](https://tether.to/en/whitepaper/) is the largest of the stablecoins, with some $70B in circulation, and the third largest ‘crypto’. This has been a meteoric rise, attracting the ire and scrutiny of [regulators](https://www.cftc.gov/PressRoom/PressReleases/8450-21) and [investigators](https://www.bloomberg.com/news/features/2021-10-07/crypto-mystery-where-s-the-69-billion-backing-the-stablecoin-tether). There was considerable doubt that Tether had sufficient assets backing their synthetic dollars, but the market seems not to mind. Recently however they have transitioned to being backed by US treasury bills, a perfect asset for this use case. It’s resilience against ‘bank runs’ was tested in May 2022 when $9B was redeemed directly for dollars in a few days following the UST crash (more on this later). They are [shortly to launch](https://tether.to/en/tether-to-launch-gbpt-tether-tokens-pegged-to-the-british-pound-sterling/) a GBP version for the UK. It’s an important technology for this metaverse conversation because of intersections with Bitcoin through the Lightning network. Tether might actually provide everything needed. It’s only as safe as the trust invested in the central issuer though, and the leadership and history of the company [are questionable](https://www.wsj.com/articles/tether-ownership-and-company-weaknesses-revealed-in-documents-11675363340). It’s notable and somewhat ironic that it’s perhaps better and more transparently backed than most banks, and probably all novel fiat fintech products. We can employ the asset through the Taro technology described earlier but we would rather use something with higher regulatory assurances.
@@ -662,7 +662,7 @@ public:: true
 	 - **Democratization of AI:** Explores the potential for the democratization of powerful AI capabilities to be as destabilizing as historical technologies like the printing press, reshaping institutions and societal structures.
 	 - **Techno-Feudalist Timeline:** Discusses the potential for a *techno-feudalist" timeline, where the provision of various public goods, including security against AI misuse, shifts into private hands.
   - ## [[Cyber Security and Cryptography]] and Fraud Prevention
-		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
+		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
 			- [Tether](https://tether.to/en/whitepaper/) is the largest of the stablecoins, with some $70B in circulation, and the third largest ‘crypto’. This has been a meteoric rise, attracting the ire and scrutiny of [regulators](https://www.cftc.gov/PressRoom/PressReleases/8450-21) and [investigators](https://www.bloomberg.com/news/features/2021-10-07/crypto-mystery-where-s-the-69-billion-backing-the-stablecoin-tether). There was considerable doubt that Tether had sufficient assets backing their synthetic dollars, but the market seems not to mind. Recently however they have transitioned to being backed by US treasury bills, a perfect asset for this use case. It’s resilience against ‘bank runs’ was tested in May 2022 when $9B was redeemed directly for dollars in a few days following the UST crash (more on this later). They are [shortly to launch](https://tether.to/en/tether-to-launch-gbpt-tether-tokens-pegged-to-the-british-pound-sterling/) a GBP version for the UK. It’s an important technology for this metaverse conversation because of intersections with Bitcoin through the Lightning network. Tether might actually provide everything needed. It’s only as safe as the trust invested in the central issuer though, and the leadership and history of the company [are questionable](https://www.wsj.com/articles/tether-ownership-and-company-weaknesses-revealed-in-documents-11675363340). It’s notable and somewhat ironic that it’s perhaps better and more transparently backed than most banks, and probably all novel fiat fintech products. We can employ the asset through the Taro technology described earlier but we would rather use something with higher regulatory assurances.
@@ -695,7 +695,7 @@ public:: true
 	 - **Democratization of AI:** Explores the potential for the democratization of powerful AI capabilities to be as destabilizing as historical technologies like the printing press, reshaping institutions and societal structures.
 	 - **Techno-Feudalist Timeline:** Discusses the potential for a *techno-feudalist" timeline, where the provision of various public goods, including security against AI misuse, shifts into private hands.
   - ## [[Cyber Security and Cryptography]] and Fraud Prevention
-		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
+		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
 		- ### Tether
 			- [Tether](https://tether.to/en/whitepaper/) is the largest of the stablecoins, with some $70B in circulation, and the third largest ‘crypto’. This has been a meteoric rise, attracting the ire and scrutiny of [regulators](https://www.cftc.gov/PressRoom/PressReleases/8450-21) and [investigators](https://www.bloomberg.com/news/features/2021-10-07/crypto-mystery-where-s-the-69-billion-backing-the-stablecoin-tether). There was considerable doubt that Tether had sufficient assets backing their synthetic dollars, but the market seems not to mind. Recently however they have transitioned to being backed by US treasury bills, a perfect asset for this use case. It’s resilience against ‘bank runs’ was tested in May 2022 when $9B was redeemed directly for dollars in a few days following the UST crash (more on this later). They are [shortly to launch](https://tether.to/en/tether-to-launch-gbpt-tether-tokens-pegged-to-the-british-pound-sterling/) a GBP version for the UK. It’s an important technology for this metaverse conversation because of intersections with Bitcoin through the Lightning network. Tether might actually provide everything needed. It’s only as safe as the trust invested in the central issuer though, and the leadership and history of the company [are questionable](https://www.wsj.com/articles/tether-ownership-and-company-weaknesses-revealed-in-documents-11675363340). It’s notable and somewhat ironic that it’s perhaps better and more transparently backed than most banks, and probably all novel fiat fintech products. We can employ the asset through the Taro technology described earlier but we would rather use something with higher regulatory assurances.
@@ -716,7 +716,7 @@ public:: true
 		- Really simple to join
 		- Runs in the browser
   - ## [[Cyber Security and Cryptography]] and Fraud Prevention
-		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[Politics, Law, Privacy]]  << this feels like it will be warfare
+		- AI crucial in cybersecurity, adapting to evolving threats and enhancing [[AI Governance Law and Privacy]]  << this feels like it will be warfare
 		- Development of AI algorithms for adaptive threat response and robust [[Distributed Identity]] authentication processes.
   - ### Security evaluation
 		  **Phase 4: User Interface and Experience:**

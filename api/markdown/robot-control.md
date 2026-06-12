@@ -38,7 +38,7 @@
   - **[[Neural Jacobian Fields]] (NJF)** - MIT breakthrough enabling self-supervised motion control using only vision
 
   ### [[Neural Control Methods]] [Updated 2025]
-  - **AI and [[Machine Learning]]-Driven Control**
+  - **AI and [[Machine Learning Discipline]]-Driven Control**
   - Robots use **neural networks** to learn control policies from data, enabling adaptation to new tasks without explicit programming
   - **Self-learning systems** dynamically adjust to changing conditions, improving performance through experience
   - **[[Transfer Learning]]** allows knowledge transfer between different robot platforms and tasks
@@ -74,7 +74,7 @@
   ## See Also
   - [[Robotics]]
   - [[Autonomous Systems]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Computer Vision]]
   - [[Control Theory]]
   - [[Motion Planning]]

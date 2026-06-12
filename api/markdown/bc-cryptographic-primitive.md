@@ -38,7 +38,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
       {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
@@ -52,7 +52,7 @@ public:: true
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
     ]
   },

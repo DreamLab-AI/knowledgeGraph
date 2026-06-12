@@ -82,7 +82,7 @@ public:: true
   "relations": {
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],
@@ -92,7 +92,7 @@ public:: true
         "label": "Data Collection"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-models",
+        "@id": "urn:ngm:class:machine-learning-discipline-models",
         "label": "Machine Learning Models"
       },
       {
@@ -149,7 +149,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -194,7 +194,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - requires:: [[Data Collection]], [[Pattern Recognition]], [[Machine Learning Models]]
   - enables:: [[Personalization]], [[Predictive Analytics]], [[User Experience Optimization]]
 

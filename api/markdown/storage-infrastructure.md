@@ -12,7 +12,7 @@
   - is-subclass-of:: [[Infrastructure]], [[Cloud Computing]], [[Data Engineering]], [[Distributed Systems]], [[Information Systems]]
   - has-part:: [[Object Storage]], [[Block Storage]], [[File Storage]], [[Distributed Storage]], [[Vector Databases]], [[Data Lakes]], [[NVMe]], [[Persistent Memory]], [[IPFS]], [[Filecoin]], [[Apache Iceberg]], [[ZFS]], [[Ceph]]
   - requires:: [[Network Infrastructure]], [[Physical Layer]], [[Identity and Access Management]], [[Encryption]], [[Data Replication]], [[Erasure Coding]], [[Consistency Protocols]]
-  - enables:: [[Data Lakes]], [[Machine Learning]], [[Big Data Analytics]], [[Disaster Recovery]], [[Content Delivery Networks]], [[Decentralised Applications]], [[Lakehouse Architecture]], [[RAG]], [[Vector Search]]
+  - enables:: [[Data Lakes]], [[Machine Learning Discipline]], [[Big Data Analytics]], [[Disaster Recovery]], [[Content Delivery Networks]], [[Decentralised Applications]], [[Lakehouse Architecture]], [[RAG]], [[Vector Search]]
   - implements:: [[Apache Iceberg]], [[Delta Lake]], [[Apache Hudi]], [[S3 API]], [[POSIX]], [[NVMe-oF]], [[CRDTs]], [[Reed-Solomon Codes]], [[HNSW Index]], [[CRUSH Algorithm]]
   - depends-on:: [[Network Infrastructure]], [[Compute Infrastructure]], [[Cryptographic Hash Functions]], [[Erasure Coding]], [[Consensus Mechanisms]], [[PKI]], [[RAID]]
   - supports:: [[AI Model Training]], [[Vector Search]], [[Stream Processing]], [[Data Warehousing]], [[Backup and Recovery]], [[Edge Computing]], [[Regulatory Compliance]], [[Scientific Computing]]

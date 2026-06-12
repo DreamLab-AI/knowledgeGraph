@@ -704,7 +704,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:google-cloud-translation-api",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud-translation-api",
         "label": "Google Cloud Translation API"
       },
       {

@@ -58,7 +58,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
@@ -110,7 +110,7 @@ public:: true
   - supports [[Compliance Framework]]
   - supports [[Data Protection Regulation]]
   - uses [[Smart Contracts]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - relatedTo [[Governance Framework]]
 
 - ### Content

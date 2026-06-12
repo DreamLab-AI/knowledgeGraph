@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:476915cc9713f3e6a514f140de062afbcffe565cf1b4f934a2f566a586af2304",
+  "title": "Virtual Economy Market Framing",
+  "slug": "virtual-economy-market-framing",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-economy-market-framing",
+  "domain": "spatial-computing",
+  "definition": "A conceptual framing of metaverse platforms as economic ecosystems in which virtual goods, services, experiences, and digital assets are produced, traded, and consumed. This view foregrounds creator economies, digital ownership, interoperable asset standards, and market dynamics including adoption curves, pricing models, and regulatory challenges specific to virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": []
+}

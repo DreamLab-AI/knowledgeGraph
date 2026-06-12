@@ -36,7 +36,7 @@ alias:: DistributedStorage
       {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
       {"@id": "urn:ngm:class:scalable-architecture", "label": "Scalable Architecture"},
       {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},

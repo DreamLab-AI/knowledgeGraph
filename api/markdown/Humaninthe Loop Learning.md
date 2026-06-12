@@ -77,7 +77,7 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
@@ -115,7 +115,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -145,7 +145,7 @@ public:: true
 
 - ### Relationships
   - **uses**: [[Active Learning]], [[Reinforcement Learning from Human Feedback]]
-  - **requires**: [[Human in the Loop]], [[Machine Learning]]
+  - **requires**: [[Human in the Loop]], [[Machine Learning Discipline]]
   - **supports**: [[AI Alignment]], [[Value Alignment]]
   - **relatedTo**: [[Training Data]]
 
@@ -163,7 +163,7 @@ public:: true
 
   #### Related Concepts
   - [[Artificial Intelligence]]
-  - [[Machine Learning]]
+  - [[Machine Learning Discipline]]
   - [[Computer Science]]
   - [[owl:Thing]]
 

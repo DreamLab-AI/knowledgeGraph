@@ -466,7 +466,7 @@ public:: true
         "label": "Transfer Learning"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -981,7 +981,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -996,7 +996,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1073,10 +1073,10 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[TrainingLayer]], [[OptimisationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Optimisation]], [[Statistical Learning Theory]], [[Computational Intelligence]], [[Artificial Intelligence]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Optimisation]], [[Statistical Learning Theory]], [[Computational Intelligence]], [[Artificial Intelligence]]
   - has-part:: [[Gradient Descent]], [[Loss Function]], [[Policy Gradient]], [[Replay Buffer]], [[Value Function]], [[Critic Network]], [[Actor Network]], [[Meta-Learner]], [[Continual Learner]], [[Query Strategy]]
   - requires:: [[Training Data]], [[Objective Function]], [[Optimiser]], [[Model Architecture]], [[Evaluation Metric]], [[Hyperparameter Tuning]]
-  - enables:: [[Model Training]], [[Policy Optimisation]], [[Representation Learning]], [[Transfer Learning]], [[Few-Shot Learning]], [[Robotic Control]], [[Foundation Models]], [[Autonomous Agents]]
+  - enables:: [[Model Training]], [[Policy Optimisation]], [[Representation Learning]], [[Transfer Learning]], [[Few-Shot Learning]], [[Robotic Control]], [[Large-Scale Pretrained Foundation Model]], [[Autonomous Agents]]
   - implements:: [[Stochastic Gradient Descent]], [[Adam Optimiser]], [[PPO]], [[SAC]], [[DQN]], [[MuZero]], [[MAML]], [[SimCLR]], [[BYOL]], [[DINO]], [[EWC]], [[Federated Learning]], [[Curriculum Learning]]
   - depends-on:: [[Information Theory]], [[Statistical Learning Theory]], [[Calculus of Variations]], [[Linear Algebra]], [[Probability Theory]], [[Dynamic Programming]]
   - supports:: [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Drug Discovery]], [[Scientific Computing]], [[Autonomous Vehicles]]

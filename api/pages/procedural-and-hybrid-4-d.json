@@ -26,7 +26,7 @@
         "label": "4D Gaussian Splatting"
       },
       {
-        "id": "urn:ngm:class:blender-geometry-nodes",
+        "id": "urn:ngm:class:blender-3d-creation-suite-geometry-nodes",
         "label": "Blender Geometry Nodes"
       },
       {
@@ -249,7 +249,7 @@
         "label": "AI Video"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -265,7 +265,7 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ]

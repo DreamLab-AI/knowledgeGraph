@@ -101,7 +101,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:linked:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -131,7 +131,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[DeFi]]
-  - bridges-to:: [[Tokenisation]]
+  - bridges-to:: [[Neural Network Text Tokenisation]]
   - requires:: [[Smart Contract]], [[Yield Farming]]
 
 - ### Content

@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence Domain]]
-  - bridges-to:: [[Llama]]
+  - bridges-to:: [[Meta Llama Model Family]]
   - requires:: [[Large Language Model]]
 
 - ### Content

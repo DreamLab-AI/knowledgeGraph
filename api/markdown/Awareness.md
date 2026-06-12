@@ -102,7 +102,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-presence",
+        "@id": "urn:ngm:class:collaborative-systems-modality-presence",
         "label": "Collaborative Presence"
       },
       {

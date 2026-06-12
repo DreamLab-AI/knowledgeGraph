@@ -3,7 +3,7 @@
   "title": "json-ld 1.1",
   "slug": "json-ld-1-1",
   "public": true,
-  "classIri": "urn:ngm:class:json-ld-1-1",
+  "classIri": "urn:ngm:class:json-data-interchange-format-ld-1-1",
   "domain": "artificial-intelligence",
   "definition": "JSON-LD 1.1 is a W3C Recommendation that extends JSON-LD 1.0 with features including scoped contexts, type-scoped contexts, and propagation control, enabling richer mapping of JSON document terms to IRIs within RDF-based knowledge systems. It provides a framing algorithm for reshaping a flat graph into a tree, and supports compaction and expansion algorithms that allow any conformant document to be normalised to a canonical form. JSON-LD 1.1 underpins interoperable semantic data exchange on the Web and is the serialisation format used by the Verifiable Credentials and Activity Streams standards.",
   "subClassOf": [
@@ -38,13 +38,13 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-standards",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
         "label": "Semantic Web Standards"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],
@@ -57,7 +57,7 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ]

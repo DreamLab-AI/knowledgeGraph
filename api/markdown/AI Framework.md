@@ -90,13 +90,13 @@ public:: true
         "label": "Deep Learning"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],

@@ -42,7 +42,7 @@ public:: true
       {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:calibration", "label": "Calibration"}

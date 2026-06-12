@@ -75,7 +75,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       },
       {
@@ -109,7 +109,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -165,7 +165,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Autonomous Driving]]
   - bridges-to:: [[Deep Learning]]
-  - requires:: [[Machine Learning]], [[Computer Vision]]
+  - requires:: [[Machine Learning Discipline]], [[Computer Vision]]
   - enables:: [[Autonomous Vehicle]]
 
 - ### Content

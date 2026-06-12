@@ -256,7 +256,7 @@
         "label": "AI Diagram Tools"
       },
       {
-        "id": "urn:ngm:class:comfy-ui",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -264,7 +264,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       }
     ]
@@ -569,8 +569,8 @@
   ],
   "backlinks": [
     {
-      "slug": "knowhere",
-      "label": "Knowhere"
+      "slug": "knowhere-visitor-attention-system",
+      "label": "KnoWhere Visitor Attention System"
     },
     {
       "slug": "model-width",

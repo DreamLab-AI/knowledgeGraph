@@ -70,7 +70,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ]
   },
   "provenance": {

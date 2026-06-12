@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Lightning Network]]
-  - bridges-to:: [[Bitcoin]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]]
   - requires:: [[Lightning Network]], [[Payment Channel]]
 
 - ### Content

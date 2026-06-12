@@ -9,7 +9,7 @@
 - ### Relationships
   - is-subclass-of:: [[Metaverse Technology]]
   - bridges-to:: [[Blockchain]] (domain: bc) for decentralised data ownership and provenance
-  - supports:: [[Machine Learning]]
+  - supports:: [[Machine Learning Discipline]]
   - supports:: [[AI Infrastructure]]
   - relatedTo:: [[Blockchain]]
   - relatedTo:: [[Distributed System]]

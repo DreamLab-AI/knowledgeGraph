@@ -3,7 +3,7 @@
   "title": "Bitcoin related links",
   "slug": "bitcoin-related-links",
   "public": true,
-  "classIri": "urn:ngm:class:bitcoin-related-links",
+  "classIri": "urn:ngm:class:bitcoin-proof-of-work-protocol-related-links",
   "domain": "blockchain",
   "definition": "Bitcoin Related Links is a curated reference collection aggregating news, technical resources, regulatory developments, and community analysis pertaining to the Bitcoin blockchain ecosystem. It encompasses coverage of Bitcoin as money, mining economics, environmental debates, ETF instruments, and the broader cryptocurrency landscape.",
   "subClassOf": [
@@ -18,15 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       }
     ],
@@ -41,7 +41,7 @@
         "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       }
     ],

@@ -8,7 +8,7 @@
   "definition": "Meta-Learning, colloquially described as 'learning to learn', is the study and design of machine learning systems that improve their own learning algorithms or initialisation through experience across multiple tasks, enabling rapid adaptation to new tasks with minimal data. Rather than learning a task directly, a meta-learning algorithm learns a prior or inductive bias that facilitates fast generalisation. Key paradigms include model-agnostic meta-learning (MAML), which optimises for a parameter initialisation that is close to good solutions for many tasks, and metric-based approaches such as prototypical networks that learn a task-agnostic embedding space. Meta-learning is central to few-shot learning, continual learning, and automated machine learning research.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],

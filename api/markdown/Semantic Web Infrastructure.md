@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:semantic-web-infrastructure",
+  "@id": "urn:ngm:class:semantic-web-linked-data-standard-infrastructure",
   "@type": "Class",
   "label": "Semantic Web Infrastructure",
   "definition": "Semantic web infrastructure is the stack of standards, vocabularies, and services that enable machine-readable, linked data on the web, including RDF, OWL, SPARQL endpoints, triple stores, and ontology registries. It provides the technical substrate for representing entities and relationships as interoperable graphs that agents can query and reason over. It is the backbone for knowledge graphs and linked-data ecosystems.",

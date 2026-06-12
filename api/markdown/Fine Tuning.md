@@ -172,7 +172,7 @@ alias:: Fine-Tuning, Fine-tuning
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -710,9 +710,9 @@ alias:: Fine-Tuning, Fine-tuning
   - ## Controlnet
   - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[ControlNet and Similar Spatial Conditioning Systems]]
   - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
-  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[ComfyUI]] [[Open Webui and Pipelines]]
+  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]] [[Open Webui and Pipelines]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]]
-  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux.1]]
+  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[Node-Based Diffusion Pipeline Interface]] [[Model Optimisation and Performance]] [[Flux.1]]
 		- [Excuse me? GGUF quants are possible on Flux now! : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1eslcg0/excuse_me_gguf_quants_are_possible_on_flux_now/)
   - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux.1]] [[Model Optimisation and Performance]]
   - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux.1]] [[LoRA]]

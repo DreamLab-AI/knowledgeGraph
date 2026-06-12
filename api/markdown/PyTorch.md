@@ -24,7 +24,7 @@ public:: true
   "definition": "PyTorch is an open-source deep learning framework developed by Meta AI Research that provides a dynamic computation graph, automatic differentiation via autograd, and tight integration with Python for flexible model development and research. It has become the dominant framework in academic machine learning research and is widely used in production via TorchServe and TorchScript. PyTorch's tensor operations are GPU-accelerated through CUDA, and its ecosystem encompasses libraries such as TorchVision, TorchAudio, and PyTorch Lightning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}],
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
@@ -37,7 +37,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-and-py-torch", "label": "Python and PyTorch"},
+      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python and PyTorch"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
       {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
     ],
@@ -48,7 +48,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"}
     ]
   },
   "quality": 0.8
@@ -59,7 +59,7 @@ public:: true
   - PyTorch is an open-source Python deep learning framework featuring dynamic computation graphs and automatic differentiation, enabling flexible research prototyping and scalable production deployment with GPU acceleration via CUDA.
 
 - ### Relationships
-  - PyTorch is a specialisation of [[Machine Learning Framework]], dependent on [[CUDA]] for GPU acceleration via [[GPU Compute]]. It enables [[Deep Learning]] research through its autograd engine and is the primary implementation platform for [[Diffusion Model]] architectures including Stable Diffusion. [[Fine Tuning]] of large pre-trained networks and [[Parameter-Efficient Fine-Tuning]] methods such as LoRA are typically implemented in PyTorch. It supports [[Batch Processing]] for efficient training and integrates natively with [[Python and PyTorch]] workflows.
+  - PyTorch is a specialisation of [[Machine Learning Framework]], dependent on [[CUDA]] for GPU acceleration via [[GPU Compute]]. It enables [[Deep Learning]] research through its autograd engine and is the primary implementation platform for [[Diffusion Model]] architectures including Stable Diffusion. [[Fine Tuning]] of large pre-trained networks and [[Parameter-Efficient Fine-Tuning]] methods such as LoRA are typically implemented in PyTorch. It supports [[Batch Processing]] for efficient training and integrates natively with [[Python PyTorch Deep Learning Stack]] workflows.
 
 - ### Content
   - PyTorch originated from Torch (a Lua-based framework) and was released by Facebook AI Research in 2016 as a Python-first alternative to Theano and early TensorFlow. Its key innovation was the define-by-run (eager execution) approach, where the computation graph is constructed dynamically during the forward pass rather than declared statically beforehand. This made debugging with standard Python tools natural and accelerated the research cycle significantly.

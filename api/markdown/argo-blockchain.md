@@ -9,7 +9,7 @@
   - is-subclass-of:: [[Bitcoin Mining]]
   - bridges-to:: [[Cryptocurrency]], [[Sustainability Domain]]
   - requires:: [[Bitcoin Mining]]
-  - enables:: [[Bitcoin]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Argo Blockchain runs mining facilities housing specialised hardware that competes to validate blocks and earn rewards, with profitability tied to coin price, network difficulty and energy cost. It has emphasised access to lower-carbon electricity.

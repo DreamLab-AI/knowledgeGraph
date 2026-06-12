@@ -8,7 +8,7 @@
 
 - ### Relationships
   - uses [[Physics Engine]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Simulation]]
   - enables [[Teleoperation]]
   - relatedTo [[Reinforcement Learning]]

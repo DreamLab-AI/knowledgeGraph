@@ -979,7 +979,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1026,7 +1026,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[InferenceLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Statistical Learning]], [[Bayesian Inference]], [[Uncertainty Quantification]], [[Generative Model]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Statistical Learning]], [[Bayesian Inference]], [[Uncertainty Quantification]], [[Generative Model]]
   - has-part:: [[Prior Distribution]], [[Likelihood Function]], [[Posterior Distribution]], [[Latent Variable]], [[Graphical Model]], [[Inference Algorithm]], [[Probabilistic Programming Language]], [[Acquisition Function]], [[Nonconformity Score]]
   - requires:: [[Probability Theory]], [[Measure Theory]], [[Numerical Linear Algebra]], [[Computational Graph]], [[Monte Carlo Methods]], [[Automatic Differentiation]]
   - enables:: [[Uncertainty Quantification]], [[Bayesian Decision Theory]], [[Causal Inference]], [[Anomaly Detection]], [[Active Learning]], [[Conformal Prediction]], [[Bayesian Optimisation]], [[Probabilistic Forecasting]]

@@ -639,7 +639,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Lido Finance"
       },
       {
-        "@id": "urn:ngm:class:llama",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama"
       },
       {
@@ -711,7 +711,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-standard",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Bitcoin Standard"
       },
       {
@@ -1011,7 +1011,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       "kind": "StubLink"
     },
     {
-      "raw": "[[Llama]]",
+      "raw": "[[Meta Llama Model Family]]",
       "resolved": "urn:visionflow:linked:llama",
       "kind": "StubLink"
     },
@@ -1339,7 +1339,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
   - implements:: [[Multi-Signature Custody]], [[Tiered Governance Model]], [[Quadratic Funding]], [[Dollar-Cost Averaging]], [[OTC Token Sale]], [[RWA Integration]], [[Protocol-Owned Liquidity Bonding]], [[Delegated Treasury Management]]
   - depends-on:: [[DAO]], [[Governance Token]], [[Smart Contract]], [[Stablecoin]], [[DeFi Protocol]], [[Safe Multisig]], [[On-Chain Voting]], [[Block Explorer]], [[Price Oracle]]
   - supports:: [[Bitcoin Standard]], [[DeFi Ecosystem]], [[Protocol Sustainability]], [[Ecosystem Grants]], [[Token Holder Value]], [[Financial Transparency]], [[Open Source Development]]
-  - uses:: [[Safe Multisig]], [[Snapshot Voting]], [[Aave]], [[Compound]], [[Pendle Finance]], [[Lido Finance]], [[Coinshift]], [[Llama]], [[Karpatkey]], [[DeepDAO]], [[Tres Finance]], [[Dune Analytics]], [[Nansen]], [[Gitcoin]]
+  - uses:: [[Safe Multisig]], [[Snapshot Voting]], [[Aave]], [[Compound]], [[Pendle Finance]], [[Lido Finance]], [[Coinshift]], [[Meta Llama Model Family]], [[Karpatkey]], [[DeepDAO]], [[Tres Finance]], [[Dune Analytics]], [[Nansen]], [[Gitcoin]]
   - contrasts-with:: [[Traditional Corporate Treasury]], [[Central Bank Reserve Management]], [[Sovereign Wealth Fund]], [[Hedge Fund]], [[Private Equity Fund]], [[Mutual Fund]]
   - related-to:: [[MicroStrategy]], [[MakerDAO]], [[Uniswap]], [[Optimism]], [[ENS]], [[OlympusDAO]], [[Gitcoin]], [[Enzyme Finance]], [[Metaplanet]], [[Arbitrum]], [[Aave]]
   - standardized-by:: [[FASB ASU 2023-08]], [[SEC Form 8-K]], [[MiCA Regulation]], [[GAAP Fair Value Accounting]], [[DAO Legal Frameworks]], [[AICPA Digital Asset Practice Aid 2022]]

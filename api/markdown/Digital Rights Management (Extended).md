@@ -150,7 +150,7 @@ public:: true
         "label": "Content Encryption Engine"
       },
       {
-        "@id": "urn:ngm:class:license-management-system",
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument-management-system",
         "label": "License Management System"
       },
       {

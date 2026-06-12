@@ -661,7 +661,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -693,7 +693,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Supervised Learning]], [[Interactive Learning]], [[Human-in-the-Loop Learning]], [[Data-Efficient Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Supervised Learning]], [[Interactive Learning]], [[Human-in-the-Loop Learning]], [[Data-Efficient Learning]]
   - has-part:: [[Query Strategy]], [[Blockchain Oracle]], [[Unlabeled Data Pool]], [[Acquisition Function]], [[Stopping Criterion]], [[Label Budget]], [[Diversity Measure]]
   - requires:: [[Unlabeled Data]], [[Human Oracle]], [[Query Selection Algorithm]], [[Base Learner]], [[Evaluation Metric]]
   - enables:: [[Data-Efficient Learning]], [[Cost-Effective Annotation]], [[Rapid Model Development]], [[Expert Knowledge Elicitation]], [[Sample Complexity Reduction]]

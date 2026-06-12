@@ -8,7 +8,7 @@
 
 - ### Relationships
   - bridges-to:: [[Governance]]
-  - requires:: [[EU AI Act]], [[Compliance Framework]]
+  - requires:: [[EU AI Act Regulatory Instrument]], [[Compliance Framework]]
   - supports:: [[Governance]], [[AI Governance and Ethics]]
   - relatedTo:: [[Risk Management]], [[Privacy]]
   - standardizedBy:: [[Governance Framework]]
@@ -337,5 +337,5 @@
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[EU AI Act]], [[GDPR (General Data Protection Regulation)]]
+  - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR (General Data Protection Regulation)]]
   - migration-date:: 2026-04-26T00:00:00Z

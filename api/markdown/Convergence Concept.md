@@ -79,7 +79,7 @@ alias:: ConvergenceConcept
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cross-domain-bridge", "label": "Cross Domain Bridge"}

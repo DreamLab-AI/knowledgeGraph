@@ -3,7 +3,7 @@
   "title": "Collaborative Robot",
   "slug": "collaborative-robot",
   "public": true,
-  "classIri": "urn:ngm:class:collaborative-robot",
+  "classIri": "urn:ngm:class:collaborative-systems-modality-robot",
   "domain": "robotics",
   "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable Human-Robot Collaboration in shared manufacturing and assembly environments.",
   "subClassOf": [
@@ -58,7 +58,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:collaborative-manufacturing-system",
+        "id": "urn:ngm:class:collaborative-systems-modality-manufacturing-system",
         "label": "Collaborative Manufacturing System"
       }
     ],

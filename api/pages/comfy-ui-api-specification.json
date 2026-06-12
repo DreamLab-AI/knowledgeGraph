@@ -3,12 +3,12 @@
   "title": "ComfyUI API Specification",
   "slug": "comfy-ui-api-specification",
   "public": true,
-  "classIri": "urn:ngm:class:comfy-ui-api-specification",
+  "classIri": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
   "domain": "ai",
   "definition": "The programmatic interface specification for ComfyUI, a node-based generative AI workflow engine, defining JSON-serialised graph representations (prompt API), WebSocket-based progress streaming, queue management endpoints, and model loading conventions that allow headless or remote execution of image and video generation pipelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:comfy-ui-workflows",
+      "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
       "label": "ComfyUI Workflows"
     }
   ],
@@ -24,7 +24,7 @@
         "label": "Content Creation Pipeline"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-for-fashion-and-brands",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands",
         "label": "ComfyUI for Fashion and Brands"
       }
     ],
@@ -38,7 +38,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:comfy-ui-client",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
       }
     ],
@@ -47,7 +47,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:comfy-ui-manager",
+        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {

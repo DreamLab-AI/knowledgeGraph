@@ -52,13 +52,13 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "supports": [
@@ -109,7 +109,7 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - enables:: [[Machine Learning]], [[Neural Network]]
+  - enables:: [[Machine Learning Discipline]], [[Neural Network]]
   - supports:: [[Algorithm]], [[Cryptography]]
 
 - ### Content

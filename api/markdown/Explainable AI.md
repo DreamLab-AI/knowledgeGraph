@@ -169,7 +169,7 @@ alias:: ExplainableAI
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -284,7 +284,7 @@ alias:: ExplainableAI
 
   ## Related Terms
 
-  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
   - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
@@ -427,7 +427,7 @@ alias:: ExplainableAI
 
   ## Related Terms
 
-  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
   - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
@@ -608,7 +608,7 @@ alias:: ExplainableAI
 
 		  ## Related Terms
 
-		  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+		  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
 		  - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
 		  - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 

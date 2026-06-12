@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:8c7b9647a9aec5e72e70eb5c498353e8cb1c885e69fdaf497c7e01206771eba4",
+  "title": "Neural Network Text Tokenisation",
+  "slug": "neural-network-text-tokenisation",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-network-text-tokenisation",
+  "domain": "artificial-intelligence",
+  "definition": "The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "slug": "update-cycle",
+      "label": "Update Cycle"
+    }
+  ],
+  "backlinks": []
+}

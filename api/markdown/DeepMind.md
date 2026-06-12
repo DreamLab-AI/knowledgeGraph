@@ -85,7 +85,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -119,12 +119,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:linked:google",
       "kind": "ResolvedLink"
     },
@@ -164,9 +164,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Google]]
+  - bridges-to:: [[Google AI Technology Corporation]]
   - requires:: [[Reinforcement Learning]], [[Deep Learning]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - DeepMind conducts research across reinforcement learning, deep learning, and their applications to scientific problems. It produced game-playing systems that reached high levels of performance and the AlphaFold system for predicting protein structures.

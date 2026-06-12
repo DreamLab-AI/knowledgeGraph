@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Transaction Fee]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Smart Contract]]
 
 - ### Content

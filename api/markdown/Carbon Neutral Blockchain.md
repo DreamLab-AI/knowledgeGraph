@@ -788,7 +788,7 @@ public:: true
         "label": "Cardano"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -1413,7 +1413,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:owl:class:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -1468,7 +1468,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1540,7 +1540,7 @@ public:: true
   - **(2) Renewable energy procurement**: Sourcing electrical power exclusively from [[Renewable Energy]] generation verified through [[Renewable Energy Certificates]] (RECs), Guarantees of Origin (GOs in the EU), or the emerging EnergyTag Granular Certificate (GC) standard enabling hourly-resolution clean energy matching rather than annual averaging.
   - **(3) Carbon offset purchasing**: Acquiring certified [[Carbon Credits]] to offset residual lifecycle emissions — Scope 1 (direct on-chain node hardware), Scope 2 (purchased electricity for validators and data centres), and Scope 3 (embodied hardware emissions, network administration, and smart contract execution) — through verified registries including [[Verra]] (Verified Carbon Standard), [[Gold Standard]], and credits approved under the Integrity Council for the Voluntary Carbon Market (ICVCM) Core Carbon Principles (CCPs).
   - The concept spans a spectrum from **carbon-neutral** (net-zero, where residual emissions are exactly matched by retired offsets) to **carbon-negative** (where offsets exceed emissions), exemplified by [[Algorand]]'s Pure Proof-of-Stake architecture — certified carbon-negative by ClimateTrade through an automated smart contract mechanism purchasing offsets from every transaction fee — and [[Hedera Hashgraph]]'s Hashgraph consensus, whose governing multinational enterprise Council actively offsets more carbon than the network emits.
-  - The landmark enabling event for the domain was the **Ethereum Merge** of 15 September 2022, in which [[Ethereum]] transitioned from Proof of Work GPU mining to [[Proof of Stake]] validator attestation, reducing annualised network energy consumption by **99.95%** — from approximately 78 TWh/year (comparable to Chile's national electricity consumption) to approximately 0.0026 TWh/year (2,601 MWh) — and cutting annual carbon footprint from approximately 11 million tonnes CO₂e to under 870 tonnes CO₂e, a reduction exceeding **99.99%** in absolute carbon terms. On a per-transaction basis, the carbon cost fell from over 100 kg CO₂e per transaction to under 0.01 kg CO₂e per transaction.
+  - The landmark enabling event for the domain was the **Ethereum Merge** of 15 September 2022, in which [[Ethereum Smart Contract Platform]] transitioned from Proof of Work GPU mining to [[Proof of Stake]] validator attestation, reducing annualised network energy consumption by **99.95%** — from approximately 78 TWh/year (comparable to Chile's national electricity consumption) to approximately 0.0026 TWh/year (2,601 MWh) — and cutting annual carbon footprint from approximately 11 million tonnes CO₂e to under 870 tonnes CO₂e, a reduction exceeding **99.99%** in absolute carbon terms. On a per-transaction basis, the carbon cost fell from over 100 kg CO₂e per transaction to under 0.01 kg CO₂e per transaction.
   - Carbon neutral blockchains are a critical enabling infrastructure for [[ESG Investing]], [[Green Finance]], [[Carbon Credit Tracking]], and enterprise [[Sustainability]] commitments. They provide the technical foundation for blockchain-enabled [[Carbon Markets]] including [[Toucan Protocol]], [[KlimaDAO]], on-chain [[Renewable Energy Certificate]] tracking platforms, and the broader voluntary carbon market infrastructure projected to reach $50-100 billion annual scale by 2030 under ICVCM Core Carbon Principle integrity requirements.
 
 - ### Semantic Classification
@@ -1560,7 +1560,7 @@ public:: true
   - supports:: [[Sustainability]], [[Climate Commitments]], [[Carbon Neutrality]], [[Decarbonisation]], [[Environmental Sustainability]], [[ESG Reporting]], [[Green Bond Market]], [[Impact Investing]], [[Task Force on Climate-related Financial Disclosures]]
   - uses:: [[Proof of Stake]], [[Liquid Proof of Stake]], [[Pure Proof of Stake]], [[Hashgraph Consensus]], [[Carbon Offset]], [[Renewable Energy Certificate]], [[ClimateTrade]], [[Toucan Protocol]], [[KlimaDAO]], [[EnergyTag Granular Certificate]]
   - contrasts-with:: [[Proof of Work]], [[Bitcoin Mining]], [[Energy-Intensive Blockchain]], [[High-Carbon Consensus]], [[Traditional Carbon Registry]], [[Centralised Carbon Market]]
-  - related-to:: [[Ethereum]], [[Algorand]], [[Tezos]], [[Hedera Hashgraph]], [[Polkadot]], [[Solana]], [[Cardano]], [[Carbon Credit]], [[Carbon Markets]], [[Energy Consumption]], [[Green Finance]], [[Blockchain]], [[DeFi]], [[Smart Contract]]
+  - related-to:: [[Ethereum Smart Contract Platform]], [[Algorand]], [[Tezos]], [[Hedera Hashgraph]], [[Polkadot]], [[Solana]], [[Cardano]], [[Carbon Credit]], [[Carbon Markets]], [[Energy Consumption]], [[Green Finance]], [[Blockchain]], [[DeFi]], [[Smart Contract]]
   - standardized-by:: [[Gold Standard]], [[Verra Verified Carbon Standard]], [[Integrity Council for the Voluntary Carbon Market]], [[ISO 14064]], [[GHG Protocol]], [[EnergyTag Granular Certificate Standard]], [[PAS 2060]], [[GHG Protocol Corporate Standard]]
 
 - ### Content
@@ -1712,7 +1712,7 @@ public:: true
   - ## About Carbon Neutral Blockchain
   - **Carbon Neutral Blockchain** designates any distributed ledger system that has achieved or committed to a net-zero or carbon-negative emissions profile across its operational lifecycle, validated by independent third-party auditors against recognised carbon accounting standards.
   - The domain sits at the intersection of [[Blockchain]] technology, [[Environmental Sustainability]] strategy, [[Green Finance]] regulation, and voluntary carbon market infrastructure, reflecting the blockchain industry's recognition that institutional adoption and regulatory compliance under the EU Corporate Sustainability Reporting Directive (CSRD), UK Streamlined Energy and Carbon Reporting (SECR), and Science-Based Targets initiative (SBTi) requirements demand energy-credible infrastructure.
-  - The critical historical tension in the domain is the conflict between the energy demands of [[Proof of Work]] consensus and the environmental commitments of enterprises, regulators, and investors. Proof of Work — the mechanism underpinning [[Bitcoin]] and the pre-September-2022 [[Ethereum]] — consumes electricity at nation-state scale through mining hardware competition, producing cryptoeconomic security through hashrate expenditure. Alternative mechanisms, including [[Proof of Stake]] and its variants, achieve equivalent or superior security at a fraction of the energy cost, because stake-based validator selection requires no ongoing computational competition.
+  - The critical historical tension in the domain is the conflict between the energy demands of [[Proof of Work]] consensus and the environmental commitments of enterprises, regulators, and investors. Proof of Work — the mechanism underpinning [[Bitcoin Proof-of-Work Protocol]] and the pre-September-2022 [[Ethereum Smart Contract Platform]] — consumes electricity at nation-state scale through mining hardware competition, producing cryptoeconomic security through hashrate expenditure. Alternative mechanisms, including [[Proof of Stake]] and its variants, achieve equivalent or superior security at a fraction of the energy cost, because stake-based validator selection requires no ongoing computational competition.
   - This tension reached a decisive resolution with the **Ethereum Merge** of 15 September 2022, which reduced Ethereum's annualised energy footprint by 99.95%: from approximately 78 TWh/year to 0.0026 TWh/year, and annual carbon emissions from approximately 11 million tonnes CO₂e to under 870 tonnes CO₂e. No comparable single-event decarbonisation of a major global digital infrastructure — serving billions of dollars in daily transaction volume — had previously occurred. The Merge is consequently the defining event in carbon neutral blockchain history and the primary reference point for all subsequent blockchain sustainability assessments.
   - Carbon neutrality in blockchain is assessed across three greenhouse gas accounting scopes aligned with the [[GHG Protocol]] Corporate Standard: **Scope 1** (direct on-chain emissions from node hardware, typically negligible for low-power validators), **Scope 2** (emissions from purchased electricity for validator nodes and data-centre cooling, the dominant emission source for all blockchain networks), and **Scope 3** (embodied emissions from hardware manufacture, transportation, end-of-life disposal, and network administration activities).
   - Achieving certified carbon neutrality requires: independently verified energy audits; metered electricity consumption reported against location-based and market-based emission factors; third-party verification of carbon credit retirement under PAS 2060 (Publicly Available Specification for Carbon Neutrality), ISO 14064-3, or ISAE 3000 Type 2 assurance; and ongoing disclosure aligned with TCFD (Task Force on Climate-related Financial Disclosures), SASB Technology Sector standards, and the EU Taxonomy for sustainable activities under SFDR (Sustainable Finance Disclosure Regulation).
@@ -1730,7 +1730,7 @@ public:: true
   - ### Components and Architecture
   - Carbon neutral blockchains are constituted by four interconnected technical and governance layers, each representing a distinct point of intervention for emissions reduction:
   - **Consensus Layer** — the primary determinant of energy consumption. All low-carbon blockchain networks use stake-based or DAG-based consensus eliminating mining competition:
-    - [[Proof of Stake]] (PoS): Block validators selected proportionally to staked capital, with slashing penalties replacing hashrate competition as the security mechanism. Post-Merge [[Ethereum]] uses PoS on the Beacon Chain, with over 1 million validators globally as of 2025, each running on commodity hardware consuming ~100W rather than the 1,200-3,000W of GPU mining rigs.
+    - [[Proof of Stake]] (PoS): Block validators selected proportionally to staked capital, with slashing penalties replacing hashrate competition as the security mechanism. Post-Merge [[Ethereum Smart Contract Platform]] uses PoS on the Beacon Chain, with over 1 million validators globally as of 2025, each running on commodity hardware consuming ~100W rather than the 1,200-3,000W of GPU mining rigs.
     - Liquid Proof of Stake (LPoS): [[Tezos]] variant enabling token holders to delegate stake to bakers without surrendering custody. Combined with Tezos' self-amending ledger (on-chain governance enabling protocol upgrades without hard forks), LPoS avoids the resource duplication of contentious forks that characterised early Ethereum PoW era upgrades.
     - Pure Proof of Stake (PPoS): [[Algorand]]'s lottery-based validator selection via Verifiable Random Functions (VRFs), in which only the randomly selected proposer performs block construction, minimising network communication overhead. PPoS is structurally more energy-efficient than most PoS variants because non-selected validators expend no active computation between lottery rounds.
     - Nominated Proof of Stake (NPoS): [[Polkadot]]'s mechanism in which nominators back validators with DOT, with security shared across the Relay Chain and connected parachains through the Parachain Validation Function (PVF) execution framework.
@@ -1754,7 +1754,7 @@ public:: true
 
   - ### Contrasts with High-Carbon Blockchain Infrastructure
   - Carbon neutral blockchains are best understood in contrast to their high-carbon counterparts and the governance choices that produce different emissions profiles:
-  - **[[Proof of Work]] vs [[Proof of Stake]]**: The fundamental architectural divide. PoW — used by [[Bitcoin]], Litecoin, Dogecoin, and the pre-Merge Ethereum — derives security from the thermodynamic irreversibility of hashrate expenditure: tampering with the chain requires re-performing all the computational work, which is prohibitively expensive. PoS — used by post-Merge Ethereum, [[Algorand]], [[Tezos]], [[Polkadot]], and [[Cardano]] — derives security from economic stake: tampering with the chain requires acquiring majority stake value, which is prohibitively expensive without energy expenditure. The security guarantee is economically equivalent; the energy cost is orders of magnitude different.
+  - **[[Proof of Work]] vs [[Proof of Stake]]**: The fundamental architectural divide. PoW — used by [[Bitcoin Proof-of-Work Protocol]], Litecoin, Dogecoin, and the pre-Merge Ethereum — derives security from the thermodynamic irreversibility of hashrate expenditure: tampering with the chain requires re-performing all the computational work, which is prohibitively expensive. PoS — used by post-Merge Ethereum, [[Algorand]], [[Tezos]], [[Polkadot]], and [[Cardano]] — derives security from economic stake: tampering with the chain requires acquiring majority stake value, which is prohibitively expensive without energy expenditure. The security guarantee is economically equivalent; the energy cost is orders of magnitude different.
   - **Bitcoin's deliberate PoW retention**: The Bitcoin developer community and economic majority explicitly reject PoS conversion on principled grounds: PoW's unforgeable costliness is argued to be essential to Bitcoin's properties as an objective monetary unit (the "digital gold" thesis). Unlike Ethereum — where the Merge was a long-planned protocol upgrade — Bitcoin's social contract treats PoW as a defining characteristic. This means Bitcoin's sustainability path runs entirely through the renewable energy and hardware efficiency channels rather than the consensus mechanism channel available to other networks.
   - **Permissioned vs public blockchain energy profiles**: Enterprise permissioned blockchains (Hyperledger Fabric, R3 Corda, ConsenSys Quorum) use Practical Byzantine Fault Tolerance (PBFT) or similar consensus mechanisms that require no mining or staking — their energy consumption is essentially identical to a conventional distributed database, making them structurally low-carbon by design. However, permissioned blockchains cannot provide the censorship resistance, openness, and trustlessness of public networks, limiting their applicability for carbon market infrastructure requiring permissionless global access.
   - **Traditional centralised carbon registries vs on-chain alternatives**: The Verra, Gold Standard, and national carbon registries are centralised databases with access restricted to registered intermediaries, requiring 5-15 business days for credit transfer and retirement, charging $0.10-$0.50 per tonne in administrative fees, and providing limited public transparency for secondary market price discovery. On-chain alternatives using [[Toucan Protocol]] on Polygon or [[KlimaDAO]] enable atomic settlement in seconds, 24/7 market access, DeFi-composable liquidity pools, and fully public, immutable retirement records — at the cost of requiring quality bridge verification to ensure only genuine credits are tokenised.
@@ -1763,7 +1763,7 @@ public:: true
   - ### Leading Carbon Neutral Blockchain Networks
 
   - #### Ethereum (Post-Merge)
-  - [[Ethereum]] executed the most significant single-event decarbonisation of any major digital infrastructure in history with the **Merge** of 15 September 2022. The transition from Proof of Work GPU mining to Proof of Stake validator attestation on the Beacon Chain reduced network annualised electricity consumption from approximately 78 TWh/year to approximately 0.0026 TWh/year (2,601 MWh) — a **99.95% reduction**.
+  - [[Ethereum Smart Contract Platform]] executed the most significant single-event decarbonisation of any major digital infrastructure in history with the **Merge** of 15 September 2022. The transition from Proof of Work GPU mining to Proof of Stake validator attestation on the Beacon Chain reduced network annualised electricity consumption from approximately 78 TWh/year to approximately 0.0026 TWh/year (2,601 MWh) — a **99.95% reduction**.
   - The corresponding carbon footprint fell from approximately 11 million tonnes CO₂e per year to under 870 tonnes CO₂e annually, a reduction exceeding **99.99%** in absolute carbon terms, validated by independent analysis from Consensys and academic researchers at Cambridge CCAF.
   - Per-transaction carbon cost fell from over 100 kg CO₂e per transaction (PoW era) to under 0.01 kg CO₂e per transaction (PoS era) — comparable to a few minutes of LED lamp operation, and lower than a single VISA transaction on the global card network's median grid-intensity estimate.
   - Ethereum's PoS architecture requires validators to lock 32 ETH as stake to participate in block proposal and attestation, with cryptoeconomic security derived from slashing penalties (partial or full loss of staked ETH for malicious behaviour) rather than hashrate expenditure.
@@ -1911,7 +1911,7 @@ public:: true
   - #### Protocol-Level Carbon Status as of Q2 2026
   - The blockchain ecosystem's carbon profile has bifurcated sharply since the Ethereum Merge (September 2022), creating two distinct tiers of emissions intensity.
   - **Ultra-low emission PoS and DAG networks** (< 1,000 tonnes CO₂e/year):
-    - Post-Merge [[Ethereum]]: ~870 tonnes CO₂e/year; 1M+ validators globally; processes >1M transactions/day
+    - Post-Merge [[Ethereum Smart Contract Platform]]: ~870 tonnes CO₂e/year; 1M+ validators globally; processes >1M transactions/day
     - [[Tezos]]: ~18 tonnes CO₂e/year; self-amending LPoS; PAS 2060-aligned annual reporting
     - [[Algorand]]: carbon-negative (automated ClimateTrade offset via transaction fee smart contract); sub-milliwatt/tx
     - [[Hedera Hashgraph]]: carbon-negative (Council-funded offset); 0.00017 kWh/tx; aBFT 3-5 second finality
@@ -1919,7 +1919,7 @@ public:: true
     - [[Cardano]]: ~600 tonnes CO₂e/year; Ouroboros Praos; 3,000+ global stake pools; formal academic security proofs
     - Combined footprint of all PoS networks above: <2,000 tonnes CO₂e/year — smaller than a single large enterprise data centre's quarterly emissions
   - **High-emission PoW**:
-    - [[Bitcoin]]: ~39.8 Mt CO₂e/year; ~138 TWh/year electricity; 52.4% renewable mix (improving)
+    - [[Bitcoin Proof-of-Work Protocol]]: ~39.8 Mt CO₂e/year; ~138 TWh/year electricity; 52.4% renewable mix (improving)
     - Bitcoin accounts for >99% of all blockchain-attributable greenhouse gas emissions
     - All non-Bitcoin PoW altcoins: collectively <0.5% of Bitcoin's emissions
     - Protocol selection (avoiding PoW) is the dominant lever for enterprise blockchain sustainability; offset purchasing is residual tool for addressing PoS sub-0.1% emissions
@@ -2043,8 +2043,8 @@ public:: true
 
   - #### Energy Benchmarks by Network (Q2 2026)
   - The following per-network energy benchmarks draw on CCRI 2023-2024 assessments, Cambridge CBECI, and network foundation disclosures:
-  - **[[Bitcoin]] (PoW)**: ~138 TWh/year electricity consumption; ~39.8 Mt CO₂e/year; ~980 kWh per transaction; ~52.4% renewable energy share. Dominant emission source for entire blockchain industry.
-  - **[[Ethereum]] (PoS, post-Merge)**: ~0.0026 TWh/year; ~870 tonnes CO₂e/year; ~0.03 kWh per transaction; predominantly renewable-hosted validator set. 99.95% energy reduction vs pre-Merge PoW.
+  - **[[Bitcoin Proof-of-Work Protocol]] (PoW)**: ~138 TWh/year electricity consumption; ~39.8 Mt CO₂e/year; ~980 kWh per transaction; ~52.4% renewable energy share. Dominant emission source for entire blockchain industry.
+  - **[[Ethereum Smart Contract Platform]] (PoS, post-Merge)**: ~0.0026 TWh/year; ~870 tonnes CO₂e/year; ~0.03 kWh per transaction; predominantly renewable-hosted validator set. 99.95% energy reduction vs pre-Merge PoW.
   - **[[Solana]] (PoH+PoS)**: ~8.755 GWh/year; ~934 tonnes CO₂e/year; ~0.1 Wh per transaction (lowest per-transaction of major networks). 69% carbon footprint reduction in 2024 alone.
   - **[[Algorand]] (PPoS)**: ~<0.001 GWh/year; carbon-negative (automated ClimateTrade offset); sub-milliwatt per transaction. First certified carbon-negative public blockchain.
   - **[[Polkadot]] (NPoS)**: ~0.8 GWh/year; ~33 tonnes CO₂e/year; ~17.4 Wh per transaction. Lowest absolute total footprint among six leading PoS chains (CCRI benchmark).

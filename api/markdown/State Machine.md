@@ -518,7 +518,7 @@ public:: true
         "label": "Distributed Computing"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -917,7 +917,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -998,7 +998,7 @@ public:: true
   - supports:: [[Distributed Ledger]], [[Smart Contract]], [[Robotics]], [[Game AI]], [[UI State Management]], [[Network Protocol]], [[Compiler]]
   - uses:: [[Paxos]], [[Raft]], [[Byzantine Fault Tolerance]], [[Merkle Tree]], [[Zero-Knowledge Proof]], [[UML]], [[SCXML]]
   - contrasts-with:: [[Neural Network]], [[Dataflow Model]], [[Actor Model]], [[Reactive Programming]], [[Petri Net]]
-  - related-to:: [[Agent Frameworks]], [[Agents]], [[Ethereum]], [[Smart Contract]], [[Blockchain Network]], [[CLI Multi-Agent Systems]], [[Distributed Computing]], [[Fault Tolerance]]
+  - related-to:: [[Agent Frameworks]], [[Agents]], [[Ethereum Smart Contract Platform]], [[Smart Contract]], [[Blockchain Network]], [[CLI Multi-Agent Systems]], [[Distributed Computing]], [[Fault Tolerance]]
   - standardized-by:: [[OMG UML 2.5.1]], [[W3C SCXML]], [[IEEE 802.X]], [[IETF RFC 9562]], [[ISO/IEC 10746 RM-ODP]]
 
 - ### Content

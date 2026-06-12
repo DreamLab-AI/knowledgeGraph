@@ -3,7 +3,7 @@
   "title": "Google Cloud",
   "slug": "google-cloud",
   "public": true,
-  "classIri": "urn:ngm:class:google-cloud",
+  "classIri": "urn:ngm:class:google-ai-technology-corporation-cloud",
   "domain": "artificial-intelligence",
   "definition": "Google Cloud is a cloud computing platform offering infrastructure, data, and machine learning services operated by Google.",
   "subClassOf": [
@@ -25,7 +25,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ],

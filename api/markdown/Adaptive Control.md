@@ -236,7 +236,7 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -273,7 +273,7 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
 - ### Semantic Classification
   - owl-class:: robotics:AdaptiveControl
   - owl-role:: Method
-  - belongs-to-domain:: [[Robotics]], [[Control Theory]], [[Machine Learning]]
+  - belongs-to-domain:: [[Robotics]], [[Control Theory]], [[Machine Learning Discipline]]
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
@@ -293,7 +293,7 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
 
   - #### Relationships
   - is-subclass-of:: [[RB-1002-closed-loop-control]]
-  - skos:related:: [[RB-1003-optimal-control]], [[Machine Learning]]
+  - skos:related:: [[RB-1003-optimal-control]], [[Machine Learning Discipline]]
   - uses:: [[System Identification]], [[Parameter Estimation]]
   - enables:: [[Robust Control]], [[Self-Tuning Systems]]
   - applied-in:: [[RB-1011-cobot-safety-levels]], [[Autonomous Systems]]

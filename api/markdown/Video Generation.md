@@ -43,7 +43,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}

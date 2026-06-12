@@ -43,7 +43,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:machine-learning-technique",
+  "@id": "urn:ngm:class:machine-learning-discipline-technique",
   "@type": "Class",
   "label": "Machine Learning Technique",
   "definition": "A specific algorithmic approach or methodology within machine learning used to enable systems to learn from data. Machine learning techniques span supervised, unsupervised, and reinforcement paradigms and include methods such as gradient descent optimisation, backpropagation, fine-tuning, transfer learning, boosting, and bagging that enable models to improve performance through exposure to training data.",
@@ -55,7 +55,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:machine-learning",
+      "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
@@ -104,7 +104,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     }
@@ -129,7 +129,7 @@ public:: true
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
 
 - ### Content
   Machine Learning Technique — content pending enrichment.

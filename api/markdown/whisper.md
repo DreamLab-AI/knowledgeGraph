@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Automatic Speech Recognition]]
-  - bridges-to:: [[Speech Processing]], [[OpenAI]]
+  - bridges-to:: [[Speech Processing]], [[OpenAI Research Organisation]]
   - requires:: [[Transformer]], [[Attention Mechanism]]
   - enables:: [[Speech Recognition]], [[Translation]]
 

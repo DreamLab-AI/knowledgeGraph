@@ -11,10 +11,10 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain Network]], [[Decentralised Finance]], [[Digital Asset]], [[Distributed Systems]], [[Peer-to-Peer Network]]
   - has-part:: [[Smart Contract]], [[Decentralised Application]], [[Crypto Wallet]], [[ENS]], [[IPFS]], [[DAO]], [[NFT]], [[DEX]], [[Account Abstraction]], [[Restaking]]
-  - requires:: [[Ethereum]], [[Public Key Cryptography]], [[Consensus Mechanism]], [[Smart Contract]], [[Digital Identity]], [[Content Addressed Storage]]
-  - enables:: [[Digital Sovereignty]], [[Decentralised Finance]], [[Tokenisation]], [[On-chain Governance]], [[Agentic Internet]], [[Decentralised Identity]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Public Key Cryptography]], [[Consensus Mechanism]], [[Smart Contract]], [[Digital Identity]], [[Content Addressed Storage]]
+  - enables:: [[Digital Sovereignty]], [[Decentralised Finance]], [[Neural Network Text Tokenisation]], [[On-chain Governance]], [[Agentic Internet]], [[Decentralised Identity]]
   - implements:: [[ERC-4337]], [[EIP-7702]], [[EIP-4361]], [[ENS]], [[IPFS]], [[W3C DID]]
-  - depends-on:: [[Ethereum]], [[Layer 2 Networks]], [[Cryptography]], [[P2P Networking]], [[Tokenomics]]
+  - depends-on:: [[Ethereum Smart Contract Platform]], [[Layer 2 Networks]], [[Cryptography]], [[P2P Networking]], [[Tokenomics]]
   - supports:: [[DeFi]], [[NFT]], [[DAO]], [[Decentralised Identity]], [[Agent Frameworks]], [[Blockchain Interoperability]]
   - uses:: [[MetaMask]], [[Rainbow Wallet]], [[Phantom Wallet]], [[Uniswap]], [[Aave]], [[EigenLayer]], [[Filecoin]]
   - contrasts-with:: [[Web2]], [[Centralised Identity]], [[Traditional Finance]], [[Solid Project]]

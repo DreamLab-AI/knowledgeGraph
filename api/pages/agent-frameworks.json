@@ -178,7 +178,7 @@
         "label": "ACP Protocol"
       },
       {
-        "id": "urn:ngm:class:json-rpc",
+        "id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -261,7 +261,7 @@
         "label": "Tool Use"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -690,16 +690,16 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-assisted-developer-tooling",
+      "label": "AI-Assisted Developer Tooling"
+    },
+    {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
     },
     {
       "slug": "crdt",
       "label": "CRDT"
-    },
-    {
-      "slug": "coding-support",
-      "label": "Coding support"
     },
     {
       "slug": "cortex-agent",

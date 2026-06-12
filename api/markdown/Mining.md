@@ -87,7 +87,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
       {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
       {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}

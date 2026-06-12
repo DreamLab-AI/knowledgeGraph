@@ -96,7 +96,7 @@
 
   - Custom [[proprietary engines]] persist at studios like [[ILM]] ([[Helios Engine]]), [[Weta Digital]] ([[Manuka]]), and [[DNEG]] ([[DNA Engine]]). These engines optimize for specific workflows but increasingly adopt [[USD]] (Universal Scene Description) for interoperability with [[Unreal Engine]].
 
-  - [[USD]] by [[Pixar]] emerged as the industry standard for asset interchange, enabling environment assembly in [[Houdini]], [[Maya]], or [[Blender]], then import to [[Unreal Engine]] for real-time rendering. [[OpenUSD Alliance]] (2023) standardizes virtual production pipelines across software vendors.
+  - [[USD]] by [[Pixar]] emerged as the industry standard for asset interchange, enabling environment assembly in [[Houdini]], [[Maya]], or [[Blender 3D Creation Suite]], then import to [[Unreal Engine]] for real-time rendering. [[OpenUSD Alliance]] (2023) standardizes virtual production pipelines across software vendors.
 
   - ## ICVFX Workflow
 
@@ -146,7 +146,7 @@
 
   - [[Plate reconstruction]] recreates clean virtual environments from LED wall footage for maximum post-production flexibility. [[Unreal Engine]]'s [[Take Recorder]] captures camera metadata, enabling perfect recreation of camera move in UE5 for re-rendering with modified lighting or environment details.
 
-  - [[OpenEXR]] multichannel output from [[Unreal Engine]] provides [[depth maps]], [[normal passes]], [[object IDs]], [[motion vectors]], and [[cryptomatte]] mattes. These AOVs (Arbitrary Output Variables) enable sophisticated compositing, depth-based fog, and [[relighting]] in [[Nuke]] without re-rendering.
+  - [[OpenEXR]] multichannel output from [[Unreal Engine]] provides [[depth maps]], [[normal passes]], [[object IDs]], [[motion vectors]], and [[cryptomatte]] mattes. These AOVs (Arbitrary Output Variables) enable sophisticated compositing, depth-based fog, and [[Computational Image Relighting Technique]] in [[Nuke]] without re-rendering.
 
   - [[ACES]] (Academy Color Encoding System) color pipeline standardizes color management from virtual environments through LED walls to final [[DCP]] (Digital Cinema Package). [[ACES 1.3]] [Updated 2025] introduces improved [[HDR]] tone mapping for [[Dolby Vision]] and [[HDR10+]] deliverables.
 
@@ -240,11 +240,11 @@
 
   - #### AI-Generated Environments
 
-  - [[Generative AI]] transforms virtual production environment creation, with [[Stable Diffusion]], [[Midjourney]], and [[DALL-E 3]] generating concept art and texture maps for [[Unreal Engine]] import. [[Stability AI]]'s [[SDXL 1.0]] produces 1024×1024 images refined to 4K via [[Real-ESRGAN]] upscaling for LED wall backgrounds.
+  - [[Generative AI]] transforms virtual production environment creation, with [[Stable Diffusion Image Model]], [[Midjourney Text-to-Image Service]], and [[DALL-E 3]] generating concept art and texture maps for [[Unreal Engine]] import. [[Stability AI]]'s [[SDXL 1.0]] produces 1024×1024 images refined to 4K via [[Real-ESRGAN]] upscaling for LED wall backgrounds.
 
   - [[Text-to-3D]] models like [[Shap-E]], [[Point-E]], and [[DreamFusion]] generate 3D assets from text prompts, accelerating virtual art department workflows. Productions in 2025 use AI-generated background elements (rocks, vegetation, architecture) at 10x speed compared to manual 3D modeling.
 
-  - [[ControlNet]] for [[Stable Diffusion]] enables precise artistic control using depth maps, edge detection, and pose guidance. Virtual production teams generate environment variations matching specific camera angles, lighting conditions, and compositional requirements, then texture-project outputs onto UE5 geometry.
+  - [[ControlNet]] for [[Stable Diffusion Image Model]] enables precise artistic control using depth maps, edge detection, and pose guidance. Virtual production teams generate environment variations matching specific camera angles, lighting conditions, and compositional requirements, then texture-project outputs onto UE5 geometry.
 
   - [[Runway ML Gen-2]] generates video textures for animated backgrounds (waterfalls, crowds, traffic) displayed on LED walls. The AI-generated 4K video at 60 fps eliminates stock footage licensing costs and enables customization matching specific creative requirements.
 
@@ -260,7 +260,7 @@
 
   - [[Mip-NeRF 360]] by Google Research handles unbounded outdoor scenes, essential for virtual production environments extending to horizons. The technique enables photorealistic backgrounds for LED walls derived from location photographs, maintaining quality at all camera positions and zoom levels.
 
-  - [[NVIDIA Omniverse]] integrates NeRF workflows, allowing collaborative editing of neural environments across multiple artists. Changes propagate in real-time to all connected workstations and LED volume render nodes, enabling "[[live environment design]]" during production rehearsals.
+  - [[NVIDIA Omniverse Platform]] integrates NeRF workflows, allowing collaborative editing of neural environments across multiple artists. Changes propagate in real-time to all connected workstations and LED volume render nodes, enabling "[[live environment design]]" during production rehearsals.
 
   - [[Nerfstudio]] open-source framework democratizes NeRF capture for smaller productions, running on consumer [[NVIDIA RTX 4090]] GPUs. The software processes smartphone photos into LED wall-ready environments at 4K resolution, reducing environment creation costs by 70-80% for indie productions.
 
@@ -278,9 +278,9 @@
 
   - #### Large Language Models and Script-to-Scene
 
-  - [[ChatGPT]], [[Claude]], and [[GPT 4]] generate [[Unreal Engine Blueprints]] from natural language descriptions, accelerating technical artist workflows. Prompts like "create a blueprint that changes sky color based on time of day" generate functional node graphs requiring only minor refinement.
+  - [[Instruction-Following Conversational AI System]], [[Claude]], and [[GPT 4]] generate [[Unreal Engine Blueprints]] from natural language descriptions, accelerating technical artist workflows. Prompts like "create a blueprint that changes sky color based on time of day" generate functional node graphs requiring only minor refinement.
 
-  - [[Scenario.gg]] and [[Inworld AI]] generate game-engine-ready 3D assets using fine-tuned [[Stable Diffusion]] models. Virtual production teams describe assets verbally, receiving textured 3D models compatible with [[Unreal Engine]]'s [[Nanite]] system within minutes.
+  - [[Scenario.gg]] and [[Inworld AI]] generate game-engine-ready 3D assets using fine-tuned [[Stable Diffusion Image Model]] models. Virtual production teams describe assets verbally, receiving textured 3D models compatible with [[Unreal Engine]]'s [[Nanite]] system within minutes.
 
   - [[Semantic segmentation]] via [[SAM (Segment Anything Model)]] by [[Meta AI]] automatically separates environment photographs into layers (sky, buildings, vegetation, ground). Virtual production teams rapidly create depth-separated elements for LED wall parallax effects without manual rotoscoping.
 
@@ -308,11 +308,11 @@
 
   - [[Decentraland]] and [[The Sandbox]] virtual world assets export to standard [[glTF]] and [[FBX]] formats, importable to [[Unreal Engine]]. Productions license pre-built virtual environments from metaverse platforms, repurposing existing 3D content at fraction of custom creation cost.
 
-  - [[Non-Fungible Studios]] created blockchain-certified virtual production stages, where LED volume bookings recorded on [[Ethereum]] ensure transparent scheduling and prevent double-booking across global facility network.
+  - [[Non-Fungible Studios]] created blockchain-certified virtual production stages, where LED volume bookings recorded on [[Ethereum Smart Contract Platform]] ensure transparent scheduling and prevent double-booking across global facility network.
 
   - #### Smart Contracts for Rights Management
 
-  - [[Ethereum]]-based smart contracts automate royalty distribution for virtual production assets used across multiple projects. When an environment or prop appears in a new production, the blockchain automatically triggers payment to original creator based on usage terms.
+  - [[Ethereum Smart Contract Platform]]-based smart contracts automate royalty distribution for virtual production assets used across multiple projects. When an environment or prop appears in a new production, the blockchain automatically triggers payment to original creator based on usage terms.
 
   - [[Arweave]] permanent storage preserves virtual production project files, ensuring [[Unreal Engine]] scenes, [[LiDAR scans]], and [[photogrammetry]] data remain accessible for sequels, reboots, or archival purposes. Projects like [[Blade Runner 2049]] stored environment backups on Arweave for potential future use.
 
@@ -380,7 +380,7 @@
 
   - #### Digital Twin Workflows
 
-  - [[NVIDIA Omniverse]] creates digital twins of physical camera equipment, LED stages, and lighting rigs, enabling [[virtual commissioning]] before physical builds. Productions simulate entire LED volume workflows in Omniverse, identifying problems (sightlines, tracking dead zones, cable routing) before expensive on-set discovery.
+  - [[NVIDIA Omniverse Platform]] creates digital twins of physical camera equipment, LED stages, and lighting rigs, enabling [[virtual commissioning]] before physical builds. Productions simulate entire LED volume workflows in Omniverse, identifying problems (sightlines, tracking dead zones, cable routing) before expensive on-set discovery.
 
   - [[Siemens NX]] and [[Dassault CATIA]] CAD software export stage designs to [[Unreal Engine]], where virtual cameras preview shooting possibilities. LED panel positions, camera crane reach, and actor blocking rehearse virtually, optimizing physical stage configuration before construction.
 
@@ -428,7 +428,7 @@
 
   - [[Quantum Monte Carlo]] methods could revolutionize [[path tracing]], sampling light transport paths using quantum superposition. Early research by [[Caltech]] and [[Microsoft Quantum]] demonstrates proof-of-concept for simple scenes, with production readiness estimated 2027-2030.
 
-  - [[Quantum machine learning]] may accelerate [[AI denoising]] and [[upscaling]] for virtual production, processing entire frames through quantum neural networks in microseconds. [[Rigetti Computing]] collaborates with [[NVIDIA]] exploring quantum-accelerated image processing for real-time applications.
+  - [[Quantum machine learning]] may accelerate [[AI denoising]] and [[upscaling]] for virtual production, processing entire frames through quantum neural networks in microseconds. [[Rigetti Computing]] collaborates with [[NVIDIA Corporation]] exploring quantum-accelerated image processing for real-time applications.
 
   - ## Industry Landscape (2025)
 
@@ -517,7 +517,7 @@
 
   - [[Holographic displays]] by [[Looking Glass]] and [[LEIA Inc]] enable glasses-free 3D for virtual production, creating true volumetric displays without parallax correction requirements. Early prototypes demonstrate 8K resolution with 45-degree viewing cone, targeting commercialization 2027-2028.
 
-  - [[AI-driven]] environment generation will automate 80-90% of virtual art department work by 2028, with [[text-to-environment]] systems creating photorealistic UE5 scenes from script descriptions. [[Midjourney]] and [[Stability AI]] collaborate with [[Epic Games]] on integrated generative workflows.
+  - [[AI-driven]] environment generation will automate 80-90% of virtual art department work by 2028, with [[text-to-environment]] systems creating photorealistic UE5 scenes from script descriptions. [[Midjourney Text-to-Image Service]] and [[Stability AI]] collaborate with [[Epic Games]] on integrated generative workflows.
 
   - [[Photorealistic digital humans]] rendered in real-time will replace background extras, stunts, and younger/older character versions. [[Epic Games]]' [[MetaHuman Animator]] achieves performance capture from single iPhone video, democratizing digital character creation.
 

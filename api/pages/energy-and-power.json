@@ -70,7 +70,7 @@
         "label": "Water Cooling"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
@@ -126,7 +126,7 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
@@ -211,7 +211,7 @@
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -219,7 +219,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
@@ -227,7 +227,7 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       }
     ],
@@ -272,7 +272,7 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
@@ -597,8 +597,8 @@
       "label": "Co Training"
     },
     {
-      "slug": "leopold-aschenbrenner",
-      "label": "leopold-aschenbrenner"
+      "slug": "leopold-aschenbrenner-situational-awareness",
+      "label": "leopold-aschenbrenner-situational-awareness"
     }
   ]
 }

@@ -45,7 +45,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
     ]
   },

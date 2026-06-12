@@ -108,7 +108,7 @@ alias:: AIGroundedDomain
         "label": "Symbol Grounding"
       },
       {
-        "@id": "urn:ngm:class:multimodal-grounding",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-grounding",
         "label": "Multimodal Grounding"
       },
       {

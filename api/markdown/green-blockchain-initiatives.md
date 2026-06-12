@@ -16,9 +16,9 @@
   - implements:: [[Proof of Stake]], [[Delegated Proof of Stake]], [[Energy Attribute Certificates]], [[Base Carbon Tonne Standard]], [[Verra VCS Methodology]], [[Gold Standard Digital Assets]], [[Core Carbon Principles]], [[ICVCM Framework]]
   - depends-on:: [[Renewable Energy]], [[Carbon Credits]], [[Smart Contracts]], [[Blockchain Interoperability]], [[Decentralised Governance]], [[ESG Reporting Standards]], [[Satellite Imagery]], [[IoT Sensors]]
   - supports:: [[Paris Agreement]], [[Sustainable Development Goals]], [[SFDR Disclosure]], [[TCFD Reporting]], [[Voluntary Carbon Market]], [[Regenerative Finance]], [[Kunming-Montreal GBF]], [[TNFD]]
-  - uses:: [[Proof of Stake]], [[Layer 2 Scaling]], [[Zero Knowledge Proof]], [[Decentralised Autonomous Organisation]], [[Tokenisation]], [[Multi-Sig Wallets]], [[Chainlink Oracles]], [[dClimate Network]]
+  - uses:: [[Proof of Stake]], [[Layer 2 Scaling]], [[Zero Knowledge Proof]], [[Decentralised Autonomous Organisation]], [[Neural Network Text Tokenisation]], [[Multi-Sig Wallets]], [[Chainlink Oracles]], [[dClimate Network]]
   - contrasts-with:: [[Proof of Work]], [[Bitcoin Mining]], [[Energy-Intensive Consensus]], [[Traditional Carbon Registry]], [[Legacy Credit Markets]], [[OTC Carbon Trading]]
-  - related-to:: [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Bitcoin Environmental Issues]], [[DeFi]], [[Tokenisation]], [[Ethereum]], [[Algorand]], [[Celo]], [[Solana]], [[Regen Network]], [[KlimaDAO]], [[Toucan Protocol]], [[CleanSpark]], [[Iris Energy]]
+  - related-to:: [[Carbon Neutral Blockchain]], [[Carbon Credit Tracking]], [[Bitcoin Environmental Issues]], [[DeFi]], [[Neural Network Text Tokenisation]], [[Ethereum Smart Contract Platform]], [[Algorand]], [[Celo]], [[Solana]], [[Regen Network]], [[KlimaDAO]], [[Toucan Protocol]], [[CleanSpark]], [[Iris Energy]]
   - standardized-by:: [[Verra VCS Standard]], [[Gold Standard Foundation]], [[ISO 14064]], [[GHG Protocol]], [[CCRI Methodology]], [[Crypto Climate Accord]], [[SFDR]], [[TCFD]], [[MiCA]], [[ICVCM Core Carbon Principles]]
 
 - ### Content

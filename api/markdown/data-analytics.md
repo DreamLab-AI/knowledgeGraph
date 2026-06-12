@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - uses [[Data Pipeline]]
   - uses [[Data Lake]]
   - enables [[Predictive Analytics]]

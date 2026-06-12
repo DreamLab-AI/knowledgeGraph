@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Cryptographic Domain]]
   - bridges-to:: [[zk-SNARK]], [[Regulatory Domain]]
-  - requires:: [[Zero-Knowledge Proof]], [[Ethereum]]
+  - requires:: [[Zero-Knowledge Proof]], [[Ethereum Smart Contract Platform]]
   - enables:: [[Transaction Privacy]]
 
 - ### Content

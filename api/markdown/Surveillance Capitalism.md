@@ -36,7 +36,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:social-media", "label": "social media"}
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},

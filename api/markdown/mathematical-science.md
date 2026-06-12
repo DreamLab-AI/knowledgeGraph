@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - enables:: [[Machine Learning]], [[Neural Network]]
+  - enables:: [[Machine Learning Discipline]], [[Neural Network]]
   - supports:: [[Algorithm]], [[Cryptography]]
 
 - ### Content

@@ -288,11 +288,11 @@
         "label": "Yoshua Bengio"
       },
       {
-        "id": "urn:ngm:class:google-deep-mind",
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "id": "urn:ngm:class:open-ai",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ]
@@ -673,8 +673,8 @@
   ],
   "backlinks": [
     {
-      "slug": "conspiracies",
-      "label": "Conspiracies"
+      "slug": "conspiratorial-thinking-in-technology-communities",
+      "label": "Conspiratorial Thinking in Technology Communities"
     },
     {
       "slug": "consumer-protection",

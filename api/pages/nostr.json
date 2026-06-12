@@ -38,7 +38,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -46,7 +46,7 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:public-key",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       }
     ],
@@ -83,10 +83,6 @@
       "label": "Cashu"
     },
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
-    },
-    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
@@ -105,6 +101,10 @@
     {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "privacy",

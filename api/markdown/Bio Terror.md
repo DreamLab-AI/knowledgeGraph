@@ -594,7 +594,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -626,7 +626,7 @@ public:: true
         "label": "Embodied Minds"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -644,7 +644,7 @@ public:: true
         "label": "Pandemic Preparedness"
       },
       {
-        "@id": "urn:ngm:class:public-health-surveillance",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-health-surveillance",
         "label": "Public Health Surveillance"
       }
     ],
@@ -1153,7 +1153,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1193,7 +1193,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Foundation Models]]",
+      "raw": "[[Large-Scale Pretrained Foundation Model]]",
       "resolved": "urn:visionflow:owl:class:foundation-models",
       "kind": "ResolvedLink"
     },
@@ -1232,7 +1232,7 @@ public:: true
   - uk-anchor-institutions:: [[UKHSA]], [[Dstl Porton Down]], [[National Biosecurity Centre Harlow]], [[Imperial College London]], [[Cambridge Biosecurity Hub]]
   - global-anchor-institutions:: [[Johns Hopkins Center for Health Security]], [[NTI bio]], [[Harvard Belfer Center]], [[RAND Corporation]], [[GovAI]]
   - primary-regulatory-bodies:: [[CDC Select Agent Program]], [[UKHSA]], [[WHO]], [[UNODA]], [[Australia Group]]
-  - ai-risk-intersection:: [[AI Risks]], [[Foundation Models]], [[Large Language Models]], [[Cognitive AI]], [[AI Scrapers]]
+  - ai-risk-intersection:: [[AI Risks]], [[Large-Scale Pretrained Foundation Model]], [[Large Language Models]], [[Cognitive AI]], [[AI Scrapers]]
 
 - ### Relationships
   - is-subclass-of:: [[AI Risks]], [[Biosecurity]], [[Dual-Use Research]], [[Weapons of Mass Destruction]], [[Global Catastrophic Risk]], [[Pandemic Preparedness]]
@@ -1244,7 +1244,7 @@ public:: true
   - supports:: [[Pandemic Preparedness]], [[Biodefence Research]], [[Intelligence Surveillance Reconnaissance]], [[Public Health Surveillance]]
   - uses:: [[CRISPR Gene Editing]], [[Synthetic Biology]], [[AI Protein Design]], [[Automated Biofoundry]], [[Large Language Models]], [[Gain-of-Function Research]]
   - contrasts-with:: [[Pandemic Preparedness]], [[Biosafety]], [[Open Science]], [[Vaccine Development]]
-  - related-to:: [[AI Risks]], [[Anthropic Claude]], [[Competition in AI]], [[Artificial General Intelligence]], [[Brain Computer Interfaces]], [[Cold Chain Monitoring]], [[Distributed Computing]], [[Cognitive AI]], [[Embodied Minds]], [[Foundation Models]]
+  - related-to:: [[AI Risks]], [[Constitutional AI Language Model Family]], [[Competition in AI]], [[Artificial General Intelligence]], [[Brain Computer Interfaces]], [[Cold Chain Monitoring]], [[Distributed Computing]], [[Cognitive AI]], [[Embodied Minds]], [[Large-Scale Pretrained Foundation Model]]
   - standardized-by:: [[Biological Weapons Convention BWC 1972]], [[UN Security Council Resolution 1540]], [[Australia Group Export Controls]], [[Cartagena Protocol on Biosafety]], [[WHO Biosafety Guidelines]], [[CDC Select Agent Regulations]], [[NSABB DURC Policy]]
   - has-instance:: [[Amerithrax 2001]], [[Rajneeshee Salmonella Attack 1984]], [[Soviet Biopreparat Programme]], [[Sverdlovsk Anthrax Release 1979]], [[Aum Shinrikyo Biological Programme]]
   - is-governed-by:: [[Biological Weapons Convention]], [[UN Security Council Resolution 1540]], [[International Health Regulations]], [[Australia Group]], [[NSABB DURC Policy]], [[P3CO Framework]], [[OSTP Nucleic Acid Synthesis Screening]]
@@ -1751,8 +1751,8 @@ public:: true
     - enrichment-date:: 2026-05-17T10:00:00Z
     - research-cache:: _enrich/research-cache/Bio Terror.json
     - quality-rationale:: Page covers historical bioterrorism incidents (Rajneeshee 1984, Amerithrax 2001, Aum Shinrikyo 1990s, Soviet Biopreparat 1972-1992), CDC agent taxonomy (A/B/C with lethal dose and CFR data), BWC governance arc 2022-2026 (Ninth RevCon, Working Group sessions, BWC 50th anniversary), AI-bio risk convergence (RAND Global Risk Index, GovAI coding agents, Belfer Center, CSIS, OpenAI/Anthropic uplift evaluations), UK national biosecurity strategy 2023-2025 (Dstl Porton Down, NBC Harlow £multi-billion announcement July 2025, UKHSA, four-pillar strategy), CRISPR/synthetic biology dual-use governance (IBBIS, OSTP 2024), agroterrorism (FMD, ASF, H5N1 dairy 2024, Ug99), BARDA countermeasures (BioThrax, JYNNEOS, HBAT), pandemic preparedness 100 Days Mission dual-track, detection architecture (BioWatch, NGS, clinical cascade), international legal architecture (Geneva Protocol 1925, BWC 1972, UNSCR 1540, Australia Group, Cartagena Protocol, IHR), psychosocial/economic impact dimensions, bioethics of dual-use research. 49 SubClassOf OWL axioms; 79 wikilinks; 30 Provenance references.
-    - related-ontology-nodes:: [[AI Risks]], [[Pandemic Preparedness]], [[Biosecurity]], [[Synthetic Biology]], [[CRISPR Gene Editing]], [[Dual-Use Research]], [[Global Catastrophic Risk]], [[Foundation Models]], [[Cognitive AI]]
-    - see-also:: [[AI Risks]], [[Artificial General Intelligence]], [[Brain Computer Interfaces]], [[Competition in AI]], [[Anthropic Claude]]
+    - related-ontology-nodes:: [[AI Risks]], [[Pandemic Preparedness]], [[Biosecurity]], [[Synthetic Biology]], [[CRISPR Gene Editing]], [[Dual-Use Research]], [[Global Catastrophic Risk]], [[Large-Scale Pretrained Foundation Model]], [[Cognitive AI]]
+    - see-also:: [[AI Risks]], [[Artificial General Intelligence]], [[Brain Computer Interfaces]], [[Competition in AI]], [[Constitutional AI Language Model Family]]
 
 - ### Provenance
   - sources::

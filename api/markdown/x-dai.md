@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Gnosis Chain]]
   - bridges-to:: [[Sidechain]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[DeFi]]
 
 - ### Content

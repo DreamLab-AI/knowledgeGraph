@@ -71,7 +71,7 @@ public:: true
       "label": "AI Infrastructure"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-pipeline",
+      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
@@ -79,7 +79,7 @@ public:: true
   "qualityScore": 0.75,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
     ],
     "uses": [
@@ -88,14 +88,14 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:experiment", "label": "experiment"},
+      {"@id": "urn:ngm:class:empirical-experimental-design", "label": "experiment"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
       {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
     ]
   },

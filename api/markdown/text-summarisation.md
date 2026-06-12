@@ -54,7 +54,7 @@
 		- Long-term goal is to go further into reasoning and decision making
 
 		- ### Roles under most threat
-			- UK dept of education [10-30% can be automated away.](https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf#:~:text=It%20has%20been%20estimated%20that%2010-30%25%20of%20jobs,the%20potential%20benefits%20advances%20in%20AI%20will%20bring.)  [[Layoff tracker and threatened roles]]
+			- UK dept of education [10-30% can be automated away.](https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf#:~:text=It%20has%20been%20estimated%20that%2010-30%25%20of%20jobs,the%20potential%20benefits%20advances%20in%20AI%20will%20bring.)  [[AI-Driven Workforce Displacement Registry]]
 			- Knowledge worker, admin, law, etc. This will lower wages, NOT give more time back.
 			- [Generative AI at Work Stanford research in the Philippines](https://www.nber.org/papers/w31161) found AI gave a 14% productivity boost overall, but importantly 34% improvement for novice workers, and actual hindrance for experts.
 				- This suggests a flattening of skill levels, with likely impact on wages.
@@ -99,7 +99,7 @@
 		- Long-term goal is to go further into reasoning and decision making
 
 		- ### Roles under most threat
-			- UK dept of education [10-30% can be automated away.](https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf#:~:text=It%20has%20been%20estimated%20that%2010-30%25%20of%20jobs,the%20potential%20benefits%20advances%20in%20AI%20will%20bring.)  [[Layoff tracker and threatened roles]]
+			- UK dept of education [10-30% can be automated away.](https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf#:~:text=It%20has%20been%20estimated%20that%2010-30%25%20of%20jobs,the%20potential%20benefits%20advances%20in%20AI%20will%20bring.)  [[AI-Driven Workforce Displacement Registry]]
 			- Knowledge worker, admin, law, etc. This will lower wages, NOT give more time back.
 			- [Generative AI at Work Stanford research in the Philippines](https://www.nber.org/papers/w31161) found AI gave a 14% productivity boost overall, but importantly 34% improvement for novice workers, and actual hindrance for experts.
 				- This suggests a flattening of skill levels, with likely impact on wages.
@@ -150,8 +150,8 @@
   - ## Resources
   - [(2047) Discord | #💡-announcement | XLabs AI](https://discord.com/channels/1271080914692341801/1271086905743638591)
   - whatever this mad thing is [[FLUX] Diagram of UNET / DiT and exotic merging methods (v8.01) | Civitai](https://civitai.com/articles/3409/flux-diagram-of-unet-dit-and-exotic-merging-methods-v7)
-  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[ComfyUI]]
-  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion]] [[ControlNet and Similar Spatial Conditioning Systems]]
+  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion Image Model]] [[ControlNet and Similar Spatial Conditioning Systems]]
   - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux.1]] [[LoRA DoRA etc]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]] [[ComfyWorkFlows]]
   - [Text Guided Flux Inpainting - a Hugging Face Space by Gradio-Community](https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting) [[Segmentation and Identification]]
@@ -159,9 +159,9 @@
   - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[ControlNet and Similar Spatial Conditioning Systems]] [[Flux.1]]
   - https://github.com/cocktailpeanut/fluxgym [[Flux.1]]
   - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
-  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[ComfyUI]] [[Open Webui and Pipelines]]
+  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]] [[Open Webui and Pipelines]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]]
-  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux.1]]
+  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[Node-Based Diffusion Pipeline Interface]] [[Model Optimisation and Performance]] [[Flux.1]]
 		- [Excuse me? GGUF quants are possible on Flux now! : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1eslcg0/excuse_me_gguf_quants_are_possible_on_flux_now/)
   - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux.1]] [[Model Optimisation and Performance]]
   - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux.1]] [[LoRA]]
@@ -169,7 +169,7 @@
 		- https://huggingface.co/spaces/yanze/PuLID-FLUX
 		- ![image.png](assets/image_1726490585592_0.png)
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
-  - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/comfyui_dagthomas) [[flux]] [[ComfyUI]] [[Prompt Engineering]]
+  - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/comfyui_dagthomas) [[flux]] [[Node-Based Diffusion Pipeline Interface]] [[Prompt Engineering]]
   - https://www.reddit.com/r/StableDiffusion/comments/1fkdp6j/flux_stability_video_how_to_automate_short_videos/ [[AI Video]]
   - https://huggingface.co/kudzueye/boreal-flux-dev-v2
   - https://openart.ai/workflows/tenofas/flux-detailer-with-latent-noise-injection/TzQXKBjYhIKI75ctU209
@@ -205,8 +205,8 @@
   - ## Resources
   - [(2047) Discord | #💡-announcement | XLabs AI](https://discord.com/channels/1271080914692341801/1271086905743638591)
   - whatever this mad thing is [[FLUX] Diagram of UNET / DiT and exotic merging methods (v8.01) | Civitai](https://civitai.com/articles/3409/flux-diagram-of-unet-dit-and-exotic-merging-methods-v7)
-  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[ComfyUI]]
-  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion]] [[ControlNet and Similar Spatial Conditioning Systems]]
+  - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion Image Model]] [[ControlNet and Similar Spatial Conditioning Systems]]
   - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux.1]] [[LoRA DoRA etc]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]] [[ComfyWorkFlows]]
   - [Text Guided Flux Inpainting - a Hugging Face Space by Gradio-Community](https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting) [[Segmentation and Identification]]
@@ -214,9 +214,9 @@
   - https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha [[ControlNet and Similar Spatial Conditioning Systems]] [[Flux.1]]
   - https://github.com/cocktailpeanut/fluxgym [[Flux.1]]
   - https://civitai.com/models/731324 [[Flux.1]] Social Media Image Generator [[Death of the Internet]]
-  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[ComfyUI]] [[Open Webui and Pipelines]]
+  - [docs/docs/getting-started/env-configuration.md at improve-flux-docs · JohnTheNerd/docs (github.com)](https://github.com/JohnTheNerd/docs/blob/improve-flux-docs/docs/getting-started/env-configuration.md) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]] [[Open Webui and Pipelines]]
   - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]]
-  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[ComfyUI]] [[Model Optimisation and Performance]] [[Flux.1]]
+  - [city96/ComfyUI-GGUF: GGUF Quantization support for native ComfyUI models (github.com)](https://github.com/city96/ComfyUI-GGUF) [[Node-Based Diffusion Pipeline Interface]] [[Model Optimisation and Performance]] [[Flux.1]]
 		- [Excuse me? GGUF quants are possible on Flux now! : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1eslcg0/excuse_me_gguf_quants_are_possible_on_flux_now/)
   - https://github.com/comfyanonymous/ComfyUI/commit/d0b7ab88ba0f1cb4ab16e0425f5229e60c934536 [[Flux.1]] [[Model Optimisation and Performance]]
   - https://medium.com/@furkangozukara/ultimate-flux-lora-training-tutorial-windows-and-cloud-deployment-abb72f21cbf8 [[Flux.1]] [[LoRA]]
@@ -224,7 +224,7 @@
 		- https://huggingface.co/spaces/yanze/PuLID-FLUX
 		- ![image.png](assets/image_1726490585592_0.png)
   - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
-  - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/comfyui_dagthomas) [[flux]] [[ComfyUI]] [[Prompt Engineering]]
+  - [dagthomas/comfyui_dagthomas: ComfyUI SDXL Auto Prompter (github.com)](https://github.com/dagthomas/comfyui_dagthomas) [[flux]] [[Node-Based Diffusion Pipeline Interface]] [[Prompt Engineering]]
   - https://www.reddit.com/r/StableDiffusion/comments/1fkdp6j/flux_stability_video_how_to_automate_short_videos/ [[AI Video]]
   - https://huggingface.co/kudzueye/boreal-flux-dev-v2
   - https://openart.ai/workflows/tenofas/flux-detailer-with-latent-noise-injection/TzQXKBjYhIKI75ctU209

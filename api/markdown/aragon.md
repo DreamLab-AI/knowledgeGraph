@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[DAO Tooling]]
   - bridges-to:: [[DAO]]
-  - requires:: [[Decentralised Autonomous Organisation]], [[Ethereum]], [[Smart Contracts]]
+  - requires:: [[Decentralised Autonomous Organisation]], [[Ethereum Smart Contract Platform]], [[Smart Contracts]]
   - enables:: [[Governance]]
 
 - ### Content

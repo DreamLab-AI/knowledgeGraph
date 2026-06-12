@@ -3,7 +3,7 @@
   "title": "Ethereum Classic",
   "slug": "ethereum-classic",
   "public": true,
-  "classIri": "urn:ngm:class:ethereum-classic",
+  "classIri": "urn:ngm:class:ethereum-smart-contract-platform-classic",
   "domain": "blockchain",
   "definition": "A proof-of-work blockchain that continued the original Ethereum chain after the 2016 DAO hard fork, preserving the unaltered transaction history. It maintains the principle that the ledger should not be reversed by social intervention.",
   "subClassOf": [

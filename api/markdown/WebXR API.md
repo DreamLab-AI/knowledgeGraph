@@ -60,7 +60,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
@@ -122,7 +122,7 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - **Enables**: [[Augmented Reality]], [[Virtual Reality]], [[Spatial Computing]]
+  - **Enables**: [[Augmented Reality]], [[Virtual Reality]], [[Spatial Computing Paradigm]]
   - **Requires**: [[XR Headset]], [[XR Hardware]] (device session negotiation)
   - **Uses**: [[Web Technology]] (browser rendering pipeline)
   - **Part-of**: [[Interoperability]] standards ecosystem

@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -93,7 +93,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:linked:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -134,7 +134,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Generative AI]]
   - bridges-to:: [[Image Generation]]
-  - requires:: [[Stable Diffusion]]
+  - requires:: [[Stable Diffusion Image Model]]
   - enables:: [[Text-to-Image]]
 
 - ### Content

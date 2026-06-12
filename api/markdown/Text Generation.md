@@ -273,7 +273,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -283,7 +283,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -298,7 +298,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:google",
       "kind": "ResolvedLink"
     },
@@ -333,7 +333,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[latent space]]",
+      "raw": "[[Neural Network Latent Space]]",
       "resolved": "urn:visionflow:owl:class:latent-space",
       "kind": "ResolvedLink"
     },
@@ -358,7 +358,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA Omniverse]]",
+      "raw": "[[NVIDIA Omniverse Platform]]",
       "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
       "kind": "ResolvedLink"
     },
@@ -383,12 +383,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[SHOULD]]",
+      "raw": "[[RFC 2119 SHOULD Normative Keyword]]",
       "resolved": "urn:visionflow:owl:class:should",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Social contract and jobs]]",
+      "raw": "[[Employment Social Contract Under Automation]]",
       "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
       "kind": "ResolvedLink"
     },
@@ -398,7 +398,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -675,7 +675,7 @@ public:: true
   - [[Vercel]] provides front-end [[Infrastructure]] to allow developers to build fast, dynamic websites and applications efficiently at global scale. Its open source Next.js framework powers many leading AI products' user interfaces.
   - Vercel's new vZero product allows developers to visually iterate on UIs with AI assistance.
   - [Demo/Tutorial: v0 by Vercel AI Code Generation (youtube.com)](https://www.youtube.com/watch?v=gi5nnOqzHeQ)
-  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[ChatGPT]] 4 and is extremely good.
+  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[Instruction-Following Conversational AI System]] 4 and is extremely good.
   - AI will likely be incorporated into most software products going forward to enhance capabilities and engagement. Some experiences are better suited to standalone interfaces rather than cramming functionality into chatbots.
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
@@ -822,7 +822,7 @@ public:: true
 		- Allows creators to bring intricate visions and stories to life through simple text prompts, expanding visual storytelling horizons.
   - **Technical Insights**
 		- Designed to scale language model capabilities to visual data, converting videos into patches for efficient processing and diverse video/image handling.
-		- Features a video compression network for temporal and spatial video compression, operating within a [[latent space]].
+		- Features a video compression network for temporal and spatial video compression, operating within a [[Neural Network Latent Space]].
 		- Uses a diffusion transformer architecture, effectively scaling video generation and improving sample quality with increased compute.
   - **Innovative Features**
 		- Works with videos at native sizes to offer sampling flexibility and improve composition and framing.
@@ -901,14 +901,14 @@ public:: true
   - Cleanvoice AI is an artificial intelligence platform that assists users in editing their podcasts or audio recordings. The platform offers various features such as filler sound removal, mouth sound removal, stutter removal, and Deadair remover to make the audio recording more professional. Cleanvoice AI is multilingual and can detect filler sounds in multiple languages, including accents from various countries. The platform also allows for manual editing with assistance and offers tools like podcast mixing and background noise remover. Users can try Cleanvoice AI for free for 30 minutes without providing credit card details. However, users must accept the platform's cookie policy to use the service. https://cleanvoice.ai/
   - The article discusses the potential of Central Intelligent Agents (CIAs) and the role of large language models (LLMs) and other next-generation AI technologies in enabling them. It highlights the need for businesses to have a cross-functional team, ethical guidelines, and clear objectives in deploying their own CIA. The article also suggests steps to build a solid foundation for deploying a CIA, assess organizational readiness, assemble a cross-functional team, define objectives, develop the CIA components and evaluate its performance while continuing to learn and adapt. The author discusses the potential of AI tools and voice assistants in transforming the way businesses interact with their customers and suggests that the advent of advanced AI technologies has revolutionized the shift of businesses towards a more personalized and ethically responsible approach to engaging with their customers. Finally, the article ends by highlighting the importance of experimenting through crisis and providing expert guidance tailored to specific business needs. https://www.linkedin.com/pulse/central-intelligent-agent-enabling-next-generation-james-poulter?
   - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and Voice]] [[Speech and Voice]]
-  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Social contract and jobs]]
-  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[SHOULD]]
-  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[SHOULD]]
+  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Employment Social Contract Under Automation]]
+  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[RFC 2119 SHOULD Normative Keyword]]
+  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[RFC 2119 SHOULD Normative Keyword]]
   - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
   - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
   - https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
   - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
-  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and Voice]] primer and demo.
+  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse Platform]] [[Speech and Voice]] primer and demo.
 
   - ### Birme image resizer
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
@@ -1237,7 +1237,7 @@ public:: true
   - [[Vercel]] provides front-end [[Infrastructure]] to allow developers to build fast, dynamic websites and applications efficiently at global scale. Its open source Next.js framework powers many leading AI products' user interfaces.
   - Vercel's new vZero product allows developers to visually iterate on UIs with AI assistance.
   - [Demo/Tutorial: v0 by Vercel AI Code Generation (youtube.com)](https://www.youtube.com/watch?v=gi5nnOqzHeQ)
-  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[ChatGPT]] 4 and is extremely good.
+  - AI code auto-completion tools like [[Microsoft Copilot]] have shown the potential for AI to enhance software development. The latest [[Microsoft Copilot]] leverages [[Instruction-Following Conversational AI System]] 4 and is extremely good.
   - AI will likely be incorporated into most software products going forward to enhance capabilities and engagement. Some experiences are better suited to standalone interfaces rather than cramming functionality into chatbots.
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
@@ -1384,7 +1384,7 @@ public:: true
 		- Allows creators to bring intricate visions and stories to life through simple text prompts, expanding visual storytelling horizons.
   - **Technical Insights**
 		- Designed to scale language model capabilities to visual data, converting videos into patches for efficient processing and diverse video/image handling.
-		- Features a video compression network for temporal and spatial video compression, operating within a [[latent space]].
+		- Features a video compression network for temporal and spatial video compression, operating within a [[Neural Network Latent Space]].
 		- Uses a diffusion transformer architecture, effectively scaling video generation and improving sample quality with increased compute.
   - **Innovative Features**
 		- Works with videos at native sizes to offer sampling flexibility and improve composition and framing.
@@ -1463,14 +1463,14 @@ public:: true
   - Cleanvoice AI is an artificial intelligence platform that assists users in editing their podcasts or audio recordings. The platform offers various features such as filler sound removal, mouth sound removal, stutter removal, and Deadair remover to make the audio recording more professional. Cleanvoice AI is multilingual and can detect filler sounds in multiple languages, including accents from various countries. The platform also allows for manual editing with assistance and offers tools like podcast mixing and background noise remover. Users can try Cleanvoice AI for free for 30 minutes without providing credit card details. However, users must accept the platform's cookie policy to use the service. https://cleanvoice.ai/
   - The article discusses the potential of Central Intelligent Agents (CIAs) and the role of large language models (LLMs) and other next-generation AI technologies in enabling them. It highlights the need for businesses to have a cross-functional team, ethical guidelines, and clear objectives in deploying their own CIA. The article also suggests steps to build a solid foundation for deploying a CIA, assess organizational readiness, assemble a cross-functional team, define objectives, develop the CIA components and evaluate its performance while continuing to learn and adapt. The author discusses the potential of AI tools and voice assistants in transforming the way businesses interact with their customers and suggests that the advent of advanced AI technologies has revolutionized the shift of businesses towards a more personalized and ethically responsible approach to engaging with their customers. Finally, the article ends by highlighting the importance of experimenting through crisis and providing expert guidance tailored to specific business needs. https://www.linkedin.com/pulse/central-intelligent-agent-enabling-next-generation-james-poulter?
   - [TensorSpeech/TensorFlowTTS: :stuck_out_tongue_closed_eyes: TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for Tensorflow 2 (supported including English, French, Korean, Chinese, German and Easy to adapt for other languages)](https://github.com/TensorSpeech/TensorFlowTTS) [[Translation]] [[Accessibility]] [[Speech and Voice]] [[Speech and Voice]]
-  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Social contract and jobs]]
-  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[SHOULD]]
-  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[SHOULD]]
+  - [Variety](https://variety.com/2022/digital/news/james-earl-jones-darth-vader-retiring-star-wars-ai-1235382827/%7D%7BRespeecher%7D) [[Speech and Voice]] [[Employment Social Contract Under Automation]]
+  - [transcriptionstream/transcriptionstream: turnkey self-hosted offline transcription and diarization service with llm summary (github.com)](https://github.com/transcriptionstream/transcriptionstream) [[Speech and Voice]] transcription locally [[RFC 2119 SHOULD Normative Keyword]]
+  - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[RFC 2119 SHOULD Normative Keyword]]
   - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
   - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
   - https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
   - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
-  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse]] [[Speech and Voice]] primer and demo.
+  - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse Platform]] [[Speech and Voice]] primer and demo.
 
   - ### Birme image resizer
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
@@ -1635,7 +1635,7 @@ public:: true
   - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
   - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
   - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-  - [[ChatGPT]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
+  - [[Instruction-Following Conversational AI System]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
   - [CLI tool](https://www.reddit.com/r/ChatGPTCoding/comments/183qetc/made_a_small_cli_tool_to_create_openai_assistants/) to deploy a [[GPT]] model from a directory of data [[Knowledge Graphing]]
   - [VECTORDB](http://vectordb.com) open source [[Knowledge Graphing]] database
   - https://nux.ai/guides/chaining-rag-systems [[Knowledge Graphing]]
@@ -1666,7 +1666,7 @@ public:: true
   - # Agents in Biological Research
   - AI agents have the potential to transform biological research by automating tasks such as literature review, hypothesis generation, experimental design, and data analysis. Companies like Future House are developing AI agents that can identify potential drug targets and design experiments, significantly accelerating the process of discovery. These agents, powered by large language models (LLMs) and other AI technologies, can review thousands of research papers, develop targets or hypotheses to test, and even drive autonomous labs.
   - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids could lead to rapid progress in solving challenging problems in biology and medicine.
-		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google]]
+		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google AI Technology Corporation]]
 
   - ## Some software choices
 		- It is possible at this stage to put more flesh on the bones through example software stack choices. Such specificity likely introduces overlaps, technical challenges, and contradictions, but has been generated in the main by GenAI based on the wider corpus of text and demonstrates the direction of travel well.
@@ -1690,7 +1690,7 @@ public:: true
 
   - ### [Dream Textures](https://github.com/carson-katri/dream-textures)
 		- A Blender addon for applying textures with text prompts.
-  - [[Stable Diffusion]]
+  - [[Stable Diffusion Image Model]]
 
   - ## Some software choices
 		- It is possible at this stage to put more flesh on the bones through example software stack choices. Such specificity likely introduces overlaps, technical challenges, and contradictions, but has been generated in the main by GenAI based on the wider corpus of text and demonstrates the direction of travel well.
@@ -1699,7 +1699,7 @@ public:: true
 
 
   - Imagine being able to verbally command a virtual design software to create specific CAD primitives or modify existing models. Additionally, the ability to add text annotations or descriptions directly within the virtual space can facilitate collaboration and communication among users.
-  - Furthermore, as corporate metaverse like [[NVIDIA Omniverse]] expands, the shared virtual spaces will become increasingly complex and vast, accommodating a multitude of digital twin models. This means that users will be able to explore and interact with realistic replicas of real-world objects and environments, such as buildings, vehicles, or even entire cities.
+  - Furthermore, as corporate metaverse like [[NVIDIA Omniverse Platform]] expands, the shared virtual spaces will become increasingly complex and vast, accommodating a multitude of digital twin models. This means that users will be able to explore and interact with realistic replicas of real-world objects and environments, such as buildings, vehicles, or even entire cities.
   - By incorporating voice and text input functionalities, developers can empower users to manipulate and navigate these digital twin models more intuitively. Whether it's adjusting the dimensions of a virtual prototype or performing intricate measurements, the metaverse's ability to recognize and respond to voice and text commands will revolutionize the way we design, simulate, and experience virtual environments.
   - [Table Of Contents — bd_warehouse "0.1.0" # Uncomment this for the next release? documentation (bd-warehouse.readthedocs.io)](https://bd-warehouse.readthedocs.io/en/latest/)
   - [Latest General topics
@@ -2070,7 +2070,7 @@ public:: true
   - Large Language Models (LLMs) like OpenAI's GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation. These models are trained on vast amounts of text data, enabling them to perform a wide range of language-based tasks, from writing and translation to answering questions and generating code.
   - [This is a jargon free primer](https://www.understandingai.org/p/large-language-models-explained-with)
 
-  - ## Mental health [[Social contract and jobs]]
+  - ## Mental health [[Employment Social Contract Under Automation]]
   - [Fraudulent studies are undermining the reliability of systematic reviews – a study of the prevalence of problematic images in preclinical studies of depression | bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.13.580196v1) [[Death of the Internet]] [[Deepfakes and fraudulent content]]
   - [Jonathan Haidt Wants You to Take Away Your Kid’s Phone | The New Yorker](https://www.newyorker.com/news/the-new-yorker-interview/jonathan-haidt-wants-you-to-take-away-your-kids-phone)
 		- Jonathan Haidt, a social psychologist and the author of the book "The Anxious Generation: How the Great Rewiring of Childhood is Causing an Epidemic of Mental Illness". The main points covered in the interview are:
@@ -2087,7 +2087,7 @@ public:: true
   - Multiple techniques tested with the same [[LoRA DoRA etc]] for [comparison](https://discord.com/channels/1076117621407223829/1198416106554130552/1198416106554130552)
   - [ActAnywhere](https://actanywhere.github.io/)
   - [AI-Enhanced Creator (beehiiv.com)](https://nejcsusec.beehiiv.com/)
-  - AnimateAnyone for [[ComfyUI]] [MrForExample/ComfyUI-AnimateAnyone-Evolved: Improved AnimateAnyone implementation that allows you to use the opse image sequence and reference image to generate stylized video (github.com)](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved)
+  - AnimateAnyone for [[Node-Based Diffusion Pipeline Interface]] [MrForExample/ComfyUI-AnimateAnyone-Evolved: Improved AnimateAnyone implementation that allows you to use the opse image sequence and reference image to generate stylized video (github.com)](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved)
   - [CG Renders to AI ANIMATION
   - NIKE video — MOONWALKERS PICTURE](https://www.moonwalkerspicture.com/newslounge/cg-renders-to-ai-workflow-vol-02-anim)
   - Motion Control
@@ -2298,7 +2298,7 @@ public:: true
   - Large Language Models (LLMs) like OpenAI's GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation. These models are trained on vast amounts of text data, enabling them to perform a wide range of language-based tasks, from writing and translation to answering questions and generating code.
   - [This is a jargon free primer](https://www.understandingai.org/p/large-language-models-explained-with)
 
-  - ## Mental health [[Social contract and jobs]]
+  - ## Mental health [[Employment Social Contract Under Automation]]
   - [Fraudulent studies are undermining the reliability of systematic reviews – a study of the prevalence of problematic images in preclinical studies of depression | bioRxiv](https://www.biorxiv.org/content/10.1101/2024.02.13.580196v1) [[Death of the Internet]] [[Deepfakes and fraudulent content]]
   - [Jonathan Haidt Wants You to Take Away Your Kid’s Phone | The New Yorker](https://www.newyorker.com/news/the-new-yorker-interview/jonathan-haidt-wants-you-to-take-away-your-kids-phone)
 		- Jonathan Haidt, a social psychologist and the author of the book "The Anxious Generation: How the Great Rewiring of Childhood is Causing an Epidemic of Mental Illness". The main points covered in the interview are:
@@ -2315,7 +2315,7 @@ public:: true
   - Multiple techniques tested with the same [[LoRA DoRA etc]] for [comparison](https://discord.com/channels/1076117621407223829/1198416106554130552/1198416106554130552)
   - [ActAnywhere](https://actanywhere.github.io/)
   - [AI-Enhanced Creator (beehiiv.com)](https://nejcsusec.beehiiv.com/)
-  - AnimateAnyone for [[ComfyUI]] [MrForExample/ComfyUI-AnimateAnyone-Evolved: Improved AnimateAnyone implementation that allows you to use the opse image sequence and reference image to generate stylized video (github.com)](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved)
+  - AnimateAnyone for [[Node-Based Diffusion Pipeline Interface]] [MrForExample/ComfyUI-AnimateAnyone-Evolved: Improved AnimateAnyone implementation that allows you to use the opse image sequence and reference image to generate stylized video (github.com)](https://github.com/MrForExample/ComfyUI-AnimateAnyone-Evolved)
   - [CG Renders to AI ANIMATION
   - NIKE video — MOONWALKERS PICTURE](https://www.moonwalkerspicture.com/newslounge/cg-renders-to-ai-workflow-vol-02-anim)
   - Motion Control

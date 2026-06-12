@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Entity]]
-  - bridges-to:: [[Bitcoin]], [[Lightning Network]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]]
   - enables:: [[Cryptocurrency]]
 
 - ### Content

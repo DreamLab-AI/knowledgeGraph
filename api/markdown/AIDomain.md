@@ -78,7 +78,7 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
@@ -171,7 +171,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]], [[AI Research Area]]
-  - hasPart:: [[Machine Learning]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[AI Governance]]
+  - hasPart:: [[Machine Learning Discipline]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[AI Governance]]
   - bridgesTo:: [[Blockchain Domain]], [[Metaverse Domain]], [[Robotics Domain]], [[Telecollaboration Domain]]
   - relatedTo:: [[Artificial Intelligence Domain]], [[AI Applications]], [[AI Ethics]]
 

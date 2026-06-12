@@ -8,7 +8,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]], [[AI Research Area]]
-  - hasPart:: [[Machine Learning]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[AI Governance]]
+  - hasPart:: [[Machine Learning Discipline]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[AI Governance]]
   - bridgesTo:: [[Blockchain Domain]], [[Metaverse Domain]], [[Robotics Domain]], [[Telecollaboration Domain]]
   - relatedTo:: [[Artificial Intelligence Domain]], [[AI Applications]], [[AI Ethics]]
 

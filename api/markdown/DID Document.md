@@ -37,8 +37,8 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},

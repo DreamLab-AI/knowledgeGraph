@@ -26,15 +26,15 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"}],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"},
-      {"@id": "urn:ngm:class:bitcoin-value-proposition", "label": "Bitcoin Value Proposition"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
       {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
       {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-standard", "label": "Bitcoin Standard"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
     ],
     "enables": [
@@ -48,7 +48,7 @@ public:: true
       {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"},
       {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
     ]
   },
@@ -59,7 +59,7 @@ public:: true
 - ### Definition
   - MicroStrategy is a publicly traded business intelligence company that in 2020 pivoted to become the primary institutional vehicle for leveraged Bitcoin treasury accumulation, using equity and debt capital markets to continuously acquire Bitcoin as its principal reserve asset.
 - ### Relationships
-  - MicroStrategy's treasury strategy is built on the [[Bitcoin Value Proposition]] as a store of value and inflation hedge, directly operationalising [[Bitcoin As Money]] arguments at a corporate scale. The company issues [[Financial Instruments]] including convertible notes and preferred stock to fund [[Bitcoin]] purchases, creating a leveraged exposure model distinct from spot [[Bitcoin ETF]] products. Its approach to [[Asset Management]] and [[Treasury Management]] has influenced [[Technology Adoption]] of Bitcoin among public companies. All capital market activities operate under [[Securities Regulation]] oversight.
+  - MicroStrategy's treasury strategy is built on the [[Bitcoin Value Proposition]] as a store of value and inflation hedge, directly operationalising [[Bitcoin As Money]] arguments at a corporate scale. The company issues [[Financial Instruments]] including convertible notes and preferred stock to fund [[Bitcoin Proof-of-Work Protocol]] purchases, creating a leveraged exposure model distinct from spot [[Bitcoin ETF]] products. Its approach to [[Asset Management]] and [[Treasury Management]] has influenced [[Technology Adoption]] of Bitcoin among public companies. All capital market activities operate under [[Securities Regulation]] oversight.
 - ### Content
   - MicroStrategy was founded in 1989 by Michael Saylor, Sanju Bansal, and Thomas Spahr, initially building one of the earliest relational database analytics platforms. Through the 1990s it became a significant player in business intelligence software, surviving the dot-com crash despite restatement issues and pivoting through multiple product cycles. By 2020 the company had a stable if slow-growing software business generating modest cash flows, which formed the initial capital base for its Bitcoin treasury strategy.
 

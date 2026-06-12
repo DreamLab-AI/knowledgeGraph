@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"}
     ],
     "relatedTo": [

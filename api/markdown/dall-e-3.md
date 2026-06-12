@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Text-to-Image Generation]]
-  - bridges-to:: [[OpenAI]], [[Generative AI]]
+  - bridges-to:: [[OpenAI Research Organisation]], [[Generative AI]]
   - requires:: [[Diffusion Model]], [[Language Model]]
   - enables:: [[Image Generation]]
 

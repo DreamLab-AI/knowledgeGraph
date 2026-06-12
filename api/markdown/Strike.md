@@ -63,7 +63,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
       }
     ]
@@ -92,7 +92,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -123,7 +123,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Cross-Border Payments]]
   - bridges-to:: [[Cross-Border Payments]]
-  - requires:: [[Lightning Network]], [[Bitcoin]]
+  - requires:: [[Lightning Network]], [[Bitcoin Proof-of-Work Protocol]]
 
 - ### Content
   - Strike is a payments application that routes value over the Bitcoin Lightning Network while presenting balances and transfers in familiar fiat terms. By converting at the edges and settling over Lightning, it provides fast, inexpensive payments and remittances without requiring users to hold or understand Bitcoin directly.

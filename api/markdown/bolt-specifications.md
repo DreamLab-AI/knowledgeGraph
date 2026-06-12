@@ -2,7 +2,7 @@
   - The BOLT specifications are the open, community-maintained documents defining the Lightning Network protocol — messaging, channels, commitment transactions, onion-routed payments, and invoices — ensuring independent implementations interoperate.
 
 - ### Relationships
-  - BOLT Specifications is a subclass of [[Technical Standard]] and uses an underlying [[Network Protocol]] for peer messaging. It enables [[Interoperability]] among Lightning implementations and relates directly to the [[Lightning Network]] it defines and to [[Bitcoin]], the settlement layer Lightning is built upon.
+  - BOLT Specifications is a subclass of [[Technical Standard]] and uses an underlying [[Network Protocol]] for peer messaging. It enables [[Interoperability]] among Lightning implementations and relates directly to the [[Lightning Network]] it defines and to [[Bitcoin Proof-of-Work Protocol]], the settlement layer Lightning is built upon.
 
 - ### Content
   - The Lightning Network is not a single piece of software but a protocol implemented by several independent teams, and the BOLT specifications are what bind those implementations into one coherent network. Without a precise shared specification, two nodes from different software stacks could not open channels or route payments to each other, fragmenting liquidity and undermining the network's value. The BOLTs play the role for Lightning that RFCs play for the internet.

@@ -514,6 +514,6 @@
   - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
-  - sources:: [[ISO/IEC 42001:2023]], [[NIST AI Risk Management Framework]], [[ISO/IEC 23894:2023]], [[ISO/IEC 25024]], [[ISO/IEC 25059]], [[EU AI Act]], [[GDPR]], [[FDA Post-Market Surveillance]]
+  - sources:: [[ISO/IEC 42001:2023]], [[NIST AI Risk Management Framework]], [[ISO/IEC 23894:2023]], [[ISO/IEC 25024]], [[ISO/IEC 25059]], [[EU AI Act Regulatory Instrument]], [[GDPR]], [[FDA Post-Market Surveillance]]
   - migration-date:: 2026-04-26T00:00:00Z
   - modified:: 2026-04-26T15:00:00Z

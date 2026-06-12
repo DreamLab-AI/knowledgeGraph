@@ -474,7 +474,7 @@ public:: true
         "label": "Rank Decomposition"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -500,21 +500,21 @@ public:: true
         "label": "Cognitive AI"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:llama",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
@@ -526,7 +526,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -544,7 +544,7 @@ public:: true
         "label": "Microsoft Research"
       },
       {
-        "@id": "urn:ngm:class:nvidia",
+        "@id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA"
       }
     ]
@@ -633,7 +633,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Llama]]",
+      "raw": "[[Meta Llama Model Family]]",
       "resolved": "urn:visionflow:linked:llama",
       "kind": "StubLink"
     },
@@ -783,7 +783,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -798,7 +798,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -808,7 +808,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -858,7 +858,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -878,7 +878,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[NVIDIA]]",
+      "raw": "[[NVIDIA Corporation]]",
       "resolved": "urn:visionflow:owl:class:nvidia",
       "kind": "ResolvedLink"
     },
@@ -903,7 +903,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
@@ -946,17 +946,17 @@ public:: true
   - implemented-in-layer:: [[AlgorithmLayer]], [[FrameworkLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Transfer Learning]], [[Fine Tuning]], [[Model Adaptation]], [[Neural Networks]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Transfer Learning]], [[Fine Tuning]], [[Model Adaptation]], [[Neural Networks]]
   - has-part:: [[LoRA]], [[DoRA]], [[QLoRA]], [[LongLoRA]], [[VeRA]], [[GaLore]], [[Adapter Tuning]], [[Prefix Tuning]], [[Prompt Tuning]], [[IA3]], [[LyCORIS]], [[ReLoRA]], [[X-LoRA]]
   - requires:: [[Pre-trained Model]], [[Low-Rank Decomposition]], [[Transformer Architecture]], [[Gradient Descent]], [[Task-Specific Dataset]]
   - enables:: [[LLM Fine-Tuning]], [[Diffusion Model Customisation]], [[On-Device Training]], [[Domain Adaptation]], [[Multi Task Learning]], [[Memory-Efficient Training]]
   - implements:: [[Singular Value Decomposition]], [[Matrix Factorisation]], [[Knowledge Distillation]], [[Quantisation]], [[Attention Mechanism]]
   - depends-on:: [[Transformers]], [[Large Language Models]], [[PyTorch]], [[CUDA]], [[Hugging Face PEFT]]
-  - supports:: [[Stable Diffusion]], [[Llama]], [[Anthropic Claude]], [[ChatGPT]], [[Computer Vision]], [[Natural Language Processing]]
-  - uses:: [[Rank Decomposition]], [[Gradient Checkpointing]], [[Mixed Precision Training]], [[Parameter Sharing]], [[ComfyUI]]
+  - supports:: [[Stable Diffusion Image Model]], [[Meta Llama Model Family]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Computer Vision]], [[Natural Language Processing]]
+  - uses:: [[Rank Decomposition]], [[Gradient Checkpointing]], [[Mixed Precision Training]], [[Parameter Sharing]], [[Node-Based Diffusion Pipeline Interface]]
   - contrasts-with:: [[Full Fine Tuning]], [[Feature Extraction]], [[Prompt Engineering]], [[In-Context Learning]], [[Retrieval Augmented Generation]]
   - related-to:: [[Agent Frameworks]], [[Agents]], [[AI Adoption]], [[Cognitive AI]], [[ComfyUI Workflows]]
-  - standardized-by:: [[Hugging Face]], [[NVIDIA]], [[Microsoft Research]], [[Meta AI Research]]
+  - standardized-by:: [[Hugging Face]], [[NVIDIA Corporation]], [[Microsoft Research]], [[Meta AI Research]]
 
 - ### Content
 
@@ -1275,7 +1275,7 @@ public:: true
 
 	  #### Diffusion Fine-Tuning Ecosystem
 
-	  - **kohya_ss** scripts (github.com/kohya-tech/kohya_ss): standard community tool supporting all LyCORIS variants; integrates with Automatic1111 WebUI and [[ComfyUI]] for inference
+	  - **kohya_ss** scripts (github.com/kohya-tech/kohya_ss): standard community tool supporting all LyCORIS variants; integrates with Automatic1111 WebUI and [[Node-Based Diffusion Pipeline Interface]] for inference
 	  - **DreamBooth-LoRA**: 20–50 training images; 10–30 minutes on A100; 50MB adapter; high-fidelity subject representation generalising across styles and prompts
 	  - **Civitai** marketplace: 400,000+ LoRA/LyCORIS weights covering character likenesses, artistic styles, clothing, environments, objects — world's largest distributed fine-tuned model repository
 	  - Style LoRAs: transfer ArtStation styles, anime aesthetics, photographic techniques to SDXL generation
@@ -1379,7 +1379,7 @@ public:: true
   - **Image diffusion customisation**: democratised representation of specific subjects, styles, concepts.
     - DreamBooth-LoRA: 20–50 training images, 10–30 minutes A100, 50MB adapter, subject recognition across arbitrary prompts and styles
     - Style LoRAs (ArtStation aesthetic, anime style, photographic lighting, architectural rendering): consistently transferable across SDXL model releases
-    - Composition via [[ComfyUI]] LoRA nodes: multiple adapters with independent weight sliders; merge LoRAs pre-inference
+    - Composition via [[Node-Based Diffusion Pipeline Interface]] LoRA nodes: multiple adapters with independent weight sliders; merge LoRAs pre-inference
 
   - **Multi-adapter composition and merging**: post-hoc combination of independently trained adapters without retraining.
     - Scalar addition: W = W_base + α₁ΔW₁ + α₂ΔW₂ (simple weighting — often works surprisingly well for capability combination within related domains; less effective across very different domains)

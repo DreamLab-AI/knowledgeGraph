@@ -6,9 +6,9 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - bridges-to:: [[Neural Network]], [[Imitation Learning]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
   - enables:: [[Deep Learning]], [[Reinforcement Learning]]
 
 - ### Content

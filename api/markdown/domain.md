@@ -5,7 +5,7 @@
   - owl-role:: Concept
 - ### Relationships
   - **relatedTo**: [[Domain Ontology]], [[Ontology]]
-  - **enables**: [[Knowledge Graph]], [[Semantic Web]]
+  - **enables**: [[Knowledge Graph]], [[Semantic Web Linked Data Standard]]
   - **uses**: [[Semantic Web Standards]]
   - **hasPart**: [[Metaverse Domain]], [[Blockchain Domain]]
   - bridges-to:: [[Blockchain]] (bc)

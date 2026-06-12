@@ -38,13 +38,13 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld-1-1",
+        "id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
@@ -72,8 +72,8 @@
       "label": "Linked Data Platform"
     },
     {
-      "slug": "melvin-carvalho",
-      "label": "Melvin Carvalho"
+      "slug": "melvin-carvalho-decentralised-web-advocate",
+      "label": "Melvin Carvalho Decentralised Web Advocate"
     },
     {
       "slug": "ngsi-ld",
@@ -96,8 +96,8 @@
       "label": "Semantic Web Domain"
     },
     {
-      "slug": "semantic-web",
-      "label": "Semantic Web"
+      "slug": "semantic-web-linked-data-standard",
+      "label": "Semantic Web Linked Data Standard"
     },
     {
       "slug": "solid-pod-storage",

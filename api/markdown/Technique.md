@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
@@ -70,7 +70,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:model", "label": "Model"},
       {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"}
     ],
@@ -120,7 +120,7 @@ public:: true
   - requires:: [[Model Training]], [[Training Data]]
   - enables:: [[Inference]], [[Model Performance]]
   - uses:: [[Deep Learning]], [[Neural Network]]
-  - relatedTo:: [[Machine Learning]], [[Model]], [[Algorithmic Framework]]
+  - relatedTo:: [[Machine Learning Discipline]], [[Model]], [[Algorithmic Framework]]
   - contrastsWith:: [[Architecture]]
 
 - ### Content

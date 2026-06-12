@@ -66,6 +66,10 @@
       "label": "Economics"
     },
     {
+      "slug": "employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
+    },
+    {
       "slug": "fda",
       "label": "FDA"
     },
@@ -100,10 +104,6 @@
     {
       "slug": "snapshot-off-chain-voting",
       "label": "Snapshot Off-Chain Voting"
-    },
-    {
-      "slug": "social-contract-and-jobs",
-      "label": "Social contract and jobs"
     },
     {
       "slug": "tally",

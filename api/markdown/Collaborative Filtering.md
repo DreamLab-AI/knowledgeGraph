@@ -17,13 +17,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:collaborative-filtering",
+  "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
   "@type": "Class",
   "label": "Collaborative Filtering",
   "definition": "Collaborative filtering is a machine learning technique for building recommendation systems that generates predictions about user preferences by aggregating the behaviour or ratings of many users, without requiring explicit knowledge of item content. Memory-based approaches compute similarity between users (user-based) or items (item-based) using rating vectors; model-based approaches such as matrix factorisation decompose the user-item interaction matrix into latent factor spaces. The method operates on the assumption that users who agreed in the past will agree in the future, and is the foundational algorithm behind recommendation engines at Netflix, Spotify, and Amazon.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
@@ -31,7 +31,7 @@ public:: true
       {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"}
     ],
     "relatedTo": [
@@ -48,7 +48,7 @@ public:: true
   - [[Collaborative Filtering]] is a [[Machine Learning Technique]] that infers user preferences by identifying patterns across aggregated user behaviour data—ratings, clicks, or purchases—to power [[Recommendation System]] engines without requiring analysis of item content.
 
 - ### Relationships
-  - Collaborative filtering is a subclass of [[Machine Learning Technique]] that powers [[Recommendation Engine]] and [[Recommendation System]] deployments enabling [[Hyper personalisation]] in consumer platforms. It relies on [[Machine Learning]] optimisation of latent factor models and increasingly uses learned [[Embeddings]] to represent users and items in shared vector spaces. Broader [[Recommendation Systems]] taxonomies contrast it with content-based filtering. Privacy considerations are significant: collaborative filtering requires large-scale behavioural data, raising [[Data Privacy]] concerns addressed through [[Privacy Preserving Data Mining]] techniques such as federated learning and differential privacy.
+  - Collaborative filtering is a subclass of [[Machine Learning Technique]] that powers [[Recommendation Engine]] and [[Recommendation System]] deployments enabling [[Hyper personalisation]] in consumer platforms. It relies on [[Machine Learning Discipline]] optimisation of latent factor models and increasingly uses learned [[Embeddings]] to represent users and items in shared vector spaces. Broader [[Recommendation Systems]] taxonomies contrast it with content-based filtering. Privacy considerations are significant: collaborative filtering requires large-scale behavioural data, raising [[Data Privacy]] concerns addressed through [[Privacy Preserving Data Mining]] techniques such as federated learning and differential privacy.
 
 - ### Content
   - Collaborative filtering was first described explicitly by Goldberg, Nichols, Oki, and Terry in the 1992 Tapestry email filtering system at Xerox PARC, and popularised by GroupLens at the University of Minnesota in 1994 for Usenet article recommendation. Early implementations were memory-based (neighbourhood methods): for a target user, the system finds the k most similar users (cosine or Pearson correlation on rating vectors) and aggregates their ratings for unseen items as weighted predictions. Item-based collaborative filtering, introduced by Amazon in 2003, computes item-to-item similarity instead, which scales better to large catalogues because item similarity matrices change slowly.

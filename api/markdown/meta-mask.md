@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Digital Wallet]]
   - bridges-to:: [[Self-Custody]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
   - enables:: [[Web3]]
 
 - ### Content

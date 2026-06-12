@@ -47,7 +47,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:google-cloud",
+  "@id": "urn:ngm:class:google-ai-technology-corporation-cloud",
   "@type": "Class",
   "label": "Google Cloud",
   "definition": "Google Cloud is a cloud computing platform offering infrastructure, data, and machine learning services operated by Google.",
@@ -69,7 +69,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
       }
     ]
@@ -98,12 +98,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:linked:machine-learning",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Google]]",
+      "raw": "[[Google AI Technology Corporation]]",
       "resolved": "urn:visionflow:linked:google",
       "kind": "ResolvedLink"
     },
@@ -133,9 +133,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Cloud Platform]]
-  - bridges-to:: [[Google]]
+  - bridges-to:: [[Google AI Technology Corporation]]
   - requires:: [[Cloud Computing]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Google Cloud provides compute, storage, networking, and data analytics services delivered over the internet on a usage-based model.

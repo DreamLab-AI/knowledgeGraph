@@ -17,26 +17,26 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:json-ld-context",
+  "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
   "@type": "Class",
   "label": "JSON-LD Context",
   "definition": "A JSON-LD Context is the machine-readable document or inline object that maps the shorthand terms and prefixes used in a JSON-LD document to their fully qualified IRIs in a target vocabulary or ontology. It serves as the bridge between the compact, human-readable JSON representation and the globally unambiguous RDF data model, enabling semantic interoperability across disparate systems. Contexts may be embedded inline within a document, referenced by URL, or composed from multiple context documents. The JSON-LD 1.1 specification extends context capabilities with scoped contexts, type-scoped and property-scoped contexts, and protected terms that resist accidental overriding. Correct context design is foundational to knowledge graph compilation and Linked Data publication.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}],
+  "subClassOf": [{"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld-1-1", "label": "JSON-LD 1.1"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld-1-1", "label": "JSON-LD 1.1"},
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
     ],
     "supports": [
@@ -51,7 +51,7 @@ public:: true
 - ### Definition
   - A [[JSON-LD Context]] is the declarative mapping layer within [[JSON-LD]] that resolves compact term names to full [[RDF]] IRIs, enabling [[Knowledge Graph]] compilation and [[Semantic Interoperability]] between systems publishing [[Linked Data]] in JSON format.
 - ### Relationships
-  - The JSON-LD Context sits at the core of the [[Semantic Web]] stack, translating between compact JSON representations and the triple-based [[RDF]] data model. It enables [[Knowledge Graph]] construction by providing stable [[Knowledge Representation]] mappings to [[Ontology]] vocabularies. [[Linked Data]] publication depends on well-designed contexts to ensure round-trip fidelity between compact and expanded forms. [[SPARQL]] query engines consume expanded JSON-LD (via the context) to execute graph queries. The [[JSON-LD 1.1]] specification introduced scoped contexts that allow term semantics to vary by property or type, and the [[Schema Registry]] pattern manages versioned context documents across distributed systems.
+  - The JSON-LD Context sits at the core of the [[Semantic Web Linked Data Standard]] stack, translating between compact JSON representations and the triple-based [[RDF]] data model. It enables [[Knowledge Graph]] construction by providing stable [[Knowledge Representation]] mappings to [[Ontology]] vocabularies. [[Linked Data]] publication depends on well-designed contexts to ensure round-trip fidelity between compact and expanded forms. [[SPARQL]] query engines consume expanded JSON-LD (via the context) to execute graph queries. The [[JSON-LD 1.1]] specification introduced scoped contexts that allow term semantics to vary by property or type, and the [[Schema Registry]] pattern manages versioned context documents across distributed systems.
 - ### Content
   - A JSON-LD Context document specifies prefix expansions (e.g. mapping "schema" to "https://schema.org/"), type coercions (ensuring numeric strings are interpreted as integers), language tagging for string literals, and base IRI declarations. When a JSON-LD processor encounters a term in a document, it looks up the term in the active context to produce the full IRI used in the output RDF graph. This allows compact, readable JSON to produce globally unambiguous statements.
 

@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:multimodal-learning",
+  "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
   "@type": "Class",
   "label": "Multimodal Learning",
   "definition": "Multimodal learning is a sub-field of machine learning concerned with building models that can process, align, and reason over data from two or more sensory modalities — such as text, images, audio, video, and structured data — within a unified representation space. Models trained multimodally acquire richer, grounded representations than unimodal counterparts by exploiting cross-modal correlations and complementarity.",
@@ -28,7 +28,7 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multimodal-models", "label": "Multimodal Models"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-models", "label": "Multimodal Models"},
       {"@id": "urn:ngm:class:cross-modal-conditioning", "label": "Cross-Modal Conditioning"},
       {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
     ],

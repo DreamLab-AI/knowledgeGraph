@@ -103,12 +103,12 @@
       "label": "Memory Hierarchy"
     },
     {
-      "slug": "nvidia-h-100",
-      "label": "NVIDIA H100"
+      "slug": "nvidia-corporation",
+      "label": "NVIDIA Corporation"
     },
     {
-      "slug": "nvidia",
-      "label": "NVIDIA"
+      "slug": "nvidia-h-100",
+      "label": "NVIDIA H100"
     },
     {
       "slug": "parallel-computing",

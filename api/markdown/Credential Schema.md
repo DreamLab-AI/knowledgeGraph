@@ -41,8 +41,8 @@ public:: true
       {"@id": "urn:ngm:class:verifiable-credential-vc", "label": "Verifiable Credential (VC)"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},

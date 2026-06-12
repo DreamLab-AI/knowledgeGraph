@@ -128,7 +128,7 @@ public:: true
         "label": "Remote Assistance"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-applications",
+        "@id": "urn:ngm:class:spatial-computing-paradigm-applications",
         "label": "Spatial Computing Applications"
       }
     ]
@@ -207,7 +207,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Spatial Computing]]",
+      "raw": "[[Spatial Computing Paradigm]]",
       "resolved": "urn:visionflow:owl:class:spatial-computing",
       "kind": "ResolvedLink"
     }
@@ -257,7 +257,7 @@ public:: true
   - **Web AR**: Browser-based experiences accessible without app installation
 
   #### Related Concepts
-  - [[AR Frame]], [[AR Registration]], [[Computer Vision]], [[Extended Reality]], [[3D Rendering Engine]], [[Spatial Computing]]
+  - [[AR Frame]], [[AR Registration]], [[Computer Vision]], [[Extended Reality]], [[3D Rendering Engine]], [[Spatial Computing Paradigm]]
 
 - ### Provenance
   - sources::

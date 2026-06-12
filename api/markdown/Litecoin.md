@@ -120,7 +120,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Bitcoin]]",
+      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
       "resolved": "urn:visionflow:linked:bitcoin",
       "kind": "ResolvedLink"
     },
@@ -155,7 +155,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Domain]]
-  - bridges-to:: [[Bitcoin]], [[Bitcoin Lightning Network]]
+  - bridges-to:: [[Bitcoin Proof-of-Work Protocol]], [[Bitcoin Lightning Network]]
   - requires:: [[Proof of Work]], [[Scrypt]]
   - enables:: [[Digital Payments]]
 

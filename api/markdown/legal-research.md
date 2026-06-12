@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Machine Learning]], [[Narrow AI]]
+  - bridges-to:: [[Machine Learning Discipline]], [[Narrow AI]]
   - requires:: [[Optical Character Recognition]]
   - enables:: [[Regulatory Compliance]]
 

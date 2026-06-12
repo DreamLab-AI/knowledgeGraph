@@ -11,7 +11,7 @@
   - partOf:: [[UK Tech Ecosystem]]
   - uses:: [[Industrial Robot]], [[Sensor Fusion]], [[Digital Twin]]
   - enables:: [[Industrial IoT]], [[Robotics Application]]
-  - relatedTo:: [[Newcastle AI & Health Innovation]], [[National Industrial Centre for Virtual Environments]], [[Sustainable Technology]]
+  - relatedTo:: [[Newcastle AI & Health Innovation]], [[NICVE Virtual Reality Research Centre]], [[Sustainable Technology]]
 
 - ### Content
 

@@ -46,7 +46,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   },
   "qualityScore": 0.75,
@@ -68,7 +68,7 @@ public:: true
   - enables [[Federated Learning]]
   - enables [[Data Augmentation Strategies]]
   - relatedTo [[Differential Privacy]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
   Synthetic data generation has become a central strategy in responsible AI development, addressing the dual constraints of data scarcity and privacy regulation. Techniques range from simple statistical sampling (bootstrapping, noise injection) to deep generative models including GANs, variational autoencoders, and score-based diffusion models, each offering different fidelity-privacy trade-offs.

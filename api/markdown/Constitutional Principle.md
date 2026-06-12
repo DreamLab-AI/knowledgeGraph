@@ -62,7 +62,7 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
@@ -137,7 +137,7 @@ public:: true
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - partOf:: [[Constitutional AI]]
+  - partOf:: [[Constitutional AI Training Methodology]]
   - requires:: [[Value Alignment]], [[Reinforcement Learning]]
   - enables:: [[AI Safety]], [[AI Alignment]], [[Human Agency and Oversight]]
   - relatedTo:: [[Ai Governance Principle]], [[AI Ethics]], [[AI Regulation]], [[Accountability]], [[Fairness]]

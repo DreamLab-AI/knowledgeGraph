@@ -41,7 +41,7 @@ alias:: LinkedData
       {"@id": "urn:ngm:class:rdf", "label": "RDF"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld-1-1", "label": "JSON-LD 1.1"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld-1-1", "label": "JSON-LD 1.1"},
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
     ],
     "enables": [
@@ -49,7 +49,7 @@ alias:: LinkedData
       {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"}
     ]
   },
   "qualityScore": 0.75,

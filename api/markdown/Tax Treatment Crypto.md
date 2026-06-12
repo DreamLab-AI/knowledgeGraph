@@ -103,7 +103,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:tax-treatment-crypto",
+  "@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto",
   "@type": "Class",
   "label": "Tax Treatment Crypto",
   "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation, income taxation, value-added tax treatment, and reporting obligations under frameworks such as HMRC guidance, IRS Notice 2014-21, and the OECD Crypto-Asset Reporting Framework.",

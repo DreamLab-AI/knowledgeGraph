@@ -52,14 +52,14 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:quantum-computing",
+      "@id": "urn:ngm:class:quantum-computation-paradigm",
       "label": "Quantum Computing"
     }
   ],
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:linked:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -123,9 +123,9 @@ public:: true
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Quantum Computing]]
+  - is-subclass-of:: [[Quantum Computation Paradigm]]
   - bridges-to:: [[Cryptography]]
-  - requires:: [[Quantum Computing]]
+  - requires:: [[Quantum Computation Paradigm]]
   - enables:: [[Post-Quantum Cryptography]]
 
 - ### Content

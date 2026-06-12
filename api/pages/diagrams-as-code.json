@@ -149,7 +149,7 @@
         "label": "Wavedrom"
       },
       {
-        "id": "urn:ngm:class:mermaid",
+        "id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid"
       }
     ],
@@ -157,7 +157,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -221,7 +221,7 @@
         "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:mermaid-open-source-project",
+        "id": "urn:ngm:class:markdown-diagramming-as-code-tool-open-source-project",
         "label": "Mermaid Open-Source Project"
       },
       {
@@ -869,8 +869,8 @@
   ],
   "backlinks": [
     {
-      "slug": "agentic-mycelia",
-      "label": "Agentic Mycelia"
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
     },
     {
       "slug": "graph-neural-network",
@@ -881,12 +881,12 @@
       "label": "Machine Translation"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework"
     },
     {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
+      "slug": "pre-training",
+      "label": "Pre Training"
     }
   ]
 }

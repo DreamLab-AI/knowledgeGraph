@@ -85,7 +85,7 @@ public:: true
       {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ]
   },
   "provenance": {

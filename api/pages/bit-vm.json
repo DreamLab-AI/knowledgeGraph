@@ -8,7 +8,7 @@
   "definition": "BitVM is a proposed approach for expressing complex computations that can be verified on Bitcoin without changing its consensus rules. It uses fraud proofs and challenge-response interactions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-script",
+      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
       "label": "Bitcoin Script"
     }
   ],

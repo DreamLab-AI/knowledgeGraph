@@ -84,7 +84,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},

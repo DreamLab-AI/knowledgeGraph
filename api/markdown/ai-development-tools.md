@@ -6,7 +6,7 @@
   - owl-role:: concept
 
 - ### Relationships
-  - enables:: [[Machine Learning]], [[Deep Learning]], [[Generative AI]]
+  - enables:: [[Machine Learning Discipline]], [[Deep Learning]], [[Generative AI]]
   - uses:: [[AutoML]], [[Data Pipeline]]
   - supports:: [[Machine Learning Infrastructure]], [[AI Lifecycle]]
 

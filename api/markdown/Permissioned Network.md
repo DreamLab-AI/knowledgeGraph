@@ -101,7 +101,7 @@ public:: true
       {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain", "label": "Public Blockchain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:private-blockchain", "label": "Private Blockchain"},

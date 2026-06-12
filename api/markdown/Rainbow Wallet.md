@@ -129,7 +129,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -164,7 +164,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Wallet]]
-  - bridges-to:: [[Wallet]], [[Ethereum]]
+  - bridges-to:: [[Wallet]], [[Ethereum Smart Contract Platform]]
   - requires:: [[Private Key]], [[Self-Custody]]
   - enables:: [[Non-Fungible Token]]
 

@@ -57,7 +57,7 @@ public:: true
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
@@ -110,7 +110,7 @@ public:: true
 - ### Relationships
   - enables [[Deep Learning]]
   - enables [[Neural Network]]
-  - uses [[Machine Learning]]
+  - uses [[Machine Learning Discipline]]
   - relatedTo [[Reinforcement Learning]]
   - relatedTo [[Transfer Learning]]
 

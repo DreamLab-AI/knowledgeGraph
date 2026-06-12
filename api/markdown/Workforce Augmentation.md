@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
       {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}

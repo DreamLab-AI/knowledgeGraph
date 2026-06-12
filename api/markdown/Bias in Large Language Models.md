@@ -668,7 +668,7 @@ public:: true
         "label": "Bias Mitigation Techniques"
       },
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ],
@@ -704,7 +704,7 @@ public:: true
         "label": "AIES"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-10",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-10",
         "label": "EU AI Act Article 10"
       },
       {
@@ -1258,7 +1258,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Constitutional AI]]",
+      "raw": "[[Constitutional AI Training Methodology]]",
       "resolved": "urn:visionflow:owl:class:constitutional-ai",
       "kind": "ResolvedLink"
     },
@@ -1283,7 +1283,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -1320,11 +1320,11 @@ public:: true
   - requires:: [[Training Data Composition]], [[Pretraining Corpus]], [[Tokeniser]], [[RLHF Pipeline]], [[Instruction Tuning Dataset]], [[Human Rater Pool]]
   - enables:: [[Stereotype Propagation]], [[Cultural Homogenization]], [[Information Asymmetry]], [[Discriminatory Decision Making]]
   - implements:: [[Statistical Pattern Reproduction]], [[Distributional Representation Learning]], [[Implicit Association Encoding]], [[Preference Aggregation]]
-  - depends-on:: [[Large Language Model]], [[Transformer Architecture]], [[Common Crawl]], [[Reddit Corpus]], [[Reinforcement Learning from Human Feedback]], [[Supervised Fine Tuning]], [[Tokenisation]]
+  - depends-on:: [[Large Language Model]], [[Transformer Architecture]], [[Common Crawl]], [[Reddit Corpus]], [[Reinforcement Learning from Human Feedback]], [[Supervised Fine Tuning]], [[Neural Network Text Tokenisation]]
   - supports:: [[Bias Auditing]], [[Red Teaming]], [[Model Evaluation]], [[Responsible AI Reporting]], [[Algorithmic Accountability]]
   - uses:: [[BBQ Benchmark]], [[StereoSet]], [[CrowS-Pairs]], [[BOLD Benchmark]], [[HONEST Benchmark]], [[WinoBias]], [[WinoQueer]], [[RealToxicityPrompts]], [[Word Embedding Association Test]]
   - contrasts-with:: [[Algorithmic Bias and Variance]], [[Inductive Bias]], [[Selection Bias]], [[Confirmation Bias]]
-  - related-to:: [[AI Ethics]], [[Fairness in AI]], [[AI Risks]], [[AI Alignment]], [[Constitutional AI]], [[Hallucination]], [[Bias Mitigation Techniques]], [[Bias Detection Methods]]
+  - related-to:: [[AI Ethics]], [[Fairness in AI]], [[AI Risks]], [[AI Alignment]], [[Constitutional AI Training Methodology]], [[Hallucination]], [[Bias Mitigation Techniques]], [[Bias Detection Methods]]
   - standardized-by:: [[ISO/IEC TR 24027]], [[NIST AI RMF]], [[EU AI Act Article 10]], [[ICO Guidance on AI]], [[ACL]], [[FAccT]], [[AIES]], [[NeurIPS]]
 
 - ### Content

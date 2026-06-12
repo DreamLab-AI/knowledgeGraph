@@ -129,5 +129,5 @@
   5. ISO/IEC 22989:2022: Information technology — Artificial intelligence — AI concepts and terminology.
 
 - ### Provenance
-  - sources:: [[Vaswani et al. 2017]], [[ISO/IEC 22989]], [[NIST AI 600-1]], [[EU AI Act]]
+  - sources:: [[Vaswani et al. 2017]], [[ISO/IEC 22989]], [[NIST AI 600-1]], [[EU AI Act Regulatory Instrument]]
   - migration-date:: 2026-04-26T00:00:00Z

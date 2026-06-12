@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
       {"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"},
       {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},

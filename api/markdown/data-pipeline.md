@@ -8,7 +8,7 @@
 
 - ### Relationships
   - Has Part: [[Feature Engineering]], [[Quality Assurance]]
-  - Enables: [[Machine Learning]], [[Deep Learning]]
+  - Enables: [[Machine Learning Discipline]], [[Deep Learning]]
   - Uses: [[ETL Pipeline]], [[Distributed System]]
   - Related To: [[Blockchain]], [[Monitoring Dashboard]]
 

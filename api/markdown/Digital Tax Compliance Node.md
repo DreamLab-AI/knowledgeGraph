@@ -142,7 +142,7 @@ public:: true
         "label": "Regulatory Reporting Module"
       },
       {
-        "@id": "urn:ngm:class:tax-calculation-engine",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-calculation-engine",
         "label": "Tax Calculation Engine"
       },
       {

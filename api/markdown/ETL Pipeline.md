@@ -75,13 +75,13 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
       {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
       {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
       {"@id": "urn:ngm:class:database-system", "label": "Database System"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
     ]
   },

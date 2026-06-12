@@ -51,8 +51,8 @@
   - Interoperability between blockchain ecosystems
 
   ## Examples
-  - [[Bitcoin]] <-> [[Litecoin]] atomic swaps
-  - [[Ethereum]] <-> [[ERC-20 Token]] swaps
+  - [[Bitcoin Proof-of-Work Protocol]] <-> [[Litecoin]] atomic swaps
+  - [[Ethereum Smart Contract Platform]] <-> [[ERC-20 Token]] swaps
   - [[Lightning Network]] cross-chain swaps
   - [[Polkadot]] parachain swaps
 

@@ -138,7 +138,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:linked:open-ai",
       "kind": "ResolvedLink"
     },
@@ -168,7 +168,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Automatic Speech Recognition]]
-  - bridges-to:: [[Speech Processing]], [[OpenAI]]
+  - bridges-to:: [[Speech Processing]], [[OpenAI Research Organisation]]
   - requires:: [[Transformer]], [[Attention Mechanism]]
   - enables:: [[Speech Recognition]], [[Translation]]
 

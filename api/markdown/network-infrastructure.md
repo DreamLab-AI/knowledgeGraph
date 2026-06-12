@@ -6,7 +6,7 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - supports:: [[Spatial Computing]]
+  - supports:: [[Spatial Computing Paradigm]]
   - supports:: [[AI Infrastructure]]
   - hasPart:: [[Network Component]]
   - hasPart:: [[Edge Computing]]

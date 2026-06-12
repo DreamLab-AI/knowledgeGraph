@@ -3,7 +3,7 @@
   "title": "NVIDIA H100",
   "slug": "nvidia-h-100",
   "public": true,
-  "classIri": "urn:ngm:class:nvidia-h-100",
+  "classIri": "urn:ngm:class:nvidia-corporation-h-100",
   "domain": "computing",
   "definition": "The NVIDIA H100 is a data-centre GPU based on the Hopper architecture, designed for AI training and inference and high-performance computing. It introduced a Transformer Engine and FP8 support for large model workloads.",
   "subClassOf": [

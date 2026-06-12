@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - **Enables**: [[Augmented Reality]], [[Virtual Reality]], [[Spatial Computing]]
+  - **Enables**: [[Augmented Reality]], [[Virtual Reality]], [[Spatial Computing Paradigm]]
   - **Requires**: [[XR Headset]], [[XR Hardware]] (device session negotiation)
   - **Uses**: [[Web Technology]] (browser rendering pipeline)
   - **Part-of**: [[Interoperability]] standards ecosystem

@@ -42,7 +42,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       }
     ],

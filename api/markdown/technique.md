@@ -6,7 +6,7 @@
   - requires:: [[Model Training]], [[Training Data]]
   - enables:: [[Inference]], [[Model Performance]]
   - uses:: [[Deep Learning]], [[Neural Network]]
-  - relatedTo:: [[Machine Learning]], [[Model]], [[Algorithmic Framework]]
+  - relatedTo:: [[Machine Learning Discipline]], [[Model]], [[Algorithmic Framework]]
   - contrastsWith:: [[Architecture]]
 
 - ### Content

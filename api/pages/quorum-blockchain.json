@@ -16,7 +16,7 @@
       "label": "Consortium Blockchain"
     },
     {
-      "id": "urn:ngm:class:ethereum",
+      "id": "urn:ngm:class:ethereum-smart-contract-platform",
       "label": "Ethereum"
     }
   ],
@@ -76,7 +76,7 @@
         "label": "Enterprise Identity Management"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -84,7 +84,7 @@
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

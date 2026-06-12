@@ -63,7 +63,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},

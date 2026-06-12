@@ -292,7 +292,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -334,11 +334,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -354,7 +354,7 @@ public:: true
         "label": "Access Control System"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       }
     ],
@@ -384,7 +384,7 @@ public:: true
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui-client",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
       }
     ],
@@ -428,7 +428,7 @@ public:: true
         "label": "HTTP Streaming"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -470,7 +470,7 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
@@ -478,7 +478,7 @@ public:: true
         "label": "API Gateway"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       }
     ],
@@ -514,7 +514,7 @@ public:: true
         "label": "Anthropic"
       },
       {
-        "@id": "urn:ngm:class:json-rpc-2-0-specification",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0-specification",
         "label": "JSON-RPC 2.0 Specification"
       },
       {
@@ -803,7 +803,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -823,7 +823,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -882,14 +882,14 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Agent Frameworks]], [[Agentic Internet]], [[API Gateway]], [[CLI Multi-Agent Systems]], [[Agents]]
   - has-part:: [[JSON-RPC]], [[MCP Server]], [[MCP Client]], [[MCP Resources]], [[MCP Tools]], [[MCP Prompts]], [[MCP Sampling]], [[Server-Sent Events]], [[stdio Transport]], [[Tool Schema]]
-  - requires:: [[JSON-RPC]], [[LLM Tool Use]], [[Transport Protocol]], [[JSON Schema]], [[Access Control System]], [[Anthropic Claude]]
+  - requires:: [[JSON-RPC]], [[LLM Tool Use]], [[Transport Protocol]], [[JSON Schema]], [[Access Control System]], [[Constitutional AI Language Model Family]]
   - enables:: [[Agentic Internet]], [[Agent Frameworks]], [[CLI Multi-Agent Systems]], [[AI Search]], [[ComfyUI Client]], [[Chatbots]], [[AI companions]]
   - implements:: [[Tool Use]], [[Function Calling]], [[Remote Procedure Call]], [[Dynamic Tool Discovery]], [[Capability Advertisement]]
   - depends-on:: [[Large Language Models]], [[HTTP]], [[Attention]], [[Agents]], [[AI Adoption]]
   - supports:: [[Claude Desktop]], [[Cursor IDE]], [[GitHub Integration]], [[Filesystem Access]], [[Database Connectivity]], [[Workflow Automation]]
   - uses:: [[JSON Schema]], [[OAuth 2.0]], [[Server-Sent Events]], [[HTTP Streaming]], [[stdio]], [[Process Isolation]]
   - contrasts-with:: [[LangChain Tools]], [[OpenAI Function Calling]], [[Semantic Kernel]], [[AutoGen]], [[SLOP Protocol]], [[REST API]]
-  - related-to:: [[AI Risks]], [[Access Control System]], [[AML KYC Compliance]], [[API Gateway]], [[Agent Frameworks]], [[Anthropic Claude]], [[ChatGPT]], [[AI Companies]]
+  - related-to:: [[AI Risks]], [[Access Control System]], [[AML KYC Compliance]], [[API Gateway]], [[Agent Frameworks]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[AI Companies]]
   - standardized-by:: [[Anthropic]], [[MCP Specification Working Group]], [[JSON-RPC 2.0 Specification]]
 
 - ### Content

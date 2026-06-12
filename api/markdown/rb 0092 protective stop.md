@@ -71,11 +71,11 @@ public:: true
       {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
       {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-operation", "label": "Collaborative Operation"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-operation", "label": "Collaborative Operation"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
     ]
   }

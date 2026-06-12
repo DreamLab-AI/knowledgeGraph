@@ -18,8 +18,8 @@
   - supports:: [[Photo Editing Software]], [[Video Post-Production]], [[Digital Forensics]], [[Cultural Heritage Restoration]], [[Medical Image Reconstruction]]
   - uses:: [[Partial Convolution]], [[Gated Convolution]], [[Fourier Convolution]], [[Cross Attention]], [[Classifier-Free Guidance]], [[ControlNet]]
   - contrasts-with:: [[Text-to-Image Generation]], [[Super Resolution]], [[Image Denoising]], [[Clone Stamp Tool]], [[Outpainting]]
-  - related-to:: [[Stable Diffusion]], [[Adobe Firefly]], [[Apple Intelligence]], [[Generative AI]], [[Deepfakes and fraudulent content]]
-  - standardized-by:: [[CVPR]], [[ICCV]], [[ECCV]], [[SIGGRAPH]], [[C2PA]], [[EU AI Act]], [[UK Online Safety Act]]
+  - related-to:: [[Stable Diffusion Image Model]], [[Adobe Firefly]], [[Apple Intelligence]], [[Generative AI]], [[Deepfakes and fraudulent content]]
+  - standardized-by:: [[CVPR]], [[ICCV]], [[ECCV]], [[SIGGRAPH]], [[C2PA]], [[EU AI Act Regulatory Instrument]], [[UK Online Safety Act]]
 
 - ### Content
 

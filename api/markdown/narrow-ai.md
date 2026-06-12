@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
   - bridges-to:: [[Deep Learning]], [[Artificial General Intelligence]]
-  - requires:: [[Machine Learning]]
+  - requires:: [[Machine Learning Discipline]]
   - enables:: [[Computer Vision]]
 
 - ### Content

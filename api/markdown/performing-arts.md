@@ -10,7 +10,7 @@
   - **uses** [[Virtual Production]] — virtual production pipelines create real-time digital environments for live performance
   - **uses** [[Spatial Audio]] — spatial audio systems reproduce directional sound for immersive audience experiences
   - **enables** [[Immersive Experience]] — performing arts are a primary content type driving immersive experience design
-  - **enables** [[Location Based Experience]] — live performances anchor location-based digital-physical hybrid experiences
+  - **enables** [[Venue-Tethered Immersive Experience]] — live performances anchor location-based digital-physical hybrid experiences
   - **relatedTo** [[Music and Audio]] — music is a core performing art domain
   - **relatedTo** [[Creative Media Domain]] — performing arts sit within the creative media domain
 

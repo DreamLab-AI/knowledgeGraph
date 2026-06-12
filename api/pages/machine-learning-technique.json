@@ -3,7 +3,7 @@
   "title": "Machine Learning Technique",
   "slug": "machine-learning-technique",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-technique",
+  "classIri": "urn:ngm:class:machine-learning-discipline-technique",
   "domain": "artificial-intelligence",
   "definition": "A specific algorithmic approach or methodology within machine learning used to enable systems to learn from data. Machine learning techniques span supervised, unsupervised, and reinforcement paradigms and include methods such as gradient descent optimisation, backpropagation, fine-tuning, transfer learning, boosting, and bagging that enable models to improve performance through exposure to training data.",
   "subClassOf": [
@@ -12,7 +12,7 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

@@ -8,7 +8,7 @@
   "definition": "A learning setting in which a model is required to generalise to a new task or class from only a small number of labelled examples.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

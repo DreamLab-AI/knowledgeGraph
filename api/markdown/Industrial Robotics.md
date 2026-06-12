@@ -77,7 +77,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-robots",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robots",
         "label": "Collaborative Robots"
       }
     ]

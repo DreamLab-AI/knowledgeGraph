@@ -78,7 +78,7 @@ public:: true
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum"},
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "enables": [
@@ -133,7 +133,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -164,12 +164,12 @@ public:: true
 
 - ### Relationships
   - **implements**: [[Token Standard]], [[Smart Contract]]
-  - **uses**: [[Ethereum]], [[Blockchain]]
+  - **uses**: [[Ethereum Smart Contract Platform]], [[Blockchain]]
   - **enables**: [[Decentralised Finance]], [[Fungible Token]]
   - **contrastsWith**: [[ERC721]]
 
 - ### Content
-  - An [[Ethereum]] [[Smart Contract]] interface standard specifying required functions, events, and behaviours for implementing fungible tokens on [[EVM]]-compatible blockchains. ERC-20 enables interoperable [[Token Transfer]], [[Balance Tracking]], and [[Smart Contract]] interaction, forming the foundation of decentralised finance and governance token ecosystems.
+  - An [[Ethereum Smart Contract Platform]] [[Smart Contract]] interface standard specifying required functions, events, and behaviours for implementing fungible tokens on [[EVM]]-compatible blockchains. ERC-20 enables interoperable [[Token Transfer]], [[Balance Tracking]], and [[Smart Contract]] interaction, forming the foundation of decentralised finance and governance token ecosystems.
   - ### Original Content
 		- ```
   # ERC-20

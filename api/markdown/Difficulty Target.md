@@ -109,7 +109,7 @@ public:: true
       {"@id": "urn:ngm:class:halving", "label": "Halving"},
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
       {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
       {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
       {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"}

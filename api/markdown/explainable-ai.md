@@ -82,7 +82,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
   - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
@@ -225,7 +225,7 @@
 
   ## Related Terms
 
-  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
   - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
   - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 
@@ -406,7 +406,7 @@
 
 		  ## Related Terms
 
-		  - **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
+		  - **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
 		  - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
 		  - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 

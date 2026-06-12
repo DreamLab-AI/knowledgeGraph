@@ -26,7 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -183,31 +183,31 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "id": "urn:ngm:class:chat-gpt",
+        "id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
-        "id": "urn:ngm:class:gemini",
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "LLaMA"
       },
       {
-        "id": "urn:ngm:class:llama-3",
+        "id": "urn:ngm:class:meta-llama-model-family-3",
         "label": "Llama 3"
       },
       {
-        "id": "urn:ngm:class:mistral-and-mixtral",
+        "id": "urn:ngm:class:mistral-ai-open-weight-model-family",
         "label": "Mistral and Mixtral"
       },
       {
-        "id": "urn:ngm:class:open-ai",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "Open AI"
       }
     ],
@@ -221,11 +221,11 @@
         "label": "Hugging Face"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:open-ai",
+        "id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "Open AI"
       }
     ],
@@ -240,7 +240,7 @@
         "label": "Bias in Large Language Models"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -545,10 +545,6 @@
   ],
   "backlinks": [
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
-    },
-    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },
@@ -563,6 +559,10 @@
     {
       "slug": "pre-training",
       "label": "Pre Training"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "prompt-engineering",

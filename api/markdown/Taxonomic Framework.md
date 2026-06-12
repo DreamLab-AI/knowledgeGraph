@@ -40,7 +40,7 @@ alias:: TaxonomicFramework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:taxonomic-framework",
+  "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework",
   "@type": "Class",
   "label": "Taxonomic Framework",
   "definition": "A Taxonomic Framework is a principled hierarchical classification system that organises concepts within a domain into superclass-subclass relationships, enabling consistent identification, comparison, and retrieval of entities. In the robotics ontology it structures robot types, actuators, sensors, and control strategies into a formal class hierarchy that supports OWL reasoning, SPARQL queries, and interoperability across ontologies.",
@@ -67,7 +67,7 @@ alias:: TaxonomicFramework
       {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
     ]
   },
   "provenance": {

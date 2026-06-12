@@ -23,7 +23,7 @@ public:: true
   "definition": "A noise schedule is the function that determines how much Gaussian noise is added at each step of a diffusion model's forward process and, correspondingly, removed during sampling. It governs the variance trajectory from clean data to pure noise and strongly affects sample quality, training stability, and the number of steps required. Common forms include linear, cosine, and learned schedules.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},

@@ -408,7 +408,7 @@ public:: true
         "label": "National Accounts"
       },
       {
-        "@id": "urn:ngm:class:tax-record-microdata",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-record-microdata",
         "label": "Tax Record Microdata"
       },
       {

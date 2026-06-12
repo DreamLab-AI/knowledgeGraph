@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:18e88cffc5255af8833f08c14100ed43b793913a4ca00bfa0c70cb998155d06f",
+  "title": "Decentralised Agent Coordination Initiative",
+  "slug": "decentralised-agent-coordination-initiative",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-agent-coordination-initiative",
+  "domain": "artificial-intelligence",
+  "definition": "An open collaborative initiative advancing decentralised agent frameworks that integrate Nostr relays for communication, Bitcoin Lightning for micropayments, distributed identity, and open data connectors to enable trustless, economically-incentivised multi-agent coordination without central intermediaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "melvin-carvalho",
+      "label": "Melvin Carvalho"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr protocol"
+    },
+    {
+      "slug": "projects",
+      "label": "Projects"
+    }
+  ],
+  "backlinks": []
+}

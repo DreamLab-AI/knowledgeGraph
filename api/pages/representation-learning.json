@@ -8,7 +8,7 @@
   "definition": "Representation learning is a subfield of machine learning concerned with automatically discovering the data transformations and feature spaces \u2014 representations \u2014 that make subsequent learning tasks easier, more accurate, or more data-efficient. Rather than relying on hand-crafted features, representation learning systems learn to encode raw inputs such as images, text, or sensor readings into dense, structured latent vectors that capture semantically meaningful variation. Deep neural networks, particularly transformers and convolutional architectures, have made learned representations ubiquitous across computer vision, natural language processing, and multi-modal AI. The quality of learned representations directly determines the performance ceiling of downstream models trained on top of them.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],
@@ -42,7 +42,7 @@
         "label": "Embeddings"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "latent space"
       },
       {

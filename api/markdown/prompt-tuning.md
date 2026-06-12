@@ -47,7 +47,7 @@
   - [[2401.14295] Topologies of Reasoning: Demystifying Chains, Trees, and Graphs of Thoughts (arxiv.org)](https://arxiv.org/abs/2401.14295)
   - [llama-recipes/examples/Prompt_Engineering_with_Llama_2.ipynb at main · facebookresearch/llama-recipes (github.com)](https://github.com/facebookresearch/llama-recipes/blob/main/examples/Prompt_Engineering_with_Llama_2.ipynb)
   - [Captain's log: the irreducible weirdness of prompting AIs (oneusefulthing.org)](https://www.oneusefulthing.org/p/captains-log-the-irreducible-weirdness) [[Ethan Mollick]]
-  - [Welcome to WebPrompts.org | webprompts.org](https://webprompts.org/) [[Melvin Carvalho]]
+  - [Welcome to WebPrompts.org | webprompts.org](https://webprompts.org/) [[Melvin Carvalho Decentralised Web Advocate]]
   - [The Unreasonable Effectiveness of Eccentric Automatic Prompts](https://arxiv.org/pdf/2402.10949.pdf)
   - Generic LLM tips
   - **N-shot Prompting in Logseq**: Utilize GPT-4 to generate initial prompts and edit any errors. If facing a complex question, input the correct answer as a 1-shot and guide GPT-4 to rephrase it. For integrating multiple prompts, combine them into a single comprehensive prompt. Store extensive prompts using the RAG feature.
@@ -55,7 +55,7 @@
   - **Applying Reflection**: Regularly incorporate reflection in prompt engineering. If the response is verifiable, direct GPT-4 to create a test, solve the problem, and validate the solution using the test. If errors arise, instruct it to refine and retest. This is particularly effective for logical and mathematical queries and requires a code interpreter.
   - **Persona-Based Review**: After receiving an answer, conduct a review using multiple personas. Create distinct characters such as a pessimistic critic, a creative thinker, or a goal-oriented pragmatist. Have them discuss and critique the answer to refine it further. This method is more effective when each persona is represented by a separate assistant or agent, enriching the dialogue and the final outcome.
   - **Use Diagrams as Code to Set Context:** Large language models seem to appreciate a good diagram as much as humans do. https://www.linkedin.com/posts/jjohare_i-threw-my-last-4-years-of-research-about-activity-7191166234929868800-7Ith?utm_source=share&utm_medium=member_desktop
-  - [[Stable Diffusion]] prompt tips
+  - [[Stable Diffusion Image Model]] prompt tips
   - **Floor View for Full Body Portraits**: "Floor view" yields better full-body results than "full body". Include "standing" or "walking" to prevent subjects from sitting.
   - **Adjusting Image Contrast**: Lower the CFG if your image is too contrasty. Use "very" or "highly" for emphasis.
   - **Warm Tone Adjustments**: SDXL leans into warm tones; use a warm filter in the negative or a cool filter in the positive for adjustments.
@@ -203,7 +203,7 @@
   - [[2401.14295] Topologies of Reasoning: Demystifying Chains, Trees, and Graphs of Thoughts (arxiv.org)](https://arxiv.org/abs/2401.14295)
   - [llama-recipes/examples/Prompt_Engineering_with_Llama_2.ipynb at main · facebookresearch/llama-recipes (github.com)](https://github.com/facebookresearch/llama-recipes/blob/main/examples/Prompt_Engineering_with_Llama_2.ipynb)
   - [Captain's log: the irreducible weirdness of prompting AIs (oneusefulthing.org)](https://www.oneusefulthing.org/p/captains-log-the-irreducible-weirdness) [[Ethan Mollick]]
-  - [Welcome to WebPrompts.org | webprompts.org](https://webprompts.org/) [[Melvin Carvalho]]
+  - [Welcome to WebPrompts.org | webprompts.org](https://webprompts.org/) [[Melvin Carvalho Decentralised Web Advocate]]
   - [The Unreasonable Effectiveness of Eccentric Automatic Prompts](https://arxiv.org/pdf/2402.10949.pdf)
   - Generic LLM tips
   - **N-shot Prompting in Logseq**: Utilize GPT-4 to generate initial prompts and edit any errors. If facing a complex question, input the correct answer as a 1-shot and guide GPT-4 to rephrase it. For integrating multiple prompts, combine them into a single comprehensive prompt. Store extensive prompts using the RAG feature.
@@ -211,7 +211,7 @@
   - **Applying Reflection**: Regularly incorporate reflection in prompt engineering. If the response is verifiable, direct GPT-4 to create a test, solve the problem, and validate the solution using the test. If errors arise, instruct it to refine and retest. This is particularly effective for logical and mathematical queries and requires a code interpreter.
   - **Persona-Based Review**: After receiving an answer, conduct a review using multiple personas. Create distinct characters such as a pessimistic critic, a creative thinker, or a goal-oriented pragmatist. Have them discuss and critique the answer to refine it further. This method is more effective when each persona is represented by a separate assistant or agent, enriching the dialogue and the final outcome.
   - **Use Diagrams as Code to Set Context:** Large language models seem to appreciate a good diagram as much as humans do. https://www.linkedin.com/posts/jjohare_i-threw-my-last-4-years-of-research-about-activity-7191166234929868800-7Ith?utm_source=share&utm_medium=member_desktop
-  - [[Stable Diffusion]] prompt tips
+  - [[Stable Diffusion Image Model]] prompt tips
   - **Floor View for Full Body Portraits**: "Floor view" yields better full-body results than "full body". Include "standing" or "walking" to prevent subjects from sitting.
   - **Adjusting Image Contrast**: Lower the CFG if your image is too contrasty. Use "very" or "highly" for emphasis.
   - **Warm Tone Adjustments**: SDXL leans into warm tones; use a warm filter in the negative or a cool filter in the positive for adjustments.
@@ -353,7 +353,7 @@
   - [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
   - https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
   - Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
-		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
+		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
 			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
   - Motion Control
   - [MotionCtrl (wzhouxiff.github.io)](https://wzhouxiff.github.io/projects/MotionCtrl/)

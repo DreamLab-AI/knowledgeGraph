@@ -77,7 +77,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ]
@@ -111,7 +111,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Quantum Computing]]",
+      "raw": "[[Quantum Computation Paradigm]]",
       "resolved": "urn:visionflow:linked:quantum-computing",
       "kind": "ResolvedLink"
     },
@@ -148,7 +148,7 @@ public:: true
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Information Theory]]
   - requires:: [[Algorithm]], [[Set Theory]]
-  - enables:: [[Quantum Computing]]
+  - enables:: [[Quantum Computation Paradigm]]
 
 - ### Content
   - Computational complexity theory categorises problems by how the resources needed to solve them scale with input size, giving rise to classes such as P, NP, and PSPACE. The relationships between these classes, most famously the open question of whether P equals NP, frame much of theoretical computer science.

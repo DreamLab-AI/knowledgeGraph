@@ -79,7 +79,7 @@ public:: true
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   }
 }
@@ -139,7 +139,7 @@ public:: true
   - uses [[Feature Extraction]]
   - enables [[Object Detection]]
   - enables [[Computer Vision]]
-  - relatedTo [[Machine Learning]]
+  - relatedTo [[Machine Learning Discipline]]
 
 - ### Content
 

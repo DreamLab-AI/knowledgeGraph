@@ -406,7 +406,7 @@ public:: true
         "label": "Visual Design Review"
       },
       {
-        "@id": "urn:ngm:class:collaborative-whiteboard",
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Technical Support Workflows"
       },
       {
-        "@id": "urn:ngm:class:collaborative-whiteboard",
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {

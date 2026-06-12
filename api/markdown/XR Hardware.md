@@ -58,7 +58,7 @@ public:: true
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
     ],
     "relatedTo": [
@@ -111,7 +111,7 @@ public:: true
   - enables:: [[Augmented Reality]]
   - enables:: [[Virtual Reality]]
   - enables:: [[Mixed Reality]]
-  - uses:: [[Spatial Computing]]
+  - uses:: [[Spatial Computing Paradigm]]
   - uses:: [[Eye Tracking]]
   - relatedTo:: [[Haptic Feedback]]
 
@@ -125,7 +125,7 @@ public:: true
   - [[Augmented Reality]]
   - [[Virtual Reality]]
   - [[Mixed Reality]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
   - [[Eye Tracking]]
   - [[Haptic Feedback]]
 

@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[Privacy-Preserving]]
   - bridges-to:: [[Federated Learning]], [[AI Governance]]
-  - requires:: [[Privacy-Preserving]], [[Machine Learning]]
+  - requires:: [[Privacy-Preserving]], [[Machine Learning Discipline]]
 
 - ### Content
   - Privacy-preserving AI combines methods such as federated learning, which trains models across distributed data without centralising it, differential privacy, which limits memorisation of individual records, and encrypted computation for inference.

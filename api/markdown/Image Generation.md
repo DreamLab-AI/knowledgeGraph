@@ -340,7 +340,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Llama]]",
+      "raw": "[[Meta Llama Model Family]]",
       "resolved": "urn:visionflow:linked:llama",
       "kind": "StubLink"
     },
@@ -410,7 +410,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Apple]]",
+      "raw": "[[Apple Inc Technology Corporation]]",
       "resolved": "urn:visionflow:owl:class:apple",
       "kind": "ResolvedLink"
     },
@@ -420,7 +420,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -440,7 +440,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[copyright]]",
+      "raw": "[[Intellectual Property Rights Framework]]",
       "resolved": "urn:visionflow:owl:class:copyright",
       "kind": "ResolvedLink"
     },
@@ -525,7 +525,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Overview of Machine Learning Techniques]]",
+      "raw": "[[Machine Learning Techniques Survey]]",
       "resolved": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
       "kind": "ResolvedLink"
     },
@@ -550,7 +550,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Python and PyTorch]]",
+      "raw": "[[Python PyTorch Deep Learning Stack]]",
       "resolved": "urn:visionflow:owl:class:python-and-py-torch",
       "kind": "ResolvedLink"
     },
@@ -560,17 +560,17 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Soon-Next-Later (AI futurology)]]",
+      "raw": "[[AI Capability Temporal Horizon Framework]]",
       "resolved": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[State of the art in AI]]",
+      "raw": "[[AI Frontier Capability Survey]]",
       "resolved": "urn:visionflow:owl:class:state-of-the-art-in-ai",
       "kind": "ResolvedLink"
     },
@@ -585,7 +585,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Update Cycle]]",
+      "raw": "[[Knowledge Artefact Update Cycle]]",
       "resolved": "urn:visionflow:owl:class:update-cycle",
       "kind": "ResolvedLink"
     },
@@ -796,7 +796,7 @@ public:: true
 			- ByteDance [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
 
   - ## Image, Video and 3D
-		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+		- [[Stable Diffusion Image Model]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
 
 			- ### Text-to-Image Generation
 				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
@@ -872,7 +872,7 @@ public:: true
 			- [SD model mixer](https://github.com/wkpark/sd-webui-model-mixer)
 			- Textual Inversion character creation [tutorials/consistent_character_embedding/README.md at main · BelieveDiffusion/tutorials (github.com)](https://github.com/BelieveDiffusion/tutorials/blob/main/consistent_character_embedding/README.md)
 			- [%3 e](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22/%3E)
-			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[copyright]]-1849388060)
+			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[Intellectual Property Rights Framework]]-1849388060)
 			- [CompVis/stable-diffusion: A latent text-to-image diffusion model](https://github.com/CompVis/stable-diffusion)
 			- [Consistency in Stable Diffusion Definitive Guide to Having Multiple Faces of the Same Character](https://www.youtube.com/watch?v=Ig1S2guCfKM%22%2F%3E)
 			- [Consistent character embedding#readme%22](https://github.com/BelieveDiffusion/tutorials/tree/main/consistent_character_embedding#readme%22)
@@ -927,9 +927,9 @@ public:: true
 			- [https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent](https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
-			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
-			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
-			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
+			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion Image Model]]
+			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion Image Model]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
+			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion Image Model]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
   - # Vision Mamba
@@ -960,15 +960,15 @@ public:: true
 			- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
 
   - ## Artificial Intelligence
-		- [[Overview of Machine Learning Techniques]]
+		- [[Machine Learning Techniques Survey]]
 		- [[Proprietary Large Language Models]]
 		- [[Proprietary Image Generation]]
 		- [[Proprietary Video]]
 		- [[Open Generative AI tools]]
-		- [[State of the art in AI]]
+		- [[AI Frontier Capability Survey]]
 		- [[Adoption of Convergent Technologies]]
-		- [[Soon-Next-Later (AI futurology)]]
-  - This is a very new page and will be subject to a [[Update Cycle]] soon
+		- [[AI Capability Temporal Horizon Framework]]
+  - This is a very new page and will be subject to a [[Knowledge Artefact Update Cycle]] soon
 
   - ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
@@ -995,8 +995,8 @@ public:: true
   - [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
   - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
   - DONE Fix the [[Ollama]] directory issue.
-  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
-  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
+  - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Meta Llama Model Family]] [[Ollama]] [[Function Calling]] [[Python PyTorch Deep Learning Stack]] [[Agents]]
 
   - ### [Collaborative Control for Geometry-Conditioned PBR Image Generation](https://unity-research.github.io/holo-gen/) - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.
   - The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.
@@ -1169,7 +1169,7 @@ public:: true
 			- ByteDance [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
 
   - ## Image, Video and 3D
-		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+		- [[Stable Diffusion Image Model]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
 
 			- ### Text-to-Image Generation
 				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
@@ -1245,7 +1245,7 @@ public:: true
 			- [SD model mixer](https://github.com/wkpark/sd-webui-model-mixer)
 			- Textual Inversion character creation [tutorials/consistent_character_embedding/README.md at main · BelieveDiffusion/tutorials (github.com)](https://github.com/BelieveDiffusion/tutorials/blob/main/consistent_character_embedding/README.md)
 			- [%3 e](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22/%3E)
-			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[copyright]]-1849388060)
+			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[Intellectual Property Rights Framework]]-1849388060)
 			- [CompVis/stable-diffusion: A latent text-to-image diffusion model](https://github.com/CompVis/stable-diffusion)
 			- [Consistency in Stable Diffusion Definitive Guide to Having Multiple Faces of the Same Character](https://www.youtube.com/watch?v=Ig1S2guCfKM%22%2F%3E)
 			- [Consistent character embedding#readme%22](https://github.com/BelieveDiffusion/tutorials/tree/main/consistent_character_embedding#readme%22)
@@ -1300,9 +1300,9 @@ public:: true
 			- [https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent](https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
 			- [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
-			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
-			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
-			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
+			- [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion Image Model]]
+			- [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion Image Model]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
+			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion Image Model]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
   - # Vision Mamba
@@ -1333,15 +1333,15 @@ public:: true
 			- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
 
   - ## Artificial Intelligence
-		- [[Overview of Machine Learning Techniques]]
+		- [[Machine Learning Techniques Survey]]
 		- [[Proprietary Large Language Models]]
 		- [[Proprietary Image Generation]]
 		- [[Proprietary Video]]
 		- [[Open Generative AI tools]]
-		- [[State of the art in AI]]
+		- [[AI Frontier Capability Survey]]
 		- [[Adoption of Convergent Technologies]]
-		- [[Soon-Next-Later (AI futurology)]]
-  - This is a very new page and will be subject to a [[Update Cycle]] soon
+		- [[AI Capability Temporal Horizon Framework]]
+  - This is a very new page and will be subject to a [[Knowledge Artefact Update Cycle]] soon
 
   - ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
@@ -1368,8 +1368,8 @@ public:: true
   - [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
   - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
   - DONE Fix the [[Ollama]] directory issue.
-  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
-  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
+  - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Meta Llama Model Family]] [[Ollama]] [[Function Calling]] [[Python PyTorch Deep Learning Stack]] [[Agents]]
 
   - ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
 
@@ -1408,7 +1408,7 @@ public:: true
   - [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
   - https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
   - Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
-		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
+		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[Node-Based Diffusion Pipeline Interface]]
 			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
   - Motion Control
   - [MotionCtrl (wzhouxiff.github.io)](https://wzhouxiff.github.io/projects/MotionCtrl/)
@@ -1515,7 +1515,7 @@ public:: true
 			- [SD model mixer](https://github.com/wkpark/sd-webui-model-mixer)
 			- Textual Inversion character creation [tutorials/consistent_character_embedding/README.md at main · BelieveDiffusion/tutorials (github.com)](https://github.com/BelieveDiffusion/tutorials/blob/main/consistent_character_embedding/README.md)
 			- [%3 e](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20%22/%3E)
-			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[copyright]]-1849388060)
+			- [AI Creating 'Art' Is An Ethical And [[Copyright]] Nightmare](https://kotaku.com/ai-art-dall-e-midjourney-stable-diffusion-[[Intellectual Property Rights Framework]]-1849388060)
 			- [CompVis/stable-diffusion: A latent text-to-image diffusion model](https://github.com/CompVis/stable-diffusion)
 			- [Consistency in Stable Diffusion Definitive Guide to Having Multiple Faces of the Same Character](https://www.youtube.com/watch?v=Ig1S2guCfKM%22%2F%3E)
 			- [From the StableDiffusion community on Reddit](https://www.reddit.com/r/StableDiffusion/comments/132rcou/30_stable_diffusion_tutorials_automatic1111_web)
@@ -1528,10 +1528,10 @@ public:: true
 		- [[Proprietary Image Generation]]
 		- [[Proprietary Video]]
 		- [[Open Generative AI tools]]
-		- [[State of the art in AI]]
+		- [[AI Frontier Capability Survey]]
 		- [[Adoption of Convergent Technologies]]
-		- [[Soon-Next-Later (AI futurology)]]
-  - This is a very new page and will be subject to a [[Update Cycle]] soon
+		- [[AI Capability Temporal Horizon Framework]]
+  - This is a very new page and will be subject to a [[Knowledge Artefact Update Cycle]] soon
 
   - ## **Need or Challenge**:
 		- The project addresses the reluctance in the film industry to adopt AI and ML technologies due to tight margins and complexity.
@@ -1688,7 +1688,7 @@ public:: true
   F -->|Decoded| G[Output Image & Text]
   ```
   - Some random links
-  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
   - [moondream
 		- a tiny vision language model](https://moondream.ai/)
@@ -1792,7 +1792,7 @@ public:: true
   F -->|Decoded| G[Output Image & Text]
   ```
   - Some random links
-  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
   - [moondream
 		- a tiny vision language model](https://moondream.ai/)

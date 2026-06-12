@@ -917,6 +917,10 @@
       "label": "AI Board"
     },
     {
+      "slug": "ai-capability-discontinuity-model",
+      "label": "AI Capability Discontinuity Model"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -989,10 +993,6 @@
       "label": "AI User"
     },
     {
-      "slug": "ai-as-a-step-function",
-      "label": "AI as a step function"
-    },
-    {
       "slug": "ai-companions",
       "label": "AI companions"
     },
@@ -1045,10 +1045,6 @@
       "label": "Adaptive Control"
     },
     {
-      "slug": "advice-for-developing-gen-ai",
-      "label": "Advice for developing GenAI"
-    },
-    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
@@ -1057,8 +1053,8 @@
       "label": "Agent"
     },
     {
-      "slug": "agentic-workshop",
-      "label": "Agentic Workshop"
+      "slug": "agentic-ai-practitioner-training-programme",
+      "label": "Agentic AI Practitioner Training Programme"
     },
     {
       "slug": "autonomy-level",
@@ -1125,6 +1121,10 @@
       "label": "Creator Royalty Token"
     },
     {
+      "slug": "credential-gated-presentation-system",
+      "label": "credential-gated-presentation-system"
+    },
+    {
       "slug": "cross-chain-messaging",
       "label": "Cross-Chain Messaging"
     },
@@ -1181,20 +1181,12 @@
       "label": "Decentralized Swarm Control"
     },
     {
-      "slug": "deep-decks",
-      "label": "deep-decks"
-    },
-    {
       "slug": "deflationary-token",
       "label": "Deflationary Token"
     },
     {
       "slug": "delegated-proof-of-stake",
       "label": "Delegated Proof of Stake"
-    },
-    {
-      "slug": "delivery-planning",
-      "label": "Delivery Planning"
     },
     {
       "slug": "derivative-control",
@@ -1245,6 +1237,10 @@
       "label": "Electric Motor"
     },
     {
+      "slug": "exploratory-concepts-seed-space",
+      "label": "Exploratory Concepts Seed Space"
+    },
+    {
       "slug": "feedback-control",
       "label": "Feedback Control"
     },
@@ -1261,16 +1257,16 @@
       "label": "Functional Safety"
     },
     {
+      "slug": "generative-ai-development-methodology",
+      "label": "Generative AI Development Methodology"
+    },
+    {
       "slug": "gyroscope",
       "label": "Gyroscope"
     },
     {
       "slug": "hydraulic-actuator",
       "label": "Hydraulic Actuator"
-    },
-    {
-      "slug": "ideas",
-      "label": "Ideas"
     },
     {
       "slug": "perception-system",
@@ -1283,6 +1279,10 @@
     {
       "slug": "sovereign-mesh",
       "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "technology-programme-delivery-planning",
+      "label": "Technology Programme Delivery Planning"
     },
     {
       "slug": "vision-claw-agentic-container",

@@ -6,7 +6,7 @@
   - owl-role:: Class
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]]
+  - is-subclass-of:: [[Machine Learning Discipline]]
   - bridges-to:: [[Machine Learning Domain]]
   - requires:: [[Online Learning]]
   - enables:: [[Transfer Learning]]

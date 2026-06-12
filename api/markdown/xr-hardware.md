@@ -9,7 +9,7 @@
   - enables:: [[Augmented Reality]]
   - enables:: [[Virtual Reality]]
   - enables:: [[Mixed Reality]]
-  - uses:: [[Spatial Computing]]
+  - uses:: [[Spatial Computing Paradigm]]
   - uses:: [[Eye Tracking]]
   - relatedTo:: [[Haptic Feedback]]
 
@@ -23,7 +23,7 @@
   - [[Augmented Reality]]
   - [[Virtual Reality]]
   - [[Mixed Reality]]
-  - [[Spatial Computing]]
+  - [[Spatial Computing Paradigm]]
   - [[Eye Tracking]]
   - [[Haptic Feedback]]
 

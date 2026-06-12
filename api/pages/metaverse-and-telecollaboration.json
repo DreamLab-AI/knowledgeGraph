@@ -848,6 +848,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },
@@ -858,10 +862,6 @@
     {
       "slug": "social-impact",
       "label": "Social Impact"
-    },
-    {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
     },
     {
       "slug": "suggested-reading-order",

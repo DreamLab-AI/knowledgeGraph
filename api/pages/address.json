@@ -27,7 +27,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -63,7 +63,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       },
       {

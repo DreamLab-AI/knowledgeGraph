@@ -36,7 +36,7 @@ public:: true
       {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
     ]
   },
   "quality": 0.8

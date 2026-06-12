@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[ApplicationLayer]], [[APILayer]], [[AlgorithmLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Human-Computer Interaction]], [[Machine Learning]], [[AI Alignment]], [[In-Context Learning]], [[Instruction Following]], [[Applied Artificial Intelligence]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Human-Computer Interaction]], [[Machine Learning Discipline]], [[AI Alignment]], [[In-Context Learning]], [[Instruction Following]], [[Applied Artificial Intelligence]]
   - has-part:: [[Zero-Shot Prompting]], [[Few-Shot Prompting]], [[Chain of Thought]], [[Tree of Thoughts]], [[ReAct]], [[System Prompts]], [[DSPy]], [[Prompt Templates]], [[Prompt Injection Defence]], [[Self-Consistency]], [[Automatic Prompt Optimisation]], [[Structured Output]]
-  - requires:: [[Large Language Models]], [[Natural Language Processing]], [[Tokenisation]], [[Attention]], [[Transformer Architecture]], [[Instruction Following]], [[RLHF]]
+  - requires:: [[Large Language Models]], [[Natural Language Processing]], [[Neural Network Text Tokenisation]], [[Attention]], [[Transformer Architecture]], [[Instruction Following]], [[RLHF]]
   - enables:: [[Agents]], [[Reasoning]], [[Tool Use]], [[Code Generation]], [[Structured Output]], [[Retrieval Augmented Generation]], [[Agentic Internet]], [[CLI Multi-Agent Systems]], [[Chatbots]]
   - implements:: [[In-Context Learning]], [[Instruction Following]], [[Self-Consistency]], [[Chain of Thought]], [[Automatic Prompt Optimisation]], [[ReAct]], [[DSPy]]
-  - depends-on:: [[Large Language Models]], [[Attention]], [[Transformer Architecture]], [[Tokenisation]], [[Context Window]], [[RLHF]], [[Artificial General Intelligence]]
+  - depends-on:: [[Large Language Models]], [[Attention]], [[Transformer Architecture]], [[Neural Network Text Tokenisation]], [[Context Window]], [[RLHF]], [[Artificial General Intelligence]]
   - supports:: [[Agent Frameworks]], [[Retrieval Augmented Generation]], [[Code Generation]], [[AI Alignment]], [[Evaluation benchmarks and leaderboards]], [[AI Adoption]], [[Cognitive AI]]
-  - uses:: [[DSPy]], [[LangChain]], [[Anthropic Claude]], [[ChatGPT]], [[Reasoning]], [[ComfyUI]], [[Stable Diffusion]]
+  - uses:: [[DSPy]], [[LangChain]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Reasoning]], [[Node-Based Diffusion Pipeline Interface]], [[Stable Diffusion Image Model]]
   - contrasts-with:: [[Training and fine tuning]], [[Model Optimisation and Performance]], [[RLHF]], [[Active Learning]]
   - related-to:: [[AI Adoption]], [[Agents]], [[Cognitive AI]], [[AI Risks]], [[Chatbots]], [[Bias in Large Language Models]], [[Algorithmic Bias and Variance]], [[AI Scrapers]]
-  - standardized-by:: [[OpenAI]], [[Anthropic Claude]], [[Courses and Training]], [[Evaluation benchmarks and leaderboards]], [[Agent Frameworks]]
+  - standardized-by:: [[OpenAI Research Organisation]], [[Constitutional AI Language Model Family]], [[AI Technology Skills Curriculum]], [[Evaluation benchmarks and leaderboards]], [[Agent Frameworks]]
 
 - ### Content
 
@@ -268,7 +268,7 @@
 
   - **Creative and domain-expert tasks**: Persona-based prompts for legal drafting, medical summarisation, financial analysis, and creative writing. Style guides embedded in system prompts ensure consistency across long documents. Multi-persona review prompts (pessimist, pragmatist, creative critic) improve output quality through simulated adversarial review.
 
-  - **Image generation prompting** (for [[Stable Diffusion]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
+  - **Image generation prompting** (for [[Stable Diffusion Image Model]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
 
   - ### Academic Context
 
@@ -527,7 +527,7 @@
 
   - **quality-prompts** (open-source): Applies automatic prompt engineering techniques (APE, self-consistency, CoT injection) to user-provided prompts via a simple Python API.
 
-  - **gpt-prompt-engineer** (open-source, mshumer): Automated prompt generation and ranking for [[Anthropic Claude]] and OpenAI models; generates 10 candidate prompts per task description and ranks by validation accuracy.
+  - **gpt-prompt-engineer** (open-source, mshumer): Automated prompt generation and ranking for [[Constitutional AI Language Model Family]] and OpenAI models; generates 10 candidate prompts per task description and ranks by validation accuracy.
 
   - **PromptBench** (academic): Benchmark framework for adversarial robustness evaluation of prompts, including natural language attacks (synonym substitution, typo injection) and structured injection attempts. Used in academic evaluation of prompt defence strategies.
 

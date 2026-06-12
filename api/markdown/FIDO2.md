@@ -26,7 +26,7 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"}
     ],

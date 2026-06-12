@@ -80,7 +80,7 @@ public:: true
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"},
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"},
       {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
       {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
     ],

@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Post-Quantum Cryptography]]
-  - bridges-to:: [[Cryptographic Primitive]], [[Quantum Computing]]
+  - bridges-to:: [[Cryptographic Primitive]], [[Quantum Computation Paradigm]]
   - requires:: [[Cryptography]]
   - enables:: [[Encryption]], [[Digital Signature]]
 

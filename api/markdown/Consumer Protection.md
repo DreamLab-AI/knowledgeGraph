@@ -645,7 +645,7 @@ alias:: BC-0489-consumer-protection
         "label": "Deepfakes and fraudulent content"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -1172,7 +1172,7 @@ alias:: BC-0489-consumer-protection
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -1212,7 +1212,7 @@ alias:: BC-0489-consumer-protection
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[EU AI Act]]",
+      "raw": "[[EU AI Act Regulatory Instrument]]",
       "resolved": "urn:visionflow:owl:class:eu-ai-act",
       "kind": "ResolvedLink"
     },
@@ -1253,7 +1253,7 @@ alias:: BC-0489-consumer-protection
   - supports:: [[Consumer Trust]], [[Market Efficiency]], [[Digital Inclusion]], [[Fair Trading]], [[Algorithmic Transparency]], [[Vulnerable Consumer Protection]], [[Informed Consent]]
   - uses:: [[Dark Pattern Detection]], [[Algorithmic Auditing]], [[Complaint Analytics]], [[Market Investigations]], [[Enforcement Action]], [[Synthetic Content Detection]], [[Collective Proceedings]]
   - contrasts-with:: [[Industry Self-Regulation]], [[Platform Terms of Service]], [[Voluntary Codes of Conduct]], [[Co-regulation]], [[Sandbox Approaches]]
-  - related-to:: [[AI Liability]], [[AI Risks]], [[Competition in AI]], [[EU AI Act]], [[California AI bill]], [[AML KYC Compliance]], [[Data Protection]], [[Algorithmic Bias and Variance]], [[Deepfakes and fraudulent content]], [[AI Adoption]]
+  - related-to:: [[AI Liability]], [[AI Risks]], [[Competition in AI]], [[EU AI Act Regulatory Instrument]], [[California AI bill]], [[AML KYC Compliance]], [[Data Protection]], [[Algorithmic Bias and Variance]], [[Deepfakes and fraudulent content]], [[AI Adoption]]
   - standardized-by:: [[CMA]], [[FTC]], [[EU Consumer Protection Cooperation Network]], [[Trading Standards]], [[Financial Conduct Authority]], [[ASA]], [[Ofcom]], [[ICO]], [[OPSS]]
 
 - ### Content
@@ -1758,7 +1758,7 @@ alias:: BC-0489-consumer-protection
 
   - **Synthetic media regulation**: UK DCMS synthetic media labelling consultation (2025) expected to produce legislation requiring disclosure of AI-generated commercial content across all media channels; EU AI Act Article 50 deepfake labelling in force August 2026 requiring machine-readable labels on synthetic audio, video, and images; C2PA content provenance standard likely to become mandatory for advertising content submitted to major platforms by 2027; ASA enforcement capability expanding with AI detection tooling for synthetic face recognition and voice synthesis identification
 
-  - **Consumer protection for AI agent interactions**: AI agents autonomously purchasing, subscribing, negotiating, and transacting on behalf of consumers — via [[Anthropic Claude]] computer use capability, OpenAI Operator, Microsoft Copilot Actions, and Apple's AI-integrated Siri — create fundamental vulnerability to dark patterns and synthetic deception; questions include: who is the consumer when an AI agent is the contracting party?; what liability attaches when an AI agent is manipulated by a dark-pattern-laden website into an unauthorised purchase?; FTC AI agent guidance expected 2026; Law Commission 2025 project on AI contracting law addresses agent authority, liability for agent errors, and consumer rights in AI-mediated transactions
+  - **Consumer protection for AI agent interactions**: AI agents autonomously purchasing, subscribing, negotiating, and transacting on behalf of consumers — via [[Constitutional AI Language Model Family]] computer use capability, OpenAI Operator, Microsoft Copilot Actions, and Apple's AI-integrated Siri — create fundamental vulnerability to dark patterns and synthetic deception; questions include: who is the consumer when an AI agent is the contracting party?; what liability attaches when an AI agent is manipulated by a dark-pattern-laden website into an unauthorised purchase?; FTC AI agent guidance expected 2026; Law Commission 2025 project on AI contracting law addresses agent authority, liability for agent errors, and consumer rights in AI-mediated transactions
 
   - **Data-driven vulnerability targeting prohibition**: Building on CMA 2025 market study recommendations and FTC 2024 surveillance pricing evidence — which documented retailers using financial stress scores, medical condition proxies, and addiction behaviour patterns as pricing inputs — specific prohibition of pricing based on vulnerability indicators anticipated in UK Consumer Protection and Markets Bill (2026–2027) and EU digital fairness regulation; prohibition scope will need to balance legitimate personalisation against exploitative targeting of consumer weakness
 

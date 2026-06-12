@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - uses [[Knowledge Graph]]
-  - uses [[Semantic Web]]
+  - uses [[Semantic Web Linked Data Standard]]
   - uses [[Ontology]]
   - enables [[Bayesian Inference]]
   - enables [[Question Answering]]
@@ -30,7 +30,7 @@
   #### Related Concepts
   - [[Knowledge Graph]]
   - [[Ontology]]
-  - [[Semantic Web]]
+  - [[Semantic Web Linked Data Standard]]
   - [[Reasoning Systems]]
 
   #### References

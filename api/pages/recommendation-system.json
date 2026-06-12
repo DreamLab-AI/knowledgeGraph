@@ -8,7 +8,7 @@
   "definition": "A recommendation system is an information filtering infrastructure that predicts and surfaces items, content, or actions likely to be of interest to a specific user, based on behavioural history, explicit preferences, item features, or combinations thereof. It encompasses collaborative filtering approaches that exploit user-item interaction patterns, content-based methods that match item attributes to user profiles, and hybrid models that combine multiple signals. Modern recommendation systems employ deep learning, graph neural networks, and large language models to capture complex preference patterns at scale. They are commercially critical infrastructure in e-commerce, streaming media, social networks, and digital advertising.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
     }
   ],
@@ -38,7 +38,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:collaborative-filtering",
+        "id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
@@ -67,7 +67,7 @@
         "label": "Video Streaming"
       },
       {
-        "id": "urn:ngm:class:social-media",
+        "id": "urn:ngm:class:social-media-platform-infrastructure",
         "label": "social media"
       }
     ]

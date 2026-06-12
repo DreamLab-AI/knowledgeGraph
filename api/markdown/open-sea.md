@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[NFT Marketplace]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[NFT]]
   - enables:: [[Digital Asset]]
 

@@ -28,7 +28,7 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:swarm-robot", "label": "Swarm Robot"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:robotic-control", "label": "Robotic Control"},

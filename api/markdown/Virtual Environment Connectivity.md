@@ -63,7 +63,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ],
     "standardizedBy": [
       {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
@@ -122,7 +122,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Network Infrastructure]]
   - **requires**: [[Network Infrastructure]], [[Edge Computing]] — sub-20ms latency requires both high-bandwidth networks and edge nodes distributed close to users
-  - **enables**: [[Metaverse Platform]], [[Spatial Computing]] — reliable low-latency connectivity is a prerequisite for immersive multi-user spatial experiences
+  - **enables**: [[Metaverse Platform]], [[Spatial Computing Paradigm]] — reliable low-latency connectivity is a prerequisite for immersive multi-user spatial experiences
   - **standardizedBy**: [[Interoperability Standard]] — OpenXR, WebXR, and WebRTC are the primary standards enabling cross-platform connectivity
   - **uses**: [[Encryption]] — all virtual environment traffic must be encrypted to protect user data and prevent man-in-the-middle attacks
 

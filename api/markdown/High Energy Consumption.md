@@ -75,7 +75,7 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
       {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
       {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"},
-      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
     ]
   },
   "provenance": {

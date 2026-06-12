@@ -6,7 +6,7 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - requires [[Machine Learning]]
+  - requires [[Machine Learning Discipline]]
   - requires [[Feature Engineering]]
   - uses [[Data Pipeline]]
   - uses [[Model Training]]

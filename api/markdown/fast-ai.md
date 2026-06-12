@@ -15,10 +15,10 @@
   - enables:: [[Rapid Prototyping]], [[Transfer Learning Workflows]], [[Democratised Deep Learning]], [[Code-First Education]], [[Production-Ready Defaults]], [[Beginner-Friendly Deep Learning]]
   - implements:: [[1cycle Learning Rate Schedule]], [[Discriminative Learning Rates]], [[Frozen-Unfrozen Fine-Tuning]], [[Mixup Augmentation]], [[Test-Time Augmentation]], [[Label Smoothing]], [[Layered API Design]]
   - depends-on:: [[PyTorch]], [[NumPy]], [[Pandas]], [[Pillow]], [[spaCy]], [[Matplotlib]], [[fastcore]], [[fastprogress]]
-  - supports:: [[Computer Vision]], [[Natural Language Processing]], [[Tabular Learning]], [[Collaborative Filtering]], [[Audio Classification]], [[Medical Imaging]], [[Stable Diffusion Training]]
+  - supports:: [[Computer Vision]], [[Natural Language Processing]], [[Tabular Learning]], [[Collaborative Filtering]], [[Audio Classification]], [[Medical Imaging]], [[Latent Diffusion Model Training]]
   - uses:: [[Convolutional Neural Networks]], [[Transformer Architecture]], [[ResNet]], [[U-Net]], [[Adam Optimiser]], [[ReLU Activation]], [[Cosine Annealing]]
   - contrasts-with:: [[Keras]], [[PyTorch Lightning]], [[Hugging Face Transformers]], [[Raw PyTorch]], [[TensorFlow]], [[MXNet]]
-  - related-to:: [[Hugging Face Accelerate]], [[ULMFiT]], [[BERT]], [[Answer.AI]], [[FastHTML]], [[Claudette]], [[FSDP-QLoRA]], [[Stable Diffusion]]
+  - related-to:: [[Hugging Face Accelerate]], [[ULMFiT]], [[BERT]], [[Answer.AI]], [[FastHTML]], [[Claudette]], [[FSDP-QLoRA]], [[Stable Diffusion Image Model]]
   - standardized-by:: [[ACL]], [[NeurIPS]], [[ICLR]], [[PEP 8]], [[Semantic Versioning]]
 
 - ### Content

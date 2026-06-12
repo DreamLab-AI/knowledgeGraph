@@ -3,7 +3,7 @@
   "title": "Machine Learning Pipeline",
   "slug": "machine-learning-pipeline",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-pipeline",
+  "classIri": "urn:ngm:class:machine-learning-discipline-pipeline",
   "domain": "artificial-intelligence",
   "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, edeployment, and continuous monitoring.",
   "subClassOf": [

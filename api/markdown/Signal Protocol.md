@@ -31,7 +31,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:noise-protocol", "label": "Noise Protocol"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public Key Cryptography"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}

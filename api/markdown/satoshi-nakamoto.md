@@ -8,7 +8,7 @@
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
   - bridges-to:: [[Cryptographic Domain]], [[Distributed Systems Domain]]
-  - enables:: [[Bitcoin]], [[Proof of Work]], [[Blockchain]]
+  - enables:: [[Bitcoin Proof-of-Work Protocol]], [[Proof of Work]], [[Blockchain]]
 
 - ### Content
   - Under the Nakamoto pseudonym, the white paper titled Bitcoin: A Peer-to-Peer Electronic Cash System set out how a network of nodes could agree on a single transaction history without a trusted central party. The key contribution was combining proof-of-work, a timestamp server and the longest-chain rule into an incentive-compatible consensus mechanism that resists tampering.

@@ -44,7 +44,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       },
       {
@@ -344,8 +344,8 @@
       "label": "Confusion Matrix"
     },
     {
-      "slug": "constitutional-ai",
-      "label": "Constitutional AI"
+      "slug": "constitutional-ai-training-methodology",
+      "label": "Constitutional AI Training Methodology"
     },
     {
       "slug": "continued-pre-training",
@@ -836,8 +836,8 @@
       "label": "Mixed Precision Training"
     },
     {
-      "slug": "mixture-of-experts",
-      "label": "Mixture of Experts"
+      "slug": "mixture-of-experts-architecture",
+      "label": "Mixture-of-Experts Architecture"
     },
     {
       "slug": "mixup",

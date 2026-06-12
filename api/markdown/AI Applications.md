@@ -66,7 +66,7 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
@@ -145,7 +145,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - uses:: [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]]
+  - uses:: [[Machine Learning Discipline]], [[Natural Language Processing]], [[Computer Vision]]
   - enables:: [[Autonomous Robot]], [[Autonomous System]]
   - requires:: [[AI Governance]], [[AI Risk Management]]
 

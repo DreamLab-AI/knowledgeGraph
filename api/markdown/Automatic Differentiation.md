@@ -32,7 +32,7 @@ public:: true
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},

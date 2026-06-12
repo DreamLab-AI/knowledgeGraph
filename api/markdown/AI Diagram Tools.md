@@ -524,7 +524,7 @@ public:: true
         "label": "Layout Engine"
       },
       {
-        "@id": "urn:ngm:class:mermaid-syntax",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-syntax",
         "label": "Mermaid Syntax"
       }
     ],
@@ -628,7 +628,7 @@ public:: true
         "label": "Lucidchart AI"
       },
       {
-        "@id": "urn:ngm:class:mermaid-chart",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-chart",
         "label": "Mermaid Chart"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "C4 Model Convention"
       },
       {
-        "@id": "urn:ngm:class:mermaid-specification",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-specification",
         "label": "Mermaid Specification"
       },
       {
@@ -1226,7 +1226,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Midjourney]]",
+      "raw": "[[Midjourney Text-to-Image Service]]",
       "resolved": "urn:visionflow:owl:class:midjourney",
       "kind": "ResolvedLink"
     },
@@ -1271,7 +1271,7 @@ public:: true
   - depends-on:: [[Mermaid.js]], [[PlantUML]], [[Graphviz]], [[D2 Diagram Language]], [[Eclipse Layout Kernel]], [[GPT 4]], [[Claude 3.5]], [[Diffusion Model]]
   - supports:: [[Software Architecture Documentation]], [[Technical Writing]], [[Product Management]], [[System Design Interview Prep]], [[Knowledge Graph Construction]], [[Diagram-Driven Development]]
   - uses:: [[Markdown]], [[SVG Rendering]], [[Tree Sitter Parsing]], [[Force-Directed Layout]], [[Prompt Engineering]], [[Few-Shot Prompting]]
-  - contrasts-with:: [[Hand-Drawn Whiteboard]], [[Visio]], [[OmniGraffle]], [[Generative Image Model]], [[Midjourney]], [[Static Diagram File]]
+  - contrasts-with:: [[Hand-Drawn Whiteboard]], [[Visio]], [[OmniGraffle]], [[Generative Image Model]], [[Midjourney Text-to-Image Service]], [[Static Diagram File]]
   - related-to:: [[C4 Model]], [[Structurizr DSL]], [[Excalidraw]], [[Eraser DiagramGPT]], [[Whimsical AI]], [[Lucidchart AI]], [[Miro AI]], [[Napkin AI]], [[Mermaid Chart]], [[Claude Artifacts]]
   - standardized-by:: [[Mermaid Specification]], [[PlantUML Standard]], [[OMG UML 2.5]], [[C4 Model Convention]], [[Structurizr DSL Specification]]
 

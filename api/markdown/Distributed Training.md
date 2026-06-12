@@ -38,7 +38,7 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"}

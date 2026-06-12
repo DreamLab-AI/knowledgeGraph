@@ -50,7 +50,7 @@ public:: true
 ```
 
 - ### Definition
-  - Compound is an algorithmic [[Decentralised Finance]] lending protocol on [[Ethereum]] in which interest rates are set autonomously by supply and demand, with supplied assets represented as cTokens and governance delegated to COMP token holders via [[Compound Governor Bravo]].
+  - Compound is an algorithmic [[Decentralised Finance]] lending protocol on [[Ethereum Smart Contract Platform]] in which interest rates are set autonomously by supply and demand, with supplied assets represented as cTokens and governance delegated to COMP token holders via [[Compound Governor Bravo]].
 
 - ### Relationships
   - Compound pioneered the [[Liquidity Pool]] model for lending, in which depositors contribute assets collectively rather than matching individual borrowers. Its [[Governance Token]] (COMP) distribution via [[Yield Farming]] incentives in June 2020 ignited the DeFi Summer phenomenon. Governance actions — including adjusting collateral factors, reserve factors, and interest rate models — flow through [[Compound Governor Bravo]] on-chain voting. Compound contrasts with [[MakerDAO]] in that it supports multi-asset borrowing without requiring users to mint a dedicated stablecoin, while both rely on [[Smart Contracts]] for trustless execution.

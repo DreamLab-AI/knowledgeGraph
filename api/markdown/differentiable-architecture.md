@@ -8,7 +8,7 @@
 - ### Relationships
   - uses [[Gradient Descent]]
   - uses [[Neural Network Architecture]]
-  - enables [[Machine Learning]]
+  - enables [[Machine Learning Discipline]]
   - relatedTo [[Hyperparameter]]
   - relatedTo [[Deep Learning]]
   - relatedTo [[Knowledge Distillation]]

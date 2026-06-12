@@ -8,7 +8,7 @@
   "definition": "A verifiable credential format that uses Selective Disclosure JSON Web Tokens, allowing a holder to reveal only chosen claims to a verifier. It combines the JWT structure with salted hashes that support selective disclosure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:json-web-token",
+      "id": "urn:ngm:class:json-data-interchange-format-web-token",
       "label": "JSON Web Token"
     }
   ],
@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {

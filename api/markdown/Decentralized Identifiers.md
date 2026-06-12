@@ -927,7 +927,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "DID Resolution Protocol"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -935,7 +935,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "Key Management System"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

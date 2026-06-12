@@ -847,7 +847,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -885,7 +885,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Hardware Security Module"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -905,7 +905,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -955,7 +955,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       }
     ],
@@ -1758,7 +1758,7 @@ alias:: BC-0434-blockchain-as-a-service
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Docker]]",
+      "raw": "[[Docker Containerisation Platform]]",
       "resolved": "urn:visionflow:owl:class:docker",
       "kind": "ResolvedLink"
     },
@@ -1768,7 +1768,7 @@ alias:: BC-0434-blockchain-as-a-service
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:owl:class:ethereum",
       "kind": "ResolvedLink"
     },
@@ -1853,7 +1853,7 @@ alias:: BC-0434-blockchain-as-a-service
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -1876,7 +1876,7 @@ alias:: BC-0434-blockchain-as-a-service
 
 - ### Definition
   - Blockchain as a Service (BaaS) is a managed cloud delivery model in which a third-party provider provisions, operates, and maintains the distributed ledger infrastructure, consensus-node orchestration, cryptographic identity services, smart contract deployment pipelines, and monitoring tooling required to run enterprise blockchain networks—enabling organisations to consume permissioned or public blockchain capabilities through API calls and configuration interfaces without recruiting specialist distributed-systems engineers, purchasing dedicated hardware, or navigating the complex multi-stakeholder governance required to establish consortium blockchain infrastructure from first principles. The model extends the layered cloud service taxonomy—[[Infrastructure as a Service]] abstracting physical compute and network, [[Platform as a Service]] abstracting runtime environment and middleware, [[Software as a Service]] abstracting full application stacks—by adding a fourth abstraction layer: the correctness, liveness, and security of a replicated state machine governed by a Byzantine fault-tolerant or crash fault-tolerant consensus algorithm operating across geographically distributed nodes owned by multiple mutually distrusting organisations. Unlike pure IaaS or PaaS offerings where the customer retains responsibility for the application runtime, BaaS platforms own the operational correctness of the blockchain protocol itself—its peer synchronisation, transaction ordering, block production, and ledger integrity—whilst customers build application logic on top through chaincode (Hyperledger Fabric terminology), smart contracts (Ethereum-compatible networks), or CorDapps ([[R3 Corda]]).
-  - Major BaaS platforms in production as of 2026 host blockchain frameworks including [[Hyperledger Fabric]], [[Hyperledger Besu]], [[Ethereum]] (public-node access), [[R3 Corda]], [[Quorum]], and [[FISCO BCOS]], wrapping each with cloud-native provisioning automation, multi-tenancy isolation between customer consortium networks, identity federation to existing enterprise [[Identity and Access Management]] directories (AWS IAM, Azure Active Directory, Oracle Identity Cloud), observability integration (CloudWatch, Azure Monitor, IBM Log Analysis), graduated pricing tiers covering development sandboxes through production consortium networks handling millions of transactions per day, and—increasingly—higher-level services including low-code token factories, cross-chain interoperability gateways, confidential computing envelopes, and pre-built industry solution templates for supply chain, trade finance, pharmaceutical track-and-trace, and digital asset issuance.
+  - Major BaaS platforms in production as of 2026 host blockchain frameworks including [[Hyperledger Fabric]], [[Hyperledger Besu]], [[Ethereum Smart Contract Platform]] (public-node access), [[R3 Corda]], [[Quorum]], and [[FISCO BCOS]], wrapping each with cloud-native provisioning automation, multi-tenancy isolation between customer consortium networks, identity federation to existing enterprise [[Identity and Access Management]] directories (AWS IAM, Azure Active Directory, Oracle Identity Cloud), observability integration (CloudWatch, Azure Monitor, IBM Log Analysis), graduated pricing tiers covering development sandboxes through production consortium networks handling millions of transactions per day, and—increasingly—higher-level services including low-code token factories, cross-chain interoperability gateways, confidential computing envelopes, and pre-built industry solution templates for supply chain, trade finance, pharmaceutical track-and-trace, and digital asset issuance.
   - The global BaaS market was valued at approximately $4.3–4.5 billion in 2024, with projections ranging from $36.5 billion by 2034 at a 23.3% CAGR (OpenPR/Future Markets Insights 2025) to $68 billion by 2030 at a ~58% CAGR (MarkNtel Advisors 2025)—the wide variance reflecting disagreement among research firms on market boundary definitions (whether sovereign-node deployments, CBDC infrastructure, and protocol-specific SaaS applications are included) rather than methodological error. Conservative estimates (MarkNtel, Grand View Research) place 2025 market size at approximately $5–6 billion. Supply chain finance, financial services, healthcare, and government verticals account for the majority of production deployments, with 39% of supply chain organisations preferring BaaS over self-hosted blockchain for new deployments (2024 survey data). By mid-2025, 48 of the Fortune 100 operate at least one business-critical workload on a permissioned or hybrid blockchain network, up from fewer than 10 in 2019.
   - Three events between 2021 and 2023 materially reshaped the BaaS competitive landscape and established canonical lessons in platform risk management. First, Microsoft retired [[Azure Blockchain Service]] in September 2021 (with no new deployments from May 2021), citing industry changes and declining demand, and redirected customers to [[ConsenSys Quorum Blockchain Service]] (QBS)—a managed Ethereum-compatible service running Hyperledger Besu and GoQuorum on Azure infrastructure. The ANZ Bank Guarantee Platform, which had been issuing digital bank guarantees on Azure Blockchain Service, required emergency migration. Second, IBM retired the IBM Blockchain Platform software edition on 30 April 2023, transitioning to IBM Support for Hyperledger Fabric (an open-source support subscription model) and a consulting-led services posture—effectively exiting the managed platform market after years of attempting to establish Hyperledger Fabric BaaS as a SaaS product. Third, Maersk and IBM jointly shut down [[TradeLens]] in January 2023. Despite technical success processing over one billion shipping events and connecting 300+ organisations including ocean carriers, port operators, customs authorities, and freight forwarders, TradeLens failed commercially because major competing carriers including MSC and CMA CGM declined to participate, denying the platform the network-effect critical mass that justifies shared infrastructure investment. Together these retirements reinforced that BaaS sustainability requires consortium adoption at scale, not merely technical elegance or single-vendor commitment.
   - Against this consolidation, the BaaS landscape continued evolving constructively. [[Kaleido]] expanded its multi-protocol BaaS to support seven blockchain frameworks (Fabric, Besu, Quorum, Corda, Polygon, Avalanche, IPFS) from a unified control plane, achieving SOC 2 Type 2 certification and 99.99% uptime SLA. [[Amazon Managed Blockchain]] introduced AMB Access—serverless, multi-tenant RPC endpoints for Ethereum, Polygon, and Bitcoin priced per API call rather than per node-hour. [[Oracle Blockchain Platform]] announced in February 2025 a Digital Assets Edition in partnership with [[Quant Network]], enabling institutional digital asset issuance and settlement on managed Hyperledger Fabric infrastructure. [[R3 Corda]] reached $10 billion in on-chain real-world assets (RWAs) by February 2025, processing over one million daily transactions across 200+ financial institution participants. Hyperledger Fabric 3.0—released by [[LF Decentralized Trust]] in September 2024—added SmartBFT Byzantine fault-tolerant consensus (the first BFT option in Fabric history) and Ed25519 signing support, providing BaaS platforms a more resilient protocol foundation. The net effect of this evolution is a market that has absorbed the failures of overextended enterprise blockchain promises (2017-2021 hype cycle) and settled into sustainable production use in specific verticals where the shared-ledger model genuinely reduces costs and coordination friction.
@@ -1893,12 +1893,12 @@ alias:: BC-0434-blockchain-as-a-service
   - has-part:: [[Managed Node Hosting]], [[Consensus Service]], [[Smart Contract Deployment Pipeline]], [[Certificate Authority Service]], [[Blockchain API Gateway]], [[Ledger Storage]], [[Monitoring Dashboard]], [[Identity Management Integration]], [[Network Provisioning Templates]]
   - requires:: [[Cloud Infrastructure]], [[Blockchain Protocol]], [[Consensus Algorithm]], [[Cryptographic Key Management]], [[TLS Encryption]], [[Identity Provider]], [[Container Orchestration]]
   - enables:: [[Smart Contract Execution]], [[Permissioned Blockchain Network]], [[Consortium Governance]], [[Asset Tokenisation]], [[Cross-Border Payments]], [[Supply Chain Traceability]], [[Digital Identity Verification]], [[Trade Finance Automation]], [[CBDC Infrastructure]]
-  - implements:: [[Hyperledger Fabric]], [[Hyperledger Besu]], [[R3 Corda]], [[Ethereum]], [[Quorum]], [[FISCO BCOS]], [[Byzantine Fault Tolerance]], [[Crash Fault Tolerance]], [[Raft Consensus]], [[SmartBFT]]
+  - implements:: [[Hyperledger Fabric]], [[Hyperledger Besu]], [[R3 Corda]], [[Ethereum Smart Contract Platform]], [[Quorum]], [[FISCO BCOS]], [[Byzantine Fault Tolerance]], [[Crash Fault Tolerance]], [[Raft Consensus]], [[SmartBFT]]
   - depends-on:: [[Cloud Computing]], [[DevOps]], [[Microservices]], [[API Gateway]], [[Container Orchestration]], [[Public Key Infrastructure]], [[Hardware Security Module]]
   - supports:: [[Enterprise Blockchain]], [[Permissioned Blockchain]], [[Supply Chain Management]], [[Financial Services Compliance]], [[GDPR Compliance]], [[HIPAA Compliance]], [[Multi-Cloud Deployment]], [[Sovereign Cloud]]
-  - uses:: [[Kubernetes]], [[Docker]], [[REST API]], [[gRPC]], [[JSON-RPC]], [[AWS IAM]], [[Azure Active Directory]], [[Hardware Security Module]], [[LevelDB]], [[CouchDB]], [[PostgreSQL]]
+  - uses:: [[Kubernetes]], [[Docker Containerisation Platform]], [[REST API]], [[gRPC]], [[JSON-RPC]], [[AWS IAM]], [[Azure Active Directory]], [[Hardware Security Module]], [[LevelDB]], [[CouchDB]], [[PostgreSQL]]
   - contrasts-with:: [[Self-Hosted Blockchain Infrastructure]], [[Public Blockchain]], [[Decentralised Finance]], [[Permissionless Blockchain]], [[Proof of Work]], [[Public Cloud Blockchain]]
-  - related-to:: [[Cloud Computing]], [[Enterprise Blockchain]], [[Smart Contracts]], [[Distributed Ledger Technology]], [[Digital Assets]], [[Tokenisation]], [[DevOps]], [[API Management]], [[Zero-Knowledge Proofs]], [[Confidential Computing]], [[CBDC]], [[Decentralised Identity]]
+  - related-to:: [[Cloud Computing]], [[Enterprise Blockchain]], [[Smart Contracts]], [[Distributed Ledger Technology]], [[Digital Assets]], [[Neural Network Text Tokenisation]], [[DevOps]], [[API Management]], [[Zero-Knowledge Proofs]], [[Confidential Computing]], [[CBDC]], [[Decentralised Identity]]
   - standardized-by:: [[Hyperledger Foundation]], [[LF Decentralized Trust]], [[Enterprise Ethereum Alliance]], [[ISO TC 307]], [[W3C DID Specification]], [[NIST SP 800-235]], [[IETF SATP]]
 
 - ### Content
@@ -2086,7 +2086,7 @@ alias:: BC-0434-blockchain-as-a-service
 
     BaaS platforms provide integrated tooling for the smart contract deployment lifecycle. In [[Hyperledger Fabric]], chaincode (the Fabric term for smart contracts) follows a five-step lifecycle: package, install on peer nodes, approve by organisation admins (requiring a quorum of organisations), commit to channel, and invoke. BaaS platforms expose these steps through graphical interfaces and REST APIs, enabling CI/CD pipeline integration through GitHub Actions, Jenkins, or Azure DevOps plugins. Chaincode is compiled and packaged as Docker images or external chaincode services, with the BaaS platform managing image registries and deployment scheduling.
 
-    Ethereum-compatible BaaS networks (Besu, GoQuorum) support Solidity and Vyper smart contracts deployed via standard JSON-RPC calls, compatible with the full [[Ethereum]] development toolchain: [[Truffle]], [[Hardhat]], [[Foundry]], OpenZeppelin contract libraries, and Remix IDE. [[Kaleido]]'s no-code token factory enables non-developer business users to deploy ERC-20 (fungible token), ERC-721 (non-fungible token), and ERC-1155 (multi-token standard) contracts through a web interface by specifying token name, symbol, decimals, and supply parameters—without writing or auditing Solidity code.
+    Ethereum-compatible BaaS networks (Besu, GoQuorum) support Solidity and Vyper smart contracts deployed via standard JSON-RPC calls, compatible with the full [[Ethereum Smart Contract Platform]] development toolchain: [[Truffle]], [[Hardhat]], [[Foundry]], OpenZeppelin contract libraries, and Remix IDE. [[Kaleido]]'s no-code token factory enables non-developer business users to deploy ERC-20 (fungible token), ERC-721 (non-fungible token), and ERC-1155 (multi-token standard) contracts through a web interface by specifying token name, symbol, decimals, and supply parameters—without writing or auditing Solidity code.
 
     #### API Gateways and SDK Layer
 
@@ -2146,7 +2146,7 @@ alias:: BC-0434-blockchain-as-a-service
 
     #### Blockchain Protocol Research
 
-    [[Ethereum]] (Buterin 2013 white paper, Wood 2014 Yellow Paper) added Turing-complete smart contract execution to Nakamoto's distributed consensus model, demonstrating programmable blockchain and establishing the EVM bytecode execution model that all EVM-compatible BaaS platforms (Besu, GoQuorum, Polygon) implement. Hyperledger Fabric (Androulaki et al. 2018, EuroSys) introduced the execute-order-validate (XOV) architecture distinguishing it from Ethereum's order-execute model: transactions are simulated speculatively by endorsing peers before ordering, enabling parallel execution and preventing transaction storms from blocking the network. The XOV architecture is directly operationally relevant to BaaS: it enables BaaS platforms to provide isolated simulation environments where developers test chaincode logic before submitting to the ordered ledger, and it enables peer nodes to cache read-set/write-set pairs rather than re-executing all transactions.
+    [[Ethereum Smart Contract Platform]] (Buterin 2013 white paper, Wood 2014 Yellow Paper) added Turing-complete smart contract execution to Nakamoto's distributed consensus model, demonstrating programmable blockchain and establishing the EVM bytecode execution model that all EVM-compatible BaaS platforms (Besu, GoQuorum, Polygon) implement. Hyperledger Fabric (Androulaki et al. 2018, EuroSys) introduced the execute-order-validate (XOV) architecture distinguishing it from Ethereum's order-execute model: transactions are simulated speculatively by endorsing peers before ordering, enabling parallel execution and preventing transaction storms from blocking the network. The XOV architecture is directly operationally relevant to BaaS: it enables BaaS platforms to provide isolated simulation environments where developers test chaincode logic before submitting to the ordered ledger, and it enables peer nodes to cache read-set/write-set pairs rather than re-executing all transactions.
 
     [[R3 Corda]] (Brown et al. 2016) departed from the block-chain-of-blocks data structure entirely, adopting a directed acyclic graph of transactions with point-to-point data sharing—only parties to a transaction see its data, with no global broadcast. This architecture solves financial services privacy requirements that make shared-ledger models (where all participants see all transactions) unsuitable for capital markets, at the cost of more complex settlement finality semantics (each transaction's finality depends on its notary's consensus, not a global chain).
 

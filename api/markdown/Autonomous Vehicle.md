@@ -181,12 +181,12 @@ alias:: Autonomous Vehicles
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Social contract and jobs]]",
+      "raw": "[[Employment Social Contract Under Automation]]",
       "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Some legacy Linked-JSON]]",
+      "raw": "[[Metaverse Entity Schema Archive]]",
       "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
       "kind": "ResolvedLink"
     }
@@ -224,7 +224,7 @@ alias:: Autonomous Vehicles
 
   - ### Visualising
 		- http://owlgred.lumii.lv/online_visualization/4qge#
-		- [[Some legacy Linked-JSON]]
+		- [[Metaverse Entity Schema Archive]]
           rdfs:comment "A general actor capable of autonomous or semi-autonomous behavior, including humans and AIs."
 
 		- ### Navigating the AI Landscape
@@ -241,7 +241,7 @@ alias:: Autonomous Vehicles
 			- [Towards Conversational Diagnostic AI](https://arxiv.org/abs/2401.05654) is scoring higher than clinicians already.
 			- Bill Gates [views](https://www.gatesnotes.com/The-Year-Ahead-2024?) AI as a transformative tool in healthcare, particularly for enhancing access to education and mental health services.
 		- **Lifetime Support Structures: Now to Later**
-		- Advantage for employees who intersect with AI tooling, increasing engagement and productivity... but for the benefit of whom [[Social contract and jobs]]
+		- Advantage for employees who intersect with AI tooling, increasing engagement and productivity... but for the benefit of whom [[Employment Social Contract Under Automation]]
 		- Most time benefit from things "close to the metal" such as Dev Ops, coding, macros, light financial work, etc. Thing someone "looked up" then did.
 		- AI's expanded role in telemedicine and remote patient monitoring.
 

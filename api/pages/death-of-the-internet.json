@@ -158,7 +158,7 @@
         "label": "Recommendation Systems"
       },
       {
-        "id": "urn:ngm:class:social-media-algorithms",
+        "id": "urn:ngm:class:social-media-platform-infrastructure-algorithms",
         "label": "Social Media Algorithms"
       },
       {
@@ -238,7 +238,7 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -273,15 +273,15 @@
         "label": "Global Inequality"
       },
       {
-        "id": "urn:ngm:class:human-vs-ai",
+        "id": "urn:ngm:class:human-ai-capability-complementarity",
         "label": "Human vs AI"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:legacy-media",
+        "id": "urn:ngm:class:traditional-mass-media-institution",
         "label": "Legacy Media"
       },
       {
@@ -706,16 +706,20 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-capability-temporal-horizon-framework",
+      "label": "AI Capability Temporal Horizon Framework"
+    },
+    {
+      "slug": "ai-frontier-capability-survey",
+      "label": "AI Frontier Capability Survey"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
     },
     {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
-    },
-    {
-      "slug": "disruption",
-      "label": "Disruption"
     },
     {
       "slug": "fine-tuning",
@@ -734,10 +738,6 @@
       "label": "Privacy"
     },
     {
-      "slug": "project-bro-bots",
-      "label": "Project BroBots"
-    },
-    {
       "slug": "reward-model",
       "label": "Reward Model"
     },
@@ -750,12 +750,8 @@
       "label": "Social Impact"
     },
     {
-      "slug": "soon-next-later-ai-futurology",
-      "label": "Soon-Next-Later (AI futurology)"
-    },
-    {
-      "slug": "state-of-the-art-in-ai",
-      "label": "State of the art in AI"
+      "slug": "technology-disruption-dynamics",
+      "label": "Technology Disruption Dynamics"
     },
     {
       "slug": "text-generation",
@@ -764,6 +760,10 @@
     {
       "slug": "text-summarisation",
       "label": "Text Summarisation"
+    },
+    {
+      "slug": "toxic-content-counter-narrative-system",
+      "label": "Toxic Content Counter-Narrative System"
     },
     {
       "slug": "trust-and-safety",

@@ -68,7 +68,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:collaborative-technology",
+        "@id": "urn:ngm:class:collaborative-systems-modality-technology",
         "label": "Collaborative Technology"
       }
     ]

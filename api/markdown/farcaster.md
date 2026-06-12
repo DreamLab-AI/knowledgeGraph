@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Decentralised Identity]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Decentralised Identity]]
   - enables:: [[Web3]]
 

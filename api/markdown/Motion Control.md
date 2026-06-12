@@ -427,7 +427,7 @@ alias:: MotionControl
         "label": "CNC Machining"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robotics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       },
       {
@@ -539,7 +539,7 @@ alias:: MotionControl
         "label": "CNC Machine Tools"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robot",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robots"
       },
       {

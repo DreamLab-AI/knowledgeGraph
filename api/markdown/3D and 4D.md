@@ -174,7 +174,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
     ]
   },
   "quality": 0.5,
@@ -357,7 +357,7 @@ public:: true
 - ### Relationships
   - uses:: [[Generative AI]], [[Diffusion Model]], [[Neural Radiance Field]], [[Deep Learning]]
   - enables:: [[Augmented Reality]], [[3D Asset]], [[Pose Estimation]]
-  - relatedTo:: [[Computer Vision]], [[Machine Learning]]
+  - relatedTo:: [[Computer Vision]], [[Machine Learning Discipline]]
 
 - ### Content
   - # 3D and 4D Content Creation

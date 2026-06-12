@@ -254,7 +254,7 @@
         "label": "SynthID Audio"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -269,7 +269,7 @@
         "label": "AI Video"
       },
       {
-        "id": "urn:ngm:class:copyright",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Copyright"
       },
       {
@@ -634,8 +634,8 @@
   ],
   "backlinks": [
     {
-      "slug": "advice-for-developing-gen-ai",
-      "label": "Advice for developing GenAI"
+      "slug": "generative-ai-development-methodology",
+      "label": "Generative AI Development Methodology"
     },
     {
       "slug": "graph-neural-network",

@@ -106,7 +106,7 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
       }
     ],
@@ -222,7 +222,7 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:apple",
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple"
       }
     ],

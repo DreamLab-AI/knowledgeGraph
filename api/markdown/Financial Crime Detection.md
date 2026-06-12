@@ -25,7 +25,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}],
+    "uses": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}, {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}],
     "enables": [{"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}, {"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
     "relatedTo": [{"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}, {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}],
     "supports": [{"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}]
@@ -35,7 +35,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Financial Crime Detection]] encompasses the tools, models, and processes that financial institutions deploy to surface suspicious activity indicative of money laundering, fraud, terrorist financing, sanctions evasion, and similar offences. Drawing on [[Machine Learning]], network analysis, and rule-based [[Transaction Monitoring]], it transforms vast volumes of transactional, customer, and behavioural data into prioritised alerts, supporting [[Anti-Money Laundering]] programmes and broader [[Compliance]] obligations imposed by regulators worldwide.
+  - [[Financial Crime Detection]] encompasses the tools, models, and processes that financial institutions deploy to surface suspicious activity indicative of money laundering, fraud, terrorist financing, sanctions evasion, and similar offences. Drawing on [[Machine Learning Discipline]], network analysis, and rule-based [[Transaction Monitoring]], it transforms vast volumes of transactional, customer, and behavioural data into prioritised alerts, supporting [[Anti-Money Laundering]] programmes and broader [[Compliance]] obligations imposed by regulators worldwide.
 
 - ### Relationships
   - Detection systems rely on [[Transaction Monitoring]] engines to apply threshold rules and ML scoring models in near-real-time. Results feed into [[Anti-Money Laundering]] investigation workflows and fulfil [[Know Your Customer]] screening requirements consolidated under [[AML KYC Compliance]] frameworks. [[Blockchain Analytics]] extends the same detection logic to on-chain asset flows, tracing pseudonymous wallet activity back to identified entities. The overarching goal is enabling regulatory [[Compliance]] whilst minimising false positives that overload human review teams.

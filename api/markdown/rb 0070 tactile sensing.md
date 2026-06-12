@@ -69,7 +69,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:collaborative-operation", "label": "Collaborative Operation"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-operation", "label": "Collaborative Operation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},

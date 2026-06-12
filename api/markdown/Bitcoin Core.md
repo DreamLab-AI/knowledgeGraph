@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-core",
+  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
   "@type": "Class",
   "label": "Bitcoin Core",
   "definition": "Bitcoin Core is the reference implementation of the Bitcoin protocol, providing the canonical software stack that full nodes run to validate transactions, enforce consensus rules, and maintain a complete copy of the blockchain. First released by Satoshi Nakamoto in 2009 and since maintained by an open-source community, it defines the authoritative behaviour of the Bitcoin network through its codebase. Bitcoin Core includes a wallet, a peer-to-peer networking layer, a scripting engine, and the mining interface used to produce new blocks. Consensus-critical changes are introduced through Bitcoin Improvement Proposals, ensuring backward compatibility and broad community review before deployment.",
@@ -36,9 +36,9 @@ public:: true
       {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
       {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
     ]

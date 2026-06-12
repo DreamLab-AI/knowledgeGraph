@@ -264,7 +264,7 @@
         "label": "Human Capture & Recognition"
       },
       {
-        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-pose-slam-capture-system",
         "label": "Human tracking and SLAM capture"
       },
       {

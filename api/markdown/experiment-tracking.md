@@ -9,7 +9,7 @@
   - is-subclass-of:: [[MLOps]]
   - bridges-to:: [[Open Source]]
   - requires:: [[Model Training]]
-  - enables:: [[Machine Learning]]
+  - enables:: [[Machine Learning Discipline]]
 
 - ### Content
   - Experiment tracking systems log the parameters, metrics, model versions, and artefacts produced during training runs. This record allows teams to compare runs, understand which changes improved results, and reproduce earlier work.

@@ -3,7 +3,7 @@
   "title": "Machine Learning Model",
   "slug": "machine-learning-model",
   "public": true,
-  "classIri": "urn:ngm:class:machine-learning-model",
+  "classIri": "urn:ngm:class:machine-learning-discipline-model",
   "domain": "artificial-intelligence",
   "definition": "Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.",
   "subClassOf": [
@@ -12,7 +12,7 @@
       "label": "AI Model Architecture"
     },
     {
-      "id": "urn:ngm:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],

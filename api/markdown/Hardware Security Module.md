@@ -41,7 +41,7 @@ public:: true
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
     ],
     "relatedTo": [

@@ -68,7 +68,7 @@ public:: true
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"}
     ]
   },
   "provenance": {
@@ -123,7 +123,7 @@ public:: true
   - **partOf**: [[Network Infrastructure]] — virtual networks are a logical overlay on physical network infrastructure
   - **enables**: [[Metaverse Platform]], [[Edge Computing]] — isolated virtual networks provide the QoS guarantees and security boundaries required by metaverse platforms and edge deployments
   - **uses**: [[Encryption]] — VPN tunnels and encrypted VLAN traffic protect inter-service communication
-  - **supports**: [[Spatial Computing]] — network slicing and SDN provide the low-latency, high-bandwidth channels required by spatial computing workloads
+  - **supports**: [[Spatial Computing Paradigm]] — network slicing and SDN provide the low-latency, high-bandwidth channels required by spatial computing workloads
 
 - ### Content
 

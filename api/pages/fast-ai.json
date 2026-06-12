@@ -179,7 +179,7 @@
         "label": "Audio Classification"
       },
       {
-        "id": "urn:ngm:class:collaborative-filtering",
+        "id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
@@ -199,7 +199,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-training",
+        "id": "urn:ngm:class:latent-diffusion-model-training",
         "label": "Stable Diffusion Training"
       }
     ],
@@ -256,7 +256,7 @@
         "label": "BERT"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ]

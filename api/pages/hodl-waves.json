@@ -29,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-distribution",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
         "label": "Bitcoin Distribution"
       }
     ]

@@ -106,7 +106,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:infrastructure-component",
+        "@id": "urn:ngm:class:technology-infrastructure-domain-component",
         "label": "Infrastructure Component"
       }
     ]

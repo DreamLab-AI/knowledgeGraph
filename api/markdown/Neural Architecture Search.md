@@ -28,7 +28,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:differentiable-architecture", "label": "Differentiable Architecture"},
       {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
@@ -37,7 +37,7 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
     ]
   },
   "quality": 0.8

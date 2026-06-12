@@ -3,7 +3,7 @@
   "title": "Ethereum Virtual Machine",
   "slug": "ethereum-virtual-machine",
   "public": true,
-  "classIri": "urn:ngm:class:ethereum-virtual-machine",
+  "classIri": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
   "domain": "blockchain",
   "definition": "The deterministic stack-based virtual machine that executes Ethereum smart contract bytecode and updates the shared world state.",
   "subClassOf": [
@@ -25,7 +25,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contracts",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
       }
     ],

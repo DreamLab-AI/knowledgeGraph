@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       }
     ]
@@ -79,7 +79,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -109,7 +109,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standard]]
-  - requires:: [[Ethereum]]
+  - requires:: [[Ethereum Smart Contract Platform]]
 
 - ### Content
   - An extension pattern building on the ERC-20 fungible token standard to track voting power and historical balances for on-chain governance. It associates token holdings with delegated voting rights.

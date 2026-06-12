@@ -31,7 +31,7 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"},
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"},
       {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
     ],
     "enables": [

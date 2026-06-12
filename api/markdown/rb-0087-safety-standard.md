@@ -56,7 +56,7 @@
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Sections to fill:
 		- Source of funding
 		- Amount
@@ -70,7 +70,7 @@
 
   - ## Funding
   - Collaborators
-		- Ross Verrall [[PEOPLE]] at [[NVIDIA Omniverse]]has suggested applying for the Inception grant to assist with our bid.
+		- Ross Verrall [[Domain Expert Contact Index]] at [[NVIDIA Omniverse Platform]]has suggested applying for the Inception grant to assist with our bid.
 		- Sections to fill:
 		- Breakdown of labour costs and overhead allocations.
 		- Sections to fill:

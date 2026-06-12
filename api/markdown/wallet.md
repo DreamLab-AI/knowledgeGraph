@@ -453,7 +453,7 @@
 
   ### Software Wallet Categories
   - **[[Desktop Wallets]]** like [[Sparrow Wallet]], [[Electrum]], [[Wasabi Wallet]], and [[Bitcoin Core]] offer full control and advanced features like [[coin control]], [[CPFP]] (Child Pays For Parent), and [[RBF]] (Replace-By-Fee). Desktop wallets provide robust [[privacy]] features and support for [[Tor]] routing.
-  - **[[Mobile Wallets]]** prioritize portability and ease-of-use. Leading [[Bitcoin]] mobile wallets include [[BlueWallet]] (supports [[SegWit]] and [[Taproot]]), [[Muun]] (integrated [[Lightning Network]]), [[Phoenix Wallet]] (Lightning-first), [[Breez]] (non-custodial Lightning), and [[Green Wallet]] by [[Blockstream]].
+  - **[[Mobile Wallets]]** prioritize portability and ease-of-use. Leading [[Bitcoin Proof-of-Work Protocol]] mobile wallets include [[BlueWallet]] (supports [[SegWit]] and [[Taproot]]), [[Muun]] (integrated [[Lightning Network]]), [[Phoenix Wallet]] (Lightning-first), [[Breez]] (non-custodial Lightning), and [[Green Wallet]] by [[Blockstream]].
   - **[[Web Wallets]]** operate through browsers, offering instant access without installation. Examples include [[Blockchain.com Wallet]], [[MyEtherWallet]] (MEW), and exchange web interfaces. Web wallets face higher [[phishing]] risks and should only hold small amounts.
   - **[[Browser Extension Wallets]]** like [[MetaMask]], [[Phantom]], and [[Rabby]] integrate directly with [[Web3]] applications, enabling seamless [[DApp]] interactions while maintaining local [[key storage]].
 
@@ -462,13 +462,13 @@
   ### Hardware Wallets
   - **[[Ledger]]** (5M+ users) offers [[Ledger Nano S Plus]] and [[Ledger Nano X]] with [[Bluetooth]] support. Devices use [[secure element]] chips and support 5,500+ assets. [[Ledger Live]] software provides unified portfolio management. Recent [[Ledger Recover]] controversy highlights [[security model]] debates around [[key sharding]].
   - **[[Trezor]]** by [[SatoshiLabs]] provides [[Trezor Model One]] and [[Trezor Model T]] with [[touchscreen]]. Fully [[open source]] firmware builds trust through transparency. [[Trezor Suite]] desktop app supports [[coin control]], [[Tor]], and [[Coinjoin]] privacy features.
-  - **[[Coldcard]]** by [[Coinkite]] focuses exclusively on [[Bitcoin]] with air-gapped operation, [[microSD]] card backups, and [[BIP-85]] child seed derivation. Popular among [[Bitcoin maximalists]] for advanced security features like [[duress PINs]] and [[brick me PIN]].
+  - **[[Coldcard]]** by [[Coinkite]] focuses exclusively on [[Bitcoin Proof-of-Work Protocol]] with air-gapped operation, [[microSD]] card backups, and [[BIP-85]] child seed derivation. Popular among [[Bitcoin maximalists]] for advanced security features like [[duress PINs]] and [[brick me PIN]].
   - **[[BitBox02]]** by [[Shift Crypto]] offers minimalist design with [[dual-chip architecture]] and [[open source]] hardware. Swiss-made quality with focus on [[Bitcoin-only]] and [[multi-coin]] editions. [[BitBoxApp]] provides simple interface for beginners.
   - **[[Foundation Passport]]** provides [[QR code]]-based air-gapped operation with [[open source]] design. Uses [[Microchip ATECC608B]] secure element and [[avalanche noise source]] for entropy generation.
 
   ### Bitcoin-Focused Software Wallets
   - **[[Sparrow Wallet]]** is the premier desktop wallet for [[Bitcoin power users]], offering comprehensive [[UTXO management]], [[coin control]], [[multisig]] coordination, [[hardware wallet]] integration, and native [[Tor]] support. Supports [[Taproot]], [[PSBT]] (Partially Signed Bitcoin Transactions), and [[Whirlpool]] [[Coinjoin]].
-  - **[[Electrum]]** (launched 2011) is the oldest popular [[Bitcoin]] wallet, known for [[SPV]] (Simplified Payment Verification), [[cold storage]] capabilities, and [[multisig]] support. Supports [[Lightning Network]] via plugins and hardware wallet integration.
+  - **[[Electrum]]** (launched 2011) is the oldest popular [[Bitcoin Proof-of-Work Protocol]] wallet, known for [[SPV]] (Simplified Payment Verification), [[cold storage]] capabilities, and [[multisig]] support. Supports [[Lightning Network]] via plugins and hardware wallet integration.
   - **[[Wasabi Wallet]]** focuses on [[privacy]] through built-in [[Coinjoin]] using [[WabiSabi]] protocol. Features [[Tor]]-only connections and [[coin control]]. [[Wasabi Wallet 2.0]] improved user experience while maintaining privacy focus.
   - **[[Samourai Wallet]]** (mobile) provides advanced [[privacy features]] including [[Ricochet]], [[Stonewall]], [[Stowaway]], and [[Whirlpool Coinjoin]]. Integrates [[Dojo]] for full node backend and [[PayNym]] for reusable payment codes.
   - **[[BlueWallet]]** combines simplicity with advanced features, supporting [[SegWit]], [[Taproot]], [[multisig]], and [[Lightning Network]]. Open source mobile wallet with [[watch-only]] wallet support and [[PSBT]] compatibility.
@@ -482,8 +482,8 @@
   - **[[Blixt Wallet]]** runs [[LND]] node directly on mobile device, providing full non-custodial control. Features [[Tor]] support, [[keysend]] payments, and advanced Lightning features.
 
   ### Multi-Chain & DeFi Wallets
-  - **[[MetaMask]]** dominates [[Ethereum]] ecosystem with 100M+ users. Browser extension and mobile app support [[EVM-compatible]] chains, [[token]] management, [[NFTs]], and [[DApp]] browsing. [[MetaMask Snaps]] enable extensibility and [[Bitcoin]] integration.
-  - **[[Phantom]]** leads on [[Solana]] with clean interface, [[NFT]] gallery, and integrated [[token swaps]]. Expanding to [[Ethereum]], [[Polygon]], and [[Bitcoin]] support in 2025.
+  - **[[MetaMask]]** dominates [[Ethereum Smart Contract Platform]] ecosystem with 100M+ users. Browser extension and mobile app support [[EVM-compatible]] chains, [[token]] management, [[NFTs]], and [[DApp]] browsing. [[MetaMask Snaps]] enable extensibility and [[Bitcoin Proof-of-Work Protocol]] integration.
+  - **[[Phantom]]** leads on [[Solana]] with clean interface, [[NFT]] gallery, and integrated [[token swaps]]. Expanding to [[Ethereum Smart Contract Platform]], [[Polygon]], and [[Bitcoin Proof-of-Work Protocol]] support in 2025.
   - **[[Exodus]]** provides beautiful desktop and mobile wallet supporting 260+ assets. Built-in [[exchange]] integration and [[staking]] for multiple chains. Focus on user experience for crypto beginners.
   - **[[Trust Wallet]]** by [[Binance]] offers mobile-first experience with [[DApp browser]], [[staking]], and support for 70+ blockchains. Open source with [[WalletConnect]] integration.
   - **[[Rainbow Wallet]]** (Ethereum) features innovative [[ENS]]-first design and beautiful [[NFT]] showcase. Mobile-focused with emphasis on [[DeFi]] accessibility.
@@ -500,12 +500,12 @@
   - **[[BIP-85]]** enables deriving child seeds from master seed, allowing creation of separate wallets while maintaining single master backup. Useful for [[inheritance planning]] and segregated holdings.
 
   ### Derivation Paths
-  - Standard [[Bitcoin]] derivation paths indicate address type and network:
+  - Standard [[Bitcoin Proof-of-Work Protocol]] derivation paths indicate address type and network:
   - Legacy (P2PKH): `m/44'/0'/0'/0/0`
   - Nested SegWit (P2SH-P2WPKH): `m/49'/0'/0'/0/0`
   - Native SegWit (P2WPKH): `m/84'/0'/0'/0/0`
   - Taproot (P2TR): `m/86'/0'/0'/0/0`
-  - [[Coin type]] index (second level) identifies [[cryptocurrency]]: 0 for [[Bitcoin]], 1 for testnet, 60 for [[Ethereum]], 2301 for [[Litecoin]].
+  - [[Coin type]] index (second level) identifies [[cryptocurrency]]: 0 for [[Bitcoin Proof-of-Work Protocol]], 1 for testnet, 60 for [[Ethereum Smart Contract Platform]], 2301 for [[Litecoin]].
   - [[Account]] index enables multiple wallets from same seed, [[change]] index separates receiving (0) from change (1) addresses, [[address index]] generates sequential addresses.
 
   ### Seed Phrase Security
@@ -544,7 +544,7 @@
   - **[[Child-Pays-For-Parent]]** (CPFP) enables spending unconfirmed transaction output with higher fee to incentivize mining both transactions together.
 
   ### RGB Protocol Integration
-  - **[[RGB]]** is [[Bitcoin]] [[Layer 2]] protocol for [[smart contracts]] and asset issuance, using [[client-side validation]]. [[RGB-compatible wallets]] emerging in 2025 include specialized builds of [[Electrum]] and new [[mobile wallets]].
+  - **[[RGB]]** is [[Bitcoin Proof-of-Work Protocol]] [[Layer 2]] protocol for [[smart contracts]] and asset issuance, using [[client-side validation]]. [[RGB-compatible wallets]] emerging in 2025 include specialized builds of [[Electrum]] and new [[mobile wallets]].
   - [[RGB]] enables [[NFTs]], [[stablecoins]], and [[DeFi]] on Bitcoin without blockchain bloat. [[RGB-20]] standard for fungible tokens, [[RGB-21]] for NFTs.
   - Integration requires [[Lightning Network]] support as RGB transfers happen through Lightning channels. Watch for [[RGB-enabled Lightning wallets]] in 2025-2026.
 
@@ -586,9 +586,9 @@
   - **[[Bech32m addresses]]** (Taproot) start with `bc1p`, enable [[Schnorr signatures]] and [[MAST]]. Improved privacy and efficiency.
 
   ### Wallet Interoperability
-  - **[[WalletConnect]]** protocol enables mobile wallets to connect with [[DApps]] via [[QR code]] scanning. Supports [[Ethereum]], [[Polygon]], [[BSC]], and 100+ chains.
+  - **[[WalletConnect]]** protocol enables mobile wallets to connect with [[DApps]] via [[QR code]] scanning. Supports [[Ethereum Smart Contract Platform]], [[Polygon]], [[BSC]], and 100+ chains.
   - **[[Web3 Modal]]** provides unified wallet connection interface for [[DApps]], supporting [[MetaMask]], [[WalletConnect]], [[Coinbase Wallet]], and others.
-  - **[[Account Abstraction]]** ([[EIP-4337]]) introduces [[smart contract wallets]] on [[Ethereum]], enabling [[social recovery]], [[gasless transactions]], and [[transaction batching]].
+  - **[[Account Abstraction]]** ([[EIP-4337]]) introduces [[smart contract wallets]] on [[Ethereum Smart Contract Platform]], enabling [[social recovery]], [[gasless transactions]], and [[transaction batching]].
   - **[[Lightning Address]]** creates email-style payment addresses for [[Lightning Network]] (user@domain.com), simplifying Lightning payments without invoices.
 
   ### Emerging Technologies

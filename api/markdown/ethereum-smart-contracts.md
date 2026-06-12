@@ -7,7 +7,7 @@
 
 - ### Relationships
   - is-subclass-of:: [[Smart Contract]]
-  - bridges-to:: [[Ethereum]]
+  - bridges-to:: [[Ethereum Smart Contract Platform]]
   - requires:: [[Ethereum Virtual Machine]], [[Solidity]]
   - enables:: [[ERC-20]]
 

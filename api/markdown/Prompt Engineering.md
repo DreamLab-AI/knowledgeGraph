@@ -440,7 +440,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
         "label": "Tokenisation"
       },
       {
@@ -522,15 +522,15 @@ public:: true
         "label": "DSPy"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI"
       },
       {
@@ -542,7 +542,7 @@ public:: true
         "label": "Reasoning"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -616,11 +616,11 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:courses-and-training",
+        "@id": "urn:ngm:class:ai-technology-skills-curriculum",
         "label": "Courses and Training"
       },
       {
@@ -628,7 +628,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:open-ai",
+        "@id": "urn:ngm:class:openai-research-organisation-research-organisation",
         "label": "OpenAI"
       }
     ]
@@ -912,7 +912,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Anthropic Claude]]",
+      "raw": "[[Constitutional AI Language Model Family]]",
       "resolved": "urn:visionflow:owl:class:anthropic-claude",
       "kind": "ResolvedLink"
     },
@@ -937,7 +937,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ChatGPT]]",
+      "raw": "[[Instruction-Following Conversational AI System]]",
       "resolved": "urn:visionflow:owl:class:chat-gpt",
       "kind": "ResolvedLink"
     },
@@ -962,7 +962,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[ComfyUI]]",
+      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
       "resolved": "urn:visionflow:owl:class:comfy-ui",
       "kind": "ResolvedLink"
     },
@@ -972,7 +972,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Courses and Training]]",
+      "raw": "[[AI Technology Skills Curriculum]]",
       "resolved": "urn:visionflow:owl:class:courses-and-training",
       "kind": "ResolvedLink"
     },
@@ -997,7 +997,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Machine Learning]]",
+      "raw": "[[Machine Learning Discipline]]",
       "resolved": "urn:visionflow:owl:class:machine-learning",
       "kind": "ResolvedLink"
     },
@@ -1012,7 +1012,7 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[OpenAI]]",
+      "raw": "[[OpenAI Research Organisation]]",
       "resolved": "urn:visionflow:owl:class:open-ai",
       "kind": "ResolvedLink"
     },
@@ -1022,12 +1022,12 @@ public:: true
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Stable Diffusion]]",
+      "raw": "[[Stable Diffusion Image Model]]",
       "resolved": "urn:visionflow:owl:class:stable-diffusion",
       "kind": "ResolvedLink"
     },
     {
-      "raw": "[[Tokenisation]]",
+      "raw": "[[Neural Network Text Tokenisation]]",
       "resolved": "urn:visionflow:owl:class:tokenisation",
       "kind": "ResolvedLink"
     },
@@ -1064,17 +1064,17 @@ public:: true
   - implemented-in-layer:: [[ApplicationLayer]], [[APILayer]], [[AlgorithmLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Human-Computer Interaction]], [[Machine Learning]], [[AI Alignment]], [[In-Context Learning]], [[Instruction Following]], [[Applied Artificial Intelligence]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Human-Computer Interaction]], [[Machine Learning Discipline]], [[AI Alignment]], [[In-Context Learning]], [[Instruction Following]], [[Applied Artificial Intelligence]]
   - has-part:: [[Zero-Shot Prompting]], [[Few-Shot Prompting]], [[Chain of Thought]], [[Tree of Thoughts]], [[ReAct]], [[System Prompts]], [[DSPy]], [[Prompt Templates]], [[Prompt Injection Defence]], [[Self-Consistency]], [[Automatic Prompt Optimisation]], [[Structured Output]]
-  - requires:: [[Large Language Models]], [[Natural Language Processing]], [[Tokenisation]], [[Attention]], [[Transformer Architecture]], [[Instruction Following]], [[RLHF]]
+  - requires:: [[Large Language Models]], [[Natural Language Processing]], [[Neural Network Text Tokenisation]], [[Attention]], [[Transformer Architecture]], [[Instruction Following]], [[RLHF]]
   - enables:: [[Agents]], [[Reasoning]], [[Tool Use]], [[Code Generation]], [[Structured Output]], [[Retrieval Augmented Generation]], [[Agentic Internet]], [[CLI Multi-Agent Systems]], [[Chatbots]]
   - implements:: [[In-Context Learning]], [[Instruction Following]], [[Self-Consistency]], [[Chain of Thought]], [[Automatic Prompt Optimisation]], [[ReAct]], [[DSPy]]
-  - depends-on:: [[Large Language Models]], [[Attention]], [[Transformer Architecture]], [[Tokenisation]], [[Context Window]], [[RLHF]], [[Artificial General Intelligence]]
+  - depends-on:: [[Large Language Models]], [[Attention]], [[Transformer Architecture]], [[Neural Network Text Tokenisation]], [[Context Window]], [[RLHF]], [[Artificial General Intelligence]]
   - supports:: [[Agent Frameworks]], [[Retrieval Augmented Generation]], [[Code Generation]], [[AI Alignment]], [[Evaluation benchmarks and leaderboards]], [[AI Adoption]], [[Cognitive AI]]
-  - uses:: [[DSPy]], [[LangChain]], [[Anthropic Claude]], [[ChatGPT]], [[Reasoning]], [[ComfyUI]], [[Stable Diffusion]]
+  - uses:: [[DSPy]], [[LangChain]], [[Constitutional AI Language Model Family]], [[Instruction-Following Conversational AI System]], [[Reasoning]], [[Node-Based Diffusion Pipeline Interface]], [[Stable Diffusion Image Model]]
   - contrasts-with:: [[Training and fine tuning]], [[Model Optimisation and Performance]], [[RLHF]], [[Active Learning]]
   - related-to:: [[AI Adoption]], [[Agents]], [[Cognitive AI]], [[AI Risks]], [[Chatbots]], [[Bias in Large Language Models]], [[Algorithmic Bias and Variance]], [[AI Scrapers]]
-  - standardized-by:: [[OpenAI]], [[Anthropic Claude]], [[Courses and Training]], [[Evaluation benchmarks and leaderboards]], [[Agent Frameworks]]
+  - standardized-by:: [[OpenAI Research Organisation]], [[Constitutional AI Language Model Family]], [[AI Technology Skills Curriculum]], [[Evaluation benchmarks and leaderboards]], [[Agent Frameworks]]
 
 - ### Content
 
@@ -1323,7 +1323,7 @@ public:: true
 
   - **Creative and domain-expert tasks**: Persona-based prompts for legal drafting, medical summarisation, financial analysis, and creative writing. Style guides embedded in system prompts ensure consistency across long documents. Multi-persona review prompts (pessimist, pragmatist, creative critic) improve output quality through simulated adversarial review.
 
-  - **Image generation prompting** (for [[Stable Diffusion]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
+  - **Image generation prompting** (for [[Stable Diffusion Image Model]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
 
   - ### Academic Context
 
@@ -1582,7 +1582,7 @@ public:: true
 
   - **quality-prompts** (open-source): Applies automatic prompt engineering techniques (APE, self-consistency, CoT injection) to user-provided prompts via a simple Python API.
 
-  - **gpt-prompt-engineer** (open-source, mshumer): Automated prompt generation and ranking for [[Anthropic Claude]] and OpenAI models; generates 10 candidate prompts per task description and ranks by validation accuracy.
+  - **gpt-prompt-engineer** (open-source, mshumer): Automated prompt generation and ranking for [[Constitutional AI Language Model Family]] and OpenAI models; generates 10 candidate prompts per task description and ranks by validation accuracy.
 
   - **PromptBench** (academic): Benchmark framework for adversarial robustness evaluation of prompts, including natural language attacks (synonym substitution, typo injection) and structured injection attempts. Used in academic evaluation of prompt defence strategies.
 

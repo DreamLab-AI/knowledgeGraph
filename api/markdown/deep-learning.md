@@ -1,5 +1,5 @@
 - ### Definition
-  - [[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The "deep" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.
+  - [[Deep Learning]] is a subset of [[Machine Learning Discipline]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]]. Deep learning models automatically discover intricate structures in high-dimensional data, enabling breakthrough performance in [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], and [[Reinforcement Learning]]. The "deep" refers to the number of layers through which data is transformed, allowing the network to learn increasingly abstract and complex features.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DeepLearning
@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[AlgorithmicLayer]], [[ComputeLayer]], [[DataLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Machine Learning]], [[Artificial Intelligence]]
+  - is-subclass-of:: [[Machine Learning Discipline]], [[Artificial Intelligence]]
   - has-part:: [[Neural Network]], [[Hidden Layer]], [[Activation Function]], [[Loss Function]], [[Optimizer]], [[Backpropagation]]
   - requires:: [[Training Data]], [[GPU Compute]], [[Gradient Descent]], [[Model Architecture]], [[Hyperparameter Tuning]]
   - enables:: [[Computer Vision]], [[Natural Language Processing]], [[Speech Recognition]], [[Image Classification]], [[Object Detection]]

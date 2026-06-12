@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
       },
       {
@@ -95,7 +95,7 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Ethereum]]",
+      "raw": "[[Ethereum Smart Contract Platform]]",
       "resolved": "urn:visionflow:linked:ethereum",
       "kind": "ResolvedLink"
     },
@@ -136,7 +136,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Decentralised Finance Domain]]
   - bridges-to:: [[Decentralised Finance Domain]]
-  - requires:: [[Ethereum]], [[Automated Market Maker]], [[Stablecoin]]
+  - requires:: [[Ethereum Smart Contract Platform]], [[Automated Market Maker]], [[Stablecoin]]
 
 - ### Content
   - Curve Finance is an automated market maker tuned for assets that should trade close to parity, such as different stablecoins or staked and unstaked versions of the same token. Its invariant blends constant-sum and constant-product behaviour so that trades near the peg incur very low slippage while still providing liquidity if prices diverge.
