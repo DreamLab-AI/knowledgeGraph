@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:deep-mind",
   "domain": "artificial-intelligence",
-  "definition": "DeepMind is an artificial intelligence research laboratory owned by Google, known for work on reinforcement learning and systems such as AlphaGo and AlphaFold. It is based in London.",
+  "definition": "DeepMind is an artificial intelligence research laboratory owned by Google (Alphabet), headquartered in London, known for pioneering work in reinforcement learning, deep learning, and scientific AI applications including AlphaGo, AlphaFold, Gemini, and Gato.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:artificial-intelligence-research-laboratory",
+      "label": "Artificial Intelligence Research Laboratory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:alphago",
+        "label": "AlphaGo"
+      },
+      {
+        "id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:gato",
+        "label": "Gato"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -25,23 +42,96 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "id": "urn:ngm:class:scientific-datasets",
+        "label": "Scientific Datasets"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:game-playing-ai",
+        "label": "Game-Playing AI"
+      },
+      {
+        "id": "urn:ngm:class:scientific-ai",
+        "label": "Scientific AI"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:energy-optimisation",
+        "label": "Energy Optimisation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      },
+      {
+        "id": "urn:ngm:class:google-ai-ecosystem",
+        "label": "Google AI Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

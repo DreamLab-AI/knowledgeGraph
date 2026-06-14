@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset-ecosystem",
@@ -26,17 +35,64 @@
       {
         "id": "urn:ngm:class:blockchain-gaming",
         "label": "Blockchain Gaming"
+      },
+      {
+        "id": "urn:ngm:class:cross-protocol-liquidity",
+        "label": "Cross-Protocol Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:user-owned-economy",
+        "label": "User-Owned Economy"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:data-format-standard",
         "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:walled-garden",
+        "label": "Walled Garden"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:interoperability-protocol",
@@ -45,10 +101,35 @@
       {
         "id": "urn:ngm:class:digital-asset-standards",
         "label": "Digital Asset Standards"
+      },
+      {
+        "id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse-interoperability-group",
+        "label": "Open Metaverse Interoperability Group"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -66,6 +147,14 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
       }
     ]
   },

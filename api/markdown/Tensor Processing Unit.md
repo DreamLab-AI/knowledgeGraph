@@ -46,32 +46,156 @@ public:: true
   "@id": "urn:ngm:class:tensor-processing-unit",
   "@type": "Class",
   "label": "Tensor Processing Unit",
-  "definition": "Tensor Processing Unit is a artificial intelligence concept and a type of Inference Hardware. that enables Large Language Models.",
+  "definition": "A Tensor Processing Unit (TPU) is Google's custom application-specific integrated circuit (ASIC) designed to accelerate machine learning workloads, particularly tensor operations in deep neural network training and inference. Built around a systolic array architecture for highly efficient matrix multiplication, TPUs prioritise throughput and power efficiency over general-purpose flexibility, and have been instrumental in training large-scale models such as BERT, PaLM, and Gemini.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:inference-hardware",
-      "label": "Inference Hardware"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:inference-hardware",
+    "label": "Inference Hardware"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:systolic-array",
+        "label": "Systolic Array"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiply-unit",
+        "label": "Matrix Multiply Unit"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:tpu-pod",
+        "label": "TPU Pod"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:xla-compiler",
+        "label": "XLA Compiler"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-training",
+        "label": "Deep Learning Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-models",
+        "label": "Transformer Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bfloat16",
+        "label": "BFloat16"
+      },
+      {
+        "@id": "urn:ngm:class:google-cloud-platform",
+        "label": "Google Cloud Platform"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:asic-design",
+        "label": "ASIC Design"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "@id": "urn:ngm:class:inter-chip-interconnect",
+        "label": "Inter-Chip Interconnect"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "@id": "urn:ngm:class:intelligence-processing-unit",
+        "label": "Intelligence Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tpu",
+      "label": "TPU"
+    },
+    {
+      "@id": "urn:ngm:class:google-tpu",
+      "label": "Google TPU"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

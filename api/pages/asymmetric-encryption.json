@@ -4,8 +4,8 @@
   "slug": "asymmetric-encryption",
   "public": true,
   "classIri": "urn:ngm:class:asymmetric-encryption",
-  "domain": "blockchain",
-  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt.",
+  "domain": "security",
+  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt, enabling secure communication, digital signatures, and trustless verification without pre-shared secrets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -13,36 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mathematical-hardness-assumption",
+        "label": "Mathematical Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:private-key-management",
+        "label": "Private Key Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:rsa-cryptosystem",
+        "label": "RSA Cryptosystem"
+      },
+      {
+        "id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:confidentiality",
+        "label": "Confidentiality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ]
   },
   "wikilinks": [
     {

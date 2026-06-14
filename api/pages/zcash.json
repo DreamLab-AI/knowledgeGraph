@@ -8,12 +8,12 @@
   "definition": "Zcash is a privacy-oriented cryptocurrency launched in 2016 that uses zero-knowledge proofs to allow transactions to be verified without revealing the sender, recipient or amount. It was the first widespread deployment of zk-SNARKs, succinct non-interactive arguments of knowledge, in a public blockchain. Zcash supports both transparent addresses, similar to Bitcoin, and shielded addresses that conceal transaction details, giving users a choice of privacy level. The protocol derives from the Zerocash academic proposal and is developed by the Electric Coin Company.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:privacy-coin",
+      "label": "Privacy Coin"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,18 +25,113 @@
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:trusted-setup-ceremony",
+        "label": "Trusted Setup Ceremony"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-payment",
+        "label": "Anonymous Payment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:shielded-transaction",
+        "label": "Shielded Transaction"
+      },
+      {
+        "id": "urn:ngm:class:sapling-protocol",
+        "label": "Sapling Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:dash",
+        "label": "Dash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:equihash",
+        "label": "Equihash"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:note-commitment",
+        "label": "Note Commitment"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:electric-coin-company",
+        "label": "Electric Coin Company"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-currency",
+        "label": "Cryptographic Currency"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -30,32 +30,71 @@ alias:: ROS2
   "label": "ROS 2",
   "definition": "ROS 2 (Robot Operating System 2) is an open-source robotics middleware framework developed by Open Robotics that provides a standardised publish-subscribe communication layer built on the DDS (Data Distribution Service) standard, along with a comprehensive ecosystem of drivers, libraries, and tools for sensor integration, motion planning, simulation, and hardware abstraction. ROS 2 supersedes ROS 1 with support for real-time execution, multi-robot systems, production-grade security via DDS-Security, and native Windows and macOS compatibility. It has become the de facto standard software framework for research and increasingly for commercial robotic platforms.",
   "domain": "robotics",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-actuation-and-control",
+    "label": "Actuation and Control"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
+      {"@id": "urn:ngm:class:data-distribution-service", "label": "Data Distribution Service"},
+      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
+      {"@id": "urn:ngm:class:colcon", "label": "Colcon"},
+      {"@id": "urn:ngm:class:unified-robot-description-format", "label": "Unified Robot Description Format"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:nav2", "label": "Nav2"},
+      {"@id": "urn:ngm:class:moveit-2", "label": "MoveIt 2"},
+      {"@id": "urn:ngm:class:ros2-control", "label": "ros2_control"},
+      {"@id": "urn:ngm:class:rviz2", "label": "RViz 2"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:dds-security", "label": "DDS-Security"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:robotics-middleware", "label": "Robotics Middleware"},
+      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robot-simulation", "label": "Robot Simulation"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ros-1", "label": "ROS 1"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
-      {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"}
+      {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"},
+      {"@id": "urn:ngm:class:gazebo-simulator", "label": "Gazebo Simulator"},
+      {"@id": "urn:ngm:class:cyclone-dds", "label": "Cyclone DDS"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
     ]
   },
-  "qualityScore": 0.75,
-  "maturity": "emerging"
+  "sameAs": [
+    {"@id": "urn:ngm:class:robot-operating-system-2", "label": "Robot Operating System 2"},
+    {"@id": "urn:ngm:class:ros2", "label": "ROS2"}
+  ],
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

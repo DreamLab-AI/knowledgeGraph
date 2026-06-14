@@ -5,18 +5,31 @@
   "public": true,
   "classIri": "urn:ngm:class:gaussian-distribution",
   "domain": "machine-learning",
-  "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.",
+  "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance. It arises naturally via the central limit theorem and is foundational to statistics, machine learning, and signal processing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:probability-theory",
-      "label": "Probability Theory"
+      "id": "urn:ngm:class:probability-distribution",
+      "label": "Probability Distribution"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mean",
+        "label": "Mean"
+      },
+      {
+        "id": "urn:ngm:class:variance",
+        "label": "Variance"
+      },
+      {
+        "id": "urn:ngm:class:standard-deviation",
+        "label": "Standard Deviation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:probability-theory",
@@ -25,23 +38,101 @@
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:poisson-distribution",
+        "label": "Poisson Distribution"
+      },
+      {
+        "id": "urn:ngm:class:laplace-distribution",
+        "label": "Laplace Distribution"
+      },
+      {
+        "id": "urn:ngm:class:student-t-distribution",
+        "label": "Student-t Distribution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

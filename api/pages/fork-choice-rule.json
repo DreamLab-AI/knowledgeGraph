@@ -10,41 +10,85 @@
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer To Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:immutability",
         "label": "Immutability"
       },
       {
+        "id": "urn:ngm:class:blockchain-finality",
+        "label": "Blockchain Finality"
+      },
+      {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double Spend Prevention"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:peer-discovery",
-        "label": "Peer Discovery"
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:chain-weight",
+        "label": "Chain Weight"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      },
+      {
+        "id": "urn:ngm:class:lmd-ghost",
+        "label": "LMD-GHOST"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems-consensus",
+        "label": "Distributed Systems Consensus"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerant-protocol",
+        "label": "Fault Tolerant Protocol"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:consensus-algorithm",
@@ -53,6 +97,18 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-attestation",
+        "label": "Validator Attestation"
       }
     ],
     "supports": [],
@@ -62,10 +118,6 @@
       {
         "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-work",
-        "label": "Proof Of Work"
       },
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -78,6 +130,14 @@
       {
         "id": "urn:ngm:class:consensus-rule",
         "label": "Consensus Rule"
+      },
+      {
+        "id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
       }
     ]
   },

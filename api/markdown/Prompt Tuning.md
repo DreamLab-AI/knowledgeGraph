@@ -91,26 +91,104 @@ public:: true
   "@type": "Class",
   "label": "Prompt Tuning",
   "definition": "Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous soft prompt embeddings prepended to the input sequence, whilst keeping all pre-trained model weights frozen. It optimises task-specific prompts in the embedding space using gradient descent, requiring as little as 0.01% of model parameters and enabling efficient multi-task deployment from a single frozen backbone.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
-      "label": "Parameter-Efficient Fine-Tuning"
-    },
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+    "label": "Parameter-Efficient Fine-Tuning"
+  },
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:soft-prompt-tuning",
+      "label": "Soft Prompt Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:soft-prompting",
+      "label": "Soft Prompting"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:soft-prompt-embeddings",
+        "label": "Soft Prompt Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent-optimisation",
+        "label": "Gradient Descent Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-Trained Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-labelled-dataset",
+        "label": "Task-Specific Labelled Dataset"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-task-model-deployment",
+        "label": "Multi-Task Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:prefix-tuning",
@@ -119,28 +197,38 @@ public:: true
       {
         "@id": "urn:ngm:class:adapter-modules",
         "label": "Adapter Modules"
-      }
-    ],
-    "uses": [
+      },
       {
-        "@id": "urn:ngm:class:language-modeling",
-        "label": "Language Modeling"
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine-Tuning"
       }
     ],
-    "relatedTo": [
+    "bridgesTo": [
       {
         "@id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
       },
       {
-        "@id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
       }
     ],
-    "partOf": [
+    "relatedTo": [
       {
-        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
-        "label": "Parameter-Efficient Fine-Tuning"
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
       }
     ]
   }

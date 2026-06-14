@@ -8,24 +8,29 @@
   "definition": "A cryptographic proof of inclusion or exclusion that demonstrates whether a specific data element is part of a Merkle tree, requiring only O(log n) sibling hashes rather than the full data set. Merkle proofs underpin light-client verification in blockchain systems and enable simplified payment verification (SPV) without downloading the entire chain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:hash-preimage",
+        "label": "Hash Preimage"
+      },
+      {
+        "id": "urn:ngm:class:sibling-hash",
+        "label": "Sibling Hash"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-scalability",
@@ -34,12 +39,51 @@
       {
         "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:simplified-payment-verification",
+        "label": "Simplified Payment Verification"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:stateless-verification",
+        "label": "Stateless Verification"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-inclusion",
+        "label": "Proof of Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:full-node-verification",
+        "label": "Full Node Verification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:merkle-tree",
@@ -52,11 +96,33 @@
       {
         "id": "urn:ngm:class:merkle-root",
         "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:block-header",
@@ -69,6 +135,10 @@
       {
         "id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:patricia-trie",
+        "label": "Patricia Trie"
       }
     ]
   },

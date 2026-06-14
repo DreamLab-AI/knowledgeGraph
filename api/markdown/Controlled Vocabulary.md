@@ -75,19 +75,29 @@ public:: true
   "@type": "Class",
   "label": "Controlled Vocabulary",
   "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
-  "domain": "spatial-computing",
+  "domain": "data",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:information-architecture",
-      "label": "Information Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:information-architecture",
+    "label": "Information Architecture"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:preferred-term",
+        "label": "Preferred Term"
+      },
+      {
+        "@id": "urn:ngm:class:synonym-ring",
+        "label": "Synonym Ring"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:domain-expertise",
@@ -114,14 +124,108 @@ public:: true
       {
         "@id": "urn:ngm:class:data-standardization",
         "label": "Data Standardization"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:faceted-classification",
+        "label": "Faceted Classification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:skos",
+        "label": "SKOS"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:library-cataloging",
+        "label": "Library Cataloging"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-25964",
+        "label": "ISO 25964 Thesaurus Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:free-text-search",
+        "label": "Free Text Search"
+      },
+      {
+        "@id": "urn:ngm:class:folksonomy",
+        "label": "Folksonomy"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:authority-file",
+      "label": "Authority File"
+    },
+    {
+      "@id": "urn:ngm:class:subject-heading-list",
+      "label": "Subject Heading List"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

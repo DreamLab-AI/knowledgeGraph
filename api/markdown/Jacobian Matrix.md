@@ -27,19 +27,55 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"}
+      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
+      {"@id": "urn:ngm:class:partial-derivatives", "label": "Partial Derivatives"},
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:moore-penrose-pseudoinverse", "label": "Moore-Penrose Pseudoinverse"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:singularity-analysis", "label": "Singularity Analysis"},
+      {"@id": "urn:ngm:class:force-torque-control", "label": "Force-Torque Control"},
+      {"@id": "urn:ngm:class:task-space-control", "label": "Task Space Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:multivariate-calculus", "label": "Multivariate Calculus"},
+      {"@id": "urn:ngm:class:denavit-hartenberg-parameters", "label": "Denavit-Hartenberg Parameters"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:jacobian-determinant", "label": "Jacobian Determinant"},
+      {"@id": "urn:ngm:class:null-space-projection", "label": "Null Space Projection"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"}
+      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
+      {"@id": "urn:ngm:class:manipulability", "label": "Manipulability"},
+      {"@id": "urn:ngm:class:redundancy-resolution", "label": "Redundancy Resolution"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:hessian-matrix", "label": "Hessian Matrix"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neural-network-backpropagation", "label": "Neural Network Backpropagation"},
+      {"@id": "urn:ngm:class:differentiable-simulation", "label": "Differentiable Simulation"},
+      {"@id": "urn:ngm:class:coordinate-transformation", "label": "Coordinate Transformation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:jacobian", "label": "Jacobian"},
+    {"@id": "urn:ngm:class:kinematic-jacobian", "label": "Kinematic Jacobian"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.75
 }
 ```
 

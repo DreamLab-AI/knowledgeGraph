@@ -54,32 +54,156 @@ public:: true
   "@id": "urn:ngm:class:fpga",
   "@type": "Class",
   "label": "FPGA",
-  "definition": "FPGA is a artificial intelligence concept and a type of Inference Hardware. that enables Custom Neural Architectures.",
-  "domain": "artificial-intelligence",
+  "definition": "A Field-Programmable Gate Array (FPGA) is a reconfigurable integrated circuit that can be configured after manufacturing to implement custom digital logic, offering a middle ground between flexible general-purpose processors and fixed-function ASICs. FPGAs are widely used for low-latency AI inference acceleration, edge computing, real-time signal processing, and hardware prototyping due to their reconfigurable architecture, energy efficiency, and deterministic execution.",
+  "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:inference-hardware",
-      "label": "Inference Hardware"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:inference-hardware",
+    "label": "Inference Hardware"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lookup-table",
+        "label": "Lookup Table"
+      },
+      {
+        "@id": "urn:ngm:class:dsp-slice",
+        "label": "DSP Slice"
+      },
+      {
+        "@id": "urn:ngm:class:block-ram",
+        "label": "Block RAM"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-infrastructure",
+        "label": "Edge Computing Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      },
+      {
+        "@id": "urn:ngm:class:bitstream",
+        "label": "Bitstream"
+      },
+      {
+        "@id": "urn:ngm:class:high-level-synthesis",
+        "label": "High-Level Synthesis"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:custom-neural-architectures",
         "label": "Custom Neural Architectures"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-inference",
+        "label": "Low-Latency Inference"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantization",
+        "label": "Neural Network Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-signal-processing",
+        "label": "Real-Time Signal Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:eda-toolchain",
+        "label": "EDA Toolchain"
+      },
+      {
+        "@id": "urn:ngm:class:place-and-route",
+        "label": "Place and Route"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:partial-reconfiguration",
+        "label": "Partial Reconfiguration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System on Chip"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:field-programmable-gate-array",
+      "label": "Field-Programmable Gate Array"
+    },
+    {
+      "@id": "urn:ngm:class:reconfigurable-computing",
+      "label": "Reconfigurable Computing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

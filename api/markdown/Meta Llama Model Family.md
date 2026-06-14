@@ -59,12 +59,10 @@ elevatedFrom:: [[Llama]]
   "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline-domain",
-      "label": "Machine Learning Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:large-language-model",
+    "label": "Large Language Model"
+  },
   "relations": {
     "requires": [
       {
@@ -72,16 +70,134 @@ elevatedFrom:: [[Llama]]
         "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:large-language-models",
+        "@id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:llama-1",
+        "label": "LLaMA 1"
+      },
+      {
+        "@id": "urn:ngm:class:llama-2",
+        "label": "Llama 2"
+      },
+      {
+        "@id": "urn:ngm:class:llama-3",
+        "label": "Llama 3"
+      },
+      {
+        "@id": "urn:ngm:class:llama-guard",
+        "label": "Llama Guard"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:open-source-ai-ecosystem",
+        "label": "Open-Source AI Ecosystem"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decoder-only-transformer-architecture",
+        "label": "Decoder-Only Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gpt-4",
+        "label": "GPT-4"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-model-family",
+        "label": "Gemini Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-model-family",
+        "label": "Mistral Model Family"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-ai-inference",
+        "label": "Spatial AI Inference"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-weights-model",
+        "label": "Open Weights Model"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:quantization",
+        "label": "Quantization"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:llama",
+      "label": "Llama"
+    },
+    {
+      "@id": "urn:ngm:class:meta-ai-language-models",
+      "label": "Meta AI Language Models"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

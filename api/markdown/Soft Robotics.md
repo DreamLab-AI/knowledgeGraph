@@ -122,31 +122,60 @@ alias:: SoftRobotics
   "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired...",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-robot-type",
+    "label": "Robot Type"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:pneumatic-actuation", "label": "Pneumatic Actuation"},
+      {"@id": "urn:ngm:class:compliant-actuator", "label": "Compliant Actuator"},
+      {"@id": "urn:ngm:class:soft-sensor", "label": "Soft Sensor"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
+      {"@id": "urn:ngm:class:bio-inspired-design", "label": "Bio-Inspired Design"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
+      {"@id": "urn:ngm:class:3d-printing", "label": "3D Printing"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
+      {"@id": "urn:ngm:class:adaptive-grasping", "label": "Adaptive Grasping"},
+      {"@id": "urn:ngm:class:safe-human-robot-interaction", "label": "Safe Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:materials-science", "label": "Materials Science"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:wearable-robotics", "label": "Wearable Robotics"},
+      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rigid-body-robotics", "label": "Rigid Body Robotics"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:biomedical-engineering", "label": "Biomedical Engineering"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:compliant-robotics", "label": "Compliant Robotics"},
+    {"@id": "urn:ngm:class:flexible-robotics", "label": "Flexible Robotics"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

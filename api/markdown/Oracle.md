@@ -58,35 +58,153 @@ public:: true
   "@id": "urn:ngm:class:oracle",
   "@type": "Class",
   "label": "Oracle",
-  "definition": "In blockchain systems, a mechanism that brings external information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles are the boundary between deterministic on-chain logic and the variable outside world.",
+  "definition": "In blockchain systems, a mechanism that brings external off-chain information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles form the trust boundary between deterministic on-chain logic and the variable outside world, and may be centralised reporters or decentralised aggregation networks.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-infrastructure",
+    "label": "Blockchain Infrastructure"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:data-feed",
+        "label": "Data Feed"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-node",
+        "label": "Oracle Node"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-middleware",
+        "label": "Blockchain Middleware"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:de-fi",
         "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-market",
+        "label": "Prediction Market"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:external-data-source",
+        "label": "External Data Source"
+      },
+      {
+        "@id": "urn:ngm:class:api-provider",
+        "label": "API Provider"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decentralised-oracle-network",
+        "label": "Decentralised Oracle Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-oracle",
+        "label": "Centralised Oracle"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:real-world-data",
+        "label": "Real-World Data"
+      },
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-data",
+        "label": "Supply Chain Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "@id": "urn:ngm:class:data-oracle",
+      "label": "Data Oracle"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

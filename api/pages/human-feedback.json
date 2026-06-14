@@ -4,23 +4,44 @@
   "slug": "human-feedback",
   "public": true,
   "classIri": "urn:ngm:class:human-feedback",
-  "domain": "spatial-computing",
-  "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections.",
+  "domain": "artificial-intelligence",
+  "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives that are difficult to specify formally.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:training-signal",
+      "label": "Training Signal"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pairwise-ranking",
+        "label": "Pairwise Ranking"
+      },
+      {
+        "id": "urn:ngm:class:demonstration-data",
+        "label": "Demonstration Data"
+      },
+      {
+        "id": "urn:ngm:class:preference-dataset",
+        "label": "Preference Dataset"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:human-annotator",
+        "label": "Human Annotator"
+      },
+      {
+        "id": "urn:ngm:class:annotation-guideline",
+        "label": "Annotation Guideline"
       }
     ],
     "enables": [
@@ -35,20 +56,86 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:labelling-workforce",
+        "label": "Labelling Workforce"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-feedback",
+        "label": "AI Feedback"
+      },
+      {
+        "id": "urn:ngm:class:implicit-feedback",
+        "label": "Implicit Feedback"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:alignment-training-pipeline",
+        "label": "Alignment Training Pipeline"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
       }
     ]
   },

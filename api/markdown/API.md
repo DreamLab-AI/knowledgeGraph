@@ -54,35 +54,141 @@ public:: true
   "@id": "urn:ngm:class:api",
   "@type": "Class",
   "label": "API",
-  "definition": "An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.",
+  "definition": "An Application Programming Interface: a defined set of operations, inputs, and outputs through which software components or services communicate without exposing their internal implementation, enabling modular composition and system integration.",
   "domain": "infrastructure",
   "maturity": "established",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:software-engineering",
+    "label": "Software Engineering"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:communication-protocols",
         "label": "Communication Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:service-integration",
+        "label": "Service Integration"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-extensions",
+        "label": "Third-Party Extensions"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:endpoint",
+        "label": "Endpoint"
+      },
+      {
+        "@id": "urn:ngm:class:api-schema",
+        "label": "API Schema"
+      },
+      {
+        "@id": "urn:ngm:class:versioning",
+        "label": "Versioning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standards",
+        "label": "Interoperability Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sdk",
+        "label": "SDK"
+      },
+      {
+        "@id": "urn:ngm:class:abi",
+        "label": "ABI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:application-programming-interface",
+      "label": "Application Programming Interface"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -142,20 +142,42 @@ public:: true
   "@id": "urn:ngm:class:ai-monitoring",
   "@type": "Class",
   "label": "AI Monitoring",
-  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended ...",
+  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:ai-lifecycle",
-      "label": "AI Lifecycle"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-lifecycle",
+    "label": "AI Lifecycle"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:data-drift-detection",
+        "label": "Data Drift Detection"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-monitoring",
+        "label": "Fairness Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:alert-thresholds",
@@ -168,6 +190,10 @@ public:: true
       {
         "@id": "urn:ngm:class:monitoring-infrastructure",
         "label": "Monitoring infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-logging",
+        "label": "Data Logging"
       }
     ],
     "enables": [
@@ -182,14 +208,112 @@ public:: true
       {
         "@id": "urn:ngm:class:model-updating",
         "label": "model updating"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894-2023",
+        "label": "ISO/IEC 23894:2023"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:static-testing",
+        "label": "Static Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:model-retraining",
+        "label": "Model Retraining"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-observability",
+      "label": "AI Observability"
+    },
+    {
+      "@id": "urn:ngm:class:mlops-monitoring",
+      "label": "MLOps Monitoring"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -42,30 +42,61 @@ alias:: Quantum-Computing, QuantumComputing
   "definition": "A paradigm of computation that exploits quantum-mechanical phenomena—superposition, entanglement, and interference—to perform certain calculations exponentially faster than classical computers. Quantum computing holds particular relevance for cryptography, optimisation, simulation of molecular systems, and potentially accelerating machine learning workloads, though near-term devices remain limited by qubit decoherence and error rates.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:qubit", "label": "Qubit"},
+      {"@id": "urn:ngm:class:quantum-gate", "label": "Quantum Gate"},
+      {"@id": "urn:ngm:class:quantum-error-correction", "label": "Quantum Error Correction"},
+      {"@id": "urn:ngm:class:quantum-circuit", "label": "Quantum Circuit"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:quantum-error-correction", "label": "Quantum Error Correction"},
+      {"@id": "urn:ngm:class:cryogenic-control-systems", "label": "Cryogenic Control Systems"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:quantum-key-distribution", "label": "Quantum Key Distribution"},
+      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
+      {"@id": "urn:ngm:class:molecular-simulation", "label": "Molecular Simulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:classical-computing", "label": "Classical Computing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:quantum-mechanics", "label": "Quantum Mechanics"},
+      {"@id": "urn:ngm:class:superconductivity", "label": "Superconductivity"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:shors-algorithm", "label": "Shor's Algorithm"},
+      {"@id": "urn:ngm:class:grovers-algorithm", "label": "Grover's Algorithm"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:quantum-machine-learning", "label": "Quantum Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

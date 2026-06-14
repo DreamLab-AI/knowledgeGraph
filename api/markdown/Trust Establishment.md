@@ -25,22 +25,58 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:trust-architecture", "label": "Trust Architecture"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
+      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:humanity-attestation", "label": "Humanity Attestation"}
+      {"@id": "urn:ngm:class:humanity-attestation", "label": "Humanity Attestation"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
+      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
+      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
+      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:implicit-trust", "label": "Implicit Trust"},
+      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
+      {"@id": "urn:ngm:class:attestation", "label": "Attestation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:trust-bootstrapping", "label": "Trust Bootstrapping"},
+    {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

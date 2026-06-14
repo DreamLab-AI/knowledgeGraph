@@ -62,12 +62,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cryptographic-domain",
-      "label": "Cryptographic Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-domain",
+    "label": "Cryptographic Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -76,21 +74,127 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum"
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:transaction-privacy",
         "label": "Transaction Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:anonymity-set",
+        "label": "Anonymity Set"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-privacy",
+        "label": "On-Chain Privacy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:coin-mixing",
+        "label": "Coin Mixing"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-protocol",
+        "label": "Non-Custodial Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:immutable-smart-contract",
+        "label": "Immutable Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:nullifier",
+        "label": "Nullifier"
+      },
+      {
+        "@id": "urn:ngm:class:relayer-network",
+        "label": "Relayer Network"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tornado-cash-governance-token",
+        "label": "TORN Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:deposit-pool",
+        "label": "Deposit Pool"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:chain-analysis",
+        "label": "Chain Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-surveillance",
+        "label": "Blockchain Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ofac-sanctions",
+        "label": "OFAC Sanctions"
+      },
+      {
+        "@id": "urn:ngm:class:aml-compliance",
+        "label": "AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software-liability",
+        "label": "Open Source Software Liability"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:privacy-mixer",
+      "label": "Privacy Mixer"
+    },
+    {
+      "@id": "urn:ngm:class:cryptocurrency-mixer",
+      "label": "Cryptocurrency Mixer"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

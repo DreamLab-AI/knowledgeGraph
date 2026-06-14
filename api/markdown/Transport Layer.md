@@ -68,8 +68,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:network-stack",
+      "label": "Network Stack"
     }
   ],
   "relations": {
@@ -77,6 +77,10 @@ public:: true
       {
         "@id": "urn:ngm:class:network-layer",
         "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
       }
     ],
     "enables": [
@@ -87,14 +91,140 @@ public:: true
       {
         "@id": "urn:ngm:class:integration-layer",
         "label": "Integration Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "@id": "urn:ngm:class:session-layer",
+        "label": "Session Layer"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "@id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "@id": "urn:ngm:class:segmentation-and-reassembly",
+        "label": "Segmentation and Reassembly"
+      },
+      {
+        "@id": "urn:ngm:class:connection-management",
+        "label": "Connection Management"
+      },
+      {
+        "@id": "urn:ngm:class:error-detection-and-correction",
+        "label": "Error Detection and Correction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:user-datagram-protocol",
+        "label": "User Datagram Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:quic-protocol",
+        "label": "QUIC Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:stream-control-transmission-protocol",
+        "label": "Stream Control Transmission Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf-internet-engineering-task-force",
+        "label": "IETF (Internet Engineering Task Force)"
+      },
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "@id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:port-number",
+        "label": "Port Number"
+      },
+      {
+        "@id": "urn:ngm:class:socket-api",
+        "label": "Socket API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multiplexing",
+        "label": "Multiplexing"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-principle",
+        "label": "End-to-End Principle"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:osi-layer-4",
+      "label": "OSI Layer 4"
+    },
+    {
+      "@id": "urn:ngm:class:host-to-host-layer",
+      "label": "Host-to-Host Layer"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

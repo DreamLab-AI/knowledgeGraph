@@ -13,12 +13,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:grasp-candidate-generation",
+        "label": "Grasp Candidate Generation"
+      },
+      {
+        "id": "urn:ngm:class:grasp-evaluation",
+        "label": "Grasp Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:contact-model",
+        "label": "Contact Model"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:in-hand-manipulation",
+        "label": "In-Hand Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:end-effector",
@@ -27,11 +62,37 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:3d-shape-representation",
+        "label": "3D Shape Representation"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-for-robotics",
+        "label": "Deep Learning for Robotics"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:point-cloud",
@@ -40,6 +101,22 @@
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:force-closure",
+        "label": "Force Closure"
+      },
+      {
+        "id": "urn:ngm:class:grasp-quality-metric",
+        "label": "Grasp Quality Metric"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
       }
     ],
     "supports": [],
@@ -53,6 +130,14 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
       }
     ]
   },

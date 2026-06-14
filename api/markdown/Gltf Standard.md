@@ -50,31 +50,80 @@ public:: true
   "@id": "urn:ngm:class:gltf-standard",
   "@type": "Class",
   "label": "Gltf Standard",
-  "definition": "Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interopera...",
+  "definition": "Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interoperability. Standardised as ISO/IEC 12113:2022, glTF 2.0 supports geometry, PBR materials, skeletal animation, morph targets, and a modular extension system enabling progressive capability extension.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-standards-and-interop",
+    "label": "Standards and Interoperability"
+  },
   "relations": {
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:pbr-materials", "label": "PBR Materials"},
+      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
+      {"@id": "urn:ngm:class:gltf-extension-system", "label": "glTF Extension System"},
+      {"@id": "urn:ngm:class:binary-geometry-data", "label": "Binary Geometry Data"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:khronos-group-standards", "label": "Khronos Group Standards"},
+      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:json-serialisation", "label": "JSON Serialisation"},
+      {"@id": "urn:ngm:class:webgl", "label": "WebGL"}
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-3-d-content",
-        "label": "Cross-Platform 3D Content"
-      }
+      {"@id": "urn:ngm:class:cross-platform-3-d-content", "label": "Cross-Platform 3D Content"},
+      {"@id": "urn:ngm:class:metaverse-asset-interoperability", "label": "Metaverse Asset Interoperability"},
+      {"@id": "urn:ngm:class:real-time-3-d-rendering", "label": "Real-Time 3D Rendering"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
+      {"@id": "urn:ngm:class:royalty-free-licensing", "label": "Royalty-Free Licensing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:iso-iec-12113", "label": "ISO/IEC 12113"},
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
+      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:usd-universal-scene-description", "label": "USD Universal Scene Description"},
+      {"@id": "urn:ngm:class:fbx-format", "label": "FBX Format"},
+      {"@id": "urn:ngm:class:obj-format", "label": "OBJ Format"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"},
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:vrm-avatar-format", "label": "VRM Avatar Format"},
+      {"@id": "urn:ngm:class:e-commerce-3-d", "label": "E-Commerce 3D"},
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gltf-2-0", "label": "glTF 2.0"},
+    {"@id": "urn:ngm:class:graphics-library-transmission-format", "label": "Graphics Library Transmission Format"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

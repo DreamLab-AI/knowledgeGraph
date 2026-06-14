@@ -2,11 +2,11 @@
   "total_pages": 5975,
   "pages_with_ontology": 5975,
   "public_pages": 5961,
-  "total_issues": 1074,
+  "total_issues": 971,
   "errors": 0,
-  "warnings": 1074,
+  "warnings": 971,
   "by_code": {
-    "MULTI_PARENT": 1074
+    "MULTI_PARENT": 971
   },
   "issues": [
     {
@@ -14,18 +14,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Perception and Sensing, Lidar"
-    },
-    {
-      "path": "3D Animation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Animation Technique"
-    },
-    {
-      "path": "3D Content Generation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Application, Generative AI"
     },
     {
       "path": "3D Graphics Standard.md",
@@ -50,18 +38,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, Artificial Intelligence"
-    },
-    {
-      "path": "AI Audit.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Governance"
-    },
-    {
-      "path": "AI Deployment.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), AI Lifecycle"
     },
     {
       "path": "AI Diagram Tools.md",
@@ -100,12 +76,6 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Governance"
     },
     {
-      "path": "AI Hardware.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), Computer Hardware"
-    },
-    {
       "path": "AI Incident.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -118,12 +88,6 @@
       "message": "Multiple parents (3): AI Governance and Ethics, AI Governance And Ethics, AI Governance And Ethics"
     },
     {
-      "path": "AI Monitoring.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), AI Lifecycle"
-    },
-    {
       "path": "AI Operator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -134,12 +98,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Risk Management"
-    },
-    {
-      "path": "AI Risk.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Risk Management"
     },
     {
       "path": "AI Risks.md",
@@ -158,12 +116,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Application, Natural Language Processing, Retrieval-Augmented Generation"
-    },
-    {
-      "path": "AI Security.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Cybersecurity"
     },
     {
       "path": "AI Upscaling and Super-Resolution.md",
@@ -226,12 +178,6 @@
       "message": "Multiple parents (2): Interaction Technology, Spatial Tracking"
     },
     {
-      "path": "AR Technology.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Extended Reality"
-    },
-    {
       "path": "Accelerometer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -274,12 +220,6 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Governance Principle"
     },
     {
-      "path": "Activation Function.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Neural Network Component"
-    },
-    {
       "path": "Active Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -320,12 +260,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, AI Safety"
-    },
-    {
-      "path": "Adversarial Testing.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AI Safety"
     },
     {
       "path": "Aerial Robot.md",
@@ -392,18 +326,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Ethics"
-    },
-    {
-      "path": "Animation Retargeting.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, SC Content And Assets"
-    },
-    {
-      "path": "Animation Software.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, SC Content And Assets"
     },
     {
       "path": "Anti Counterfeiting.md",
@@ -478,12 +400,6 @@
       "message": "Multiple parents (3): Token and Asset, BC Token And Asset, Blockchain Application"
     },
     {
-      "path": "Asynchronous Collaboration.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Workspace Tools, TC-0001-telecollaboration-domain"
-    },
-    {
       "path": "Asynchronous Execution.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -514,12 +430,6 @@
       "message": "Multiple parents (2): Content and Assets, SC Display And Rendering"
     },
     {
-      "path": "Audio Spatialization.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Display and Rendering, SC Display And Rendering"
-    },
-    {
       "path": "Augmented Connected Workforce.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -538,12 +448,6 @@
       "message": "Multiple parents (2): Telepresence, TELE-002-telecollaboration"
     },
     {
-      "path": "Authentication Standards.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Security and Identity, Security Standards"
-    },
-    {
       "path": "Authoring Tool.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -554,12 +458,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Infrastructure (Category), AI Agent System, Machine Learning Pipeline"
-    },
-    {
-      "path": "Autoencoder.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Model Architecture, Deep Learning"
     },
     {
       "path": "Automated Podcasting.md",
@@ -587,12 +485,6 @@
     },
     {
       "path": "Avatar Creation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, SC Interaction"
-    },
-    {
-      "path": "Avatar Customization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, SC Interaction"
@@ -647,12 +539,6 @@
     },
     {
       "path": "Behavioral Analytics.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Machine Learning"
-    },
-    {
-      "path": "Behavioral Modeling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Machine Learning"
@@ -758,12 +644,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Protocol and Infrastructure, TELE-002-telecollaboration"
-    },
-    {
-      "path": "Blockchain Energy Consumption.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Regulation, Blockchain"
     },
     {
       "path": "Blockchain Interoperability.md",
@@ -898,12 +778,6 @@
       "message": "Multiple parents (2): Governance and Safety, Environmental Trading"
     },
     {
-      "path": "Carbon Registry.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, Environmental Registry"
-    },
-    {
       "path": "Cashu.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -992,12 +866,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Collaborative Learning.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Educational Methodology"
     },
     {
       "path": "Collaborative Systems Modality.md",
@@ -1162,12 +1030,6 @@
       "message": "Multiple parents (3): AI Application, Generative Model, Fine-tuning"
     },
     {
-      "path": "Controlled Vocabulary.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Standards and Interoperability, Information Architecture"
-    },
-    {
       "path": "Convergence Concept.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1192,22 +1054,10 @@
       "message": "Multiple parents (3): AI Application, Agentic Internet, Agents"
     },
     {
-      "path": "Cosmos IBC.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Protocol and Consensus, Cross-Chain Communication"
-    },
-    {
       "path": "Creator Royalty Token.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Token and Asset, Virtual Economy"
-    },
-    {
-      "path": "Credential Format Standard.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Security and Identity, Identity Standards"
     },
     {
       "path": "Cross Border Compliance.md",
@@ -1234,18 +1084,6 @@
       "message": "Multiple parents (3): Network Component, BC Network Component, BC Network Component"
     },
     {
-      "path": "Cross-Chain Messaging.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Protocol and Consensus, Network Component"
-    },
-    {
-      "path": "Cross-Platform Identity.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Security and Identity, Identity Management"
-    },
-    {
       "path": "Cryptocurrency Storage.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1256,18 +1094,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Token and Asset, BC Token And Asset, BC Network Component"
-    },
-    {
-      "path": "Cryptographic Commitment.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
-    },
-    {
-      "path": "Cryptographic Domain.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Cryptographic Primitive, Public Key Infrastructure"
     },
     {
       "path": "Cryptographic System.md",
@@ -1330,12 +1156,6 @@
       "message": "Multiple parents (2): Network Component, Distributed Identity"
     },
     {
-      "path": "Data Annotation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), Machine Learning Pipeline"
-    },
-    {
       "path": "Data Anonymization Pipeline.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1370,12 +1190,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Data Management, Data Management"
-    },
-    {
-      "path": "Data Lake.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), ETSI Domain: Data Management + AI"
     },
     {
       "path": "Data Layer.md",
@@ -1424,12 +1238,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Data Management, Data Integration"
-    },
-    {
-      "path": "Database Query.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Data Management, Data Management"
     },
     {
       "path": "De BER Ta.md",
@@ -1490,12 +1298,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Cryptographic Primitive, Token and Asset"
-    },
-    {
-      "path": "Decentralized Storage.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Data Management, Network Infrastructure"
     },
     {
       "path": "Decentralized Swarm Control.md",
@@ -1648,22 +1450,10 @@
       "message": "Multiple parents (2): Computing and Cloud, Digital Infrastructure"
     },
     {
-      "path": "Digital Asset Trading.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Financial Trading"
-    },
-    {
       "path": "Digital Avatar.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, SC Interaction"
-    },
-    {
-      "path": "Digital Certificate.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, Digital Security"
     },
     {
       "path": "Digital Citizens' Assembly.md",
@@ -1720,12 +1510,6 @@
       "message": "Multiple parents (2): Legal and Regulatory, Legal Framework"
     },
     {
-      "path": "Digital Identity Management.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Security and Identity, Identity Systems"
-    },
-    {
       "path": "Digital Identity Wallet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1750,12 +1534,6 @@
       "message": "Multiple parents (2): Standards and Interoperability, Metadata Repository"
     },
     {
-      "path": "Digital Payments.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Financial Transactions"
-    },
-    {
       "path": "Digital Performance Capture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1772,12 +1550,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Virtual Community Practice"
-    },
-    {
-      "path": "Digital Services Act.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, Digital Regulation"
     },
     {
       "path": "Digital Society Harms.md",
@@ -1814,12 +1586,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Digital Twin"
-    },
-    {
-      "path": "Digital Twin Creation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Digital Modeling"
     },
     {
       "path": "Digital Twin Framework.md",
@@ -1864,12 +1630,6 @@
       "message": "Multiple parents (2): Navigation and Planning, RB-1016-path-planning"
     },
     {
-      "path": "Dimensionality Reduction.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Unsupervised Learning"
-    },
-    {
       "path": "Direct Preference Optimization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1880,12 +1640,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Fairness"
-    },
-    {
-      "path": "Display Hardware.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Display and Rendering, Hardware"
     },
     {
       "path": "Dispute Resolution Mechanism.md",
@@ -1936,22 +1690,10 @@
       "message": "Multiple parents (2): AI Application, Generative Ai"
     },
     {
-      "path": "Documentation Standards.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Standards and Interoperability, Technical Standards"
-    },
-    {
       "path": "Domain Ontology.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Software Engineering, Infra Data Management, Formal Specification"
-    },
-    {
-      "path": "Double Spending.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, NetworkComponent"
     },
     {
       "path": "Driver Software.md",
@@ -2152,12 +1894,6 @@
       "message": "Multiple parents (3): Computing and Cloud, Infra Software Engineering, Grid Infrastructure"
     },
     {
-      "path": "Ensemble Methods.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Machine Learning"
-    },
-    {
       "path": "Enterprise Blockchain Architecture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2200,12 +1936,6 @@
       "message": "Multiple parents (2): Robot Type, Robo Robot Type"
     },
     {
-      "path": "Expert Systems.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Research Area, Knowledge Representation"
-    },
-    {
       "path": "Extended Reality (XR).md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2230,12 +1960,6 @@
       "message": "Multiple parents (2): Governance and Regulation, AML KYC Compliance"
     },
     {
-      "path": "FPGA.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), Inference Hardware"
-    },
-    {
       "path": "Face Swap.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2258,18 +1982,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Computing and Cloud, Infra Software Engineering"
-    },
-    {
-      "path": "Feature Importance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Explainability"
-    },
-    {
-      "path": "Feature Store.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure, Machine Learning Pipeline"
     },
     {
       "path": "Federated Byzantine Fault Tolerance.md",
@@ -2326,40 +2038,16 @@
       "message": "Multiple parents (3): Actuation and Control, Robo Actuation And Control, Robotic Control"
     },
     {
-      "path": "Force Torque Sensor.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Perception and Sensing, Sensor"
-    },
-    {
-      "path": "Fork Choice Rule.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, ConsensusProtocol"
-    },
-    {
       "path": "Friction.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Actuation and Control, Robotics, Robot Dynamics"
     },
     {
-      "path": "Frontier Models.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Foundation Models, Large Language Models"
-    },
-    {
       "path": "Full Fine Tuning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Fine Tuning"
-    },
-    {
-      "path": "Full Node.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Network Component, Blockchain Entity, NetworkComponent"
     },
     {
       "path": "Function Calling.md",
@@ -2404,12 +2092,6 @@
       "message": "Multiple parents (3): DeFi and Economics, Blockchain Entity, Economic Mechanism"
     },
     {
-      "path": "Gas.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, EconomicMechanism"
-    },
-    {
       "path": "Gasper Consensus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2450,12 +2132,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Explainability"
-    },
-    {
-      "path": "Global Illumination.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Display and Rendering, Metaverse"
     },
     {
       "path": "Global Inequality.md",
@@ -2632,12 +2308,6 @@
       "message": "Multiple parents (2): AI Governance and Ethics, Neural Network Component"
     },
     {
-      "path": "Human in the Loop.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, AI Alignment"
-    },
-    {
       "path": "Human-Agent Interaction Surfaces.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2690,12 +2360,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Network Component, Blockchain, Blockchain"
-    },
-    {
-      "path": "Hyperparameter.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Machine Learning"
     },
     {
       "path": "Identification System.md",
@@ -2764,12 +2428,6 @@
       "message": "Multiple parents (2): Platform and Environment, Content Production Workflow"
     },
     {
-      "path": "Immersive Experiences.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Digital Experience"
-    },
-    {
       "path": "Immersive Gaming.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2782,34 +2440,10 @@
       "message": "Multiple parents (2): Interaction Technology, Human-Computer Interface"
     },
     {
-      "path": "Immersive Learning.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Educational Technology"
-    },
-    {
-      "path": "Immersive Technology.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Digital Technology"
-    },
-    {
       "path": "Immersive Workspaces.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Metaverse and Telecollaboration"
-    },
-    {
-      "path": "Immutability.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Network Component, Blockchain Entity"
-    },
-    {
-      "path": "Impermanent Loss.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Decentralized Finance, Liquidity Provision"
     },
     {
       "path": "Incentive Alignment.md",
@@ -2848,22 +2482,10 @@
       "message": "Multiple parents (3): Robot Type, Manufacturing Automation, Robo Actuation And Control"
     },
     {
-      "path": "Inference Hardware.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), AI Hardware"
-    },
-    {
       "path": "Inflation Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Metaverse"
-    },
-    {
-      "path": "Inflation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): DeFi and Economics, Blockchain Entity, EconomicMechanism"
     },
     {
       "path": "Inflationary Token.md",
@@ -3028,12 +2650,6 @@
       "message": "Multiple parents (2): Content and Assets, Educational Technology"
     },
     {
-      "path": "Learning Management System.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Educational Technology"
-    },
-    {
       "path": "Learning Module.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3058,12 +2674,6 @@
       "message": "Multiple parents (2): AI Technique, Computer Vision"
     },
     {
-      "path": "Light Client.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Network Component, Node"
-    },
-    {
       "path": "Light Parameters.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3074,12 +2684,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Network Component, Layer 2 Scaling, Payment Channel Network"
-    },
-    {
-      "path": "Lightning and Similar L2.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Network Component, Layer2"
     },
     {
       "path": "Linked Data Encoder.md",
@@ -3190,12 +2794,6 @@
       "message": "Multiple parents (3): AI Model Architecture, General Purpose AI Model, Proprietary Large Language Models"
     },
     {
-      "path": "Machine Learning Framework.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), AI Development Tools"
-    },
-    {
       "path": "Machine Learning Models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3292,12 +2890,6 @@
       "message": "Multiple parents (2): AI Application, Medical AI"
     },
     {
-      "path": "Medical Imaging AI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Application, Vision Processing"
-    },
-    {
       "path": "Medical Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3316,12 +2908,6 @@
       "message": "Multiple parents (2): AI Application, Speech Recognition"
     },
     {
-      "path": "Merkle Proof.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
-    },
-    {
       "path": "Merkle Root.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3338,12 +2924,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standards"
-    },
-    {
-      "path": "Metadata Standards.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Standards and Interoperability, Data Standards"
     },
     {
       "path": "Metaverse Application Platform.md",
@@ -3400,12 +2980,6 @@
       "message": "Multiple parents (2): Platform and Environment, Virtual Environment"
     },
     {
-      "path": "Metaverse and Telecollaboration.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Metaverse"
-    },
-    {
       "path": "Metaverse.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3430,12 +3004,6 @@
       "message": "Multiple parents (2): AI Technique, Search Algorithms"
     },
     {
-      "path": "Mining Pool.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, Consensus Protocol"
-    },
-    {
       "path": "Minting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3446,12 +3014,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Platform and Environment, Immersive Computing, SC Platform And Environment"
-    },
-    {
-      "path": "Mixture-of-Experts Architecture.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Model Architecture, Model Architecture"
     },
     {
       "path": "Mixup.md",
@@ -3472,12 +3034,6 @@
       "message": "Multiple parents (2): Robot Type, Cyber Physical System"
     },
     {
-      "path": "Model Architecture.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Model Architecture, System Architecture"
-    },
-    {
       "path": "Model Based Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3488,12 +3044,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Adversarial Attacks"
-    },
-    {
-      "path": "Model Interpretability.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Explainable AI"
     },
     {
       "path": "Model Optimisation and Performance.md",
@@ -3526,12 +3076,6 @@
       "message": "Multiple parents (2): AI Infrastructure (Category), Gartner Prediction"
     },
     {
-      "path": "Monetary System.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Financial System"
-    },
-    {
       "path": "Money.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3548,12 +3092,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Navigation and Planning, RB-1013-localization"
-    },
-    {
-      "path": "Monte Carlo Tree Search.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Search Algorithms"
     },
     {
       "path": "Motion Capture.md",
@@ -3596,12 +3134,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Regulation, BC Governance And Regulation"
-    },
-    {
-      "path": "Multi-Head Attention.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Model Architecture, Attention Mechanism"
     },
     {
       "path": "Multi-Layer Agentic Governance Framework.md",
@@ -3706,12 +3238,6 @@
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, ConsensusProtocol"
     },
     {
-      "path": "Network Latency.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Network Component, Blockchain Entity, NetworkComponent"
-    },
-    {
       "path": "Network Standards.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3728,12 +3254,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Network Component, Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "Neural Network Layer.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Neural Network Component"
     },
     {
       "path": "Neuromorphic Chips.md",
@@ -3820,22 +3340,10 @@
       "message": "Multiple parents (2): Legal and Regulatory, Regulatory Framework"
     },
     {
-      "path": "Obstacle Avoidance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Navigation and Planning, Reactive Control"
-    },
-    {
       "path": "Octocopter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Robot Type, Multirotor UAV"
-    },
-    {
-      "path": "Odometry.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Navigation and Planning, State Estimation"
     },
     {
       "path": "Omnidirectional Robot.md",
@@ -3884,12 +3392,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Standards and Interoperability, SC Standards And Interop, SC Standards And Interop"
-    },
-    {
-      "path": "Optimization Algorithm.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Algorithm"
     },
     {
       "path": "Ouroboros Consensus.md",
@@ -4018,12 +3520,6 @@
       "message": "Multiple parents (3): Network Component, Blockchain Entity, NetworkComponent"
     },
     {
-      "path": "Performance Optimization.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Software Engineering, Optimization Technique"
-    },
-    {
       "path": "Permissioned Network.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4061,12 +3557,6 @@
     },
     {
       "path": "Physics Material.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Display and Rendering, Metaverse"
-    },
-    {
-      "path": "Pixel Shader.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Metaverse"
@@ -4126,12 +3616,6 @@
       "message": "Multiple parents (2): AI Technique, Explainability"
     },
     {
-      "path": "Practical Byzantine Fault Tolerance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Protocol and Consensus, Byzantine Fault Tolerance"
-    },
-    {
       "path": "Preimage Resistance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4142,12 +3626,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Communication Technology, Ambient Awareness, DC Communication"
-    },
-    {
-      "path": "Presence.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Immersive Experience"
     },
     {
       "path": "Pressure Sensor.md",
@@ -4220,12 +3698,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Technique, In-Context Learning, AI Application"
-    },
-    {
-      "path": "Prompt Tuning.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Parameter-Efficient Fine-Tuning, AI Technique"
     },
     {
       "path": "Proof Of Stake Sustainability.md",
@@ -4330,12 +3802,6 @@
       "message": "Multiple parents (2): Content and Assets, Research Methods"
     },
     {
-      "path": "Public Key.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
-    },
-    {
       "path": "Pure Proof of Stake.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4394,12 +3860,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Client-Side Validation Theory, BC Network Component"
-    },
-    {
-      "path": "ROC Curve.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Model Performance"
     },
     {
       "path": "RRT Algorithm.md",
@@ -4472,12 +3932,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Render Pipeline"
-    },
-    {
-      "path": "Regularisation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Machine Learning"
     },
     {
       "path": "Regulatory Compliance.md",
@@ -4586,12 +4040,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Tokenomics"
-    },
-    {
-      "path": "Reward Model.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Reinforcement Learning"
     },
     {
       "path": "Right to Be Forgotten.md",
@@ -4754,12 +4202,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Regulation, BC DeFi And Economics"
-    },
-    {
-      "path": "Security Token.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Token and Asset, Fungible Token"
     },
     {
       "path": "Segmentation and Identification.md",
@@ -5158,12 +4600,6 @@
       "message": "Multiple parents (2): Data Management, Infrastructure Layer"
     },
     {
-      "path": "Style Transfer.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Image to Image Translation"
-    },
-    {
       "path": "Sub-Millisecond Latency.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5194,22 +4630,10 @@
       "message": "Multiple parents (2): Robot Type, Autonomous Robot"
     },
     {
-      "path": "Sybil Attack.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, NetworkComponent"
-    },
-    {
       "path": "Symbolic Reasoning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Reasoning"
-    },
-    {
-      "path": "Symmetric Encryption.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Cryptographic Primitive, Cryptographic Primitive"
     },
     {
       "path": "Synchronous Collaboration.md",
@@ -5314,12 +4738,6 @@
       "message": "Multiple parents (2): Protocol and Consensus, Byzantine Fault Tolerance"
     },
     {
-      "path": "Tensor Processing Unit.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure (Category), Inference Hardware"
-    },
-    {
       "path": "Testing Infrastructure.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5372,12 +4790,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Probabilistic Forecasting"
-    },
-    {
-      "path": "Timestamp.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
     },
     {
       "path": "TinyML.md",
@@ -5438,12 +4850,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Actuation and Control, Motion Control"
-    },
-    {
-      "path": "Trajectory Generation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Navigation and Planning, Motion Planning"
     },
     {
       "path": "Transaction Confirmation.md",
@@ -5620,12 +5026,6 @@
       "message": "Multiple parents (2): Legal and Regulatory, Privacy Framework"
     },
     {
-      "path": "User Research.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Interaction Technology, Research Methods"
-    },
-    {
       "path": "Utility Token.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5686,22 +5086,10 @@
       "message": "Multiple parents (2): Cryptographic Primitive, Cryptographic Proof"
     },
     {
-      "path": "Verifiable Data Registry.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Data Management, Data Registry"
-    },
-    {
       "path": "Verification Standard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Standards"
-    },
-    {
-      "path": "Vertex Shader.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Display and Rendering, Metaverse"
     },
     {
       "path": "Video Async.md",
@@ -5738,12 +5126,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Virtual Environment"
-    },
-    {
-      "path": "Virtual Collaboration.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Virtual Workspace"
     },
     {
       "path": "Virtual Commissioning.md",

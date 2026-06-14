@@ -59,20 +59,50 @@ public:: true
   "@type": "Class",
   "label": "Parallel Computing",
   "definition": "Parallel computing executes many operations simultaneously across multiple processing units to reduce wall-clock time for workloads that can be decomposed into independent or loosely coupled parts.",
-  "domain": "metaverse",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-computing",
+    "label": "Distributed Computing"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:task-parallelism",
+        "label": "Task Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:gpu-architecture",
         "label": "GPU Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:multicore-processor",
+        "label": "Multicore Processor"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
       }
     ],
     "enables": [
@@ -81,16 +111,98 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:pipeline-parallelism",
-        "label": "Pipeline Parallelism"
+        "@id": "urn:ngm:class:deep-learning-training",
+        "label": "Deep Learning Training"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:synchronisation-primitive",
+        "label": "Synchronisation Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:cache-coherence",
+        "label": "Cache Coherence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:amdahls-law",
+        "label": "Amdahl's Law"
+      },
+      {
+        "@id": "urn:ngm:class:gustafson-law",
+        "label": "Gustafson's Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "@id": "urn:ngm:class:thread-safety",
+        "label": "Thread Safety"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:parallel-processing",
+      "label": "Parallel Processing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

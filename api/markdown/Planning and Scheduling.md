@@ -66,16 +66,48 @@ public:: true
   "@id": "urn:ngm:class:planning-and-scheduling",
   "@type": "Class",
   "label": "Planning and Scheduling",
-  "definition": "Planning and Scheduling is a artificial intelligence concept and a type of Artificial Intelligence. that enables Resource Management, Robotics.",
+  "definition": "Planning and Scheduling is an AI subfield concerned with generating sequences of actions (plans) and allocating resources across time (schedules) to achieve goals while satisfying temporal, resource, and precedence constraints. It encompasses classical, temporal, contingent, and probabilistic planning paradigms, as well as job-shop, project, and vehicle-routing scheduling approaches.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-research-area",
+    "label": "AI Research Area"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-planning",
+        "label": "Temporal Planning"
+      },
+      {
+        "@id": "urn:ngm:class:contingent-planning",
+        "label": "Contingent Planning"
+      },
+      {
+        "@id": "urn:ngm:class:job-shop-scheduling",
+        "label": "Job Shop Scheduling"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:resource-management",
@@ -84,20 +116,100 @@ public:: true
       {
         "@id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-search",
+        "label": "State Space Search"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:strips",
         "label": "STRIPS"
+      },
+      {
+        "@id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "@id": "urn:ngm:class:mission-planning",
+        "label": "Mission Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-planning",
+      "label": "AI Planning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

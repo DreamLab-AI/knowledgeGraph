@@ -74,12 +74,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:layer-two-protocol",
+    "label": "Layer Two Protocol"
+  },
   "relations": {
     "hasPart": [
       {
@@ -89,6 +87,20 @@ public:: true
       {
         "@id": "urn:ngm:class:htlc",
         "label": "HTLC"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "@id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin-ecosystem",
+        "label": "Bitcoin Ecosystem"
       }
     ],
     "requires": [
@@ -99,6 +111,14 @@ public:: true
       {
         "@id": "urn:ngm:class:multisignature",
         "label": "Multisignature"
+      },
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      },
+      {
+        "@id": "urn:ngm:class:timelocked-transaction",
+        "label": "Timelocked Transaction"
       }
     ],
     "enables": [
@@ -109,14 +129,96 @@ public:: true
       {
         "@id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:channel-liquidity",
+        "label": "Channel Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      },
+      {
+        "@id": "urn:ngm:class:source-routing",
+        "label": "Source Routing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Base Layer"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-state-channels",
+        "label": "Ethereum State Channels"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:watchtower-service",
+        "label": "Watchtower Service"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "@id": "urn:ngm:class:ln-protocol",
+      "label": "LN Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

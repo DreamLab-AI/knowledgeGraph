@@ -66,12 +66,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -81,6 +79,10 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
       }
     ],
     "enables": [
@@ -91,14 +93,118 @@ public:: true
       {
         "@id": "urn:ngm:class:product-provenance",
         "label": "Product Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti-Counterfeiting"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dual-token-model",
+        "label": "Dual Token Model"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vethor-token",
+        "label": "VeThor Token"
+      },
+      {
+        "@id": "urn:ngm:class:vechain-thor",
+        "label": "VeChainThor"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vechain-thor",
+      "label": "VeChainThor"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

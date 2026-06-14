@@ -46,32 +46,152 @@ public:: true
   "@id": "urn:ngm:class:monte-carlo-tree-search",
   "@type": "Class",
   "label": "Monte Carlo Tree Search",
-  "definition": "Monte Carlo Tree Search is a artificial intelligence concept and a type of Search Algorithms. that enables Game Playing AI.",
+  "definition": "Monte Carlo Tree Search (MCTS) is a heuristic search algorithm for sequential decision-making that builds a game tree incrementally through random simulations, balancing exploration and exploitation via the Upper Confidence Bound (UCB) formula. It enables strong play in games with large branching factors and generalises to planning under uncertainty.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:search-algorithms",
-      "label": "Search Algorithms"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:search-algorithms",
+    "label": "Search Algorithms"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tree-selection-policy",
+        "label": "Tree Selection Policy"
+      },
+      {
+        "@id": "urn:ngm:class:rollout-simulation",
+        "label": "Rollout Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation-update",
+        "label": "Backpropagation Update"
+      },
+      {
+        "@id": "urn:ngm:class:node-expansion",
+        "label": "Node Expansion"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:game-tree-search",
+        "label": "Game Tree Search"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:upper-confidence-bound",
+        "label": "Upper Confidence Bound"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-simulation",
+        "label": "Stochastic Simulation"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:game-playing-ai",
         "label": "Game Playing AI"
+      },
+      {
+        "@id": "urn:ngm:class:planning-under-uncertainty",
+        "label": "Planning Under Uncertainty"
+      },
+      {
+        "@id": "urn:ngm:class:general-game-playing",
+        "label": "General Game Playing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:tree-data-structure",
+        "label": "Tree Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bandit-algorithm",
+        "label": "Bandit Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:anytime-algorithm",
+        "label": "Anytime Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:ucb1-formula",
+        "label": "UCB1 Formula"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:alphago",
+        "label": "AlphaGo"
+      },
+      {
+        "@id": "urn:ngm:class:alphazero",
+        "label": "AlphaZero"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:minimax-search",
+        "label": "Minimax Search"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-beta-pruning",
+        "label": "Alpha-Beta Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:uct-algorithm",
+        "label": "UCT Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:mcts",
+      "label": "MCTS"
+    },
+    {
+      "@id": "urn:ngm:class:uct-search",
+      "label": "UCT Search"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

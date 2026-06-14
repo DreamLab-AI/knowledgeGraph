@@ -74,20 +74,38 @@ public:: true
   "@id": "urn:ngm:class:digital-twin-creation",
   "@type": "Class",
   "label": "Digital Twin Creation",
-  "definition": "Digital Twin Creation is a type of Digital Modeling in the spatial computing domain.",
+  "definition": "The process of constructing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous bidirectional data linkage, enabling simulation, monitoring, and optimisation across an asset's entire lifecycle from design through decommissioning.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-modeling",
-      "label": "Digital Modeling"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-modeling",
+    "label": "Digital Modeling"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:data-synchronisation",
+        "label": "Data Synchronisation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-internet-of-things",
+        "label": "Industrial Internet of Things"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:io-t-integration",
@@ -100,6 +118,14 @@ public:: true
       {
         "@id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
       }
     ],
     "enables": [
@@ -114,14 +140,106 @@ public:: true
       {
         "@id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cad-modeling",
+        "label": "CAD Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-23247",
+        "label": "ISO 23247 Digital Twin Manufacturing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:product-lifecycle-management",
+        "label": "Product Lifecycle Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:systems-integration",
+        "label": "Systems Integration"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-replica",
+      "label": "Virtual Replica"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

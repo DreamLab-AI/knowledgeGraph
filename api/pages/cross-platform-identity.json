@@ -5,23 +5,45 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-platform-identity",
   "domain": "infrastructure",
-  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries.",
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries, enabling seamless authentication and authorisation across heterogeneous environments through federated identity management.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
     {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:federation-server",
+        "label": "Federation Server"
+      },
+      {
+        "id": "urn:ngm:class:identity-broker",
+        "label": "Identity Broker"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trust-relationships",
+        "label": "Trust Relationships"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-access",
@@ -34,26 +56,93 @@
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:cross-domain-authorisation",
+        "label": "Cross-Domain Authorisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:trust-relationships",
-        "label": "Trust Relationships"
+        "id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
       },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      }
+    ],
+    "implements": [
       {
         "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:siloed-identity",
+        "label": "Siloed Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML 2.0"
+      },
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis-standards",
+        "label": "OASIS Standards"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "id": "urn:ngm:class:access-governance",
+        "label": "Access Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -74,40 +74,156 @@ public:: true
   "@id": "urn:ngm:class:random-number-generation",
   "@type": "Class",
   "label": "Random Number Generation",
-  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from d...",
-  "domain": "blockchain",
+  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization; distinguishes between true randomness from physical entropy sources (TRNG) and pseudo-randomness from deterministic algorithms seeded with entropy (CSPRNG).",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographically-secure-pseudorandom-number-generator",
+        "label": "Cryptographically Secure Pseudorandom Number Generator"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-random-bit-generator",
+        "label": "Deterministic Random Bit Generator"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "@id": "urn:ngm:class:seed-material",
+        "label": "Seed Material"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:verifiable-random-function",
         "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-90a",
+        "label": "NIST SP 800-90A"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:stream-cipher",
+        "label": "Stream Cipher"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:private-key-generation",
+        "label": "Private Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:true-random-number-generator",
+        "label": "True Random Number Generator"
+      },
+      {
+        "@id": "urn:ngm:class:pseudorandom-number-generator",
+        "label": "Pseudorandom Number Generator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:information-theoretic-security",
+        "label": "Information-Theoretic Security"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:random-bit-generation",
+      "label": "Random Bit Generation"
+    },
+    {
+      "@id": "urn:ngm:class:randomness-generation",
+      "label": "Randomness Generation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

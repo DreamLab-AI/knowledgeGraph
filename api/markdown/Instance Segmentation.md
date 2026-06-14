@@ -55,21 +55,29 @@ public:: true
   "@type": "Class",
   "label": "Instance Segmentation",
   "definition": "A computer vision task that extends object detection by predicting precise pixel-level masks for each individual object instance, jointly performing detection and segmentation to delineate the exact boundaries of distinct objects. Architectures such as Mask R-CNN, YOLACT, and SOLOv2 enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.",
-  "domain": "spatial-computing",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
+      "@id": "urn:ngm:class:object-instance-segmentation",
+      "label": "Object Instance Segmentation"
+    },
+    {
+      "@id": "urn:ngm:class:mask-based-detection",
+      "label": "Mask-Based Detection"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "requires": [
       {
@@ -79,18 +87,80 @@ public:: true
       {
         "@id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:region-proposal-network",
+        "label": "Region Proposal Network"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
       }
     ],
-    "relatedTo": [
+    "uses": [
       {
-        "@id": "urn:ngm:class:computer-vision-task",
-        "label": "Computer Vision Task"
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "@id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non-Maximum Suppression"
+      },
+      {
+        "@id": "urn:ngm:class:anchor-based-detection",
+        "label": "Anchor-Based Detection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mask-r-cnn",
+        "label": "Mask R-CNN"
+      },
+      {
+        "@id": "urn:ngm:class:yolact",
+        "label": "YOLACT"
+      },
+      {
+        "@id": "urn:ngm:class:solov2",
+        "label": "SOLOv2"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:image-feature-extraction",
+        "label": "Image Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
       }
     ],
     "partOf": [
@@ -99,10 +169,32 @@ public:: true
         "label": "Panoptic Segmentation"
       }
     ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   }

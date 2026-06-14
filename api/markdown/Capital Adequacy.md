@@ -23,21 +23,63 @@ public:: true
   "definition": "Capital adequacy is the regulatory and risk management requirement that financial institutions maintain a minimum level of capital relative to their risk-weighted assets, ensuring they can absorb losses without becoming insolvent and thereby protecting depositors, counterparties, and the broader financial system. The Basel Committee on Banking Supervision (BCBS) has codified capital adequacy requirements through successive accords — Basel I (1988), Basel II (2004), Basel III (2010, phased through 2028) — specifying the composition of qualifying capital (Common Equity Tier 1, Additional Tier 1, Tier 2) and the risk-weighting methodologies for credit, market, and operational risk exposures.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"}
+      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"},
+      {"@id": "urn:ngm:class:basel-iii", "label": "Basel III"},
+      {"@id": "urn:ngm:class:prudential-regulation", "label": "Prudential Regulation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:common-equity-tier-1", "label": "Common Equity Tier 1"},
+      {"@id": "urn:ngm:class:tier-2-capital", "label": "Tier 2 Capital"},
+      {"@id": "urn:ngm:class:capital-conservation-buffer", "label": "Capital Conservation Buffer"},
+      {"@id": "urn:ngm:class:countercyclical-capital-buffer", "label": "Countercyclical Capital Buffer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-weighted-assets", "label": "Risk-Weighted Assets"},
+      {"@id": "urn:ngm:class:capital-adequacy-ratio", "label": "Capital Adequacy Ratio"},
+      {"@id": "urn:ngm:class:stress-testing", "label": "Stress Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:systemic-risk-mitigation", "label": "Systemic Risk Mitigation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:credit-risk", "label": "Credit Risk"},
+      {"@id": "urn:ngm:class:market-risk", "label": "Market Risk"},
+      {"@id": "urn:ngm:class:operational-risk", "label": "Operational Risk"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:internal-ratings-based-approach", "label": "Internal Ratings-Based Approach"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:deposit-protection", "label": "Deposit Protection"},
+      {"@id": "urn:ngm:class:systemic-risk-oversight", "label": "Systemic Risk Oversight"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:leverage-ratio", "label": "Leverage Ratio"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cryptoasset-prudential-treatment", "label": "Cryptoasset Prudential Treatment"},
+      {"@id": "urn:ngm:class:climate-financial-risk", "label": "Climate Financial Risk"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
       {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:liquidity-coverage-ratio", "label": "Liquidity Coverage Ratio"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:capital-to-risk-weighted-assets-ratio", "label": "Capital-to-Risk-Weighted-Assets Ratio"},
+    {"@id": "urn:ngm:class:regulatory-capital-requirement", "label": "Regulatory Capital Requirement"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

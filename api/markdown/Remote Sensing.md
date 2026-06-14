@@ -21,29 +21,63 @@ public:: true
   "@type": "Class",
   "label": "Remote Sensing",
   "definition": "Remote sensing is the acquisition of information about physical objects or phenomena from a distance, typically using sensors mounted on satellites, aircraft, drones, or ground-based platforms, without direct physical contact with the subject. It encompasses passive sensing (measuring reflected or emitted electromagnetic radiation across optical, infrared, and microwave bands) and active sensing (radar and LiDAR, which emit and measure return signals). Remote sensing data underpins earth observation, environmental monitoring, precision agriculture, disaster response, urban planning, and military reconnaissance.",
-  "domain": "data",
+  "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}],
+  "subClassOf": {"@id": "urn:ngm:class:earth-observation", "label": "Earth Observation"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:synthetic-aperture-radar", "label": "Synthetic Aperture Radar"},
+      {"@id": "urn:ngm:class:hyperspectral-imaging", "label": "Hyperspectral Imaging"},
+      {"@id": "urn:ngm:class:multispectral-sensor", "label": "Multispectral Sensor"},
+      {"@id": "urn:ngm:class:thermal-infrared-sensing", "label": "Thermal Infrared Sensing"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:earth-observation", "label": "Earth Observation"},
+      {"@id": "urn:ngm:class:geospatial-technology", "label": "Geospatial Technology"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:satellite-platform", "label": "Satellite Platform"},
+      {"@id": "urn:ngm:class:sensor-calibration", "label": "Sensor Calibration"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
       {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:geospatial-technology", "label": "Geospatial Technology"}
+      {"@id": "urn:ngm:class:geospatial-technology", "label": "Geospatial Technology"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
       {"@id": "urn:ngm:class:mapping", "label": "Mapping"},
-      {"@id": "urn:ngm:class:environmental-assessment", "label": "Environmental Assessment"}
+      {"@id": "urn:ngm:class:environmental-assessment", "label": "Environmental Assessment"},
+      {"@id": "urn:ngm:class:precision-agriculture", "label": "Precision Agriculture"},
+      {"@id": "urn:ngm:class:disaster-response", "label": "Disaster Response"},
+      {"@id": "urn:ngm:class:land-cover-classification", "label": "Land Cover Classification"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:geospatial-information", "label": "Geospatial Information"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:geospatial-information", "label": "Geospatial Information"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:earth-observation", "label": "Earth Observation"},
+    {"@id": "urn:ngm:class:satellite-imagery", "label": "Satellite Imagery"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

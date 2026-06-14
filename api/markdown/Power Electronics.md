@@ -54,17 +54,53 @@ public:: true
   "@id": "urn:ngm:class:power-electronics",
   "@type": "Class",
   "label": "Power Electronics",
-  "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices, central to motor drives, power supplies and energy systems.",
-  "domain": "robotics",
+  "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices such as MOSFETs, IGBTs and SiC transistors, central to motor drives, power supplies, inverters and energy management systems.",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:embedded-systems-domain",
-      "label": "Embedded Systems Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:embedded-systems-domain",
+    "label": "Embedded Systems Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inverter",
+        "label": "Inverter"
+      },
+      {
+        "@id": "urn:ngm:class:rectifier",
+        "label": "Rectifier"
+      },
+      {
+        "@id": "urn:ngm:class:dc-dc-converter",
+        "label": "DC-DC Converter"
+      },
+      {
+        "@id": "urn:ngm:class:gate-driver",
+        "label": "Gate Driver"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:embedded-systems-domain",
+        "label": "Embedded Systems Domain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:switching-semiconductor",
+        "label": "Switching Semiconductor"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      },
+      {
+        "@id": "urn:ngm:class:electromagnetic-compatibility",
+        "label": "Electromagnetic Compatibility"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:motor-driver",
@@ -73,14 +109,110 @@ public:: true
       {
         "@id": "urn:ngm:class:electric-motor",
         "label": "Electric Motor"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:variable-frequency-drive",
+        "label": "Variable Frequency Drive"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-power-transfer",
+        "label": "Wireless Power Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse Width Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mosfet",
+        "label": "MOSFET"
+      },
+      {
+        "@id": "urn:ngm:class:igbt",
+        "label": "IGBT"
+      },
+      {
+        "@id": "urn:ngm:class:silicon-carbide",
+        "label": "Silicon Carbide"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61800",
+        "label": "IEC 61800"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:linear-power-supply",
+        "label": "Linear Power Supply"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:electric-vehicle",
+        "label": "Electric Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-harvesting",
+        "label": "Energy Harvesting"
+      },
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:power-conversion-electronics",
+      "label": "Power Conversion Electronics"
+    },
+    {
+      "@id": "urn:ngm:class:electronic-power-control",
+      "label": "Electronic Power Control"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -142,6 +274,16 @@ public:: true
   - is-subclass-of:: [[Embedded Systems Domain]]
   - bridges-to:: [[Battery Management System]], [[Servo Motor]]
   - enables:: [[Motor Driver]], [[Electric Motor]]
+  - hasPart:: [[Inverter]], [[Rectifier]], [[DC-DC Converter]], [[Gate Driver]]
+  - requires:: [[Switching Semiconductor]], [[Thermal Management]], [[Electromagnetic Compatibility]]
+  - enables:: [[Variable Frequency Drive]], [[Wireless Power Transfer]]
+  - dependsOn:: [[Pulse Width Modulation]], [[Feedback Control]]
+  - uses:: [[MOSFET]], [[IGBT]], [[Silicon Carbide]]
+  - supports:: [[Renewable Energy Integration]]
+  - standardizedBy:: [[IEEE Standards]], [[IEC 61800]]
+  - contrastsWith:: [[Linear Power Supply]]
+  - bridgesTo:: [[Robotics]], [[Electric Vehicle]], [[Smart Grid]]
+  - relatedTo:: [[Energy Harvesting]], [[Microcontroller]]
 
 - ### Content
   - Power electronics uses switching converters such as inverters, rectifiers and DC-DC stages to transform voltage, current and frequency efficiently, controlling the flow of electrical energy with minimal loss. Switching devices are modulated to shape output waveforms for the load.

@@ -21,29 +21,62 @@ public:: true
   "@type": "Class",
   "label": "OASIS",
   "definition": "OASIS (Organisation for the Advancement of Structured Information Standards) is an international, not-for-profit standards development body that produces open standards for information technology, with particular strengths in web services, security, content formats, electronic business, and emergency management. Founded in 1993, OASIS operates through technical committees that develop specifications via an open, consensus-based process, producing both OASIS Standards and publicly available specifications that are frequently adopted as ISO/IEC standards. Prominent OASIS standards include MQTT for IoT messaging, SAML for federated identity, XACML for access control, OData for REST-based data access, and the OpenDocument Format. OASIS also co-publishes standards with other bodies including the W3C and ISO.",
-  "domain": "governance",
+  "domain": "standards",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:technical-committee", "label": "Technical Committee"},
+      {"@id": "urn:ngm:class:publicly-available-specification", "label": "Publicly Available Specification"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
+      {"@id": "urn:ngm:class:consensus-based-governance", "label": "Consensus-Based Governance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:saml", "label": "SAML"},
+      {"@id": "urn:ngm:class:xacml", "label": "XACML"},
+      {"@id": "urn:ngm:class:opendocument-format", "label": "OpenDocument Format"},
+      {"@id": "urn:ngm:class:odata", "label": "OData"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
+      {"@id": "urn:ngm:class:xml", "label": "XML"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:virtual-environment-specification", "label": "Virtual Environment Specification"},
+      {"@id": "urn:ngm:class:iot-messaging", "label": "IoT Messaging"},
+      {"@id": "urn:ngm:class:enterprise-security", "label": "Enterprise Security"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"},
       {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
       {"@id": "urn:ngm:class:iso-standards", "label": "Iso Standards"},
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}
+      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:virtual-environment-specification", "label": "Virtual Environment Specification"}
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:digital-publishing", "label": "Digital Publishing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:organisation-for-the-advancement-of-structured-information-standards", "label": "Organisation for the Advancement of Structured Information Standards"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

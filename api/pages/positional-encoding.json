@@ -4,23 +4,36 @@
   "slug": "positional-encoding",
   "public": true,
   "classIri": "urn:ngm:class:positional-encoding",
-  "domain": "spatial-computing",
-  "definition": "A technique for injecting information about the relative or absolute position of tokens in a sequence, essential for transformers since they lack inherent sequential ordering.",
+  "domain": "machine-learning",
+  "definition": "A technique for injecting information about the relative or absolute position of tokens in a sequence into a neural network, essential for transformer models since self-attention mechanisms are inherently permutation-invariant and lack sequential ordering awareness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:sequence-representation",
+      "label": "Sequence Representation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "emerging",
+  "qualityScore": 0.72,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sinusoidal-encoding",
+        "label": "Sinusoidal Encoding"
+      },
+      {
+        "id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:token-embedding",
         "label": "Token Embedding"
+      },
+      {
+        "id": "urn:ngm:class:embedding-dimension",
+        "label": "Embedding Dimension"
       }
     ],
     "enables": [
@@ -31,14 +44,76 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
+      },
+      {
+        "id": "urn:ngm:class:long-context-modeling",
+        "label": "Long-Context Modeling"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sequence-order-representation",
+        "label": "Sequence Order Representation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:relative-positional-encoding",
+        "label": "Relative Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:attention-with-linear-biases",
+        "label": "Attention with Linear Biases"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-encoding",
+        "label": "Spatial Encoding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sinusoidal-functions",
+        "label": "Sinusoidal Functions"
+      },
+      {
+        "id": "urn:ngm:class:learnable-parameters",
+        "label": "Learnable Parameters"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time-Series Forecasting"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -50,7 +125,20 @@
         "label": "Transformer"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:sequence-length-extrapolation",
+        "label": "Sequence Length Extrapolation"
+      }
+    ]
   },
   "wikilinks": [
     {

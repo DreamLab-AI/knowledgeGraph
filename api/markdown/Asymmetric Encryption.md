@@ -74,40 +74,144 @@ public:: true
   "@id": "urn:ngm:class:asymmetric-encryption",
   "@type": "Class",
   "label": "Asymmetric Encryption",
-  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt.",
-  "domain": "blockchain",
+  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt, enabling secure communication, digital signatures, and trustless verification without pre-shared secrets.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-cryptosystem",
+        "label": "RSA Cryptosystem"
+      },
+      {
+        "@id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mathematical-hardness-assumption",
+        "label": "Mathematical Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:private-key-management",
+        "label": "Private Key Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:confidentiality",
+        "label": "Confidentiality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:public-key-cryptography",
+      "label": "Public Key Cryptography"
+    },
+    {
+      "@id": "urn:ngm:class:public-key-encryption",
+      "label": "Public Key Encryption"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

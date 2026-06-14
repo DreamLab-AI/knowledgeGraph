@@ -21,28 +21,59 @@ public:: true
   "@type": "Class",
   "label": "Paxos",
   "definition": "Paxos is a family of fault-tolerant distributed consensus algorithms first formally described by Leslie Lamport in 1989 and published in 1998, designed to allow a cluster of processes to agree on a single value or sequence of values despite the failure of a minority of participants. The algorithm proceeds through prepare and accept phases orchestrated by a proposer, with acceptors voting to commit proposed values and learners observing the final agreement. Multi-Paxos extends the basic protocol to achieve consensus on a log of commands efficiently, forming the algorithmic foundation of replicated state machines. Paxos and its derivatives, including Raft and HotStuff, underpin virtually every strongly consistent distributed database and coordination service in production use today.",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}],
+  "subClassOf": {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
   "relations": {
     "implements": [
       {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
+      {"@id": "urn:ngm:class:two-phase-commit", "label": "Two-Phase Commit"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+    "requires": [
       {"@id": "urn:ngm:class:quorum", "label": "Quorum"},
-      {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"}
+      {"@id": "urn:ngm:class:majority-voting", "label": "Majority Voting"},
+      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:fault-tolerant-system", "label": "Fault Tolerant System"},
+      {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:crash-fault-tolerance", "label": "Crash Fault Tolerance"},
+      {"@id": "urn:ngm:class:network-partition", "label": "Network Partition"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"},
+      {"@id": "urn:ngm:class:zookeeper", "label": "ZooKeeper"},
+      {"@id": "urn:ngm:class:chubby-lock-service", "label": "Chubby Lock Service"},
+      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
+      {"@id": "urn:ngm:class:total-order-broadcast", "label": "Total Order Broadcast"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-consensus", "label": "Blockchain Consensus"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:multi-paxos", "label": "Multi-Paxos"},
+    {"@id": "urn:ngm:class:paxos-protocol", "label": "Paxos Protocol"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

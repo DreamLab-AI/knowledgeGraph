@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:clock-synchronisation",
         "label": "Clock Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
       }
     ],
     "requires": [
@@ -56,17 +60,88 @@
       {
         "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-system",
+        "label": "Centralised System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-domain",
+        "label": "Infrastructure Domain"
+      },
+      {
+        "id": "urn:ngm:class:data-domain",
+        "label": "Data Domain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ]
   },
   "wikilinks": [
     {

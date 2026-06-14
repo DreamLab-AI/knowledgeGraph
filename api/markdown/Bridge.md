@@ -57,7 +57,7 @@ public:: true
   "definition": "A protocol that transfers assets or messages between separate ledgers by locking, burning, or attesting value on one chain and reproducing a representation on another.",
   "domain": "blockchain",
   "maturity": "established",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:blockchain-interoperability",
@@ -69,20 +69,132 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:token-wrapping",
+        "label": "Token Wrapping"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lock-and-mint-mechanism",
+        "label": "Lock And Mint Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:burn-and-release-mechanism",
+        "label": "Burn And Release Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:multi-signature-scheme",
+        "label": "Multi-Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer 2 Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bridge-exploit",
+        "label": "Bridge Exploit"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-bridge",
+        "label": "Trusted Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-bridge",
+        "label": "Trustless Bridge"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

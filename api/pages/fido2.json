@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:ctap2",
+        "label": "CTAP2"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authenticator-device",
+        "label": "Authenticator Device"
+      },
+      {
+        "id": "urn:ngm:class:relying-party",
+        "label": "Relying Party"
+      },
+      {
+        "id": "urn:ngm:class:user-verification",
+        "label": "User Verification"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:passwordless-authentication",
@@ -30,15 +52,46 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:phishing-resistant-authentication",
+        "label": "Phishing-Resistant Authentication"
+      },
+      {
+        "id": "urn:ngm:class:passkey",
+        "label": "Passkey"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:origin-bound-credential",
+        "label": "Origin-Bound Credential"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      },
+      {
+        "id": "urn:ngm:class:otp-authentication",
+        "label": "OTP Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -48,10 +101,27 @@
       {
         "id": "urn:ngm:class:web-standard",
         "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -65,6 +135,10 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
       }
     ]
   },

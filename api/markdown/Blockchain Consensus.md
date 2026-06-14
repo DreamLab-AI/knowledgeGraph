@@ -24,26 +24,66 @@ alias:: BlockchainConsensus
   "definition": "Blockchain Consensus refers to the family of distributed agreement protocols by which independent, potentially adversarial nodes in a blockchain network reach agreement on a single canonical version of the transaction ledger, including the ordering, validity, and finality of all blocks. These protocols must tolerate Byzantine faults — nodes that may behave maliciously or arbitrarily — and operate across open, permissionless networks without a trusted coordinator. The choice of consensus mechanism fundamentally shapes a blockchain's security model, throughput, energy consumption, and degree of decentralisation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
   "relations": {
-    "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
-    ],
     "hasPart": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double-Spend Prevention"},
+      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"},
+      {"@id": "urn:ngm:class:raft-consensus", "label": "Raft Consensus"},
+      {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"}
+      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"},
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
+      {"@id": "urn:ngm:class:slashing", "label": "Slashing"},
+      {"@id": "urn:ngm:class:block-production", "label": "Block Production"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:distributed-consensus-protocol", "label": "Distributed Consensus Protocol"},
+    {"@id": "urn:ngm:class:blockchain-agreement-protocol", "label": "Blockchain Agreement Protocol"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

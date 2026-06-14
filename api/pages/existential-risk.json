@@ -13,26 +13,125 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.85,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:existential-ai-risk",
+        "label": "Existential AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-risk",
+        "label": "Nuclear Risk"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-risk",
+        "label": "Pandemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:engineered-pathogen-risk",
+        "label": "Engineered Pathogen Risk"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-estimation",
+        "label": "Probability Estimation"
+      },
+      {
+        "id": "urn:ngm:class:moral-philosophy",
+        "label": "Moral Philosophy"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:catastrophic-risk-reduction",
         "label": "Catastrophic Risk Reduction"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-policy",
+        "label": "AI Safety Policy"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-preparedness",
+        "label": "Pandemic Preparedness"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:longtermism",
+        "label": "Longtermism"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-research",
+        "label": "Existential Risk Research"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recoverable-catastrophe",
+        "label": "Recoverable Catastrophe"
+      },
+      {
+        "id": "urn:ngm:class:local-risk",
+        "label": "Local Risk"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:future-of-humanity-institute",
+        "label": "Future of Humanity Institute"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:biosafety-regulation",
+        "label": "Biosafety Regulation"
+      },
+      {
+        "id": "urn:ngm:class:international-coordination",
+        "label": "International Coordination"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
+      },
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      }
+    ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:longtermism",
+        "label": "Longtermism"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-research",
+        "label": "Existential Risk Research"
+      },
       {
         "id": "urn:ngm:class:biosecurity",
         "label": "Biosecurity"
@@ -40,6 +139,10 @@
       {
         "id": "urn:ngm:class:future-of-humanity-institute",
         "label": "Future of Humanity Institute"
+      },
+      {
+        "id": "urn:ngm:class:centre-for-the-study-of-existential-risk",
+        "label": "Centre for the Study of Existential Risk"
       }
     ]
   },

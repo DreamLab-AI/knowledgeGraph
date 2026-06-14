@@ -52,33 +52,149 @@ alias:: EnterpriseArchitecture
   "@type": "Class",
   "label": "Enterprise Architecture",
   "definition": "A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:system-architecture",
+    "label": "System Architecture"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:system-architecture",
-        "label": "System Architecture"
+        "@id": "urn:ngm:class:business-architecture",
+        "label": "Business Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:application-architecture",
+        "label": "Application Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:technology-architecture",
+        "label": "Technology Architecture"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:it-strategy",
+        "label": "IT Strategy"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:enterprise-metaverse",
         "label": "Enterprise Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      },
+      {
+        "@id": "urn:ngm:class:zachman-framework",
+        "label": "Zachman Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:capability-model",
+        "label": "Capability Model"
+      },
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-42010",
+        "label": "ISO/IEC 42010"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:solution-architecture",
+        "label": "Solution Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ea-framework",
+      "label": "EA Framework"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

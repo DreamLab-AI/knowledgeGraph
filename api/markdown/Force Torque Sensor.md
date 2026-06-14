@@ -106,17 +106,31 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
   "definition": "Force-Torque Sensor - A multi-axis transducer mounted on the Robot Wrist that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling Force Feedback, Contact Detection, and Compliance Control in precision manipulation.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sensor",
+    "label": "Sensor"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:strain-gauge",
+        "label": "Strain Gauge"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "@id": "urn:ngm:class:wrist-assembly",
+        "label": "Wrist Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:calibration",
@@ -129,6 +143,10 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
       {
         "@id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog to Digital Converter"
       }
     ],
     "enables": [
@@ -143,20 +161,93 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
       {
         "@id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:haptic-feedback-system",
-        "label": "Haptic Feedback System"
       },
       {
-        "@id": "urn:ngm:class:wrist-assembly",
-        "label": "Wrist Assembly"
+        "@id": "urn:ngm:class:contact-detection",
+        "label": "Contact Detection"
+      },
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
       }
-    ]
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:robot-wrist",
+        "label": "Robot Wrist"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control-system",
+        "label": "Real-Time Control System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethercat",
+        "label": "EtherCAT"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": []
   },
-  "quality": 0.63,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:six-axis-force-torque-sensor",
+      "label": "Six-Axis Force Torque Sensor"
+    },
+    {
+      "@id": "urn:ngm:class:ft-sensor",
+      "label": "F/T Sensor"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -277,9 +368,16 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Robotics]], [[Sensor]]
-  - is-part-of:: [[Wrist Assembly]], [[Haptic Feedback System]]
-  - requires:: [[Signal Amplification]], [[Calibration]], [[Data Processing]]
-  - enables:: [[Soft Robotic Grasping]], [[Precision Assembly]], [[Impedance Control]]
+  - is-part-of:: [[Wrist Assembly]], [[Haptic Feedback System]], [[Robotic Arm]]
+  - requires:: [[Signal Amplification]], [[Calibration]], [[Data Processing]], [[Analog to Digital Converter]]
+  - enables:: [[Soft Robotic Grasping]], [[Precision Assembly]], [[Impedance Control]], [[Contact Detection]], [[Force Feedback]], [[Compliance Control]]
+  - depends-on:: [[Robot Wrist]], [[Real-Time Control System]]
+  - uses:: [[EtherCAT]], [[Sensor Fusion]]
+  - supports:: [[Human-Robot Interaction]], [[Collaborative Robotics]], [[Surgical Robotics]]
+  - standardized-by:: [[ISO 8373]]
+  - contrasts-with:: [[Tactile Sensor]], [[Proximity Sensor]]
+  - bridges-to:: [[Machine Learning]]
+  - related-to:: [[Inertial Measurement Unit]]
 
 - ### Content
   - ### Original Content

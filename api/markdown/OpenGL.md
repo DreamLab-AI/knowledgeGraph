@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:open-gl",
   "@type": "Class",
   "label": "OpenGL",
-  "definition": "OpenGL is a cross-platform graphics API for rendering 2D and 3D vector graphics, providing a standardised interface to the rendering capabilities of graphics hardware.",
+  "definition": "OpenGL is a cross-platform graphics API for rendering 2D and 3D vector graphics, providing a standardised interface to the rendering capabilities of graphics hardware through a rasterisation pipeline with programmable vertex and fragment shader stages.",
   "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -77,6 +77,14 @@ public:: true
       {
         "@id": "urn:ngm:class:shader-language",
         "label": "Shader Language"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-driver",
+        "label": "Graphics Driver"
+      },
+      {
+        "@id": "urn:ngm:class:opengl-context",
+        "label": "OpenGL Context"
       }
     ],
     "enables": [
@@ -87,14 +95,114 @@ public:: true
       {
         "@id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-rendering",
+        "label": "Augmented Reality Rendering"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:fragment-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "@id": "urn:ngm:class:framebuffer",
+        "label": "Framebuffer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rasterisation-pipeline",
+        "label": "Rasterisation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:opengl-specification",
+        "label": "OpenGL Specification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      },
+      {
+        "@id": "urn:ngm:class:metal",
+        "label": "Metal"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-platform-development",
+        "label": "Cross-Platform Development"
+      },
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:opengles",
+        "label": "OpenGL ES"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:open-graphics-library",
+      "label": "Open Graphics Library"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

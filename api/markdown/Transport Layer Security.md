@@ -58,25 +58,31 @@ public:: true
   "@id": "urn:ngm:class:transport-layer-security",
   "@type": "Class",
   "label": "Transport Layer Security",
-  "definition": "A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.",
+  "definition": "A cryptographic protocol standardised by the IETF that provides mutual authentication, confidentiality and data integrity for communications over a computer network, succeeding the deprecated Secure Sockets Layer and currently at version 1.3 (RFC 8446).",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-protocol",
+    "label": "Cryptographic Protocol"
+  },
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "@id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
       }
     ],
     "enables": [
@@ -87,14 +93,122 @@ public:: true
       {
         "@id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      },
+      {
+        "@id": "urn:ngm:class:cipher-suite",
+        "label": "Cipher Suite"
+      },
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8446",
+        "label": "RFC 8446"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:secure-sockets-layer",
+        "label": "Secure Sockets Layer"
+      },
+      {
+        "@id": "urn:ngm:class:datagram-transport-layer-security",
+        "label": "Datagram Transport Layer Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
+      },
+      {
+        "@id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:web3-security",
+        "label": "Web3 Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tls",
+      "label": "TLS"
+    },
+    {
+      "@id": "urn:ngm:class:ssl-tls",
+      "label": "SSL/TLS"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

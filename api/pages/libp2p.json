@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gossipsub",
+        "label": "GossipSub"
+      },
+      {
+        "id": "urn:ngm:class:noise-protocol",
+        "label": "Noise Protocol"
+      },
+      {
+        "id": "urn:ngm:class:yamux",
+        "label": "Yamux"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-protocol",
+        "label": "Transport Layer Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-storage",
@@ -32,28 +54,7 @@
         "label": "Decentralized Application"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:congestion-control",
-        "label": "Congestion Control"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
+    "dependsOn": [
       {
         "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia DHT"
@@ -63,8 +64,83 @@
         "label": "Distributed Hash Table"
       },
       {
+        "id": "urn:ngm:class:quic-protocol",
+        "label": "QUIC Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:stream-multiplexing",
+        "label": "Stream Multiplexing"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-messaging",
+        "label": "Publish-Subscribe Messaging"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bittorrent-protocol",
+        "label": "BitTorrent Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-communication",
+        "label": "AI Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
       }
     ]
   },

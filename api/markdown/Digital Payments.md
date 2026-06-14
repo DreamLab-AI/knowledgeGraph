@@ -74,20 +74,34 @@ public:: true
   "@id": "urn:ngm:class:digital-payments",
   "@type": "Class",
   "label": "Digital Payments",
-  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
-  "domain": "spatial-computing",
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for goods, services, and assets within both traditional e-commerce systems and emerging metaverse economies.",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:financial-transactions",
-      "label": "Financial Transactions"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-transactions",
+    "label": "Financial Transactions"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mobile-payment",
+        "label": "Mobile Payment"
+      },
+      {
+        "@id": "urn:ngm:class:contactless-payment",
+        "label": "Contactless Payment"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-payment",
+        "label": "Cryptocurrency Payment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:payment-processor",
@@ -100,6 +114,14 @@ public:: true
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ],
     "enables": [
@@ -114,14 +136,86 @@ public:: true
       {
         "@id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
+      },
+      {
+        "@id": "urn:ngm:class:international-remittance",
+        "label": "International Remittance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:near-field-communication",
+        "label": "Near-Field Communication"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cash-transaction",
+        "label": "Cash Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:electronic-payments",
+      "label": "Electronic Payments"
+    },
+    {
+      "@id": "urn:ngm:class:online-payments",
+      "label": "Online Payments"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

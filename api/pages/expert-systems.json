@@ -5,38 +5,144 @@
   "public": true,
   "classIri": "urn:ngm:class:expert-systems",
   "domain": "artificial-intelligence",
-  "definition": "Expert Systems is a artificial intelligence concept and a type of Knowledge Representation. that enables Decision Support.",
+  "definition": "Expert Systems are rule-based AI programs that encode domain-specific knowledge in a knowledge base and apply logical inference to emulate the decision-making capability of human experts, enabling decision support, diagnosis, and configuration in specialised domains.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    },
     {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.65,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:explanation-facility",
+        "label": "Explanation Facility"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-acquisition-module",
+        "label": "Knowledge Acquisition Module"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:domain-knowledge",
+        "label": "Domain Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:automated-diagnosis",
+        "label": "Automated Diagnosis"
+      },
+      {
+        "id": "urn:ngm:class:fault-detection",
+        "label": "Fault Detection"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:forward-chaining",
+        "label": "Forward Chaining"
+      },
+      {
+        "id": "urn:ngm:class:backward-chaining",
+        "label": "Backward Chaining"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [
     {

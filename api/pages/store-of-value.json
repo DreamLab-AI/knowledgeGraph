@@ -4,26 +4,105 @@
   "slug": "store-of-value",
   "public": true,
   "classIri": "urn:ngm:class:store-of-value",
-  "domain": "blockchain",
+  "domain": "finance",
   "definition": "A store of value is any asset that retains purchasing power over time, enabling the owner to defer consumption and retrieve real wealth in the future with minimal loss to inflation, confiscation, or degradation. Classical monetary theory identifies store-of-value function alongside medium-of-exchange and unit-of-account as the three primary functions of money, though assets can serve one function without the others.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
-      "label": "Bitcoin as Money"
+      "id": "urn:ngm:class:monetary-function",
+      "label": "Monetary Function"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.85,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:durability",
+        "label": "Durability"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:intertemporal-exchange",
+        "label": "Intertemporal Exchange"
+      },
+      {
+        "id": "urn:ngm:class:capital-preservation",
+        "label": "Capital Preservation"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-hedging",
+        "label": "Portfolio Hedging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:market-confidence",
+        "label": "Market Confidence"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:medium-of-exchange",
+        "label": "Medium of Exchange"
+      },
+      {
+        "id": "urn:ngm:class:unit-of-account",
+        "label": "Unit of Account"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation-of-assets",
+        "label": "Tokenisation of Assets"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation-linked-bonds",
+        "label": "Inflation-Linked Bonds"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:austrian-hard-money-theory",
@@ -35,7 +114,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:functions-of-money",
+        "label": "Functions of Money"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:hard-money",
@@ -48,6 +132,18 @@
       {
         "id": "urn:ngm:class:gold-standard",
         "label": "Gold Standard"
+      },
+      {
+        "id": "urn:ngm:class:currency-debasement",
+        "label": "Currency Debasement"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:purchasing-power",
+        "label": "Purchasing Power"
       }
     ]
   },

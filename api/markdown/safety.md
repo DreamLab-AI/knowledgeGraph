@@ -6,6 +6,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
   - requires:: [[Risk Assessment (AI-0079)]], [[Hazard Analysis]]
+  - enables:: [[Trust and Safety]], [[Accountability]], [[AI Trustworthiness]]
+  - dependsOn:: [[Risk Management]], [[Robustness]], [[Reliability]]
+  - standardizedBy:: [[EU AI Act]], [[NIST AI Risk Management Framework]]
+  - bridgesTo:: [[Large Language Models]], [[Infrastructure]], [[Politics, Law, Privacy]]
+  - contrastsWith:: [[Security]]
 - ### Content
   - The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
 		- ### Effective Altruists (EA) / AI Safety Advocates

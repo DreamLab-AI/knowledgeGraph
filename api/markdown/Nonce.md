@@ -67,39 +67,75 @@ public:: true
   "@type": "Class",
   "label": "Nonce",
   "definition": "A Nonce (Number used ONCE) is an arbitrary value included in a cryptographic computation to prevent replay attacks or to satisfy a target condition. In proof-of-work blockchains, miners increment a 32-bit nonce in the block header repeatedly until the SHA-256 hash of the header falls below the current difficulty target, thereby expending computational work proportional to the difficulty. In communications protocols, nonces ensure that each session or message produces a unique ciphertext, preventing an attacker from replaying a previously captured message.",
-  "domain": "blockchain",
+  "domain": "security",
   "maturity": "established",
-  "qualityScore": 0.8,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "qualityScore": 0.70,
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:random-number-generator", "label": "Random Number Generator"},
+      {"@id": "urn:ngm:class:entropy-source", "label": "Entropy Source"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:replay-attack-prevention", "label": "Replay Attack Prevention"},
+      {"@id": "urn:ngm:class:challenge-response-authentication", "label": "Challenge-Response Authentication"},
+      {"@id": "urn:ngm:class:authenticated-encryption", "label": "Authenticated Encryption"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:extranonce", "label": "ExtraNonce"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:counter-mode", "label": "Counter Mode"},
+      {"@id": "urn:ngm:class:aes-gcm", "label": "AES-GCM"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:difficulty-target", "label": "Difficulty Target"},
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:salt", "label": "Salt"},
+      {"@id": "urn:ngm:class:initialization-vector", "label": "Initialization Vector"},
+      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:salt", "label": "Salt"},
       {"@id": "urn:ngm:class:mining", "label": "Mining"},
       {"@id": "urn:ngm:class:block", "label": "Block"},
       {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:session-token", "label": "Session Token"},
+      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    "implements": [
+      {"@id": "urn:ngm:class:freshness-guarantee", "label": "Freshness Guarantee"},
+      {"@id": "urn:ngm:class:uniqueness-constraint", "label": "Uniqueness Constraint"}
     ],
-    "partOf": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:tls-handshake", "label": "TLS Handshake"},
+      {"@id": "urn:ngm:class:oauth-state-parameter", "label": "OAuth State Parameter"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:cryptographic-nonce", "label": "Cryptographic Nonce"},
+    {"@id": "urn:ngm:class:number-used-once", "label": "Number Used Once"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

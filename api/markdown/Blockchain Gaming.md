@@ -43,21 +43,43 @@ public:: true
   "@type": "Class",
   "label": "Blockchain Gaming",
   "definition": "A gaming paradigm in which in-game assets, economies, and ownership records are managed on distributed ledgers, enabling players to hold verifiable ownership of digital items as NFTs, participate in play-to-earn economies, and trade assets across compatible platforms without relying on centralised game servers for provenance or scarcity guarantees.",
-  "domain": "infrastructure",
+  "domain": "blockchain",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:decentralised-application",
+    "label": "Decentralised Application"
+  },
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
+      },
+      {
+        "@id": "urn:ngm:class:in-game-economy",
+        "label": "In-Game Economy"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-marketplace",
+        "label": "Game Asset Marketplace"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:virtual-economy",
@@ -70,6 +92,10 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-currency",
         "label": "Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:cross-game-asset-portability",
+        "label": "Cross-Game Asset Portability"
       }
     ],
     "dependsOn": [
@@ -80,6 +106,10 @@ public:: true
       {
         "@id": "urn:ngm:class:nft-marketplace",
         "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
       }
     ],
     "uses": [
@@ -94,15 +124,65 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:game-token",
+        "label": "Game Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-gaming",
+        "label": "Traditional Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-game-server",
+        "label": "Centralised Game Server"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
-  }
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:web3-gaming",
+      "label": "Web3 Gaming"
+    },
+    {
+      "@id": "urn:ngm:class:nft-gaming",
+      "label": "NFT Gaming"
+    }
+  ]
 }
 ```
 

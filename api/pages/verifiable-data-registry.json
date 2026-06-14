@@ -8,20 +8,34 @@
   "definition": "A system that mediates the creation, verification, and resolution of decentralized identifiers and verifiable credentials, typically implemented as a blockchain, distributed ledger, or decentralized network for storing public key and revocation information.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    },
-    {
       "id": "urn:ngm:class:data-registry",
       "label": "Data Registry"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:revocation-list",
+        "label": "Revocation List"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -30,12 +44,56 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:credential-revocation",
+        "label": "Credential Revocation"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:w3c-did-specification",
+        "label": "W3C DID Specification"
+      },
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralized Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-identity",
+        "label": "Metaverse Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:distributed-ledger",
@@ -46,19 +104,46 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-ecosystem",
+        "label": "Decentralized Identity Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ]
   },
   "wikilinks": [
     {

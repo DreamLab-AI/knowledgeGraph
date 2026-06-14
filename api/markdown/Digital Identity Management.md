@@ -94,39 +94,47 @@ public:: true
   "@id": "urn:ngm:class:digital-identity-management",
   "@type": "Class",
   "label": "Digital Identity Management",
-  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform auth...",
-  "domain": "infrastructure",
+  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:identity-systems",
-      "label": "Identity Systems"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:identity-systems",
+    "label": "Identity Systems"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
       {
         "@id": "urn:ngm:class:credential-storage",
         "label": "Credential Storage"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
       },
       {
         "@id": "urn:ngm:class:identity-provider",
         "label": "Identity Providers"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-keys",
-        "label": "Cryptographic Keys"
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:privacy-controls",
-        "label": "Privacy Control"
-      },
       {
         "@id": "urn:ngm:class:user-authentication",
         "label": "User Authentication"
@@ -134,14 +142,94 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Control"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core 1.0"
+      },
+      {
+        "@id": "urn:ngm:class:eidas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "@id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -54,17 +54,35 @@ public:: true
   "@id": "urn:ngm:class:computational-complexity-theory",
   "@type": "Class",
   "label": "Computational Complexity Theory",
-  "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems into complexity classes.",
-  "domain": "machine-learning",
+  "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, and EXPTIME.",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:theoretical-computer-science",
+      "label": "Theoretical Computer Science"
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:complexity-class",
+        "label": "Complexity Class"
+      },
+      {
+        "@id": "urn:ngm:class:np-completeness",
+        "label": "NP-Completeness"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-hierarchy",
+        "label": "Polynomial Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:reduction",
+        "label": "Reduction"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:algorithm",
@@ -73,20 +91,104 @@ public:: true
       {
         "@id": "urn:ngm:class:set-theory",
         "label": "Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "@id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm-design",
+        "label": "Algorithm Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hardness-assumption",
+        "label": "Cryptographic Hardness Assumption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-reasoning",
+        "label": "Ontology Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-complexity",
+        "label": "Circuit Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:randomized-algorithms",
+        "label": "Randomized Algorithms"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-theory",
+        "label": "Machine Learning Theory"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:complexity-theory",
+      "label": "Complexity Theory"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

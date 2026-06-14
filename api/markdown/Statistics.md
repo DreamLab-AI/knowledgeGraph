@@ -50,21 +50,49 @@ public:: true
   "@id": "urn:ngm:class:statistics",
   "@type": "Class",
   "label": "Statistics",
-  "definition": "The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty.",
-  "domain": "machine-learning",
+  "definition": "The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty, encompassing both frequentist and Bayesian frameworks for inference, estimation, and hypothesis testing.",
+  "domain": "data",
   "maturity": "mature",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:probability-theory",
-      "label": "Probability Theory"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:probability-theory",
+    "label": "Probability Theory"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "@id": "urn:ngm:class:estimation-theory",
+        "label": "Estimation Theory"
+      },
+      {
+        "@id": "urn:ngm:class:regression-analysis",
+        "label": "Regression Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:descriptive-statistics",
+        "label": "Descriptive Statistics"
       }
     ],
     "enables": [
@@ -73,16 +101,104 @@ public:: true
         "label": "Statistical Learning Theory"
       },
       {
-        "@id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:frequentist-inference",
+        "label": "Frequentist Inference"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:confidence-intervals",
+        "label": "Confidence Intervals"
+      },
+      {
+        "@id": "urn:ngm:class:p-values",
+        "label": "P-Values"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:empirical-science",
+        "label": "Empirical Science"
+      },
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deterministic-modelling",
+        "label": "Deterministic Modelling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-modelling",
+        "label": "Financial Modelling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:mathematical-statistics",
+      "label": "Mathematical Statistics"
+    },
+    {
+      "@id": "urn:ngm:class:statistical-science",
+      "label": "Statistical Science"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

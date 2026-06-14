@@ -102,9 +102,13 @@ public:: true
   "@id": "urn:ngm:class:accessibility-standard",
   "@type": "Class",
   "label": "Accessibility Standard",
-  "definition": "Specification ensuring equitable access to virtual content and experiences for users with diverse abilities and disabilities.",
-  "domain": "spatial-computing",
+  "definition": "Normative specification ensuring equitable access to digital content, services, and experiences for users with diverse abilities and disabilities, covering visual, auditory, motor, cognitive, and neurological access paths with testable conformance criteria.",
+  "domain": "standards",
   "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-governance-and-safety",
+    "label": "Governance and Safety"
+  },
   "relations": {
     "hasPart": [
       {
@@ -122,6 +126,20 @@ public:: true
       {
         "@id": "urn:ngm:class:xr-accessibility-guideline",
         "label": "XR Accessibility Guideline"
+      },
+      {
+        "@id": "urn:ngm:class:conformance-level",
+        "label": "Conformance Level"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-framework",
+        "label": "Regulatory Compliance Framework"
       }
     ],
     "requires": [
@@ -132,6 +150,10 @@ public:: true
       {
         "@id": "urn:ngm:class:user-interface-standard",
         "label": "User Interface Standard"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
       }
     ],
     "enables": [
@@ -146,39 +168,89 @@ public:: true
       {
         "@id": "urn:ngm:class:inclusive-xr-experience",
         "label": "Inclusive XR Experience"
+      },
+      {
+        "@id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "@id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "@id": "urn:ngm:class:section-508",
+        "label": "Section 508"
       }
     ],
-    "partOf": [
+    "standardizedBy": [
       {
-        "@id": "urn:ngm:class:governance-framework",
-        "label": "Governance Framework"
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:disability-accommodation",
+        "label": "Disability Accommodation"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:voluntary-guideline",
+        "label": "Voluntary Guideline"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-governance-domain",
+        "label": "TrustAndGovernanceDomain"
       }
     ]
-  },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:accessibility-standards",
       "label": "Accessibility Standards"
+    },
+    {
+      "@id": "urn:ngm:class:a11y-standard",
+      "label": "A11y Standard"
     }
   ],
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ]
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

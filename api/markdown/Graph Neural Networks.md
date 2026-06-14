@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:graph-neural-networks",
   "@type": "Class",
   "label": "Graph Neural Networks",
-  "definition": "A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by exchanging information along edges.",
+  "definition": "A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by iteratively exchanging information along edges through message-passing schemes.",
   "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:neural-network",
-      "label": "Neural Network"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:neural-network",
+    "label": "Neural Network"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,148 @@ public:: true
       {
         "@id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:adjacency-matrix",
+        "label": "Adjacency Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:node-feature-vectors",
+        "label": "Node Feature Vectors"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      },
+      {
+        "@id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:graph-classification",
+        "label": "Graph Classification"
+      },
+      {
+        "@id": "urn:ngm:class:molecular-property-prediction",
+        "label": "Molecular Property Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-sage",
+        "label": "GraphSAGE"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-deep-learning",
+        "label": "Geometric Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aggregation-function",
+        "label": "Aggregation Function"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-pooling",
+        "label": "Graph Pooling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graph-structured-data",
+        "label": "Graph-Structured Data"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-representations",
+        "label": "Embedding Representations"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:over-smoothing",
+        "label": "Over-Smoothing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gnn",
+      "label": "GNN"
+    },
+    {
+      "@id": "urn:ngm:class:graph-network",
+      "label": "Graph Network"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

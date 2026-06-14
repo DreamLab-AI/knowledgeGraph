@@ -59,15 +59,13 @@ public:: true
   "@type": "Class",
   "label": "Snapshot",
   "definition": "Snapshot is an off-chain governance platform that lets token holders and decentralised autonomous organisations vote on proposals without paying on-chain transaction fees. Votes are signed cryptographically with a wallet and weighted according to token holdings recorded at a chosen block height, then aggregated and stored on the InterPlanetary File System. Because voting is gasless and non-binding at the protocol level, results are typically executed separately by multisignature wallets or on-chain modules.",
-  "domain": "infrastructure",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:decentralised-finance-domain",
+    "label": "Decentralised Finance Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -77,20 +75,126 @@ public:: true
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:multisignature-wallet",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-block",
+        "label": "Blockchain Block"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:voting-strategy",
+        "label": "Voting Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-proposal",
+        "label": "Governance Proposal"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-delegation",
+        "label": "Token Delegation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governance",
+        "label": "Compound Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aragon",
+        "label": "Aragon"
+      },
+      {
+        "@id": "urn:ngm:class:tally",
+        "label": "Tally"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:off-chain-governance-platform",
+      "label": "Off-Chain Governance Platform"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -10,14 +10,10 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -27,20 +23,63 @@
         "label": "Vertex Shader"
       },
       {
-        "id": "urn:ngm:class:rendering-pipeline",
-        "label": "Rendering Pipeline"
+        "id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "label": "Screen Space Ambient Occlusion"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:phong-shading",
+        "label": "Phong Shading"
+      },
+      {
+        "id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-on-gpu",
+        "label": "Machine Learning on GPU"
+      },
+      {
+        "id": "urn:ngm:class:xr-rendering",
+        "label": "XR Rendering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:texture-mapping",
@@ -49,19 +88,40 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:compute-shader",
-        "label": "Compute Shader"
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:framebuffer",
+        "label": "Framebuffer"
+      },
+      {
+        "id": "urn:ngm:class:shadow-mapping",
+        "label": "Shadow Mapping"
       }
     ]
   },

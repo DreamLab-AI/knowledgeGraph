@@ -50,17 +50,39 @@ public:: true
   "@id": "urn:ngm:class:edge-inference",
   "@type": "Class",
   "label": "Edge Inference",
-  "definition": "The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated.",
+  "definition": "The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated, enabling low-latency, privacy-preserving and bandwidth-efficient AI applications.",
   "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:edge-ai",
-      "label": "Edge AI"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:edge-ai",
+    "label": "Edge AI"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-pruning",
+        "label": "Model Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-runtime",
+        "label": "On-Device Runtime"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:inference-engine",
@@ -69,20 +91,110 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-compression",
+        "label": "Neural Network Compression"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:edge-ai",
-        "label": "Edge AI"
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-privacy",
+        "label": "On-Device Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:offline-ai",
+        "label": "Offline AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "@id": "urn:ngm:class:pytorch-mobile",
+        "label": "PyTorch Mobile"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cloud-inference",
+        "label": "Cloud Inference"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-ai",
+        "label": "Centralised AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency-optimisation",
+        "label": "Latency Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:on-device-inference",
+      "label": "On-Device Inference"
+    },
+    {
+      "@id": "urn:ngm:class:local-inference",
+      "label": "Local Inference"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

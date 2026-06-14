@@ -49,18 +49,26 @@ public:: true
   "definition": "The process of computing a time-parameterised path for a robot or autonomous system that satisfies kinematic constraints, avoids obstacles, and achieves a target configuration smoothly and efficiently. Trajectory planning bridges high-level path planning with low-level motion control, incorporating velocity and acceleration profiles, inverse kinematics, and real-time replanning for dynamic environments.",
   "domain": "robotics",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-navigation-and-planning",
+    "label": "Navigation and Planning"
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:motion-trajectory-generation",
+      "label": "Motion Trajectory Generation"
+    },
+    {
+      "@id": "urn:ngm:class:path-parameterisation",
+      "label": "Path Parameterisation"
+    }
+  ],
   "relations": {
     "requires": [
       {
@@ -70,6 +78,14 @@ public:: true
       {
         "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:dynamics-modelling",
+        "label": "Dynamics Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
       }
     ],
     "enables": [
@@ -80,12 +96,28 @@ public:: true
       {
         "@id": "urn:ngm:class:collision-avoidance",
         "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
       }
     ],
     "uses": [
@@ -96,6 +128,84 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithms",
+        "label": "Optimisation Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:spline-interpolation",
+        "label": "Spline Interpolation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:velocity-profiling",
+        "label": "Velocity Profiling"
+      },
+      {
+        "@id": "urn:ngm:class:acceleration-planning",
+        "label": "Acceleration Planning"
+      },
+      {
+        "@id": "urn:ngm:class:replanning",
+        "label": "Replanning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-control-architecture",
+        "label": "Robot Control Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
       }
     ]
   }

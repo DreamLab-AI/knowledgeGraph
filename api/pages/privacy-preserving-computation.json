@@ -13,18 +13,106 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.73,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-collaboration",
+        "label": "Data Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:plaintext-computation",
+        "label": "Plaintext Computation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-data-processing",
+        "label": "Centralised Data Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [

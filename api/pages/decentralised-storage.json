@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralised-storage",
   "domain": "distributed-systems",
-  "definition": "Storage systems that distribute data across many independent nodes rather than a single central provider, often using content addressing and cryptographic verification to ensure integrity and availability.",
+  "definition": "Storage systems that distribute data across many independent nodes rather than a single central provider, using content addressing and cryptographic verification to ensure data integrity, availability, and censorship resistance without a trusted intermediary.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-systems",
@@ -13,31 +13,132 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:node-incentivisation",
+        "label": "Node Incentivisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:provenance",
         "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:persistent-data-availability",
+        "label": "Persistent Data Availability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web3-infrastructure",
+        "label": "Web3 Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ]
   },
   "wikilinks": [
     {

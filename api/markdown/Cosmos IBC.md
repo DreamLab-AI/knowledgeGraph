@@ -102,19 +102,13 @@ public:: true
   "@id": "urn:ngm:class:cosmos-ibc",
   "@type": "Class",
   "label": "Cosmos IBC",
-  "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
+  "definition": "Inter-Blockchain Communication protocol that enables sovereign blockchain networks to exchange data and tokens trustlessly, using light clients and Merkle proofs to verify state across chains without centralised intermediaries, providing the foundational interoperability layer of the Cosmos ecosystem.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:cross-chain-communication",
-      "label": "Cross-Chain Communication"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cross-chain-communication",
+    "label": "Cross-Chain Communication"
+  },
   "relations": {
     "hasPart": [
       {
@@ -128,6 +122,20 @@ public:: true
       {
         "@id": "urn:ngm:class:packet-system",
         "label": "Packet System"
+      },
+      {
+        "@id": "urn:ngm:class:ics-20-fungible-token-transfer",
+        "label": "ICS-20 Fungible Token Transfer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cosmos-ecosystem",
+        "label": "Cosmos Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-network",
+        "label": "Cosmos Network"
       }
     ],
     "requires": [
@@ -142,13 +150,13 @@ public:: true
       {
         "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cosmos-ecosystem",
-        "label": "Cosmos Ecosystem"
-      },
       {
         "@id": "urn:ngm:class:cross-chain-contracts",
         "label": "Cross-Chain Contracts"
@@ -156,20 +164,94 @@ public:: true
       {
         "@id": "urn:ngm:class:inter-chain-value-transfer",
         "label": "Inter-Chain Value Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:interchain-accounts",
+        "label": "Interchain Accounts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "@id": "urn:ngm:class:relayer-network",
+        "label": "Relayer Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:layer-2-interop",
+        "label": "Layer 2 Interop"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:polkadot-xcm",
+        "label": "Polkadot XCM"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-bridge",
+        "label": "Blockchain Bridge"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocol"
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-sovereignty",
+        "label": "Blockchain Sovereignty"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ibc-protocol",
+      "label": "IBC Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:inter-blockchain-communication",
+      "label": "Inter-Blockchain Communication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

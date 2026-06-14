@@ -4,19 +4,28 @@
   "slug": "resilience",
   "public": true,
   "classIri": "urn:ngm:class:resilience",
-  "domain": "blockchain",
+  "domain": "infrastructure",
   "definition": "The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "id": "urn:ngm:class:system-property",
+      "label": "System Property"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -25,18 +34,61 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:fragility",
+        "label": "Fragility"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -46,6 +98,10 @@
       {
         "id": "urn:ngm:class:data-security",
         "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "standardizedBy": [],
@@ -58,6 +114,14 @@
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:security-by-design",
+        "label": "Security by Design"
       }
     ]
   },

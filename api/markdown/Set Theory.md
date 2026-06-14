@@ -54,17 +54,45 @@ public:: true
   "@id": "urn:ngm:class:set-theory",
   "@type": "Class",
   "label": "Set Theory",
-  "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.",
-  "domain": "machine-learning",
+  "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics including logic, topology, algebra, and knowledge representation.",
+  "domain": "artificial-intelligence",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:zermelo-fraenkel-axioms",
+        "label": "Zermelo-Fraenkel Axioms"
+      },
+      {
+        "@id": "urn:ngm:class:axiom-of-choice",
+        "label": "Axiom of Choice"
+      },
+      {
+        "@id": "urn:ngm:class:cardinal-numbers",
+        "label": "Cardinal Numbers"
+      },
+      {
+        "@id": "urn:ngm:class:ordinal-numbers",
+        "label": "Ordinal Numbers"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:foundations-of-mathematics",
+        "label": "Foundations of Mathematics"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:description-logic",
@@ -77,14 +105,90 @@ public:: true
       {
         "@id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      },
+      {
+        "@id": "urn:ngm:class:formal-ontology",
+        "label": "Formal Ontology"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "@id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:category-theory",
+        "label": "Category Theory"
+      },
+      {
+        "@id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:database-theory",
+        "label": "Database Theory"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:naive-set-theory",
+      "label": "Naive Set Theory"
+    },
+    {
+      "@id": "urn:ngm:class:axiomatic-set-theory",
+      "label": "Axiomatic Set Theory"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
   "@type": "Class",
   "label": "Bitcoin Protocol",
-  "definition": "The set of rules governing how Bitcoin transactions are formed, validated, and ordered into blocks by proof-of-work consensus.",
+  "definition": "The set of rules governing how Bitcoin transactions are formed, validated, and ordered into blocks by proof-of-work consensus, including the UTXO model, scripting system, block reward schedule, and difficulty adjustment mechanism.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -65,6 +65,24 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:consensus-protocol",
@@ -73,20 +91,104 @@ public:: true
       {
         "@id": "urn:ngm:class:utxo",
         "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-payment",
+        "label": "Peer-to-Peer Payment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum-protocol",
+        "label": "Ethereum Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bitcoin-network-protocol",
+      "label": "Bitcoin Network Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

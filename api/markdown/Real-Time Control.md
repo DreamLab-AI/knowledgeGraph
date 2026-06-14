@@ -29,20 +29,52 @@ alias:: Real Time Control
     "relatedTo": [
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"}
+      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
+      {"@id": "urn:ngm:class:determinism", "label": "Determinism"},
+      {"@id": "urn:ngm:class:worst-case-execution-time", "label": "Worst-Case Execution Time"},
+      {"@id": "urn:ngm:class:interrupt-handling", "label": "Interrupt Handling"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
       {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"}
+      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"},
+      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:task-scheduling", "label": "Task Scheduling"},
+      {"@id": "urn:ngm:class:priority-scheduling", "label": "Priority Scheduling"},
+      {"@id": "urn:ngm:class:deterministic-networking", "label": "Deterministic Networking"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"},
+      {"@id": "urn:ngm:class:deadline-scheduling", "label": "Deadline Scheduling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hard-real-time-control", "label": "Hard Real-Time Control"},
+    {"@id": "urn:ngm:class:deterministic-control", "label": "Deterministic Control"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

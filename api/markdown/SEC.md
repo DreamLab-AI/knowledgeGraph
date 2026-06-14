@@ -23,32 +23,63 @@ public:: true
   "definition": "The Securities and Exchange Commission (SEC) is the principal US federal regulatory agency responsible for enforcing federal securities laws, overseeing securities markets, and protecting investors. Established by the Securities Exchange Act of 1934 in the wake of the 1929 stock market crash, the SEC requires public companies to disclose material financial information and polices against fraud, insider trading, and market manipulation. In the digital asset domain, the SEC has asserted jurisdiction over many cryptocurrencies and token offerings on the grounds that they constitute investment contracts under the Howey Test, leading to high-profile enforcement actions against exchanges, issuers, and DeFi protocols. The SEC's regulatory posture towards crypto assets is a defining factor in the shape of the US digital asset industry.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
       {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
       {"@id": "urn:ngm:class:digital-asset-risks", "label": "Digital Asset Risks"},
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"}
+      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"},
+      {"@id": "urn:ngm:class:howey-test", "label": "Howey Test"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
+      {"@id": "urn:ngm:class:investor-protection", "label": "Investor Protection"},
+      {"@id": "urn:ngm:class:securities-disclosure", "label": "Securities Disclosure"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-standards", "label": "Regulatory Standards"}
+      {"@id": "urn:ngm:class:regulatory-standards", "label": "Regulatory Standards"},
+      {"@id": "urn:ngm:class:market-integrity", "label": "Market Integrity"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:enforcement-mechanism", "label": "Enforcement Mechanism"},
       {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:us-regulatory-framework", "label": "US Regulatory Framework"}
+      {"@id": "urn:ngm:class:us-regulatory-framework", "label": "US Regulatory Framework"},
+      {"@id": "urn:ngm:class:cftc", "label": "CFTC"},
+      {"@id": "urn:ngm:class:financial-conduct-authority", "label": "Financial Conduct Authority"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:crypto-assets-and-cyber-unit", "label": "Crypto Assets and Cyber Unit"},
+      {"@id": "urn:ngm:class:division-of-enforcement", "label": "Division of Enforcement"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:securities-registration", "label": "Securities Registration"},
+      {"@id": "urn:ngm:class:broker-dealer-registration", "label": "Broker-Dealer Registration"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:securities-exchange-act", "label": "Securities Exchange Act"},
+      {"@id": "urn:ngm:class:securities-act-1933", "label": "Securities Act 1933"},
+      {"@id": "urn:ngm:class:regulation-best-interest", "label": "Regulation Best Interest"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-asset-regulation", "label": "Digital Asset Regulation"},
+      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
+      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:securities-and-exchange-commission", "label": "Securities and Exchange Commission"},
+    {"@id": "urn:ngm:class:us-sec", "label": "US SEC"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

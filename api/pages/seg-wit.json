@@ -5,22 +5,39 @@
   "public": true,
   "classIri": "urn:ngm:class:seg-wit",
   "domain": "blockchain",
-  "definition": "Segregated Witness is a Bitcoin protocol upgrade that moves signature data into a separate witness structure, fixing transaction malleability and increasing block capacity.",
+  "definition": "Segregated Witness (SegWit) is a Bitcoin protocol upgrade (BIP141/BIP143/BIP144) that moves witness data (signatures and scripts) into a separate structure outside the traditional transaction serialisation, eliminating transaction malleability, introducing a weight-based block-size accounting system, and enabling second-layer protocols such as the Lightning Network and subsequent upgrades such as Taproot.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-protocol",
+      "id": "urn:ngm:class:bitcoin-protocol",
       "label": "Bitcoin Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:witness-data",
+        "label": "Witness Data"
+      },
+      {
+        "id": "urn:ngm:class:witness-discount",
+        "label": "Witness Discount"
+      },
+      {
+        "id": "urn:ngm:class:block-weight",
+        "label": "Block Weight"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "id": "urn:ngm:class:bitcoin-script",
         "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
       }
     ],
     "enables": [
@@ -31,17 +48,114 @@
       {
         "id": "urn:ngm:class:taproot",
         "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-atomic-swap",
+        "label": "Cross-Chain Atomic Swap"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work",
+        "label": "Bitcoin Proof-of-Work"
+      },
+      {
+        "id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bip141",
+        "label": "BIP141"
+      },
+      {
+        "id": "urn:ngm:class:bip143",
+        "label": "BIP143"
+      },
+      {
+        "id": "urn:ngm:class:bip144",
+        "label": "BIP144"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-size-increase",
+        "label": "Block Size Increase"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-cash",
+        "label": "Bitcoin Cash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transaction-malleability-fix",
+        "label": "Transaction Malleability Fix"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
+        "label": "Elliptic Curve Digital Signature Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-scalability",
+        "label": "Bitcoin Scalability"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-throughput",
+        "label": "On-Chain Throughput"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
   },
   "wikilinks": [
     {

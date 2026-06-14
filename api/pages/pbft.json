@@ -4,7 +4,7 @@
   "slug": "pbft",
   "public": true,
   "classIri": "urn:ngm:class:pbft",
-  "domain": "blockchain",
+  "domain": "distributed-systems",
   "definition": "Practical Byzantine Fault Tolerance (PBFT) is a state-machine replication protocol designed by Castro and Liskov (1999) that achieves consensus in asynchronous distributed systems despite up to f arbitrarily faulty (Byzantine) nodes, requiring a total of at least 3f+1 replicas. It proceeds through pre-prepare, prepare, and commit phases to ensure all correct replicas execute the same sequence of operations, providing both safety and liveness under partial synchrony assumptions. PBFT was the first Byzantine fault-tolerant protocol deemed practical for deployed systems, with latency polynomial rather than exponential in the number of nodes. Its communication complexity of O(n\u00b2) limits scalability but makes it highly suitable for small-to-medium permissioned blockchain networks.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:authenticated-communication",
+        "label": "Authenticated Communication"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
@@ -26,17 +39,55 @@
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-agreement",
+        "label": "Byzantine Agreement"
+      },
+      {
+        "id": "urn:ngm:class:total-order-broadcast",
+        "label": "Total Order Broadcast"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:consensus-protocol",
@@ -49,6 +100,18 @@
       {
         "id": "urn:ngm:class:bc-cryptographic-primitive",
         "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
+      },
+      {
+        "id": "urn:ngm:class:view-change-protocol",
+        "label": "View Change Protocol"
       }
     ],
     "supports": [],
@@ -66,6 +129,14 @@
       {
         "id": "urn:ngm:class:bc-protocol-and-consensus",
         "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
       }
     ]
   },

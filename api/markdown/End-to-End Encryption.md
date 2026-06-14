@@ -23,23 +23,63 @@ public:: true
   "definition": "End-to-end encryption (E2EE) is a communication security model in which data is encrypted on the sender's device and can only be decrypted by the intended recipient's device, ensuring that no intermediate party—including service providers, network operators, or infrastructure owners—can access the plaintext content. It combines asymmetric key exchange with symmetric session encryption to provide confidentiality, integrity, and authenticity without trusting intermediaries.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:encryption", "label": "Encryption"}],
+  "subClassOf": {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
       {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"}
+      {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"},
+      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
+      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"},
+      {"@id": "urn:ngm:class:secure-messaging", "label": "Secure Messaging"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-certificates", "label": "Digital Certificates"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
+      {"@id": "urn:ngm:class:server-side-encryption", "label": "Server-Side Encryption"},
+      {"@id": "urn:ngm:class:lawful-interception", "label": "Lawful Interception"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-post-quantum-cryptography", "label": "NIST Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:zero-knowledge-architecture", "label": "Zero Knowledge Architecture"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:secure-multiparty-computation", "label": "Secure Multiparty Computation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:e2ee", "label": "E2EE"},
+    {"@id": "urn:ngm:class:end-to-end-security", "label": "End-to-End Security"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

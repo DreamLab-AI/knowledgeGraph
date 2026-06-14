@@ -10,17 +10,30 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:hardware",
-      "label": "Hardware"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
+      },
+      {
+        "id": "urn:ngm:class:display-panel",
+        "label": "Display Panel"
+      },
+      {
+        "id": "urn:ngm:class:waveguide-optics",
+        "label": "Waveguide Optics"
+      },
+      {
+        "id": "urn:ngm:class:microdisplay",
+        "label": "Microdisplay"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:display-technology",
@@ -31,8 +44,12 @@
         "label": "Graphics Processing"
       },
       {
-        "id": "urn:ngm:class:optical-systems",
-        "label": "Optical Systems"
+        "id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       }
     ],
     "enables": [
@@ -47,17 +64,85 @@
       {
         "id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:passthrough-ar",
+        "label": "Passthrough AR"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system-on-chip",
+        "label": "Embedded System-on-Chip"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oled-technology",
+        "label": "OLED Technology"
+      },
+      {
+        "id": "urn:ngm:class:micro-led-technology",
+        "label": "Micro-LED Technology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openxr-standard",
+        "label": "OpenXR Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-platform",
+        "label": "Spatial Computing Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   },
   "wikilinks": [
     {

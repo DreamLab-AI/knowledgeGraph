@@ -23,28 +23,63 @@ public:: true
   "definition": "Actuators are physical devices that convert an electrical, hydraulic, or pneumatic control signal into mechanical motion or force, enabling a control system to produce a desired physical effect in the world. They are the output components of robotic and cyber-physical systems, spanning technologies including servo motors, pneumatic cylinders, hydraulic actuators, and piezoelectric elements, each offering different trade-offs in force output, speed, precision, and energy efficiency.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"},
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:robot", "label": "Robot"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
+      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
+      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
+      {"@id": "urn:ngm:class:series-elastic-actuator", "label": "Series Elastic Actuator"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:motion-controller", "label": "Motion Controller"},
+      {"@id": "urn:ngm:class:power-electronics", "label": "Power Electronics"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {"@id": "urn:ngm:class:ethercat", "label": "EtherCAT"},
+      {"@id": "urn:ngm:class:canopen", "label": "CANopen"},
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:locomotion", "label": "Locomotion"},
+      {"@id": "urn:ngm:class:force-torque-control", "label": "Force Torque Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:sensors", "label": "Sensors"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:passive-mechanisms", "label": "Passive Mechanisms"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"},
+      {"@id": "urn:ngm:class:prosthetics", "label": "Prosthetics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"},
+    {"@id": "urn:ngm:class:electromechanical-actuator", "label": "Electromechanical Actuator"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

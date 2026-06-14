@@ -23,25 +23,70 @@ public:: true
   "definition": "A file system is the data structure and associated management software that an operating system uses to organise, store, retrieve, and manage data on storage media. It defines how data is logically partitioned into named files and directories, governs access permissions, maintains metadata such as timestamps and ownership, and translates logical file operations into physical block I/O against underlying storage hardware. File systems range from local single-disk formats (NTFS, ext4, APFS) to distributed and network-attached systems (NFS, HDFS, GFS) that span many physical storage nodes.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:operating-system", "label": "Operating System"}],
+  "subClassOf": {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:inode", "label": "Inode"},
+      {"@id": "urn:ngm:class:directory-structure", "label": "Directory Structure"},
+      {"@id": "urn:ngm:class:block-allocation-table", "label": "Block Allocation Table"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
+      {"@id": "urn:ngm:class:storage-stack", "label": "Storage Stack"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:storage-hardware", "label": "Storage Hardware"},
+      {"@id": "urn:ngm:class:block-device", "label": "Block Device"},
+      {"@id": "urn:ngm:class:kernel", "label": "Kernel"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
+      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:virtual-file-system", "label": "Virtual File System"},
+      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:posix-interface", "label": "POSIX Interface"},
+      {"@id": "urn:ngm:class:journaling", "label": "Journaling"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:storage-hardware", "label": "Storage Hardware"},
       {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}
     ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:snapshot", "label": "Snapshot"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:posix", "label": "POSIX"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
+      {"@id": "urn:ngm:class:database", "label": "Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
       {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
       {"@id": "urn:ngm:class:storage-systems", "label": "Storage Systems"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:vfs", "label": "VFS"},
+    {"@id": "urn:ngm:class:storage-file-system", "label": "Storage File System"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

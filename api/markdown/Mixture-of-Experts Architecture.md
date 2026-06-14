@@ -55,36 +55,65 @@ alias:: Mixture-of-Experts
   "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:model-architecture",
-      "label": "Model Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sparse-mixture-of-experts", "label": "Sparse Mixture of Experts"}
+      {"@id": "urn:ngm:class:sparse-mixture-of-experts", "label": "Sparse Mixture of Experts"},
+      {"@id": "urn:ngm:class:expert-network", "label": "Expert Network"},
+      {"@id": "urn:ngm:class:gating-network", "label": "Gating Network"},
+      {"@id": "urn:ngm:class:sparse-activation", "label": "Sparse Activation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
+      {"@id": "urn:ngm:class:expert-parallelism", "label": "Expert Parallelism"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:efficient-scaling", "label": "Efficient Scaling"},
+      {"@id": "urn:ngm:class:parameter-efficient-training", "label": "Parameter-Efficient Training"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:softmax-routing", "label": "Softmax Routing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:model-scaling", "label": "Model Scaling"},
+      {"@id": "urn:ngm:class:inference-efficiency", "label": "Inference Efficiency"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:dense-model", "label": "Dense Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:switch-transformer", "label": "Switch Transformer"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+    {"@id": "urn:ngm:class:moe-architecture", "label": "MoE Architecture"},
+    {"@id": "urn:ngm:class:sparsely-gated-mixture-of-experts", "label": "Sparsely-Gated Mixture-of-Experts"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -135,10 +164,28 @@ alias:: Mixture-of-Experts
 
 - ### Relationships
   - hasPart [[Sparse Mixture of Experts]]
+  - hasPart [[Expert Network]]
+  - hasPart [[Gating Network]]
+  - hasPart [[Sparse Activation]]
+  - partOf [[Ensemble Learning]]
+  - requires [[Load Balancing]]
+  - requires [[Expert Parallelism]]
   - enables [[Large Language Models]]
   - enables [[Natural Language Processing]]
+  - enables [[Efficient Scaling]]
+  - enables [[Parameter-Efficient Training]]
+  - dependsOn [[Distributed Training]]
+  - dependsOn [[Neural Network]]
   - uses [[Transformer Architecture]]
+  - uses [[Attention Mechanism]]
+  - uses [[Softmax Routing]]
+  - supports [[Model Scaling]]
+  - supports [[Inference Efficiency]]
   - contrastsWith [[Deep Learning]]
+  - contrastsWith [[Dense Model]]
+  - relatedTo [[Switch Transformer]]
+  - relatedTo [[Federated Learning]]
+  - bridgesTo [[Distributed Systems]]
 
 - ### Content
   - An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.

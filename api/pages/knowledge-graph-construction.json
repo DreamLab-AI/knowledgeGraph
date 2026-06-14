@@ -22,15 +22,32 @@
         "label": "Named Entity Recognition"
       },
       {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
       },
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:schema-mapping",
+        "label": "Schema Mapping"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -43,12 +60,43 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -72,9 +120,27 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base-completion",
+        "label": "Knowledge Base Completion"
+      }
+    ]
   },
   "wikilinks": [
     {

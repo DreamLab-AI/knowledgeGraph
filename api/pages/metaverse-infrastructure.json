@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -32,15 +32,76 @@
       {
         "id": "urn:ngm:class:virtual-world-infrastructure",
         "label": "Virtual World Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-platform",
+        "label": "Spatial Data Platform"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-backbone",
+        "label": "Internet Backbone"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:metaverse",
@@ -53,9 +114,18 @@
       {
         "id": "urn:ngm:class:virtual-world",
         "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -69,10 +139,6 @@
       {
         "id": "urn:ngm:class:remote-rendering",
         "label": "Remote Rendering"
-      },
-      {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
       }
     ]
   },

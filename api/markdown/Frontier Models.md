@@ -21,27 +21,61 @@ public:: true
   "@type": "Class",
   "label": "Frontier Models",
   "definition": "Frontier models are large-scale AI systems trained at the leading edge of compute, data, and capability, exhibiting emergent behaviours not observed in smaller models and presenting both transformative societal potential and novel safety risks. The term typically refers to the most capable foundation models available at any given time, assessed across benchmarks spanning reasoning, coding, science, and multimodal tasks.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
-    {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Foundation Models"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"},
-      {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"}
+      {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"}
+      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
+      {"@id": "urn:ngm:class:large-scale-pretraining", "label": "Large-Scale Pretraining"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:reasoning-models", "label": "Reasoning Models"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
+      {"@id": "urn:ngm:class:ai-coding-assistants", "label": "AI Coding Assistants"},
+      {"@id": "urn:ngm:class:scientific-discovery-ai", "label": "Scientific Discovery AI"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"}
+      {"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:responsible-scaling-policies", "label": "Responsible Scaling Policies"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:extended-context-window", "label": "Extended Context Window"},
+      {"@id": "urn:ngm:class:inference-time-compute-scaling", "label": "Inference-Time Compute Scaling"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:frontier-model-forum", "label": "Frontier Model Forum"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:small-language-models", "label": "Small Language Models"},
+      {"@id": "urn:ngm:class:open-source-ai-models", "label": "Open-Source AI Models"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:international-ai-cooperation", "label": "International AI Cooperation"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:state-of-the-art-ai-models", "label": "State-of-the-Art AI Models"},
+    {"@id": "urn:ngm:class:advanced-ai-systems", "label": "Advanced AI Systems"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

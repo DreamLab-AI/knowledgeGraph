@@ -23,23 +23,64 @@ public:: true
   "definition": "Axelar is a decentralised cross-chain communication network that enables general message passing and token transfers between heterogeneous blockchains via a proof-of-stake overlay network and a permissionless gateway smart contract model. It provides a Universal Message Passing (UMP) primitive that allows any contract on any connected chain to call any contract on any other connected chain as a single composable operation.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}],
+  "subClassOf": {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gateway-smart-contract", "label": "Gateway Smart Contract"},
+      {"@id": "urn:ngm:class:axl-token", "label": "AXL Token"},
+      {"@id": "urn:ngm:class:interchain-token-service", "label": "Interchain Token Service"},
+      {"@id": "urn:ngm:class:squid-router", "label": "Squid Router"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cosmos-ecosystem", "label": "Cosmos Ecosystem"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:omnichain-application", "label": "Omnichain Application"}
+      {"@id": "urn:ngm:class:omnichain-application", "label": "Omnichain Application"},
+      {"@id": "urn:ngm:class:cross-chain-dex-aggregation", "label": "Cross-Chain DEX Aggregation"},
+      {"@id": "urn:ngm:class:cross-chain-governance", "label": "Cross-Chain Governance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cosmos-sdk", "label": "Cosmos SDK"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:general-message-passing", "label": "General Message Passing"}
     ],
-    "relatedTo": [
+    "supports": [
+      {"@id": "urn:ngm:class:evm-chain", "label": "EVM Chain"},
+      {"@id": "urn:ngm:class:non-evm-chain", "label": "Non-EVM Chain"},
+      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"}
+    ],
+    "contrastsWith": [
       {"@id": "urn:ngm:class:wormhole", "label": "Wormhole"},
       {"@id": "urn:ngm:class:chainlink-ccip", "label": "Chainlink CCIP"},
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"}
+      {"@id": "urn:ngm:class:layerzero", "label": "LayerZero"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
+      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-bridge", "label": "Blockchain Bridge"},
+      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:axelar-network", "label": "Axelar Network"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

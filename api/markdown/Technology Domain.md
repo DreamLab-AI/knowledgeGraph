@@ -70,35 +70,61 @@ alias:: TechnologyDomain
   "definition": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems. It provides shared semantic infrastructure for cross-domain reasoning and relationship traversal.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
       {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
       {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
-      {"@id": "urn:ngm:class:technology-infrastructure-domain", "label": "Infrastructure"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+      {"@id": "urn:ngm:class:technology-infrastructure-domain", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
+      {"@id": "urn:ngm:class:open-source-ecosystem", "label": "Open Source Ecosystem"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
+      {"@id": "urn:ngm:class:financial-technology", "label": "Financial Technology"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:technology-convergence", "label": "Technology Convergence"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:social-domain", "label": "Social Domain"},
+      {"@id": "urn:ngm:class:humanities-domain", "label": "Humanities Domain"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:technology-landscape", "label": "Technology Landscape"},
+    {"@id": "urn:ngm:class:technical-domain", "label": "Technical Domain"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

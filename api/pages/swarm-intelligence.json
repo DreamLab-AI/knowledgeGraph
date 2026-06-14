@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stigmergy",
+        "label": "Stigmergy"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behaviour",
+        "label": "Emergent Behaviour"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:local-interaction-rules",
+        "label": "Local Interaction Rules"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-control",
+        "label": "Decentralised Control"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:swarm-robotics",
@@ -26,17 +48,101 @@
       {
         "id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ant-colony-optimisation",
+        "label": "Ant Colony Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:particle-swarm-optimisation",
+        "label": "Particle Swarm Optimisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication",
+        "label": "Agent Communication"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bio-inspired-computing",
+        "label": "Bio-Inspired Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-control",
+        "label": "Centralised Control"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-planning",
+        "label": "Hierarchical Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:positive-feedback-mechanisms",
+        "label": "Positive Feedback Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:pheromone-signalling",
+        "label": "Pheromone Signalling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerant-systems",
+        "label": "Fault-Tolerant Systems"
+      },
+      {
+        "id": "urn:ngm:class:scalable-coordination",
+        "label": "Scalable Coordination"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:evolutionary-algorithms",
+        "label": "Evolutionary Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:flocking-behaviour",
+        "label": "Flocking Behaviour"
+      }
+    ]
   },
   "wikilinks": [
     {

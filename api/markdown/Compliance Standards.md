@@ -94,9 +94,13 @@ public:: true
   "@id": "urn:ngm:class:compliance-standards",
   "@type": "Class",
   "label": "Compliance Standards",
-  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in ...",
-  "domain": "artificial-intelligence",
+  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
+  "domain": "governance",
   "maturity": "draft",
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "requires": [
       {
@@ -110,6 +114,14 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-guidance",
         "label": "Regulatory Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-and-accountability",
+        "label": "Audit and Accountability"
       }
     ],
     "enables": [
@@ -124,27 +136,117 @@ public:: true
       {
         "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ai-act",
+        "label": "AI Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-law",
+        "label": "Intellectual Property Law"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:compliance-requirements",
+      "label": "Compliance Requirements"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ]
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

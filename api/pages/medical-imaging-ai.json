@@ -5,19 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:medical-imaging-ai",
   "domain": "artificial-intelligence",
-  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities.",
+  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform lesion detection, disease classification, anatomical segmentation, and quantitative image analysis whilst meeting clinical validation standards and regulatory requirements.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "id": "urn:ngm:class:apple-mixed-reality-headsetcessing",
-      "label": "Vision Processing"
+      "id": "urn:ngm:class:medical-ai",
+      "label": "Medical AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,19 +24,62 @@
       {
         "id": "urn:ngm:class:pathology-ai",
         "label": "Pathology AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-aided-diagnosis",
+        "label": "Computer-Aided Diagnosis"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
     "enables": [
       {
-        "id": "urn:ngm:class:healthcare-ai",
-        "label": "Healthcare AI"
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:automated-lesion-detection",
+        "label": "Automated Lesion Detection"
+      },
+      {
+        "id": "urn:ngm:class:treatment-planning",
+        "label": "Treatment Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-radiological-review",
+        "label": "Traditional Radiological Review"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -49,17 +88,51 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-model",
+        "label": "Transformer Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:fda-510k",
+        "label": "FDA 510(k) Clearance"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:medical-ai",
         "label": "Medical AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ]
   },
   "wikilinks": [
     {

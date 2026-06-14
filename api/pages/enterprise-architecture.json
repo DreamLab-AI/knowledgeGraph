@@ -4,40 +4,142 @@
   "slug": "enterprise-architecture",
   "public": true,
   "classIri": "urn:ngm:class:enterprise-architecture",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "definition": "A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:business-architecture",
+        "label": "Business Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:application-architecture",
+        "label": "Application Architecture"
+      },
+      {
+        "id": "urn:ngm:class:technology-architecture",
+        "label": "Technology Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:it-strategy",
+        "label": "IT Strategy"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:enterprise-metaverse",
         "label": "Enterprise Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      },
+      {
+        "id": "urn:ngm:class:zachman-framework",
+        "label": "Zachman Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:solution-architecture",
+        "label": "Solution Architecture"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:system-architecture",
         "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "uses": [
+      {
+        "id": "urn:ngm:class:capability-model",
+        "label": "Capability Model"
+      },
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-42010",
+        "label": "ISO/IEC 42010"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

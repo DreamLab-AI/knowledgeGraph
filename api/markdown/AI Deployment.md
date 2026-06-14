@@ -118,42 +118,156 @@ public:: true
   "@id": "urn:ngm:class:ai-deployment",
   "@type": "Class",
   "label": "AI Deployment",
-  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisi...",
+  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:ai-lifecycle",
-      "label": "AI Lifecycle"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-lifecycle",
+    "label": "AI Lifecycle"
+  },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:release-management",
+        "label": "Release Management"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-provisioning",
+        "label": "Infrastructure Provisioning"
+      },
+      {
+        "@id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:deployment-infrastructure",
-        "label": "Deployment infrastructure"
+        "label": "Deployment Infrastructure"
       },
       {
         "@id": "urn:ngm:class:operational-procedures",
-        "label": "operational procedures"
+        "label": "Operational Procedures"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:ai-system-use-by-ai-users-and-ai-operators",
-        "label": "AI system use by AI Users and AI Operators"
+        "label": "AI System Use by AI Users and AI Operators"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:ai-user",
+        "label": "AI User"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-5338-2023",
+        "label": "ISO/IEC 5338:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fda-software-as-medical-device",
+        "label": "FDA Software as Medical Device"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-25010",
+        "label": "ISO/IEC 25010"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-productionisation",
+      "label": "AI Productionisation"
+    },
+    {
+      "@id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

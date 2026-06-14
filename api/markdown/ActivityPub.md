@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "ActivityPub",
   "definition": "ActivityPub is a W3C-standardised decentralised social networking protocol that defines two layers: a server-to-server federation protocol enabling independent server instances to share content with one another, and a client-to-server protocol allowing applications to interact with a user's social data. Based on the ActivityStreams 2.0 vocabulary and JSON-LD serialisation, it enables interoperable federated social networks where users on different server instances can follow, reply to, and interact with each other across instance boundaries.",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"}
@@ -29,19 +29,54 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:activity-streams-2", "label": "ActivityStreams 2.0"},
+      {"@id": "urn:ngm:class:http-signatures", "label": "HTTP Signatures"},
+      {"@id": "urn:ngm:class:webfinger", "label": "WebFinger"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:federated-social-networks", "label": "Federated Social Networks"},
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"}
+      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
+      {"@id": "urn:ngm:class:server-to-server-federation", "label": "Server-to-Server Federation"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
+      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"}
+      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "W3C"},
+      {"@id": "urn:ngm:class:fediverse-enhancement-proposal", "label": "Fediverse Enhancement Proposal"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:https-transport", "label": "HTTPS Transport"},
+      {"@id": "urn:ngm:class:actor-inbox-outbox", "label": "Actor Inbox/Outbox"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:client-to-server-protocol", "label": "Client-to-Server Protocol"},
+      {"@id": "urn:ngm:class:server-to-server-protocol", "label": "Server-to-Server Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ostatus", "label": "OStatus"},
+      {"@id": "urn:ngm:class:at-protocol", "label": "AT Protocol"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+      {"@id": "urn:ngm:class:mastodon", "label": "Mastodon"},
+      {"@id": "urn:ngm:class:fediverse", "label": "Fediverse"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:w3c-activity-pub-recommendation", "label": "W3C ActivityPub Recommendation"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

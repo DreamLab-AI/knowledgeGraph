@@ -23,23 +23,66 @@ public:: true
   "definition": "Congestion Control is the set of mechanisms and algorithms that regulate the rate of data transmission across a network to prevent any sender, link, or node from being overwhelmed by more traffic than it can handle, thereby maintaining overall network stability and fairness. Operating primarily at the transport layer, congestion control algorithms infer network capacity from signals such as packet loss, explicit congestion notification, and round-trip time variations, adjusting sender rates accordingly. Classical implementations include TCP Tahoe, Reno, CUBIC, and BBR; modern variants extend to QUIC, WebRTC, and multipath scenarios where joint path management adds additional complexity.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:slow-start", "label": "Slow Start"},
+      {"@id": "urn:ngm:class:congestion-avoidance", "label": "Congestion Avoidance"},
+      {"@id": "urn:ngm:class:active-queue-management", "label": "Active Queue Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:packet-loss-detection", "label": "Packet Loss Detection"},
+      {"@id": "urn:ngm:class:round-trip-time-measurement", "label": "Round-Trip Time Measurement"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},
+      {"@id": "urn:ngm:class:network-fairness", "label": "Network Fairness"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:explicit-congestion-notification", "label": "Explicit Congestion Notification"},
+      {"@id": "urn:ngm:class:sliding-window-protocol", "label": "Sliding Window Protocol"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:tcp-cubic", "label": "TCP CUBIC"},
+      {"@id": "urn:ngm:class:bbr-algorithm", "label": "BBR Algorithm"},
+      {"@id": "urn:ngm:class:quic-transport", "label": "QUIC Transport"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"},
+      {"@id": "urn:ngm:class:internet-protocol", "label": "Internet Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:flow-control", "label": "Flow Control"},
+      {"@id": "urn:ngm:class:traffic-shaping", "label": "Traffic Shaping"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
       {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
       {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:network-congestion-management", "label": "Network Congestion Management"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

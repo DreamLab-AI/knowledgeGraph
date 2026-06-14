@@ -23,24 +23,57 @@ public:: true
   "definition": "A Wrapped Token is a digital asset on one blockchain that represents, at a 1:1 peg, an asset from a different blockchain or currency system, created by locking the original asset in a custody mechanism (custodian, bridge smart contract, or MPC wallet) and minting an equivalent representation on the target chain. Wrapped tokens enable cross-chain liquidity by making assets from non-smart-contract blockchains (such as Bitcoin) or from other chains available within DeFi ecosystems. WBTC (Wrapped Bitcoin on Ethereum, ERC-20) is the canonical example, allowing Bitcoin to participate in Ethereum-based lending, trading, and yield protocols. Wrapped tokens introduce custodial or bridge risk as the peg relies on the integrity of the locking and minting mechanism.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token"}],
+  "subClassOf": {"@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
       {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:peg-mechanism", "label": "Peg Mechanism"},
+      {"@id": "urn:ngm:class:liquid-staking-token", "label": "Liquid Staking Token"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
       {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
+      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
+      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
+      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
+      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
+      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
+      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:custodian", "label": "Custodian"},
+      {"@id": "urn:ngm:class:mint-burn-mechanism", "label": "Mint-Burn Mechanism"},
+      {"@id": "urn:ngm:class:collateral-locking", "label": "Collateral Locking"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:synthetic-asset", "label": "Synthetic Asset"},
+      {"@id": "urn:ngm:class:native-token", "label": "Native Token"},
+      {"@id": "urn:ngm:class:algorithmic-stablecoin", "label": "Algorithmic Stablecoin"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:oracle", "label": "Oracle"},
+      {"@id": "urn:ngm:class:proof-of-reserve", "label": "Proof of Reserve"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralized-lending", "label": "Decentralized Lending"},
+      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:pegged-token", "label": "Pegged Token"},
+    {"@id": "urn:ngm:class:bridged-asset", "label": "Bridged Asset"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

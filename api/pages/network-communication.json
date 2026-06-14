@@ -28,22 +28,106 @@
       {
         "id": "urn:ngm:class:transport-layer",
         "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:transmission-medium",
+        "label": "Transmission Medium"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip-suite",
+        "label": "TCP/IP Suite"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:circuit-switching",
+        "label": "Circuit Switching"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-network",
+        "label": "Decentralised Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,6 +137,10 @@
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
       }
     ]
   },

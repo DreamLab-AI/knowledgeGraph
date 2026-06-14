@@ -143,34 +143,172 @@ alias:: ProposalSystem
   "@id": "urn:ngm:class:proposal-system",
   "@type": "Class",
   "label": "Proposal System",
-  "definition": "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding",
+  "definition": "Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and binding on-chain execution through smart contracts, with threshold requirements (token holdings, quorum) balancing permissionless participation against governance efficiency.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:temperature-check",
+        "label": "Temperature Check"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-delay",
+        "label": "Timelock Delay"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-lifecycle",
+        "label": "Proposal Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-requirement",
+        "label": "Quorum Requirement"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance-framework",
+        "label": "DAO Governance Framework"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:snapshot",
         "label": "Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:on-chain-voting",
-        "label": "OnChainVoting"
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-change",
+        "label": "Parameter Change"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:eip-712-signature",
+        "label": "EIP-712 Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governor-bravo",
+        "label": "Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tally-governance",
+        "label": "Tally Governance"
+      },
+      {
+        "@id": "urn:ngm:class:discourse-forum",
+        "label": "Discourse Forum"
+      },
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:community-participation",
+        "label": "Community Participation"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-security",
+        "label": "Protocol Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:emergency-multisig-action",
+        "label": "Emergency Multisig Action"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:voter-fatigue",
+        "label": "Voter Fatigue"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dao-proposal-mechanism",
+      "label": "DAO Proposal Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:governance-proposal-workflow",
+      "label": "Governance Proposal Workflow"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -26,23 +26,59 @@ public:: true
   "subClassOf": [{"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"}
+      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
+      {"@id": "urn:ngm:class:challenge-response-authentication", "label": "Challenge-Response Authentication"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:passwordless-authentication", "label": "Passwordless Authentication"},
       {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"}
+      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
+      {"@id": "urn:ngm:class:phishing-resistant-authentication", "label": "Phishing-Resistant Authentication"},
+      {"@id": "urn:ngm:class:passkey", "label": "Passkey"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:relying-party", "label": "Relying Party"},
+      {"@id": "urn:ngm:class:authenticator", "label": "Authenticator"},
+      {"@id": "urn:ngm:class:origin-binding", "label": "Origin Binding"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:fido-ctap", "label": "FIDO CTAP"},
+      {"@id": "urn:ngm:class:w3c-recommendation", "label": "W3C Recommendation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
+      {"@id": "urn:ngm:class:fido-alliance", "label": "FIDO Alliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"},
+      {"@id": "urn:ngm:class:one-time-password", "label": "One-Time Password"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
       {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
       {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
+      {"@id": "urn:ngm:class:security-key", "label": "Security Key"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:web-authentication-api", "label": "Web Authentication API"},
+    {"@id": "urn:ngm:class:fido2-web-authentication", "label": "FIDO2 Web Authentication"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

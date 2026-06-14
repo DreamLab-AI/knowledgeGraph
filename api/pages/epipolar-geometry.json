@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fundamental-matrix",
+        "label": "Fundamental Matrix"
+      },
+      {
+        "id": "urn:ngm:class:essential-matrix",
+        "label": "Essential Matrix"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-line",
+        "label": "Epipolar Line"
+      },
+      {
+        "id": "urn:ngm:class:epipole",
+        "label": "Epipole"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:stereo-vision",
@@ -30,23 +56,71 @@
       {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stereo-rectification",
+        "label": "Stereo Rectification"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
         "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:ngm:class:camera-intrinsics",
-        "label": "Camera Intrinsics"
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
       }
     ],
-    "supports": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -55,8 +129,8 @@
         "label": "Point Cloud"
       },
       {
-        "id": "urn:ngm:class:slam",
-        "label": "SLAM"
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
       }
     ]
   },

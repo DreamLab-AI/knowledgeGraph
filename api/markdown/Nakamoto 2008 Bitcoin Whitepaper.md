@@ -66,33 +66,125 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
-        "label": "Bitcoin"
-      },
+    "hasPart": [
       {
         "@id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
       },
       {
-        "@id": "urn:ngm:class:blockchain-domain",
-        "label": "Blockchain Domain"
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-server",
+        "label": "Timestamp Server"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-consensus",
+        "label": "Decentralised Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-transaction",
+        "label": "Trustless Transaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-payment-system",
+        "label": "Centralised Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:double-spending-problem",
+        "label": "Double-Spending Problem"
+      },
+      {
+        "@id": "urn:ngm:class:mining-incentive",
+        "label": "Mining Incentive"
+      },
+      {
+        "@id": "urn:ngm:class:51-percent-attack",
+        "label": "51% Attack"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bitcoin-a-peer-to-peer-electronic-cash-system",
+      "label": "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    },
+    {
+      "@id": "urn:ngm:class:satoshi-nakamoto-whitepaper",
+      "label": "Satoshi Nakamoto Whitepaper"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

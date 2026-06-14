@@ -8,16 +8,34 @@
   "definition": "Optical flow is the pattern of apparent motion of objects, surfaces, and edges in a visual scene between consecutive frames of video, caused by relative movement between the observer and the scene. It is computed as a dense or sparse 2D velocity field over the image plane and is used in computer vision for motion estimation, video interpolation, action recognition, and autonomous navigation. Classical algorithms (Horn-Schunck, Lucas-Kanade) and deep learning approaches (RAFT, FlowNet) constitute the main methodological lineages.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:depth-estimation",
-      "label": "Depth Estimation"
+      "id": "urn:ngm:class:motion-estimation",
+      "label": "Motion Estimation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dense-optical-flow",
+        "label": "Dense Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:sparse-optical-flow",
+        "label": "Sparse Optical Flow"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consecutive-video-frames",
+        "label": "Consecutive Video Frames"
+      },
+      {
+        "id": "urn:ngm:class:image-gradient",
+        "label": "Image Gradient"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-capture-technology",
@@ -30,21 +48,76 @@
       {
         "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:video-stabilisation",
+        "label": "Video Stabilisation"
+      },
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:scene-flow",
+        "label": "Scene Flow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:generative-video-model",
+        "label": "Generative Video Model"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:image-pyramid",
+        "label": "Image Pyramid"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:brightness-constancy-constraint",
+        "label": "Brightness Constancy Constraint"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:video-understanding",
+        "label": "Video Understanding"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:stereo-vision",
@@ -53,6 +126,18 @@
       {
         "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:event-camera",
+        "label": "Event Camera"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
       }
     ]
   },

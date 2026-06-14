@@ -54,34 +54,65 @@ public:: true
   "@id": "urn:ngm:class:pattern-recognition",
   "@type": "Class",
   "label": "Pattern Recognition",
-  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms.",
+  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms, encompassing supervised classification, unsupervised clustering, and feature extraction techniques applied across vision, speech, biometrics, and anomaly detection domains.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "quality": 0.7,
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:statistical-classification", "label": "Statistical Classification"},
+      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:biometric-identification", "label": "Biometric Identification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:labeled-dataset", "label": "Labeled Dataset"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
+      {"@id": "urn:ngm:class:classification", "label": "Classification"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
+      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
-  }
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:automated-pattern-analysis", "label": "Automated Pattern Analysis"},
+    {"@id": "urn:ngm:class:machine-perception", "label": "Machine Perception"}
+  ]
 }
 ```
 

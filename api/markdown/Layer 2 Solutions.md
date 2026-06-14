@@ -24,24 +24,62 @@ alias:: Layer-2 Solutions
   "definition": "Layer 2 solutions are protocols and systems built atop a base blockchain (layer 1) that handle transactions off the main chain to increase throughput, reduce latency, and lower transaction costs, while periodically settling finality back to the underlying layer 1 for security. The principal layer 2 paradigms include optimistic rollups, zero-knowledge rollups, state channels, and sidechains, each offering distinct trust and performance tradeoffs.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}],
+  "subClassOf": {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:optimistic-rollup", "label": "Optimistic Rollup"},
+      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK Rollup"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
+      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:layer-1-blockchain", "label": "Layer 1 Blockchain"},
+      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"}
+      {"@id": "urn:ngm:class:fraud-proof", "label": "Fraud Proof"},
+      {"@id": "urn:ngm:class:sequencer", "label": "Sequencer"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:layer-1-scaling", "label": "Layer 1 Scaling"},
+      {"@id": "urn:ngm:class:sharding", "label": "Sharding"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"},
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"}
+      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:proto-danksharding", "label": "Proto-Danksharding"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
+    {"@id": "urn:ngm:class:off-chain-scaling", "label": "Off-Chain Scaling"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -9,7 +9,35 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Fairness Metrics]]
+  - hasPart:: [[Disparate Impact]]
+  - hasPart:: [[Fairness Auditing Tools]]
+  - hasPart:: [[Algorithmic Bias]]
+  - hasPart:: [[Statistical Hypothesis Testing]]
+  - hasPart:: [[Counterfactual Analysis]]
+  - hasPart:: [[Intersectional Analysis]]
+  - requires:: [[Protected Attribute Data]]
+  - requires:: [[Ground Truth Labels]]
+  - requires:: [[Statistical Significance Testing]]
+  - enables:: [[Bias Mitigation]]
+  - enables:: [[AI Fairness Certification]]
+  - enables:: [[Regulatory Compliance Reporting]]
+  - uses:: [[Causal Inference]]
+  - uses:: [[Machine Learning Model Evaluation]]
+  - uses:: [[Confusion Matrix]]
+  - supports:: [[AI Fairness]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[Explainable AI]]
+  - supports:: [[AI Audit]]
+  - standardizedBy:: [[IEEE P7003-2021]]
+  - standardizedBy:: [[ISO/IEC TR 24027]]
+  - standardizedBy:: [[NIST SP 1270]]
+  - contrastsWith:: [[Bias Amplification]]
+  - bridgesTo:: [[Data Governance]]
+  - bridgesTo:: [[Regulatory Compliance]]
+  - relatedTo:: [[Algorithmic Accountability]]
+  - relatedTo:: [[AI Ethics]]
+  - relatedTo:: [[Bias in Large Language Models]]
 
 - ### Content
   Bias Detection Methods — content pending enrichment.

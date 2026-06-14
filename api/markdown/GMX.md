@@ -70,13 +70,35 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:decentralised-finance-domain",
+    "label": "Decentralised Finance Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:glp-token",
+        "label": "GLP Token"
+      },
+      {
+        "@id": "urn:ngm:class:gmx-token",
+        "label": "GMX Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-two-ecosystem",
+        "label": "Layer Two Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:oracle",
@@ -89,6 +111,14 @@ public:: true
       {
         "@id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:price-feed",
+        "label": "Price Feed"
       }
     ],
     "enables": [
@@ -99,14 +129,112 @@ public:: true
       {
         "@id": "urn:ngm:class:leveraged-trading",
         "label": "Leveraged Trading"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:fee-distribution",
+        "label": "Fee Distribution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche-network",
+        "label": "Avalanche Network"
+      },
+      {
+        "@id": "urn:ngm:class:chainlink-oracle",
+        "label": "Chainlink Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:pooled-liquidity-model",
+        "label": "Pooled Liquidity Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:multi-asset-pool",
+        "label": "Multi-Asset Pool"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:d-yd-x",
+        "label": "dYdX"
+      },
+      {
+        "@id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:derivatives-market",
+        "label": "Derivatives Market"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gmx-perpetuals-exchange",
+      "label": "GMX Perpetuals Exchange"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

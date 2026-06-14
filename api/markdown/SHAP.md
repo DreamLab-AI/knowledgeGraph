@@ -70,12 +70,10 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline-domain",
-      "label": "Machine Learning Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:explainable-ai",
+    "label": "Explainable AI"
+  },
   "relations": {
     "requires": [
       {
@@ -85,6 +83,14 @@ public:: true
       {
         "@id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:baseline-expectation",
+        "label": "Baseline Expectation"
       }
     ],
     "enables": [
@@ -95,14 +101,108 @@ public:: true
       {
         "@id": "urn:ngm:class:feature-attribution",
         "label": "Feature Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-auditing",
+        "label": "Algorithmic Bias Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:global-feature-importance",
+        "label": "Global Feature Importance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tree-ensemble",
+        "label": "Tree Ensemble"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-shap",
+        "label": "Kernel SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "@id": "urn:ngm:class:integrated-gradients",
+        "label": "Integrated Gradients"
+      },
+      {
+        "@id": "urn:ngm:class:permutation-feature-importance",
+        "label": "Permutation Feature Importance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:additive-feature-attribution",
+        "label": "Additive Feature Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:local-accuracy-property",
+        "label": "Local Accuracy Property"
+      },
+      {
+        "@id": "urn:ngm:class:consistency-property",
+        "label": "Consistency Property"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-ai-compliance",
+        "label": "Regulatory AI Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:shapley-additive-explanations",
+      "label": "SHapley Additive exPlanations"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

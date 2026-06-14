@@ -130,16 +130,52 @@ public:: true
   "@id": "urn:ngm:class:ai-impact-assessment",
   "@type": "Class",
   "label": "AI Impact Assessment",
-  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ical principle...",
-  "domain": "artificial-intelligence",
+  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ethical principles, safety, fairness, privacy, environmental sustainability, and socioeconomic impacts, conducted prior to deployment and periodically thereafter to inform design decisions, risk mitigation strategies, governance arrangements, and stakeholder communication regarding AI system consequences.",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation-planning",
+        "label": "Risk Mitigation Planning"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-and-reporting",
+        "label": "Documentation and Reporting"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:informed-decision-making",
@@ -147,27 +183,103 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:accountability",
-        "label": "accountability"
-      },
-      {
-        "@id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
       {
         "@id": "urn:ngm:class:transparency",
-        "label": "transparency"
+        "label": "Transparency"
       },
       {
-        "@id": "urn:ngm:class:transparency",
-        "label": "Transparency"
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dpia",
+        "label": "DPIA"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-impact-assessment",
+        "label": "Human Rights Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894-2023",
+        "label": "ISO/IEC 23894:2023"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-27",
+        "label": "EU AI Act Article 27"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "label": "Environmental Impact Assessment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:algorithmic-impact-assessment",
+      "label": "Algorithmic Impact Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:ai-fundamental-rights-impact-assessment",
+      "label": "AI Fundamental Rights Impact Assessment"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

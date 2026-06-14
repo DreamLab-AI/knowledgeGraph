@@ -43,19 +43,17 @@ public:: true
   "@type": "Class",
   "label": "Financial System",
   "definition": "The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:economic-system",
+    "label": "Economic System"
+  },
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
     "hasPart": [
@@ -66,6 +64,18 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:capital-market",
+        "label": "Capital Market"
+      },
+      {
+        "@id": "urn:ngm:class:banking-system",
+        "label": "Banking System"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
       }
     ],
     "enables": [
@@ -76,6 +86,78 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-economy",
+        "label": "Tokenised Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
       }
     ],
     "relatedTo": [
@@ -92,7 +174,17 @@ public:: true
         "label": "Decentralised Finance"
       }
     ]
-  }
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
+    },
+    {
+      "@id": "urn:ngm:class:financial-architecture",
+      "label": "Financial Architecture"
+    }
+  ]
 }
 ```
 

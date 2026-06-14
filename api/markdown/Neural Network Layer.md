@@ -43,48 +43,30 @@ public:: true
   "@type": "Class",
   "label": "Neural Network Layer",
   "definition": "A Neural Network Layer is a discrete computational stage in a neural network that applies a parameterised transformation to its input tensor, including operations such as linear projection, convolution, normalisation, or attention. Layers are composed sequentially or in parallel to form a complete neural network architecture.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:neural-network-component",
+    "label": "Neural Network Component"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:network-layer",
+      "label": "Network Layer"
     },
     {
-      "@id": "urn:ngm:class:neural-network-component",
-      "label": "Neural Network Component"
+      "@id": "urn:ngm:class:hidden-layer",
+      "label": "Hidden Layer"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:activation-function",
-        "label": "Activation Function"
-      },
-      {
-        "@id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:batch-normalisation",
-        "label": "Batch Normalisation"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:neural-network",
@@ -93,6 +75,122 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network-architecture",
         "label": "Neural Network Architecture"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:bias-vector",
+        "label": "Bias Vector"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout-regularisation",
+        "label": "Dropout Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-operation",
+        "label": "Tensor Operation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:linear-transformation",
+        "label": "Linear Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-operation",
+        "label": "Convolutional Operation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:recurrent-layer",
+        "label": "Recurrent Layer"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-layer",
+        "label": "Convolutional Layer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-fine-tuning",
+        "label": "Model Fine-Tuning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
       }
     ]
   }

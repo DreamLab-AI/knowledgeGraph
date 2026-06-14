@@ -70,20 +70,46 @@ public:: true
   "@id": "urn:ngm:class:authentication-service",
   "@type": "Class",
   "label": "Authentication Service",
-  "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources.",
-  "domain": "infrastructure",
+  "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Security and Identity"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:security-services",
-        "label": "Security Services"
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:token-service",
+        "label": "Token Service"
+      },
+      {
+        "@id": "urn:ngm:class:credential-store",
+        "label": "Credential Store"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -98,6 +124,14 @@ public:: true
       {
         "@id": "urn:ngm:class:session-management",
         "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
       }
     ],
     "implements": [
@@ -108,14 +142,82 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:lightweight-directory-access-protocol",
+        "label": "Lightweight Directory Access Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-authentication",
+        "label": "Adaptive Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:authorisation-service",
+        "label": "Authorisation Service"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-services",
+        "label": "Security Services"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:identity-service",
+      "label": "Identity Service"
+    },
+    {
+      "@id": "urn:ngm:class:idp",
+      "label": "Identity Provider (IdP)"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

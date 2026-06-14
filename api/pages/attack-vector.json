@@ -4,19 +4,36 @@
   "slug": "attack-vector",
   "public": true,
   "classIri": "urn:ngm:class:attack-vector",
-  "domain": "artificial-intelligence",
+  "domain": "security",
   "definition": "A specific path, method, or mechanism that a threat actor uses to gain unauthorised access, exploit vulnerabilities, or cause damage to a system, network, or organisation. Attack vectors span network-based exploitation, social engineering, supply-chain compromise, and AI-specific techniques such as prompt injection or model poisoning, and are categorised by access method, target layer, and sophistication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:threat",
+      "label": "Threat"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-attack",
+        "label": "Network Attack"
+      },
+      {
+        "id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-attack",
+        "label": "Supply Chain Attack"
+      },
+      {
+        "id": "urn:ngm:class:insider-threat",
+        "label": "Insider Threat"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:vulnerability",
@@ -25,9 +42,30 @@
       {
         "id": "urn:ngm:class:threat-actor",
         "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:exploit",
+        "label": "Exploit"
+      },
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "id": "urn:ngm:class:lateral-movement",
+        "label": "Lateral Movement"
+      },
+      {
+        "id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
@@ -38,13 +76,57 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense in Depth"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-vulnerability",
+        "label": "Smart Contract Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:sensor-spoofing",
+        "label": "Sensor Spoofing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:malware",
+        "label": "Malware"
+      },
+      {
+        "id": "urn:ngm:class:zero-day",
+        "label": "Zero-Day"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mitre-attack",
+        "label": "MITRE ATT&CK"
+      },
+      {
+        "id": "urn:ngm:class:cvss",
+        "label": "CVSS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:cyber-kill-chain",
+        "label": "Cyber Kill Chain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:risk",
@@ -53,6 +135,14 @@
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
       }
     ]
   },

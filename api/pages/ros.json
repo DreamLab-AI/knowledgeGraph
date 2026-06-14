@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ros",
   "domain": "robotics",
-  "definition": "ROS (Robot Operating System) is an open-source middleware framework providing communication, tooling and libraries for building robot software from reusable, distributed components.",
+  "definition": "ROS (Robot Operating System) is an open-source middleware framework providing publish-subscribe communication, build tooling and reusable libraries for constructing robot software from distributed, composable components.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robot-operating-system",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ros-node",
+        "label": "ROS Node"
+      },
+      {
+        "id": "urn:ngm:class:ros-topic",
+        "label": "ROS Topic"
+      },
+      {
+        "id": "urn:ngm:class:ros-package",
+        "label": "ROS Package"
+      },
+      {
+        "id": "urn:ngm:class:tf2",
+        "label": "TF2 Transform Library"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:dds-middleware",
@@ -25,6 +42,10 @@
       {
         "id": "urn:ngm:class:middleware",
         "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:linux-operating-system",
+        "label": "Linux Operating System"
       }
     ],
     "enables": [
@@ -35,17 +56,101 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
+      },
+      {
+        "id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:orocos-rtt",
+        "label": "Orocos RTT"
+      },
+      {
+        "id": "urn:ngm:class:lcm",
+        "label": "Lightweight Communications and Marshalling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "id": "urn:ngm:class:rviz",
+        "label": "RViz Visualisation Tool"
+      },
+      {
+        "id": "urn:ngm:class:colcon-build-system",
+        "label": "Colcon Build System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:embedded-robotics",
+        "label": "Embedded Robotics"
+      },
+      {
+        "id": "urn:ngm:class:micro-ros",
+        "label": "micro-ROS"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics-software-ecosystem",
+        "label": "Robotics Software Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ]
   },
   "wikilinks": [
     {

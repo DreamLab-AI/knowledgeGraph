@@ -21,25 +21,67 @@ public:: true
   "@type": "Class",
   "label": "Cross-Border Settlement",
   "definition": "Cross-border settlement is the process of finalising the transfer of funds or assets between counterparties in different jurisdictions, including currency conversion, compliance checks, and the irrevocable discharge of obligations across correspondent banking chains, central bank systems, or emerging blockchain-based rails. It encompasses the full lifecycle from trade initiation to finality across multiple legal, regulatory, and technical environments.",
-  "domain": "blockchain",
+  "domain": "finance",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"},
-      {"@id": "urn:ngm:class:cbdc-cross-border-settlement", "label": "CBDC Cross-Border Settlement"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:fx-settlement", "label": "FX Settlement"},
+      {"@id": "urn:ngm:class:payment-finality", "label": "Payment Finality"},
+      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:international-payments-system", "label": "International Payments System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:currency-conversion", "label": "Currency Conversion"},
+      {"@id": "urn:ngm:class:aml-compliance", "label": "AML Compliance"},
+      {"@id": "urn:ngm:class:liquidity-management", "label": "Liquidity Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:international-trade-finance", "label": "International Trade Finance"},
+      {"@id": "urn:ngm:class:cross-border-payment-transparency", "label": "Cross-Border Payment Transparency"},
+      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"}
+      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
+      {"@id": "urn:ngm:class:swift-messaging", "label": "SWIFT Messaging"},
+      {"@id": "urn:ngm:class:nostro-vostro-accounts", "label": "Nostro/Vostro Accounts"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
+      {"@id": "urn:ngm:class:payment-versus-payment", "label": "Payment-Versus-Payment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cls-bank", "label": "CLS Bank"},
+      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-border-payment-transparency", "label": "Cross-Border Payment Transparency"},
-      {"@id": "urn:ngm:class:fsb-cross-border-payments-roadmap", "label": "FSB Cross-Border Payments Roadmap"}
+      {"@id": "urn:ngm:class:fsb-cross-border-payments-roadmap", "label": "FSB Cross-Border Payments Roadmap"},
+      {"@id": "urn:ngm:class:g20-cross-border-payments", "label": "G20 Cross-Border Payments Initiative"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:domestic-settlement", "label": "Domestic Settlement"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cbdc-cross-border-settlement", "label": "CBDC Cross-Border Settlement"},
+      {"@id": "urn:ngm:class:stablecoin-payments", "label": "Stablecoin Payments"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"},
+      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-Versus-Payment"}
     ]
   },
-  "quality": 0.85
+  "sameAs": [
+    {"@id": "urn:ngm:class:international-settlement", "label": "International Settlement"},
+    {"@id": "urn:ngm:class:cross-border-transaction-finality", "label": "Cross-Border Transaction Finality"}
+  ],
+  "quality": 0.73,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

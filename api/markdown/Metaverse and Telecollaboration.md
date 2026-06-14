@@ -821,36 +821,65 @@ public:: true
   "definition": "The convergence of persistent, shared virtual environments with real-time remote collaboration technologies, enabling geographically distributed participants to interact through embodied avatars, spatial audio, and shared 3D workspaces. Metaverse telecollaboration combines immersive XR hardware, low-latency networking, avatar systems, and spatial computing to replicate the social and spatial cues of co-presence across distances.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:metaverse",
+    "label": "Metaverse"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:shared-virtual-workspace", "label": "Shared Virtual Workspace"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:real-time-networking", "label": "Real-Time Networking"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:co-presence", "label": "Co-Presence"},
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
+      {"@id": "urn:ngm:class:distributed-teamwork", "label": "Distributed Teamwork"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"}
+      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
+      {"@id": "urn:ngm:class:volumetric-video", "label": "Volumetric Video"},
+      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:identity-and-avatar-representation", "label": "Identity and Avatar Representation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:nonverbal-communication", "label": "Nonverbal Communication"},
+      {"@id": "urn:ngm:class:gaze-and-eye-contact", "label": "Gaze and Eye Contact"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
+      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:open-metaverse", "label": "Open Metaverse"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:immersive-telecollaboration", "label": "Immersive Telecollaboration"},
+    {"@id": "urn:ngm:class:virtual-collaboration-environment", "label": "Virtual Collaboration Environment"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

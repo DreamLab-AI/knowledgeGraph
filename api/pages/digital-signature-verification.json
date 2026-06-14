@@ -4,19 +4,28 @@
   "slug": "digital-signature-verification",
   "public": true,
   "classIri": "urn:ngm:class:digital-signature-verification",
-  "domain": "spatial-computing",
-  "definition": "Digital Signature Verification is a type of Cryptographic Verification in the spatial computing domain.",
+  "domain": "security",
+  "definition": "The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was produced by the corresponding private key and that the signed content has not been altered.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:cryptographic-verification",
+      "label": "Cryptographic Verification"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:signature-decryption",
+        "label": "Signature Decryption"
+      },
+      {
+        "id": "urn:ngm:class:hash-comparison",
+        "label": "Hash Comparison"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:hash-algorithm",
@@ -27,8 +36,16 @@
         "label": "Signature Algorithm"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -43,22 +60,87 @@
       {
         "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:identity-attestation",
+        "label": "Identity Attestation"
+      },
+      {
+        "id": "urn:ngm:class:secure-message-authentication",
+        "label": "Secure Message Authentication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:cryptographic-verification",
-        "label": "Cryptographic Verification"
+        "id": "urn:ngm:class:symmetric-message-authentication-code",
+        "label": "Symmetric Message Authentication Code"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract-authorization",
+        "label": "Smart Contract Authorization"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fips-186",
+        "label": "FIPS 186"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ]
   },
   "wikilinks": [
     {

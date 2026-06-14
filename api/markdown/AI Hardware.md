@@ -54,32 +54,154 @@ public:: true
   "@id": "urn:ngm:class:ai-hardware",
   "@type": "Class",
   "label": "AI Hardware",
-  "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale.",
+  "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:computer-hardware",
-      "label": "Computer Hardware"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-hardware",
+    "label": "Computer Hardware"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "@id": "urn:ngm:class:power-delivery-system",
+        "label": "Power Delivery System"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:semiconductor-industry",
+        "label": "Semiconductor Industry"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-arithmetic",
+        "label": "Mixed-Precision Arithmetic"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-software-codesign",
+        "label": "Hardware-Software Co-Design"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-accelerator",
+      "label": "AI Accelerator"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-hardware",
+      "label": "Machine Learning Hardware"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

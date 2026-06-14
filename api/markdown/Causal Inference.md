@@ -21,24 +21,59 @@ public:: true
   "@type": "Class",
   "label": "Causal Inference",
   "definition": "Causal inference is the scientific and statistical discipline concerned with drawing conclusions about cause-and-effect relationships from data, distinguishing genuine causal mechanisms from mere statistical association. It employs frameworks such as potential outcomes (Rubin causal model), structural causal models (Pearl's do-calculus), and graphical models (directed acyclic graphs) to formalise interventions and reason about counterfactuals. Applications span medicine, economics, social science, and AI alignment, wherever understanding the effect of an action — not merely its correlation with outcomes — is required.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}],
+  "subClassOf": {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"}
+      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
+      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"},
+      {"@id": "urn:ngm:class:propensity-score-matching", "label": "Propensity Score Matching"},
+      {"@id": "urn:ngm:class:instrumental-variables", "label": "Instrumental Variables"},
+      {"@id": "urn:ngm:class:potential-outcomes-framework", "label": "Potential Outcomes Framework"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:causal-language-modelling", "label": "Causal Language Modelling"},
-      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"}
+      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"},
+      {"@id": "urn:ngm:class:counterfactual-reasoning", "label": "Counterfactual Reasoning"},
+      {"@id": "urn:ngm:class:heterogeneous-treatment-effect-estimation", "label": "Heterogeneous Treatment Effect Estimation"},
+      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:structural-causal-model", "label": "Structural Causal Model"},
+      {"@id": "urn:ngm:class:observational-data", "label": "Observational Data"},
+      {"@id": "urn:ngm:class:confounding-variable", "label": "Confounding Variable"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:do-calculus", "label": "Do-Calculus"},
+      {"@id": "urn:ngm:class:back-door-criterion", "label": "Back-Door Criterion"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:correlation-analysis", "label": "Correlation Analysis"},
+      {"@id": "urn:ngm:class:statistical-association", "label": "Statistical Association"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:randomised-controlled-trial", "label": "Randomised Controlled Trial"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:epidemiology", "label": "Epidemiology"},
+      {"@id": "urn:ngm:class:econometrics", "label": "Econometrics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:causal-analysis", "label": "Causal Analysis"},
+    {"@id": "urn:ngm:class:causal-modelling", "label": "Causal Modelling"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

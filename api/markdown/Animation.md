@@ -29,20 +29,59 @@ public:: true
       {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
       {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:keyframe", "label": "Keyframe"},
+      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
+      {"@id": "urn:ngm:class:interactive-media", "label": "Interactive Media"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:rigging", "label": "Rigging"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:character-controller", "label": "Character Controller"},
+      {"@id": "urn:ngm:class:user-presence", "label": "User Presence"},
+      {"@id": "urn:ngm:class:cinematic-rendering", "label": "Cinematic Rendering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:animation-controller", "label": "Animation Controller"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
+      {"@id": "urn:ngm:class:bezier-spline", "label": "Bezier Spline"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:static-mesh", "label": "Static Mesh"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neural-motion-synthesis", "label": "Neural Motion Synthesis"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:computer-animation", "label": "Computer Animation"},
+    {"@id": "urn:ngm:class:digital-animation", "label": "Digital Animation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

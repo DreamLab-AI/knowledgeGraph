@@ -74,22 +74,14 @@ public:: true
   "@id": "urn:ngm:class:digital-signature-verification",
   "@type": "Class",
   "label": "Digital Signature Verification",
-  "definition": "Digital Signature Verification is a type of Cryptographic Verification in the spatial computing domain.",
-  "domain": "spatial-computing",
+  "definition": "The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was produced by the corresponding private key and that the signed content has not been altered.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-verification",
+    "label": "Cryptographic Verification"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:cryptographic-verification",
-        "label": "Cryptographic Verification"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:hash-algorithm",
@@ -100,8 +92,16 @@ public:: true
         "label": "Signature Algorithm"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "@id": "urn:ngm:class:public-key",
         "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -116,14 +116,110 @@ public:: true
       {
         "@id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-attestation",
+        "label": "Identity Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-message-authentication",
+        "label": "Secure Message Authentication"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:signature-decryption",
+        "label": "Signature Decryption"
+      },
+      {
+        "@id": "urn:ngm:class:hash-comparison",
+        "label": "Hash Comparison"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract-authorization",
+        "label": "Smart Contract Authorization"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fips-186",
+        "label": "FIPS 186"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symmetric-message-authentication-code",
+        "label": "Symmetric Message Authentication Code"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:signature-validation",
+      "label": "Signature Validation"
+    },
+    {
+      "@id": "urn:ngm:class:digital-signature-authentication",
+      "label": "Digital Signature Authentication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

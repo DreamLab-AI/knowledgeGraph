@@ -46,32 +46,150 @@ public:: true
   "@id": "urn:ngm:class:inference-hardware",
   "@type": "Class",
   "label": "Inference Hardware",
-  "definition": "Inference Hardware is a artificial intelligence concept and a type of AI Hardware. that enables Real-Time AI.",
+  "definition": "Specialized processors, accelerators, and system-on-chip designs optimized for running trained machine learning models in production, prioritizing low latency, energy efficiency, high throughput, and cost-effectiveness across data centers, edge devices, and embedded systems.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:ai-hardware",
-      "label": "AI Hardware"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-hardware",
+    "label": "AI Hardware"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-stack",
+        "label": "Edge Computing Stack"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-ai",
         "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model-serving",
+        "label": "Large Language Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:compiler-optimization",
+        "label": "Compiler Optimization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:asic-design",
+        "label": "ASIC Design"
+      },
+      {
+        "@id": "urn:ngm:class:fpga-acceleration",
+        "label": "FPGA Acceleration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tensorrt",
+        "label": "TensorRT"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-batching",
+        "label": "Dynamic Batching"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-gpu",
+        "label": "General-Purpose GPU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing-hardware",
+        "label": "Spatial Computing Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robotics",
+        "label": "Autonomous Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-inference-accelerator",
+      "label": "AI Inference Accelerator"
+    },
+    {
+      "@id": "urn:ngm:class:ml-inference-chip",
+      "label": "ML Inference Chip"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

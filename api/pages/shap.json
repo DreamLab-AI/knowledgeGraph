@@ -8,12 +8,12 @@
   "definition": "SHAP, short for SHapley Additive exPlanations, is a method for explaining the output of machine-learning models by attributing each prediction to its input features. It is grounded in Shapley values from cooperative game theory, which fairly distribute a payoff among contributors, treating each feature as a player and the prediction as the payoff. SHAP provides locally accurate, consistent feature attributions and unifies several earlier explanation techniques under a common framework.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline-domain",
-      "label": "Machine Learning Domain"
+      "id": "urn:ngm:class:explainable-ai",
+      "label": "Explainable AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:baseline-expectation",
+        "label": "Baseline Expectation"
       }
     ],
     "enables": [
@@ -35,17 +43,99 @@
       {
         "id": "urn:ngm:class:feature-attribution",
         "label": "Feature Attribution"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-auditing",
+        "label": "Algorithmic Bias Auditing"
+      },
+      {
+        "id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
+      },
+      {
+        "id": "urn:ngm:class:global-feature-importance",
+        "label": "Global Feature Importance"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:additive-feature-attribution",
+        "label": "Additive Feature Attribution"
+      },
+      {
+        "id": "urn:ngm:class:local-accuracy-property",
+        "label": "Local Accuracy Property"
+      },
+      {
+        "id": "urn:ngm:class:consistency-property",
+        "label": "Consistency Property"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "id": "urn:ngm:class:integrated-gradients",
+        "label": "Integrated Gradients"
+      },
+      {
+        "id": "urn:ngm:class:permutation-feature-importance",
+        "label": "Permutation Feature Importance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tree-ensemble",
+        "label": "Tree Ensemble"
+      },
+      {
+        "id": "urn:ngm:class:kernel-shap",
+        "label": "Kernel SHAP"
+      },
+      {
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-ai-compliance",
+        "label": "Regulatory AI Compliance"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
+    ]
   },
   "wikilinks": [
     {

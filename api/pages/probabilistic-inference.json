@@ -8,40 +8,144 @@
   "definition": "Probabilistic inference is the computation of the probability of unknown quantities given observed evidence within a probabilistic model. It produces posterior distributions used for prediction and decision making under uncertainty.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bayesian-inference",
-      "label": "Bayesian Inference"
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:expectation-propagation",
+        "label": "Expectation Propagation"
+      },
+      {
+        "id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:maximum-a-posteriori-estimation",
+        "label": "Maximum A Posteriori Estimation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:frequentist-inference",
+        "label": "Frequentist Inference"
+      },
+      {
+        "id": "urn:ngm:class:point-estimation",
+        "label": "Point Estimation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:marginalisation",
+        "label": "Marginalisation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      }
+    ]
   },
   "wikilinks": [
     {

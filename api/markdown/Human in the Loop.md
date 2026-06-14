@@ -98,40 +98,142 @@ public:: true
   "@id": "urn:ngm:class:human-in-the-loop",
   "@type": "Class",
   "label": "Human in the Loop",
-  "definition": "A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are ...",
+  "definition": "A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:ai-alignment",
-      "label": "AI Alignment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:human-oversight",
+    "label": "Human Oversight"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:error-correction",
-        "label": "error correction"
+        "label": "Error Correction"
       },
       {
         "@id": "urn:ngm:class:ethical-alignment",
-        "label": "ethical alignment"
+        "label": "Ethical Alignment"
       },
       {
         "@id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decision-audit-trail",
+        "label": "Decision Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:human-on-the-loop",
+        "label": "Human-on-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:full-automation",
+        "label": "Full Automation"
+      },
+      {
+        "@id": "urn:ngm:class:automation-bias",
+        "label": "Automation Bias"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:human-expertise",
+        "label": "Human Expertise"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:social-contract-and-jobs",
+        "label": "Employment Social Contract Under Automation"
+      },
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:consent",
+        "label": "Consent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-weapons-system",
+        "label": "Autonomous Weapons System"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:hitl",
+      "label": "HITL"
+    },
+    {
+      "@id": "urn:ngm:class:human-supervised-ai",
+      "label": "Human-Supervised AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

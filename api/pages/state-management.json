@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:command-query-responsibility-segregation",
+        "label": "Command Query Responsibility Segregation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:concurrency-control",
+        "label": "Concurrency Control"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-system",
@@ -30,12 +48,43 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:time-travel-debugging",
+        "label": "Time Travel Debugging"
+      },
+      {
+        "id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:unidirectional-data-flow",
+        "label": "Unidirectional Data Flow"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:state-machine",
@@ -48,6 +97,14 @@
       {
         "id": "urn:ngm:class:event-driven-architecture",
         "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:immutable-data-structure",
+        "label": "Immutable Data Structure"
       }
     ],
     "supports": [],
@@ -59,16 +116,24 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
         "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       },
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:raft-algorithm",
+        "label": "Raft Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:redux",
+        "label": "Redux"
       }
     ]
   },

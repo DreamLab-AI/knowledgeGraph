@@ -70,16 +70,48 @@ public:: true
   "@id": "urn:ngm:class:metadata-schema",
   "@type": "Class",
   "label": "Metadata Schema",
-  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources.",
-  "domain": "infrastructure",
+  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardised vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
+  "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-standard",
+    "label": "Data Standard"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:data-element",
+        "label": "Data Element"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation-rule",
+        "label": "Schema Validation Rule"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:data-discovery",
@@ -92,6 +124,24 @@ public:: true
       {
         "@id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      },
+      {
+        "@id": "urn:ngm:class:xml-schema",
+        "label": "XML Schema"
       }
     ],
     "implements": [
@@ -100,26 +150,88 @@ public:: true
         "label": "Dublin Core"
       },
       {
-        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "@id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
         "@id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:web-ontology-language",
+        "label": "Web Ontology Language"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:dublin-core-metadata-initiative",
+        "label": "Dublin Core Metadata Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:iso-19115",
+        "label": "ISO 19115"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-dictionary",
+        "label": "Data Dictionary"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:data-standards",
         "label": "Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "@id": "urn:ngm:class:open-metadata",
+        "label": "Open Metadata"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "@id": "urn:ngm:class:metadata-specification",
+      "label": "Metadata Specification"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

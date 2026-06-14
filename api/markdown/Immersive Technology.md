@@ -54,29 +54,165 @@ alias:: ImmersiveTechnology
   "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-technology",
-      "label": "Digital Technology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-technology",
+    "label": "Digital Technology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-training",
+        "label": "Immersive Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:enterprise-training",
+        "label": "Enterprise Training"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-simulation",
+        "label": "Healthcare Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:webxr-device-api",
+        "label": "WebXR Device API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-display-technology",
+        "label": "Traditional Display Technology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "@id": "urn:ngm:class:xr-technology",
+      "label": "XR Technology"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

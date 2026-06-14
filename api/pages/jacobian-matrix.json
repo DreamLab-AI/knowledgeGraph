@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:jacobian-determinant",
+        "label": "Jacobian Determinant"
+      },
+      {
+        "id": "urn:ngm:class:null-space-projection",
+        "label": "Null Space Projection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multivariate-calculus",
+        "label": "Multivariate Calculus"
+      },
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inverse-kinematics",
@@ -30,12 +48,42 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force-Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:task-space-control",
+        "label": "Task Space Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hessian-matrix",
+        "label": "Hessian Matrix"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-network-backpropagation",
+        "label": "Neural Network Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-simulation",
+        "label": "Differentiable Simulation"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:kinematics",
@@ -44,11 +92,28 @@
       {
         "id": "urn:ngm:class:forward-kinematics",
         "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:partial-derivatives",
+        "label": "Partial Derivatives"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:moore-penrose-pseudoinverse",
+        "label": "Moore-Penrose Pseudoinverse"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:robot-manipulation",
@@ -57,6 +122,14 @@
       {
         "id": "urn:ngm:class:trajectory-control",
         "label": "Trajectory Control"
+      },
+      {
+        "id": "urn:ngm:class:manipulability",
+        "label": "Manipulability"
+      },
+      {
+        "id": "urn:ngm:class:redundancy-resolution",
+        "label": "Redundancy Resolution"
       }
     ]
   },

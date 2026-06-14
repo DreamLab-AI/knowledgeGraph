@@ -23,24 +23,63 @@ public:: true
   "definition": "OpenID for Verifiable Presentations (OpenID4VP) is an extension of the OpenID Connect and OAuth 2.0 framework that enables relying parties to request and receive W3C Verifiable Presentations from a holder's digital identity wallet using standard authorisation request-response flows. The specification defines a Presentation Exchange-compatible request syntax, transport bindings for cross-device and same-device wallets, and response encoding options for signed JWT VPs and JSON-LD credential formats. OpenID4VP allows verifiers to specify which credential types and claims are required, enabling selective disclosure and privacy-preserving identity verification without centralised identity providers holding user data.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"}],
+  "subClassOf": {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
+      {"@id": "urn:ngm:class:presentation-exchange", "label": "Presentation Exchange"},
+      {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:open-id4-vci", "label": "OpenID4VCI"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:w3-c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+    "requires": [
+      {"@id": "urn:ngm:class:authorization-server", "label": "Authorization Server"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"}
+      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
+      {"@id": "urn:ngm:class:holder-binding", "label": "Holder Binding"},
+      {"@id": "urn:ngm:class:cross-device-authentication", "label": "Cross-Device Authentication"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:w3c-verifiable-credentials-data-model", "label": "W3C Verifiable Credentials Data Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
+      {"@id": "urn:ngm:class:iso-18013-5", "label": "ISO 18013-5 mDL"},
+      {"@id": "urn:ngm:class:eudi-wallet", "label": "EUDI Wallet"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openid-foundation", "label": "OpenID Foundation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:open-id4-vci", "label": "OpenID4VCI"},
+      {"@id": "urn:ngm:class:w3-c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
+      {"@id": "urn:ngm:class:siop-v2", "label": "SIOP v2"},
+      {"@id": "urn:ngm:class:eidas-2-0", "label": "eIDAS 2.0"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:saml", "label": "SAML"},
+      {"@id": "urn:ngm:class:centralized-identity-provider", "label": "Centralized Identity Provider"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:openid-for-verifiable-presentations", "label": "OpenID for Verifiable Presentations"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

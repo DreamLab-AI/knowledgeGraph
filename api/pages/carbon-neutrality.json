@@ -8,16 +8,42 @@
   "definition": "Carbon neutrality is a state in which an entity \u2014 an organisation, product, event, or country \u2014 achieves a net-zero balance between its greenhouse gas emissions and the carbon dioxide it removes or offsets, such that its net contribution to atmospheric CO\u2082 concentration is zero over a defined accounting period. It is typically achieved through a combination of direct emissions reductions, procurement of renewable energy, and the purchase and retirement of independently verified carbon credits representing emissions avoided or removed elsewhere. Carbon neutrality is distinct from net-zero emissions, which generally requires deeper reductions and limits the role of offsets, and from climate positivity, which requires net negative emissions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:carbon-neutrality-planning",
-      "label": "Carbon Neutrality Planning"
+      "id": "urn:ngm:class:climate-policy",
+      "label": "Climate Policy"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-verification",
+        "label": "Carbon Neutrality Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-accounting",
+        "label": "Greenhouse Gas Accounting"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions-reporting",
+        "label": "Scope 3 Emissions Reporting"
+      },
+      {
+        "id": "urn:ngm:class:third-party-assurance",
+        "label": "Third-Party Assurance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:net-zero-targets",
@@ -26,12 +52,43 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:green-claims-compliance",
+        "label": "Green Claims Compliance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:net-zero-emissions",
+        "label": "Net Zero Emissions"
+      },
+      {
+        "id": "urn:ngm:class:climate-positivity",
+        "label": "Climate Positivity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-decarbonisation",
+        "label": "Supply Chain Decarbonisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:carbon-offset-programme",
@@ -40,10 +97,27 @@
       {
         "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-procurement",
+        "label": "Renewable Energy Procurement"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:pas-2060",
+        "label": "PAS 2060"
+      },
+      {
+        "id": "urn:ngm:class:iso-14068",
+        "label": "ISO 14068"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,12 +125,12 @@
         "label": "Carbon Neutrality Verification"
       },
       {
-        "id": "urn:ngm:class:carbon-footprint-measurement",
-        "label": "Carbon Footprint Measurement"
+        "id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
       },
       {
-        "id": "urn:ngm:class:voluntary-carbon-market",
-        "label": "Voluntary Carbon Market"
+        "id": "urn:ngm:class:eu-green-claims-directive",
+        "label": "EU Green Claims Directive"
       }
     ]
   },

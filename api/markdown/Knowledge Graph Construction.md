@@ -45,17 +45,17 @@ public:: true
   "definition": "Knowledge Graph Construction is the process of automatically or semi-automatically building structured graph representations of world knowledge by extracting entities, relations, and attributes from heterogeneous sources such as text corpora, databases, and web data. The discipline combines techniques from natural language processing, information retrieval, and ontology engineering to produce machine-readable graphs that support reasoning, question answering, and semantic search.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:relation-extraction", "label": "Relation Extraction"},
       {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
@@ -67,14 +67,43 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
+      {"@id": "urn:ngm:class:schema-mapping", "label": "Schema Mapping"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ontology-engineering", "label": "Ontology Engineering"},
+      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
+      {"@id": "urn:ngm:class:owl", "label": "OWL"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"},
+      {"@id": "urn:ngm:class:knowledge-base-completion", "label": "Knowledge Base Completion"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:knowledge-base-construction", "label": "Knowledge Base Construction"},
+    {"@id": "urn:ngm:class:ontology-population", "label": "Ontology Population"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

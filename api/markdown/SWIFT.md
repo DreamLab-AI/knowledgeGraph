@@ -62,17 +62,43 @@ public:: true
   "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:financial-infrastructure-domain",
-      "label": "Financial Infrastructure Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-infrastructure-domain",
+    "label": "Financial Infrastructure Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:swift-messaging-network",
+        "label": "SWIFT Messaging Network"
+      },
+      {
+        "@id": "urn:ngm:class:business-identifier-code",
+        "label": "Business Identifier Code"
+      },
+      {
+        "@id": "urn:ngm:class:swift-gpi",
+        "label": "SWIFT GPI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:global-payment-infrastructure",
+        "label": "Global Payment Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "@id": "urn:ngm:class:financial-institution-membership",
+        "label": "Financial Institution Membership"
+      },
+      {
+        "@id": "urn:ngm:class:secure-messaging-protocol",
+        "label": "Secure Messaging Protocol"
       }
     ],
     "enables": [
@@ -83,14 +109,98 @@ public:: true
       {
         "@id": "urn:ngm:class:interbank-settlement",
         "label": "Interbank Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:mt-message-format",
+        "label": "MT Message Format"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-9362",
+        "label": "ISO 9362"
+      },
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-sanctions-compliance",
+        "label": "Financial Sanctions Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ripple-net",
+        "label": "RippleNet"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-based-settlement",
+        "label": "Blockchain-Based Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:geopolitical-financial-sanctions",
+        "label": "Geopolitical Financial Sanctions"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nostro-vostro-accounts",
+        "label": "Nostro Vostro Accounts"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:society-for-worldwide-interbank-financial-telecommunication",
+      "label": "Society for Worldwide Interbank Financial Telecommunication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

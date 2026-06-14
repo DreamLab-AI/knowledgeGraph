@@ -4,7 +4,7 @@
   "slug": "chain-of-thought-prompting",
   "public": true,
   "classIri": "urn:ngm:class:chain-of-thought-prompting",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Chain-of-thought (CoT) prompting is a prompt engineering technique that elicits intermediate reasoning steps from a large language model before it produces a final answer, substantially improving performance on multi-step arithmetic, commonsense reasoning, and symbolic manipulation tasks. By including exemplars that demonstrate step-by-step reasoning or by appending the instruction 'Let's think step by step' (zero-shot CoT), the technique leverages the model's autoregressive generation to decompose complex problems into tractable substeps. CoT prompting was formally characterised by Wei et al. (2022) and has become a foundational capability-elicitation method for frontier language models.",
   "subClassOf": [
     {
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:self-consistency-decoding",
+        "label": "Self-Consistency Decoding"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:mathematical-reasoning",
@@ -30,12 +52,38 @@
       {
         "id": "urn:ngm:class:common-sense-reasoning",
         "label": "Common Sense Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      },
+      {
+        "id": "urn:ngm:class:direct-answer-prompting",
+        "label": "Direct Answer Prompting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -48,6 +96,14 @@
       {
         "id": "urn:ngm:class:few-shot-prompting",
         "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-language-model",
+        "label": "Autoregressive Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "supports": [],
@@ -61,6 +117,18 @@
       {
         "id": "urn:ngm:class:reasoning-engine",
         "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
+      },
+      {
+        "id": "urn:ngm:class:least-to-most-prompting",
+        "label": "Least-to-Most Prompting"
+      },
+      {
+        "id": "urn:ngm:class:programme-of-thought",
+        "label": "Programme of Thought"
       }
     ]
   },

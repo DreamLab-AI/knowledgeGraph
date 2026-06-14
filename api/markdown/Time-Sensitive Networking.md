@@ -25,18 +25,58 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:time-aware-shaper", "label": "Time-Aware Shaper"},
+      {"@id": "urn:ngm:class:frame-preemption", "label": "Frame Preemption"},
+      {"@id": "urn:ngm:class:credit-based-shaper", "label": "Credit-Based Shaper"},
+      {"@id": "urn:ngm:class:stream-reservation-protocol", "label": "Stream Reservation Protocol"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:precision-time-protocol", "label": "Precision Time Protocol"},
+      {"@id": "urn:ngm:class:ethernet", "label": "Ethernet"},
+      {"@id": "urn:ngm:class:network-switch", "label": "Network Switch"}
+    ],
     "uses": [
-      {"@id": "urn:ngm:class:clock-synchronization", "label": "Clock Synchronization"}
+      {"@id": "urn:ngm:class:clock-synchronization", "label": "Clock Synchronization"},
+      {"@id": "urn:ngm:class:traffic-scheduling", "label": "Traffic Scheduling"},
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:deterministic-networking", "label": "Deterministic Networking"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:converged-network", "label": "Converged Network"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-802-1", "label": "IEEE 802.1"},
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fieldbus", "label": "Fieldbus"},
+      {"@id": "urn:ngm:class:profinet", "label": "PROFINET"},
+      {"@id": "urn:ngm:class:best-effort-networking", "label": "Best-Effort Networking"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:operational-technology", "label": "Operational Technology"},
+      {"@id": "urn:ngm:class:automotive-ethernet", "label": "Automotive Ethernet"},
+      {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:networking-standard", "label": "Networking Standard"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:avb", "label": "Audio Video Bridging"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:tsn", "label": "TSN"},
+    {"@id": "urn:ngm:class:ieee-802-1-tsn", "label": "IEEE 802.1 TSN"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

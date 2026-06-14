@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-controller",
+        "label": "Motion Controller"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:robot-manipulation",
@@ -26,20 +52,60 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:servo-motor",
-        "label": "Servo Motor"
       },
       {
-        "id": "urn:ngm:class:feedback-control",
-        "label": "Feedback Control"
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force Torque Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passive-mechanisms",
+        "label": "Passive Mechanisms"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethercat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:canopen",
+        "label": "CANopen"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ],
     "supports": [],
@@ -52,16 +118,20 @@
       {
         "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:control-system",
-        "label": "Control System"
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
       },
       {
-        "id": "urn:ngm:class:robot-actuator",
-        "label": "Robot Actuator"
+        "id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
       }
     ]
   },

@@ -23,25 +23,64 @@ public:: true
   "definition": "Sanctions Screening is the regulatory compliance process by which financial institutions, fintech operators, and other regulated entities check customers, counterparties, and transactions against government-issued sanctions lists—such as those maintained by OFAC, the UN Security Council, HM Treasury, and the EU—to prevent prohibited dealings with designated individuals, entities, and jurisdictions. The process involves name-matching algorithms, fuzzy logic to handle transliterations and aliases, and risk-based escalation procedures for potential matches. In blockchain and digital asset contexts, screening extends to wallet addresses and on-chain transaction flows. Failure to screen adequately exposes institutions to severe civil and criminal penalties.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:name-matching-algorithm", "label": "Name Matching Algorithm"},
+      {"@id": "urn:ngm:class:alert-adjudication", "label": "Alert Adjudication"},
+      {"@id": "urn:ngm:class:watchlist-management", "label": "Watchlist Management"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {"@id": "urn:ngm:class:financial-crime-compliance", "label": "Financial Crime Compliance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:real-time-data-feed", "label": "Real-Time Data Feed"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:sanctions-enforcement", "label": "Sanctions Enforcement"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:risk-based-approach", "label": "Risk-Based Approach"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:sanctions-list", "label": "Sanctions List"},
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
       {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {"@id": "urn:ngm:class:fuzzy-matching", "label": "Fuzzy Matching"},
+      {"@id": "urn:ngm:class:machine-learning-classifier", "label": "Machine Learning Classifier"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
+      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
+      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ofac-screening", "label": "OFAC Screening"},
+    {"@id": "urn:ngm:class:watchlist-screening", "label": "Watchlist Screening"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

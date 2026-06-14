@@ -23,24 +23,72 @@ public:: true
   "definition": "A Series Elastic Actuator (SEA) is a robotic joint mechanism that interposes a compliant spring element in series between the gearbox output and the load, deliberately introducing controlled elasticity into the drivetrain. By measuring the spring deflection with a position sensor, the SEA provides accurate, low-noise torque measurement without a dedicated force-torque sensor, while simultaneously providing passive mechanical compliance that absorbs impact energy and reduces stiffness at the point of contact. This architecture enables safe, backdrivable interactions between robots and humans or unstructured environments.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}],
+  "subClassOf": {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:series-elastic-actuation", "label": "Series Elastic Actuation"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:variable-impedance-control", "label": "Variable Impedance Control"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:compliant-spring-element", "label": "Compliant Spring Element"},
+      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"},
+      {"@id": "urn:ngm:class:gearbox", "label": "Gearbox"},
+      {"@id": "urn:ngm:class:torque-control-loop", "label": "Torque Control Loop"}
     ],
-    "uses": [
+    "partOf": [
+      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:powered-exoskeleton", "label": "Powered Exoskeleton"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:position-sensor", "label": "Position Sensor"},
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"}
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:motor-driver", "label": "Motor Driver"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"},
+      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
+      {"@id": "urn:ngm:class:prosthetic-limb", "label": "Prosthetic Limb"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:series-elastic-actuation", "label": "Series Elastic Actuation"},
+      {"@id": "urn:ngm:class:force-torque-estimation", "label": "Force Torque Estimation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:position-sensor", "label": "Position Sensor"},
+      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
+      {"@id": "urn:ngm:class:hookes-law", "label": "Hookes Law"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
+      {"@id": "urn:ngm:class:variable-impedance-control", "label": "Variable Impedance Control"},
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
+      {"@id": "urn:ngm:class:backdrivability", "label": "Backdrivability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:quasi-direct-drive-actuator", "label": "Quasi Direct Drive Actuator"},
+      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
+      {"@id": "urn:ngm:class:rigid-actuator", "label": "Rigid Actuator"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:series-elastic-actuation", "label": "Series Elastic Actuation"},
+      {"@id": "urn:ngm:class:variable-stiffness-actuator", "label": "Variable Stiffness Actuator"},
+      {"@id": "urn:ngm:class:proprioceptive-actuator", "label": "Proprioceptive Actuator"},
+      {"@id": "urn:ngm:class:robotic-joint", "label": "Robotic Joint"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"},
+      {"@id": "urn:ngm:class:physical-human-robot-interaction-safety", "label": "Physical Human Robot Interaction Safety"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:sea-actuator", "label": "SEA Actuator"},
+    {"@id": "urn:ngm:class:compliant-actuator", "label": "Compliant Actuator"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

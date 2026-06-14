@@ -58,17 +58,39 @@ public:: true
   "@id": "urn:ngm:class:ros",
   "@type": "Class",
   "label": "ROS",
-  "definition": "ROS (Robot Operating System) is an open-source middleware framework providing communication, tooling and libraries for building robot software from reusable, distributed components.",
+  "definition": "ROS (Robot Operating System) is an open-source middleware framework providing publish-subscribe communication, build tooling and reusable libraries for constructing robot software from distributed, composable components.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robot-operating-system",
-      "label": "Robot Operating System"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robot-operating-system",
+    "label": "Robot Operating System"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ros-node",
+        "label": "ROS Node"
+      },
+      {
+        "@id": "urn:ngm:class:ros-topic",
+        "label": "ROS Topic"
+      },
+      {
+        "@id": "urn:ngm:class:ros-package",
+        "label": "ROS Package"
+      },
+      {
+        "@id": "urn:ngm:class:tf2",
+        "label": "TF2 Transform Library"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics-software-ecosystem",
+        "label": "Robotics Software Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:dds-middleware",
@@ -77,6 +99,10 @@ public:: true
       {
         "@id": "urn:ngm:class:middleware",
         "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:linux-operating-system",
+        "label": "Linux Operating System"
       }
     ],
     "enables": [
@@ -87,14 +113,106 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-Robot Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "@id": "urn:ngm:class:rviz",
+        "label": "RViz Visualisation Tool"
+      },
+      {
+        "@id": "urn:ngm:class:colcon-build-system",
+        "label": "Colcon Build System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-robotics",
+        "label": "Embedded Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:micro-ros",
+        "label": "micro-ROS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:orocos-rtt",
+        "label": "Orocos RTT"
+      },
+      {
+        "@id": "urn:ngm:class:lcm",
+        "label": "Lightweight Communications and Marshalling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

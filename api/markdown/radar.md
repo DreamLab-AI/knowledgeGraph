@@ -7,9 +7,15 @@
 
 - ### Relationships
   - is-subclass-of:: [[Sensor]]
-  - bridges-to:: [[Lidar]], [[Sensors]]
-  - requires:: [[Signal Processing]]
-  - enables:: [[Perception System]], [[Sensor Fusion]]
+  - bridges-to:: [[Lidar]], [[Sensors]], [[Air Traffic Control]], [[Weather Sensing]]
+  - requires:: [[Signal Processing]], [[Radio Frequency Spectrum]]
+  - enables:: [[Perception System]], [[Sensor Fusion]], [[Object Detection]], [[Simultaneous Localisation and Mapping]], [[Collision Avoidance]]
+  - hasPart:: [[Antenna Array]], [[Transmitter]], [[Receiver]]
+  - partOf:: [[Autonomous Vehicle]]
+  - uses:: [[Doppler Effect]], [[Time of Flight]], [[Beamforming]]
+  - contrastsWith:: [[Camera]], [[Ultrasonic Sensor]]
+  - relatedTo:: [[Electromagnetic Wave]], [[Point Cloud]]
+  - sameAs:: [[Radio Detection and Ranging]]
 
 - ### Content
   - Radar measures the time of flight and Doppler shift of reflected radio waves to estimate the distance and relative velocity of targets, and antenna arrays allow angular resolution. It performs reliably in poor visibility conditions such as fog, rain and darkness where optical sensors degrade.

@@ -32,43 +32,114 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:keyframe",
+        "label": "Keyframe"
+      },
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rigging",
+        "label": "Rigging"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:character-controller",
+        "label": "Character Controller"
+      },
+      {
+        "id": "urn:ngm:class:user-presence",
+        "label": "User Presence"
+      },
+      {
+        "id": "urn:ngm:class:cinematic-rendering",
+        "label": "Cinematic Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:static-mesh",
+        "label": "Static Mesh"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-motion-synthesis",
+        "label": "Neural Motion Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
       },
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
-      },
-      {
         "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:bezier-spline",
+        "label": "Bezier Spline"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"
       },
       {
+        "id": "urn:ngm:class:interactive-media",
+        "label": "Interactive Media"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       }
     ]
   },

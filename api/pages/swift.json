@@ -13,14 +13,35 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:swift-messaging-network",
+        "label": "SWIFT Messaging Network"
+      },
+      {
+        "id": "urn:ngm:class:business-identifier-code",
+        "label": "Business Identifier Code"
+      },
+      {
+        "id": "urn:ngm:class:swift-gpi",
+        "label": "SWIFT GPI"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:financial-institution-membership",
+        "label": "Financial Institution Membership"
+      },
+      {
+        "id": "urn:ngm:class:secure-messaging-protocol",
+        "label": "Secure Messaging Protocol"
       }
     ],
     "enables": [
@@ -31,17 +52,93 @@
       {
         "id": "urn:ngm:class:interbank-settlement",
         "label": "Interbank Settlement"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:mt-message-format",
+        "label": "MT Message Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ripple-net",
+        "label": "RippleNet"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-based-settlement",
+        "label": "Blockchain-Based Settlement"
+      },
+      {
+        "id": "urn:ngm:class:geopolitical-financial-sanctions",
+        "label": "Geopolitical Financial Sanctions"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:financial-sanctions-compliance",
+        "label": "Financial Sanctions Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-9362",
+        "label": "ISO 9362"
+      },
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-payment-infrastructure",
+        "label": "Global Payment Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nostro-vostro-accounts",
+        "label": "Nostro Vostro Accounts"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ]
   },
   "wikilinks": [
     {

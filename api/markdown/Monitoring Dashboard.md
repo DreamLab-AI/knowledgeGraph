@@ -51,30 +51,74 @@ public:: true
   "@type": "Class",
   "label": "Monitoring Dashboard",
   "definition": "Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.",
-  "domain": "artificial-intelligence",
+  "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-visualisation",
+    "label": "Data Visualisation"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:time-series-chart", "label": "Time Series Chart"},
+      {"@id": "urn:ngm:class:alert-panel", "label": "Alert Panel"},
+      {"@id": "urn:ngm:class:metric-gauge", "label": "Metric Gauge"},
+      {"@id": "urn:ngm:class:log-viewer", "label": "Log Viewer"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:observability-platform", "label": "Observability Platform"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:metrics-collection", "label": "Metrics Collection"},
+      {"@id": "urn:ngm:class:time-series-database", "label": "Time Series Database"},
+      {"@id": "urn:ngm:class:data-ingestion-pipeline", "label": "Data Ingestion Pipeline"}
+    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:operational-intelligence",
-        "label": "Operational Intelligence"
-      }
+      {"@id": "urn:ngm:class:operational-intelligence", "label": "Operational Intelligence"},
+      {"@id": "urn:ngm:class:incident-detection", "label": "Incident Detection"},
+      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis"},
+      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:prometheus", "label": "Prometheus"},
+      {"@id": "urn:ngm:class:distributed-tracing", "label": "Distributed Tracing"},
+      {"@id": "urn:ngm:class:log-aggregation", "label": "Log Aggregation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:observability", "label": "Observability"},
+      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
+      {"@id": "urn:ngm:class:alerting-system", "label": "Alerting System"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
+      {"@id": "urn:ngm:class:incident-management", "label": "Incident Management"},
+      {"@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:static-report", "label": "Static Report"},
+      {"@id": "urn:ngm:class:log-file", "label": "Log File"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
+      {"@id": "urn:ngm:class:business-intelligence-dashboard", "label": "Business Intelligence Dashboard"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:kubernetes-cluster", "label": "Kubernetes Cluster"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:observability-dashboard", "label": "Observability Dashboard"},
+    {"@id": "urn:ngm:class:operations-dashboard", "label": "Operations Dashboard"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

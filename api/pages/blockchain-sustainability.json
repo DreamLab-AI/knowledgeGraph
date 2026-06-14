@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-sustainability",
   "domain": "blockchain",
-  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies.",
+  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies, encompassing metrics, governance, and cross-sector environmental accountability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,15 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-offset-program",
+        "label": "Carbon Offset Program"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency-metrics",
+        "label": "Energy Efficiency Metrics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
+      },
+      {
+        "id": "urn:ngm:class:tokenized-carbon-market",
+        "label": "Tokenized Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificate-trading",
+        "label": "Renewable Energy Certificate Trading"
       }
     ],
     "dependsOn": [],
@@ -29,18 +59,70 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof-of-Stake"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof-of-Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof-of-Authority"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-verification",
+        "label": "Environmental Impact Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:esg-compliance",
         "label": "ESG Compliance"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "id": "urn:ngm:class:energy-web-foundation",
+        "label": "Energy Web Foundation"
       }
     ]
   },

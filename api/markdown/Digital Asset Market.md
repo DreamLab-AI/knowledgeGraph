@@ -47,20 +47,28 @@ public:: true
   "@type": "Class",
   "label": "Digital Asset Market",
   "definition": "A marketplace — centralised or decentralised — where digital assets including cryptocurrencies, NFTs, and tokenised securities are bought, sold, and exchanged. Digital asset markets encompass order-book exchanges, automated market makers, NFT marketplaces, and OTC desks, each governed by distinct liquidity, pricing, and regulatory mechanisms.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-market",
+    "label": "Financial Market"
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "@id": "urn:ngm:class:crypto-exchange",
+      "label": "Crypto Exchange"
+    },
+    {
+      "@id": "urn:ngm:class:digital-currency-market",
+      "label": "Digital Currency Market"
     }
   ],
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "hasPart": [
       {
@@ -70,6 +78,28 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-asset-trading",
         "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:over-the-counter-desk",
+        "label": "Over-the-Counter Desk"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:global-financial-system",
+        "label": "Global Financial System"
       }
     ],
     "requires": [
@@ -80,6 +110,34 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-asset-infrastructure",
         "label": "Digital Asset Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:tokenised-securities-trading",
+        "label": "Tokenised Securities Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:custodial-settlement",
+        "label": "Custodial Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "uses": [
@@ -90,16 +148,64 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-token",
+        "label": "Cryptographic Token"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-regulatory-framework",
+        "label": "Financial Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-securities-exchange",
+        "label": "Traditional Securities Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency-market",
+        "label": "Fiat Currency Market"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:digital-asset-ecosystem",
-        "label": "Digital Asset Ecosystem"
-      },
-      {
         "@id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
       }
     ]
   }

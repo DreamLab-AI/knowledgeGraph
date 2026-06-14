@@ -4,8 +4,8 @@
   "slug": "web-3-infrastructure",
   "public": true,
   "classIri": "urn:ngm:class:web-3-infrastructure",
-  "domain": "distributed-systems",
-  "definition": "Web3 infrastructure is the set of protocols, nodes, storage and tooling that supports decentralised applications built on blockchain networks.",
+  "domain": "blockchain",
+  "definition": "Web3 infrastructure is the set of protocols, nodes, storage and tooling that supports decentralised applications built on blockchain networks, encompassing peer-to-peer communication layers, decentralised storage, indexing services, cross-chain bridges, and wallet primitives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",
@@ -13,31 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:rpc-endpoint",
+        "label": "RPC Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ethereum-protocol",
+        "label": "Ethereum Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-cloud-infrastructure",
+        "label": "Centralised Cloud Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ]
   },
   "wikilinks": [
     {

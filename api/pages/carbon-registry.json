@@ -4,23 +4,32 @@
   "slug": "carbon-registry",
   "public": true,
   "classIri": "urn:ngm:class:carbon-registry",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
     {
       "id": "urn:ngm:class:environmental-registry",
       "label": "Environmental Registry"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.65,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:serial-number-issuance",
+        "label": "Serial Number Issuance"
+      },
+      {
+        "id": "urn:ngm:class:project-documentation",
+        "label": "Project Documentation"
+      },
+      {
+        "id": "urn:ngm:class:ownership-ledger",
+        "label": "Ownership Ledger"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:database-infrastructure",
@@ -33,6 +42,14 @@
       {
         "id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
+      },
+      {
+        "id": "urn:ngm:class:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "enables": [
@@ -47,17 +64,83 @@
       {
         "id": "urn:ngm:class:market-transparency",
         "label": "Market Transparency"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-retirement",
+        "label": "Carbon Credit Retirement"
+      },
+      {
+        "id": "urn:ngm:class:emissions-offsetting",
+        "label": "Emissions Offsetting"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:vcs-standard",
+        "label": "VCS Standard"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icvcm",
+        "label": "ICVCM"
+      },
+      {
+        "id": "urn:ngm:class:corsia",
+        "label": "CORSIA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:climate-governance-infrastructure",
+        "label": "Climate Governance Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:redd-plus",
+        "label": "REDD+"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset-project",
+        "label": "Carbon Offset Project"
+      },
+      {
+        "id": "urn:ngm:class:greenhouse-gas-accounting",
+        "label": "Greenhouse Gas Accounting"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -36,6 +36,10 @@
       {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:frame-representation",
+        "label": "Frame Representation"
       }
     ],
     "requires": [
@@ -50,6 +54,10 @@
       {
         "id": "urn:ngm:class:formal-methods-domain",
         "label": "Formal Methods Domain"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
       }
     ],
     "enables": [
@@ -64,17 +72,76 @@
       {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-ontology-language",
+        "label": "Web Ontology Language"
+      },
+      {
+        "id": "urn:ngm:class:resource-description-framework",
+        "label": "Resource Description Framework"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing-domain",
+        "label": "Natural Language Processing Domain"
+      },
+      {
+        "id": "urn:ngm:class:agentic-systems-domain",
+        "label": "Agentic Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval-domain",
+        "label": "Information Retrieval Domain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ]
   },
   "wikilinks": [
     {

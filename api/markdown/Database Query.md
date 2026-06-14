@@ -47,17 +47,21 @@ public:: true
   "@type": "Class",
   "label": "Database Query",
   "definition": "A structured request submitted to a database management system to retrieve, insert, update, or delete data according to defined criteria. Queries are expressed in formal query languages such as SQL for relational databases or SPARQL for RDF triple stores, and underpin knowledge graph retrieval, analytics pipelines, and real-time application data access.",
-  "domain": "infrastructure",
+  "domain": "data",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-management",
+    "label": "Data Management"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "@id": "urn:ngm:class:data-query",
+      "label": "Data Query"
     },
     {
-      "@id": "urn:ngm:class:data-management",
-      "label": "Data Management"
+      "@id": "urn:ngm:class:query-expression",
+      "label": "Query Expression"
     }
   ],
   "provenance": {
@@ -66,6 +70,40 @@ public:: true
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:query-predicate",
+        "label": "Query Predicate"
+      },
+      {
+        "@id": "urn:ngm:class:query-result-set",
+        "label": "Query Result Set"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "@id": "urn:ngm:class:query-parser",
+        "label": "Query Parser"
+      },
+      {
+        "@id": "urn:ngm:class:query-optimiser",
+        "label": "Query Optimiser"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:knowledge-graph",
@@ -74,6 +112,38 @@ public:: true
       {
         "@id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-access",
+        "label": "Real-Time Data Access"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:index-structure",
+        "label": "Index Structure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
       }
     ],
     "uses": [
@@ -84,6 +154,40 @@ public:: true
       {
         "@id": "urn:ngm:class:rest-api",
         "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:query-execution-engine",
+        "label": "Query Execution Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 (SQL Standard)"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-sparql",
+        "label": "W3C SPARQL Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
       }
     ],
     "relatedTo": [
@@ -94,12 +198,20 @@ public:: true
       {
         "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
       }
     ],
-    "partOf": [
+    "bridgesTo": [
       {
-        "@id": "urn:ngm:class:data-management",
-        "label": "Data Management"
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ]
   }

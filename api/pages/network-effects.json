@@ -4,7 +4,7 @@
   "slug": "network-effects",
   "public": true,
   "classIri": "urn:ngm:class:network-effects",
-  "domain": "ai",
+  "domain": "finance",
   "definition": "Network effects describe the phenomenon whereby a product or service gains additional value for each existing user as the number of participants increases, creating a self-reinforcing growth dynamic. Direct network effects arise when users directly benefit from others on the same platform; indirect effects emerge when complementary products or services multiply with scale, creating cross-side externalities.",
   "subClassOf": [
     {
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-base",
+        "label": "User Base"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:technology-ecosystem",
@@ -26,14 +35,62 @@
       {
         "id": "urn:ngm:class:startup-ecosystem",
         "label": "Startup Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:market-dominance",
+        "label": "Market Dominance"
+      },
+      {
+        "id": "urn:ngm:class:data-flywheel",
+        "label": "Data Flywheel"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:platform-participation",
+        "label": "Platform Participation"
+      },
+      {
+        "id": "urn:ngm:class:switching-costs",
+        "label": "Switching Costs"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:diseconomies-of-scale",
+        "label": "Diseconomies of Scale"
+      },
+      {
+        "id": "urn:ngm:class:congestion-effects",
+        "label": "Congestion Effects"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ai-data-accumulation",
+        "label": "AI Data Accumulation"
+      },
+      {
+        "id": "urn:ngm:class:antitrust-regulation",
+        "label": "Antitrust Regulation"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lock-in",
+        "label": "Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:path-dependence",
+        "label": "Path Dependence"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -48,6 +105,22 @@
       {
         "id": "urn:ngm:class:mass-adoption",
         "label": "Mass Adoption"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:winner-take-all",
+        "label": "Winner-Take-All"
+      },
+      {
+        "id": "urn:ngm:class:critical-mass",
+        "label": "Critical Mass"
+      },
+      {
+        "id": "urn:ngm:class:metcalfes-law",
+        "label": "Metcalfe's Law"
       }
     ]
   },

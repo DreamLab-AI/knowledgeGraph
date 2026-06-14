@@ -4,19 +4,28 @@
   "slug": "privacy-impact-assessment",
   "public": true,
   "classIri": "urn:ngm:class:privacy-impact-assessment",
-  "domain": "artificial-intelligence",
+  "domain": "governance",
   "definition": "A structured evaluation process identifying, analysing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information. Mandated by GDPR Article 35 for high-risk processing, it covers necessity assessment, risk identification, severity evaluation, and documentation of technical and organisational controls.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:necessity-assessment",
+        "label": "Necessity Assessment"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-governance",
@@ -25,6 +34,14 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
       }
     ],
     "enables": [
@@ -35,15 +52,60 @@
       {
         "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      },
+      {
+        "id": "urn:ngm:class:personal-data-processing",
+        "label": "Personal Data Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr-article-35",
+        "label": "GDPR Article 35"
+      },
+      {
+        "id": "urn:ngm:class:iso-29134",
+        "label": "ISO 29134"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-risk-assessment",
+        "label": "Security Risk Assessment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -69,6 +131,14 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
       }
     ]
   },

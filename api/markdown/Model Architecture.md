@@ -52,31 +52,159 @@ alias:: ModelArchitecture
   "@type": "Class",
   "label": "Model Architecture",
   "definition": "The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:system-architecture",
-      "label": "System Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:system-architecture",
+    "label": "System Architecture"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation-technique",
+        "label": "Regularisation Technique"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning-pipeline",
+        "label": "Deep Learning Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:computational-resource",
+        "label": "Computational Resource"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:ai-model-development",
         "label": "AI Model Development"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rule-based-system",
+        "label": "Rule-Based System"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-graphical-model",
+        "label": "Probabilistic Graphical Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:network-topology",
+      "label": "Network Topology"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

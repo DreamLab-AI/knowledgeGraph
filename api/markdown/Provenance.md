@@ -58,31 +58,167 @@ public:: true
   "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:data-provenance",
-      "label": "Data Provenance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-provenance",
+    "label": "Data Provenance"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:lineage-metadata",
+        "label": "Lineage Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:trust",
         "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-prov",
+        "label": "W3C PROV"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c-prov",
+        "label": "W3C PROV"
+      },
+      {
+        "@id": "urn:ngm:class:prov-o",
+        "label": "PROV-O Ontology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-dataset",
+        "label": "Machine Learning Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-reproducibility",
+        "label": "Scientific Reproducibility"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:data-lineage",
+      "label": "Data Lineage"
+    },
+    {
+      "@id": "urn:ngm:class:origin-tracking",
+      "label": "Origin Tracking"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

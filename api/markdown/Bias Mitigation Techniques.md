@@ -61,37 +61,62 @@ public:: true
   "definition": "Methods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at pre-processing (data reweighting, resampling), in-processing (fairness constraints, adversarial debiasing), and post-processing (threshold optimisation) stages of the machine learning pipeline. Each approach involves tradeoffs between fairness improvement and predictive accuracy.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-reweighting", "label": "Data Reweighting"},
+      {"@id": "urn:ngm:class:adversarial-debiasing", "label": "Adversarial Debiasing"},
+      {"@id": "urn:ngm:class:threshold-optimisation", "label": "Threshold Optimisation"},
+      {"@id": "urn:ngm:class:resampling-techniques", "label": "Resampling Techniques"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
     ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:protected-attributes", "label": "Protected Attributes"}
+    ],
     "enables": [
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"}
+      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:equitable-ai-deployment", "label": "Equitable AI Deployment"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:constrained-optimisation", "label": "Constrained Optimisation"}
     ],
-    "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    "implements": [
+      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-explainability", "label": "Model Explainability"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:human-rights-law", "label": "Human Rights Law"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:algorithmic-fairness-methods", "label": "Algorithmic Fairness Methods"},
+    {"@id": "urn:ngm:class:debiasing-techniques", "label": "Debiasing Techniques"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

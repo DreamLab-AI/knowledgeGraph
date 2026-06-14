@@ -13,28 +13,106 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:quantum-circuit",
+        "label": "Quantum Circuit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:cryogenic-control-systems",
+        "label": "Cryogenic Control Systems"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:molecular-simulation",
+        "label": "Molecular Simulation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:superconductivity",
+        "label": "Superconductivity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:shors-algorithm",
+        "label": "Shor's Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:grovers-algorithm",
+        "label": "Grover's Algorithm"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:classical-computing",
+        "label": "Classical Computing"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-machine-learning",
+        "label": "Quantum Machine Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [

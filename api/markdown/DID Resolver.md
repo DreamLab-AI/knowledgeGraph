@@ -25,12 +25,60 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:did-method-driver", "label": "DID Method Driver"},
+      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
+      {"@id": "urn:ngm:class:resolution-metadata", "label": "Resolution Metadata"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:verifiable-data-registry", "label": "Verifiable Data Registry"},
+      {"@id": "urn:ngm:class:did-method", "label": "DID Method"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralized-authentication", "label": "Decentralized Authentication"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:dns", "label": "DNS"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:w3c-did-core-specification", "label": "W3C DID Core Specification"},
+      {"@id": "urn:ngm:class:did-resolution-protocol", "label": "DID Resolution Protocol"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-key-pair", "label": "Cryptographic Key Pair"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:dns-resolver", "label": "DNS Resolver"},
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-smart-contract", "label": "Blockchain Smart Contract"},
+      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
+      {"@id": "urn:ngm:class:universal-resolver", "label": "Universal Resolver"},
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:did-resolution-engine", "label": "DID Resolution Engine"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

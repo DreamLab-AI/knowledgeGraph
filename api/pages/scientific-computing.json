@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:numerical-analysis",
+        "label": "Numerical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:parallel-programming",
+        "label": "Parallel Programming"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:numerical-libraries",
+        "label": "Numerical Libraries"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:physics-simulation",
@@ -26,12 +52,46 @@
       {
         "id": "urn:ngm:class:fluid-simulation",
         "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:molecular-dynamics",
+        "label": "Molecular Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-informed-neural-networks",
+        "label": "Physics-Informed Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cuda",
@@ -40,6 +100,18 @@
       {
         "id": "urn:ngm:class:simulation-engine",
         "label": "Simulation Engine"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:mpi",
+        "label": "MPI"
+      },
+      {
+        "id": "urn:ngm:class:openmp",
+        "label": "OpenMP"
       }
     ],
     "supports": [],
@@ -47,20 +119,12 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
+        "id": "urn:ngm:class:computational-science",
+        "label": "Computational Science"
       },
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
-      },
-      {
-        "id": "urn:ngm:class:computational-resources",
-        "label": "Computational Resources"
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
       }
     ]
   },

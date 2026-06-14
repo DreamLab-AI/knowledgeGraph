@@ -8,16 +8,12 @@
   "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
       "id": "urn:ngm:class:reactive-control",
       "label": "Reactive Control"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,6 +25,14 @@
       {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
       }
     ],
     "enables": [
@@ -39,12 +43,39 @@
       {
         "id": "urn:ngm:class:safe-navigation",
         "label": "Safe Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deliberative-planning",
+        "label": "Deliberative Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:radar",
@@ -61,12 +92,59 @@
       {
         "id": "urn:ngm:class:ultrasonic-sensor",
         "label": "Ultrasonic Sensor"
+      },
+      {
+        "id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-window-approach",
+        "label": "Dynamic Window Approach"
+      },
+      {
+        "id": "urn:ngm:class:velocity-obstacles",
+        "label": "Velocity Obstacles"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:safety-systems",
+        "label": "Safety Systems"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mobile-robots",
+        "label": "Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:drones",
+        "label": "Drones"
+      },
+      {
+        "id": "urn:ngm:class:avoidance-maneuver",
+        "label": "Avoidance Maneuver"
+      },
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ]
   },
   "wikilinks": [
     {

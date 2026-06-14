@@ -23,24 +23,60 @@ public:: true
   "definition": "Personalised learning is an educational approach in which the pace, content, modality, and assessment of instruction are dynamically adapted to the knowledge state, learning style, goals, and preferences of the individual learner. Technology-enabled personalised learning uses data about learner interactions and performance to drive adaptive algorithms that present the most effective next learning experience for each person, contrasting with one-size-fits-all curriculum delivery.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"}],
+  "subClassOf": {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
+      {"@id": "urn:ngm:class:bayesian-knowledge-tracing", "label": "Bayesian Knowledge Tracing"},
+      {"@id": "urn:ngm:class:spaced-repetition", "label": "Spaced Repetition"},
+      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
+      {"@id": "urn:ngm:class:intelligent-tutoring-systems", "label": "Intelligent Tutoring Systems"},
+      {"@id": "urn:ngm:class:formative-assessment", "label": "Formative Assessment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:learner-modelling", "label": "Learner Modelling"},
+      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:self-directed-learning", "label": "Self-Directed Learning"},
+      {"@id": "urn:ngm:class:competency-based-education", "label": "Competency-Based Education"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:standardised-curriculum", "label": "Standardised Curriculum"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
       {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:educational-methodology", "label": "Educational Methodology"}
+      {"@id": "urn:ngm:class:educational-methodology", "label": "Educational Methodology"},
+      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
+      {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:adaptive-instruction", "label": "Adaptive Instruction"},
+    {"@id": "urn:ngm:class:differentiated-instruction", "label": "Differentiated Instruction"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

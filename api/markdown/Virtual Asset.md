@@ -147,34 +147,70 @@ alias:: VirtualAsset
   "@id": "urn:ngm:class:virtual-asset",
   "@type": "Class",
   "label": "Virtual Asset",
-  "definition": "Digital items with economic value within metaverse environments, spanning non-fungible tokens representing unique digital collectibles, avatars and avatar customisations, virtual real estate, and in-game items with market-tradeable value. Ownership and transfer of virtual assets rely on blockchain smart contracts or centralised platform ledgers, with interoperability standards enabling asset portability across platforms and markets.",
+  "definition": "Digital items with economic value within metaverse environments, spanning non-fungible tokens representing unique digital collectibles, avatars and avatar customisations, virtual real estate, and in-game items with market-tradeable value. Ownership and transfer of virtual assets rely on blockchain smart contracts or centralised platform ledgers, with interoperability standards enabling asset portability across platforms and markets. Economic significance spans consumer entertainment and investment speculation, with regulatory frameworks increasingly addressing taxation and classification under securities laws.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Content and Assets"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
     ],
-    "relatedTo": [
+    "hasPart": [
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {"@id": "urn:ngm:class:virtual-real-estate", "label": "Virtual Real Estate"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:in-game-item", "label": "In-Game Item"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:peer-to-peer-trading", "label": "Peer-to-Peer Trading"},
+      {"@id": "urn:ngm:class:play-to-earn", "label": "Play-to-Earn"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:physical-asset", "label": "Physical Asset"},
+      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:virtual-asset-taxation", "label": "Virtual Asset Taxation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:collectible", "label": "Collectible"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+    {"@id": "urn:ngm:class:blockchain-asset", "label": "Blockchain Asset"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

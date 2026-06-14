@@ -21,25 +21,59 @@ public:: true
   "@type": "Class",
   "label": "Social Network Analysis",
   "definition": "Social network analysis (SNA) is a methodology for studying social structures through graph-theoretic and statistical techniques applied to networks of actors (nodes) and their relationships (edges). It measures structural properties such as centrality, clustering, path length, and community structure to identify influential actors, information bottlenecks, and emergent communities within social systems.",
-  "domain": "governance",
+  "domain": "data",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:network-analysis", "label": "Network Analysis"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:network-analysis", "label": "Network Analysis"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"}
+      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
+      {"@id": "urn:ngm:class:centrality-measures", "label": "Centrality Measures"},
+      {"@id": "urn:ngm:class:adjacency-matrix", "label": "Adjacency Matrix"},
+      {"@id": "urn:ngm:class:statistical-inference", "label": "Statistical Inference"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
+      {"@id": "urn:ngm:class:influence-maximisation", "label": "Influence Maximisation"},
+      {"@id": "urn:ngm:class:information-diffusion-modelling", "label": "Information Diffusion Modelling"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:network-science", "label": "Network Science"},
-      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"}
+      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"},
+      {"@id": "urn:ngm:class:computational-social-science", "label": "Computational Social Science"},
+      {"@id": "urn:ngm:class:link-prediction", "label": "Link Prediction"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:betweenness-centrality", "label": "Betweenness Centrality"},
+      {"@id": "urn:ngm:class:clustering-coefficient", "label": "Clustering Coefficient"},
+      {"@id": "urn:ngm:class:small-world-network", "label": "Small-World Network"},
+      {"@id": "urn:ngm:class:scale-free-network", "label": "Scale-Free Network"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:graph-data-structure", "label": "Graph Data Structure"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:epidemiological-modelling", "label": "Epidemiological Modelling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ego-network-analysis", "label": "Ego Network Analysis"},
+      {"@id": "urn:ngm:class:survey-based-social-research", "label": "Survey-Based Social Research"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:social-graph-analysis", "label": "Social Graph Analysis"},
+    {"@id": "urn:ngm:class:network-sociology", "label": "Network Sociology"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

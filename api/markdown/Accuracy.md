@@ -130,32 +130,140 @@ public:: true
   "@id": "urn:ngm:class:accuracy",
   "@type": "Class",
   "label": "Accuracy",
-  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate mea...",
+  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:classification-accuracy",
+      "label": "Classification Accuracy"
+    },
+    {
+      "@id": "urn:ngm:class:overall-accuracy",
+      "label": "Overall Accuracy"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "@id": "urn:ngm:class:true-negative",
+        "label": "True Negative"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:class-distribution",
+        "label": "Class Distribution"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:balanced-accuracy",
+        "label": "Balanced Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:matthews-correlation-coefficient",
+        "label": "Matthews Correlation Coefficient"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:model-performance",
-        "label": "Model Performance"
+        "@id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       }
     ]
   }

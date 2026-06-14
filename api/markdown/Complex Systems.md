@@ -54,21 +54,27 @@ public:: true
   "@id": "urn:ngm:class:complex-systems",
   "@type": "Class",
   "label": "Complex Systems",
-  "definition": "Systems composed of many interacting components whose collective behaviour cannot be simply inferred from the behaviour of the individual parts.",
-  "domain": "machine-learning",
+  "definition": "Systems composed of many interacting components whose collective behaviour cannot be simply inferred from the behaviour of the individual parts; characterised by nonlinearity, emergence, self-organisation, and feedback dynamics across scales.",
+  "domain": "infrastructure",
   "maturity": "established",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:systems-theory",
+    "label": "Systems Theory"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:dynamical-systems-theory",
         "label": "Dynamical Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:network-theory",
+        "label": "Network Theory"
+      },
+      {
+        "@id": "urn:ngm:class:nonlinear-dynamics",
+        "label": "Nonlinear Dynamics"
       }
     ],
     "enables": [
@@ -79,14 +85,100 @@ public:: true
       {
         "@id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-model",
+        "label": "Agent-Based Model"
+      },
+      {
+        "@id": "urn:ngm:class:phase-transition",
+        "label": "Phase Transition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-systems",
+        "label": "Adaptive Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reductionism",
+        "label": "Reductionism"
+      },
+      {
+        "@id": "urn:ngm:class:linear-systems",
+        "label": "Linear Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ecology",
+        "label": "Ecology"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "@id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

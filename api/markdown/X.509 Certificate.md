@@ -58,25 +58,31 @@ public:: true
   "@id": "urn:ngm:class:x-509-certificate",
   "@type": "Class",
   "label": "X.509 Certificate",
-  "definition": "A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.",
+  "definition": "A standardised digital certificate format that binds a public key to an entity identity, together with validity period and usage constraints, and is signed by a certificate authority within a public key infrastructure so that relying parties can cryptographically verify its authenticity.",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-certificate",
-      "label": "Digital Certificate"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-certificate",
+    "label": "Digital Certificate"
+  },
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "@id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -87,14 +93,118 @@ public:: true
       {
         "@id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "@id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-subject",
+        "label": "Certificate Subject"
+      },
+      {
+        "@id": "urn:ngm:class:validity-period",
+        "label": "Validity Period"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-extension",
+        "label": "Certificate Extension"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:itu-t-x-509-standard",
+        "label": "ITU-T X.509 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "@id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-signed-certificate",
+        "label": "Self-Signed Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-chain",
+        "label": "Certificate Chain"
+      },
+      {
+        "@id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:intermediate-certificate-authority",
+        "label": "Intermediate Certificate Authority"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:x509-certificate",
+      "label": "X509 Certificate"
+    },
+    {
+      "@id": "urn:ngm:class:pkix-certificate",
+      "label": "PKIX Certificate"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

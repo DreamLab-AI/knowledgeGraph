@@ -82,32 +82,148 @@ public:: true
   "@id": "urn:ngm:class:precision",
   "@type": "Class",
   "label": "Precision",
-  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to...",
+  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to avoid false alarms and providing critical insight into prediction reliability, particularly important in applications where the cost or consequence of false positive errors is significant.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:classification-metric",
+    "label": "Classification Metric"
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:positive-predictive-value",
+      "label": "Positive Predictive Value"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
-    "relatedTo": [
+    "partOf": [
       {
         "@id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "@id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:false-positive-minimisation",
+        "label": "False Positive Minimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:performance-measurement",
+        "label": "Performance Measurement"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      },
+      {
+        "@id": "urn:ngm:class:model-card",
+        "label": "Model Card"
       }
     ]
   }

@@ -58,13 +58,35 @@ public:: true
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:deep-learning-domain",
-      "label": "Deep Learning Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:deep-learning-domain",
+    "label": "Deep Learning Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-operation",
+        "label": "Tensor Operation"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning-toolchain",
+        "label": "Machine Learning Toolchain"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:automatic-differentiation",
@@ -73,20 +95,116 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-computation-library",
+        "label": "Numerical Computation Library"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:open-neural-network-exchange",
+        "label": "Open Neural Network Exchange"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symbolic-ai-system",
+        "label": "Symbolic AI System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:edge-inference-runtime",
+        "label": "Edge Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving-infrastructure",
+        "label": "Model Serving Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:neural-network-framework",
+      "label": "Neural Network Framework"
+    },
+    {
+      "@id": "urn:ngm:class:deep-learning-library",
+      "label": "Deep Learning Library"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

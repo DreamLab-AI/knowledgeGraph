@@ -4,7 +4,7 @@
   "slug": "agent-to-agent-protocol",
   "public": true,
   "classIri": "urn:ngm:class:agent-to-agent-protocol",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Agent-to-Agent Protocol is a class of communication specifications that define how autonomous AI agents discover one another, advertise capabilities, delegate tasks, and exchange results directly \u2014 without requiring a centralised broker \u2014 enabling peer-to-peer coordination between agents built by different organisations or on different frameworks. These protocols treat agents as first-class addressable entities with discoverable skill sets and negotiable service contracts.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation-scope",
+        "label": "Authorisation Scope"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inter-agent-communication",
@@ -26,12 +39,60 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-multi-agent-system",
+        "label": "Decentralised Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:capability-negotiation",
+        "label": "Capability Negotiation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-orchestration",
+        "label": "Centralised Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:web-of-things",
+        "label": "Web of Things"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:service-discovery",
@@ -40,19 +101,36 @@
       {
         "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:agent-card",
+        "label": "Agent Card"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:foundation-for-intelligent-physical-agents",
+        "label": "Foundation for Intelligent Physical Agents"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
-        "label": "Agent2Agent Protocol (Google 2025)"
-      },
-      {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-framework",
+        "label": "Multi-Agent Framework"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
       }
     ]
   },

@@ -69,35 +69,65 @@ public:: true
   "definition": "Transaction Fee is an economic mechanism in blockchain systems whereby originators of transactions pay a fee — denominated in the network's native cryptocurrency — to validators or miners in exchange for including and processing their transaction in a block. Fees simultaneously compensate network participants and provide a spam-prevention signal.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "DeFi and Economics"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
+      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
       {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"}
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:transaction-prioritisation", "label": "Transaction Prioritisation"},
+      {"@id": "urn:ngm:class:spam-prevention", "label": "Spam Prevention"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
+      {"@id": "urn:ngm:class:network-congestion", "label": "Network Congestion"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
+      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:feeless-blockchain", "label": "Feeless Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
+      {"@id": "urn:ngm:class:payment-processing", "label": "Payment Processing"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gas-fee", "label": "Gas Fee"},
+    {"@id": "urn:ngm:class:network-fee", "label": "Network Fee"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

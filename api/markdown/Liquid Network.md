@@ -66,12 +66,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -81,6 +79,14 @@ public:: true
       {
         "@id": "urn:ngm:class:federation",
         "label": "Federation"
+      },
+      {
+        "@id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "@id": "urn:ngm:class:functionary",
+        "label": "Functionary"
       }
     ],
     "enables": [
@@ -91,14 +97,106 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-issuance",
         "label": "Asset Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:fast-settlement",
+        "label": "Fast Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:liquid-bitcoin",
+        "label": "Liquid Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:federated-block-production",
+        "label": "Federated Block Production"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin-layer-2-ecosystem",
+        "label": "Bitcoin Layer-2 Ecosystem"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-assets-protocol",
+        "label": "Confidential Assets Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elements-project",
+        "label": "Elements Project"
+      },
+      {
+        "@id": "urn:ngm:class:script-multisig",
+        "label": "Script Multisig"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-finance",
+        "label": "Institutional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-infrastructure",
+        "label": "Exchange Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      },
+      {
+        "@id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:liquid-sidechain",
+      "label": "Liquid Sidechain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

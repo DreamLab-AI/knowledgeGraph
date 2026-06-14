@@ -23,24 +23,64 @@ public:: true
   "definition": "An existential risk is any risk that could permanently and drastically curtail humanity's long-run potential — including human extinction, irreversible civilisational collapse, or permanent totalitarian lock-in — as distinct from severe but recoverable catastrophes. The concept grounds a research agenda that prioritises preventing outcomes from which recovery is impossible, because their badness is unbounded by the loss of all future generations.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:catastrophic-risk-assessment", "label": "Catastrophic Risk Assessment"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:catastrophic-risk-assessment", "label": "Catastrophic Risk Assessment"},
   "relations": {
-    "relatedTo": [
+    "hasPart": [
       {"@id": "urn:ngm:class:existential-ai-risk", "label": "Existential AI Risk"},
-      {"@id": "urn:ngm:class:existential-risk-research", "label": "Existential Risk Research"},
-      {"@id": "urn:ngm:class:longtermism", "label": "Longtermism"}
+      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
+      {"@id": "urn:ngm:class:nuclear-risk", "label": "Nuclear Risk"},
+      {"@id": "urn:ngm:class:pandemic-risk", "label": "Pandemic Risk"},
+      {"@id": "urn:ngm:class:engineered-pathogen-risk", "label": "Engineered Pathogen Risk"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:global-catastrophic-risk", "label": "Global Catastrophic Risk"},
+      {"@id": "urn:ngm:class:risk-analysis", "label": "Risk Analysis"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:probability-estimation", "label": "Probability Estimation"},
+      {"@id": "urn:ngm:class:moral-philosophy", "label": "Moral Philosophy"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:catastrophic-risk-reduction", "label": "Catastrophic Risk Reduction"}
+      {"@id": "urn:ngm:class:catastrophic-risk-reduction", "label": "Catastrophic Risk Reduction"},
+      {"@id": "urn:ngm:class:ai-safety-policy", "label": "AI Safety Policy"},
+      {"@id": "urn:ngm:class:pandemic-preparedness", "label": "Pandemic Preparedness"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:longtermism", "label": "Longtermism"},
+      {"@id": "urn:ngm:class:existential-risk-research", "label": "Existential Risk Research"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:biosafety-regulation", "label": "Biosafety Regulation"},
+      {"@id": "urn:ngm:class:international-coordination", "label": "International Coordination"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:recoverable-catastrophe", "label": "Recoverable Catastrophe"},
+      {"@id": "urn:ngm:class:local-risk", "label": "Local Risk"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:climate-risk", "label": "Climate Risk"},
+      {"@id": "urn:ngm:class:future-of-humanity-institute", "label": "Future of Humanity Institute"}
     ],
     "relatedTo": [
+      {"@id": "urn:ngm:class:longtermism", "label": "Longtermism"},
+      {"@id": "urn:ngm:class:existential-risk-research", "label": "Existential Risk Research"},
       {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:future-of-humanity-institute", "label": "Future of Humanity Institute"}
+      {"@id": "urn:ngm:class:future-of-humanity-institute", "label": "Future of Humanity Institute"},
+      {"@id": "urn:ngm:class:centre-for-the-study-of-existential-risk", "label": "Centre for the Study of Existential Risk"}
     ]
   },
-  "quality": 0.85
+  "sameAs": [
+    {"@id": "urn:ngm:class:global-catastrophic-risk", "label": "Global Catastrophic Risk"},
+    {"@id": "urn:ngm:class:civilisational-risk", "label": "Civilisational Risk"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

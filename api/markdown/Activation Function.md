@@ -55,51 +55,149 @@ public:: true
   "@type": "Class",
   "label": "Activation Function",
   "definition": "An Activation Function is a non-linear mathematical transformation applied to a neuron's weighted input sum, enabling neural networks to learn complex, non-linear mappings. Common variants include Sigmoid, Tanh, ReLU, Leaky ReLU, and GELU; the choice of activation function critically affects gradient flow, convergence speed, and model expressivity.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:neural-network-component",
+    "label": "Neural Network Component"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:transfer-function",
+      "label": "Transfer Function"
     },
     {
-      "@id": "urn:ngm:class:neural-network-component",
-      "label": "Neural Network Component"
+      "@id": "urn:ngm:class:neuron-activation",
+      "label": "Neuron Activation"
     }
   ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:nonlinearity",
+        "label": "Nonlinearity"
+      },
+      {
+        "@id": "urn:ngm:class:derivative",
+        "label": "Derivative"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:differentiability",
+        "label": "Differentiability"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:universal-approximation",
+        "label": "Universal Approximation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-learning",
+        "label": "Feature Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:weighted-sum",
+        "label": "Weighted Sum"
+      },
+      {
+        "@id": "urn:ngm:class:neuron",
+        "label": "Neuron"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:linear-activation",
+        "label": "Linear Activation"
+      },
+      {
+        "@id": "urn:ngm:class:step-function",
+        "label": "Step Function"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
         "@id": "urn:ngm:class:neural-network-layer",
         "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:vanishing-gradient",
+        "label": "Vanishing Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
       }
     ],
-    "partOf": [
+    "bridgesTo": [
       {
-        "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-neural-network",
+        "label": "Quantum Neural Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
       }
     ]
   }

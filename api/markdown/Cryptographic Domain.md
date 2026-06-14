@@ -323,43 +323,73 @@ alias:: CryptographicDomain, Cryptography Domain, CryptographyDomain
   "@id": "urn:ngm:class:cryptographic-domain",
   "@type": "Class",
   "label": "Cryptographic Domain",
-  "definition": "The Cryptographic Domain represents a specialised sub-domain within blockchain technology encompassing all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. It includes hash functions, digital signature schemes, zero-knowledge proof systems, threshold cryptography, and post-quantum approaches. Cryptography is not merely an implementation detail but the foundational layer enabling immutability, verifiable ownership, and privacy-preserving computation across decentralised networks.",
-  "domain": "blockchain",
+  "definition": "The Cryptographic Domain represents a specialised knowledge area encompassing all cryptographic primitives, protocols, and mechanisms used to secure distributed systems. It includes hash functions, digital signature schemes, zero-knowledge proof systems, threshold cryptography, homomorphic encryption, and post-quantum approaches. Cryptography is the foundational layer enabling data integrity, verifiable ownership, and privacy-preserving computation across decentralised and centralised security infrastructures alike.",
+  "domain": "security",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-      "label": "Public Key Infrastructure"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
       {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
       {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
+      {"@id": "urn:ngm:class:digital-signature-scheme", "label": "Digital Signature Scheme"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:computational-hardness-assumptions", "label": "Computational Hardness Assumptions"},
+      {"@id": "urn:ngm:class:elliptic-curve-mathematics", "label": "Elliptic Curve Mathematics"},
+      {"@id": "urn:ngm:class:secure-random-number-generation", "label": "Secure Random Number Generation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:decentralized-consensus", "label": "Decentralized Consensus"},
+      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"},
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:np-completeness", "label": "NP-Completeness"},
+      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:mpc-multi-party-computation", "label": "MPC (Multi-Party Computation)"},
+      {"@id": "urn:ngm:class:verifiable-secret-sharing", "label": "Verifiable Secret Sharing"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-cryptographic-standards", "label": "NIST Cryptographic Standards"},
+      {"@id": "urn:ngm:class:iso-iec-18033", "label": "ISO/IEC 18033"},
+      {"@id": "urn:ngm:class:iso-iec-14888", "label": "ISO/IEC 14888"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
+      {"@id": "urn:ngm:class:classical-cryptography", "label": "Classical Cryptography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems-security", "label": "Distributed Systems Security"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:applied-cryptography", "label": "Applied Cryptography"},
+    {"@id": "urn:ngm:class:cryptographic-engineering", "label": "Cryptographic Engineering"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

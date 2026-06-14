@@ -54,35 +54,175 @@ public:: true
   "@id": "urn:ngm:class:graphics-pipeline",
   "@type": "Class",
   "label": "Graphics Pipeline",
-  "definition": "The graphics pipeline is the ordered sequence of stages that transforms 3D scene description into a 2D image, covering vertex processing, primitive assembly, rasterisation and fragment shading.",
-  "domain": "metaverse",
+  "definition": "The graphics pipeline is the ordered sequence of stages that transforms a 3D scene description into a 2D raster image, encompassing vertex processing, primitive assembly, rasterisation, fragment shading, and output merging, executed on programmable GPU hardware and exposed through graphics APIs.",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:computer-graphics",
-      "label": "Computer Graphics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-graphics",
+    "label": "Computer Graphics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:fragment-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:primitive-assembly",
+        "label": "Primitive Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:gpu-architecture",
         "label": "GPU Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:framebuffer",
+        "label": "Framebuffer"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rendering-algorithm",
+        "label": "Rendering Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:scan-line-rendering",
+        "label": "Scan-Line Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-buffer",
+        "label": "Vertex Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:transform-matrix",
+        "label": "Transform Matrix"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ray-tracing-pipeline",
+        "label": "Ray Tracing Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      },
+      {
+        "@id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:gpu-pipeline",
+      "label": "GPU Pipeline"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authorization-server",
+        "label": "Authorization Server"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-identity",
@@ -26,12 +39,47 @@
       {
         "id": "urn:ngm:class:privacy-preserving-authentication",
         "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "id": "urn:ngm:class:holder-binding",
+        "label": "Holder Binding"
+      },
+      {
+        "id": "urn:ngm:class:cross-device-authentication",
+        "label": "Cross-Device Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralized Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:oauth-2-0",
@@ -44,10 +92,40 @@
       {
         "id": "urn:ngm:class:digital-identity-wallet",
         "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:presentation-exchange",
+        "label": "Presentation Exchange"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:iso-18013-5",
+        "label": "ISO 18013-5 mDL"
+      },
+      {
+        "id": "urn:ngm:class:eudi-wallet",
+        "label": "EUDI Wallet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openid-foundation",
+        "label": "OpenID Foundation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -55,12 +133,16 @@
         "label": "OpenID4VCI"
       },
       {
-        "id": "urn:ngm:class:selective-disclosure",
-        "label": "Selective Disclosure"
-      },
-      {
         "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:siop-v2",
+        "label": "SIOP v2"
+      },
+      {
+        "id": "urn:ngm:class:eidas-2-0",
+        "label": "eIDAS 2.0"
       }
     ]
   },

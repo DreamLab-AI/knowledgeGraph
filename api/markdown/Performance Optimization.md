@@ -58,20 +58,46 @@ public:: true
   "@id": "urn:ngm:class:performance-optimization",
   "@type": "Class",
   "label": "Performance Optimization",
-  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput.",
+  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    },
-    {
-      "@id": "urn:ngm:class:optimization-technique",
-      "label": "Optimization Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:optimization-technique",
+    "label": "Optimization Technique"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:compiler-optimization",
+        "label": "Compiler Optimization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:resource-efficiency",
@@ -84,14 +110,86 @@ public:: true
       {
         "@id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:data-structures",
+        "label": "Data Structures"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-processing",
+        "label": "Asynchronous Processing"
+      },
+      {
+        "@id": "urn:ngm:class:connection-pooling",
+        "label": "Connection Pooling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:premature-optimization",
+        "label": "Premature Optimization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-inference-optimization",
+        "label": "Machine Learning Inference Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:database-query-optimization",
+        "label": "Database Query Optimization"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:system-tuning",
+      "label": "System Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:software-performance-engineering",
+      "label": "Software Performance Engineering"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,42 +13,14 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [
+    "requires": [
       {
-        "id": "urn:ngm:class:trust-and-safety",
-        "label": "Trust and Safety"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:digital-signature-verification",
-        "label": "Digital Signature Verification"
-      },
-      {
-        "id": "urn:ngm:class:humanity-attestation",
-        "label": "Humanity Attestation"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:trust-framework",
-        "label": "Trust Framework"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:identity-verification",
@@ -57,10 +29,104 @@
       {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       },
       {
         "id": "urn:ngm:class:reputation-system",
         "label": "Reputation System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:implicit-trust",
+        "label": "Implicit Trust"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:humanity-attestation",
+        "label": "Humanity Attestation"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:eidas-2",
+        "label": "eIDAS 2.0"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
       }
     ]
   },

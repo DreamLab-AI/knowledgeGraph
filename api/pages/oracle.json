@@ -5,39 +5,140 @@
   "public": true,
   "classIri": "urn:ngm:class:oracle",
   "domain": "blockchain",
-  "definition": "In blockchain systems, a mechanism that brings external information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles are the boundary between deterministic on-chain logic and the variable outside world.",
+  "definition": "In blockchain systems, a mechanism that brings external off-chain information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles form the trust boundary between deterministic on-chain logic and the variable outside world, and may be centralised reporters or decentralised aggregation networks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:data-feed",
+        "label": "Data Feed"
+      },
+      {
+        "id": "urn:ngm:class:oracle-node",
+        "label": "Oracle Node"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:prediction-market",
+        "label": "Prediction Market"
+      },
+      {
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:external-data-source",
+        "label": "External Data Source"
+      },
+      {
+        "id": "urn:ngm:class:api-provider",
+        "label": "API Provider"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-oracle-network",
+        "label": "Decentralised Oracle Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-oracle",
+        "label": "Centralised Oracle"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-world-data",
+        "label": "Real-World Data"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-data",
+        "label": "Supply Chain Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-middleware",
+        "label": "Blockchain Middleware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
   },
   "wikilinks": [
     {

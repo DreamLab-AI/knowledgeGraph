@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:load-balancer",
   "domain": "distributed-systems",
-  "definition": "A component that distributes incoming network or application traffic across multiple servers to improve throughput, reliability and resource utilisation.",
+  "definition": "A component that distributes incoming network or application traffic across multiple backend servers to improve throughput, reliability, and resource utilisation, preventing any single server from becoming a bottleneck.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:network-architecture",
@@ -13,14 +13,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:health-check",
+        "label": "Health Check"
+      },
+      {
+        "id": "urn:ngm:class:session-persistence",
+        "label": "Session Persistence"
+      },
+      {
+        "id": "urn:ngm:class:scheduling-algorithm",
+        "label": "Scheduling Algorithm"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:server-pool",
+        "label": "Server Pool"
       }
     ],
     "enables": [
@@ -31,17 +48,97 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scaling",
+        "label": "Horizontal Scaling"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:round-robin-scheduling",
+        "label": "Round Robin Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:least-connections",
+        "label": "Least Connections"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ssl-termination",
+        "label": "SSL Termination"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:traffic-management",
+        "label": "Traffic Management"
+      },
+      {
+        "id": "urn:ngm:class:ingress-controller",
+        "label": "Ingress Controller"
+      }
+    ]
   },
   "wikilinks": [
     {

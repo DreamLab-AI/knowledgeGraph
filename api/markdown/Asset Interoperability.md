@@ -29,21 +29,61 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
       {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
       {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:open-metaverse", "label": "Open Metaverse"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-asset-ecosystem", "label": "Digital Asset Ecosystem"},
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"}
+      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
+      {"@id": "urn:ngm:class:cross-protocol-liquidity", "label": "Cross-Protocol Liquidity"},
+      {"@id": "urn:ngm:class:user-owned-economy", "label": "User-Owned Economy"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"},
-      {"@id": "urn:ngm:class:digital-asset-standards", "label": "Digital Asset Standards"}
+      {"@id": "urn:ngm:class:digital-asset-standards", "label": "Digital Asset Standards"},
+      {"@id": "urn:ngm:class:bridge-contract", "label": "Bridge Contract"},
+      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"},
+      {"@id": "urn:ngm:class:gltf", "label": "glTF"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
+      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
+      {"@id": "urn:ngm:class:ontology-alignment", "label": "Ontology Alignment"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:open-metaverse-interoperability-group", "label": "Open Metaverse Interoperability Group"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"},
+      {"@id": "urn:ngm:class:walled-garden", "label": "Walled Garden"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:digital-asset-portability", "label": "Digital Asset Portability"},
+    {"@id": "urn:ngm:class:cross-platform-asset-compatibility", "label": "Cross-Platform Asset Compatibility"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

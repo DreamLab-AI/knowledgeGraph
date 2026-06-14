@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:custodian",
+        "label": "Custodian"
+      },
+      {
+        "id": "urn:ngm:class:mint-burn-mechanism",
+        "label": "Mint-Burn Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:collateral-locking",
+        "label": "Collateral Locking"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
@@ -30,12 +43,51 @@
       {
         "id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      },
+      {
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-lending",
+        "label": "Decentralized Lending"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -44,6 +96,14 @@
       {
         "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
       }
     ],
     "supports": [],
@@ -61,6 +121,14 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking-token",
+        "label": "Liquid Staking Token"
       }
     ]
   },

@@ -21,26 +21,57 @@ public:: true
   "@type": "Class",
   "label": "Meta-Learning",
   "definition": "Meta-Learning, colloquially described as 'learning to learn', is the study and design of machine learning systems that improve their own learning algorithms or initialisation through experience across multiple tasks, enabling rapid adaptation to new tasks with minimal data. Rather than learning a task directly, a meta-learning algorithm learns a prior or inductive bias that facilitates fast generalisation. Key paradigms include model-agnostic meta-learning (MAML), which optimises for a parameter initialisation that is close to good solutions for many tasks, and metric-based approaches such as prototypical networks that learn a task-agnostic embedding space. Meta-learning is central to few-shot learning, continual learning, and automated machine learning research.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:model-agnostic-meta-learning", "label": "Model-Agnostic Meta-Learning"},
+      {"@id": "urn:ngm:class:prototypical-networks", "label": "Prototypical Networks"},
+      {"@id": "urn:ngm:class:metric-based-meta-learning", "label": "Metric-Based Meta-Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:task-distribution", "label": "Task Distribution"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
+      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
+      {"@id": "urn:ngm:class:automated-machine-learning", "label": "Automated Machine Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:bi-level-optimisation", "label": "Bi-Level Optimisation"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"}
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
+      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:learning-to-learn", "label": "Learning to Learn"},
+    {"@id": "urn:ngm:class:few-shot-generalisation", "label": "Few-Shot Generalisation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

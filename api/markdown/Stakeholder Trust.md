@@ -23,22 +23,56 @@ public:: true
   "definition": "Stakeholder trust is the confident reliance that individuals, groups, or organisations — including users, operators, regulators, and affected communities — place in a system, institution, or technology to behave reliably, safely, and in accordance with stated values. In the context of AI and automated systems, stakeholder trust encompasses both calculative assessments of technical competence and affective judgements about integrity and ethical alignment, and is recognised as a prerequisite for adoption, legitimate deployment, and effective governance. It must be earned through demonstrated performance, transparency, and accountability rather than assumed.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trust", "label": "Trust"}],
+  "subClassOf": {"@id": "urn:ngm:class:trust", "label": "Trust"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
       {"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"},
       {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
+      {"@id": "urn:ngm:class:legitimacy", "label": "Legitimacy"},
+      {"@id": "urn:ngm:class:social-licence-to-operate", "label": "Social Licence to Operate"},
+      {"@id": "urn:ngm:class:reputational-risk", "label": "Reputational Risk"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
+      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:auditability", "label": "Auditability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:risk-communication", "label": "Risk Communication"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:automation-bias", "label": "Automation Bias"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:institutional-trust", "label": "Institutional Trust"},
+    {"@id": "urn:ngm:class:public-trust-in-ai", "label": "Public Trust in AI"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

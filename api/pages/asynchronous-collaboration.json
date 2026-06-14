@@ -5,41 +5,127 @@
   "public": true,
   "classIri": "urn:ngm:class:asynchronous-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
+  "definition": "Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-workspace-tools",
-      "label": "Workspace Tools"
-    },
-    {
       "id": "urn:ngm:class:telecollaboration-domain",
-      "label": "TC-0001-telecollaboration-domain"
+      "label": "Telecollaboration Domain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.55,
+  "qualityScore": 0.68,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collaborative-document-editing",
+        "label": "Collaborative Document Editing"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:issue-tracking",
+        "label": "Issue Tracking"
+      },
+      {
+        "id": "urn:ngm:class:project-management-system",
+        "label": "Project Management System"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:documentation-culture",
         "label": "Documentation Culture"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:documentation-systems",
+        "label": "Documentation Systems"
+      },
+      {
+        "id": "urn:ngm:class:shared-repository",
+        "label": "Shared Repository"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:global-accessibility",
         "label": "Global Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:deep-work",
+        "label": "Deep Work"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-version-control",
+        "label": "Distributed Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:team-coordination",
+        "label": "Team Coordination"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:rfc",
+        "label": "RFC"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

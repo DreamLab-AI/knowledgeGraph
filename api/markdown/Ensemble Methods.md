@@ -66,32 +66,59 @@ public:: true
   "@id": "urn:ngm:class:ensemble-methods",
   "@type": "Class",
   "label": "Ensemble Methods",
-  "definition": "Ensemble Mods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
-  "domain": "artificial-intelligence",
+  "definition": "Machine learning techniques that combine multiple base models (weak learners) to produce a stronger, more accurate predictor by aggregating their predictions, thereby reducing variance, bias, or both, and achieving better generalisation than any single model alone.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning",
+    "label": "Machine Learning"
+  },
   "relations": {
+    "hasPart": [
+      { "@id": "urn:ngm:class:bagging", "label": "Bagging" },
+      { "@id": "urn:ngm:class:boosting", "label": "Boosting" },
+      { "@id": "urn:ngm:class:stacking", "label": "Stacking" },
+      { "@id": "urn:ngm:class:voting-classifier", "label": "Voting Classifier" }
+    ],
+    "requires": [
+      { "@id": "urn:ngm:class:base-learner", "label": "Base Learner" },
+      { "@id": "urn:ngm:class:training-data", "label": "Training Data" }
+    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:model-combination",
-        "label": "Model Combination"
-      }
+      { "@id": "urn:ngm:class:model-combination", "label": "Model Combination" },
+      { "@id": "urn:ngm:class:generalization", "label": "Generalization" },
+      { "@id": "urn:ngm:class:variance-reduction", "label": "Variance Reduction" },
+      { "@id": "urn:ngm:class:bias-reduction", "label": "Bias Reduction" }
+    ],
+    "uses": [
+      { "@id": "urn:ngm:class:decision-tree", "label": "Decision Tree" },
+      { "@id": "urn:ngm:class:random-forest", "label": "Random Forest" },
+      { "@id": "urn:ngm:class:gradient-boosting", "label": "Gradient Boosting" },
+      { "@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation" }
+    ],
+    "contrastsWith": [
+      { "@id": "urn:ngm:class:single-model", "label": "Single Model" },
+      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" }
+    ],
+    "relatedTo": [
+      { "@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff" },
+      { "@id": "urn:ngm:class:overfitting", "label": "Overfitting" },
+      { "@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning" }
+    ],
+    "bridgesTo": [
+      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" },
+      { "@id": "urn:ngm:class:federated-learning", "label": "Federated Learning" }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    { "@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning" },
+    { "@id": "urn:ngm:class:model-ensemble", "label": "Model Ensemble" }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

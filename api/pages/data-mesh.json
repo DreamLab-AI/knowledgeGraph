@@ -4,7 +4,7 @@
   "slug": "data-mesh",
   "public": true,
   "classIri": "urn:ngm:class:data-mesh",
-  "domain": "infrastructure",
+  "domain": "data",
   "definition": "Data Mesh is a socio-technical paradigm for large-scale analytical data architecture, coined by Zhamak Dehghani (2020), that decentralises data ownership to domain-aligned teams who treat their analytical datasets as first-class products accessible via standardised interfaces. It rests on four principles: domain-oriented decentralised data ownership, data as a product, self-serve data infrastructure as a platform, and federated computational governance. Unlike monolithic data lakes or warehouses governed by a central data engineering team, a Data Mesh distributes accountability so that the teams who generate data also maintain its quality, documentation, and SLAs as discoverable data products. The model draws on domain-driven design and microservices thinking applied to analytical rather than operational data flows.",
   "subClassOf": [
     {
@@ -16,8 +16,38 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-product",
+        "label": "Data Product"
+      },
+      {
+        "id": "urn:ngm:class:data-domain",
+        "label": "Data Domain"
+      },
+      {
+        "id": "urn:ngm:class:self-serve-data-platform",
+        "label": "Self-Serve Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:federated-computational-governance",
+        "label": "Federated Computational Governance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:data-contract",
+        "label": "Data Contract"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-analytics",
@@ -26,12 +56,34 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:data-democratisation",
+        "label": "Data Democratisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-fabric-architecture",
+        "label": "Data Fabric Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:microservices-architecture",
@@ -44,6 +96,10 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
       }
     ],
     "supports": [
@@ -64,12 +120,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-fabric-architecture",
-        "label": "Data Fabric Architecture"
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
       }
     ]
   },

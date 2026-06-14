@@ -97,17 +97,25 @@ public:: true
   "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-standards-and-interop",
+    "label": "Standards and Interoperability"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:bc-token-and-asset",
-        "label": "Token and Asset"
+        "@id": "urn:ngm:class:avatar-mesh",
+        "label": "Avatar Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-rigging",
+        "label": "Avatar Rigging"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-interoperability",
+        "label": "Metaverse Interoperability"
       }
     ],
     "requires": [
@@ -122,6 +130,10 @@ public:: true
       {
         "@id": "urn:ngm:class:translation-frameworks",
         "label": "Translation Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "enables": [
@@ -136,14 +148,104 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:user-owned-identity",
+        "label": "User-Owned Identity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      },
+      {
+        "@id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:open-metaverse-interoperability",
+        "label": "Open Metaverse Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:digital-asset-portability",
+        "label": "Digital Asset Portability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:3d-asset-compression",
+        "label": "3D Asset Compression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:vrm-consortium",
+        "label": "VRM Consortium"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:platform-lock-in",
+        "label": "Platform Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bc-token-and-asset",
+        "label": "Token and Asset"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ready-player-me",
+        "label": "Ready Player Me"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-platform-avatar",
+      "label": "Cross-Platform Avatar"
+    },
+    {
+      "@id": "urn:ngm:class:avatar-interoperability",
+      "label": "Avatar Interoperability"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

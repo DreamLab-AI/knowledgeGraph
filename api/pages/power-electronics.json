@@ -4,8 +4,8 @@
   "slug": "power-electronics",
   "public": true,
   "classIri": "urn:ngm:class:power-electronics",
-  "domain": "robotics",
-  "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices, central to motor drives, power supplies and energy systems.",
+  "domain": "infrastructure",
+  "definition": "Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices such as MOSFETs, IGBTs and SiC transistors, central to motor drives, power supplies, inverters and energy management systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:embedded-systems-domain",
@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inverter",
+        "label": "Inverter"
+      },
+      {
+        "id": "urn:ngm:class:rectifier",
+        "label": "Rectifier"
+      },
+      {
+        "id": "urn:ngm:class:dc-dc-converter",
+        "label": "DC-DC Converter"
+      },
+      {
+        "id": "urn:ngm:class:gate-driver",
+        "label": "Gate Driver"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:switching-semiconductor",
+        "label": "Switching Semiconductor"
+      },
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      },
+      {
+        "id": "urn:ngm:class:electromagnetic-compatibility",
+        "label": "Electromagnetic Compatibility"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motor-driver",
@@ -26,17 +56,101 @@
       {
         "id": "urn:ngm:class:electric-motor",
         "label": "Electric Motor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:variable-frequency-drive",
+        "label": "Variable Frequency Drive"
+      },
+      {
+        "id": "urn:ngm:class:wireless-power-transfer",
+        "label": "Wireless Power Transfer"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse Width Modulation"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:linear-power-supply",
+        "label": "Linear Power Supply"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:electric-vehicle",
+        "label": "Electric Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mosfet",
+        "label": "MOSFET"
+      },
+      {
+        "id": "urn:ngm:class:igbt",
+        "label": "IGBT"
+      },
+      {
+        "id": "urn:ngm:class:silicon-carbide",
+        "label": "Silicon Carbide"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:iec-61800",
+        "label": "IEC 61800"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:embedded-systems-domain",
+        "label": "Embedded Systems Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-harvesting",
+        "label": "Energy Harvesting"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ]
   },
   "wikilinks": [
     {

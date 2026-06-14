@@ -23,24 +23,65 @@ public:: true
   "definition": "The Linux Foundation is a non-profit technology consortium established in 2000 that provides governance, infrastructure, legal frameworks, and community support for open-source software projects of global significance. It hosts the Linux kernel project alongside hundreds of collaborative projects spanning cloud-native computing (CNCF, Kubernetes), networking, security, blockchain (Hyperledger), AI (LF AI & Data), automotive, and open standards development. The Linux Foundation operates a neutral shared governance model in which competing commercial organisations collaborate on foundational technology layers, pooling resources to reduce duplicated effort and accelerating adoption of interoperable open standards. Its project portfolio collectively represents some of the most widely deployed software infrastructure in the world.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:cncf", "label": "CNCF"},
       {"@id": "urn:ngm:class:hyperledger-foundation", "label": "Hyperledger Foundation"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
+      {"@id": "urn:ngm:class:lf-ai-data-foundation", "label": "LF AI & Data Foundation"},
+      {"@id": "urn:ngm:class:openssf", "label": "OpenSSF"},
+      {"@id": "urn:ngm:class:lf-energy", "label": "LF Energy"},
+      {"@id": "urn:ngm:class:lf-edge", "label": "LF Edge"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:open-source-ecosystem", "label": "Open Source Ecosystem"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}
+      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"},
+      {"@id": "urn:ngm:class:vendor-neutral-governance", "label": "Vendor Neutral Governance"},
+      {"@id": "urn:ngm:class:collaborative-software-development", "label": "Collaborative Software Development"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:linux-kernel", "label": "Linux Kernel"},
+      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
+      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
+      {"@id": "urn:ngm:class:open-source-security", "label": "Open Source Security"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:contributor-license-agreement", "label": "Contributor License Agreement"},
+      {"@id": "urn:ngm:class:ip-stewardship", "label": "IP Stewardship"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-source-ai-definition", "label": "Open Source AI Definition"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:apache-software-foundation", "label": "Apache Software Foundation"},
+      {"@id": "urn:ngm:class:eclipse-foundation", "label": "Eclipse Foundation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"},
+      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"}
+      {"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"},
+      {"@id": "urn:ngm:class:free-standards-group", "label": "Free Standards Group"},
+      {"@id": "urn:ngm:class:open-source-development-labs", "label": "Open Source Development Labs"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:lf", "label": "LF"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

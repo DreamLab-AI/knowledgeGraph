@@ -78,20 +78,34 @@ public:: true
   "@id": "urn:ngm:class:authentication-standards",
   "@type": "Class",
   "label": "Authentication Standards",
-  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to meta...",
-  "domain": "infrastructure",
+  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:security-standards",
-      "label": "Security Standards"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:security-standards",
+    "label": "Security Standards"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "@id": "urn:ngm:class:passkeys",
+        "label": "Passkeys"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:client-implementation",
@@ -102,8 +116,12 @@ public:: true
         "label": "Hardware Authenticators"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificates",
+        "label": "Digital Certificates"
       }
     ],
     "enables": [
@@ -118,14 +136,100 @@ public:: true
       {
         "@id": "urn:ngm:class:secure-platform-access",
         "label": "Secure Platform Access"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-sp-800-63b",
+        "label": "NIST SP 800-63B"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:password-based-authentication",
+        "label": "Password-Based Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-access-control",
+        "label": "Metaverse Access Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:identity-verification-standards",
+      "label": "Identity Verification Standards"
+    },
+    {
+      "@id": "urn:ngm:class:credential-authentication-protocols",
+      "label": "Credential Authentication Protocols"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

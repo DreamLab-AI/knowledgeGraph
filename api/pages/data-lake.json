@@ -4,20 +4,16 @@
   "slug": "data-lake",
   "public": true,
   "classIri": "urn:ngm:class:data-lake",
-  "domain": "artificial-intelligence",
+  "domain": "data",
   "definition": "A centralized repository that stores structured, semi-structured, and unstructured data at any scale in its native format, deferring schema enforcement to query time (schema-on-read). Data lakes enable big-data analytics, machine learning pipelines, and exploratory analysis without upfront data modelling, serving as the foundational ingestion layer for modern data architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "id": "urn:ngm:class:etsi-domain-data-management-ai",
-      "label": "ETSI Domain: Data Management + AI"
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -34,11 +30,24 @@
         "label": "Batch Processing"
       },
       {
-        "id": "urn:ngm:class:data-storage",
-        "label": "Data Storage"
+        "id": "urn:ngm:class:metadata-catalog",
+        "label": "Metadata Catalog"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
@@ -47,12 +56,38 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:big-data-analytics",
+        "label": "Big Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-lakehouse",
+        "label": "Data Lakehouse"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:data-governance",
@@ -61,23 +96,49 @@
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      },
+      {
+        "id": "urn:ngm:class:apache-iceberg",
+        "label": "Apache Iceberg"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:modern-data-stack",
+        "label": "Modern Data Stack"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:data-fabric-architecture",
         "label": "Data Fabric Architecture"
       },
       {
-        "id": "urn:ngm:class:data-storage-layer",
-        "label": "Data Storage Layer"
-      },
-      {
         "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
       }
     ]
   },

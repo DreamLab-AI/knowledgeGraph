@@ -67,15 +67,13 @@ public:: true
   "@type": "Class",
   "label": "Stochastic Processes",
   "definition": "A stochastic process is a collection of random variables indexed by time or another parameter, used to model systems that evolve with randomness. Examples include random walks, Markov chains, Poisson processes and Brownian motion, each characterised by how its future behaviour depends on its present and past states. Stochastic processes are foundational in probability theory and are applied across physics, biology, queueing theory and quantitative finance.",
-  "domain": "machine-learning",
+  "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:probability-theory",
+    "label": "Probability Theory"
+  },
   "relations": {
     "hasPart": [
       {
@@ -85,6 +83,18 @@ public:: true
       {
         "@id": "urn:ngm:class:brownian-motion",
         "label": "Brownian Motion"
+      },
+      {
+        "@id": "urn:ngm:class:poisson-process",
+        "label": "Poisson Process"
+      },
+      {
+        "@id": "urn:ngm:class:random-walk",
+        "label": "Random Walk"
+      },
+      {
+        "@id": "urn:ngm:class:martingale",
+        "label": "Martingale"
       }
     ],
     "requires": [
@@ -95,6 +105,10 @@ public:: true
       {
         "@id": "urn:ngm:class:measure-theory",
         "label": "Measure Theory"
+      },
+      {
+        "@id": "urn:ngm:class:random-variables",
+        "label": "Random Variables"
       }
     ],
     "enables": [
@@ -105,14 +119,98 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-calculus",
+        "label": "Stochastic Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:queueing-theory",
+        "label": "Queueing Theory"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time Series Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deterministic-systems",
+        "label": "Deterministic Systems"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "@id": "urn:ngm:class:stationarity",
+        "label": "Stationarity"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-processes",
+        "label": "Gaussian Processes"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:random-process",
+      "label": "Random Process"
+    },
+    {
+      "@id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

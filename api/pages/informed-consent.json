@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:voluntariness",
+        "label": "Voluntariness"
+      },
+      {
+        "id": "urn:ngm:class:decision-making-capacity",
+        "label": "Decision-Making Capacity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:patient-autonomy",
+        "label": "Patient Autonomy"
+      },
+      {
+        "id": "urn:ngm:class:comprehension",
+        "label": "Comprehension"
+      },
+      {
+        "id": "urn:ngm:class:right-to-withdraw",
+        "label": "Right to Withdraw"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:clinical-trials",
@@ -30,18 +56,61 @@
       {
         "id": "urn:ngm:class:granular-consent-control",
         "label": "Granular Consent Control"
+      },
+      {
+        "id": "urn:ngm:class:research-ethics",
+        "label": "Research Ethics"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:belmont-report",
+        "label": "Belmont Report"
+      },
+      {
+        "id": "urn:ngm:class:declaration-of-helsinki",
+        "label": "Declaration of Helsinki"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:implied-consent",
+        "label": "Implied Consent"
+      },
+      {
+        "id": "urn:ngm:class:blanket-consent",
+        "label": "Blanket Consent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-transparency",
+        "label": "AI Transparency"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:data-protection-regulation",
         "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:common-rule",
+        "label": "Common Rule"
       }
     ],
     "partOf": [],
@@ -49,10 +118,6 @@
       {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
-      },
-      {
-        "id": "urn:ngm:class:gdpr",
-        "label": "GDPR"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -65,6 +130,10 @@
       {
         "id": "urn:ngm:class:ethical-ai",
         "label": "Ethical AI"
+      },
+      {
+        "id": "urn:ngm:class:proxy-consent",
+        "label": "Proxy Consent"
       }
     ]
   },

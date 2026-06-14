@@ -23,25 +23,57 @@ public:: true
   "definition": "Scope 2 Emissions are the indirect greenhouse gas emissions attributable to an organisation arising from the generation of purchased or acquired electricity, steam, heat, or cooling consumed in its operations, as defined by the GHG Protocol Corporate Standard. Although the physical emissions occur at the power plant or thermal facility, they are accounted for by the purchasing organisation because its demand drives that generation, making Scope 2 the primary decarbonisation lever for energy-intensive organisations such as data centres and manufacturers.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"}],
+  "subClassOf": {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:scope-1-emissions", "label": "Scope 1 Emissions"},
       {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"},
       {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
+      {"@id": "urn:ngm:class:carbon-emission-factor", "label": "Carbon Emission Factor"},
+      {"@id": "urn:ngm:class:grid-electricity", "label": "Grid Electricity"},
+      {"@id": "urn:ngm:class:corporate-carbon-footprint", "label": "Corporate Carbon Footprint"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
-      {"@id": "urn:ngm:class:carbon-neutrality-verification", "label": "Carbon Neutrality Verification"}
+      {"@id": "urn:ngm:class:carbon-neutrality-verification", "label": "Carbon Neutrality Verification"},
+      {"@id": "urn:ngm:class:decarbonisation-strategy", "label": "Decarbonisation Strategy"},
+      {"@id": "urn:ngm:class:carbon-aware-computing", "label": "Carbon-Aware Computing"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
       {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:power-purchase-agreement", "label": "Power Purchase Agreement"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ghg-emissions-inventory", "label": "GHG Emissions Inventory"},
+      {"@id": "urn:ngm:class:corporate-sustainability-reporting-directive", "label": "Corporate Sustainability Reporting Directive"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ghg-protocol-corporate-standard", "label": "GHG Protocol Corporate Standard"},
+      {"@id": "urn:ngm:class:iso-14064", "label": "ISO 14064"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:location-based-accounting", "label": "Location-Based Accounting"},
+      {"@id": "urn:ngm:class:market-based-accounting", "label": "Market-Based Accounting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-centre-energy-efficiency", "label": "Data Centre Energy Efficiency"},
+      {"@id": "urn:ngm:class:24-7-carbon-free-energy", "label": "24/7 Carbon-Free Energy"},
+      {"@id": "urn:ngm:class:ai-sustainability", "label": "AI Sustainability"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:indirect-energy-emissions", "label": "Indirect Energy Emissions"},
+    {"@id": "urn:ngm:class:purchased-electricity-emissions", "label": "Purchased Electricity Emissions"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

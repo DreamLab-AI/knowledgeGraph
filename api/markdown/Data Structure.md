@@ -59,32 +59,69 @@ alias:: DataStructure
   "@id": "urn:ngm:class:data-structure",
   "@type": "Class",
   "label": "Data Structure",
-  "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms.",
+  "definition": "A data structure is an organizational scheme for efficiently storing, accessing, and manipulating data, encompassing arrays, trees, graphs, hash tables, and tensors that underpin algorithmic computation and machine learning systems.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "quality": 0.35,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
+  "subClassOf": {
+    "@id": "urn:ngm:class:computational-abstraction",
+    "label": "Computational Abstraction"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:abstract-data-type", "label": "Abstract Data Type"},
+    {"@id": "urn:ngm:class:container-data-type", "label": "Container Data Type"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:array", "label": "Array"},
+      {"@id": "urn:ngm:class:tree", "label": "Tree"},
+      {"@id": "urn:ngm:class:hash-table", "label": "Hash Table"},
+      {"@id": "urn:ngm:class:tensor", "label": "Tensor"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-science", "label": "Computer Science"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:database-indexing", "label": "Database Indexing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:memory-allocation", "label": "Memory Allocation"},
+      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+      {"@id": "urn:ngm:class:cache-coherence", "label": "Cache Coherence"},
+      {"@id": "urn:ngm:class:pointer", "label": "Pointer"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:sparse-matrix", "label": "Sparse Matrix"},
+      {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:unstructured-data", "label": "Unstructured Data"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:tensor-operations", "label": "Tensor Operations"},
+      {"@id": "urn:ngm:class:memory-optimization", "label": "Memory Optimization"},
+      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
+      {"@id": "urn:ngm:class:algorithmic-complexity", "label": "Algorithmic Complexity"}
     ]
   }
 }

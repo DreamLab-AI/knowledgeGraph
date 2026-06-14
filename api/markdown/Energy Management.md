@@ -23,25 +23,55 @@ public:: true
   "definition": "Energy management is the systematic process of monitoring, controlling, and optimising the generation, distribution, and consumption of energy in facilities, industrial processes, or grid infrastructure to minimise cost, reduce waste, and meet sustainability and regulatory targets. It encompasses metering infrastructure, energy auditing, demand-side management, load forecasting, and integration of renewable generation, governed by standards such as ISO 50001. Modern energy management systems (EMS) use real-time telemetry from IoT sensors, predictive analytics, and automated control loops to balance supply and demand dynamically.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:power-management", "label": "Power Management"}],
+  "subClassOf": {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:energy-audit", "label": "Energy Audit"},
+      {"@id": "urn:ngm:class:load-forecasting", "label": "Load Forecasting"},
+      {"@id": "urn:ngm:class:demand-side-management", "label": "Demand-Side Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:smart-metering", "label": "Smart Metering"},
+      {"@id": "urn:ngm:class:scada", "label": "SCADA"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"},
       {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"}
+      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
+      {"@id": "urn:ngm:class:virtual-power-plant", "label": "Virtual Power Plant"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
       {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:building-automation-system", "label": "Building Automation System"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-50001", "label": "ISO 50001"},
+      {"@id": "urn:ngm:class:bacnet", "label": "BACnet"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
       {"@id": "urn:ngm:class:power-systems", "label": "Power Systems"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"}
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:carbon-market", "label": "Carbon Market"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:energy-management-system", "label": "Energy Management System"},
+    {"@id": "urn:ngm:class:ems", "label": "EMS"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

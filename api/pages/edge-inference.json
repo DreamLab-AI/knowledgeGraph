@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:edge-inference",
   "domain": "machine-learning",
-  "definition": "The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated.",
+  "definition": "The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated, enabling low-latency, privacy-preserving and bandwidth-efficient AI applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:edge-ai",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "growing",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:model-pruning",
+        "label": "Model Pruning"
+      },
+      {
+        "id": "urn:ngm:class:on-device-runtime",
+        "label": "On-Device Runtime"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:inference-engine",
@@ -25,23 +38,106 @@
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-compression",
+        "label": "Neural Network Compression"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:edge-ai",
-        "label": "Edge AI"
+        "id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "id": "urn:ngm:class:on-device-privacy",
+        "label": "On-Device Privacy"
+      },
+      {
+        "id": "urn:ngm:class:offline-ai",
+        "label": "Offline AI"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-inference",
+        "label": "Cloud Inference"
+      },
+      {
+        "id": "urn:ngm:class:centralised-ai",
+        "label": "Centralised AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:tensorflow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "id": "urn:ngm:class:pytorch-mobile",
+        "label": "PyTorch Mobile"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency-optimisation",
+        "label": "Latency Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

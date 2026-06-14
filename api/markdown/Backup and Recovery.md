@@ -23,22 +23,67 @@ public:: true
   "definition": "Backup and Recovery is the set of processes, technologies, and policies that ensure data and system state can be copied to a secondary store and restored to a known-good condition following data loss, corruption, or infrastructure failure. It encompasses full, incremental, and differential backup strategies alongside recovery time objectives (RTO) and recovery point objectives (RPO) that define acceptable loss and restoration windows.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"}],
+  "subClassOf": {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:full-backup", "label": "Full Backup"},
+      {"@id": "urn:ngm:class:incremental-backup", "label": "Incremental Backup"},
+      {"@id": "urn:ngm:class:differential-backup", "label": "Differential Backup"},
+      {"@id": "urn:ngm:class:recovery-time-objective", "label": "Recovery Time Objective"},
+      {"@id": "urn:ngm:class:recovery-point-objective", "label": "Recovery Point Objective"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"},
+      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"}
+      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
+      {"@id": "urn:ngm:class:point-in-time-recovery", "label": "Point-in-Time Recovery"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
+      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
+      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
+      {"@id": "urn:ngm:class:snapshot", "label": "Snapshot"},
+      {"@id": "urn:ngm:class:immutable-storage", "label": "Immutable Storage"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ransomware-protection", "label": "Ransomware Protection"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:continuous-data-protection", "label": "Continuous Data Protection"},
+      {"@id": "urn:ngm:class:air-gap", "label": "Air Gap"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-backup-and-recovery", "label": "Data Backup and Recovery"},
+    {"@id": "urn:ngm:class:backup-and-restore", "label": "Backup and Restore"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

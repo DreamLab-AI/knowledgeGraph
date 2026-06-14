@@ -53,29 +53,139 @@ public:: true
   "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:digital-experience",
-      "label": "Digital Experience"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-experience",
+    "label": "Digital Experience"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:virtual-presence",
         "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interaction",
+        "label": "Avatar Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:6dof-tracking",
+        "label": "6DoF Tracking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:3d-spatial-mapping",
+        "label": "3D Spatial Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:experiential-learning",
+        "label": "Experiential Learning"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-training",
+        "label": "Enterprise Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:flat-screen-interaction",
+        "label": "Flat-Screen Interaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "@id": "urn:ngm:class:xr-experience",
+      "label": "XR Experience"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

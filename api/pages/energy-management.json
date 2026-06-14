@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:energy-audit",
+        "label": "Energy Audit"
+      },
+      {
+        "id": "urn:ngm:class:load-forecasting",
+        "label": "Load Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:demand-side-management",
+        "label": "Demand-Side Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:demand-response",
@@ -30,12 +52,25 @@
       {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:virtual-power-plant",
+        "label": "Virtual Power Plant"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:io-t-sensor-network",
@@ -48,10 +83,27 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:building-automation-system",
+        "label": "Building Automation System"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-50001",
+        "label": "ISO 50001"
+      },
+      {
+        "id": "urn:ngm:class:bacnet",
+        "label": "BACnet"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -65,6 +117,10 @@
       {
         "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
       }
     ]
   },

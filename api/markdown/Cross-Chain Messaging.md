@@ -99,19 +99,13 @@ alias:: Cross Chain Messaging, cross-chain-messaging
   "@id": "urn:ngm:class:cross-chain-messaging",
   "@type": "Class",
   "label": "Cross-Chain Messaging",
-  "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
+  "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications without centralised intermediaries.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:interoperability-protocol",
+    "label": "Interoperability Protocol"
+  },
   "relations": {
     "hasPart": [
       {
@@ -125,6 +119,10 @@ alias:: Cross Chain Messaging, cross-chain-messaging
       {
         "@id": "urn:ngm:class:proof-verification",
         "label": "Proof Verification"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing-system",
+        "label": "Message Passing System"
       }
     ],
     "requires": [
@@ -139,6 +137,14 @@ alias:: Cross Chain Messaging, cross-chain-messaging
       {
         "@id": "urn:ngm:class:relay-network",
         "label": "Relay Network"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
       }
     ],
     "enables": [
@@ -153,20 +159,92 @@ alias:: Cross Chain Messaging, cross-chain-messaging
       {
         "@id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-computation",
+        "label": "Decentralised Computation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-token-transfer",
+        "label": "Cross-Chain Token Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-messaging",
+        "label": "Optimistic Messaging"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:economic-bonding",
+        "label": "Economic Bonding"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-bridge",
+        "label": "Centralised Bridge"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocol"
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    },
+    {
+      "@id": "urn:ngm:class:inter-blockchain-messaging",
+      "label": "Inter-Blockchain Messaging"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

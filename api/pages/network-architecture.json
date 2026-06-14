@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-architecture",
   "domain": "artificial-intelligence",
-  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations.",
+  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations for accuracy, efficiency, and hardware constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -24,16 +24,54 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:skip-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "id": "urn:ngm:class:normalisation-layer",
+        "label": "Normalisation Layer"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:transformers",
@@ -42,18 +80,67 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:model-weights",
         "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning-system",
+        "label": "Deep Learning System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ]
   },

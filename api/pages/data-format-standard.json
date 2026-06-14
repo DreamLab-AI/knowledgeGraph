@@ -4,19 +4,32 @@
   "slug": "data-format-standard",
   "public": true,
   "classIri": "urn:ngm:class:data-format-standard",
-  "domain": "infrastructure",
-  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description for complex scene composition and collaboration.",
+  "domain": "standards",
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:encoding-specification",
+        "label": "Encoding Specification"
+      },
+      {
+        "id": "urn:ngm:class:validation-tools",
+        "label": "Validation Tools"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:implementation-libraries",
@@ -43,22 +56,106 @@
       {
         "id": "urn:ngm:class:cross-platform-exchange",
         "label": "Cross-Platform Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-visualization",
+        "label": "Digital Twin Visualization"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:open-standards-process",
+        "label": "Open Standards Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:material-x",
+        "label": "MaterialX"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:technical-standards",
         "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "uses": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:ngm:class:json-serialization",
+        "label": "JSON Serialisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:scene-description-language",
+        "label": "Scene Description Language"
+      }
+    ]
   },
   "wikilinks": [
     {

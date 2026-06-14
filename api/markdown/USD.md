@@ -54,17 +54,45 @@ public:: true
   "@id": "urn:ngm:class:usd",
   "@type": "Class",
   "label": "USD",
-  "definition": "The United States dollar, the fiat currency issued by the United States and the dominant unit against which most digital assets and stablecoins are quoted and redeemed.",
-  "domain": "blockchain",
+  "definition": "The United States dollar, the sovereign fiat currency issued by the United States Federal Reserve, serving as the world's primary reserve currency and the dominant unit of account against which digital assets, stablecoins, commodities, and international trade flows are quoted and settled.",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:money",
-      "label": "Money"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:fiat-currency",
+    "label": "Fiat Currency"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:federal-reserve-note",
+        "label": "Federal Reserve Note"
+      },
+      {
+        "@id": "urn:ngm:class:us-treasury-bill",
+        "label": "US Treasury Bill"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:global-reserve-currency-system",
+        "label": "Global Reserve Currency System"
+      },
+      {
+        "@id": "urn:ngm:class:bretton-woods-system",
+        "label": "Bretton Woods System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:usdc",
@@ -73,14 +101,104 @@ public:: true
       {
         "@id": "urn:ngm:class:usdt",
         "label": "USDT"
+      },
+      {
+        "@id": "urn:ngm:class:dollar-denominated-settlement",
+        "label": "Dollar-Denominated Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:federal-reserve",
+        "label": "Federal Reserve"
+      },
+      {
+        "@id": "urn:ngm:class:us-government-debt",
+        "label": "US Government Debt"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "@id": "urn:ngm:class:foreign-exchange-market",
+        "label": "Foreign Exchange Market"
+      },
+      {
+        "@id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-4217",
+        "label": "ISO 4217"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:euro",
+        "label": "Euro"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:petrodollar",
+        "label": "Petrodollar"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:us-dollar",
+      "label": "US Dollar"
+    },
+    {
+      "@id": "urn:ngm:class:united-states-dollar",
+      "label": "United States Dollar"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -4,38 +4,142 @@
   "slug": "f1-score",
   "public": true,
   "classIri": "urn:ngm:class:f1-score",
-  "domain": "spatial-computing",
-  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst pena...",
+  "domain": "machine-learning",
+  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst penalising extreme imbalances, particularly useful for comparing models or setting decision thresholds when both prediction reliability and completeness are important and when class distributions are imbalanced.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:imbalanced-dataset-evaluation",
+        "label": "Imbalanced Dataset Evaluation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:harmonic-mean",
+        "label": "Harmonic Mean"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:f-beta-score",
+        "label": "F-Beta Score"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:roc-auc",
+        "label": "ROC-AUC"
+      },
+      {
+        "id": "urn:ngm:class:matthews-correlation-coefficient",
+        "label": "Matthews Correlation Coefficient"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval-metric",
+        "label": "Information Retrieval Metric"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "id": "urn:ngm:class:macro-f1",
+        "label": "Macro F1"
+      },
+      {
+        "id": "urn:ngm:class:micro-f1",
+        "label": "Micro F1"
+      },
+      {
+        "id": "urn:ngm:class:weighted-f1",
+        "label": "Weighted F1"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:classification-evaluation",
+        "label": "Classification Evaluation"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
       }
     ]
   },

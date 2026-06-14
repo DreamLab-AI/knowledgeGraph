@@ -65,34 +65,64 @@ public:: true
   "definition": "Global Illumination (GI) is a rendering approach that simulates all light interactions within a scene, including both direct illumination from light sources and indirect illumination from light bouncing between surfaces. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing, screen-space ambient occlusion, and hardware-accelerated ray tracing, producing physically plausible colour bleeding, soft shadows, and caustics.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
   "relations": {
-    "requires": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:direct-illumination", "label": "Direct Illumination"},
+      {"@id": "urn:ngm:class:indirect-illumination", "label": "Indirect Illumination"},
+      {"@id": "urn:ngm:class:ambient-occlusion", "label": "Ambient Occlusion"},
+      {"@id": "urn:ngm:class:caustics", "label": "Caustics"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
     ],
+    "requires": [
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+      {"@id": "urn:ngm:class:light-transport-simulation", "label": "Light Transport Simulation"},
+      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
+      {"@id": "urn:ngm:class:colour-bleeding", "label": "Colour Bleeding"},
+      {"@id": "urn:ngm:class:soft-shadows", "label": "Soft Shadows"}
+    ],
     "uses": [
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
+      {"@id": "urn:ngm:class:light-probe", "label": "Light Probe"},
+      {"@id": "urn:ngm:class:photon-mapping", "label": "Photon Mapping"},
+      {"@id": "urn:ngm:class:radiosity", "label": "Radiosity"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:architectural-visualisation", "label": "Architectural Visualisation"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"}
+      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
+      {"@id": "urn:ngm:class:local-illumination", "label": "Local Illumination"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning-denoising", "label": "Machine Learning Denoising"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:subsurface-scattering", "label": "Subsurface Scattering"},
+      {"@id": "urn:ngm:class:lightmap-baking", "label": "Lightmap Baking"},
+      {"@id": "urn:ngm:class:voxel-cone-tracing", "label": "Voxel Cone Tracing"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:gi-rendering", "label": "GI Rendering"},
+    {"@id": "urn:ngm:class:indirect-lighting-simulation", "label": "Indirect Lighting Simulation"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

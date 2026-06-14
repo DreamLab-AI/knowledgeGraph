@@ -66,12 +66,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:multisignature-wallet",
+    "label": "Multisignature Wallet"
+  },
   "relations": {
     "requires": [
       {
@@ -81,24 +79,122 @@ public:: true
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:multisignature-wallets",
-        "label": "Multisignature Wallet"
-      },
-      {
         "@id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:spending-limit",
+        "label": "Spending Limit"
+      },
+      {
+        "@id": "urn:ngm:class:social-recovery-wallet",
+        "label": "Social Recovery Wallet"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337 Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1271",
+        "label": "ERC-1271 Contract Signature Validation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:module-pattern",
+        "label": "Module Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:proxy-contract",
+        "label": "Proxy Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gnosis-chain",
+        "label": "Gnosis Chain"
+      },
+      {
+        "@id": "urn:ngm:class:safe-core-protocol",
+        "label": "Safe Core Protocol"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:safe-smart-account",
+      "label": "Safe Smart Account"
+    },
+    {
+      "@id": "urn:ngm:class:safe-multisig",
+      "label": "Safe Multisig"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

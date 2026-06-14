@@ -105,11 +105,19 @@ public:: true
   "definition": "The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "@id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "@id": "urn:ngm:class:preference-alignment",
+      "label": "Preference Alignment"
     }
   ],
   "provenance": {
@@ -122,12 +130,66 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:beneficial-ai",
+        "label": "Beneficial AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:outer-alignment",
+        "label": "Outer Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:inner-alignment",
+        "label": "Inner Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
       }
     ],
     "relatedTo": [
@@ -142,6 +204,14 @@ public:: true
       {
         "@id": "urn:ngm:class:bias",
         "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:goal-misgeneralisation",
+        "label": "Goal Misgeneralisation"
       }
     ],
     "supports": [
@@ -152,6 +222,30 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:capability-overhang",
+        "label": "Capability Overhang"
+      },
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ethics",
+        "label": "Ethics"
       }
     ]
   }

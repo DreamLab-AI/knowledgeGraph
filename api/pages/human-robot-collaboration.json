@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shared-workspace-management",
+        "label": "Shared Workspace Management"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-control",
+        "label": "Force Torque Control"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
@@ -25,6 +38,18 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:safety-monitoring",
+        "label": "Safety Monitoring"
       }
     ],
     "enables": [
@@ -35,17 +60,87 @@
       {
         "id": "urn:ngm:class:assistive-robotics",
         "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:robot-assisted-surgery",
+        "label": "Robot-Assisted Surgery"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control-systems",
+        "label": "Real-Time Control Systems"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fully-autonomous-robotics",
+        "label": "Fully Autonomous Robotics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO/TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:human-factors-engineering",
+        "label": "Human Factors Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

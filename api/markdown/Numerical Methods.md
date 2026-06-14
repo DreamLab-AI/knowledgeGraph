@@ -54,14 +54,14 @@ public:: true
   "@id": "urn:ngm:class:numerical-methods",
   "@type": "Class",
   "label": "Numerical Methods",
-  "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations.",
+  "definition": "Techniques for obtaining approximate solutions to mathematical problems that cannot be solved exactly, using finite sequences of arithmetic operations; encompassing root-finding, interpolation, quadrature, linear-system solvers, ODE/PDE integrators, and optimisation routines with explicit control over accuracy, stability, and computational cost.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:computational-mathematics",
+      "label": "Computational Mathematics"
     }
   ],
   "relations": {
@@ -73,20 +73,134 @@ public:: true
       {
         "@id": "urn:ngm:class:differential-equations",
         "label": "Differential Equations"
+      },
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:computational-fluid-dynamics",
+        "label": "Computational Fluid Dynamics"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:root-finding-algorithms",
+        "label": "Root-Finding Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-optimisation",
+        "label": "Numerical Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-linear-algebra",
+        "label": "Numerical Linear Algebra"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:floating-point-representation",
+        "label": "Floating-Point Representation"
+      },
+      {
+        "@id": "urn:ngm:class:error-analysis",
+        "label": "Error Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:iterative-methods",
+        "label": "Iterative Methods"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symbolic-computation",
+        "label": "Symbolic Computation"
+      },
+      {
+        "@id": "urn:ngm:class:exact-arithmetic",
+        "label": "Exact Arithmetic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-motion-planning",
+        "label": "Robotics Motion Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorithm-complexity",
+        "label": "Algorithm Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:numerical-analysis",
+      "label": "Numerical Analysis"
+    },
+    {
+      "@id": "urn:ngm:class:computational-methods",
+      "label": "Computational Methods"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

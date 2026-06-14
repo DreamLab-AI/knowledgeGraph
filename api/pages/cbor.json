@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:low-power-wide-area-network",
+        "label": "Low-Power Wide Area Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:embedded-systems",
@@ -26,29 +35,94 @@
       {
         "id": "urn:ngm:class:credential-format-standard",
         "label": "Credential Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:constrained-restful-environments",
+        "label": "Constrained RESTful Environments"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-8949",
+        "label": "RFC 8949"
+      },
+      {
+        "id": "urn:ngm:class:cose",
+        "label": "CBOR Object Signing and Encryption"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-encoding",
+        "label": "Deterministic Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:extensible-markup-language",
+        "label": "Extensible Markup Language"
+      },
+      {
+        "id": "urn:ngm:class:bson",
+        "label": "BSON"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:binary-encoding",
         "label": "Binary Encoding"
       },
       {
-        "id": "urn:ngm:class:internet-of-things",
-        "label": "Internet of Things"
+        "id": "urn:ngm:class:type-length-value",
+        "label": "Type-Length-Value"
+      },
+      {
+        "id": "urn:ngm:class:tagged-data-item",
+        "label": "Tagged Data Item"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:mobile-drivers-licence",
+        "label": "Mobile Driver's Licence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:iso-18013-5",
+        "label": "ISO 18013-5 mDL Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "json"
+        "label": "JSON Data Interchange Format"
       },
       {
         "id": "urn:ngm:class:protocol-buffer",
@@ -57,6 +131,14 @@
       {
         "id": "urn:ngm:class:data-format-standard",
         "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:messagepack",
+        "label": "MessagePack"
+      },
+      {
+        "id": "urn:ngm:class:asn1",
+        "label": "ASN.1"
       }
     ]
   },

@@ -23,25 +23,56 @@ public:: true
   "definition": "Leader election is a fundamental coordination primitive in distributed computing that enables a cluster of peer nodes to agree on a single node — the leader — that assumes special coordination responsibilities such as sequencing writes, directing consensus rounds, or managing resource allocation on behalf of the group. In the presence of node failures, network partitions, or leader crashes, the leader election protocol must reliably select a new leader from the surviving nodes while ensuring safety (at most one leader at a time) and liveness (a leader is eventually elected) properties hold.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}],
+  "subClassOf": {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
       {"@id": "urn:ngm:class:raft", "label": "Raft"},
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
+      {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
+      {"@id": "urn:ngm:class:randomised-timeout", "label": "Randomised Timeout"},
+      {"@id": "urn:ngm:class:quorum", "label": "Quorum"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
       {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
+      {"@id": "urn:ngm:class:log-replication", "label": "Log Replication"},
+      {"@id": "urn:ngm:class:primary-backup-replication", "label": "Primary-Backup Replication"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cluster-membership", "label": "Cluster Membership"},
+      {"@id": "urn:ngm:class:failure-detector", "label": "Failure Detector"},
+      {"@id": "urn:ngm:class:network-partition-tolerance", "label": "Network Partition Tolerance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bully-algorithm", "label": "Bully Algorithm"},
+      {"@id": "urn:ngm:class:ring-election", "label": "Ring Election"},
+      {"@id": "urn:ngm:class:leaderless-consensus", "label": "Leaderless Consensus"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:participant-coordination", "label": "Participant Coordination"}
+      {"@id": "urn:ngm:class:participant-coordination", "label": "Participant Coordination"},
+      {"@id": "urn:ngm:class:split-brain", "label": "Split Brain"},
+      {"@id": "urn:ngm:class:etcd", "label": "etcd"},
+      {"@id": "urn:ngm:class:zookeeper", "label": "ZooKeeper"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:kubernetes-operator", "label": "Kubernetes Operator"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:primary-election", "label": "Primary Election"},
+    {"@id": "urn:ngm:class:coordinator-election", "label": "Coordinator Election"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

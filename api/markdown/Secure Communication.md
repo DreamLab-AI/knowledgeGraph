@@ -23,23 +23,61 @@ public:: true
   "definition": "Secure communication is the practice and set of technologies that protect the confidentiality, integrity, and authenticity of information exchanged between parties over potentially adversarial networks, ensuring that eavesdroppers cannot read message content, tamperers cannot alter it undetected, and impersonators cannot forge the identity of legitimate participants. The discipline encompasses transport-layer security protocols (TLS, DTLS, QUIC with TLS), end-to-end encryption protocols (Signal Protocol, MLS, Matrix), secure messaging standards (S/MIME, PGP), VPN tunnelling (IPsec, WireGuard), and the cryptographic primitives—asymmetric key exchange, symmetric cipher suites, authenticated encryption, and digital signatures—that underpin them. Security properties are formally analysed through cryptographic protocol proofs and verified implementations.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
       {"@id": "urn:ngm:class:tls", "label": "TLS"},
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:authenticated-encryption", "label": "Authenticated Encryption"},
+      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:secure-remote-access", "label": "Secure Remote Access"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
+      {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"},
+      {"@id": "urn:ngm:class:vpn", "label": "VPN"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
+      {"@id": "urn:ngm:class:nist", "label": "NIST"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:plaintext-communication", "label": "Plaintext Communication"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
       {"@id": "urn:ngm:class:tls-encryption", "label": "TLS Encryption"},
       {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:iot-security", "label": "IoT Security"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:secure-messaging", "label": "Secure Messaging"},
+    {"@id": "urn:ngm:class:encrypted-communication", "label": "Encrypted Communication"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

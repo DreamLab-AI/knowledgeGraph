@@ -95,39 +95,153 @@ public:: true
   "@type": "Class",
   "label": "Human Rights",
   "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-governance-and-safety",
+    "label": "Governance and Safety"
+  },
   "relations": {
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:blockchain-technology",
-        "label": "Blockchain Technology"
-      },
+    "hasPart": [
       {
         "@id": "urn:ngm:class:privacy-rights",
         "label": "Privacy Rights"
       },
       {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-fair-trial",
+        "label": "Right to Fair Trial"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:non-discrimination",
+        "label": "Non-Discrimination"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:universal-declaration-of-human-rights",
+        "label": "Universal Declaration of Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:council-of-europe-ai-treaty",
+        "label": "Council of Europe AI Treaty"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles-2024",
+        "label": "OECD AI Principles 2024"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surveillance-technology",
+        "label": "Surveillance Technology"
+      },
+      {
+        "@id": "urn:ngm:class:social-scoring",
+        "label": "Social Scoring"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
         "@id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
       },
       {
-        "@id": "urn:ngm:class:digital-rights",
-        "label": "Digital Rights"
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:consent",
+        "label": "Consent"
       }
     ]
   },
-  "quality": 0.95,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fundamental-rights",
+      "label": "Fundamental Rights"
+    },
+    {
+      "@id": "urn:ngm:class:basic-rights",
+      "label": "Basic Rights"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

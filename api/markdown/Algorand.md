@@ -28,17 +28,55 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:pure-proof-of-stake", "label": "Pure Proof of Stake"},
       {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:byzantine-agreement", "label": "Byzantine Agreement"},
+      {"@id": "urn:ngm:class:cryptographic-sortition", "label": "Cryptographic Sortition"},
+      {"@id": "urn:ngm:class:teal-bytecode", "label": "TEAL Bytecode"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"}
+      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
+      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:algorand-virtual-machine", "label": "Algorand Virtual Machine"},
+      {"@id": "urn:ngm:class:arc-token-standard", "label": "ARC Token Standard"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:algo-token", "label": "ALGO Token"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:real-world-asset-tokenization", "label": "Real-World Asset Tokenization"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:financial-technology", "label": "Financial Technology"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:financial-technology", "label": "Financial Technology"}
+      {"@id": "urn:ngm:class:state-proof", "label": "State Proof"},
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:algorand-network", "label": "Algorand Network"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

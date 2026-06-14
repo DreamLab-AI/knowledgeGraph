@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:process-modelling",
+        "label": "Process Modelling"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      },
+      {
+        "id": "urn:ngm:class:case-management",
+        "label": "Case Management"
+      },
+      {
+        "id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:process-notation",
+        "label": "Process Notation"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:process-automation",
@@ -30,25 +56,94 @@
       {
         "id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      },
+      {
+        "id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:business-process-reengineering",
+        "label": "Business Process Reengineering"
+      },
+      {
+        "id": "urn:ngm:class:total-quality-management",
+        "label": "Total Quality Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platform"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:service-oriented-architecture",
         "label": "Service Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:integration-middleware",
+        "label": "Integration Middleware"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:compliance-management",
         "label": "Compliance Management"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      },
+      {
+        "id": "urn:ngm:class:workflow-management-coalition",
+        "label": "Workflow Management Coalition"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:organisational-management",
+        "label": "Organisational Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
       }
     ]
   },

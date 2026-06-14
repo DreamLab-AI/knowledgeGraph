@@ -4,23 +4,28 @@
   "slug": "digital-certificate",
   "public": true,
   "classIri": "urn:ngm:class:digital-certificate",
-  "domain": "spatial-computing",
-  "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.",
+  "domain": "security",
+  "definition": "A cryptographic credential issued by a Certificate Authority that binds a public key to an identified entity, authenticates users, and secures transactions across networks, metaverse platforms, and blockchain systems through public key infrastructure and verifiable attestations.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
     {
       "id": "urn:ngm:class:digital-security",
       "label": "Digital Security"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:certificate-authority",
@@ -31,8 +36,12 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -47,17 +56,96 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:x509-standard",
+        "label": "X.509 Standard"
+      },
+      {
+        "id": "urn:ngm:class:tls-protocol",
+        "label": "TLS Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-signed-certificate",
+        "label": "Self-Signed Certificate"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ssl-tls",
+        "label": "SSL/TLS"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:email-encryption",
+        "label": "Email Encryption"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:w3c-web-standards",
+        "label": "W3C Web Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

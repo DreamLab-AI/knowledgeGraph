@@ -8,56 +8,138 @@
   "definition": "A 3D immersive environment enabling geographically distributed teams to interact via avatar identities, perform work tasks in real time, and access shared artefacts through metaverse-enabled workspaces. Capabilities include interactive whiteboards, document co-editing, spatial audio, and persistent virtual rooms accessible via desktop, mobile, and VR/AR devices.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
       "id": "urn:ngm:class:virtual-workspace",
       "label": "Virtual Workspace"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interactive-whiteboard",
+        "label": "Interactive Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:virtual-meeting-room",
+        "label": "Virtual Meeting Room"
+      },
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
       },
       {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "id": "urn:ngm:class:document-co-editing",
+        "label": "Document Co-Editing"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "requires": [
       {
-        "id": "urn:ngm:class:remote-collaboration",
-        "label": "Remote Collaboration"
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-team-meeting",
+        "label": "Remote Team Meeting"
+      },
+      {
+        "id": "urn:ngm:class:virtual-onboarding",
+        "label": "Virtual Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:cross-functional-collaboration",
+        "label": "Cross-Functional Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:in-person-collaboration",
+        "label": "In-Person Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-team",
+        "label": "Distributed Team"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:immersive-communication",
         "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
       }
     ]
   },

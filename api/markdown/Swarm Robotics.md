@@ -139,33 +139,67 @@ alias:: SwarmRobotics
   "@id": "urn:ngm:class:swarm-robotics",
   "@type": "Class",
   "label": "Swarm Robotics",
-  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and DecentralizedControl|decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating emergent system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:multi-robot-system",
+    "label": "Multi-Robot System"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
-    ],
-    "uses": [
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
       {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {"@id": "urn:ngm:class:inter-robot-communication", "label": "Inter-Robot Communication"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:decentralized-control", "label": "Decentralized Control"},
+      {"@id": "urn:ngm:class:local-interaction-protocol", "label": "Local Interaction Protocol"},
+      {"@id": "urn:ngm:class:distributed-sensing", "label": "Distributed Sensing"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
+      {"@id": "urn:ngm:class:search-and-rescue", "label": "Search and Rescue"},
+      {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
+      {"@id": "urn:ngm:class:stigmergy", "label": "Stigmergy"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:self-organization", "label": "Self-Organization"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bio-inspired-robotics", "label": "Bio-Inspired Robotics"},
+      {"@id": "urn:ngm:class:emergent-behavior", "label": "Emergent Behavior"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralized-robot-control", "label": "Centralized Robot Control"},
+      {"@id": "urn:ngm:class:single-robot-system", "label": "Single Robot System"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
+      {"@id": "urn:ngm:class:particle-swarm-optimization", "label": "Particle Swarm Optimization"}
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:swarm-intelligence-robotics", "label": "Swarm Intelligence Robotics"},
+    {"@id": "urn:ngm:class:collective-robotics", "label": "Collective Robotics"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -21,26 +21,63 @@ public:: true
   "@type": "Class",
   "label": "Agent-to-Agent Protocol",
   "definition": "Agent-to-Agent Protocol is a class of communication specifications that define how autonomous AI agents discover one another, advertise capabilities, delegate tasks, and exchange results directly — without requiring a centralised broker — enabling peer-to-peer coordination between agents built by different organisations or on different frameworks. These protocols treat agents as first-class addressable entities with discoverable skill sets and negotiable service contracts.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
+      {"@id": "urn:ngm:class:decentralised-multi-agent-system", "label": "Decentralised Multi-Agent System"},
+      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"},
+      {"@id": "urn:ngm:class:capability-negotiation", "label": "Capability Negotiation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
+      {"@id": "urn:ngm:class:agent-card", "label": "Agent Card"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"},
+      {"@id": "urn:ngm:class:authorisation-scope", "label": "Authorisation Scope"},
+      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:agent2-agent-protocol-google-2025", "label": "Agent2Agent Protocol (Google 2025)"},
+      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA ACL"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-orchestration", "label": "Centralised Orchestration"},
+      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent2-agent-protocol-google-2025", "label": "Agent2Agent Protocol (Google 2025)"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
+      {"@id": "urn:ngm:class:multi-agent-framework", "label": "Multi-Agent Framework"},
+      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:web-of-things", "label": "Web of Things"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:foundation-for-intelligent-physical-agents", "label": "Foundation for Intelligent Physical Agents"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:agent-interoperability-protocol", "label": "Agent Interoperability Protocol"},
+    {"@id": "urn:ngm:class:peer-agent-protocol", "label": "Peer Agent Protocol"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

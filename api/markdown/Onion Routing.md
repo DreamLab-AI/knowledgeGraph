@@ -26,19 +26,62 @@ alias:: OnionRouting, onion-routing
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:relay-node", "label": "Relay Node"},
+      {"@id": "urn:ngm:class:circuit", "label": "Circuit"},
+      {"@id": "urn:ngm:class:exit-node", "label": "Exit Node"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:anonymous-communication", "label": "Anonymous Communication"},
+      {"@id": "urn:ngm:class:hidden-services", "label": "Hidden Services"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-trust", "label": "Distributed Trust"},
+      {"@id": "urn:ngm:class:network-routing", "label": "Network Routing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:tor-network", "label": "Tor Network"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
+      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metadata-privacy", "label": "Metadata Privacy"},
+      {"@id": "urn:ngm:class:traffic-analysis-resistance", "label": "Traffic Analysis Resistance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:vpn", "label": "VPN"},
+      {"@id": "urn:ngm:class:proxy-server", "label": "Proxy Server"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:payment-channel-network", "label": "Payment Channel Network"},
+      {"@id": "urn:ngm:class:source-routing", "label": "Source Routing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:mix-network", "label": "Mix Network"},
+      {"@id": "urn:ngm:class:traffic-correlation-attack", "label": "Traffic Correlation Attack"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:onion-routing-protocol", "label": "Onion Routing Protocol"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

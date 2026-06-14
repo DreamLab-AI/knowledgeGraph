@@ -83,26 +83,60 @@ public:: true
   "@type": "Class",
   "label": "Documentation Standards",
   "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
-  "domain": "spatial-computing",
+  "domain": "standards",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:technical-standards",
+    "label": "Technical Standards"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "@id": "urn:ngm:class:technical-documentation-standards",
+      "label": "Technical Documentation Standards"
     },
     {
-      "@id": "urn:ngm:class:technical-standards",
-      "label": "Technical Standards"
+      "@id": "urn:ngm:class:specification-standards",
+      "label": "Specification Standards"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:terminology-specification",
+        "label": "Terminology Specification"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-specification",
+        "label": "Data Format Specification"
+      },
+      {
+        "@id": "urn:ngm:class:interface-protocol",
+        "label": "Interface Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:standards-ecosystem",
+        "label": "Standards Ecosystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:interoperability",
@@ -111,6 +145,70 @@ public:: true
       {
         "@id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-compliance",
+        "label": "Accessibility Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:developer-experience",
+        "label": "Developer Experience"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
       }
     ],
     "relatedTo": [
@@ -121,18 +219,20 @@ public:: true
       {
         "@id": "urn:ngm:class:api-standard",
         "label": "API Standard"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
-    "supports": [
+    "bridgesTo": [
       {
-        "@id": "urn:ngm:class:documentation-generation",
-        "label": "Documentation Generation"
-      }
-    ],
-    "standardizedBy": [
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
       {
-        "@id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   }

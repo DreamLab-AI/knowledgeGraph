@@ -45,32 +45,61 @@ public:: true
   "definition": "Technical infrastructure supporting persistent, large-scale metaverse platforms, encompassing the networking, cloud compute, edge nodes, rendering servers, and spatial data systems required to deliver low-latency immersive experiences at scale. It spans connectivity layers (5G, content delivery), server-side rendering and simulation, asset storage, and identity services that together underpin interoperable virtual worlds.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
       {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
       {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
-      {"@id": "urn:ngm:class:virtual-world-infrastructure", "label": "Virtual World Infrastructure"}
+      {"@id": "urn:ngm:class:virtual-world-infrastructure", "label": "Virtual World Infrastructure"},
+      {"@id": "urn:ngm:class:cloud-rendering", "label": "Cloud Rendering"},
+      {"@id": "urn:ngm:class:spatial-data-platform", "label": "Spatial Data Platform"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:5g-network", "label": "5G Network"},
+      {"@id": "urn:ngm:class:low-latency-networking", "label": "Low-Latency Networking"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:internet-backbone", "label": "Internet Backbone"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"},
       {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:remote-rendering", "label": "Remote Rendering"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {"@id": "urn:ngm:class:remote-rendering", "label": "Remote Rendering"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:immersive-internet-infrastructure", "label": "Immersive Internet Infrastructure"},
+    {"@id": "urn:ngm:class:spatial-web-infrastructure", "label": "Spatial Web Infrastructure"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

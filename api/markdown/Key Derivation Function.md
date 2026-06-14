@@ -70,40 +70,164 @@ public:: true
   "@id": "urn:ngm:class:key-derivation-function",
   "@type": "Class",
   "label": "Key Derivation Function",
-  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in bloc...",
-  "domain": "blockchain",
+  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation, deterministic wallet recovery, and password-based encryption in security and blockchain systems.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:pseudo-random-function",
+        "label": "Pseudo-Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "@id": "urn:ngm:class:salt",
+        "label": "Salt"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-key-generation",
+        "label": "Deterministic Key Generation"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:password-hashing",
         "label": "Password Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:bip39",
+        "label": "BIP39"
+      },
+      {
+        "@id": "urn:ngm:class:bip32",
+        "label": "BIP32"
       }
     ],
-    "uses": [
+    "requires": [
       {
-        "@id": "urn:ngm:class:hash-function",
-        "label": "Hash Function"
+        "@id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "@id": "urn:ngm:class:master-secret",
+        "label": "Master Secret"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-security",
+        "label": "Wallet Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:random-key-generation",
+        "label": "Random Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-key-exchange",
+        "label": "Symmetric Key Exchange"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-sp800-132",
+        "label": "NIST SP 800-132"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8018",
+        "label": "RFC 8018"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:mnemonic-phrase",
+        "label": "Mnemonic Phrase"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:pbkdf2",
+        "label": "PBKDF2"
+      },
+      {
+        "@id": "urn:ngm:class:scrypt",
+        "label": "scrypt"
+      },
+      {
+        "@id": "urn:ngm:class:argon2",
+        "label": "Argon2"
+      },
+      {
+        "@id": "urn:ngm:class:hkdf",
+        "label": "HKDF"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:kdf",
+      "label": "KDF"
+    },
+    {
+      "@id": "urn:ngm:class:password-based-key-derivation",
+      "label": "Password-Based Key Derivation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

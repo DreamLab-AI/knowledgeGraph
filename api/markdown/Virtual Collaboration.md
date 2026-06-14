@@ -50,53 +50,149 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:virtual-workspace",
+    "label": "Virtual Workspace"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "@id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
     },
     {
-      "@id": "urn:ngm:class:virtual-workspace",
-      "label": "Virtual Workspace"
+      "@id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
-    "requires": [
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:interactive-whiteboard",
+        "label": "Interactive Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-meeting-room",
+        "label": "Virtual Meeting Room"
+      },
       {
         "@id": "urn:ngm:class:avatar",
         "label": "Avatar"
       },
       {
-        "@id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "@id": "urn:ngm:class:document-co-editing",
+        "label": "Document Co-Editing"
       }
     ],
-    "bridgesTo": [
+    "partOf": [
       {
-        "@id": "urn:ngm:class:remote-collaboration",
-        "label": "Remote Collaboration"
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
-        "@id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "@id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:remote-team-meeting",
+        "label": "Remote Team Meeting"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-onboarding",
+        "label": "Virtual Onboarding"
+      },
+      {
+        "@id": "urn:ngm:class:cross-functional-collaboration",
+        "label": "Cross-Functional Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-team",
+        "label": "Distributed Team"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:in-person-collaboration",
+        "label": "In-Person Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:immersive-communication",
         "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
       }
     ]
   }

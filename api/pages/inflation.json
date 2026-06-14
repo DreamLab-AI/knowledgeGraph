@@ -8,14 +8,6 @@
   "definition": "The scheduled or dynamic increase in token supply within a blockchain network, used to fund validator rewards, incentivise participation, and manage monetary policy. Inflation rate parameters are typically encoded in the protocol and may be adjusted via governance, directly affecting token holder purchasing power and long-term economic security.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:economic-mechanism",
       "label": "EconomicMechanism"
     }
@@ -24,19 +16,21 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:fixed-supply-token",
-        "label": "Fixed Supply Token"
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:inflation-rate-parameter",
+        "label": "Inflation Rate Parameter"
       }
     ],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:minting",
         "label": "Minting"
@@ -44,35 +38,91 @@
       {
         "id": "urn:ngm:class:circulating-supply",
         "label": "Circulating Supply"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:validator-reward",
+        "label": "Validator Reward"
+      },
+      {
+        "id": "urn:ngm:class:staking-incentive",
+        "label": "Staking Incentive"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-supply-token",
+        "label": "Fixed Supply Token"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-monetary-policy",
+        "label": "Central Bank Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-economics-domain",
+        "label": "TokenEconomicsDomain"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:inflation-control",
         "label": "Inflation Control"
       },
       {
-        "id": "urn:ngm:class:emission-schedule",
-        "label": "Emission Schedule"
+        "id": "urn:ngm:class:purchasing-power",
+        "label": "Purchasing Power"
       },
       {
-        "id": "urn:ngm:class:supply-cap",
-        "label": "Supply Cap"
-      },
-      {
-        "id": "urn:ngm:class:block-reward",
-        "label": "Block Reward"
-      },
-      {
-        "id": "urn:ngm:class:deflationary-token",
-        "label": "Deflationary Token"
-      },
-      {
-        "id": "urn:ngm:class:burning-mechanism",
-        "label": "Burning Mechanism"
+        "id": "urn:ngm:class:token-dilution",
+        "label": "Token Dilution"
       }
     ]
   },

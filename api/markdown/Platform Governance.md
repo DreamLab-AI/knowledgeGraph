@@ -46,35 +46,161 @@ public:: true
   "@id": "urn:ngm:class:platform-governance",
   "@type": "Class",
   "label": "Platform Governance",
-  "definition": "Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders.",
-  "domain": "artificial-intelligence",
+  "definition": "Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.",
+  "domain": "governance",
   "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:decentralised-governance",
+    "label": "Decentralised Governance"
+  },
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:artificial-intelligence",
-        "label": "artificial-intelligence"
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-governance",
+        "label": "Off-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-proposal",
+        "label": "Governance Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-mechanism",
+        "label": "Quorum Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-participation",
+        "label": "Stakeholder Participation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:decentralised-decision-making",
         "label": "Decentralised Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:community-coordination",
+        "label": "Community Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-identity",
+        "label": "Cryptographic Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-representation",
+        "label": "Delegated Representation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:soulbound-token",
+        "label": "Soulbound Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:voter-apathy",
+        "label": "Voter Apathy"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
       }
     ]
   },
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
-  "subClassOf": [
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "@id": "urn:ngm:class:decentralised-platform-governance",
+      "label": "Decentralised Platform Governance"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance"
     }
-  ]
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

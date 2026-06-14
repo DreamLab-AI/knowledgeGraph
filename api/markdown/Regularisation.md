@@ -43,58 +43,148 @@ public:: true
   "@type": "Class",
   "label": "Regularisation",
   "definition": "A family of techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation to unseen data. Common methods include L1 (Lasso) and L2 (Ridge) weight penalties, dropout, early stopping, and data augmentation, each discouraging the model from memorising noise at the expense of learning underlying patterns.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:regularization",
+      "label": "Regularization"
     },
     {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
+      "@id": "urn:ngm:class:shrinkage",
+      "label": "Shrinkage"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:l1-regularisation",
+        "label": "L1 Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:l2-regularisation",
+        "label": "L2 Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "@id": "urn:ngm:class:elastic-net",
+        "label": "Elastic Net"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:overfitting",
-        "label": "Overfitting"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:dropout",
-        "label": "Dropout"
       },
       {
-        "@id": "urn:ngm:class:training",
-        "label": "Training"
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:penalty-term",
+        "label": "Penalty Term"
+      },
+      {
+        "@id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-pruning",
+        "label": "Neural Network Pruning"
       }
     ]
   }

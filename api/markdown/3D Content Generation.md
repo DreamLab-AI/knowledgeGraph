@@ -66,23 +66,59 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative AI"
-    }
-  ],
-  "quality": 0.35,
+  "subClassOf": {
+    "@id": "urn:ngm:class:generative-ai",
+    "label": "Generative AI"
+  },
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-3-d-synthesis",
+      "label": "AI 3D Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:automated-3-d-modeling",
+      "label": "Automated 3D Modeling"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:texture-synthesis",
+        "label": "Texture Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-generation",
+        "label": "Mesh Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-scene-representation",
+        "label": "3D Scene Representation"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-asset",
@@ -91,6 +127,14 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
       }
     ],
     "uses": [
@@ -105,6 +149,52 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-dataset",
+        "label": "3D Dataset"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:manual-3-d-modeling",
+        "label": "Manual 3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
       }
     ],
     "relatedTo": [

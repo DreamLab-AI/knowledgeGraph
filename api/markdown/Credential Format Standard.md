@@ -86,19 +86,13 @@ public:: true
   "@id": "urn:ngm:class:credential-format-standard",
   "@type": "Class",
   "label": "Credential Format Standard",
-  "definition": "Technical specifications defining the structure, encoding, and cryptographic verification mods for digital credentials, enabling secure issuance, storage, and verification of identity documents, certifications, and attestations across different platforms and systems through interoperable formats ...",
-  "domain": "infrastructure",
+  "definition": "Technical specifications defining the structure, encoding, and cryptographic verification methods for digital credentials, enabling secure issuance, storage, and verification of identity documents, certifications, and attestations across different platforms and systems through interoperable formats such as W3C Verifiable Credentials and ISO mDL.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:identity-standards",
-      "label": "Identity Standards"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:identity-standards",
+    "label": "Identity Standards"
+  },
   "relations": {
     "requires": [
       {
@@ -112,6 +106,14 @@ public:: true
       {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -126,14 +128,104 @@ public:: true
       {
         "@id": "urn:ngm:class:trust-interoperability",
         "label": "Trust Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:iso-mdl",
+        "label": "ISO mDL"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:cbor",
+        "label": "CBOR"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      },
+      {
+        "@id": "urn:ngm:class:jwt-token",
+        "label": "JWT Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:eu-digital-identity-wallet",
+        "label": "EU Digital Identity Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:verifiable-credential-data-model",
+      "label": "Verifiable Credential Data Model"
+    },
+    {
+      "@id": "urn:ngm:class:digital-credential-specification",
+      "label": "Digital Credential Specification"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

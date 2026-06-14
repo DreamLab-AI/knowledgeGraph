@@ -28,19 +28,53 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:w3-c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"}
+      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"},
+      {"@id": "urn:ngm:class:hyperledger-aries", "label": "Hyperledger Aries"},
+      {"@id": "urn:ngm:class:json-web-encryption", "label": "JSON Web Encryption"},
+      {"@id": "urn:ngm:class:trust-over-ip", "label": "Trust over IP"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:jose-json-object-signing-and-encryption", "label": "JOSE (JSON Object Signing and Encryption)"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:did-resolution", "label": "DID Resolution"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:verifiable-credential-vc", "label": "Verifiable Credential (VC)"},
-      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"}
+      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"},
+      {"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"},
+      {"@id": "urn:ngm:class:credential-presentation", "label": "Credential Presentation"},
+      {"@id": "urn:ngm:class:agent-to-agent-communication", "label": "Agent-to-Agent Communication"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:did-resolver", "label": "DID Resolver"},
+      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"},
+      {"@id": "urn:ngm:class:w3-c-did-core", "label": "W3C DID Core"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:oauth2", "label": "OAuth2"},
+      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-to-machine-communication", "label": "Machine-to-Machine Communication"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:didcomm-messaging", "label": "DIDComm Messaging"},
+    {"@id": "urn:ngm:class:decentralized-identifier-communication", "label": "Decentralized Identifier Communication"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -49,19 +49,43 @@ public:: true
   "definition": "The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
-  "qualityScore": 0.7,
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-platform-and-environment",
+    "label": "Platform and Environment"
+  },
+  "qualityScore": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:xr-platform-runtime",
+      "label": "XR Platform Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:mixed-reality-runtime",
+      "label": "Mixed Reality Runtime"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compositor",
+        "label": "Compositor"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-subsystem",
+        "label": "Tracking Subsystem"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:xr-software-stack",
+        "label": "XR Software Stack"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:rendering-pipeline",
@@ -70,6 +94,10 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-abstraction",
         "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
       }
     ],
     "enables": [
@@ -84,9 +112,31 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
       }
     ],
     "implements": [
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:webxr-device-api",
+        "label": "WebXR Device API"
+      },
       {
         "@id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
@@ -104,6 +154,48 @@ public:: true
       {
         "@id": "urn:ngm:class:middleware",
         "label": "Middleware"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-xr-sdk",
+        "label": "Proprietary XR SDK"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:steamvr",
+        "label": "SteamVR"
       }
     ]
   }

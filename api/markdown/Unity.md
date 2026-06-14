@@ -62,17 +62,47 @@ public:: true
   "domain": "metaverse",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:game-engine",
-      "label": "Game Engine"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:game-engine",
+    "label": "Game Engine"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scene-editor",
+        "label": "Scene Editor"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:animation-system",
+        "label": "Animation System"
+      },
+      {
+        "@id": "urn:ngm:class:asset-store",
+        "label": "Asset Store"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:real-time-3d-ecosystem",
+        "label": "Real-Time 3D Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:scripting-runtime",
+        "label": "Scripting Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-api",
+        "label": "Rendering API"
       }
     ],
     "enables": [
@@ -83,14 +113,106 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-simulation",
+        "label": "Interactive Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:mono",
+        "label": "Mono"
+      },
+      {
+        "@id": "urn:ngm:class:dotnet",
+        "label": ".NET"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:entity-component-system",
+        "label": "Entity Component System"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      },
+      {
+        "@id": "urn:ngm:class:godot",
+        "label": "Godot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:universal-render-pipeline",
+        "label": "Universal Render Pipeline"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:unity-engine",
+      "label": "Unity Engine"
+    },
+    {
+      "@id": "urn:ngm:class:unity3d",
+      "label": "Unity3D"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

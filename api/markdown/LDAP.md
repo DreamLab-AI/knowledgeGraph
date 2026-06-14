@@ -28,18 +28,55 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
       {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
+      {"@id": "urn:ngm:class:centralised-authorisation", "label": "Centralised Authorisation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
       {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
+      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
+      {"@id": "urn:ngm:class:directory-service", "label": "Directory Service"},
+      {"@id": "urn:ngm:class:x500-directory-access-protocol", "label": "X.500 Directory Access Protocol"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"}
+      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rfc-4511", "label": "RFC 4511"},
+      {"@id": "urn:ngm:class:asn1-ber-encoding", "label": "ASN.1 BER Encoding"},
+      {"@id": "urn:ngm:class:sasl", "label": "SASL"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"},
+      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:directory-information-tree", "label": "Directory Information Tree"},
+      {"@id": "urn:ngm:class:distinguished-name", "label": "Distinguished Name"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:radius", "label": "RADIUS"},
+      {"@id": "urn:ngm:class:scim", "label": "SCIM"},
+      {"@id": "urn:ngm:class:kerberos", "label": "Kerberos"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:active-directory", "label": "Active Directory"},
+      {"@id": "urn:ngm:class:saml", "label": "SAML"},
+      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:lightweight-directory-access-protocol", "label": "Lightweight Directory Access Protocol"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

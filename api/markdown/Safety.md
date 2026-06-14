@@ -95,14 +95,12 @@ public:: true
   "@type": "Class",
   "label": "Safety",
   "definition": "The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-governance-and-safety",
+    "label": "Governance and Safety"
+  },
   "relations": {
     "requires": [
       {
@@ -112,14 +110,128 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-assessment-ai-0079",
         "label": "Risk Assessment (AI-0079)"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:fail-safe-design",
+        "label": "Fail-Safe Design"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:physical-safety",
+        "label": "Physical Safety"
+      },
+      {
+        "@id": "urn:ngm:class:operational-safety",
+        "label": "Operational Safety"
+      },
+      {
+        "@id": "urn:ngm:class:societal-safety",
+        "label": "Societal Safety"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense in Depth"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adversarial-examples",
+        "label": "Adversarial Examples"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -223,6 +335,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
   - requires:: [[Risk Assessment (AI-0079)]], [[Hazard Analysis]]
+  - enables:: [[Trust and Safety]], [[Accountability]], [[AI Trustworthiness]]
+  - dependsOn:: [[Risk Management]], [[Robustness]], [[Reliability]]
+  - standardizedBy:: [[EU AI Act]], [[NIST AI Risk Management Framework]]
+  - bridgesTo:: [[Large Language Models]], [[Infrastructure]], [[Politics, Law, Privacy]]
+  - contrastsWith:: [[Security]]
 - ### Content
   - The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
 		- ### Effective Altruists (EA) / AI Safety Advocates

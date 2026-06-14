@@ -21,26 +21,59 @@ public:: true
   "@type": "Class",
   "label": "Chain-of-Thought Prompting",
   "definition": "Chain-of-thought (CoT) prompting is a prompt engineering technique that elicits intermediate reasoning steps from a large language model before it produces a final answer, substantially improving performance on multi-step arithmetic, commonsense reasoning, and symbolic manipulation tasks. By including exemplars that demonstrate step-by-step reasoning or by appending the instruction 'Let's think step by step' (zero-shot CoT), the technique leverages the model's autoregressive generation to decompose complex problems into tractable substeps. CoT prompting was formally characterised by Wei et al. (2022) and has become a foundational capability-elicitation method for frontier language models.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}],
+  "subClassOf": {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
       {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"}
+      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
+      {"@id": "urn:ngm:class:autoregressive-language-model", "label": "Autoregressive Language Model"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
       {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"},
-      {"@id": "urn:ngm:class:common-sense-reasoning", "label": "Common Sense Reasoning"}
+      {"@id": "urn:ngm:class:common-sense-reasoning", "label": "Common Sense Reasoning"},
+      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
+      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
+      {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"},
+      {"@id": "urn:ngm:class:self-consistency-decoding", "label": "Self-Consistency Decoding"},
+      {"@id": "urn:ngm:class:tree-of-thoughts", "label": "Tree of Thoughts"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:standard-prompting", "label": "Standard Prompting"},
+      {"@id": "urn:ngm:class:direct-answer-prompting", "label": "Direct Answer Prompting"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"},
-      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"}
+      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"},
+      {"@id": "urn:ngm:class:react-prompting", "label": "ReAct Prompting"},
+      {"@id": "urn:ngm:class:least-to-most-prompting", "label": "Least-to-Most Prompting"},
+      {"@id": "urn:ngm:class:programme-of-thought", "label": "Programme of Thought"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cot-prompting", "label": "CoT Prompting"},
+    {"@id": "urn:ngm:class:step-by-step-reasoning", "label": "Step-by-Step Reasoning"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

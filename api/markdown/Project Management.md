@@ -25,21 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:scope-management", "label": "Scope Management"},
+      {"@id": "urn:ngm:class:schedule-management", "label": "Schedule Management"},
+      {"@id": "urn:ngm:class:cost-management", "label": "Cost Management"},
+      {"@id": "urn:ngm:class:quality-management", "label": "Quality Management"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
       {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
       {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
+      {"@id": "urn:ngm:class:critical-path-method", "label": "Critical Path Method"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:requirements-management", "label": "Requirements Management"},
+      {"@id": "urn:ngm:class:change-management", "label": "Change Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:agile-methodology", "label": "Agile Methodology"},
+      {"@id": "urn:ngm:class:waterfall-model", "label": "Waterfall Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:pmbok", "label": "PMBOK"},
+      {"@id": "urn:ngm:class:prince2", "label": "PRINCE2"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:operations-management", "label": "Operations Management"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-implementation", "label": "AI Implementation"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
       {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:change-management", "label": "Change Management"}
-    ],
-    "supports": [
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {"@id": "urn:ngm:class:portfolio-management", "label": "Portfolio Management"},
+      {"@id": "urn:ngm:class:programme-management", "label": "Programme Management"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:programme-delivery", "label": "Programme Delivery"},
+    {"@id": "urn:ngm:class:project-governance", "label": "Project Governance"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

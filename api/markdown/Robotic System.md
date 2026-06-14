@@ -44,19 +44,27 @@ alias:: RoboticSystem
   "@type": "Class",
   "label": "Robotic System",
   "definition": "An integrated assembly of mechanical, electronic, and computational subsystems — including actuators, sensors, a control architecture, and software — that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.",
-  "domain": "distributed-collaboration",
+  "domain": "robotics",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:cyber-physical-system",
+    "label": "Cyber-Physical System"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence"
+      "@id": "urn:ngm:class:autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-platform",
+      "label": "Robotic Platform"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
     "hasPart": [
@@ -71,26 +79,114 @@ alias:: RoboticSystem
       {
         "@id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply-unit",
+        "label": "Power Supply Unit"
       }
     ],
-    "uses": [
+    "requires": [
       {
         "@id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
-        "@id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:localisation-and-mapping",
+        "label": "Localisation and Mapping"
       }
     ],
-    "relatedTo": [
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
       {
         "@id": "urn:ngm:class:robotic-telepresence",
         "label": "Robotic Telepresence"
       },
       {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "supports": [
+      {
         "@id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:mechatronics",
+        "label": "Mechatronics"
       }
     ]
   }

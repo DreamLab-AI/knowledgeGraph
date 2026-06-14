@@ -16,7 +16,20 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:velocity-profiling",
+        "label": "Velocity Profiling"
+      },
+      {
+        "id": "urn:ngm:class:acceleration-planning",
+        "label": "Acceleration Planning"
+      },
+      {
+        "id": "urn:ngm:class:replanning",
+        "label": "Replanning"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:kinematics",
@@ -25,6 +38,14 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:dynamics-modelling",
+        "label": "Dynamics Modelling"
+      },
+      {
+        "id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
       }
     ],
     "enables": [
@@ -35,17 +56,56 @@
       {
         "id": "urn:ngm:class:collision-avoidance",
         "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:motion-planning",
@@ -54,12 +114,47 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithms",
+        "label": "Optimisation Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:spline-interpolation",
+        "label": "Spline Interpolation"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-control-architecture",
+        "label": "Robot Control Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ]
   },
   "wikilinks": [
     {

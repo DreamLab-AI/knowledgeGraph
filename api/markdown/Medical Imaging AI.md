@@ -62,40 +62,66 @@ public:: true
   "@id": "urn:ngm:class:medical-imaging-ai",
   "@type": "Class",
   "label": "Medical Imaging AI",
-  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities.",
+  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform lesion detection, disease classification, anatomical segmentation, and quantitative image analysis whilst meeting clinical validation standards and regulatory requirements.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:apple-mixed-reality-headsetcessing",
-      "label": "Vision Processing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:medical-ai",
+    "label": "Medical AI"
+  },
   "relations": {
-    "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
-    ],
     "hasPart": [
       {"@id": "urn:ngm:class:radiology-ai", "label": "Radiology AI"},
-      {"@id": "urn:ngm:class:pathology-ai", "label": "Pathology AI"}
+      {"@id": "urn:ngm:class:pathology-ai", "label": "Pathology AI"},
+      {"@id": "urn:ngm:class:computer-aided-diagnosis", "label": "Computer-Aided Diagnosis"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"}
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transformer-model", "label": "Transformer Model"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:dicom", "label": "DICOM"},
+      {"@id": "urn:ngm:class:annotated-training-data", "label": "Annotated Training Data"},
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
+      {"@id": "urn:ngm:class:automated-lesion-detection", "label": "Automated Lesion Detection"},
+      {"@id": "urn:ngm:class:treatment-planning", "label": "Treatment Planning"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
+      {"@id": "urn:ngm:class:fda-510k", "label": "FDA 510(k) Clearance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-radiological-review", "label": "Traditional Radiological Review"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ai-medical-imaging", "label": "AI Medical Imaging"},
+    {"@id": "urn:ngm:class:medical-image-analysis-ai", "label": "Medical Image Analysis AI"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

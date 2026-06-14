@@ -66,47 +66,74 @@ public:: true
   "@id": "urn:ngm:class:mining-pool",
   "@type": "Class",
   "label": "Mining Pool",
-  "definition": "A cooperative arrangement in which multiple miners aggregate their computational resources to increase the probability of successfully mining a block, sharing the resulting block reward proportionally to contributed hash rate. Mining pools reduce variance in miner income but introduce centralisation risks.",
+  "definition": "A cooperative arrangement in which multiple miners aggregate their computational resources to increase the probability of successfully mining a block, sharing the resulting block reward proportionally to contributed hash rate. Mining pools reduce variance in miner income but introduce centralisation risks and hash-rate concentration that can threaten network security.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:consensus-protocol",
-      "label": "Consensus Protocol"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-entity",
+    "label": "Blockchain Entity"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:cryptocurrency-mining-ecosystem", "label": "Cryptocurrency Mining Ecosystem"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:pool-operator", "label": "Pool Operator"},
+      {"@id": "urn:ngm:class:mining-worker", "label": "Mining Worker"},
+      {"@id": "urn:ngm:class:pool-server", "label": "Pool Server"},
+      {"@id": "urn:ngm:class:reward-distribution-mechanism", "label": "Reward Distribution Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:network-connectivity", "label": "Network Connectivity"},
+      {"@id": "urn:ngm:class:stratum-protocol", "label": "Stratum Protocol"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:stratum-protocol", "label": "Stratum Protocol"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:block-validation", "label": "Block Validation"},
+      {"@id": "urn:ngm:class:income-smoothing", "label": "Income Smoothing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:solo-mining", "label": "Solo Mining"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:merged-mining", "label": "Merged Mining"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
       {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
       {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:network-hashrate-distribution", "label": "Network Hashrate Distribution"},
+      {"@id": "urn:ngm:class:51-percent-attack", "label": "51 Percent Attack"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:cooperative-mining-pool", "label": "Cooperative Mining Pool"},
+    {"@id": "urn:ngm:class:hash-rate-pool", "label": "Hash Rate Pool"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -21,26 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Threat Modelling",
   "definition": "Threat modelling is a structured security engineering process that identifies, enumerates, and prioritises potential threats to a system by reasoning systematically about adversaries, attack vectors, and mitigations before or during design. It produces an explicit model of what can go wrong, enabling security controls to be allocated proportionally to risk, and is applied across software, hardware, and AI systems throughout the development lifecycle.",
-  "domain": "governance",
+  "domain": "security",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"}
+      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"},
+      {"@id": "urn:ngm:class:data-flow-diagram", "label": "Data Flow Diagram"},
+      {"@id": "urn:ngm:class:attack-tree", "label": "Attack Tree"},
+      {"@id": "urn:ngm:class:stride", "label": "STRIDE"},
+      {"@id": "urn:ngm:class:cvss", "label": "CVSS"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:threat-enumeration", "label": "Threat Enumeration"},
+      {"@id": "urn:ngm:class:trust-boundary", "label": "Trust Boundary"},
+      {"@id": "urn:ngm:class:attack-surface-analysis", "label": "Attack Surface Analysis"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"},
+      {"@id": "urn:ngm:class:security-by-design", "label": "Security by Design"},
+      {"@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"},
+      {"@id": "urn:ngm:class:adversary-model", "label": "Adversary Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:secure-software-development-lifecycle", "label": "Secure Software Development Lifecycle"},
+      {"@id": "urn:ngm:class:security-controls", "label": "Security Controls"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-sp-800-30", "label": "NIST SP 800-30"},
+      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:vulnerability-assessment", "label": "Vulnerability Assessment"},
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
+      {"@id": "urn:ngm:class:security-risk-management", "label": "Security Risk Management"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:vulnerability-analysis", "label": "Vulnerability Analysis"}
+      {"@id": "urn:ngm:class:vulnerability-analysis", "label": "Vulnerability Analysis"},
+      {"@id": "urn:ngm:class:reactive-security", "label": "Reactive Security"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:threat-analysis", "label": "Threat Analysis"},
+    {"@id": "urn:ngm:class:security-threat-modelling", "label": "Security Threat Modelling"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

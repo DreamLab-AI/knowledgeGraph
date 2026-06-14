@@ -58,43 +58,71 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-safety",
+    "label": "AI Safety"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
+      "@id": "urn:ngm:class:adversarial-machine-learning-testing",
+      "label": "Adversarial Machine Learning Testing"
     },
     {
-      "@id": "urn:ngm:class:ai-safety",
-      "label": "AI Safety"
+      "@id": "urn:ngm:class:ai-red-teaming",
+      "label": "AI Red Teaming"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "@id": "urn:ngm:class:test-oracle",
+        "label": "Test Oracle"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       },
       {
-        "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "@id": "urn:ngm:class:adversarial-examples",
+        "label": "Adversarial Examples"
+      },
+      {
+        "@id": "urn:ngm:class:fuzzing",
+        "label": "Fuzzing"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:robustness-evaluation",
+        "label": "Robustness Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-disclosure",
+        "label": "Vulnerability Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection",
+        "label": "Bias Detection"
       }
     ],
     "supports": [
@@ -105,6 +133,74 @@ public:: true
       {
         "@id": "urn:ngm:class:robustness",
         "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-ai-100-2",
+        "label": "NIST AI 100-2"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:conventional-software-testing",
+        "label": "Conventional Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-safety-evaluation",
+        "label": "Model Safety Evaluation"
       }
     ]
   }

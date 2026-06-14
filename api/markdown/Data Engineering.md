@@ -74,12 +74,10 @@ public:: true
   "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
-      "label": "Infrastructure Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
+    "label": "Infrastructure Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -93,12 +91,32 @@ public:: true
       {
         "@id": "urn:ngm:class:data-warehouse",
         "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-orchestration",
+        "label": "Data Orchestration"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:distributed-systems-domain",
         "label": "Distributed Systems Domain"
+      },
+      {
+        "@id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:schema-management",
+        "label": "Schema Management"
       }
     ],
     "enables": [
@@ -109,14 +127,92 @@ public:: true
       {
         "@id": "urn:ngm:class:business-intelligence",
         "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:apache-airflow",
+        "label": "Apache Airflow"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:lakehouse-architecture",
+        "label": "Lakehouse Architecture"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:data-infrastructure-engineering",
+      "label": "Data Infrastructure Engineering"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

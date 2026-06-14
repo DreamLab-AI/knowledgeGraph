@@ -4,7 +4,7 @@
   "slug": "event-sourcing",
   "public": true,
   "classIri": "urn:ngm:class:event-sourcing",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "definition": "Event sourcing is an architectural pattern for data persistence in which the state of a system is stored not as a mutable current-state record but as an append-only, ordered log of discrete domain events \u2014 each representing a fact that occurred at a specific point in time. Current application state is derived by replaying the event log from the beginning (or from a periodic snapshot), making the full history of state transitions a first-class, queryable artefact. This contrasts with CRUD-oriented architectures where only the latest state is stored, discarding historical change information.",
   "subClassOf": [
     {
@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:event-projection",
+        "label": "Event Projection"
+      },
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:event-store",
+        "label": "Event Store"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:state-management",
@@ -26,12 +44,43 @@
       {
         "id": "urn:ngm:class:agent-event-stream",
         "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:temporal-query",
+        "label": "Temporal Query"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-correction",
+        "label": "Retroactive Correction"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crud-architecture",
+        "label": "CRUD Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-memory",
+        "label": "AI Agent Memory"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:message-queue",
@@ -44,9 +93,26 @@
       {
         "id": "urn:ngm:class:data-persistence",
         "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:eventstoredb",
+        "label": "EventStoreDB"
+      },
+      {
+        "id": "urn:ngm:class:append-only-log",
+        "label": "Append Only Log"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-concurrency-control",
+        "label": "Optimistic Concurrency Control"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +127,14 @@
       {
         "id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-log",
+        "label": "Write Ahead Log"
       }
     ]
   },

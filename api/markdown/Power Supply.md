@@ -55,16 +55,48 @@ alias:: PowerSupply
   "@id": "urn:ngm:class:power-supply",
   "@type": "Class",
   "label": "Power Supply",
-  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices.",
+  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data centre contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs) organised in hierarchical redundancy tiers.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:hardware-component",
+    "label": "Hardware Component"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:voltage-regulator",
+        "label": "Voltage Regulator"
+      },
+      {
+        "@id": "urn:ngm:class:rectifier",
+        "label": "Rectifier"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:server",
+        "label": "Server"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mains-electricity",
+        "label": "Mains Electricity"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:continuous-operation",
@@ -73,26 +105,98 @@ alias:: PowerSupply
       {
         "@id": "urn:ngm:class:system-reliability",
         "label": "System Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:uninterruptible-power-supply",
+        "label": "Uninterruptible Power Supply"
+      },
+      {
+        "@id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:technology-infrastructure-domain",
-        "label": "infrastructure"
+        "@id": "urn:ngm:class:ac-to-dc-conversion",
+        "label": "AC to DC Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:switched-mode-power-supply",
+        "label": "Switched-Mode Power Supply"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:hot-swap",
+        "label": "Hot Swap"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:80-plus-certification",
+        "label": "80 PLUS Certification"
+      },
+      {
+        "@id": "urn:ngm:class:atx-standard",
+        "label": "ATX Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
+      },
+      {
+        "@id": "urn:ngm:class:battery-backup",
+        "label": "Battery Backup"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:hardware-component",
-        "label": "Hardware Component"
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre-power-management",
+        "label": "Data Centre Power Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:power-usage-effectiveness",
+        "label": "Power Usage Effectiveness"
+      },
+      {
+        "@id": "urn:ngm:class:generator",
+        "label": "Generator"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:psu",
+      "label": "PSU"
+    },
+    {
+      "@id": "urn:ngm:class:power-supply-unit",
+      "label": "Power Supply Unit"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

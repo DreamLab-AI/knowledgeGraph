@@ -51,31 +51,157 @@ public:: true
   "@type": "Class",
   "label": "Metadata Standards",
   "definition": "Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.",
-  "domain": "spatial-computing",
+  "domain": "standards",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    },
-    {
-      "@id": "urn:ngm:class:data-standards",
-      "label": "Data Standards"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-standards",
+    "label": "Data Standards"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "@id": "urn:ngm:class:iptc-metadata",
+        "label": "IPTC Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:xmp-extensible-metadata-platform",
+        "label": "XMP Extensible Metadata Platform"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-system-data-exchange",
         "label": "Cross-System Data Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:uri-identifiers",
+        "label": "URI Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:fair-data-principles",
+        "label": "FAIR Data Principles"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:metadata-crosswalk",
+        "label": "Metadata Crosswalk"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:dublin-core-metadata-initiative",
+        "label": "Dublin Core Metadata Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:iso-15836",
+        "label": "ISO 15836"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-metadata-schema",
+        "label": "Proprietary Metadata Schema"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:ai-assisted-tagging",
+        "label": "AI-Assisted Tagging"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "@id": "urn:ngm:class:descriptive-metadata-standard",
+      "label": "Descriptive Metadata Standard"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

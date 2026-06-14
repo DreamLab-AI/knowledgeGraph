@@ -10,23 +10,40 @@
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
-    },
-    {
-      "id": "urn:ngm:class:model-architecture",
-      "label": "Model Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:sparse-mixture-of-experts",
         "label": "Sparse Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:expert-network",
+        "label": "Expert Network"
+      },
+      {
+        "id": "urn:ngm:class:gating-network",
+        "label": "Gating Network"
+      },
+      {
+        "id": "urn:ngm:class:sparse-activation",
+        "label": "Sparse Activation"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -35,27 +52,84 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:efficient-scaling",
+        "label": "Efficient Scaling"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-training",
+        "label": "Parameter-Efficient Training"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:dense-model",
+        "label": "Dense Model"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:softmax-routing",
+        "label": "Softmax Routing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      },
+      {
+        "id": "urn:ngm:class:inference-efficiency",
+        "label": "Inference Efficiency"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ensemble-learning",
+        "label": "Ensemble Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:switch-transformer",
+        "label": "Switch Transformer"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

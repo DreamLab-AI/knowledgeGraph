@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-pose-estimation",
+        "label": "Camera Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:multi-view-images",
+        "label": "Multi-View Images"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:volumetric-capture",
@@ -26,12 +35,55 @@
       {
         "id": "urn:ngm:class:virtual-reality-telepresence",
         "label": "Virtual Reality Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:free-viewpoint-video",
+        "label": "Free-Viewpoint Video"
+      },
+      {
+        "id": "urn:ngm:class:immersive-media-production",
+        "label": "Immersive Media Production"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-training-data-generation",
+        "label": "Synthetic Training Data Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      },
+      {
+        "id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-3d-modelling",
+        "label": "Traditional 3D Modelling"
+      },
+      {
+        "id": "urn:ngm:class:stereo-reconstruction",
+        "label": "Stereo Reconstruction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving-simulation",
+        "label": "Autonomous Driving Simulation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-rendering",
@@ -44,6 +96,18 @@
       {
         "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:ngm:class:multi-layer-perceptron",
+        "label": "Multi-Layer Perceptron"
       }
     ],
     "supports": [],
@@ -65,6 +129,14 @@
       {
         "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:image-based-rendering",
+        "label": "Image-Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:3d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
       }
     ]
   },

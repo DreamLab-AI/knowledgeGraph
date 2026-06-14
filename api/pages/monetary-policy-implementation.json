@@ -4,7 +4,7 @@
   "slug": "monetary-policy-implementation",
   "public": true,
   "classIri": "urn:ngm:class:monetary-policy-implementation",
-  "domain": "blockchain",
+  "domain": "finance",
   "definition": "Monetary Policy Implementation encompasses the operational processes, tools, and institutional mechanisms through which central banks and monetary authorities translate policy decisions\u2014such as interest rate targets or quantitative measures\u2014into observable effects on the financial system. In digital and metaverse economic contexts it extends to the programmatic enforcement of monetary parameters via Central Bank Digital Currencies (CBDCs), smart contracts, and programmable money frameworks. Effective implementation requires coordination between inflation control targets, payment system design, financial stability oversight, and regulatory compliance.",
   "subClassOf": [
     {
@@ -16,8 +16,34 @@
   "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "id": "urn:ngm:class:standing-lending-facility",
+        "label": "Standing Lending Facility"
+      },
+      {
+        "id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:interbank-market",
+        "label": "Interbank Market"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
@@ -30,15 +56,36 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sc-governance-and-safety",
         "label": "Governance and Safety"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
       }
     ],
     "uses": [
@@ -53,9 +100,22 @@
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -74,6 +134,14 @@
       {
         "id": "urn:ngm:class:economic-governance",
         "label": "Economic Governance"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
       }
     ]
   },

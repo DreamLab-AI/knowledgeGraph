@@ -30,17 +30,62 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:protocol-stack", "label": "Protocol Stack"},
       {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
-      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"}
+      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"},
+      {"@id": "urn:ngm:class:data-link-layer", "label": "Data Link Layer"},
+      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ip-addressing", "label": "IP Addressing"},
+      {"@id": "urn:ngm:class:routing", "label": "Routing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:transmission-medium", "label": "Transmission Medium"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:osi-model", "label": "OSI Model"},
+      {"@id": "urn:ngm:class:tcp-ip-suite", "label": "TCP/IP Suite"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:packet-switching", "label": "Packet Switching"},
+      {"@id": "urn:ngm:class:tls-encryption", "label": "TLS Encryption"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-standards", "label": "IEEE Standards"},
+      {"@id": "urn:ngm:class:ietf-rfc", "label": "IETF RFC"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:circuit-switching", "label": "Circuit Switching"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:decentralised-network", "label": "Decentralised Network"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:network-architecture", "label": "Network Architecture"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
     ]
   },
-  "quality": 0.85
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-communications", "label": "Data Communications"},
+    {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+  ],
+  "quality": 0.85,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

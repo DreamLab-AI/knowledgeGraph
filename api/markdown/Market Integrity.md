@@ -25,24 +25,56 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:trade-surveillance", "label": "Trade Surveillance"},
+      {"@id": "urn:ngm:class:disclosure-requirements", "label": "Disclosure Requirements"},
+      {"@id": "urn:ngm:class:enforcement-mechanism", "label": "Enforcement Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"},
+      {"@id": "urn:ngm:class:order-book-transparency", "label": "Order Book Transparency"},
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:financial-trading", "label": "Financial Trading"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
+      {"@id": "urn:ngm:class:capital-formation", "label": "Capital Formation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:regulatory-authority", "label": "Regulatory Authority"},
+      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:investor-confidence", "label": "Investor Confidence"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"}
+      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"},
+      {"@id": "urn:ngm:class:market-manipulation", "label": "Market Manipulation"},
+      {"@id": "urn:ngm:class:insider-trading", "label": "Insider Trading"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},
+      {"@id": "urn:ngm:class:wash-trading", "label": "Wash Trading"},
+      {"@id": "urn:ngm:class:front-running", "label": "Front-Running"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:smart-contract-compliance", "label": "Smart Contract Compliance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:market-fairness", "label": "Market Fairness"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

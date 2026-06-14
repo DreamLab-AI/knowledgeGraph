@@ -21,27 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Training Dataset",
   "definition": "A Training Dataset is a curated collection of labelled or unlabelled data used to fit the parameters of a machine learning model, establishing the empirical foundation from which the model generalises to unseen inputs. Its composition—size, diversity, label quality, representational balance, and provenance—fundamentally determines the capabilities and failure modes of the resulting model. Training datasets range from manually annotated corpora (ImageNet, SQuAD) to web-scraped large-scale collections (Common Crawl, LAION-5B) and synthetically generated data. Questions of copyright, consent, bias, and traceability in training datasets have become central to AI governance and legal disputes.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:training-data", "label": "Training Data"}],
+  "subClassOf": {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
   "relations": {
-    "relatedTo": [
+    "hasPart": [
       {"@id": "urn:ngm:class:training-dataset-metadata", "label": "Training Dataset Metadata"},
-      {"@id": "urn:ngm:class:training-data-repository", "label": "Training Data Repository"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
+      {"@id": "urn:ngm:class:data-split", "label": "Data Split"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+    "requires": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"}
+      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"},
+      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
       {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"}
+      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
+      {"@id": "urn:ngm:class:crowdsourcing", "label": "Crowdsourcing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
+      {"@id": "urn:ngm:class:training-data-repository", "label": "Training Data Repository"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:validation-dataset", "label": "Validation Dataset"},
+      {"@id": "urn:ngm:class:test-dataset", "label": "Test Dataset"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
+      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:data-centric-ai", "label": "Data-Centric AI"},
+      {"@id": "urn:ngm:class:dataset-documentation", "label": "Dataset Documentation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:training-corpus", "label": "Training Corpus"},
+    {"@id": "urn:ngm:class:learning-dataset", "label": "Learning Dataset"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

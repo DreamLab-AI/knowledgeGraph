@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prospect-theory",
+        "label": "Prospect Theory"
+      },
+      {
+        "id": "urn:ngm:class:nudge-theory",
+        "label": "Nudge Theory"
+      },
+      {
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      },
+      {
+        "id": "urn:ngm:class:loss-aversion",
+        "label": "Loss Aversion"
+      },
+      {
+        "id": "urn:ngm:class:present-bias",
+        "label": "Present Bias"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "id": "urn:ngm:class:experimental-economics",
+        "label": "Experimental Economics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:mechanism-design",
@@ -26,12 +56,42 @@
       {
         "id": "urn:ngm:class:incentive-alignment",
         "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:choice-architecture",
+        "label": "Choice Architecture"
+      },
+      {
+        "id": "urn:ngm:class:public-policy-design",
+        "label": "Public Policy Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:heuristic-methods",
@@ -40,11 +100,20 @@
       {
         "id": "urn:ngm:class:behavioral-modeling",
         "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:incentive-compatibility",
@@ -53,6 +122,18 @@
       {
         "id": "urn:ngm:class:behavioral-analytics",
         "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "id": "urn:ngm:class:development-economics",
+        "label": "Development Economics"
       }
     ]
   },

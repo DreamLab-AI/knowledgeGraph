@@ -58,12 +58,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,134 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:locking-script",
+        "label": "Locking Script"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-input",
+        "label": "Transaction Input"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:transaction-output",
+        "label": "Transaction Output"
+      },
+      {
+        "@id": "urn:ngm:class:unlocking-script",
+        "label": "Unlocking Script"
+      },
+      {
+        "@id": "urn:ngm:class:change-output",
+        "label": "Change Output"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-transaction-validation",
+        "label": "Parallel Transaction Validation"
+      },
+      {
+        "@id": "urn:ngm:class:coin-selection",
+        "label": "Coin Selection"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:utxo-accounting-model",
+        "label": "UTXO Accounting Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:script-language",
+        "label": "Script Language"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy-technique",
+        "label": "Privacy Technique"
+      },
+      {
+        "@id": "urn:ngm:class:light-client-verification",
+        "label": "Light Client Verification"
+      },
+      {
+        "@id": "urn:ngm:class:stateless-validation",
+        "label": "Stateless Validation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-state-model",
+        "label": "Ethereum State Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:extended-utxo-model",
+        "label": "Extended UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cardano",
+        "label": "Cardano"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:unspent-transaction-output",
+      "label": "Unspent Transaction Output"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

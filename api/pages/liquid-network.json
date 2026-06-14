@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquid-bitcoin",
+        "label": "Liquid Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:federated-block-production",
+        "label": "Federated Block Production"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
@@ -25,6 +34,14 @@
       {
         "id": "urn:ngm:class:federation",
         "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:functionary",
+        "label": "Functionary"
       }
     ],
     "enables": [
@@ -35,17 +52,87 @@
       {
         "id": "urn:ngm:class:asset-issuance",
         "label": "Asset Issuance"
+      },
+      {
+        "id": "urn:ngm:class:fast-settlement",
+        "label": "Fast Settlement"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:confidential-assets-protocol",
+        "label": "Confidential Assets Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "id": "urn:ngm:class:institutional-finance",
+        "label": "Institutional Finance"
+      },
+      {
+        "id": "urn:ngm:class:exchange-infrastructure",
+        "label": "Exchange Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elements-project",
+        "label": "Elements Project"
+      },
+      {
+        "id": "urn:ngm:class:script-multisig",
+        "label": "Script Multisig"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-layer-2-ecosystem",
+        "label": "Bitcoin Layer-2 Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      },
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

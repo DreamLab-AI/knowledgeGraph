@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-creation",
@@ -26,12 +35,47 @@
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-gallery",
+        "label": "Virtual Gallery"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-art",
+        "label": "Traditional Art"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:creative-ai",
@@ -44,12 +88,28 @@
       {
         "id": "urn:ngm:class:creative-software",
         "label": "Creative Software"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:decentralised-creative-metaverse-framework",
         "label": "Agentic Metaverse for Global Creatives"
+      },
+      {
+        "id": "urn:ngm:class:digital-cultural-heritage",
+        "label": "Digital Cultural Heritage"
       }
     ],
     "standardizedBy": [],
@@ -66,6 +126,18 @@
       {
         "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:generative-art",
+        "label": "Generative Art"
+      },
+      {
+        "id": "urn:ngm:class:interactive-media",
+        "label": "Interactive Media"
+      },
+      {
+        "id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
       }
     ]
   },

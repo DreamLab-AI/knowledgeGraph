@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:lending-protocol",
   "@type": "Class",
   "label": "Lending Protocol",
-  "definition": "A smart-contract system that lets users supply assets to earn interest and borrow against deposited collateral, with rates and liquidations governed by code.",
+  "definition": "A smart-contract system that lets users supply assets to earn interest and borrow against deposited collateral, with interest rates and liquidations governed by on-chain code rather than intermediaries.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:smart-contract",
+    "label": "Smart Contract"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,138 @@ public:: true
       {
         "@id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:overcollateralisation",
+        "label": "Overcollateralisation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:leveraged-trading",
+        "label": "Leveraged Trading"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-market",
+        "label": "Interest Rate Market"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:liquidation-engine",
+        "label": "Liquidation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-model",
+        "label": "Interest Rate Model"
+      },
+      {
+        "@id": "urn:ngm:class:governance-module",
+        "label": "Governance Module"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-oracle-network",
+        "label": "Decentralised Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "@id": "urn:ngm:class:compound-finance",
+        "label": "Compound Finance"
+      },
+      {
+        "@id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:defi-lending-protocol",
+      "label": "DeFi Lending Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-money-market",
+      "label": "On-Chain Money Market"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

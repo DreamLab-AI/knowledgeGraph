@@ -17,7 +17,16 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:learner-modelling",
+        "label": "Learner Modelling"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:education-and-ai",
@@ -26,12 +35,43 @@
       {
         "id": "urn:ngm:class:immersive-learning",
         "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-systems",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standardised-curriculum",
+        "label": "Standardised Curriculum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -44,9 +84,34 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:self-directed-learning",
+        "label": "Self-Directed Learning"
+      },
+      {
+        "id": "urn:ngm:class:competency-based-education",
+        "label": "Competency-Based Education"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +126,14 @@
       {
         "id": "urn:ngm:class:educational-methodology",
         "label": "Educational Methodology"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:digital-equity",
+        "label": "Digital Equity"
       }
     ]
   },

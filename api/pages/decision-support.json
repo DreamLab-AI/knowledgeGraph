@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-model",
+        "label": "Risk Assessment Model"
+      },
+      {
+        "id": "urn:ngm:class:scenario-simulation",
+        "label": "Scenario Simulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:strategic-planning",
@@ -26,12 +48,43 @@
       {
         "id": "urn:ngm:class:distributed-decision-making",
         "label": "Distributed Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:evidence-based-policy",
+        "label": "Evidence-Based Policy"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-pipeline",
+        "label": "Real-Time Data Pipeline"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fully-automated-decision-making",
+        "label": "Fully Automated Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:unaided-expert-judgement",
+        "label": "Unaided Expert Judgement"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:clinical-governance",
+        "label": "Clinical Governance"
+      },
+      {
+        "id": "urn:ngm:class:financial-risk-management",
+        "label": "Financial Risk Management"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:data-analytics",
@@ -40,16 +93,37 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:decision-transparency",
         "label": "Decision Transparency"
+      },
+      {
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:enterprise-intelligence-platform",
+        "label": "Enterprise Intelligence Platform"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:clinical-decision-support",
@@ -57,7 +131,7 @@
       },
       {
         "id": "urn:ngm:class:informed-decision-making",
-        "label": "Informed decision-making"
+        "label": "Informed Decision-Making"
       },
       {
         "id": "urn:ngm:class:predictive-analytics",

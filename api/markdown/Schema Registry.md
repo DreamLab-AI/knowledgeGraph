@@ -50,34 +50,150 @@ public:: true
   "@id": "urn:ngm:class:schema-registry",
   "@type": "Class",
   "label": "Schema Registry",
-  "definition": "A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.",
-  "domain": "spatial-computing",
+  "definition": "A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and controlled evolution of data formats across distributed microservices and event-driven architectures.",
+  "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-standards-and-interop",
+    "label": "Standards and Interoperability"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:data-management",
-        "label": "Data Management"
+        "@id": "urn:ngm:class:schema-versioning",
+        "label": "Schema Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:compatibility-checker",
+        "label": "Compatibility Checker"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:event-streaming-platform",
+        "label": "Event Streaming Platform"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:serialization-format",
+        "label": "Serialization Format"
+      },
+      {
+        "@id": "urn:ngm:class:api-contract",
+        "label": "API Contract"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:schema-evolution",
         "label": "Schema Evolution"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-producer-decoupling",
+        "label": "Consumer-Producer Decoupling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:avro",
+        "label": "Apache Avro"
+      },
+      {
+        "@id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:forward-compatibility",
+        "label": "Forward Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:document-store",
+        "label": "Document Store"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:etl",
+        "label": "ETL"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:schema-store",
+      "label": "Schema Store"
+    },
+    {
+      "@id": "urn:ngm:class:metadata-registry",
+      "label": "Metadata Registry"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

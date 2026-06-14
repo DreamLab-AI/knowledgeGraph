@@ -23,22 +23,61 @@ public:: true
   "definition": "Process automation is the use of technology to perform repetitive business, operational, or industrial tasks with minimal human intervention, replacing manual steps in workflows with software execution, robotic systems, or rule-based logic engines. It spans a spectrum from simple macro-based automation of individual tasks through robotic process automation (RPA) that mimics user interface interactions, to intelligent automation that integrates machine learning models for decision-making in unstructured data contexts. The goal is to increase throughput, reduce errors, lower labour costs, and free human workers for higher-value activities.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}],
+  "subClassOf": {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
   "relations": {
-    "enables": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
+      {"@id": "urn:ngm:class:business-process-management", "label": "Business Process Management"},
+      {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
-      {"@id": "urn:ngm:class:trade-finance-automation", "label": "Trade Finance Automation"}
+    "requires": [
+      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
+      {"@id": "urn:ngm:class:workflow-engine", "label": "Workflow Engine"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
+      {"@id": "urn:ngm:class:hyperautomation", "label": "Hyperautomation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:business-rules-engine", "label": "Business Rules Engine"},
+      {"@id": "urn:ngm:class:process-mining", "label": "Process Mining"},
+      {"@id": "urn:ngm:class:low-code-platform", "label": "Low-Code Platform"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manual-workflow", "label": "Manual Workflow"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
+      {"@id": "urn:ngm:class:trade-finance-automation", "label": "Trade Finance Automation"},
+      {"@id": "urn:ngm:class:cicd-pipeline", "label": "CI/CD Pipeline"},
+      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:business-process-automation", "label": "Business Process Automation"},
+    {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

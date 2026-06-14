@@ -8,14 +8,6 @@
   "definition": "Gas is the unit of computational work measurement within EVM-compatible blockchains. Every opcode executed by the Ethereum Virtual Machine consumes a defined gas quantity; users pay gas_price \u00d7 gas_used to validators, preventing denial-of-service through unbounded computation and creating a market for block space.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:economic-mechanism",
       "label": "EconomicMechanism"
     }
@@ -36,28 +28,106 @@
       {
         "id": "urn:ngm:class:gas-fee-market",
         "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum-account",
+        "label": "Ethereum Account"
+      },
+      {
+        "id": "urn:ngm:class:ether",
+        "label": "Ether"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-transaction",
         "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:ngm:class:denial-of-service-prevention",
+        "label": "Denial of Service Prevention"
+      },
+      {
+        "id": "urn:ngm:class:block-space-market",
+        "label": "Block Space Market"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:yellow-paper-specification",
+        "label": "Yellow Paper Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:feeless-blockchain",
+        "label": "Feeless Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      },
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:opcode",
+        "label": "Opcode"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus-protocol",
+        "label": "Blockchain Consensus Protocol"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:transaction-fee",
@@ -66,14 +136,6 @@
       {
         "id": "urn:ngm:class:fee-market",
         "label": "Fee Market"
-      },
-      {
-        "id": "urn:ngm:class:eip-1559",
-        "label": "EIP-1559"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract-execution",
-        "label": "Smart Contract Execution"
       },
       {
         "id": "urn:ngm:class:tokenomics",

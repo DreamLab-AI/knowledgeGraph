@@ -74,34 +74,48 @@ public:: true
   "@id": "urn:ngm:class:digital-payment-system",
   "@type": "Class",
   "label": "Digital Payment System",
-  "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and servic...",
-  "domain": "spatial-computing",
+  "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, smart contract-based payment automation, and regulated payment rails for both physical and virtual commerce.",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-infrastructure",
+    "label": "Financial Infrastructure"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:financial-infrastructure",
-        "label": "Financial Infrastructure"
-      }
-    ],
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"
       },
       {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      }
+    ],
+    "requires": [
+      {
         "@id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:class:digital-wallet",
-        "label": "Digital Wallet"
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
       }
     ],
     "enables": [
@@ -116,14 +130,86 @@ public:: true
       {
         "@id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-transfer",
+        "label": "Peer-to-Peer Transfer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-banking-system",
+        "label": "Traditional Banking System"
+      },
+      {
+        "@id": "urn:ngm:class:cash-payment",
+        "label": "Cash Payment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:electronic-payment-system",
+      "label": "Electronic Payment System"
+    },
+    {
+      "@id": "urn:ngm:class:online-payment-platform",
+      "label": "Online Payment Platform"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

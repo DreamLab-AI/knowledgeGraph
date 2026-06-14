@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-serving",
   "domain": "machine-learning",
-  "definition": "Model serving is the practice of making a trained machine learning model available to handle inference requests, typically behind an API. It covers loading models, routing requests and returning predictions under latency and throughput constraints.",
+  "definition": "Model serving is the practice of making a trained machine learning model available to handle inference requests, typically behind an API. It covers loading models, batching and routing requests, and returning predictions under latency and throughput constraints at production scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:model-deployment",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:model-deployment",
@@ -25,23 +38,123 @@
       {
         "id": "urn:ngm:class:rest-api",
         "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:inference-serving",
         "label": "Inference Serving"
+      },
+      {
+        "id": "urn:ngm:class:real-time-prediction",
+        "label": "Real-Time Prediction"
+      },
+      {
+        "id": "urn:ngm:class:batch-inference",
+        "label": "Batch Inference"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:offline-inference",
+        "label": "Offline Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      },
+      {
+        "id": "urn:ngm:class:request-batching",
+        "label": "Request Batching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:ml-pipeline",
+        "label": "ML Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      }
+    ]
   },
   "wikilinks": [
     {

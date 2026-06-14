@@ -46,18 +46,26 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:seq2seq-architecture",
+      "label": "Seq2Seq Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:sequence-to-sequence-model",
+      "label": "Sequence to Sequence Model"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -71,24 +79,134 @@ public:: true
       {
         "@id": "urn:ngm:class:token-embedding",
         "label": "Token Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:latent-representation",
+        "label": "Latent Representation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       }
     ],
-    "contrastsWith": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:model-architecture",
-        "label": "Model Architecture"
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:transformer",
-        "label": "Transformer"
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decoder-only-architecture",
+        "label": "Decoder Only Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-only-architecture",
+        "label": "Encoder Only Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:t5-model",
+        "label": "T5 Model"
+      },
+      {
+        "@id": "urn:ngm:class:bart-model",
+        "label": "BART Model"
       }
     ]
   }

@@ -4,12 +4,12 @@
   "slug": "digital-asset-market",
   "public": true,
   "classIri": "urn:ngm:class:digital-asset-market",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "definition": "A marketplace \u2014 centralised or decentralised \u2014 where digital assets including cryptocurrencies, NFTs, and tokenised securities are bought, sold, and exchanged. Digital asset markets encompass order-book exchanges, automated market makers, NFT marketplaces, and OTC desks, each governed by distinct liquidity, pricing, and regulatory mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:financial-market",
+      "label": "Financial Market"
     }
   ],
   "entityType": "Class",
@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:digital-asset-trading",
         "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:over-the-counter-desk",
+        "label": "Over-the-Counter Desk"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       }
     ],
     "requires": [
@@ -34,13 +46,57 @@
       {
         "id": "urn:ngm:class:digital-asset-infrastructure",
         "label": "Digital Asset Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokenised-securities-trading",
+        "label": "Tokenised Securities Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:custodial-settlement",
+        "label": "Custodial Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-securities-exchange",
+        "label": "Traditional Securities Exchange"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency-market",
+        "label": "Fiat Currency Market"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:automated-market-maker",
@@ -49,19 +105,54 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-token",
+        "label": "Cryptographic Token"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-regulatory-framework",
+        "label": "Financial Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:digital-asset-ecosystem",
         "label": "Digital Asset Ecosystem"
       },
       {
+        "id": "urn:ngm:class:global-financial-system",
+        "label": "Global Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
       }
     ]
   },

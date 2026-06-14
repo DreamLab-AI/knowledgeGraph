@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:corporate-governance",
   "domain": "governance",
-  "definition": "The system of rules, practices and processes by which a company is directed and controlled, balancing the interests of shareholders, management and other stakeholders.",
+  "definition": "The system of rules, practices and processes by which a company is directed and controlled, balancing the interests of shareholders, management and other stakeholders, including board oversight, executive accountability, disclosure obligations, and mechanisms that align the interests of management, shareholders, and wider society.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:governance-framework",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:board-of-directors",
+        "label": "Board of Directors"
+      },
+      {
+        "id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "id": "urn:ngm:class:remuneration-policy",
+        "label": "Remuneration Policy"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-rights",
+        "label": "Shareholder Rights"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:accountability",
@@ -25,23 +42,94 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:investor-confidence",
+        "label": "Investor Confidence"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
+      },
+      {
+        "id": "urn:ngm:class:listing-rules",
+        "label": "Listing Rules"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
+      },
+      {
+        "id": "urn:ngm:class:executive-compensation",
+        "label": "Executive Compensation"
+      }
+    ]
   },
   "wikilinks": [
     {

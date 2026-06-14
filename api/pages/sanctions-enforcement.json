@@ -16,52 +16,117 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:aml-kyc-compliance",
-        "label": "AML KYC Compliance"
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:asset-freezing",
+        "label": "Asset Freezing"
       },
       {
         "id": "urn:ngm:class:compliance-audit-trail",
         "label": "Compliance Audit Trail"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
-        "id": "urn:ngm:class:blockchain-analytics",
-        "label": "Blockchain Analytics"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:watchlist-management",
+        "label": "Watchlist Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:transaction-blocking",
+        "label": "Transaction Blocking"
       },
       {
         "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:financial-regulation",
-        "label": "Financial Regulation"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:sanctions-screening",
-        "label": "Sanctions Screening"
-      },
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
+        "id": "urn:ngm:class:counter-terrorism-financing",
+        "label": "Counter-Terrorism Financing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-compliance",
+        "label": "Smart Contract Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-name-matching",
+        "label": "Fuzzy Name Matching"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-classifier",
+        "label": "Machine Learning Classifier"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:ofac",
+        "label": "OFAC"
+      },
+      {
+        "id": "urn:ngm:class:un-security-council-sanctions",
+        "label": "UN Security Council Sanctions"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:aml-cft-regime",
+        "label": "AML/CFT Regime"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secondary-sanctions-liability",
+        "label": "Secondary Sanctions Liability"
+      },
+      {
+        "id": "urn:ngm:class:foreign-policy-instrument",
+        "label": "Foreign Policy Instrument"
       }
     ]
   },

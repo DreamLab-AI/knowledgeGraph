@@ -54,35 +54,159 @@ public:: true
   "@id": "urn:ngm:class:image-synthesis",
   "@type": "Class",
   "label": "Image Synthesis",
-  "definition": "The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions.",
-  "domain": "ai",
+  "definition": "The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions. Encompasses classical computer graphics rendering, generative adversarial networks, diffusion models, and other learned generative approaches conditioned on text, semantic maps, or latent codes.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:image-generation",
-      "label": "Image Generation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:image-generation",
+    "label": "Image Generation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-inpainting",
+        "label": "Image Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:image-super-resolution",
+        "label": "Image Super-Resolution"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:synthetic-image-generation",
+      "label": "Synthetic Image Generation"
+    },
+    {
+      "@id": "urn:ngm:class:image-rendering",
+      "label": "Image Rendering"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

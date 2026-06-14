@@ -21,23 +21,57 @@ public:: true
   "@type": "Class",
   "label": "Vision Transformer",
   "definition": "The Vision Transformer (ViT) is a neural network architecture that applies the transformer self-attention mechanism directly to sequences of fixed-size image patches, treating each patch embedding as a token analogous to a word in natural-language processing. Introduced by Dosovitskiy et al. (2020), ViT demonstrated that pure attention-based models can match or exceed convolutional networks on image classification benchmarks when pre-trained on sufficiently large datasets.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:multi-head-self-attention", "label": "Multi-Head Self-Attention"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
+      {"@id": "urn:ngm:class:patch-embedding", "label": "Patch Embedding"},
+      {"@id": "urn:ngm:class:transformer-encoder", "label": "Transformer Encoder"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:diffusion-transformer", "label": "Diffusion Transformer"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:cls-token", "label": "CLS Token"},
+      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed-Forward Network"},
+      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:large-scale-pre-training", "label": "Large-Scale Pre-Training"},
+      {"@id": "urn:ngm:class:image-classification-dataset", "label": "Image Classification Dataset"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"}
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},
+      {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"},
+      {"@id": "urn:ngm:class:video-understanding", "label": "Video Understanding"},
+      {"@id": "urn:ngm:class:self-supervised-visual-representation", "label": "Self-Supervised Visual Representation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:diffusion-transformer", "label": "Diffusion Transformer"},
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:swin-transformer", "label": "Swin Transformer"},
+      {"@id": "urn:ngm:class:masked-image-modelling", "label": "Masked Image Modelling"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:vit", "label": "ViT"},
+    {"@id": "urn:ngm:class:image-transformer", "label": "Image Transformer"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.85
 }

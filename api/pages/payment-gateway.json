@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:currency-conversion",
+        "label": "Currency Conversion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "id": "urn:ngm:class:acquiring-bank",
+        "label": "Acquiring Bank"
+      },
+      {
+        "id": "urn:ngm:class:ssl-tls",
+        "label": "SSL/TLS"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:micropayment",
@@ -30,12 +56,47 @@
       {
         "id": "urn:ngm:class:x402-and-l402-payment-protocols",
         "label": "x402 and l402 payment protocols"
+      },
+      {
+        "id": "urn:ngm:class:recurring-billing",
+        "label": "Recurring Billing"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:card-network",
+        "label": "Card Network"
+      },
+      {
+        "id": "urn:ngm:class:issuing-bank",
+        "label": "Issuing Bank"
+      },
+      {
+        "id": "urn:ngm:class:iso-8583",
+        "label": "ISO 8583"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:api-gateway",
@@ -48,10 +109,32 @@
       {
         "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:point-of-sale",
+        "label": "Point of Sale"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -59,12 +142,12 @@
         "label": "Digital Payment System"
       },
       {
-        "id": "urn:ngm:class:e-commerce",
-        "label": "E-Commerce"
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
       },
       {
-        "id": "urn:ngm:class:fraud-detection",
-        "label": "Fraud Detection"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       }
     ]
   },

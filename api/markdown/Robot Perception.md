@@ -62,17 +62,39 @@ public:: true
   "@id": "urn:ngm:class:robot-perception",
   "@type": "Class",
   "label": "Robot Perception",
-  "definition": "Robot perception is the process by which a robot interprets sensor data to build an understanding of its environment and state.",
+  "definition": "Robot perception is the process by which a robot interprets sensor data from cameras, lidar, depth sensors and inertial units to build an actionable understanding of its environment, objects and its own pose.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robotics",
-      "label": "Robotics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robotics",
+    "label": "Robotics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-control-architecture",
+        "label": "Robot Control Architecture"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:sensors",
@@ -81,20 +103,100 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:robot-navigation",
+        "label": "Robot Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:human-perception",
+        "label": "Human Perception"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:machine-perception",
+      "label": "Machine Perception"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-sensing",
+      "label": "Robotic Sensing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

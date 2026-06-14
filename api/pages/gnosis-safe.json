@@ -8,12 +8,12 @@
   "definition": "Gnosis Safe, later rebranded as Safe, is a smart-contract wallet for Ethereum and compatible networks that requires multiple signatures to authorise transactions. Rather than relying on a single private key, it enforces a configurable threshold, such as three of five owners, before funds move or contract calls execute. It is widely used by decentralised autonomous organisations, projects and individuals to manage treasuries and reduce the risk of a single compromised key.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:multisignature-wallet",
+      "label": "Multisignature Wallet"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,27 +25,109 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:multisignature-wallets",
-        "label": "Multisignature Wallet"
-      },
-      {
         "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:spending-limit",
+        "label": "Spending Limit"
+      },
+      {
+        "id": "urn:ngm:class:social-recovery-wallet",
+        "label": "Social Recovery Wallet"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337 Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:erc-1271",
+        "label": "ERC-1271 Contract Signature Validation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      },
+      {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:module-pattern",
+        "label": "Module Pattern"
+      },
+      {
+        "id": "urn:ngm:class:proxy-contract",
+        "label": "Proxy Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gnosis-chain",
+        "label": "Gnosis Chain"
+      },
+      {
+        "id": "urn:ngm:class:safe-core-protocol",
+        "label": "Safe Core Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

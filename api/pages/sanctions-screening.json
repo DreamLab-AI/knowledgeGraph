@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:name-matching-algorithm",
+        "label": "Name Matching Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:alert-adjudication",
+        "label": "Alert Adjudication"
+      },
+      {
+        "id": "urn:ngm:class:watchlist-management",
+        "label": "Watchlist Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-feed",
+        "label": "Real-Time Data Feed"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sanctions-enforcement",
@@ -26,12 +52,39 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sanctions-list",
+        "label": "Sanctions List"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:fraud-detection",
@@ -42,22 +95,16 @@
         "label": "Blockchain Compliance"
       },
       {
-        "id": "urn:ngm:class:audit-trail",
-        "label": "Audit Trail"
+        "id": "urn:ngm:class:fuzzy-matching",
+        "label": "Fuzzy Matching"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-classifier",
+        "label": "Machine Learning Classifier"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:aml-kyc-compliance",
-        "label": "AML KYC Compliance"
-      },
-      {
-        "id": "urn:ngm:class:anti-money-laundering",
-        "label": "Anti-Money Laundering"
-      },
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
@@ -65,6 +112,30 @@
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-compliance",
+        "label": "Financial Crime Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
       }
     ]
   },

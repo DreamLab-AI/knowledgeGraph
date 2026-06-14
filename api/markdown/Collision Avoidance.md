@@ -98,12 +98,10 @@ alias:: CollisionAvoidance
   "definition": "Collision Avoidance - An active safety mechanism using Sensors (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify Robot Trajectories to prevent unintended contact with people, equipment, or structures.",
   "domain": "robotics",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-navigation-and-planning",
+    "label": "Navigation and Planning"
+  },
   "relations": {
     "requires": [
       {
@@ -117,6 +115,14 @@ alias:: CollisionAvoidance
       {
         "@id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
       }
     ],
     "enables": [
@@ -127,6 +133,14 @@ alias:: CollisionAvoidance
       {
         "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-operation",
+        "label": "Autonomous Vehicle Operation"
+      },
+      {
+        "@id": "urn:ngm:class:unmanned-aerial-vehicle-operation",
+        "label": "Unmanned Aerial Vehicle Operation"
       }
     ],
     "partOf": [
@@ -137,14 +151,96 @@ alias:: CollisionAvoidance
       {
         "@id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:advanced-driver-assistance-system",
+        "label": "Advanced Driver Assistance System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-trajectories",
+        "label": "Robot Trajectories"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:traffic-collision-avoidance-system",
+        "label": "Traffic Collision Avoidance System"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:airspace-management",
+        "label": "Airspace Management"
+      },
+      {
+        "@id": "urn:ngm:class:maritime-navigation",
+        "label": "Maritime Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:space-debris-mitigation",
+        "label": "Space Debris Mitigation"
       }
     ]
   },
-  "quality": 0.58,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "@id": "urn:ngm:class:conflict-detection-and-resolution",
+      "label": "Conflict Detection and Resolution"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

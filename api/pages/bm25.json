@@ -4,7 +4,7 @@
   "slug": "bm25",
   "public": true,
   "classIri": "urn:ngm:class:bm25",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "BM25 (Best Match 25) is a probabilistic bag-of-words ranking function used in information retrieval to score documents against a query based on term frequency saturation, document length normalisation, and inverse document frequency weighting. Derived from the BM family of retrieval functions developed at the Robertson-Sp\u00e4rck Jones framework in the 1970s-1990s, BM25 extends TF-IDF by applying a saturation parameter (k1) that prevents very high term frequencies from dominating relevance scores and a length normalisation parameter (b) that adjusts for document verbosity. It remains the dominant sparse lexical retrieval baseline in modern information retrieval systems.",
   "subClassOf": [
     {
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:corpus-statistics",
+        "label": "Corpus Statistics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:retrieval-augmented-generation-rag",
@@ -26,12 +35,43 @@
       {
         "id": "urn:ngm:class:enterprise-search",
         "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:document-ranking",
+        "label": "Document Ranking"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:probabilistic-ranking-principle",
+        "label": "Probabilistic Ranking Principle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:neural-ranking-model",
+        "label": "Neural Ranking Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -40,9 +80,26 @@
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:term-frequency",
+        "label": "Term Frequency"
+      },
+      {
+        "id": "urn:ngm:class:inverse-document-frequency",
+        "label": "Inverse Document Frequency"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:reciprocal-rank-fusion",
+        "label": "Reciprocal Rank Fusion"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -57,6 +114,18 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-relevance-model",
+        "label": "Probabilistic Relevance Model"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
       }
     ]
   },

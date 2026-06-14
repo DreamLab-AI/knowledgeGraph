@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:kyc",
   "@type": "Class",
   "label": "KYC",
-  "definition": "Know Your Customer, the set of procedures by which a regulated entity verifies the identity of its clients and assesses associated risks before and during a business relationship.",
-  "domain": "governance",
+  "definition": "Know Your Customer, the set of procedures by which a regulated entity verifies the identity of its clients and assesses associated risks before and during a business relationship, forming a cornerstone of anti-money laundering and counter-terrorist financing compliance frameworks.",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:identity-verification",
-      "label": "Identity Verification"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:identity-verification",
+    "label": "Identity Verification"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,134 @@ public:: true
       {
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:document-verification",
+        "label": "Document Verification"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:customer-identification-program",
+        "label": "Customer Identification Program"
+      },
+      {
+        "@id": "urn:ngm:class:enhanced-due-diligence",
+        "label": "Enhanced Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:politically-exposed-person-screening",
+        "label": "Politically Exposed Person Screening"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:bank-secrecy-act",
+        "label": "Bank Secrecy Act"
+      },
+      {
+        "@id": "urn:ngm:class:eu-anti-money-laundering-directive",
+        "label": "EU Anti-Money Laundering Directive"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:aml-cft",
+        "label": "AML/CFT"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:know-your-customer",
+      "label": "Know Your Customer"
+    },
+    {
+      "@id": "urn:ngm:class:customer-identification",
+      "label": "Customer Identification"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

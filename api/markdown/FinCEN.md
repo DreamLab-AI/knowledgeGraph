@@ -23,25 +23,67 @@ public:: true
   "definition": "The Financial Crimes Enforcement Network (FinCEN) is a bureau of the US Department of the Treasury established in 1990 that serves as the primary US financial intelligence unit (FIU). FinCEN administers the Bank Secrecy Act (BSA), collects financial transaction reports from financial institutions (SARs, CTRs), analyses this data for patterns of money laundering, terrorist financing, and financial fraud, and shares intelligence with law enforcement and foreign FIUs through the Egmont Group. FinCEN also issues regulatory guidance and rulemaking for digital asset service providers including money service businesses (MSBs) and, since 2019, cryptocurrency exchanges.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}],
+  "subClassOf": {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:suspicious-activity-report", "label": "Suspicious Activity Report"},
+      {"@id": "urn:ngm:class:currency-transaction-report", "label": "Currency Transaction Report"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:us-department-of-the-treasury", "label": "US Department of the Treasury"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:beneficial-ownership-reporting", "label": "Beneficial Ownership Reporting"},
+      {"@id": "urn:ngm:class:customer-identification-programme", "label": "Customer Identification Programme"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
       {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:sanctions-enforcement", "label": "Sanctions Enforcement"}
+      {"@id": "urn:ngm:class:sanctions-enforcement", "label": "Sanctions Enforcement"},
+      {"@id": "urn:ngm:class:counter-terrorism-financing", "label": "Counter-Terrorism Financing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:bank-secrecy-act", "label": "Bank Secrecy Act"},
+      {"@id": "urn:ngm:class:usa-patriot-act", "label": "USA PATRIOT Act"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"},
+      {"@id": "urn:ngm:class:egmont-group", "label": "Egmont Group"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
+      {"@id": "urn:ngm:class:financial-intelligence", "label": "Financial Intelligence"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:law-enforcement-coordination", "label": "Law Enforcement Coordination"},
+      {"@id": "urn:ngm:class:corporate-transparency-act", "label": "Corporate Transparency Act"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:office-of-foreign-assets-control", "label": "Office of Foreign Assets Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:virtual-asset-service-provider", "label": "Virtual Asset Service Provider"},
+      {"@id": "urn:ngm:class:cryptocurrency-travel-rule", "label": "Cryptocurrency Travel Rule"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
       {"@id": "urn:ngm:class:us-regulatory-framework", "label": "US Regulatory Framework"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"}
+      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"},
+      {"@id": "urn:ngm:class:money-service-business", "label": "Money Service Business"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:financial-crimes-enforcement-network", "label": "Financial Crimes Enforcement Network"},
+    {"@id": "urn:ngm:class:us-financial-intelligence-unit", "label": "US Financial Intelligence Unit"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

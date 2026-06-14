@@ -4,7 +4,7 @@
   "slug": "sustainable-finance",
   "public": true,
   "classIri": "urn:ngm:class:sustainable-finance",
-  "domain": "governance",
+  "domain": "finance",
   "definition": "Sustainable finance refers to the integration of environmental, social, and governance (ESG) criteria into financial decision-making, product design, and market regulation with the goal of channelling capital flows toward activities that support a sustainable economy. It encompasses green bonds, sustainability-linked loans, ESG investing, climate risk management, and regulatory taxonomies that define what qualifies as environmentally sustainable economic activity.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.82,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk-disclosure",
+        "label": "Climate Risk Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:green-bond-market",
@@ -26,12 +39,56 @@
       {
         "id": "urn:ngm:class:impact-investing",
         "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-linked-loan",
+        "label": "Sustainability-Linked Loan"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-market",
+        "label": "Carbon Credit Market"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:un-sustainable-development-goals",
+        "label": "UN Sustainable Development Goals"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-sustainable-finance-disclosure-regulation",
+        "label": "EU Sustainable Finance Disclosure Regulation"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "id": "urn:ngm:class:socially-responsible-investment",
+        "label": "Socially Responsible Investment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:climate-science",
+        "label": "Climate Science"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-green-bonds",
+        "label": "Tokenised Green Bonds"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:esg",
@@ -40,10 +97,31 @@
       {
         "id": "urn:ngm:class:eu-taxonomy",
         "label": "EU Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:ifrs-s1-s2",
+        "label": "IFRS S1 S2"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "id": "urn:ngm:class:ngfs",
+        "label": "NGFS"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +129,8 @@
         "label": "Climate Finance"
       },
       {
-        "id": "urn:ngm:class:esg-reporting",
-        "label": "ESG Reporting"
+        "id": "urn:ngm:class:stranded-assets",
+        "label": "Stranded Assets"
       }
     ]
   },

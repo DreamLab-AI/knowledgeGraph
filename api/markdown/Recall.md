@@ -86,32 +86,158 @@ public:: true
   "@id": "urn:ngm:class:recall",
   "@type": "Class",
   "label": "Recall",
-  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in d...",
-  "domain": "spatial-computing",
+  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-performance",
+    "label": "Model Performance"
+  },
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "@id": "urn:ngm:class:sensitivity",
+      "label": "Sensitivity"
+    },
+    {
+      "@id": "urn:ngm:class:true-positive-rate",
+      "label": "True Positive Rate"
+    },
+    {
+      "@id": "urn:ngm:class:hit-rate",
+      "label": "Hit Rate"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "@id": "urn:ngm:class:false-negative",
+        "label": "False Negative"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:classification-evaluation",
+        "label": "Classification Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:classification-model",
+        "label": "Classification Model"
+      },
+      {
+        "@id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "@id": "urn:ngm:class:false-negative-rate",
+        "label": "False Negative Rate"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:model-fairness",
+        "label": "Model Fairness"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:imbalanced-classification",
+        "label": "Imbalanced Classification"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:diagnostic-sensitivity",
+        "label": "Diagnostic Sensitivity"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval-evaluation",
+        "label": "Information Retrieval Evaluation"
       }
     ]
   }

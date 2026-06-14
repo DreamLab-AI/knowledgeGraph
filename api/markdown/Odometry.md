@@ -114,24 +114,50 @@ public:: true
   "@id": "urn:ngm:class:odometry",
   "@type": "Class",
   "label": "Odometry",
-  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
+  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion and is subject to cumulative drift without correction.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "@id": "urn:ngm:class:state-estimation",
-      "label": "State Estimation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:state-estimation",
+    "label": "State Estimation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-odometry",
+        "label": "Inertial Odometry"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:motion-sensors",
         "label": "Motion Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
       }
     ],
     "enables": [
@@ -142,6 +168,20 @@ public:: true
       {
         "@id": "urn:ngm:class:rb-1013-localization",
         "label": "RB-1013-localization"
+      },
+      {
+        "@id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
       }
     ],
     "uses": [
@@ -158,16 +198,78 @@ public:: true
         "label": "Camera"
       },
       {
-        "@id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gps-positioning",
+        "label": "GPS Positioning"
+      },
+      {
+        "@id": "urn:ngm:class:absolute-positioning",
+        "label": "Absolute Positioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cumulative-error",
+        "label": "Cumulative Error"
+      },
+      {
+        "@id": "urn:ngm:class:drift",
+        "label": "Drift"
+      },
+      {
+        "@id": "urn:ngm:class:wheel-slip",
+        "label": "Wheel Slip"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dead-reckoning",
+      "label": "Dead Reckoning"
+    },
+    {
+      "@id": "urn:ngm:class:ego-motion-estimation",
+      "label": "Ego-Motion Estimation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

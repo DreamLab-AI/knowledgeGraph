@@ -21,16 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Data Augmentation",
   "definition": "Data augmentation is a machine learning technique that expands a training dataset by applying label-preserving transformations or synthesising new examples from existing data. Typical methods include geometric and photometric image transforms, noise injection, and generative model sampling such as GAN-produced samples. It improves model generalisation and robustness, mitigating overfitting when labelled data is scarce.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:geometric-transformation", "label": "Geometric Transformation"},
+      {"@id": "urn:ngm:class:noise-injection", "label": "Noise Injection"},
+      {"@id": "urn:ngm:class:colour-jitter", "label": "Colour Jitter"},
+      {"@id": "urn:ngm:class:mixup-augmentation", "label": "Mixup Augmentation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
+      {"@id": "urn:ngm:class:label-preserving-transformation", "label": "Label-Preserving Transformation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-generalisation", "label": "Model Generalisation"},
+      {"@id": "urn:ngm:class:overfitting-prevention", "label": "Overfitting Prevention"},
+      {"@id": "urn:ngm:class:class-imbalance-mitigation", "label": "Class Imbalance Mitigation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:training-pipeline", "label": "Training Pipeline"},
+      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"}
+    ],
+    "uses": [
       {"@id": "urn:ngm:class:synthetic-data-generator", "label": "Synthetic Data Generator"},
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"}
+      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:training-data-augmentation", "label": "Training Data Augmentation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -58,35 +58,155 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:statistical-inference",
+    "label": "Statistical Inference"
+  },
+  "sameAs": [
     {
       "@id": "urn:ngm:class:bayesian-inference",
       "label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:ngm:class:posterior-inference",
+      "label": "Posterior Inference"
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-propagation",
+        "label": "Expectation Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
       },
       {
-        "@id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-decision-theory",
+        "label": "Bayesian Decision Theory"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-modelling",
+        "label": "Predictive Modelling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-a-posteriori-estimation",
+        "label": "Maximum A Posteriori Estimation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:marginalisation",
+        "label": "Marginalisation"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:frequentist-inference",
+        "label": "Frequentist Inference"
+      },
+      {
+        "@id": "urn:ngm:class:point-estimation",
+        "label": "Point Estimation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
       }
     ]
   },
-  "quality": 0.6,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

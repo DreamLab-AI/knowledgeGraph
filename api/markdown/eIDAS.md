@@ -58,16 +58,14 @@ public:: true
   "@id": "urn:ngm:class:e-idas",
   "@type": "Class",
   "label": "eIDAS",
-  "definition": "A European Union regulation establishing a framework for electronic identification and trust services for electronic transactions across the internal market.",
+  "definition": "A European Union regulation establishing a framework for electronic identification and trust services for electronic transactions across the internal market, defining assurance levels, legal effects for electronic signatures, seals, timestamps and certificates, and mandating mutual recognition of notified national identity schemes.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:regulatory-framework",
-      "label": "Regulatory Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:regulatory-framework",
+    "label": "Regulatory Framework"
+  },
   "relations": {
     "requires": [
       {
@@ -75,8 +73,16 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-trust-service-provider",
+        "label": "Qualified Trust Service Provider"
       }
     ],
     "enables": [
@@ -87,14 +93,118 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-authentication",
+        "label": "Cross-Border Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-seal",
+        "label": "Electronic Seal"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-timestamp",
+        "label": "Electronic Timestamp"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eu-digital-single-market",
+        "label": "EU Digital Single Market"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-recognition-principle",
+        "label": "Mutual Recognition Principle"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-electronic-signature",
+        "label": "Qualified Electronic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:secure-signature-creation-device",
+        "label": "Secure Signature Creation Device"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:european-digital-identity-wallet",
+        "label": "European Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-government",
+        "label": "Electronic Government"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:electronic-identification-authentication-and-trust-services",
+      "label": "Electronic Identification Authentication and Trust Services"
+    },
+    {
+      "@id": "urn:ngm:class:eu-regulation-910-2014",
+      "label": "EU Regulation 910/2014"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

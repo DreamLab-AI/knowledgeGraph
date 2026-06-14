@@ -5,30 +5,43 @@
   "public": true,
   "classIri": "urn:ngm:class:3-d-file-format",
   "domain": "spatial-computing",
-  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata.",
+  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata, enabling asset portability across tools, rendering engines, and platforms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:animation-keyframes",
-        "label": "Animation Keyframes"
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
       },
       {
         "id": "urn:ngm:class:material-definition",
         "label": "Material Definition"
       },
       {
-        "id": "urn:ngm:class:mesh-data",
-        "label": "Mesh Data"
+        "id": "urn:ngm:class:animation-keyframes",
+        "label": "Animation Keyframes"
+      },
+      {
+        "id": "urn:ngm:class:texture-map",
+        "label": "Texture Map"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:geometry-encoding",
+        "label": "Geometry Encoding"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
       }
     ],
     "enables": [
@@ -43,22 +56,93 @@
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:2-d-image-format",
+        "label": "2D Image Format"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-format-standard",
         "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "uses": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:ngm:class:compression-algorithm",
+        "label": "Compression Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:pixar-animation-studios",
+        "label": "Pixar Animation Studios"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
   },
   "wikilinks": [
     {

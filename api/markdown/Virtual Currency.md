@@ -48,25 +48,105 @@ alias:: VirtualCurrency
   "@type": "Class",
   "label": "Virtual Currency",
   "definition": "A digital representation of value issued and controlled by platform developers, used and accepted electronically within a specific virtual community. Virtual currencies include closed in-game currencies (e.g., World of Warcraft gold), hybrid purchasable tokens (e.g., Robux), and convertible currencies exchangeable for fiat money, each with distinct regulatory and economic implications.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.70,
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-asset",
+    "label": "Digital Asset"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "@id": "urn:ngm:class:in-game-currency",
+      "label": "In-Game Currency"
+    },
+    {
+      "@id": "urn:ngm:class:platform-token",
+      "label": "Platform Token"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:closed-loop-currency",
+        "label": "Closed Loop Currency"
+      },
+      {
+        "@id": "urn:ngm:class:convertible-virtual-currency",
+        "label": "Convertible Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:non-convertible-virtual-currency",
+        "label": "Non-Convertible Virtual Currency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-metaverse-commerce",
         "label": "Cross Metaverse Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn",
+        "label": "Play To Earn"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-goods",
+        "label": "Virtual Goods"
+      },
+      {
+        "@id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
       }
     ],
     "contrastsWith": [
@@ -77,28 +157,42 @@ alias:: VirtualCurrency
       {
         "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:payment-system",
-        "label": "Payment System"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
       },
       {
-        "@id": "urn:ngm:class:financial-system",
-        "label": "Financial System"
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   }

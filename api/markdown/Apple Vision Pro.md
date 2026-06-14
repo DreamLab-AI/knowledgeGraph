@@ -25,22 +25,60 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:micro-oled-display", "label": "Micro-OLED Display"},
+      {"@id": "urn:ngm:class:apple-r1-chip", "label": "Apple R1 Chip"},
+      {"@id": "urn:ngm:class:apple-m2-chip", "label": "Apple M2 Chip"},
+      {"@id": "urn:ngm:class:visionos", "label": "visionOS"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:apple-ecosystem", "label": "Apple Ecosystem"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-computing-runtime", "label": "Spatial Computing Runtime"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:spatial-computing-paradigm", "label": "Spatial Computing"},
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
       {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:passthrough-video", "label": "Passthrough Video"},
+      {"@id": "urn:ngm:class:realitykit", "label": "RealityKit"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:enterprise-xr", "label": "Enterprise Extended Reality"},
+      {"@id": "urn:ngm:class:immersive-training-simulation", "label": "Immersive Training Simulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:meta-quest", "label": "Meta Quest"},
+      {"@id": "urn:ngm:class:microsoft-hololens", "label": "Microsoft HoloLens"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"}
+      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"},
+      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:apple-xr-headset", "label": "Apple XR Headset"},
+    {"@id": "urn:ngm:class:apple-spatial-computer", "label": "Apple Spatial Computer"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

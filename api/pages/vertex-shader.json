@@ -10,32 +10,92 @@
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vertex-buffer",
+        "label": "Vertex Buffer"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:pixel-shader",
         "label": "Pixel Shader"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+      },
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:displacement-mapping",
+        "label": "Displacement Mapping"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-view-projection-matrix",
+        "label": "Model-View-Projection Matrix"
+      },
+      {
+        "id": "urn:ngm:class:vertex-attribute",
+        "label": "Vertex Attribute"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "id": "urn:ngm:class:tessellation-shader",
+        "label": "Tessellation Shader"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-programming",
+        "label": "GPU Programming"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "id": "urn:ngm:class:matrix-transformation",
+        "label": "Matrix Transformation"
       }
     ],
     "supports": [],
@@ -44,16 +104,28 @@
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:compute-shader",
-        "label": "Compute Shader"
-      },
-      {
         "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
       }
     ]
   },

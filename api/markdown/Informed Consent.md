@@ -23,25 +23,60 @@ public:: true
   "definition": "Informed consent is a legal and ethical doctrine requiring that an individual voluntarily agrees to a procedure, treatment, data use, or research participation after receiving and comprehending all material information about its nature, risks, benefits, and alternatives. It rests on four elements: disclosure of relevant information, comprehension by the consenting party, voluntariness free from coercion, and capacity to make the decision. Codified in post-Nuremberg biomedical ethics (Belmont Report, Declaration of Helsinki), GDPR data protection law, and clinical trials regulations, informed consent is the foundational mechanism protecting individual autonomy across medical, research, and digital data contexts.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}],
+  "subClassOf": {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:disclosure", "label": "Disclosure"},
+      {"@id": "urn:ngm:class:voluntariness", "label": "Voluntariness"},
+      {"@id": "urn:ngm:class:decision-making-capacity", "label": "Decision-Making Capacity"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:patient-autonomy", "label": "Patient Autonomy"},
+      {"@id": "urn:ngm:class:comprehension", "label": "Comprehension"},
+      {"@id": "urn:ngm:class:right-to-withdraw", "label": "Right to Withdraw"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials"},
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:granular-consent-control", "label": "Granular Consent Control"}
+      {"@id": "urn:ngm:class:granular-consent-control", "label": "Granular Consent Control"},
+      {"@id": "urn:ngm:class:research-ethics", "label": "Research Ethics"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:belmont-report", "label": "Belmont Report"},
+      {"@id": "urn:ngm:class:declaration-of-helsinki", "label": "Declaration of Helsinki"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:common-rule", "label": "Common Rule"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:implied-consent", "label": "Implied Consent"},
+      {"@id": "urn:ngm:class:blanket-consent", "label": "Blanket Consent"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-transparency", "label": "AI Transparency"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
       {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
       {"@id": "urn:ngm:class:privacy-and-data-governance", "label": "Privacy and Data Governance"},
-      {"@id": "urn:ngm:class:ethical-ai", "label": "Ethical AI"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+      {"@id": "urn:ngm:class:ethical-ai", "label": "Ethical AI"},
+      {"@id": "urn:ngm:class:proxy-consent", "label": "Proxy Consent"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:voluntary-informed-consent", "label": "Voluntary Informed Consent"},
+    {"@id": "urn:ngm:class:free-and-informed-consent", "label": "Free and Informed Consent"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

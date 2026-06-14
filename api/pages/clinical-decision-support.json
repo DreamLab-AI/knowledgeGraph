@@ -4,19 +4,32 @@
   "slug": "clinical-decision-support",
   "public": true,
   "classIri": "urn:ngm:class:clinical-decision-support",
-  "domain": "spatial-computing",
-  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care.",
+  "domain": "artificial-intelligence",
+  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:medical-ai",
+      "label": "Medical AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:drug-interaction-checking",
+        "label": "Drug Interaction Checking"
+      },
+      {
+        "id": "urn:ngm:class:alert-fatigue-management",
+        "label": "Alert Fatigue Management"
+      },
+      {
+        "id": "urn:ngm:class:clinical-pathway-guidance",
+        "label": "Clinical Pathway Guidance"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -25,6 +38,14 @@
       {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "id": "urn:ngm:class:medical-knowledge-base",
+        "label": "Medical Knowledge Base"
       }
     ],
     "enables": [
@@ -35,15 +56,32 @@
       {
         "id": "urn:ngm:class:medical-diagnosis-ai",
         "label": "Medical Diagnosis AI"
+      },
+      {
+        "id": "urn:ngm:class:medication-safety",
+        "label": "Medication Safety"
+      },
+      {
+        "id": "urn:ngm:class:preventive-care",
+        "label": "Preventive Care"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-medical-ai",
+        "label": "Autonomous Medical AI"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:healthcare-analytics",
         "label": "Healthcare Analytics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -58,12 +96,52 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:evidence-based-medicine",
+        "label": "Evidence-Based Medicine"
+      },
+      {
+        "id": "urn:ngm:class:patient-safety",
+        "label": "Patient Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:cds-hooks",
+        "label": "CDS Hooks"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:health-data-privacy",
+        "label": "Health Data Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

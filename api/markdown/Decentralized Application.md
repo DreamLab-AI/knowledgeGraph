@@ -25,23 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"}
+      {"@id": "urn:ngm:class:wallet-connector", "label": "Wallet Connector"},
+      {"@id": "urn:ngm:class:oracle", "label": "Oracle"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:cryptographic-wallet", "label": "Cryptographic Wallet"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
+      {"@id": "urn:ngm:class:evm", "label": "EVM"},
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:trustless-execution", "label": "Trustless Execution"},
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:evm", "label": "EVM"},
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"}
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer-2 Scaling"},
+      {"@id": "urn:ngm:class:account-abstraction", "label": "Account Abstraction"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dao", "label": "DAO"},
       {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
+      {"@id": "urn:ngm:class:tokenized-asset", "label": "Tokenized Asset"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralized-application", "label": "Centralized Application"},
+      {"@id": "urn:ngm:class:traditional-web-application", "label": "Traditional Web Application"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:web3", "label": "Web3"},
+      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
+      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:dapp", "label": "dApp"},
+    {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.75
 }
 ```
 

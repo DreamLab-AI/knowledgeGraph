@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:x-509-certificate",
   "domain": "security",
-  "definition": "A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.",
+  "definition": "A standardised digital certificate format that binds a public key to an entity identity, together with validity period and usage constraints, and is signed by a certificate authority within a public key infrastructure so that relying parties can cryptographically verify its authenticity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-certificate",
@@ -13,18 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:certificate-subject",
+        "label": "Certificate Subject"
+      },
+      {
+        "id": "urn:ngm:class:validity-period",
+        "label": "Validity Period"
+      },
+      {
+        "id": "urn:ngm:class:certificate-extension",
+        "label": "Certificate Extension"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -35,17 +60,87 @@
       {
         "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:itu-t-x-509-standard",
+        "label": "ITU-T X.509 Standard"
+      },
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-signed-certificate",
+        "label": "Self-Signed Certificate"
+      },
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-chain",
+        "label": "Certificate Chain"
+      },
+      {
+        "id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "id": "urn:ngm:class:intermediate-certificate-authority",
+        "label": "Intermediate Certificate Authority"
+      }
+    ]
   },
   "wikilinks": [
     {

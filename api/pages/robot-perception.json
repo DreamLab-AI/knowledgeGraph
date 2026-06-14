@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-perception",
   "domain": "robotics",
-  "definition": "Robot perception is the process by which a robot interprets sensor data to build an understanding of its environment and state.",
+  "definition": "Robot perception is the process by which a robot interprets sensor data from cameras, lidar, depth sensors and inertial units to build an actionable understanding of its environment, objects and its own pose.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robotics",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensors",
@@ -25,23 +42,93 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:robot-navigation",
+        "label": "Robot Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-perception",
+        "label": "Human Perception"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-control-architecture",
+        "label": "Robot Control Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ]
   },
   "wikilinks": [
     {

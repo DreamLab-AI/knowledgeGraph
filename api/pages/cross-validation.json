@@ -4,47 +4,134 @@
   "slug": "cross-validation",
   "public": true,
   "classIri": "urn:ngm:class:cross-validation",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "Cross-validation is a statistical resampling technique for evaluating machine learning model performance by partitioning available data into complementary training and validation subsets, training the model on each partition in turn, and averaging the resulting error estimates. It provides a less optimistic and more generalisable estimate of out-of-sample predictive performance than a single train\u2013test split.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-machine-learning",
-      "label": "AI Machine Learning"
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.85,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:k-fold-cross-validation",
+        "label": "K-Fold Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:stratified-sampling",
+        "label": "Stratified Sampling"
+      },
+      {
+        "id": "urn:ngm:class:leave-one-out-cross-validation",
+        "label": "Leave-One-Out Cross-Validation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      },
+      {
+        "id": "urn:ngm:class:resampling",
+        "label": "Resampling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generalisation-error-estimation",
+        "label": "Generalisation Error Estimation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:train-test-split",
+        "label": "Train-Test Split"
+      },
+      {
+        "id": "urn:ngm:class:statistical-estimation",
+        "label": "Statistical Estimation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:holdout-validation",
+        "label": "Holdout Validation"
+      },
       {
         "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Training Data"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:performance-metric",
+        "label": "Performance Metric"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "supports": [
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:overfitting-prevention",
+        "label": "Overfitting Prevention"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
       {
         "id": "urn:ngm:class:applied-machine-learning",
         "label": "Applied Machine Learning"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:benign-overfitting",
         "label": "Benign Overfitting"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-learning",
+        "label": "Ensemble Learning"
       }
     ]
   },

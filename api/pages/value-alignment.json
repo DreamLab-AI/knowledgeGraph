@@ -16,24 +16,93 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:outer-alignment",
+        "label": "Outer Alignment"
+      },
+      {
+        "id": "urn:ngm:class:inner-alignment",
+        "label": "Inner Alignment"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:beneficial-ai",
+        "label": "Beneficial AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:capability-overhang",
+        "label": "Capability Overhang"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-safety",
@@ -42,6 +111,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "standardizedBy": [],
@@ -58,6 +131,14 @@
       {
         "id": "urn:ngm:class:bias",
         "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:goal-misgeneralisation",
+        "label": "Goal Misgeneralisation"
       }
     ]
   },

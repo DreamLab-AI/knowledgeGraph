@@ -71,20 +71,26 @@ alias:: AccessibilityStandards
   "@id": "urn:ngm:class:accessibility-standards",
   "@type": "Class",
   "label": "Accessibility Standards",
-  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, ...",
+  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments. Key bodies include the W3C XR Accessibility User Requirements (XRAUR), WCAG 2.2/3.0 adaptations, ADA digital interpretations, and inclusive immersion frameworks covering multi-modal input, hardware ergonomics, and spatial interface design.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-governance-and-safety",
+    "label": "Governance and Safety"
+  },
   "relations": {
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
       }
     ],
     "requires": [
@@ -95,6 +101,14 @@ alias:: AccessibilityStandards
       {
         "@id": "urn:ngm:class:multi-modal-interfaces",
         "label": "Multi-Modal Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:voice-navigation",
+        "label": "Voice Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
       }
     ],
     "enables": [
@@ -105,14 +119,82 @@ alias:: AccessibilityStandards
       {
         "@id": "urn:ngm:class:universal-design",
         "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:equitable-access",
+        "label": "Equitable Access"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "@id": "urn:ngm:class:xr-accessibility-user-requirements",
+        "label": "XR Accessibility User Requirements"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:design-standards",
+        "label": "Design Standards"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design-principles",
+        "label": "Inclusive Design Principles"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-interface-standards",
+        "label": "Proprietary Interface Standards"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-accessibility-standards",
+      "label": "Digital Accessibility Standards"
+    },
+    {
+      "@id": "urn:ngm:class:xr-accessibility-guidelines",
+      "label": "XR Accessibility Guidelines"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

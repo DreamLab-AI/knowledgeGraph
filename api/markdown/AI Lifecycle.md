@@ -106,16 +106,36 @@ public:: true
   "@id": "urn:ngm:class:ai-lifecycle",
   "@type": "Class",
   "label": "AI Lifecycle",
-  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specifi...",
+  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance",
+    "label": "AI Governance"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-decommissioning",
+        "label": "AI Decommissioning"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:stakeholder-engagement-throughout",
@@ -124,14 +144,122 @@ public:: true
       {
         "@id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-5338-2023",
+        "label": "ISO/IEC 5338:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23053",
+        "label": "ISO/IEC 23053"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:software-development-lifecycle",
+        "label": "Software Development Lifecycle"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:update-cycle",
+        "label": "Update Cycle"
+      },
+      {
+        "@id": "urn:ngm:class:fda-software-as-medical-device",
+        "label": "FDA Software as Medical Device"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:model-drift",
+        "label": "Model Drift"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-system-lifecycle",
+      "label": "AI System Lifecycle"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-lifecycle",
+      "label": "Machine Learning Lifecycle"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

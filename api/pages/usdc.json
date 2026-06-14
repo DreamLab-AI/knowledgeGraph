@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:usd",
@@ -25,18 +34,115 @@
       {
         "id": "urn:ngm:class:custody-infrastructure",
         "label": "Custody Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:reserve-attestation",
+        "label": "Reserve Attestation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "id": "urn:ngm:class:defi-collateral",
+        "label": "DeFi Collateral"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge-protocol",
+        "label": "Cross-Chain Bridge Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:usdt",
+        "label": "USDT"
+      },
+      {
+        "id": "urn:ngm:class:dai",
+        "label": "DAI"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:centre-consortium",
+        "label": "Centre Consortium"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stablecoin-ecosystem",
+        "label": "Stablecoin Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:defi-infrastructure",
+        "label": "DeFi Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:money-market-fund",
+        "label": "Money Market Fund"
+      },
+      {
+        "id": "urn:ngm:class:circle-financial",
+        "label": "Circle Financial"
+      }
+    ]
   },
   "wikilinks": [
     {

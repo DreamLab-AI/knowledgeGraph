@@ -94,15 +94,13 @@ public:: true
   "@id": "urn:ngm:class:trust-infrastructure",
   "@type": "Class",
   "label": "Trust Infrastructure",
-  "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
+  "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed systems through cryptographic protocols, identity verification, and access control policies. Comprises the hardware, software, and procedural controls that collectively guarantee confidentiality, integrity, and availability of trusted communications.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-security-and-identity",
+    "label": "Security and Identity"
+  },
   "relations": {
     "hasPart": [
       {
@@ -124,6 +122,24 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
       }
     ],
     "enables": [
@@ -142,14 +158,88 @@ public:: true
       {
         "@id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:x509-standard",
+        "label": "X.509 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:security-infrastructure",
+      "label": "Security Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

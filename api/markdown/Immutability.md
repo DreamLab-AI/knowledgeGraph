@@ -69,42 +69,65 @@ public:: true
   "definition": "The tamper-resistant property of blockchain ledgers whereby confirmed records cannot be altered without invalidating the cryptographic chain of hashes, providing verifiable finality, audit-trail integrity, and resistance to retroactive manipulation. Achieved through chained Merkle roots, accumulated proof-of-work, or BFT-based finality.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-entity",
+    "label": "Blockchain Entity"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
       {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
       {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hash-chaining", "label": "Hash Chaining"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:supply-chain-integrity", "label": "Supply Chain Integrity"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:mutability", "label": "Mutability"},
+      {"@id": "urn:ngm:class:data-deletion", "label": "Data Deletion"},
+      {"@id": "urn:ngm:class:right-to-erasure", "label": "Right to Erasure"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
+      {"@id": "urn:ngm:class:digital-twin-data-integrity", "label": "Digital Twin Data Integrity"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:append-only-log", "label": "Append-Only Log"},
+      {"@id": "urn:ngm:class:tamper-evidence", "label": "Tamper Evidence"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:tamper-resistance", "label": "Tamper Resistance"},
+    {"@id": "urn:ngm:class:append-only-property", "label": "Append-Only Property"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

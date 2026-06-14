@@ -21,23 +21,60 @@ public:: true
   "@type": "Class",
   "label": "Multimodal Learning",
   "definition": "Multimodal learning is a sub-field of machine learning concerned with building models that can process, align, and reason over data from two or more sensory modalities — such as text, images, audio, video, and structured data — within a unified representation space. Models trained multimodally acquire richer, grounded representations than unimodal counterparts by exploiting cross-modal correlations and complementarity.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
     {"@id": "urn:ngm:class:ai-machine-learning", "label": "AI Machine Learning"}
   ],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-models", "label": "Multimodal Models"},
+    "hasPart": [
       {"@id": "urn:ngm:class:cross-modal-conditioning", "label": "Cross-Modal Conditioning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {"@id": "urn:ngm:class:modality-specific-encoder", "label": "Modality-Specific Encoder"},
+      {"@id": "urn:ngm:class:cross-attention-fusion", "label": "Cross-Attention Fusion"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:paired-multimodal-dataset", "label": "Paired Multimodal Dataset"},
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
+      {"@id": "urn:ngm:class:embedding-space-alignment", "label": "Embedding Space Alignment"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:vision-language-action-models", "label": "Vision-Language-Action Models"}
+      {"@id": "urn:ngm:class:vision-language-action-models", "label": "Vision-Language-Action Models"},
+      {"@id": "urn:ngm:class:visual-question-answering", "label": "Visual Question Answering"},
+      {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"},
+      {"@id": "urn:ngm:class:zero-shot-transfer", "label": "Zero-Shot Transfer"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-models", "label": "Multimodal Models"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:unimodal-learning", "label": "Unimodal Learning"},
+      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
+      {"@id": "urn:ngm:class:autonomous-driving-perception", "label": "Autonomous Driving Perception"},
+      {"@id": "urn:ngm:class:medical-imaging-ai", "label": "Medical Imaging AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
+      {"@id": "urn:ngm:class:grounding", "label": "Grounding"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:multimodal-deep-learning", "label": "Multimodal Deep Learning"},
+    {"@id": "urn:ngm:class:cross-modal-learning", "label": "Cross-Modal Learning"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.85
 }

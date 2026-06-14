@@ -21,25 +21,59 @@ public:: true
   "@type": "Class",
   "label": "Data Collection",
   "definition": "Data collection is the systematic process of gathering raw observations, measurements, or records from primary sources — including sensors, user interactions, instruments, surveys, and web scraping — in a form suitable for storage, processing, and analysis. As a foundational stage of the data lifecycle, it determines the completeness, representativeness, and quality of all downstream analytical products. In machine learning contexts, data collection encompasses sourcing, labelling, and curating training datasets that govern model capability and bias characteristics.",
-  "domain": "ai",
+  "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
+      {"@id": "urn:ngm:class:data-sampling", "label": "Data Sampling"},
+      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"},
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}
-    ],
-    "relatedTo": [
+    "dependsOn": [
       {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
       {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-scraping", "label": "Web Scraping"},
+      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
+      {"@id": "urn:ngm:class:crowdsourcing", "label": "Crowdsourcing"}
+    ],
+    "contrastsWith": [
       {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:data-centric-ai", "label": "Data-Centric AI"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-acquisition", "label": "Data Acquisition"},
+    {"@id": "urn:ngm:class:data-ingestion", "label": "Data Ingestion"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

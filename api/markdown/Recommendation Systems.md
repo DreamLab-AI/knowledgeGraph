@@ -21,26 +21,63 @@ public:: true
   "@type": "Class",
   "label": "Recommendation Systems",
   "definition": "Recommendation Systems are information filtering systems that predict a user's preference for items—products, content, services—and surface the most relevant items from a large catalogue. They are categorised into collaborative filtering (leveraging the behaviour of similar users), content-based filtering (matching item attributes to user profiles), and hybrid approaches that combine both. Modern large-scale recommendation systems employ deep learning architectures, embedding models, and two-tower neural networks trained on implicit feedback signals such as clicks, watch-time, and purchases. Recommendation systems are among the highest-impact machine learning applications in commercial technology, driving substantial fractions of revenue at platforms such as Netflix, Amazon, YouTube, and Spotify, while also raising significant concerns about filter bubbles, engagement maximisation harms, and algorithmic amplification of misinformation.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:collaborative-filtering", "label": "Collaborative Filtering"},
+      {"@id": "urn:ngm:class:content-based-filtering", "label": "Content-Based Filtering"},
+      {"@id": "urn:ngm:class:retrieval-ranking-pipeline", "label": "Retrieval-Ranking Pipeline"},
+      {"@id": "urn:ngm:class:candidate-generation", "label": "Candidate Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:user-item-interaction-data", "label": "User-Item Interaction Data"},
+      {"@id": "urn:ngm:class:implicit-feedback", "label": "Implicit Feedback"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"}
+      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
+      {"@id": "urn:ngm:class:content-discovery", "label": "Content Discovery"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:two-tower-neural-network", "label": "Two-Tower Neural Network"},
+      {"@id": "urn:ngm:class:matrix-factorisation", "label": "Matrix Factorisation"},
+      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:filter-bubble", "label": "Filter Bubble"},
+      {"@id": "urn:ngm:class:algorithmic-amplification", "label": "Algorithmic Amplification"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:recommender-system", "label": "Recommender System"},
+    {"@id": "urn:ngm:class:collaborative-filtering-system", "label": "Collaborative Filtering System"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

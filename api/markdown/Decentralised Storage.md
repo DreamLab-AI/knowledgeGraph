@@ -54,35 +54,153 @@ public:: true
   "@id": "urn:ngm:class:decentralised-storage",
   "@type": "Class",
   "label": "Decentralised Storage",
-  "definition": "Storage systems that distribute data across many independent nodes rather than a single central provider, often using content addressing and cryptographic verification to ensure integrity and availability.",
+  "definition": "Storage systems that distribute data across many independent nodes rather than a single central provider, using content addressing and cryptographic verification to ensure data integrity, availability, and censorship resistance without a trusted intermediary.",
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:distributed-systems",
-      "label": "Distributed Systems"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-systems",
+    "label": "Distributed Systems"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:web3-infrastructure",
+        "label": "Web3 Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:node-incentivisation",
+        "label": "Node Incentivisation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:provenance",
         "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-data-availability",
+        "label": "Persistent Data Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-storage",
+      "label": "Distributed Storage"
+    },
+    {
+      "@id": "urn:ngm:class:peer-to-peer-storage",
+      "label": "Peer-to-Peer Storage"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

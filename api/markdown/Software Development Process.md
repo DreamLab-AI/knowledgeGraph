@@ -57,33 +57,66 @@ public:: true
   "definition": "The structured set of methodologies, workflows, and best practices governing how software — including AI and machine learning systems — is conceived, built, tested, deployed, and maintained. For AI systems this encompasses data-centric workflows, experiment tracking, model validation protocols, MLOps pipelines, and cross-functional collaboration between data scientists, engineers, and domain experts across the full model lifecycle.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-infrastructure",
+    "label": "AI Infrastructure (Category)"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:software-development-lifecycle", "label": "Software Development Lifecycle"},
+    {"@id": "urn:ngm:class:sdlc", "label": "SDLC"}
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
+      {"@id": "urn:ngm:class:software-design", "label": "Software Design"},
       {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
+      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"}
+    "requires": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:code-review", "label": "Code Review"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"},
+      {"@id": "urn:ngm:class:software-quality-assurance", "label": "Software Quality Assurance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:agile-development", "label": "Agile Development"},
+      {"@id": "urn:ngm:class:project-management", "label": "Project Management"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"},
+      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:standards-conformance-testing", "label": "Standards Conformance Testing"}
+      {"@id": "urn:ngm:class:standards-conformance-testing", "label": "Standards Conformance Testing"},
+      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:waterfall-model", "label": "Waterfall Model"},
+      {"@id": "urn:ngm:class:ad-hoc-development", "label": "Ad Hoc Development"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"}
     ]
   }
 }

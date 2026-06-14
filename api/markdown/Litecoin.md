@@ -62,12 +62,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -77,20 +75,130 @@ public:: true
       {
         "@id": "urn:ngm:class:scrypt",
         "label": "Scrypt"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-transactions",
+        "label": "Cross-Border Transactions"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:fixed-supply-schedule",
+        "label": "Fixed Supply Schedule"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swaps",
+        "label": "Atomic Swaps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-cash",
+        "label": "Bitcoin Cash"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-ecosystem",
+        "label": "Cryptocurrency Ecosystem"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:altcoin",
+        "label": "Altcoin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:payment-networks",
+        "label": "Payment Networks"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ltc",
+      "label": "LTC"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

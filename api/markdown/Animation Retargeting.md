@@ -74,19 +74,13 @@ public:: true
   "@id": "urn:ngm:class:animation-retargeting",
   "@type": "Class",
   "label": "Animation Retargeting",
-  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environ...",
+  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content And Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Content and Assets"
+  },
   "relations": {
     "requires": [
       {
@@ -100,6 +94,14 @@ public:: true
       {
         "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:character-rig",
+        "label": "Character Rig"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-hierarchy",
+        "label": "Skeletal Hierarchy"
       }
     ],
     "enables": [
@@ -114,14 +116,100 @@ public:: true
       {
         "@id": "urn:ngm:class:motion-capture-workflows",
         "label": "Motion Capture Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-avatar",
+        "label": "Virtual Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-animation",
+        "label": "Real-Time Animation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:joint-constraint",
+        "label": "Joint Constraint"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame-transform",
+        "label": "Coordinate Frame Transform"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:animation-technology",
+        "label": "Animation Technology"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:joint-binding",
+        "label": "Joint Binding"
+      },
+      {
+        "@id": "urn:ngm:class:rest-pose-alignment",
+        "label": "Rest Pose Alignment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      },
+      {
+        "@id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-human",
+        "label": "Digital Human"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:motion-retargeting",
+      "label": "Motion Retargeting"
+    },
+    {
+      "@id": "urn:ngm:class:skeleton-retargeting",
+      "label": "Skeleton Retargeting"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -58,25 +58,31 @@ public:: true
   "@id": "urn:ngm:class:decentraland",
   "@type": "Class",
   "label": "Decentraland",
-  "definition": "Decentraland is a blockchain-based virtual world in which users own parcels of virtual land and in-world assets as tokens, governed by a decentralised autonomous organisation.",
-  "domain": "metaverse",
+  "definition": "Decentraland is a blockchain-based virtual world in which users own parcels of virtual land and in-world assets as non-fungible tokens on the Ethereum network, governed by a decentralised autonomous organisation through on-chain voting with governance tokens.",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:metaverse-platform",
-      "label": "Metaverse Platform"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:metaverse-platform",
+    "label": "Metaverse Platform"
+  },
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
       }
     ],
     "enables": [
@@ -87,14 +93,110 @@ public:: true
       {
         "@id": "urn:ngm:class:social-vr",
         "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-land-ownership",
+        "label": "Virtual Land Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mana-token",
+        "label": "MANA Token"
+      },
+      {
+        "@id": "urn:ngm:class:land-nft",
+        "label": "LAND NFT"
+      },
+      {
+        "@id": "urn:ngm:class:decentraland-marketplace",
+        "label": "Decentraland Marketplace"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:web3-ecosystem",
+        "label": "Web3 Ecosystem"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:the-sandbox",
+        "label": "The Sandbox"
+      },
+      {
+        "@id": "urn:ngm:class:roblox",
+        "label": "Roblox"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:decentraland-virtual-world",
+      "label": "Decentraland Virtual World"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

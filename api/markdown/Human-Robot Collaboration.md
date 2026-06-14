@@ -62,12 +62,10 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robotics-domain",
-      "label": "Robotics Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robotics-domain",
+    "label": "Robotics Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -77,6 +75,18 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:safety-monitoring",
+        "label": "Safety Monitoring"
       }
     ],
     "enables": [
@@ -87,14 +97,114 @@ public:: true
       {
         "@id": "urn:ngm:class:assistive-robotics",
         "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:robot-assisted-surgery",
+        "label": "Robot-Assisted Surgery"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:shared-workspace-management",
+        "label": "Shared Workspace Management"
+      },
+      {
+        "@id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-control",
+        "label": "Force Torque Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:robot-motion-planning",
+        "label": "Robot Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control-systems",
+        "label": "Real-Time Control Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO/TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fully-autonomous-robotics",
+        "label": "Fully Autonomous Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors-engineering",
+        "label": "Human Factors Engineering"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:human-robot-teamwork",
+      "label": "Human-Robot Teamwork"
+    },
+    {
+      "@id": "urn:ngm:class:cobotics",
+      "label": "Cobotics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

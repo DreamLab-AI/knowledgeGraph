@@ -94,38 +94,138 @@ public:: true
   "@id": "urn:ngm:class:asynchronous-collaboration",
   "@type": "Class",
   "label": "Asynchronous Collaboration",
-  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
+  "definition": "Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:dc-workspace-tools",
-      "label": "Workspace Tools"
-    },
-    {
-      "@id": "urn:ngm:class:telecollaboration-domain",
-      "label": "TC-0001-telecollaboration-domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:telecollaboration-domain",
+    "label": "Telecollaboration Domain"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:documentation-culture",
         "label": "Documentation Culture"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-systems",
+        "label": "Documentation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:shared-repository",
+        "label": "Shared Repository"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:global-accessibility",
         "label": "Global Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:deep-work",
+        "label": "Deep Work"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:collaborative-document-editing",
+        "label": "Collaborative Document Editing"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:issue-tracking",
+        "label": "Issue Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:project-management-system",
+        "label": "Project Management System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-version-control",
+        "label": "Distributed Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:team-coordination",
+        "label": "Team Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:rfc",
+        "label": "RFC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "quality": 0.55,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:time-shifted-collaboration",
+      "label": "Time-Shifted Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:offline-first-collaboration",
+      "label": "Offline-First Collaboration"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

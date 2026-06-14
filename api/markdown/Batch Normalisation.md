@@ -51,25 +51,81 @@ public:: true
   "@type": "Class",
   "label": "Batch Normalisation",
   "definition": "A technique that normalises layer inputs within a mini-batch to zero mean and unit variance, stabilising training dynamics, enabling higher learning rates, and acting as a form of regularisation in deep neural networks. Introduced by Ioffe and Szegedy (2015), it reduces internal covariate shift and has become a standard component in convolutional and other deep learning architectures.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:normalisation-technique",
+    "label": "Normalisation Technique"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:batch-normalization",
+      "label": "Batch Normalization"
+    },
+    {
+      "@id": "urn:ngm:class:batchnorm",
+      "label": "BatchNorm"
     }
   ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:learnable-scale-parameter",
+        "label": "Learnable Scale Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:learnable-shift-parameter",
+        "label": "Learnable Shift Parameter"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:higher-learning-rate",
+        "label": "Higher Learning Rate"
+      },
+      {
+        "@id": "urn:ngm:class:faster-convergence",
+        "label": "Faster Convergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "uses": [
@@ -78,8 +134,26 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:neural-network-layer",
-        "label": "Neural Network Layer"
+        "@id": "urn:ngm:class:mean-and-variance-statistics",
+        "label": "Mean and Variance Statistics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:instance-normalisation",
+        "label": "Instance Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:group-normalisation",
+        "label": "Group Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:weight-normalisation",
+        "label": "Weight Normalisation"
       }
     ],
     "relatedTo": [
@@ -94,12 +168,24 @@ public:: true
       {
         "@id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:internal-covariate-shift",
+        "label": "Internal Covariate Shift"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-landscape-smoothing",
+        "label": "Optimisation Landscape Smoothing"
       }
     ],
-    "partOf": [
+    "bridgesTo": [
       {
-        "@id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
       }
     ]
   }

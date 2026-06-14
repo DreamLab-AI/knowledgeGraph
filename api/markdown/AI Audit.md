@@ -118,36 +118,160 @@ public:: true
   "@id": "urn:ngm:class:ai-audit",
   "@type": "Class",
   "label": "AI Audit",
-  "definition": "A systematic, independent examination and eof an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformi...",
+  "definition": "A systematic, independent examination and evaluation of an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-governance",
-      "label": "AI Governance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:access-to-systems-and-personnel",
-        "label": "access to systems and personnel"
+        "label": "Access to Systems and Personnel"
       },
       {
         "@id": "urn:ngm:class:ai-documentation",
-        "label": "AI documentation"
+        "label": "AI Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:auditor-competence",
+        "label": "Auditor Competence"
+      },
+      {
+        "@id": "urn:ngm:class:audit-independence",
+        "label": "Audit Independence"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:technical-audit",
+        "label": "Technical Audit"
+      },
+      {
+        "@id": "urn:ngm:class:governance-audit",
+        "label": "Governance Audit"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit",
+        "label": "Compliance Audit"
+      },
+      {
+        "@id": "urn:ngm:class:impact-and-fairness-audit",
+        "label": "Impact and Fairness Audit"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-certification",
+        "label": "Third-Party Certification"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-19011",
+        "label": "ISO 19011"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-testing",
+        "label": "Fairness Testing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-23894-2023",
+        "label": "ISO/IEC 23894:2023"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-5338-2023",
+        "label": "ISO/IEC 5338:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:internal-audit",
+        "label": "Internal Audit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-system-audit",
+      "label": "AI System Audit"
+    },
+    {
+      "@id": "urn:ngm:class:algorithmic-audit",
+      "label": "Algorithmic Audit"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

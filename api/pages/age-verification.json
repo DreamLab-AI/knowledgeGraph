@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-document-verification",
+        "label": "Identity Document Verification"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-moderation",
@@ -26,13 +35,52 @@
       {
         "id": "urn:ngm:class:parental-controls",
         "label": "Parental Controls"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:harm-reduction",
+        "label": "Harm Reduction"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymous-access",
+        "label": "Anonymous Access"
+      },
+      {
+        "id": "urn:ngm:class:vpn-circumvention",
+        "label": "VPN Circumvention"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:biometric-age-estimation",
+        "label": "Biometric Age Estimation"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:uk-online-safety-act",
@@ -41,9 +89,22 @@
       {
         "id": "urn:ngm:class:online-safety-act-2023",
         "label": "Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-29115",
+        "label": "ISO 29115"
+      },
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +122,18 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:child-online-safety",
+        "label": "Child Online Safety"
+      },
+      {
+        "id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },

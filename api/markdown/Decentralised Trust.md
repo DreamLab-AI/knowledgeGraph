@@ -23,26 +23,59 @@ public:: true
   "definition": "Decentralised trust is an architectural property of a system in which confidence in the correctness of data, identity claims, or transaction outcomes is derived from cryptographic proofs, distributed consensus, and transparent protocol rules rather than from reliance on any single central authority or intermediary. Rather than placing faith in a bank, government registry, or certificate authority, participants in a decentralised trust model verify claims independently using public-key cryptography, Merkle proofs, or zero-knowledge proofs enforced by a distributed network. The result is a system where trust is a computable property of the protocol rather than a social or legal delegation to an institution.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trust", "label": "Trust"}],
+  "subClassOf": {"@id": "urn:ngm:class:trust", "label": "Trust"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
       {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"},
       {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:trust-anchor", "label": "Trust Anchor"}
+      {"@id": "urn:ngm:class:trust-anchor", "label": "Trust Anchor"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
       {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-trust", "label": "Centralised Trust"},
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:oracle-problem", "label": "Oracle Problem"},
+      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"},
+      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:trustless-system", "label": "Trustless System"},
+    {"@id": "urn:ngm:class:cryptographic-trust", "label": "Cryptographic Trust"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

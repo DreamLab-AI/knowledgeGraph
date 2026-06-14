@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feedforward-control",
+        "label": "Feedforward Control"
+      },
+      {
+        "id": "urn:ngm:class:tracking-error-metric",
+        "label": "Tracking Error Metric"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reference-trajectory",
+        "label": "Reference Trajectory"
+      },
+      {
+        "id": "urn:ngm:class:error-dynamics",
+        "label": "Error Dynamics"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -26,6 +44,14 @@
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:drone-flight-control",
+        "label": "Drone Flight Control"
       }
     ],
     "dependsOn": [
@@ -36,11 +62,37 @@
       {
         "id": "urn:ngm:class:state-estimation",
         "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:path-following-control",
+        "label": "Path Following Control"
+      },
+      {
+        "id": "urn:ngm:class:setpoint-regulation",
+        "label": "Setpoint Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:motion-model",
@@ -57,6 +109,14 @@
       {
         "id": "urn:ngm:class:pid-controller",
         "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:differential-flatness",
+        "label": "Differential Flatness"
       }
     ],
     "supports": [],
@@ -70,6 +130,14 @@
       {
         "id": "urn:ngm:class:path-planning",
         "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
+      },
+      {
+        "id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
       }
     ]
   },

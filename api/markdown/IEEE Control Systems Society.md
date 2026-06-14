@@ -23,26 +23,62 @@ public:: true
   "definition": "The IEEE Control Systems Society (CSS) is a professional technical organisation within the Institute of Electrical and Electronics Engineers dedicated to advancing the theory, design, and application of control systems across engineering disciplines. It publishes flagship journals including IEEE Transactions on Automatic Control and the IEEE Control Systems Magazine, and organises premier conferences such as the Conference on Decision and Control (CDC). The Society bridges classical control theory with modern machine learning and autonomous systems research, promoting standards, educational resources, and an international community of practitioners. Its technical committees address domains ranging from robotics and aerospace to networked systems and intelligent transportation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": {"@id": "urn:ngm:class:control-system", "label": "Control System"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ieee-transactions-on-automatic-control", "label": "IEEE Transactions on Automatic Control"},
+      {"@id": "urn:ngm:class:conference-on-decision-and-control", "label": "Conference on Decision and Control"},
+      {"@id": "urn:ngm:class:ieee-control-systems-magazine", "label": "IEEE Control Systems Magazine"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:cyber-physical-system", "label": "Cyber-Physical System"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+    ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:ieee-standards", "label": "IEEE Standards"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:state-space-representation", "label": "State-Space Representation"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+      {"@id": "urn:ngm:class:safety-critical-system", "label": "Safety-Critical System"},
+      {"@id": "urn:ngm:class:networked-control-system", "label": "Networked Control System"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ieee-css", "label": "IEEE CSS"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

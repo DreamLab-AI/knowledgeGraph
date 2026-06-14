@@ -113,17 +113,31 @@ public:: true
   "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "@id": "urn:ngm:class:motion-planning",
-      "label": "Motion Planning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:motion-planning",
+    "label": "Motion Planning"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:velocity-profile",
+        "label": "Velocity Profile"
+      },
+      {
+        "@id": "urn:ngm:class:acceleration-profile",
+        "label": "Acceleration Profile"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory",
+        "label": "Trajectory"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-control-pipeline",
+        "label": "Robot Control Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:goal-configuration",
@@ -131,11 +145,19 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:path-planning",
-        "label": "RB-1016-path-planning"
+        "label": "Path Planning"
       },
       {
         "@id": "urn:ngm:class:start-configuration",
         "label": "Start Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-constraints",
+        "label": "Kinematic Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-constraints",
+        "label": "Dynamic Constraints"
       }
     ],
     "enables": [
@@ -146,24 +168,96 @@ public:: true
       {
         "@id": "urn:ngm:class:task-execution",
         "label": "Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:forward-kinematics",
-        "label": "RB-1005-forward-kinematics"
+        "label": "Forward Kinematics"
       },
       {
         "@id": "urn:ngm:class:inverse-kinematics",
-        "label": "RB-1006-inverse-kinematics"
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:spline-interpolation",
+        "label": "Spline Interpolation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-optimization",
+        "label": "Numerical Optimization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:continuity",
+        "label": "Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:smoothness",
+        "label": "Smoothness"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:trajectory-planning",
+      "label": "Trajectory Planning"
+    },
+    {
+      "@id": "urn:ngm:class:motion-trajectory-computation",
+      "label": "Motion Trajectory Computation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

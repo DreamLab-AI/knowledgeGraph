@@ -118,50 +118,160 @@ public:: true
   "@id": "urn:ngm:class:blockchain-energy-consumption",
   "@type": "Class",
   "label": "Blockchain Energy Consumption",
-  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, global electricity) to en...",
+  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, 0.65% of global electricity) to energy-efficient Proof-of-Stake (Ethereum post-Merge: 99.95% reduction), with ongoing research into sustainable consensus algorithms, renewable energy mining, carbon credit tokenization, and environmental impact measurement frameworks.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:environmental-impact",
+    "label": "Environmental Impact"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-emissions",
+        "label": "Carbon Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:computational-power",
+        "label": "Computational Power"
+      },
+      {
+        "@id": "urn:ngm:class:electricity-consumption",
+        "label": "Electricity Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-performance",
+        "label": "Blockchain Performance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:network-size",
+        "label": "Network Size"
+      },
+      {
+        "@id": "urn:ngm:class:energy-source",
+        "label": "Energy Source"
+      },
+      {
+        "@id": "urn:ngm:class:electricity-price",
+        "label": "Electricity Price"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:application-specific-integrated-circuit",
+        "label": "Application-Specific Integrated Circuit"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credit-tokenization",
+        "label": "Carbon Credit Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificate",
+        "label": "Renewable Energy Certificate"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-mining-council",
+        "label": "Bitcoin Mining Council"
+      },
+      {
+        "@id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
+        "label": "Cambridge Bitcoin Electricity Consumption Index"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:carbon-emissions",
-        "label": "CarbonEmissions"
       },
       {
-        "@id": "urn:ngm:class:computational-power",
-        "label": "ComputationalPower"
+        "@id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
       },
       {
-        "@id": "urn:ngm:class:electricity-consumption",
-        "label": "ElectricityConsumption"
+        "@id": "urn:ngm:class:energy-sector",
+        "label": "Energy Sector"
       },
       {
-        "@id": "urn:ngm:class:hash-rate",
-        "label": "HashRate"
+        "@id": "urn:ngm:class:environmental-regulation",
+        "label": "Environmental Regulation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency-energy-use",
+      "label": "Cryptocurrency Energy Use"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-ledger-energy-consumption",
+      "label": "Distributed Ledger Energy Consumption"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

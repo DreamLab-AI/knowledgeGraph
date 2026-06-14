@@ -54,34 +54,65 @@ public:: true
   "@id": "urn:ngm:class:curriculum-learning",
   "@type": "Class",
   "label": "Curriculum Learning",
-  "definition": "A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.",
-  "domain": "spatial-computing",
+  "definition": "A training strategy that presents examples to a model in a meaningful order, typically progressing from easy to difficult, mimicking how humans learn. Curriculum learning improves convergence speed, final performance, and generalisation by structuring the learning progression rather than relying on random example ordering.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:training-strategy",
+    "label": "Training Strategy"
+  },
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
+      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:faster-convergence", "label": "Faster Convergence"},
+      {"@id": "urn:ngm:class:sample-efficiency", "label": "Sample Efficiency"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:difficulty-measure", "label": "Difficulty Measure"},
+      {"@id": "urn:ngm:class:data-ordering", "label": "Data Ordering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:difficulty-assessment", "label": "Difficulty Assessment"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:self-paced-learning", "label": "Self-Paced Learning"},
+      {"@id": "urn:ngm:class:teacher-student-curriculum", "label": "Teacher-Student Curriculum"},
+      {"@id": "urn:ngm:class:automatic-curriculum", "label": "Automatic Curriculum"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:random-sampling", "label": "Random Sampling"},
+      {"@id": "urn:ngm:class:anti-curriculum", "label": "Anti-Curriculum"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimisation Algorithm"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:structured-training", "label": "Structured Training"},
+    {"@id": "urn:ngm:class:progressive-training", "label": "Progressive Training"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -82,34 +82,46 @@ public:: true
   "@id": "urn:ngm:class:3-d-file-format",
   "@type": "Class",
   "label": "3D File Format",
-  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata.",
+  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata, enabling asset portability across tools, rendering engines, and platforms.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-format-standard",
+    "label": "Data Format Standard"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:data-format-standard",
-        "label": "Data Format Standard"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:animation-keyframes",
-        "label": "Animation Keyframes"
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
       },
       {
         "@id": "urn:ngm:class:material-definition",
         "label": "Material Definition"
       },
       {
-        "@id": "urn:ngm:class:mesh-data",
-        "label": "Mesh Data"
+        "@id": "urn:ngm:class:animation-keyframes",
+        "label": "Animation Keyframes"
+      },
+      {
+        "@id": "urn:ngm:class:texture-map",
+        "label": "Texture Map"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:geometry-encoding",
+        "label": "Geometry Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
       }
     ],
     "enables": [
@@ -124,14 +136,102 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:compression-algorithm",
+        "label": "Compression Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:pixar-animation-studios",
+        "label": "Pixar Animation Studios"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:2-d-image-format",
+        "label": "2D Image Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3-d-asset-format",
+      "label": "3D Asset Format"
+    },
+    {
+      "@id": "urn:ngm:class:three-dimensional-file-format",
+      "label": "Three-Dimensional File Format"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

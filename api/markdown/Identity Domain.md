@@ -113,12 +113,32 @@ public:: true
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:identity-lifecycle-management",
+        "label": "Identity Lifecycle Management"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:cryptographic-domain",
         "label": "Cryptographic Domain"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
       }
     ],
     "enables": [
@@ -129,14 +149,124 @@ public:: true
       {
         "@id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-domain",
+        "label": "Security Domain"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-domain",
+        "label": "Privacy Domain"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:credential-revocation",
+        "label": "Credential Revocation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

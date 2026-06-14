@@ -102,12 +102,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-domain",
+    "label": "Blockchain Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -129,6 +127,20 @@ public:: true
       {
         "@id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
       }
     ],
     "requires": [
@@ -143,6 +155,10 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "enables": [
@@ -157,14 +173,112 @@ public:: true
       {
         "@id": "urn:ngm:class:atomic-settlement",
         "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-transfer",
+        "label": "Peer-to-Peer Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO/IEC 23257:2021"
+      },
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:capital-markets-domain",
+        "label": "Capital Markets Domain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:custody-solution",
+        "label": "Custody Solution"
+      },
+      {
+        "@id": "urn:ngm:class:token-liquidity",
+        "label": "Token Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:crypto-asset-domain",
+      "label": "Crypto Asset Domain"
+    },
+    {
+      "@id": "urn:ngm:class:tokenised-asset-ecosystem",
+      "label": "Tokenised Asset Ecosystem"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

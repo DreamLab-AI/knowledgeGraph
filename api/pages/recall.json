@@ -4,38 +4,143 @@
   "slug": "recall",
   "public": true,
   "classIri": "urn:ngm:class:recall",
-  "domain": "spatial-computing",
-  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in d...",
+  "domain": "machine-learning",
+  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "id": "urn:ngm:class:false-negative",
+        "label": "False Negative"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:classification-model",
+        "label": "Classification Model"
+      },
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "id": "urn:ngm:class:false-negative-rate",
+        "label": "False Negative Rate"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:diagnostic-sensitivity",
+        "label": "Diagnostic Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval-evaluation",
+        "label": "Information Retrieval Evaluation"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:model-fairness",
+        "label": "Model Fairness"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:classification-evaluation",
+        "label": "Classification Evaluation"
+      }
+    ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:imbalanced-classification",
+        "label": "Imbalanced Classification"
       }
     ]
   },

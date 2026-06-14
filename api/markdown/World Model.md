@@ -23,17 +23,41 @@ public:: true
   "definition": "A World Model is an internal representation maintained by an intelligent agent—biological or artificial—that encodes beliefs about the structure, dynamics, and state of its environment, enabling prediction, planning, and counterfactual reasoning without requiring direct sensory input for every decision. In model-based reinforcement learning, a learned world model allows an agent to simulate future trajectories in latent space, dramatically improving sample efficiency compared to model-free approaches. World models compress high-dimensional sensory observations into compact representations that capture causally relevant structure, supporting long-horizon planning and generalisation to novel situations. They are central to current research on embodied AI, autonomous driving, and general-purpose robot manipulation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}],
+  "subClassOf": {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:latent-state-space", "label": "Latent State Space"},
+      {"@id": "urn:ngm:class:forward-dynamics-model", "label": "Forward Dynamics Model"},
+      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
+      {"@id": "urn:ngm:class:state-encoder", "label": "State Encoder"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:sensory-observation", "label": "Sensory Observation"},
+      {"@id": "urn:ngm:class:state-representation", "label": "State Representation"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
       {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"}
+      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"},
+      {"@id": "urn:ngm:class:counterfactual-reasoning", "label": "Counterfactual Reasoning"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:predictive-coding", "label": "Predictive Coding"},
+      {"@id": "urn:ngm:class:model-based-reinforcement-learning", "label": "Model-Based Reinforcement Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:model-free-reinforcement-learning", "label": "Model-Free Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
@@ -43,7 +67,16 @@ public:: true
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:mental-model", "label": "Mental Model"},
+    {"@id": "urn:ngm:class:environment-model", "label": "Environment Model"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

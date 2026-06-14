@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:supply-chain-traceability",
@@ -26,12 +39,60 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-network",
+        "label": "Decentralized Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-pki",
+        "label": "Traditional PKI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash",
@@ -44,23 +105,49 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:epcis-standard",
+        "label": "EPCIS Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:immutability",
-        "label": "Immutability"
+        "id": "urn:ngm:class:interplanetary-file-system",
+        "label": "InterPlanetary File System"
       },
       {
-        "id": "urn:ngm:class:provenance-tracking",
-        "label": "Provenance Tracking"
-      },
-      {
-        "id": "urn:ngm:class:data-integrity",
-        "label": "Data Integrity"
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
       }
     ]
   },

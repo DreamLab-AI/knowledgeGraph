@@ -75,18 +75,12 @@ public:: true
   "@type": "Class",
   "label": "Carbon Registry",
   "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:environmental-registry",
-      "label": "Environmental Registry"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:environmental-registry",
+    "label": "Environmental Registry"
+  },
   "relations": {
     "requires": [
       {
@@ -100,6 +94,14 @@ public:: true
       {
         "@id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "enables": [
@@ -114,14 +116,110 @@ public:: true
       {
         "@id": "urn:ngm:class:market-transparency",
         "label": "Market Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-retirement",
+        "label": "Carbon Credit Retirement"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-offsetting",
+        "label": "Emissions Offsetting"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:serial-number-issuance",
+        "label": "Serial Number Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:project-documentation",
+        "label": "Project Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-ledger",
+        "label": "Ownership Ledger"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:climate-governance-infrastructure",
+        "label": "Climate Governance Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:vcs-standard",
+        "label": "VCS Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:icvcm",
+        "label": "ICVCM"
+      },
+      {
+        "@id": "urn:ngm:class:corsia",
+        "label": "CORSIA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:redd-plus",
+        "label": "REDD+"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset-project",
+        "label": "Carbon Offset Project"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-accounting",
+        "label": "Greenhouse Gas Accounting"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:carbon-credit-registry",
+      "label": "Carbon Credit Registry"
+    },
+    {
+      "@id": "urn:ngm:class:emissions-registry",
+      "label": "Emissions Registry"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

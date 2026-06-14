@@ -47,27 +47,29 @@ public:: true
   "@type": "Class",
   "label": "Batch Processing",
   "definition": "A computational paradigm in which jobs are accumulated and executed as a group rather than individually in real-time. Batch processing optimises throughput by amortising fixed overhead across many records, enabling efficient ETL pipelines, model training over large datasets, report generation, and vulnerability scanning. Scheduling may be time-based, event-triggered, or dependency-driven.",
-  "domain": "artificial-intelligence",
+  "domain": "infrastructure",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    }
-  ],
+  "qualityScore": 0.68,
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-pipeline",
+    "label": "Data Pipeline"
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bulk-processing",
+      "label": "Bulk Processing"
+    },
+    {
+      "@id": "urn:ngm:class:offline-processing",
+      "label": "Offline Processing"
+    }
+  ],
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:infra-data-management",
-        "label": "Data Management"
-      }
-    ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:batch-normalisation",
@@ -76,24 +78,118 @@ public:: true
       {
         "@id": "urn:ngm:class:batch-size",
         "label": "Batch Size"
+      },
+      {
+        "@id": "urn:ngm:class:job-scheduler",
+        "label": "Job Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "@id": "urn:ngm:class:dead-letter-queue",
+        "label": "Dead Letter Queue"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:lambda-architecture",
+        "label": "Lambda Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-cluster",
+        "label": "Compute Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:etl",
+        "label": "ETL"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-scanning",
+        "label": "Vulnerability Scanning"
       }
     ],
-    "contrastsWith": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:inference",
-        "label": "Inference"
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:mapreduce",
+        "label": "MapReduce"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "@id": "urn:ngm:class:apache-hadoop",
+        "label": "Apache Hadoop"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehousing",
+        "label": "Data Warehousing"
       }
     ]
   }

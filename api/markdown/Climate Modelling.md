@@ -21,29 +21,66 @@ public:: true
   "@type": "Class",
   "label": "Climate Modelling",
   "definition": "Climate Modelling is the scientific discipline of constructing mathematical and computational representations of Earth's climate system to simulate past, present, and future climate states. Models range from simple energy-balance equations to high-resolution coupled atmosphere-ocean-land-ice systems running on supercomputing infrastructure. They underpin global projections published by the Intergovernmental Panel on Climate Change and inform policy decisions on emissions reduction and adaptation. Machine learning is increasingly integrated to accelerate parameterisation and downscaling. Outputs feed directly into carbon accounting, sustainability planning, and digital twin applications.",
-  "domain": "infrastructure",
+  "domain": "data",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
   "relations": {
-    "uses": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:atmospheric-circulation-model", "label": "Atmospheric Circulation Model"},
+      {"@id": "urn:ngm:class:ocean-heat-transport-model", "label": "Ocean Heat Transport Model"},
+      {"@id": "urn:ngm:class:ensemble-simulation", "label": "Ensemble Simulation"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
+      {"@id": "urn:ngm:class:numerical-weather-prediction", "label": "Numerical Weather Prediction"},
+      {"@id": "urn:ngm:class:remote-sensing-data", "label": "Remote Sensing Data"}
+    ],
+    "uses": [
       {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network-emulator", "label": "Neural Network Emulator"},
+      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
+      {"@id": "urn:ngm:class:data-assimilation", "label": "Data Assimilation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
+      {"@id": "urn:ngm:class:climate-risk-assessment", "label": "Climate Risk Assessment"},
+      {"@id": "urn:ngm:class:extreme-weather-prediction", "label": "Extreme Weather Prediction"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:observational-climate-data", "label": "Observational Climate Data"},
+      {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ipcc-assessment-report", "label": "IPCC Assessment Report"},
+      {"@id": "urn:ngm:class:climate-policy-decision-making", "label": "Climate Policy Decision Making"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:weather-forecasting", "label": "Weather Forecasting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin-of-society-dto-s", "label": "Digital Twin of Society (DToS)"},
+      {"@id": "urn:ngm:class:supply-chain-resilience", "label": "Supply Chain Resilience"},
+      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
       {"@id": "urn:ngm:class:iso-14064", "label": "ISO 14064"},
-      {"@id": "urn:ngm:class:digital-twin-of-society-dto-s", "label": "Digital Twin of Society (DToS)"}
+      {"@id": "urn:ngm:class:physical-risk-assessment", "label": "Physical Risk Assessment"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:earth-system-modelling", "label": "Earth System Modelling"},
+    {"@id": "urn:ngm:class:climate-simulation", "label": "Climate Simulation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

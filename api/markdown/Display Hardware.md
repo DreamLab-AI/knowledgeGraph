@@ -77,17 +77,39 @@ public:: true
   "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:hardware",
-      "label": "Hardware"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:display-panel",
+        "label": "Display Panel"
+      },
+      {
+        "@id": "urn:ngm:class:waveguide-optics",
+        "label": "Waveguide Optics"
+      },
+      {
+        "@id": "urn:ngm:class:microdisplay",
+        "label": "Microdisplay"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-platform",
+        "label": "Spatial Computing Platform"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:display-technology",
@@ -98,8 +120,12 @@ public:: true
         "label": "Graphics Processing"
       },
       {
-        "@id": "urn:ngm:class:optical-systems",
-        "label": "Optical Systems"
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       }
     ],
     "enables": [
@@ -114,14 +140,90 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing-paradigm",
         "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-ar",
+        "label": "Passthrough AR"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-system-on-chip",
+        "label": "Embedded System-on-Chip"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:oled-technology",
+        "label": "OLED Technology"
+      },
+      {
+        "@id": "urn:ngm:class:micro-led-technology",
+        "label": "Micro-LED Technology"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openxr-standard",
+        "label": "OpenXR Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:xr-display-hardware",
+      "label": "XR Display Hardware"
+    },
+    {
+      "@id": "urn:ngm:class:head-mounted-display",
+      "label": "Head-Mounted Display"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

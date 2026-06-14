@@ -54,17 +54,35 @@ public:: true
   "@id": "urn:ngm:class:hipaa",
   "@type": "Class",
   "label": "HIPAA",
-  "definition": "The Health Insurance Portability and Accountability Act, a United States law that sets requirements for protecting the privacy and security of certain health information.",
+  "definition": "The Health Insurance Portability and Accountability Act, a United States federal law enacted in 1996 that establishes national standards for protecting the privacy and security of certain health information (protected health information) held by covered entities and their business associates.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:data-protection-law",
-      "label": "Data Protection Law"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-protection-law",
+    "label": "Data Protection Law"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hipaa-privacy-rule",
+        "label": "HIPAA Privacy Rule"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa-security-rule",
+        "label": "HIPAA Security Rule"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa-breach-notification-rule",
+        "label": "HIPAA Breach Notification Rule"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:us-healthcare-regulation",
+        "label": "US Healthcare Regulation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-protection",
@@ -73,20 +91,118 @@ public:: true
       {
         "@id": "urn:ngm:class:information-security",
         "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:business-associate-agreement",
+        "label": "Business Associate Agreement"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:health-data-portability",
+        "label": "Health Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:patient-data-rights",
+        "label": "Patient Data Rights"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:covered-entity",
+        "label": "Covered Entity"
+      },
+      {
+        "@id": "urn:ngm:class:protected-health-information",
+        "label": "Protected Health Information"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hhs-office-for-civil-rights",
+        "label": "HHS Office for Civil Rights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-interoperability",
+        "label": "Healthcare Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hitech-act",
+        "label": "HITECH Act"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:health-insurance-portability-and-accountability-act",
+      "label": "Health Insurance Portability and Accountability Act"
+    },
+    {
+      "@id": "urn:ngm:class:pub-l-104-191",
+      "label": "Pub.L. 104-191"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

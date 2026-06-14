@@ -64,27 +64,155 @@ alias:: CreativeMediaDomain
   "@type": "Class",
   "label": "Creative Media Domain",
   "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
-  "domain": "spatial-computing",
+  "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence-domain",
+    "label": "Artificial Intelligence Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-assisted-design",
+        "label": "AI-Assisted Design"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-domain",
+        "label": "Artificial Intelligence Domain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-media",
+        "label": "Digital Media"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:ai-augmented-creativity",
         "label": "AI-Augmented Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:content-personalisation",
+        "label": "Content Personalisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video",
+        "label": "Text-to-Video"
+      },
+      {
+        "@id": "urn:ngm:class:ai-music-generation",
+        "label": "AI Music Generation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:entertainment-industry",
+        "label": "Entertainment Industry"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:film-and-television-production",
+        "label": "Film and Television Production"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-media-production",
+        "label": "Traditional Media Production"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-creative-domain",
+      "label": "AI Creative Domain"
+    },
+    {
+      "@id": "urn:ngm:class:generative-media-domain",
+      "label": "Generative Media Domain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

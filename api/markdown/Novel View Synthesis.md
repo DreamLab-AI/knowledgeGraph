@@ -29,19 +29,53 @@ public:: true
       {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
       {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
       {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:image-based-rendering", "label": "Image-Based Rendering"},
+      {"@id": "urn:ngm:class:3d-scene-reconstruction", "label": "3D Scene Reconstruction"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:virtual-reality-telepresence", "label": "Virtual Reality Telepresence"}
+      {"@id": "urn:ngm:class:virtual-reality-telepresence", "label": "Virtual Reality Telepresence"},
+      {"@id": "urn:ngm:class:free-viewpoint-video", "label": "Free-Viewpoint Video"},
+      {"@id": "urn:ngm:class:immersive-media-production", "label": "Immersive Media Production"},
+      {"@id": "urn:ngm:class:synthetic-training-data-generation", "label": "Synthetic Training Data Generation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
       {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
+      {"@id": "urn:ngm:class:volume-rendering", "label": "Volume Rendering"},
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
+      {"@id": "urn:ngm:class:multi-layer-perceptron", "label": "Multi-Layer Perceptron"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:camera-pose-estimation", "label": "Camera Pose Estimation"},
+      {"@id": "urn:ngm:class:multi-view-images", "label": "Multi-View Images"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:scene-representation", "label": "Scene Representation"},
+      {"@id": "urn:ngm:class:ray-casting", "label": "Ray Casting"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-3d-modelling", "label": "Traditional 3D Modelling"},
+      {"@id": "urn:ngm:class:stereo-reconstruction", "label": "Stereo Reconstruction"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:autonomous-driving-simulation", "label": "Autonomous Driving Simulation"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:view-synthesis", "label": "View Synthesis"},
+    {"@id": "urn:ngm:class:free-viewpoint-rendering", "label": "Free-Viewpoint Rendering"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

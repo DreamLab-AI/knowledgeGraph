@@ -66,40 +66,136 @@ public:: true
   "@id": "urn:ngm:class:blockchain-sustainability",
   "@type": "Class",
   "label": "Blockchain Sustainability",
-  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies.",
+  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies, encompassing metrics, governance, and cross-sector environmental accountability.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-offset-program",
+        "label": "Carbon Offset Program"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency-metrics",
+        "label": "Energy Efficiency Metrics"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
+      },
+      {
+        "@id": "urn:ngm:class:tokenized-carbon-market",
+        "label": "Tokenized Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificate-trading",
+        "label": "Renewable Energy Certificate Trading"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof-of-Stake"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof-of-Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof-of-Authority"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:esg-compliance",
         "label": "ESG Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "@id": "urn:ngm:class:energy-web-foundation",
+        "label": "Energy Web Foundation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-verification",
+        "label": "Environmental Impact Verification"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:green-blockchain",
+      "label": "Green Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:sustainable-distributed-ledger",
+      "label": "Sustainable Distributed Ledger"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

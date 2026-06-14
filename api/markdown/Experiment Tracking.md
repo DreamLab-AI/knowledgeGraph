@@ -58,35 +58,153 @@ public:: true
   "@id": "urn:ngm:class:empirical-experimental-design-tracking",
   "@type": "Class",
   "label": "Experiment Tracking",
-  "definition": "Experiment tracking is the practice of recording the configuration, code, data, and results of machine learning experiments so they can be compared and reproduced. It is a part of MLOps.",
+  "definition": "Experiment tracking is the practice of recording the configuration, code, data, and results of machine learning experiments so they can be compared and reproduced, enabling teams to audit, iterate, and roll back to prior model states. It is a core discipline within MLOps.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:mlops",
-      "label": "MLOps"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:mlops",
+    "label": "MLOps"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hyperparameter-logging",
+        "label": "Hyperparameter Logging"
+      },
+      {
+        "@id": "urn:ngm:class:metric-logging",
+        "label": "Metric Logging"
+      },
+      {
+        "@id": "urn:ngm:class:artifact-versioning",
+        "label": "Artifact Versioning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "@id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaborative-research",
+        "label": "Collaborative Research"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ad-hoc-experimentation",
+        "label": "Ad-hoc Experimentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-pipeline",
+        "label": "CI/CD Pipeline"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ml-experiment-management",
+      "label": "ML Experiment Management"
+    },
+    {
+      "@id": "urn:ngm:class:run-tracking",
+      "label": "Run Tracking"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

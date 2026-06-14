@@ -23,27 +23,63 @@ public:: true
   "definition": "Feature Matching is a computer vision technique that identifies and associates corresponding salient regions—keypoints and their descriptors—across two or more images or point clouds, enabling geometric relationships such as homographies, fundamental matrices, or rigid-body transformations to be estimated. Classical detectors such as SIFT, SURF, and ORB extract rotation- and scale-invariant descriptors; modern deep learning approaches learn matched embeddings end-to-end from training data. Feature matching is a foundational step in Structure-from-Motion, visual odometry, SLAM, and image-based localisation pipelines. The accuracy and efficiency of matching directly determine downstream reconstruction quality and real-time performance in robotics and augmented reality applications.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
       {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
       {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:image-based-localisation", "label": "Image-Based Localisation"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
       {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:keypoint-detection", "label": "Keypoint Detection"},
+      {"@id": "urn:ngm:class:descriptor-extraction", "label": "Descriptor Extraction"},
+      {"@id": "urn:ngm:class:nearest-neighbour-search", "label": "Nearest-Neighbour Search"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:image-preprocessing", "label": "Image Preprocessing"},
+      {"@id": "urn:ngm:class:ransac", "label": "RANSAC"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ratio-test", "label": "Ratio Test"},
+      {"@id": "urn:ngm:class:outlier-rejection", "label": "Outlier Rejection"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:homography-estimation", "label": "Homography Estimation"},
+      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:template-matching", "label": "Template Matching"},
+      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
       {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
       {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
+      {"@id": "urn:ngm:class:image-retrieval", "label": "Image Retrieval"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:robotic-perception", "label": "Robotic Perception"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:keypoint-matching", "label": "Keypoint Matching"},
+    {"@id": "urn:ngm:class:correspondence-estimation", "label": "Correspondence Estimation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

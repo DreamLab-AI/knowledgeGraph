@@ -23,25 +23,62 @@ public:: true
   "definition": "Dexterous manipulation is the capability of robotic systems to grasp, reorient, assemble, and interact with objects using multi-fingered hands or compliant end-effectors in ways that require fine motor control, contact-rich reasoning, and real-time adaptation to object geometry and physical properties. It encompasses grasp planning, in-hand manipulation, and tactile feedback integration to replicate or exceed human-hand dexterity in unstructured environments.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
+  "subClassOf": {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
   "relations": {
-    "uses": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:in-hand-manipulation", "label": "In-Hand Manipulation"},
       {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {"@id": "urn:ngm:class:contact-rich-control", "label": "Contact-Rich Control"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"},
+      {"@id": "urn:ngm:class:force-torque-sensing", "label": "Force-Torque Sensing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
+      {"@id": "urn:ngm:class:robotic-assembly", "label": "Robotic Assembly"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:pick-and-place", "label": "Pick-and-Place"},
+      {"@id": "urn:ngm:class:rigid-gripper", "label": "Rigid Gripper"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
+      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"},
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:fine-manipulation", "label": "Fine Manipulation"},
+    {"@id": "urn:ngm:class:dextrous-manipulation", "label": "Dextrous Manipulation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

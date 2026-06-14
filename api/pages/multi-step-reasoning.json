@@ -13,21 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:problem-decomposition",
+        "label": "Problem Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:intermediate-state-tracking",
+        "label": "Intermediate State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:step-verification",
+        "label": "Step Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:reasoning-engine",
         "label": "Reasoning Engine"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:complex-question-answering",
+        "label": "Complex Question Answering"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-step-inference",
+        "label": "Single-Step Inference"
+      },
+      {
+        "id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-inference",
+        "label": "Knowledge Graph Inference"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chain-of-thought",
@@ -36,15 +93,40 @@
       {
         "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:ngm:class:tree-of-thought",
+        "label": "Tree of Thought"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:llm-agents",
         "label": "LLM Agents"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
       }
     ]
   },

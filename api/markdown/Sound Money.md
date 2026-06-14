@@ -23,24 +23,59 @@ public:: true
   "definition": "Sound Money refers to a monetary medium characterised by a stable, predictable supply that cannot be arbitrarily expanded by a government or central authority, thereby preserving purchasing power over time and functioning as a reliable store of value. The concept is historically associated with commodity-backed currencies—particularly the classical gold standard—and in the contemporary context with Bitcoin's algorithmically fixed supply schedule. Sound money theorists, drawing heavily on the Austrian School, argue that monetary expansion through credit creation distorts price signals, misallocates capital, and produces inflationary cycles that systematically transfer wealth from savers to debtors and from the public to the financial sector. The notion stands in direct opposition to the discretionary monetary policy frameworks of modern central banking.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}],
+  "subClassOf": {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:austrian-economics", "label": "Austrian Economics"},
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
       {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:gold", "label": "Gold"}
+      {"@id": "urn:ngm:class:gold", "label": "Gold"},
+      {"@id": "urn:ngm:class:purchasing-power", "label": "Purchasing Power"},
+      {"@id": "urn:ngm:class:store-of-value", "label": "Store of Value"},
+      {"@id": "urn:ngm:class:commodity-money", "label": "Commodity Money"},
+      {"@id": "urn:ngm:class:deflationary-economics", "label": "Deflationary Economics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:scarcity", "label": "Scarcity"},
+      {"@id": "urn:ngm:class:fixed-supply-schedule", "label": "Fixed Supply Schedule"},
+      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:hyperbitcoinization", "label": "Hyperbitcoinization"}
+      {"@id": "urn:ngm:class:hyperbitcoinization", "label": "Hyperbitcoinization"},
+      {"@id": "urn:ngm:class:long-term-savings", "label": "Long-Term Savings"},
+      {"@id": "urn:ngm:class:price-signal-integrity", "label": "Price Signal Integrity"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
+      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"},
+      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"},
+      {"@id": "urn:ngm:class:fractional-reserve-banking", "label": "Fractional Reserve Banking"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"},
+      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:decentralised-consensus", "label": "Decentralised Consensus"},
+      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:financial-sovereignty", "label": "Financial Sovereignty"},
+      {"@id": "urn:ngm:class:cryptographic-proof-of-work", "label": "Cryptographic Proof of Work"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hard-money", "label": "Hard Money"},
+    {"@id": "urn:ngm:class:commodity-backed-currency", "label": "Commodity-Backed Currency"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

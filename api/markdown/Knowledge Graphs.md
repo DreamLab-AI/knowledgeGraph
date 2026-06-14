@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:knowledge-graphs",
   "@type": "Class",
   "label": "Knowledge Graphs",
-  "definition": "Structured representations of knowledge as entities and the relationships between them, typically expressed as a graph of nodes and labelled edges to support querying and inference.",
+  "definition": "Structured representations of knowledge as entities and the typed relationships between them, expressed as a graph of nodes and labelled edges grounded in an ontology, enabling querying, reasoning, and inference over heterogeneous data.",
   "domain": "data",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:knowledge-representation",
-      "label": "Knowledge Representation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:knowledge-representation",
+    "label": "Knowledge Representation"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,142 @@ public:: true
       {
         "@id": "urn:ngm:class:rdf",
         "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:entity",
+        "label": "Entity"
+      },
+      {
+        "@id": "urn:ngm:class:relation",
+        "label": "Relation"
+      },
+      {
+        "@id": "urn:ngm:class:triple",
+        "label": "Triple"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:document-store",
+        "label": "Document Store"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:semantic-graph",
+      "label": "Semantic Graph"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-network",
+      "label": "Knowledge Network"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

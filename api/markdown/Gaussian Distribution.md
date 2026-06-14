@@ -50,14 +50,22 @@ public:: true
   "@id": "urn:ngm:class:gaussian-distribution",
   "@type": "Class",
   "label": "Gaussian Distribution",
-  "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.",
+  "definition": "A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance. It arises naturally via the central limit theorem and is foundational to statistics, machine learning, and signal processing.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:probability-distribution",
+    "label": "Probability Distribution"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:probability-theory",
-      "label": "Probability Theory"
+      "@id": "urn:ngm:class:normal-distribution",
+      "label": "Normal Distribution"
+    },
+    {
+      "@id": "urn:ngm:class:bell-curve",
+      "label": "Bell Curve"
     }
   ],
   "relations": {
@@ -69,20 +77,118 @@ public:: true
       {
         "@id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mean",
+        "label": "Mean"
+      },
+      {
+        "@id": "urn:ngm:class:variance",
+        "label": "Variance"
+      },
+      {
+        "@id": "urn:ngm:class:standard-deviation",
+        "label": "Standard Deviation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:poisson-distribution",
+        "label": "Poisson Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:laplace-distribution",
+        "label": "Laplace Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:student-t-distribution",
+        "label": "Student-t Distribution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
       }
     ]
   },
-  "quality": 0.6,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,17 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ieee-transactions-on-automatic-control",
+        "label": "IEEE Transactions on Automatic Control"
+      },
+      {
+        "id": "urn:ngm:class:conference-on-decision-and-control",
+        "label": "Conference on Decision and Control"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-magazine",
+        "label": "IEEE Control Systems Magazine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-system",
+        "label": "Cyber-Physical System"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State-Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -40,15 +101,28 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:control-theory",
         "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-based-control",
@@ -59,16 +133,12 @@
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:safety-critical-system",
+        "label": "Safety-Critical System"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:networked-control-system",
+        "label": "Networked Control System"
       }
     ]
   },

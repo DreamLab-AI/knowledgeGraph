@@ -58,35 +58,159 @@ public:: true
   "@id": "urn:ngm:class:industrial-robotics",
   "@type": "Class",
   "label": "Industrial Robotics",
-  "definition": "Industrial robotics is the application of programmable robots to manufacturing tasks such as assembly, welding, handling and inspection.",
+  "definition": "Industrial robotics is the application of programmable, reprogrammable robots to manufacturing tasks including assembly, welding, material handling, painting and inspection, operating within structured production environments to improve consistency, throughput and safety.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robotics",
-      "label": "Robotics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robotics",
+    "label": "Robotics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:end-effectors",
+        "label": "End Effectors"
+      },
+      {
+        "@id": "urn:ngm:class:robot-controllers",
+        "label": "Robot Controllers"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:actuators",
         "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-robots",
+        "@id": "urn:ngm:class:collaborative-robots",
         "label": "Collaborative Robots"
+      },
+      {
+        "@id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:programmable-logic-controllers",
+        "label": "Programmable Logic Controllers"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-communication-protocols",
+        "label": "Industrial Communication Protocols"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:international-federation-of-robotics",
+        "label": "International Federation of Robotics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:service-robotics",
+        "label": "Service Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:industrial-robot-systems",
+      "label": "Industrial Robot Systems"
+    },
+    {
+      "@id": "urn:ngm:class:factory-automation-robotics",
+      "label": "Factory Automation Robotics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

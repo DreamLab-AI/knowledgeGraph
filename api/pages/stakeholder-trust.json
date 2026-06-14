@@ -17,7 +17,24 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-governance",
@@ -26,12 +43,47 @@
       {
         "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:risk-communication",
+        "label": "Risk Communication"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:automation-bias",
+        "label": "Automation Bias"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,6 +93,14 @@
       {
         "id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [],
@@ -61,6 +121,18 @@
       {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      },
+      {
+        "id": "urn:ngm:class:social-licence-to-operate",
+        "label": "Social Licence to Operate"
+      },
+      {
+        "id": "urn:ngm:class:reputational-risk",
+        "label": "Reputational Risk"
       }
     ]
   },

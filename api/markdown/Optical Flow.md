@@ -23,22 +23,61 @@ public:: true
   "definition": "Optical flow is the pattern of apparent motion of objects, surfaces, and edges in a visual scene between consecutive frames of video, caused by relative movement between the observer and the scene. It is computed as a dense or sparse 2D velocity field over the image plane and is used in computer vision for motion estimation, video interpolation, action recognition, and autonomous navigation. Classical algorithms (Horn-Schunck, Lucas-Kanade) and deep learning approaches (RAFT, FlowNet) constitute the main methodological lineages.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}],
+  "subClassOf": [{"@id": "urn:ngm:class:motion-estimation", "label": "Motion Estimation"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:motion-capture-technology", "label": "Motion Capture Technology"},
       {"@id": "urn:ngm:class:autonomous-driving-perception", "label": "Autonomous Driving Perception"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
+      {"@id": "urn:ngm:class:video-stabilisation", "label": "Video Stabilisation"},
+      {"@id": "urn:ngm:class:action-recognition", "label": "Action Recognition"},
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:image-pyramid", "label": "Image Pyramid"},
+      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
+      {"@id": "urn:ngm:class:brightness-constancy-constraint", "label": "Brightness Constancy Constraint"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consecutive-video-frames", "label": "Consecutive Video Frames"},
+      {"@id": "urn:ngm:class:image-gradient", "label": "Image Gradient"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:dense-optical-flow", "label": "Dense Optical Flow"},
+      {"@id": "urn:ngm:class:sparse-optical-flow", "label": "Sparse Optical Flow"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:video-understanding", "label": "Video Understanding"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
+      {"@id": "urn:ngm:class:scene-flow", "label": "Scene Flow"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
+      {"@id": "urn:ngm:class:event-camera", "label": "Event Camera"},
+      {"@id": "urn:ngm:class:video-compression", "label": "Video Compression"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:generative-video-model", "label": "Generative Video Model"},
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:motion-vector-field", "label": "Motion Vector Field"},
+    {"@id": "urn:ngm:class:apparent-motion-field", "label": "Apparent Motion Field"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

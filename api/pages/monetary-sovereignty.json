@@ -4,40 +4,134 @@
   "slug": "monetary-sovereignty",
   "public": true,
   "classIri": "urn:ngm:class:monetary-sovereignty",
-  "domain": "spatial-computing",
-  "definition": "A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.",
+  "domain": "finance",
+  "definition": "A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by decentralised digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "id": "urn:ngm:class:economic-governance",
+      "label": "Economic Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:currency-issuance",
+        "label": "Currency Issuance"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:legal-tender-framework",
+        "label": "Legal Tender Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulatory-authority",
+        "label": "Financial Regulatory Authority"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:national-financial-control",
         "label": "National Financial Control"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-policy",
+        "label": "Sanctions Policy"
+      },
+      {
+        "id": "urn:ngm:class:capital-controls",
+        "label": "Capital Controls"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:international-monetary-system",
+        "label": "International Monetary System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:dollarisation",
+        "label": "Dollarisation"
+      }
+    ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:economic-governance",
-        "label": "Economic Governance"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
       }
     ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:national-sovereignty",
+        "label": "National Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
   },
   "wikilinks": [
     {

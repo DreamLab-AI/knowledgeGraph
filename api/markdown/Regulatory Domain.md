@@ -86,12 +86,10 @@ public:: true
   "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:governance-domain",
+    "label": "Governance Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -113,16 +111,34 @@ public:: true
       {
         "@id": "urn:ngm:class:reporting-requirement",
         "label": "Reporting Requirement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-rule",
+        "label": "Prudential Rule"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:governance-domain",
-        "label": "Governance Domain"
-      },
-      {
         "@id": "urn:ngm:class:identity-domain",
         "label": "Identity Domain"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:legal-entity",
+        "label": "Legal Entity"
       }
     ],
     "enables": [
@@ -133,14 +149,112 @@ public:: true
       {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:legislative-process",
+        "label": "Legislative Process"
+      },
+      {
+        "@id": "urn:ngm:class:public-authority",
+        "label": "Public Authority"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-domain",
+        "label": "Regulatory Compliance Domain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-regulation-domain",
+        "label": "Financial Regulation Domain"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "@id": "urn:ngm:class:basel-framework",
+        "label": "Basel Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-governance",
+        "label": "Artificial Intelligence Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-regulation",
+        "label": "Cross-Border Regulation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

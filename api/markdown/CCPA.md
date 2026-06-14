@@ -58,21 +58,59 @@ public:: true
   "@id": "urn:ngm:class:ccpa",
   "@type": "Class",
   "label": "CCPA",
-  "definition": "The California Consumer Privacy Act, a state statute that grants California residents rights over the personal information that businesses collect about them.",
+  "definition": "The California Consumer Privacy Act (CCPA), a California state statute enacted in 2018 that grants California residents rights over the personal information that businesses collect about them, including the right to know, the right to delete, the right to opt out of sale, and the right to non-discrimination.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:data-protection-law",
-      "label": "Data Protection Law"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-protection-law",
+    "label": "Data Protection Law"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:right-to-know",
+        "label": "Right to Know"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-delete",
+        "label": "Right to Delete"
+      },
+      {
+        "@id": "urn:ngm:class:opt-out-right",
+        "label": "Opt-Out Right"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-notice",
+        "label": "Privacy Notice"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:us-privacy-law",
+        "label": "US Privacy Law"
+      },
+      {
+        "@id": "urn:ngm:class:california-law",
+        "label": "California Law"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:data-inventory",
+        "label": "Data Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
       }
     ],
     "enables": [
@@ -83,14 +121,120 @@ public:: true
       {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-protection-law",
+        "label": "Data Protection Law"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:personal-information",
+        "label": "Personal Information"
+      },
+      {
+        "@id": "urn:ngm:class:data-broker",
+        "label": "Data Broker"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:california-attorney-general",
+        "label": "California Attorney General"
+      },
+      {
+        "@id": "urn:ngm:class:california-privacy-protection-agency",
+        "label": "California Privacy Protection Agency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      },
+      {
+        "@id": "urn:ngm:class:coppa",
+        "label": "COPPA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cpra",
+        "label": "CPRA"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:california-consumer-privacy-act",
+      "label": "California Consumer Privacy Act"
+    },
+    {
+      "@id": "urn:ngm:class:ab-375",
+      "label": "AB 375"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

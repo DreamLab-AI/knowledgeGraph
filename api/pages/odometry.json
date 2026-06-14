@@ -5,26 +5,43 @@
   "public": true,
   "classIri": "urn:ngm:class:odometry",
   "domain": "robotics",
-  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
+  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion and is subject to cumulative drift without correction.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
     {
       "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:inertial-odometry",
+        "label": "Inertial Odometry"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:motion-sensors",
         "label": "Motion Sensors"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
       }
     ],
     "enables": [
@@ -35,12 +52,47 @@
       {
         "id": "urn:ngm:class:rb-1013-localization",
         "label": "RB-1013-localization"
+      },
+      {
+        "id": "urn:ngm:class:robot-pose",
+        "label": "Robot Pose"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps-positioning",
+        "label": "GPS Positioning"
+      },
+      {
+        "id": "urn:ngm:class:absolute-positioning",
+        "label": "Absolute Positioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:imu",
@@ -55,14 +107,49 @@
         "label": "Camera"
       },
       {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cumulative-error",
+        "label": "Cumulative Error"
+      },
+      {
+        "id": "urn:ngm:class:drift",
+        "label": "Drift"
+      },
+      {
+        "id": "urn:ngm:class:wheel-slip",
+        "label": "Wheel Slip"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ]
   },
   "wikilinks": [
     {

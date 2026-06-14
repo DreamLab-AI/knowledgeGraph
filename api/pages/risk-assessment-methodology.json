@@ -13,42 +13,131 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-identification",
+        "label": "Risk Identification"
+      },
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-evaluation",
+        "label": "Risk Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:risk-treatment",
+        "label": "Risk Treatment"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-matrix",
+        "label": "Risk Assessment Matrix"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:risk-assessment-engine",
         "label": "Risk Assessment Engine"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:mitigation-planning",
+        "label": "Mitigation Planning"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-31000-risk-management",
+        "label": "ISO 31000 Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:qualitative-risk-assessment",
+        "label": "Qualitative Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-risk-assessment",
+        "label": "Quantitative Risk Assessment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-risk-assessment",
+        "label": "Cybersecurity Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iso-31000-risk-management",
         "label": "ISO 31000 Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-30",
+        "label": "NIST SP 800-30"
+      },
+      {
+        "id": "urn:ngm:class:coso-erm-framework",
+        "label": "COSO ERM Framework"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:enterprise-risk-management",
-        "label": "Enterprise Risk Management"
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
       },
       {
-        "id": "urn:ngm:class:ai-risk-management",
-        "label": "AI Risk Management"
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
       },
       {
-        "id": "urn:ngm:class:risk-assessment-matrix",
-        "label": "Risk Assessment Matrix"
+        "id": "urn:ngm:class:failure-mode-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ]
   },

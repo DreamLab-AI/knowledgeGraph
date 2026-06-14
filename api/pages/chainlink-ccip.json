@@ -13,25 +13,89 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-management-network",
+        "label": "Risk Management Network"
+      },
+      {
+        "id": "urn:ngm:class:onramp-contract",
+        "label": "OnRamp Contract"
+      },
+      {
+        "id": "urn:ngm:class:offramp-contract",
+        "label": "OffRamp Contract"
+      },
+      {
+        "id": "urn:ngm:class:commit-store",
+        "label": "CommitStore"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:link-token",
+        "label": "LINK Token"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-chain-asset-transfer",
-        "label": "Cross Chain Asset Transfer"
+        "label": "Cross-Chain Asset Transfer"
       },
       {
         "id": "urn:ngm:class:cross-chain-messaging",
         "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:programmable-token-transfer",
+        "label": "Programmable Token Transfer"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-defi",
+        "label": "Cross-Chain DeFi"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-asset",
+        "label": "Tokenised Real-World Asset"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:layerzero",
+        "label": "LayerZero"
+      },
+      {
+        "id": "urn:ngm:class:wormhole",
+        "label": "Wormhole"
+      },
+      {
+        "id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:chainlink-oracles",
@@ -44,6 +108,14 @@
       {
         "id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-oracle-network",
+        "label": "Decentralised Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
     "supports": [],
@@ -51,16 +123,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cross-chain-bridge",
-        "label": "Cross-Chain Bridge"
-      },
-      {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
       },
       {
         "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-bridge",
+        "label": "Token Bridge"
       }
     ]
   },

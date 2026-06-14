@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:deterministic-finality",
   "domain": "blockchain",
-  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted.",
+  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted once a supermajority of validators has committed to them.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
+      "id": "urn:ngm:class:transaction-finality",
+      "label": "Transaction Finality"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -21,18 +21,117 @@
       {
         "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:supermajority-voting",
+        "label": "Supermajority Voting"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:absolute-transaction-guarantee",
+        "label": "Absolute Transaction Guarantee"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-composability",
+        "label": "Synchronous Composability"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "id": "urn:ngm:class:grandpa-protocol",
+        "label": "GRANDPA Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:weak-subjectivity",
+        "label": "Weak Subjectivity"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
+    ]
   },
   "wikilinks": [
     {

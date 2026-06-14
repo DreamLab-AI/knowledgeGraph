@@ -24,22 +24,65 @@ alias:: NetworkSlicing
   "definition": "Network slicing is a virtualisation architecture that partitions a single physical network infrastructure into multiple isolated, logically independent virtual networks — called slices — each configured to provide the specific performance characteristics, security posture, and service topology required by a distinct application or tenant. Defined within 3GPP Release 15 and later releases for 5G networks, each slice is instantiated through software-defined networking and network function virtualisation, enabling differentiated service-level guarantees — such as ultra-low latency for industrial automation or high-throughput for video streaming — without dedicated physical hardware. Slices span radio access, transport, and core network domains and can be dynamically provisioned, scaled, and torn down.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"}],
+  "subClassOf": {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtualised-network-function", "label": "Virtualised Network Function"},
+      {"@id": "urn:ngm:class:radio-access-network", "label": "Radio Access Network"},
+      {"@id": "urn:ngm:class:service-function-chain", "label": "Service Function Chain"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
+      {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
+      {"@id": "urn:ngm:class:resource-orchestration", "label": "Resource Orchestration"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
       {"@id": "urn:ngm:class:guaranteed-bandwidth", "label": "Guaranteed Bandwidth"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:private-5g-network", "label": "Private 5G Network"},
+      {"@id": "urn:ngm:class:multi-tenancy", "label": "Multi-Tenancy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:5g-core-network", "label": "5G Core Network"},
+      {"@id": "urn:ngm:class:segment-routing", "label": "Segment Routing"},
+      {"@id": "urn:ngm:class:service-level-agreement", "label": "Service Level Agreement"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:3gpp-release-15", "label": "3GPP Release 15"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"},
+      {"@id": "urn:ngm:class:vehicle-to-everything", "label": "Vehicle-to-Everything"},
+      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"},
+      {"@id": "urn:ngm:class:etsi-nfv", "label": "ETSI NFV"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:best-effort-networking", "label": "Best-Effort Networking"},
+      {"@id": "urn:ngm:class:dedicated-hardware-provisioning", "label": "Dedicated Hardware Provisioning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "Multi-Access Edge Computing"},
+      {"@id": "urn:ngm:class:intent-based-networking", "label": "Intent-Based Networking"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:6-g-network-slice", "label": "6G Network Slice"},
       {"@id": "urn:ngm:class:latency", "label": "Latency"}
-    ],
-    "supports": [
-      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:5g-network-slice", "label": "5G Network Slice"},
+    {"@id": "urn:ngm:class:virtual-network-slice", "label": "Virtual Network Slice"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

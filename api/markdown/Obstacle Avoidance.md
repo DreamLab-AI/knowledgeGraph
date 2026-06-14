@@ -138,17 +138,21 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
   "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-navigation-and-planning",
-      "label": "Navigation and Planning"
-    },
-    {
-      "@id": "urn:ngm:class:reactive-control",
-      "label": "Reactive Control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:reactive-control",
+    "label": "Reactive Control"
+  },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:proximity-sensor",
@@ -157,6 +161,14 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       {
         "@id": "urn:ngm:class:real-time-processing",
         "label": "Real-Time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
       }
     ],
     "enables": [
@@ -167,6 +179,10 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       {
         "@id": "urn:ngm:class:safe-navigation",
         "label": "Safe Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ],
     "uses": [
@@ -185,14 +201,86 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       {
         "@id": "urn:ngm:class:ultrasonic-sensor",
         "label": "Ultrasonic Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-window-approach",
+        "label": "Dynamic Window Approach"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-obstacles",
+        "label": "Velocity Obstacles"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:safety-systems",
+        "label": "Safety Systems"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deliberative-planning",
+        "label": "Deliberative Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mobile-robots",
+        "label": "Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:drones",
+        "label": "Drones"
+      },
+      {
+        "@id": "urn:ngm:class:avoidance-maneuver",
+        "label": "Avoidance Maneuver"
+      },
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:collision-avoidance",
+      "label": "Collision Avoidance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

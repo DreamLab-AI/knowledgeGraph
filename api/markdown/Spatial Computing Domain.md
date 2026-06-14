@@ -109,6 +109,14 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-anchor",
         "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
       }
     ],
     "requires": [
@@ -119,6 +127,14 @@ public:: true
       {
         "@id": "urn:ngm:class:artificial-intelligence-domain",
         "label": "Artificial Intelligence Domain"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
       }
     ],
     "enables": [
@@ -129,10 +145,72 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-user-interface",
+        "label": "Spatial User Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-domain",
+        "label": "Infrastructure Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3d-computing-domain",
+      "label": "3D Computing Domain"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-domain",
+      "label": "Extended Reality Domain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",

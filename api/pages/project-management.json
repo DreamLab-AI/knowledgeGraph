@@ -16,13 +16,71 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scope-management",
+        "label": "Scope Management"
+      },
+      {
+        "id": "urn:ngm:class:schedule-management",
+        "label": "Schedule Management"
+      },
+      {
+        "id": "urn:ngm:class:cost-management",
+        "label": "Cost Management"
+      },
+      {
+        "id": "urn:ngm:class:quality-management",
+        "label": "Quality Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:requirements-management",
+        "label": "Requirements Management"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agile-methodology",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:operations-management",
+        "label": "Operations Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-implementation",
+        "label": "AI Implementation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:risk-management",
@@ -39,19 +97,32 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:critical-path-method",
+        "label": "Critical Path Method"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:software-development",
-        "label": "Software Development"
-      },
-      {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:pmbok",
+        "label": "PMBOK"
+      },
+      {
+        "id": "urn:ngm:class:prince2",
+        "label": "PRINCE2"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -63,8 +134,12 @@
         "label": "Software Development Process"
       },
       {
-        "id": "urn:ngm:class:change-management",
-        "label": "Change Management"
+        "id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      },
+      {
+        "id": "urn:ngm:class:programme-management",
+        "label": "Programme Management"
       }
     ]
   },

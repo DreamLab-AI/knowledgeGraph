@@ -58,16 +58,14 @@ public:: true
   "@id": "urn:ngm:class:statistical-learning-theory",
   "@type": "Class",
   "label": "Statistical Learning Theory",
-  "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.",
+  "definition": "A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error via concepts such as VC dimension, PAC learnability, and Rademacher complexity.",
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-discipline",
+    "label": "Machine Learning"
+  },
   "relations": {
     "requires": [
       {
@@ -77,6 +75,36 @@ public:: true
       {
         "@id": "urn:ngm:class:statistics",
         "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "@id": "urn:ngm:class:concentration-inequalities",
+        "label": "Concentration Inequalities"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vc-dimension",
+        "label": "VC Dimension"
+      },
+      {
+        "@id": "urn:ngm:class:pac-learning",
+        "label": "PAC Learning"
+      },
+      {
+        "@id": "urn:ngm:class:rademacher-complexity",
+        "label": "Rademacher Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation-bounds",
+        "label": "Generalisation Bounds"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-risk-minimisation",
+        "label": "Empirical Risk Minimisation"
       }
     ],
     "enables": [
@@ -87,14 +115,82 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:hypothesis-class",
+        "label": "Hypothesis Class"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computational-learning-theory",
+        "label": "Computational Learning Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:learning-theory",
+      "label": "Learning Theory"
+    },
+    {
+      "@id": "urn:ngm:class:computational-statistical-learning",
+      "label": "Computational Statistical Learning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

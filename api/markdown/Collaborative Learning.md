@@ -75,20 +75,34 @@ alias:: CollaborativeLearning
   "@id": "urn:ngm:class:collaborative-systems-modality-learning",
   "@type": "Class",
   "label": "Collaborative Learning",
-  "definition": "An educational approach where learners work toger in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
+  "definition": "An educational approach where learners work together in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:educational-methodology",
-      "label": "Educational Methodology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:educational-methodology",
+    "label": "Educational Methodology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:peer-instruction",
+        "label": "Peer Instruction"
+      },
+      {
+        "@id": "urn:ngm:class:group-discussion",
+        "label": "Group Discussion"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-problem-solving",
+        "label": "Collaborative Problem Solving"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:communication-tools",
@@ -101,6 +115,10 @@ alias:: CollaborativeLearning
       {
         "@id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
       }
     ],
     "enables": [
@@ -115,14 +133,98 @@ alias:: CollaborativeLearning
       {
         "@id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:avatar-representation",
+        "label": "Avatar Representation"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zone-of-proximal-development",
+        "label": "Zone of Proximal Development"
+      },
+      {
+        "@id": "urn:ngm:class:situated-learning",
+        "label": "Situated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-collaboration-platform",
+        "label": "Real-Time Collaboration Platform"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:experiential-learning",
+        "label": "Experiential Learning"
+      },
+      {
+        "@id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:individual-learning",
+        "label": "Individual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-classroom-instruction",
+        "label": "Traditional Classroom Instruction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cooperative-learning",
+      "label": "Cooperative Learning"
+    },
+    {
+      "@id": "urn:ngm:class:computer-supported-collaborative-learning",
+      "label": "Computer-Supported Collaborative Learning"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

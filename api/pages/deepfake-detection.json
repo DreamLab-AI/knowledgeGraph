@@ -17,7 +17,16 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:video-analysis",
+        "label": "Video Analysis"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-authenticity",
@@ -26,17 +35,51 @@
       {
         "id": "urn:ngm:class:content-authentication",
         "label": "Content Authentication"
+      },
+      {
+        "id": "urn:ngm:class:media-forensics",
+        "label": "Media Forensics"
+      },
+      {
+        "id": "urn:ngm:class:disinformation-mitigation",
+        "label": "Disinformation Mitigation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:deepfakes",
         "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -45,15 +88,48 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:frequency-domain-analysis",
+        "label": "Frequency Domain Analysis"
+      },
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:platform-trust-and-safety",
+        "label": "Platform Trust and Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-forensics",
+        "label": "Audio Forensics"
       }
     ]
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:htlc",
   "domain": "blockchain",
-  "definition": "A Hashed Time-Locked Contract is a conditional payment construct that releases funds when a preimage is revealed before a deadline, otherwise refunding the sender.",
+  "definition": "A Hashed Time-Locked Contract is a conditional payment construct that releases funds when a preimage is revealed before a deadline, otherwise refunding the sender. It combines a cryptographic hash commitment with an on-chain timeout to achieve trustless conditional transfer across untrusted intermediaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:smart-contract",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,18 @@
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:preimage",
+        "label": "Preimage"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -31,17 +43,105 @@
       {
         "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:multi-hop-payment",
+        "label": "Multi-Hop Payment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      },
+      {
+        "id": "urn:ngm:class:trustless-escrow",
+        "label": "Trustless Escrow"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ptlc",
+        "label": "PTLC"
+      },
+      {
+        "id": "urn:ngm:class:trusted-escrow",
+        "label": "Trusted Escrow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ]
   },
   "wikilinks": [
     {

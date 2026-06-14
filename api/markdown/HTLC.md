@@ -54,21 +54,31 @@ public:: true
   "@id": "urn:ngm:class:htlc",
   "@type": "Class",
   "label": "HTLC",
-  "definition": "A Hashed Time-Locked Contract is a conditional payment construct that releases funds when a preimage is revealed before a deadline, otherwise refunding the sender.",
+  "definition": "A Hashed Time-Locked Contract is a conditional payment construct that releases funds when a preimage is revealed before a deadline, otherwise refunding the sender. It combines a cryptographic hash commitment with an on-chain timeout to achieve trustless conditional transfer across untrusted intermediaries.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:smart-contract",
+    "label": "Smart Contract"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:preimage",
+        "label": "Preimage"
+      },
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -79,14 +89,116 @@ public:: true
       {
         "@id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:multi-hop-payment",
+        "label": "Multi-Hop Payment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-escrow",
+        "label": "Trustless Escrow"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ptlc",
+        "label": "PTLC"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-escrow",
+        "label": "Trusted Escrow"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:hashed-time-locked-contract",
+      "label": "Hashed Time-Locked Contract"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

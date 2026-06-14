@@ -5,43 +5,136 @@
   "public": true,
   "classIri": "urn:ngm:class:light-client",
   "domain": "blockchain",
-  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state.",
+  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
     {
       "id": "urn:ngm:class:node",
       "label": "Node"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:header-chain",
+        "label": "Header Chain"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:mobile-wallet",
+        "label": "Mobile Wallet"
+      },
+      {
+        "id": "urn:ngm:class:trustless-verification",
+        "label": "Trustless Verification"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spv-simplified-payment-verification",
+        "label": "SPV (Simplified Payment Verification)"
+      },
+      {
+        "id": "urn:ngm:class:state-proof",
+        "label": "State Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:archive-node",
+        "label": "Archive Node"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:verkle-tree",
+        "label": "Verkle Tree"
+      }
+    ]
   },
   "wikilinks": [
     {

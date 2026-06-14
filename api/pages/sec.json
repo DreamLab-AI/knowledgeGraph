@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:crypto-assets-and-cyber-unit",
+        "label": "Crypto Assets and Cyber Unit"
+      },
+      {
+        "id": "urn:ngm:class:division-of-enforcement",
+        "label": "Division of Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:securities-registration",
+        "label": "Securities Registration"
+      },
+      {
+        "id": "urn:ngm:class:broker-dealer-registration",
+        "label": "Broker-Dealer Registration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:regulatory-reporting",
@@ -26,17 +44,59 @@
       {
         "id": "urn:ngm:class:compliance-audit-trail",
         "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:securities-disclosure",
+        "label": "Securities Disclosure"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:securities-exchange-act",
+        "label": "Securities Exchange Act"
+      },
+      {
+        "id": "urn:ngm:class:securities-act-1933",
+        "label": "Securities Act 1933"
+      },
+      {
+        "id": "urn:ngm:class:regulation-best-interest",
+        "label": "Regulation Best Interest"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:us-regulatory-framework",
         "label": "US Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:cftc",
+        "label": "CFTC"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:enforcement-mechanism",
@@ -51,6 +111,10 @@
       {
         "id": "urn:ngm:class:regulatory-standards",
         "label": "Regulatory Standards"
+      },
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
       }
     ],
     "standardizedBy": [],
@@ -71,6 +135,10 @@
       {
         "id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
       }
     ]
   },

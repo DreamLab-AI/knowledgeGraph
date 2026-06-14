@@ -74,44 +74,158 @@ public:: true
   "@id": "urn:ngm:class:symmetric-encryption",
   "@type": "Class",
   "label": "Symmetric Encryption",
-  "definition": "A cryptographic mod using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication.",
-  "domain": "blockchain",
+  "definition": "A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Provides high-throughput confidentiality for data at rest and in transit, making it the standard approach for bulk data encryption across security, infrastructure, and distributed-systems domains.",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-primitive",
+    "label": "Cryptographic Primitive"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:initialization-vector",
+        "label": "Initialization Vector"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-tag",
+        "label": "Authentication Tag"
+      },
+      {
+        "@id": "urn:ngm:class:cipher-algorithm",
+        "label": "Cipher Algorithm"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:hybrid-encryption",
+        "label": "Hybrid Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "@id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:advanced-encryption-standard",
+        "label": "Advanced Encryption Standard"
+      },
+      {
+        "@id": "urn:ngm:class:chacha20-poly1305",
+        "label": "ChaCha20-Poly1305"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:random-number-generation",
-        "label": "Random Number Generation"
+        "@id": "urn:ngm:class:block-cipher",
+        "label": "Block Cipher"
+      },
+      {
+        "@id": "urn:ngm:class:stream-cipher",
+        "label": "Stream Cipher"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-encryption-at-rest",
+        "label": "Data Encryption at Rest"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:secret-key-encryption",
+      "label": "Secret Key Encryption"
+    },
+    {
+      "@id": "urn:ngm:class:private-key-cryptography",
+      "label": "Private Key Cryptography"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

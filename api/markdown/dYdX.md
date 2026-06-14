@@ -66,13 +66,35 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:decentralised-finance-domain",
-      "label": "Decentralised Finance Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:decentralised-finance-domain",
+    "label": "Decentralised Finance Domain"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:funding-rate-mechanism",
+        "label": "Funding Rate Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-engine",
+        "label": "Liquidation Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      },
+      {
+        "@id": "urn:ngm:class:defi-derivatives-market",
+        "label": "DeFi Derivatives Market"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:order-book",
@@ -81,6 +103,14 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:margin-collateral",
+        "label": "Margin Collateral"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
       }
     ],
     "enables": [
@@ -91,14 +121,104 @@ public:: true
       {
         "@id": "urn:ngm:class:leveraged-trading",
         "label": "Leveraged Trading"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-settlement",
+        "label": "Non-Custodial Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:short-selling",
+        "label": "Short Selling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:central-limit-order-book",
+        "label": "Central Limit Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:off-chain-order-matching",
+        "label": "Off-Chain Order Matching"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "@id": "urn:ngm:class:layer-two-scaling",
+        "label": "Layer-Two Scaling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dydx-protocol",
+      "label": "dYdX Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

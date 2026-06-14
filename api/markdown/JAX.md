@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:jax",
   "@type": "Class",
   "label": "JAX",
-  "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation.",
+  "definition": "A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation targeting CPUs, GPUs, and TPUs via the XLA compiler.",
   "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:deep-learning-domain",
-      "label": "Deep Learning Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:deep-learning-domain",
+    "label": "Deep Learning Domain"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,114 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:xla-compiler",
+        "label": "XLA Compiler"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-in-Time Compilation"
+      },
+      {
+        "@id": "urn:ngm:class:vectorised-computation",
+        "label": "Vectorised Computation"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-model-training",
+        "label": "Large-Scale Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:functional-programming",
+        "label": "Functional Programming"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:numpy-api",
+        "label": "NumPy API"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:flax",
+        "label": "Flax"
+      },
+      {
+        "@id": "urn:ngm:class:haiku",
+        "label": "Haiku"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-computing",
+        "label": "Numerical Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:google-jax",
+      "label": "Google JAX"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

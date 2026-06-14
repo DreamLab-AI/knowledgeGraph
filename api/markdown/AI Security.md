@@ -58,32 +58,158 @@ public:: true
   "@id": "urn:ngm:class:ai-security",
   "@type": "Class",
   "label": "AI Security",
-  "definition": "AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended.",
-  "domain": "artificial-intelligence",
+  "definition": "AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended. It encompasses defending AI models, algorithms, training data, and infrastructure from manipulation, misuse, and exploitation throughout the AI lifecycle.",
+  "domain": "security",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:cybersecurity",
-      "label": "Cybersecurity"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cybersecurity",
+    "label": "Cybersecurity"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-monitoring",
+        "label": "AI Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:input-validation",
+        "label": "Input Validation"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:secure-ai-deployment",
         "label": "Secure AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modeling",
+        "label": "Threat Modeling"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:model-extraction",
+        "label": "Model Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-cybersecurity",
+      "label": "AI Cybersecurity"
+    },
+    {
+      "@id": "urn:ngm:class:secure-artificial-intelligence",
+      "label": "Secure Artificial Intelligence"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

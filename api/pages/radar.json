@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar",
   "domain": "robotics",
-  "definition": "Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity and angle of objects, used in robotics and autonomous systems for reliable perception.",
+  "definition": "Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity, and angle of objects; it is used in robotics, autonomous vehicles, aviation, and defence for reliable perception under all weather and lighting conditions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sensor",
@@ -13,35 +13,118 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:antenna-array",
+        "label": "Antenna Array"
+      },
+      {
+        "id": "urn:ngm:class:transmitter",
+        "label": "Transmitter"
+      },
+      {
+        "id": "urn:ngm:class:receiver",
+        "label": "Receiver"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:radio-frequency-spectrum",
+        "label": "Radio Frequency Spectrum"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:air-traffic-control",
+        "label": "Air Traffic Control"
+      },
+      {
+        "id": "urn:ngm:class:weather-sensing",
+        "label": "Weather Sensing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:doppler-effect",
+        "label": "Doppler Effect"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight",
+        "label": "Time of Flight"
+      },
+      {
+        "id": "urn:ngm:class:beamforming",
+        "label": "Beamforming"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-802-11ad",
+        "label": "IEEE 802.11ad"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
       },
       {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electromagnetic-wave",
+        "label": "Electromagnetic Wave"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
   },
   "wikilinks": [
     {

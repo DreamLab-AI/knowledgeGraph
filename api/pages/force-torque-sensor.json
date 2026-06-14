@@ -8,19 +8,20 @@
   "definition": "Force-Torque Sensor - A multi-axis transducer mounted on the Robot Wrist that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling Force Feedback, Contact Detection, and Compliance Control in precision manipulation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    },
-    {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.63,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:strain-gauge",
+        "label": "Strain Gauge"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:calibration",
@@ -33,6 +34,10 @@
       {
         "id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog to Digital Converter"
       }
     ],
     "enables": [
@@ -47,15 +52,81 @@
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:contact-detection",
+        "label": "Contact Detection"
+      },
+      {
+        "id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-wrist",
+        "label": "Robot Wrist"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control-system",
+        "label": "Real-Time Control System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethercat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:haptic-feedback-system",
@@ -64,6 +135,10 @@
       {
         "id": "urn:ngm:class:wrist-assembly",
         "label": "Wrist Assembly"
+      },
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
       }
     ],
     "relatedTo": []

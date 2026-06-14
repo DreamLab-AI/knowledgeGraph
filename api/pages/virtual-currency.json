@@ -4,27 +4,66 @@
   "slug": "virtual-currency",
   "public": true,
   "classIri": "urn:ngm:class:virtual-currency",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "definition": "A digital representation of value issued and controlled by platform developers, used and accepted electronically within a specific virtual community. Virtual currencies include closed in-game currencies (e.g., World of Warcraft gold), hybrid purchasable tokens (e.g., Robux), and convertible currencies exchangeable for fiat money, each with distinct regulatory and economic implications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:closed-loop-currency",
+        "label": "Closed Loop Currency"
+      },
+      {
+        "id": "urn:ngm:class:convertible-virtual-currency",
+        "label": "Convertible Virtual Currency"
+      },
+      {
+        "id": "urn:ngm:class:non-convertible-virtual-currency",
+        "label": "Non-Convertible Virtual Currency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-metaverse-commerce",
         "label": "Cross Metaverse Commerce"
+      },
+      {
+        "id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn",
+        "label": "Play To Earn"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -34,31 +73,73 @@
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
-      }
-    ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+      },
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-goods",
+        "label": "Virtual Goods"
+      },
+      {
+        "id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
       },
       {
         "id": "urn:ngm:class:financial-system",
         "label": "Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   },

@@ -52,36 +52,64 @@ alias:: CloudNativeApplications
   "maturity": "emerging",
   "quality": 0.75,
   "qualityScore": 0.75,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-computing-and-cloud",
+    "label": "Computing and Cloud"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
       {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
+      {"@id": "urn:ngm:class:immutable-infrastructure", "label": "Immutable Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
       {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"}
+      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"},
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
-      {"@id": "urn:ngm:class:industry-cloud-platforms", "label": "Industry Cloud Platforms"}
+      {"@id": "urn:ngm:class:industry-cloud-platforms", "label": "Industry Cloud Platforms"},
+      {"@id": "urn:ngm:class:elastic-scaling", "label": "Elastic Scaling"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:twelve-factor-app", "label": "Twelve-Factor App"},
+      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"},
+      {"@id": "urn:ngm:class:open-container-initiative", "label": "Open Container Initiative"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
+      {"@id": "urn:ngm:class:legacy-application", "label": "Legacy Application"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"}
+      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:artificial-intelligence-operations", "label": "AIOps"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:cloud-native-software", "label": "Cloud-Native Software"},
+    {"@id": "urn:ngm:class:cloud-first-applications", "label": "Cloud-First Applications"}
+  ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

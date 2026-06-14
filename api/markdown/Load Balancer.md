@@ -50,21 +50,47 @@ public:: true
   "@id": "urn:ngm:class:load-balancer",
   "@type": "Class",
   "label": "Load Balancer",
-  "definition": "A component that distributes incoming network or application traffic across multiple servers to improve throughput, reliability and resource utilisation.",
+  "definition": "A component that distributes incoming network or application traffic across multiple backend servers to improve throughput, reliability, and resource utilisation, preventing any single server from becoming a bottleneck.",
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:network-architecture",
-      "label": "Network Architecture"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:network-architecture",
+    "label": "Network Architecture"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:health-check",
+        "label": "Health Check"
+      },
+      {
+        "@id": "urn:ngm:class:session-persistence",
+        "label": "Session Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:scheduling-algorithm",
+        "label": "Scheduling Algorithm"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:server-pool",
+        "label": "Server Pool"
       }
     ],
     "enables": [
@@ -75,14 +101,98 @@ public:: true
       {
         "@id": "urn:ngm:class:high-availability",
         "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scaling",
+        "label": "Horizontal Scaling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:round-robin-scheduling",
+        "label": "Round Robin Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:least-connections",
+        "label": "Least Connections"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ssl-termination",
+        "label": "SSL Termination"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:traffic-management",
+        "label": "Traffic Management"
+      },
+      {
+        "@id": "urn:ngm:class:ingress-controller",
+        "label": "Ingress Controller"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:traffic-distributor",
+      "label": "Traffic Distributor"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

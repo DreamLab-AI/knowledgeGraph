@@ -4,45 +4,153 @@
   "slug": "key-derivation-function",
   "public": true,
   "classIri": "urn:ngm:class:key-derivation-function",
-  "domain": "blockchain",
-  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in bloc...",
+  "domain": "security",
+  "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation, deterministic wallet recovery, and password-based encryption in security and blockchain systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "id": "urn:ngm:class:cryptographic-primitive",
       "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "id": "urn:ngm:class:master-secret",
+        "label": "Master Secret"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-key-generation",
+        "label": "Deterministic Key Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:password-hashing",
         "label": "Password Hashing"
+      },
+      {
+        "id": "urn:ngm:class:bip39",
+        "label": "BIP39"
+      },
+      {
+        "id": "urn:ngm:class:bip32",
+        "label": "BIP32"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:random-key-generation",
+        "label": "Random Key Generation"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-key-exchange",
+        "label": "Symmetric Key Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:mnemonic-phrase",
+        "label": "Mnemonic Phrase"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:pseudo-random-function",
+        "label": "Pseudo-Random Function"
+      },
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:salt",
+        "label": "Salt"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:wallet-security",
+        "label": "Wallet Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp800-132",
+        "label": "NIST SP 800-132"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8018",
+        "label": "RFC 8018"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pbkdf2",
+        "label": "PBKDF2"
+      },
+      {
+        "id": "urn:ngm:class:scrypt",
+        "label": "scrypt"
+      },
+      {
+        "id": "urn:ngm:class:argon2",
+        "label": "Argon2"
+      },
+      {
+        "id": "urn:ngm:class:hkdf",
+        "label": "HKDF"
+      }
+    ]
   },
   "wikilinks": [
     {

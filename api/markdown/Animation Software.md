@@ -74,32 +74,58 @@ public:: true
   "@id": "urn:ngm:class:animation-software",
   "@type": "Class",
   "label": "Animation Software",
-  "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse cont...",
+  "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "SC Content And Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-content-creation-tools",
+    "label": "Digital Content Creation Tools"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:gpu-rendering",
-        "label": "GPU Rendering"
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
       },
       {
         "@id": "urn:ngm:class:rigging-systems",
         "label": "Rigging Systems"
       },
       {
+        "@id": "urn:ngm:class:compositing",
+        "label": "Compositing"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation-tools",
+        "label": "Digital Content Creation Tools"
+      },
+      {
+        "@id": "urn:ngm:class:creative-production-pipeline",
+        "label": "Creative Production Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      },
+      {
         "@id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:rigging-systems",
+        "label": "Rigging Systems"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
       }
     ],
     "enables": [
@@ -114,14 +140,76 @@ public:: true
       {
         "@id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3-d-animation-software",
+      "label": "3D Animation Software"
+    },
+    {
+      "@id": "urn:ngm:class:computer-animation-tools",
+      "label": "Computer Animation Tools"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

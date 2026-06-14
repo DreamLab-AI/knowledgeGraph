@@ -113,6 +113,10 @@ public:: true
       {
         "@id": "urn:ngm:class:clock-synchronisation",
         "label": "Clock Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
       }
     ],
     "requires": [
@@ -133,14 +137,102 @@ public:: true
       {
         "@id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-system",
+        "label": "Centralised System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-domain",
+        "label": "Infrastructure Domain"
+      },
+      {
+        "@id": "urn:ngm:class:data-domain",
+        "label": "Data Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-computing-domain",
+      "label": "Distributed Computing Domain"
+    },
+    {
+      "@id": "urn:ngm:class:concurrent-and-distributed-systems",
+      "label": "Concurrent and Distributed Systems"
+    }
+  ],
+  "quality": 0.7,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

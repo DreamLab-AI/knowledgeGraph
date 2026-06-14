@@ -5,23 +5,49 @@
   "public": true,
   "classIri": "urn:ngm:class:performance-optimization",
   "domain": "infrastructure",
-  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput.",
+  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    },
     {
       "id": "urn:ngm:class:optimization-technique",
       "label": "Optimization Technique"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.65,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:compiler-optimization",
+        "label": "Compiler Optimization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:resource-efficiency",
@@ -34,17 +60,74 @@
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
+      },
+      {
+        "id": "urn:ngm:class:data-structures",
+        "label": "Data Structures"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:premature-optimization",
+        "label": "Premature Optimization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-inference-optimization",
+        "label": "Machine Learning Inference Optimization"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-processing",
+        "label": "Asynchronous Processing"
+      },
+      {
+        "id": "urn:ngm:class:connection-pooling",
+        "label": "Connection Pooling"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:database-query-optimization",
+        "label": "Database Query Optimization"
+      }
+    ]
   },
   "wikilinks": [
     {

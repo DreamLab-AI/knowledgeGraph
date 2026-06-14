@@ -23,23 +23,61 @@ public:: true
   "definition": "A Risk Assessment Methodology is a structured, repeatable set of procedures for identifying, analysing, and evaluating potential hazards or threats to an organisation's objectives, assets, or stakeholders, producing a prioritised risk register that informs mitigation decisions. Methodologies range from qualitative (likelihood-impact matrices) to quantitative (Monte Carlo simulation, fault tree analysis) approaches, and are codified in standards such as ISO 31000, NIST SP 800-30, and FAIR for cybersecurity contexts.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-risk-management", "label": "Enterprise Risk Management"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:risk-assessment-matrix", "label": "Risk Assessment Matrix"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:risk-identification", "label": "Risk Identification"},
+      {"@id": "urn:ngm:class:risk-analysis", "label": "Risk Analysis"},
+      {"@id": "urn:ngm:class:risk-evaluation", "label": "Risk Evaluation"},
+      {"@id": "urn:ngm:class:risk-treatment", "label": "Risk Treatment"},
+      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"}
     ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-31000-risk-management", "label": "ISO 31000 Risk Management"}
+    "requires": [
+      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
+      {"@id": "urn:ngm:class:risk-assessment-matrix", "label": "Risk Assessment Matrix"},
+      {"@id": "urn:ngm:class:stakeholder-analysis", "label": "Stakeholder Analysis"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-assessment-engine", "label": "Risk Assessment Engine"}
+      {"@id": "urn:ngm:class:risk-assessment-engine", "label": "Risk Assessment Engine"},
+      {"@id": "urn:ngm:class:enterprise-risk-management", "label": "Enterprise Risk Management"},
+      {"@id": "urn:ngm:class:mitigation-planning", "label": "Mitigation Planning"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:iso-31000-risk-management", "label": "ISO 31000 Risk Management"},
+      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-31000-risk-management", "label": "ISO 31000 Risk Management"},
+      {"@id": "urn:ngm:class:nist-sp-800-30", "label": "NIST SP 800-30"},
+      {"@id": "urn:ngm:class:coso-erm-framework", "label": "COSO ERM Framework"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:qualitative-risk-assessment", "label": "Qualitative Risk Assessment"},
+      {"@id": "urn:ngm:class:quantitative-risk-assessment", "label": "Quantitative Risk Assessment"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:cybersecurity-risk-assessment", "label": "Cybersecurity Risk Assessment"},
+      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fault-tree-analysis", "label": "Fault Tree Analysis"},
+      {"@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation"},
+      {"@id": "urn:ngm:class:failure-mode-effects-analysis", "label": "Failure Mode and Effects Analysis"},
+      {"@id": "urn:ngm:class:probabilistic-risk-assessment", "label": "Probabilistic Risk Assessment"},
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:risk-evaluation-framework", "label": "Risk Evaluation Framework"},
+    {"@id": "urn:ngm:class:hazard-assessment-methodology", "label": "Hazard Assessment Methodology"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

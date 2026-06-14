@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bucket",
+        "label": "Bucket"
+      },
+      {
+        "id": "urn:ngm:class:object-metadata",
+        "label": "Object Metadata"
+      },
+      {
+        "id": "urn:ngm:class:access-control-list",
+        "label": "Access Control List"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-key-value-store",
+        "label": "Distributed Key-Value Store"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-lake",
@@ -30,12 +52,47 @@
       {
         "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:s3-api",
+        "label": "S3 API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      },
+      {
+        "id": "urn:ngm:class:posix-filesystem",
+        "label": "POSIX Filesystem"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rest-api",
@@ -44,6 +101,14 @@
       {
         "id": "urn:ngm:class:http-protocol",
         "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:geo-redundant-replication",
+        "label": "Geo-Redundant Replication"
+      },
+      {
+        "id": "urn:ngm:class:storage-tiering",
+        "label": "Storage Tiering"
       }
     ],
     "supports": [],
@@ -51,12 +116,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:block-storage",
-        "label": "Block Storage"
-      },
-      {
         "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-durability",
+        "label": "Data Durability"
+      },
+      {
+        "id": "urn:ngm:class:immutable-storage",
+        "label": "Immutable Storage"
       }
     ]
   },

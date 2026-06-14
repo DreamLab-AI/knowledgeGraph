@@ -55,34 +55,144 @@ public:: true
   "@type": "Class",
   "label": "Volumetric Video",
   "definition": "Volumetric video captures a subject from many viewpoints to reconstruct a moving three-dimensional representation that can be viewed from any angle, rather than a fixed two-dimensional image sequence.",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:computer-graphics",
-      "label": "Computer Graphics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-graphics",
+    "label": "Computer Graphics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "@id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:multi-camera-rig",
+        "label": "Multi-Camera Rig"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:volume-rendering",
         "label": "Volume Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:free-viewpoint-video",
+        "label": "Free-Viewpoint Video"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-telepresence",
+        "label": "Immersive Telepresence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:performance-capture",
+        "label": "Performance Capture"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:2d-video",
+        "label": "2D Video"
+      },
+      {
+        "@id": "urn:ngm:class:360-video",
+        "label": "360-Degree Video"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:4d-video",
+      "label": "4D Video"
+    },
+    {
+      "@id": "urn:ngm:class:dynamic-3d-reconstruction",
+      "label": "Dynamic 3D Reconstruction"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

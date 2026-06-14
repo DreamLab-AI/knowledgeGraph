@@ -66,16 +66,14 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:owl-thing",
+    "label": "owl:Thing"
+  },
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -85,14 +83,128 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-consensus",
+        "label": "Decentralised Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-electronic-cash",
+        "label": "Peer-to-Peer Electronic Cash"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-server",
+        "label": "Timestamp Server"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-domain",
+        "label": "Cryptographic Domain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:internet-privacy",
+        "label": "Internet Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-white-paper",
+        "label": "Bitcoin White Paper"
+      },
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "@id": "urn:ngm:class:cypherpunk-movement",
+        "label": "Cypherpunk Movement"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-problem",
+        "label": "Double-Spend Problem"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bitcoin-creator",
+      "label": "Bitcoin Creator"
+    },
+    {
+      "@id": "urn:ngm:class:bitcoin-inventor",
+      "label": "Bitcoin Inventor"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

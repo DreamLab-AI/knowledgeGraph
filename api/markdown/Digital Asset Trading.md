@@ -75,18 +75,12 @@ public:: true
   "@type": "Class",
   "label": "Digital Asset Trading",
   "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:financial-trading",
-      "label": "Financial Trading"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-trading",
+    "label": "Financial Trading"
+  },
   "relations": {
     "requires": [
       {
@@ -100,6 +94,18 @@ public:: true
       {
         "@id": "urn:ngm:class:settlement-systems",
         "label": "Settlement Systems"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
@@ -114,14 +120,104 @@ public:: true
       {
         "@id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:spot-trading",
+        "label": "Spot Trading"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:over-the-counter-trading",
+        "label": "Over-the-Counter Trading"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:custody-solution",
+        "label": "Custody Solution"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-securities-trading",
+        "label": "Traditional Securities Trading"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency-exchange",
+        "label": "Fiat Currency Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency-trading",
+      "label": "Cryptocurrency Trading"
+    },
+    {
+      "@id": "urn:ngm:class:crypto-asset-trading",
+      "label": "Crypto Asset Trading"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

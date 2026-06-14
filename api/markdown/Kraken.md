@@ -66,21 +66,41 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-asset-domain",
-      "label": "Digital Asset Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:centralised-exchange",
+    "label": "Centralised Exchange"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:order-book",
         "label": "Order Book"
       },
       {
+        "@id": "urn:ngm:class:spot-trading",
+        "label": "Spot Trading"
+      },
+      {
+        "@id": "urn:ngm:class:margin-trading",
+        "label": "Margin Trading"
+      },
+      {
+        "@id": "urn:ngm:class:staking-service",
+        "label": "Staking Service"
+      }
+    ],
+    "requires": [
+      {
         "@id": "urn:ngm:class:custody",
         "label": "Custody"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
       }
     ],
     "enables": [
@@ -91,14 +111,82 @@ public:: true
       {
         "@id": "urn:ngm:class:fiat-on-ramp",
         "label": "Fiat On-Ramp"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:futures-trading",
+        "label": "Futures Trading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:banking-integration",
+        "label": "Banking Integration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      },
+      {
+        "@id": "urn:ngm:class:financial-infrastructure-domain",
+        "label": "Financial Infrastructure Domain"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-service-provider",
+        "label": "Crypto Asset Service Provider"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:centralised-crypto-exchange",
+      "label": "Centralised Crypto Exchange"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

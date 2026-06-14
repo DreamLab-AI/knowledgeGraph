@@ -4,20 +4,16 @@
   "slug": "feature-store",
   "public": true,
   "classIri": "urn:ngm:class:feature-store",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "A centralised repository for storing, managing, versioning, and serving machine learning features at scale. It ensures point-in-time consistency between training and online inference, prevents training-serving skew, and enables cross-team feature reuse so that features computed once can be shared across multiple models and pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-      "label": "Machine Learning Pipeline"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -32,6 +28,18 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:online-store",
+        "label": "Online Store"
+      },
+      {
+        "id": "urn:ngm:class:offline-store",
+        "label": "Offline Store"
+      },
+      {
+        "id": "urn:ngm:class:feature-catalog",
+        "label": "Feature Catalog"
       }
     ],
     "requires": [
@@ -42,6 +50,10 @@
       {
         "id": "urn:ngm:class:data-lake",
         "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
       }
     ],
     "enables": [
@@ -50,18 +62,80 @@
         "label": "Model Training"
       },
       {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:point-in-time-correctness",
+        "label": "Point-in-Time Correctness"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:key-value-store",
+        "label": "Key-Value Store"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-mart",
+        "label": "Data Mart"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:ml-platform",
+        "label": "ML Platform"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:vector-database",
@@ -70,6 +144,10 @@
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
       }
     ]
   },

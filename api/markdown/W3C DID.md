@@ -21,27 +21,66 @@ public:: true
   "@type": "Class",
   "label": "W3C DID",
   "definition": "W3C DID (Decentralised Identifier) is a W3C Recommendation standard (published July 2022) that defines a new type of globally unique, persistent, and cryptographically verifiable identifier that does not require a centralised registration authority. A DID resolves to a DID Document — a JSON-LD data structure containing public keys, authentication mechanisms, and service endpoints — enabling the DID subject to prove control and establish secure communication without depending on a third-party identity provider. DIDs are the foundational primitive for self-sovereign identity systems.",
-  "domain": "governance",
+  "domain": "security",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:w3-c-did-core", "label": "W3C DID Core"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
+      {"@id": "urn:ngm:class:did-method", "label": "DID Method"},
+      {"@id": "urn:ngm:class:did-resolver", "label": "DID Resolver"},
+      {"@id": "urn:ngm:class:verification-method", "label": "Verification Method"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:w3-c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:trust-over-ip-stack", "label": "Trust over IP Stack"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
+    "requires": [
+      {"@id": "urn:ngm:class:verifiable-data-registry", "label": "Verifiable Data Registry"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralised-trust", "label": "Decentralised Trust"},
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"}
+      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:w3-c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
+      {"@id": "urn:ngm:class:trust-over-ip-stack", "label": "Trust over IP Stack"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:uri", "label": "URI"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3-c", "label": "W3C"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:oauth2", "label": "OAuth2"},
+      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:eu-digital-identity-wallet", "label": "EU Digital Identity Wallet"},
+      {"@id": "urn:ngm:class:openid4vc", "label": "OpenID4VC"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
+      {"@id": "urn:ngm:class:sidetree-protocol", "label": "Sidetree Protocol"},
+      {"@id": "urn:ngm:class:eidas2", "label": "eIDAS2"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
+    {"@id": "urn:ngm:class:did-core", "label": "DID Core"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

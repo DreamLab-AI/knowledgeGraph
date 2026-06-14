@@ -62,16 +62,14 @@ public:: true
   "@id": "urn:ngm:class:deep-mind",
   "@type": "Class",
   "label": "DeepMind",
-  "definition": "DeepMind is an artificial intelligence research laboratory owned by Google, known for work on reinforcement learning and systems such as AlphaGo and AlphaFold. It is based in London.",
+  "definition": "DeepMind is an artificial intelligence research laboratory owned by Google (Alphabet), headquartered in London, known for pioneering work in reinforcement learning, deep learning, and scientific AI applications including AlphaGo, AlphaFold, Gemini, and Gato.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence-research-laboratory",
+    "label": "Artificial Intelligence Research Laboratory"
+  },
   "relations": {
     "requires": [
       {
@@ -81,20 +79,122 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-datasets",
+        "label": "Scientific Datasets"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:machine-learning-discipline",
+        "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:game-playing-ai",
+        "label": "Game-Playing AI"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-ai",
+        "label": "Scientific AI"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:alphago",
+        "label": "AlphaGo"
+      },
+      {
+        "@id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "@id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:gato",
+        "label": "Gato"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      },
+      {
+        "@id": "urn:ngm:class:google-ai-ecosystem",
+        "label": "Google AI Ecosystem"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "@id": "urn:ngm:class:energy-optimisation",
+        "label": "Energy Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:google-deepmind",
+      "label": "Google DeepMind"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

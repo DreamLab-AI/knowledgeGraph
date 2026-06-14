@@ -4,7 +4,7 @@
   "slug": "metaverse-ontology",
   "public": true,
   "classIri": "urn:ngm:class:metaverse-ontology",
-  "domain": "spatial-computing",
+  "domain": "metaverse",
   "definition": "The Metaverse Ontology is a formal knowledge representation that classifies the entities, relationships, and properties constituting a metaverse ecosystem\u2014including agents, scenes, digital assets, economies, governance structures, and communication protocols. It provides a shared semantic vocabulary enabling interoperability between platforms, AI systems, and toolchains operating within or around persistent immersive environments.",
   "subClassOf": [
     {
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metaverse-agent",
+        "label": "Metaverse Agent"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:owl-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      },
+      {
+        "id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:metaverse",
@@ -26,12 +52,60 @@
       {
         "id": "urn:ngm:class:knowledge-graphing",
         "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:game-engine-scene-graph",
+        "label": "Game Engine Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-json",
+        "label": "Linked-JSON"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -44,15 +118,58 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:metaverse-ontology-schema",
         "label": "Metaverse Ontology Schema"
+      },
+      {
+        "id": "urn:ngm:class:ontology-conversation-with-ais",
+        "label": "Ontology Conversation with AIs"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       }
     ]
   },

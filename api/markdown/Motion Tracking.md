@@ -62,43 +62,68 @@ public:: true
   "@id": "urn:ngm:class:motion-tracking",
   "@type": "Class",
   "label": "Motion Tracking",
-  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications.",
-  "domain": "robotics",
+  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts it is fundamental to embodied presence by mapping user movements to avatar animation and enabling natural interaction with virtual environments.",
+  "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:inside-out-tracking", "label": "Inside-Out Tracking"},
+      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:xr-input-technologies", "label": "XR Input Technologies"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-Time Processing"}
+    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:avatar-animation",
-        "label": "Avatar Animation"
-      },
-      {
-        "@id": "urn:ngm:class:embodied-presence",
-        "label": "Embodied Presence"
-      },
-      {
-        "@id": "urn:ngm:class:gesture-control",
-        "label": "Gesture Control"
-      },
-      {
-        "@id": "urn:ngm:class:user-identification",
-        "label": "User Identification"
-      }
+      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
+      {"@id": "urn:ngm:class:embodied-presence", "label": "Embodied Presence"},
+      {"@id": "urn:ngm:class:gesture-control", "label": "Gesture Control"},
+      {"@id": "urn:ngm:class:user-identification", "label": "User Identification"},
+      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
+      {"@id": "urn:ngm:class:full-body-avatar", "label": "Full Body Avatar"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:sports-analytics", "label": "Sports Analytics"},
+      {"@id": "urn:ngm:class:healthcare-rehabilitation", "label": "Healthcare Rehabilitation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:controller-based-input", "label": "Controller-Based Input"},
+      {"@id": "urn:ngm:class:outside-in-tracking", "label": "Outside-In Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:six-degrees-of-freedom", "label": "Six Degrees of Freedom"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}
+      {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"},
+      {"@id": "urn:ngm:class:biometric-privacy", "label": "Biometric Privacy"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+    {"@id": "urn:ngm:class:positional-tracking", "label": "Positional Tracking"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -43,37 +43,63 @@ public:: true
   "@type": "Class",
   "label": "Monetary Policy Implementation",
   "definition": "Monetary Policy Implementation encompasses the operational processes, tools, and institutional mechanisms through which central banks and monetary authorities translate policy decisions—such as interest rate targets or quantitative measures—into observable effects on the financial system. In digital and metaverse economic contexts it extends to the programmatic enforcement of monetary parameters via Central Bank Digital Currencies (CBDCs), smart contracts, and programmable money frameworks. Effective implementation requires coordination between inflation control targets, payment system design, financial stability oversight, and regulatory compliance.",
-  "domain": "blockchain",
+  "domain": "finance",
   "maturity": "emerging",
   "quality": 0.75,
   "qualityScore": 0.75,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:economic-mechanism",
-      "label": "Economic Mechanism"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:economic-mechanism",
+    "label": "Economic Mechanism"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:open-market-operations", "label": "Open Market Operations"},
+      {"@id": "urn:ngm:class:reserve-requirements", "label": "Reserve Requirements"},
+      {"@id": "urn:ngm:class:standing-lending-facility", "label": "Standing Lending Facility"},
+      {"@id": "urn:ngm:class:forward-guidance", "label": "Forward Guidance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
+      {"@id": "urn:ngm:class:interbank-market", "label": "Interbank Market"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:central-bank-digital-currency-cbdc", "label": "Central Bank Digital Currency (CBDC)"},
       {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:liquidity-management", "label": "Liquidity Management"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"},
       {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:price-stability", "label": "Price Stability"},
+      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fiscal-policy", "label": "Fiscal Policy"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
       {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
       {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"}
+      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"},
+      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"},
+      {"@id": "urn:ngm:class:interest-rate-policy", "label": "Interest Rate Policy"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"}
+      {"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:monetary-policy-operations", "label": "Monetary Policy Operations"},
+    {"@id": "urn:ngm:class:central-bank-operations", "label": "Central Bank Operations"}
+  ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

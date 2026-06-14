@@ -23,23 +23,62 @@ public:: true
   "definition": "Concise Binary Object Representation (CBOR) is a binary data serialisation format specified in RFC 7049 (superseded by RFC 8949) designed to enable extremely compact encoding of structured data with a data model that is a superset of JSON. CBOR encodes values using a type-length-value scheme, eliminating the overhead of textual delimiters and key quotation, which makes it particularly well-suited for constrained environments such as IoT devices, embedded systems, and low-bandwidth protocols where minimising message size and parsing complexity is critical.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}],
+  "subClassOf": {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"},
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "json"},
+      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
       {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffer"},
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
+      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"},
+      {"@id": "urn:ngm:class:messagepack", "label": "MessagePack"},
+      {"@id": "urn:ngm:class:asn1", "label": "ASN.1"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:binary-encoding", "label": "Binary Encoding"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {"@id": "urn:ngm:class:type-length-value", "label": "Type-Length-Value"},
+      {"@id": "urn:ngm:class:tagged-data-item", "label": "Tagged Data Item"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"}
+      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
+      {"@id": "urn:ngm:class:constrained-restful-environments", "label": "Constrained RESTful Environments"},
+      {"@id": "urn:ngm:class:remote-attestation", "label": "Remote Attestation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rfc-8949", "label": "RFC 8949"},
+      {"@id": "urn:ngm:class:cose", "label": "CBOR Object Signing and Encryption"},
+      {"@id": "urn:ngm:class:deterministic-encoding", "label": "Deterministic Encoding"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"},
+      {"@id": "urn:ngm:class:iso-18013-5", "label": "ISO 18013-5 mDL Standard"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:low-power-wide-area-network", "label": "Low-Power Wide Area Network"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:mobile-drivers-licence", "label": "Mobile Driver's Licence"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:extensible-markup-language", "label": "Extensible Markup Language"},
+      {"@id": "urn:ngm:class:bson", "label": "BSON"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:concise-binary-object-representation", "label": "Concise Binary Object Representation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

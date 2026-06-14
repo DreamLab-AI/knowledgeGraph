@@ -23,25 +23,63 @@ public:: true
   "definition": "FIDO2 is an open authentication standard developed by the FIDO Alliance and W3C that enables passwordless, phishing-resistant authentication using public-key cryptography. It consists of two components: the W3C Web Authentication API (WebAuthn), which defines the browser and platform interface for creating and using public key credentials, and the Client to Authenticator Protocol (CTAP2), which defines the communication between a platform and an external authenticator such as a hardware security key or passkey-capable device. FIDO2 credentials are bound to a specific relying party origin, making them immune to phishing, and private keys never leave the authenticator device, eliminating the credential theft risk associated with password databases.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}],
+  "subClassOf": {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
       {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"}
+      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
+      {"@id": "urn:ngm:class:challenge-response-protocol", "label": "Challenge-Response Protocol"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:passwordless-authentication", "label": "Passwordless Authentication"},
       {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:phishing-resistant-authentication", "label": "Phishing-Resistant Authentication"},
+      {"@id": "urn:ngm:class:passkey", "label": "Passkey"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:webauthn", "label": "WebAuthn"},
+      {"@id": "urn:ngm:class:ctap2", "label": "CTAP2"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:origin-bound-credential", "label": "Origin-Bound Credential"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:authenticator-device", "label": "Authenticator Device"},
+      {"@id": "urn:ngm:class:relying-party", "label": "Relying Party"},
+      {"@id": "urn:ngm:class:user-verification", "label": "User Verification"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
+      {"@id": "urn:ngm:class:fido-alliance", "label": "FIDO Alliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"},
+      {"@id": "urn:ngm:class:otp-authentication", "label": "OTP Authentication"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
       {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:fido2-standard", "label": "FIDO2 Standard"},
+    {"@id": "urn:ngm:class:webauthn-ctap2", "label": "WebAuthn+CTAP2"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -48,30 +48,66 @@ elevatedFrom:: [[PEOPLE]]
   "@type": "Class",
   "label": "Domain Expert Contact Index",
   "definition": "A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
-  "domain": "infrastructure",
+  "domain": "distributed-collaboration",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
-  "qualityScore": 0.7,
+  "subClassOf": {
+    "@id": "urn:ngm:class:knowledge-management",
+    "label": "Knowledge Management"
+  },
+  "qualityScore": 0.68,
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:contact-record", "label": "Contact Record"},
+      {"@id": "urn:ngm:class:relationship-context", "label": "Relationship Context"},
+      {"@id": "urn:ngm:class:follow-up-action", "label": "Follow-up Action"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:personal-knowledge-management", "label": "Personal Knowledge Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:expert-identification", "label": "Expert Identification"},
+      {"@id": "urn:ngm:class:relationship-management", "label": "Relationship Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
+      {"@id": "urn:ngm:class:opportunity-development", "label": "Opportunity Development"},
+      {"@id": "urn:ngm:class:knowledge-transfer", "label": "Knowledge Transfer"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:logseq", "label": "Logseq"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
+      {"@id": "urn:ngm:class:research-collaboration", "label": "Research Collaboration"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:network-effects", "label": "Network Effects"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:expert-directory", "label": "Expert Directory"},
+    {"@id": "urn:ngm:class:stakeholder-contact-list", "label": "Stakeholder Contact List"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

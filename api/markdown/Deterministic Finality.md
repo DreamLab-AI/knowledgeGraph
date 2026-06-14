@@ -78,28 +78,142 @@ public:: true
   "@id": "urn:ngm:class:deterministic-finality",
   "@type": "Class",
   "label": "Deterministic Finality",
-  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted.",
+  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted once a supermajority of validators has committed to them.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:transaction-finality",
+    "label": "Transaction Finality"
+  },
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:supermajority-voting",
+        "label": "Supermajority Voting"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:absolute-transaction-guarantee",
+        "label": "Absolute Transaction Guarantee"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-composability",
+        "label": "Synchronous Composability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "@id": "urn:ngm:class:grandpa-protocol",
+        "label": "GRANDPA Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:weak-subjectivity",
+        "label": "Weak Subjectivity"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "@id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:instant-finality",
+      "label": "Instant Finality"
+    },
+    {
+      "@id": "urn:ngm:class:absolute-finality",
+      "label": "Absolute Finality"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

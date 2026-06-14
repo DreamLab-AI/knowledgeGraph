@@ -16,18 +16,83 @@
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:value-learning",
+        "label": "Value Learning"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:preference-elicitation",
+        "label": "Preference Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:safe-deployment",
+        "label": "Safe Deployment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:misalignment",
+        "label": "Misalignment"
+      },
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:machine-ethics",
+        "label": "Machine Ethics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:red-teaming",
@@ -36,24 +101,45 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:debate",
+        "label": "Debate"
+      },
+      {
+        "id": "urn:ngm:class:amplification",
+        "label": "Amplification"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
-      },
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:frontier-ai",
         "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
       }
     ]
   },

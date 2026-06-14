@@ -62,12 +62,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:privacy-coin",
+    "label": "Privacy Coin"
+  },
   "relations": {
     "requires": [
       {
@@ -77,14 +75,126 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-setup-ceremony",
+        "label": "Trusted Setup Ceremony"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:shielded-transaction",
+        "label": "Shielded Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:sapling-protocol",
+        "label": "Sapling Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:equihash",
+        "label": "Equihash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:note-commitment",
+        "label": "Note Commitment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-payment",
+        "label": "Anonymous Payment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:dash",
+        "label": "Dash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:electric-coin-company",
+        "label": "Electric Coin Company"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-currency",
+        "label": "Cryptographic Currency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:zerocash",
+      "label": "Zerocash"
+    },
+    {
+      "@id": "urn:ngm:class:zec",
+      "label": "ZEC"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

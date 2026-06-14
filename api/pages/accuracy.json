@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:accuracy",
   "domain": "artificial-intelligence",
-  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate mea...",
+  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,29 +13,121 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "id": "urn:ngm:class:true-negative",
+        "label": "True Negative"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      },
+      {
+        "id": "urn:ngm:class:class-distribution",
+        "label": "Class Distribution"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:balanced-accuracy",
+        "label": "Balanced Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:matthews-correlation-coefficient",
+        "label": "Matthews Correlation Coefficient"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
       {
         "id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       }
     ]
   },

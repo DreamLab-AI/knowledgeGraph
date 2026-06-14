@@ -54,33 +54,73 @@ public:: true
   "@id": "urn:ngm:class:sensors",
   "@type": "Class",
   "label": "Sensors",
-  "definition": "Sensors are devices that measure physical quantities and convert them into signals a robot or system can process, providing the perceptual input for estimation, control and decision making.",
+  "definition": "Sensors are devices that transduce physical quantities—distance, force, temperature, orientation, light, electromagnetic fields—into electrical or digital signals that a robot or computational system can process, providing the perceptual input for state estimation, control, and decision making.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robotics-domain",
-      "label": "Robotics Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:robotics-domain",
+    "label": "Robotics Domain"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:radar", "label": "Radar"},
+      {"@id": "urn:ngm:class:camera", "label": "Camera"},
+      {"@id": "urn:ngm:class:imu", "label": "IMU"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
+      {"@id": "urn:ngm:class:analog-to-digital-conversion", "label": "Analog-to-Digital Conversion"}
+    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:perception-system",
-        "label": "Perception System"
-      },
-      {
-        "@id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
-      }
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hardware-interface", "label": "Hardware Interface"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ros-robot-operating-system", "label": "ROS (Robot Operating System)"},
+      {"@id": "urn:ngm:class:ieee-1451", "label": "IEEE 1451"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:actuators", "label": "Actuators"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {"@id": "urn:ngm:class:transducer", "label": "Transducer"},
+    {"@id": "urn:ngm:class:sensing-device", "label": "Sensing Device"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -50,42 +50,64 @@ alias:: PracticalByzantineFaultTolerance
   "definition": "A consensus algorithm providing high-performance Byzantine state machine replication for asynchronous distributed systems, tolerating up to f faulty nodes in a system of 3f+1 total nodes. PBFT achieves deterministic finality through a three-phase protocol (pre-prepare, prepare, commit) and processes thousands of requests per second with sub-millisecond latency overhead, making it suitable for permissioned blockchain networks requiring strong consistency guarantees.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:byzantine-fault-tolerance",
-      "label": "Byzantine Fault Tolerance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:byzantine-fault-tolerance",
+    "label": "Byzantine Fault Tolerance"
+  },
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:federated-byzantine-fault-tolerance", "label": "Federated Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:pre-prepare-phase", "label": "Pre-Prepare Phase"},
+      {"@id": "urn:ngm:class:prepare-phase", "label": "Prepare Phase"},
+      {"@id": "urn:ngm:class:commit-phase", "label": "Commit Phase"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:trusted-execution-pbft", "label": "Trusted Execution PBFT"}
+    "requires": [
+      {"@id": "urn:ngm:class:quorum-certificate", "label": "Quorum Certificate"},
+      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
+      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:fault-tolerant-computing", "label": "Fault Tolerant Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:federated-byzantine-fault-tolerance", "label": "Federated Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"},
+      {"@id": "urn:ngm:class:leader-based-protocol", "label": "Leader Based Protocol"},
+      {"@id": "urn:ngm:class:total-order-broadcast", "label": "Total Order Broadcast"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:pbft", "label": "PBFT"}
+  ],
+  "quality": 0.75,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

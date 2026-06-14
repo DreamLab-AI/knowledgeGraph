@@ -13,31 +13,136 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "id": "urn:ngm:class:federated-validator",
+        "label": "Federated Validator"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:federated-byzantine-agreement",
+        "label": "Federated Byzantine Agreement"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:two-way-peg",
         "label": "Two-Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:spv-proof",
+        "label": "SPV Proof"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:scalability-solutions",
+        "label": "Scalability Solutions"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon-pos",
+        "label": "Polygon PoS"
+      },
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:ronin",
+        "label": "Ronin"
+      }
+    ]
   },
   "wikilinks": [
     {

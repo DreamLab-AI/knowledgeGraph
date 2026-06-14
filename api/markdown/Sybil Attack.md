@@ -67,44 +67,58 @@ public:: true
   "@type": "Class",
   "label": "Sybil Attack",
   "definition": "A Sybil Attack is a network security threat in which a single adversary creates a large number of pseudonymous identities to gain disproportionate influence over a peer-to-peer system. In blockchain and distributed ledger contexts it can subvert reputation systems, distort consensus voting, facilitate eclipse attacks, and undermine proof-of-stake weighting. Countermeasures include proof-of-work, stake-weighted voting, identity verification, and peer diversity requirements.",
-  "domain": "blockchain",
+  "domain": "security",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:network-attack",
+    "label": "Network Attack"
+  },
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
+      {"@id": "urn:ngm:class:routing-attack", "label": "Routing Attack"},
+      {"@id": "urn:ngm:class:denial-of-service", "label": "Denial of Service"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:pseudonymous-identity", "label": "Pseudonymous Identity"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:proof-of-identity", "label": "Proof of Identity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:fake-node", "label": "Fake Node"},
+      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
       {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"}
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:witch-attack", "label": "Witch Attack"},
+      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning-poisoning", "label": "Federated Learning Poisoning"},
+      {"@id": "urn:ngm:class:social-network-manipulation", "label": "Social Network Manipulation"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:identity-spoofing-attack", "label": "Identity Spoofing Attack"},
+    {"@id": "urn:ngm:class:multiple-identity-attack", "label": "Multiple Identity Attack"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

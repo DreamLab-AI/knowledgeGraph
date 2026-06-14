@@ -23,23 +23,64 @@ public:: true
   "definition": "Forward error correction (FEC) is a channel-coding technique in which redundant information is added to a transmitted data stream so that the receiver can detect and correct errors introduced by the channel without requesting retransmission. FEC codes trade bandwidth or storage overhead for improved reliability over noisy or lossy channels, eliminating the round-trip latency penalty of automatic repeat request (ARQ) schemes.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:channel-coding", "label": "Channel Coding"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:channel-coding", "label": "Channel Coding"},
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:reed-solomon-codes", "label": "Reed-Solomon Codes"},
-      {"@id": "urn:ngm:class:ldpc-codes", "label": "LDPC Codes"}
+      {"@id": "urn:ngm:class:ldpc-codes", "label": "LDPC Codes"},
+      {"@id": "urn:ngm:class:turbo-codes", "label": "Turbo Codes"},
+      {"@id": "urn:ngm:class:polar-codes", "label": "Polar Codes"},
+      {"@id": "urn:ngm:class:hamming-codes", "label": "Hamming Codes"},
+      {"@id": "urn:ngm:class:parity-check-matrix", "label": "Parity-Check Matrix"}
     ],
-    "relatedTo": [
+    "requires": [
       {"@id": "urn:ngm:class:data-redundancy", "label": "Data Redundancy"},
-      {"@id": "urn:ngm:class:packet-loss-recovery", "label": "Packet Loss Recovery"}
+      {"@id": "urn:ngm:class:channel-capacity", "label": "Channel Capacity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:packet-loss-recovery", "label": "Packet Loss Recovery"},
+      {"@id": "urn:ngm:class:reliable-data-transmission", "label": "Reliable Data Transmission"},
+      {"@id": "urn:ngm:class:real-time-media-streaming", "label": "Real-Time Media Streaming"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:shannon-information-theory", "label": "Shannon Information Theory"},
+      {"@id": "urn:ngm:class:algebraic-coding-theory", "label": "Algebraic Coding Theory"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:error-control-coding", "label": "Error Control Coding"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:soft-decision-decoding", "label": "Soft-Decision Decoding"},
+      {"@id": "urn:ngm:class:belief-propagation", "label": "Belief Propagation"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"},
+      {"@id": "urn:ngm:class:satellite-communications", "label": "Satellite Communications"},
+      {"@id": "urn:ngm:class:optical-networking", "label": "Optical Networking"},
+      {"@id": "urn:ngm:class:flash-storage", "label": "Flash Storage"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:automatic-repeat-request", "label": "Automatic Repeat Request"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:quantum-error-correction", "label": "Quantum Error Correction"},
+      {"@id": "urn:ngm:class:neural-network-decoding", "label": "Neural Network Decoding"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:5g-nr", "label": "5G NR"},
+      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}
     ]
   },
-  "quality": 0.85
+  "sameAs": [
+    {"@id": "urn:ngm:class:fec", "label": "FEC"},
+    {"@id": "urn:ngm:class:channel-error-correction", "label": "Channel Error Correction"}
+  ],
+  "quality": 0.85,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

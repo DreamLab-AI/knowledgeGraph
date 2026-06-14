@@ -85,35 +85,61 @@ public:: true
   "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs. Methods include permutation importance, SHAP (SHapley Additive exPlanations) values, and tree-based Gini impurity scores, each providing global or local views of feature influence that support model debugging, data selection, and regulatory explainability requirements.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:explainability",
-      "label": "Explainability"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:explainability",
+    "label": "Explainability"
+  },
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
-      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"}
+      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"},
+      {"@id": "urn:ngm:class:feature-selection", "label": "Feature Selection"},
+      {"@id": "urn:ngm:class:model-debugging", "label": "Model Debugging"},
+      {"@id": "urn:ngm:class:bias-detection", "label": "Bias Detection"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"}
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
+      {"@id": "urn:ngm:class:gradient-boosting", "label": "Gradient Boosting"},
+      {"@id": "urn:ngm:class:shapley-values", "label": "Shapley Values"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:permutation-importance", "label": "Permutation Importance"},
+      {"@id": "urn:ngm:class:feature-attribution", "label": "Feature Attribution"},
+      {"@id": "urn:ngm:class:partial-dependence-plot", "label": "Partial Dependence Plot"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:trained-model", "label": "Trained Model"},
+      {"@id": "urn:ngm:class:validation-dataset", "label": "Validation Dataset"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"},
+      {"@id": "urn:ngm:class:local-explanation", "label": "Local Explanation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:variable-importance", "label": "Variable Importance"},
+    {"@id": "urn:ngm:class:predictor-importance", "label": "Predictor Importance"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

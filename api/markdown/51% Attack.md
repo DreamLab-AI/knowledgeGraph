@@ -253,19 +253,30 @@ public:: true
   "definition": "A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulative work, broadcasts it to override confirmed history.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-protocol-and-consensus",
+    "label": "Protocol and Consensus"
+  },
   "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"},
+      {"@id": "urn:ngm:class:consensus-attack", "label": "Consensus Attack"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
+      {"@id": "urn:ngm:class:transaction-censorship", "label": "Transaction Censorship"},
+      {"@id": "urn:ngm:class:blockchain-reorganization", "label": "Blockchain Reorganization"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:mining-hardware", "label": "Mining Hardware"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
@@ -273,14 +284,25 @@ public:: true
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
+      {"@id": "urn:ngm:class:ethereum-classic", "label": "Ethereum Classic"},
+      {"@id": "urn:ngm:class:bitcoin-gold", "label": "Bitcoin Gold"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
+      {"@id": "urn:ngm:class:ai-energy-optimisation", "label": "AI Energy Optimisation"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:majority-attack", "label": "Majority Attack"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

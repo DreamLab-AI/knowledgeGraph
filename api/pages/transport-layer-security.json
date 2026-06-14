@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transport-layer-security",
   "domain": "security",
-  "definition": "A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.",
+  "definition": "A cryptographic protocol standardised by the IETF that provides mutual authentication, confidentiality and data integrity for communications over a computer network, succeeding the deprecated Secure Sockets Layer and currently at version 1.3 (RFC 8446).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-protocol",
@@ -13,18 +13,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      },
+      {
+        "id": "urn:ngm:class:cipher-suite",
+        "label": "Cipher Suite"
+      },
+      {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
       }
     ],
     "enables": [
@@ -35,17 +56,95 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:secure-sockets-layer",
+        "label": "Secure Sockets Layer"
+      },
+      {
+        "id": "urn:ngm:class:datagram-transport-layer-security",
+        "label": "Datagram Transport Layer Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:web3-security",
+        "label": "Web3 Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
+      },
+      {
+        "id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:rfc-8446",
+        "label": "RFC 8446"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      },
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
+    ]
   },
   "wikilinks": [
     {

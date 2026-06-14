@@ -25,23 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:digital-society", "label": "Digital Society"},
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:behavioral-surplus", "label": "Behavioral Surplus"},
+      {"@id": "urn:ngm:class:prediction-products", "label": "Prediction Products"},
+      {"@id": "urn:ngm:class:behavioral-futures-markets", "label": "Behavioral Futures Markets"}
     ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    "requires": [
+      {"@id": "urn:ngm:class:mass-data-collection", "label": "Mass Data Collection"},
+      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "enables": [
+      {"@id": "urn:ngm:class:targeted-advertising", "label": "Targeted Advertising"},
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "social media"}
+      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-broker", "label": "Data Broker"},
+      {"@id": "urn:ngm:class:third-party-cookies", "label": "Third-Party Cookies"},
+      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
+      {"@id": "urn:ngm:class:network-effects", "label": "Network Effects"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-society", "label": "Digital Society"},
+      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
+      {"@id": "urn:ngm:class:epistemic-asymmetry", "label": "Epistemic Asymmetry"},
+      {"@id": "urn:ngm:class:political-polarisation", "label": "Political Polarisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
+      {"@id": "urn:ngm:class:iot", "label": "IoT"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:behavioural-surveillance-economy", "label": "Behavioural Surveillance Economy"},
+    {"@id": "urn:ngm:class:data-driven-advertising-economy", "label": "Data-Driven Advertising Economy"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

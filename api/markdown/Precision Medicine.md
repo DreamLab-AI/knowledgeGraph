@@ -55,21 +55,29 @@ public:: true
   "@type": "Class",
   "label": "Precision Medicine",
   "definition": "Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic, proteomic, and clinical data to predict treatment response and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.",
-  "domain": "spatial-computing",
+  "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:medical-ai",
+    "label": "Medical AI"
+  },
+  "quality": 0.65,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
+      "@id": "urn:ngm:class:personalised-medicine",
+      "label": "Personalised Medicine"
+    },
+    {
+      "@id": "urn:ngm:class:stratified-medicine",
+      "label": "Stratified Medicine"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "requires": [
       {
@@ -79,12 +87,36 @@ public:: true
       {
         "@id": "urn:ngm:class:privacy-preserving-data-sharing",
         "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-data-infrastructure",
+        "label": "Clinical Data Infrastructure"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:drug-discovery-ai",
         "label": "Drug Discovery AI"
+      },
+      {
+        "@id": "urn:ngm:class:pharmacogenomics",
+        "label": "Pharmacogenomics"
+      },
+      {
+        "@id": "urn:ngm:class:biomarker-discovery",
+        "label": "Biomarker Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:patient-risk-stratification",
+        "label": "Patient Risk Stratification"
       }
     ],
     "uses": [
@@ -95,12 +127,64 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:population-health-management",
+        "label": "Population Health Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:evidence-based-medicine",
+        "label": "Evidence Based Medicine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:health-informatics",
+        "label": "Health Informatics"
       }
     ]
   }

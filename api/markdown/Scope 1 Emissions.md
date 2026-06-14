@@ -21,27 +21,69 @@ public:: true
   "@type": "Class",
   "label": "Scope 1 Emissions",
   "definition": "Scope 1 emissions are direct greenhouse gas (GHG) emissions from sources that are owned or controlled by a reporting organisation, as defined by the GHG Protocol Corporate Standard. They include combustion of fuels in owned vehicles, boilers, and furnaces; process emissions from chemical or physical reactions in production; and fugitive emissions from refrigerant leaks, methane from waste operations, and similar inadvertent releases. Scope 1 emissions are denominated in CO2-equivalent (CO2e) tonnes and represent the most controllable category of an organisation's carbon footprint.",
-  "domain": "infrastructure",
+  "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}],
+  "subClassOf": {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
       {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"},
       {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
-      {"@id": "urn:ngm:class:emission-factors", "label": "Emission Factors"}
+      {"@id": "urn:ngm:class:emission-factors", "label": "Emission Factors"},
+      {"@id": "urn:ngm:class:carbon-border-adjustment-mechanism", "label": "Carbon Border Adjustment Mechanism"},
+      {"@id": "urn:ngm:class:kyoto-protocol", "label": "Kyoto Protocol"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"}
+      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"},
+      {"@id": "urn:ngm:class:mass-balance-method", "label": "Mass Balance Method"},
+      {"@id": "urn:ngm:class:activity-data", "label": "Activity Data"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"}
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
+      {"@id": "urn:ngm:class:net-zero-target-setting", "label": "Net Zero Target Setting"},
+      {"@id": "urn:ngm:class:carbon-trading", "label": "Carbon Trading"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:corporate-carbon-footprint", "label": "Corporate Carbon Footprint"},
+      {"@id": "urn:ngm:class:ghg-inventory", "label": "GHG Inventory"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:stationary-combustion-emissions", "label": "Stationary Combustion Emissions"},
+      {"@id": "urn:ngm:class:mobile-combustion-emissions", "label": "Mobile Combustion Emissions"},
+      {"@id": "urn:ngm:class:process-emissions", "label": "Process Emissions"},
+      {"@id": "urn:ngm:class:fugitive-emissions", "label": "Fugitive Emissions"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ifrs-s2", "label": "IFRS S2"},
+      {"@id": "urn:ngm:class:corporate-sustainability-reporting-directive", "label": "Corporate Sustainability Reporting Directive"},
+      {"@id": "urn:ngm:class:iso-14064", "label": "ISO 14064"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
+      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:third-party-assurance", "label": "Third-Party Assurance"},
+      {"@id": "urn:ngm:class:operational-control-boundary", "label": "Operational Control Boundary"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:carbon-capture-utilisation-and-storage", "label": "Carbon Capture Utilisation and Storage"},
+      {"@id": "urn:ngm:class:supply-chain-decarbonisation", "label": "Supply Chain Decarbonisation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:direct-ghg-emissions", "label": "Direct GHG Emissions"},
+    {"@id": "urn:ngm:class:direct-emissions", "label": "Direct Emissions"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

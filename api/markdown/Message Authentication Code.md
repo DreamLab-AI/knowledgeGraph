@@ -23,22 +23,62 @@ public:: true
   "definition": "A Message Authentication Code (MAC) is a fixed-size cryptographic tag generated from an arbitrary-length message and a shared secret key using a keyed hash or block-cipher-based algorithm, providing simultaneous data integrity verification and authentication of the sender to any party holding the same secret key. Unlike digital signatures, MACs are symmetric and do not provide non-repudiation.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}],
+  "subClassOf": {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"}
+      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
+      {"@id": "urn:ngm:class:block-cipher", "label": "Block Cipher"},
+      {"@id": "urn:ngm:class:pseudorandom-function", "label": "Pseudorandom Function"},
+      {"@id": "urn:ngm:class:shared-secret-key", "label": "Shared Secret Key"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+    "requires": [
+      {"@id": "urn:ngm:class:symmetric-key", "label": "Symmetric Key"},
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
       {"@id": "urn:ngm:class:message-authentication", "label": "Message Authentication"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {"@id": "urn:ngm:class:authenticated-encryption", "label": "Authenticated Encryption"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:hmac", "label": "HMAC"},
+      {"@id": "urn:ngm:class:cmac", "label": "CMAC"},
+      {"@id": "urn:ngm:class:poly1305", "label": "Poly1305"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:tls", "label": "TLS"},
+      {"@id": "urn:ngm:class:ipsec", "label": "IPsec"},
+      {"@id": "urn:ngm:class:api-authentication", "label": "API Authentication"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist", "label": "NIST"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:iot-security", "label": "IoT Security"},
+      {"@id": "urn:ngm:class:distributed-systems-security", "label": "Distributed Systems Security"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:mac", "label": "MAC"},
+    {"@id": "urn:ngm:class:keyed-hash", "label": "Keyed Hash"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

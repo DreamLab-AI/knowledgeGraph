@@ -95,12 +95,10 @@ alias:: AIGovernance, AIGovernanceDomain
   "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence-domain",
+    "label": "Artificial Intelligence Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -122,6 +120,16 @@ alias:: AIGovernance, AIGovernanceDomain
       {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-domain",
+        "label": "Artificial Intelligence Domain"
       }
     ],
     "requires": [
@@ -150,14 +158,88 @@ alias:: AIGovernance, AIGovernanceDomain
       {
         "@id": "urn:ngm:class:stakeholder-trust",
         "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-policy",
+        "label": "Organisational Policy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-safety-domain",
+        "label": "AI Safety Domain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security-domain",
+        "label": "Security Domain"
+      },
+      {
+        "@id": "urn:ngm:class:standards-domain",
+        "label": "Standards Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:responsible-ai-governance",
+      "label": "Responsible AI Governance"
+    },
+    {
+      "@id": "urn:ngm:class:ai-management-system",
+      "label": "AI Management System"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

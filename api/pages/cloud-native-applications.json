@@ -28,9 +28,30 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:platform-service",
@@ -39,12 +60,43 @@
       {
         "id": "urn:ngm:class:industry-cloud-platforms",
         "label": "Industry Cloud Platforms"
+      },
+      {
+        "id": "urn:ngm:class:elastic-scaling",
+        "label": "Elastic Scaling"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:twelve-factor-app",
+        "label": "Twelve-Factor App"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:legacy-application",
+        "label": "Legacy Application"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-operations",
+        "label": "AIOps"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cloud-infrastructure",
@@ -57,10 +109,23 @@
       {
         "id": "urn:ngm:class:edge-cloud-collaboration",
         "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -70,6 +135,10 @@
       {
         "id": "urn:ngm:class:technology-infrastructure-domain-architecture",
         "label": "Infrastructure Architecture"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
       }
     ]
   },

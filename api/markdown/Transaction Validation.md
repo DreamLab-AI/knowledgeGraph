@@ -58,35 +58,165 @@ public:: true
   "@id": "urn:ngm:class:transaction-validation",
   "@type": "Class",
   "label": "Transaction Validation",
-  "definition": "Transaction validation is the process by which network participants check that a blockchain transaction conforms to the protocol rules before accepting it. It ensures only valid transactions enter the ledger.",
+  "definition": "Transaction validation is the process by which network participants check that a blockchain transaction conforms to the protocol rules before accepting it. It ensures only valid transactions enter the ledger by verifying signatures, input availability, and compliance with consensus rules.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:consensus",
-      "label": "Consensus"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:consensus",
+    "label": "Consensus"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "@id": "urn:ngm:class:bitcoin-network",
         "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-finality",
+        "label": "Blockchain Finality"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:signature-verification",
+        "label": "Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:script-execution",
+        "label": "Script Execution"
+      },
+      {
+        "@id": "urn:ngm:class:fee-validation",
+        "label": "Fee Validation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-rules",
+        "label": "Protocol Rules"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-ledger",
+        "label": "Decentralised Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-system",
+        "label": "Trustless System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-transaction-processing",
+        "label": "Centralised Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-ledger",
+        "label": "Permissioned Ledger"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-propagation",
+        "label": "Transaction Propagation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:transaction-verification",
+      "label": "Transaction Verification"
+    },
+    {
+      "@id": "urn:ngm:class:transaction-confirmation",
+      "label": "Transaction Confirmation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

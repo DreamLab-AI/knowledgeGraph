@@ -83,34 +83,68 @@ alias:: DecentralizedAutonomousOrganization
   "@id": "urn:ngm:class:decentralized-autonomous-organization",
   "@type": "Class",
   "label": "Decentralized Autonomous Organization",
-  "definition": "An organisational entity operating through Smart Contracts, Distributed Governance, and community voting mechanisms without centralised authority or hierarchical control.",
+  "definition": "An organisational entity operating through Smart Contracts, Distributed Governance, and community voting mechanisms without centralised authority or hierarchical control, enabling transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.",
   "domain": "blockchain",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    }
-  ],
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:cryptographic-wallet", "label": "Cryptographic Wallet"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:on-chain-voting", "label": "On-Chain Voting"},
+      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
+      {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
+      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
+      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:distributed-governance", "label": "Distributed Governance"},
+      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
+      {"@id": "urn:ngm:class:trustless-coordination", "label": "Trustless Coordination"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:stakeholder-democracy", "label": "Stakeholder Democracy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-corporation", "label": "Traditional Corporation"},
+      {"@id": "urn:ngm:class:centralized-governance", "label": "Centralized Governance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:web3", "label": "Web3"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:dao", "label": "DAO"},
+    {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

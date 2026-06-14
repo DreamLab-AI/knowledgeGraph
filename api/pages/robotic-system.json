@@ -4,12 +4,12 @@
   "slug": "robotic-system",
   "public": true,
   "classIri": "urn:ngm:class:robotic-system",
-  "domain": "distributed-collaboration",
+  "domain": "robotics",
   "definition": "An integrated assembly of mechanical, electronic, and computational subsystems \u2014 including actuators, sensors, a control architecture, and software \u2014 that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dc-telepresence",
-      "label": "Telepresence"
+      "id": "urn:ngm:class:cyber-physical-system",
+      "label": "Cyber-Physical System"
     }
   ],
   "entityType": "Class",
@@ -28,35 +28,117 @@
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:robot-controller",
+        "label": "Robot Controller"
+      },
+      {
+        "id": "urn:ngm:class:power-supply-unit",
+        "label": "Power Supply Unit"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
       {
         "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:localisation-and-mapping",
+        "label": "Localisation and Mapping"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "enables": [
       {
         "id": "urn:ngm:class:robotic-telepresence",
         "label": "Robotic Telepresence"
       },
       {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:mechatronics",
+        "label": "Mechatronics"
       }
     ]
   },

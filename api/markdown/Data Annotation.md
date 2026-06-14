@@ -62,32 +62,148 @@ public:: true
   "@id": "urn:ngm:class:data-annotation",
   "@type": "Class",
   "label": "Data Annotation",
-  "definition": "Data Annotation is a artificial intelligence concept and a type of Machine Learning Pipeline. that enables Training Data.",
-  "domain": "artificial-intelligence",
+  "definition": "Data Annotation is the process of labeling or tagging raw data (images, text, audio, video) with structured, meaningful labels that provide ground truth for supervised machine learning models, enabling algorithms to learn from human-validated examples.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
-      "label": "Machine Learning Pipeline"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-pipeline",
+    "label": "Machine Learning Pipeline"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:annotation-guidelines",
+        "label": "Annotation Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:raw-data",
+        "label": "Raw Data"
+      },
+      {
+        "@id": "urn:ngm:class:human-annotator",
+        "label": "Human Annotator"
+      },
+      {
+        "@id": "urn:ngm:class:label-taxonomy",
+        "label": "Label Taxonomy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      },
+      {
+        "@id": "urn:ngm:class:weak-supervision",
+        "label": "Weak Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:data-labeling",
+      "label": "Data Labeling"
+    },
+    {
+      "@id": "urn:ngm:class:ground-truth-generation",
+      "label": "Ground Truth Generation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

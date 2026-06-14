@@ -5,37 +5,139 @@
   "public": true,
   "classIri": "urn:ngm:class:precision",
   "domain": "artificial-intelligence",
-  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to...",
+  "definition": "A classification performance metric representing the proportion of positive predictions made by an artificial intelligence model that are actually correct, calculated as the ratio of true positives to all positive predictions (true positives plus false positives), measuring the model's ability to avoid false alarms and providing critical insight into prediction reliability, particularly important in applications where the cost or consequence of false positive errors is significant.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:classification-metric",
+      "label": "Classification Metric"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:false-positive-minimisation",
+        "label": "False Positive Minimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:performance-measurement",
+        "label": "Performance Measurement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
       }
     ]
   },

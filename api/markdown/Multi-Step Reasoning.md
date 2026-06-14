@@ -25,18 +25,58 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:problem-decomposition", "label": "Problem Decomposition"},
+      {"@id": "urn:ngm:class:intermediate-state-tracking", "label": "Intermediate State Tracking"},
+      {"@id": "urn:ngm:class:step-verification", "label": "Step Verification"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
+      {"@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"}
+      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
+      {"@id": "urn:ngm:class:tree-of-thought", "label": "Tree of Thought"},
+      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"}
+      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:complex-question-answering", "label": "Complex Question Answering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:single-step-inference", "label": "Single-Step Inference"},
+      {"@id": "urn:ngm:class:pattern-matching", "label": "Pattern Matching"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"}
+      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:planning", "label": "Planning"},
+      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
+      {"@id": "urn:ngm:class:knowledge-graph-inference", "label": "Knowledge Graph Inference"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:chained-reasoning", "label": "Chained Reasoning"},
+    {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

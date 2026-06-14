@@ -16,12 +16,38 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "label": "Industrial Automation"
       },
       {
         "id": "urn:ngm:class:digital-transformation",
@@ -30,30 +56,74 @@
       {
         "id": "urn:ngm:class:customer-service-automation",
         "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      },
+      {
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platform"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-workflow",
+        "label": "Manual Workflow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:software-development-process",
         "label": "Software Development Process"
       },
       {
-        "id": "urn:ngm:class:api-integration",
-        "label": "API Integration"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:agentic-workflow",
-        "label": "Agentic Workflow"
-      },
       {
         "id": "urn:ngm:class:manufacturing-automation",
         "label": "Manufacturing Automation"
@@ -61,6 +131,14 @@
       {
         "id": "urn:ngm:class:trade-finance-automation",
         "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:ngm:class:cicd-pipeline",
+        "label": "CI/CD Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
       }
     ]
   },

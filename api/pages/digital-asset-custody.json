@@ -13,19 +13,129 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:private-key-management",
+        "label": "Private Key Management"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      },
+      {
+        "id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:qualified-custodian-standard",
+        "label": "Qualified Custodian Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-segregation",
+        "label": "Asset Segregation"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -35,6 +145,14 @@
       {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:custody-risk",
+        "label": "Custody Risk"
+      },
+      {
+        "id": "urn:ngm:class:wallet-infrastructure",
+        "label": "Wallet Infrastructure"
       }
     ]
   },

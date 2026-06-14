@@ -16,8 +16,26 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor-transducer",
+        "label": "Sensor Transducer"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -26,24 +44,81 @@
       {
         "id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373 Robotics Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
       }
     ],
     "relatedTo": [
@@ -54,6 +129,14 @@
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
       }
     ]
   },

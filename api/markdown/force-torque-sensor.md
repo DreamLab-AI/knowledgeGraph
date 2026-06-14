@@ -9,9 +9,16 @@
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Robotics]], [[Sensor]]
-  - is-part-of:: [[Wrist Assembly]], [[Haptic Feedback System]]
-  - requires:: [[Signal Amplification]], [[Calibration]], [[Data Processing]]
-  - enables:: [[Soft Robotic Grasping]], [[Precision Assembly]], [[Impedance Control]]
+  - is-part-of:: [[Wrist Assembly]], [[Haptic Feedback System]], [[Robotic Arm]]
+  - requires:: [[Signal Amplification]], [[Calibration]], [[Data Processing]], [[Analog to Digital Converter]]
+  - enables:: [[Soft Robotic Grasping]], [[Precision Assembly]], [[Impedance Control]], [[Contact Detection]], [[Force Feedback]], [[Compliance Control]]
+  - depends-on:: [[Robot Wrist]], [[Real-Time Control System]]
+  - uses:: [[EtherCAT]], [[Sensor Fusion]]
+  - supports:: [[Human-Robot Interaction]], [[Collaborative Robotics]], [[Surgical Robotics]]
+  - standardized-by:: [[ISO 8373]]
+  - contrasts-with:: [[Tactile Sensor]], [[Proximity Sensor]]
+  - bridges-to:: [[Machine Learning]]
+  - related-to:: [[Inertial Measurement Unit]]
 
 - ### Content
   - ### Original Content

@@ -5,15 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:swarm-robotics",
   "domain": "robotics",
-  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and DecentralizedControl|decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating emergent system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
+      "id": "urn:ngm:class:multi-robot-system",
+      "label": "Multi-Robot System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -24,33 +24,119 @@
       {
         "id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
-      }
-    ],
-    "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:robot-learning",
-        "label": "Robot Learning"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+      },
       {
         "id": "urn:ngm:class:robot-sensor",
         "label": "Robot Sensor"
       },
       {
+        "id": "urn:ngm:class:inter-robot-communication",
+        "label": "Inter-Robot Communication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-control",
+        "label": "Decentralized Control"
+      },
+      {
+        "id": "urn:ngm:class:local-interaction-protocol",
+        "label": "Local Interaction Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-sensing",
+        "label": "Distributed Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue",
+        "label": "Search and Rescue"
+      },
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:self-organization",
+        "label": "Self-Organization"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bio-inspired-robotics",
+        "label": "Bio-Inspired Robotics"
+      },
+      {
+        "id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behavior"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-robot-control",
+        "label": "Centralized Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:single-robot-system",
+        "label": "Single Robot System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:stigmergy",
+        "label": "Stigmergy"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:particle-swarm-optimization",
+        "label": "Particle Swarm Optimization"
+      }
+    ]
   },
   "wikilinks": [
     {

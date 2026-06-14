@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cluster-membership",
+        "label": "Cluster Membership"
+      },
+      {
+        "id": "urn:ngm:class:failure-detector",
+        "label": "Failure Detector"
+      },
+      {
+        "id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-system",
@@ -30,12 +43,46 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "id": "urn:ngm:class:primary-backup-replication",
+        "label": "Primary-Backup Replication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bully-algorithm",
+        "label": "Bully Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ring-election",
+        "label": "Ring Election"
+      },
+      {
+        "id": "urn:ngm:class:leaderless-consensus",
+        "label": "Leaderless Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes-operator",
+        "label": "Kubernetes Operator"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:consensus-algorithm",
@@ -52,6 +99,14 @@
       {
         "id": "urn:ngm:class:paxos",
         "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:randomised-timeout",
+        "label": "Randomised Timeout"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
       }
     ],
     "supports": [],
@@ -65,6 +120,18 @@
       {
         "id": "urn:ngm:class:participant-coordination",
         "label": "Participant Coordination"
+      },
+      {
+        "id": "urn:ngm:class:split-brain",
+        "label": "Split Brain"
+      },
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:zookeeper",
+        "label": "ZooKeeper"
       }
     ]
   },

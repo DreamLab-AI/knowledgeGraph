@@ -118,16 +118,50 @@ public:: true
   "@id": "urn:ngm:class:confusion-matrix",
   "@type": "Class",
   "label": "Confusion Matrix",
-  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), e...",
-  "domain": "spatial-computing",
+  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.",
+  "domain": "machine-learning",
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "@id": "urn:ngm:class:true-negative",
+        "label": "True Negative"
+      },
+      {
+        "@id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      },
+      {
+        "@id": "urn:ngm:class:false-negative",
+        "label": "False Negative"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:classification-model",
+        "label": "Classification Model"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:error-analysis",
@@ -135,31 +169,113 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:fairness-assessment",
-        "label": "fairness assessment"
+        "label": "Fairness Assessment"
       },
       {
         "@id": "urn:ngm:class:model-debugging",
-        "label": "model debugging"
+        "label": "Model Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
       }
     ],
-    "relatedTo": [
+    "uses": [
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm",
-        "label": "spatial-computing"
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-25059",
+        "label": "ISO/IEC 25059"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "@id": "urn:ngm:class:aggregate-metric",
+        "label": "Aggregate Metric"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      },
+      {
+        "@id": "urn:ngm:class:model-card",
+        "label": "Model Card"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:error-matrix",
+      "label": "Error Matrix"
+    },
+    {
+      "@id": "urn:ngm:class:matching-matrix",
+      "label": "Matching Matrix"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:credential-issuer",
+        "label": "Credential Issuer"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-identity",
@@ -26,12 +39,51 @@
       {
         "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-credential-system",
+        "label": "Anonymous Credential System"
+      },
+      {
+        "id": "urn:ngm:class:unlinkable-authentication",
+        "label": "Unlinkable Authentication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:minimal-disclosure-principle",
+        "label": "Minimal Disclosure Principle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-proof",
@@ -40,15 +92,48 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof-zkp",
         "label": "Zero-Knowledge Proof (ZKP)"
+      },
+      {
+        "id": "urn:ngm:class:blind-signature",
+        "label": "Blind Signature"
+      },
+      {
+        "id": "urn:ngm:class:bbs-plus-signature",
+        "label": "BBS+ Signature"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:privacy-by-design",
-        "label": "Privacy By Design"
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:ietf-sd-jwt",
+        "label": "IETF SD-JWT"
+      },
+      {
+        "id": "urn:ngm:class:eidas-2",
+        "label": "eIDAS 2.0"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -56,12 +141,12 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:selective-disclosure",
-        "label": "Selective Disclosure"
-      },
-      {
         "id": "urn:ngm:class:privacy-preserving-identity",
         "label": "Privacy-Preserving Identity"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

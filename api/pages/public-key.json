@@ -4,46 +4,82 @@
   "slug": "public-key",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-graph-publication-classifier-key",
-  "domain": "blockchain",
-  "definition": "The publicly shareable component of an asymmetric key pair, derived from the private key via elliptic curve or RSA mathematics, used in blockchain systems to derive wallet addresses, verify digital signatures, and enable encrypted communication without transmitting secret material.",
+  "domain": "security",
+  "definition": "The publicly shareable component of an asymmetric key pair, derived from the private key via elliptic curve or RSA mathematics, used to derive wallet addresses, verify digital signatures, and enable encrypted communication without transmitting secret material.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-signature-verification",
         "label": "Digital Signature Verification"
       },
       {
-        "id": "urn:ngm:class:nft-ownership-proof",
-        "label": "NFT Ownership Proof"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:encrypted-communication",
+        "label": "Encrypted Communication"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:certificate-binding",
+        "label": "Certificate Binding"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      },
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-key",
+        "label": "Symmetric Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-wallet-address",
+        "label": "Blockchain Wallet Address"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
@@ -52,16 +88,42 @@
       {
         "id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "standardizedBy": [
       {
-        "id": "urn:ngm:class:private-key",
-        "label": "Private Key"
+        "id": "urn:ngm:class:nist-nistir",
+        "label": "NIST NISTIR"
       },
+      {
+        "id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO/IEC 23257:2021"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate-standard",
+        "label": "X.509 Certificate Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-key-pair",
+        "label": "Asymmetric Key Pair"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
@@ -71,12 +133,12 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
       }
     ]
   },

@@ -54,17 +54,33 @@ public:: true
   "@id": "urn:ngm:class:microsoft",
   "@type": "Class",
   "label": "Microsoft",
-  "definition": "Microsoft is a multinational technology company that produces operating systems, productivity software, cloud services and mixed reality hardware and platforms.",
+  "definition": "Microsoft is a multinational technology corporation that develops and distributes operating systems, enterprise productivity software, cloud computing services, artificial intelligence platforms, developer tools, and mixed-reality hardware; its Azure cloud, Windows OS, Office 365, GitHub, and HoloLens product lines make it a foundational infrastructure and AI provider across enterprise and consumer markets.",
   "domain": "infrastructure",
   "maturity": "established",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:standards-organization",
-      "label": "Standards Organization"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-systems",
+    "label": "Distributed Systems"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:azure",
+        "label": "Azure"
+      },
+      {
+        "@id": "urn:ngm:class:windows-operating-system",
+        "label": "Windows Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:github",
+        "label": "GitHub"
+      },
+      {
+        "@id": "urn:ngm:class:office-365",
+        "label": "Office 365"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:spatial-computing-paradigm",
@@ -73,14 +89,100 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-software",
+        "label": "Enterprise Software"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:openai",
+        "label": "OpenAI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:amazon-web-services",
+        "label": "Amazon Web Services"
+      },
+      {
+        "@id": "urn:ngm:class:google-cloud",
+        "label": "Google Cloud"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "@id": "urn:ngm:class:hololens",
+        "label": "HoloLens"
+      },
+      {
+        "@id": "urn:ngm:class:copilot",
+        "label": "Copilot"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:msft",
+      "label": "MSFT"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

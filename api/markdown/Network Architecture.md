@@ -54,22 +54,30 @@ public:: true
   "@id": "urn:ngm:class:network-architecture",
   "@type": "Class",
   "label": "Network Architecture",
-  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations.",
+  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations for accuracy, efficiency, and hardware constraints.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ],
-  "quality": 0.35,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-model-architecture",
+    "label": "AI Model Architecture"
+  },
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -79,12 +87,58 @@ public:: true
       {
         "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:skip-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "@id": "urn:ngm:class:normalisation-layer",
+        "label": "Normalisation Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning-system",
+        "label": "Deep Learning System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "implements": [
@@ -95,12 +149,60 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:model-weights",
-        "label": "Model Weights"
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ]
   }

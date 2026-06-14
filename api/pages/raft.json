@@ -4,7 +4,7 @@
   "slug": "raft",
   "public": true,
   "classIri": "urn:ngm:class:raft",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "definition": "Raft is a distributed consensus algorithm designed explicitly for understandability, introduced by Diego Ongaro and John Ousterhout at USENIX ATC 2014 as a more comprehensible alternative to the Paxos family of protocols. Raft decomposes the consensus problem into three relatively independent sub-problems: leader election, log replication, and safety. A Raft cluster maintains a replicated log of commands through a strong leader that serialises all writes; followers replicate the leader's log entries and redirect client requests. Leader election uses randomised timeouts to avoid split votes. Raft has become the dominant consensus algorithm in modern distributed systems infrastructure, underpinning etcd, CockroachDB, TiKV, Consul, and many other widely deployed systems.",
   "subClassOf": [
     {
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:majority-quorum",
+        "label": "Majority Quorum"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-system-architecture",
@@ -26,17 +35,55 @@
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerant-system",
+        "label": "Fault-Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:byzantine-fault-tolerant-system",
         "label": "Byzantine Fault Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:multi-paxos",
+        "label": "Multi-Paxos"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:data-replication",
@@ -45,9 +92,34 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:heartbeat-mechanism",
+        "label": "Heartbeat Mechanism"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "id": "urn:ngm:class:cockroachdb",
+        "label": "CockroachDB"
+      },
+      {
+        "id": "urn:ngm:class:consul",
+        "label": "Consul"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -62,6 +134,10 @@
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:replicated-state-machine",
+        "label": "Replicated State Machine"
       }
     ]
   },

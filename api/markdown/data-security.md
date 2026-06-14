@@ -8,10 +8,28 @@
 - ### Relationships
   - Requires [[Encryption]]
   - Requires [[Access Control]]
+  - Requires [[Authentication]]
+  - Requires [[Key Management]]
   - Supports [[Privacy]]
   - Supports [[Data Governance]]
+  - Supports [[Zero Trust Architecture]]
+  - enables:: [[Regulatory Compliance]]
+  - enables:: [[Data Integrity]]
+  - enables:: [[Audit Trail]]
+  - hasPart:: [[Data Loss Prevention]]
+  - hasPart:: [[Identity and Access Management]]
+  - hasPart:: [[Data Masking]]
+  - standardizedBy:: [[ISO 27001]]
+  - standardizedBy:: [[NIST Cybersecurity Framework]]
+  - standardizedBy:: [[GDPR]]
+  - contrastsWith:: [[Data Breach]]
+  - contrastsWith:: [[Open Data]]
+  - bridgesTo:: [[Blockchain]] (bc)
+  - bridgesTo:: [[Decentralised Identity]]
   - Related to [[Cybersecurity]]
   - Related to [[Information Security]]
+  - Related to [[Threat Modelling]]
+  - Related to [[Vulnerability Management]]
 
 - ### Content
 

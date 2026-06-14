@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gateway-smart-contract",
+        "label": "Gateway Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:axl-token",
+        "label": "AXL Token"
+      },
+      {
+        "id": "urn:ngm:class:interchain-token-service",
+        "label": "Interchain Token Service"
+      },
+      {
+        "id": "urn:ngm:class:squid-router",
+        "label": "Squid Router"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-chain-messaging",
@@ -26,26 +52,28 @@
       {
         "id": "urn:ngm:class:omnichain-application",
         "label": "Omnichain Application"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:proof-of-stake",
-        "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:cross-chain-dex-aggregation",
+        "label": "Cross-Chain DEX Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:wormhole",
         "label": "Wormhole"
@@ -55,8 +83,63 @@
         "label": "Chainlink CCIP"
       },
       {
+        "id": "urn:ngm:class:layerzero",
+        "label": "LayerZero"
+      }
+    ],
+    "bridgesTo": [
+      {
         "id": "urn:ngm:class:cosmos-ibc",
         "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:general-message-passing",
+        "label": "General Message Passing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:evm-chain",
+        "label": "EVM Chain"
+      },
+      {
+        "id": "urn:ngm:class:non-evm-chain",
+        "label": "Non-EVM Chain"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cosmos-ecosystem",
+        "label": "Cosmos Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-bridge",
+        "label": "Blockchain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "universal-design",
   "public": true,
   "classIri": "urn:ngm:class:universal-design",
-  "domain": "governance",
+  "domain": "standards",
   "definition": "Universal Design is the architectural, product, and communication design philosophy asserting that environments, systems, and products should be designed from the outset to be usable by all people \u2014 regardless of age, disability, or circumstance \u2014 to the greatest extent possible without the need for adaptation or specialised design. Codified by architect Ronald Mace at NC State University in the 1990s across seven principles (equitable use, flexibility, simple and intuitive use, perceptible information, tolerance for error, low physical effort, size and space for approach and use), Universal Design goes beyond legal accessibility compliance to treat inclusive design as a quality standard that benefits all users. It has been extended to digital products, extended reality experiences, and AI systems.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,7 +21,7 @@
     "enables": [
       {
         "id": "urn:ngm:class:inclusive-xr-experience",
-        "label": "Inclusive Xr Experience"
+        "label": "Inclusive XR Experience"
       },
       {
         "id": "urn:ngm:class:inclusive-participation",
@@ -30,12 +30,51 @@
       {
         "id": "urn:ngm:class:xr-accessibility-standards",
         "label": "XR Accessibility Standards"
+      },
+      {
+        "id": "urn:ngm:class:digital-equity",
+        "label": "Digital Equity"
+      },
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pour-framework",
+        "label": "POUR Framework"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      },
+      {
+        "id": "urn:ngm:class:specialised-design",
+        "label": "Specialised Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-ethics",
+        "label": "Artificial Intelligence Ethics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-interfaces",
+        "label": "Natural Language Interfaces"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -45,9 +84,34 @@
       {
         "id": "urn:ngm:class:product-design",
         "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:built-environment",
+        "label": "Built Environment"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:web-content-accessibility-guidelines",
+        "label": "Web Content Accessibility Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:un-convention-on-rights-of-persons-with-disabilities",
+        "label": "UN Convention on the Rights of Persons with Disabilities"
+      },
+      {
+        "id": "urn:ngm:class:eu-accessibility-act",
+        "label": "EU Accessibility Act"
+      },
+      {
+        "id": "urn:ngm:class:xr-accessibility-user-requirements",
+        "label": "XR Accessibility User Requirements"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +125,18 @@
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
       }
     ]
   },

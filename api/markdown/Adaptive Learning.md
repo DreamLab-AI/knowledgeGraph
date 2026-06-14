@@ -21,24 +21,66 @@ public:: true
   "@type": "Class",
   "label": "Adaptive Learning",
   "definition": "Adaptive learning is an educational methodology and technology paradigm in which instructional content, pacing, and assessment are dynamically tailored to each learner's demonstrated knowledge, learning style, and progress in real time. Computational systems analyse performance data to identify gaps and misconceptions, then serve personalised learning paths that optimise for mastery and engagement. The approach draws on psychometric theory, knowledge tracing algorithms, and machine learning to individualise instruction at scale.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:education-technology", "label": "Education Technology"}],
+  "subClassOf": {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"},
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"}
+      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
+      {"@id": "urn:ngm:class:bayesian-knowledge-tracing", "label": "Bayesian Knowledge Tracing"},
+      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
+      {"@id": "urn:ngm:class:spaced-repetition", "label": "Spaced Repetition"},
+      {"@id": "urn:ngm:class:recommender-system", "label": "Recommender System"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"}
+      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
+      {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
+      {"@id": "urn:ngm:class:formative-assessment", "label": "Formative Assessment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:learner-model", "label": "Learner Model"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:deep-knowledge-tracing", "label": "Deep Knowledge Tracing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:learner-data", "label": "Learner Data"},
+      {"@id": "urn:ngm:class:content-repository", "label": "Content Repository"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:differentiated-instruction", "label": "Differentiated Instruction"},
+      {"@id": "urn:ngm:class:self-regulated-learning", "label": "Self-Regulated Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:one-size-fits-all-instruction", "label": "One-Size-Fits-All Instruction"},
+      {"@id": "urn:ngm:class:traditional-classroom-instruction", "label": "Traditional Classroom Instruction"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:cognitive-load-theory", "label": "Cognitive Load Theory"},
+      {"@id": "urn:ngm:class:educational-data-mining", "label": "Educational Data Mining"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:adaptive-instruction", "label": "Adaptive Instruction"},
+    {"@id": "urn:ngm:class:intelligent-adaptive-learning", "label": "Intelligent Adaptive Learning"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

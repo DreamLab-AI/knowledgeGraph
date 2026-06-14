@@ -4,7 +4,7 @@
   "slug": "supply-chain-visibility",
   "public": true,
   "classIri": "urn:ngm:class:supply-chain-visibility",
-  "domain": "infrastructure",
+  "domain": "supply-chain",
   "definition": "Supply chain visibility is the capability to track, monitor, and share accurate, real-time information about the location, status, and condition of goods, components, and materials as they move through a supply network from raw material sourcing through production, distribution, and delivery to end customers. It requires integration of data from disparate logistics systems, IoT sensors, carrier APIs, and ERP platforms, and provides the situational awareness needed for proactive disruption management, regulatory compliance, and demand-driven inventory optimisation.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:erp-systems",
+        "label": "ERP Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:supply-chain-provenance",
@@ -30,12 +43,33 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:inventory-optimization",
+        "label": "Inventory Optimization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:supply-chain-traceability",
@@ -48,9 +82,38 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:gps-tracking",
+        "label": "GPS Tracking"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions-accounting",
+        "label": "Scope 3 Emissions Accounting"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -65,6 +128,10 @@
       {
         "id": "urn:ngm:class:supply-chain-blockchain",
         "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:control-tower",
+        "label": "Control Tower"
       }
     ]
   },

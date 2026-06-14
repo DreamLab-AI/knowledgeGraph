@@ -8,12 +8,12 @@
   "definition": "The Bitcoin Lightning Network is a layer-two payment protocol built on top of Bitcoin that enables fast, low-cost transactions through bidirectional payment channels. Two parties lock funds in a multisignature channel and exchange signed balance updates off-chain, settling the final state on the Bitcoin blockchain only when the channel closes. Payments can be routed across a network of connected channels, allowing transfers between parties that do not share a direct channel.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain-domain",
-      "label": "Blockchain Domain"
+      "id": "urn:ngm:class:layer-two-protocol",
+      "label": "Layer Two Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:htlc",
         "label": "HTLC"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
       }
     ],
     "requires": [
@@ -34,6 +42,14 @@
       {
         "id": "urn:ngm:class:multisignature",
         "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      },
+      {
+        "id": "urn:ngm:class:timelocked-transaction",
+        "label": "Timelocked Transaction"
       }
     ],
     "enables": [
@@ -44,17 +60,88 @@
       {
         "id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlement"
+      },
+      {
+        "id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:channel-liquidity",
+        "label": "Channel Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      },
+      {
+        "id": "urn:ngm:class:source-routing",
+        "label": "Source Routing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Base Layer"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-state-channels",
+        "label": "Ethereum State Channels"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:payment-systems-domain",
+        "label": "Payment Systems Domain"
+      },
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-ecosystem",
+        "label": "Bitcoin Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:watchtower-service",
+        "label": "Watchtower Service"
+      }
+    ]
   },
   "wikilinks": [
     {

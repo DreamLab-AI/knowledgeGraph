@@ -70,32 +70,154 @@ public:: true
   "@id": "urn:ngm:class:dimensionality-reduction",
   "@type": "Class",
   "label": "Dimensionality Reduction",
-  "definition": "Dimensionality Reduction is a artificial intelligence concept and a type of Unsupervised Learning. that enables Data Visualization.",
-  "domain": "artificial-intelligence",
+  "definition": "Dimensionality Reduction is the process of transforming high-dimensional data into a lower-dimensional representation while preserving important structural properties and relationships. It addresses the curse of dimensionality, reduces computational costs, enables visualization, removes noise, and improves model performance by eliminating redundant or irrelevant features.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:unsupervised-learning",
-      "label": "Unsupervised Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:t-sne",
+        "label": "t-SNE"
+      },
+      {
+        "@id": "urn:ngm:class:umap",
+        "label": "UMAP"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-decomposition",
+        "label": "Matrix Decomposition"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:data-visualization",
         "label": "Data Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:computational-efficiency",
+        "label": "Computational Efficiency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:curse-of-dimensionality",
+        "label": "Curse of Dimensionality"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-learning",
+        "label": "Statistical Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:feature-augmentation",
+        "label": "Feature Augmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:manifold-learning",
+        "label": "Manifold Learning"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:feature-reduction",
+      "label": "Feature Reduction"
+    },
+    {
+      "@id": "urn:ngm:class:dimension-reduction",
+      "label": "Dimension Reduction"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -43,22 +43,72 @@ public:: true
   "@type": "Class",
   "label": "Environmental Accounting",
   "definition": "A systematic framework for measuring, tracking, and reporting the environmental costs and impacts associated with economic activities, extending traditional financial accounting to incorporate natural capital, carbon emissions, resource consumption, and waste generation. Environmental accounting supports sustainability reporting, regulatory compliance, and circular economy transitions.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:sustainability-reporting",
+    "label": "Sustainability Reporting"
+  },
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "@id": "urn:ngm:class:natural-capital-accounting",
+      "label": "Natural Capital Accounting"
+    },
+    {
+      "@id": "urn:ngm:class:green-accounting",
+      "label": "Green Accounting"
+    },
+    {
+      "@id": "urn:ngm:class:environmental-management-accounting",
+      "label": "Environmental Management Accounting"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:natural-capital-valuation",
+        "label": "Natural Capital Valuation"
+      },
+      {
+        "@id": "urn:ngm:class:ecosystem-services-accounting",
+        "label": "Ecosystem Services Accounting"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:national-accounts",
+        "label": "National Accounts"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:environmental-sustainability",
@@ -66,13 +116,89 @@ public:: true
       },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
-        "label": "SustainabilityReporting"
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:financial-accounting",
+        "label": "Financial Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:seea-framework",
+        "label": "SEEA Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:environmental-impact-metric",
         "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:input-output-analysis",
+        "label": "Input-Output Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:un-seea",
+        "label": "UN System of Environmental-Economic Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd-framework",
+        "label": "TCFD Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-financial-accounting",
+        "label": "Traditional Financial Accounting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
       }
     ],
     "relatedTo": [
@@ -83,12 +209,14 @@ public:: true
       {
         "@id": "urn:ngm:class:waste-management",
         "label": "Waste Management"
-      }
-    ],
-    "supports": [
+      },
       {
-        "@id": "urn:ngm:class:circular-economy",
-        "label": "Circular Economy"
+        "@id": "urn:ngm:class:carbon-market",
+        "label": "Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:biodiversity-accounting",
+        "label": "Biodiversity Accounting"
       }
     ]
   }

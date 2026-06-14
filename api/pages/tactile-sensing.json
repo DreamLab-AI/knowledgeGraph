@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tactile-array",
+        "label": "Tactile Array"
+      },
+      {
+        "id": "urn:ngm:class:robotic-skin",
+        "label": "Robotic Skin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:manipulation",
@@ -30,12 +48,47 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:dexterous-grasping",
+        "label": "Dexterous Grasping"
+      },
+      {
+        "id": "urn:ngm:class:slip-detection",
+        "label": "Slip Detection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visual-perception",
+        "label": "Visual Perception"
+      },
+      {
+        "id": "urn:ngm:class:proximity-sensing",
+        "label": "Proximity Sensing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:force-torque-sensor",
@@ -46,21 +99,47 @@
         "label": "Pressure Sensor"
       },
       {
-        "id": "urn:ngm:class:proprioceptive-sensor",
-        "label": "Proprioceptive Sensor"
+        "id": "urn:ngm:class:piezoresistive-sensor",
+        "label": "Piezoresistive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:capacitive-sensor",
+        "label": "Capacitive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:optical-tactile-sensor",
+        "label": "Optical Tactile Sensor"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "supports": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:end-effector",
-        "label": "End Effector"
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation-system",
+        "label": "Robotic Manipulation System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:texture-recognition",
+        "label": "Texture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
       }
     ]
   },

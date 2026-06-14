@@ -46,28 +46,166 @@ public:: true
   "@id": "urn:ngm:class:enterprise-blockchain",
   "@type": "Class",
   "label": "Enterprise Blockchain",
-  "definition": "Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities.",
+  "definition": "Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities. Unlike public blockchains, enterprise solutions restrict network participation to authenticated entities, enabling secure data sharing, automated business processes through smart contracts, and maintenance of a single source of truth without reliance on central authorities.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-ledger-technology",
+    "label": "Distributed Ledger Technology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-network",
+        "label": "Permissioned Network"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-identity",
+        "label": "Cryptographic Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:business-process-automation",
         "label": "Business Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-organisational-data-sharing",
+        "label": "Cross-Organisational Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:corda",
+        "label": "Corda"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hyperledger-project",
+        "label": "Hyperledger Project"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain-as-a-Service"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:permissioned-blockchain",
+      "label": "Permissioned Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

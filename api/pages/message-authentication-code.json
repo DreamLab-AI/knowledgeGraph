@@ -13,21 +13,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
+    "requires": [
       {
-        "id": "urn:ngm:class:digital-signatures",
-        "label": "Digital Signatures"
+        "id": "urn:ngm:class:symmetric-key",
+        "label": "Symmetric Key"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       }
     ],
-    "bridgesTo": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "id": "urn:ngm:class:cmac",
+        "label": "CMAC"
+      },
+      {
+        "id": "urn:ngm:class:poly1305",
+        "label": "Poly1305"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-security",
+        "label": "IoT Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-function",
@@ -36,23 +84,57 @@
       {
         "id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:block-cipher",
+        "label": "Block Cipher"
+      },
+      {
+        "id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      },
+      {
+        "id": "urn:ngm:class:shared-secret-key",
+        "label": "Shared Secret Key"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "id": "urn:ngm:class:api-authentication",
+        "label": "API Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
-      },
-      {
-        "id": "urn:ngm:class:message-authentication",
-        "label": "Message Authentication"
-      },
-      {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },

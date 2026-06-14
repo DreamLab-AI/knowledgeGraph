@@ -23,24 +23,70 @@ public:: true
   "definition": "IEEE 802.15.4 is a low-rate wireless personal area network (LR-WPAN) standard that specifies the physical layer (PHY) and medium access control (MAC) sublayer for short-range, low-power, low-data-rate wireless communication, operating primarily in the 2.4 GHz ISM band at up to 250 kbps. It serves as the foundational radio layer for higher-level IoT protocols including Zigbee, Thread, WirelessHART, and 6LoWPAN, enabling battery-powered sensor and actuator networks with multi-year device lifetimes.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802.x"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802.x"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
+      {"@id": "urn:ngm:class:medium-access-control", "label": "Medium Access Control"},
+      {"@id": "urn:ngm:class:csma-ca", "label": "CSMA-CA"},
+      {"@id": "urn:ngm:class:ultra-wideband", "label": "Ultra-Wideband"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802.x"},
+      {"@id": "urn:ngm:class:low-rate-wpan", "label": "Low-Rate WPAN"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ism-band", "label": "ISM Band"},
+      {"@id": "urn:ngm:class:dsss-modulation", "label": "DSSS Modulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:wireless-sensor-network", "label": "Wireless Sensor Network"},
+      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
+      {"@id": "urn:ngm:class:real-time-location-system", "label": "Real-Time Location System"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:6lowpan", "label": "6LoWPAN"},
+      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
+      {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
+      {"@id": "urn:ngm:class:wireless-hart", "label": "WirelessHART"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
+      {"@id": "urn:ngm:class:smart-metering", "label": "Smart Metering"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
+      {"@id": "urn:ngm:class:iec-62591", "label": "IEC 62591"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ieee-802-11", "label": "IEEE 802.11"},
+      {"@id": "urn:ngm:class:bluetooth-mesh", "label": "Bluetooth Mesh"},
+      {"@id": "urn:ngm:class:ieee-802-15-1", "label": "IEEE 802.15.1"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-building", "label": "Smart Building"},
+      {"@id": "urn:ngm:class:precision-agriculture", "label": "Precision Agriculture"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
       {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
       {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
-      {"@id": "urn:ngm:class:wireless-hart", "label": "WirelessHART"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:ieee-802-11", "label": "IEEE 802.11"}
+      {"@id": "urn:ngm:class:wireless-hart", "label": "WirelessHART"},
+      {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:lr-wpan", "label": "LR-WPAN"},
+    {"@id": "urn:ngm:class:ieee-802-15-4-2020", "label": "IEEE 802.15.4-2020"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

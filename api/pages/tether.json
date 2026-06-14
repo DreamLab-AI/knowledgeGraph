@@ -4,16 +4,16 @@
   "slug": "tether",
   "public": true,
   "classIri": "urn:ngm:class:tether",
-  "domain": "blockchain",
+  "domain": "finance",
   "definition": "Tether is the issuer of USDT, the largest fiat-collateralised stablecoin by circulating supply, designed to maintain a value pegged to the United States dollar. Tokens are issued on numerous blockchains and are intended to be redeemable one-to-one for dollars, backed by reserves held by the issuer. Tether is widely used for trading, settlement and as a dollar proxy on exchanges, and its reserve composition and transparency have been subjects of regulatory scrutiny.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-domain",
-      "label": "Digital Asset Domain"
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,27 +25,122 @@
       {
         "id": "urn:ngm:class:reserve-backing",
         "label": "Reserve Backing"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:custodian",
+        "label": "Custodian"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
-      },
-      {
         "id": "urn:ngm:class:crypto-trading",
         "label": "Crypto Trading"
+      },
+      {
+        "id": "urn:ngm:class:dollar-settlement",
+        "label": "Dollar Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dollar-peg",
+        "label": "Dollar Peg"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:usd-coin",
+        "label": "USD Coin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:tron-blockchain",
+        "label": "Tron Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:market-liquidity",
+        "label": "Market Liquidity"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:money-market-fund",
+        "label": "Money Market Fund"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

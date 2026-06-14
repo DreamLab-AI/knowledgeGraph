@@ -70,38 +70,148 @@ public:: true
   "@id": "urn:ngm:class:light-client",
   "@type": "Class",
   "label": "Light Client",
-  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state.",
+  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:node",
-      "label": "Node"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:node",
+    "label": "Node"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:header-chain",
+        "label": "Header Chain"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-wallet",
+        "label": "Mobile Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-verification",
+        "label": "Trustless Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:spv-simplified-payment-verification",
+        "label": "SPV (Simplified Payment Verification)"
+      },
+      {
+        "@id": "urn:ngm:class:state-proof",
+        "label": "State Proof"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:archive-node",
+        "label": "Archive Node"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verkle-tree",
+        "label": "Verkle Tree"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:spv-client",
+      "label": "SPV Client"
+    },
+    {
+      "@id": "urn:ngm:class:thin-client",
+      "label": "Thin Client (Blockchain)"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

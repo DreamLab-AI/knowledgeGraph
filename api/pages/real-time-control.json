@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "id": "urn:ngm:class:deadline-scheduling",
+        "label": "Deadline Scheduling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-networking",
+        "label": "Deterministic Networking"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:robot-control",
@@ -30,12 +52,34 @@
       {
         "id": "urn:ngm:class:closed-loop-control",
         "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:pid-controller",
@@ -48,6 +92,14 @@
       {
         "id": "urn:ngm:class:latency",
         "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       }
     ],
     "supports": [],
@@ -65,6 +117,18 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "id": "urn:ngm:class:worst-case-execution-time",
+        "label": "Worst-Case Execution Time"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-handling",
+        "label": "Interrupt Handling"
       }
     ]
   },

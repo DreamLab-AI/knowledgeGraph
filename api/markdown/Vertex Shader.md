@@ -66,49 +66,133 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vertex-program",
+      "label": "Vertex Program"
+    },
+    {
+      "@id": "urn:ngm:class:vertex-processor",
+      "label": "Vertex Processor"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:pixel-shader",
         "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:displacement-mapping",
+        "label": "Displacement Mapping"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rasterization",
-        "label": "Rasterization"
+        "@id": "urn:ngm:class:gpu-programming",
+        "label": "GPU Programming"
+      },
+      {
+        "@id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "@id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-transformation",
+        "label": "Matrix Transformation"
       }
     ],
-    "relatedTo": [
+    "requires": [
+      {
+        "@id": "urn:ngm:class:vertex-buffer",
+        "label": "Vertex Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-view-projection-matrix",
+        "label": "Model-View-Projection Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-attribute",
+        "label": "Vertex Attribute"
+      }
+    ],
+    "contrastsWith": [
       {
         "@id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
       },
       {
-        "@id": "urn:ngm:class:visual-effects",
-        "label": "Visual Effects"
+        "@id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "@id": "urn:ngm:class:tessellation-shader",
+        "label": "Tessellation Shader"
       }
     ],
-    "partOf": [
+    "relatedTo": [
       {
-        "@id": "urn:ngm:class:shader",
-        "label": "Shader"
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ]
   }

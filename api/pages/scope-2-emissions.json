@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -26,12 +26,42 @@
       {
         "id": "urn:ngm:class:carbon-neutrality-verification",
         "label": "Carbon Neutrality Verification"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation-strategy",
+        "label": "Decarbonisation Strategy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:location-based-accounting",
+        "label": "Location-Based Accounting"
+      },
+      {
+        "id": "urn:ngm:class:market-based-accounting",
+        "label": "Market-Based Accounting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-centre-energy-efficiency",
+        "label": "Data Centre Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:24-7-carbon-free-energy",
+        "label": "24/7 Carbon-Free Energy"
+      },
+      {
+        "id": "urn:ngm:class:ai-sustainability",
+        "label": "AI Sustainability"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -45,10 +75,32 @@
       {
         "id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Reporting"
+      },
+      {
+        "id": "urn:ngm:class:power-purchase-agreement",
+        "label": "Power Purchase Agreement"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ghg-emissions-inventory",
+        "label": "GHG Emissions Inventory"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:scope-1-emissions",
@@ -65,6 +117,18 @@
       {
         "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-emission-factor",
+        "label": "Carbon Emission Factor"
+      },
+      {
+        "id": "urn:ngm:class:grid-electricity",
+        "label": "Grid Electricity"
+      },
+      {
+        "id": "urn:ngm:class:corporate-carbon-footprint",
+        "label": "Corporate Carbon Footprint"
       }
     ]
   },

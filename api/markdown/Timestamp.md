@@ -69,44 +69,69 @@ public:: true
   "definition": "A recorded value indicating the time of block creation in a blockchain system, embedded in each block header to establish chronological ordering of the chain and enable time-based protocol rules. Timestamps support difficulty adjustment, consensus validity checks, and provide an immutable audit trail for transaction ordering and data provenance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-data-structure",
+    "label": "DistributedDataStructure"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:block", "label": "Block"}
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:unix-time", "label": "Unix Time"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-time-protocol", "label": "Network Time Protocol"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
+      {"@id": "urn:ngm:class:chronological-ordering", "label": "Chronological Ordering"},
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {"@id": "urn:ngm:class:median-time-past", "label": "Median Time Past"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:time-locked-transaction", "label": "Time-Locked Transaction"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO/IEC 23257:2021"},
+      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:logical-clock", "label": "Logical Clock"},
+      {"@id": "urn:ngm:class:vector-clock", "label": "Vector Clock"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:trusted-timestamping", "label": "Trusted Timestamping"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:block-timestamp", "label": "Block Timestamp"},
+    {"@id": "urn:ngm:class:time-record", "label": "Time Record"}
+  ],
+  "quality": 0.75,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stereo-matching",
+        "label": "Stereo Matching"
+      },
+      {
+        "id": "urn:ngm:class:semi-global-matching",
+        "label": "Semi-Global Matching"
+      },
+      {
+        "id": "urn:ngm:class:cost-volume",
+        "label": "Cost Volume"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stereo-camera-rig",
+        "label": "Stereo Camera Rig"
+      },
+      {
+        "id": "urn:ngm:class:image-synchronisation",
+        "label": "Image Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:depth-estimation",
@@ -30,12 +56,51 @@
       {
         "id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "3D Scene Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-driver-assistance-systems",
+        "label": "Advanced Driver Assistance Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:camera-calibration",
@@ -48,9 +113,34 @@
       {
         "id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:image-rectification",
+        "label": "Image Rectification"
+      },
+      {
+        "id": "urn:ngm:class:disparity-map",
+        "label": "Disparity Map"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [

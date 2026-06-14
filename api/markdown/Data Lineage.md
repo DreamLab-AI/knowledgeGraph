@@ -25,12 +25,63 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Infrastructure Data Management"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:impact-analysis", "label": "Impact Analysis"},
+      {"@id": "urn:ngm:class:data-transformation-record", "label": "Data Transformation Record"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:data-governance-domain", "label": "Data Governance Domain"},
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:metadata-catalog", "label": "Metadata Catalog"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"},
+      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
+      {"@id": "urn:ngm:class:apache-atlas", "label": "Apache Atlas"},
+      {"@id": "urn:ngm:class:openlineage", "label": "OpenLineage"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openlineage", "label": "OpenLineage"},
+      {"@id": "urn:ngm:class:w3c-prov", "label": "W3C PROV"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
+      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-observability", "label": "Data Observability"},
+      {"@id": "urn:ngm:class:etl-process", "label": "ETL Process"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-provenance-tracking", "label": "Data Provenance Tracking"},
+    {"@id": "urn:ngm:class:data-flow-tracing", "label": "Data Flow Tracing"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

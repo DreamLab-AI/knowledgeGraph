@@ -16,8 +16,34 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "id": "urn:ngm:class:moveit-2",
+        "label": "MoveIt 2"
+      },
+      {
+        "id": "urn:ngm:class:ros2-control",
+        "label": "ros2_control"
+      },
+      {
+        "id": "urn:ngm:class:rviz2",
+        "label": "RViz 2"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dds-security",
+        "label": "DDS-Security"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-planning",
@@ -30,15 +56,49 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:robotics-middleware",
+        "label": "Robotics Middleware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ros-1",
+        "label": "ROS 1"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:middleware",
         "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ],
     "uses": [
@@ -49,9 +109,34 @@
       {
         "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:data-distribution-service",
+        "label": "Data Distribution Service"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:colcon",
+        "label": "Colcon"
+      },
+      {
+        "id": "urn:ngm:class:unified-robot-description-format",
+        "label": "Unified Robot Description Format"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -62,6 +147,14 @@
       {
         "id": "urn:ngm:class:simulation-software",
         "label": "Simulation Software"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "id": "urn:ngm:class:cyclone-dds",
+        "label": "Cyclone DDS"
       }
     ]
   },

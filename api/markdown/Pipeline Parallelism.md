@@ -54,35 +54,149 @@ public:: true
   "@id": "urn:ngm:class:pipeline-parallelism",
   "@type": "Class",
   "label": "Pipeline Parallelism",
-  "definition": "Pipeline parallelism splits a computation into ordered stages assigned to different processing units, so that distinct items occupy different stages at once and throughput rises once the pipeline is filled.",
-  "domain": "metaverse",
+  "definition": "Pipeline parallelism splits a computation into ordered stages assigned to different processing units, so that distinct items occupy different stages at once and throughput rises once the pipeline is filled. It is widely used to train large deep learning models across multiple devices by assigning successive layers or micro-batches to separate accelerators.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-computing",
+    "label": "Distributed Computing"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:inter-device-communication",
+        "label": "Inter-Device Communication"
+      },
+      {
+        "@id": "urn:ngm:class:micro-batch-scheduling",
+        "label": "Micro-Batch Scheduling"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:large-model-training",
+        "label": "Large Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:throughput-scaling",
+        "label": "Throughput Scaling"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:pipeline-stage",
+        "label": "Pipeline Stage"
+      },
+      {
+        "@id": "urn:ngm:class:bubble-overhead",
+        "label": "Bubble Overhead"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-interconnect",
+        "label": "High-Bandwidth Interconnect"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpipe-algorithm",
+        "label": "GPipe Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:activation-checkpointing",
+        "label": "Activation Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "@id": "urn:ngm:class:deepspeed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-pipelining",
+        "label": "Instruction Pipelining"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:inter-layer-model-parallelism",
+      "label": "Inter-Layer Model Parallelism"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

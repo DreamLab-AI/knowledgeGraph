@@ -49,19 +49,55 @@ public:: true
   "definition": "A Robot Joint is a mechanical articulation between two robot links that permits controlled relative motion — rotational, translational, or compound — enabling the full kinematic range of a robotic arm or manipulator. Joint types include revolute, prismatic, and spherical, each characterised by degrees of freedom and load capacity.",
   "domain": "robotics",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-actuation-and-control",
+    "label": "Actuation and Control"
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:robotic-articulation",
+      "label": "Robotic Articulation"
+    },
+    {
+      "@id": "urn:ngm:class:kinematic-joint",
+      "label": "Kinematic Joint"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:joint-encoder",
+        "label": "Joint Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:torque-sensor",
+        "label": "Torque Sensor"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-chain",
+        "label": "Kinematic Chain"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:control-system",
@@ -70,12 +106,78 @@ public:: true
       {
         "@id": "urn:ngm:class:robot-sensor",
         "label": "Robot Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector-positioning",
+        "label": "End-Effector Positioning"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:mechanical-design",
+        "label": "Mechanical Design"
+      },
+      {
+        "@id": "urn:ngm:class:bearing",
+        "label": "Bearing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rigid-link",
+        "label": "Rigid Link"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robot-continuum",
+        "label": "Soft Robot Continuum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
       }
     ],
     "relatedTo": [
@@ -84,14 +186,12 @@ public:: true
         "label": "Path Planning"
       },
       {
-        "@id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      }
-    ],
-    "partOf": [
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
       {
-        "@id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
       }
     ]
   }

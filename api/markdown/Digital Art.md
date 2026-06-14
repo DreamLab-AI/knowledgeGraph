@@ -24,27 +24,61 @@ alias:: DigitalArt
   "definition": "Digital art encompasses visual, interactive, and generative artworks created, stored, and distributed using digital technologies as primary medium or tool. It spans a wide range of practices—from pixel painting and vector illustration to algorithmically generated pieces, interactive installations, and AI-synthesised imagery. The form has been transformed by NFT infrastructure, which introduced scarcity and provenance guarantees to inherently copyable digital objects. Digital art sits at the intersection of technological capability and aesthetic intent, continuously expanding as new computational tools emerge.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"}],
+  "subClassOf": {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"}
+      {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:nft", "label": "NFT"},
       {"@id": "urn:ngm:class:digital-art-application", "label": "Digital Art Application"},
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"}
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:generative-art", "label": "Generative Art"},
+      {"@id": "urn:ngm:class:interactive-media", "label": "Interactive Media"},
+      {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+      {"@id": "urn:ngm:class:virtual-gallery", "label": "Virtual Gallery"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Agentic Metaverse for Global Creatives"}
+      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Agentic Metaverse for Global Creatives"},
+      {"@id": "urn:ngm:class:digital-cultural-heritage", "label": "Digital Cultural Heritage"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-art", "label": "Traditional Art"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:computer-art", "label": "Computer Art"},
+    {"@id": "urn:ngm:class:new-media-art", "label": "New Media Art"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

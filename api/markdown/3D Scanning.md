@@ -23,27 +23,59 @@ public:: true
   "definition": "3D Scanning is the process of capturing the three-dimensional shape, and optionally the colour and texture, of real-world objects, people, or environments using hardware such as structured-light scanners, time-of-flight LiDAR, photogrammetry rigs, or depth cameras, producing digital point clouds or meshes that represent the physical source. The resulting data feeds into digital preservation, reverse engineering, visual-effects production, quality inspection, and spatial computing pipelines. Accuracy, resolution, and scan volume are the primary quality axes that distinguish scanning technologies.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:scan-registration", "label": "Scan Registration"},
+      {"@id": "urn:ngm:class:mesh-generation", "label": "Mesh Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
+      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
       {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"}
+      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
+      {"@id": "urn:ngm:class:time-of-flight-sensor", "label": "Time-of-Flight Sensor"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:3-d-scene-reconstruction", "label": "3D Scene Reconstruction"},
       {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
+      {"@id": "urn:ngm:class:reverse-engineering", "label": "Reverse Engineering"},
+      {"@id": "urn:ngm:class:heritage-digitisation", "label": "Heritage Digitisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:building-information-modelling", "label": "Building Information Modelling"},
+      {"@id": "urn:ngm:class:quality-inspection", "label": "Quality Inspection"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
+      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:3-d-perception", "label": "3D Perception"}
+      {"@id": "urn:ngm:class:3-d-perception", "label": "3D Perception"},
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:3-d-digitisation", "label": "3D Digitisation"},
+    {"@id": "urn:ngm:class:3-d-capture", "label": "3D Capture"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

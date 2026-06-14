@@ -39,21 +39,29 @@ public:: true
   "@type": "Class",
   "label": "Resilience",
   "definition": "The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.",
-  "domain": "blockchain",
+  "domain": "infrastructure",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:system-property",
+    "label": "System Property"
+  },
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "@id": "urn:ngm:class:robustness",
+      "label": "Robustness"
+    }
+  ],
   "relations": {
     "requires": [
       {
@@ -63,22 +71,48 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:blockchain-scalability",
-        "label": "Blockchain Scalability"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:blockchain-governance",
-        "label": "Blockchain Governance"
       },
       {
-        "@id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
       }
     ],
     "supports": [
@@ -89,6 +123,48 @@ public:: true
       {
         "@id": "urn:ngm:class:data-security",
         "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:fragility",
+        "label": "Fragility"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:security-by-design",
+        "label": "Security by Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ]
   }

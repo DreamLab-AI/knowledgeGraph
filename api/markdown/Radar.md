@@ -58,39 +58,133 @@ public:: true
   "@id": "urn:ngm:class:radar",
   "@type": "Class",
   "label": "Radar",
-  "definition": "Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity and angle of objects, used in robotics and autonomous systems for reliable perception.",
+  "definition": "Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity, and angle of objects; it is used in robotics, autonomous vehicles, aviation, and defence for reliable perception under all weather and lighting conditions.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sensor",
-      "label": "Sensor"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sensor",
+    "label": "Sensor"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:signal-processing",
-        "label": "Signal Processing"
+        "@id": "urn:ngm:class:antenna-array",
+        "label": "Antenna Array"
+      },
+      {
+        "@id": "urn:ngm:class:transmitter",
+        "label": "Transmitter"
+      },
+      {
+        "@id": "urn:ngm:class:receiver",
+        "label": "Receiver"
       }
     ],
-    "enables": [
+    "partOf": [
       {
         "@id": "urn:ngm:class:perception-system",
         "label": "Perception System"
       },
       {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:radio-frequency-spectrum",
+        "label": "Radio Frequency Spectrum"
+      }
+    ],
+    "enables": [
+      {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:doppler-effect",
+        "label": "Doppler Effect"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight",
+        "label": "Time of Flight"
+      },
+      {
+        "@id": "urn:ngm:class:beamforming",
+        "label": "Beamforming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-802-11ad",
+        "label": "IEEE 802.11ad"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:air-traffic-control",
+        "label": "Air Traffic Control"
+      },
+      {
+        "@id": "urn:ngm:class:weather-sensing",
+        "label": "Weather Sensing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:electromagnetic-wave",
+        "label": "Electromagnetic Wave"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:radio-detection-and-ranging",
+      "label": "Radio Detection and Ranging"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -155,9 +249,15 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Sensor]]
-  - bridges-to:: [[Lidar]], [[Sensors]]
-  - requires:: [[Signal Processing]]
-  - enables:: [[Perception System]], [[Sensor Fusion]]
+  - bridges-to:: [[Lidar]], [[Sensors]], [[Air Traffic Control]], [[Weather Sensing]]
+  - requires:: [[Signal Processing]], [[Radio Frequency Spectrum]]
+  - enables:: [[Perception System]], [[Sensor Fusion]], [[Object Detection]], [[Simultaneous Localisation and Mapping]], [[Collision Avoidance]]
+  - hasPart:: [[Antenna Array]], [[Transmitter]], [[Receiver]]
+  - partOf:: [[Autonomous Vehicle]]
+  - uses:: [[Doppler Effect]], [[Time of Flight]], [[Beamforming]]
+  - contrastsWith:: [[Camera]], [[Ultrasonic Sensor]]
+  - relatedTo:: [[Electromagnetic Wave]], [[Point Cloud]]
+  - sameAs:: [[Radio Detection and Ranging]]
 
 - ### Content
   - Radar measures the time of flight and Doppler shift of reflected radio waves to estimate the distance and relative velocity of targets, and antenna arrays allow angular resolution. It performs reliably in poor visibility conditions such as fog, rain and darkness where optical sensors degrade.

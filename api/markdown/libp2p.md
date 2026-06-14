@@ -23,25 +23,66 @@ public:: true
   "definition": "libp2p is a modular network stack and peer-to-peer networking framework originally extracted from the IPFS project that enables developers to build decentralised applications with configurable transport, security, and protocol multiplexing layers. It abstracts over TCP, QUIC, WebSocket, and WebRTC transports, applies encryption via Noise Protocol or TLS 1.3, multiplexes streams with Yamux or mplex, and provides peer discovery, routing, and publish-subscribe messaging as composable modules. libp2p powers the peer layer of Ethereum 2.0, Filecoin, Polkadot, and hundreds of other decentralised systems, providing a battle-tested foundation for production-grade peer-to-peer networking.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}],
+  "subClassOf": {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:kademlia-dht", "label": "Kademlia DHT"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:gossipsub", "label": "GossipSub"},
+      {"@id": "urn:ngm:class:noise-protocol", "label": "Noise Protocol"},
+      {"@id": "urn:ngm:class:yamux", "label": "Yamux"}
+    ],
+    "partOf": [
       {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:transport-layer-protocol", "label": "Transport Layer Protocol"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
       {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"}
     ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:kademlia-dht", "label": "Kademlia DHT"},
+      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
+      {"@id": "urn:ngm:class:quic-protocol", "label": "QUIC Protocol"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:stream-multiplexing", "label": "Stream Multiplexing"},
+      {"@id": "urn:ngm:class:publish-subscribe-messaging", "label": "Publish-Subscribe Messaging"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:congestion-control", "label": "Congestion Control"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
+      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bittorrent-protocol", "label": "BitTorrent Protocol"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-agent-communication", "label": "AI Agent Communication"},
+      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
+      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:libp2p-networking-stack", "label": "libp2p Networking Stack"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

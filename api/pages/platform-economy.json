@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:two-sided-market",
+        "label": "Two-Sided Market"
+      },
+      {
+        "id": "urn:ngm:class:network-effect",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-marketplace",
@@ -30,12 +52,47 @@
       {
         "id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:gig-economy",
+        "label": "Gig Economy"
+      },
+      {
+        "id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-monetisation",
+        "label": "Data Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vertically-integrated-firm",
+        "label": "Vertically Integrated Firm"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-economy",
+        "label": "Tokenised Economy"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:platform-layer",
@@ -44,16 +101,24 @@
       {
         "id": "urn:ngm:class:platform-service",
         "label": "Platform Service"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:creator-monetization",
-        "label": "Creator Monetization"
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
       },
       {
         "id": "urn:ngm:class:marketplace-integration",
         "label": "Marketplace Integration"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       }
     ],
     "standardizedBy": [],
@@ -64,12 +129,12 @@
         "label": "Marketplace"
       },
       {
-        "id": "urn:ngm:class:creator-economy",
-        "label": "Creator Economy"
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
       },
       {
-        "id": "urn:ngm:class:platform-governance",
-        "label": "Platform Governance"
+        "id": "urn:ngm:class:antitrust-regulation",
+        "label": "Antitrust Regulation"
       }
     ]
   },

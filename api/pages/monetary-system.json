@@ -4,39 +4,126 @@
   "slug": "monetary-system",
   "public": true,
   "classIri": "urn:ngm:class:monetary-system",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:financial-system",
       "label": "Financial System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:cbdc",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:economic-exchange",
         "label": "Economic Exchange"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposit",
+        "label": "Tokenised Deposit"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -57,32 +57,68 @@ public:: true
   "definition": "Data Compression in AI encompasses techniques for reducing the size of datasets, models, and computational representations while preserving essential information and predictive performance. Key methods include model quantisation (reducing numerical precision of weights), pruning (removing redundant parameters), knowledge distillation (training compact student models from large teachers), and neural compression via autoencoders. These techniques are critical for deploying AI on resource-constrained edge devices and for reducing storage, bandwidth, and energy costs.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-technique",
+    "label": "AI Technique"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-encoding", "label": "Data Encoding"},
+    {"@id": "urn:ngm:class:source-coding", "label": "Source Coding"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:lossless-compression", "label": "Lossless Compression"},
+      {"@id": "urn:ngm:class:lossy-compression", "label": "Lossy Compression"},
+      {"@id": "urn:ngm:class:entropy-coding", "label": "Entropy Coding"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-optimisation", "label": "Model Optimisation"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
+      {"@id": "urn:ngm:class:huffman-coding", "label": "Huffman Coding"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
+      {"@id": "urn:ngm:class:sparse-representation", "label": "Sparse Representation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
+      {"@id": "urn:ngm:class:bandwidth-efficient-communication", "label": "Bandwidth-Efficient Communication"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rate-distortion-theory", "label": "Rate-Distortion Theory"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
+      {"@id": "urn:ngm:class:tinyml", "label": "TinyML"},
+      {"@id": "urn:ngm:class:efficient-inference", "label": "Efficient Inference"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:full-precision-model", "label": "Full-Precision Model"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
+      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
+      {"@id": "urn:ngm:class:weight-sharing", "label": "Weight Sharing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:network-bandwidth-management", "label": "Network Bandwidth Management"},
+      {"@id": "urn:ngm:class:storage-optimisation", "label": "Storage Optimisation"}
     ]
   }
 }

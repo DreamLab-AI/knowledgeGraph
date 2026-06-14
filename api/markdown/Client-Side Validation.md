@@ -34,19 +34,53 @@ alias:: client-side-validation
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
-      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"}
+      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"},
+      {"@id": "urn:ngm:class:contract-genesis", "label": "Contract Genesis"},
+      {"@id": "urn:ngm:class:state-transition", "label": "State Transition"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
+      {"@id": "urn:ngm:class:bitcoin-utxo", "label": "Bitcoin UTXO"},
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ownership-history", "label": "Ownership History"},
+      {"@id": "urn:ngm:class:seal-definition", "label": "Seal Definition"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
+      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:global-state-validation", "label": "Global State Validation"},
+      {"@id": "urn:ngm:class:server-side-validation", "label": "Server-Side Validation"},
+      {"@id": "urn:ngm:class:ethereum-smart-contracts", "label": "Ethereum Smart Contracts"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"},
+      {"@id": "urn:ngm:class:scalable-smart-contracts", "label": "Scalable Smart Contracts"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
       {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"},
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"}
+      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
+      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:constraint-validation-api", "label": "Constraint Validation API"},
+      {"@id": "urn:ngm:class:form-validation", "label": "Form Validation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:local-verification", "label": "Local Verification"},
+    {"@id": "urn:ngm:class:recipient-side-validation", "label": "Recipient-Side Validation"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -16,19 +16,58 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:behavioral-surplus",
+        "label": "Behavioral Surplus"
+      },
+      {
+        "id": "urn:ngm:class:prediction-products",
+        "label": "Prediction Products"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-futures-markets",
+        "label": "Behavioral Futures Markets"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mass-data-collection",
+        "label": "Mass Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "enables": [
+      {
+        "id": "urn:ngm:class:targeted-advertising",
+        "label": "Targeted Advertising"
+      },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
       {
         "id": "urn:ngm:class:social-media-platform-infrastructure",
-        "label": "social media"
+        "label": "Social Media"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -38,10 +77,36 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-broker",
+        "label": "Data Broker"
+      },
+      {
+        "id": "urn:ngm:class:third-party-cookies",
+        "label": "Third-Party Cookies"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:consent-management",
@@ -50,6 +115,10 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
       }
     ],
     "standardizedBy": [],
@@ -64,8 +133,12 @@
         "label": "Digital Society Surveillance"
       },
       {
-        "id": "urn:ngm:class:behavioral-analytics",
-        "label": "Behavioral Analytics"
+        "id": "urn:ngm:class:epistemic-asymmetry",
+        "label": "Epistemic Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:political-polarisation",
+        "label": "Political Polarisation"
       }
     ]
   },

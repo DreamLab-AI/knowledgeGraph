@@ -103,19 +103,13 @@ alias:: TELE-006-presence
   "@id": "urn:ngm:class:presence",
   "@type": "Class",
   "label": "Presence",
-  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
+  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence as a unified phenomenological response to immersive sensory stimulation.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:immersive-experience",
-      "label": "Immersive Experience"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:immersive-experience",
+    "label": "Immersive Experience"
+  },
   "relations": {
     "hasPart": [
       {
@@ -131,6 +125,16 @@ alias:: TELE-006-presence
         "label": "Spatial Presence"
       }
     ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:haptic-device",
@@ -143,6 +147,10 @@ alias:: TELE-006-presence
       {
         "@id": "urn:ngm:class:visual-display",
         "label": "Visual Display"
+      },
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
       }
     ],
     "enables": [
@@ -157,20 +165,96 @@ alias:: TELE-006-presence
       {
         "@id": "urn:ngm:class:social-connection",
         "label": "Social Connection"
+      },
+      {
+        "@id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
       }
     ],
-    "partOf": [
+    "dependsOn": [
       {
-        "@id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:frame-rate",
+        "label": "Frame Rate"
+      },
+      {
+        "@id": "urn:ngm:class:field-of-view",
+        "label": "Field of View"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interaction-domain",
+        "label": "Interaction Domain"
+      },
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:cybersickness",
+        "label": "Cybersickness"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "@id": "urn:ngm:class:situation-awareness",
+        "label": "Situation Awareness"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-vr",
+        "label": "IEEE VR"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:virtual-presence",
+      "label": "Virtual Presence"
+    },
+    {
+      "@id": "urn:ngm:class:sense-of-presence",
+      "label": "Sense of Presence"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

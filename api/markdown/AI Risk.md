@@ -110,37 +110,153 @@ public:: true
   "@id": "urn:ngm:class:ai-risk",
   "@type": "Class",
   "label": "AI Risk",
-  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation.",
+  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation. AI risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:risk-management",
-      "label": "Risk Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:risk-management",
+    "label": "Risk Management"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:technical-risk",
+        "label": "Technical Risk"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:ai-risk-assessment",
         "label": "AI Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO/IEC 23894"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-alignment",
+        "label": "Model Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ]
   },
-  "quality": 0.5,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-risk",
+      "label": "Artificial Intelligence Risk"
     }
   ]
 }

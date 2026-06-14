@@ -4,7 +4,7 @@
   "slug": "multimodal-learning",
   "public": true,
   "classIri": "urn:ngm:class:multimodal-ai-architecture-learning",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "Multimodal learning is a sub-field of machine learning concerned with building models that can process, align, and reason over data from two or more sensory modalities \u2014 such as text, images, audio, video, and structured data \u2014 within a unified representation space. Models trained multimodally acquire richer, grounded representations than unimodal counterparts by exploiting cross-modal correlations and complementarity.",
   "subClassOf": [
     {
@@ -16,22 +16,99 @@
   "qualityScore": 0.85,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:modality-specific-encoder",
+        "label": "Modality-Specific Encoder"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention-fusion",
+        "label": "Cross-Attention Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:paired-multimodal-dataset",
+        "label": "Paired Multimodal Dataset"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:vision-language-action-models",
         "label": "Vision-Language-Action Models"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-transfer",
+        "label": "Zero-Shot Transfer"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Models"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:unimodal-learning",
+        "label": "Unimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space-alignment",
+        "label": "Embedding Space Alignment"
       }
     ],
     "supports": [],
@@ -39,16 +116,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:cross-modal-conditioning",
-        "label": "Cross-Modal Conditioning"
+        "id": "urn:ngm:class:grounding",
+        "label": "Grounding"
       },
       {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },

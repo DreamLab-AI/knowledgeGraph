@@ -53,29 +53,141 @@ public:: true
   "definition": "Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:educational-technology",
-      "label": "Educational Technology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:educational-technology",
+    "label": "Educational Technology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-training",
+        "label": "Virtual Reality Training"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-education",
+        "label": "Augmented Reality Education"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-based-learning",
+        "label": "Simulation-Based Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:experiential-education",
         "label": "Experiential Education"
+      },
+      {
+        "@id": "urn:ngm:class:skill-development",
+        "label": "Skill Development"
+      },
+      {
+        "@id": "urn:ngm:class:presence-based-engagement",
+        "label": "Presence-Based Engagement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:3d-environment-authoring",
+        "label": "3D Environment Authoring"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:medical-training",
+        "label": "Medical Training"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-training",
+        "label": "Corporate Training"
+      },
+      {
+        "@id": "urn:ngm:class:professional-development",
+        "label": "Professional Development"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:e-learning",
+        "label": "E-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:classroom-instruction",
+        "label": "Classroom Instruction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-tutoring",
+        "label": "Artificial Intelligence Tutoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-load-theory",
+        "label": "Cognitive Load Theory"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vr-based-learning",
+      "label": "VR-Based Learning"
+    },
+    {
+      "@id": "urn:ngm:class:xr-education",
+      "label": "XR Education"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

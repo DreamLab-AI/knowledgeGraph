@@ -98,12 +98,10 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence-domain",
+    "label": "Artificial Intelligence Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -125,6 +123,10 @@ public:: true
       {
         "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
+      },
+      {
+        "@id": "urn:ngm:class:frame-representation",
+        "label": "Frame Representation"
       }
     ],
     "requires": [
@@ -139,6 +141,10 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-methods-domain",
         "label": "Formal Methods Domain"
+      },
+      {
+        "@id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
       }
     ],
     "enables": [
@@ -153,14 +159,90 @@ public:: true
       {
         "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-theory",
+        "label": "Model Theory"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:web-ontology-language",
+        "label": "Web Ontology Language"
+      },
+      {
+        "@id": "urn:ngm:class:resource-description-framework",
+        "label": "Resource Description Framework"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing-domain",
+        "label": "Natural Language Processing Domain"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-systems-domain",
+        "label": "Agentic Systems Domain"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval-domain",
+        "label": "Information Retrieval Domain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:machine-learning-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "@id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:knowledge-engineering",
+      "label": "Knowledge Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -75,19 +75,13 @@ alias:: DigitalCertificate
   "@id": "urn:ngm:class:digital-certificate",
   "@type": "Class",
   "label": "Digital Certificate",
-  "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.",
-  "domain": "spatial-computing",
+  "definition": "A cryptographic credential issued by a Certificate Authority that binds a public key to an identified entity, authenticates users, and secures transactions across networks, metaverse platforms, and blockchain systems through public key infrastructure and verifiable attestations.",
+  "domain": "security",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    },
-    {
-      "@id": "urn:ngm:class:digital-security",
-      "label": "Digital Security"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-security",
+    "label": "Digital Security"
+  },
   "relations": {
     "requires": [
       {
@@ -99,8 +93,12 @@ alias:: DigitalCertificate
         "label": "Cryptographic Keys"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "@id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -115,14 +113,120 @@ alias:: DigitalCertificate
       {
         "@id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:x509-standard",
+        "label": "X.509 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:tls-protocol",
+        "label": "TLS Protocol"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ssl-tls",
+        "label": "SSL/TLS"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:email-encryption",
+        "label": "Email Encryption"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-web-standards",
+        "label": "W3C Web Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-signed-certificate",
+        "label": "Self-Signed Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:x509-certificate",
+      "label": "X.509 Certificate"
+    },
+    {
+      "@id": "urn:ngm:class:public-key-certificate",
+      "label": "Public Key Certificate"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

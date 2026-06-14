@@ -28,22 +28,64 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:authentication-service", "label": "Authentication Service"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
+      {"@id": "urn:ngm:class:developer-portal", "label": "Developer Portal"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cloud-native-architecture", "label": "Cloud-Native Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"},
+      {"@id": "urn:ngm:class:tls-ssl", "label": "TLS/SSL"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
+      {"@id": "urn:ngm:class:api-monetisation", "label": "API Monetisation"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+    "dependsOn": [
+      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"},
+      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero-Trust Security"},
+      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-ql", "label": "GraphQL"}
+      {"@id": "urn:ngm:class:graph-ql", "label": "GraphQL"},
+      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
+      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
+      {"@id": "urn:ngm:class:api-versioning", "label": "API Versioning"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
+      {"@id": "urn:ngm:class:openapi-initiative", "label": "OpenAPI Initiative"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
+      {"@id": "urn:ngm:class:enterprise-service-bus", "label": "Enterprise Service Bus"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:llm-gateway", "label": "LLM Gateway"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:api-lifecycle-management", "label": "API Lifecycle Management"},
+    {"@id": "urn:ngm:class:api-governance", "label": "API Governance"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

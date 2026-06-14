@@ -23,24 +23,72 @@ public:: true
   "definition": "A Neural Processing Unit (NPU) is a specialised integrated circuit designed to accelerate neural network inference workloads by providing high-throughput, energy-efficient execution of the matrix multiplication and convolution operations that dominate deep learning computation. NPUs are integrated into mobile SoCs, personal computers, and edge devices to enable on-device AI inference without reliance on cloud compute, targeting performance-per-watt objectives unachievable by general-purpose CPUs or GPUs for these workloads.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}],
+  "subClassOf": {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:systolic-array", "label": "Systolic Array"},
+      {"@id": "urn:ngm:class:on-chip-sram", "label": "On-Chip SRAM"},
+      {"@id": "urn:ngm:class:multiply-accumulate-unit", "label": "Multiply-Accumulate Unit"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"},
+      {"@id": "urn:ngm:class:mobile-soc", "label": "Mobile SoC"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
+      {"@id": "urn:ngm:class:neural-network-model", "label": "Neural Network Model"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
       {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"}
+      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"},
+      {"@id": "urn:ngm:class:private-ai-inference", "label": "Private AI Inference"},
+      {"@id": "urn:ngm:class:on-device-llm", "label": "On-Device LLM"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:memory-bandwidth", "label": "Memory Bandwidth"},
+      {"@id": "urn:ngm:class:semiconductor-fabrication", "label": "Semiconductor Fabrication"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
+      {"@id": "urn:ngm:class:tensor-computation", "label": "Tensor Computation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:int8-quantisation", "label": "INT8 Quantisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:central-processing-unit", "label": "Central Processing Unit"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:npu", "label": "NPU"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {"@id": "urn:ngm:class:apple-neural-engine", "label": "Apple Neural Engine"},
+      {"@id": "urn:ngm:class:copilot-plus-pc", "label": "Copilot+ PC"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:npu", "label": "NPU"},
+    {"@id": "urn:ngm:class:neural-engine", "label": "Neural Engine"},
+    {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

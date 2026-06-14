@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:api",
   "domain": "infrastructure",
-  "definition": "An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.",
+  "definition": "An Application Programming Interface: a defined set of operations, inputs, and outputs through which software components or services communicate without exposing their internal implementation, enabling modular composition and system integration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-engineering",
@@ -13,31 +13,126 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:endpoint",
+        "label": "Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:api-schema",
+        "label": "API Schema"
+      },
+      {
+        "id": "urn:ngm:class:versioning",
+        "label": "Versioning"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:communication-protocols",
         "label": "Communication Protocols"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:service-integration",
+        "label": "Service Integration"
+      },
+      {
+        "id": "urn:ngm:class:third-party-extensions",
+        "label": "Third-Party Extensions"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sdk",
+        "label": "SDK"
+      },
+      {
+        "id": "urn:ngm:class:abi",
+        "label": "ABI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standards",
+        "label": "Interoperability Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
+    ]
   },
   "wikilinks": [
     {

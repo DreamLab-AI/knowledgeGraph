@@ -54,17 +54,35 @@ public:: true
   "@id": "urn:ngm:class:self-regulation",
   "@type": "Class",
   "label": "Self-Regulation",
-  "definition": "An arrangement in which an industry or professional community sets and enforces its own rules of conduct, typically through codes of practice and member oversight rather than direct state legislation.",
+  "definition": "An arrangement in which an industry or professional community sets and enforces its own rules of conduct, typically through codes of practice, member oversight, and industry-led standards rather than direct state legislation; effectiveness depends on incentive alignment, credible enforcement, and public accountability.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:governance-framework",
+    "label": "Governance Framework"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:code-of-conduct",
+        "label": "Code of Conduct"
+      },
+      {
+        "@id": "urn:ngm:class:industry-standard",
+        "label": "Industry Standard"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:regulatory-ecosystem",
+        "label": "Regulatory Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:accountability",
@@ -73,20 +91,118 @@ public:: true
       {
         "@id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:transparency",
-        "label": "Transparency"
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:industry-coordination",
+        "label": "Industry Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trade-association",
+        "label": "Trade Association"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:peer-oversight",
+        "label": "Peer Oversight"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:statutory-regulation",
+        "label": "Statutory Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:command-and-control-regulation",
+        "label": "Command-and-Control Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ethics-framework",
+        "label": "Ethics Framework"
+      },
+      {
+        "@id": "urn:ngm:class:professional-standards",
+        "label": "Professional Standards"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:industry-self-governance",
+      "label": "Industry Self-Governance"
+    },
+    {
+      "@id": "urn:ngm:class:voluntary-regulation",
+      "label": "Voluntary Regulation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

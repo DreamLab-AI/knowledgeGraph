@@ -4,64 +4,127 @@
   "slug": "network-latency",
   "public": true,
   "classIri": "urn:ngm:class:network-latency",
-  "domain": "blockchain",
-  "definition": "Network Latency is the round-trip communication delay between nodes in a blockchain network, directly constraining consensus speed, block propagation, and transaction throughput. High latency increases the probability of forks, degrades user experience in real-time applications, and sets a fundamental lower bound on block time in geographically distributed deployments.",
+  "domain": "infrastructure",
+  "definition": "Network Latency is the round-trip communication delay between nodes in a network, directly constraining consensus speed, block propagation, transaction throughput, real-time application responsiveness, and distributed system coordination. High latency increases the probability of forks in blockchain systems, degrades user experience in interactive applications, and sets a fundamental lower bound on achievable synchronisation intervals in geographically distributed deployments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "id": "urn:ngm:class:queuing-delay",
+        "label": "Queuing Delay"
+      },
+      {
+        "id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management Protocol"
-      }
-    ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
-      }
-    ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:block-propagation-time",
-        "label": "Block Propagation Time"
       },
       {
-        "id": "urn:ngm:class:blockchain-scalability",
-        "label": "Blockchain Scalability"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:distributed-coordination",
+        "label": "Distributed Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physical-distance",
+        "label": "Physical Distance"
       },
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-rendering",
+        "label": "Spatial Computing Rendering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      },
+      {
+        "id": "urn:ngm:class:ping",
+        "label": "Ping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:block-propagation-time",
+        "label": "Block Propagation Time"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-performance",
+        "label": "Network Performance"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"

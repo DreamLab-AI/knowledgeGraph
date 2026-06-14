@@ -58,31 +58,153 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:rollup",
-      "label": "Rollup"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:rollup",
+    "label": "Rollup"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-period",
+        "label": "Challenge Period"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:base-layer",
+        "label": "Base Layer"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:optimistic-execution",
+        "label": "Optimistic Execution"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:calldata",
+        "label": "Calldata"
+      },
+      {
+        "@id": "urn:ngm:class:state-root",
+        "label": "State Root"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:base-chain",
+        "label": "Base Chain"
+      },
+      {
+        "@id": "urn:ngm:class:withdrawal-delay",
+        "label": "Withdrawal Delay"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:optimistic-rollup-protocol",
+      "label": "Optimistic Rollup Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

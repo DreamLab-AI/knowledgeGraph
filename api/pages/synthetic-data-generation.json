@@ -4,20 +4,29 @@
   "slug": "synthetic-data-generation",
   "public": true,
   "classIri": "urn:ngm:class:synthetic-data-generation",
-  "domain": "artificial-intelligence",
+  "domain": "ai",
   "definition": "Synthetic Data Generation is the process of algorithmically producing artificial datasets that statistically mirror real-world distributions without exposing sensitive personal information. Techniques include generative adversarial networks, diffusion models, physics simulation, and rule-based sampling, enabling model training where real data is scarce, private, or costly to label.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
+      "id": "urn:ngm:class:data-engineering",
+      "label": "Data Engineering"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:seed-dataset",
+        "label": "Seed Dataset"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -30,12 +39,47 @@
       {
         "id": "urn:ngm:class:embodied-ai-simulation",
         "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:compute-cluster",
+        "label": "Compute Cluster"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:real-world-data-collection",
+        "label": "Real-World Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:generative-model",
@@ -56,9 +100,26 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:rare-event-modelling",
+        "label": "Rare Event Modelling"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -73,6 +134,10 @@
       {
         "id": "urn:ngm:class:deep-generative-model",
         "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },

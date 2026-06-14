@@ -45,15 +45,19 @@ public:: true
   "definition": "3D Animation is the discipline of creating motion in three-dimensional digital environments using techniques such as keyframe animation, motion capture, and procedural simulation. It underpins character movement, environmental dynamics, and cinematic sequences in spatial computing platforms, game engines, and metaverse applications.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:animation-technique",
+    "label": "Animation Technique"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "@id": "urn:ngm:class:computer-animation",
+      "label": "Computer Animation"
     },
     {
-      "@id": "urn:ngm:class:animation-technique",
-      "label": "Animation Technique"
+      "@id": "urn:ngm:class:cgi-animation",
+      "label": "CGI Animation"
     }
   ],
   "provenance": {
@@ -62,6 +66,34 @@ public:: true
     "inferenceRule": "R5DomainRootFallback"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-rigging",
+        "label": "Skeletal Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      },
+      {
+        "@id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sc-content-and-assets",
+        "label": "Content and Assets"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects-pipeline",
+        "label": "Visual Effects Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:game-engine",
@@ -70,12 +102,34 @@ public:: true
       {
         "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modelling",
+        "label": "3D Modelling"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-avatar",
+        "label": "Virtual Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
       }
     ],
     "uses": [
@@ -90,12 +144,64 @@ public:: true
       {
         "@id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gltf-specification",
+        "label": "glTF Specification"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1-sc-24",
+        "label": "ISO/IEC JTC 1/SC 24"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:2-d-animation",
+        "label": "2D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:stop-motion-animation",
+        "label": "Stop Motion Animation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
       }
     ]
   }

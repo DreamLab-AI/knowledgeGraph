@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "id": "urn:ngm:class:apple-r1-chip",
+        "label": "Apple R1 Chip"
+      },
+      {
+        "id": "urn:ngm:class:apple-m2-chip",
+        "label": "Apple M2 Chip"
+      },
+      {
+        "id": "urn:ngm:class:visionos",
+        "label": "visionOS"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-computing-runtime",
+        "label": "Spatial Computing Runtime"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:spatial-computing-paradigm",
@@ -30,12 +56,34 @@
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:spatial-user-interface",
+        "label": "Spatial User Interface"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-hololens",
+        "label": "Microsoft HoloLens"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:eye-tracking",
@@ -48,11 +96,33 @@
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:passthrough-video",
+        "label": "Passthrough Video"
+      },
+      {
+        "id": "urn:ngm:class:realitykit",
+        "label": "RealityKit"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-xr",
+        "label": "Enterprise Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-training-simulation",
+        "label": "Immersive Training Simulation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:apple-ecosystem",
+        "label": "Apple Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:extended-reality",
@@ -61,6 +131,10 @@
       {
         "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
       }
     ]
   },

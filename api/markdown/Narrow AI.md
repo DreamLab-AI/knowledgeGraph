@@ -55,34 +55,142 @@ public:: true
   "@type": "Class",
   "label": "Narrow AI",
   "definition": "Narrow AI refers to systems engineered to perform a specific task or bounded set of tasks, achieving strong performance within their domain without the general adaptability associated with artificial general intelligence.",
-  "domain": "metaverse",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence",
+    "label": "Artificial Intelligence"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:image-classifier",
+        "label": "Image Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recogniser",
+        "label": "Speech Recogniser"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-superintelligence",
+        "label": "Artificial Superintelligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:weak-ai",
+      "label": "Weak AI"
+    },
+    {
+      "@id": "urn:ngm:class:applied-ai",
+      "label": "Applied AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

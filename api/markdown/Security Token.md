@@ -49,37 +49,65 @@ public:: true
   "definition": "A blockchain-based token representing complete or fractional ownership interests in real-world assets or entities, subject to securities regulations that may restrict transfer based on investor identity, jurisdiction, or asset category. Security tokens provide holders with entitlements such as dividends, profit-sharing, or voting rights, and are typically issued through security token offerings (STOs) under regulatory compliance frameworks.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-token-and-asset",
-      "label": "Token and Asset"
-    },
-    {
-      "@id": "urn:ngm:class:fungible-token",
-      "label": "Fungible Token"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:fungible-token",
+    "label": "Fungible Token"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"}
+      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
+      {"@id": "urn:ngm:class:transfer-restriction", "label": "Transfer Restriction"},
+      {"@id": "urn:ngm:class:investor-whitelist", "label": "Investor Whitelist"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:tokenised-capital-market", "label": "Tokenised Capital Market"},
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:kyc-aml-compliance", "label": "KYC/AML Compliance"},
+      {"@id": "urn:ngm:class:regulatory-approval", "label": "Regulatory Approval"},
+      {"@id": "urn:ngm:class:accredited-investor-verification", "label": "Accredited Investor Verification"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fractional-ownership", "label": "Fractional Ownership"},
+      {"@id": "urn:ngm:class:dividend-distribution", "label": "Dividend Distribution"},
+      {"@id": "urn:ngm:class:on-chain-cap-table", "label": "On-Chain Cap Table"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:erc1400-standard", "label": "ERC1400 Standard"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"},
+      {"@id": "urn:ngm:class:erc-3643-t-rex", "label": "ERC-3643 (T-REX)"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:securities-exchange-commission", "label": "Securities Exchange Commission"},
+      {"@id": "urn:ngm:class:regulation-d", "label": "Regulation D"},
+      {"@id": "urn:ngm:class:mifid-ii", "label": "MiFID II"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
-      {"@id": "urn:ngm:class:semi-fungible-token", "label": "Semi-Fungible Token"}
+      {"@id": "urn:ngm:class:semi-fungible-token", "label": "Semi-Fungible Token"},
+      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:traditional-securities", "label": "Traditional Securities"},
+      {"@id": "urn:ngm:class:real-world-asset", "label": "Real World Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:tokenised-security", "label": "Tokenised Security"},
+    {"@id": "urn:ngm:class:digital-security", "label": "Digital Security"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

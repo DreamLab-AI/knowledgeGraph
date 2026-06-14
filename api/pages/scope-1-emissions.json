@@ -4,7 +4,7 @@
   "slug": "scope-1-emissions",
   "public": true,
   "classIri": "urn:ngm:class:scope-1-emissions",
-  "domain": "infrastructure",
+  "domain": "governance",
   "definition": "Scope 1 emissions are direct greenhouse gas (GHG) emissions from sources that are owned or controlled by a reporting organisation, as defined by the GHG Protocol Corporate Standard. They include combustion of fuels in owned vehicles, boilers, and furnaces; process emissions from chemical or physical reactions in production; and fugitive emissions from refrigerant leaks, methane from waste operations, and similar inadvertent releases. Scope 1 emissions are denominated in CO2-equivalent (CO2e) tonnes and represent the most controllable category of an organisation's carbon footprint.",
   "subClassOf": [
     {
@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stationary-combustion-emissions",
+        "label": "Stationary Combustion Emissions"
+      },
+      {
+        "id": "urn:ngm:class:mobile-combustion-emissions",
+        "label": "Mobile Combustion Emissions"
+      },
+      {
+        "id": "urn:ngm:class:process-emissions",
+        "label": "Process Emissions"
+      },
+      {
+        "id": "urn:ngm:class:fugitive-emissions",
+        "label": "Fugitive Emissions"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:third-party-assurance",
+        "label": "Third-Party Assurance"
+      },
+      {
+        "id": "urn:ngm:class:operational-control-boundary",
+        "label": "Operational Control Boundary"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:esg-reporting",
@@ -25,17 +51,43 @@
       },
       {
         "id": "urn:ngm:class:sustainability-reporting",
-        "label": "SustainabilityReporting"
+        "label": "Sustainability Reporting"
       },
       {
         "id": "urn:ngm:class:carbon-neutrality-planning",
         "label": "Carbon Neutrality Planning"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-trading",
+        "label": "Carbon Trading"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-capture-utilisation-and-storage",
+        "label": "Carbon Capture Utilisation and Storage"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-decarbonisation",
+        "label": "Supply Chain Decarbonisation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:carbon-footprint-measurement",
@@ -44,11 +96,41 @@
       {
         "id": "urn:ngm:class:environmental-accounting",
         "label": "Environmental Accounting"
+      },
+      {
+        "id": "urn:ngm:class:mass-balance-method",
+        "label": "Mass Balance Method"
+      },
+      {
+        "id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:corporate-carbon-footprint",
+        "label": "Corporate Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:ghg-inventory",
+        "label": "GHG Inventory"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:scope-2-emissions",
@@ -65,6 +147,14 @@
       {
         "id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
+      },
+      {
+        "id": "urn:ngm:class:carbon-border-adjustment-mechanism",
+        "label": "Carbon Border Adjustment Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:kyoto-protocol",
+        "label": "Kyoto Protocol"
       }
     ]
   },

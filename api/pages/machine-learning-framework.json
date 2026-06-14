@@ -4,39 +4,145 @@
   "slug": "machine-learning-framework",
   "public": true,
   "classIri": "urn:ngm:class:machine-learning-discipline-framework",
-  "domain": "artificial-intelligence",
-  "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
+  "domain": "machine-learning",
+  "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models; encompassing model definition, automatic differentiation, GPU-accelerated training, and production serving infrastructure.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
     {
       "id": "urn:ngm:class:ai-development-tools",
       "label": "AI Development Tools"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:model-serving-infrastructure",
+        "label": "Model Serving Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:numerical-computing-library",
+        "label": "Numerical Computing Library"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-model-development",
         "label": "AI Model Development"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai-system",
+        "label": "Symbolic AI System"
+      },
+      {
+        "id": "urn:ngm:class:statistical-software-package",
+        "label": "Statistical Software Package"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing-platform",
+        "label": "Cloud Computing Platform"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:tensor-data-structure",
+        "label": "Tensor Data Structure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

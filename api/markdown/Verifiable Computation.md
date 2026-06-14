@@ -50,16 +50,14 @@ public:: true
   "@id": "urn:ngm:class:verifiable-computation",
   "@type": "Class",
   "label": "Verifiable Computation",
-  "definition": "Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work.",
+  "definition": "Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work. Proof systems such as SNARKs and STARKs make verification exponentially cheaper than re-execution, enabling trust-minimised delegation at scale.",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cryptographic-proof",
-      "label": "Cryptographic Proof"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-proof",
+    "label": "Cryptographic Proof"
+  },
   "relations": {
     "requires": [
       {
@@ -69,20 +67,130 @@ public:: true
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:arithmetic-circuit",
+        "label": "Arithmetic Circuit"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-commitment-scheme",
+        "label": "Polynomial Commitment Scheme"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-outsourcing",
+        "label": "Trustless Outsourcing"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:snark",
+        "label": "SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:stark",
+        "label": "STARK"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-computation",
+        "label": "Proof of Computation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environments",
+        "label": "Trusted Execution Environments"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistically-checkable-proof",
+        "label": "Probabilistically Checkable Proof"
+      },
+      {
+        "@id": "urn:ngm:class:succinct-argument",
+        "label": "Succinct Argument"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:delegatable-computation",
+      "label": "Delegatable Computation"
+    },
+    {
+      "@id": "urn:ngm:class:certified-computation",
+      "label": "Certified Computation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

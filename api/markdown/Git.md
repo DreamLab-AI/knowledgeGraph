@@ -62,37 +62,153 @@ public:: true
   "@id": "urn:ngm:class:git",
   "@type": "Class",
   "label": "Git",
-  "definition": "Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development.",
+  "definition": "Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development and has become the dominant source-control system in modern software engineering.",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:version-control",
-      "label": "Version Control"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:version-control",
+    "label": "Version Control"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:commit",
+        "label": "Commit"
+      },
+      {
+        "@id": "urn:ngm:class:branch",
+        "label": "Branch"
+      },
+      {
+        "@id": "urn:ngm:class:merge",
+        "label": "Merge"
+      },
+      {
+        "@id": "urn:ngm:class:pull-request",
+        "label": "Pull Request"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:command-line-interface",
+        "label": "Command Line Interface"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:git-hub",
         "label": "GitHub"
       },
       {
-        "@id": "urn:ngm:class:software-development",
-        "label": "Software Development"
-      },
-      {
         "@id": "urn:ngm:class:open-source",
         "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-coding",
+        "label": "Collaborative Coding"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressable-storage",
+        "label": "Content-Addressable Storage"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sha-1",
+        "label": "SHA-1"
+      },
+      {
+        "@id": "urn:ngm:class:delta-compression",
+        "label": "Delta Compression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:subversion",
+        "label": "Subversion"
+      },
+      {
+        "@id": "urn:ngm:class:mercurial",
+        "label": "Mercurial"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-workflow",
+        "label": "Machine Learning Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:git-lab",
+        "label": "GitLab"
+      },
+      {
+        "@id": "urn:ngm:class:gitops",
+        "label": "GitOps"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:git-scm",
+      "label": "Git SCM"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

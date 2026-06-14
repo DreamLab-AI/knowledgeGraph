@@ -95,42 +95,81 @@ public:: true
   "@type": "Class",
   "label": "Agent",
   "definition": "An autonomous computational or physical entity that perceives its environment, reasons about its perceptions using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.",
-  "domain": "blockchain",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:autonomous-system",
+    "label": "Autonomous System"
+  },
   "relations": {
-    "uses": [
-      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"},
-      {"@id": "urn:ngm:class:goal", "label": "Goal"}
-    ],
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"}
+      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"},
+      {"@id": "urn:ngm:class:perception-module", "label": "Perception Module"},
+      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"},
+      {"@id": "urn:ngm:class:action-module", "label": "Action Module"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
     ],
     "requires": [
+      {"@id": "urn:ngm:class:environment", "label": "Environment"},
+      {"@id": "urn:ngm:class:goal", "label": "Goal"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision Making"},
+      {"@id": "urn:ngm:class:task-automation", "label": "Task Automation"},
+      {"@id": "urn:ngm:class:emergent-behaviour", "label": "Emergent Behaviour"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"},
+      {"@id": "urn:ngm:class:sense-think-act-loop", "label": "Sense-Think-Act Loop"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:planning", "label": "Planning"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
       {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reflex-agent", "label": "Reflex Agent"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:objective", "label": "Objective"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+      {"@id": "urn:ngm:class:safety", "label": "Safety"},
+      {"@id": "urn:ngm:class:alignment", "label": "Alignment"},
+      {"@id": "urn:ngm:class:trust", "label": "Trust"}
     ]
   },
-  "quality": 0.5,
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:agents",
       "label": "Agents"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-agent",
+      "label": "Intelligent Agent"
+    },
+    {
+      "@id": "urn:ngm:class:rational-agent",
+      "label": "Rational Agent"
     }
   ]
 }

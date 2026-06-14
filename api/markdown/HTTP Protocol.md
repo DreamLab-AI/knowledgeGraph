@@ -23,24 +23,63 @@ public:: true
   "definition": "The Hypertext Transfer Protocol (HTTP) is a stateless, application-layer request-response protocol that forms the foundation of data communication on the World Wide Web, defining the format and semantics of messages exchanged between clients (browsers, API consumers) and servers (web servers, API gateways) over TCP/IP connections. Each HTTP transaction consists of a request message specifying a method (GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS), a target URI, headers conveying metadata, and an optional body, followed by a response message containing a status code, headers, and an optional body. HTTP has evolved through versions 1.0, 1.1, 2, and 3, with each version improving multiplexing, compression, and connection management.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
       {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
       {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"},
-      {"@id": "urn:ngm:class:content-delivery-network-cdn", "label": "Content Delivery Network (CDN)"}
+      {"@id": "urn:ngm:class:content-delivery-network-cdn", "label": "Content Delivery Network (CDN)"},
+      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
+      {"@id": "urn:ngm:class:web-application", "label": "Web Application"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"},
+      {"@id": "urn:ngm:class:quic-protocol", "label": "QUIC Protocol"},
+      {"@id": "urn:ngm:class:uri", "label": "URI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:request-response-pattern", "label": "Request-Response Pattern"},
+      {"@id": "urn:ngm:class:stateless-protocol", "label": "Stateless Protocol"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:http-header", "label": "HTTP Header"},
+      {"@id": "urn:ngm:class:http-status-code", "label": "HTTP Status Code"},
+      {"@id": "urn:ngm:class:http-method", "label": "HTTP Method"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:grpc", "label": "gRPC"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:graph-ql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"}
+      {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"},
+      {"@id": "urn:ngm:class:caching", "label": "Caching"},
+      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
+      {"@id": "urn:ngm:class:llm-api", "label": "LLM API"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hypertext-transfer-protocol", "label": "Hypertext Transfer Protocol"},
+    {"@id": "urn:ngm:class:https", "label": "HTTPS"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.80
 }
 ```
 

@@ -58,37 +58,67 @@ public:: true
   "@id": "urn:ngm:class:reward-model",
   "@type": "Class",
   "label": "Reward Model",
-  "definition": "A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.",
-  "domain": "artificial-intelligence",
+  "definition": "A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimisation without constant human evaluation.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:reinforcement-learning",
-      "label": "Reinforcement Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:reinforcement-learning",
+    "label": "Reinforcement Learning"
+  },
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
+      {"@id": "urn:ngm:class:preference-data", "label": "Preference Data"},
+      {"@id": "urn:ngm:class:pairwise-comparison", "label": "Pairwise Comparison"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:policy-optimisation", "label": "Policy Optimisation"},
+      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:reward-head", "label": "Reward Head"},
+      {"@id": "urn:ngm:class:preference-prediction", "label": "Preference Prediction"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:rlhf-pipeline", "label": "RLHF Pipeline"},
+      {"@id": "urn:ngm:class:post-training-pipeline", "label": "Post-Training Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:bradley-terry-model", "label": "Bradley-Terry Model"},
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:direct-preference-optimization", "label": "Direct Preference Optimization"},
+      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:base-language-model", "label": "Base Language Model"},
+      {"@id": "urn:ngm:class:human-annotation", "label": "Human Annotation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
+      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:preference-model", "label": "Preference Model"},
+    {"@id": "urn:ngm:class:human-preference-model", "label": "Human Preference Model"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

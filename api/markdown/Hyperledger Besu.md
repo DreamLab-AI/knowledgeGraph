@@ -107,28 +107,146 @@ alias:: BC-0427-hyperledger-besu
   "@id": "urn:ngm:class:hyperledger-besu",
   "@type": "Class",
   "label": "Hyperledger Besu",
-  "definition": "Enterprise-grade ereum client developed by Hyperledger Foundation supporting both public and private blockchain deployments with multiple consensus mechanisms—ProofOfWork, ProofOfAuthority, Practical Byzantine Fault Tolerance|PBFT.",
+  "definition": "Enterprise-grade Ethereum client developed by the Hyperledger Foundation supporting both public and permissioned private blockchain deployments with pluggable consensus mechanisms including Proof of Work, Proof of Authority (Clique/IBFT), and Practical Byzantine Fault Tolerance (PBFT). Besu provides full EVM compatibility, privacy extensions via private transaction groups, permissioning, and a JSON-RPC/WebSocket API surface, making it suitable for enterprise consortia, regulated financial networks, and cross-chain interoperability scenarios.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:enterprise-blockchain-client",
+    "label": "Enterprise Blockchain Client"
+  },
   "relations": {
     "implements": [
       {
         "@id": "urn:ngm:class:consensus-protocol",
-        "label": "ConsensusProtocol"
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain-architecture",
+        "label": "Enterprise Blockchain Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy-Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:private-transaction",
+        "label": "Private Transaction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:private-channels",
+        "label": "Private Channels"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:geth",
+        "label": "Geth"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ethereum-network",
+        "label": "Ethereum Network"
+      },
+      {
+        "@id": "urn:ngm:class:node-identity-permissioning",
+        "label": "Node Identity Permissioning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interledger-protocol",
+        "label": "Interledger Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ]
   },
-  "quality": 0.4,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:besu-ethereum-client",
+      "label": "Besu Ethereum Client"
+    },
+    {
+      "@id": "urn:ngm:class:pantheon",
+      "label": "Pantheon"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

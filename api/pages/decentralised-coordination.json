@@ -13,28 +13,98 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-treasury",
+        "label": "Multi-Sig Treasury"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-treasury-management",
+        "label": "On-Chain Treasury Management"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:ostrom-design-principles",
+        "label": "Ostrom Design Principles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:dao",
         "label": "DAO"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
-      },
-      {
         "id": "urn:ngm:class:asynchronous-coordination",
         "label": "Asynchronous Coordination"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
       }
     ],
     "supports": [],
@@ -42,16 +112,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:dao-governance",
-        "label": "DAO Governance"
-      },
-      {
         "id": "urn:ngm:class:algorithmic-governance",
         "label": "Algorithmic Governance"
       },
       {
-        "id": "urn:ngm:class:ai-agent-coordination",
-        "label": "AI Agent Coordination"
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
       }
     ]
   },

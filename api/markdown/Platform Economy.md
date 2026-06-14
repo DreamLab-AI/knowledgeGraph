@@ -23,28 +23,62 @@ public:: true
   "definition": "The Platform Economy describes an economic model in which digital intermediaries — platforms — create value by facilitating interactions, transactions, and information exchanges between two or more distinct user groups, typically producers and consumers. Platforms achieve scale through network effects: the value of the platform increases with the number of participants on one or both sides, creating winner-take-most market dynamics. Major platform types include transaction platforms (e-commerce, gig labour), innovation platforms (app stores, developer ecosystems), and content platforms (social media, streaming). Platform operators capture value through transaction fees, data monetisation, advertising, and software licences while externalising costs and risks to platform participants.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"}],
+  "subClassOf": {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:two-sided-market", "label": "Two-Sided Market"},
+      {"@id": "urn:ngm:class:network-effect", "label": "Network Effect"},
       {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
       {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:gig-economy", "label": "Gig Economy"},
+      {"@id": "urn:ngm:class:creator-monetization", "label": "Creator Monetization"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-monetisation", "label": "Data Monetisation"},
+      {"@id": "urn:ngm:class:algorithmic-recommendation", "label": "Algorithmic Recommendation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:platform-layer", "label": "Platform Layer"},
-      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"}
+      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:creator-monetization", "label": "Creator Monetization"},
-      {"@id": "urn:ngm:class:marketplace-integration", "label": "Marketplace Integration"}
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+      {"@id": "urn:ngm:class:marketplace-integration", "label": "Marketplace Integration"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:vertically-integrated-firm", "label": "Vertically Integrated Firm"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:tokenised-economy", "label": "Tokenised Economy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
+      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"},
+      {"@id": "urn:ngm:class:antitrust-regulation", "label": "Antitrust Regulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:platform-business-model", "label": "Platform Business Model"},
+    {"@id": "urn:ngm:class:digital-platform-economy", "label": "Digital Platform Economy"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

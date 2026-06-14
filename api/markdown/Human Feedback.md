@@ -46,33 +46,69 @@ public:: true
   "@id": "urn:ngm:class:human-feedback",
   "@type": "Class",
   "label": "Human Feedback",
-  "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections.",
-  "domain": "spatial-computing",
+  "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives that are difficult to specify formally.",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:training-signal",
+    "label": "Training Signal"
+  },
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
       {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
+      {"@id": "urn:ngm:class:human-annotator", "label": "Human Annotator"},
+      {"@id": "urn:ngm:class:annotation-guideline", "label": "Annotation Guideline"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:pairwise-ranking", "label": "Pairwise Ranking"},
+      {"@id": "urn:ngm:class:demonstration-data", "label": "Demonstration Data"},
+      {"@id": "urn:ngm:class:preference-dataset", "label": "Preference Dataset"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:alignment-training-pipeline", "label": "Alignment Training Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:inter-annotator-agreement", "label": "Inter-Annotator Agreement"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:labelling-workforce", "label": "Labelling Workforce"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-feedback", "label": "AI Feedback"},
+      {"@id": "urn:ngm:class:implicit-feedback", "label": "Implicit Feedback"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
+      {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"},
+      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:human-preference-signal", "label": "Human Preference Signal"},
+    {"@id": "urn:ngm:class:human-label", "label": "Human Label"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

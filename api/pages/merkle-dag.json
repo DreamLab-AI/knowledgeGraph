@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-node",
+        "label": "Merkle Node"
+      },
+      {
+        "id": "urn:ngm:class:typed-link",
+        "label": "Typed Link"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-collision-resistance",
+        "label": "Hash Collision Resistance"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:distributed-storage",
@@ -26,26 +44,95 @@
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "id": "urn:ngm:class:tamper-evident-storage",
+        "label": "Tamper-Evident Storage"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:immutable-data-model",
+        "label": "Immutable Data Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authenticated-data-structure",
+        "label": "Authenticated Data Structure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-structure",
         "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-data-streaming",
+        "label": "Decentralised Data Streaming"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:merkle-tree",
@@ -54,6 +141,14 @@
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
       }
     ]
   },

@@ -98,37 +98,161 @@ alias:: StateChannel
   "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:layer-2-scaling",
+    "label": "Layer 2 Scaling"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:dispute-resolution-mechanism",
+        "label": "Dispute Resolution Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:watchtower-service",
+        "label": "Watchtower Service"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-scaling",
+        "label": "Off-Chain Scaling"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:collateral-lockup",
+        "label": "Collateral Lockup"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:instant-finality",
+        "label": "Instant Finality"
+      },
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:off-chain-scaling",
         "label": "Off-Chain Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-protocol",
+        "label": "Peer-to-Peer Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:raiden-network",
+        "label": "Raiden Network"
+      },
+      {
+        "@id": "urn:ngm:class:perun",
+        "label": "Perun"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:iot-machine-payments",
+        "label": "IoT Machine Payments"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-stream",
+        "label": "Real-Time Data Stream"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:connext",
+        "label": "Connext"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:multiparty-computation",
+        "label": "Multiparty Computation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:payment-channel-network",
+      "label": "Payment Channel Network"
+    },
+    {
+      "@id": "urn:ngm:class:off-chain-channel",
+      "label": "Off-Chain Channel"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

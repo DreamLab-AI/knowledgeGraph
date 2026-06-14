@@ -62,21 +62,37 @@ public:: true
   "@id": "urn:ngm:class:liquidity",
   "@type": "Class",
   "label": "Liquidity",
-  "definition": "The degree to which an asset can be bought or sold quickly without causing a large change in its price. In decentralised markets liquidity is supplied by participants who deposit assets into pools or order books.",
-  "domain": "blockchain",
+  "definition": "The degree to which an asset can be bought or sold quickly without causing a significant change in its price. In decentralised markets, liquidity is supplied by participants who deposit assets into pools or order books, enabling efficient price discovery and low-slippage trade execution.",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:de-fi",
-      "label": "DeFi"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:de-fi",
+    "label": "DeFi"
+  },
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:market-depth",
+        "label": "Market Depth"
+      },
+      {
+        "@id": "urn:ngm:class:bid-ask-spread",
+        "label": "Bid-Ask Spread"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
       }
     ],
     "enables": [
@@ -87,14 +103,100 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:token-swap",
+        "label": "Token Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "@id": "urn:ngm:class:trading-volume",
+        "label": "Trading Volume"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:illiquidity",
+        "label": "Illiquidity"
+      },
+      {
+        "@id": "urn:ngm:class:price-slippage",
+        "label": "Price Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-liquidity",
+        "label": "Central Bank Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:asset-liquidity",
+      "label": "Asset Liquidity"
+    },
+    {
+      "@id": "urn:ngm:class:market-liquidity",
+      "label": "Market Liquidity"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

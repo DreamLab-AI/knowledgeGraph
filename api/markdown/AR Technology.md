@@ -86,19 +86,13 @@ public:: true
   "@id": "urn:ngm:class:ar-technology",
   "@type": "Class",
   "label": "AR Technology",
-  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments.",
+  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments, including spatial tracking, environmental understanding, rendering pipelines, and interaction modalities across mobile, wearable, and projection-based form factors.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:extended-reality",
-      "label": "Extended Reality"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:extended-reality",
+    "label": "Extended Reality"
+  },
   "relations": {
     "requires": [
       {
@@ -116,6 +110,14 @@ public:: true
       {
         "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "enables": [
@@ -130,10 +132,88 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing-paradigm-applications",
         "label": "Spatial Computing Applications"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:ngm:class:ar-systems",
+      "label": "AR Systems"
+    }
+  ],
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

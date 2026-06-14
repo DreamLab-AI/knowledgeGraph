@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:in-hand-manipulation",
+        "label": "In-Hand Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:contact-rich-control",
+        "label": "Contact-Rich Control"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:end-effector",
@@ -25,23 +38,62 @@
       {
         "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensing",
+        "label": "Force-Torque Sensing"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:robot-learning",
         "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:robotic-assembly",
+        "label": "Robotic Assembly"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:grasp-planning",
-        "label": "Grasp Planning"
+        "id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
       },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick-and-Place"
+      },
+      {
+        "id": "urn:ngm:class:rigid-gripper",
+        "label": "Rigid Gripper"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "uses": [
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
@@ -49,15 +101,40 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
       }
     ]
   },

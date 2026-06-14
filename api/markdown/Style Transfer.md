@@ -90,38 +90,61 @@ public:: true
   "@id": "urn:ngm:class:style-transfer",
   "@type": "Class",
   "label": "Style Transfer",
-  "definition": "Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another.",
-  "domain": "spatial-computing",
+  "definition": "Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations via Gram matrix optimisation, enabling artistic rendering, photo enhancement, and creative visual effects.",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:image-to-image-translation",
-      "label": "Image to Image Translation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:image-to-image-translation",
+    "label": "Image to Image Translation"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:gram-matrix", "label": "Gram Matrix"},
+      {"@id": "urn:ngm:class:perceptual-loss", "label": "Perceptual Loss"},
+      {"@id": "urn:ngm:class:vgg-network", "label": "VGG Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
+      {"@id": "urn:ngm:class:video-stylisation", "label": "Video Stylisation"},
+      {"@id": "urn:ngm:class:artistic-rendering", "label": "Artistic Rendering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:texture-synthesis", "label": "Texture Synthesis"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
+      {"@id": "urn:ngm:class:lora-fine-tuning", "label": "LoRA Fine-Tuning"},
+      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "MetaverseDomain"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:neural-style-transfer", "label": "Neural Style Transfer"},
+    {"@id": "urn:ngm:class:artistic-style-transfer", "label": "Artistic Style Transfer"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

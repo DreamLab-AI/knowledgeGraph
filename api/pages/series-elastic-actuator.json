@@ -16,8 +16,38 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliant-spring-element",
+        "label": "Compliant Spring Element"
+      },
+      {
+        "id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      },
+      {
+        "id": "urn:ngm:class:gearbox",
+        "label": "Gearbox"
+      },
+      {
+        "id": "urn:ngm:class:torque-control-loop",
+        "label": "Torque Control Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:position-sensor",
+        "label": "Position Sensor"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
@@ -26,12 +56,51 @@
       {
         "id": "urn:ngm:class:soft-robotics",
         "label": "Soft Robotics"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:prosthetic-limb",
+        "label": "Prosthetic Limb"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-estimation",
+        "label": "Force Torque Estimation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quasi-direct-drive-actuator",
+        "label": "Quasi Direct Drive Actuator"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:rigid-actuator",
+        "label": "Rigid Actuator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:physical-human-robot-interaction-safety",
+        "label": "Physical Human Robot Interaction Safety"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:position-sensor",
@@ -40,27 +109,65 @@
       {
         "id": "urn:ngm:class:torque-control",
         "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:hookes-law",
+        "label": "Hookes Law"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:series-elastic-actuation",
-        "label": "Series Elastic Actuation"
-      },
+    "supports": [
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:variable-impedance-control",
+        "label": "Variable Impedance Control"
       },
       {
         "id": "urn:ngm:class:force-control",
         "label": "Force Control"
       },
       {
-        "id": "urn:ngm:class:variable-impedance-control",
-        "label": "Variable Impedance Control"
+        "id": "urn:ngm:class:backdrivability",
+        "label": "Backdrivability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:powered-exoskeleton",
+        "label": "Powered Exoskeleton"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-actuator",
+        "label": "Proprioceptive Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robotic-joint",
+        "label": "Robotic Joint"
       }
     ]
   },

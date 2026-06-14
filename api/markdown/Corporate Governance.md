@@ -58,17 +58,39 @@ public:: true
   "@id": "urn:ngm:class:corporate-governance",
   "@type": "Class",
   "label": "Corporate Governance",
-  "definition": "The system of rules, practices and processes by which a company is directed and controlled, balancing the interests of shareholders, management and other stakeholders.",
+  "definition": "The system of rules, practices and processes by which a company is directed and controlled, balancing the interests of shareholders, management and other stakeholders, including board oversight, executive accountability, disclosure obligations, and mechanisms that align the interests of management, shareholders, and wider society.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:governance-framework",
+    "label": "Governance Framework"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:board-of-directors",
+        "label": "Board of Directors"
+      },
+      {
+        "@id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "@id": "urn:ngm:class:remuneration-policy",
+        "label": "Remuneration Policy"
+      },
+      {
+        "@id": "urn:ngm:class:shareholder-rights",
+        "label": "Shareholder Rights"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:accountability",
@@ -77,20 +99,102 @@ public:: true
       {
         "@id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:investor-confidence",
+        "label": "Investor Confidence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance-code",
+        "label": "Governance Code"
+      },
+      {
+        "@id": "urn:ngm:class:listing-rules",
+        "label": "Listing Rules"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:oecd-principles-of-corporate-governance",
+        "label": "OECD Principles of Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
+      },
+      {
+        "@id": "urn:ngm:class:executive-compensation",
+        "label": "Executive Compensation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:company-governance",
+      "label": "Company Governance"
+    },
+    {
+      "@id": "urn:ngm:class:board-governance",
+      "label": "Board Governance"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

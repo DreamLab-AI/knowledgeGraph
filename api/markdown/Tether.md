@@ -63,15 +63,13 @@ public:: true
   "@type": "Class",
   "label": "Tether",
   "definition": "Tether is the issuer of USDT, the largest fiat-collateralised stablecoin by circulating supply, designed to maintain a value pegged to the United States dollar. Tokens are issued on numerous blockchains and are intended to be redeemable one-to-one for dollars, backed by reserves held by the issuer. Tether is widely used for trading, settlement and as a dollar proxy on exchanges, and its reserve composition and transparency have been subjects of regulatory scrutiny.",
-  "domain": "blockchain",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:digital-asset-domain",
-      "label": "Digital Asset Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:stablecoin",
+    "label": "Stablecoin"
+  },
   "relations": {
     "requires": [
       {
@@ -81,24 +79,136 @@ public:: true
       {
         "@id": "urn:ngm:class:reserve-backing",
         "label": "Reserve Backing"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:custodian",
+        "label": "Custodian"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:stablecoin",
-        "label": "Stablecoin"
-      },
-      {
         "@id": "urn:ngm:class:crypto-trading",
         "label": "Crypto Trading"
+      },
+      {
+        "@id": "urn:ngm:class:dollar-settlement",
+        "label": "Dollar Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:tron-blockchain",
+        "label": "Tron Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:usd-coin",
+        "label": "USD Coin"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-asset-domain",
+        "label": "Digital Asset Domain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:dollar-peg",
+        "label": "Dollar Peg"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:market-liquidity",
+        "label": "Market Liquidity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-domain",
+        "label": "Regulatory Domain"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:money-market-fund",
+        "label": "Money Market Fund"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:usdt",
+      "label": "USDT"
+    },
+    {
+      "@id": "urn:ngm:class:tether-usd",
+      "label": "Tether USD"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

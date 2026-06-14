@@ -54,39 +54,67 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.8,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:knowledge-representation",
+    "label": "Knowledge Representation"
+  },
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
-    ],
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:attribute", "label": "Attribute"},
+      {"@id": "urn:ngm:class:state", "label": "State"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:unique-identifier", "label": "Unique Identifier"},
+      {"@id": "urn:ngm:class:schema", "label": "Schema"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:semantic-reasoning", "label": "Semantic Reasoning"},
+      {"@id": "urn:ngm:class:situational-awareness", "label": "Situational Awareness"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
+      {"@id": "urn:ngm:class:provenance", "label": "Provenance"},
+      {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agent", "label": "Agent"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:owl-individual", "label": "OWL Individual"},
+      {"@id": "urn:ngm:class:object-identity", "label": "Object Identity"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:relation", "label": "Relation"},
+      {"@id": "urn:ngm:class:property", "label": "Property"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:thing", "label": "Thing"},
+    {"@id": "urn:ngm:class:object", "label": "Object"},
+    {"@id": "urn:ngm:class:resource", "label": "Resource"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

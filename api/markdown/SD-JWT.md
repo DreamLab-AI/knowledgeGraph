@@ -21,26 +21,61 @@ public:: true
   "@type": "Class",
   "label": "SD-JWT",
   "definition": "SD-JWT (Selective Disclosure JSON Web Token) is an IETF-specified extension to the JSON Web Token standard that allows an Issuer to create a signed token containing hashed claim values, from which the Holder can selectively reveal only the specific claims needed for a given presentation — without exposing other claims or enabling correlation across presentations. The mechanism uses SHA-256 salted disclosure objects appended to the base JWT; verifiers can validate revealed disclosures against the issuer signature whilst remaining blind to undisclosed claims. SD-JWT forms the primary credential format for the European Union's eIDAS 2.0 digital identity wallet system.",
-  "domain": "governance",
+  "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}],
+  "subClassOf": {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:json-data-interchange-format-web-token", "label": "JSON Web Token"},
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:jose", "label": "JOSE"},
+      {"@id": "urn:ngm:class:base64url-encoding", "label": "Base64url Encoding"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:privacy-preserving-identity", "label": "Privacy-Preserving Identity"},
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"}
+      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
+      {"@id": "urn:ngm:class:holder-binding", "label": "Holder Binding"},
+      {"@id": "urn:ngm:class:minimal-disclosure", "label": "Minimal Disclosure"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ietf-rfc", "label": "IETF RFC"},
+      {"@id": "urn:ngm:class:oauth-working-group-specification", "label": "OAuth Working Group Specification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:eidas-2-digital-identity-wallet", "label": "eIDAS 2 Digital Identity Wallet"},
+      {"@id": "urn:ngm:class:open-id4-vci", "label": "OpenID4VCI"},
+      {"@id": "urn:ngm:class:open-id4-vp", "label": "OpenID4VP"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"},
+      {"@id": "urn:ngm:class:iso-mdoc", "label": "ISO mdoc"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-id4-vci", "label": "OpenID4VCI"},
       {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {"@id": "urn:ngm:class:w3c-verifiable-credential-data-model", "label": "W3C Verifiable Credential Data Model"},
+      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-identity-governance", "label": "Digital Identity Governance"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:selective-disclosure-json-web-token", "label": "Selective Disclosure JSON Web Token"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -21,24 +21,64 @@ public:: true
   "@type": "Class",
   "label": "Basel Committee",
   "definition": "The Basel Committee on Banking Supervision (BCBS) is an international standard-setting body hosted by the Bank for International Settlements (BIS) in Basel, Switzerland, that develops global regulatory standards for the prudential supervision of banks. Its accords — Basel I (1988), Basel II (2004), and Basel III (2010, finalised 2017) — set internationally agreed minimum capital adequacy, liquidity, and leverage requirements for commercial banks.",
-  "domain": "governance",
+  "domain": "finance",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
   "relations": {
     "standardizedBy": [
       {"@id": "urn:ngm:class:bis", "label": "BIS"}
     ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:basel-i", "label": "Basel I"},
+      {"@id": "urn:ngm:class:basel-ii", "label": "Basel II"},
+      {"@id": "urn:ngm:class:basel-iii", "label": "Basel III"},
+      {"@id": "urn:ngm:class:capital-adequacy-framework", "label": "Capital Adequacy Framework"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:international-financial-architecture", "label": "International Financial Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-weighted-assets", "label": "Risk-Weighted Assets"},
+      {"@id": "urn:ngm:class:capital-adequacy-ratio", "label": "Capital Adequacy Ratio"},
+      {"@id": "urn:ngm:class:liquidity-coverage-ratio", "label": "Liquidity Coverage Ratio"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:prudential-banking-supervision", "label": "Prudential Banking Supervision"},
+      {"@id": "urn:ngm:class:cross-border-banking-cooperation", "label": "Cross-Border Banking Cooperation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:minimum-capital-requirements", "label": "Minimum Capital Requirements"},
+      {"@id": "urn:ngm:class:leverage-ratio", "label": "Leverage Ratio"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:systemic-risk-mitigation", "label": "Systemic Risk Mitigation"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
       {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
       {"@id": "urn:ngm:class:risk-management-framework", "label": "Risk Management Framework"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:imf", "label": "IMF"},
+      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
+      {"@id": "urn:ngm:class:bank-supervision", "label": "Bank Supervision"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cryptoasset-regulation", "label": "Cryptoasset Regulation"},
+      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
+      {"@id": "urn:ngm:class:ai-model-risk", "label": "AI Model Risk"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:bcbs", "label": "BCBS"},
+    {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

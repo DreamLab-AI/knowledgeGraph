@@ -63,43 +63,72 @@ public:: true
   "@type": "Class",
   "label": "Feature Store",
   "definition": "A centralised repository for storing, managing, versioning, and serving machine learning features at scale. It ensures point-in-time consistency between training and online inference, prevents training-serving skew, and enables cross-team feature reuse so that features computed once can be shared across multiple models and pipelines.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.75,
-  "quality": 0.75,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
-      "label": "Machine Learning Pipeline"
-    }
+  "qualityScore": 0.72,
+  "quality": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-infrastructure",
+    "label": "AI Infrastructure"
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:feature-registry", "label": "Feature Registry"},
+    {"@id": "urn:ngm:class:ml-feature-platform", "label": "ML Feature Platform"}
   ],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
       {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:online-store", "label": "Online Store"},
+      {"@id": "urn:ngm:class:offline-store", "label": "Offline Store"},
+      {"@id": "urn:ngm:class:feature-catalog", "label": "Feature Catalog"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:ml-platform", "label": "ML Platform"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
+      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:point-in-time-correctness", "label": "Point-in-Time Correctness"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-engineering", "label": "Data Engineering"},
+      {"@id": "urn:ngm:class:key-value-store", "label": "Key-Value Store"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:apache-spark", "label": "Apache Spark"},
+      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
+      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-mart", "label": "Data Mart"},
+      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"}
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

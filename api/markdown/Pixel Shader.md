@@ -66,37 +66,59 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
-  "quality": 0.5,
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fragment-shader",
+      "label": "Fragment Shader"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:vertex-shader",
         "label": "Vertex Shader"
       },
       {
-        "@id": "urn:ngm:class:rendering-pipeline",
-        "label": "Rendering Pipeline"
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:phong-shading",
+        "label": "Phong Shading"
+      },
+      {
+        "@id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
       }
     ],
     "uses": [
@@ -107,16 +129,62 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "@id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
       }
     ],
-    "relatedTo": [
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "label": "Screen Space Ambient Occlusion"
+      }
+    ],
+    "contrastsWith": [
       {
         "@id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
       },
       {
+        "@id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      }
+    ],
+    "relatedTo": [
+      {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:framebuffer",
+        "label": "Framebuffer"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-mapping",
+        "label": "Shadow Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-on-gpu",
+        "label": "Machine Learning on GPU"
+      },
+      {
+        "@id": "urn:ngm:class:xr-rendering",
+        "label": "XR Rendering"
       }
     ]
   }

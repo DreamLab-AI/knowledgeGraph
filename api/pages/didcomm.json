@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:verifiable-credential-vc",
@@ -26,12 +35,42 @@
       {
         "id": "urn:ngm:class:protocol-layer",
         "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "id": "urn:ngm:class:credential-presentation",
+        "label": "Credential Presentation"
+      },
+      {
+        "id": "urn:ngm:class:agent-to-agent-communication",
+        "label": "Agent-to-Agent Communication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      },
+      {
+        "id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-to-machine-communication",
+        "label": "Machine-to-Machine Communication"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:did-document",
@@ -44,10 +83,31 @@
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:jose-json-object-signing-and-encryption",
+        "label": "JOSE (JSON Object Signing and Encryption)"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +121,18 @@
       {
         "id": "urn:ngm:class:decentralized-identity-foundation",
         "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      },
+      {
+        "id": "urn:ngm:class:json-web-encryption",
+        "label": "JSON Web Encryption"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip",
+        "label": "Trust over IP"
       }
     ]
   },

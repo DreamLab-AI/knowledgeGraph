@@ -70,20 +70,48 @@ public:: true
   "@id": "urn:ngm:class:cross-platform-identity",
   "@type": "Class",
   "label": "Cross-Platform Identity",
-  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries.",
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries, enabling seamless authentication and authorisation across heterogeneous environments through federated identity management.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity"
-    },
-    {
-      "@id": "urn:ngm:class:identity-management",
-      "label": "Identity Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:identity-management",
+    "label": "Identity Management"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:federation-server",
+        "label": "Federation Server"
+      },
+      {
+        "@id": "urn:ngm:class:identity-broker",
+        "label": "Identity Broker"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:trust-relationships",
+        "label": "Trust Relationships"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:federated-access",
@@ -96,24 +124,102 @@ public:: true
       {
         "@id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:cross-domain-authorisation",
+        "label": "Cross-Domain Authorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:trust-relationships",
-        "label": "Trust Relationships"
-      },
-      {
         "@id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:oasis-standards",
+        "label": "OASIS Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:siloed-identity",
+        "label": "Siloed Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:access-governance",
+        "label": "Access Governance"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:federated-identity-management",
+      "label": "Federated Identity Management"
+    },
+    {
+      "@id": "urn:ngm:class:cross-domain-identity",
+      "label": "Cross-Domain Identity"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -20,25 +20,67 @@ public:: true
   "@id": "urn:ngm:class:stochastic-differential-equation",
   "@type": "Class",
   "label": "Stochastic Differential Equation",
-  "definition": "A stochastic differential equation (SDE) is a differential equation in which one or more terms incorporate a stochastic process, typically Brownian motion or white noise, making the solution itself a stochastic process. SDEs generalise ordinary differential equations by including a diffusion term driven by a Wiener process, and their solutions are interpreted via Ito or Stratonovich calculus.",
+  "definition": "A stochastic differential equation (SDE) is a differential equation in which one or more terms incorporate a stochastic process, typically Brownian motion or white noise, making the solution itself a stochastic process. SDEs generalise ordinary differential equations by including a diffusion term driven by a Wiener process, and their solutions are interpreted via Ito or Stratonovich calculus. SDEs are foundational in financial mathematics, physics, biology, and machine learning — particularly in score-based generative modelling and diffusion models.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"}],
+  "subClassOf": {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"},
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:it-calculus", "label": "Ito Calculus"}
+      {"@id": "urn:ngm:class:ito-calculus", "label": "Ito Calculus"},
+      {"@id": "urn:ngm:class:wiener-process", "label": "Wiener Process"},
+      {"@id": "urn:ngm:class:measure-theory", "label": "Measure Theory"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:score-based-generative-models", "label": "Score-Based Generative Models"},
+      {"@id": "urn:ngm:class:langevin-dynamics", "label": "Langevin Dynamics"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:drift-coefficient", "label": "Drift Coefficient"},
+      {"@id": "urn:ngm:class:diffusion-coefficient", "label": "Diffusion Coefficient"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:stochastic-processes", "label": "Stochastic Processes"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:brownian-motion", "label": "Brownian Motion"},
+      {"@id": "urn:ngm:class:fokker-planck-equation", "label": "Fokker-Planck Equation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:euler-maruyama-method", "label": "Euler-Maruyama Method"},
+      {"@id": "urn:ngm:class:milstein-method", "label": "Milstein Method"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
+      {"@id": "urn:ngm:class:stratonovich-calculus", "label": "Stratonovich Calculus"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ordinary-differential-equation", "label": "Ordinary Differential Equation"},
+      {"@id": "urn:ngm:class:partial-differential-equation", "label": "Partial Differential Equation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:dynamical-systems", "label": "Dynamical Systems"},
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"}
+      {"@id": "urn:ngm:class:markov-processes", "label": "Markov Processes"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:black-scholes-model", "label": "Black-Scholes Model"},
+      {"@id": "urn:ngm:class:neural-ordinary-differential-equation", "label": "Neural Ordinary Differential Equation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:sde", "label": "SDE"},
+    {"@id": "urn:ngm:class:stochastic-ode", "label": "Stochastic ODE"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

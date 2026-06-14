@@ -8,12 +8,12 @@
   "definition": "Measure Theory is the branch of mathematical analysis that studies measures, which assign a consistent notion of size, length, area, volume or probability to subsets of a space. It provides the rigorous foundation for the Lebesgue integral, which generalises the Riemann integral and handles a wider class of functions and limiting operations. It is the formal basis of modern probability theory, where a probability is a measure of total mass one.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:mathematical-analysis",
+      "label": "Mathematical Analysis"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
+      },
+      {
+        "id": "urn:ngm:class:measurable-function",
+        "label": "Measurable Function"
+      },
+      {
+        "id": "urn:ngm:class:borel-set",
+        "label": "Borel Set"
+      },
+      {
+        "id": "urn:ngm:class:measure-space",
+        "label": "Measure Space"
       }
     ],
     "requires": [
@@ -34,6 +46,10 @@
       {
         "id": "urn:ngm:class:real-analysis",
         "label": "Real Analysis"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
       }
     ],
     "enables": [
@@ -44,17 +60,95 @@
       {
         "id": "urn:ngm:class:stochastic-processes",
         "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:axiomatic-set-theory",
+        "label": "Axiomatic Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:metric-space",
+        "label": "Metric Space"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:riemann-integral",
+        "label": "Riemann Integral"
+      },
+      {
+        "id": "urn:ngm:class:non-measurable-set",
+        "label": "Non-Measurable Set"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:countable-additivity",
+        "label": "Countable Additivity"
+      },
+      {
+        "id": "urn:ngm:class:convergence-theorems",
+        "label": "Convergence Theorems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-theory",
+        "label": "Neural Network Theory"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lebesgue-dominated-convergence",
+        "label": "Lebesgue Dominated Convergence Theorem"
+      },
+      {
+        "id": "urn:ngm:class:radon-nikodym-theorem",
+        "label": "Radon-Nikodym Theorem"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -73,25 +73,141 @@ public:: true
   "definition": "Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-defi-and-economics",
-      "label": "DeFi and Economics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "DeFi and Economics"
+  },
   "relations": {
     "uses": [
       {
         "@id": "urn:ngm:class:front-running",
         "label": "Front-Running"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:priority-gas-auction",
+        "label": "Priority Gas Auction"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-bundling",
+        "label": "Transaction Bundling"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sandwich-attack",
+        "label": "Sandwich Attack"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage-mev",
+        "label": "Arbitrage MEV"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-mev",
+        "label": "Liquidation MEV"
+      },
+      {
+        "@id": "urn:ngm:class:time-bandit-attack",
+        "label": "Time-Bandit Attack"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transaction-ordering",
+        "label": "Transaction Ordering"
+      },
+      {
+        "@id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mev-boost",
+        "label": "MEV-Boost"
+      },
+      {
+        "@id": "urn:ngm:class:searcher-strategy",
+        "label": "Searcher Strategy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:encrypted-mempool",
+        "label": "Encrypted Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:fair-ordering-service",
+        "label": "Fair Ordering Service"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:proposer-builder-separation",
+        "label": "Proposer-Builder Separation"
+      },
+      {
+        "@id": "urn:ngm:class:flashbots",
+        "label": "Flashbots"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consensus-security",
+        "label": "Consensus Security"
+      },
+      {
+        "@id": "urn:ngm:class:defi-ecosystem",
+        "label": "DeFi Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-validator",
+        "label": "Blockchain Validator"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:maximal-extractable-value",
+      "label": "Maximal Extractable Value"
+    },
+    {
+      "@id": "urn:ngm:class:miner-extractable-value",
+      "label": "Miner Extractable Value"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

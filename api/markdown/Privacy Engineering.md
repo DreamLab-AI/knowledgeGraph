@@ -23,25 +23,60 @@ public:: true
   "definition": "Privacy Engineering is the systematic application of engineering methods to translate privacy principles and regulatory requirements into concrete technical controls embedded within systems and processes. It operationalises concepts such as data minimisation, purpose limitation, and consent management through design patterns, threat models, and measurable privacy metrics. Techniques include differential privacy for statistical disclosures, homomorphic encryption for computation on sensitive data, and k-anonymity for dataset release. The discipline bridges legal obligations—particularly GDPR and similar frameworks—with software architecture and data pipeline design, treating privacy as a quality attribute alongside performance and security.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:privacy-threat-modelling", "label": "Privacy Threat Modelling"},
+      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-flow-analysis", "label": "Data Flow Analysis"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {"@id": "urn:ngm:class:k-anonymity", "label": "K-Anonymity"},
+      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:privacy-and-data-governance", "label": "Privacy and Data Governance"}
+      {"@id": "urn:ngm:class:privacy-and-data-governance", "label": "Privacy and Data Governance"},
+      {"@id": "urn:ngm:class:privacy-preserving-machine-learning", "label": "Privacy-Preserving Machine Learning"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:nist-privacy-framework", "label": "NIST Privacy Framework"},
+      {"@id": "urn:ngm:class:linddun", "label": "LINDDUN"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO/IEC 27701"},
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:security-engineering", "label": "Security Engineering"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:privacy-by-default", "label": "Privacy By Default"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

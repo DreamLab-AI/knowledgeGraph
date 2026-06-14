@@ -670,39 +670,70 @@ public:: true
   "@id": "urn:ngm:class:lightning-and-similar-l2",
   "@type": "Class",
   "label": "Lightning and Similar L2",
-  "definition": "Off-chain payment channel networks and related Layer-2 scaling protocols built atop base-layer blockchains, enabling high-throughput, low-latency micropayments without recording every transaction on-chain. The Lightning Network, state channels, and analogous protocols (Ark, Liquid) route value through cryptographically secured payment channels, dramatically improving transaction throughput and cost-efficiency for Bitcoin and similar networks.",
+  "definition": "Off-chain payment channel networks and related Layer-2 scaling protocols built atop base-layer blockchains, enabling high-throughput, low-latency micropayments without recording every transaction on-chain. The Lightning Network, state channels, and analogous protocols (Ark, Liquid, Fedimint, Cashu) route value through cryptographically secured payment channels, dramatically improving transaction throughput and cost-efficiency for Bitcoin and similar networks.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
-    {
-      "@id": "urn:ngm:class:layer2",
-      "label": "Layer2"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:layer2",
+    "label": "Layer 2"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:payment-channels", "label": "Payment Channels"},
+      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time Locked Contract"},
+      {"@id": "urn:ngm:class:watchtower", "label": "Watchtower"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bitcoin-scaling-ecosystem", "label": "Bitcoin Scaling Ecosystem"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
+      {"@id": "urn:ngm:class:onion-routing", "label": "Onion Routing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:streaming-payments", "label": "Streaming Payments"},
+      {"@id": "urn:ngm:class:pay-per-use", "label": "Pay-Per-Use"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
+      {"@id": "urn:ngm:class:utxo", "label": "UTXO"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bolt", "label": "BOLT"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:l402-protocol", "label": "L402 Protocol"},
+      {"@id": "urn:ngm:class:recurring-payments", "label": "Recurring Payments"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rollup", "label": "Rollup"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:peer-to-peer", "label": "Peer-to-Peer"},
+      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:bitcoin-layer-2", "label": "Bitcoin Layer 2"},
+    {"@id": "urn:ngm:class:payment-channel-network", "label": "Payment Channel Network"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

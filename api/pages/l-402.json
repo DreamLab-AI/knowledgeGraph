@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:l-402",
   "domain": "blockchain",
-  "definition": "An authentication and payment protocol that combines the HTTP 402 Payment Required status code with Lightning Network invoices and macaroon-based authorisation tokens.",
+  "definition": "An authentication and payment protocol that combines the HTTP 402 Payment Required status code with Lightning Network invoices and macaroon-based authorisation tokens, enabling per-request access control and machine-to-machine micropayments without user accounts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lightning-network",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:macaroon",
+        "label": "Macaroon"
+      },
+      {
+        "id": "urn:ngm:class:lightning-invoice",
+        "label": "Lightning Invoice"
+      },
+      {
+        "id": "urn:ngm:class:http-402-status",
+        "label": "HTTP 402 Status"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:lightning-network",
@@ -25,23 +38,105 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:micropayment",
         "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:pay-per-request",
+        "label": "Pay-Per-Request"
+      },
+      {
+        "id": "urn:ngm:class:machine-to-machine-payment",
+        "label": "Machine-to-Machine Payment"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bearer-token-authentication",
+        "label": "Bearer Token Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:api-key-authentication",
+        "label": "API Key Authentication"
+      },
+      {
+        "id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:web-payments",
+        "label": "Web Payments"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:macaroon",
+        "label": "Macaroon"
+      },
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:api-access-control",
+        "label": "API Access Control"
+      },
+      {
+        "id": "urn:ngm:class:web-monetisation",
+        "label": "Web Monetisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bolt11",
+        "label": "BOLT11"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      }
+    ]
   },
   "wikilinks": [
     {

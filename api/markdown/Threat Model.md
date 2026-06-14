@@ -25,23 +25,64 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:trust-boundary", "label": "Trust Boundary"},
+      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
+      {"@id": "urn:ngm:class:adversary-profile", "label": "Adversary Profile"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:asset-inventory", "label": "Asset Inventory"},
+      {"@id": "urn:ngm:class:data-flow-diagram", "label": "Data Flow Diagram"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
       {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:stride-framework", "label": "STRIDE Framework"},
+      {"@id": "urn:ngm:class:cvss", "label": "CVSS"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"},
       {"@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:security-by-design", "label": "Security by Design"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:system-decomposition", "label": "System Decomposition"},
+      {"@id": "urn:ngm:class:adversary-model", "label": "Adversary Model"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:dolev-yao-model", "label": "Dolev-Yao Model"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
+      {"@id": "urn:ngm:class:mitre-attck", "label": "MITRE ATT&CK"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
+      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
       {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
+    {"@id": "urn:ngm:class:security-threat-analysis", "label": "Security Threat Analysis"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

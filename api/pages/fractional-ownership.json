@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ownership-share",
+        "label": "Ownership Share"
+      },
+      {
+        "id": "urn:ngm:class:governance-rights",
+        "label": "Governance Rights"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:investment-management",
@@ -30,12 +52,47 @@
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
         "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:asset-valuation",
+        "label": "Asset Valuation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sole-ownership",
+        "label": "Sole Ownership"
+      },
+      {
+        "id": "urn:ngm:class:timeshare",
+        "label": "Timeshare"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-land-ownership",
+        "label": "Metaverse Land Ownership"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:nft",
@@ -48,11 +105,24 @@
       {
         "id": "urn:ngm:class:enterprise-smart-contracts",
         "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:alternative-investment",
+        "label": "Alternative Investment"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:digital-ownership",
@@ -65,6 +135,10 @@
       {
         "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Equity"
+      },
+      {
+        "id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
       }
     ]
   },

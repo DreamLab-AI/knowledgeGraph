@@ -57,19 +57,57 @@ public:: true
   "definition": "A formal notation system used to specify algorithms, data structures, and computational models for AI and software applications, characterised by defined syntax and semantics; prominent examples include Python for machine-learning ecosystems, Julia for high-performance numerical computing, and domain-specific languages embedded in ML frameworks.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:formal-language",
+    "label": "Formal Language"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:computer-language",
+      "label": "Computer Language"
+    },
+    {
+      "@id": "urn:ngm:class:coding-language",
+      "label": "Coding Language"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      },
+      {
+        "@id": "urn:ngm:class:syntax",
+        "label": "Syntax"
+      },
+      {
+        "@id": "urn:ngm:class:standard-library",
+        "label": "Standard Library"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-development-ecosystem",
+        "label": "Software Development Ecosystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:deep-learning",
@@ -78,12 +116,84 @@ public:: true
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm-implementation",
+        "label": "Algorithm Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-architecture",
+        "label": "Hardware Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:programming-paradigm",
+        "label": "Programming Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:language-specification",
+        "label": "Language Specification"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:open-source-framework",
         "label": "Open Source Framework"
+      },
+      {
+        "@id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-standard",
+        "label": "ISO Standard"
+      },
+      {
+        "@id": "urn:ngm:class:language-standards-committee",
+        "label": "Language Standards Committee"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:domain-specific-language",
+        "label": "Domain-Specific Language"
+      },
+      {
+        "@id": "urn:ngm:class:assembly-language",
+        "label": "Assembly Language"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:query-language",
+        "label": "Query Language"
       }
     ],
     "relatedTo": [
@@ -98,6 +208,14 @@ public:: true
       {
         "@id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:compiler-optimization",
+        "label": "Compiler Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:python-ecosystem",
+        "label": "Python Ecosystem"
       }
     ]
   }

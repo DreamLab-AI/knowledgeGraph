@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:signing-quorum",
+        "label": "Signing Quorum"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:dao-governance",
@@ -26,17 +44,68 @@
       {
         "id": "urn:ngm:class:multi-sig-governance",
         "label": "Multi Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:social-recovery",
+        "label": "Social Recovery"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bip-11",
+        "label": "BIP-11"
+      },
+      {
+        "id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-key-wallet",
+        "label": "Single-Key Wallet"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -45,9 +114,26 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:exchange-custody",
+        "label": "Exchange Custody"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -62,6 +148,14 @@
       {
         "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ]
   },

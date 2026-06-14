@@ -49,19 +49,57 @@ public:: true
   "definition": "A Robot Sensor is a transducer or measurement device integrated into a robotic system to acquire data about the robot's internal state (proprioception: joint angles, torques, currents) or external environment (exteroception: proximity, force, vision, lidar). Sensor data drives closed-loop control, obstacle avoidance, and higher-level perception pipelines.",
   "domain": "robotics",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-perception",
-      "label": "Perception and Sensing"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:robo-perception",
+    "label": "Perception and Sensing"
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:robotic-transducer",
+      "label": "Robotic Transducer"
+    },
+    {
+      "@id": "urn:ngm:class:robot-perception-sensor",
+      "label": "Robot Perception Sensor"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sensor-transducer",
+        "label": "Sensor Transducer"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:sensor-fusion",
@@ -70,12 +108,70 @@ public:: true
       {
         "@id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373 Robotics Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -86,12 +182,14 @@ public:: true
       {
         "@id": "urn:ngm:class:control-system",
         "label": "Control System"
-      }
-    ],
-    "partOf": [
+      },
       {
-        "@id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
       }
     ]
   }

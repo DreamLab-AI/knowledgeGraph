@@ -23,27 +23,56 @@ public:: true
   "definition": "Stream processing is a data processing paradigm in which computations are performed continuously on unbounded sequences of records as they arrive, rather than on static stored datasets, enabling low-latency analytics, transformations, and reactions to events within milliseconds to seconds of their occurrence. It is characterised by windowing operations, stateful operators, time-based semantics (event time versus processing time), and exactly-once or at-least-once delivery guarantees.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}],
+  "subClassOf": {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
       {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"}
+      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
+      {"@id": "urn:ngm:class:apache-flink", "label": "Apache Flink"},
+      {"@id": "urn:ngm:class:apache-spark", "label": "Apache Spark"},
+      {"@id": "urn:ngm:class:windowing-operation", "label": "Windowing Operation"},
+      {"@id": "urn:ngm:class:watermark", "label": "Watermark"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
       {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-time Analytics"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
+      {"@id": "urn:ngm:class:complex-event-processing", "label": "Complex Event Processing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:state-management", "label": "State Management"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:lambda-architecture", "label": "Lambda Architecture"},
+      {"@id": "urn:ngm:class:kappa-architecture", "label": "Kappa Architecture"},
+      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"}
+      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
+      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:online-machine-learning", "label": "Online Machine Learning"},
+      {"@id": "urn:ngm:class:iot-data-ingestion", "label": "IoT Data Ingestion"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:continuous-query-processing", "label": "Continuous Query Processing"},
+    {"@id": "urn:ngm:class:event-stream-processing", "label": "Event Stream Processing"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

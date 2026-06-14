@@ -4,32 +4,72 @@
   "slug": "adversarial-robustness",
   "public": true,
   "classIri": "urn:ngm:class:adversarial-robustness",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "The capability of an AI system to maintain correct and consistent behaviour when subjected to adversarial examples\u2014inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs. Defensive strategies include adversarial training, randomised smoothing, and ensemble methods, each offering different trade-offs between certified guarantees and computational cost.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "id": "urn:ngm:class:randomised-smoothing",
+        "label": "Randomised Smoothing"
+      },
+      {
+        "id": "urn:ngm:class:certified-defense",
+        "label": "Certified Defense"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safe-deployment",
+        "label": "Safe Deployment"
+      },
+      {
+        "id": "urn:ngm:class:reliable-inference",
+        "label": "Reliable Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:perturbation-defense",
+        "label": "Perturbation Defense"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-method",
+        "label": "Ensemble Method"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:attack-vector",
@@ -38,18 +78,66 @@
       {
         "id": "urn:ngm:class:vulnerability",
         "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:gradient-based-attack",
+        "label": "Gradient-Based Attack"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-tr-24029-1",
+        "label": "ISO/IEC TR 24029-1:2021"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:resilience",
@@ -58,6 +146,14 @@
       {
         "id": "urn:ngm:class:risk",
         "label": "Risk"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
       }
     ]
   },

@@ -54,21 +54,57 @@ public:: true
   "@id": "urn:ngm:class:description-logic",
   "@type": "Class",
   "label": "Description Logic",
-  "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics.",
-  "domain": "machine-learning",
+  "definition": "A family of formal knowledge representation languages used to describe concepts, roles, and individuals with well-defined model-theoretic semantics, providing decidable fragments of first-order logic tailored to structured knowledge representation and automated reasoning.",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:formal-logic",
+    "label": "Formal Logic"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ontology",
-      "label": "Ontology"
+      "@id": "urn:ngm:class:terminological-logic",
+      "label": "Terminological Logic"
+    },
+    {
+      "@id": "urn:ngm:class:concept-language",
+      "label": "Concept Language"
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tbox",
+        "label": "TBox"
+      },
+      {
+        "@id": "urn:ngm:class:abox",
+        "label": "ABox"
+      },
+      {
+        "@id": "urn:ngm:class:role-restriction",
+        "label": "Role Restriction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:set-theory",
         "label": "Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:model-theoretic-semantics",
+        "label": "Model-Theoretic Semantics"
+      },
+      {
+        "@id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
       }
     ],
     "enables": [
@@ -79,14 +115,86 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:subsumption-reasoning",
+        "label": "Subsumption Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:consistency-checking",
+        "label": "Consistency Checking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tableau-algorithm",
+        "label": "Tableau Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:concept-subsumption",
+        "label": "Concept Subsumption"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:full-first-order-logic",
+        "label": "Full First-Order Logic"
+      },
+      {
+        "@id": "urn:ngm:class:horn-logic",
+        "label": "Horn Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
       }
     ]
   },
-  "quality": 0.6,
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

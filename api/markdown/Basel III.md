@@ -58,35 +58,147 @@ public:: true
   "@id": "urn:ngm:class:basel-iii",
   "@type": "Class",
   "label": "Basel III",
-  "definition": "Basel III is an international set of banking regulatory standards on capital adequacy, borrowing limits and liquidity developed by the Basel Committee on Banking Supervision.",
-  "domain": "governance",
+  "definition": "Basel III is an international set of banking regulatory standards on capital adequacy, stress-tested liquidity buffers, and leverage limits, developed by the Basel Committee on Banking Supervision in response to the 2007-2009 global financial crisis.",
+  "domain": "finance",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:financial-regulation",
-      "label": "Financial Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-regulation",
+    "label": "Financial Regulation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:capital-adequacy-ratio",
+        "label": "Capital Adequacy Ratio"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-coverage-ratio",
+        "label": "Liquidity Coverage Ratio"
+      },
+      {
+        "@id": "urn:ngm:class:net-stable-funding-ratio",
+        "label": "Net Stable Funding Ratio"
+      },
+      {
+        "@id": "urn:ngm:class:leverage-ratio",
+        "label": "Leverage Ratio"
+      },
+      {
+        "@id": "urn:ngm:class:capital-conservation-buffer",
+        "label": "Capital Conservation Buffer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:tier-1-capital",
+        "label": "Tier 1 Capital"
+      },
+      {
+        "@id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk-mitigation",
+        "label": "Systemic Risk Mitigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      },
+      {
+        "@id": "urn:ngm:class:market-risk",
+        "label": "Market Risk"
+      },
+      {
+        "@id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:basel-i",
+        "label": "Basel I"
+      },
+      {
+        "@id": "urn:ngm:class:basel-ii",
+        "label": "Basel II"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dodd-frank-act",
+        "label": "Dodd-Frank Act"
+      },
+      {
+        "@id": "urn:ngm:class:countercyclical-capital-buffer",
+        "label": "Countercyclical Capital Buffer"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:third-basel-accord",
+      "label": "Third Basel Accord"
+    },
+    {
+      "@id": "urn:ngm:class:basel-3",
+      "label": "Basel 3"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

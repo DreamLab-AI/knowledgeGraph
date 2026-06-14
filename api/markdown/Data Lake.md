@@ -55,44 +55,67 @@ public:: true
   "@type": "Class",
   "label": "Data Lake",
   "definition": "A centralized repository that stores structured, semi-structured, and unstructured data at any scale in its native format, deferring schema enforcement to query time (schema-on-read). Data lakes enable big-data analytics, machine learning pipelines, and exploratory analysis without upfront data modelling, serving as the foundational ingestion layer for modern data architectures.",
-  "domain": "artificial-intelligence",
+  "domain": "data",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    },
-    {
-      "@id": "urn:ngm:class:etsi-domain-data-management-ai",
-      "label": "ETSI Domain: Data Management + AI"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-storage",
+    "label": "Data Storage"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
       {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
       {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+      {"@id": "urn:ngm:class:metadata-catalog", "label": "Metadata Catalog"},
+      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    "partOf": [
+      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"},
+      {"@id": "urn:ngm:class:modern-data-stack", "label": "Modern Data Stack"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-file-system", "label": "Distributed File System"},
+      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:big-data-analytics", "label": "Big Data Analytics"},
+      {"@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:apache-parquet", "label": "Apache Parquet"},
+      {"@id": "urn:ngm:class:apache-iceberg", "label": "Apache Iceberg"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
+      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
+      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-lakehouse", "label": "Data Lakehouse"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-fabric-architecture", "label": "Data Fabric Architecture"},
-      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
+      {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:enterprise-data-lake", "label": "Enterprise Data Lake"},
+    {"@id": "urn:ngm:class:big-data-lake", "label": "Big Data Lake"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

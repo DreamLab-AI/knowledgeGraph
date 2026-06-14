@@ -4,7 +4,7 @@
   "slug": "collaborative-design",
   "public": true,
   "classIri": "urn:ngm:class:collaborative-systems-modality-design",
-  "domain": "metaverse",
+  "domain": "distributed-collaboration",
   "definition": "Collaborative Design is a design methodology in which multiple stakeholders\u2014including designers, engineers, end users, and domain experts\u2014jointly participate in defining, iterating, and validating artefacts or systems. It draws on participatory design traditions to ensure that lived experience and diverse expertise shape outcomes rather than being consulted retrospectively. Digital collaborative design platforms support real-time co-authoring, version management, and synchronous review across distributed teams. The approach is applied in product development, spatial design, software architecture, and policy co-creation.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "id": "urn:ngm:class:facilitation",
+        "label": "Facilitation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:product-design",
@@ -26,12 +39,43 @@
       {
         "id": "urn:ngm:class:generative-design-tool",
         "label": "Generative Design Tool"
+      },
+      {
+        "id": "urn:ngm:class:co-creation",
+        "label": "Co-Creation"
+      },
+      {
+        "id": "urn:ngm:class:iterative-prototyping",
+        "label": "Iterative Prototyping"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      },
+      {
+        "id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:expert-driven-design",
+        "label": "Expert-Driven Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-interaction",
+        "label": "Human-AI Interaction"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
@@ -40,9 +84,26 @@
       {
         "id": "urn:ngm:class:design-software",
         "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:design-sprint",
+        "label": "Design Sprint"
+      },
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +122,10 @@
       {
         "id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
       }
     ]
   },

@@ -5,19 +5,15 @@
   "public": true,
   "classIri": "urn:ngm:class:presence",
   "domain": "spatial-computing",
-  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
+  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence as a unified phenomenological response to immersive sensory stimulation.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:immersive-experience",
       "label": "Immersive Experience"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -46,6 +42,10 @@
       {
         "id": "urn:ngm:class:visual-display",
         "label": "Visual Display"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
       }
     ],
     "enables": [
@@ -60,22 +60,92 @@
       {
         "id": "urn:ngm:class:social-connection",
         "label": "Social Connection"
+      },
+      {
+        "id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:frame-rate",
+        "label": "Frame Rate"
+      },
+      {
+        "id": "urn:ngm:class:field-of-view",
+        "label": "Field of View"
+      },
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      },
+      {
+        "id": "urn:ngm:class:cybersickness",
+        "label": "Cybersickness"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interaction-domain",
+        "label": "Interaction Domain"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-vr",
+        "label": "IEEE VR"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:situation-awareness",
+        "label": "Situation Awareness"
+      }
+    ]
   },
   "wikilinks": [
     {

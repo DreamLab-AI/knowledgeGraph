@@ -23,25 +23,61 @@ public:: true
   "definition": "Carbon neutrality is a state in which an entity — an organisation, product, event, or country — achieves a net-zero balance between its greenhouse gas emissions and the carbon dioxide it removes or offsets, such that its net contribution to atmospheric CO₂ concentration is zero over a defined accounting period. It is typically achieved through a combination of direct emissions reductions, procurement of renewable energy, and the purchase and retirement of independently verified carbon credits representing emissions avoided or removed elsewhere. Carbon neutrality is distinct from net-zero emissions, which generally requires deeper reductions and limits the role of offsets, and from climate positivity, which requires net negative emissions.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:climate-policy", "label": "Climate Policy"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
+      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
+      {"@id": "urn:ngm:class:carbon-neutrality-verification", "label": "Carbon Neutrality Verification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:greenhouse-gas-accounting", "label": "Greenhouse Gas Accounting"},
+      {"@id": "urn:ngm:class:scope-3-emissions-reporting", "label": "Scope 3 Emissions Reporting"},
+      {"@id": "urn:ngm:class:third-party-assurance", "label": "Third-Party Assurance"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:carbon-offset-programme", "label": "Carbon Offset Programme"},
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"}
+      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
+      {"@id": "urn:ngm:class:renewable-energy-procurement", "label": "Renewable Energy Procurement"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
+      {"@id": "urn:ngm:class:green-claims-compliance", "label": "Green Claims Compliance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"},
+      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:pas-2060", "label": "PAS 2060"},
+      {"@id": "urn:ngm:class:iso-14068", "label": "ISO 14068"},
+      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:net-zero-emissions", "label": "Net Zero Emissions"},
+      {"@id": "urn:ngm:class:climate-positivity", "label": "Climate Positivity"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:corporate-sustainability-reporting", "label": "Corporate Sustainability Reporting"},
+      {"@id": "urn:ngm:class:supply-chain-decarbonisation", "label": "Supply Chain Decarbonisation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:carbon-neutrality-verification", "label": "Carbon Neutrality Verification"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
+      {"@id": "urn:ngm:class:direct-air-capture", "label": "Direct Air Capture"},
+      {"@id": "urn:ngm:class:eu-green-claims-directive", "label": "EU Green Claims Directive"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:climate-neutral", "label": "Climate Neutral"},
+    {"@id": "urn:ngm:class:carbon-balanced", "label": "Carbon Balanced"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

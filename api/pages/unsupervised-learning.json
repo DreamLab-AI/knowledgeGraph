@@ -4,12 +4,12 @@
   "slug": "unsupervised-learning",
   "public": true,
   "classIri": "urn:ngm:class:unsupervised-learning",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering, dimensionality reduction, density estimation, anomaly detection, and generative modelling, enabling exploratory data analysis and latent feature extraction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
@@ -20,13 +20,50 @@
       {
         "id": "urn:ngm:class:dimensionality-reduction",
         "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:autoencoders",
+        "label": "Autoencoders"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:unlabeled-data",
+        "label": "Unlabeled Data"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
       }
     ],
     "dependsOn": [],
@@ -35,10 +72,36 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -50,6 +113,14 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
       }
     ]
   },

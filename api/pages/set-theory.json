@@ -4,20 +4,46 @@
   "slug": "set-theory",
   "public": true,
   "classIri": "urn:ngm:class:set-theory",
-  "domain": "machine-learning",
-  "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.",
+  "domain": "artificial-intelligence",
+  "definition": "The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics including logic, topology, algebra, and knowledge representation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zermelo-fraenkel-axioms",
+        "label": "Zermelo-Fraenkel Axioms"
+      },
+      {
+        "id": "urn:ngm:class:axiom-of-choice",
+        "label": "Axiom of Choice"
+      },
+      {
+        "id": "urn:ngm:class:cardinal-numbers",
+        "label": "Cardinal Numbers"
+      },
+      {
+        "id": "urn:ngm:class:ordinal-numbers",
+        "label": "Ordinal Numbers"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:description-logic",
@@ -30,17 +56,78 @@
       {
         "id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-ontology",
+        "label": "Formal Ontology"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:category-theory",
+        "label": "Category Theory"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:database-theory",
+        "label": "Database Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:foundations-of-mathematics",
+        "label": "Foundations of Mathematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ]
   },
   "wikilinks": [
     {

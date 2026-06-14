@@ -59,15 +59,13 @@ public:: true
   "@type": "Class",
   "label": "MaterialX",
   "definition": "MaterialX is an open standard for describing surface and procedural materials, shading networks and look development data in a renderer-independent form for exchange between content creation tools.",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:material-definition",
-      "label": "Material Definition"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:material-definition",
+    "label": "Material Definition"
+  },
   "relations": {
     "requires": [
       {
@@ -77,6 +75,10 @@ public:: true
       {
         "@id": "urn:ngm:class:texture-mapping",
         "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:shading-network",
+        "label": "Shading Network"
       }
     ],
     "enables": [
@@ -87,14 +89,113 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-interoperability",
         "label": "Asset Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:look-development",
+        "label": "Look Development"
+      },
+      {
+        "@id": "urn:ngm:class:renderer-independent-material",
+        "label": "Renderer-Independent Material"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:node-graph",
+        "label": "Node Graph"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-texture",
+        "label": "Procedural Texture"
+      },
+      {
+        "@id": "urn:ngm:class:node-definition",
+        "label": "Node Definition"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:shading-model",
+        "label": "Shading Model"
+      },
+      {
+        "@id": "urn:ngm:class:material-graph",
+        "label": "Material Graph"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:physically-based-shading",
+        "label": "Physically Based Shading"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:3d-asset-pipeline",
+        "label": "3D Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:vfx-production",
+        "label": "VFX Production"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:mdl",
+        "label": "MDL"
+      },
+      {
+        "@id": "urn:ngm:class:osl",
+        "label": "OSL"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:open-color-io",
+        "label": "OpenColorIO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vfx-reference-platform",
+        "label": "VFX Reference Platform"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

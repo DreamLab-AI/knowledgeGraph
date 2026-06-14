@@ -42,33 +42,71 @@ public:: true
   "@id": "urn:ngm:class:positional-encoding",
   "@type": "Class",
   "label": "Positional Encoding",
-  "definition": "A technique for injecting information about the relative or absolute position of tokens in a sequence, essential for transformers since they lack inherent sequential ordering.",
-  "domain": "spatial-computing",
-  "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
+  "definition": "A technique for injecting information about the relative or absolute position of tokens in a sequence into a neural network, essential for transformer models since self-attention mechanisms are inherently permutation-invariant and lack sequential ordering awareness.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": {
+    "@id": "urn:ngm:class:sequence-representation",
+    "label": "Sequence Representation"
+  },
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
     ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:sinusoidal-encoding", "label": "Sinusoidal Encoding"},
+      {"@id": "urn:ngm:class:rotary-position-embedding", "label": "Rotary Position Embedding"}
+    ],
     "requires": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"}
+      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
+      {"@id": "urn:ngm:class:embedding-dimension", "label": "Embedding Dimension"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"},
+      {"@id": "urn:ngm:class:long-context-modeling", "label": "Long-Context Modeling"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sequence-order-representation", "label": "Sequence Order Representation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sinusoidal-functions", "label": "Sinusoidal Functions"},
+      {"@id": "urn:ngm:class:learnable-parameters", "label": "Learnable Parameters"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time-Series Forecasting"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:relative-positional-encoding", "label": "Relative Positional Encoding"},
+      {"@id": "urn:ngm:class:attention-with-linear-biases", "label": "Attention with Linear Biases"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:sequence-length-extrapolation", "label": "Sequence Length Extrapolation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-encoding", "label": "Spatial Encoding"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:position-embedding", "label": "Position Embedding"},
+    {"@id": "urn:ngm:class:positional-embedding", "label": "Positional Embedding"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

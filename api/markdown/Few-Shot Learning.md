@@ -54,16 +54,14 @@ public:: true
   "@id": "urn:ngm:class:few-shot-learning",
   "@type": "Class",
   "label": "Few-Shot Learning",
-  "definition": "A learning setting in which a model is required to generalise to a new task or class from only a small number of labelled examples.",
+  "definition": "A learning setting in which a model is required to generalise to a new task or class from only a small number of labelled examples, typically by leveraging prior knowledge or inductive biases learned across many related tasks.",
   "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-discipline",
+    "label": "Machine Learning"
+  },
   "relations": {
     "requires": [
       {
@@ -73,20 +71,118 @@ public:: true
       {
         "@id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inductive-bias",
+        "label": "Inductive Bias"
+      },
+      {
+        "@id": "urn:ngm:class:support-set",
+        "label": "Support Set"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:in-context-learning",
         "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:low-resource-learning",
+        "label": "Low-Resource Learning"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-task-adaptation",
+        "label": "Rapid Task Adaptation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:metric-learning",
+        "label": "Metric Learning"
+      },
+      {
+        "@id": "urn:ngm:class:prototypical-networks",
+        "label": "Prototypical Networks"
+      },
+      {
+        "@id": "urn:ngm:class:siamese-networks",
+        "label": "Siamese Networks"
+      },
+      {
+        "@id": "urn:ngm:class:model-agnostic-meta-learning",
+        "label": "Model-Agnostic Meta-Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:n-way-k-shot-classification",
+        "label": "N-Way K-Shot Classification"
+      },
+      {
+        "@id": "urn:ngm:class:episodic-training",
+        "label": "Episodic Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:one-shot-learning",
+        "label": "One-Shot Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:k-shot-learning",
+      "label": "K-Shot Learning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

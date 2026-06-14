@@ -54,17 +54,39 @@ public:: true
   "@id": "urn:ngm:class:oauth",
   "@type": "Class",
   "label": "OAuth",
-  "definition": "An open standard for delegated authorisation that allows a user to grant a third-party application limited access to resources without sharing their credentials.",
+  "definition": "An open standard for delegated authorisation that allows a user to grant a third-party application limited access to a protected resource on behalf of a resource owner, using scoped, revocable access tokens rather than sharing credentials.",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:authorisation",
-      "label": "Authorisation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:authorisation",
+    "label": "Authorisation"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "@id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation-code",
+        "label": "Authorisation Code"
+      },
+      {
+        "@id": "urn:ngm:class:scope",
+        "label": "Scope"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:authorisation",
@@ -73,20 +95,134 @@ public:: true
       {
         "@id": "urn:ngm:class:access-control",
         "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:client-credentials",
+        "label": "Client Credentials"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-authorisation",
+        "label": "Delegated Authorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:token-endpoint",
+        "label": "Token Endpoint"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      },
+      {
+        "@id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:third-party-application",
+        "label": "Third-Party Application"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-application",
+        "label": "Mobile Application"
+      },
+      {
+        "@id": "urn:ngm:class:server-to-server-communication",
+        "label": "Server-to-Server Communication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-6749",
+        "label": "RFC 6749"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:basic-authentication",
+        "label": "Basic Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:open-authorisation",
+      "label": "Open Authorisation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

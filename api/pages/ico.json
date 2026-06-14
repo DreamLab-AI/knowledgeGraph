@@ -13,21 +13,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:whitepaper",
+        "label": "Whitepaper"
+      },
+      {
+        "id": "urn:ngm:class:token-sale",
+        "label": "Token Sale"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-project-funding",
+        "label": "Decentralised Project Funding"
+      },
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:investor-trust",
+        "label": "Investor Trust"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -40,10 +101,23 @@
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:securities-and-exchange-commission",
+        "label": "Securities and Exchange Commission"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -57,6 +131,14 @@
       {
         "id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:initial-exchange-offering",
+        "label": "Initial Exchange Offering"
+      },
+      {
+        "id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
       }
     ]
   },

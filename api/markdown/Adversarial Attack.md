@@ -53,25 +53,73 @@ public:: true
   "definition": "An Adversarial Attack is a deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting model vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert intended behaviour. Attack classes include evasion, poisoning, model extraction, inversion, and backdoor, across white-box, black-box, and grey-box threat models.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-security-threat",
+    "label": "AI Security Threat"
+  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:adversarial-attacks",
       "label": "Adversarial Attacks"
+    },
+    {
+      "@id": "urn:ngm:class:adversarial-example-attack",
+      "label": "Adversarial Example Attack"
     }
   ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:evasion-attack",
+        "label": "Evasion Attack"
+      },
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:backdoor-attack",
+        "label": "Backdoor Attack"
+      },
+      {
+        "@id": "urn:ngm:class:model-extraction",
+        "label": "Model Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:red-team-testing",
+        "label": "Red Team Testing"
+      }
+    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:robustness",
@@ -80,12 +128,24 @@ public:: true
       {
         "@id": "urn:ngm:class:safety-fine-tuning",
         "label": "Safety Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:certified-defense",
+        "label": "Certified Defense"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-based-optimization",
+        "label": "Gradient-Based Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:perturbation",
+        "label": "Perturbation"
       }
     ],
     "relatedTo": [
@@ -96,6 +156,24 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
       }
     ]
   }

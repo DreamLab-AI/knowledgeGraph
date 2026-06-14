@@ -23,22 +23,54 @@ public:: true
   "definition": "Scientific computing is the discipline concerned with the development and application of computational methods and software to solve mathematical and scientific problems that are analytically intractable or whose scale demands automation. It encompasses numerical analysis, algorithm design, software engineering for high-performance systems, and the management of large-scale simulation workflows. Key application domains include climate modelling, computational fluid dynamics, molecular dynamics, finite element analysis, and astronomical simulation. Scientific computing increasingly overlaps with machine learning as data-driven models augment or replace first-principles simulations.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}],
+  "subClassOf": {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:numerical-analysis", "label": "Numerical Analysis"},
+      {"@id": "urn:ngm:class:parallel-programming", "label": "Parallel Programming"},
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"},
       {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"}
+      {"@id": "urn:ngm:class:numerical-libraries", "label": "Numerical Libraries"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"},
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
+      {"@id": "urn:ngm:class:mpi", "label": "MPI"},
+      {"@id": "urn:ngm:class:openmp", "label": "OpenMP"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"}
+      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"},
+      {"@id": "urn:ngm:class:molecular-dynamics", "label": "Molecular Dynamics"},
+      {"@id": "urn:ngm:class:climate-modelling", "label": "Climate Modelling"},
+      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:physics-informed-neural-networks", "label": "Physics-Informed Neural Networks"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computational-science", "label": "Computational Science"},
+      {"@id": "urn:ngm:class:data-science", "label": "Data Science"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:computational-science", "label": "Computational Science"},
+    {"@id": "urn:ngm:class:numerical-computing", "label": "Numerical Computing"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

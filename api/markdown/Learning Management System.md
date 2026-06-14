@@ -53,29 +53,147 @@ public:: true
   "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:educational-technology",
-      "label": "Educational Technology"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:educational-technology",
+    "label": "Educational Technology"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:course-authoring-tool",
+        "label": "Course Authoring Tool"
+      },
+      {
+        "@id": "urn:ngm:class:learner-analytics-dashboard",
+        "label": "Learner Analytics Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:assessment-engine",
+        "label": "Assessment Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:vr-training-delivery",
         "label": "VR Training Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:competency-based-education",
+        "label": "Competency-Based Education"
+      },
+      {
+        "@id": "urn:ngm:class:blended-learning",
+        "label": "Blended Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "@id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      },
+      {
+        "@id": "urn:ngm:class:lti",
+        "label": "LTI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:learning-record-store",
+        "label": "Learning Record Store"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-credentialing",
+        "label": "Blockchain Credentialing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse-training",
+        "label": "Metaverse Training"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-learning",
+        "label": "Mobile Learning"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-learning-technology-standards-committee",
+        "label": "IEEE Learning Technology Standards Committee"
+      },
+      {
+        "@id": "urn:ngm:class:ims-global-learning-consortium",
+        "label": "IMS Global Learning Consortium"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:learning-experience-platform",
+        "label": "Learning Experience Platform"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-resource-information-system",
+        "label": "Human Resource Information System"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lms",
+      "label": "LMS"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-learning-environment",
+      "label": "Virtual Learning Environment"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

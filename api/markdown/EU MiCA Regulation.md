@@ -58,35 +58,157 @@ public:: true
   "@id": "urn:ngm:class:eu-mi-ca-regulation",
   "@type": "Class",
   "label": "EU MiCA Regulation",
-  "definition": "The EU Markets in Crypto-Assets Regulation is a European Union framework establishing harmonised rules for crypto-asset issuance, trading and service provision.",
-  "domain": "governance",
+  "definition": "The EU Markets in Crypto-Assets Regulation is a European Union framework establishing harmonised rules for crypto-asset issuance, trading and service provision, covering asset-referenced tokens, e-money tokens, and crypto-asset service providers across EU member states.",
+  "domain": "finance",
   "maturity": "established",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:crypto-regulation",
-      "label": "Crypto Regulation"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:crypto-regulation",
+    "label": "Crypto Regulation"
+  },
   "relations": {
     "requires": [
       {
         "@id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-service-provider",
+        "label": "Crypto Asset Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:whitepaper-disclosure",
+        "label": "Whitepaper Disclosure"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:investor-protection",
         "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:eu-single-market-passporting",
+        "label": "EU Single Market Passporting"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-referenced-token-regime",
+        "label": "Asset Referenced Token Regime"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-money-token-regime",
+        "label": "Electronic Money Token Regime"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-service-provider-authorisation",
+        "label": "Crypto Asset Service Provider Authorisation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:eu-digital-finance-strategy",
+        "label": "EU Digital Finance Strategy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:eu-financial-regulation",
+        "label": "EU Financial Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:european-securities-and-markets-authority",
+        "label": "European Securities and Markets Authority"
+      },
+      {
+        "@id": "urn:ngm:class:european-banking-authority",
+        "label": "European Banking Authority"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sec-crypto-enforcement",
+        "label": "SEC Crypto Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering-directive",
+        "label": "Anti Money Laundering Directive"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:markets-in-crypto-assets-regulation",
+      "label": "Markets in Crypto Assets Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:mica-regulation",
+      "label": "MiCA Regulation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

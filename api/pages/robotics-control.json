@@ -16,7 +16,16 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -25,6 +34,14 @@
       {
         "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
       }
     ],
     "enables": [
@@ -35,12 +52,47 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classical-control",
+        "label": "Classical Control"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -53,6 +105,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
       }
     ],
     "supports": [],
@@ -60,8 +124,12 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:actuator",
-        "label": "Actuator"
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:safety-assurance",
+        "label": "Safety Assurance"
       }
     ]
   },

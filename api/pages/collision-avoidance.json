@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.58,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
       }
     ],
     "enables": [
@@ -39,15 +47,76 @@
       {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-operation",
+        "label": "Autonomous Vehicle Operation"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle-operation",
+        "label": "Unmanned Aerial Vehicle Operation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:robot-trajectories",
+        "label": "Robot Trajectories"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:airspace-management",
+        "label": "Airspace Management"
+      },
+      {
+        "id": "urn:ngm:class:maritime-navigation",
+        "label": "Maritime Navigation"
+      },
+      {
+        "id": "urn:ngm:class:space-debris-mitigation",
+        "label": "Space Debris Mitigation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:safety-system",
@@ -56,9 +125,22 @@
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:advanced-driver-assistance-system",
+        "label": "Advanced Driver Assistance System"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:traffic-collision-avoidance-system",
+        "label": "Traffic Collision Avoidance System"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

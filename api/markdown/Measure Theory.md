@@ -72,8 +72,8 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:owl-thing",
-      "label": "owl:Thing"
+      "@id": "urn:ngm:class:mathematical-analysis",
+      "label": "Mathematical Analysis"
     }
   ],
   "relations": {
@@ -85,6 +85,18 @@ public:: true
       {
         "@id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:measurable-function",
+        "label": "Measurable Function"
+      },
+      {
+        "@id": "urn:ngm:class:borel-set",
+        "label": "Borel Set"
+      },
+      {
+        "@id": "urn:ngm:class:measure-space",
+        "label": "Measure Space"
       }
     ],
     "requires": [
@@ -95,6 +107,10 @@ public:: true
       {
         "@id": "urn:ngm:class:real-analysis",
         "label": "Real Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
       }
     ],
     "enables": [
@@ -105,14 +121,108 @@ public:: true
       {
         "@id": "urn:ngm:class:stochastic-processes",
         "label": "Stochastic Processes"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:countable-additivity",
+        "label": "Countable Additivity"
+      },
+      {
+        "@id": "urn:ngm:class:convergence-theorems",
+        "label": "Convergence Theorems"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-theory",
+        "label": "Neural Network Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:axiomatic-set-theory",
+        "label": "Axiomatic Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:metric-space",
+        "label": "Metric Space"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:riemann-integral",
+        "label": "Riemann Integral"
+      },
+      {
+        "@id": "urn:ngm:class:non-measurable-set",
+        "label": "Non-Measurable Set"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lebesgue-dominated-convergence",
+        "label": "Lebesgue Dominated Convergence Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:radon-nikodym-theorem",
+        "label": "Radon-Nikodym Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:measure-and-integration",
+      "label": "Measure and Integration"
+    },
+    {
+      "@id": "urn:ngm:class:abstract-measure-theory",
+      "label": "Abstract Measure Theory"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

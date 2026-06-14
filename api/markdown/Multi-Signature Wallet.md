@@ -23,26 +23,69 @@ public:: true
   "definition": "A multi-signature wallet is a cryptographic account on a blockchain network that requires M-of-N authorisation — where a minimum of M private key holders out of a total of N authorised signers must collectively sign a transaction before it is considered valid and broadcast to the network. This threshold scheme eliminates single points of failure in asset custody, distributing the risk of key compromise or loss across multiple independent parties or hardware devices. Multi-signature wallets are widely deployed for treasury management, DAO governance, and exchange hot wallets, and are implemented both as native Bitcoin script constructs and as smart contracts on EVM-compatible chains.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}],
+  "subClassOf": {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}
+      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"},
+      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"},
+      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
+      {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"},
+      {"@id": "urn:ngm:class:social-recovery", "label": "Social Recovery"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:transaction-signing", "label": "Transaction Signing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
+      {"@id": "urn:ngm:class:bip-11", "label": "BIP-11"},
+      {"@id": "urn:ngm:class:pay-to-script-hash", "label": "Pay-to-Script-Hash"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:exchange-custody", "label": "Exchange Custody"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:single-key-wallet", "label": "Single-Key Wallet"},
+      {"@id": "urn:ngm:class:custodial-wallet", "label": "Custodial Wallet"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:signing-quorum", "label": "Signing Quorum"},
+      {"@id": "urn:ngm:class:timelock-controller", "label": "Timelock Controller"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
+      {"@id": "urn:ngm:class:account-abstraction", "label": "Account Abstraction"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"},
+    {"@id": "urn:ngm:class:m-of-n-wallet", "label": "M-of-N Wallet"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

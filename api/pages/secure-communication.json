@@ -17,7 +17,20 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:privacy",
@@ -26,12 +39,52 @@
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:secure-remote-access",
+        "label": "Secure Remote Access"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:plaintext-communication",
+        "label": "Plaintext Communication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:iot-security",
+        "label": "IoT Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:encryption",
@@ -48,10 +101,31 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {

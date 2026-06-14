@@ -21,28 +21,67 @@ public:: true
   "@type": "Class",
   "label": "KV Cache",
   "definition": "A KV Cache (Key-Value Cache) in transformer-based language models is a memory structure that stores the computed key and value projection tensors from the multi-head self-attention mechanism for all previously processed tokens in a sequence, allowing autoregressive decoding to reuse these intermediate results rather than recomputing them at every generation step, thereby reducing the per-token computational cost from O(N²) to O(N) in generation. Each decoder layer maintains its own KV cache, which grows linearly with sequence length and model width, making memory bandwidth and GPU HBM capacity the primary constraints on inference throughput for long-context models. KV cache management strategies — including paged allocation (PagedAttention), prefix sharing, quantisation, and off-loading — are critical determinants of serving efficiency and cost.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}],
+  "subClassOf": {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:key-projection", "label": "Key Projection"},
+      {"@id": "urn:ngm:class:value-projection", "label": "Value Projection"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gpu-memory", "label": "GPU Memory"},
+      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
       {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
+      {"@id": "urn:ngm:class:prompt-caching", "label": "Prompt Caching"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:paged-attention", "label": "PagedAttention"},
+      {"@id": "urn:ngm:class:prefix-sharing", "label": "Prefix Sharing"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"},
       {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:linear-attention", "label": "Linear Attention"},
+      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:grouped-query-attention", "label": "Grouped Query Attention"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:virtual-memory-management", "label": "Virtual Memory Management"},
+      {"@id": "urn:ngm:class:distributed-inference", "label": "Distributed Inference"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:key-value-cache", "label": "Key Value Cache"},
+    {"@id": "urn:ngm:class:attention-cache", "label": "Attention Cache"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

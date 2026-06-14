@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:otlp",
+        "label": "OpenTelemetry Protocol (OTLP)"
+      },
+      {
+        "id": "urn:ngm:class:otel-collector",
+        "label": "OTel Collector"
+      },
+      {
+        "id": "urn:ngm:class:otel-sdk",
+        "label": "OTel SDK"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:context-propagation",
+        "label": "Context Propagation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:microservices-architecture",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root-Cause Analysis"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:opentracing",
+        "label": "OpenTracing"
+      },
+      {
+        "id": "urn:ngm:class:opencensus",
+        "label": "OpenCensus"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:llm-observability",
+        "label": "LLM Observability"
+      },
+      {
+        "id": "urn:ngm:class:ai-system-monitoring",
+        "label": "AI System Monitoring"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:api-standard",
@@ -40,16 +97,38 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:semantic-conventions",
+        "label": "Semantic Conventions"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "id": "urn:ngm:class:jaeger",
+        "label": "Jaeger"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:real-time-monitoring",

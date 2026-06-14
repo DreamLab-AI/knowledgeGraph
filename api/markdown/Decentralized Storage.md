@@ -151,38 +151,74 @@ alias:: DecentralizedStorage
   "@id": "urn:ngm:class:decentralized-storage",
   "@type": "Class",
   "label": "Decentralized Storage",
-  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    },
-    {
-      "@id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
-    }
-  ],
+  "definition": "A distributed storage infrastructure that distributes data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure, often incentivised by cryptographic token mechanisms.",
+  "domain": "distributed-systems",
+  "maturity": "emerging",
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-file-system",
+    "label": "Distributed File System"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:storage-node", "label": "Storage Node"},
+      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:web3-infrastructure", "label": "Web3 Infrastructure"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
+      {"@id": "urn:ngm:class:user-sovereignty", "label": "User Sovereignty"},
+      {"@id": "urn:ngm:class:content-distribution", "label": "Content Distribution"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
+      {"@id": "urn:ngm:class:arweave", "label": "Arweave"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:token-incentive", "label": "Token Incentive"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:nft-metadata", "label": "NFT Metadata"},
+      {"@id": "urn:ngm:class:persistent-storage", "label": "Persistent Storage"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {"@id": "urn:ngm:class:centralised-cloud-storage", "label": "Centralised Cloud Storage"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:storj", "label": "Storj"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.4,
+  "sameAs": [
+    {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"},
+    {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

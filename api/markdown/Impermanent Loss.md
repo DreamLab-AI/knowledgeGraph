@@ -23,24 +23,64 @@ public:: true
   "definition": "Impermanent loss is the opportunity cost incurred by a liquidity provider in an automated market maker (AMM) when the price ratio of deposited assets diverges from the ratio at deposit time, causing the provider's pool share to be worth less than simply holding the assets would have been. The loss is 'impermanent' because it reverses if prices return to the original ratio, but becomes realised upon withdrawal.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-    {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"}
-  ],
+  "subClassOf": {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:amm-algorithm", "label": "AMM Algorithm"}
+      {"@id": "urn:ngm:class:amm-algorithm", "label": "AMM Algorithm"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
+      {"@id": "urn:ngm:class:defi-yield", "label": "DeFi Yield"},
+      {"@id": "urn:ngm:class:token-pair", "label": "Token Pair"},
+      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"}
+      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
+      {"@id": "urn:ngm:class:hold-strategy", "label": "Hold Strategy"},
+      {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:constant-product-formula", "label": "Constant Product Formula"}
+      {"@id": "urn:ngm:class:constant-product-formula", "label": "Constant Product Formula"},
+      {"@id": "urn:ngm:class:price-ratio", "label": "Price Ratio"},
+      {"@id": "urn:ngm:class:asset-volatility", "label": "Asset Volatility"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:divergence-loss", "label": "Divergence Loss"},
+      {"@id": "urn:ngm:class:realised-loss", "label": "Realised Loss"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:liquidity-provider-risk", "label": "Liquidity Provider Risk"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:il-hedging-strategy", "label": "IL Hedging Strategy"},
+      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:pool-rebalancing", "label": "Pool Rebalancing"},
+      {"@id": "urn:ngm:class:arbitrage", "label": "Arbitrage"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:short-volatility-position", "label": "Short Volatility Position"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:il-protection", "label": "IL Protection"},
+      {"@id": "urn:ngm:class:dynamic-fee-amm", "label": "Dynamic Fee AMM"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:options-pricing", "label": "Options Pricing"},
+      {"@id": "urn:ngm:class:market-making-risk", "label": "Market Making Risk"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:divergence-loss", "label": "Divergence Loss"},
+    {"@id": "urn:ngm:class:amm-opportunity-cost", "label": "AMM Opportunity Cost"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

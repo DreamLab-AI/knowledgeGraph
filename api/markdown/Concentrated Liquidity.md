@@ -28,19 +28,54 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:price-tick", "label": "Price Tick"},
+      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
       {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:active-liquidity-management", "label": "Active Liquidity Management"},
+      {"@id": "urn:ngm:class:capital-efficiency", "label": "Capital Efficiency"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"},
+      {"@id": "urn:ngm:class:fee-tier", "label": "Fee Tier"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:liquidity-position", "label": "Liquidity Position"},
+      {"@id": "urn:ngm:class:tick-range", "label": "Tick Range"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:constant-product-amm", "label": "Constant-Product AMM"},
+      {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"},
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"}
+      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
+      {"@id": "urn:ngm:class:protocol-owned-liquidity", "label": "Protocol-Owned Liquidity"},
+      {"@id": "urn:ngm:class:perpetual-futures", "label": "Perpetual Futures"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:market-microstructure", "label": "Market Microstructure"},
+      {"@id": "urn:ngm:class:financial-derivatives", "label": "Financial Derivatives"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:range-order-liquidity", "label": "Range Order Liquidity"},
+    {"@id": "urn:ngm:class:tick-based-liquidity", "label": "Tick-Based Liquidity"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

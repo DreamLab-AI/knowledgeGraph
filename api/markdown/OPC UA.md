@@ -24,25 +24,65 @@ alias:: OPC-UA
   "definition": "OPC Unified Architecture (OPC UA) is an open, platform-independent, service-oriented communication standard developed by the OPC Foundation for secure and reliable data exchange in industrial automation and the Industrial Internet of Things. It provides a unified information model that merges process data, alarms, historical data, and device metadata into a single addressable namespace accessible via TCP binary or HTTPS transport, replacing the earlier COM/DCOM-based OPC Classic specifications with a cross-platform, scalable architecture.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}],
+  "subClassOf": {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:opc-ua-address-space", "label": "OPC UA Address Space"},
+      {"@id": "urn:ngm:class:opc-ua-information-model", "label": "OPC UA Information Model"},
+      {"@id": "urn:ngm:class:opc-ua-pubsub", "label": "OPC UA PubSub"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"},
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
       {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
       {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"},
+      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
       {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
     ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:opc-foundation", "label": "OPC Foundation"},
+      {"@id": "urn:ngm:class:iec", "label": "IEC"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:modbus", "label": "Modbus"},
+      {"@id": "urn:ngm:class:profinet", "label": "PROFINET"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
+      {"@id": "urn:ngm:class:programmable-logic-controller", "label": "Programmable Logic Controller"},
+      {"@id": "urn:ngm:class:scada", "label": "SCADA"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:opc-unified-architecture", "label": "OPC Unified Architecture"},
+    {"@id": "urn:ngm:class:iec-62541-opc-ua", "label": "IEC 62541 OPC UA"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

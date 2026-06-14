@@ -54,21 +54,47 @@ public:: true
   "@id": "urn:ngm:class:model-registry",
   "@type": "Class",
   "label": "Model Registry",
-  "definition": "A model registry is a system for cataloguing trained machine learning models with their versions, metadata and lifecycle stage. It provides a central record that links a model to its training data, metrics and deployment status.",
+  "definition": "A model registry is a system for cataloguing trained machine learning models with their versions, metadata and lifecycle stage. It provides a central record that links a model to its training data, metrics and deployment status, supporting governance, reproducibility and controlled promotion across staging environments.",
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:mlops",
-      "label": "MLOps"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:mlops",
+    "label": "MLOps"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:model-version",
+        "label": "Model Version"
+      },
+      {
+        "@id": "urn:ngm:class:model-metadata",
+        "label": "Model Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:model-artifact",
+        "label": "Model Artifact"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mlops-platform",
+        "label": "MLOps Platform"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-versioning",
         "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
       }
     ],
     "enables": [
@@ -79,14 +105,100 @@ public:: true
       {
         "@id": "urn:ngm:class:model-serving",
         "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-reproducibility",
+        "label": "Model Reproducibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:artifact-store",
+        "label": "Artifact Store"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-database",
+        "label": "Metadata Database"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:model-lineage-tracking",
+        "label": "Model Lineage Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:continuous-integration-continuous-delivery",
+        "label": "Continuous Integration Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:model-lifecycle-management",
+        "label": "Model Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:container-registry",
+        "label": "Container Registry"
+      },
+      {
+        "@id": "urn:ngm:class:package-repository",
+        "label": "Package Repository"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:software-asset-management",
+        "label": "Software Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ml-model-registry",
+      "label": "ML Model Registry"
+    },
+    {
+      "@id": "urn:ngm:class:model-catalog",
+      "label": "Model Catalog"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

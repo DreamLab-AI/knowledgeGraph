@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-scheme",
+        "label": "Multi-Signature Scheme"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:private-key",
@@ -25,23 +38,92 @@
       {
         "id": "urn:ngm:class:wallet",
         "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-transfer",
+        "label": "Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-pair",
+        "label": "Cryptographic Key Pair"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-asset-custody",
+        "label": "Financial Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
       }
     ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:asset-recovery",
+        "label": "Asset Recovery"
+      }
+    ]
   },
   "wikilinks": [
     {

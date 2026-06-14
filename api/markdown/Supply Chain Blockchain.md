@@ -46,28 +46,154 @@ public:: true
   "@id": "urn:ngm:class:supply-chain-blockchain",
   "@type": "Class",
   "label": "Supply Chain Blockchain",
-  "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers.",
+  "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers, providing an immutable shared record of transactions that enables real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-application",
+    "label": "Blockchain Application"
+  },
   "relations": {
     "enables": [
       {
         "@id": "urn:ngm:class:product-traceability",
         "label": "Product Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti-Counterfeiting"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:supplier-compliance-verification",
+        "label": "Supplier Compliance Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-edi",
+        "label": "Traditional EDI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:blockchain-supply-chain",
+      "label": "Blockchain Supply Chain"
+    },
+    {
+      "@id": "urn:ngm:class:supply-chain-distributed-ledger",
+      "label": "Supply Chain Distributed Ledger"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

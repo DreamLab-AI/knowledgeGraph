@@ -71,20 +71,38 @@ alias:: AvatarCustomization
   "@id": "urn:ngm:class:avatar-customization",
   "@type": "Class",
   "label": "Avatar Customization",
-  "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
+  "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse and spatial-computing environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "SC Interaction"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-content-and-assets",
+    "label": "Content and Assets"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:avatar-appearance-editor",
+        "label": "Avatar Appearance Editor"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-items",
+        "label": "Wearable Items"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation-system",
+        "label": "Avatar Animation System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-personalization",
+        "label": "Digital Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-user-experience",
+        "label": "Metaverse User Experience"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:asset-libraries",
@@ -97,6 +115,10 @@ alias:: AvatarCustomization
       {
         "@id": "urn:ngm:class:real-time-preview",
         "label": "Real-Time Preview"
+      },
+      {
+        "@id": "urn:ngm:class:3d-rendering-engine",
+        "label": "3D Rendering Engine"
       }
     ],
     "enables": [
@@ -111,14 +133,102 @@ alias:: AvatarCustomization
       {
         "@id": "urn:ngm:class:social-distinction",
         "label": "Social Distinction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-social-presence",
+        "label": "Virtual Social Presence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-design",
+        "label": "Parametric Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-recommendation-system",
+        "label": "AI Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-platform-avatar",
+        "label": "Cross-Platform Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fixed-avatar",
+        "label": "Fixed Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:nft-wearables",
+        "label": "NFT Wearables"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:ready-player-me",
+        "label": "Ready Player Me"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:avatar-personalisation",
+      "label": "Avatar Personalisation"
+    },
+    {
+      "@id": "urn:ngm:class:character-customization",
+      "label": "Character Customization"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -17,33 +17,120 @@
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
+    "requires": [
+      {
+        "id": "urn:ngm:class:common-enterprise",
+        "label": "Common Enterprise"
+      },
+      {
+        "id": "urn:ngm:class:investment-of-money",
+        "label": "Investment of Money"
+      },
+      {
+        "id": "urn:ngm:class:expectation-of-profits",
+        "label": "Expectation of Profits"
+      },
+      {
+        "id": "urn:ngm:class:efforts-of-others",
+        "label": "Efforts of Others"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sec-enforcement-action",
+        "label": "SEC Enforcement Action"
+      },
+      {
+        "id": "urn:ngm:class:security-token-registration",
+        "label": "Security Token Registration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:securities-act-1933",
+        "label": "Securities Act 1933"
+      },
       {
         "id": "urn:ngm:class:securities-exchange-act-1934",
         "label": "Securities Exchange Act 1934"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [],
+    "contrastsWith": [
       {
-        "id": "urn:ngm:class:securities-regulation",
-        "label": "Securities Regulation"
+        "id": "urn:ngm:class:commodity-classification",
+        "label": "Commodity Classification"
       },
+      {
+        "id": "urn:ngm:class:reves-test",
+        "label": "Reves Test"
+      },
+      {
+        "id": "urn:ngm:class:eu-mica-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:security-token-offering",
         "label": "Security Token Offering"
       },
       {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:crypto-token-classification",
+        "label": "Crypto Token Classification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:investment-contract",
+        "label": "Investment Contract"
+      },
+      {
+        "id": "urn:ngm:class:economic-substance-test",
+        "label": "Economic Substance Test"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:securities-disclosure",
+        "label": "Securities Disclosure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ripple-xrp-litigation",
+        "label": "Ripple XRP Litigation"
+      },
+      {
+        "id": "urn:ngm:class:dao-report-2017",
+        "label": "DAO Report 2017"
       }
     ]
   },

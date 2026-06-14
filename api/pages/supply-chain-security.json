@@ -13,20 +13,127 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      },
+      {
+        "id": "urn:ngm:class:dependency-pinning",
+        "label": "Dependency Pinning"
+      },
+      {
+        "id": "urn:ngm:class:provenance-attestation",
+        "label": "Provenance Attestation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-software-development",
+        "label": "Secure Software Development"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:package-repository",
+        "label": "Package Repository"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:slsa-framework",
+        "label": "SLSA Framework"
+      },
+      {
+        "id": "urn:ngm:class:in-toto-attestation",
+        "label": "in-toto Attestation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:executive-order-14028",
+        "label": "Executive Order 14028"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cyber-security-and-cryptography",
@@ -35,6 +142,14 @@
       {
         "id": "urn:ngm:class:third-party-risk-management",
         "label": "Third-Party Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
       }
     ]
   },

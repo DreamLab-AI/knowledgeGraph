@@ -74,19 +74,13 @@ public:: true
   "@id": "urn:ngm:class:digital-services-act",
   "@type": "Class",
   "label": "Digital Services Act",
-  "definition": "A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and vi...",
-  "domain": "artificial-intelligence",
+  "definition": "A comprehensive EU regulation establishing a legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance.",
+  "domain": "governance",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:digital-regulation",
-      "label": "Digital Regulation"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-regulation",
+    "label": "Digital Regulation"
+  },
   "relations": {
     "requires": [
       {
@@ -100,6 +94,14 @@ public:: true
       {
         "@id": "urn:ngm:class:reporting-mechanisms",
         "label": "Reporting Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
       }
     ],
     "enables": [
@@ -114,14 +116,106 @@ public:: true
       {
         "@id": "urn:ngm:class:user-protection",
         "label": "User Protection"
+      },
+      {
+        "@id": "urn:ngm:class:illegal-content-removal",
+        "label": "Illegal Content Removal"
+      },
+      {
+        "@id": "urn:ngm:class:minor-protection",
+        "label": "Minor Protection"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:very-large-online-platform-obligations",
+        "label": "Very Large Online Platform Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:notice-and-action-mechanism",
+        "label": "Notice and Action Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-flaggers-regime",
+        "label": "Trusted Flaggers Regime"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:eu-digital-single-market",
+        "label": "EU Digital Single Market"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-access-rights",
+        "label": "Data Access Rights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:online-safety",
+        "label": "Online Safety"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-algorithms",
+        "label": "Recommendation Algorithms"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dsa",
+      "label": "DSA"
+    },
+    {
+      "@id": "urn:ngm:class:eu-digital-services-regulation",
+      "label": "EU Digital Services Regulation"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

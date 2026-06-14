@@ -4,7 +4,7 @@
   "slug": "decentralisation",
   "public": true,
   "classIri": "urn:ngm:class:decentralisation",
-  "domain": "blockchain",
+  "domain": "distributed-systems",
   "definition": "Decentralisation is the architectural and governance principle of distributing authority, control, computation, or data storage across multiple independent nodes or actors rather than concentrating it in a single entity. In technical systems it manifests as distributed ledgers, peer-to-peer networks, and federated protocols that eliminate single points of failure and censorship. In governance it refers to transferring decision-making power from central authorities to local or community actors. The degree of decentralisation exists on a spectrum and involves trade-offs between efficiency, security, scalability, and resilience.",
   "subClassOf": [
     {
@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-finance",
@@ -26,12 +52,51 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-innovation",
+        "label": "Permissionless Innovation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralisation",
+        "label": "Centralisation"
+      },
+      {
+        "id": "urn:ngm:class:federated-architecture",
+        "label": "Federated Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -41,26 +106,30 @@
       {
         "id": "urn:ngm:class:decentralized-governance",
         "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
       },
       {
-        "id": "urn:ngm:class:censorship-resistance",
-        "label": "Censorship Resistance"
-      },
-      {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
       }
     ]
   },

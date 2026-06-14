@@ -4,16 +4,16 @@
   "slug": "midjourney-text-to-image-service",
   "public": true,
   "classIri": "urn:ngm:class:midjourney-text-to-image-service-text-to-image-service",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Midjourney is a proprietary generative artificial intelligence service that produces images from natural-language text prompts. It is operated by an independent research lab of the same name and is accessed primarily through a Discord bot interface and, later, a dedicated web application. The system is known for a distinctive aesthetic and for iterating rapidly through successive model versions that improve coherence, resolution and prompt adherence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:creative-media-domain",
-      "label": "Creative Media Domain"
+      "id": "urn:ngm:class:text-to-image-generation",
+      "label": "Text-to-Image Generation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -23,8 +23,16 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:text-to-image-generation",
-        "label": "Text-to-Image Generation"
+        "id": "urn:ngm:class:natural-language-prompt",
+        "label": "Natural Language Prompt"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:cloud-inference-infrastructure",
+        "label": "Cloud Inference Infrastructure"
       }
     ],
     "enables": [
@@ -35,17 +43,86 @@
       {
         "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-design",
+        "label": "AI-Assisted Design"
+      },
+      {
+        "id": "urn:ngm:class:rapid-visual-prototyping",
+        "label": "Rapid Visual Prototyping"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:dall-e",
+        "label": "DALL-E"
+      },
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:discord-platform",
+        "label": "Discord Platform"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-media-domain",
+        "label": "Creative Media Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-image-generation",
+        "label": "AI Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:copyright-and-ai",
+        "label": "Copyright and AI"
+      },
+      {
+        "id": "urn:ngm:class:training-data-provenance",
+        "label": "Training Data Provenance"
+      }
+    ]
   },
   "wikilinks": [
     {

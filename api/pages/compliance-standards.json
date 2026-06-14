@@ -4,8 +4,8 @@
   "slug": "compliance-standards",
   "public": true,
   "classIri": "urn:ngm:class:compliance-standards",
-  "domain": "artificial-intelligence",
-  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in ...",
+  "domain": "governance",
+  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:regulatory-guidance",
         "label": "Regulatory Guidance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:audit-and-accountability",
+        "label": "Audit and Accountability"
       }
     ],
     "enables": [
@@ -43,22 +51,101 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:ai-act",
+        "label": "AI Act"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-law",
+        "label": "Intellectual Property Law"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

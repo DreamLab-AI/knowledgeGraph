@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.85,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:operation-queue",
+        "label": "Operation Queue"
+      },
+      {
+        "id": "urn:ngm:class:execution-delay",
+        "label": "Execution Delay"
+      },
+      {
+        "id": "urn:ngm:class:cancellation-window",
+        "label": "Cancellation Window"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block-timestamp",
+        "label": "Block Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:access-control-module",
+        "label": "Access Control Module"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-governance",
@@ -26,21 +48,78 @@
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-governance",
+        "label": "Optimistic Governance"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof-window",
+        "label": "Fraud Proof Window"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:evm-smart-contract",
+        "label": "EVM Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:time-release-encryption",
+        "label": "Time-Release Encryption"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:immediate-execution",
+        "label": "Immediate Execution"
+      },
+      {
+        "id": "urn:ngm:class:flashloan",
+        "label": "Flash Loan"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer-2 Rollup"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:access-control-module",
-        "label": "Access Control Module"
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dao-treasury",
+        "label": "DAO Treasury"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade-pipeline",
+        "label": "Protocol Upgrade Pipeline"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:htlc",
@@ -53,6 +132,14 @@
       {
         "id": "urn:ngm:class:escrow-system",
         "label": "Escrow System"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
       }
     ]
   },

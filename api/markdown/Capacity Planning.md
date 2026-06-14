@@ -28,16 +28,52 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"}
+      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
+      {"@id": "urn:ngm:class:queuing-theory", "label": "Queuing Theory"},
+      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time Series Analysis"},
+      {"@id": "urn:ngm:class:utilisation-monitoring", "label": "Utilisation Monitoring"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective"},
+      {"@id": "urn:ngm:class:resource-optimisation", "label": "Resource Optimisation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:performance-monitoring", "label": "Performance Monitoring"},
+      {"@id": "urn:ngm:class:workload-management", "label": "Workload Management"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:finops", "label": "FinOps"},
+      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"},
+      {"@id": "urn:ngm:class:cost-optimisation", "label": "Cost Optimisation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:observability", "label": "Observability"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cloud-native", "label": "Cloud Native"},
-      {"@id": "urn:ngm:class:scalability-pattern", "label": "Scalability Pattern"}
+      {"@id": "urn:ngm:class:scalability-pattern", "label": "Scalability Pattern"},
+      {"@id": "urn:ngm:class:autoscaling", "label": "Autoscaling"},
+      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reactive-scaling", "label": "Reactive Scaling"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
+      {"@id": "urn:ngm:class:carbon-aware-computing", "label": "Carbon-Aware Computing"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:resource-capacity-management", "label": "Resource Capacity Management"},
+    {"@id": "urn:ngm:class:infrastructure-capacity-management", "label": "Infrastructure Capacity Management"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

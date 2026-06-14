@@ -13,21 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pneumatic-actuation",
+        "label": "Pneumatic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:compliant-actuator",
+        "label": "Compliant Actuator"
+      },
+      {
+        "id": "urn:ngm:class:soft-sensor",
+        "label": "Soft Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:bio-inspired-design",
+        "label": "Bio-Inspired Design"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-grasping",
+        "label": "Adaptive Grasping"
+      },
+      {
+        "id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:materials-science",
+        "label": "Materials Science"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rigid-body-robotics",
+        "label": "Rigid Body Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:physics-engine",
@@ -40,6 +97,14 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:ngm:class:3d-printing",
+        "label": "3D Printing"
       }
     ],
     "supports": [],
@@ -53,6 +118,14 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
       }
     ]
   },

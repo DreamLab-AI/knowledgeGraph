@@ -4,43 +4,96 @@
   "slug": "decentralized-storage",
   "public": true,
   "classIri": "urn:ngm:class:decentralized-storage",
-  "domain": "infrastructure",
-  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure.",
+  "domain": "distributed-systems",
+  "definition": "A distributed storage infrastructure that distributes data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure, often incentivised by cryptographic token mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    },
-    {
-      "id": "urn:ngm:class:network-infrastructure",
-      "label": "Network Infrastructure"
+      "id": "urn:ngm:class:distributed-file-system",
+      "label": "Distributed File System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:storage-node",
+        "label": "Storage Node"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:user-sovereignty",
+        "label": "User Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:content-addressing",
@@ -49,12 +102,48 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-incentive",
+        "label": "Token Incentive"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:nft-metadata",
+        "label": "NFT Metadata"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web3-infrastructure",
+        "label": "Web3 Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:storj",
+        "label": "Storj"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ]
   },
   "wikilinks": [
     {

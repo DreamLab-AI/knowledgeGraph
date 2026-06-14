@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:endpoint-contract",
+        "label": "Endpoint Contract"
       }
     ],
     "enables": [
@@ -39,17 +43,112 @@
       {
         "id": "urn:ngm:class:omnichain-application",
         "label": "Omnichain Application"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:token-bridge",
+        "label": "Token Bridge"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-oracle-network",
+        "label": "Decentralized Oracle Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability-protocol",
+        "label": "Cross-Chain Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wormhole",
+        "label": "Wormhole"
+      },
+      {
+        "id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
+      },
+      {
+        "id": "urn:ngm:class:polkadot-xcm",
+        "label": "Polkadot XCM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bridge",
+        "label": "Bridge"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ultra-light-node",
+        "label": "Ultra Light Node"
+      },
+      {
+        "id": "urn:ngm:class:transaction-proof",
+        "label": "Transaction Proof"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nft-bridging",
+        "label": "NFT Bridging"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-liquidity",
+        "label": "Cross-Chain Liquidity"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stargate-finance",
+        "label": "Stargate Finance"
+      },
+      {
+        "id": "urn:ngm:class:omni-fungible-token",
+        "label": "Omni Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ]
   },
   "wikilinks": [
     {

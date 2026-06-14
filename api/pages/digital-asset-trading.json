@@ -4,23 +4,36 @@
   "slug": "digital-asset-trading",
   "public": true,
   "classIri": "urn:ngm:class:digital-asset-trading",
-  "domain": "spatial-computing",
+  "domain": "finance",
   "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:financial-trading",
       "label": "Financial Trading"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:spot-trading",
+        "label": "Spot Trading"
+      },
+      {
+        "id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:over-the-counter-trading",
+        "label": "Over-the-Counter Trading"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:exchange-platform",
@@ -33,6 +46,18 @@
       {
         "id": "urn:ngm:class:settlement-systems",
         "label": "Settlement Systems"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
@@ -47,17 +72,74 @@
       {
         "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:custody-solution",
+        "label": "Custody Solution"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-securities-trading",
+        "label": "Traditional Securities Trading"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency-exchange",
+        "label": "Fiat Currency Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ]
   },
   "wikilinks": [
     {

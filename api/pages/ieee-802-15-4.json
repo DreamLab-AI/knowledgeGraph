@@ -13,30 +13,133 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "id": "urn:ngm:class:medium-access-control",
+        "label": "Medium Access Control"
+      },
+      {
+        "id": "urn:ngm:class:csma-ca",
+        "label": "CSMA-CA"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra-Wideband"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ism-band",
+        "label": "ISM Band"
+      },
+      {
+        "id": "urn:ngm:class:dsss-modulation",
+        "label": "DSSS Modulation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:wireless-sensor-network",
+        "label": "Wireless Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      },
+      {
+        "id": "urn:ngm:class:real-time-location-system",
+        "label": "Real-Time Location System"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:6lowpan",
+        "label": "6LoWPAN"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:wireless-hart",
+        "label": "WirelessHART"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ieee-802-11",
         "label": "IEEE 802.11"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-mesh",
+        "label": "Bluetooth Mesh"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-15-1",
+        "label": "IEEE 802.15.1"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-building",
+        "label": "Smart Building"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iec-62591",
+        "label": "IEC 62591"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.x"
+      },
+      {
+        "id": "urn:ngm:class:low-rate-wpan",
+        "label": "Low-Rate WPAN"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:zigbee",
@@ -53,6 +156,10 @@
       {
         "id": "urn:ngm:class:wireless-hart",
         "label": "WirelessHART"
+      },
+      {
+        "id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
       }
     ]
   },

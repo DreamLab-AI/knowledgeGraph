@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:driver-software",
+        "label": "Driver Software"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-platform-interoperability",
@@ -26,12 +44,56 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:software-portability",
+        "label": "Software Portability"
+      },
+      {
+        "id": "urn:ngm:class:platform-independence",
+        "label": "Platform Independence"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:processor-architecture",
+        "label": "Processor Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      },
+      {
+        "id": "urn:ngm:class:layered-architecture",
+        "label": "Layered Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bare-metal-programming",
+        "label": "Bare-Metal Programming"
+      },
+      {
+        "id": "urn:ngm:class:direct-memory-access",
+        "label": "Direct Memory Access"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-middleware",
+        "label": "Robotics Middleware"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:system-software",
@@ -57,7 +119,16 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system-kernel",
+        "label": "Operating System Kernel"
+      },
+      {
+        "id": "urn:ngm:class:embedded-software-stack",
+        "label": "Embedded Software Stack"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:middleware",
@@ -68,8 +139,8 @@
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:driver-software",
-        "label": "Driver Software"
+        "id": "urn:ngm:class:board-support-package",
+        "label": "Board Support Package"
       }
     ]
   },

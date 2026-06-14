@@ -8,8 +8,8 @@
   "definition": "An Entity is a discrete, identifiable object or agent within an AI system, simulation, or knowledge model\u2014possessing attributes, state, and potentially the capacity for autonomous action. In multi-agent and knowledge-graph contexts, entities are the primary nodes that bear properties, participate in relations, and serve as the subjects and objects of reasoning; in simulation and digital-twin contexts, they represent physical or virtual objects whose behaviour is modelled and tracked over time.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
     }
   ],
   "entityType": "Class",
@@ -20,9 +20,26 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:attribute",
+        "label": "Attribute"
+      },
+      {
+        "id": "urn:ngm:class:state",
+        "label": "State"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:multi-agent-systems",
@@ -31,11 +48,37 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:semantic-reasoning",
+        "label": "Semantic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relation",
+        "label": "Relation"
+      },
+      {
+        "id": "urn:ngm:class:property",
+        "label": "Property"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:autonomous-robot",
@@ -44,17 +87,42 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:embodied-ai",
         "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:agent",
@@ -65,16 +133,20 @@
         "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
-      },
-      {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
       },
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:owl-individual",
+        "label": "OWL Individual"
+      },
+      {
+        "id": "urn:ngm:class:object-identity",
+        "label": "Object Identity"
       }
     ]
   },

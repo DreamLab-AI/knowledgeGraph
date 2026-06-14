@@ -8,26 +8,18 @@
   "definition": "Behavioral Modeling is the application of machine learning and statistical methods to represent, predict, and simulate how agents (humans, robots, or software entities) act under varying conditions. It underpins applications ranging from user-behaviour analytics and fraud detection to reinforcement learning policies and autonomous agent control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
       "id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:behavioral-analytics",
         "label": "Behavioral Analytics"
-      },
-      {
-        "id": "urn:ngm:class:behavioral-learning",
-        "label": "Behavioral Learning"
       },
       {
         "id": "urn:ngm:class:behavior-analysis",
@@ -42,7 +34,16 @@
         "label": "Pattern Recognition"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:fraud-detection",
@@ -51,26 +52,39 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      }
-    ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-model",
-        "label": "Machine Learning Model"
+        "id": "urn:ngm:class:user-behavior-analytics",
+        "label": "User Behavior Analytics"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agent-policy",
+        "label": "Agent Policy"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-system",
+        "label": "Rule-Based System"
+      }
+    ],
+    "bridgesTo": [
       {
         "id": "urn:ngm:class:embodied-ai-simulation",
         "label": "Embodied AI Simulation"
@@ -78,6 +92,55 @@
       {
         "id": "urn:ngm:class:avatar-behavior",
         "label": "Avatar Behavior"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-modeling",
+        "label": "Cognitive Modeling"
       }
     ]
   },

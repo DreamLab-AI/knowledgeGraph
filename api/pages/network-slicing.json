@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtualised-network-function",
+        "label": "Virtualised Network Function"
+      },
+      {
+        "id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "id": "urn:ngm:class:service-function-chain",
+        "label": "Service Function Chain"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:resource-orchestration",
+        "label": "Resource Orchestration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:quality-of-service",
@@ -30,20 +56,81 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:private-5g-network",
+        "label": "Private 5G Network"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:5g-core-network",
+        "label": "5G Core Network"
+      },
+      {
+        "id": "urn:ngm:class:segment-routing",
+        "label": "Segment Routing"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:3gpp-release-15",
+        "label": "3GPP Release 15"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:best-effort-networking",
+        "label": "Best-Effort Networking"
+      },
+      {
+        "id": "urn:ngm:class:dedicated-hardware-provisioning",
+        "label": "Dedicated Hardware Provisioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "Multi-Access Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:intent-based-networking",
+        "label": "Intent-Based Networking"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:edge-computing-architecture",
         "label": "Edge Computing Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-to-everything",
+        "label": "Vehicle-to-Everything"
+      },
+      {
+        "id": "urn:ngm:class:industrial-iot",
+        "label": "Industrial IoT"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:etsi-nfv",
+        "label": "ETSI NFV"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {

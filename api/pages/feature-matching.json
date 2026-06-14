@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ratio-test",
+        "label": "Ratio Test"
+      },
+      {
+        "id": "urn:ngm:class:outlier-rejection",
+        "label": "Outlier Rejection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:structure-from-motion",
@@ -34,12 +52,47 @@
       {
         "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:image-based-localisation",
+        "label": "Image-Based Localisation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:homography-estimation",
+        "label": "Homography Estimation"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:template-matching",
+        "label": "Template Matching"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotic-perception",
+        "label": "Robotic Perception"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:depth-estimation",
@@ -52,6 +105,18 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "id": "urn:ngm:class:descriptor-extraction",
+        "label": "Descriptor Extraction"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbour-search",
+        "label": "Nearest-Neighbour Search"
       }
     ],
     "supports": [],
@@ -73,6 +138,14 @@
       {
         "id": "urn:ngm:class:lidar",
         "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:image-retrieval",
+        "label": "Image Retrieval"
       }
     ]
   },

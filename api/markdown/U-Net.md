@@ -58,22 +58,16 @@ public:: true
   "@id": "urn:ngm:class:u-net",
   "@type": "Class",
   "label": "U-Net",
-  "definition": "A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation.",
-  "domain": "ai",
+  "definition": "A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation and widely adopted for dense prediction tasks including diffusion model denoising.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:convolutional-neural-network",
-      "label": "Convolutional Neural Network"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:convolutional-neural-network",
+    "label": "Convolutional Neural Network"
+  },
   "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:convolution",
-        "label": "Convolution"
-      },
+    "hasPart": [
       {
         "@id": "urn:ngm:class:encoder",
         "label": "Encoder"
@@ -81,20 +75,136 @@ public:: true
       {
         "@id": "urn:ngm:class:decoder",
         "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:skip-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "@id": "urn:ngm:class:bottleneck-layer",
+        "label": "Bottleneck Layer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:max-pooling",
+        "label": "Max Pooling"
+      },
+      {
+        "@id": "urn:ngm:class:upsampling",
+        "label": "Upsampling"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:dense-prediction",
+        "label": "Dense Prediction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid",
+        "label": "Feature Pyramid"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rectified-linear-unit",
+        "label": "Rectified Linear Unit"
+      },
+      {
+        "@id": "urn:ngm:class:dropout-regularisation",
+        "label": "Dropout Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fully-convolutional-network",
+        "label": "Fully Convolutional Network"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:unet",
+      "label": "UNet"
+    },
+    {
+      "@id": "urn:ngm:class:u-shaped-network",
+      "label": "U-Shaped Network"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

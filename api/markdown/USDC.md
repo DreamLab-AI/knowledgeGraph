@@ -58,12 +58,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:stablecoin",
-      "label": "Stablecoin"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:stablecoin",
+    "label": "Stablecoin"
+  },
   "relations": {
     "requires": [
       {
@@ -73,14 +71,136 @@ public:: true
       {
         "@id": "urn:ngm:class:custody-infrastructure",
         "label": "Custody Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-attestation",
+        "label": "Reserve Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:stablecoin-ecosystem",
+        "label": "Stablecoin Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:defi-infrastructure",
+        "label": "DeFi Infrastructure"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge-protocol",
+        "label": "Cross-Chain Bridge Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:defi-collateral",
+        "label": "DeFi Collateral"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:usdt",
+        "label": "USDT"
+      },
+      {
+        "@id": "urn:ngm:class:dai",
+        "label": "DAI"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:centre-consortium",
+        "label": "Centre Consortium"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:money-market-fund",
+        "label": "Money Market Fund"
+      },
+      {
+        "@id": "urn:ngm:class:circle-financial",
+        "label": "Circle Financial"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:usd-coin",
+      "label": "USD Coin"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

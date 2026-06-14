@@ -21,26 +21,68 @@ public:: true
   "@type": "Class",
   "label": "Chain of Custody",
   "definition": "Chain of Custody is a documented, unbroken sequence of records that tracks the possession, handling, transfer, analysis, and disposition of physical or digital items from their point of origin to their ultimate use—most critically in legal proceedings and regulated industries. Each handoff event must be recorded with the identity of the parties involved, the time and location of transfer, and the state of the item, ensuring that the integrity and authenticity of the item can be demonstrated to any subsequent examiner. In digital contexts the concept extends to data provenance, AI training datasets, and blockchain-based asset transfer records.",
-  "domain": "governance",
+  "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}],
+  "subClassOf": {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"},
-      {"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:transfer-record", "label": "Transfer Record"},
+      {"@id": "urn:ngm:class:custody-log", "label": "Custody Log"},
+      {"@id": "urn:ngm:class:tamper-evident-seal", "label": "Tamper-Evident Seal"}
     ],
-    "supports": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+    "partOf": [
+      {"@id": "urn:ngm:class:evidence-management", "label": "Evidence Management"},
+      {"@id": "urn:ngm:class:regulatory-compliance-framework", "label": "Regulatory Compliance Framework"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:cryptographic-hashing", "label": "Cryptographic Hashing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:admissibility-of-evidence", "label": "Admissibility of Evidence"},
       {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
       {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"}
     ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:timestamping", "label": "Timestamping"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+    ],
     "uses": [
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"},
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:informal-record-keeping", "label": "Informal Record Keeping"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
+      {"@id": "urn:ngm:class:ai-training-data-lineage", "label": "AI Training Data Lineage"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:custody-of-evidence", "label": "Custody of Evidence"},
+    {"@id": "urn:ngm:class:evidence-chain", "label": "Evidence Chain"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

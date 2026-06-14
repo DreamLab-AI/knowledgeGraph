@@ -110,36 +110,150 @@ public:: true
   "@id": "urn:ngm:class:roc-curve",
   "@type": "Class",
   "label": "ROC Curve",
-  "definition": "A graphical performance etool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifyi...",
-  "domain": "artificial-intelligence",
+  "definition": "A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.",
+  "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "@id": "urn:ngm:class:model-performance",
-      "label": "Model Performance"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-performance",
+    "label": "Model Performance"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:true-positive-rate",
+        "label": "True Positive Rate"
+      },
+      {
+        "@id": "urn:ngm:class:false-positive-rate",
+        "label": "False Positive Rate"
+      },
+      {
+        "@id": "urn:ngm:class:auc",
+        "label": "AUC"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-classifier",
+        "label": "Probabilistic Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:model-comparison",
-        "label": "model comparison"
+        "label": "Model Comparison"
       },
       {
         "@id": "urn:ngm:class:threshold-selection",
-        "label": "Threshold selection"
+        "label": "Threshold Selection"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-evaluation",
+        "label": "Classifier Evaluation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "@id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:signal-detection-theory",
+        "label": "Signal Detection Theory"
+      },
+      {
+        "@id": "urn:ngm:class:youdens-index",
+        "label": "Youden's Index"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:imbalanced-classification",
+        "label": "Imbalanced Classification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:medical-diagnostics",
+        "label": "Medical Diagnostics"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:receiver-operating-characteristic",
+      "label": "Receiver Operating Characteristic"
+    },
+    {
+      "@id": "urn:ngm:class:auroc-curve",
+      "label": "AUROC Curve"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

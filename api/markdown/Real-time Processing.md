@@ -78,16 +78,44 @@ public:: true
   "@id": "urn:ngm:class:real-time-processing",
   "@type": "Class",
   "label": "Real-time Processing",
-  "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output.",
-  "domain": "artificial-intelligence",
+  "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output. Systems respond to events within strict time constraints (typically microseconds to seconds), enabling immediate decision-making through continuous stream-oriented processing rather than deferred batch operations.",
+  "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-processing",
+    "label": "Data Processing"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:complex-event-processing",
+        "label": "Complex Event Processing"
+      },
+      {
+        "@id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:anomaly-detection",
@@ -96,20 +124,104 @@ public:: true
       {
         "@id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:lambda-architecture",
+        "label": "Lambda Architecture"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:data-processing",
-        "label": "Data Processing"
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "@id": "urn:ngm:class:backpressure",
+        "label": "Backpressure"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
+      "@id": "urn:ngm:class:online-processing",
+      "label": "Online Processing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

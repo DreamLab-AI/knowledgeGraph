@@ -21,25 +21,61 @@ public:: true
   "@type": "Class",
   "label": "Automatic Differentiation",
   "definition": "Automatic differentiation (AD) is a family of computational techniques for evaluating the derivative of a function specified by a computer program, by systematically applying the chain rule to elementary arithmetic operations rather than through symbolic algebra or finite-difference approximation. It operates in two principal modes: forward mode, which propagates tangent values alongside primal values, and reverse mode (backpropagation), which accumulates gradients in a backward pass over a recorded computation graph. AD produces machine-precision derivatives at a cost linear in the number of program operations, making it the computational backbone of modern deep learning frameworks.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}],
+  "subClassOf": {"@id": "urn:ngm:class:numerical-method", "label": "Numerical Method"},
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-mode-differentiation", "label": "Forward Mode Differentiation"},
+      {"@id": "urn:ngm:class:reverse-mode-differentiation", "label": "Reverse Mode Differentiation"},
+      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:chain-rule", "label": "Chain Rule"},
+      {"@id": "urn:ngm:class:elementary-arithmetic-operation", "label": "Elementary Arithmetic Operation"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:differentiable-programming", "label": "Differentiable Programming"},
+      {"@id": "urn:ngm:class:neural-ordinary-differential-equation", "label": "Neural Ordinary Differential Equation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}
+      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:vectorised-jacobian-product", "label": "Vectorised Jacobian Product"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
+      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:symbolic-differentiation", "label": "Symbolic Differentiation"},
+      {"@id": "urn:ngm:class:numerical-differentiation", "label": "Numerical Differentiation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:just-in-time-compilation", "label": "Just-In-Time Compilation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
+      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:algorithmic-differentiation", "label": "Algorithmic Differentiation"},
+    {"@id": "urn:ngm:class:computational-differentiation", "label": "Computational Differentiation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

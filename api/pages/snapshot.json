@@ -4,7 +4,7 @@
   "slug": "snapshot",
   "public": true,
   "classIri": "urn:ngm:class:snapshot",
-  "domain": "infrastructure",
+  "domain": "blockchain",
   "definition": "Snapshot is an off-chain governance platform that lets token holders and decentralised autonomous organisations vote on proposals without paying on-chain transaction fees. Votes are signed cryptographically with a wallet and weighted according to token holdings recorded at a chosen block height, then aggregated and stored on the InterPlanetary File System. Because voting is gasless and non-binding at the protocol level, results are typically executed separately by multisignature wallets or on-chain modules.",
   "subClassOf": [
     {
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voting-strategy",
+        "label": "Voting Strategy"
+      },
+      {
+        "id": "urn:ngm:class:governance-proposal",
+        "label": "Governance Proposal"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ipfs",
@@ -25,23 +34,106 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:compound-governance",
+        "label": "Compound Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multisignature-wallet",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-block",
+        "label": "Blockchain Block"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:token-delegation",
+        "label": "Token Delegation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aragon",
+        "label": "Aragon"
+      },
+      {
+        "id": "urn:ngm:class:tally",
+        "label": "Tally"
+      }
+    ]
   },
   "wikilinks": [
     {

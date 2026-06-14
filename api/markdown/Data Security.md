@@ -47,19 +47,27 @@ public:: true
   "@type": "Class",
   "label": "Data Security",
   "definition": "Data security comprises the policies, controls, and technologies that protect digital information from unauthorised access, corruption, or theft throughout its lifecycle. It spans encryption at rest and in transit, access control mechanisms, identity verification, and governance frameworks that together ensure confidentiality, integrity, and availability of data assets.",
-  "domain": "spatial-computing",
+  "domain": "security",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:information-security",
+    "label": "Information Security"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
+      "@id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "@id": "urn:ngm:class:information-assurance",
+      "label": "Information Assurance"
     }
   ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
     "requires": [
@@ -70,16 +78,42 @@ public:: true
       {
         "@id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       },
       {
-        "@id": "urn:ngm:class:information-security",
-        "label": "Information Security"
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-masking",
+        "label": "Data Masking"
       }
     ],
     "supports": [
@@ -90,6 +124,58 @@ public:: true
       {
         "@id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
       }
     ]
   }
@@ -137,10 +223,28 @@ public:: true
 - ### Relationships
   - Requires [[Encryption]]
   - Requires [[Access Control]]
+  - Requires [[Authentication]]
+  - Requires [[Key Management]]
   - Supports [[Privacy]]
   - Supports [[Data Governance]]
+  - Supports [[Zero Trust Architecture]]
+  - enables:: [[Regulatory Compliance]]
+  - enables:: [[Data Integrity]]
+  - enables:: [[Audit Trail]]
+  - hasPart:: [[Data Loss Prevention]]
+  - hasPart:: [[Identity and Access Management]]
+  - hasPart:: [[Data Masking]]
+  - standardizedBy:: [[ISO 27001]]
+  - standardizedBy:: [[NIST Cybersecurity Framework]]
+  - standardizedBy:: [[GDPR]]
+  - contrastsWith:: [[Data Breach]]
+  - contrastsWith:: [[Open Data]]
+  - bridgesTo:: [[Blockchain]] (bc)
+  - bridgesTo:: [[Decentralised Identity]]
   - Related to [[Cybersecurity]]
   - Related to [[Information Security]]
+  - Related to [[Threat Modelling]]
+  - Related to [[Vulnerability Management]]
 
 - ### Content
 

@@ -20,17 +20,63 @@ public:: true
   "@id": "urn:ngm:class:convolution",
   "@type": "Class",
   "label": "Convolution",
-  "definition": "Convolution is a mathematical operation that combines two functions by sliding one (the kernel or filter) over another (the input signal or image) and computing a weighted sum of overlapping values at each position, producing a third function that expresses how the shape of one modifies the other. In deep learning and signal processing it provides a translation-equivariant mechanism for local feature extraction with shared parameter weights.",
-  "domain": "ai",
+  "definition": "Convolution is a mathematical operation that combines two functions by sliding one (the kernel or filter) over another (the input signal or image) and computing a weighted sum of overlapping values at each position, producing a third function that expresses how the shape of one modifies the other. In deep learning and signal processing it provides a translation-equivariant mechanism for local feature extraction with shared parameter weights. The discrete 2D form underpins convolutional neural networks; the continuous form via the Convolution Theorem connects to Fourier analysis and frequency-domain filtering.",
+  "domain": "machine-learning",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "subClassOf": {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}],
-    "uses": [{"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}],
-    "relatedTo": [{"@id": "urn:ngm:class:image-processing", "label": "Image Processing"}],
-    "supports": [{"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}]
+    "enables": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:kernel", "label": "Kernel"},
+      {"@id": "urn:ngm:class:filter", "label": "Filter"},
+      {"@id": "urn:ngm:class:fast-fourier-transform", "label": "Fast Fourier Transform"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
+      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
+      {"@id": "urn:ngm:class:fourier-analysis", "label": "Fourier Analysis"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:finite-impulse-response-filter", "label": "Finite Impulse Response Filter"},
+      {"@id": "urn:ngm:class:translation-equivariance", "label": "Translation Equivariance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
+      {"@id": "urn:ngm:class:pooling", "label": "Pooling"},
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
+      {"@id": "urn:ngm:class:radar-signal-processing", "label": "Radar Signal Processing"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:discrete-convolution", "label": "Discrete Convolution"},
+    {"@id": "urn:ngm:class:cross-correlation", "label": "Cross-Correlation"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.75
 }
 ```
 

@@ -42,38 +42,67 @@ public:: true
   "@id": "urn:ngm:class:user-research",
   "@type": "Class",
   "label": "User Research",
-  "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative mods to inform design decisions and improve virtual world experiences.",
+  "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-interaction",
-      "label": "Interaction Technology"
-    },
-    {
-      "@id": "urn:ngm:class:research-methods",
-      "label": "Research Methods"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:research-methods",
+    "label": "Research Methods"
+  },
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
+      {"@id": "urn:ngm:class:contextual-inquiry", "label": "Contextual Inquiry"},
+      {"@id": "urn:ngm:class:think-aloud-protocol", "label": "Think Aloud Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ux-design-process", "label": "UX Design Process"},
+      {"@id": "urn:ngm:class:human-centred-design", "label": "Human Centred Design"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:participant-recruitment", "label": "Participant Recruitment"},
+      {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:experience-design", "label": "Experience Design"},
+      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
+      {"@id": "urn:ngm:class:evidence-based-design", "label": "Evidence Based Design"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"},
+      {"@id": "urn:ngm:class:biometric-sensor", "label": "Biometric Sensor"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
+      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:market-research", "label": "Market Research"},
+      {"@id": "urn:ngm:class:expert-review", "label": "Expert Review"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:cybersickness", "label": "Cybersickness"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:ux-research", "label": "UX Research"},
+    {"@id": "urn:ngm:class:human-factors-research", "label": "Human Factors Research"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

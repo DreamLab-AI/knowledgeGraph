@@ -16,23 +16,92 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:video-encoder",
+        "label": "Video Encoder"
+      },
+      {
+        "id": "urn:ngm:class:audio-capture",
+        "label": "Audio Capture"
+      },
+      {
+        "id": "urn:ngm:class:frame-buffer",
+        "label": "Frame Buffer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:display-compositor",
+        "label": "Display Compositor"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tutorial-creation",
+        "label": "Tutorial Creation"
+      },
+      {
+        "id": "urn:ngm:class:ui-test-automation",
+        "label": "UI Test Automation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:screenshot",
+        "label": "Screenshot"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gui-agent-training",
+        "label": "GUI Agent Training"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-auditing",
+        "label": "Accessibility Auditing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:screen-capture-api",
         "label": "Screen Capture API"
+      },
+      {
+        "id": "urn:ngm:class:hardware-video-encoding",
+        "label": "Hardware Video Encoding"
+      },
+      {
+        "id": "urn:ngm:class:container-format",
+        "label": "Container Format"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
       }
     ],
     "standardizedBy": [],
@@ -49,6 +118,14 @@
       {
         "id": "urn:ngm:class:browser-based-screen-capture",
         "label": "Browser-Based Screen Capture"
+      },
+      {
+        "id": "urn:ngm:class:obs-studio",
+        "label": "OBS Studio"
+      },
+      {
+        "id": "urn:ngm:class:privacy-consent",
+        "label": "Privacy Consent"
       }
     ]
   },

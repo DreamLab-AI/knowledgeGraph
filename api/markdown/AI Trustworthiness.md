@@ -77,13 +77,33 @@ public:: true
   "definition": "The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:governance-framework-ai-0035",
@@ -92,6 +112,14 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-management-ai-0062",
         "label": "Risk Management (AI-0062)"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "enables": [
@@ -102,14 +130,96 @@ public:: true
       {
         "@id": "urn:ngm:class:responsible-ai-ai-0033",
         "label": "Responsible AI (AI-0033)"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24028",
+        "label": "ISO/IEC TR 24028"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-p7009",
+        "label": "IEEE P7009"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ai-opacity",
+        "label": "AI Opacity"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:ngm:class:ai-reliability-and-safety",
+      "label": "AI Reliability and Safety"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

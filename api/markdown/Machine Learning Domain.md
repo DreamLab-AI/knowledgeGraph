@@ -106,12 +106,10 @@ public:: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence-domain",
-      "label": "Artificial Intelligence Domain"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence-domain",
+    "label": "Artificial Intelligence Domain"
+  },
   "relations": {
     "hasPart": [
       {
@@ -133,6 +131,10 @@ public:: true
       {
         "@id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-domain",
+        "label": "Deep Learning Domain"
       }
     ],
     "requires": [
@@ -147,6 +149,14 @@ public:: true
       {
         "@id": "urn:ngm:class:compute-layer",
         "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       }
     ],
     "enables": [
@@ -161,14 +171,82 @@ public:: true
       {
         "@id": "urn:ngm:class:generative-modelling-domain",
         "label": "Generative Modelling Domain"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing-domain",
+        "label": "Natural Language Processing Domain"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-domain",
+        "label": "Computer Vision Domain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO/IEC 22989:2022"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO/IEC 23053:2022"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation-domain",
+        "label": "Knowledge Representation Domain"
+      },
+      {
+        "@id": "urn:ngm:class:expert-system",
+        "label": "Expert System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:statistical-learning",
+      "label": "Statistical Learning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

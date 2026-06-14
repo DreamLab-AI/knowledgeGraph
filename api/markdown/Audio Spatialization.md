@@ -74,20 +74,46 @@ public:: true
   "@id": "urn:ngm:class:audio-spatialization",
   "@type": "Class",
   "label": "Audio Spatialization",
-  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive a...",
+  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:sc-display-and-rendering",
-      "label": "SC Display And Rendering"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-display-and-rendering",
+    "label": "Display and Rendering"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hrtf-filters",
+        "label": "HRTF Filters"
+      },
+      {
+        "@id": "urn:ngm:class:binaural-rendering",
+        "label": "Binaural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "@id": "urn:ngm:class:interaural-level-difference",
+        "label": "Interaural Level Difference"
+      },
+      {
+        "@id": "urn:ngm:class:interaural-time-difference",
+        "label": "Interaural Time Difference"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-audio-technology",
+        "label": "Spatial Audio Technology"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:binaural-rendering",
@@ -100,6 +126,10 @@ public:: true
       {
         "@id": "urn:ngm:class:hrtf-filters",
         "label": "HRTF Filters"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
       }
     ],
     "enables": [
@@ -114,14 +144,84 @@ public:: true
       {
         "@id": "urn:ngm:class:sound-localization",
         "label": "Sound Localization"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aes69-sofa",
+        "label": "AES69 SOFA Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:stereo-audio",
+        "label": "Stereo Audio"
+      },
+      {
+        "@id": "urn:ngm:class:mono-audio",
+        "label": "Mono Audio"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:room-acoustics",
+        "label": "Room Acoustics"
+      },
+      {
+        "@id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:ngm:class:3d-audio",
+      "label": "3D Audio"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

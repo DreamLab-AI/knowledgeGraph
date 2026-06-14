@@ -80,19 +80,17 @@ alias:: PublicBlockchain
   "@type": "Class",
   "label": "Public Blockchain",
   "definition": "A permissionless, decentralised distributed ledger network in which any party may participate, validate transactions, and inspect the chain state without requiring authorisation. Public blockchains such as Bitcoin and Ethereum achieve censorship resistance and immutability through global state replication and open consensus mechanisms, at the cost of reduced transaction throughput and higher energy consumption relative to permissioned alternatives.",
-  "domain": "infrastructure",
+  "domain": "blockchain",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-ledger-technology",
+    "label": "Distributed Ledger Technology"
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   },
   "relations": {
     "hasPart": [
@@ -103,6 +101,32 @@ alias:: PublicBlockchain
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ],
     "enables": [
@@ -117,12 +141,62 @@ alias:: PublicBlockchain
       {
         "@id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:user-sovereignty",
+        "label": "User Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:permissioned-blockchain",
         "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:private-blockchain",
+        "label": "Private Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
       }
     ],
     "relatedTo": [
@@ -131,11 +205,25 @@ alias:: PublicBlockchain
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:blockchain-governance",
-        "label": "Blockchain Governance"
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ]
-  }
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:permissionless-blockchain",
+      "label": "Permissionless Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:open-blockchain",
+      "label": "Open Blockchain"
+    }
+  ]
 }
 ```
 

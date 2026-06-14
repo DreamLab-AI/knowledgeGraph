@@ -4,39 +4,121 @@
   "slug": "ensemble-methods",
   "public": true,
   "classIri": "urn:ngm:class:ensemble-methods",
-  "domain": "artificial-intelligence",
-  "definition": "Ensemble Mods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
+  "domain": "machine-learning",
+  "definition": "Machine learning techniques that combine multiple base models (weak learners) to produce a stronger, more accurate predictor by aggregating their predictions, thereby reducing variance, bias, or both, and achieving better generalisation than any single model alone.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:stacking",
+        "label": "Stacking"
+      },
+      {
+        "id": "urn:ngm:class:voting-classifier",
+        "label": "Voting Classifier"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:base-learner",
+        "label": "Base Learner"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-combination",
         "label": "Model Combination"
+      },
+      {
+        "id": "urn:ngm:class:generalization",
+        "label": "Generalization"
+      },
+      {
+        "id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      },
+      {
+        "id": "urn:ngm:class:bias-reduction",
+        "label": "Bias Reduction"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-model",
+        "label": "Single Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "id": "urn:ngm:class:gradient-boosting",
+        "label": "Gradient Boosting"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ]
   },
   "wikilinks": [
     {

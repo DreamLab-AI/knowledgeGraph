@@ -89,31 +89,153 @@ public:: true
   "definition": "Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.",
   "domain": "blockchain",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-network-component",
+    "label": "Network Component"
+  },
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "@id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "@id": "urn:ngm:class:federated-validator",
+        "label": "Federated Validator"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:scalability-solutions",
+        "label": "Scalability Solutions"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:federated-byzantine-agreement",
+        "label": "Federated Byzantine Agreement"
+      }
+    ],
     "implements": [
       {
         "@id": "urn:ngm:class:two-way-peg",
         "label": "Two-Way Peg"
+      },
+      {
+        "@id": "urn:ngm:class:spv-proof",
+        "label": "SPV Proof"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:polygon-pos",
+        "label": "Polygon PoS"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "@id": "urn:ngm:class:ronin",
+        "label": "Ronin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:parallel-chain",
+      "label": "Parallel Chain"
+    },
+    {
+      "@id": "urn:ngm:class:pegged-chain",
+      "label": "Pegged Chain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

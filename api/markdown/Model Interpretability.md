@@ -86,22 +86,26 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
-  "subClassOf": [
+  "subClassOf": {
+    "@id": "urn:ngm:class:explainable-ai",
+    "label": "Explainable AI"
+  },
+  "quality": 0.70,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "sameAs": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:model-transparency",
+      "label": "Model Transparency"
     },
     {
-      "@id": "urn:ngm:class:explainable-ai",
-      "label": "Explainable AI"
+      "@id": "urn:ngm:class:interpretable-machine-learning",
+      "label": "Interpretable Machine Learning"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "relations": {
     "hasPart": [
       {
@@ -115,28 +119,108 @@ public:: true
       {
         "@id": "urn:ngm:class:global-explanation",
         "label": "Global Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post-Hoc Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-model",
+        "label": "Predictive Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shapley-additive-explanations",
+        "label": "SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "@id": "urn:ngm:class:saliency-map",
+        "label": "Saliency Map"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-detection",
+        "label": "Algorithmic Bias Detection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:interpretable-ai",
         "label": "Interpretable AI"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
       },
       {
-        "@id": "urn:ngm:class:fairness",
-        "label": "Fairness"
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-decision-support",
+        "label": "Medical Decision Support"
       }
     ]
   }

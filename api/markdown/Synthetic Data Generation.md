@@ -47,34 +47,61 @@ public:: true
   "@type": "Class",
   "label": "Synthetic Data Generation",
   "definition": "Synthetic Data Generation is the process of algorithmically producing artificial datasets that statistically mirror real-world distributions without exposing sensitive personal information. Techniques include generative adversarial networks, diffusion models, physics simulation, and rule-based sampling, enabling model training where real data is scarce, private, or costly to label.",
-  "domain": "artificial-intelligence",
+  "domain": "ai",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-engineering",
+    "label": "Data Engineering"
+  },
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
       {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
       {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling"},
+      {"@id": "urn:ngm:class:seed-dataset", "label": "Seed Dataset"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:compute-cluster", "label": "Compute Cluster"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:rare-event-modelling", "label": "Rare Event Modelling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:real-world-data-collection", "label": "Real-World Data Collection"},
+      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:privacy-law", "label": "Privacy Law"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:artificial-data-generation", "label": "Artificial Data Generation"},
+    {"@id": "urn:ngm:class:synthetic-dataset-creation", "label": "Synthetic Dataset Creation"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

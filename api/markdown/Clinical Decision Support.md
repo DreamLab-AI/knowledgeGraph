@@ -62,41 +62,70 @@ public:: true
   "@id": "urn:ngm:class:clinical-decision-support",
   "@type": "Class",
   "label": "Clinical Decision Support",
-  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care.",
-  "domain": "spatial-computing",
+  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:medical-ai",
+    "label": "Medical AI"
+  },
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:healthcare-analytics",
-        "label": "Healthcare Analytics"
-      }
+    "hasPart": [
+      {"@id": "urn:ngm:class:drug-interaction-checking", "label": "Drug Interaction Checking"},
+      {"@id": "urn:ngm:class:alert-fatigue-management", "label": "Alert Fatigue Management"},
+      {"@id": "urn:ngm:class:clinical-pathway-guidance", "label": "Clinical Pathway Guidance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
+      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"},
+      {"@id": "urn:ngm:class:medical-knowledge-base", "label": "Medical Knowledge Base"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:treatment-planning-ai", "label": "Treatment Planning AI"},
+      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"},
+      {"@id": "urn:ngm:class:medication-safety", "label": "Medication Safety"},
+      {"@id": "urn:ngm:class:preventive-care", "label": "Preventive Care"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:treatment-planning-ai", "label": "Treatment Planning AI"},
-      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"}
+    "supports": [
+      {"@id": "urn:ngm:class:evidence-based-medicine", "label": "Evidence-Based Medicine"},
+      {"@id": "urn:ngm:class:patient-safety", "label": "Patient Safety"}
     ],
-    "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
+      {"@id": "urn:ngm:class:cds-hooks", "label": "CDS Hooks"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:autonomous-medical-ai", "label": "Autonomous Medical AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:healthcare-analytics", "label": "Healthcare Analytics"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:health-data-privacy", "label": "Health Data Privacy"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:computerized-decision-support", "label": "Computerized Decision Support"},
+    {"@id": "urn:ngm:class:cdss", "label": "CDSS"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -8,10 +8,28 @@
 
 - ### Relationships
   - hasPart [[Sparse Mixture of Experts]]
+  - hasPart [[Expert Network]]
+  - hasPart [[Gating Network]]
+  - hasPart [[Sparse Activation]]
+  - partOf [[Ensemble Learning]]
+  - requires [[Load Balancing]]
+  - requires [[Expert Parallelism]]
   - enables [[Large Language Models]]
   - enables [[Natural Language Processing]]
+  - enables [[Efficient Scaling]]
+  - enables [[Parameter-Efficient Training]]
+  - dependsOn [[Distributed Training]]
+  - dependsOn [[Neural Network]]
   - uses [[Transformer Architecture]]
+  - uses [[Attention Mechanism]]
+  - uses [[Softmax Routing]]
+  - supports [[Model Scaling]]
+  - supports [[Inference Efficiency]]
   - contrastsWith [[Deep Learning]]
+  - contrastsWith [[Dense Model]]
+  - relatedTo [[Switch Transformer]]
+  - relatedTo [[Federated Learning]]
+  - bridgesTo [[Distributed Systems]]
 
 - ### Content
   - An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.

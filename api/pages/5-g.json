@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:5g-new-radio",
+        "label": "5G New Radio"
+      },
+      {
+        "id": "urn:ngm:class:5g-core",
+        "label": "5G Core"
+      },
+      {
+        "id": "urn:ngm:class:service-based-architecture",
+        "label": "Service-Based Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:millimetre-wave-spectrum",
+        "label": "Millimetre-Wave Spectrum"
+      },
+      {
+        "id": "urn:ngm:class:massive-mimo",
+        "label": "Massive MIMO"
+      },
+      {
+        "id": "urn:ngm:class:small-cell",
+        "label": "Small Cell"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:5-g-connectivity",
@@ -25,23 +51,74 @@
       },
       {
         "id": "urn:ngm:class:multi-access-edge-computing",
-        "label": "MultiAccessEdgeComputing"
+        "label": "Multi-Access Edge Computing"
       },
       {
         "id": "urn:ngm:class:xr-applications",
         "label": "XR Applications"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:private-5g-network",
+        "label": "Private 5G Network"
+      },
+      {
+        "id": "urn:ngm:class:industrial-iot",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:4g-lte",
+        "label": "4G LTE"
+      },
+      {
+        "id": "urn:ngm:class:6g",
+        "label": "6G"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:beamforming",
+        "label": "Beamforming"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
     "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:itu-r",
+        "label": "ITU-R"
       }
     ],
     "partOf": [],
@@ -51,12 +128,12 @@
         "label": "5G Network"
       },
       {
-        "id": "urn:ngm:class:network-function-virtualization",
-        "label": "Network Function Virtualization"
-      },
-      {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
       }
     ]
   },

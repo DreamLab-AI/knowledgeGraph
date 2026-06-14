@@ -54,35 +54,67 @@ public:: true
   "@id": "urn:ngm:class:internet-infrastructure",
   "@type": "Class",
   "label": "Internet Infrastructure",
-  "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services.",
-  "domain": "artificial-intelligence",
+  "definition": "Internet Infrastructure encompasses the networking protocols, distributed systems, edge computing platforms, content delivery networks, and cloud architectures that enable large-scale deployment, operation, and interconnection of digital services including AI workloads across global networks.",
+  "domain": "infrastructure",
   "maturity": "emerging",
-  "qualityScore": 0.7,
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ],
+  "qualityScore": 0.72,
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-infrastructure",
+    "label": "Digital Infrastructure"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
+      {"@id": "urn:ngm:class:internet-exchange-point", "label": "Internet Exchange Point"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:domain-name-system", "label": "Domain Name System"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"},
+      {"@id": "urn:ngm:class:optical-fibre-network", "label": "Optical Fibre Network"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:air-gapped-network", "label": "Air-Gapped Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-network", "label": "Decentralised Network"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+    {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

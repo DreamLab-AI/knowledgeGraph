@@ -17,7 +17,20 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-localisation",
+        "label": "Data Localisation"
+      },
+      {
+        "id": "urn:ngm:class:national-cloud-infrastructure",
+        "label": "National Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:standards-participation",
+        "label": "Standards Participation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:open-source-ai",
@@ -26,22 +39,69 @@
       {
         "id": "urn:ngm:class:decentralized-governance",
         "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:domestic-ai-capability",
+        "label": "Domestic AI Capability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-autonomy",
+        "label": "Regulatory Autonomy"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-supply-chain",
+        "label": "Semiconductor Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:technology-globalisation",
+        "label": "Technology Globalisation"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semiconductor-policy",
+        "label": "Semiconductor Policy"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing-strategy",
+        "label": "Quantum Computing Strategy"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:cultural-self-determination",
+        "label": "Cultural Self-Determination"
+      },
+      {
+        "id": "urn:ngm:class:strategic-autonomy",
+        "label": "Strategic Autonomy"
       }
     ],
     "standardizedBy": [],
@@ -66,6 +126,18 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:splinternet",
+        "label": "Splinternet"
       }
     ]
   },

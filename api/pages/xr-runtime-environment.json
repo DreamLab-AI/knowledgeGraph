@@ -16,7 +16,16 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compositor",
+        "label": "Compositor"
+      },
+      {
+        "id": "urn:ngm:class:tracking-subsystem",
+        "label": "Tracking Subsystem"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:rendering-pipeline",
@@ -25,6 +34,10 @@
       {
         "id": "urn:ngm:class:hardware-abstraction",
         "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:device-driver",
+        "label": "Device Driver"
       }
     ],
     "enables": [
@@ -39,10 +52,31 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      }
+    ],
     "implements": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:webxr-device-api",
+        "label": "WebXR Device API"
+      },
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
@@ -52,8 +86,22 @@
         "label": "Runtime Environment"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-xr-sdk",
+        "label": "Proprietary XR SDK"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:optical-tracking",
@@ -64,10 +112,38 @@
         "label": "Middleware"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "supports": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:xr-software-stack",
+        "label": "XR Software Stack"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:steamvr",
+        "label": "SteamVR"
+      }
+    ]
   },
   "wikilinks": [
     {

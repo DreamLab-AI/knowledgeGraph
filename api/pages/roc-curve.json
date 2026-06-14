@@ -4,43 +4,140 @@
   "slug": "roc-curve",
   "public": true,
   "classIri": "urn:ngm:class:roc-curve",
-  "domain": "artificial-intelligence",
-  "definition": "A graphical performance etool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifyi...",
+  "domain": "machine-learning",
+  "definition": "A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
     {
       "id": "urn:ngm:class:model-performance",
       "label": "Model Performance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:true-positive-rate",
+        "label": "True Positive Rate"
+      },
+      {
+        "id": "urn:ngm:class:false-positive-rate",
+        "label": "False Positive Rate"
+      },
+      {
+        "id": "urn:ngm:class:auc",
+        "label": "AUC"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-classifier",
+        "label": "Probabilistic Classifier"
+      },
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-comparison",
-        "label": "model comparison"
+        "label": "Model Comparison"
       },
       {
         "id": "urn:ngm:class:threshold-selection",
-        "label": "Threshold selection"
+        "label": "Threshold Selection"
+      },
+      {
+        "id": "urn:ngm:class:classifier-evaluation",
+        "label": "Classifier Evaluation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:medical-diagnostics",
+        "label": "Medical Diagnostics"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-detection-theory",
+        "label": "Signal Detection Theory"
+      },
+      {
+        "id": "urn:ngm:class:youdens-index",
+        "label": "Youden's Index"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:imbalanced-classification",
+        "label": "Imbalanced Classification"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      }
+    ]
   },
   "wikilinks": [
     {

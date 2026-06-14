@@ -65,30 +65,59 @@ public:: true
   "definition": "Quantitative measures and mathematical frameworks used to evaluate whether an AI system produces equitable outcomes across demographic groups. Core metrics include demographic parity, equalized odds, equal opportunity, and predictive parity; selection among them depends on context and regulatory requirements, as metrics can conflict and no single criterion satisfies all fairness definitions simultaneously.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance-and-ethics",
+    "label": "AI Governance and Ethics"
+  },
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:demographic-parity", "label": "Demographic Parity"},
+      {"@id": "urn:ngm:class:equalized-odds", "label": "Equalized Odds"},
+      {"@id": "urn:ngm:class:equal-opportunity", "label": "Equal Opportunity"},
+      {"@id": "urn:ngm:class:predictive-parity", "label": "Predictive Parity"},
+      {"@id": "urn:ngm:class:individual-fairness", "label": "Individual Fairness"}
     ],
-    "uses": [
+    "requires": [
+      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
+      {"@id": "urn:ngm:class:protected-attributes", "label": "Protected Attributes"},
+      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
       {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
       {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
     ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:machine-learning-model-evaluation", "label": "Machine Learning Model Evaluation"}
+    ],
     "supports": [
       {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"}
+      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee-p7003-2021", "label": "IEEE P7003-2021"},
+      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
+      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO/IEC TR 24027"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:algorithmic-fairness-measures", "label": "Algorithmic Fairness Measures"},
+    {"@id": "urn:ngm:class:equity-metrics", "label": "Equity Metrics"}
+  ],
   "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",

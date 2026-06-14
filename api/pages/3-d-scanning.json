@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:scan-registration",
+        "label": "Scan Registration"
+      },
+      {
+        "id": "urn:ngm:class:mesh-generation",
+        "label": "Mesh Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-scene-reconstruction",
@@ -30,12 +52,38 @@
       {
         "id": "urn:ngm:class:point-cloud-processing",
         "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:reverse-engineering",
+        "label": "Reverse Engineering"
+      },
+      {
+        "id": "urn:ngm:class:heritage-digitisation",
+        "label": "Heritage Digitisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:3-d-li-dar",
@@ -46,25 +94,42 @@
         "label": "Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:depth-sensor",
-        "label": "Depth Sensor"
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      },
+      {
+        "id": "urn:ngm:class:quality-inspection",
+        "label": "Quality Inspection"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:point-cloud",
-        "label": "Point Cloud"
-      },
-      {
-        "id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure-from-Motion"
-      },
-      {
         "id": "urn:ngm:class:3-d-perception",
         "label": "3D Perception"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
       }
     ]
   },

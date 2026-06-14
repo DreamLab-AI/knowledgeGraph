@@ -10,14 +10,6 @@
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
   "entityType": "Class",
@@ -33,15 +25,48 @@
       {
         "id": "urn:ngm:class:transaction-finality",
         "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:attack-vector",
         "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:51-percent-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:race-attack",
+        "label": "Race Attack"
+      },
+      {
+        "id": "urn:ngm:class:finney-attack",
+        "label": "Finney Attack"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:transaction-propagation",
+        "label": "Transaction Propagation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -51,9 +76,22 @@
       {
         "id": "urn:ngm:class:transaction-confirmation",
         "label": "Transaction Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -61,6 +99,10 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
       }
     ],
     "relatedTo": [
@@ -77,12 +119,24 @@
         "label": "Eclipse Attack"
       },
       {
-        "id": "urn:ngm:class:blockchain-transaction",
-        "label": "Blockchain Transaction"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:block-confirmation",
+        "label": "Block Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ]
   },

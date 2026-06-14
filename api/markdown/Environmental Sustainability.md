@@ -44,32 +44,68 @@ alias:: BC-0214-environmental-sustainability
   "@type": "Class",
   "label": "Environmental Sustainability",
   "definition": "The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-governance-and-safety",
-      "label": "Governance and Safety"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:sustainable-development",
+    "label": "Sustainable Development"
+  },
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"},
+      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
+      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
+      {"@id": "urn:ngm:class:electronic-waste", "label": "Electronic Waste"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"},
+      {"@id": "urn:ngm:class:lifecycle-assessment", "label": "Lifecycle Assessment"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:climate-action", "label": "Climate Action"},
+      {"@id": "urn:ngm:class:biodiversity-conservation", "label": "Biodiversity Conservation"},
+      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-centre-infrastructure", "label": "Data Centre Infrastructure"},
+      {"@id": "urn:ngm:class:carbon-aware-computing", "label": "Carbon-Aware Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
+      {"@id": "urn:ngm:class:iso-14001", "label": "ISO 14001"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:un-sustainable-development-goals", "label": "UN Sustainable Development Goals"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
+      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
+      {"@id": "urn:ngm:class:green-ai", "label": "Green AI"},
+      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:green-ai-sustainability", "label": "Green AI Sustainability"},
+    {"@id": "urn:ngm:class:computational-sustainability", "label": "Computational Sustainability"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

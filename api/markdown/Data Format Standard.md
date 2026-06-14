@@ -94,20 +94,32 @@ public:: true
   "@id": "urn:ngm:class:data-format-standard",
   "@type": "Class",
   "label": "Data Format Standard",
-  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description for complex scene composition and collaboration.",
-  "domain": "infrastructure",
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
+  "domain": "standards",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:technical-standards",
+    "label": "Technical Standards"
+  },
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:technical-standards",
-        "label": "Technical Standards"
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:encoding-specification",
+        "label": "Encoding Specification"
+      },
+      {
+        "@id": "urn:ngm:class:validation-tools",
+        "label": "Validation Tools"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
       }
     ],
     "requires": [
@@ -136,14 +148,116 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-platform-exchange",
         "label": "Cross-Platform Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-visualization",
+        "label": "Digital Twin Visualization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-standards-process",
+        "label": "Open Standards Process"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "@id": "urn:ngm:class:material-x",
+        "label": "MaterialX"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:json-serialization",
+        "label": "JSON Serialisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:scene-description-language",
+        "label": "Scene Description Language"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:file-format-standard",
+      "label": "File Format Standard"
+    },
+    {
+      "@id": "urn:ngm:class:data-interchange-standard",
+      "label": "Data Interchange Standard"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

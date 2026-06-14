@@ -4,24 +4,42 @@
   "slug": "documentation-standards",
   "public": true,
   "classIri": "urn:ngm:class:documentation-standards",
-  "domain": "spatial-computing",
+  "domain": "standards",
   "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    },
     {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:terminology-specification",
+        "label": "Terminology Specification"
+      },
+      {
+        "id": "urn:ngm:class:data-format-specification",
+        "label": "Data Format Specification"
+      },
+      {
+        "id": "urn:ngm:class:interface-protocol",
+        "label": "Interface Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -30,26 +48,88 @@
       {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-specification",
+        "label": "Proprietary Specification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:documentation-generation",
         "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-compliance",
+        "label": "Accessibility Compliance"
+      },
+      {
+        "id": "urn:ngm:class:developer-experience",
+        "label": "Developer Experience"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-ecosystem",
+        "label": "Standards Ecosystem"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:interoperability-standard",
@@ -58,6 +138,10 @@
       {
         "id": "urn:ngm:class:api-standard",
         "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ]
   },

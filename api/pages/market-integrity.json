@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trade-surveillance",
+        "label": "Trade Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:order-book-transparency",
+        "label": "Order Book Transparency"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:financial-trading",
@@ -26,17 +52,47 @@
       {
         "id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-compliance",
+        "label": "Smart Contract Compliance"
+      }
+    ],
     "uses": [],
     "supports": [
       {
@@ -46,6 +102,10 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:investor-confidence",
+        "label": "Investor Confidence"
       }
     ],
     "standardizedBy": [],
@@ -62,6 +122,14 @@
       {
         "id": "urn:ngm:class:digital-asset-market",
         "label": "Digital Asset Market"
+      },
+      {
+        "id": "urn:ngm:class:wash-trading",
+        "label": "Wash Trading"
+      },
+      {
+        "id": "urn:ngm:class:front-running",
+        "label": "Front-Running"
       }
     ]
   },

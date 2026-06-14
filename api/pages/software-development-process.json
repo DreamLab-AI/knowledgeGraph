@@ -16,15 +16,40 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:software-design",
+        "label": "Software Design"
+      },
       {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
       },
       {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "requires": [
+      {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
       }
     ],
     "enables": [
@@ -35,12 +60,52 @@
       {
         "id": "urn:ngm:class:ai-augmented-software-engineering",
         "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:software-quality-assurance",
+        "label": "Software Quality Assurance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      },
+      {
+        "id": "urn:ngm:class:ad-hoc-development",
+        "label": "Ad Hoc Development"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
@@ -49,17 +114,34 @@
       {
         "id": "urn:ngm:class:ai-development-tools",
         "label": "AI Development Tools"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Standards Conformance Testing"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
+    ]
   },
   "wikilinks": [
     {

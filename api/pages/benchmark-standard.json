@@ -4,19 +4,32 @@
   "slug": "benchmark-standard",
   "public": true,
   "classIri": "urn:ngm:class:benchmark-standard",
-  "domain": "artificial-intelligence",
-  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and modologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
+  "domain": "standards",
+  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:measurement-metric",
+        "label": "Measurement Metric"
+      },
+      {
+        "id": "urn:ngm:class:test-workload",
+        "label": "Test Workload"
+      },
+      {
+        "id": "urn:ngm:class:scoring-methodology",
+        "label": "Scoring Methodology"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:measurement-methodology",
@@ -29,6 +42,10 @@
       {
         "id": "urn:ngm:class:validation-process",
         "label": "Validation Process"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
       }
     ],
     "enables": [
@@ -41,24 +58,100 @@
         "label": "System Evaluation"
       },
       {
+        "id": "urn:ngm:class:vendor-selection",
+        "label": "Vendor Selection"
+      },
+      {
+        "id": "urn:ngm:class:performance-regression-detection",
+        "label": "Performance Regression Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:industry-consensus",
+        "label": "Industry Consensus"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:evaluation-framework",
+        "label": "Evaluation Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-test",
+        "label": "Proprietary Test"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-benchmark",
+        "label": "Synthetic Benchmark"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-model-evaluation",
+        "label": "AI Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:mlperf-benchmark",
+        "label": "MLPerf Benchmark"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:key-performance-indicator",
+        "label": "Key Performance Indicator"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:workload-characterisation",
+        "label": "Workload Characterisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:procurement-decision",
+        "label": "Procurement Decision"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:spec-organization",
+        "label": "SPEC Organization"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1",
+        "label": "ISO/IEC JTC1"
+      }
+    ],
+    "partOf": [
+      {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [
+    "relatedTo": [
       {
-        "id": "urn:ngm:class:technical-standard",
-        "label": "Technical Standard"
+        "id": "urn:ngm:class:performance-engineering",
+        "label": "Performance Engineering"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
       }
-    ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    ]
   },
   "wikilinks": [
     {

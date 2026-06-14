@@ -4,23 +4,32 @@
   "slug": "digital-payments",
   "public": true,
   "classIri": "urn:ngm:class:digital-payments",
-  "domain": "spatial-computing",
-  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
+  "domain": "finance",
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for goods, services, and assets within both traditional e-commerce systems and emerging metaverse economies.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:financial-transactions",
       "label": "Financial Transactions"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mobile-payment",
+        "label": "Mobile Payment"
+      },
+      {
+        "id": "urn:ngm:class:contactless-payment",
+        "label": "Contactless Payment"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-payment",
+        "label": "Cryptocurrency Payment"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:payment-processor",
@@ -33,6 +42,14 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ],
     "enables": [
@@ -47,17 +64,79 @@
       {
         "id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:microtransaction",
+        "label": "Microtransaction"
+      },
+      {
+        "id": "urn:ngm:class:international-remittance",
+        "label": "International Remittance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cash-transaction",
+        "label": "Cash Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:near-field-communication",
+        "label": "Near-Field Communication"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ]
   },
   "wikilinks": [
     {

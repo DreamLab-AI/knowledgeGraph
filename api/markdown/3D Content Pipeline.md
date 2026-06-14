@@ -38,33 +38,69 @@ public:: true
   "@type": "Class",
   "label": "3D Content Pipeline",
   "definition": "The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.",
-  "domain": "infrastructure",
+  "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
+  "subClassOf": {
+    "@id": "urn:ngm:class:infra-software-engineering",
+    "label": "Software Engineering"
+  },
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
       {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
+      {"@id": "urn:ngm:class:pbr-texturing", "label": "PBR Texturing"},
+      {"@id": "urn:ngm:class:rigging-and-skinning", "label": "Rigging and Skinning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-content-creation-tools", "label": "Digital Content Creation Tools"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:version-control-system", "label": "Version Control System"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"},
+      {"@id": "urn:ngm:class:xr-content-delivery", "label": "XR Content Delivery"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:asset-management-system", "label": "Asset Management System"},
+      {"@id": "urn:ngm:class:ci-cd-pipeline", "label": "CI/CD Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
+      {"@id": "urn:ngm:class:geometry-processing", "label": "Geometry Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:distributed-team-collaboration", "label": "Distributed Team Collaboration"},
+      {"@id": "urn:ngm:class:continuous-asset-delivery", "label": "Continuous Asset Delivery"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gltf-standard", "label": "glTF Standard"},
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:2-d-content-pipeline", "label": "2D Content Pipeline"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence-assisted-art", "label": "AI-Assisted Art Generation"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:3-d-asset-pipeline", "label": "3D Asset Pipeline"},
+    {"@id": "urn:ngm:class:3-d-production-pipeline", "label": "3D Production Pipeline"}
+  ],
+  "quality": 0.73,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
